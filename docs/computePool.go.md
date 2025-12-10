@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.computePool.ComputePool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/computepool"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/computepool"
 
 computepool.NewComputePool(scope Construct, id *string, config ComputePoolConfig) ComputePool
 ```
@@ -440,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.computePool.ComputePool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/computepool"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/computepool"
 
 computepool.ComputePool_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.computePool.ComputePool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/computepool"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/computepool"
 
 computepool.ComputePool_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ computepool.ComputePool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.computePool.ComputePool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/computepool"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/computepool"
 
 computepool.ComputePool_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ computepool.ComputePool_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.computePool.ComputePool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/computepool"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/computepool"
 
 computepool.ComputePool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1004,7 +1004,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.computePool.ComputePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/computepool"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/computepool"
 
 &computepool.ComputePoolConfig {
 	Connection: interface{},
@@ -1024,7 +1024,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/computepool"
 	ForApplication: *string,
 	Id: *string,
 	InitiallySuspended: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.computePool.ComputePoolTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.computePool.ComputePoolTimeouts,
 }
 ```
 
@@ -1291,7 +1291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.computePool.ComputePoolDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/computepool"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/computepool"
 
 &computepool.ComputePoolDescribeOutput {
 
@@ -1304,7 +1304,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/computepool"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.computePool.ComputePoolShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/computepool"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/computepool"
 
 &computepool.ComputePoolShowOutput {
 
@@ -1317,7 +1317,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/computepool"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.computePool.ComputePoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/computepool"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/computepool"
 
 &computepool.ComputePoolTimeouts {
 	Create: *string,
@@ -1393,7 +1393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.computePool.ComputePoolDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/computepool"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/computepool"
 
 computepool.NewComputePoolDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputePoolDescribeOutputList
 ```
@@ -1542,7 +1542,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/computepool"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/computepool"
 
 computepool.NewComputePoolDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputePoolDescribeOutputOutputReference
 ```
@@ -2040,7 +2040,7 @@ func InternalValue() ComputePoolDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.computePool.ComputePoolShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/computepool"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/computepool"
 
 computepool.NewComputePoolShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputePoolShowOutputList
 ```
@@ -2189,7 +2189,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.computePool.ComputePoolShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/computepool"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/computepool"
 
 computepool.NewComputePoolShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputePoolShowOutputOutputReference
 ```
@@ -2665,7 +2665,7 @@ func InternalValue() ComputePoolShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.computePool.ComputePoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/computepool"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/computepool"
 
 computepool.NewComputePoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputePoolTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.notebook.Notebook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/notebook"
 
 notebook.NewNotebook(scope Construct, id *string, config NotebookConfig) Notebook
 ```
@@ -460,7 +460,7 @@ func ResetWarehouse()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.notebook.Notebook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/notebook"
 
 notebook.Notebook_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.notebook.Notebook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/notebook"
 
 notebook.Notebook_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ notebook.Notebook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.notebook.Notebook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/notebook"
 
 notebook.Notebook_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ notebook.Notebook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.notebook.Notebook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/notebook"
 
 notebook.Notebook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1024,7 +1024,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.notebook.NotebookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/notebook"
 
 &notebook.NotebookConfig {
 	Connection: interface{},
@@ -1043,7 +1043,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
 	IdleAutoShutdownTimeSeconds: *f64,
 	MainFile: *string,
 	QueryWarehouse: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.notebook.NotebookTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.notebook.NotebookTimeouts,
 	Warehouse: *string,
 }
 ```
@@ -1309,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.notebook.NotebookDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/notebook"
 
 &notebook.NotebookDescribeOutput {
 
@@ -1322,7 +1322,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.notebook.NotebookFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/notebook"
 
 &notebook.NotebookFrom {
 	Stage: *string,
@@ -1372,7 +1372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.notebook.NotebookShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/notebook"
 
 &notebook.NotebookShowOutput {
 
@@ -1385,7 +1385,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.notebook.NotebookTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/notebook"
 
 &notebook.NotebookTimeouts {
 	Create: *string,
@@ -1461,7 +1461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.notebook.NotebookDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/notebook"
 
 notebook.NewNotebookDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotebookDescribeOutputList
 ```
@@ -1610,7 +1610,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.notebook.NotebookDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/notebook"
 
 notebook.NewNotebookDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NotebookDescribeOutputOutputReference
 ```
@@ -2196,7 +2196,7 @@ func InternalValue() NotebookDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.notebook.NotebookFromList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/notebook"
 
 notebook.NewNotebookFromList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotebookFromList
 ```
@@ -2356,7 +2356,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.notebook.NotebookFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/notebook"
 
 notebook.NewNotebookFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NotebookFromOutputReference
 ```
@@ -2674,7 +2674,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.notebook.NotebookShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/notebook"
 
 notebook.NewNotebookShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotebookShowOutputList
 ```
@@ -2823,7 +2823,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.notebook.NotebookShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/notebook"
 
 notebook.NewNotebookShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NotebookShowOutputOutputReference
 ```
@@ -3200,7 +3200,7 @@ func InternalValue() NotebookShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.notebook.NotebookTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/notebook"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/notebook"
 
 notebook.NewNotebookTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotebookTimeoutsOutputReference
 ```

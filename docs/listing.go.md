@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.listing.Listing.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/listing"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/listing"
 
 listing.NewListing(scope Construct, id *string, config ListingConfig) Listing
 ```
@@ -446,7 +446,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.listing.Listing.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/listing"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/listing"
 
 listing.Listing_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.listing.Listing.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/listing"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/listing"
 
 listing.Listing_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ listing.Listing_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.listing.Listing.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/listing"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/listing"
 
 listing.Listing_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ listing.Listing_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.listing.Listing.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/listing"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/listing"
 
 listing.Listing_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -933,7 +933,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.listing.ListingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/listing"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/listing"
 
 &listing.ListingConfig {
 	Connection: interface{},
@@ -943,14 +943,14 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/listing"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Manifest: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.listing.ListingManifest,
+	Manifest: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.listing.ListingManifest,
 	Name: *string,
 	ApplicationPackage: *string,
 	Comment: *string,
 	Id: *string,
 	Publish: *string,
 	Share: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.listing.ListingTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.listing.ListingTimeouts,
 }
 ```
 
@@ -1166,10 +1166,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.listing.ListingManifest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/listing"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/listing"
 
 &listing.ListingManifest {
-	FromStage: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.listing.ListingManifestFromStage,
+	FromStage: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.listing.ListingManifestFromStage,
 	FromString: *string,
 }
 ```
@@ -1218,7 +1218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.listing.ListingManifestFromStage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/listing"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/listing"
 
 &listing.ListingManifestFromStage {
 	Stage: *string,
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.listing.ListingShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/listing"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/listing"
 
 &listing.ListingShowOutput {
 
@@ -1319,7 +1319,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/listing"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.listing.ListingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/listing"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/listing"
 
 &listing.ListingTimeouts {
 	Create: *string,
@@ -1395,7 +1395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.listing.ListingManifestFromStageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/listing"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/listing"
 
 listing.NewListingManifestFromStageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ListingManifestFromStageOutputReference
 ```
@@ -1753,7 +1753,7 @@ func InternalValue() ListingManifestFromStage
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.listing.ListingManifestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/listing"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/listing"
 
 listing.NewListingManifestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ListingManifestOutputReference
 ```
@@ -2073,7 +2073,7 @@ func InternalValue() ListingManifest
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.listing.ListingShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/listing"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/listing"
 
 listing.NewListingShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ListingShowOutputList
 ```
@@ -2222,7 +2222,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.listing.ListingShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/listing"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/listing"
 
 listing.NewListingShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ListingShowOutputOutputReference
 ```
@@ -2775,7 +2775,7 @@ func InternalValue() ListingShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.listing.ListingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/listing"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/listing"
 
 listing.NewListingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ListingTimeoutsOutputReference
 ```

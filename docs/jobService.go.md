@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.jobService.JobService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 jobservice.NewJobService(scope Construct, id *string, config JobServiceConfig) JobService
 ```
@@ -466,7 +466,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.jobService.JobService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 jobservice.JobService_IsConstruct(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.jobService.JobService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 jobservice.JobService_IsTerraformElement(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ jobservice.JobService_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.jobService.JobService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 jobservice.JobService_IsTerraformResource(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ jobservice.JobService_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.jobService.JobService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 jobservice.JobService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1041,7 +1041,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.jobService.JobServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 &jobservice.JobServiceConfig {
 	Connection: interface{},
@@ -1057,11 +1057,11 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
 	Schema: *string,
 	Comment: *string,
 	ExternalAccessIntegrations: *[]*string,
-	FromSpecification: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.jobService.JobServiceFromSpecification,
-	FromSpecificationTemplate: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.jobService.JobServiceFromSpecificationTemplate,
+	FromSpecification: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.jobService.JobServiceFromSpecification,
+	FromSpecificationTemplate: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.jobService.JobServiceFromSpecificationTemplate,
 	Id: *string,
 	QueryWarehouse: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.jobService.JobServiceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.jobService.JobServiceTimeouts,
 }
 ```
 
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.jobService.JobServiceDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 &jobservice.JobServiceDescribeOutput {
 
@@ -1343,7 +1343,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.jobService.JobServiceFromSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 &jobservice.JobServiceFromSpecification {
 	File: *string,
@@ -1429,7 +1429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.jobService.JobServiceFromSpecificationTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 &jobservice.JobServiceFromSpecificationTemplate {
 	Using: interface{},
@@ -1531,7 +1531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.jobService.JobServiceFromSpecificationTemplateUsing.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 &jobservice.JobServiceFromSpecificationTemplateUsing {
 	Key: *string,
@@ -1585,7 +1585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.jobService.JobServiceShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 &jobservice.JobServiceShowOutput {
 
@@ -1598,7 +1598,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.jobService.JobServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 &jobservice.JobServiceTimeouts {
 	Create: *string,
@@ -1674,7 +1674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.jobService.JobServiceDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 jobservice.NewJobServiceDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobServiceDescribeOutputList
 ```
@@ -1823,7 +1823,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.jobService.JobServiceDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 jobservice.NewJobServiceDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JobServiceDescribeOutputOutputReference
 ```
@@ -2409,7 +2409,7 @@ func InternalValue() JobServiceDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.jobService.JobServiceFromSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 jobservice.NewJobServiceFromSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JobServiceFromSpecificationOutputReference
 ```
@@ -2774,7 +2774,7 @@ func InternalValue() JobServiceFromSpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.jobService.JobServiceFromSpecificationTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 jobservice.NewJobServiceFromSpecificationTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JobServiceFromSpecificationTemplateOutputReference
 ```
@@ -3174,7 +3174,7 @@ func InternalValue() JobServiceFromSpecificationTemplate
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.jobService.JobServiceFromSpecificationTemplateUsingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 jobservice.NewJobServiceFromSpecificationTemplateUsingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobServiceFromSpecificationTemplateUsingList
 ```
@@ -3334,7 +3334,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.jobService.JobServiceFromSpecificationTemplateUsingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 jobservice.NewJobServiceFromSpecificationTemplateUsingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JobServiceFromSpecificationTemplateUsingOutputReference
 ```
@@ -3645,7 +3645,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.jobService.JobServiceShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 jobservice.NewJobServiceShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobServiceShowOutputList
 ```
@@ -3794,7 +3794,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.jobService.JobServiceShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 jobservice.NewJobServiceShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JobServiceShowOutputOutputReference
 ```
@@ -4369,7 +4369,7 @@ func InternalValue() JobServiceShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.jobService.JobServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/jobservice"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/jobservice"
 
 jobservice.NewJobServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JobServiceTimeoutsOutputReference
 ```

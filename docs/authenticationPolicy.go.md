@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 authenticationpolicy.NewAuthenticationPolicy(scope Construct, id *string, config AuthenticationPolicyConfig) AuthenticationPolicy
 ```
@@ -507,7 +507,7 @@ func ResetWorkloadIdentityPolicy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 authenticationpolicy.AuthenticationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 authenticationpolicy.AuthenticationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ authenticationpolicy.AuthenticationPolicy_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 authenticationpolicy.AuthenticationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ authenticationpolicy.AuthenticationPolicy_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 authenticationpolicy.AuthenticationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1137,7 +1137,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 &authenticationpolicy.AuthenticationPolicyConfig {
 	Connection: interface{},
@@ -1156,11 +1156,11 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticatio
 	Id: *string,
 	MfaAuthenticationMethods: *[]*string,
 	MfaEnrollment: *string,
-	MfaPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.authenticationPolicy.AuthenticationPolicyMfaPolicy,
-	PatPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.authenticationPolicy.AuthenticationPolicyPatPolicy,
+	MfaPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.authenticationPolicy.AuthenticationPolicyMfaPolicy,
+	PatPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.authenticationPolicy.AuthenticationPolicyPatPolicy,
 	SecurityIntegrations: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.authenticationPolicy.AuthenticationPolicyTimeouts,
-	WorkloadIdentityPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.authenticationPolicy.AuthenticationPolicyWorkloadIdentityPolicy,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.authenticationPolicy.AuthenticationPolicyTimeouts,
+	WorkloadIdentityPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.authenticationPolicy.AuthenticationPolicyWorkloadIdentityPolicy,
 }
 ```
 
@@ -1480,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 &authenticationpolicy.AuthenticationPolicyDescribeOutput {
 
@@ -1493,7 +1493,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticatio
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyMfaPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 &authenticationpolicy.AuthenticationPolicyMfaPolicy {
 	AllowedMethods: *[]*string,
@@ -1545,7 +1545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 &authenticationpolicy.AuthenticationPolicyPatPolicy {
 	DefaultExpiryInDays: *f64,
@@ -1611,7 +1611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 &authenticationpolicy.AuthenticationPolicyShowOutput {
 
@@ -1624,7 +1624,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticatio
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 &authenticationpolicy.AuthenticationPolicyTimeouts {
 	Create: *string,
@@ -1698,7 +1698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyWorkloadIdentityPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 &authenticationpolicy.AuthenticationPolicyWorkloadIdentityPolicy {
 	AllowedAwsAccounts: *[]*string,
@@ -1784,7 +1784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 authenticationpolicy.NewAuthenticationPolicyDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AuthenticationPolicyDescribeOutputList
 ```
@@ -1933,7 +1933,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 authenticationpolicy.NewAuthenticationPolicyDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AuthenticationPolicyDescribeOutputOutputReference
 ```
@@ -2321,7 +2321,7 @@ func InternalValue() AuthenticationPolicyDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyMfaPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 authenticationpolicy.NewAuthenticationPolicyMfaPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AuthenticationPolicyMfaPolicyOutputReference
 ```
@@ -2628,7 +2628,7 @@ func InternalValue() AuthenticationPolicyMfaPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 authenticationpolicy.NewAuthenticationPolicyPatPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AuthenticationPolicyPatPolicyOutputReference
 ```
@@ -2964,7 +2964,7 @@ func InternalValue() AuthenticationPolicyPatPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 authenticationpolicy.NewAuthenticationPolicyShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AuthenticationPolicyShowOutputList
 ```
@@ -3113,7 +3113,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 authenticationpolicy.NewAuthenticationPolicyShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AuthenticationPolicyShowOutputOutputReference
 ```
@@ -3479,7 +3479,7 @@ func InternalValue() AuthenticationPolicyShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 authenticationpolicy.NewAuthenticationPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AuthenticationPolicyTimeoutsOutputReference
 ```
@@ -3844,7 +3844,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.authenticationPolicy.AuthenticationPolicyWorkloadIdentityPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/authenticationpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/authenticationpolicy"
 
 authenticationpolicy.NewAuthenticationPolicyWorkloadIdentityPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AuthenticationPolicyWorkloadIdentityPolicyOutputReference
 ```

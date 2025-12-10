@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/currentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/currentaccount"
 
 currentaccount.NewCurrentAccount(scope Construct, id *string, config CurrentAccountConfig) CurrentAccount
 ```
@@ -1266,7 +1266,7 @@ func ResetWeekStart()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/currentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/currentaccount"
 
 currentaccount.CurrentAccount_IsConstruct(x interface{}) *bool
 ```
@@ -1298,7 +1298,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/currentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/currentaccount"
 
 currentaccount.CurrentAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -1312,7 +1312,7 @@ currentaccount.CurrentAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/currentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/currentaccount"
 
 currentaccount.CurrentAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -1326,7 +1326,7 @@ currentaccount.CurrentAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/currentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/currentaccount"
 
 currentaccount.CurrentAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -4305,7 +4305,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/currentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/currentaccount"
 
 &currentaccount.CurrentAccountConfig {
 	Connection: interface{},
@@ -4420,7 +4420,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/currentaccoun
 	TaskAutoRetryAttempts: *f64,
 	TimeInputFormat: *string,
 	TimeOutputFormat: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.currentAccount.CurrentAccountTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.currentAccount.CurrentAccountTimeouts,
 	TimestampDayIsAlways24H: interface{},
 	TimestampInputFormat: *string,
 	TimestampLtzOutputFormat: *string,
@@ -6548,7 +6548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/currentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/currentaccount"
 
 &currentaccount.CurrentAccountTimeouts {
 	Create: *string,
@@ -6624,7 +6624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/currentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/currentaccount"
 
 currentaccount.NewCurrentAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CurrentAccountTimeoutsOutputReference
 ```
