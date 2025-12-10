@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeNotebooks.DataSnowflakeNotebooks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenotebooks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakenotebooks"
 
 datasnowflakenotebooks.NewDataSnowflakeNotebooks(scope Construct, id *string, config DataSnowflakeNotebooksConfig) DataSnowflakeNotebooks
 ```
@@ -324,7 +324,7 @@ func ResetWithDescribe()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeNotebooks.DataSnowflakeNotebooks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenotebooks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakenotebooks"
 
 datasnowflakenotebooks.DataSnowflakeNotebooks_IsConstruct(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeNotebooks.DataSnowflakeNotebooks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenotebooks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakenotebooks"
 
 datasnowflakenotebooks.DataSnowflakeNotebooks_IsTerraformElement(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ datasnowflakenotebooks.DataSnowflakeNotebooks_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeNotebooks.DataSnowflakeNotebooks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenotebooks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakenotebooks"
 
 datasnowflakenotebooks.DataSnowflakeNotebooks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ datasnowflakenotebooks.DataSnowflakeNotebooks_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeNotebooks.DataSnowflakeNotebooks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenotebooks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakenotebooks"
 
 datasnowflakenotebooks.DataSnowflakeNotebooks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -712,7 +712,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeNotebooks.DataSnowflakeNotebooksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenotebooks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakenotebooks"
 
 &datasnowflakenotebooks.DataSnowflakeNotebooksConfig {
 	Connection: interface{},
@@ -724,7 +724,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenote
 	Provisioners: *[]interface{},
 	Id: *string,
 	Like: *string,
-	Limit: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.dataSnowflakeNotebooks.DataSnowflakeNotebooksLimit,
+	Limit: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.dataSnowflakeNotebooks.DataSnowflakeNotebooksLimit,
 	StartsWith: *string,
 	WithDescribe: interface{},
 }
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeNotebooks.DataSnowflakeNotebooksLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenotebooks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakenotebooks"
 
 &datasnowflakenotebooks.DataSnowflakeNotebooksLimit {
 	Rows: *f64,
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeNotebooks.DataSnowflakeNotebooksNotebooks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenotebooks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakenotebooks"
 
 &datasnowflakenotebooks.DataSnowflakeNotebooksNotebooks {
 
@@ -962,7 +962,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenote
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeNotebooks.DataSnowflakeNotebooksNotebooksDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenotebooks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakenotebooks"
 
 &datasnowflakenotebooks.DataSnowflakeNotebooksNotebooksDescribeOutput {
 
@@ -975,7 +975,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenote
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeNotebooks.DataSnowflakeNotebooksNotebooksShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenotebooks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakenotebooks"
 
 &datasnowflakenotebooks.DataSnowflakeNotebooksNotebooksShowOutput {
 
@@ -990,7 +990,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenote
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeNotebooks.DataSnowflakeNotebooksLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenotebooks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakenotebooks"
 
 datasnowflakenotebooks.NewDataSnowflakeNotebooksLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeNotebooksLimitOutputReference
 ```
@@ -1290,7 +1290,7 @@ func InternalValue() DataSnowflakeNotebooksLimit
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeNotebooks.DataSnowflakeNotebooksNotebooksDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenotebooks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakenotebooks"
 
 datasnowflakenotebooks.NewDataSnowflakeNotebooksNotebooksDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeNotebooksNotebooksDescribeOutputList
 ```
@@ -1439,7 +1439,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeNotebooks.DataSnowflakeNotebooksNotebooksDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenotebooks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakenotebooks"
 
 datasnowflakenotebooks.NewDataSnowflakeNotebooksNotebooksDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeNotebooksNotebooksDescribeOutputOutputReference
 ```
@@ -2025,7 +2025,7 @@ func InternalValue() DataSnowflakeNotebooksNotebooksDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeNotebooks.DataSnowflakeNotebooksNotebooksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenotebooks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakenotebooks"
 
 datasnowflakenotebooks.NewDataSnowflakeNotebooksNotebooksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeNotebooksNotebooksList
 ```
@@ -2174,7 +2174,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeNotebooks.DataSnowflakeNotebooksNotebooksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenotebooks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakenotebooks"
 
 datasnowflakenotebooks.NewDataSnowflakeNotebooksNotebooksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeNotebooksNotebooksOutputReference
 ```
@@ -2463,7 +2463,7 @@ func InternalValue() DataSnowflakeNotebooksNotebooks
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeNotebooks.DataSnowflakeNotebooksNotebooksShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenotebooks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakenotebooks"
 
 datasnowflakenotebooks.NewDataSnowflakeNotebooksNotebooksShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeNotebooksNotebooksShowOutputList
 ```
@@ -2612,7 +2612,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeNotebooks.DataSnowflakeNotebooksNotebooksShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenotebooks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakenotebooks"
 
 datasnowflakenotebooks.NewDataSnowflakeNotebooksNotebooksShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeNotebooksNotebooksShowOutputOutputReference
 ```

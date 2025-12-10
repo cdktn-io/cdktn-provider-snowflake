@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeUserProgrammaticAccessTokens.DataSnowflakeUserProgrammaticAccessTokens.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeuserprogrammaticaccesstokens"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeuserprogrammaticaccesstokens"
 
 datasnowflakeuserprogrammaticaccesstokens.NewDataSnowflakeUserProgrammaticAccessTokens(scope Construct, id *string, config DataSnowflakeUserProgrammaticAccessTokensConfig) DataSnowflakeUserProgrammaticAccessTokens
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeUserProgrammaticAccessTokens.DataSnowflakeUserProgrammaticAccessTokens.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeuserprogrammaticaccesstokens"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeuserprogrammaticaccesstokens"
 
 datasnowflakeuserprogrammaticaccesstokens.DataSnowflakeUserProgrammaticAccessTokens_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeUserProgrammaticAccessTokens.DataSnowflakeUserProgrammaticAccessTokens.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeuserprogrammaticaccesstokens"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeuserprogrammaticaccesstokens"
 
 datasnowflakeuserprogrammaticaccesstokens.DataSnowflakeUserProgrammaticAccessTokens_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datasnowflakeuserprogrammaticaccesstokens.DataSnowflakeUserProgrammaticAccessTok
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeUserProgrammaticAccessTokens.DataSnowflakeUserProgrammaticAccessTokens.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeuserprogrammaticaccesstokens"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeuserprogrammaticaccesstokens"
 
 datasnowflakeuserprogrammaticaccesstokens.DataSnowflakeUserProgrammaticAccessTokens_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datasnowflakeuserprogrammaticaccesstokens.DataSnowflakeUserProgrammaticAccessTok
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeUserProgrammaticAccessTokens.DataSnowflakeUserProgrammaticAccessTokens.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeuserprogrammaticaccesstokens"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeuserprogrammaticaccesstokens"
 
 datasnowflakeuserprogrammaticaccesstokens.DataSnowflakeUserProgrammaticAccessTokens_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeUserProgrammaticAccessTokens.DataSnowflakeUserProgrammaticAccessTokensConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeuserprogrammaticaccesstokens"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeuserprogrammaticaccesstokens"
 
 &datasnowflakeuserprogrammaticaccesstokens.DataSnowflakeUserProgrammaticAccessTokensConfig {
 	Connection: interface{},
@@ -740,7 +740,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeUserProgrammaticAccessTokens.DataSnowflakeUserProgrammaticAccessTokensUserProgrammaticAccessTokens.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeuserprogrammaticaccesstokens"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeuserprogrammaticaccesstokens"
 
 &datasnowflakeuserprogrammaticaccesstokens.DataSnowflakeUserProgrammaticAccessTokensUserProgrammaticAccessTokens {
 
@@ -753,7 +753,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeuser
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeUserProgrammaticAccessTokens.DataSnowflakeUserProgrammaticAccessTokensUserProgrammaticAccessTokensShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeuserprogrammaticaccesstokens"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeuserprogrammaticaccesstokens"
 
 &datasnowflakeuserprogrammaticaccesstokens.DataSnowflakeUserProgrammaticAccessTokensUserProgrammaticAccessTokensShowOutput {
 
@@ -768,7 +768,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeuser
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeUserProgrammaticAccessTokens.DataSnowflakeUserProgrammaticAccessTokensUserProgrammaticAccessTokensList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeuserprogrammaticaccesstokens"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeuserprogrammaticaccesstokens"
 
 datasnowflakeuserprogrammaticaccesstokens.NewDataSnowflakeUserProgrammaticAccessTokensUserProgrammaticAccessTokensList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeUserProgrammaticAccessTokensUserProgrammaticAccessTokensList
 ```
@@ -917,7 +917,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeUserProgrammaticAccessTokens.DataSnowflakeUserProgrammaticAccessTokensUserProgrammaticAccessTokensOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeuserprogrammaticaccesstokens"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeuserprogrammaticaccesstokens"
 
 datasnowflakeuserprogrammaticaccesstokens.NewDataSnowflakeUserProgrammaticAccessTokensUserProgrammaticAccessTokensOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeUserProgrammaticAccessTokensUserProgrammaticAccessTokensOutputReference
 ```
@@ -1195,7 +1195,7 @@ func InternalValue() DataSnowflakeUserProgrammaticAccessTokensUserProgrammaticAc
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeUserProgrammaticAccessTokens.DataSnowflakeUserProgrammaticAccessTokensUserProgrammaticAccessTokensShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeuserprogrammaticaccesstokens"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeuserprogrammaticaccesstokens"
 
 datasnowflakeuserprogrammaticaccesstokens.NewDataSnowflakeUserProgrammaticAccessTokensUserProgrammaticAccessTokensShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeUserProgrammaticAccessTokensUserProgrammaticAccessTokensShowOutputList
 ```
@@ -1344,7 +1344,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeUserProgrammaticAccessTokens.DataSnowflakeUserProgrammaticAccessTokensUserProgrammaticAccessTokensShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeuserprogrammaticaccesstokens"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeuserprogrammaticaccesstokens"
 
 datasnowflakeuserprogrammaticaccesstokens.NewDataSnowflakeUserProgrammaticAccessTokensUserProgrammaticAccessTokensShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeUserProgrammaticAccessTokensUserProgrammaticAccessTokensShowOutputOutputReference
 ```

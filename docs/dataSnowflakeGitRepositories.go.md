@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 datasnowflakegitrepositories.NewDataSnowflakeGitRepositories(scope Construct, id *string, config DataSnowflakeGitRepositoriesConfig) DataSnowflakeGitRepositories
 ```
@@ -337,7 +337,7 @@ func ResetWithDescribe()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositories.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 datasnowflakegitrepositories.DataSnowflakeGitRepositories_IsConstruct(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositories.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 datasnowflakegitrepositories.DataSnowflakeGitRepositories_IsTerraformElement(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ datasnowflakegitrepositories.DataSnowflakeGitRepositories_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositories.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 datasnowflakegitrepositories.DataSnowflakeGitRepositories_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ datasnowflakegitrepositories.DataSnowflakeGitRepositories_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositories.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 datasnowflakegitrepositories.DataSnowflakeGitRepositories_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -725,7 +725,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositoriesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 &datasnowflakegitrepositories.DataSnowflakeGitRepositoriesConfig {
 	Connection: interface{},
@@ -736,9 +736,9 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitr
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	In: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositoriesIn,
+	In: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.dataSnowflakeGitRepositories.DataSnowflakeGitRepositoriesIn,
 	Like: *string,
-	Limit: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositoriesLimit,
+	Limit: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.dataSnowflakeGitRepositories.DataSnowflakeGitRepositoriesLimit,
 	WithDescribe: interface{},
 }
 ```
@@ -910,7 +910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositoriesGitRepositories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 &datasnowflakegitrepositories.DataSnowflakeGitRepositoriesGitRepositories {
 
@@ -923,7 +923,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitr
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 &datasnowflakegitrepositories.DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutput {
 
@@ -936,7 +936,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitr
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositoriesGitRepositoriesShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 &datasnowflakegitrepositories.DataSnowflakeGitRepositoriesGitRepositoriesShowOutput {
 
@@ -949,7 +949,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitr
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositoriesIn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 &datasnowflakegitrepositories.DataSnowflakeGitRepositoriesIn {
 	Account: interface{},
@@ -1015,7 +1015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositoriesLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 &datasnowflakegitrepositories.DataSnowflakeGitRepositoriesLimit {
 	Rows: *f64,
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 datasnowflakegitrepositories.NewDataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputList
 ```
@@ -1218,7 +1218,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 datasnowflakegitrepositories.NewDataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputOutputReference
 ```
@@ -1606,7 +1606,7 @@ func InternalValue() DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositoriesGitRepositoriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 datasnowflakegitrepositories.NewDataSnowflakeGitRepositoriesGitRepositoriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeGitRepositoriesGitRepositoriesList
 ```
@@ -1755,7 +1755,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositoriesGitRepositoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 datasnowflakegitrepositories.NewDataSnowflakeGitRepositoriesGitRepositoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeGitRepositoriesGitRepositoriesOutputReference
 ```
@@ -2044,7 +2044,7 @@ func InternalValue() DataSnowflakeGitRepositoriesGitRepositories
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositoriesGitRepositoriesShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 datasnowflakegitrepositories.NewDataSnowflakeGitRepositoriesGitRepositoriesShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeGitRepositoriesGitRepositoriesShowOutputList
 ```
@@ -2193,7 +2193,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositoriesGitRepositoriesShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 datasnowflakegitrepositories.NewDataSnowflakeGitRepositoriesGitRepositoriesShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeGitRepositoriesGitRepositoriesShowOutputOutputReference
 ```
@@ -2581,7 +2581,7 @@ func InternalValue() DataSnowflakeGitRepositoriesGitRepositoriesShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositoriesInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 datasnowflakegitrepositories.NewDataSnowflakeGitRepositoriesInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeGitRepositoriesInOutputReference
 ```
@@ -2917,7 +2917,7 @@ func InternalValue() DataSnowflakeGitRepositoriesIn
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGitRepositories.DataSnowflakeGitRepositoriesLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakegitrepositories"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakegitrepositories"
 
 datasnowflakegitrepositories.NewDataSnowflakeGitRepositoriesLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeGitRepositoriesLimitOutputReference
 ```

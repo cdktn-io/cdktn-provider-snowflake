@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.imageRepository.ImageRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/imagerepository"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/imagerepository"
 
 imagerepository.NewImageRepository(scope Construct, id *string, config ImageRepositoryConfig) ImageRepository
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.imageRepository.ImageRepository.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/imagerepository"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/imagerepository"
 
 imagerepository.ImageRepository_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.imageRepository.ImageRepository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/imagerepository"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/imagerepository"
 
 imagerepository.ImageRepository_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ imagerepository.ImageRepository_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.imageRepository.ImageRepository.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/imagerepository"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/imagerepository"
 
 imagerepository.ImageRepository_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ imagerepository.ImageRepository_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.imageRepository.ImageRepository.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/imagerepository"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/imagerepository"
 
 imagerepository.ImageRepository_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.imageRepository.ImageRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/imagerepository"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/imagerepository"
 
 &imagerepository.ImageRepositoryConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/imagerepository"
 	Schema: *string,
 	Comment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.imageRepository.ImageRepositoryTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.imageRepository.ImageRepositoryTimeouts,
 }
 ```
 
@@ -1060,7 +1060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.imageRepository.ImageRepositoryShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/imagerepository"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/imagerepository"
 
 &imagerepository.ImageRepositoryShowOutput {
 
@@ -1073,7 +1073,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/imagerepository"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.imageRepository.ImageRepositoryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/imagerepository"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/imagerepository"
 
 &imagerepository.ImageRepositoryTimeouts {
 	Create: *string,
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.imageRepository.ImageRepositoryShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/imagerepository"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/imagerepository"
 
 imagerepository.NewImageRepositoryShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImageRepositoryShowOutputList
 ```
@@ -1298,7 +1298,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.imageRepository.ImageRepositoryShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/imagerepository"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/imagerepository"
 
 imagerepository.NewImageRepositoryShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImageRepositoryShowOutputOutputReference
 ```
@@ -1664,7 +1664,7 @@ func InternalValue() ImageRepositoryShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.imageRepository.ImageRepositoryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/imagerepository"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/imagerepository"
 
 imagerepository.NewImageRepositoryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImageRepositoryTimeoutsOutputReference
 ```

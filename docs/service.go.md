@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.Service.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 service.NewService(scope Construct, id *string, config ServiceConfig) Service
 ```
@@ -501,7 +501,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.service.Service.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 service.Service_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.service.Service.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 service.Service_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ service.Service_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.service.Service.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 service.Service_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ service.Service_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.service.Service.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 service.Service_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1186,7 +1186,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.service.ServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 &service.ServiceConfig {
 	Connection: interface{},
@@ -1204,14 +1204,14 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
 	AutoSuspendSecs: *f64,
 	Comment: *string,
 	ExternalAccessIntegrations: *[]*string,
-	FromSpecification: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.service.ServiceFromSpecification,
-	FromSpecificationTemplate: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.service.ServiceFromSpecificationTemplate,
+	FromSpecification: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.service.ServiceFromSpecification,
+	FromSpecificationTemplate: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.service.ServiceFromSpecificationTemplate,
 	Id: *string,
 	MaxInstances: *f64,
 	MinInstances: *f64,
 	MinReadyInstances: *f64,
 	QueryWarehouse: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.service.ServiceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.service.ServiceTimeouts,
 }
 ```
 
@@ -1557,7 +1557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.service.ServiceDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 &service.ServiceDescribeOutput {
 
@@ -1570,7 +1570,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.service.ServiceFromSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 &service.ServiceFromSpecification {
 	File: *string,
@@ -1656,7 +1656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 &service.ServiceFromSpecificationTemplate {
 	Using: interface{},
@@ -1758,7 +1758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsing.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 &service.ServiceFromSpecificationTemplateUsing {
 	Key: *string,
@@ -1812,7 +1812,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.service.ServiceShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 &service.ServiceShowOutput {
 
@@ -1825,7 +1825,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.service.ServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 &service.ServiceTimeouts {
 	Create: *string,
@@ -1901,7 +1901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 service.NewServiceDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceDescribeOutputList
 ```
@@ -2050,7 +2050,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 service.NewServiceDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceDescribeOutputOutputReference
 ```
@@ -2636,7 +2636,7 @@ func InternalValue() ServiceDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 service.NewServiceFromSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceFromSpecificationOutputReference
 ```
@@ -3001,7 +3001,7 @@ func InternalValue() ServiceFromSpecification
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 service.NewServiceFromSpecificationTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceFromSpecificationTemplateOutputReference
 ```
@@ -3401,7 +3401,7 @@ func InternalValue() ServiceFromSpecificationTemplate
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 service.NewServiceFromSpecificationTemplateUsingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceFromSpecificationTemplateUsingList
 ```
@@ -3561,7 +3561,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 service.NewServiceFromSpecificationTemplateUsingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceFromSpecificationTemplateUsingOutputReference
 ```
@@ -3872,7 +3872,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.ServiceShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 service.NewServiceShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceShowOutputList
 ```
@@ -4021,7 +4021,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 service.NewServiceShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceShowOutputOutputReference
 ```
@@ -4596,7 +4596,7 @@ func InternalValue() ServiceShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/service"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/service"
 
 service.NewServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceTimeoutsOutputReference
 ```
