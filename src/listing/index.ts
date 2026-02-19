@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ListingConfig extends cdktf.TerraformMetaArguments {
+export interface ListingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies the application package attached to the listing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#application_package Listing#application_package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#application_package Listing#application_package}
   */
   readonly applicationPackage?: string;
   /**
   * Specifies a comment for the listing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#comment Listing#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#comment Listing#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#id Listing#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#id Listing#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,31 +34,31 @@ export interface ListingConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the listing identifier (name). It must be unique within the organization, regardless of which Snowflake region the account is located in. Must start with an alphabetic character and cannot contain spaces or special characters except for underscores.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#name Listing#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#name Listing#name}
   */
   readonly name: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Determines if the listing should be published.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#publish Listing#publish}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#publish Listing#publish}
   */
   readonly publish?: string;
   /**
   * Specifies the identifier for the share to attach to the listing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#share Listing#share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#share Listing#share}
   */
   readonly share?: string;
   /**
   * manifest block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#manifest Listing#manifest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#manifest Listing#manifest}
   */
   readonly manifest: ListingManifest;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#timeouts Listing#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#timeouts Listing#timeouts}
   */
   readonly timeouts?: ListingTimeouts;
 }
@@ -66,8 +66,8 @@ export interface ListingShowOutput {
 }
 
 export function listingShowOutputToTerraform(struct?: ListingShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -76,8 +76,8 @@ export function listingShowOutputToTerraform(struct?: ListingShowOutput): any {
 
 
 export function listingShowOutputToHclTerraform(struct?: ListingShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -85,7 +85,7 @@ export function listingShowOutputToHclTerraform(struct?: ListingShowOutput): any
   return attrs;
 }
 
-export class ListingShowOutputOutputReference extends cdktf.ComplexObject {
+export class ListingShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -94,7 +94,7 @@ export class ListingShowOutputOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -244,14 +244,14 @@ export class ListingShowOutputOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ListingShowOutputList extends cdktf.ComplexList {
+export class ListingShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -266,69 +266,69 @@ export interface ListingManifestFromStage {
   /**
   * Location of the manifest file in the stage. If not specified, the manifest file will be expected to be at the root of the stage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#location Listing#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#location Listing#location}
   */
   readonly location?: string;
   /**
   * Identifier of the stage where the manifest file is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#stage Listing#stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#stage Listing#stage}
   */
   readonly stage: string;
   /**
   * Specifies a comment for the listing version. Whenever a new version is created, this comment will be associated with it. The comment on the version will be visible in the [SHOW VERSIONS IN LISTING](https://docs.snowflake.com/en/sql-reference/sql/show-versions-in-listing) command output.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#version_comment Listing#version_comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#version_comment Listing#version_comment}
   */
   readonly versionComment?: string;
   /**
   * Represents manifest version name. It's case-sensitive and used in manifest versioning. Version name should be specified or changed whenever any changes in the manifest should be applied to the listing. Later on the versions of the listing can be analyzed by calling the [SHOW VERSIONS IN LISTING](https://docs.snowflake.com/en/sql-reference/sql/show-versions-in-listing) command. The resource does not track the changes on the specified stage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#version_name Listing#version_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#version_name Listing#version_name}
   */
   readonly versionName?: string;
 }
 
 export function listingManifestFromStageToTerraform(struct?: ListingManifestFromStageOutputReference | ListingManifestFromStage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    location: cdktf.stringToTerraform(struct!.location),
-    stage: cdktf.stringToTerraform(struct!.stage),
-    version_comment: cdktf.stringToTerraform(struct!.versionComment),
-    version_name: cdktf.stringToTerraform(struct!.versionName),
+    location: cdktn.stringToTerraform(struct!.location),
+    stage: cdktn.stringToTerraform(struct!.stage),
+    version_comment: cdktn.stringToTerraform(struct!.versionComment),
+    version_name: cdktn.stringToTerraform(struct!.versionName),
   }
 }
 
 
 export function listingManifestFromStageToHclTerraform(struct?: ListingManifestFromStageOutputReference | ListingManifestFromStage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stage: {
-      value: cdktf.stringToHclTerraform(struct!.stage),
+      value: cdktn.stringToHclTerraform(struct!.stage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version_comment: {
-      value: cdktf.stringToHclTerraform(struct!.versionComment),
+      value: cdktn.stringToHclTerraform(struct!.versionComment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version_name: {
-      value: cdktf.stringToHclTerraform(struct!.versionName),
+      value: cdktn.stringToHclTerraform(struct!.versionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -339,14 +339,14 @@ export function listingManifestFromStageToHclTerraform(struct?: ListingManifestF
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ListingManifestFromStageOutputReference extends cdktf.ComplexObject {
+export class ListingManifestFromStageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -454,37 +454,37 @@ export interface ListingManifest {
   /**
   * Manifest provided as a string. Wrapping `$$` signs are added by the provider automatically; do not include them. For more information on manifest syntax, see [Listing manifest reference](https://docs.snowflake.com/en/progaccess/listing-manifest-reference). Also, the [multiline string syntax](https://developer.hashicorp.com/terraform/language/expressions/strings#heredoc-strings) is a must here. A proper YAML indentation (2 spaces) is required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#from_string Listing#from_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#from_string Listing#from_string}
   */
   readonly fromString?: string;
   /**
   * from_stage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#from_stage Listing#from_stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#from_stage Listing#from_stage}
   */
   readonly fromStage?: ListingManifestFromStage;
 }
 
 export function listingManifestToTerraform(struct?: ListingManifestOutputReference | ListingManifest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from_string: cdktf.stringToTerraform(struct!.fromString),
+    from_string: cdktn.stringToTerraform(struct!.fromString),
     from_stage: listingManifestFromStageToTerraform(struct!.fromStage),
   }
 }
 
 
 export function listingManifestToHclTerraform(struct?: ListingManifestOutputReference | ListingManifest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from_string: {
-      value: cdktf.stringToHclTerraform(struct!.fromString),
+      value: cdktn.stringToHclTerraform(struct!.fromString),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -501,14 +501,14 @@ export function listingManifestToHclTerraform(struct?: ListingManifestOutputRefe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ListingManifestOutputReference extends cdktf.ComplexObject {
+export class ListingManifestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -573,63 +573,63 @@ export class ListingManifestOutputReference extends cdktf.ComplexObject {
 }
 export interface ListingTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#create Listing#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#create Listing#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#delete Listing#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#delete Listing#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#read Listing#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#read Listing#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#update Listing#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#update Listing#update}
   */
   readonly update?: string;
 }
 
-export function listingTimeoutsToTerraform(struct?: ListingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function listingTimeoutsToTerraform(struct?: ListingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function listingTimeoutsToHclTerraform(struct?: ListingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function listingTimeoutsToHclTerraform(struct?: ListingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -640,19 +640,19 @@ export function listingTimeoutsToHclTerraform(struct?: ListingTimeouts | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ListingTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ListingTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ListingTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ListingTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -677,7 +677,7 @@ export class ListingTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ListingTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ListingTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -686,7 +686,7 @@ export class ListingTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -766,9 +766,9 @@ export class ListingTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing snowflake_listing}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing snowflake_listing}
 */
-export class Listing extends cdktf.TerraformResource {
+export class Listing extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -779,14 +779,14 @@ export class Listing extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Listing resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Listing resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Listing to import
-  * @param importFromId The id of the existing Listing that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Listing that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Listing to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_listing", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_listing", importId: importFromId, provider });
       }
 
   // ===========
@@ -794,7 +794,7 @@ export class Listing extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/listing snowflake_listing} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/listing snowflake_listing} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -805,7 +805,7 @@ export class Listing extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_listing',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -969,12 +969,12 @@ export class Listing extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_package: cdktf.stringToTerraform(this._applicationPackage),
-      comment: cdktf.stringToTerraform(this._comment),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      publish: cdktf.stringToTerraform(this._publish),
-      share: cdktf.stringToTerraform(this._share),
+      application_package: cdktn.stringToTerraform(this._applicationPackage),
+      comment: cdktn.stringToTerraform(this._comment),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      publish: cdktn.stringToTerraform(this._publish),
+      share: cdktn.stringToTerraform(this._share),
       manifest: listingManifestToTerraform(this._manifest.internalValue),
       timeouts: listingTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -983,37 +983,37 @@ export class Listing extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_package: {
-        value: cdktf.stringToHclTerraform(this._applicationPackage),
+        value: cdktn.stringToHclTerraform(this._applicationPackage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       publish: {
-        value: cdktf.stringToHclTerraform(this._publish),
+        value: cdktn.stringToHclTerraform(this._publish),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       share: {
-        value: cdktf.stringToHclTerraform(this._share),
+        value: cdktn.stringToHclTerraform(this._share),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

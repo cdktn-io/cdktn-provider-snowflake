@@ -1,49 +1,49 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ExternalFunctionConfig extends cdktf.TerraformMetaArguments {
+export interface ExternalFunctionConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the API integration object that should be used to authenticate the call to the proxy service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#api_integration ExternalFunction#api_integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#api_integration ExternalFunction#api_integration}
   */
   readonly apiIntegration: string;
   /**
   * (Default: `user-defined function`) A description of the external function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#comment ExternalFunction#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#comment ExternalFunction#comment}
   */
   readonly comment?: string;
   /**
   * (Default: `AUTO`) If specified, the JSON payload is compressed when sent from Snowflake to the proxy service, and when sent back from the proxy service to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#compression ExternalFunction#compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#compression ExternalFunction#compression}
   */
   readonly compression?: string;
   /**
   * Binds Snowflake context function results to HTTP headers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#context_headers ExternalFunction#context_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#context_headers ExternalFunction#context_headers}
   */
   readonly contextHeaders?: string[];
   /**
   * The database in which to create the external function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#database ExternalFunction#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#database ExternalFunction#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#id ExternalFunction#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#id ExternalFunction#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,79 +52,79 @@ export interface ExternalFunctionConfig extends cdktf.TerraformMetaArguments {
   /**
   * This specifies the maximum number of rows in each batch sent to the proxy service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#max_batch_rows ExternalFunction#max_batch_rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#max_batch_rows ExternalFunction#max_batch_rows}
   */
   readonly maxBatchRows?: number;
   /**
   * Specifies the identifier for the external function. The identifier can contain the schema name and database name, as well as the function name. The function's signature (name and argument data types) must be unique within the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#name ExternalFunction#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#name ExternalFunction#name}
   */
   readonly name: string;
   /**
   * (Default: `CALLED ON NULL INPUT`) Specifies the behavior of the external function when called with null inputs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#null_input_behavior ExternalFunction#null_input_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#null_input_behavior ExternalFunction#null_input_behavior}
   */
   readonly nullInputBehavior?: string;
   /**
   * This specifies the name of the request translator function
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#request_translator ExternalFunction#request_translator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#request_translator ExternalFunction#request_translator}
   */
   readonly requestTranslator?: string;
   /**
   * This specifies the name of the response translator function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#response_translator ExternalFunction#response_translator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#response_translator ExternalFunction#response_translator}
   */
   readonly responseTranslator?: string;
   /**
   * Specifies the behavior of the function when returning results
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#return_behavior ExternalFunction#return_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#return_behavior ExternalFunction#return_behavior}
   */
   readonly returnBehavior: string;
   /**
   * (Default: `true`) Indicates whether the function can return NULL values (true) or must return only NON-NULL values (false).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#return_null_allowed ExternalFunction#return_null_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#return_null_allowed ExternalFunction#return_null_allowed}
   */
-  readonly returnNullAllowed?: boolean | cdktf.IResolvable;
+  readonly returnNullAllowed?: boolean | cdktn.IResolvable;
   /**
   * Specifies the data type returned by the external function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#return_type ExternalFunction#return_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#return_type ExternalFunction#return_type}
   */
   readonly returnType: string;
   /**
   * The schema in which to create the external function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#schema ExternalFunction#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#schema ExternalFunction#schema}
   */
   readonly schema: string;
   /**
   * This is the invocation URL of the proxy service and resource through which Snowflake calls the remote service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#url_of_proxy_and_resource ExternalFunction#url_of_proxy_and_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#url_of_proxy_and_resource ExternalFunction#url_of_proxy_and_resource}
   */
   readonly urlOfProxyAndResource: string;
   /**
   * arg block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#arg ExternalFunction#arg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#arg ExternalFunction#arg}
   */
-  readonly arg?: ExternalFunctionArg[] | cdktf.IResolvable;
+  readonly arg?: ExternalFunctionArg[] | cdktn.IResolvable;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#header ExternalFunction#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#header ExternalFunction#header}
   */
-  readonly header?: ExternalFunctionHeader[] | cdktf.IResolvable;
+  readonly header?: ExternalFunctionHeader[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#timeouts ExternalFunction#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#timeouts ExternalFunction#timeouts}
   */
   readonly timeouts?: ExternalFunctionTimeouts;
 }
@@ -132,43 +132,43 @@ export interface ExternalFunctionArg {
   /**
   * Argument name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#name ExternalFunction#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#name ExternalFunction#name}
   */
   readonly name: string;
   /**
   * Argument type, e.g. VARCHAR
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#type ExternalFunction#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#type ExternalFunction#type}
   */
   readonly type: string;
 }
 
-export function externalFunctionArgToTerraform(struct?: ExternalFunctionArg | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function externalFunctionArgToTerraform(struct?: ExternalFunctionArg | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function externalFunctionArgToHclTerraform(struct?: ExternalFunctionArg | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function externalFunctionArgToHclTerraform(struct?: ExternalFunctionArg | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -179,9 +179,9 @@ export function externalFunctionArgToHclTerraform(struct?: ExternalFunctionArg |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ExternalFunctionArgOutputReference extends cdktf.ComplexObject {
+export class ExternalFunctionArgOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -189,11 +189,11 @@ export class ExternalFunctionArgOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ExternalFunctionArg | cdktf.IResolvable | undefined {
+  public get internalValue(): ExternalFunctionArg | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -210,14 +210,14 @@ export class ExternalFunctionArgOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ExternalFunctionArg | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ExternalFunctionArg | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -256,15 +256,15 @@ export class ExternalFunctionArgOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ExternalFunctionArgList extends cdktf.ComplexList {
-  public internalValue? : ExternalFunctionArg[] | cdktf.IResolvable
+export class ExternalFunctionArgList extends cdktn.ComplexList {
+  public internalValue? : ExternalFunctionArg[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -279,43 +279,43 @@ export interface ExternalFunctionHeader {
   /**
   * Header name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#name ExternalFunction#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#name ExternalFunction#name}
   */
   readonly name: string;
   /**
   * Header value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#value ExternalFunction#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#value ExternalFunction#value}
   */
   readonly value: string;
 }
 
-export function externalFunctionHeaderToTerraform(struct?: ExternalFunctionHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function externalFunctionHeaderToTerraform(struct?: ExternalFunctionHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function externalFunctionHeaderToHclTerraform(struct?: ExternalFunctionHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function externalFunctionHeaderToHclTerraform(struct?: ExternalFunctionHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -326,9 +326,9 @@ export function externalFunctionHeaderToHclTerraform(struct?: ExternalFunctionHe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ExternalFunctionHeaderOutputReference extends cdktf.ComplexObject {
+export class ExternalFunctionHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -336,11 +336,11 @@ export class ExternalFunctionHeaderOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ExternalFunctionHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): ExternalFunctionHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -357,14 +357,14 @@ export class ExternalFunctionHeaderOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ExternalFunctionHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ExternalFunctionHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -403,15 +403,15 @@ export class ExternalFunctionHeaderOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ExternalFunctionHeaderList extends cdktf.ComplexList {
-  public internalValue? : ExternalFunctionHeader[] | cdktf.IResolvable
+export class ExternalFunctionHeaderList extends cdktn.ComplexList {
+  public internalValue? : ExternalFunctionHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -424,63 +424,63 @@ export class ExternalFunctionHeaderList extends cdktf.ComplexList {
 }
 export interface ExternalFunctionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#create ExternalFunction#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#create ExternalFunction#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#delete ExternalFunction#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#delete ExternalFunction#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#read ExternalFunction#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#read ExternalFunction#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#update ExternalFunction#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#update ExternalFunction#update}
   */
   readonly update?: string;
 }
 
-export function externalFunctionTimeoutsToTerraform(struct?: ExternalFunctionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function externalFunctionTimeoutsToTerraform(struct?: ExternalFunctionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function externalFunctionTimeoutsToHclTerraform(struct?: ExternalFunctionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function externalFunctionTimeoutsToHclTerraform(struct?: ExternalFunctionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -491,19 +491,19 @@ export function externalFunctionTimeoutsToHclTerraform(struct?: ExternalFunction
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ExternalFunctionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ExternalFunctionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ExternalFunctionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ExternalFunctionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -528,7 +528,7 @@ export class ExternalFunctionTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ExternalFunctionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ExternalFunctionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -537,7 +537,7 @@ export class ExternalFunctionTimeoutsOutputReference extends cdktf.ComplexObject
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -617,9 +617,9 @@ export class ExternalFunctionTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function snowflake_external_function}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function snowflake_external_function}
 */
-export class ExternalFunction extends cdktf.TerraformResource {
+export class ExternalFunction extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -630,14 +630,14 @@ export class ExternalFunction extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ExternalFunction resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ExternalFunction resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ExternalFunction to import
-  * @param importFromId The id of the existing ExternalFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ExternalFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ExternalFunction to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_external_function", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_external_function", importId: importFromId, provider });
       }
 
   // ===========
@@ -645,7 +645,7 @@ export class ExternalFunction extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_function snowflake_external_function} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_function snowflake_external_function} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -656,7 +656,7 @@ export class ExternalFunction extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_external_function',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -883,11 +883,11 @@ export class ExternalFunction extends cdktf.TerraformResource {
   }
 
   // return_null_allowed - computed: false, optional: true, required: false
-  private _returnNullAllowed?: boolean | cdktf.IResolvable; 
+  private _returnNullAllowed?: boolean | cdktn.IResolvable; 
   public get returnNullAllowed() {
     return this.getBooleanAttribute('return_null_allowed');
   }
-  public set returnNullAllowed(value: boolean | cdktf.IResolvable) {
+  public set returnNullAllowed(value: boolean | cdktn.IResolvable) {
     this._returnNullAllowed = value;
   }
   public resetReturnNullAllowed() {
@@ -942,7 +942,7 @@ export class ExternalFunction extends cdktf.TerraformResource {
   public get arg() {
     return this._arg;
   }
-  public putArg(value: ExternalFunctionArg[] | cdktf.IResolvable) {
+  public putArg(value: ExternalFunctionArg[] | cdktn.IResolvable) {
     this._arg.internalValue = value;
   }
   public resetArg() {
@@ -958,7 +958,7 @@ export class ExternalFunction extends cdktf.TerraformResource {
   public get header() {
     return this._header;
   }
-  public putHeader(value: ExternalFunctionHeader[] | cdktf.IResolvable) {
+  public putHeader(value: ExternalFunctionHeader[] | cdktn.IResolvable) {
     this._header.internalValue = value;
   }
   public resetHeader() {
@@ -991,24 +991,24 @@ export class ExternalFunction extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_integration: cdktf.stringToTerraform(this._apiIntegration),
-      comment: cdktf.stringToTerraform(this._comment),
-      compression: cdktf.stringToTerraform(this._compression),
-      context_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._contextHeaders),
-      database: cdktf.stringToTerraform(this._database),
-      id: cdktf.stringToTerraform(this._id),
-      max_batch_rows: cdktf.numberToTerraform(this._maxBatchRows),
-      name: cdktf.stringToTerraform(this._name),
-      null_input_behavior: cdktf.stringToTerraform(this._nullInputBehavior),
-      request_translator: cdktf.stringToTerraform(this._requestTranslator),
-      response_translator: cdktf.stringToTerraform(this._responseTranslator),
-      return_behavior: cdktf.stringToTerraform(this._returnBehavior),
-      return_null_allowed: cdktf.booleanToTerraform(this._returnNullAllowed),
-      return_type: cdktf.stringToTerraform(this._returnType),
-      schema: cdktf.stringToTerraform(this._schema),
-      url_of_proxy_and_resource: cdktf.stringToTerraform(this._urlOfProxyAndResource),
-      arg: cdktf.listMapper(externalFunctionArgToTerraform, true)(this._arg.internalValue),
-      header: cdktf.listMapper(externalFunctionHeaderToTerraform, true)(this._header.internalValue),
+      api_integration: cdktn.stringToTerraform(this._apiIntegration),
+      comment: cdktn.stringToTerraform(this._comment),
+      compression: cdktn.stringToTerraform(this._compression),
+      context_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._contextHeaders),
+      database: cdktn.stringToTerraform(this._database),
+      id: cdktn.stringToTerraform(this._id),
+      max_batch_rows: cdktn.numberToTerraform(this._maxBatchRows),
+      name: cdktn.stringToTerraform(this._name),
+      null_input_behavior: cdktn.stringToTerraform(this._nullInputBehavior),
+      request_translator: cdktn.stringToTerraform(this._requestTranslator),
+      response_translator: cdktn.stringToTerraform(this._responseTranslator),
+      return_behavior: cdktn.stringToTerraform(this._returnBehavior),
+      return_null_allowed: cdktn.booleanToTerraform(this._returnNullAllowed),
+      return_type: cdktn.stringToTerraform(this._returnType),
+      schema: cdktn.stringToTerraform(this._schema),
+      url_of_proxy_and_resource: cdktn.stringToTerraform(this._urlOfProxyAndResource),
+      arg: cdktn.listMapper(externalFunctionArgToTerraform, true)(this._arg.internalValue),
+      header: cdktn.listMapper(externalFunctionHeaderToTerraform, true)(this._header.internalValue),
       timeouts: externalFunctionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1016,109 +1016,109 @@ export class ExternalFunction extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_integration: {
-        value: cdktf.stringToHclTerraform(this._apiIntegration),
+        value: cdktn.stringToHclTerraform(this._apiIntegration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       compression: {
-        value: cdktf.stringToHclTerraform(this._compression),
+        value: cdktn.stringToHclTerraform(this._compression),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       context_headers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._contextHeaders),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._contextHeaders),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_batch_rows: {
-        value: cdktf.numberToHclTerraform(this._maxBatchRows),
+        value: cdktn.numberToHclTerraform(this._maxBatchRows),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       null_input_behavior: {
-        value: cdktf.stringToHclTerraform(this._nullInputBehavior),
+        value: cdktn.stringToHclTerraform(this._nullInputBehavior),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       request_translator: {
-        value: cdktf.stringToHclTerraform(this._requestTranslator),
+        value: cdktn.stringToHclTerraform(this._requestTranslator),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       response_translator: {
-        value: cdktf.stringToHclTerraform(this._responseTranslator),
+        value: cdktn.stringToHclTerraform(this._responseTranslator),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       return_behavior: {
-        value: cdktf.stringToHclTerraform(this._returnBehavior),
+        value: cdktn.stringToHclTerraform(this._returnBehavior),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       return_null_allowed: {
-        value: cdktf.booleanToHclTerraform(this._returnNullAllowed),
+        value: cdktn.booleanToHclTerraform(this._returnNullAllowed),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       return_type: {
-        value: cdktf.stringToHclTerraform(this._returnType),
+        value: cdktn.stringToHclTerraform(this._returnType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       url_of_proxy_and_resource: {
-        value: cdktf.stringToHclTerraform(this._urlOfProxyAndResource),
+        value: cdktn.stringToHclTerraform(this._urlOfProxyAndResource),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       arg: {
-        value: cdktf.listMapperHcl(externalFunctionArgToHclTerraform, true)(this._arg.internalValue),
+        value: cdktn.listMapperHcl(externalFunctionArgToHclTerraform, true)(this._arg.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ExternalFunctionArgList",
       },
       header: {
-        value: cdktf.listMapperHcl(externalFunctionHeaderToHclTerraform, true)(this._header.internalValue),
+        value: cdktn.listMapperHcl(externalFunctionHeaderToHclTerraform, true)(this._header.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ExternalFunctionHeaderList",

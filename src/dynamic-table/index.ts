@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DynamicTableConfig extends cdktf.TerraformMetaArguments {
+export interface DynamicTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies a comment for the dynamic table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#comment DynamicTable#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#comment DynamicTable#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the dynamic table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#database DynamicTable#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#database DynamicTable#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#id DynamicTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#id DynamicTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,55 +34,55 @@ export interface DynamicTableConfig extends cdktf.TerraformMetaArguments {
   /**
   * (Default: `ON_CREATE`) Initialize trigger for the dynamic table. Can only be set on creation. Available options are ON_CREATE and ON_SCHEDULE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#initialize DynamicTable#initialize}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#initialize DynamicTable#initialize}
   */
   readonly initialize?: string;
   /**
   * Specifies the identifier (i.e. name) for the dynamic table; must be unique for the schema in which the dynamic table is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#name DynamicTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#name DynamicTable#name}
   */
   readonly name: string;
   /**
   * (Default: `false`) Specifies whether to replace the dynamic table if it already exists.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#or_replace DynamicTable#or_replace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#or_replace DynamicTable#or_replace}
   */
-  readonly orReplace?: boolean | cdktf.IResolvable;
+  readonly orReplace?: boolean | cdktn.IResolvable;
   /**
   * Specifies the query to use to populate the dynamic table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#query DynamicTable#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#query DynamicTable#query}
   */
   readonly query: string;
   /**
   * (Default: `AUTO`) INCREMENTAL to use incremental refreshes, FULL to recompute the whole table on every refresh, or AUTO to let Snowflake decide.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#refresh_mode DynamicTable#refresh_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#refresh_mode DynamicTable#refresh_mode}
   */
   readonly refreshMode?: string;
   /**
   * The schema in which to create the dynamic table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#schema DynamicTable#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#schema DynamicTable#schema}
   */
   readonly schema: string;
   /**
   * The warehouse in which to create the dynamic table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#warehouse DynamicTable#warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#warehouse DynamicTable#warehouse}
   */
   readonly warehouse: string;
   /**
   * target_lag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#target_lag DynamicTable#target_lag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#target_lag DynamicTable#target_lag}
   */
   readonly targetLag: DynamicTableTargetLag;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#timeouts DynamicTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#timeouts DynamicTable#timeouts}
   */
   readonly timeouts?: DynamicTableTimeouts;
 }
@@ -90,43 +90,43 @@ export interface DynamicTableTargetLag {
   /**
   * Specifies whether the target lag time is downstream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#downstream DynamicTable#downstream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#downstream DynamicTable#downstream}
   */
-  readonly downstream?: boolean | cdktf.IResolvable;
+  readonly downstream?: boolean | cdktn.IResolvable;
   /**
   * Specifies the maximum target lag time for the dynamic table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#maximum_duration DynamicTable#maximum_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#maximum_duration DynamicTable#maximum_duration}
   */
   readonly maximumDuration?: string;
 }
 
 export function dynamicTableTargetLagToTerraform(struct?: DynamicTableTargetLagOutputReference | DynamicTableTargetLag): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    downstream: cdktf.booleanToTerraform(struct!.downstream),
-    maximum_duration: cdktf.stringToTerraform(struct!.maximumDuration),
+    downstream: cdktn.booleanToTerraform(struct!.downstream),
+    maximum_duration: cdktn.stringToTerraform(struct!.maximumDuration),
   }
 }
 
 
 export function dynamicTableTargetLagToHclTerraform(struct?: DynamicTableTargetLagOutputReference | DynamicTableTargetLag): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     downstream: {
-      value: cdktf.booleanToHclTerraform(struct!.downstream),
+      value: cdktn.booleanToHclTerraform(struct!.downstream),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     maximum_duration: {
-      value: cdktf.stringToHclTerraform(struct!.maximumDuration),
+      value: cdktn.stringToHclTerraform(struct!.maximumDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -137,14 +137,14 @@ export function dynamicTableTargetLagToHclTerraform(struct?: DynamicTableTargetL
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamicTableTargetLagOutputReference extends cdktf.ComplexObject {
+export class DynamicTableTargetLagOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -176,11 +176,11 @@ export class DynamicTableTargetLagOutputReference extends cdktf.ComplexObject {
   }
 
   // downstream - computed: false, optional: true, required: false
-  private _downstream?: boolean | cdktf.IResolvable; 
+  private _downstream?: boolean | cdktn.IResolvable; 
   public get downstream() {
     return this.getBooleanAttribute('downstream');
   }
-  public set downstream(value: boolean | cdktf.IResolvable) {
+  public set downstream(value: boolean | cdktn.IResolvable) {
     this._downstream = value;
   }
   public resetDownstream() {
@@ -209,63 +209,63 @@ export class DynamicTableTargetLagOutputReference extends cdktf.ComplexObject {
 }
 export interface DynamicTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#create DynamicTable#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#create DynamicTable#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#delete DynamicTable#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#delete DynamicTable#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#read DynamicTable#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#read DynamicTable#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#update DynamicTable#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#update DynamicTable#update}
   */
   readonly update?: string;
 }
 
-export function dynamicTableTimeoutsToTerraform(struct?: DynamicTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynamicTableTimeoutsToTerraform(struct?: DynamicTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dynamicTableTimeoutsToHclTerraform(struct?: DynamicTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynamicTableTimeoutsToHclTerraform(struct?: DynamicTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -276,19 +276,19 @@ export function dynamicTableTimeoutsToHclTerraform(struct?: DynamicTableTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynamicTableTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DynamicTableTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DynamicTableTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DynamicTableTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -313,7 +313,7 @@ export class DynamicTableTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DynamicTableTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DynamicTableTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -322,7 +322,7 @@ export class DynamicTableTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -402,9 +402,9 @@ export class DynamicTableTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table snowflake_dynamic_table}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table snowflake_dynamic_table}
 */
-export class DynamicTable extends cdktf.TerraformResource {
+export class DynamicTable extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -415,14 +415,14 @@ export class DynamicTable extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DynamicTable resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DynamicTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DynamicTable to import
-  * @param importFromId The id of the existing DynamicTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DynamicTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DynamicTable to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_dynamic_table", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_dynamic_table", importId: importFromId, provider });
       }
 
   // ===========
@@ -430,7 +430,7 @@ export class DynamicTable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/dynamic_table snowflake_dynamic_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/dynamic_table snowflake_dynamic_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -441,7 +441,7 @@ export class DynamicTable extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_dynamic_table',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -590,11 +590,11 @@ export class DynamicTable extends cdktf.TerraformResource {
   }
 
   // or_replace - computed: false, optional: true, required: false
-  private _orReplace?: boolean | cdktf.IResolvable; 
+  private _orReplace?: boolean | cdktn.IResolvable; 
   public get orReplace() {
     return this.getBooleanAttribute('or_replace');
   }
-  public set orReplace(value: boolean | cdktf.IResolvable) {
+  public set orReplace(value: boolean | cdktn.IResolvable) {
     this._orReplace = value;
   }
   public resetOrReplace() {
@@ -715,16 +715,16 @@ export class DynamicTable extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      database: cdktf.stringToTerraform(this._database),
-      id: cdktf.stringToTerraform(this._id),
-      initialize: cdktf.stringToTerraform(this._initialize),
-      name: cdktf.stringToTerraform(this._name),
-      or_replace: cdktf.booleanToTerraform(this._orReplace),
-      query: cdktf.stringToTerraform(this._query),
-      refresh_mode: cdktf.stringToTerraform(this._refreshMode),
-      schema: cdktf.stringToTerraform(this._schema),
-      warehouse: cdktf.stringToTerraform(this._warehouse),
+      comment: cdktn.stringToTerraform(this._comment),
+      database: cdktn.stringToTerraform(this._database),
+      id: cdktn.stringToTerraform(this._id),
+      initialize: cdktn.stringToTerraform(this._initialize),
+      name: cdktn.stringToTerraform(this._name),
+      or_replace: cdktn.booleanToTerraform(this._orReplace),
+      query: cdktn.stringToTerraform(this._query),
+      refresh_mode: cdktn.stringToTerraform(this._refreshMode),
+      schema: cdktn.stringToTerraform(this._schema),
+      warehouse: cdktn.stringToTerraform(this._warehouse),
       target_lag: dynamicTableTargetLagToTerraform(this._targetLag.internalValue),
       timeouts: dynamicTableTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -733,61 +733,61 @@ export class DynamicTable extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       initialize: {
-        value: cdktf.stringToHclTerraform(this._initialize),
+        value: cdktn.stringToHclTerraform(this._initialize),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       or_replace: {
-        value: cdktf.booleanToHclTerraform(this._orReplace),
+        value: cdktn.booleanToHclTerraform(this._orReplace),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       query: {
-        value: cdktf.stringToHclTerraform(this._query),
+        value: cdktn.stringToHclTerraform(this._query),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       refresh_mode: {
-        value: cdktf.stringToHclTerraform(this._refreshMode),
+        value: cdktn.stringToHclTerraform(this._refreshMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       warehouse: {
-        value: cdktf.stringToHclTerraform(this._warehouse),
+        value: cdktn.stringToHclTerraform(this._warehouse),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

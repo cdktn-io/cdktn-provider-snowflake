@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiAuthenticationIntegrationWithAuthorizationCodeGrantConfig extends cdktf.TerraformMetaArguments {
+export interface ApiAuthenticationIntegrationWithAuthorizationCodeGrantConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies a comment for the integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant#comment ApiAuthenticationIntegrationWithAuthorizationCodeGrant#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant#comment ApiAuthenticationIntegrationWithAuthorizationCodeGrant#comment}
   */
   readonly comment?: string;
   /**
   * Specifies whether this security integration is enabled or disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant#enabled ApiAuthenticationIntegrationWithAuthorizationCodeGrant#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant#enabled ApiAuthenticationIntegrationWithAuthorizationCodeGrant#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant#id ApiAuthenticationIntegrationWithAuthorizationCodeGrant#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant#id ApiAuthenticationIntegrationWithAuthorizationCodeGrant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,61 +34,61 @@ export interface ApiAuthenticationIntegrationWithAuthorizationCodeGrantConfig ex
   /**
   * Specifies the identifier (i.e. name) for the integration. This value must be unique in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant#name ApiAuthenticationIntegrationWithAuthorizationCodeGrant#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant#name ApiAuthenticationIntegrationWithAuthorizationCodeGrant#name}
   */
   readonly name: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the default lifetime of the OAuth access token (in seconds) issued by an OAuth server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant#oauth_access_token_validity ApiAuthenticationIntegrationWithAuthorizationCodeGrant#oauth_access_token_validity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant#oauth_access_token_validity ApiAuthenticationIntegrationWithAuthorizationCodeGrant#oauth_access_token_validity}
   */
   readonly oauthAccessTokenValidity?: number;
   /**
   * Specifies a list of scopes to use when making a request from the OAuth by a role with USAGE on the integration during the OAuth client credentials flow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant#oauth_allowed_scopes ApiAuthenticationIntegrationWithAuthorizationCodeGrant#oauth_allowed_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant#oauth_allowed_scopes ApiAuthenticationIntegrationWithAuthorizationCodeGrant#oauth_allowed_scopes}
   */
   readonly oauthAllowedScopes?: string[];
   /**
   * Specifies the URL for authenticating to the external service. If removed from the config, the resource is recreated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant#oauth_authorization_endpoint ApiAuthenticationIntegrationWithAuthorizationCodeGrant#oauth_authorization_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant#oauth_authorization_endpoint ApiAuthenticationIntegrationWithAuthorizationCodeGrant#oauth_authorization_endpoint}
   */
   readonly oauthAuthorizationEndpoint?: string;
   /**
   * Specifies that POST is used as the authentication method to the external service. If removed from the config, the resource is recreated. Valid values are (case-insensitive): `CLIENT_SECRET_POST`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant#oauth_client_auth_method ApiAuthenticationIntegrationWithAuthorizationCodeGrant#oauth_client_auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant#oauth_client_auth_method ApiAuthenticationIntegrationWithAuthorizationCodeGrant#oauth_client_auth_method}
   */
   readonly oauthClientAuthMethod?: string;
   /**
   * Specifies the client ID for the OAuth application in the external service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant#oauth_client_id ApiAuthenticationIntegrationWithAuthorizationCodeGrant#oauth_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant#oauth_client_id ApiAuthenticationIntegrationWithAuthorizationCodeGrant#oauth_client_id}
   */
   readonly oauthClientId: string;
   /**
   * Specifies the client secret for the OAuth application in the ServiceNow instance from the previous step. The connector uses this to request an access token from the ServiceNow instance. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant#oauth_client_secret ApiAuthenticationIntegrationWithAuthorizationCodeGrant#oauth_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant#oauth_client_secret ApiAuthenticationIntegrationWithAuthorizationCodeGrant#oauth_client_secret}
   */
   readonly oauthClientSecret: string;
   /**
   * Specifies the value to determine the validity of the refresh token obtained from the OAuth server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant#oauth_refresh_token_validity ApiAuthenticationIntegrationWithAuthorizationCodeGrant#oauth_refresh_token_validity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant#oauth_refresh_token_validity ApiAuthenticationIntegrationWithAuthorizationCodeGrant#oauth_refresh_token_validity}
   */
   readonly oauthRefreshTokenValidity?: number;
   /**
   * Specifies the token endpoint used by the client to obtain an access token by presenting its authorization grant or refresh token. The token endpoint is used with every authorization grant except for the implicit grant type (since an access token is issued directly). If removed from the config, the resource is recreated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant#oauth_token_endpoint ApiAuthenticationIntegrationWithAuthorizationCodeGrant#oauth_token_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant#oauth_token_endpoint ApiAuthenticationIntegrationWithAuthorizationCodeGrant#oauth_token_endpoint}
   */
   readonly oauthTokenEndpoint?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant#timeouts ApiAuthenticationIntegrationWithAuthorizationCodeGrant#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant#timeouts ApiAuthenticationIntegrationWithAuthorizationCodeGrant#timeouts}
   */
   readonly timeouts?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantTimeouts;
 }
@@ -96,8 +96,8 @@ export interface ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeO
 }
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputAuthTypeToTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputAuthType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -106,8 +106,8 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
 
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputAuthTypeToHclTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputAuthType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -115,7 +115,7 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
   return attrs;
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputAuthTypeOutputReference extends cdktf.ComplexObject {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputAuthTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -124,7 +124,7 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -164,14 +164,14 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   }
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputAuthTypeList extends cdktf.ComplexList {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputAuthTypeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -186,8 +186,8 @@ export interface ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeO
 }
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputCommentToTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputComment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -196,8 +196,8 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
 
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputCommentToHclTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputComment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -205,7 +205,7 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
   return attrs;
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputCommentOutputReference extends cdktf.ComplexObject {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputCommentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -214,7 +214,7 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -254,14 +254,14 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   }
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputCommentList extends cdktf.ComplexList {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputCommentList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -276,8 +276,8 @@ export interface ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeO
 }
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputEnabledToTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputEnabled): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -286,8 +286,8 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
 
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputEnabledToHclTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputEnabled): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -295,7 +295,7 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
   return attrs;
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputEnabledOutputReference extends cdktf.ComplexObject {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputEnabledOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -304,7 +304,7 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -344,14 +344,14 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   }
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputEnabledList extends cdktf.ComplexList {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputEnabledList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -366,8 +366,8 @@ export interface ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeO
 }
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAccessTokenValidityToTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAccessTokenValidity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -376,8 +376,8 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
 
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAccessTokenValidityToHclTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAccessTokenValidity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -385,7 +385,7 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
   return attrs;
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAccessTokenValidityOutputReference extends cdktf.ComplexObject {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAccessTokenValidityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -394,7 +394,7 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -434,14 +434,14 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   }
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAccessTokenValidityList extends cdktf.ComplexList {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAccessTokenValidityList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -456,8 +456,8 @@ export interface ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeO
 }
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAllowedScopesToTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAllowedScopes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -466,8 +466,8 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
 
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAllowedScopesToHclTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAllowedScopes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -475,7 +475,7 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
   return attrs;
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAllowedScopesOutputReference extends cdktf.ComplexObject {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAllowedScopesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -484,7 +484,7 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -524,14 +524,14 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   }
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAllowedScopesList extends cdktf.ComplexList {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAllowedScopesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -546,8 +546,8 @@ export interface ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeO
 }
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAuthorizationEndpointToTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAuthorizationEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -556,8 +556,8 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
 
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAuthorizationEndpointToHclTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAuthorizationEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -565,7 +565,7 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
   return attrs;
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAuthorizationEndpointOutputReference extends cdktf.ComplexObject {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAuthorizationEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -574,7 +574,7 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -614,14 +614,14 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   }
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAuthorizationEndpointList extends cdktf.ComplexList {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthAuthorizationEndpointList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -636,8 +636,8 @@ export interface ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeO
 }
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthClientAuthMethodToTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthClientAuthMethod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -646,8 +646,8 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
 
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthClientAuthMethodToHclTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthClientAuthMethod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -655,7 +655,7 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
   return attrs;
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthClientAuthMethodOutputReference extends cdktf.ComplexObject {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthClientAuthMethodOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -664,7 +664,7 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -704,14 +704,14 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   }
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthClientAuthMethodList extends cdktf.ComplexList {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthClientAuthMethodList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -726,8 +726,8 @@ export interface ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeO
 }
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthGrantToTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthGrant): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -736,8 +736,8 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
 
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthGrantToHclTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthGrant): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -745,7 +745,7 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
   return attrs;
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthGrantOutputReference extends cdktf.ComplexObject {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthGrantOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -754,7 +754,7 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -794,14 +794,14 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   }
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthGrantList extends cdktf.ComplexList {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthGrantList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -816,8 +816,8 @@ export interface ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeO
 }
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthRefreshTokenValidityToTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthRefreshTokenValidity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -826,8 +826,8 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
 
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthRefreshTokenValidityToHclTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthRefreshTokenValidity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -835,7 +835,7 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
   return attrs;
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthRefreshTokenValidityOutputReference extends cdktf.ComplexObject {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthRefreshTokenValidityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -844,7 +844,7 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -884,14 +884,14 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   }
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthRefreshTokenValidityList extends cdktf.ComplexList {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthRefreshTokenValidityList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -906,8 +906,8 @@ export interface ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeO
 }
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthTokenEndpointToTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthTokenEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -916,8 +916,8 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
 
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthTokenEndpointToHclTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthTokenEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -925,7 +925,7 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
   return attrs;
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthTokenEndpointOutputReference extends cdktf.ComplexObject {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthTokenEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -934,7 +934,7 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -974,14 +974,14 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   }
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthTokenEndpointList extends cdktf.ComplexList {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOauthTokenEndpointList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -996,8 +996,8 @@ export interface ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeO
 }
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputParentIntegrationToTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputParentIntegration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1006,8 +1006,8 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
 
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputParentIntegrationToHclTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputParentIntegration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1015,7 +1015,7 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
   return attrs;
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputParentIntegrationOutputReference extends cdktf.ComplexObject {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputParentIntegrationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1024,7 +1024,7 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1064,14 +1064,14 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   }
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputParentIntegrationList extends cdktf.ComplexList {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputParentIntegrationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1086,8 +1086,8 @@ export interface ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeO
 }
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputToTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1096,8 +1096,8 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
 
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputToHclTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1105,7 +1105,7 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOu
   return attrs;
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOutputReference extends cdktf.ComplexObject {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1114,7 +1114,7 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1200,14 +1200,14 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutpu
   }
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputList extends cdktf.ComplexList {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantDescribeOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1222,8 +1222,8 @@ export interface ApiAuthenticationIntegrationWithAuthorizationCodeGrantShowOutpu
 }
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantShowOutputToTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1232,8 +1232,8 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantShowOutput
 
 
 export function apiAuthenticationIntegrationWithAuthorizationCodeGrantShowOutputToHclTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1241,7 +1241,7 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantShowOutput
   return attrs;
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantShowOutputOutputReference extends cdktf.ComplexObject {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1250,7 +1250,7 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantShowOutputOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1300,14 +1300,14 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantShowOutputOut
   }
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantShowOutputList extends cdktf.ComplexList {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1320,63 +1320,63 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantShowOutputLis
 }
 export interface ApiAuthenticationIntegrationWithAuthorizationCodeGrantTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant#create ApiAuthenticationIntegrationWithAuthorizationCodeGrant#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant#create ApiAuthenticationIntegrationWithAuthorizationCodeGrant#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant#delete ApiAuthenticationIntegrationWithAuthorizationCodeGrant#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant#delete ApiAuthenticationIntegrationWithAuthorizationCodeGrant#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant#read ApiAuthenticationIntegrationWithAuthorizationCodeGrant#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant#read ApiAuthenticationIntegrationWithAuthorizationCodeGrant#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant#update ApiAuthenticationIntegrationWithAuthorizationCodeGrant#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant#update ApiAuthenticationIntegrationWithAuthorizationCodeGrant#update}
   */
   readonly update?: string;
 }
 
-export function apiAuthenticationIntegrationWithAuthorizationCodeGrantTimeoutsToTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiAuthenticationIntegrationWithAuthorizationCodeGrantTimeoutsToTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apiAuthenticationIntegrationWithAuthorizationCodeGrantTimeoutsToHclTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiAuthenticationIntegrationWithAuthorizationCodeGrantTimeoutsToHclTerraform(struct?: ApiAuthenticationIntegrationWithAuthorizationCodeGrantTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1387,19 +1387,19 @@ export function apiAuthenticationIntegrationWithAuthorizationCodeGrantTimeoutsTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApiAuthenticationIntegrationWithAuthorizationCodeGrantTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiAuthenticationIntegrationWithAuthorizationCodeGrantTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1424,7 +1424,7 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantTimeoutsOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiAuthenticationIntegrationWithAuthorizationCodeGrantTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiAuthenticationIntegrationWithAuthorizationCodeGrantTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1433,7 +1433,7 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantTimeoutsOutpu
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1513,9 +1513,9 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrantTimeoutsOutpu
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant snowflake_api_authentication_integration_with_authorization_code_grant}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant snowflake_api_authentication_integration_with_authorization_code_grant}
 */
-export class ApiAuthenticationIntegrationWithAuthorizationCodeGrant extends cdktf.TerraformResource {
+export class ApiAuthenticationIntegrationWithAuthorizationCodeGrant extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1526,14 +1526,14 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrant extends cdkt
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiAuthenticationIntegrationWithAuthorizationCodeGrant resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiAuthenticationIntegrationWithAuthorizationCodeGrant resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiAuthenticationIntegrationWithAuthorizationCodeGrant to import
-  * @param importFromId The id of the existing ApiAuthenticationIntegrationWithAuthorizationCodeGrant that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiAuthenticationIntegrationWithAuthorizationCodeGrant that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiAuthenticationIntegrationWithAuthorizationCodeGrant to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_api_authentication_integration_with_authorization_code_grant", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_api_authentication_integration_with_authorization_code_grant", importId: importFromId, provider });
       }
 
   // ===========
@@ -1541,7 +1541,7 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrant extends cdkt
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/api_authentication_integration_with_authorization_code_grant snowflake_api_authentication_integration_with_authorization_code_grant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/api_authentication_integration_with_authorization_code_grant snowflake_api_authentication_integration_with_authorization_code_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1552,7 +1552,7 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrant extends cdkt
       terraformResourceType: 'snowflake_api_authentication_integration_with_authorization_code_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -1605,11 +1605,11 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrant extends cdkt
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1670,7 +1670,7 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrant extends cdkt
   // oauth_allowed_scopes - computed: false, optional: true, required: false
   private _oauthAllowedScopes?: string[]; 
   public get oauthAllowedScopes() {
-    return cdktf.Fn.tolist(this.getListAttribute('oauth_allowed_scopes'));
+    return cdktn.Fn.tolist(this.getListAttribute('oauth_allowed_scopes'));
   }
   public set oauthAllowedScopes(value: string[]) {
     this._oauthAllowedScopes = value;
@@ -1801,18 +1801,18 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrant extends cdkt
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      oauth_access_token_validity: cdktf.numberToTerraform(this._oauthAccessTokenValidity),
-      oauth_allowed_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._oauthAllowedScopes),
-      oauth_authorization_endpoint: cdktf.stringToTerraform(this._oauthAuthorizationEndpoint),
-      oauth_client_auth_method: cdktf.stringToTerraform(this._oauthClientAuthMethod),
-      oauth_client_id: cdktf.stringToTerraform(this._oauthClientId),
-      oauth_client_secret: cdktf.stringToTerraform(this._oauthClientSecret),
-      oauth_refresh_token_validity: cdktf.numberToTerraform(this._oauthRefreshTokenValidity),
-      oauth_token_endpoint: cdktf.stringToTerraform(this._oauthTokenEndpoint),
+      comment: cdktn.stringToTerraform(this._comment),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      oauth_access_token_validity: cdktn.numberToTerraform(this._oauthAccessTokenValidity),
+      oauth_allowed_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._oauthAllowedScopes),
+      oauth_authorization_endpoint: cdktn.stringToTerraform(this._oauthAuthorizationEndpoint),
+      oauth_client_auth_method: cdktn.stringToTerraform(this._oauthClientAuthMethod),
+      oauth_client_id: cdktn.stringToTerraform(this._oauthClientId),
+      oauth_client_secret: cdktn.stringToTerraform(this._oauthClientSecret),
+      oauth_refresh_token_validity: cdktn.numberToTerraform(this._oauthRefreshTokenValidity),
+      oauth_token_endpoint: cdktn.stringToTerraform(this._oauthTokenEndpoint),
       timeouts: apiAuthenticationIntegrationWithAuthorizationCodeGrantTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1820,73 +1820,73 @@ export class ApiAuthenticationIntegrationWithAuthorizationCodeGrant extends cdkt
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oauth_access_token_validity: {
-        value: cdktf.numberToHclTerraform(this._oauthAccessTokenValidity),
+        value: cdktn.numberToHclTerraform(this._oauthAccessTokenValidity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       oauth_allowed_scopes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._oauthAllowedScopes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._oauthAllowedScopes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       oauth_authorization_endpoint: {
-        value: cdktf.stringToHclTerraform(this._oauthAuthorizationEndpoint),
+        value: cdktn.stringToHclTerraform(this._oauthAuthorizationEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oauth_client_auth_method: {
-        value: cdktf.stringToHclTerraform(this._oauthClientAuthMethod),
+        value: cdktn.stringToHclTerraform(this._oauthClientAuthMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oauth_client_id: {
-        value: cdktf.stringToHclTerraform(this._oauthClientId),
+        value: cdktn.stringToHclTerraform(this._oauthClientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oauth_client_secret: {
-        value: cdktf.stringToHclTerraform(this._oauthClientSecret),
+        value: cdktn.stringToHclTerraform(this._oauthClientSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oauth_refresh_token_validity: {
-        value: cdktf.numberToHclTerraform(this._oauthRefreshTokenValidity),
+        value: cdktn.numberToHclTerraform(this._oauthRefreshTokenValidity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       oauth_token_endpoint: {
-        value: cdktf.stringToHclTerraform(this._oauthTokenEndpoint),
+        value: cdktn.stringToHclTerraform(this._oauthTokenEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

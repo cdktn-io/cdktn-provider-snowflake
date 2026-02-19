@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_basic_authentication
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_basic_authentication
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecretWithBasicAuthenticationConfig extends cdktf.TerraformMetaArguments {
+export interface SecretWithBasicAuthenticationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies a comment for the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_basic_authentication#comment SecretWithBasicAuthentication#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_basic_authentication#comment SecretWithBasicAuthentication#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the secret Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_basic_authentication#database SecretWithBasicAuthentication#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_basic_authentication#database SecretWithBasicAuthentication#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_basic_authentication#id SecretWithBasicAuthentication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_basic_authentication#id SecretWithBasicAuthentication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,31 +34,31 @@ export interface SecretWithBasicAuthenticationConfig extends cdktf.TerraformMeta
   /**
   * String that specifies the identifier (i.e. name) for the secret, must be unique in your schema. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_basic_authentication#name SecretWithBasicAuthentication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_basic_authentication#name SecretWithBasicAuthentication#name}
   */
   readonly name: string;
   /**
   * Specifies the password value to store in the secret. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_basic_authentication#password SecretWithBasicAuthentication#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_basic_authentication#password SecretWithBasicAuthentication#password}
   */
   readonly password: string;
   /**
   * The schema in which to create the secret. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_basic_authentication#schema SecretWithBasicAuthentication#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_basic_authentication#schema SecretWithBasicAuthentication#schema}
   */
   readonly schema: string;
   /**
   * Specifies the username value to store in the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_basic_authentication#username SecretWithBasicAuthentication#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_basic_authentication#username SecretWithBasicAuthentication#username}
   */
   readonly username: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_basic_authentication#timeouts SecretWithBasicAuthentication#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_basic_authentication#timeouts SecretWithBasicAuthentication#timeouts}
   */
   readonly timeouts?: SecretWithBasicAuthenticationTimeouts;
 }
@@ -66,8 +66,8 @@ export interface SecretWithBasicAuthenticationDescribeOutput {
 }
 
 export function secretWithBasicAuthenticationDescribeOutputToTerraform(struct?: SecretWithBasicAuthenticationDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -76,8 +76,8 @@ export function secretWithBasicAuthenticationDescribeOutputToTerraform(struct?: 
 
 
 export function secretWithBasicAuthenticationDescribeOutputToHclTerraform(struct?: SecretWithBasicAuthenticationDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -85,7 +85,7 @@ export function secretWithBasicAuthenticationDescribeOutputToHclTerraform(struct
   return attrs;
 }
 
-export class SecretWithBasicAuthenticationDescribeOutputOutputReference extends cdktf.ComplexObject {
+export class SecretWithBasicAuthenticationDescribeOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -94,7 +94,7 @@ export class SecretWithBasicAuthenticationDescribeOutputOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -150,7 +150,7 @@ export class SecretWithBasicAuthenticationDescribeOutputOutputReference extends 
 
   // oauth_scopes - computed: true, optional: false, required: false
   public get oauthScopes() {
-    return cdktf.Fn.tolist(this.getListAttribute('oauth_scopes'));
+    return cdktn.Fn.tolist(this.getListAttribute('oauth_scopes'));
   }
 
   // owner - computed: true, optional: false, required: false
@@ -174,14 +174,14 @@ export class SecretWithBasicAuthenticationDescribeOutputOutputReference extends 
   }
 }
 
-export class SecretWithBasicAuthenticationDescribeOutputList extends cdktf.ComplexList {
+export class SecretWithBasicAuthenticationDescribeOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -196,8 +196,8 @@ export interface SecretWithBasicAuthenticationShowOutput {
 }
 
 export function secretWithBasicAuthenticationShowOutputToTerraform(struct?: SecretWithBasicAuthenticationShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -206,8 +206,8 @@ export function secretWithBasicAuthenticationShowOutputToTerraform(struct?: Secr
 
 
 export function secretWithBasicAuthenticationShowOutputToHclTerraform(struct?: SecretWithBasicAuthenticationShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -215,7 +215,7 @@ export function secretWithBasicAuthenticationShowOutputToHclTerraform(struct?: S
   return attrs;
 }
 
-export class SecretWithBasicAuthenticationShowOutputOutputReference extends cdktf.ComplexObject {
+export class SecretWithBasicAuthenticationShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -224,7 +224,7 @@ export class SecretWithBasicAuthenticationShowOutputOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -265,7 +265,7 @@ export class SecretWithBasicAuthenticationShowOutputOutputReference extends cdkt
 
   // oauth_scopes - computed: true, optional: false, required: false
   public get oauthScopes() {
-    return cdktf.Fn.tolist(this.getListAttribute('oauth_scopes'));
+    return cdktn.Fn.tolist(this.getListAttribute('oauth_scopes'));
   }
 
   // owner - computed: true, optional: false, required: false
@@ -289,14 +289,14 @@ export class SecretWithBasicAuthenticationShowOutputOutputReference extends cdkt
   }
 }
 
-export class SecretWithBasicAuthenticationShowOutputList extends cdktf.ComplexList {
+export class SecretWithBasicAuthenticationShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -309,63 +309,63 @@ export class SecretWithBasicAuthenticationShowOutputList extends cdktf.ComplexLi
 }
 export interface SecretWithBasicAuthenticationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_basic_authentication#create SecretWithBasicAuthentication#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_basic_authentication#create SecretWithBasicAuthentication#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_basic_authentication#delete SecretWithBasicAuthentication#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_basic_authentication#delete SecretWithBasicAuthentication#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_basic_authentication#read SecretWithBasicAuthentication#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_basic_authentication#read SecretWithBasicAuthentication#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_basic_authentication#update SecretWithBasicAuthentication#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_basic_authentication#update SecretWithBasicAuthentication#update}
   */
   readonly update?: string;
 }
 
-export function secretWithBasicAuthenticationTimeoutsToTerraform(struct?: SecretWithBasicAuthenticationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function secretWithBasicAuthenticationTimeoutsToTerraform(struct?: SecretWithBasicAuthenticationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function secretWithBasicAuthenticationTimeoutsToHclTerraform(struct?: SecretWithBasicAuthenticationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function secretWithBasicAuthenticationTimeoutsToHclTerraform(struct?: SecretWithBasicAuthenticationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -376,19 +376,19 @@ export function secretWithBasicAuthenticationTimeoutsToHclTerraform(struct?: Sec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecretWithBasicAuthenticationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SecretWithBasicAuthenticationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SecretWithBasicAuthenticationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SecretWithBasicAuthenticationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -413,7 +413,7 @@ export class SecretWithBasicAuthenticationTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecretWithBasicAuthenticationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecretWithBasicAuthenticationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -422,7 +422,7 @@ export class SecretWithBasicAuthenticationTimeoutsOutputReference extends cdktf.
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -502,9 +502,9 @@ export class SecretWithBasicAuthenticationTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_basic_authentication snowflake_secret_with_basic_authentication}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_basic_authentication snowflake_secret_with_basic_authentication}
 */
-export class SecretWithBasicAuthentication extends cdktf.TerraformResource {
+export class SecretWithBasicAuthentication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -515,14 +515,14 @@ export class SecretWithBasicAuthentication extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecretWithBasicAuthentication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecretWithBasicAuthentication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretWithBasicAuthentication to import
-  * @param importFromId The id of the existing SecretWithBasicAuthentication that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_basic_authentication#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecretWithBasicAuthentication that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_basic_authentication#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretWithBasicAuthentication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_secret_with_basic_authentication", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_secret_with_basic_authentication", importId: importFromId, provider });
       }
 
   // ===========
@@ -530,7 +530,7 @@ export class SecretWithBasicAuthentication extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secret_with_basic_authentication snowflake_secret_with_basic_authentication} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secret_with_basic_authentication snowflake_secret_with_basic_authentication} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -541,7 +541,7 @@ export class SecretWithBasicAuthentication extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_secret_with_basic_authentication',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -707,13 +707,13 @@ export class SecretWithBasicAuthentication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      database: cdktf.stringToTerraform(this._database),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      password: cdktf.stringToTerraform(this._password),
-      schema: cdktf.stringToTerraform(this._schema),
-      username: cdktf.stringToTerraform(this._username),
+      comment: cdktn.stringToTerraform(this._comment),
+      database: cdktn.stringToTerraform(this._database),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      password: cdktn.stringToTerraform(this._password),
+      schema: cdktn.stringToTerraform(this._schema),
+      username: cdktn.stringToTerraform(this._username),
       timeouts: secretWithBasicAuthenticationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -721,43 +721,43 @@ export class SecretWithBasicAuthentication extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       username: {
-        value: cdktf.stringToHclTerraform(this._username),
+        value: cdktn.stringToHclTerraform(this._username),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/users
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/users
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataSnowflakeUsersConfig extends cdktf.TerraformMetaArguments {
+export interface DataSnowflakeUsersConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/users#id DataSnowflakeUsers#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/users#id DataSnowflakeUsers#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +22,31 @@ export interface DataSnowflakeUsersConfig extends cdktf.TerraformMetaArguments {
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/users#like DataSnowflakeUsers#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/users#like DataSnowflakeUsers#like}
   */
   readonly like?: string;
   /**
   * Filters the output with **case-sensitive** characters indicating the beginning of the object name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/users#starts_with DataSnowflakeUsers#starts_with}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/users#starts_with DataSnowflakeUsers#starts_with}
   */
   readonly startsWith?: string;
   /**
   * (Default: `true`) Runs DESC USER for each user returned by SHOW USERS. The output of describe is saved to the description field. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/users#with_describe DataSnowflakeUsers#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/users#with_describe DataSnowflakeUsers#with_describe}
   */
-  readonly withDescribe?: boolean | cdktf.IResolvable;
+  readonly withDescribe?: boolean | cdktn.IResolvable;
   /**
   * (Default: `true`) Runs SHOW PARAMETERS FOR USER for each user returned by SHOW USERS. The output of describe is saved to the parameters field as a map. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/users#with_parameters DataSnowflakeUsers#with_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/users#with_parameters DataSnowflakeUsers#with_parameters}
   */
-  readonly withParameters?: boolean | cdktf.IResolvable;
+  readonly withParameters?: boolean | cdktn.IResolvable;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/users#limit DataSnowflakeUsers#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/users#limit DataSnowflakeUsers#limit}
   */
   readonly limit?: DataSnowflakeUsersLimit;
 }
@@ -54,8 +54,8 @@ export interface DataSnowflakeUsersUsersDescribeOutput {
 }
 
 export function dataSnowflakeUsersUsersDescribeOutputToTerraform(struct?: DataSnowflakeUsersUsersDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -64,8 +64,8 @@ export function dataSnowflakeUsersUsersDescribeOutputToTerraform(struct?: DataSn
 
 
 export function dataSnowflakeUsersUsersDescribeOutputToHclTerraform(struct?: DataSnowflakeUsersUsersDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -73,7 +73,7 @@ export function dataSnowflakeUsersUsersDescribeOutputToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersDescribeOutputOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersDescribeOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -82,7 +82,7 @@ export class DataSnowflakeUsersUsersDescribeOutputOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -176,6 +176,11 @@ export class DataSnowflakeUsersUsersDescribeOutputOutputReference extends cdktf.
     return this.getBooleanAttribute('has_mfa');
   }
 
+  // has_workload_identity - computed: true, optional: false, required: false
+  public get hasWorkloadIdentity() {
+    return this.getBooleanAttribute('has_workload_identity');
+  }
+
   // last_name - computed: true, optional: false, required: false
   public get lastName() {
     return this.getStringAttribute('last_name');
@@ -257,14 +262,14 @@ export class DataSnowflakeUsersUsersDescribeOutputOutputReference extends cdktf.
   }
 }
 
-export class DataSnowflakeUsersUsersDescribeOutputList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersDescribeOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -279,8 +284,8 @@ export interface DataSnowflakeUsersUsersParametersAbortDetachedQuery {
 }
 
 export function dataSnowflakeUsersUsersParametersAbortDetachedQueryToTerraform(struct?: DataSnowflakeUsersUsersParametersAbortDetachedQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -289,8 +294,8 @@ export function dataSnowflakeUsersUsersParametersAbortDetachedQueryToTerraform(s
 
 
 export function dataSnowflakeUsersUsersParametersAbortDetachedQueryToHclTerraform(struct?: DataSnowflakeUsersUsersParametersAbortDetachedQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -298,7 +303,7 @@ export function dataSnowflakeUsersUsersParametersAbortDetachedQueryToHclTerrafor
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersAbortDetachedQueryOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersAbortDetachedQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -307,7 +312,7 @@ export class DataSnowflakeUsersUsersParametersAbortDetachedQueryOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -352,14 +357,14 @@ export class DataSnowflakeUsersUsersParametersAbortDetachedQueryOutputReference 
   }
 }
 
-export class DataSnowflakeUsersUsersParametersAbortDetachedQueryList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersAbortDetachedQueryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -374,8 +379,8 @@ export interface DataSnowflakeUsersUsersParametersAutocommit {
 }
 
 export function dataSnowflakeUsersUsersParametersAutocommitToTerraform(struct?: DataSnowflakeUsersUsersParametersAutocommit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -384,8 +389,8 @@ export function dataSnowflakeUsersUsersParametersAutocommitToTerraform(struct?: 
 
 
 export function dataSnowflakeUsersUsersParametersAutocommitToHclTerraform(struct?: DataSnowflakeUsersUsersParametersAutocommit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -393,7 +398,7 @@ export function dataSnowflakeUsersUsersParametersAutocommitToHclTerraform(struct
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersAutocommitOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersAutocommitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -402,7 +407,7 @@ export class DataSnowflakeUsersUsersParametersAutocommitOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -447,14 +452,14 @@ export class DataSnowflakeUsersUsersParametersAutocommitOutputReference extends 
   }
 }
 
-export class DataSnowflakeUsersUsersParametersAutocommitList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersAutocommitList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -469,8 +474,8 @@ export interface DataSnowflakeUsersUsersParametersBinaryInputFormat {
 }
 
 export function dataSnowflakeUsersUsersParametersBinaryInputFormatToTerraform(struct?: DataSnowflakeUsersUsersParametersBinaryInputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -479,8 +484,8 @@ export function dataSnowflakeUsersUsersParametersBinaryInputFormatToTerraform(st
 
 
 export function dataSnowflakeUsersUsersParametersBinaryInputFormatToHclTerraform(struct?: DataSnowflakeUsersUsersParametersBinaryInputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -488,7 +493,7 @@ export function dataSnowflakeUsersUsersParametersBinaryInputFormatToHclTerraform
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersBinaryInputFormatOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersBinaryInputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -497,7 +502,7 @@ export class DataSnowflakeUsersUsersParametersBinaryInputFormatOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -542,14 +547,14 @@ export class DataSnowflakeUsersUsersParametersBinaryInputFormatOutputReference e
   }
 }
 
-export class DataSnowflakeUsersUsersParametersBinaryInputFormatList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersBinaryInputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -564,8 +569,8 @@ export interface DataSnowflakeUsersUsersParametersBinaryOutputFormat {
 }
 
 export function dataSnowflakeUsersUsersParametersBinaryOutputFormatToTerraform(struct?: DataSnowflakeUsersUsersParametersBinaryOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -574,8 +579,8 @@ export function dataSnowflakeUsersUsersParametersBinaryOutputFormatToTerraform(s
 
 
 export function dataSnowflakeUsersUsersParametersBinaryOutputFormatToHclTerraform(struct?: DataSnowflakeUsersUsersParametersBinaryOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -583,7 +588,7 @@ export function dataSnowflakeUsersUsersParametersBinaryOutputFormatToHclTerrafor
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersBinaryOutputFormatOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersBinaryOutputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -592,7 +597,7 @@ export class DataSnowflakeUsersUsersParametersBinaryOutputFormatOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -637,14 +642,14 @@ export class DataSnowflakeUsersUsersParametersBinaryOutputFormatOutputReference 
   }
 }
 
-export class DataSnowflakeUsersUsersParametersBinaryOutputFormatList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersBinaryOutputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -659,8 +664,8 @@ export interface DataSnowflakeUsersUsersParametersClientMemoryLimit {
 }
 
 export function dataSnowflakeUsersUsersParametersClientMemoryLimitToTerraform(struct?: DataSnowflakeUsersUsersParametersClientMemoryLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -669,8 +674,8 @@ export function dataSnowflakeUsersUsersParametersClientMemoryLimitToTerraform(st
 
 
 export function dataSnowflakeUsersUsersParametersClientMemoryLimitToHclTerraform(struct?: DataSnowflakeUsersUsersParametersClientMemoryLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -678,7 +683,7 @@ export function dataSnowflakeUsersUsersParametersClientMemoryLimitToHclTerraform
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersClientMemoryLimitOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersClientMemoryLimitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -687,7 +692,7 @@ export class DataSnowflakeUsersUsersParametersClientMemoryLimitOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -732,14 +737,14 @@ export class DataSnowflakeUsersUsersParametersClientMemoryLimitOutputReference e
   }
 }
 
-export class DataSnowflakeUsersUsersParametersClientMemoryLimitList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersClientMemoryLimitList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -754,8 +759,8 @@ export interface DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnec
 }
 
 export function dataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtxToTerraform(struct?: DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtx): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -764,8 +769,8 @@ export function dataSnowflakeUsersUsersParametersClientMetadataRequestUseConnect
 
 
 export function dataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtxToHclTerraform(struct?: DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtx): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -773,7 +778,7 @@ export function dataSnowflakeUsersUsersParametersClientMetadataRequestUseConnect
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtxOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtxOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -782,7 +787,7 @@ export class DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnection
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -827,14 +832,14 @@ export class DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnection
   }
 }
 
-export class DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtxList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtxList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -849,8 +854,8 @@ export interface DataSnowflakeUsersUsersParametersClientPrefetchThreads {
 }
 
 export function dataSnowflakeUsersUsersParametersClientPrefetchThreadsToTerraform(struct?: DataSnowflakeUsersUsersParametersClientPrefetchThreads): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -859,8 +864,8 @@ export function dataSnowflakeUsersUsersParametersClientPrefetchThreadsToTerrafor
 
 
 export function dataSnowflakeUsersUsersParametersClientPrefetchThreadsToHclTerraform(struct?: DataSnowflakeUsersUsersParametersClientPrefetchThreads): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -868,7 +873,7 @@ export function dataSnowflakeUsersUsersParametersClientPrefetchThreadsToHclTerra
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersClientPrefetchThreadsOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersClientPrefetchThreadsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -877,7 +882,7 @@ export class DataSnowflakeUsersUsersParametersClientPrefetchThreadsOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -922,14 +927,14 @@ export class DataSnowflakeUsersUsersParametersClientPrefetchThreadsOutputReferen
   }
 }
 
-export class DataSnowflakeUsersUsersParametersClientPrefetchThreadsList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersClientPrefetchThreadsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -944,8 +949,8 @@ export interface DataSnowflakeUsersUsersParametersClientResultChunkSize {
 }
 
 export function dataSnowflakeUsersUsersParametersClientResultChunkSizeToTerraform(struct?: DataSnowflakeUsersUsersParametersClientResultChunkSize): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -954,8 +959,8 @@ export function dataSnowflakeUsersUsersParametersClientResultChunkSizeToTerrafor
 
 
 export function dataSnowflakeUsersUsersParametersClientResultChunkSizeToHclTerraform(struct?: DataSnowflakeUsersUsersParametersClientResultChunkSize): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -963,7 +968,7 @@ export function dataSnowflakeUsersUsersParametersClientResultChunkSizeToHclTerra
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersClientResultChunkSizeOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersClientResultChunkSizeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -972,7 +977,7 @@ export class DataSnowflakeUsersUsersParametersClientResultChunkSizeOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1017,14 +1022,14 @@ export class DataSnowflakeUsersUsersParametersClientResultChunkSizeOutputReferen
   }
 }
 
-export class DataSnowflakeUsersUsersParametersClientResultChunkSizeList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersClientResultChunkSizeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1039,8 +1044,8 @@ export interface DataSnowflakeUsersUsersParametersClientResultColumnCaseInsensit
 }
 
 export function dataSnowflakeUsersUsersParametersClientResultColumnCaseInsensitiveToTerraform(struct?: DataSnowflakeUsersUsersParametersClientResultColumnCaseInsensitive): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1049,8 +1054,8 @@ export function dataSnowflakeUsersUsersParametersClientResultColumnCaseInsensiti
 
 
 export function dataSnowflakeUsersUsersParametersClientResultColumnCaseInsensitiveToHclTerraform(struct?: DataSnowflakeUsersUsersParametersClientResultColumnCaseInsensitive): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1058,7 +1063,7 @@ export function dataSnowflakeUsersUsersParametersClientResultColumnCaseInsensiti
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersClientResultColumnCaseInsensitiveOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersClientResultColumnCaseInsensitiveOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1067,7 +1072,7 @@ export class DataSnowflakeUsersUsersParametersClientResultColumnCaseInsensitiveO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1112,14 +1117,14 @@ export class DataSnowflakeUsersUsersParametersClientResultColumnCaseInsensitiveO
   }
 }
 
-export class DataSnowflakeUsersUsersParametersClientResultColumnCaseInsensitiveList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersClientResultColumnCaseInsensitiveList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1134,8 +1139,8 @@ export interface DataSnowflakeUsersUsersParametersClientSessionKeepAlive {
 }
 
 export function dataSnowflakeUsersUsersParametersClientSessionKeepAliveToTerraform(struct?: DataSnowflakeUsersUsersParametersClientSessionKeepAlive): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1144,8 +1149,8 @@ export function dataSnowflakeUsersUsersParametersClientSessionKeepAliveToTerrafo
 
 
 export function dataSnowflakeUsersUsersParametersClientSessionKeepAliveToHclTerraform(struct?: DataSnowflakeUsersUsersParametersClientSessionKeepAlive): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1153,7 +1158,7 @@ export function dataSnowflakeUsersUsersParametersClientSessionKeepAliveToHclTerr
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersClientSessionKeepAliveOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersClientSessionKeepAliveOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1162,7 +1167,7 @@ export class DataSnowflakeUsersUsersParametersClientSessionKeepAliveOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1207,14 +1212,14 @@ export class DataSnowflakeUsersUsersParametersClientSessionKeepAliveOutputRefere
   }
 }
 
-export class DataSnowflakeUsersUsersParametersClientSessionKeepAliveList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersClientSessionKeepAliveList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1229,8 +1234,8 @@ export interface DataSnowflakeUsersUsersParametersClientSessionKeepAliveHeartbea
 }
 
 export function dataSnowflakeUsersUsersParametersClientSessionKeepAliveHeartbeatFrequencyToTerraform(struct?: DataSnowflakeUsersUsersParametersClientSessionKeepAliveHeartbeatFrequency): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1239,8 +1244,8 @@ export function dataSnowflakeUsersUsersParametersClientSessionKeepAliveHeartbeat
 
 
 export function dataSnowflakeUsersUsersParametersClientSessionKeepAliveHeartbeatFrequencyToHclTerraform(struct?: DataSnowflakeUsersUsersParametersClientSessionKeepAliveHeartbeatFrequency): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1248,7 +1253,7 @@ export function dataSnowflakeUsersUsersParametersClientSessionKeepAliveHeartbeat
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersClientSessionKeepAliveHeartbeatFrequencyOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersClientSessionKeepAliveHeartbeatFrequencyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1257,7 +1262,7 @@ export class DataSnowflakeUsersUsersParametersClientSessionKeepAliveHeartbeatFre
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1302,14 +1307,14 @@ export class DataSnowflakeUsersUsersParametersClientSessionKeepAliveHeartbeatFre
   }
 }
 
-export class DataSnowflakeUsersUsersParametersClientSessionKeepAliveHeartbeatFrequencyList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersClientSessionKeepAliveHeartbeatFrequencyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1324,8 +1329,8 @@ export interface DataSnowflakeUsersUsersParametersClientTimestampTypeMapping {
 }
 
 export function dataSnowflakeUsersUsersParametersClientTimestampTypeMappingToTerraform(struct?: DataSnowflakeUsersUsersParametersClientTimestampTypeMapping): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1334,8 +1339,8 @@ export function dataSnowflakeUsersUsersParametersClientTimestampTypeMappingToTer
 
 
 export function dataSnowflakeUsersUsersParametersClientTimestampTypeMappingToHclTerraform(struct?: DataSnowflakeUsersUsersParametersClientTimestampTypeMapping): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1343,7 +1348,7 @@ export function dataSnowflakeUsersUsersParametersClientTimestampTypeMappingToHcl
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersClientTimestampTypeMappingOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersClientTimestampTypeMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1352,7 +1357,7 @@ export class DataSnowflakeUsersUsersParametersClientTimestampTypeMappingOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1397,14 +1402,14 @@ export class DataSnowflakeUsersUsersParametersClientTimestampTypeMappingOutputRe
   }
 }
 
-export class DataSnowflakeUsersUsersParametersClientTimestampTypeMappingList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersClientTimestampTypeMappingList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1419,8 +1424,8 @@ export interface DataSnowflakeUsersUsersParametersDateInputFormat {
 }
 
 export function dataSnowflakeUsersUsersParametersDateInputFormatToTerraform(struct?: DataSnowflakeUsersUsersParametersDateInputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1429,8 +1434,8 @@ export function dataSnowflakeUsersUsersParametersDateInputFormatToTerraform(stru
 
 
 export function dataSnowflakeUsersUsersParametersDateInputFormatToHclTerraform(struct?: DataSnowflakeUsersUsersParametersDateInputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1438,7 +1443,7 @@ export function dataSnowflakeUsersUsersParametersDateInputFormatToHclTerraform(s
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersDateInputFormatOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersDateInputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1447,7 +1452,7 @@ export class DataSnowflakeUsersUsersParametersDateInputFormatOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1492,14 +1497,14 @@ export class DataSnowflakeUsersUsersParametersDateInputFormatOutputReference ext
   }
 }
 
-export class DataSnowflakeUsersUsersParametersDateInputFormatList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersDateInputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1514,8 +1519,8 @@ export interface DataSnowflakeUsersUsersParametersDateOutputFormat {
 }
 
 export function dataSnowflakeUsersUsersParametersDateOutputFormatToTerraform(struct?: DataSnowflakeUsersUsersParametersDateOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1524,8 +1529,8 @@ export function dataSnowflakeUsersUsersParametersDateOutputFormatToTerraform(str
 
 
 export function dataSnowflakeUsersUsersParametersDateOutputFormatToHclTerraform(struct?: DataSnowflakeUsersUsersParametersDateOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1533,7 +1538,7 @@ export function dataSnowflakeUsersUsersParametersDateOutputFormatToHclTerraform(
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersDateOutputFormatOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersDateOutputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1542,7 +1547,7 @@ export class DataSnowflakeUsersUsersParametersDateOutputFormatOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1587,14 +1592,14 @@ export class DataSnowflakeUsersUsersParametersDateOutputFormatOutputReference ex
   }
 }
 
-export class DataSnowflakeUsersUsersParametersDateOutputFormatList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersDateOutputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1609,8 +1614,8 @@ export interface DataSnowflakeUsersUsersParametersEnableUnloadPhysicalTypeOptimi
 }
 
 export function dataSnowflakeUsersUsersParametersEnableUnloadPhysicalTypeOptimizationToTerraform(struct?: DataSnowflakeUsersUsersParametersEnableUnloadPhysicalTypeOptimization): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1619,8 +1624,8 @@ export function dataSnowflakeUsersUsersParametersEnableUnloadPhysicalTypeOptimiz
 
 
 export function dataSnowflakeUsersUsersParametersEnableUnloadPhysicalTypeOptimizationToHclTerraform(struct?: DataSnowflakeUsersUsersParametersEnableUnloadPhysicalTypeOptimization): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1628,7 +1633,7 @@ export function dataSnowflakeUsersUsersParametersEnableUnloadPhysicalTypeOptimiz
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersEnableUnloadPhysicalTypeOptimizationOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersEnableUnloadPhysicalTypeOptimizationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1637,7 +1642,7 @@ export class DataSnowflakeUsersUsersParametersEnableUnloadPhysicalTypeOptimizati
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1682,14 +1687,14 @@ export class DataSnowflakeUsersUsersParametersEnableUnloadPhysicalTypeOptimizati
   }
 }
 
-export class DataSnowflakeUsersUsersParametersEnableUnloadPhysicalTypeOptimizationList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersEnableUnloadPhysicalTypeOptimizationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1704,8 +1709,8 @@ export interface DataSnowflakeUsersUsersParametersEnableUnredactedQuerySyntaxErr
 }
 
 export function dataSnowflakeUsersUsersParametersEnableUnredactedQuerySyntaxErrorToTerraform(struct?: DataSnowflakeUsersUsersParametersEnableUnredactedQuerySyntaxError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1714,8 +1719,8 @@ export function dataSnowflakeUsersUsersParametersEnableUnredactedQuerySyntaxErro
 
 
 export function dataSnowflakeUsersUsersParametersEnableUnredactedQuerySyntaxErrorToHclTerraform(struct?: DataSnowflakeUsersUsersParametersEnableUnredactedQuerySyntaxError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1723,7 +1728,7 @@ export function dataSnowflakeUsersUsersParametersEnableUnredactedQuerySyntaxErro
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersEnableUnredactedQuerySyntaxErrorOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersEnableUnredactedQuerySyntaxErrorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1732,7 +1737,7 @@ export class DataSnowflakeUsersUsersParametersEnableUnredactedQuerySyntaxErrorOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1777,14 +1782,14 @@ export class DataSnowflakeUsersUsersParametersEnableUnredactedQuerySyntaxErrorOu
   }
 }
 
-export class DataSnowflakeUsersUsersParametersEnableUnredactedQuerySyntaxErrorList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersEnableUnredactedQuerySyntaxErrorList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1799,8 +1804,8 @@ export interface DataSnowflakeUsersUsersParametersErrorOnNondeterministicMerge {
 }
 
 export function dataSnowflakeUsersUsersParametersErrorOnNondeterministicMergeToTerraform(struct?: DataSnowflakeUsersUsersParametersErrorOnNondeterministicMerge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1809,8 +1814,8 @@ export function dataSnowflakeUsersUsersParametersErrorOnNondeterministicMergeToT
 
 
 export function dataSnowflakeUsersUsersParametersErrorOnNondeterministicMergeToHclTerraform(struct?: DataSnowflakeUsersUsersParametersErrorOnNondeterministicMerge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1818,7 +1823,7 @@ export function dataSnowflakeUsersUsersParametersErrorOnNondeterministicMergeToH
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersErrorOnNondeterministicMergeOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersErrorOnNondeterministicMergeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1827,7 +1832,7 @@ export class DataSnowflakeUsersUsersParametersErrorOnNondeterministicMergeOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1872,14 +1877,14 @@ export class DataSnowflakeUsersUsersParametersErrorOnNondeterministicMergeOutput
   }
 }
 
-export class DataSnowflakeUsersUsersParametersErrorOnNondeterministicMergeList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersErrorOnNondeterministicMergeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1894,8 +1899,8 @@ export interface DataSnowflakeUsersUsersParametersErrorOnNondeterministicUpdate 
 }
 
 export function dataSnowflakeUsersUsersParametersErrorOnNondeterministicUpdateToTerraform(struct?: DataSnowflakeUsersUsersParametersErrorOnNondeterministicUpdate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1904,8 +1909,8 @@ export function dataSnowflakeUsersUsersParametersErrorOnNondeterministicUpdateTo
 
 
 export function dataSnowflakeUsersUsersParametersErrorOnNondeterministicUpdateToHclTerraform(struct?: DataSnowflakeUsersUsersParametersErrorOnNondeterministicUpdate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1913,7 +1918,7 @@ export function dataSnowflakeUsersUsersParametersErrorOnNondeterministicUpdateTo
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersErrorOnNondeterministicUpdateOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersErrorOnNondeterministicUpdateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1922,7 +1927,7 @@ export class DataSnowflakeUsersUsersParametersErrorOnNondeterministicUpdateOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1967,14 +1972,14 @@ export class DataSnowflakeUsersUsersParametersErrorOnNondeterministicUpdateOutpu
   }
 }
 
-export class DataSnowflakeUsersUsersParametersErrorOnNondeterministicUpdateList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersErrorOnNondeterministicUpdateList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1989,8 +1994,8 @@ export interface DataSnowflakeUsersUsersParametersGeographyOutputFormat {
 }
 
 export function dataSnowflakeUsersUsersParametersGeographyOutputFormatToTerraform(struct?: DataSnowflakeUsersUsersParametersGeographyOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1999,8 +2004,8 @@ export function dataSnowflakeUsersUsersParametersGeographyOutputFormatToTerrafor
 
 
 export function dataSnowflakeUsersUsersParametersGeographyOutputFormatToHclTerraform(struct?: DataSnowflakeUsersUsersParametersGeographyOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2008,7 +2013,7 @@ export function dataSnowflakeUsersUsersParametersGeographyOutputFormatToHclTerra
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersGeographyOutputFormatOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersGeographyOutputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2017,7 +2022,7 @@ export class DataSnowflakeUsersUsersParametersGeographyOutputFormatOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2062,14 +2067,14 @@ export class DataSnowflakeUsersUsersParametersGeographyOutputFormatOutputReferen
   }
 }
 
-export class DataSnowflakeUsersUsersParametersGeographyOutputFormatList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersGeographyOutputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2084,8 +2089,8 @@ export interface DataSnowflakeUsersUsersParametersGeometryOutputFormat {
 }
 
 export function dataSnowflakeUsersUsersParametersGeometryOutputFormatToTerraform(struct?: DataSnowflakeUsersUsersParametersGeometryOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2094,8 +2099,8 @@ export function dataSnowflakeUsersUsersParametersGeometryOutputFormatToTerraform
 
 
 export function dataSnowflakeUsersUsersParametersGeometryOutputFormatToHclTerraform(struct?: DataSnowflakeUsersUsersParametersGeometryOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2103,7 +2108,7 @@ export function dataSnowflakeUsersUsersParametersGeometryOutputFormatToHclTerraf
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersGeometryOutputFormatOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersGeometryOutputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2112,7 +2117,7 @@ export class DataSnowflakeUsersUsersParametersGeometryOutputFormatOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2157,14 +2162,14 @@ export class DataSnowflakeUsersUsersParametersGeometryOutputFormatOutputReferenc
   }
 }
 
-export class DataSnowflakeUsersUsersParametersGeometryOutputFormatList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersGeometryOutputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2179,8 +2184,8 @@ export interface DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsInt {
 }
 
 export function dataSnowflakeUsersUsersParametersJdbcTreatDecimalAsIntToTerraform(struct?: DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsInt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2189,8 +2194,8 @@ export function dataSnowflakeUsersUsersParametersJdbcTreatDecimalAsIntToTerrafor
 
 
 export function dataSnowflakeUsersUsersParametersJdbcTreatDecimalAsIntToHclTerraform(struct?: DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsInt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2198,7 +2203,7 @@ export function dataSnowflakeUsersUsersParametersJdbcTreatDecimalAsIntToHclTerra
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsIntOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsIntOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2207,7 +2212,7 @@ export class DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsIntOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2252,14 +2257,14 @@ export class DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsIntOutputReferen
   }
 }
 
-export class DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsIntList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsIntList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2274,8 +2279,8 @@ export interface DataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtc {
 }
 
 export function dataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcToTerraform(struct?: DataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2284,8 +2289,8 @@ export function dataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcToTer
 
 
 export function dataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcToHclTerraform(struct?: DataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2293,7 +2298,7 @@ export function dataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcToHcl
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2302,7 +2307,7 @@ export class DataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2347,14 +2352,14 @@ export class DataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcOutputRe
   }
 }
 
-export class DataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2369,8 +2374,8 @@ export interface DataSnowflakeUsersUsersParametersJdbcUseSessionTimezone {
 }
 
 export function dataSnowflakeUsersUsersParametersJdbcUseSessionTimezoneToTerraform(struct?: DataSnowflakeUsersUsersParametersJdbcUseSessionTimezone): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2379,8 +2384,8 @@ export function dataSnowflakeUsersUsersParametersJdbcUseSessionTimezoneToTerrafo
 
 
 export function dataSnowflakeUsersUsersParametersJdbcUseSessionTimezoneToHclTerraform(struct?: DataSnowflakeUsersUsersParametersJdbcUseSessionTimezone): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2388,7 +2393,7 @@ export function dataSnowflakeUsersUsersParametersJdbcUseSessionTimezoneToHclTerr
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersJdbcUseSessionTimezoneOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersJdbcUseSessionTimezoneOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2397,7 +2402,7 @@ export class DataSnowflakeUsersUsersParametersJdbcUseSessionTimezoneOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2442,14 +2447,14 @@ export class DataSnowflakeUsersUsersParametersJdbcUseSessionTimezoneOutputRefere
   }
 }
 
-export class DataSnowflakeUsersUsersParametersJdbcUseSessionTimezoneList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersJdbcUseSessionTimezoneList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2464,8 +2469,8 @@ export interface DataSnowflakeUsersUsersParametersJsonIndent {
 }
 
 export function dataSnowflakeUsersUsersParametersJsonIndentToTerraform(struct?: DataSnowflakeUsersUsersParametersJsonIndent): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2474,8 +2479,8 @@ export function dataSnowflakeUsersUsersParametersJsonIndentToTerraform(struct?: 
 
 
 export function dataSnowflakeUsersUsersParametersJsonIndentToHclTerraform(struct?: DataSnowflakeUsersUsersParametersJsonIndent): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2483,7 +2488,7 @@ export function dataSnowflakeUsersUsersParametersJsonIndentToHclTerraform(struct
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersJsonIndentOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersJsonIndentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2492,7 +2497,7 @@ export class DataSnowflakeUsersUsersParametersJsonIndentOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2537,14 +2542,14 @@ export class DataSnowflakeUsersUsersParametersJsonIndentOutputReference extends 
   }
 }
 
-export class DataSnowflakeUsersUsersParametersJsonIndentList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersJsonIndentList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2559,8 +2564,8 @@ export interface DataSnowflakeUsersUsersParametersLockTimeout {
 }
 
 export function dataSnowflakeUsersUsersParametersLockTimeoutToTerraform(struct?: DataSnowflakeUsersUsersParametersLockTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2569,8 +2574,8 @@ export function dataSnowflakeUsersUsersParametersLockTimeoutToTerraform(struct?:
 
 
 export function dataSnowflakeUsersUsersParametersLockTimeoutToHclTerraform(struct?: DataSnowflakeUsersUsersParametersLockTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2578,7 +2583,7 @@ export function dataSnowflakeUsersUsersParametersLockTimeoutToHclTerraform(struc
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersLockTimeoutOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersLockTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2587,7 +2592,7 @@ export class DataSnowflakeUsersUsersParametersLockTimeoutOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2632,14 +2637,14 @@ export class DataSnowflakeUsersUsersParametersLockTimeoutOutputReference extends
   }
 }
 
-export class DataSnowflakeUsersUsersParametersLockTimeoutList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersLockTimeoutList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2654,8 +2659,8 @@ export interface DataSnowflakeUsersUsersParametersLogLevel {
 }
 
 export function dataSnowflakeUsersUsersParametersLogLevelToTerraform(struct?: DataSnowflakeUsersUsersParametersLogLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2664,8 +2669,8 @@ export function dataSnowflakeUsersUsersParametersLogLevelToTerraform(struct?: Da
 
 
 export function dataSnowflakeUsersUsersParametersLogLevelToHclTerraform(struct?: DataSnowflakeUsersUsersParametersLogLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2673,7 +2678,7 @@ export function dataSnowflakeUsersUsersParametersLogLevelToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersLogLevelOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersLogLevelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2682,7 +2687,7 @@ export class DataSnowflakeUsersUsersParametersLogLevelOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2727,14 +2732,14 @@ export class DataSnowflakeUsersUsersParametersLogLevelOutputReference extends cd
   }
 }
 
-export class DataSnowflakeUsersUsersParametersLogLevelList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersLogLevelList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2749,8 +2754,8 @@ export interface DataSnowflakeUsersUsersParametersMultiStatementCount {
 }
 
 export function dataSnowflakeUsersUsersParametersMultiStatementCountToTerraform(struct?: DataSnowflakeUsersUsersParametersMultiStatementCount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2759,8 +2764,8 @@ export function dataSnowflakeUsersUsersParametersMultiStatementCountToTerraform(
 
 
 export function dataSnowflakeUsersUsersParametersMultiStatementCountToHclTerraform(struct?: DataSnowflakeUsersUsersParametersMultiStatementCount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2768,7 +2773,7 @@ export function dataSnowflakeUsersUsersParametersMultiStatementCountToHclTerrafo
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersMultiStatementCountOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersMultiStatementCountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2777,7 +2782,7 @@ export class DataSnowflakeUsersUsersParametersMultiStatementCountOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2822,14 +2827,14 @@ export class DataSnowflakeUsersUsersParametersMultiStatementCountOutputReference
   }
 }
 
-export class DataSnowflakeUsersUsersParametersMultiStatementCountList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersMultiStatementCountList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2844,8 +2849,8 @@ export interface DataSnowflakeUsersUsersParametersNetworkPolicy {
 }
 
 export function dataSnowflakeUsersUsersParametersNetworkPolicyToTerraform(struct?: DataSnowflakeUsersUsersParametersNetworkPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2854,8 +2859,8 @@ export function dataSnowflakeUsersUsersParametersNetworkPolicyToTerraform(struct
 
 
 export function dataSnowflakeUsersUsersParametersNetworkPolicyToHclTerraform(struct?: DataSnowflakeUsersUsersParametersNetworkPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2863,7 +2868,7 @@ export function dataSnowflakeUsersUsersParametersNetworkPolicyToHclTerraform(str
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersNetworkPolicyOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersNetworkPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2872,7 +2877,7 @@ export class DataSnowflakeUsersUsersParametersNetworkPolicyOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2917,14 +2922,14 @@ export class DataSnowflakeUsersUsersParametersNetworkPolicyOutputReference exten
   }
 }
 
-export class DataSnowflakeUsersUsersParametersNetworkPolicyList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersNetworkPolicyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2939,8 +2944,8 @@ export interface DataSnowflakeUsersUsersParametersNoorderSequenceAsDefault {
 }
 
 export function dataSnowflakeUsersUsersParametersNoorderSequenceAsDefaultToTerraform(struct?: DataSnowflakeUsersUsersParametersNoorderSequenceAsDefault): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2949,8 +2954,8 @@ export function dataSnowflakeUsersUsersParametersNoorderSequenceAsDefaultToTerra
 
 
 export function dataSnowflakeUsersUsersParametersNoorderSequenceAsDefaultToHclTerraform(struct?: DataSnowflakeUsersUsersParametersNoorderSequenceAsDefault): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2958,7 +2963,7 @@ export function dataSnowflakeUsersUsersParametersNoorderSequenceAsDefaultToHclTe
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersNoorderSequenceAsDefaultOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersNoorderSequenceAsDefaultOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2967,7 +2972,7 @@ export class DataSnowflakeUsersUsersParametersNoorderSequenceAsDefaultOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3012,14 +3017,14 @@ export class DataSnowflakeUsersUsersParametersNoorderSequenceAsDefaultOutputRefe
   }
 }
 
-export class DataSnowflakeUsersUsersParametersNoorderSequenceAsDefaultList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersNoorderSequenceAsDefaultList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3034,8 +3039,8 @@ export interface DataSnowflakeUsersUsersParametersOdbcTreatDecimalAsInt {
 }
 
 export function dataSnowflakeUsersUsersParametersOdbcTreatDecimalAsIntToTerraform(struct?: DataSnowflakeUsersUsersParametersOdbcTreatDecimalAsInt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3044,8 +3049,8 @@ export function dataSnowflakeUsersUsersParametersOdbcTreatDecimalAsIntToTerrafor
 
 
 export function dataSnowflakeUsersUsersParametersOdbcTreatDecimalAsIntToHclTerraform(struct?: DataSnowflakeUsersUsersParametersOdbcTreatDecimalAsInt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3053,7 +3058,7 @@ export function dataSnowflakeUsersUsersParametersOdbcTreatDecimalAsIntToHclTerra
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersOdbcTreatDecimalAsIntOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersOdbcTreatDecimalAsIntOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3062,7 +3067,7 @@ export class DataSnowflakeUsersUsersParametersOdbcTreatDecimalAsIntOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3107,14 +3112,14 @@ export class DataSnowflakeUsersUsersParametersOdbcTreatDecimalAsIntOutputReferen
   }
 }
 
-export class DataSnowflakeUsersUsersParametersOdbcTreatDecimalAsIntList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersOdbcTreatDecimalAsIntList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3129,8 +3134,8 @@ export interface DataSnowflakeUsersUsersParametersPreventUnloadToInternalStages 
 }
 
 export function dataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesToTerraform(struct?: DataSnowflakeUsersUsersParametersPreventUnloadToInternalStages): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3139,8 +3144,8 @@ export function dataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesTo
 
 
 export function dataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesToHclTerraform(struct?: DataSnowflakeUsersUsersParametersPreventUnloadToInternalStages): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3148,7 +3153,7 @@ export function dataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesTo
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3157,7 +3162,7 @@ export class DataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3202,14 +3207,14 @@ export class DataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesOutpu
   }
 }
 
-export class DataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3224,8 +3229,8 @@ export interface DataSnowflakeUsersUsersParametersQueryTag {
 }
 
 export function dataSnowflakeUsersUsersParametersQueryTagToTerraform(struct?: DataSnowflakeUsersUsersParametersQueryTag): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3234,8 +3239,8 @@ export function dataSnowflakeUsersUsersParametersQueryTagToTerraform(struct?: Da
 
 
 export function dataSnowflakeUsersUsersParametersQueryTagToHclTerraform(struct?: DataSnowflakeUsersUsersParametersQueryTag): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3243,7 +3248,7 @@ export function dataSnowflakeUsersUsersParametersQueryTagToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersQueryTagOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersQueryTagOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3252,7 +3257,7 @@ export class DataSnowflakeUsersUsersParametersQueryTagOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3297,14 +3302,14 @@ export class DataSnowflakeUsersUsersParametersQueryTagOutputReference extends cd
   }
 }
 
-export class DataSnowflakeUsersUsersParametersQueryTagList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersQueryTagList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3319,8 +3324,8 @@ export interface DataSnowflakeUsersUsersParametersQuotedIdentifiersIgnoreCase {
 }
 
 export function dataSnowflakeUsersUsersParametersQuotedIdentifiersIgnoreCaseToTerraform(struct?: DataSnowflakeUsersUsersParametersQuotedIdentifiersIgnoreCase): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3329,8 +3334,8 @@ export function dataSnowflakeUsersUsersParametersQuotedIdentifiersIgnoreCaseToTe
 
 
 export function dataSnowflakeUsersUsersParametersQuotedIdentifiersIgnoreCaseToHclTerraform(struct?: DataSnowflakeUsersUsersParametersQuotedIdentifiersIgnoreCase): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3338,7 +3343,7 @@ export function dataSnowflakeUsersUsersParametersQuotedIdentifiersIgnoreCaseToHc
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersQuotedIdentifiersIgnoreCaseOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersQuotedIdentifiersIgnoreCaseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3347,7 +3352,7 @@ export class DataSnowflakeUsersUsersParametersQuotedIdentifiersIgnoreCaseOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3392,14 +3397,14 @@ export class DataSnowflakeUsersUsersParametersQuotedIdentifiersIgnoreCaseOutputR
   }
 }
 
-export class DataSnowflakeUsersUsersParametersQuotedIdentifiersIgnoreCaseList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersQuotedIdentifiersIgnoreCaseList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3414,8 +3419,8 @@ export interface DataSnowflakeUsersUsersParametersRowsPerResultset {
 }
 
 export function dataSnowflakeUsersUsersParametersRowsPerResultsetToTerraform(struct?: DataSnowflakeUsersUsersParametersRowsPerResultset): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3424,8 +3429,8 @@ export function dataSnowflakeUsersUsersParametersRowsPerResultsetToTerraform(str
 
 
 export function dataSnowflakeUsersUsersParametersRowsPerResultsetToHclTerraform(struct?: DataSnowflakeUsersUsersParametersRowsPerResultset): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3433,7 +3438,7 @@ export function dataSnowflakeUsersUsersParametersRowsPerResultsetToHclTerraform(
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersRowsPerResultsetOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersRowsPerResultsetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3442,7 +3447,7 @@ export class DataSnowflakeUsersUsersParametersRowsPerResultsetOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3487,14 +3492,14 @@ export class DataSnowflakeUsersUsersParametersRowsPerResultsetOutputReference ex
   }
 }
 
-export class DataSnowflakeUsersUsersParametersRowsPerResultsetList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersRowsPerResultsetList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3509,8 +3514,8 @@ export interface DataSnowflakeUsersUsersParametersS3StageVpceDnsName {
 }
 
 export function dataSnowflakeUsersUsersParametersS3StageVpceDnsNameToTerraform(struct?: DataSnowflakeUsersUsersParametersS3StageVpceDnsName): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3519,8 +3524,8 @@ export function dataSnowflakeUsersUsersParametersS3StageVpceDnsNameToTerraform(s
 
 
 export function dataSnowflakeUsersUsersParametersS3StageVpceDnsNameToHclTerraform(struct?: DataSnowflakeUsersUsersParametersS3StageVpceDnsName): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3528,7 +3533,7 @@ export function dataSnowflakeUsersUsersParametersS3StageVpceDnsNameToHclTerrafor
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersS3StageVpceDnsNameOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersS3StageVpceDnsNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3537,7 +3542,7 @@ export class DataSnowflakeUsersUsersParametersS3StageVpceDnsNameOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3582,14 +3587,14 @@ export class DataSnowflakeUsersUsersParametersS3StageVpceDnsNameOutputReference 
   }
 }
 
-export class DataSnowflakeUsersUsersParametersS3StageVpceDnsNameList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersS3StageVpceDnsNameList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3604,8 +3609,8 @@ export interface DataSnowflakeUsersUsersParametersSearchPath {
 }
 
 export function dataSnowflakeUsersUsersParametersSearchPathToTerraform(struct?: DataSnowflakeUsersUsersParametersSearchPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3614,8 +3619,8 @@ export function dataSnowflakeUsersUsersParametersSearchPathToTerraform(struct?: 
 
 
 export function dataSnowflakeUsersUsersParametersSearchPathToHclTerraform(struct?: DataSnowflakeUsersUsersParametersSearchPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3623,7 +3628,7 @@ export function dataSnowflakeUsersUsersParametersSearchPathToHclTerraform(struct
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersSearchPathOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersSearchPathOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3632,7 +3637,7 @@ export class DataSnowflakeUsersUsersParametersSearchPathOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3677,14 +3682,14 @@ export class DataSnowflakeUsersUsersParametersSearchPathOutputReference extends 
   }
 }
 
-export class DataSnowflakeUsersUsersParametersSearchPathList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersSearchPathList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3699,8 +3704,8 @@ export interface DataSnowflakeUsersUsersParametersSimulatedDataSharingConsumer {
 }
 
 export function dataSnowflakeUsersUsersParametersSimulatedDataSharingConsumerToTerraform(struct?: DataSnowflakeUsersUsersParametersSimulatedDataSharingConsumer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3709,8 +3714,8 @@ export function dataSnowflakeUsersUsersParametersSimulatedDataSharingConsumerToT
 
 
 export function dataSnowflakeUsersUsersParametersSimulatedDataSharingConsumerToHclTerraform(struct?: DataSnowflakeUsersUsersParametersSimulatedDataSharingConsumer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3718,7 +3723,7 @@ export function dataSnowflakeUsersUsersParametersSimulatedDataSharingConsumerToH
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersSimulatedDataSharingConsumerOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersSimulatedDataSharingConsumerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3727,7 +3732,7 @@ export class DataSnowflakeUsersUsersParametersSimulatedDataSharingConsumerOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3772,14 +3777,14 @@ export class DataSnowflakeUsersUsersParametersSimulatedDataSharingConsumerOutput
   }
 }
 
-export class DataSnowflakeUsersUsersParametersSimulatedDataSharingConsumerList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersSimulatedDataSharingConsumerList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3794,8 +3799,8 @@ export interface DataSnowflakeUsersUsersParametersStatementQueuedTimeoutInSecond
 }
 
 export function dataSnowflakeUsersUsersParametersStatementQueuedTimeoutInSecondsToTerraform(struct?: DataSnowflakeUsersUsersParametersStatementQueuedTimeoutInSeconds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3804,8 +3809,8 @@ export function dataSnowflakeUsersUsersParametersStatementQueuedTimeoutInSeconds
 
 
 export function dataSnowflakeUsersUsersParametersStatementQueuedTimeoutInSecondsToHclTerraform(struct?: DataSnowflakeUsersUsersParametersStatementQueuedTimeoutInSeconds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3813,7 +3818,7 @@ export function dataSnowflakeUsersUsersParametersStatementQueuedTimeoutInSeconds
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersStatementQueuedTimeoutInSecondsOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersStatementQueuedTimeoutInSecondsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3822,7 +3827,7 @@ export class DataSnowflakeUsersUsersParametersStatementQueuedTimeoutInSecondsOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3867,14 +3872,14 @@ export class DataSnowflakeUsersUsersParametersStatementQueuedTimeoutInSecondsOut
   }
 }
 
-export class DataSnowflakeUsersUsersParametersStatementQueuedTimeoutInSecondsList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersStatementQueuedTimeoutInSecondsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3889,8 +3894,8 @@ export interface DataSnowflakeUsersUsersParametersStatementTimeoutInSeconds {
 }
 
 export function dataSnowflakeUsersUsersParametersStatementTimeoutInSecondsToTerraform(struct?: DataSnowflakeUsersUsersParametersStatementTimeoutInSeconds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3899,8 +3904,8 @@ export function dataSnowflakeUsersUsersParametersStatementTimeoutInSecondsToTerr
 
 
 export function dataSnowflakeUsersUsersParametersStatementTimeoutInSecondsToHclTerraform(struct?: DataSnowflakeUsersUsersParametersStatementTimeoutInSeconds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3908,7 +3913,7 @@ export function dataSnowflakeUsersUsersParametersStatementTimeoutInSecondsToHclT
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersStatementTimeoutInSecondsOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersStatementTimeoutInSecondsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3917,7 +3922,7 @@ export class DataSnowflakeUsersUsersParametersStatementTimeoutInSecondsOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3962,14 +3967,14 @@ export class DataSnowflakeUsersUsersParametersStatementTimeoutInSecondsOutputRef
   }
 }
 
-export class DataSnowflakeUsersUsersParametersStatementTimeoutInSecondsList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersStatementTimeoutInSecondsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3984,8 +3989,8 @@ export interface DataSnowflakeUsersUsersParametersStrictJsonOutput {
 }
 
 export function dataSnowflakeUsersUsersParametersStrictJsonOutputToTerraform(struct?: DataSnowflakeUsersUsersParametersStrictJsonOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3994,8 +3999,8 @@ export function dataSnowflakeUsersUsersParametersStrictJsonOutputToTerraform(str
 
 
 export function dataSnowflakeUsersUsersParametersStrictJsonOutputToHclTerraform(struct?: DataSnowflakeUsersUsersParametersStrictJsonOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4003,7 +4008,7 @@ export function dataSnowflakeUsersUsersParametersStrictJsonOutputToHclTerraform(
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersStrictJsonOutputOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersStrictJsonOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4012,7 +4017,7 @@ export class DataSnowflakeUsersUsersParametersStrictJsonOutputOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4057,14 +4062,14 @@ export class DataSnowflakeUsersUsersParametersStrictJsonOutputOutputReference ex
   }
 }
 
-export class DataSnowflakeUsersUsersParametersStrictJsonOutputList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersStrictJsonOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4079,8 +4084,8 @@ export interface DataSnowflakeUsersUsersParametersTimeInputFormat {
 }
 
 export function dataSnowflakeUsersUsersParametersTimeInputFormatToTerraform(struct?: DataSnowflakeUsersUsersParametersTimeInputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4089,8 +4094,8 @@ export function dataSnowflakeUsersUsersParametersTimeInputFormatToTerraform(stru
 
 
 export function dataSnowflakeUsersUsersParametersTimeInputFormatToHclTerraform(struct?: DataSnowflakeUsersUsersParametersTimeInputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4098,7 +4103,7 @@ export function dataSnowflakeUsersUsersParametersTimeInputFormatToHclTerraform(s
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersTimeInputFormatOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersTimeInputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4107,7 +4112,7 @@ export class DataSnowflakeUsersUsersParametersTimeInputFormatOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4152,14 +4157,14 @@ export class DataSnowflakeUsersUsersParametersTimeInputFormatOutputReference ext
   }
 }
 
-export class DataSnowflakeUsersUsersParametersTimeInputFormatList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersTimeInputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4174,8 +4179,8 @@ export interface DataSnowflakeUsersUsersParametersTimeOutputFormat {
 }
 
 export function dataSnowflakeUsersUsersParametersTimeOutputFormatToTerraform(struct?: DataSnowflakeUsersUsersParametersTimeOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4184,8 +4189,8 @@ export function dataSnowflakeUsersUsersParametersTimeOutputFormatToTerraform(str
 
 
 export function dataSnowflakeUsersUsersParametersTimeOutputFormatToHclTerraform(struct?: DataSnowflakeUsersUsersParametersTimeOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4193,7 +4198,7 @@ export function dataSnowflakeUsersUsersParametersTimeOutputFormatToHclTerraform(
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersTimeOutputFormatOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersTimeOutputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4202,7 +4207,7 @@ export class DataSnowflakeUsersUsersParametersTimeOutputFormatOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4247,14 +4252,14 @@ export class DataSnowflakeUsersUsersParametersTimeOutputFormatOutputReference ex
   }
 }
 
-export class DataSnowflakeUsersUsersParametersTimeOutputFormatList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersTimeOutputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4269,8 +4274,8 @@ export interface DataSnowflakeUsersUsersParametersTimestampDayIsAlways24H {
 }
 
 export function dataSnowflakeUsersUsersParametersTimestampDayIsAlways24HToTerraform(struct?: DataSnowflakeUsersUsersParametersTimestampDayIsAlways24H): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4279,8 +4284,8 @@ export function dataSnowflakeUsersUsersParametersTimestampDayIsAlways24HToTerraf
 
 
 export function dataSnowflakeUsersUsersParametersTimestampDayIsAlways24HToHclTerraform(struct?: DataSnowflakeUsersUsersParametersTimestampDayIsAlways24H): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4288,7 +4293,7 @@ export function dataSnowflakeUsersUsersParametersTimestampDayIsAlways24HToHclTer
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersTimestampDayIsAlways24HOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersTimestampDayIsAlways24HOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4297,7 +4302,7 @@ export class DataSnowflakeUsersUsersParametersTimestampDayIsAlways24HOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4342,14 +4347,14 @@ export class DataSnowflakeUsersUsersParametersTimestampDayIsAlways24HOutputRefer
   }
 }
 
-export class DataSnowflakeUsersUsersParametersTimestampDayIsAlways24HList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersTimestampDayIsAlways24HList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4364,8 +4369,8 @@ export interface DataSnowflakeUsersUsersParametersTimestampInputFormat {
 }
 
 export function dataSnowflakeUsersUsersParametersTimestampInputFormatToTerraform(struct?: DataSnowflakeUsersUsersParametersTimestampInputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4374,8 +4379,8 @@ export function dataSnowflakeUsersUsersParametersTimestampInputFormatToTerraform
 
 
 export function dataSnowflakeUsersUsersParametersTimestampInputFormatToHclTerraform(struct?: DataSnowflakeUsersUsersParametersTimestampInputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4383,7 +4388,7 @@ export function dataSnowflakeUsersUsersParametersTimestampInputFormatToHclTerraf
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersTimestampInputFormatOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersTimestampInputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4392,7 +4397,7 @@ export class DataSnowflakeUsersUsersParametersTimestampInputFormatOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4437,14 +4442,14 @@ export class DataSnowflakeUsersUsersParametersTimestampInputFormatOutputReferenc
   }
 }
 
-export class DataSnowflakeUsersUsersParametersTimestampInputFormatList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersTimestampInputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4459,8 +4464,8 @@ export interface DataSnowflakeUsersUsersParametersTimestampLtzOutputFormat {
 }
 
 export function dataSnowflakeUsersUsersParametersTimestampLtzOutputFormatToTerraform(struct?: DataSnowflakeUsersUsersParametersTimestampLtzOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4469,8 +4474,8 @@ export function dataSnowflakeUsersUsersParametersTimestampLtzOutputFormatToTerra
 
 
 export function dataSnowflakeUsersUsersParametersTimestampLtzOutputFormatToHclTerraform(struct?: DataSnowflakeUsersUsersParametersTimestampLtzOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4478,7 +4483,7 @@ export function dataSnowflakeUsersUsersParametersTimestampLtzOutputFormatToHclTe
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersTimestampLtzOutputFormatOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersTimestampLtzOutputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4487,7 +4492,7 @@ export class DataSnowflakeUsersUsersParametersTimestampLtzOutputFormatOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4532,14 +4537,14 @@ export class DataSnowflakeUsersUsersParametersTimestampLtzOutputFormatOutputRefe
   }
 }
 
-export class DataSnowflakeUsersUsersParametersTimestampLtzOutputFormatList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersTimestampLtzOutputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4554,8 +4559,8 @@ export interface DataSnowflakeUsersUsersParametersTimestampNtzOutputFormat {
 }
 
 export function dataSnowflakeUsersUsersParametersTimestampNtzOutputFormatToTerraform(struct?: DataSnowflakeUsersUsersParametersTimestampNtzOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4564,8 +4569,8 @@ export function dataSnowflakeUsersUsersParametersTimestampNtzOutputFormatToTerra
 
 
 export function dataSnowflakeUsersUsersParametersTimestampNtzOutputFormatToHclTerraform(struct?: DataSnowflakeUsersUsersParametersTimestampNtzOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4573,7 +4578,7 @@ export function dataSnowflakeUsersUsersParametersTimestampNtzOutputFormatToHclTe
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersTimestampNtzOutputFormatOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersTimestampNtzOutputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4582,7 +4587,7 @@ export class DataSnowflakeUsersUsersParametersTimestampNtzOutputFormatOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4627,14 +4632,14 @@ export class DataSnowflakeUsersUsersParametersTimestampNtzOutputFormatOutputRefe
   }
 }
 
-export class DataSnowflakeUsersUsersParametersTimestampNtzOutputFormatList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersTimestampNtzOutputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4649,8 +4654,8 @@ export interface DataSnowflakeUsersUsersParametersTimestampOutputFormat {
 }
 
 export function dataSnowflakeUsersUsersParametersTimestampOutputFormatToTerraform(struct?: DataSnowflakeUsersUsersParametersTimestampOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4659,8 +4664,8 @@ export function dataSnowflakeUsersUsersParametersTimestampOutputFormatToTerrafor
 
 
 export function dataSnowflakeUsersUsersParametersTimestampOutputFormatToHclTerraform(struct?: DataSnowflakeUsersUsersParametersTimestampOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4668,7 +4673,7 @@ export function dataSnowflakeUsersUsersParametersTimestampOutputFormatToHclTerra
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersTimestampOutputFormatOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersTimestampOutputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4677,7 +4682,7 @@ export class DataSnowflakeUsersUsersParametersTimestampOutputFormatOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4722,14 +4727,14 @@ export class DataSnowflakeUsersUsersParametersTimestampOutputFormatOutputReferen
   }
 }
 
-export class DataSnowflakeUsersUsersParametersTimestampOutputFormatList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersTimestampOutputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4744,8 +4749,8 @@ export interface DataSnowflakeUsersUsersParametersTimestampTypeMapping {
 }
 
 export function dataSnowflakeUsersUsersParametersTimestampTypeMappingToTerraform(struct?: DataSnowflakeUsersUsersParametersTimestampTypeMapping): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4754,8 +4759,8 @@ export function dataSnowflakeUsersUsersParametersTimestampTypeMappingToTerraform
 
 
 export function dataSnowflakeUsersUsersParametersTimestampTypeMappingToHclTerraform(struct?: DataSnowflakeUsersUsersParametersTimestampTypeMapping): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4763,7 +4768,7 @@ export function dataSnowflakeUsersUsersParametersTimestampTypeMappingToHclTerraf
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersTimestampTypeMappingOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersTimestampTypeMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4772,7 +4777,7 @@ export class DataSnowflakeUsersUsersParametersTimestampTypeMappingOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4817,14 +4822,14 @@ export class DataSnowflakeUsersUsersParametersTimestampTypeMappingOutputReferenc
   }
 }
 
-export class DataSnowflakeUsersUsersParametersTimestampTypeMappingList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersTimestampTypeMappingList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4839,8 +4844,8 @@ export interface DataSnowflakeUsersUsersParametersTimestampTzOutputFormat {
 }
 
 export function dataSnowflakeUsersUsersParametersTimestampTzOutputFormatToTerraform(struct?: DataSnowflakeUsersUsersParametersTimestampTzOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4849,8 +4854,8 @@ export function dataSnowflakeUsersUsersParametersTimestampTzOutputFormatToTerraf
 
 
 export function dataSnowflakeUsersUsersParametersTimestampTzOutputFormatToHclTerraform(struct?: DataSnowflakeUsersUsersParametersTimestampTzOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4858,7 +4863,7 @@ export function dataSnowflakeUsersUsersParametersTimestampTzOutputFormatToHclTer
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersTimestampTzOutputFormatOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersTimestampTzOutputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4867,7 +4872,7 @@ export class DataSnowflakeUsersUsersParametersTimestampTzOutputFormatOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4912,14 +4917,14 @@ export class DataSnowflakeUsersUsersParametersTimestampTzOutputFormatOutputRefer
   }
 }
 
-export class DataSnowflakeUsersUsersParametersTimestampTzOutputFormatList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersTimestampTzOutputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4934,8 +4939,8 @@ export interface DataSnowflakeUsersUsersParametersTimezone {
 }
 
 export function dataSnowflakeUsersUsersParametersTimezoneToTerraform(struct?: DataSnowflakeUsersUsersParametersTimezone): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4944,8 +4949,8 @@ export function dataSnowflakeUsersUsersParametersTimezoneToTerraform(struct?: Da
 
 
 export function dataSnowflakeUsersUsersParametersTimezoneToHclTerraform(struct?: DataSnowflakeUsersUsersParametersTimezone): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4953,7 +4958,7 @@ export function dataSnowflakeUsersUsersParametersTimezoneToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersTimezoneOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersTimezoneOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4962,7 +4967,7 @@ export class DataSnowflakeUsersUsersParametersTimezoneOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5007,14 +5012,14 @@ export class DataSnowflakeUsersUsersParametersTimezoneOutputReference extends cd
   }
 }
 
-export class DataSnowflakeUsersUsersParametersTimezoneList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersTimezoneList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5029,8 +5034,8 @@ export interface DataSnowflakeUsersUsersParametersTraceLevel {
 }
 
 export function dataSnowflakeUsersUsersParametersTraceLevelToTerraform(struct?: DataSnowflakeUsersUsersParametersTraceLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5039,8 +5044,8 @@ export function dataSnowflakeUsersUsersParametersTraceLevelToTerraform(struct?: 
 
 
 export function dataSnowflakeUsersUsersParametersTraceLevelToHclTerraform(struct?: DataSnowflakeUsersUsersParametersTraceLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5048,7 +5053,7 @@ export function dataSnowflakeUsersUsersParametersTraceLevelToHclTerraform(struct
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersTraceLevelOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersTraceLevelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5057,7 +5062,7 @@ export class DataSnowflakeUsersUsersParametersTraceLevelOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5102,14 +5107,14 @@ export class DataSnowflakeUsersUsersParametersTraceLevelOutputReference extends 
   }
 }
 
-export class DataSnowflakeUsersUsersParametersTraceLevelList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersTraceLevelList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5124,8 +5129,8 @@ export interface DataSnowflakeUsersUsersParametersTransactionAbortOnError {
 }
 
 export function dataSnowflakeUsersUsersParametersTransactionAbortOnErrorToTerraform(struct?: DataSnowflakeUsersUsersParametersTransactionAbortOnError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5134,8 +5139,8 @@ export function dataSnowflakeUsersUsersParametersTransactionAbortOnErrorToTerraf
 
 
 export function dataSnowflakeUsersUsersParametersTransactionAbortOnErrorToHclTerraform(struct?: DataSnowflakeUsersUsersParametersTransactionAbortOnError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5143,7 +5148,7 @@ export function dataSnowflakeUsersUsersParametersTransactionAbortOnErrorToHclTer
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersTransactionAbortOnErrorOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersTransactionAbortOnErrorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5152,7 +5157,7 @@ export class DataSnowflakeUsersUsersParametersTransactionAbortOnErrorOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5197,14 +5202,14 @@ export class DataSnowflakeUsersUsersParametersTransactionAbortOnErrorOutputRefer
   }
 }
 
-export class DataSnowflakeUsersUsersParametersTransactionAbortOnErrorList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersTransactionAbortOnErrorList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5219,8 +5224,8 @@ export interface DataSnowflakeUsersUsersParametersTransactionDefaultIsolationLev
 }
 
 export function dataSnowflakeUsersUsersParametersTransactionDefaultIsolationLevelToTerraform(struct?: DataSnowflakeUsersUsersParametersTransactionDefaultIsolationLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5229,8 +5234,8 @@ export function dataSnowflakeUsersUsersParametersTransactionDefaultIsolationLeve
 
 
 export function dataSnowflakeUsersUsersParametersTransactionDefaultIsolationLevelToHclTerraform(struct?: DataSnowflakeUsersUsersParametersTransactionDefaultIsolationLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5238,7 +5243,7 @@ export function dataSnowflakeUsersUsersParametersTransactionDefaultIsolationLeve
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersTransactionDefaultIsolationLevelOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersTransactionDefaultIsolationLevelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5247,7 +5252,7 @@ export class DataSnowflakeUsersUsersParametersTransactionDefaultIsolationLevelOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5292,14 +5297,14 @@ export class DataSnowflakeUsersUsersParametersTransactionDefaultIsolationLevelOu
   }
 }
 
-export class DataSnowflakeUsersUsersParametersTransactionDefaultIsolationLevelList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersTransactionDefaultIsolationLevelList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5314,8 +5319,8 @@ export interface DataSnowflakeUsersUsersParametersTwoDigitCenturyStart {
 }
 
 export function dataSnowflakeUsersUsersParametersTwoDigitCenturyStartToTerraform(struct?: DataSnowflakeUsersUsersParametersTwoDigitCenturyStart): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5324,8 +5329,8 @@ export function dataSnowflakeUsersUsersParametersTwoDigitCenturyStartToTerraform
 
 
 export function dataSnowflakeUsersUsersParametersTwoDigitCenturyStartToHclTerraform(struct?: DataSnowflakeUsersUsersParametersTwoDigitCenturyStart): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5333,7 +5338,7 @@ export function dataSnowflakeUsersUsersParametersTwoDigitCenturyStartToHclTerraf
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersTwoDigitCenturyStartOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersTwoDigitCenturyStartOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5342,7 +5347,7 @@ export class DataSnowflakeUsersUsersParametersTwoDigitCenturyStartOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5387,14 +5392,14 @@ export class DataSnowflakeUsersUsersParametersTwoDigitCenturyStartOutputReferenc
   }
 }
 
-export class DataSnowflakeUsersUsersParametersTwoDigitCenturyStartList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersTwoDigitCenturyStartList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5409,8 +5414,8 @@ export interface DataSnowflakeUsersUsersParametersUnsupportedDdlAction {
 }
 
 export function dataSnowflakeUsersUsersParametersUnsupportedDdlActionToTerraform(struct?: DataSnowflakeUsersUsersParametersUnsupportedDdlAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5419,8 +5424,8 @@ export function dataSnowflakeUsersUsersParametersUnsupportedDdlActionToTerraform
 
 
 export function dataSnowflakeUsersUsersParametersUnsupportedDdlActionToHclTerraform(struct?: DataSnowflakeUsersUsersParametersUnsupportedDdlAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5428,7 +5433,7 @@ export function dataSnowflakeUsersUsersParametersUnsupportedDdlActionToHclTerraf
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersUnsupportedDdlActionOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersUnsupportedDdlActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5437,7 +5442,7 @@ export class DataSnowflakeUsersUsersParametersUnsupportedDdlActionOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5482,14 +5487,14 @@ export class DataSnowflakeUsersUsersParametersUnsupportedDdlActionOutputReferenc
   }
 }
 
-export class DataSnowflakeUsersUsersParametersUnsupportedDdlActionList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersUnsupportedDdlActionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5504,8 +5509,8 @@ export interface DataSnowflakeUsersUsersParametersUseCachedResult {
 }
 
 export function dataSnowflakeUsersUsersParametersUseCachedResultToTerraform(struct?: DataSnowflakeUsersUsersParametersUseCachedResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5514,8 +5519,8 @@ export function dataSnowflakeUsersUsersParametersUseCachedResultToTerraform(stru
 
 
 export function dataSnowflakeUsersUsersParametersUseCachedResultToHclTerraform(struct?: DataSnowflakeUsersUsersParametersUseCachedResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5523,7 +5528,7 @@ export function dataSnowflakeUsersUsersParametersUseCachedResultToHclTerraform(s
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersUseCachedResultOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersUseCachedResultOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5532,7 +5537,7 @@ export class DataSnowflakeUsersUsersParametersUseCachedResultOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5577,14 +5582,14 @@ export class DataSnowflakeUsersUsersParametersUseCachedResultOutputReference ext
   }
 }
 
-export class DataSnowflakeUsersUsersParametersUseCachedResultList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersUseCachedResultList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5599,8 +5604,8 @@ export interface DataSnowflakeUsersUsersParametersWeekOfYearPolicy {
 }
 
 export function dataSnowflakeUsersUsersParametersWeekOfYearPolicyToTerraform(struct?: DataSnowflakeUsersUsersParametersWeekOfYearPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5609,8 +5614,8 @@ export function dataSnowflakeUsersUsersParametersWeekOfYearPolicyToTerraform(str
 
 
 export function dataSnowflakeUsersUsersParametersWeekOfYearPolicyToHclTerraform(struct?: DataSnowflakeUsersUsersParametersWeekOfYearPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5618,7 +5623,7 @@ export function dataSnowflakeUsersUsersParametersWeekOfYearPolicyToHclTerraform(
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersWeekOfYearPolicyOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersWeekOfYearPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5627,7 +5632,7 @@ export class DataSnowflakeUsersUsersParametersWeekOfYearPolicyOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5672,14 +5677,14 @@ export class DataSnowflakeUsersUsersParametersWeekOfYearPolicyOutputReference ex
   }
 }
 
-export class DataSnowflakeUsersUsersParametersWeekOfYearPolicyList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersWeekOfYearPolicyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5694,8 +5699,8 @@ export interface DataSnowflakeUsersUsersParametersWeekStart {
 }
 
 export function dataSnowflakeUsersUsersParametersWeekStartToTerraform(struct?: DataSnowflakeUsersUsersParametersWeekStart): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5704,8 +5709,8 @@ export function dataSnowflakeUsersUsersParametersWeekStartToTerraform(struct?: D
 
 
 export function dataSnowflakeUsersUsersParametersWeekStartToHclTerraform(struct?: DataSnowflakeUsersUsersParametersWeekStart): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5713,7 +5718,7 @@ export function dataSnowflakeUsersUsersParametersWeekStartToHclTerraform(struct?
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersWeekStartOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersWeekStartOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5722,7 +5727,7 @@ export class DataSnowflakeUsersUsersParametersWeekStartOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5767,14 +5772,14 @@ export class DataSnowflakeUsersUsersParametersWeekStartOutputReference extends c
   }
 }
 
-export class DataSnowflakeUsersUsersParametersWeekStartList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersWeekStartList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5789,8 +5794,8 @@ export interface DataSnowflakeUsersUsersParameters {
 }
 
 export function dataSnowflakeUsersUsersParametersToTerraform(struct?: DataSnowflakeUsersUsersParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5799,8 +5804,8 @@ export function dataSnowflakeUsersUsersParametersToTerraform(struct?: DataSnowfl
 
 
 export function dataSnowflakeUsersUsersParametersToHclTerraform(struct?: DataSnowflakeUsersUsersParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5808,7 +5813,7 @@ export function dataSnowflakeUsersUsersParametersToHclTerraform(struct?: DataSno
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersParametersOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5817,7 +5822,7 @@ export class DataSnowflakeUsersUsersParametersOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -6185,14 +6190,14 @@ export class DataSnowflakeUsersUsersParametersOutputReference extends cdktf.Comp
   }
 }
 
-export class DataSnowflakeUsersUsersParametersList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersParametersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6207,8 +6212,8 @@ export interface DataSnowflakeUsersUsersShowOutput {
 }
 
 export function dataSnowflakeUsersUsersShowOutputToTerraform(struct?: DataSnowflakeUsersUsersShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6217,8 +6222,8 @@ export function dataSnowflakeUsersUsersShowOutputToTerraform(struct?: DataSnowfl
 
 
 export function dataSnowflakeUsersUsersShowOutputToHclTerraform(struct?: DataSnowflakeUsersUsersShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6226,7 +6231,7 @@ export function dataSnowflakeUsersUsersShowOutputToHclTerraform(struct?: DataSno
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersShowOutputOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -6235,7 +6240,7 @@ export class DataSnowflakeUsersUsersShowOutputOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -6339,6 +6344,11 @@ export class DataSnowflakeUsersUsersShowOutputOutputReference extends cdktf.Comp
     return this.getBooleanAttribute('has_rsa_public_key');
   }
 
+  // has_workload_identity - computed: true, optional: false, required: false
+  public get hasWorkloadIdentity() {
+    return this.getBooleanAttribute('has_workload_identity');
+  }
+
   // last_name - computed: true, optional: false, required: false
   public get lastName() {
     return this.getStringAttribute('last_name');
@@ -6395,14 +6405,14 @@ export class DataSnowflakeUsersUsersShowOutputOutputReference extends cdktf.Comp
   }
 }
 
-export class DataSnowflakeUsersUsersShowOutputList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6417,8 +6427,8 @@ export interface DataSnowflakeUsersUsers {
 }
 
 export function dataSnowflakeUsersUsersToTerraform(struct?: DataSnowflakeUsersUsers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6427,8 +6437,8 @@ export function dataSnowflakeUsersUsersToTerraform(struct?: DataSnowflakeUsersUs
 
 
 export function dataSnowflakeUsersUsersToHclTerraform(struct?: DataSnowflakeUsersUsers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6436,7 +6446,7 @@ export function dataSnowflakeUsersUsersToHclTerraform(struct?: DataSnowflakeUser
   return attrs;
 }
 
-export class DataSnowflakeUsersUsersOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersUsersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -6445,7 +6455,7 @@ export class DataSnowflakeUsersUsersOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -6483,14 +6493,14 @@ export class DataSnowflakeUsersUsersOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class DataSnowflakeUsersUsersList extends cdktf.ComplexList {
+export class DataSnowflakeUsersUsersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6505,43 +6515,43 @@ export interface DataSnowflakeUsersLimit {
   /**
   * Specifies a **case-sensitive** pattern that is used to match object name. After the first match, the limit on the number of rows will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/users#from DataSnowflakeUsers#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/users#from DataSnowflakeUsers#from}
   */
   readonly from?: string;
   /**
   * The maximum number of rows to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/users#rows DataSnowflakeUsers#rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/users#rows DataSnowflakeUsers#rows}
   */
   readonly rows: number;
 }
 
 export function dataSnowflakeUsersLimitToTerraform(struct?: DataSnowflakeUsersLimitOutputReference | DataSnowflakeUsersLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from: cdktf.stringToTerraform(struct!.from),
-    rows: cdktf.numberToTerraform(struct!.rows),
+    from: cdktn.stringToTerraform(struct!.from),
+    rows: cdktn.numberToTerraform(struct!.rows),
   }
 }
 
 
 export function dataSnowflakeUsersLimitToHclTerraform(struct?: DataSnowflakeUsersLimitOutputReference | DataSnowflakeUsersLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from: {
-      value: cdktf.stringToHclTerraform(struct!.from),
+      value: cdktn.stringToHclTerraform(struct!.from),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rows: {
-      value: cdktf.numberToHclTerraform(struct!.rows),
+      value: cdktn.numberToHclTerraform(struct!.rows),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -6552,14 +6562,14 @@ export function dataSnowflakeUsersLimitToHclTerraform(struct?: DataSnowflakeUser
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataSnowflakeUsersLimitOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeUsersLimitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6621,9 +6631,9 @@ export class DataSnowflakeUsersLimitOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/users snowflake_users}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/users snowflake_users}
 */
-export class DataSnowflakeUsers extends cdktf.TerraformDataSource {
+export class DataSnowflakeUsers extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -6634,14 +6644,14 @@ export class DataSnowflakeUsers extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataSnowflakeUsers resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataSnowflakeUsers resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeUsers to import
-  * @param importFromId The id of the existing DataSnowflakeUsers that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeUsers that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeUsers to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_users", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_users", importId: importFromId, provider });
       }
 
   // ===========
@@ -6649,7 +6659,7 @@ export class DataSnowflakeUsers extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/users snowflake_users} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/users snowflake_users} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -6660,7 +6670,7 @@ export class DataSnowflakeUsers extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_users',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -6738,11 +6748,11 @@ export class DataSnowflakeUsers extends cdktf.TerraformDataSource {
   }
 
   // with_describe - computed: false, optional: true, required: false
-  private _withDescribe?: boolean | cdktf.IResolvable; 
+  private _withDescribe?: boolean | cdktn.IResolvable; 
   public get withDescribe() {
     return this.getBooleanAttribute('with_describe');
   }
-  public set withDescribe(value: boolean | cdktf.IResolvable) {
+  public set withDescribe(value: boolean | cdktn.IResolvable) {
     this._withDescribe = value;
   }
   public resetWithDescribe() {
@@ -6754,11 +6764,11 @@ export class DataSnowflakeUsers extends cdktf.TerraformDataSource {
   }
 
   // with_parameters - computed: false, optional: true, required: false
-  private _withParameters?: boolean | cdktf.IResolvable; 
+  private _withParameters?: boolean | cdktn.IResolvable; 
   public get withParameters() {
     return this.getBooleanAttribute('with_parameters');
   }
-  public set withParameters(value: boolean | cdktf.IResolvable) {
+  public set withParameters(value: boolean | cdktn.IResolvable) {
     this._withParameters = value;
   }
   public resetWithParameters() {
@@ -6791,11 +6801,11 @@ export class DataSnowflakeUsers extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      like: cdktf.stringToTerraform(this._like),
-      starts_with: cdktf.stringToTerraform(this._startsWith),
-      with_describe: cdktf.booleanToTerraform(this._withDescribe),
-      with_parameters: cdktf.booleanToTerraform(this._withParameters),
+      id: cdktn.stringToTerraform(this._id),
+      like: cdktn.stringToTerraform(this._like),
+      starts_with: cdktn.stringToTerraform(this._startsWith),
+      with_describe: cdktn.booleanToTerraform(this._withDescribe),
+      with_parameters: cdktn.booleanToTerraform(this._withParameters),
       limit: dataSnowflakeUsersLimitToTerraform(this._limit.internalValue),
     };
   }
@@ -6803,31 +6813,31 @@ export class DataSnowflakeUsers extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       like: {
-        value: cdktf.stringToHclTerraform(this._like),
+        value: cdktn.stringToHclTerraform(this._like),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       starts_with: {
-        value: cdktf.stringToHclTerraform(this._startsWith),
+        value: cdktn.stringToHclTerraform(this._startsWith),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       with_describe: {
-        value: cdktf.booleanToHclTerraform(this._withDescribe),
+        value: cdktn.booleanToHclTerraform(this._withDescribe),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       with_parameters: {
-        value: cdktf.booleanToHclTerraform(this._withParameters),
+        value: cdktn.booleanToHclTerraform(this._withParameters),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

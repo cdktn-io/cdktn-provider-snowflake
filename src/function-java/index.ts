@@ -1,55 +1,55 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface FunctionJavaConfig extends cdktf.TerraformMetaArguments {
+export interface FunctionJavaConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Default: `user-defined function`) Specifies a comment for the function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#comment FunctionJava#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#comment FunctionJava#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the function. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#database FunctionJava#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#database FunctionJava#database}
   */
   readonly database: string;
   /**
   * Enable stdout/stderr fast path logging for anonymous stored procs. This is a public parameter (similar to LOG_LEVEL). For more information, check [ENABLE_CONSOLE_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-console-output).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#enable_console_output FunctionJava#enable_console_output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#enable_console_output FunctionJava#enable_console_output}
   */
-  readonly enableConsoleOutput?: boolean | cdktf.IResolvable;
+  readonly enableConsoleOutput?: boolean | cdktn.IResolvable;
   /**
   * The names of [external access integrations](https://docs.snowflake.com/en/sql-reference/sql/create-external-access-integration) needed in order for this function’s handler code to access external networks. An external access integration specifies [network rules](https://docs.snowflake.com/en/sql-reference/sql/create-network-rule) and [secrets](https://docs.snowflake.com/en/sql-reference/sql/create-secret) that specify external locations and credentials (if any) allowed for use by handler code when making requests of an external network, such as an external REST API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#external_access_integrations FunctionJava#external_access_integrations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#external_access_integrations FunctionJava#external_access_integrations}
   */
   readonly externalAccessIntegrations?: string[];
   /**
   * Defines the handler code executed when the UDF is called. Wrapping `$$` signs are added by the provider automatically; do not include them. The `function_definition` value must be Java source code. For more information, see [Introduction to Java UDFs](https://docs.snowflake.com/en/developer-guide/udf/java/udf-java-introduction). To mitigate permadiff on this field, the provider replaces blank characters with a space. This can lead to false positives in cases where a change in case or run of whitespace is semantically significant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#function_definition FunctionJava#function_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#function_definition FunctionJava#function_definition}
   */
   readonly functionDefinition?: string;
   /**
   * The name of the handler method or class. If the handler is for a scalar UDF, returning a non-tabular value, the HANDLER value should be a method name, as in the following form: `MyClass.myMethod`. If the handler is for a tabular UDF, the HANDLER value should be the name of a handler class.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#handler FunctionJava#handler}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#handler FunctionJava#handler}
   */
   readonly handler: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#id FunctionJava#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#id FunctionJava#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,97 +58,97 @@ export interface FunctionJavaConfig extends cdktf.TerraformMetaArguments {
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the function is secure. By design, the Snowflake's `SHOW FUNCTIONS` command does not provide information about secure functions (consult [function docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#id1) and [Protecting Sensitive Information with Secure UDFs and Stored Procedures](https://docs.snowflake.com/en/developer-guide/secure-udf-procedure)) which is essential to manage/import function with Terraform. Use the role owning the function while managing secure functions. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#is_secure FunctionJava#is_secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#is_secure FunctionJava#is_secure}
   */
   readonly isSecure?: string;
   /**
   * LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#log_level FunctionJava#log_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#log_level FunctionJava#log_level}
   */
   readonly logLevel?: string;
   /**
   * METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#metric_level FunctionJava#metric_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#metric_level FunctionJava#metric_level}
   */
   readonly metricLevel?: string;
   /**
   * The name of the function; the identifier does not need to be unique for the schema in which the function is created because UDFs are identified and resolved by the combination of the name and argument types. Check the [docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#all-languages). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#name FunctionJava#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#name FunctionJava#name}
   */
   readonly name: string;
   /**
   * Specifies the behavior of the function when called with null inputs. Valid values are (case-insensitive): `CALLED ON NULL INPUT` | `RETURNS NULL ON NULL INPUT`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#null_input_behavior FunctionJava#null_input_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#null_input_behavior FunctionJava#null_input_behavior}
   */
   readonly nullInputBehavior?: string;
   /**
   * The name and version number of Snowflake system packages required as dependencies. The value should be of the form `package_name:version_number`, where `package_name` is `snowflake_domain:package`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#packages FunctionJava#packages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#packages FunctionJava#packages}
   */
   readonly packages?: string[];
   /**
   * Specifies the behavior of the function when returning results. Valid values are (case-insensitive): `VOLATILE` | `IMMUTABLE`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#return_results_behavior FunctionJava#return_results_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#return_results_behavior FunctionJava#return_results_behavior}
   */
   readonly returnResultsBehavior?: string;
   /**
   * Specifies the results returned by the UDF, which determines the UDF type. Use `<result_data_type>` to create a scalar UDF that returns a single value with the specified data type. Use `TABLE (col_name col_data_type, ...)` to creates a table UDF that returns tabular results with the specified table column(s) and column type(s). For the details, consult the [docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#all-languages).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#return_type FunctionJava#return_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#return_type FunctionJava#return_type}
   */
   readonly returnType: string;
   /**
   * Specifies the Java JDK runtime version to use. The supported versions of Java are 11.x and 17.x. If RUNTIME_VERSION is not set, Java JDK 11 is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#runtime_version FunctionJava#runtime_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#runtime_version FunctionJava#runtime_version}
   */
   readonly runtimeVersion?: string;
   /**
   * The schema in which to create the function. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#schema FunctionJava#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#schema FunctionJava#schema}
   */
   readonly schema: string;
   /**
   * Trace level value to use when generating/filtering trace events For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#trace_level FunctionJava#trace_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#trace_level FunctionJava#trace_level}
   */
   readonly traceLevel?: string;
   /**
   * arguments block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#arguments FunctionJava#arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#arguments FunctionJava#arguments}
   */
-  readonly arguments?: FunctionJavaArguments[] | cdktf.IResolvable;
+  readonly arguments?: FunctionJavaArguments[] | cdktn.IResolvable;
   /**
   * imports block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#imports FunctionJava#imports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#imports FunctionJava#imports}
   */
-  readonly imports?: FunctionJavaImports[] | cdktf.IResolvable;
+  readonly imports?: FunctionJavaImports[] | cdktn.IResolvable;
   /**
   * secrets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#secrets FunctionJava#secrets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#secrets FunctionJava#secrets}
   */
-  readonly secrets?: FunctionJavaSecrets[] | cdktf.IResolvable;
+  readonly secrets?: FunctionJavaSecrets[] | cdktn.IResolvable;
   /**
   * target_path block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#target_path FunctionJava#target_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#target_path FunctionJava#target_path}
   */
   readonly targetPath?: FunctionJavaTargetPath;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#timeouts FunctionJava#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#timeouts FunctionJava#timeouts}
   */
   readonly timeouts?: FunctionJavaTimeouts;
 }
@@ -156,8 +156,8 @@ export interface FunctionJavaParametersEnableConsoleOutput {
 }
 
 export function functionJavaParametersEnableConsoleOutputToTerraform(struct?: FunctionJavaParametersEnableConsoleOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -166,8 +166,8 @@ export function functionJavaParametersEnableConsoleOutputToTerraform(struct?: Fu
 
 
 export function functionJavaParametersEnableConsoleOutputToHclTerraform(struct?: FunctionJavaParametersEnableConsoleOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -175,7 +175,7 @@ export function functionJavaParametersEnableConsoleOutputToHclTerraform(struct?:
   return attrs;
 }
 
-export class FunctionJavaParametersEnableConsoleOutputOutputReference extends cdktf.ComplexObject {
+export class FunctionJavaParametersEnableConsoleOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -184,7 +184,7 @@ export class FunctionJavaParametersEnableConsoleOutputOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -229,14 +229,14 @@ export class FunctionJavaParametersEnableConsoleOutputOutputReference extends cd
   }
 }
 
-export class FunctionJavaParametersEnableConsoleOutputList extends cdktf.ComplexList {
+export class FunctionJavaParametersEnableConsoleOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -251,8 +251,8 @@ export interface FunctionJavaParametersLogLevel {
 }
 
 export function functionJavaParametersLogLevelToTerraform(struct?: FunctionJavaParametersLogLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -261,8 +261,8 @@ export function functionJavaParametersLogLevelToTerraform(struct?: FunctionJavaP
 
 
 export function functionJavaParametersLogLevelToHclTerraform(struct?: FunctionJavaParametersLogLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -270,7 +270,7 @@ export function functionJavaParametersLogLevelToHclTerraform(struct?: FunctionJa
   return attrs;
 }
 
-export class FunctionJavaParametersLogLevelOutputReference extends cdktf.ComplexObject {
+export class FunctionJavaParametersLogLevelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -279,7 +279,7 @@ export class FunctionJavaParametersLogLevelOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -324,14 +324,14 @@ export class FunctionJavaParametersLogLevelOutputReference extends cdktf.Complex
   }
 }
 
-export class FunctionJavaParametersLogLevelList extends cdktf.ComplexList {
+export class FunctionJavaParametersLogLevelList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -346,8 +346,8 @@ export interface FunctionJavaParametersMetricLevel {
 }
 
 export function functionJavaParametersMetricLevelToTerraform(struct?: FunctionJavaParametersMetricLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -356,8 +356,8 @@ export function functionJavaParametersMetricLevelToTerraform(struct?: FunctionJa
 
 
 export function functionJavaParametersMetricLevelToHclTerraform(struct?: FunctionJavaParametersMetricLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -365,7 +365,7 @@ export function functionJavaParametersMetricLevelToHclTerraform(struct?: Functio
   return attrs;
 }
 
-export class FunctionJavaParametersMetricLevelOutputReference extends cdktf.ComplexObject {
+export class FunctionJavaParametersMetricLevelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -374,7 +374,7 @@ export class FunctionJavaParametersMetricLevelOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -419,14 +419,14 @@ export class FunctionJavaParametersMetricLevelOutputReference extends cdktf.Comp
   }
 }
 
-export class FunctionJavaParametersMetricLevelList extends cdktf.ComplexList {
+export class FunctionJavaParametersMetricLevelList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -441,8 +441,8 @@ export interface FunctionJavaParametersTraceLevel {
 }
 
 export function functionJavaParametersTraceLevelToTerraform(struct?: FunctionJavaParametersTraceLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -451,8 +451,8 @@ export function functionJavaParametersTraceLevelToTerraform(struct?: FunctionJav
 
 
 export function functionJavaParametersTraceLevelToHclTerraform(struct?: FunctionJavaParametersTraceLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -460,7 +460,7 @@ export function functionJavaParametersTraceLevelToHclTerraform(struct?: Function
   return attrs;
 }
 
-export class FunctionJavaParametersTraceLevelOutputReference extends cdktf.ComplexObject {
+export class FunctionJavaParametersTraceLevelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -469,7 +469,7 @@ export class FunctionJavaParametersTraceLevelOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -514,14 +514,14 @@ export class FunctionJavaParametersTraceLevelOutputReference extends cdktf.Compl
   }
 }
 
-export class FunctionJavaParametersTraceLevelList extends cdktf.ComplexList {
+export class FunctionJavaParametersTraceLevelList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -536,8 +536,8 @@ export interface FunctionJavaParameters {
 }
 
 export function functionJavaParametersToTerraform(struct?: FunctionJavaParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -546,8 +546,8 @@ export function functionJavaParametersToTerraform(struct?: FunctionJavaParameter
 
 
 export function functionJavaParametersToHclTerraform(struct?: FunctionJavaParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -555,7 +555,7 @@ export function functionJavaParametersToHclTerraform(struct?: FunctionJavaParame
   return attrs;
 }
 
-export class FunctionJavaParametersOutputReference extends cdktf.ComplexObject {
+export class FunctionJavaParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -564,7 +564,7 @@ export class FunctionJavaParametersOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -608,14 +608,14 @@ export class FunctionJavaParametersOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class FunctionJavaParametersList extends cdktf.ComplexList {
+export class FunctionJavaParametersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -630,8 +630,8 @@ export interface FunctionJavaShowOutput {
 }
 
 export function functionJavaShowOutputToTerraform(struct?: FunctionJavaShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -640,8 +640,8 @@ export function functionJavaShowOutputToTerraform(struct?: FunctionJavaShowOutpu
 
 
 export function functionJavaShowOutputToHclTerraform(struct?: FunctionJavaShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -649,7 +649,7 @@ export function functionJavaShowOutputToHclTerraform(struct?: FunctionJavaShowOu
   return attrs;
 }
 
-export class FunctionJavaShowOutputOutputReference extends cdktf.ComplexObject {
+export class FunctionJavaShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -658,7 +658,7 @@ export class FunctionJavaShowOutputOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -778,14 +778,14 @@ export class FunctionJavaShowOutputOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class FunctionJavaShowOutputList extends cdktf.ComplexList {
+export class FunctionJavaShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -800,56 +800,56 @@ export interface FunctionJavaArguments {
   /**
   * The argument type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#arg_data_type FunctionJava#arg_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#arg_data_type FunctionJava#arg_data_type}
   */
   readonly argDataType: string;
   /**
   * Optional default value for the argument. For text values use single quotes. Numeric values can be unquoted. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#arg_default_value FunctionJava#arg_default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#arg_default_value FunctionJava#arg_default_value}
   */
   readonly argDefaultValue?: string;
   /**
   * The argument name. The provider wraps it in double quotes by default, so be aware of that while referencing the argument in the function definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#arg_name FunctionJava#arg_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#arg_name FunctionJava#arg_name}
   */
   readonly argName: string;
 }
 
-export function functionJavaArgumentsToTerraform(struct?: FunctionJavaArguments | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function functionJavaArgumentsToTerraform(struct?: FunctionJavaArguments | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arg_data_type: cdktf.stringToTerraform(struct!.argDataType),
-    arg_default_value: cdktf.stringToTerraform(struct!.argDefaultValue),
-    arg_name: cdktf.stringToTerraform(struct!.argName),
+    arg_data_type: cdktn.stringToTerraform(struct!.argDataType),
+    arg_default_value: cdktn.stringToTerraform(struct!.argDefaultValue),
+    arg_name: cdktn.stringToTerraform(struct!.argName),
   }
 }
 
 
-export function functionJavaArgumentsToHclTerraform(struct?: FunctionJavaArguments | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function functionJavaArgumentsToHclTerraform(struct?: FunctionJavaArguments | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arg_data_type: {
-      value: cdktf.stringToHclTerraform(struct!.argDataType),
+      value: cdktn.stringToHclTerraform(struct!.argDataType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     arg_default_value: {
-      value: cdktf.stringToHclTerraform(struct!.argDefaultValue),
+      value: cdktn.stringToHclTerraform(struct!.argDefaultValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     arg_name: {
-      value: cdktf.stringToHclTerraform(struct!.argName),
+      value: cdktn.stringToHclTerraform(struct!.argName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -860,9 +860,9 @@ export function functionJavaArgumentsToHclTerraform(struct?: FunctionJavaArgumen
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FunctionJavaArgumentsOutputReference extends cdktf.ComplexObject {
+export class FunctionJavaArgumentsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -870,11 +870,11 @@ export class FunctionJavaArgumentsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FunctionJavaArguments | cdktf.IResolvable | undefined {
+  public get internalValue(): FunctionJavaArguments | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -895,7 +895,7 @@ export class FunctionJavaArgumentsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FunctionJavaArguments | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FunctionJavaArguments | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -903,7 +903,7 @@ export class FunctionJavaArgumentsOutputReference extends cdktf.ComplexObject {
       this._argDefaultValue = undefined;
       this._argName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -959,15 +959,15 @@ export class FunctionJavaArgumentsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class FunctionJavaArgumentsList extends cdktf.ComplexList {
-  public internalValue? : FunctionJavaArguments[] | cdktf.IResolvable
+export class FunctionJavaArgumentsList extends cdktn.ComplexList {
+  public internalValue? : FunctionJavaArguments[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -982,43 +982,43 @@ export interface FunctionJavaImports {
   /**
   * Path for import on stage, without the leading `/`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#path_on_stage FunctionJava#path_on_stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#path_on_stage FunctionJava#path_on_stage}
   */
   readonly pathOnStage: string;
   /**
   * Stage location without leading `@`. To use your user's stage set this to `~`, otherwise pass fully qualified name of the stage (with every part contained in double quotes or use `snowflake_stage.<your stage's resource name>.fully_qualified_name` if you manage this stage through terraform).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#stage_location FunctionJava#stage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#stage_location FunctionJava#stage_location}
   */
   readonly stageLocation: string;
 }
 
-export function functionJavaImportsToTerraform(struct?: FunctionJavaImports | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function functionJavaImportsToTerraform(struct?: FunctionJavaImports | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path_on_stage: cdktf.stringToTerraform(struct!.pathOnStage),
-    stage_location: cdktf.stringToTerraform(struct!.stageLocation),
+    path_on_stage: cdktn.stringToTerraform(struct!.pathOnStage),
+    stage_location: cdktn.stringToTerraform(struct!.stageLocation),
   }
 }
 
 
-export function functionJavaImportsToHclTerraform(struct?: FunctionJavaImports | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function functionJavaImportsToHclTerraform(struct?: FunctionJavaImports | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path_on_stage: {
-      value: cdktf.stringToHclTerraform(struct!.pathOnStage),
+      value: cdktn.stringToHclTerraform(struct!.pathOnStage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stage_location: {
-      value: cdktf.stringToHclTerraform(struct!.stageLocation),
+      value: cdktn.stringToHclTerraform(struct!.stageLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1029,9 +1029,9 @@ export function functionJavaImportsToHclTerraform(struct?: FunctionJavaImports |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FunctionJavaImportsOutputReference extends cdktf.ComplexObject {
+export class FunctionJavaImportsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1039,11 +1039,11 @@ export class FunctionJavaImportsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FunctionJavaImports | cdktf.IResolvable | undefined {
+  public get internalValue(): FunctionJavaImports | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1060,14 +1060,14 @@ export class FunctionJavaImportsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FunctionJavaImports | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FunctionJavaImports | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._pathOnStage = undefined;
       this._stageLocation = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1106,15 +1106,15 @@ export class FunctionJavaImportsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class FunctionJavaImportsList extends cdktf.ComplexList {
-  public internalValue? : FunctionJavaImports[] | cdktf.IResolvable
+export class FunctionJavaImportsList extends cdktn.ComplexList {
+  public internalValue? : FunctionJavaImports[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1129,43 +1129,43 @@ export interface FunctionJavaSecrets {
   /**
   * Fully qualified name of the allowed [secret](https://docs.snowflake.com/en/sql-reference/sql/create-secret). You will receive an error if you specify a SECRETS value whose secret isn’t also included in an integration specified by the EXTERNAL_ACCESS_INTEGRATIONS parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#secret_id FunctionJava#secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#secret_id FunctionJava#secret_id}
   */
   readonly secretId: string;
   /**
   * The variable that will be used in handler code when retrieving information from the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#secret_variable_name FunctionJava#secret_variable_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#secret_variable_name FunctionJava#secret_variable_name}
   */
   readonly secretVariableName: string;
 }
 
-export function functionJavaSecretsToTerraform(struct?: FunctionJavaSecrets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function functionJavaSecretsToTerraform(struct?: FunctionJavaSecrets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_id: cdktf.stringToTerraform(struct!.secretId),
-    secret_variable_name: cdktf.stringToTerraform(struct!.secretVariableName),
+    secret_id: cdktn.stringToTerraform(struct!.secretId),
+    secret_variable_name: cdktn.stringToTerraform(struct!.secretVariableName),
   }
 }
 
 
-export function functionJavaSecretsToHclTerraform(struct?: FunctionJavaSecrets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function functionJavaSecretsToHclTerraform(struct?: FunctionJavaSecrets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_id: {
-      value: cdktf.stringToHclTerraform(struct!.secretId),
+      value: cdktn.stringToHclTerraform(struct!.secretId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_variable_name: {
-      value: cdktf.stringToHclTerraform(struct!.secretVariableName),
+      value: cdktn.stringToHclTerraform(struct!.secretVariableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1176,9 +1176,9 @@ export function functionJavaSecretsToHclTerraform(struct?: FunctionJavaSecrets |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FunctionJavaSecretsOutputReference extends cdktf.ComplexObject {
+export class FunctionJavaSecretsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1186,11 +1186,11 @@ export class FunctionJavaSecretsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FunctionJavaSecrets | cdktf.IResolvable | undefined {
+  public get internalValue(): FunctionJavaSecrets | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1207,14 +1207,14 @@ export class FunctionJavaSecretsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FunctionJavaSecrets | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FunctionJavaSecrets | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._secretId = undefined;
       this._secretVariableName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1253,15 +1253,15 @@ export class FunctionJavaSecretsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class FunctionJavaSecretsList extends cdktf.ComplexList {
-  public internalValue? : FunctionJavaSecrets[] | cdktf.IResolvable
+export class FunctionJavaSecretsList extends cdktn.ComplexList {
+  public internalValue? : FunctionJavaSecrets[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1276,43 +1276,43 @@ export interface FunctionJavaTargetPath {
   /**
   * Path for import on stage, without the leading `/`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#path_on_stage FunctionJava#path_on_stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#path_on_stage FunctionJava#path_on_stage}
   */
   readonly pathOnStage: string;
   /**
   * Stage location without leading `@`. To use your user's stage set this to `~`, otherwise pass fully qualified name of the stage (with every part contained in double quotes or use `snowflake_stage.<your stage's resource name>.fully_qualified_name` if you manage this stage through terraform).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#stage_location FunctionJava#stage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#stage_location FunctionJava#stage_location}
   */
   readonly stageLocation: string;
 }
 
 export function functionJavaTargetPathToTerraform(struct?: FunctionJavaTargetPathOutputReference | FunctionJavaTargetPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path_on_stage: cdktf.stringToTerraform(struct!.pathOnStage),
-    stage_location: cdktf.stringToTerraform(struct!.stageLocation),
+    path_on_stage: cdktn.stringToTerraform(struct!.pathOnStage),
+    stage_location: cdktn.stringToTerraform(struct!.stageLocation),
   }
 }
 
 
 export function functionJavaTargetPathToHclTerraform(struct?: FunctionJavaTargetPathOutputReference | FunctionJavaTargetPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path_on_stage: {
-      value: cdktf.stringToHclTerraform(struct!.pathOnStage),
+      value: cdktn.stringToHclTerraform(struct!.pathOnStage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stage_location: {
-      value: cdktf.stringToHclTerraform(struct!.stageLocation),
+      value: cdktn.stringToHclTerraform(struct!.stageLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1323,14 +1323,14 @@ export function functionJavaTargetPathToHclTerraform(struct?: FunctionJavaTarget
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FunctionJavaTargetPathOutputReference extends cdktf.ComplexObject {
+export class FunctionJavaTargetPathOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1389,63 +1389,63 @@ export class FunctionJavaTargetPathOutputReference extends cdktf.ComplexObject {
 }
 export interface FunctionJavaTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#create FunctionJava#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#create FunctionJava#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#delete FunctionJava#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#delete FunctionJava#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#read FunctionJava#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#read FunctionJava#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#update FunctionJava#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#update FunctionJava#update}
   */
   readonly update?: string;
 }
 
-export function functionJavaTimeoutsToTerraform(struct?: FunctionJavaTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function functionJavaTimeoutsToTerraform(struct?: FunctionJavaTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function functionJavaTimeoutsToHclTerraform(struct?: FunctionJavaTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function functionJavaTimeoutsToHclTerraform(struct?: FunctionJavaTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1456,19 +1456,19 @@ export function functionJavaTimeoutsToHclTerraform(struct?: FunctionJavaTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FunctionJavaTimeoutsOutputReference extends cdktf.ComplexObject {
+export class FunctionJavaTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): FunctionJavaTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): FunctionJavaTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1493,7 +1493,7 @@ export class FunctionJavaTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FunctionJavaTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FunctionJavaTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1502,7 +1502,7 @@ export class FunctionJavaTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1582,9 +1582,9 @@ export class FunctionJavaTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java snowflake_function_java}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java snowflake_function_java}
 */
-export class FunctionJava extends cdktf.TerraformResource {
+export class FunctionJava extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1595,14 +1595,14 @@ export class FunctionJava extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a FunctionJava resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a FunctionJava resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FunctionJava to import
-  * @param importFromId The id of the existing FunctionJava that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FunctionJava that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FunctionJava to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_function_java", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_function_java", importId: importFromId, provider });
       }
 
   // ===========
@@ -1610,7 +1610,7 @@ export class FunctionJava extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/function_java snowflake_function_java} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/function_java snowflake_function_java} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1621,7 +1621,7 @@ export class FunctionJava extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_function_java',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -1691,11 +1691,11 @@ export class FunctionJava extends cdktf.TerraformResource {
   }
 
   // enable_console_output - computed: true, optional: true, required: false
-  private _enableConsoleOutput?: boolean | cdktf.IResolvable; 
+  private _enableConsoleOutput?: boolean | cdktn.IResolvable; 
   public get enableConsoleOutput() {
     return this.getBooleanAttribute('enable_console_output');
   }
-  public set enableConsoleOutput(value: boolean | cdktf.IResolvable) {
+  public set enableConsoleOutput(value: boolean | cdktn.IResolvable) {
     this._enableConsoleOutput = value;
   }
   public resetEnableConsoleOutput() {
@@ -1709,7 +1709,7 @@ export class FunctionJava extends cdktf.TerraformResource {
   // external_access_integrations - computed: false, optional: true, required: false
   private _externalAccessIntegrations?: string[]; 
   public get externalAccessIntegrations() {
-    return cdktf.Fn.tolist(this.getListAttribute('external_access_integrations'));
+    return cdktn.Fn.tolist(this.getListAttribute('external_access_integrations'));
   }
   public set externalAccessIntegrations(value: string[]) {
     this._externalAccessIntegrations = value;
@@ -1857,7 +1857,7 @@ export class FunctionJava extends cdktf.TerraformResource {
   // packages - computed: false, optional: true, required: false
   private _packages?: string[]; 
   public get packages() {
-    return cdktf.Fn.tolist(this.getListAttribute('packages'));
+    return cdktn.Fn.tolist(this.getListAttribute('packages'));
   }
   public set packages(value: string[]) {
     this._packages = value;
@@ -1961,7 +1961,7 @@ export class FunctionJava extends cdktf.TerraformResource {
   public get arguments() {
     return this._arguments;
   }
-  public putArguments(value: FunctionJavaArguments[] | cdktf.IResolvable) {
+  public putArguments(value: FunctionJavaArguments[] | cdktn.IResolvable) {
     this._arguments.internalValue = value;
   }
   public resetArguments() {
@@ -1977,7 +1977,7 @@ export class FunctionJava extends cdktf.TerraformResource {
   public get imports() {
     return this._imports;
   }
-  public putImports(value: FunctionJavaImports[] | cdktf.IResolvable) {
+  public putImports(value: FunctionJavaImports[] | cdktn.IResolvable) {
     this._imports.internalValue = value;
   }
   public resetImports() {
@@ -1993,7 +1993,7 @@ export class FunctionJava extends cdktf.TerraformResource {
   public get secrets() {
     return this._secrets;
   }
-  public putSecrets(value: FunctionJavaSecrets[] | cdktf.IResolvable) {
+  public putSecrets(value: FunctionJavaSecrets[] | cdktn.IResolvable) {
     this._secrets.internalValue = value;
   }
   public resetSecrets() {
@@ -2042,27 +2042,27 @@ export class FunctionJava extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      database: cdktf.stringToTerraform(this._database),
-      enable_console_output: cdktf.booleanToTerraform(this._enableConsoleOutput),
-      external_access_integrations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._externalAccessIntegrations),
-      function_definition: cdktf.stringToTerraform(this._functionDefinition),
-      handler: cdktf.stringToTerraform(this._handler),
-      id: cdktf.stringToTerraform(this._id),
-      is_secure: cdktf.stringToTerraform(this._isSecure),
-      log_level: cdktf.stringToTerraform(this._logLevel),
-      metric_level: cdktf.stringToTerraform(this._metricLevel),
-      name: cdktf.stringToTerraform(this._name),
-      null_input_behavior: cdktf.stringToTerraform(this._nullInputBehavior),
-      packages: cdktf.listMapper(cdktf.stringToTerraform, false)(this._packages),
-      return_results_behavior: cdktf.stringToTerraform(this._returnResultsBehavior),
-      return_type: cdktf.stringToTerraform(this._returnType),
-      runtime_version: cdktf.stringToTerraform(this._runtimeVersion),
-      schema: cdktf.stringToTerraform(this._schema),
-      trace_level: cdktf.stringToTerraform(this._traceLevel),
-      arguments: cdktf.listMapper(functionJavaArgumentsToTerraform, true)(this._arguments.internalValue),
-      imports: cdktf.listMapper(functionJavaImportsToTerraform, true)(this._imports.internalValue),
-      secrets: cdktf.listMapper(functionJavaSecretsToTerraform, true)(this._secrets.internalValue),
+      comment: cdktn.stringToTerraform(this._comment),
+      database: cdktn.stringToTerraform(this._database),
+      enable_console_output: cdktn.booleanToTerraform(this._enableConsoleOutput),
+      external_access_integrations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._externalAccessIntegrations),
+      function_definition: cdktn.stringToTerraform(this._functionDefinition),
+      handler: cdktn.stringToTerraform(this._handler),
+      id: cdktn.stringToTerraform(this._id),
+      is_secure: cdktn.stringToTerraform(this._isSecure),
+      log_level: cdktn.stringToTerraform(this._logLevel),
+      metric_level: cdktn.stringToTerraform(this._metricLevel),
+      name: cdktn.stringToTerraform(this._name),
+      null_input_behavior: cdktn.stringToTerraform(this._nullInputBehavior),
+      packages: cdktn.listMapper(cdktn.stringToTerraform, false)(this._packages),
+      return_results_behavior: cdktn.stringToTerraform(this._returnResultsBehavior),
+      return_type: cdktn.stringToTerraform(this._returnType),
+      runtime_version: cdktn.stringToTerraform(this._runtimeVersion),
+      schema: cdktn.stringToTerraform(this._schema),
+      trace_level: cdktn.stringToTerraform(this._traceLevel),
+      arguments: cdktn.listMapper(functionJavaArgumentsToTerraform, true)(this._arguments.internalValue),
+      imports: cdktn.listMapper(functionJavaImportsToTerraform, true)(this._imports.internalValue),
+      secrets: cdktn.listMapper(functionJavaSecretsToTerraform, true)(this._secrets.internalValue),
       target_path: functionJavaTargetPathToTerraform(this._targetPath.internalValue),
       timeouts: functionJavaTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -2071,127 +2071,127 @@ export class FunctionJava extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_console_output: {
-        value: cdktf.booleanToHclTerraform(this._enableConsoleOutput),
+        value: cdktn.booleanToHclTerraform(this._enableConsoleOutput),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       external_access_integrations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._externalAccessIntegrations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._externalAccessIntegrations),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       function_definition: {
-        value: cdktf.stringToHclTerraform(this._functionDefinition),
+        value: cdktn.stringToHclTerraform(this._functionDefinition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       handler: {
-        value: cdktf.stringToHclTerraform(this._handler),
+        value: cdktn.stringToHclTerraform(this._handler),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_secure: {
-        value: cdktf.stringToHclTerraform(this._isSecure),
+        value: cdktn.stringToHclTerraform(this._isSecure),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_level: {
-        value: cdktf.stringToHclTerraform(this._logLevel),
+        value: cdktn.stringToHclTerraform(this._logLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metric_level: {
-        value: cdktf.stringToHclTerraform(this._metricLevel),
+        value: cdktn.stringToHclTerraform(this._metricLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       null_input_behavior: {
-        value: cdktf.stringToHclTerraform(this._nullInputBehavior),
+        value: cdktn.stringToHclTerraform(this._nullInputBehavior),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       packages: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._packages),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._packages),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       return_results_behavior: {
-        value: cdktf.stringToHclTerraform(this._returnResultsBehavior),
+        value: cdktn.stringToHclTerraform(this._returnResultsBehavior),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       return_type: {
-        value: cdktf.stringToHclTerraform(this._returnType),
+        value: cdktn.stringToHclTerraform(this._returnType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       runtime_version: {
-        value: cdktf.stringToHclTerraform(this._runtimeVersion),
+        value: cdktn.stringToHclTerraform(this._runtimeVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trace_level: {
-        value: cdktf.stringToHclTerraform(this._traceLevel),
+        value: cdktn.stringToHclTerraform(this._traceLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       arguments: {
-        value: cdktf.listMapperHcl(functionJavaArgumentsToHclTerraform, true)(this._arguments.internalValue),
+        value: cdktn.listMapperHcl(functionJavaArgumentsToHclTerraform, true)(this._arguments.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "FunctionJavaArgumentsList",
       },
       imports: {
-        value: cdktf.listMapperHcl(functionJavaImportsToHclTerraform, true)(this._imports.internalValue),
+        value: cdktn.listMapperHcl(functionJavaImportsToHclTerraform, true)(this._imports.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "FunctionJavaImportsList",
       },
       secrets: {
-        value: cdktf.listMapperHcl(functionJavaSecretsToHclTerraform, true)(this._secrets.internalValue),
+        value: cdktn.listMapperHcl(functionJavaSecretsToHclTerraform, true)(this._secrets.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "FunctionJavaSecretsList",

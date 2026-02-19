@@ -1,61 +1,61 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecondaryDatabaseConfig extends cdktf.TerraformMetaArguments {
+export interface SecondaryDatabaseConfig extends cdktn.TerraformMetaArguments {
   /**
   * A fully qualified path to a database to create a replica from. A fully qualified path follows the format of `"<organization_name>"."<account_name>"."<database_name>"`. For more information about this resource, see [docs](./database).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#as_replica_of SecondaryDatabase#as_replica_of}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#as_replica_of SecondaryDatabase#as_replica_of}
   */
   readonly asReplicaOf: string;
   /**
   * The database parameter that specifies the default catalog to use for Iceberg tables. For more information, see [CATALOG](https://docs.snowflake.com/en/sql-reference/parameters#catalog).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#catalog SecondaryDatabase#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#catalog SecondaryDatabase#catalog}
   */
   readonly catalog?: string;
   /**
   * Specifies a comment for the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#comment SecondaryDatabase#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#comment SecondaryDatabase#comment}
   */
   readonly comment?: string;
   /**
   * Specifies the number of days for which Time Travel actions (CLONE and UNDROP) can be performed on the database, as well as specifying the default Time Travel retention time for all schemas created in the database. For more details, see [Understanding & Using Time Travel](https://docs.snowflake.com/en/user-guide/data-time-travel).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#data_retention_time_in_days SecondaryDatabase#data_retention_time_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#data_retention_time_in_days SecondaryDatabase#data_retention_time_in_days}
   */
   readonly dataRetentionTimeInDays?: number;
   /**
   * Specifies a default collation specification for all schemas and tables added to the database. It can be overridden on schema or table level. For more information, see [collation specification](https://docs.snowflake.com/en/sql-reference/collation#label-collation-specification).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#default_ddl_collation SecondaryDatabase#default_ddl_collation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#default_ddl_collation SecondaryDatabase#default_ddl_collation}
   */
   readonly defaultDdlCollation?: string;
   /**
   * If true, enables stdout/stderr fast path logging for anonymous stored procedures.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#enable_console_output SecondaryDatabase#enable_console_output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#enable_console_output SecondaryDatabase#enable_console_output}
   */
-  readonly enableConsoleOutput?: boolean | cdktf.IResolvable;
+  readonly enableConsoleOutput?: boolean | cdktn.IResolvable;
   /**
   * The database parameter that specifies the default external volume to use for Iceberg tables. For more information, see [EXTERNAL_VOLUME](https://docs.snowflake.com/en/sql-reference/parameters#external-volume).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#external_volume SecondaryDatabase#external_volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#external_volume SecondaryDatabase#external_volume}
   */
   readonly externalVolume?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#id SecondaryDatabase#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#id SecondaryDatabase#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -64,147 +64,147 @@ export interface SecondaryDatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the database as transient. Transient databases do not have a Fail-safe period so they do not incur additional storage costs once they leave Time Travel; however, this means they are also not protected by Fail-safe in the event of a data loss.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#is_transient SecondaryDatabase#is_transient}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#is_transient SecondaryDatabase#is_transient}
   */
-  readonly isTransient?: boolean | cdktf.IResolvable;
+  readonly isTransient?: boolean | cdktn.IResolvable;
   /**
   * Specifies the severity level of messages that should be ingested and made available in the active event table. Valid options are: [TRACE DEBUG INFO WARN ERROR FATAL OFF]. Messages at the specified level (and at more severe levels) are ingested. For more information, see [LOG_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters.html#label-log-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#log_level SecondaryDatabase#log_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#log_level SecondaryDatabase#log_level}
   */
   readonly logLevel?: string;
   /**
   * Object parameter that specifies the maximum number of days for which Snowflake can extend the data retention period for tables in the database to prevent streams on the tables from becoming stale. For a detailed description of this parameter, see [MAX_DATA_EXTENSION_TIME_IN_DAYS](https://docs.snowflake.com/en/sql-reference/parameters.html#label-max-data-extension-time-in-days).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#max_data_extension_time_in_days SecondaryDatabase#max_data_extension_time_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#max_data_extension_time_in_days SecondaryDatabase#max_data_extension_time_in_days}
   */
   readonly maxDataExtensionTimeInDays?: number;
   /**
   * Specifies the identifier for the database; must be unique for your account. As a best practice for [Database Replication and Failover](https://docs.snowflake.com/en/user-guide/db-replication-intro), it is recommended to give each secondary database the same name as its primary database. This practice supports referencing fully-qualified objects (i.e. '<db>.<schema>.<object>') by other objects in the same database, such as querying a fully-qualified table name in a view. If a secondary database has a different name from the primary database, then these object references would break in the secondary database. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#name SecondaryDatabase#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#name SecondaryDatabase#name}
   */
   readonly name: string;
   /**
   * If true, the case of quoted identifiers is ignored. For more information, see [QUOTED_IDENTIFIERS_IGNORE_CASE](https://docs.snowflake.com/en/sql-reference/parameters#quoted-identifiers-ignore-case).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#quoted_identifiers_ignore_case SecondaryDatabase#quoted_identifiers_ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#quoted_identifiers_ignore_case SecondaryDatabase#quoted_identifiers_ignore_case}
   */
-  readonly quotedIdentifiersIgnoreCase?: boolean | cdktf.IResolvable;
+  readonly quotedIdentifiersIgnoreCase?: boolean | cdktn.IResolvable;
   /**
   * Specifies whether to replace invalid UTF-8 characters with the Unicode replacement character (�) in query results for an Iceberg table. You can only set this parameter for tables that use an external Iceberg catalog. For more information, see [REPLACE_INVALID_CHARACTERS](https://docs.snowflake.com/en/sql-reference/parameters#replace-invalid-characters).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#replace_invalid_characters SecondaryDatabase#replace_invalid_characters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#replace_invalid_characters SecondaryDatabase#replace_invalid_characters}
   */
-  readonly replaceInvalidCharacters?: boolean | cdktf.IResolvable;
+  readonly replaceInvalidCharacters?: boolean | cdktn.IResolvable;
   /**
   * The storage serialization policy for Iceberg tables that use Snowflake as the catalog. Valid options are: [COMPATIBLE OPTIMIZED]. COMPATIBLE: Snowflake performs encoding and compression of data files that ensures interoperability with third-party compute engines. OPTIMIZED: Snowflake performs encoding and compression of data files that ensures the best table performance within Snowflake. For more information, see [STORAGE_SERIALIZATION_POLICY](https://docs.snowflake.com/en/sql-reference/parameters#storage-serialization-policy).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#storage_serialization_policy SecondaryDatabase#storage_serialization_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#storage_serialization_policy SecondaryDatabase#storage_serialization_policy}
   */
   readonly storageSerializationPolicy?: string;
   /**
   * How many times a task must fail in a row before it is automatically suspended. 0 disables auto-suspending. For more information, see [SUSPEND_TASK_AFTER_NUM_FAILURES](https://docs.snowflake.com/en/sql-reference/parameters#suspend-task-after-num-failures).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#suspend_task_after_num_failures SecondaryDatabase#suspend_task_after_num_failures}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#suspend_task_after_num_failures SecondaryDatabase#suspend_task_after_num_failures}
   */
   readonly suspendTaskAfterNumFailures?: number;
   /**
   * Maximum automatic retries allowed for a user task. For more information, see [TASK_AUTO_RETRY_ATTEMPTS](https://docs.snowflake.com/en/sql-reference/parameters#task-auto-retry-attempts).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#task_auto_retry_attempts SecondaryDatabase#task_auto_retry_attempts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#task_auto_retry_attempts SecondaryDatabase#task_auto_retry_attempts}
   */
   readonly taskAutoRetryAttempts?: number;
   /**
   * Controls how trace events are ingested into the event table. Valid options are: `ALWAYS` | `ON_EVENT` | `PROPAGATE` | `OFF`. For information about levels, see [TRACE_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters.html#label-trace-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#trace_level SecondaryDatabase#trace_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#trace_level SecondaryDatabase#trace_level}
   */
   readonly traceLevel?: string;
   /**
   * The initial size of warehouse to use for managed warehouses in the absence of history. For more information, see [USER_TASK_MANAGED_INITIAL_WAREHOUSE_SIZE](https://docs.snowflake.com/en/sql-reference/parameters#user-task-managed-initial-warehouse-size).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#user_task_managed_initial_warehouse_size SecondaryDatabase#user_task_managed_initial_warehouse_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#user_task_managed_initial_warehouse_size SecondaryDatabase#user_task_managed_initial_warehouse_size}
   */
   readonly userTaskManagedInitialWarehouseSize?: string;
   /**
   * Minimum amount of time between Triggered Task executions in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#user_task_minimum_trigger_interval_in_seconds SecondaryDatabase#user_task_minimum_trigger_interval_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#user_task_minimum_trigger_interval_in_seconds SecondaryDatabase#user_task_minimum_trigger_interval_in_seconds}
   */
   readonly userTaskMinimumTriggerIntervalInSeconds?: number;
   /**
   * User task execution timeout in milliseconds. For more information, see [USER_TASK_TIMEOUT_MS](https://docs.snowflake.com/en/sql-reference/parameters#user-task-timeout-ms).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#user_task_timeout_ms SecondaryDatabase#user_task_timeout_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#user_task_timeout_ms SecondaryDatabase#user_task_timeout_ms}
   */
   readonly userTaskTimeoutMs?: number;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#timeouts SecondaryDatabase#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#timeouts SecondaryDatabase#timeouts}
   */
   readonly timeouts?: SecondaryDatabaseTimeouts;
 }
 export interface SecondaryDatabaseTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#create SecondaryDatabase#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#create SecondaryDatabase#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#delete SecondaryDatabase#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#delete SecondaryDatabase#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#read SecondaryDatabase#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#read SecondaryDatabase#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#update SecondaryDatabase#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#update SecondaryDatabase#update}
   */
   readonly update?: string;
 }
 
-export function secondaryDatabaseTimeoutsToTerraform(struct?: SecondaryDatabaseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function secondaryDatabaseTimeoutsToTerraform(struct?: SecondaryDatabaseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function secondaryDatabaseTimeoutsToHclTerraform(struct?: SecondaryDatabaseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function secondaryDatabaseTimeoutsToHclTerraform(struct?: SecondaryDatabaseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -215,19 +215,19 @@ export function secondaryDatabaseTimeoutsToHclTerraform(struct?: SecondaryDataba
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecondaryDatabaseTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SecondaryDatabaseTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SecondaryDatabaseTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SecondaryDatabaseTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -252,7 +252,7 @@ export class SecondaryDatabaseTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecondaryDatabaseTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecondaryDatabaseTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -261,7 +261,7 @@ export class SecondaryDatabaseTimeoutsOutputReference extends cdktf.ComplexObjec
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -341,9 +341,9 @@ export class SecondaryDatabaseTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database snowflake_secondary_database}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database snowflake_secondary_database}
 */
-export class SecondaryDatabase extends cdktf.TerraformResource {
+export class SecondaryDatabase extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -354,14 +354,14 @@ export class SecondaryDatabase extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecondaryDatabase resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecondaryDatabase resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecondaryDatabase to import
-  * @param importFromId The id of the existing SecondaryDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecondaryDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecondaryDatabase to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_secondary_database", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_secondary_database", importId: importFromId, provider });
       }
 
   // ===========
@@ -369,7 +369,7 @@ export class SecondaryDatabase extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/secondary_database snowflake_secondary_database} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/secondary_database snowflake_secondary_database} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -380,7 +380,7 @@ export class SecondaryDatabase extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_secondary_database',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -497,11 +497,11 @@ export class SecondaryDatabase extends cdktf.TerraformResource {
   }
 
   // enable_console_output - computed: true, optional: true, required: false
-  private _enableConsoleOutput?: boolean | cdktf.IResolvable; 
+  private _enableConsoleOutput?: boolean | cdktn.IResolvable; 
   public get enableConsoleOutput() {
     return this.getBooleanAttribute('enable_console_output');
   }
-  public set enableConsoleOutput(value: boolean | cdktf.IResolvable) {
+  public set enableConsoleOutput(value: boolean | cdktn.IResolvable) {
     this._enableConsoleOutput = value;
   }
   public resetEnableConsoleOutput() {
@@ -550,11 +550,11 @@ export class SecondaryDatabase extends cdktf.TerraformResource {
   }
 
   // is_transient - computed: false, optional: true, required: false
-  private _isTransient?: boolean | cdktf.IResolvable; 
+  private _isTransient?: boolean | cdktn.IResolvable; 
   public get isTransient() {
     return this.getBooleanAttribute('is_transient');
   }
-  public set isTransient(value: boolean | cdktf.IResolvable) {
+  public set isTransient(value: boolean | cdktn.IResolvable) {
     this._isTransient = value;
   }
   public resetIsTransient() {
@@ -611,11 +611,11 @@ export class SecondaryDatabase extends cdktf.TerraformResource {
   }
 
   // quoted_identifiers_ignore_case - computed: true, optional: true, required: false
-  private _quotedIdentifiersIgnoreCase?: boolean | cdktf.IResolvable; 
+  private _quotedIdentifiersIgnoreCase?: boolean | cdktn.IResolvable; 
   public get quotedIdentifiersIgnoreCase() {
     return this.getBooleanAttribute('quoted_identifiers_ignore_case');
   }
-  public set quotedIdentifiersIgnoreCase(value: boolean | cdktf.IResolvable) {
+  public set quotedIdentifiersIgnoreCase(value: boolean | cdktn.IResolvable) {
     this._quotedIdentifiersIgnoreCase = value;
   }
   public resetQuotedIdentifiersIgnoreCase() {
@@ -627,11 +627,11 @@ export class SecondaryDatabase extends cdktf.TerraformResource {
   }
 
   // replace_invalid_characters - computed: true, optional: true, required: false
-  private _replaceInvalidCharacters?: boolean | cdktf.IResolvable; 
+  private _replaceInvalidCharacters?: boolean | cdktn.IResolvable; 
   public get replaceInvalidCharacters() {
     return this.getBooleanAttribute('replace_invalid_characters');
   }
-  public set replaceInvalidCharacters(value: boolean | cdktf.IResolvable) {
+  public set replaceInvalidCharacters(value: boolean | cdktn.IResolvable) {
     this._replaceInvalidCharacters = value;
   }
   public resetReplaceInvalidCharacters() {
@@ -776,27 +776,27 @@ export class SecondaryDatabase extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      as_replica_of: cdktf.stringToTerraform(this._asReplicaOf),
-      catalog: cdktf.stringToTerraform(this._catalog),
-      comment: cdktf.stringToTerraform(this._comment),
-      data_retention_time_in_days: cdktf.numberToTerraform(this._dataRetentionTimeInDays),
-      default_ddl_collation: cdktf.stringToTerraform(this._defaultDdlCollation),
-      enable_console_output: cdktf.booleanToTerraform(this._enableConsoleOutput),
-      external_volume: cdktf.stringToTerraform(this._externalVolume),
-      id: cdktf.stringToTerraform(this._id),
-      is_transient: cdktf.booleanToTerraform(this._isTransient),
-      log_level: cdktf.stringToTerraform(this._logLevel),
-      max_data_extension_time_in_days: cdktf.numberToTerraform(this._maxDataExtensionTimeInDays),
-      name: cdktf.stringToTerraform(this._name),
-      quoted_identifiers_ignore_case: cdktf.booleanToTerraform(this._quotedIdentifiersIgnoreCase),
-      replace_invalid_characters: cdktf.booleanToTerraform(this._replaceInvalidCharacters),
-      storage_serialization_policy: cdktf.stringToTerraform(this._storageSerializationPolicy),
-      suspend_task_after_num_failures: cdktf.numberToTerraform(this._suspendTaskAfterNumFailures),
-      task_auto_retry_attempts: cdktf.numberToTerraform(this._taskAutoRetryAttempts),
-      trace_level: cdktf.stringToTerraform(this._traceLevel),
-      user_task_managed_initial_warehouse_size: cdktf.stringToTerraform(this._userTaskManagedInitialWarehouseSize),
-      user_task_minimum_trigger_interval_in_seconds: cdktf.numberToTerraform(this._userTaskMinimumTriggerIntervalInSeconds),
-      user_task_timeout_ms: cdktf.numberToTerraform(this._userTaskTimeoutMs),
+      as_replica_of: cdktn.stringToTerraform(this._asReplicaOf),
+      catalog: cdktn.stringToTerraform(this._catalog),
+      comment: cdktn.stringToTerraform(this._comment),
+      data_retention_time_in_days: cdktn.numberToTerraform(this._dataRetentionTimeInDays),
+      default_ddl_collation: cdktn.stringToTerraform(this._defaultDdlCollation),
+      enable_console_output: cdktn.booleanToTerraform(this._enableConsoleOutput),
+      external_volume: cdktn.stringToTerraform(this._externalVolume),
+      id: cdktn.stringToTerraform(this._id),
+      is_transient: cdktn.booleanToTerraform(this._isTransient),
+      log_level: cdktn.stringToTerraform(this._logLevel),
+      max_data_extension_time_in_days: cdktn.numberToTerraform(this._maxDataExtensionTimeInDays),
+      name: cdktn.stringToTerraform(this._name),
+      quoted_identifiers_ignore_case: cdktn.booleanToTerraform(this._quotedIdentifiersIgnoreCase),
+      replace_invalid_characters: cdktn.booleanToTerraform(this._replaceInvalidCharacters),
+      storage_serialization_policy: cdktn.stringToTerraform(this._storageSerializationPolicy),
+      suspend_task_after_num_failures: cdktn.numberToTerraform(this._suspendTaskAfterNumFailures),
+      task_auto_retry_attempts: cdktn.numberToTerraform(this._taskAutoRetryAttempts),
+      trace_level: cdktn.stringToTerraform(this._traceLevel),
+      user_task_managed_initial_warehouse_size: cdktn.stringToTerraform(this._userTaskManagedInitialWarehouseSize),
+      user_task_minimum_trigger_interval_in_seconds: cdktn.numberToTerraform(this._userTaskMinimumTriggerIntervalInSeconds),
+      user_task_timeout_ms: cdktn.numberToTerraform(this._userTaskTimeoutMs),
       timeouts: secondaryDatabaseTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -804,127 +804,127 @@ export class SecondaryDatabase extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       as_replica_of: {
-        value: cdktf.stringToHclTerraform(this._asReplicaOf),
+        value: cdktn.stringToHclTerraform(this._asReplicaOf),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       catalog: {
-        value: cdktf.stringToHclTerraform(this._catalog),
+        value: cdktn.stringToHclTerraform(this._catalog),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_retention_time_in_days: {
-        value: cdktf.numberToHclTerraform(this._dataRetentionTimeInDays),
+        value: cdktn.numberToHclTerraform(this._dataRetentionTimeInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       default_ddl_collation: {
-        value: cdktf.stringToHclTerraform(this._defaultDdlCollation),
+        value: cdktn.stringToHclTerraform(this._defaultDdlCollation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_console_output: {
-        value: cdktf.booleanToHclTerraform(this._enableConsoleOutput),
+        value: cdktn.booleanToHclTerraform(this._enableConsoleOutput),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       external_volume: {
-        value: cdktf.stringToHclTerraform(this._externalVolume),
+        value: cdktn.stringToHclTerraform(this._externalVolume),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_transient: {
-        value: cdktf.booleanToHclTerraform(this._isTransient),
+        value: cdktn.booleanToHclTerraform(this._isTransient),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       log_level: {
-        value: cdktf.stringToHclTerraform(this._logLevel),
+        value: cdktn.stringToHclTerraform(this._logLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_data_extension_time_in_days: {
-        value: cdktf.numberToHclTerraform(this._maxDataExtensionTimeInDays),
+        value: cdktn.numberToHclTerraform(this._maxDataExtensionTimeInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       quoted_identifiers_ignore_case: {
-        value: cdktf.booleanToHclTerraform(this._quotedIdentifiersIgnoreCase),
+        value: cdktn.booleanToHclTerraform(this._quotedIdentifiersIgnoreCase),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       replace_invalid_characters: {
-        value: cdktf.booleanToHclTerraform(this._replaceInvalidCharacters),
+        value: cdktn.booleanToHclTerraform(this._replaceInvalidCharacters),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       storage_serialization_policy: {
-        value: cdktf.stringToHclTerraform(this._storageSerializationPolicy),
+        value: cdktn.stringToHclTerraform(this._storageSerializationPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       suspend_task_after_num_failures: {
-        value: cdktf.numberToHclTerraform(this._suspendTaskAfterNumFailures),
+        value: cdktn.numberToHclTerraform(this._suspendTaskAfterNumFailures),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       task_auto_retry_attempts: {
-        value: cdktf.numberToHclTerraform(this._taskAutoRetryAttempts),
+        value: cdktn.numberToHclTerraform(this._taskAutoRetryAttempts),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       trace_level: {
-        value: cdktf.stringToHclTerraform(this._traceLevel),
+        value: cdktn.stringToHclTerraform(this._traceLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_task_managed_initial_warehouse_size: {
-        value: cdktf.stringToHclTerraform(this._userTaskManagedInitialWarehouseSize),
+        value: cdktn.stringToHclTerraform(this._userTaskManagedInitialWarehouseSize),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_task_minimum_trigger_interval_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._userTaskMinimumTriggerIntervalInSeconds),
+        value: cdktn.numberToHclTerraform(this._userTaskMinimumTriggerIntervalInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       user_task_timeout_ms: {
-        value: cdktf.numberToHclTerraform(this._userTaskTimeoutMs),
+        value: cdktn.numberToHclTerraform(this._userTaskTimeoutMs),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

@@ -1,175 +1,175 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TaskConfig extends cdktf.TerraformMetaArguments {
+export interface TaskConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#abort_detached_query Task#abort_detached_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#abort_detached_query Task#abort_detached_query}
   */
-  readonly abortDetachedQuery?: boolean | cdktf.IResolvable;
+  readonly abortDetachedQuery?: boolean | cdktn.IResolvable;
   /**
   * Specifies one or more predecessor tasks for the current task. Use this option to [create a DAG](https://docs.snowflake.com/en/user-guide/tasks-graphs.html#label-task-dag) of tasks or add this task to an existing DAG. A DAG is a series of tasks that starts with a scheduled root task and is linked together by dependencies. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#after Task#after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#after Task#after}
   */
   readonly after?: string[];
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) By default, Snowflake ensures that only one instance of a particular DAG is allowed to run at a time, setting the parameter value to TRUE permits DAG runs to overlap. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#allow_overlapping_execution Task#allow_overlapping_execution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#allow_overlapping_execution Task#allow_overlapping_execution}
   */
   readonly allowOverlappingExecution?: string;
   /**
   * Specifies whether autocommit is enabled for the session. Autocommit determines whether a DML statement, when executed without an active transaction, is automatically committed after the statement successfully completes. For more information, see [Transactions](https://docs.snowflake.com/en/sql-reference/transactions). For more information, check [AUTOCOMMIT docs](https://docs.snowflake.com/en/sql-reference/parameters#autocommit).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#autocommit Task#autocommit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#autocommit Task#autocommit}
   */
-  readonly autocommit?: boolean | cdktf.IResolvable;
+  readonly autocommit?: boolean | cdktn.IResolvable;
   /**
   * The format of VARCHAR values passed as input to VARCHAR-to-BINARY conversion functions. For more information, see [Binary input and output](https://docs.snowflake.com/en/sql-reference/binary-input-output). For more information, check [BINARY_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#binary-input-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#binary_input_format Task#binary_input_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#binary_input_format Task#binary_input_format}
   */
   readonly binaryInputFormat?: string;
   /**
   * The format for VARCHAR values returned as output by BINARY-to-VARCHAR conversion functions. For more information, see [Binary input and output](https://docs.snowflake.com/en/sql-reference/binary-input-output). For more information, check [BINARY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#binary-output-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#binary_output_format Task#binary_output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#binary_output_format Task#binary_output_format}
   */
   readonly binaryOutputFormat?: string;
   /**
   * Parameter that specifies the maximum amount of memory the JDBC driver or ODBC driver should use for the result set from queries (in MB). For more information, check [CLIENT_MEMORY_LIMIT docs](https://docs.snowflake.com/en/sql-reference/parameters#client-memory-limit).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#client_memory_limit Task#client_memory_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#client_memory_limit Task#client_memory_limit}
   */
   readonly clientMemoryLimit?: number;
   /**
   * For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema. The narrower search typically returns fewer rows and executes more quickly. For more information, check [CLIENT_METADATA_REQUEST_USE_CONNECTION_CTX docs](https://docs.snowflake.com/en/sql-reference/parameters#client-metadata-request-use-connection-ctx).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#client_metadata_request_use_connection_ctx Task#client_metadata_request_use_connection_ctx}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#client_metadata_request_use_connection_ctx Task#client_metadata_request_use_connection_ctx}
   */
-  readonly clientMetadataRequestUseConnectionCtx?: boolean | cdktf.IResolvable;
+  readonly clientMetadataRequestUseConnectionCtx?: boolean | cdktn.IResolvable;
   /**
   * Parameter that specifies the number of threads used by the client to pre-fetch large result sets. The driver will attempt to honor the parameter value, but defines the minimum and maximum values (depending on your system’s resources) to improve performance. For more information, check [CLIENT_PREFETCH_THREADS docs](https://docs.snowflake.com/en/sql-reference/parameters#client-prefetch-threads).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#client_prefetch_threads Task#client_prefetch_threads}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#client_prefetch_threads Task#client_prefetch_threads}
   */
   readonly clientPrefetchThreads?: number;
   /**
   * Parameter that specifies the maximum size of each set (or chunk) of query results to download (in MB). The JDBC driver downloads query results in chunks. For more information, check [CLIENT_RESULT_CHUNK_SIZE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-chunk-size).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#client_result_chunk_size Task#client_result_chunk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#client_result_chunk_size Task#client_result_chunk_size}
   */
   readonly clientResultChunkSize?: number;
   /**
   * Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#client_result_column_case_insensitive Task#client_result_column_case_insensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#client_result_column_case_insensitive Task#client_result_column_case_insensitive}
   */
-  readonly clientResultColumnCaseInsensitive?: boolean | cdktf.IResolvable;
+  readonly clientResultColumnCaseInsensitive?: boolean | cdktn.IResolvable;
   /**
   * Parameter that indicates whether to force a user to log in again after a period of inactivity in the session. For more information, check [CLIENT_SESSION_KEEP_ALIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#client_session_keep_alive Task#client_session_keep_alive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#client_session_keep_alive Task#client_session_keep_alive}
   */
-  readonly clientSessionKeepAlive?: boolean | cdktf.IResolvable;
+  readonly clientSessionKeepAlive?: boolean | cdktn.IResolvable;
   /**
   * Number of seconds in-between client attempts to update the token for the session. For more information, check [CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive-heartbeat-frequency).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#client_session_keep_alive_heartbeat_frequency Task#client_session_keep_alive_heartbeat_frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#client_session_keep_alive_heartbeat_frequency Task#client_session_keep_alive_heartbeat_frequency}
   */
   readonly clientSessionKeepAliveHeartbeatFrequency?: number;
   /**
   * Specifies the [TIMESTAMP_* variation](https://docs.snowflake.com/en/sql-reference/data-types-datetime.html#label-datatypes-timestamp-variations) to use when binding timestamp variables for JDBC or ODBC applications that use the bind API to load data. For more information, check [CLIENT_TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#client-timestamp-type-mapping).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#client_timestamp_type_mapping Task#client_timestamp_type_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#client_timestamp_type_mapping Task#client_timestamp_type_mapping}
   */
   readonly clientTimestampTypeMapping?: string;
   /**
   * Specifies a comment for the task.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#comment Task#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#comment Task#comment}
   */
   readonly comment?: string;
   /**
   * Specifies a string representation of key value pairs that can be accessed by all tasks in the task graph. Must be in JSON format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#config Task#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#config Task#config}
   */
   readonly config?: string;
   /**
   * The database in which to create the task. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#database Task#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#database Task#database}
   */
   readonly database: string;
   /**
   * Specifies the input format for the DATE data type. For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [DATE_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#date-input-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#date_input_format Task#date_input_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#date_input_format Task#date_input_format}
   */
   readonly dateInputFormat?: string;
   /**
   * Specifies the display format for the DATE data type. For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [DATE_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#date-output-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#date_output_format Task#date_output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#date_output_format Task#date_output_format}
   */
   readonly dateOutputFormat?: string;
   /**
   * Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#enable_unload_physical_type_optimization Task#enable_unload_physical_type_optimization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#enable_unload_physical_type_optimization Task#enable_unload_physical_type_optimization}
   */
-  readonly enableUnloadPhysicalTypeOptimization?: boolean | cdktf.IResolvable;
+  readonly enableUnloadPhysicalTypeOptimization?: boolean | cdktn.IResolvable;
   /**
   * Specifies the name of the notification integration used for error notifications. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`. For more information about this resource, see [docs](./notification_integration).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#error_integration Task#error_integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#error_integration Task#error_integration}
   */
   readonly errorIntegration?: string;
   /**
   * Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#error_on_nondeterministic_merge Task#error_on_nondeterministic_merge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#error_on_nondeterministic_merge Task#error_on_nondeterministic_merge}
   */
-  readonly errorOnNondeterministicMerge?: boolean | cdktf.IResolvable;
+  readonly errorOnNondeterministicMerge?: boolean | cdktn.IResolvable;
   /**
   * Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#error_on_nondeterministic_update Task#error_on_nondeterministic_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#error_on_nondeterministic_update Task#error_on_nondeterministic_update}
   */
-  readonly errorOnNondeterministicUpdate?: boolean | cdktf.IResolvable;
+  readonly errorOnNondeterministicUpdate?: boolean | cdktn.IResolvable;
   /**
   * Specifies the name of a root task that the finalizer task is associated with. Finalizer tasks run after all other tasks in the task graph run to completion. You can define the SQL of a finalizer task to handle notifications and the release and cleanup of resources that a task graph uses. For more information, see [Release and cleanup of task graphs](https://docs.snowflake.com/en/user-guide/tasks-graphs.html#label-finalizer-task). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#finalize Task#finalize}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#finalize Task#finalize}
   */
   readonly finalize?: string;
   /**
   * Display format for [GEOGRAPHY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geography). For more information, check [GEOGRAPHY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geography-output-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#geography_output_format Task#geography_output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#geography_output_format Task#geography_output_format}
   */
   readonly geographyOutputFormat?: string;
   /**
   * Display format for [GEOMETRY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geometry). For more information, check [GEOMETRY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geometry-output-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#geometry_output_format Task#geometry_output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#geometry_output_format Task#geometry_output_format}
   */
   readonly geometryOutputFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#id Task#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#id Task#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -178,283 +178,301 @@ export interface TaskConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies how JDBC processes TIMESTAMP_NTZ values. For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#jdbc_treat_timestamp_ntz_as_utc Task#jdbc_treat_timestamp_ntz_as_utc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#jdbc_treat_timestamp_ntz_as_utc Task#jdbc_treat_timestamp_ntz_as_utc}
   */
-  readonly jdbcTreatTimestampNtzAsUtc?: boolean | cdktf.IResolvable;
+  readonly jdbcTreatTimestampNtzAsUtc?: boolean | cdktn.IResolvable;
   /**
   * Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#jdbc_use_session_timezone Task#jdbc_use_session_timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#jdbc_use_session_timezone Task#jdbc_use_session_timezone}
   */
-  readonly jdbcUseSessionTimezone?: boolean | cdktf.IResolvable;
+  readonly jdbcUseSessionTimezone?: boolean | cdktn.IResolvable;
   /**
   * Specifies the number of blank spaces to indent each new element in JSON output in the session. Also specifies whether to insert newline characters after each element. For more information, check [JSON_INDENT docs](https://docs.snowflake.com/en/sql-reference/parameters#json-indent).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#json_indent Task#json_indent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#json_indent Task#json_indent}
   */
   readonly jsonIndent?: number;
   /**
   * Number of seconds to wait while trying to lock a resource, before timing out and aborting the statement. For more information, check [LOCK_TIMEOUT docs](https://docs.snowflake.com/en/sql-reference/parameters#lock-timeout).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#lock_timeout Task#lock_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#lock_timeout Task#lock_timeout}
   */
   readonly lockTimeout?: number;
   /**
   * Specifies the severity level of messages that should be ingested and made available in the active event table. Messages at the specified level (and at more severe levels) are ingested. For more information about log levels, see [Setting log level](https://docs.snowflake.com/en/developer-guide/logging-tracing/logging-log-level). For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#log_level Task#log_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#log_level Task#log_level}
   */
   readonly logLevel?: string;
   /**
   * Number of statements to execute when using the multi-statement capability. For more information, check [MULTI_STATEMENT_COUNT docs](https://docs.snowflake.com/en/sql-reference/parameters#multi-statement-count).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#multi_statement_count Task#multi_statement_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#multi_statement_count Task#multi_statement_count}
   */
   readonly multiStatementCount?: number;
   /**
   * Specifies the identifier for the task; must be unique for the database and schema in which the task is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#name Task#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#name Task#name}
   */
   readonly name: string;
   /**
   * Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column. The ORDER and NOORDER properties determine whether or not the values are generated for the sequence or auto-incremented column in [increasing or decreasing order](https://docs.snowflake.com/en/user-guide/querying-sequences.html#label-querying-sequences-increasing-values). For more information, check [NOORDER_SEQUENCE_AS_DEFAULT docs](https://docs.snowflake.com/en/sql-reference/parameters#noorder-sequence-as-default).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#noorder_sequence_as_default Task#noorder_sequence_as_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#noorder_sequence_as_default Task#noorder_sequence_as_default}
   */
-  readonly noorderSequenceAsDefault?: boolean | cdktf.IResolvable;
+  readonly noorderSequenceAsDefault?: boolean | cdktn.IResolvable;
   /**
   * Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#odbc_treat_decimal_as_int Task#odbc_treat_decimal_as_int}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#odbc_treat_decimal_as_int Task#odbc_treat_decimal_as_int}
   */
-  readonly odbcTreatDecimalAsInt?: boolean | cdktf.IResolvable;
+  readonly odbcTreatDecimalAsInt?: boolean | cdktn.IResolvable;
   /**
   * Optional string that can be used to tag queries and other SQL statements executed within a session. The tags are displayed in the output of the [QUERY_HISTORY, QUERY_HISTORY_BY_*](https://docs.snowflake.com/en/sql-reference/functions/query_history) functions. For more information, check [QUERY_TAG docs](https://docs.snowflake.com/en/sql-reference/parameters#query-tag).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#query_tag Task#query_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#query_tag Task#query_tag}
   */
   readonly queryTag?: string;
   /**
   * Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters. By default, Snowflake preserves the case of alphabetic characters when storing and resolving double-quoted identifiers (see [Identifier resolution](https://docs.snowflake.com/en/sql-reference/identifiers-syntax.html#label-identifier-casing)). You can use this parameter in situations in which [third-party applications always use double quotes around identifiers](https://docs.snowflake.com/en/sql-reference/identifiers-syntax.html#label-identifier-casing-parameter). For more information, check [QUOTED_IDENTIFIERS_IGNORE_CASE docs](https://docs.snowflake.com/en/sql-reference/parameters#quoted-identifiers-ignore-case).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#quoted_identifiers_ignore_case Task#quoted_identifiers_ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#quoted_identifiers_ignore_case Task#quoted_identifiers_ignore_case}
   */
-  readonly quotedIdentifiersIgnoreCase?: boolean | cdktf.IResolvable;
+  readonly quotedIdentifiersIgnoreCase?: boolean | cdktn.IResolvable;
   /**
   * Specifies the maximum number of rows returned in a result set. A value of 0 specifies no maximum. For more information, check [ROWS_PER_RESULTSET docs](https://docs.snowflake.com/en/sql-reference/parameters#rows-per-resultset).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#rows_per_resultset Task#rows_per_resultset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#rows_per_resultset Task#rows_per_resultset}
   */
   readonly rowsPerResultset?: number;
   /**
   * Specifies the DNS name of an Amazon S3 interface endpoint. Requests sent to the internal stage of an account via [AWS PrivateLink for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html) use this endpoint to connect. For more information, see [Accessing Internal stages with dedicated interface endpoints](https://docs.snowflake.com/en/user-guide/private-internal-stages-aws.html#label-aws-privatelink-internal-stage-network-isolation). For more information, check [S3_STAGE_VPCE_DNS_NAME docs](https://docs.snowflake.com/en/sql-reference/parameters#s3-stage-vpce-dns-name).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#s3_stage_vpce_dns_name Task#s3_stage_vpce_dns_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#s3_stage_vpce_dns_name Task#s3_stage_vpce_dns_name}
   */
   readonly s3StageVpceDnsName?: string;
   /**
   * The schema in which to create the task. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#schema Task#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#schema Task#schema}
   */
   readonly schema: string;
   /**
   * Specifies the path to search to resolve unqualified object names in queries. For more information, see [Name resolution in queries](https://docs.snowflake.com/en/sql-reference/name-resolution.html#label-object-name-resolution-search-path). Comma-separated list of identifiers. An identifier can be a fully or partially qualified schema name. For more information, check [SEARCH_PATH docs](https://docs.snowflake.com/en/sql-reference/parameters#search-path).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#search_path Task#search_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#search_path Task#search_path}
   */
   readonly searchPath?: string;
   /**
+  * Specifies the maximum warehouse size for serverless tasks. Valid values are (case-insensitive): `XSMALL` | `X-SMALL` | `SMALL` | `MEDIUM` | `LARGE` | `XLARGE` | `X-LARGE` | `XXLARGE` | `X2LARGE` | `2X-LARGE` | `XXXLARGE` | `X3LARGE` | `3X-LARGE` | `X4LARGE` | `4X-LARGE` | `X5LARGE` | `5X-LARGE` | `X6LARGE` | `6X-LARGE`. For more information, check [SERVERLESS_TASK_MAX_STATEMENT_SIZE docs](https://docs.snowflake.com/en/sql-reference/parameters#serverless-task-max-statement-size).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#serverless_task_max_statement_size Task#serverless_task_max_statement_size}
+  */
+  readonly serverlessTaskMaxStatementSize?: string;
+  /**
+  * Specifies the minimum warehouse size for serverless tasks. Valid values are (case-insensitive): `XSMALL` | `X-SMALL` | `SMALL` | `MEDIUM` | `LARGE` | `XLARGE` | `X-LARGE` | `XXLARGE` | `X2LARGE` | `2X-LARGE` | `XXXLARGE` | `X3LARGE` | `3X-LARGE` | `X4LARGE` | `4X-LARGE` | `X5LARGE` | `5X-LARGE` | `X6LARGE` | `6X-LARGE`. For more information, check [SERVERLESS_TASK_MIN_STATEMENT_SIZE docs](https://docs.snowflake.com/en/sql-reference/parameters#serverless-task-min-statement-size).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#serverless_task_min_statement_size Task#serverless_task_min_statement_size}
+  */
+  readonly serverlessTaskMinStatementSize?: string;
+  /**
   * Any single SQL statement, or a call to a stored procedure, executed when the task runs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#sql_statement Task#sql_statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#sql_statement Task#sql_statement}
   */
   readonly sqlStatement: string;
   /**
   * Specifies if the task should be started or suspended.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#started Task#started}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#started Task#started}
   */
-  readonly started: boolean | cdktf.IResolvable;
+  readonly started: boolean | cdktn.IResolvable;
   /**
   * Amount of time, in seconds, a SQL statement (query, DDL, DML, etc.) remains queued for a warehouse before it is canceled by the system. This parameter can be used in conjunction with the [MAX_CONCURRENCY_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#label-max-concurrency-level) parameter to ensure a warehouse is never backlogged. For more information, check [STATEMENT_QUEUED_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-queued-timeout-in-seconds).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#statement_queued_timeout_in_seconds Task#statement_queued_timeout_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#statement_queued_timeout_in_seconds Task#statement_queued_timeout_in_seconds}
   */
   readonly statementQueuedTimeoutInSeconds?: number;
   /**
   * Amount of time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system. For more information, check [STATEMENT_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-timeout-in-seconds).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#statement_timeout_in_seconds Task#statement_timeout_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#statement_timeout_in_seconds Task#statement_timeout_in_seconds}
   */
   readonly statementTimeoutInSeconds?: number;
   /**
   * This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#strict_json_output Task#strict_json_output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#strict_json_output Task#strict_json_output}
   */
-  readonly strictJsonOutput?: boolean | cdktf.IResolvable;
+  readonly strictJsonOutput?: boolean | cdktn.IResolvable;
   /**
   * Specifies the number of consecutive failed task runs after which the current task is suspended automatically. The default is 0 (no automatic suspension). For more information, check [SUSPEND_TASK_AFTER_NUM_FAILURES docs](https://docs.snowflake.com/en/sql-reference/parameters#suspend-task-after-num-failures).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#suspend_task_after_num_failures Task#suspend_task_after_num_failures}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#suspend_task_after_num_failures Task#suspend_task_after_num_failures}
   */
   readonly suspendTaskAfterNumFailures?: number;
   /**
   * Specifies the number of automatic task graph retry attempts. If any task graphs complete in a FAILED state, Snowflake can automatically retry the task graphs from the last task in the graph that failed. For more information, check [TASK_AUTO_RETRY_ATTEMPTS docs](https://docs.snowflake.com/en/sql-reference/parameters#task-auto-retry-attempts).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#task_auto_retry_attempts Task#task_auto_retry_attempts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#task_auto_retry_attempts Task#task_auto_retry_attempts}
   */
   readonly taskAutoRetryAttempts?: number;
   /**
   * Specifies the input format for the TIME data type. For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). Any valid, supported time format or AUTO (AUTO specifies that Snowflake attempts to automatically detect the format of times stored in the system during the session). For more information, check [TIME_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#time-input-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#time_input_format Task#time_input_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#time_input_format Task#time_input_format}
   */
   readonly timeInputFormat?: string;
   /**
   * Specifies the display format for the TIME data type. For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIME_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#time-output-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#time_output_format Task#time_output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#time_output_format Task#time_output_format}
   */
   readonly timeOutputFormat?: string;
   /**
   * Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#timestamp_day_is_always_24h Task#timestamp_day_is_always_24h}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#timestamp_day_is_always_24h Task#timestamp_day_is_always_24h}
   */
-  readonly timestampDayIsAlways24H?: boolean | cdktf.IResolvable;
+  readonly timestampDayIsAlways24H?: boolean | cdktn.IResolvable;
   /**
   * Specifies the input format for the TIMESTAMP data type alias. For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). Any valid, supported timestamp format or AUTO (AUTO specifies that Snowflake attempts to automatically detect the format of timestamps stored in the system during the session). For more information, check [TIMESTAMP_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-input-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#timestamp_input_format Task#timestamp_input_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#timestamp_input_format Task#timestamp_input_format}
   */
   readonly timestampInputFormat?: string;
   /**
   * Specifies the display format for the TIMESTAMP_LTZ data type. If no format is specified, defaults to [TIMESTAMP_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-output-format). For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIMESTAMP_LTZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-ltz-output-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#timestamp_ltz_output_format Task#timestamp_ltz_output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#timestamp_ltz_output_format Task#timestamp_ltz_output_format}
   */
   readonly timestampLtzOutputFormat?: string;
   /**
   * Specifies the display format for the TIMESTAMP_NTZ data type. For more information, check [TIMESTAMP_NTZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-ntz-output-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#timestamp_ntz_output_format Task#timestamp_ntz_output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#timestamp_ntz_output_format Task#timestamp_ntz_output_format}
   */
   readonly timestampNtzOutputFormat?: string;
   /**
   * Specifies the display format for the TIMESTAMP data type alias. For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIMESTAMP_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-output-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#timestamp_output_format Task#timestamp_output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#timestamp_output_format Task#timestamp_output_format}
   */
   readonly timestampOutputFormat?: string;
   /**
   * Specifies the TIMESTAMP_* variation that the TIMESTAMP data type alias maps to. For more information, check [TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-type-mapping).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#timestamp_type_mapping Task#timestamp_type_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#timestamp_type_mapping Task#timestamp_type_mapping}
   */
   readonly timestampTypeMapping?: string;
   /**
   * Specifies the display format for the TIMESTAMP_TZ data type. If no format is specified, defaults to [TIMESTAMP_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-output-format). For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIMESTAMP_TZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-tz-output-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#timestamp_tz_output_format Task#timestamp_tz_output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#timestamp_tz_output_format Task#timestamp_tz_output_format}
   */
   readonly timestampTzOutputFormat?: string;
   /**
   * Specifies the time zone for the session. You can specify a [time zone name](https://data.iana.org/time-zones/tzdb-2021a/zone1970.tab) or a [link name](https://data.iana.org/time-zones/tzdb-2021a/backward) from release 2021a of the [IANA Time Zone Database](https://www.iana.org/time-zones) (e.g. America/Los_Angeles, Europe/London, UTC, Etc/GMT, etc.). For more information, check [TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#timezone).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#timezone Task#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#timezone Task#timezone}
   */
   readonly timezone?: string;
   /**
   * Controls how trace events are ingested into the event table. For more information about trace levels, see [Setting trace level](https://docs.snowflake.com/en/developer-guide/logging-tracing/tracing-trace-level). For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#trace_level Task#trace_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#trace_level Task#trace_level}
   */
   readonly traceLevel?: string;
   /**
   * Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error. For more information, check [TRANSACTION_ABORT_ON_ERROR docs](https://docs.snowflake.com/en/sql-reference/parameters#transaction-abort-on-error).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#transaction_abort_on_error Task#transaction_abort_on_error}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#transaction_abort_on_error Task#transaction_abort_on_error}
   */
-  readonly transactionAbortOnError?: boolean | cdktf.IResolvable;
+  readonly transactionAbortOnError?: boolean | cdktn.IResolvable;
   /**
   * Specifies the isolation level for transactions in the user session. For more information, check [TRANSACTION_DEFAULT_ISOLATION_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#transaction-default-isolation-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#transaction_default_isolation_level Task#transaction_default_isolation_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#transaction_default_isolation_level Task#transaction_default_isolation_level}
   */
   readonly transactionDefaultIsolationLevel?: string;
   /**
   * Specifies the “century start” year for 2-digit years (i.e. the earliest year such dates can represent). This parameter prevents ambiguous dates when importing or converting data with the `YY` date format component (i.e. years represented as 2 digits). For more information, check [TWO_DIGIT_CENTURY_START docs](https://docs.snowflake.com/en/sql-reference/parameters#two-digit-century-start).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#two_digit_century_start Task#two_digit_century_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#two_digit_century_start Task#two_digit_century_start}
   */
   readonly twoDigitCenturyStart?: number;
   /**
   * Determines if an unsupported (i.e. non-default) value specified for a constraint property returns an error. For more information, check [UNSUPPORTED_DDL_ACTION docs](https://docs.snowflake.com/en/sql-reference/parameters#unsupported-ddl-action).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#unsupported_ddl_action Task#unsupported_ddl_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#unsupported_ddl_action Task#unsupported_ddl_action}
   */
   readonly unsupportedDdlAction?: string;
   /**
   * Specifies whether to reuse persisted query results, if available, when a matching query is submitted. For more information, check [USE_CACHED_RESULT docs](https://docs.snowflake.com/en/sql-reference/parameters#use-cached-result).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#use_cached_result Task#use_cached_result}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#use_cached_result Task#use_cached_result}
   */
-  readonly useCachedResult?: boolean | cdktf.IResolvable;
+  readonly useCachedResult?: boolean | cdktn.IResolvable;
   /**
   * Specifies the size of the compute resources to provision for the first run of the task, before a task history is available for Snowflake to determine an ideal size. Once a task has successfully completed a few runs, Snowflake ignores this parameter setting. Valid values are (case-insensitive): %s. (Conflicts with warehouse). For more information about warehouses, see [docs](./warehouse). For more information, check [USER_TASK_MANAGED_INITIAL_WAREHOUSE_SIZE docs](https://docs.snowflake.com/en/sql-reference/parameters#user-task-managed-initial-warehouse-size).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#user_task_managed_initial_warehouse_size Task#user_task_managed_initial_warehouse_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#user_task_managed_initial_warehouse_size Task#user_task_managed_initial_warehouse_size}
   */
   readonly userTaskManagedInitialWarehouseSize?: string;
   /**
   * Minimum amount of time between Triggered Task executions in seconds For more information, check [USER_TASK_MINIMUM_TRIGGER_INTERVAL_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#user-task-minimum-trigger-interval-in-seconds).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#user_task_minimum_trigger_interval_in_seconds Task#user_task_minimum_trigger_interval_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#user_task_minimum_trigger_interval_in_seconds Task#user_task_minimum_trigger_interval_in_seconds}
   */
   readonly userTaskMinimumTriggerIntervalInSeconds?: number;
   /**
   * Specifies the time limit on a single run of the task before it times out (in milliseconds). For more information, check [USER_TASK_TIMEOUT_MS docs](https://docs.snowflake.com/en/sql-reference/parameters#user-task-timeout-ms).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#user_task_timeout_ms Task#user_task_timeout_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#user_task_timeout_ms Task#user_task_timeout_ms}
   */
   readonly userTaskTimeoutMs?: number;
   /**
   * The warehouse the task will use. Omit this parameter to use Snowflake-managed compute resources for runs of this task. Due to Snowflake limitations warehouse identifier can consist of only upper-cased letters. (Conflicts with user_task_managed_initial_warehouse_size) For more information about this resource, see [docs](./warehouse).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#warehouse Task#warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#warehouse Task#warehouse}
   */
   readonly warehouse?: string;
   /**
   * Specifies how the weeks in a given year are computed. `0`: The semantics used are equivalent to the ISO semantics, in which a week belongs to a given year if at least 4 days of that week are in that year. `1`: January 1 is included in the first week of the year and December 31 is included in the last week of the year. For more information, check [WEEK_OF_YEAR_POLICY docs](https://docs.snowflake.com/en/sql-reference/parameters#week-of-year-policy).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#week_of_year_policy Task#week_of_year_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#week_of_year_policy Task#week_of_year_policy}
   */
   readonly weekOfYearPolicy?: number;
   /**
   * Specifies the first day of the week (used by week-related date functions). `0`: Legacy Snowflake behavior is used (i.e. ISO-like semantics). `1` (Monday) to `7` (Sunday): All the week-related functions use weeks that start on the specified day of the week. For more information, check [WEEK_START docs](https://docs.snowflake.com/en/sql-reference/parameters#week-start).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#week_start Task#week_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#week_start Task#week_start}
   */
   readonly weekStart?: number;
   /**
   * Specifies a Boolean SQL expression; multiple conditions joined with AND/OR are supported. When a task is triggered (based on its SCHEDULE or AFTER setting), it validates the conditions of the expression to determine whether to execute. If the conditions of the expression are not met, then the task skips the current run. Any tasks that identify this task as a predecessor also don’t run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#when Task#when}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#when Task#when}
   */
   readonly when?: string;
   /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#schedule Task#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#schedule Task#schedule}
   */
   readonly schedule?: TaskSchedule;
   /**
+  * target_completion_interval block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#target_completion_interval Task#target_completion_interval}
+  */
+  readonly targetCompletionInterval?: TaskTargetCompletionInterval;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#timeouts Task#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#timeouts Task#timeouts}
   */
   readonly timeouts?: TaskTimeouts;
 }
@@ -462,8 +480,8 @@ export interface TaskParametersAbortDetachedQuery {
 }
 
 export function taskParametersAbortDetachedQueryToTerraform(struct?: TaskParametersAbortDetachedQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -472,8 +490,8 @@ export function taskParametersAbortDetachedQueryToTerraform(struct?: TaskParamet
 
 
 export function taskParametersAbortDetachedQueryToHclTerraform(struct?: TaskParametersAbortDetachedQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -481,7 +499,7 @@ export function taskParametersAbortDetachedQueryToHclTerraform(struct?: TaskPara
   return attrs;
 }
 
-export class TaskParametersAbortDetachedQueryOutputReference extends cdktf.ComplexObject {
+export class TaskParametersAbortDetachedQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -490,7 +508,7 @@ export class TaskParametersAbortDetachedQueryOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -535,14 +553,14 @@ export class TaskParametersAbortDetachedQueryOutputReference extends cdktf.Compl
   }
 }
 
-export class TaskParametersAbortDetachedQueryList extends cdktf.ComplexList {
+export class TaskParametersAbortDetachedQueryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -557,8 +575,8 @@ export interface TaskParametersAutocommit {
 }
 
 export function taskParametersAutocommitToTerraform(struct?: TaskParametersAutocommit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -567,8 +585,8 @@ export function taskParametersAutocommitToTerraform(struct?: TaskParametersAutoc
 
 
 export function taskParametersAutocommitToHclTerraform(struct?: TaskParametersAutocommit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -576,7 +594,7 @@ export function taskParametersAutocommitToHclTerraform(struct?: TaskParametersAu
   return attrs;
 }
 
-export class TaskParametersAutocommitOutputReference extends cdktf.ComplexObject {
+export class TaskParametersAutocommitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -585,7 +603,7 @@ export class TaskParametersAutocommitOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -630,14 +648,14 @@ export class TaskParametersAutocommitOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class TaskParametersAutocommitList extends cdktf.ComplexList {
+export class TaskParametersAutocommitList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -652,8 +670,8 @@ export interface TaskParametersBinaryInputFormat {
 }
 
 export function taskParametersBinaryInputFormatToTerraform(struct?: TaskParametersBinaryInputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -662,8 +680,8 @@ export function taskParametersBinaryInputFormatToTerraform(struct?: TaskParamete
 
 
 export function taskParametersBinaryInputFormatToHclTerraform(struct?: TaskParametersBinaryInputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -671,7 +689,7 @@ export function taskParametersBinaryInputFormatToHclTerraform(struct?: TaskParam
   return attrs;
 }
 
-export class TaskParametersBinaryInputFormatOutputReference extends cdktf.ComplexObject {
+export class TaskParametersBinaryInputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -680,7 +698,7 @@ export class TaskParametersBinaryInputFormatOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -725,14 +743,14 @@ export class TaskParametersBinaryInputFormatOutputReference extends cdktf.Comple
   }
 }
 
-export class TaskParametersBinaryInputFormatList extends cdktf.ComplexList {
+export class TaskParametersBinaryInputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -747,8 +765,8 @@ export interface TaskParametersBinaryOutputFormat {
 }
 
 export function taskParametersBinaryOutputFormatToTerraform(struct?: TaskParametersBinaryOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -757,8 +775,8 @@ export function taskParametersBinaryOutputFormatToTerraform(struct?: TaskParamet
 
 
 export function taskParametersBinaryOutputFormatToHclTerraform(struct?: TaskParametersBinaryOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -766,7 +784,7 @@ export function taskParametersBinaryOutputFormatToHclTerraform(struct?: TaskPara
   return attrs;
 }
 
-export class TaskParametersBinaryOutputFormatOutputReference extends cdktf.ComplexObject {
+export class TaskParametersBinaryOutputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -775,7 +793,7 @@ export class TaskParametersBinaryOutputFormatOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -820,14 +838,14 @@ export class TaskParametersBinaryOutputFormatOutputReference extends cdktf.Compl
   }
 }
 
-export class TaskParametersBinaryOutputFormatList extends cdktf.ComplexList {
+export class TaskParametersBinaryOutputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -842,8 +860,8 @@ export interface TaskParametersClientMemoryLimit {
 }
 
 export function taskParametersClientMemoryLimitToTerraform(struct?: TaskParametersClientMemoryLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -852,8 +870,8 @@ export function taskParametersClientMemoryLimitToTerraform(struct?: TaskParamete
 
 
 export function taskParametersClientMemoryLimitToHclTerraform(struct?: TaskParametersClientMemoryLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -861,7 +879,7 @@ export function taskParametersClientMemoryLimitToHclTerraform(struct?: TaskParam
   return attrs;
 }
 
-export class TaskParametersClientMemoryLimitOutputReference extends cdktf.ComplexObject {
+export class TaskParametersClientMemoryLimitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -870,7 +888,7 @@ export class TaskParametersClientMemoryLimitOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -915,14 +933,14 @@ export class TaskParametersClientMemoryLimitOutputReference extends cdktf.Comple
   }
 }
 
-export class TaskParametersClientMemoryLimitList extends cdktf.ComplexList {
+export class TaskParametersClientMemoryLimitList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -937,8 +955,8 @@ export interface TaskParametersClientMetadataRequestUseConnectionCtx {
 }
 
 export function taskParametersClientMetadataRequestUseConnectionCtxToTerraform(struct?: TaskParametersClientMetadataRequestUseConnectionCtx): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -947,8 +965,8 @@ export function taskParametersClientMetadataRequestUseConnectionCtxToTerraform(s
 
 
 export function taskParametersClientMetadataRequestUseConnectionCtxToHclTerraform(struct?: TaskParametersClientMetadataRequestUseConnectionCtx): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -956,7 +974,7 @@ export function taskParametersClientMetadataRequestUseConnectionCtxToHclTerrafor
   return attrs;
 }
 
-export class TaskParametersClientMetadataRequestUseConnectionCtxOutputReference extends cdktf.ComplexObject {
+export class TaskParametersClientMetadataRequestUseConnectionCtxOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -965,7 +983,7 @@ export class TaskParametersClientMetadataRequestUseConnectionCtxOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1010,14 +1028,14 @@ export class TaskParametersClientMetadataRequestUseConnectionCtxOutputReference 
   }
 }
 
-export class TaskParametersClientMetadataRequestUseConnectionCtxList extends cdktf.ComplexList {
+export class TaskParametersClientMetadataRequestUseConnectionCtxList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1032,8 +1050,8 @@ export interface TaskParametersClientPrefetchThreads {
 }
 
 export function taskParametersClientPrefetchThreadsToTerraform(struct?: TaskParametersClientPrefetchThreads): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1042,8 +1060,8 @@ export function taskParametersClientPrefetchThreadsToTerraform(struct?: TaskPara
 
 
 export function taskParametersClientPrefetchThreadsToHclTerraform(struct?: TaskParametersClientPrefetchThreads): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1051,7 +1069,7 @@ export function taskParametersClientPrefetchThreadsToHclTerraform(struct?: TaskP
   return attrs;
 }
 
-export class TaskParametersClientPrefetchThreadsOutputReference extends cdktf.ComplexObject {
+export class TaskParametersClientPrefetchThreadsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1060,7 +1078,7 @@ export class TaskParametersClientPrefetchThreadsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1105,14 +1123,14 @@ export class TaskParametersClientPrefetchThreadsOutputReference extends cdktf.Co
   }
 }
 
-export class TaskParametersClientPrefetchThreadsList extends cdktf.ComplexList {
+export class TaskParametersClientPrefetchThreadsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1127,8 +1145,8 @@ export interface TaskParametersClientResultChunkSize {
 }
 
 export function taskParametersClientResultChunkSizeToTerraform(struct?: TaskParametersClientResultChunkSize): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1137,8 +1155,8 @@ export function taskParametersClientResultChunkSizeToTerraform(struct?: TaskPara
 
 
 export function taskParametersClientResultChunkSizeToHclTerraform(struct?: TaskParametersClientResultChunkSize): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1146,7 +1164,7 @@ export function taskParametersClientResultChunkSizeToHclTerraform(struct?: TaskP
   return attrs;
 }
 
-export class TaskParametersClientResultChunkSizeOutputReference extends cdktf.ComplexObject {
+export class TaskParametersClientResultChunkSizeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1155,7 +1173,7 @@ export class TaskParametersClientResultChunkSizeOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1200,14 +1218,14 @@ export class TaskParametersClientResultChunkSizeOutputReference extends cdktf.Co
   }
 }
 
-export class TaskParametersClientResultChunkSizeList extends cdktf.ComplexList {
+export class TaskParametersClientResultChunkSizeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1222,8 +1240,8 @@ export interface TaskParametersClientResultColumnCaseInsensitive {
 }
 
 export function taskParametersClientResultColumnCaseInsensitiveToTerraform(struct?: TaskParametersClientResultColumnCaseInsensitive): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1232,8 +1250,8 @@ export function taskParametersClientResultColumnCaseInsensitiveToTerraform(struc
 
 
 export function taskParametersClientResultColumnCaseInsensitiveToHclTerraform(struct?: TaskParametersClientResultColumnCaseInsensitive): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1241,7 +1259,7 @@ export function taskParametersClientResultColumnCaseInsensitiveToHclTerraform(st
   return attrs;
 }
 
-export class TaskParametersClientResultColumnCaseInsensitiveOutputReference extends cdktf.ComplexObject {
+export class TaskParametersClientResultColumnCaseInsensitiveOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1250,7 +1268,7 @@ export class TaskParametersClientResultColumnCaseInsensitiveOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1295,14 +1313,14 @@ export class TaskParametersClientResultColumnCaseInsensitiveOutputReference exte
   }
 }
 
-export class TaskParametersClientResultColumnCaseInsensitiveList extends cdktf.ComplexList {
+export class TaskParametersClientResultColumnCaseInsensitiveList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1317,8 +1335,8 @@ export interface TaskParametersClientSessionKeepAlive {
 }
 
 export function taskParametersClientSessionKeepAliveToTerraform(struct?: TaskParametersClientSessionKeepAlive): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1327,8 +1345,8 @@ export function taskParametersClientSessionKeepAliveToTerraform(struct?: TaskPar
 
 
 export function taskParametersClientSessionKeepAliveToHclTerraform(struct?: TaskParametersClientSessionKeepAlive): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1336,7 +1354,7 @@ export function taskParametersClientSessionKeepAliveToHclTerraform(struct?: Task
   return attrs;
 }
 
-export class TaskParametersClientSessionKeepAliveOutputReference extends cdktf.ComplexObject {
+export class TaskParametersClientSessionKeepAliveOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1345,7 +1363,7 @@ export class TaskParametersClientSessionKeepAliveOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1390,14 +1408,14 @@ export class TaskParametersClientSessionKeepAliveOutputReference extends cdktf.C
   }
 }
 
-export class TaskParametersClientSessionKeepAliveList extends cdktf.ComplexList {
+export class TaskParametersClientSessionKeepAliveList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1412,8 +1430,8 @@ export interface TaskParametersClientSessionKeepAliveHeartbeatFrequency {
 }
 
 export function taskParametersClientSessionKeepAliveHeartbeatFrequencyToTerraform(struct?: TaskParametersClientSessionKeepAliveHeartbeatFrequency): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1422,8 +1440,8 @@ export function taskParametersClientSessionKeepAliveHeartbeatFrequencyToTerrafor
 
 
 export function taskParametersClientSessionKeepAliveHeartbeatFrequencyToHclTerraform(struct?: TaskParametersClientSessionKeepAliveHeartbeatFrequency): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1431,7 +1449,7 @@ export function taskParametersClientSessionKeepAliveHeartbeatFrequencyToHclTerra
   return attrs;
 }
 
-export class TaskParametersClientSessionKeepAliveHeartbeatFrequencyOutputReference extends cdktf.ComplexObject {
+export class TaskParametersClientSessionKeepAliveHeartbeatFrequencyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1440,7 +1458,7 @@ export class TaskParametersClientSessionKeepAliveHeartbeatFrequencyOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1485,14 +1503,14 @@ export class TaskParametersClientSessionKeepAliveHeartbeatFrequencyOutputReferen
   }
 }
 
-export class TaskParametersClientSessionKeepAliveHeartbeatFrequencyList extends cdktf.ComplexList {
+export class TaskParametersClientSessionKeepAliveHeartbeatFrequencyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1507,8 +1525,8 @@ export interface TaskParametersClientTimestampTypeMapping {
 }
 
 export function taskParametersClientTimestampTypeMappingToTerraform(struct?: TaskParametersClientTimestampTypeMapping): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1517,8 +1535,8 @@ export function taskParametersClientTimestampTypeMappingToTerraform(struct?: Tas
 
 
 export function taskParametersClientTimestampTypeMappingToHclTerraform(struct?: TaskParametersClientTimestampTypeMapping): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1526,7 +1544,7 @@ export function taskParametersClientTimestampTypeMappingToHclTerraform(struct?: 
   return attrs;
 }
 
-export class TaskParametersClientTimestampTypeMappingOutputReference extends cdktf.ComplexObject {
+export class TaskParametersClientTimestampTypeMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1535,7 +1553,7 @@ export class TaskParametersClientTimestampTypeMappingOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1580,14 +1598,14 @@ export class TaskParametersClientTimestampTypeMappingOutputReference extends cdk
   }
 }
 
-export class TaskParametersClientTimestampTypeMappingList extends cdktf.ComplexList {
+export class TaskParametersClientTimestampTypeMappingList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1602,8 +1620,8 @@ export interface TaskParametersDateInputFormat {
 }
 
 export function taskParametersDateInputFormatToTerraform(struct?: TaskParametersDateInputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1612,8 +1630,8 @@ export function taskParametersDateInputFormatToTerraform(struct?: TaskParameters
 
 
 export function taskParametersDateInputFormatToHclTerraform(struct?: TaskParametersDateInputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1621,7 +1639,7 @@ export function taskParametersDateInputFormatToHclTerraform(struct?: TaskParamet
   return attrs;
 }
 
-export class TaskParametersDateInputFormatOutputReference extends cdktf.ComplexObject {
+export class TaskParametersDateInputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1630,7 +1648,7 @@ export class TaskParametersDateInputFormatOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1675,14 +1693,14 @@ export class TaskParametersDateInputFormatOutputReference extends cdktf.ComplexO
   }
 }
 
-export class TaskParametersDateInputFormatList extends cdktf.ComplexList {
+export class TaskParametersDateInputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1697,8 +1715,8 @@ export interface TaskParametersDateOutputFormat {
 }
 
 export function taskParametersDateOutputFormatToTerraform(struct?: TaskParametersDateOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1707,8 +1725,8 @@ export function taskParametersDateOutputFormatToTerraform(struct?: TaskParameter
 
 
 export function taskParametersDateOutputFormatToHclTerraform(struct?: TaskParametersDateOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1716,7 +1734,7 @@ export function taskParametersDateOutputFormatToHclTerraform(struct?: TaskParame
   return attrs;
 }
 
-export class TaskParametersDateOutputFormatOutputReference extends cdktf.ComplexObject {
+export class TaskParametersDateOutputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1725,7 +1743,7 @@ export class TaskParametersDateOutputFormatOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1770,14 +1788,14 @@ export class TaskParametersDateOutputFormatOutputReference extends cdktf.Complex
   }
 }
 
-export class TaskParametersDateOutputFormatList extends cdktf.ComplexList {
+export class TaskParametersDateOutputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1792,8 +1810,8 @@ export interface TaskParametersEnableUnloadPhysicalTypeOptimization {
 }
 
 export function taskParametersEnableUnloadPhysicalTypeOptimizationToTerraform(struct?: TaskParametersEnableUnloadPhysicalTypeOptimization): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1802,8 +1820,8 @@ export function taskParametersEnableUnloadPhysicalTypeOptimizationToTerraform(st
 
 
 export function taskParametersEnableUnloadPhysicalTypeOptimizationToHclTerraform(struct?: TaskParametersEnableUnloadPhysicalTypeOptimization): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1811,7 +1829,7 @@ export function taskParametersEnableUnloadPhysicalTypeOptimizationToHclTerraform
   return attrs;
 }
 
-export class TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference extends cdktf.ComplexObject {
+export class TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1820,7 +1838,7 @@ export class TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1865,14 +1883,14 @@ export class TaskParametersEnableUnloadPhysicalTypeOptimizationOutputReference e
   }
 }
 
-export class TaskParametersEnableUnloadPhysicalTypeOptimizationList extends cdktf.ComplexList {
+export class TaskParametersEnableUnloadPhysicalTypeOptimizationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1887,8 +1905,8 @@ export interface TaskParametersErrorOnNondeterministicMerge {
 }
 
 export function taskParametersErrorOnNondeterministicMergeToTerraform(struct?: TaskParametersErrorOnNondeterministicMerge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1897,8 +1915,8 @@ export function taskParametersErrorOnNondeterministicMergeToTerraform(struct?: T
 
 
 export function taskParametersErrorOnNondeterministicMergeToHclTerraform(struct?: TaskParametersErrorOnNondeterministicMerge): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1906,7 +1924,7 @@ export function taskParametersErrorOnNondeterministicMergeToHclTerraform(struct?
   return attrs;
 }
 
-export class TaskParametersErrorOnNondeterministicMergeOutputReference extends cdktf.ComplexObject {
+export class TaskParametersErrorOnNondeterministicMergeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1915,7 +1933,7 @@ export class TaskParametersErrorOnNondeterministicMergeOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1960,14 +1978,14 @@ export class TaskParametersErrorOnNondeterministicMergeOutputReference extends c
   }
 }
 
-export class TaskParametersErrorOnNondeterministicMergeList extends cdktf.ComplexList {
+export class TaskParametersErrorOnNondeterministicMergeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1982,8 +2000,8 @@ export interface TaskParametersErrorOnNondeterministicUpdate {
 }
 
 export function taskParametersErrorOnNondeterministicUpdateToTerraform(struct?: TaskParametersErrorOnNondeterministicUpdate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1992,8 +2010,8 @@ export function taskParametersErrorOnNondeterministicUpdateToTerraform(struct?: 
 
 
 export function taskParametersErrorOnNondeterministicUpdateToHclTerraform(struct?: TaskParametersErrorOnNondeterministicUpdate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2001,7 +2019,7 @@ export function taskParametersErrorOnNondeterministicUpdateToHclTerraform(struct
   return attrs;
 }
 
-export class TaskParametersErrorOnNondeterministicUpdateOutputReference extends cdktf.ComplexObject {
+export class TaskParametersErrorOnNondeterministicUpdateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2010,7 +2028,7 @@ export class TaskParametersErrorOnNondeterministicUpdateOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2055,14 +2073,14 @@ export class TaskParametersErrorOnNondeterministicUpdateOutputReference extends 
   }
 }
 
-export class TaskParametersErrorOnNondeterministicUpdateList extends cdktf.ComplexList {
+export class TaskParametersErrorOnNondeterministicUpdateList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2077,8 +2095,8 @@ export interface TaskParametersGeographyOutputFormat {
 }
 
 export function taskParametersGeographyOutputFormatToTerraform(struct?: TaskParametersGeographyOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2087,8 +2105,8 @@ export function taskParametersGeographyOutputFormatToTerraform(struct?: TaskPara
 
 
 export function taskParametersGeographyOutputFormatToHclTerraform(struct?: TaskParametersGeographyOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2096,7 +2114,7 @@ export function taskParametersGeographyOutputFormatToHclTerraform(struct?: TaskP
   return attrs;
 }
 
-export class TaskParametersGeographyOutputFormatOutputReference extends cdktf.ComplexObject {
+export class TaskParametersGeographyOutputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2105,7 +2123,7 @@ export class TaskParametersGeographyOutputFormatOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2150,14 +2168,14 @@ export class TaskParametersGeographyOutputFormatOutputReference extends cdktf.Co
   }
 }
 
-export class TaskParametersGeographyOutputFormatList extends cdktf.ComplexList {
+export class TaskParametersGeographyOutputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2172,8 +2190,8 @@ export interface TaskParametersGeometryOutputFormat {
 }
 
 export function taskParametersGeometryOutputFormatToTerraform(struct?: TaskParametersGeometryOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2182,8 +2200,8 @@ export function taskParametersGeometryOutputFormatToTerraform(struct?: TaskParam
 
 
 export function taskParametersGeometryOutputFormatToHclTerraform(struct?: TaskParametersGeometryOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2191,7 +2209,7 @@ export function taskParametersGeometryOutputFormatToHclTerraform(struct?: TaskPa
   return attrs;
 }
 
-export class TaskParametersGeometryOutputFormatOutputReference extends cdktf.ComplexObject {
+export class TaskParametersGeometryOutputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2200,7 +2218,7 @@ export class TaskParametersGeometryOutputFormatOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2245,14 +2263,14 @@ export class TaskParametersGeometryOutputFormatOutputReference extends cdktf.Com
   }
 }
 
-export class TaskParametersGeometryOutputFormatList extends cdktf.ComplexList {
+export class TaskParametersGeometryOutputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2267,8 +2285,8 @@ export interface TaskParametersJdbcTreatTimestampNtzAsUtc {
 }
 
 export function taskParametersJdbcTreatTimestampNtzAsUtcToTerraform(struct?: TaskParametersJdbcTreatTimestampNtzAsUtc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2277,8 +2295,8 @@ export function taskParametersJdbcTreatTimestampNtzAsUtcToTerraform(struct?: Tas
 
 
 export function taskParametersJdbcTreatTimestampNtzAsUtcToHclTerraform(struct?: TaskParametersJdbcTreatTimestampNtzAsUtc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2286,7 +2304,7 @@ export function taskParametersJdbcTreatTimestampNtzAsUtcToHclTerraform(struct?: 
   return attrs;
 }
 
-export class TaskParametersJdbcTreatTimestampNtzAsUtcOutputReference extends cdktf.ComplexObject {
+export class TaskParametersJdbcTreatTimestampNtzAsUtcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2295,7 +2313,7 @@ export class TaskParametersJdbcTreatTimestampNtzAsUtcOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2340,14 +2358,14 @@ export class TaskParametersJdbcTreatTimestampNtzAsUtcOutputReference extends cdk
   }
 }
 
-export class TaskParametersJdbcTreatTimestampNtzAsUtcList extends cdktf.ComplexList {
+export class TaskParametersJdbcTreatTimestampNtzAsUtcList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2362,8 +2380,8 @@ export interface TaskParametersJdbcUseSessionTimezone {
 }
 
 export function taskParametersJdbcUseSessionTimezoneToTerraform(struct?: TaskParametersJdbcUseSessionTimezone): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2372,8 +2390,8 @@ export function taskParametersJdbcUseSessionTimezoneToTerraform(struct?: TaskPar
 
 
 export function taskParametersJdbcUseSessionTimezoneToHclTerraform(struct?: TaskParametersJdbcUseSessionTimezone): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2381,7 +2399,7 @@ export function taskParametersJdbcUseSessionTimezoneToHclTerraform(struct?: Task
   return attrs;
 }
 
-export class TaskParametersJdbcUseSessionTimezoneOutputReference extends cdktf.ComplexObject {
+export class TaskParametersJdbcUseSessionTimezoneOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2390,7 +2408,7 @@ export class TaskParametersJdbcUseSessionTimezoneOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2435,14 +2453,14 @@ export class TaskParametersJdbcUseSessionTimezoneOutputReference extends cdktf.C
   }
 }
 
-export class TaskParametersJdbcUseSessionTimezoneList extends cdktf.ComplexList {
+export class TaskParametersJdbcUseSessionTimezoneList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2457,8 +2475,8 @@ export interface TaskParametersJsonIndent {
 }
 
 export function taskParametersJsonIndentToTerraform(struct?: TaskParametersJsonIndent): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2467,8 +2485,8 @@ export function taskParametersJsonIndentToTerraform(struct?: TaskParametersJsonI
 
 
 export function taskParametersJsonIndentToHclTerraform(struct?: TaskParametersJsonIndent): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2476,7 +2494,7 @@ export function taskParametersJsonIndentToHclTerraform(struct?: TaskParametersJs
   return attrs;
 }
 
-export class TaskParametersJsonIndentOutputReference extends cdktf.ComplexObject {
+export class TaskParametersJsonIndentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2485,7 +2503,7 @@ export class TaskParametersJsonIndentOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2530,14 +2548,14 @@ export class TaskParametersJsonIndentOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class TaskParametersJsonIndentList extends cdktf.ComplexList {
+export class TaskParametersJsonIndentList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2552,8 +2570,8 @@ export interface TaskParametersLockTimeout {
 }
 
 export function taskParametersLockTimeoutToTerraform(struct?: TaskParametersLockTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2562,8 +2580,8 @@ export function taskParametersLockTimeoutToTerraform(struct?: TaskParametersLock
 
 
 export function taskParametersLockTimeoutToHclTerraform(struct?: TaskParametersLockTimeout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2571,7 +2589,7 @@ export function taskParametersLockTimeoutToHclTerraform(struct?: TaskParametersL
   return attrs;
 }
 
-export class TaskParametersLockTimeoutOutputReference extends cdktf.ComplexObject {
+export class TaskParametersLockTimeoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2580,7 +2598,7 @@ export class TaskParametersLockTimeoutOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2625,14 +2643,14 @@ export class TaskParametersLockTimeoutOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class TaskParametersLockTimeoutList extends cdktf.ComplexList {
+export class TaskParametersLockTimeoutList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2647,8 +2665,8 @@ export interface TaskParametersLogLevel {
 }
 
 export function taskParametersLogLevelToTerraform(struct?: TaskParametersLogLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2657,8 +2675,8 @@ export function taskParametersLogLevelToTerraform(struct?: TaskParametersLogLeve
 
 
 export function taskParametersLogLevelToHclTerraform(struct?: TaskParametersLogLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2666,7 +2684,7 @@ export function taskParametersLogLevelToHclTerraform(struct?: TaskParametersLogL
   return attrs;
 }
 
-export class TaskParametersLogLevelOutputReference extends cdktf.ComplexObject {
+export class TaskParametersLogLevelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2675,7 +2693,7 @@ export class TaskParametersLogLevelOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2720,14 +2738,14 @@ export class TaskParametersLogLevelOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class TaskParametersLogLevelList extends cdktf.ComplexList {
+export class TaskParametersLogLevelList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2742,8 +2760,8 @@ export interface TaskParametersMultiStatementCount {
 }
 
 export function taskParametersMultiStatementCountToTerraform(struct?: TaskParametersMultiStatementCount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2752,8 +2770,8 @@ export function taskParametersMultiStatementCountToTerraform(struct?: TaskParame
 
 
 export function taskParametersMultiStatementCountToHclTerraform(struct?: TaskParametersMultiStatementCount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2761,7 +2779,7 @@ export function taskParametersMultiStatementCountToHclTerraform(struct?: TaskPar
   return attrs;
 }
 
-export class TaskParametersMultiStatementCountOutputReference extends cdktf.ComplexObject {
+export class TaskParametersMultiStatementCountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2770,7 +2788,7 @@ export class TaskParametersMultiStatementCountOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2815,14 +2833,14 @@ export class TaskParametersMultiStatementCountOutputReference extends cdktf.Comp
   }
 }
 
-export class TaskParametersMultiStatementCountList extends cdktf.ComplexList {
+export class TaskParametersMultiStatementCountList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2837,8 +2855,8 @@ export interface TaskParametersNoorderSequenceAsDefault {
 }
 
 export function taskParametersNoorderSequenceAsDefaultToTerraform(struct?: TaskParametersNoorderSequenceAsDefault): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2847,8 +2865,8 @@ export function taskParametersNoorderSequenceAsDefaultToTerraform(struct?: TaskP
 
 
 export function taskParametersNoorderSequenceAsDefaultToHclTerraform(struct?: TaskParametersNoorderSequenceAsDefault): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2856,7 +2874,7 @@ export function taskParametersNoorderSequenceAsDefaultToHclTerraform(struct?: Ta
   return attrs;
 }
 
-export class TaskParametersNoorderSequenceAsDefaultOutputReference extends cdktf.ComplexObject {
+export class TaskParametersNoorderSequenceAsDefaultOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2865,7 +2883,7 @@ export class TaskParametersNoorderSequenceAsDefaultOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2910,14 +2928,14 @@ export class TaskParametersNoorderSequenceAsDefaultOutputReference extends cdktf
   }
 }
 
-export class TaskParametersNoorderSequenceAsDefaultList extends cdktf.ComplexList {
+export class TaskParametersNoorderSequenceAsDefaultList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2932,8 +2950,8 @@ export interface TaskParametersOdbcTreatDecimalAsInt {
 }
 
 export function taskParametersOdbcTreatDecimalAsIntToTerraform(struct?: TaskParametersOdbcTreatDecimalAsInt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2942,8 +2960,8 @@ export function taskParametersOdbcTreatDecimalAsIntToTerraform(struct?: TaskPara
 
 
 export function taskParametersOdbcTreatDecimalAsIntToHclTerraform(struct?: TaskParametersOdbcTreatDecimalAsInt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2951,7 +2969,7 @@ export function taskParametersOdbcTreatDecimalAsIntToHclTerraform(struct?: TaskP
   return attrs;
 }
 
-export class TaskParametersOdbcTreatDecimalAsIntOutputReference extends cdktf.ComplexObject {
+export class TaskParametersOdbcTreatDecimalAsIntOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2960,7 +2978,7 @@ export class TaskParametersOdbcTreatDecimalAsIntOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3005,14 +3023,14 @@ export class TaskParametersOdbcTreatDecimalAsIntOutputReference extends cdktf.Co
   }
 }
 
-export class TaskParametersOdbcTreatDecimalAsIntList extends cdktf.ComplexList {
+export class TaskParametersOdbcTreatDecimalAsIntList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3027,8 +3045,8 @@ export interface TaskParametersQueryTag {
 }
 
 export function taskParametersQueryTagToTerraform(struct?: TaskParametersQueryTag): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3037,8 +3055,8 @@ export function taskParametersQueryTagToTerraform(struct?: TaskParametersQueryTa
 
 
 export function taskParametersQueryTagToHclTerraform(struct?: TaskParametersQueryTag): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3046,7 +3064,7 @@ export function taskParametersQueryTagToHclTerraform(struct?: TaskParametersQuer
   return attrs;
 }
 
-export class TaskParametersQueryTagOutputReference extends cdktf.ComplexObject {
+export class TaskParametersQueryTagOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3055,7 +3073,7 @@ export class TaskParametersQueryTagOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3100,14 +3118,14 @@ export class TaskParametersQueryTagOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class TaskParametersQueryTagList extends cdktf.ComplexList {
+export class TaskParametersQueryTagList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3122,8 +3140,8 @@ export interface TaskParametersQuotedIdentifiersIgnoreCase {
 }
 
 export function taskParametersQuotedIdentifiersIgnoreCaseToTerraform(struct?: TaskParametersQuotedIdentifiersIgnoreCase): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3132,8 +3150,8 @@ export function taskParametersQuotedIdentifiersIgnoreCaseToTerraform(struct?: Ta
 
 
 export function taskParametersQuotedIdentifiersIgnoreCaseToHclTerraform(struct?: TaskParametersQuotedIdentifiersIgnoreCase): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3141,7 +3159,7 @@ export function taskParametersQuotedIdentifiersIgnoreCaseToHclTerraform(struct?:
   return attrs;
 }
 
-export class TaskParametersQuotedIdentifiersIgnoreCaseOutputReference extends cdktf.ComplexObject {
+export class TaskParametersQuotedIdentifiersIgnoreCaseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3150,7 +3168,7 @@ export class TaskParametersQuotedIdentifiersIgnoreCaseOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3195,14 +3213,14 @@ export class TaskParametersQuotedIdentifiersIgnoreCaseOutputReference extends cd
   }
 }
 
-export class TaskParametersQuotedIdentifiersIgnoreCaseList extends cdktf.ComplexList {
+export class TaskParametersQuotedIdentifiersIgnoreCaseList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3217,8 +3235,8 @@ export interface TaskParametersRowsPerResultset {
 }
 
 export function taskParametersRowsPerResultsetToTerraform(struct?: TaskParametersRowsPerResultset): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3227,8 +3245,8 @@ export function taskParametersRowsPerResultsetToTerraform(struct?: TaskParameter
 
 
 export function taskParametersRowsPerResultsetToHclTerraform(struct?: TaskParametersRowsPerResultset): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3236,7 +3254,7 @@ export function taskParametersRowsPerResultsetToHclTerraform(struct?: TaskParame
   return attrs;
 }
 
-export class TaskParametersRowsPerResultsetOutputReference extends cdktf.ComplexObject {
+export class TaskParametersRowsPerResultsetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3245,7 +3263,7 @@ export class TaskParametersRowsPerResultsetOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3290,14 +3308,14 @@ export class TaskParametersRowsPerResultsetOutputReference extends cdktf.Complex
   }
 }
 
-export class TaskParametersRowsPerResultsetList extends cdktf.ComplexList {
+export class TaskParametersRowsPerResultsetList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3312,8 +3330,8 @@ export interface TaskParametersS3StageVpceDnsName {
 }
 
 export function taskParametersS3StageVpceDnsNameToTerraform(struct?: TaskParametersS3StageVpceDnsName): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3322,8 +3340,8 @@ export function taskParametersS3StageVpceDnsNameToTerraform(struct?: TaskParamet
 
 
 export function taskParametersS3StageVpceDnsNameToHclTerraform(struct?: TaskParametersS3StageVpceDnsName): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3331,7 +3349,7 @@ export function taskParametersS3StageVpceDnsNameToHclTerraform(struct?: TaskPara
   return attrs;
 }
 
-export class TaskParametersS3StageVpceDnsNameOutputReference extends cdktf.ComplexObject {
+export class TaskParametersS3StageVpceDnsNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3340,7 +3358,7 @@ export class TaskParametersS3StageVpceDnsNameOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3385,14 +3403,14 @@ export class TaskParametersS3StageVpceDnsNameOutputReference extends cdktf.Compl
   }
 }
 
-export class TaskParametersS3StageVpceDnsNameList extends cdktf.ComplexList {
+export class TaskParametersS3StageVpceDnsNameList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3407,8 +3425,8 @@ export interface TaskParametersSearchPath {
 }
 
 export function taskParametersSearchPathToTerraform(struct?: TaskParametersSearchPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3417,8 +3435,8 @@ export function taskParametersSearchPathToTerraform(struct?: TaskParametersSearc
 
 
 export function taskParametersSearchPathToHclTerraform(struct?: TaskParametersSearchPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3426,7 +3444,7 @@ export function taskParametersSearchPathToHclTerraform(struct?: TaskParametersSe
   return attrs;
 }
 
-export class TaskParametersSearchPathOutputReference extends cdktf.ComplexObject {
+export class TaskParametersSearchPathOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3435,7 +3453,7 @@ export class TaskParametersSearchPathOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3480,14 +3498,14 @@ export class TaskParametersSearchPathOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class TaskParametersSearchPathList extends cdktf.ComplexList {
+export class TaskParametersSearchPathList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3498,12 +3516,12 @@ export class TaskParametersSearchPathList extends cdktf.ComplexList {
     return new TaskParametersSearchPathOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface TaskParametersStatementQueuedTimeoutInSeconds {
+export interface TaskParametersServerlessTaskMaxStatementSize {
 }
 
-export function taskParametersStatementQueuedTimeoutInSecondsToTerraform(struct?: TaskParametersStatementQueuedTimeoutInSeconds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function taskParametersServerlessTaskMaxStatementSizeToTerraform(struct?: TaskParametersServerlessTaskMaxStatementSize): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3511,9 +3529,9 @@ export function taskParametersStatementQueuedTimeoutInSecondsToTerraform(struct?
 }
 
 
-export function taskParametersStatementQueuedTimeoutInSecondsToHclTerraform(struct?: TaskParametersStatementQueuedTimeoutInSeconds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function taskParametersServerlessTaskMaxStatementSizeToHclTerraform(struct?: TaskParametersServerlessTaskMaxStatementSize): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3521,7 +3539,7 @@ export function taskParametersStatementQueuedTimeoutInSecondsToHclTerraform(stru
   return attrs;
 }
 
-export class TaskParametersStatementQueuedTimeoutInSecondsOutputReference extends cdktf.ComplexObject {
+export class TaskParametersServerlessTaskMaxStatementSizeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3530,7 +3548,197 @@ export class TaskParametersStatementQueuedTimeoutInSecondsOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): TaskParametersServerlessTaskMaxStatementSize | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TaskParametersServerlessTaskMaxStatementSize | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class TaskParametersServerlessTaskMaxStatementSizeList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): TaskParametersServerlessTaskMaxStatementSizeOutputReference {
+    return new TaskParametersServerlessTaskMaxStatementSizeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface TaskParametersServerlessTaskMinStatementSize {
+}
+
+export function taskParametersServerlessTaskMinStatementSizeToTerraform(struct?: TaskParametersServerlessTaskMinStatementSize): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function taskParametersServerlessTaskMinStatementSizeToHclTerraform(struct?: TaskParametersServerlessTaskMinStatementSize): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class TaskParametersServerlessTaskMinStatementSizeOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): TaskParametersServerlessTaskMinStatementSize | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TaskParametersServerlessTaskMinStatementSize | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class TaskParametersServerlessTaskMinStatementSizeList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): TaskParametersServerlessTaskMinStatementSizeOutputReference {
+    return new TaskParametersServerlessTaskMinStatementSizeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface TaskParametersStatementQueuedTimeoutInSeconds {
+}
+
+export function taskParametersStatementQueuedTimeoutInSecondsToTerraform(struct?: TaskParametersStatementQueuedTimeoutInSeconds): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function taskParametersStatementQueuedTimeoutInSecondsToHclTerraform(struct?: TaskParametersStatementQueuedTimeoutInSeconds): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class TaskParametersStatementQueuedTimeoutInSecondsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3575,14 +3783,14 @@ export class TaskParametersStatementQueuedTimeoutInSecondsOutputReference extend
   }
 }
 
-export class TaskParametersStatementQueuedTimeoutInSecondsList extends cdktf.ComplexList {
+export class TaskParametersStatementQueuedTimeoutInSecondsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3597,8 +3805,8 @@ export interface TaskParametersStatementTimeoutInSeconds {
 }
 
 export function taskParametersStatementTimeoutInSecondsToTerraform(struct?: TaskParametersStatementTimeoutInSeconds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3607,8 +3815,8 @@ export function taskParametersStatementTimeoutInSecondsToTerraform(struct?: Task
 
 
 export function taskParametersStatementTimeoutInSecondsToHclTerraform(struct?: TaskParametersStatementTimeoutInSeconds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3616,7 +3824,7 @@ export function taskParametersStatementTimeoutInSecondsToHclTerraform(struct?: T
   return attrs;
 }
 
-export class TaskParametersStatementTimeoutInSecondsOutputReference extends cdktf.ComplexObject {
+export class TaskParametersStatementTimeoutInSecondsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3625,7 +3833,7 @@ export class TaskParametersStatementTimeoutInSecondsOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3670,14 +3878,14 @@ export class TaskParametersStatementTimeoutInSecondsOutputReference extends cdkt
   }
 }
 
-export class TaskParametersStatementTimeoutInSecondsList extends cdktf.ComplexList {
+export class TaskParametersStatementTimeoutInSecondsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3692,8 +3900,8 @@ export interface TaskParametersStrictJsonOutput {
 }
 
 export function taskParametersStrictJsonOutputToTerraform(struct?: TaskParametersStrictJsonOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3702,8 +3910,8 @@ export function taskParametersStrictJsonOutputToTerraform(struct?: TaskParameter
 
 
 export function taskParametersStrictJsonOutputToHclTerraform(struct?: TaskParametersStrictJsonOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3711,7 +3919,7 @@ export function taskParametersStrictJsonOutputToHclTerraform(struct?: TaskParame
   return attrs;
 }
 
-export class TaskParametersStrictJsonOutputOutputReference extends cdktf.ComplexObject {
+export class TaskParametersStrictJsonOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3720,7 +3928,7 @@ export class TaskParametersStrictJsonOutputOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3765,14 +3973,14 @@ export class TaskParametersStrictJsonOutputOutputReference extends cdktf.Complex
   }
 }
 
-export class TaskParametersStrictJsonOutputList extends cdktf.ComplexList {
+export class TaskParametersStrictJsonOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3787,8 +3995,8 @@ export interface TaskParametersSuspendTaskAfterNumFailures {
 }
 
 export function taskParametersSuspendTaskAfterNumFailuresToTerraform(struct?: TaskParametersSuspendTaskAfterNumFailures): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3797,8 +4005,8 @@ export function taskParametersSuspendTaskAfterNumFailuresToTerraform(struct?: Ta
 
 
 export function taskParametersSuspendTaskAfterNumFailuresToHclTerraform(struct?: TaskParametersSuspendTaskAfterNumFailures): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3806,7 +4014,7 @@ export function taskParametersSuspendTaskAfterNumFailuresToHclTerraform(struct?:
   return attrs;
 }
 
-export class TaskParametersSuspendTaskAfterNumFailuresOutputReference extends cdktf.ComplexObject {
+export class TaskParametersSuspendTaskAfterNumFailuresOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3815,7 +4023,7 @@ export class TaskParametersSuspendTaskAfterNumFailuresOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3860,14 +4068,14 @@ export class TaskParametersSuspendTaskAfterNumFailuresOutputReference extends cd
   }
 }
 
-export class TaskParametersSuspendTaskAfterNumFailuresList extends cdktf.ComplexList {
+export class TaskParametersSuspendTaskAfterNumFailuresList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3882,8 +4090,8 @@ export interface TaskParametersTaskAutoRetryAttempts {
 }
 
 export function taskParametersTaskAutoRetryAttemptsToTerraform(struct?: TaskParametersTaskAutoRetryAttempts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3892,8 +4100,8 @@ export function taskParametersTaskAutoRetryAttemptsToTerraform(struct?: TaskPara
 
 
 export function taskParametersTaskAutoRetryAttemptsToHclTerraform(struct?: TaskParametersTaskAutoRetryAttempts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3901,7 +4109,7 @@ export function taskParametersTaskAutoRetryAttemptsToHclTerraform(struct?: TaskP
   return attrs;
 }
 
-export class TaskParametersTaskAutoRetryAttemptsOutputReference extends cdktf.ComplexObject {
+export class TaskParametersTaskAutoRetryAttemptsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3910,7 +4118,7 @@ export class TaskParametersTaskAutoRetryAttemptsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3955,14 +4163,14 @@ export class TaskParametersTaskAutoRetryAttemptsOutputReference extends cdktf.Co
   }
 }
 
-export class TaskParametersTaskAutoRetryAttemptsList extends cdktf.ComplexList {
+export class TaskParametersTaskAutoRetryAttemptsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3977,8 +4185,8 @@ export interface TaskParametersTimeInputFormat {
 }
 
 export function taskParametersTimeInputFormatToTerraform(struct?: TaskParametersTimeInputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3987,8 +4195,8 @@ export function taskParametersTimeInputFormatToTerraform(struct?: TaskParameters
 
 
 export function taskParametersTimeInputFormatToHclTerraform(struct?: TaskParametersTimeInputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3996,7 +4204,7 @@ export function taskParametersTimeInputFormatToHclTerraform(struct?: TaskParamet
   return attrs;
 }
 
-export class TaskParametersTimeInputFormatOutputReference extends cdktf.ComplexObject {
+export class TaskParametersTimeInputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4005,7 +4213,7 @@ export class TaskParametersTimeInputFormatOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4050,14 +4258,14 @@ export class TaskParametersTimeInputFormatOutputReference extends cdktf.ComplexO
   }
 }
 
-export class TaskParametersTimeInputFormatList extends cdktf.ComplexList {
+export class TaskParametersTimeInputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4072,8 +4280,8 @@ export interface TaskParametersTimeOutputFormat {
 }
 
 export function taskParametersTimeOutputFormatToTerraform(struct?: TaskParametersTimeOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4082,8 +4290,8 @@ export function taskParametersTimeOutputFormatToTerraform(struct?: TaskParameter
 
 
 export function taskParametersTimeOutputFormatToHclTerraform(struct?: TaskParametersTimeOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4091,7 +4299,7 @@ export function taskParametersTimeOutputFormatToHclTerraform(struct?: TaskParame
   return attrs;
 }
 
-export class TaskParametersTimeOutputFormatOutputReference extends cdktf.ComplexObject {
+export class TaskParametersTimeOutputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4100,7 +4308,7 @@ export class TaskParametersTimeOutputFormatOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4145,14 +4353,14 @@ export class TaskParametersTimeOutputFormatOutputReference extends cdktf.Complex
   }
 }
 
-export class TaskParametersTimeOutputFormatList extends cdktf.ComplexList {
+export class TaskParametersTimeOutputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4167,8 +4375,8 @@ export interface TaskParametersTimestampDayIsAlways24H {
 }
 
 export function taskParametersTimestampDayIsAlways24HToTerraform(struct?: TaskParametersTimestampDayIsAlways24H): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4177,8 +4385,8 @@ export function taskParametersTimestampDayIsAlways24HToTerraform(struct?: TaskPa
 
 
 export function taskParametersTimestampDayIsAlways24HToHclTerraform(struct?: TaskParametersTimestampDayIsAlways24H): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4186,7 +4394,7 @@ export function taskParametersTimestampDayIsAlways24HToHclTerraform(struct?: Tas
   return attrs;
 }
 
-export class TaskParametersTimestampDayIsAlways24HOutputReference extends cdktf.ComplexObject {
+export class TaskParametersTimestampDayIsAlways24HOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4195,7 +4403,7 @@ export class TaskParametersTimestampDayIsAlways24HOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4240,14 +4448,14 @@ export class TaskParametersTimestampDayIsAlways24HOutputReference extends cdktf.
   }
 }
 
-export class TaskParametersTimestampDayIsAlways24HList extends cdktf.ComplexList {
+export class TaskParametersTimestampDayIsAlways24HList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4262,8 +4470,8 @@ export interface TaskParametersTimestampInputFormat {
 }
 
 export function taskParametersTimestampInputFormatToTerraform(struct?: TaskParametersTimestampInputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4272,8 +4480,8 @@ export function taskParametersTimestampInputFormatToTerraform(struct?: TaskParam
 
 
 export function taskParametersTimestampInputFormatToHclTerraform(struct?: TaskParametersTimestampInputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4281,7 +4489,7 @@ export function taskParametersTimestampInputFormatToHclTerraform(struct?: TaskPa
   return attrs;
 }
 
-export class TaskParametersTimestampInputFormatOutputReference extends cdktf.ComplexObject {
+export class TaskParametersTimestampInputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4290,7 +4498,7 @@ export class TaskParametersTimestampInputFormatOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4335,14 +4543,14 @@ export class TaskParametersTimestampInputFormatOutputReference extends cdktf.Com
   }
 }
 
-export class TaskParametersTimestampInputFormatList extends cdktf.ComplexList {
+export class TaskParametersTimestampInputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4357,8 +4565,8 @@ export interface TaskParametersTimestampLtzOutputFormat {
 }
 
 export function taskParametersTimestampLtzOutputFormatToTerraform(struct?: TaskParametersTimestampLtzOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4367,8 +4575,8 @@ export function taskParametersTimestampLtzOutputFormatToTerraform(struct?: TaskP
 
 
 export function taskParametersTimestampLtzOutputFormatToHclTerraform(struct?: TaskParametersTimestampLtzOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4376,7 +4584,7 @@ export function taskParametersTimestampLtzOutputFormatToHclTerraform(struct?: Ta
   return attrs;
 }
 
-export class TaskParametersTimestampLtzOutputFormatOutputReference extends cdktf.ComplexObject {
+export class TaskParametersTimestampLtzOutputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4385,7 +4593,7 @@ export class TaskParametersTimestampLtzOutputFormatOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4430,14 +4638,14 @@ export class TaskParametersTimestampLtzOutputFormatOutputReference extends cdktf
   }
 }
 
-export class TaskParametersTimestampLtzOutputFormatList extends cdktf.ComplexList {
+export class TaskParametersTimestampLtzOutputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4452,8 +4660,8 @@ export interface TaskParametersTimestampNtzOutputFormat {
 }
 
 export function taskParametersTimestampNtzOutputFormatToTerraform(struct?: TaskParametersTimestampNtzOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4462,8 +4670,8 @@ export function taskParametersTimestampNtzOutputFormatToTerraform(struct?: TaskP
 
 
 export function taskParametersTimestampNtzOutputFormatToHclTerraform(struct?: TaskParametersTimestampNtzOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4471,7 +4679,7 @@ export function taskParametersTimestampNtzOutputFormatToHclTerraform(struct?: Ta
   return attrs;
 }
 
-export class TaskParametersTimestampNtzOutputFormatOutputReference extends cdktf.ComplexObject {
+export class TaskParametersTimestampNtzOutputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4480,7 +4688,7 @@ export class TaskParametersTimestampNtzOutputFormatOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4525,14 +4733,14 @@ export class TaskParametersTimestampNtzOutputFormatOutputReference extends cdktf
   }
 }
 
-export class TaskParametersTimestampNtzOutputFormatList extends cdktf.ComplexList {
+export class TaskParametersTimestampNtzOutputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4547,8 +4755,8 @@ export interface TaskParametersTimestampOutputFormat {
 }
 
 export function taskParametersTimestampOutputFormatToTerraform(struct?: TaskParametersTimestampOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4557,8 +4765,8 @@ export function taskParametersTimestampOutputFormatToTerraform(struct?: TaskPara
 
 
 export function taskParametersTimestampOutputFormatToHclTerraform(struct?: TaskParametersTimestampOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4566,7 +4774,7 @@ export function taskParametersTimestampOutputFormatToHclTerraform(struct?: TaskP
   return attrs;
 }
 
-export class TaskParametersTimestampOutputFormatOutputReference extends cdktf.ComplexObject {
+export class TaskParametersTimestampOutputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4575,7 +4783,7 @@ export class TaskParametersTimestampOutputFormatOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4620,14 +4828,14 @@ export class TaskParametersTimestampOutputFormatOutputReference extends cdktf.Co
   }
 }
 
-export class TaskParametersTimestampOutputFormatList extends cdktf.ComplexList {
+export class TaskParametersTimestampOutputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4642,8 +4850,8 @@ export interface TaskParametersTimestampTypeMapping {
 }
 
 export function taskParametersTimestampTypeMappingToTerraform(struct?: TaskParametersTimestampTypeMapping): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4652,8 +4860,8 @@ export function taskParametersTimestampTypeMappingToTerraform(struct?: TaskParam
 
 
 export function taskParametersTimestampTypeMappingToHclTerraform(struct?: TaskParametersTimestampTypeMapping): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4661,7 +4869,7 @@ export function taskParametersTimestampTypeMappingToHclTerraform(struct?: TaskPa
   return attrs;
 }
 
-export class TaskParametersTimestampTypeMappingOutputReference extends cdktf.ComplexObject {
+export class TaskParametersTimestampTypeMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4670,7 +4878,7 @@ export class TaskParametersTimestampTypeMappingOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4715,14 +4923,14 @@ export class TaskParametersTimestampTypeMappingOutputReference extends cdktf.Com
   }
 }
 
-export class TaskParametersTimestampTypeMappingList extends cdktf.ComplexList {
+export class TaskParametersTimestampTypeMappingList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4737,8 +4945,8 @@ export interface TaskParametersTimestampTzOutputFormat {
 }
 
 export function taskParametersTimestampTzOutputFormatToTerraform(struct?: TaskParametersTimestampTzOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4747,8 +4955,8 @@ export function taskParametersTimestampTzOutputFormatToTerraform(struct?: TaskPa
 
 
 export function taskParametersTimestampTzOutputFormatToHclTerraform(struct?: TaskParametersTimestampTzOutputFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4756,7 +4964,7 @@ export function taskParametersTimestampTzOutputFormatToHclTerraform(struct?: Tas
   return attrs;
 }
 
-export class TaskParametersTimestampTzOutputFormatOutputReference extends cdktf.ComplexObject {
+export class TaskParametersTimestampTzOutputFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4765,7 +4973,7 @@ export class TaskParametersTimestampTzOutputFormatOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4810,14 +5018,14 @@ export class TaskParametersTimestampTzOutputFormatOutputReference extends cdktf.
   }
 }
 
-export class TaskParametersTimestampTzOutputFormatList extends cdktf.ComplexList {
+export class TaskParametersTimestampTzOutputFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4832,8 +5040,8 @@ export interface TaskParametersTimezone {
 }
 
 export function taskParametersTimezoneToTerraform(struct?: TaskParametersTimezone): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4842,8 +5050,8 @@ export function taskParametersTimezoneToTerraform(struct?: TaskParametersTimezon
 
 
 export function taskParametersTimezoneToHclTerraform(struct?: TaskParametersTimezone): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4851,7 +5059,7 @@ export function taskParametersTimezoneToHclTerraform(struct?: TaskParametersTime
   return attrs;
 }
 
-export class TaskParametersTimezoneOutputReference extends cdktf.ComplexObject {
+export class TaskParametersTimezoneOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4860,7 +5068,7 @@ export class TaskParametersTimezoneOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4905,14 +5113,14 @@ export class TaskParametersTimezoneOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class TaskParametersTimezoneList extends cdktf.ComplexList {
+export class TaskParametersTimezoneList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4927,8 +5135,8 @@ export interface TaskParametersTraceLevel {
 }
 
 export function taskParametersTraceLevelToTerraform(struct?: TaskParametersTraceLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4937,8 +5145,8 @@ export function taskParametersTraceLevelToTerraform(struct?: TaskParametersTrace
 
 
 export function taskParametersTraceLevelToHclTerraform(struct?: TaskParametersTraceLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4946,7 +5154,7 @@ export function taskParametersTraceLevelToHclTerraform(struct?: TaskParametersTr
   return attrs;
 }
 
-export class TaskParametersTraceLevelOutputReference extends cdktf.ComplexObject {
+export class TaskParametersTraceLevelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4955,7 +5163,7 @@ export class TaskParametersTraceLevelOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5000,14 +5208,14 @@ export class TaskParametersTraceLevelOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class TaskParametersTraceLevelList extends cdktf.ComplexList {
+export class TaskParametersTraceLevelList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5022,8 +5230,8 @@ export interface TaskParametersTransactionAbortOnError {
 }
 
 export function taskParametersTransactionAbortOnErrorToTerraform(struct?: TaskParametersTransactionAbortOnError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5032,8 +5240,8 @@ export function taskParametersTransactionAbortOnErrorToTerraform(struct?: TaskPa
 
 
 export function taskParametersTransactionAbortOnErrorToHclTerraform(struct?: TaskParametersTransactionAbortOnError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5041,7 +5249,7 @@ export function taskParametersTransactionAbortOnErrorToHclTerraform(struct?: Tas
   return attrs;
 }
 
-export class TaskParametersTransactionAbortOnErrorOutputReference extends cdktf.ComplexObject {
+export class TaskParametersTransactionAbortOnErrorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5050,7 +5258,7 @@ export class TaskParametersTransactionAbortOnErrorOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5095,14 +5303,14 @@ export class TaskParametersTransactionAbortOnErrorOutputReference extends cdktf.
   }
 }
 
-export class TaskParametersTransactionAbortOnErrorList extends cdktf.ComplexList {
+export class TaskParametersTransactionAbortOnErrorList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5117,8 +5325,8 @@ export interface TaskParametersTransactionDefaultIsolationLevel {
 }
 
 export function taskParametersTransactionDefaultIsolationLevelToTerraform(struct?: TaskParametersTransactionDefaultIsolationLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5127,8 +5335,8 @@ export function taskParametersTransactionDefaultIsolationLevelToTerraform(struct
 
 
 export function taskParametersTransactionDefaultIsolationLevelToHclTerraform(struct?: TaskParametersTransactionDefaultIsolationLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5136,7 +5344,7 @@ export function taskParametersTransactionDefaultIsolationLevelToHclTerraform(str
   return attrs;
 }
 
-export class TaskParametersTransactionDefaultIsolationLevelOutputReference extends cdktf.ComplexObject {
+export class TaskParametersTransactionDefaultIsolationLevelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5145,7 +5353,7 @@ export class TaskParametersTransactionDefaultIsolationLevelOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5190,14 +5398,14 @@ export class TaskParametersTransactionDefaultIsolationLevelOutputReference exten
   }
 }
 
-export class TaskParametersTransactionDefaultIsolationLevelList extends cdktf.ComplexList {
+export class TaskParametersTransactionDefaultIsolationLevelList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5212,8 +5420,8 @@ export interface TaskParametersTwoDigitCenturyStart {
 }
 
 export function taskParametersTwoDigitCenturyStartToTerraform(struct?: TaskParametersTwoDigitCenturyStart): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5222,8 +5430,8 @@ export function taskParametersTwoDigitCenturyStartToTerraform(struct?: TaskParam
 
 
 export function taskParametersTwoDigitCenturyStartToHclTerraform(struct?: TaskParametersTwoDigitCenturyStart): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5231,7 +5439,7 @@ export function taskParametersTwoDigitCenturyStartToHclTerraform(struct?: TaskPa
   return attrs;
 }
 
-export class TaskParametersTwoDigitCenturyStartOutputReference extends cdktf.ComplexObject {
+export class TaskParametersTwoDigitCenturyStartOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5240,7 +5448,7 @@ export class TaskParametersTwoDigitCenturyStartOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5285,14 +5493,14 @@ export class TaskParametersTwoDigitCenturyStartOutputReference extends cdktf.Com
   }
 }
 
-export class TaskParametersTwoDigitCenturyStartList extends cdktf.ComplexList {
+export class TaskParametersTwoDigitCenturyStartList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5307,8 +5515,8 @@ export interface TaskParametersUnsupportedDdlAction {
 }
 
 export function taskParametersUnsupportedDdlActionToTerraform(struct?: TaskParametersUnsupportedDdlAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5317,8 +5525,8 @@ export function taskParametersUnsupportedDdlActionToTerraform(struct?: TaskParam
 
 
 export function taskParametersUnsupportedDdlActionToHclTerraform(struct?: TaskParametersUnsupportedDdlAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5326,7 +5534,7 @@ export function taskParametersUnsupportedDdlActionToHclTerraform(struct?: TaskPa
   return attrs;
 }
 
-export class TaskParametersUnsupportedDdlActionOutputReference extends cdktf.ComplexObject {
+export class TaskParametersUnsupportedDdlActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5335,7 +5543,7 @@ export class TaskParametersUnsupportedDdlActionOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5380,14 +5588,14 @@ export class TaskParametersUnsupportedDdlActionOutputReference extends cdktf.Com
   }
 }
 
-export class TaskParametersUnsupportedDdlActionList extends cdktf.ComplexList {
+export class TaskParametersUnsupportedDdlActionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5402,8 +5610,8 @@ export interface TaskParametersUseCachedResult {
 }
 
 export function taskParametersUseCachedResultToTerraform(struct?: TaskParametersUseCachedResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5412,8 +5620,8 @@ export function taskParametersUseCachedResultToTerraform(struct?: TaskParameters
 
 
 export function taskParametersUseCachedResultToHclTerraform(struct?: TaskParametersUseCachedResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5421,7 +5629,7 @@ export function taskParametersUseCachedResultToHclTerraform(struct?: TaskParamet
   return attrs;
 }
 
-export class TaskParametersUseCachedResultOutputReference extends cdktf.ComplexObject {
+export class TaskParametersUseCachedResultOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5430,7 +5638,7 @@ export class TaskParametersUseCachedResultOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5475,14 +5683,14 @@ export class TaskParametersUseCachedResultOutputReference extends cdktf.ComplexO
   }
 }
 
-export class TaskParametersUseCachedResultList extends cdktf.ComplexList {
+export class TaskParametersUseCachedResultList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5497,8 +5705,8 @@ export interface TaskParametersUserTaskManagedInitialWarehouseSize {
 }
 
 export function taskParametersUserTaskManagedInitialWarehouseSizeToTerraform(struct?: TaskParametersUserTaskManagedInitialWarehouseSize): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5507,8 +5715,8 @@ export function taskParametersUserTaskManagedInitialWarehouseSizeToTerraform(str
 
 
 export function taskParametersUserTaskManagedInitialWarehouseSizeToHclTerraform(struct?: TaskParametersUserTaskManagedInitialWarehouseSize): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5516,7 +5724,7 @@ export function taskParametersUserTaskManagedInitialWarehouseSizeToHclTerraform(
   return attrs;
 }
 
-export class TaskParametersUserTaskManagedInitialWarehouseSizeOutputReference extends cdktf.ComplexObject {
+export class TaskParametersUserTaskManagedInitialWarehouseSizeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5525,7 +5733,7 @@ export class TaskParametersUserTaskManagedInitialWarehouseSizeOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5570,14 +5778,14 @@ export class TaskParametersUserTaskManagedInitialWarehouseSizeOutputReference ex
   }
 }
 
-export class TaskParametersUserTaskManagedInitialWarehouseSizeList extends cdktf.ComplexList {
+export class TaskParametersUserTaskManagedInitialWarehouseSizeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5592,8 +5800,8 @@ export interface TaskParametersUserTaskMinimumTriggerIntervalInSeconds {
 }
 
 export function taskParametersUserTaskMinimumTriggerIntervalInSecondsToTerraform(struct?: TaskParametersUserTaskMinimumTriggerIntervalInSeconds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5602,8 +5810,8 @@ export function taskParametersUserTaskMinimumTriggerIntervalInSecondsToTerraform
 
 
 export function taskParametersUserTaskMinimumTriggerIntervalInSecondsToHclTerraform(struct?: TaskParametersUserTaskMinimumTriggerIntervalInSeconds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5611,7 +5819,7 @@ export function taskParametersUserTaskMinimumTriggerIntervalInSecondsToHclTerraf
   return attrs;
 }
 
-export class TaskParametersUserTaskMinimumTriggerIntervalInSecondsOutputReference extends cdktf.ComplexObject {
+export class TaskParametersUserTaskMinimumTriggerIntervalInSecondsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5620,7 +5828,7 @@ export class TaskParametersUserTaskMinimumTriggerIntervalInSecondsOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5665,14 +5873,14 @@ export class TaskParametersUserTaskMinimumTriggerIntervalInSecondsOutputReferenc
   }
 }
 
-export class TaskParametersUserTaskMinimumTriggerIntervalInSecondsList extends cdktf.ComplexList {
+export class TaskParametersUserTaskMinimumTriggerIntervalInSecondsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5687,8 +5895,8 @@ export interface TaskParametersUserTaskTimeoutMs {
 }
 
 export function taskParametersUserTaskTimeoutMsToTerraform(struct?: TaskParametersUserTaskTimeoutMs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5697,8 +5905,8 @@ export function taskParametersUserTaskTimeoutMsToTerraform(struct?: TaskParamete
 
 
 export function taskParametersUserTaskTimeoutMsToHclTerraform(struct?: TaskParametersUserTaskTimeoutMs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5706,7 +5914,7 @@ export function taskParametersUserTaskTimeoutMsToHclTerraform(struct?: TaskParam
   return attrs;
 }
 
-export class TaskParametersUserTaskTimeoutMsOutputReference extends cdktf.ComplexObject {
+export class TaskParametersUserTaskTimeoutMsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5715,7 +5923,7 @@ export class TaskParametersUserTaskTimeoutMsOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5760,14 +5968,14 @@ export class TaskParametersUserTaskTimeoutMsOutputReference extends cdktf.Comple
   }
 }
 
-export class TaskParametersUserTaskTimeoutMsList extends cdktf.ComplexList {
+export class TaskParametersUserTaskTimeoutMsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5782,8 +5990,8 @@ export interface TaskParametersWeekOfYearPolicy {
 }
 
 export function taskParametersWeekOfYearPolicyToTerraform(struct?: TaskParametersWeekOfYearPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5792,8 +6000,8 @@ export function taskParametersWeekOfYearPolicyToTerraform(struct?: TaskParameter
 
 
 export function taskParametersWeekOfYearPolicyToHclTerraform(struct?: TaskParametersWeekOfYearPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5801,7 +6009,7 @@ export function taskParametersWeekOfYearPolicyToHclTerraform(struct?: TaskParame
   return attrs;
 }
 
-export class TaskParametersWeekOfYearPolicyOutputReference extends cdktf.ComplexObject {
+export class TaskParametersWeekOfYearPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5810,7 +6018,7 @@ export class TaskParametersWeekOfYearPolicyOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5855,14 +6063,14 @@ export class TaskParametersWeekOfYearPolicyOutputReference extends cdktf.Complex
   }
 }
 
-export class TaskParametersWeekOfYearPolicyList extends cdktf.ComplexList {
+export class TaskParametersWeekOfYearPolicyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5877,8 +6085,8 @@ export interface TaskParametersWeekStart {
 }
 
 export function taskParametersWeekStartToTerraform(struct?: TaskParametersWeekStart): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5887,8 +6095,8 @@ export function taskParametersWeekStartToTerraform(struct?: TaskParametersWeekSt
 
 
 export function taskParametersWeekStartToHclTerraform(struct?: TaskParametersWeekStart): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5896,7 +6104,7 @@ export function taskParametersWeekStartToHclTerraform(struct?: TaskParametersWee
   return attrs;
 }
 
-export class TaskParametersWeekStartOutputReference extends cdktf.ComplexObject {
+export class TaskParametersWeekStartOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -5905,7 +6113,7 @@ export class TaskParametersWeekStartOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -5950,14 +6158,14 @@ export class TaskParametersWeekStartOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class TaskParametersWeekStartList extends cdktf.ComplexList {
+export class TaskParametersWeekStartList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5972,8 +6180,8 @@ export interface TaskParameters {
 }
 
 export function taskParametersToTerraform(struct?: TaskParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5982,8 +6190,8 @@ export function taskParametersToTerraform(struct?: TaskParameters): any {
 
 
 export function taskParametersToHclTerraform(struct?: TaskParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5991,7 +6199,7 @@ export function taskParametersToHclTerraform(struct?: TaskParameters): any {
   return attrs;
 }
 
-export class TaskParametersOutputReference extends cdktf.ComplexObject {
+export class TaskParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -6000,7 +6208,7 @@ export class TaskParametersOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -6211,6 +6419,18 @@ export class TaskParametersOutputReference extends cdktf.ComplexObject {
     return this._searchPath;
   }
 
+  // serverless_task_max_statement_size - computed: true, optional: false, required: false
+  private _serverlessTaskMaxStatementSize = new TaskParametersServerlessTaskMaxStatementSizeList(this, "serverless_task_max_statement_size", false);
+  public get serverlessTaskMaxStatementSize() {
+    return this._serverlessTaskMaxStatementSize;
+  }
+
+  // serverless_task_min_statement_size - computed: true, optional: false, required: false
+  private _serverlessTaskMinStatementSize = new TaskParametersServerlessTaskMinStatementSizeList(this, "serverless_task_min_statement_size", false);
+  public get serverlessTaskMinStatementSize() {
+    return this._serverlessTaskMinStatementSize;
+  }
+
   // statement_queued_timeout_in_seconds - computed: true, optional: false, required: false
   private _statementQueuedTimeoutInSeconds = new TaskParametersStatementQueuedTimeoutInSecondsList(this, "statement_queued_timeout_in_seconds", false);
   public get statementQueuedTimeoutInSeconds() {
@@ -6368,14 +6588,14 @@ export class TaskParametersOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class TaskParametersList extends cdktf.ComplexList {
+export class TaskParametersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6386,12 +6606,12 @@ export class TaskParametersList extends cdktf.ComplexList {
     return new TaskParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface TaskShowOutputTaskRelations {
+export interface TaskShowOutputTargetCompletionInterval {
 }
 
-export function taskShowOutputTaskRelationsToTerraform(struct?: TaskShowOutputTaskRelations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function taskShowOutputTargetCompletionIntervalToTerraform(struct?: TaskShowOutputTargetCompletionInterval): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6399,9 +6619,9 @@ export function taskShowOutputTaskRelationsToTerraform(struct?: TaskShowOutputTa
 }
 
 
-export function taskShowOutputTaskRelationsToHclTerraform(struct?: TaskShowOutputTaskRelations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function taskShowOutputTargetCompletionIntervalToHclTerraform(struct?: TaskShowOutputTargetCompletionInterval): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6409,7 +6629,7 @@ export function taskShowOutputTaskRelationsToHclTerraform(struct?: TaskShowOutpu
   return attrs;
 }
 
-export class TaskShowOutputTaskRelationsOutputReference extends cdktf.ComplexObject {
+export class TaskShowOutputTargetCompletionIntervalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -6418,7 +6638,92 @@ export class TaskShowOutputTaskRelationsOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): TaskShowOutputTargetCompletionInterval | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TaskShowOutputTargetCompletionInterval | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // hours - computed: true, optional: false, required: false
+  public get hours() {
+    return this.getNumberAttribute('hours');
+  }
+
+  // minutes - computed: true, optional: false, required: false
+  public get minutes() {
+    return this.getNumberAttribute('minutes');
+  }
+
+  // seconds - computed: true, optional: false, required: false
+  public get seconds() {
+    return this.getNumberAttribute('seconds');
+  }
+}
+
+export class TaskShowOutputTargetCompletionIntervalList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): TaskShowOutputTargetCompletionIntervalOutputReference {
+    return new TaskShowOutputTargetCompletionIntervalOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface TaskShowOutputTaskRelations {
+}
+
+export function taskShowOutputTaskRelationsToTerraform(struct?: TaskShowOutputTaskRelations): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function taskShowOutputTaskRelationsToHclTerraform(struct?: TaskShowOutputTaskRelations): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class TaskShowOutputTaskRelationsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -6453,14 +6758,14 @@ export class TaskShowOutputTaskRelationsOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class TaskShowOutputTaskRelationsList extends cdktf.ComplexList {
+export class TaskShowOutputTaskRelationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6475,8 +6780,8 @@ export interface TaskShowOutput {
 }
 
 export function taskShowOutputToTerraform(struct?: TaskShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6485,8 +6790,8 @@ export function taskShowOutputToTerraform(struct?: TaskShowOutput): any {
 
 
 export function taskShowOutputToHclTerraform(struct?: TaskShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6494,7 +6799,7 @@ export function taskShowOutputToHclTerraform(struct?: TaskShowOutput): any {
   return attrs;
 }
 
-export class TaskShowOutputOutputReference extends cdktf.ComplexObject {
+export class TaskShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -6503,7 +6808,7 @@ export class TaskShowOutputOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -6604,7 +6909,7 @@ export class TaskShowOutputOutputReference extends cdktf.ComplexObject {
 
   // predecessors - computed: true, optional: false, required: false
   public get predecessors() {
-    return cdktf.Fn.tolist(this.getListAttribute('predecessors'));
+    return cdktn.Fn.tolist(this.getListAttribute('predecessors'));
   }
 
   // schedule - computed: true, optional: false, required: false
@@ -6622,6 +6927,12 @@ export class TaskShowOutputOutputReference extends cdktf.ComplexObject {
     return this.getStringAttribute('state');
   }
 
+  // target_completion_interval - computed: true, optional: false, required: false
+  private _targetCompletionInterval = new TaskShowOutputTargetCompletionIntervalList(this, "target_completion_interval", false);
+  public get targetCompletionInterval() {
+    return this._targetCompletionInterval;
+  }
+
   // task_relations - computed: true, optional: false, required: false
   private _taskRelations = new TaskShowOutputTaskRelationsList(this, "task_relations", false);
   public get taskRelations() {
@@ -6634,14 +6945,14 @@ export class TaskShowOutputOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class TaskShowOutputList extends cdktf.ComplexList {
+export class TaskShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6656,69 +6967,69 @@ export interface TaskSchedule {
   /**
   * Specifies an interval (in hours) of wait time inserted between runs of the task. Accepts positive integers. (conflicts with `seconds`, `minutes`, and `using_cron`)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#hours Task#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#hours Task#hours}
   */
   readonly hours?: number;
   /**
   * Specifies an interval (in minutes) of wait time inserted between runs of the task. Accepts positive integers. (conflicts with `seconds`, `hours`, and `using_cron`)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#minutes Task#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#minutes Task#minutes}
   */
   readonly minutes?: number;
   /**
   * Specifies an interval (in seconds) of wait time inserted between runs of the task. Accepts positive integers. (conflicts with `minutes`, `hours`, and `using_cron`)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#seconds Task#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#seconds Task#seconds}
   */
   readonly seconds?: number;
   /**
   * Specifies a cron expression and time zone for periodically running the task. Supports a subset of standard cron utility syntax. (conflicts with `seconds`, `minutes`, and `hours`)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#using_cron Task#using_cron}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#using_cron Task#using_cron}
   */
   readonly usingCron?: string;
 }
 
 export function taskScheduleToTerraform(struct?: TaskScheduleOutputReference | TaskSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hours: cdktf.numberToTerraform(struct!.hours),
-    minutes: cdktf.numberToTerraform(struct!.minutes),
-    seconds: cdktf.numberToTerraform(struct!.seconds),
-    using_cron: cdktf.stringToTerraform(struct!.usingCron),
+    hours: cdktn.numberToTerraform(struct!.hours),
+    minutes: cdktn.numberToTerraform(struct!.minutes),
+    seconds: cdktn.numberToTerraform(struct!.seconds),
+    using_cron: cdktn.stringToTerraform(struct!.usingCron),
   }
 }
 
 
 export function taskScheduleToHclTerraform(struct?: TaskScheduleOutputReference | TaskSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hours: {
-      value: cdktf.numberToHclTerraform(struct!.hours),
+      value: cdktn.numberToHclTerraform(struct!.hours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minutes: {
-      value: cdktf.numberToHclTerraform(struct!.minutes),
+      value: cdktn.numberToHclTerraform(struct!.minutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.numberToHclTerraform(struct!.seconds),
+      value: cdktn.numberToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     using_cron: {
-      value: cdktf.stringToHclTerraform(struct!.usingCron),
+      value: cdktn.stringToHclTerraform(struct!.usingCron),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6729,14 +7040,14 @@ export function taskScheduleToHclTerraform(struct?: TaskScheduleOutputReference 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TaskScheduleOutputReference extends cdktf.ComplexObject {
+export class TaskScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6843,65 +7154,221 @@ export class TaskScheduleOutputReference extends cdktf.ComplexObject {
     return this._usingCron;
   }
 }
+export interface TaskTargetCompletionInterval {
+  /**
+  * Specifies the target completion interval in hours. (conflicts with `minutes` and `seconds`)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#hours Task#hours}
+  */
+  readonly hours?: number;
+  /**
+  * Specifies the target completion interval in minutes. (conflicts with `hours` and `seconds`)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#minutes Task#minutes}
+  */
+  readonly minutes?: number;
+  /**
+  * Specifies the target completion interval in seconds. (conflicts with `hours` and `minutes`)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#seconds Task#seconds}
+  */
+  readonly seconds?: number;
+}
+
+export function taskTargetCompletionIntervalToTerraform(struct?: TaskTargetCompletionIntervalOutputReference | TaskTargetCompletionInterval): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    hours: cdktn.numberToTerraform(struct!.hours),
+    minutes: cdktn.numberToTerraform(struct!.minutes),
+    seconds: cdktn.numberToTerraform(struct!.seconds),
+  }
+}
+
+
+export function taskTargetCompletionIntervalToHclTerraform(struct?: TaskTargetCompletionIntervalOutputReference | TaskTargetCompletionInterval): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hours: {
+      value: cdktn.numberToHclTerraform(struct!.hours),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    minutes: {
+      value: cdktn.numberToHclTerraform(struct!.minutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    seconds: {
+      value: cdktn.numberToHclTerraform(struct!.seconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class TaskTargetCompletionIntervalOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TaskTargetCompletionInterval | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hours !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hours = this._hours;
+    }
+    if (this._minutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minutes = this._minutes;
+    }
+    if (this._seconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.seconds = this._seconds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TaskTargetCompletionInterval | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._hours = undefined;
+      this._minutes = undefined;
+      this._seconds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._hours = value.hours;
+      this._minutes = value.minutes;
+      this._seconds = value.seconds;
+    }
+  }
+
+  // hours - computed: false, optional: true, required: false
+  private _hours?: number; 
+  public get hours() {
+    return this.getNumberAttribute('hours');
+  }
+  public set hours(value: number) {
+    this._hours = value;
+  }
+  public resetHours() {
+    this._hours = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hoursInput() {
+    return this._hours;
+  }
+
+  // minutes - computed: false, optional: true, required: false
+  private _minutes?: number; 
+  public get minutes() {
+    return this.getNumberAttribute('minutes');
+  }
+  public set minutes(value: number) {
+    this._minutes = value;
+  }
+  public resetMinutes() {
+    this._minutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minutesInput() {
+    return this._minutes;
+  }
+
+  // seconds - computed: false, optional: true, required: false
+  private _seconds?: number; 
+  public get seconds() {
+    return this.getNumberAttribute('seconds');
+  }
+  public set seconds(value: number) {
+    this._seconds = value;
+  }
+  public resetSeconds() {
+    this._seconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondsInput() {
+    return this._seconds;
+  }
+}
 export interface TaskTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#create Task#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#create Task#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#delete Task#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#delete Task#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#read Task#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#read Task#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#update Task#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#update Task#update}
   */
   readonly update?: string;
 }
 
-export function taskTimeoutsToTerraform(struct?: TaskTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function taskTimeoutsToTerraform(struct?: TaskTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function taskTimeoutsToHclTerraform(struct?: TaskTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function taskTimeoutsToHclTerraform(struct?: TaskTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6912,19 +7379,19 @@ export function taskTimeoutsToHclTerraform(struct?: TaskTimeouts | cdktf.IResolv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TaskTimeoutsOutputReference extends cdktf.ComplexObject {
+export class TaskTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): TaskTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): TaskTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6949,7 +7416,7 @@ export class TaskTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TaskTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TaskTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6958,7 +7425,7 @@ export class TaskTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7038,9 +7505,9 @@ export class TaskTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task snowflake_task}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task snowflake_task}
 */
-export class Task extends cdktf.TerraformResource {
+export class Task extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -7051,14 +7518,14 @@ export class Task extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Task resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Task resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Task to import
-  * @param importFromId The id of the existing Task that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Task that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Task to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_task", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_task", importId: importFromId, provider });
       }
 
   // ===========
@@ -7066,7 +7533,7 @@ export class Task extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/task snowflake_task} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/task snowflake_task} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -7077,7 +7544,7 @@ export class Task extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_task',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -7130,6 +7597,8 @@ export class Task extends cdktf.TerraformResource {
     this._s3StageVpceDnsName = config.s3StageVpceDnsName;
     this._schema = config.schema;
     this._searchPath = config.searchPath;
+    this._serverlessTaskMaxStatementSize = config.serverlessTaskMaxStatementSize;
+    this._serverlessTaskMinStatementSize = config.serverlessTaskMinStatementSize;
     this._sqlStatement = config.sqlStatement;
     this._started = config.started;
     this._statementQueuedTimeoutInSeconds = config.statementQueuedTimeoutInSeconds;
@@ -7161,6 +7630,7 @@ export class Task extends cdktf.TerraformResource {
     this._weekStart = config.weekStart;
     this._when = config.when;
     this._schedule.internalValue = config.schedule;
+    this._targetCompletionInterval.internalValue = config.targetCompletionInterval;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -7169,11 +7639,11 @@ export class Task extends cdktf.TerraformResource {
   // ==========
 
   // abort_detached_query - computed: true, optional: true, required: false
-  private _abortDetachedQuery?: boolean | cdktf.IResolvable; 
+  private _abortDetachedQuery?: boolean | cdktn.IResolvable; 
   public get abortDetachedQuery() {
     return this.getBooleanAttribute('abort_detached_query');
   }
-  public set abortDetachedQuery(value: boolean | cdktf.IResolvable) {
+  public set abortDetachedQuery(value: boolean | cdktn.IResolvable) {
     this._abortDetachedQuery = value;
   }
   public resetAbortDetachedQuery() {
@@ -7187,7 +7657,7 @@ export class Task extends cdktf.TerraformResource {
   // after - computed: false, optional: true, required: false
   private _after?: string[]; 
   public get after() {
-    return cdktf.Fn.tolist(this.getListAttribute('after'));
+    return cdktn.Fn.tolist(this.getListAttribute('after'));
   }
   public set after(value: string[]) {
     this._after = value;
@@ -7217,11 +7687,11 @@ export class Task extends cdktf.TerraformResource {
   }
 
   // autocommit - computed: true, optional: true, required: false
-  private _autocommit?: boolean | cdktf.IResolvable; 
+  private _autocommit?: boolean | cdktn.IResolvable; 
   public get autocommit() {
     return this.getBooleanAttribute('autocommit');
   }
-  public set autocommit(value: boolean | cdktf.IResolvable) {
+  public set autocommit(value: boolean | cdktn.IResolvable) {
     this._autocommit = value;
   }
   public resetAutocommit() {
@@ -7281,11 +7751,11 @@ export class Task extends cdktf.TerraformResource {
   }
 
   // client_metadata_request_use_connection_ctx - computed: true, optional: true, required: false
-  private _clientMetadataRequestUseConnectionCtx?: boolean | cdktf.IResolvable; 
+  private _clientMetadataRequestUseConnectionCtx?: boolean | cdktn.IResolvable; 
   public get clientMetadataRequestUseConnectionCtx() {
     return this.getBooleanAttribute('client_metadata_request_use_connection_ctx');
   }
-  public set clientMetadataRequestUseConnectionCtx(value: boolean | cdktf.IResolvable) {
+  public set clientMetadataRequestUseConnectionCtx(value: boolean | cdktn.IResolvable) {
     this._clientMetadataRequestUseConnectionCtx = value;
   }
   public resetClientMetadataRequestUseConnectionCtx() {
@@ -7329,11 +7799,11 @@ export class Task extends cdktf.TerraformResource {
   }
 
   // client_result_column_case_insensitive - computed: true, optional: true, required: false
-  private _clientResultColumnCaseInsensitive?: boolean | cdktf.IResolvable; 
+  private _clientResultColumnCaseInsensitive?: boolean | cdktn.IResolvable; 
   public get clientResultColumnCaseInsensitive() {
     return this.getBooleanAttribute('client_result_column_case_insensitive');
   }
-  public set clientResultColumnCaseInsensitive(value: boolean | cdktf.IResolvable) {
+  public set clientResultColumnCaseInsensitive(value: boolean | cdktn.IResolvable) {
     this._clientResultColumnCaseInsensitive = value;
   }
   public resetClientResultColumnCaseInsensitive() {
@@ -7345,11 +7815,11 @@ export class Task extends cdktf.TerraformResource {
   }
 
   // client_session_keep_alive - computed: true, optional: true, required: false
-  private _clientSessionKeepAlive?: boolean | cdktf.IResolvable; 
+  private _clientSessionKeepAlive?: boolean | cdktn.IResolvable; 
   public get clientSessionKeepAlive() {
     return this.getBooleanAttribute('client_session_keep_alive');
   }
-  public set clientSessionKeepAlive(value: boolean | cdktf.IResolvable) {
+  public set clientSessionKeepAlive(value: boolean | cdktn.IResolvable) {
     this._clientSessionKeepAlive = value;
   }
   public resetClientSessionKeepAlive() {
@@ -7470,11 +7940,11 @@ export class Task extends cdktf.TerraformResource {
   }
 
   // enable_unload_physical_type_optimization - computed: true, optional: true, required: false
-  private _enableUnloadPhysicalTypeOptimization?: boolean | cdktf.IResolvable; 
+  private _enableUnloadPhysicalTypeOptimization?: boolean | cdktn.IResolvable; 
   public get enableUnloadPhysicalTypeOptimization() {
     return this.getBooleanAttribute('enable_unload_physical_type_optimization');
   }
-  public set enableUnloadPhysicalTypeOptimization(value: boolean | cdktf.IResolvable) {
+  public set enableUnloadPhysicalTypeOptimization(value: boolean | cdktn.IResolvable) {
     this._enableUnloadPhysicalTypeOptimization = value;
   }
   public resetEnableUnloadPhysicalTypeOptimization() {
@@ -7502,11 +7972,11 @@ export class Task extends cdktf.TerraformResource {
   }
 
   // error_on_nondeterministic_merge - computed: true, optional: true, required: false
-  private _errorOnNondeterministicMerge?: boolean | cdktf.IResolvable; 
+  private _errorOnNondeterministicMerge?: boolean | cdktn.IResolvable; 
   public get errorOnNondeterministicMerge() {
     return this.getBooleanAttribute('error_on_nondeterministic_merge');
   }
-  public set errorOnNondeterministicMerge(value: boolean | cdktf.IResolvable) {
+  public set errorOnNondeterministicMerge(value: boolean | cdktn.IResolvable) {
     this._errorOnNondeterministicMerge = value;
   }
   public resetErrorOnNondeterministicMerge() {
@@ -7518,11 +7988,11 @@ export class Task extends cdktf.TerraformResource {
   }
 
   // error_on_nondeterministic_update - computed: true, optional: true, required: false
-  private _errorOnNondeterministicUpdate?: boolean | cdktf.IResolvable; 
+  private _errorOnNondeterministicUpdate?: boolean | cdktn.IResolvable; 
   public get errorOnNondeterministicUpdate() {
     return this.getBooleanAttribute('error_on_nondeterministic_update');
   }
-  public set errorOnNondeterministicUpdate(value: boolean | cdktf.IResolvable) {
+  public set errorOnNondeterministicUpdate(value: boolean | cdktn.IResolvable) {
     this._errorOnNondeterministicUpdate = value;
   }
   public resetErrorOnNondeterministicUpdate() {
@@ -7603,11 +8073,11 @@ export class Task extends cdktf.TerraformResource {
   }
 
   // jdbc_treat_timestamp_ntz_as_utc - computed: true, optional: true, required: false
-  private _jdbcTreatTimestampNtzAsUtc?: boolean | cdktf.IResolvable; 
+  private _jdbcTreatTimestampNtzAsUtc?: boolean | cdktn.IResolvable; 
   public get jdbcTreatTimestampNtzAsUtc() {
     return this.getBooleanAttribute('jdbc_treat_timestamp_ntz_as_utc');
   }
-  public set jdbcTreatTimestampNtzAsUtc(value: boolean | cdktf.IResolvable) {
+  public set jdbcTreatTimestampNtzAsUtc(value: boolean | cdktn.IResolvable) {
     this._jdbcTreatTimestampNtzAsUtc = value;
   }
   public resetJdbcTreatTimestampNtzAsUtc() {
@@ -7619,11 +8089,11 @@ export class Task extends cdktf.TerraformResource {
   }
 
   // jdbc_use_session_timezone - computed: true, optional: true, required: false
-  private _jdbcUseSessionTimezone?: boolean | cdktf.IResolvable; 
+  private _jdbcUseSessionTimezone?: boolean | cdktn.IResolvable; 
   public get jdbcUseSessionTimezone() {
     return this.getBooleanAttribute('jdbc_use_session_timezone');
   }
-  public set jdbcUseSessionTimezone(value: boolean | cdktf.IResolvable) {
+  public set jdbcUseSessionTimezone(value: boolean | cdktn.IResolvable) {
     this._jdbcUseSessionTimezone = value;
   }
   public resetJdbcUseSessionTimezone() {
@@ -7712,11 +8182,11 @@ export class Task extends cdktf.TerraformResource {
   }
 
   // noorder_sequence_as_default - computed: true, optional: true, required: false
-  private _noorderSequenceAsDefault?: boolean | cdktf.IResolvable; 
+  private _noorderSequenceAsDefault?: boolean | cdktn.IResolvable; 
   public get noorderSequenceAsDefault() {
     return this.getBooleanAttribute('noorder_sequence_as_default');
   }
-  public set noorderSequenceAsDefault(value: boolean | cdktf.IResolvable) {
+  public set noorderSequenceAsDefault(value: boolean | cdktn.IResolvable) {
     this._noorderSequenceAsDefault = value;
   }
   public resetNoorderSequenceAsDefault() {
@@ -7728,11 +8198,11 @@ export class Task extends cdktf.TerraformResource {
   }
 
   // odbc_treat_decimal_as_int - computed: true, optional: true, required: false
-  private _odbcTreatDecimalAsInt?: boolean | cdktf.IResolvable; 
+  private _odbcTreatDecimalAsInt?: boolean | cdktn.IResolvable; 
   public get odbcTreatDecimalAsInt() {
     return this.getBooleanAttribute('odbc_treat_decimal_as_int');
   }
-  public set odbcTreatDecimalAsInt(value: boolean | cdktf.IResolvable) {
+  public set odbcTreatDecimalAsInt(value: boolean | cdktn.IResolvable) {
     this._odbcTreatDecimalAsInt = value;
   }
   public resetOdbcTreatDecimalAsInt() {
@@ -7766,11 +8236,11 @@ export class Task extends cdktf.TerraformResource {
   }
 
   // quoted_identifiers_ignore_case - computed: true, optional: true, required: false
-  private _quotedIdentifiersIgnoreCase?: boolean | cdktf.IResolvable; 
+  private _quotedIdentifiersIgnoreCase?: boolean | cdktn.IResolvable; 
   public get quotedIdentifiersIgnoreCase() {
     return this.getBooleanAttribute('quoted_identifiers_ignore_case');
   }
-  public set quotedIdentifiersIgnoreCase(value: boolean | cdktf.IResolvable) {
+  public set quotedIdentifiersIgnoreCase(value: boolean | cdktn.IResolvable) {
     this._quotedIdentifiersIgnoreCase = value;
   }
   public resetQuotedIdentifiersIgnoreCase() {
@@ -7842,6 +8312,38 @@ export class Task extends cdktf.TerraformResource {
     return this._searchPath;
   }
 
+  // serverless_task_max_statement_size - computed: true, optional: true, required: false
+  private _serverlessTaskMaxStatementSize?: string; 
+  public get serverlessTaskMaxStatementSize() {
+    return this.getStringAttribute('serverless_task_max_statement_size');
+  }
+  public set serverlessTaskMaxStatementSize(value: string) {
+    this._serverlessTaskMaxStatementSize = value;
+  }
+  public resetServerlessTaskMaxStatementSize() {
+    this._serverlessTaskMaxStatementSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverlessTaskMaxStatementSizeInput() {
+    return this._serverlessTaskMaxStatementSize;
+  }
+
+  // serverless_task_min_statement_size - computed: true, optional: true, required: false
+  private _serverlessTaskMinStatementSize?: string; 
+  public get serverlessTaskMinStatementSize() {
+    return this.getStringAttribute('serverless_task_min_statement_size');
+  }
+  public set serverlessTaskMinStatementSize(value: string) {
+    this._serverlessTaskMinStatementSize = value;
+  }
+  public resetServerlessTaskMinStatementSize() {
+    this._serverlessTaskMinStatementSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverlessTaskMinStatementSizeInput() {
+    return this._serverlessTaskMinStatementSize;
+  }
+
   // show_output - computed: true, optional: false, required: false
   private _showOutput = new TaskShowOutputList(this, "show_output", false);
   public get showOutput() {
@@ -7862,11 +8364,11 @@ export class Task extends cdktf.TerraformResource {
   }
 
   // started - computed: false, optional: false, required: true
-  private _started?: boolean | cdktf.IResolvable; 
+  private _started?: boolean | cdktn.IResolvable; 
   public get started() {
     return this.getBooleanAttribute('started');
   }
-  public set started(value: boolean | cdktf.IResolvable) {
+  public set started(value: boolean | cdktn.IResolvable) {
     this._started = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -7907,11 +8409,11 @@ export class Task extends cdktf.TerraformResource {
   }
 
   // strict_json_output - computed: true, optional: true, required: false
-  private _strictJsonOutput?: boolean | cdktf.IResolvable; 
+  private _strictJsonOutput?: boolean | cdktn.IResolvable; 
   public get strictJsonOutput() {
     return this.getBooleanAttribute('strict_json_output');
   }
-  public set strictJsonOutput(value: boolean | cdktf.IResolvable) {
+  public set strictJsonOutput(value: boolean | cdktn.IResolvable) {
     this._strictJsonOutput = value;
   }
   public resetStrictJsonOutput() {
@@ -7987,11 +8489,11 @@ export class Task extends cdktf.TerraformResource {
   }
 
   // timestamp_day_is_always_24h - computed: true, optional: true, required: false
-  private _timestampDayIsAlways24H?: boolean | cdktf.IResolvable; 
+  private _timestampDayIsAlways24H?: boolean | cdktn.IResolvable; 
   public get timestampDayIsAlways24H() {
     return this.getBooleanAttribute('timestamp_day_is_always_24h');
   }
-  public set timestampDayIsAlways24H(value: boolean | cdktf.IResolvable) {
+  public set timestampDayIsAlways24H(value: boolean | cdktn.IResolvable) {
     this._timestampDayIsAlways24H = value;
   }
   public resetTimestampDayIsAlways24H() {
@@ -8131,11 +8633,11 @@ export class Task extends cdktf.TerraformResource {
   }
 
   // transaction_abort_on_error - computed: true, optional: true, required: false
-  private _transactionAbortOnError?: boolean | cdktf.IResolvable; 
+  private _transactionAbortOnError?: boolean | cdktn.IResolvable; 
   public get transactionAbortOnError() {
     return this.getBooleanAttribute('transaction_abort_on_error');
   }
-  public set transactionAbortOnError(value: boolean | cdktf.IResolvable) {
+  public set transactionAbortOnError(value: boolean | cdktn.IResolvable) {
     this._transactionAbortOnError = value;
   }
   public resetTransactionAbortOnError() {
@@ -8195,11 +8697,11 @@ export class Task extends cdktf.TerraformResource {
   }
 
   // use_cached_result - computed: true, optional: true, required: false
-  private _useCachedResult?: boolean | cdktf.IResolvable; 
+  private _useCachedResult?: boolean | cdktn.IResolvable; 
   public get useCachedResult() {
     return this.getBooleanAttribute('use_cached_result');
   }
-  public set useCachedResult(value: boolean | cdktf.IResolvable) {
+  public set useCachedResult(value: boolean | cdktn.IResolvable) {
     this._useCachedResult = value;
   }
   public resetUseCachedResult() {
@@ -8338,6 +8840,22 @@ export class Task extends cdktf.TerraformResource {
     return this._schedule.internalValue;
   }
 
+  // target_completion_interval - computed: false, optional: true, required: false
+  private _targetCompletionInterval = new TaskTargetCompletionIntervalOutputReference(this, "target_completion_interval");
+  public get targetCompletionInterval() {
+    return this._targetCompletionInterval;
+  }
+  public putTargetCompletionInterval(value: TaskTargetCompletionInterval) {
+    this._targetCompletionInterval.internalValue = value;
+  }
+  public resetTargetCompletionInterval() {
+    this._targetCompletionInterval.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetCompletionIntervalInput() {
+    return this._targetCompletionInterval.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new TaskTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -8360,79 +8878,82 @@ export class Task extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      abort_detached_query: cdktf.booleanToTerraform(this._abortDetachedQuery),
-      after: cdktf.listMapper(cdktf.stringToTerraform, false)(this._after),
-      allow_overlapping_execution: cdktf.stringToTerraform(this._allowOverlappingExecution),
-      autocommit: cdktf.booleanToTerraform(this._autocommit),
-      binary_input_format: cdktf.stringToTerraform(this._binaryInputFormat),
-      binary_output_format: cdktf.stringToTerraform(this._binaryOutputFormat),
-      client_memory_limit: cdktf.numberToTerraform(this._clientMemoryLimit),
-      client_metadata_request_use_connection_ctx: cdktf.booleanToTerraform(this._clientMetadataRequestUseConnectionCtx),
-      client_prefetch_threads: cdktf.numberToTerraform(this._clientPrefetchThreads),
-      client_result_chunk_size: cdktf.numberToTerraform(this._clientResultChunkSize),
-      client_result_column_case_insensitive: cdktf.booleanToTerraform(this._clientResultColumnCaseInsensitive),
-      client_session_keep_alive: cdktf.booleanToTerraform(this._clientSessionKeepAlive),
-      client_session_keep_alive_heartbeat_frequency: cdktf.numberToTerraform(this._clientSessionKeepAliveHeartbeatFrequency),
-      client_timestamp_type_mapping: cdktf.stringToTerraform(this._clientTimestampTypeMapping),
-      comment: cdktf.stringToTerraform(this._comment),
-      config: cdktf.stringToTerraform(this._config),
-      database: cdktf.stringToTerraform(this._database),
-      date_input_format: cdktf.stringToTerraform(this._dateInputFormat),
-      date_output_format: cdktf.stringToTerraform(this._dateOutputFormat),
-      enable_unload_physical_type_optimization: cdktf.booleanToTerraform(this._enableUnloadPhysicalTypeOptimization),
-      error_integration: cdktf.stringToTerraform(this._errorIntegration),
-      error_on_nondeterministic_merge: cdktf.booleanToTerraform(this._errorOnNondeterministicMerge),
-      error_on_nondeterministic_update: cdktf.booleanToTerraform(this._errorOnNondeterministicUpdate),
-      finalize: cdktf.stringToTerraform(this._finalize),
-      geography_output_format: cdktf.stringToTerraform(this._geographyOutputFormat),
-      geometry_output_format: cdktf.stringToTerraform(this._geometryOutputFormat),
-      id: cdktf.stringToTerraform(this._id),
-      jdbc_treat_timestamp_ntz_as_utc: cdktf.booleanToTerraform(this._jdbcTreatTimestampNtzAsUtc),
-      jdbc_use_session_timezone: cdktf.booleanToTerraform(this._jdbcUseSessionTimezone),
-      json_indent: cdktf.numberToTerraform(this._jsonIndent),
-      lock_timeout: cdktf.numberToTerraform(this._lockTimeout),
-      log_level: cdktf.stringToTerraform(this._logLevel),
-      multi_statement_count: cdktf.numberToTerraform(this._multiStatementCount),
-      name: cdktf.stringToTerraform(this._name),
-      noorder_sequence_as_default: cdktf.booleanToTerraform(this._noorderSequenceAsDefault),
-      odbc_treat_decimal_as_int: cdktf.booleanToTerraform(this._odbcTreatDecimalAsInt),
-      query_tag: cdktf.stringToTerraform(this._queryTag),
-      quoted_identifiers_ignore_case: cdktf.booleanToTerraform(this._quotedIdentifiersIgnoreCase),
-      rows_per_resultset: cdktf.numberToTerraform(this._rowsPerResultset),
-      s3_stage_vpce_dns_name: cdktf.stringToTerraform(this._s3StageVpceDnsName),
-      schema: cdktf.stringToTerraform(this._schema),
-      search_path: cdktf.stringToTerraform(this._searchPath),
-      sql_statement: cdktf.stringToTerraform(this._sqlStatement),
-      started: cdktf.booleanToTerraform(this._started),
-      statement_queued_timeout_in_seconds: cdktf.numberToTerraform(this._statementQueuedTimeoutInSeconds),
-      statement_timeout_in_seconds: cdktf.numberToTerraform(this._statementTimeoutInSeconds),
-      strict_json_output: cdktf.booleanToTerraform(this._strictJsonOutput),
-      suspend_task_after_num_failures: cdktf.numberToTerraform(this._suspendTaskAfterNumFailures),
-      task_auto_retry_attempts: cdktf.numberToTerraform(this._taskAutoRetryAttempts),
-      time_input_format: cdktf.stringToTerraform(this._timeInputFormat),
-      time_output_format: cdktf.stringToTerraform(this._timeOutputFormat),
-      timestamp_day_is_always_24h: cdktf.booleanToTerraform(this._timestampDayIsAlways24H),
-      timestamp_input_format: cdktf.stringToTerraform(this._timestampInputFormat),
-      timestamp_ltz_output_format: cdktf.stringToTerraform(this._timestampLtzOutputFormat),
-      timestamp_ntz_output_format: cdktf.stringToTerraform(this._timestampNtzOutputFormat),
-      timestamp_output_format: cdktf.stringToTerraform(this._timestampOutputFormat),
-      timestamp_type_mapping: cdktf.stringToTerraform(this._timestampTypeMapping),
-      timestamp_tz_output_format: cdktf.stringToTerraform(this._timestampTzOutputFormat),
-      timezone: cdktf.stringToTerraform(this._timezone),
-      trace_level: cdktf.stringToTerraform(this._traceLevel),
-      transaction_abort_on_error: cdktf.booleanToTerraform(this._transactionAbortOnError),
-      transaction_default_isolation_level: cdktf.stringToTerraform(this._transactionDefaultIsolationLevel),
-      two_digit_century_start: cdktf.numberToTerraform(this._twoDigitCenturyStart),
-      unsupported_ddl_action: cdktf.stringToTerraform(this._unsupportedDdlAction),
-      use_cached_result: cdktf.booleanToTerraform(this._useCachedResult),
-      user_task_managed_initial_warehouse_size: cdktf.stringToTerraform(this._userTaskManagedInitialWarehouseSize),
-      user_task_minimum_trigger_interval_in_seconds: cdktf.numberToTerraform(this._userTaskMinimumTriggerIntervalInSeconds),
-      user_task_timeout_ms: cdktf.numberToTerraform(this._userTaskTimeoutMs),
-      warehouse: cdktf.stringToTerraform(this._warehouse),
-      week_of_year_policy: cdktf.numberToTerraform(this._weekOfYearPolicy),
-      week_start: cdktf.numberToTerraform(this._weekStart),
-      when: cdktf.stringToTerraform(this._when),
+      abort_detached_query: cdktn.booleanToTerraform(this._abortDetachedQuery),
+      after: cdktn.listMapper(cdktn.stringToTerraform, false)(this._after),
+      allow_overlapping_execution: cdktn.stringToTerraform(this._allowOverlappingExecution),
+      autocommit: cdktn.booleanToTerraform(this._autocommit),
+      binary_input_format: cdktn.stringToTerraform(this._binaryInputFormat),
+      binary_output_format: cdktn.stringToTerraform(this._binaryOutputFormat),
+      client_memory_limit: cdktn.numberToTerraform(this._clientMemoryLimit),
+      client_metadata_request_use_connection_ctx: cdktn.booleanToTerraform(this._clientMetadataRequestUseConnectionCtx),
+      client_prefetch_threads: cdktn.numberToTerraform(this._clientPrefetchThreads),
+      client_result_chunk_size: cdktn.numberToTerraform(this._clientResultChunkSize),
+      client_result_column_case_insensitive: cdktn.booleanToTerraform(this._clientResultColumnCaseInsensitive),
+      client_session_keep_alive: cdktn.booleanToTerraform(this._clientSessionKeepAlive),
+      client_session_keep_alive_heartbeat_frequency: cdktn.numberToTerraform(this._clientSessionKeepAliveHeartbeatFrequency),
+      client_timestamp_type_mapping: cdktn.stringToTerraform(this._clientTimestampTypeMapping),
+      comment: cdktn.stringToTerraform(this._comment),
+      config: cdktn.stringToTerraform(this._config),
+      database: cdktn.stringToTerraform(this._database),
+      date_input_format: cdktn.stringToTerraform(this._dateInputFormat),
+      date_output_format: cdktn.stringToTerraform(this._dateOutputFormat),
+      enable_unload_physical_type_optimization: cdktn.booleanToTerraform(this._enableUnloadPhysicalTypeOptimization),
+      error_integration: cdktn.stringToTerraform(this._errorIntegration),
+      error_on_nondeterministic_merge: cdktn.booleanToTerraform(this._errorOnNondeterministicMerge),
+      error_on_nondeterministic_update: cdktn.booleanToTerraform(this._errorOnNondeterministicUpdate),
+      finalize: cdktn.stringToTerraform(this._finalize),
+      geography_output_format: cdktn.stringToTerraform(this._geographyOutputFormat),
+      geometry_output_format: cdktn.stringToTerraform(this._geometryOutputFormat),
+      id: cdktn.stringToTerraform(this._id),
+      jdbc_treat_timestamp_ntz_as_utc: cdktn.booleanToTerraform(this._jdbcTreatTimestampNtzAsUtc),
+      jdbc_use_session_timezone: cdktn.booleanToTerraform(this._jdbcUseSessionTimezone),
+      json_indent: cdktn.numberToTerraform(this._jsonIndent),
+      lock_timeout: cdktn.numberToTerraform(this._lockTimeout),
+      log_level: cdktn.stringToTerraform(this._logLevel),
+      multi_statement_count: cdktn.numberToTerraform(this._multiStatementCount),
+      name: cdktn.stringToTerraform(this._name),
+      noorder_sequence_as_default: cdktn.booleanToTerraform(this._noorderSequenceAsDefault),
+      odbc_treat_decimal_as_int: cdktn.booleanToTerraform(this._odbcTreatDecimalAsInt),
+      query_tag: cdktn.stringToTerraform(this._queryTag),
+      quoted_identifiers_ignore_case: cdktn.booleanToTerraform(this._quotedIdentifiersIgnoreCase),
+      rows_per_resultset: cdktn.numberToTerraform(this._rowsPerResultset),
+      s3_stage_vpce_dns_name: cdktn.stringToTerraform(this._s3StageVpceDnsName),
+      schema: cdktn.stringToTerraform(this._schema),
+      search_path: cdktn.stringToTerraform(this._searchPath),
+      serverless_task_max_statement_size: cdktn.stringToTerraform(this._serverlessTaskMaxStatementSize),
+      serverless_task_min_statement_size: cdktn.stringToTerraform(this._serverlessTaskMinStatementSize),
+      sql_statement: cdktn.stringToTerraform(this._sqlStatement),
+      started: cdktn.booleanToTerraform(this._started),
+      statement_queued_timeout_in_seconds: cdktn.numberToTerraform(this._statementQueuedTimeoutInSeconds),
+      statement_timeout_in_seconds: cdktn.numberToTerraform(this._statementTimeoutInSeconds),
+      strict_json_output: cdktn.booleanToTerraform(this._strictJsonOutput),
+      suspend_task_after_num_failures: cdktn.numberToTerraform(this._suspendTaskAfterNumFailures),
+      task_auto_retry_attempts: cdktn.numberToTerraform(this._taskAutoRetryAttempts),
+      time_input_format: cdktn.stringToTerraform(this._timeInputFormat),
+      time_output_format: cdktn.stringToTerraform(this._timeOutputFormat),
+      timestamp_day_is_always_24h: cdktn.booleanToTerraform(this._timestampDayIsAlways24H),
+      timestamp_input_format: cdktn.stringToTerraform(this._timestampInputFormat),
+      timestamp_ltz_output_format: cdktn.stringToTerraform(this._timestampLtzOutputFormat),
+      timestamp_ntz_output_format: cdktn.stringToTerraform(this._timestampNtzOutputFormat),
+      timestamp_output_format: cdktn.stringToTerraform(this._timestampOutputFormat),
+      timestamp_type_mapping: cdktn.stringToTerraform(this._timestampTypeMapping),
+      timestamp_tz_output_format: cdktn.stringToTerraform(this._timestampTzOutputFormat),
+      timezone: cdktn.stringToTerraform(this._timezone),
+      trace_level: cdktn.stringToTerraform(this._traceLevel),
+      transaction_abort_on_error: cdktn.booleanToTerraform(this._transactionAbortOnError),
+      transaction_default_isolation_level: cdktn.stringToTerraform(this._transactionDefaultIsolationLevel),
+      two_digit_century_start: cdktn.numberToTerraform(this._twoDigitCenturyStart),
+      unsupported_ddl_action: cdktn.stringToTerraform(this._unsupportedDdlAction),
+      use_cached_result: cdktn.booleanToTerraform(this._useCachedResult),
+      user_task_managed_initial_warehouse_size: cdktn.stringToTerraform(this._userTaskManagedInitialWarehouseSize),
+      user_task_minimum_trigger_interval_in_seconds: cdktn.numberToTerraform(this._userTaskMinimumTriggerIntervalInSeconds),
+      user_task_timeout_ms: cdktn.numberToTerraform(this._userTaskTimeoutMs),
+      warehouse: cdktn.stringToTerraform(this._warehouse),
+      week_of_year_policy: cdktn.numberToTerraform(this._weekOfYearPolicy),
+      week_start: cdktn.numberToTerraform(this._weekStart),
+      when: cdktn.stringToTerraform(this._when),
       schedule: taskScheduleToTerraform(this._schedule.internalValue),
+      target_completion_interval: taskTargetCompletionIntervalToTerraform(this._targetCompletionInterval.internalValue),
       timeouts: taskTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -8440,433 +8961,445 @@ export class Task extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       abort_detached_query: {
-        value: cdktf.booleanToHclTerraform(this._abortDetachedQuery),
+        value: cdktn.booleanToHclTerraform(this._abortDetachedQuery),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       after: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._after),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._after),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       allow_overlapping_execution: {
-        value: cdktf.stringToHclTerraform(this._allowOverlappingExecution),
+        value: cdktn.stringToHclTerraform(this._allowOverlappingExecution),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       autocommit: {
-        value: cdktf.booleanToHclTerraform(this._autocommit),
+        value: cdktn.booleanToHclTerraform(this._autocommit),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       binary_input_format: {
-        value: cdktf.stringToHclTerraform(this._binaryInputFormat),
+        value: cdktn.stringToHclTerraform(this._binaryInputFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       binary_output_format: {
-        value: cdktf.stringToHclTerraform(this._binaryOutputFormat),
+        value: cdktn.stringToHclTerraform(this._binaryOutputFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_memory_limit: {
-        value: cdktf.numberToHclTerraform(this._clientMemoryLimit),
+        value: cdktn.numberToHclTerraform(this._clientMemoryLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       client_metadata_request_use_connection_ctx: {
-        value: cdktf.booleanToHclTerraform(this._clientMetadataRequestUseConnectionCtx),
+        value: cdktn.booleanToHclTerraform(this._clientMetadataRequestUseConnectionCtx),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       client_prefetch_threads: {
-        value: cdktf.numberToHclTerraform(this._clientPrefetchThreads),
+        value: cdktn.numberToHclTerraform(this._clientPrefetchThreads),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       client_result_chunk_size: {
-        value: cdktf.numberToHclTerraform(this._clientResultChunkSize),
+        value: cdktn.numberToHclTerraform(this._clientResultChunkSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       client_result_column_case_insensitive: {
-        value: cdktf.booleanToHclTerraform(this._clientResultColumnCaseInsensitive),
+        value: cdktn.booleanToHclTerraform(this._clientResultColumnCaseInsensitive),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       client_session_keep_alive: {
-        value: cdktf.booleanToHclTerraform(this._clientSessionKeepAlive),
+        value: cdktn.booleanToHclTerraform(this._clientSessionKeepAlive),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       client_session_keep_alive_heartbeat_frequency: {
-        value: cdktf.numberToHclTerraform(this._clientSessionKeepAliveHeartbeatFrequency),
+        value: cdktn.numberToHclTerraform(this._clientSessionKeepAliveHeartbeatFrequency),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       client_timestamp_type_mapping: {
-        value: cdktf.stringToHclTerraform(this._clientTimestampTypeMapping),
+        value: cdktn.stringToHclTerraform(this._clientTimestampTypeMapping),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       config: {
-        value: cdktf.stringToHclTerraform(this._config),
+        value: cdktn.stringToHclTerraform(this._config),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       date_input_format: {
-        value: cdktf.stringToHclTerraform(this._dateInputFormat),
+        value: cdktn.stringToHclTerraform(this._dateInputFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       date_output_format: {
-        value: cdktf.stringToHclTerraform(this._dateOutputFormat),
+        value: cdktn.stringToHclTerraform(this._dateOutputFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_unload_physical_type_optimization: {
-        value: cdktf.booleanToHclTerraform(this._enableUnloadPhysicalTypeOptimization),
+        value: cdktn.booleanToHclTerraform(this._enableUnloadPhysicalTypeOptimization),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       error_integration: {
-        value: cdktf.stringToHclTerraform(this._errorIntegration),
+        value: cdktn.stringToHclTerraform(this._errorIntegration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       error_on_nondeterministic_merge: {
-        value: cdktf.booleanToHclTerraform(this._errorOnNondeterministicMerge),
+        value: cdktn.booleanToHclTerraform(this._errorOnNondeterministicMerge),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       error_on_nondeterministic_update: {
-        value: cdktf.booleanToHclTerraform(this._errorOnNondeterministicUpdate),
+        value: cdktn.booleanToHclTerraform(this._errorOnNondeterministicUpdate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       finalize: {
-        value: cdktf.stringToHclTerraform(this._finalize),
+        value: cdktn.stringToHclTerraform(this._finalize),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       geography_output_format: {
-        value: cdktf.stringToHclTerraform(this._geographyOutputFormat),
+        value: cdktn.stringToHclTerraform(this._geographyOutputFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       geometry_output_format: {
-        value: cdktf.stringToHclTerraform(this._geometryOutputFormat),
+        value: cdktn.stringToHclTerraform(this._geometryOutputFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       jdbc_treat_timestamp_ntz_as_utc: {
-        value: cdktf.booleanToHclTerraform(this._jdbcTreatTimestampNtzAsUtc),
+        value: cdktn.booleanToHclTerraform(this._jdbcTreatTimestampNtzAsUtc),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       jdbc_use_session_timezone: {
-        value: cdktf.booleanToHclTerraform(this._jdbcUseSessionTimezone),
+        value: cdktn.booleanToHclTerraform(this._jdbcUseSessionTimezone),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       json_indent: {
-        value: cdktf.numberToHclTerraform(this._jsonIndent),
+        value: cdktn.numberToHclTerraform(this._jsonIndent),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       lock_timeout: {
-        value: cdktf.numberToHclTerraform(this._lockTimeout),
+        value: cdktn.numberToHclTerraform(this._lockTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       log_level: {
-        value: cdktf.stringToHclTerraform(this._logLevel),
+        value: cdktn.stringToHclTerraform(this._logLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       multi_statement_count: {
-        value: cdktf.numberToHclTerraform(this._multiStatementCount),
+        value: cdktn.numberToHclTerraform(this._multiStatementCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       noorder_sequence_as_default: {
-        value: cdktf.booleanToHclTerraform(this._noorderSequenceAsDefault),
+        value: cdktn.booleanToHclTerraform(this._noorderSequenceAsDefault),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       odbc_treat_decimal_as_int: {
-        value: cdktf.booleanToHclTerraform(this._odbcTreatDecimalAsInt),
+        value: cdktn.booleanToHclTerraform(this._odbcTreatDecimalAsInt),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       query_tag: {
-        value: cdktf.stringToHclTerraform(this._queryTag),
+        value: cdktn.stringToHclTerraform(this._queryTag),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       quoted_identifiers_ignore_case: {
-        value: cdktf.booleanToHclTerraform(this._quotedIdentifiersIgnoreCase),
+        value: cdktn.booleanToHclTerraform(this._quotedIdentifiersIgnoreCase),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       rows_per_resultset: {
-        value: cdktf.numberToHclTerraform(this._rowsPerResultset),
+        value: cdktn.numberToHclTerraform(this._rowsPerResultset),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       s3_stage_vpce_dns_name: {
-        value: cdktf.stringToHclTerraform(this._s3StageVpceDnsName),
+        value: cdktn.stringToHclTerraform(this._s3StageVpceDnsName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       search_path: {
-        value: cdktf.stringToHclTerraform(this._searchPath),
+        value: cdktn.stringToHclTerraform(this._searchPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      serverless_task_max_statement_size: {
+        value: cdktn.stringToHclTerraform(this._serverlessTaskMaxStatementSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      serverless_task_min_statement_size: {
+        value: cdktn.stringToHclTerraform(this._serverlessTaskMinStatementSize),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sql_statement: {
-        value: cdktf.stringToHclTerraform(this._sqlStatement),
+        value: cdktn.stringToHclTerraform(this._sqlStatement),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       started: {
-        value: cdktf.booleanToHclTerraform(this._started),
+        value: cdktn.booleanToHclTerraform(this._started),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       statement_queued_timeout_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._statementQueuedTimeoutInSeconds),
+        value: cdktn.numberToHclTerraform(this._statementQueuedTimeoutInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       statement_timeout_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._statementTimeoutInSeconds),
+        value: cdktn.numberToHclTerraform(this._statementTimeoutInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       strict_json_output: {
-        value: cdktf.booleanToHclTerraform(this._strictJsonOutput),
+        value: cdktn.booleanToHclTerraform(this._strictJsonOutput),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       suspend_task_after_num_failures: {
-        value: cdktf.numberToHclTerraform(this._suspendTaskAfterNumFailures),
+        value: cdktn.numberToHclTerraform(this._suspendTaskAfterNumFailures),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       task_auto_retry_attempts: {
-        value: cdktf.numberToHclTerraform(this._taskAutoRetryAttempts),
+        value: cdktn.numberToHclTerraform(this._taskAutoRetryAttempts),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       time_input_format: {
-        value: cdktf.stringToHclTerraform(this._timeInputFormat),
+        value: cdktn.stringToHclTerraform(this._timeInputFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       time_output_format: {
-        value: cdktf.stringToHclTerraform(this._timeOutputFormat),
+        value: cdktn.stringToHclTerraform(this._timeOutputFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       timestamp_day_is_always_24h: {
-        value: cdktf.booleanToHclTerraform(this._timestampDayIsAlways24H),
+        value: cdktn.booleanToHclTerraform(this._timestampDayIsAlways24H),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       timestamp_input_format: {
-        value: cdktf.stringToHclTerraform(this._timestampInputFormat),
+        value: cdktn.stringToHclTerraform(this._timestampInputFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       timestamp_ltz_output_format: {
-        value: cdktf.stringToHclTerraform(this._timestampLtzOutputFormat),
+        value: cdktn.stringToHclTerraform(this._timestampLtzOutputFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       timestamp_ntz_output_format: {
-        value: cdktf.stringToHclTerraform(this._timestampNtzOutputFormat),
+        value: cdktn.stringToHclTerraform(this._timestampNtzOutputFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       timestamp_output_format: {
-        value: cdktf.stringToHclTerraform(this._timestampOutputFormat),
+        value: cdktn.stringToHclTerraform(this._timestampOutputFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       timestamp_type_mapping: {
-        value: cdktf.stringToHclTerraform(this._timestampTypeMapping),
+        value: cdktn.stringToHclTerraform(this._timestampTypeMapping),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       timestamp_tz_output_format: {
-        value: cdktf.stringToHclTerraform(this._timestampTzOutputFormat),
+        value: cdktn.stringToHclTerraform(this._timestampTzOutputFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       timezone: {
-        value: cdktf.stringToHclTerraform(this._timezone),
+        value: cdktn.stringToHclTerraform(this._timezone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trace_level: {
-        value: cdktf.stringToHclTerraform(this._traceLevel),
+        value: cdktn.stringToHclTerraform(this._traceLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       transaction_abort_on_error: {
-        value: cdktf.booleanToHclTerraform(this._transactionAbortOnError),
+        value: cdktn.booleanToHclTerraform(this._transactionAbortOnError),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       transaction_default_isolation_level: {
-        value: cdktf.stringToHclTerraform(this._transactionDefaultIsolationLevel),
+        value: cdktn.stringToHclTerraform(this._transactionDefaultIsolationLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       two_digit_century_start: {
-        value: cdktf.numberToHclTerraform(this._twoDigitCenturyStart),
+        value: cdktn.numberToHclTerraform(this._twoDigitCenturyStart),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       unsupported_ddl_action: {
-        value: cdktf.stringToHclTerraform(this._unsupportedDdlAction),
+        value: cdktn.stringToHclTerraform(this._unsupportedDdlAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_cached_result: {
-        value: cdktf.booleanToHclTerraform(this._useCachedResult),
+        value: cdktn.booleanToHclTerraform(this._useCachedResult),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       user_task_managed_initial_warehouse_size: {
-        value: cdktf.stringToHclTerraform(this._userTaskManagedInitialWarehouseSize),
+        value: cdktn.stringToHclTerraform(this._userTaskManagedInitialWarehouseSize),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_task_minimum_trigger_interval_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._userTaskMinimumTriggerIntervalInSeconds),
+        value: cdktn.numberToHclTerraform(this._userTaskMinimumTriggerIntervalInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       user_task_timeout_ms: {
-        value: cdktf.numberToHclTerraform(this._userTaskTimeoutMs),
+        value: cdktn.numberToHclTerraform(this._userTaskTimeoutMs),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       warehouse: {
-        value: cdktf.stringToHclTerraform(this._warehouse),
+        value: cdktn.stringToHclTerraform(this._warehouse),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       week_of_year_policy: {
-        value: cdktf.numberToHclTerraform(this._weekOfYearPolicy),
+        value: cdktn.numberToHclTerraform(this._weekOfYearPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       week_start: {
-        value: cdktf.numberToHclTerraform(this._weekStart),
+        value: cdktn.numberToHclTerraform(this._weekStart),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       when: {
-        value: cdktf.stringToHclTerraform(this._when),
+        value: cdktn.stringToHclTerraform(this._when),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -8876,6 +9409,12 @@ export class Task extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "TaskScheduleList",
+      },
+      target_completion_interval: {
+        value: taskTargetCompletionIntervalToHclTerraform(this._targetCompletionInterval.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TaskTargetCompletionIntervalList",
       },
       timeouts: {
         value: taskTimeoutsToHclTerraform(this._timeouts.internalValue),

@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/views
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/views
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataSnowflakeViewsConfig extends cdktf.TerraformMetaArguments {
+export interface DataSnowflakeViewsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/views#id DataSnowflakeViews#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/views#id DataSnowflakeViews#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +22,31 @@ export interface DataSnowflakeViewsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/views#like DataSnowflakeViews#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/views#like DataSnowflakeViews#like}
   */
   readonly like?: string;
   /**
   * Filters the output with **case-sensitive** characters indicating the beginning of the object name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/views#starts_with DataSnowflakeViews#starts_with}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/views#starts_with DataSnowflakeViews#starts_with}
   */
   readonly startsWith?: string;
   /**
   * (Default: `true`) Runs DESC VIEW for each view returned by SHOW VIEWS. The output of describe is saved to the description field. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/views#with_describe DataSnowflakeViews#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/views#with_describe DataSnowflakeViews#with_describe}
   */
-  readonly withDescribe?: boolean | cdktf.IResolvable;
+  readonly withDescribe?: boolean | cdktn.IResolvable;
   /**
   * in block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/views#in DataSnowflakeViews#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/views#in DataSnowflakeViews#in}
   */
   readonly in?: DataSnowflakeViewsIn;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/views#limit DataSnowflakeViews#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/views#limit DataSnowflakeViews#limit}
   */
   readonly limit?: DataSnowflakeViewsLimit;
 }
@@ -54,8 +54,8 @@ export interface DataSnowflakeViewsViewsDescribeOutput {
 }
 
 export function dataSnowflakeViewsViewsDescribeOutputToTerraform(struct?: DataSnowflakeViewsViewsDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -64,8 +64,8 @@ export function dataSnowflakeViewsViewsDescribeOutputToTerraform(struct?: DataSn
 
 
 export function dataSnowflakeViewsViewsDescribeOutputToHclTerraform(struct?: DataSnowflakeViewsViewsDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -73,7 +73,7 @@ export function dataSnowflakeViewsViewsDescribeOutputToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataSnowflakeViewsViewsDescribeOutputOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeViewsViewsDescribeOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -82,7 +82,7 @@ export class DataSnowflakeViewsViewsDescribeOutputOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -162,14 +162,14 @@ export class DataSnowflakeViewsViewsDescribeOutputOutputReference extends cdktf.
   }
 }
 
-export class DataSnowflakeViewsViewsDescribeOutputList extends cdktf.ComplexList {
+export class DataSnowflakeViewsViewsDescribeOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -184,8 +184,8 @@ export interface DataSnowflakeViewsViewsShowOutput {
 }
 
 export function dataSnowflakeViewsViewsShowOutputToTerraform(struct?: DataSnowflakeViewsViewsShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -194,8 +194,8 @@ export function dataSnowflakeViewsViewsShowOutputToTerraform(struct?: DataSnowfl
 
 
 export function dataSnowflakeViewsViewsShowOutputToHclTerraform(struct?: DataSnowflakeViewsViewsShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -203,7 +203,7 @@ export function dataSnowflakeViewsViewsShowOutputToHclTerraform(struct?: DataSno
   return attrs;
 }
 
-export class DataSnowflakeViewsViewsShowOutputOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeViewsViewsShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -212,7 +212,7 @@ export class DataSnowflakeViewsViewsShowOutputOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -297,14 +297,14 @@ export class DataSnowflakeViewsViewsShowOutputOutputReference extends cdktf.Comp
   }
 }
 
-export class DataSnowflakeViewsViewsShowOutputList extends cdktf.ComplexList {
+export class DataSnowflakeViewsViewsShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -319,8 +319,8 @@ export interface DataSnowflakeViewsViews {
 }
 
 export function dataSnowflakeViewsViewsToTerraform(struct?: DataSnowflakeViewsViews): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -329,8 +329,8 @@ export function dataSnowflakeViewsViewsToTerraform(struct?: DataSnowflakeViewsVi
 
 
 export function dataSnowflakeViewsViewsToHclTerraform(struct?: DataSnowflakeViewsViews): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -338,7 +338,7 @@ export function dataSnowflakeViewsViewsToHclTerraform(struct?: DataSnowflakeView
   return attrs;
 }
 
-export class DataSnowflakeViewsViewsOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeViewsViewsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -347,7 +347,7 @@ export class DataSnowflakeViewsViewsOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -379,14 +379,14 @@ export class DataSnowflakeViewsViewsOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class DataSnowflakeViewsViewsList extends cdktf.ComplexList {
+export class DataSnowflakeViewsViewsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -401,56 +401,56 @@ export interface DataSnowflakeViewsIn {
   /**
   * Returns records for the entire account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/views#account DataSnowflakeViews#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/views#account DataSnowflakeViews#account}
   */
-  readonly account?: boolean | cdktf.IResolvable;
+  readonly account?: boolean | cdktn.IResolvable;
   /**
   * Returns records for the current database in use or for a specified database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/views#database DataSnowflakeViews#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/views#database DataSnowflakeViews#database}
   */
   readonly database?: string;
   /**
   * Returns records for the current schema in use or a specified schema. Use fully qualified name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/views#schema DataSnowflakeViews#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/views#schema DataSnowflakeViews#schema}
   */
   readonly schema?: string;
 }
 
 export function dataSnowflakeViewsInToTerraform(struct?: DataSnowflakeViewsInOutputReference | DataSnowflakeViewsIn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account: cdktf.booleanToTerraform(struct!.account),
-    database: cdktf.stringToTerraform(struct!.database),
-    schema: cdktf.stringToTerraform(struct!.schema),
+    account: cdktn.booleanToTerraform(struct!.account),
+    database: cdktn.stringToTerraform(struct!.database),
+    schema: cdktn.stringToTerraform(struct!.schema),
   }
 }
 
 
 export function dataSnowflakeViewsInToHclTerraform(struct?: DataSnowflakeViewsInOutputReference | DataSnowflakeViewsIn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account: {
-      value: cdktf.booleanToHclTerraform(struct!.account),
+      value: cdktn.booleanToHclTerraform(struct!.account),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schema: {
-      value: cdktf.stringToHclTerraform(struct!.schema),
+      value: cdktn.stringToHclTerraform(struct!.schema),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -461,14 +461,14 @@ export function dataSnowflakeViewsInToHclTerraform(struct?: DataSnowflakeViewsIn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataSnowflakeViewsInOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeViewsInOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -506,11 +506,11 @@ export class DataSnowflakeViewsInOutputReference extends cdktf.ComplexObject {
   }
 
   // account - computed: false, optional: true, required: false
-  private _account?: boolean | cdktf.IResolvable; 
+  private _account?: boolean | cdktn.IResolvable; 
   public get account() {
     return this.getBooleanAttribute('account');
   }
-  public set account(value: boolean | cdktf.IResolvable) {
+  public set account(value: boolean | cdktn.IResolvable) {
     this._account = value;
   }
   public resetAccount() {
@@ -557,43 +557,43 @@ export interface DataSnowflakeViewsLimit {
   /**
   * Specifies a **case-sensitive** pattern that is used to match object name. After the first match, the limit on the number of rows will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/views#from DataSnowflakeViews#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/views#from DataSnowflakeViews#from}
   */
   readonly from?: string;
   /**
   * The maximum number of rows to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/views#rows DataSnowflakeViews#rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/views#rows DataSnowflakeViews#rows}
   */
   readonly rows: number;
 }
 
 export function dataSnowflakeViewsLimitToTerraform(struct?: DataSnowflakeViewsLimitOutputReference | DataSnowflakeViewsLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from: cdktf.stringToTerraform(struct!.from),
-    rows: cdktf.numberToTerraform(struct!.rows),
+    from: cdktn.stringToTerraform(struct!.from),
+    rows: cdktn.numberToTerraform(struct!.rows),
   }
 }
 
 
 export function dataSnowflakeViewsLimitToHclTerraform(struct?: DataSnowflakeViewsLimitOutputReference | DataSnowflakeViewsLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from: {
-      value: cdktf.stringToHclTerraform(struct!.from),
+      value: cdktn.stringToHclTerraform(struct!.from),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rows: {
-      value: cdktf.numberToHclTerraform(struct!.rows),
+      value: cdktn.numberToHclTerraform(struct!.rows),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -604,14 +604,14 @@ export function dataSnowflakeViewsLimitToHclTerraform(struct?: DataSnowflakeView
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataSnowflakeViewsLimitOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeViewsLimitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -673,9 +673,9 @@ export class DataSnowflakeViewsLimitOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/views snowflake_views}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/views snowflake_views}
 */
-export class DataSnowflakeViews extends cdktf.TerraformDataSource {
+export class DataSnowflakeViews extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -686,14 +686,14 @@ export class DataSnowflakeViews extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataSnowflakeViews resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataSnowflakeViews resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeViews to import
-  * @param importFromId The id of the existing DataSnowflakeViews that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/views#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeViews that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/views#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeViews to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_views", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_views", importId: importFromId, provider });
       }
 
   // ===========
@@ -701,7 +701,7 @@ export class DataSnowflakeViews extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/views snowflake_views} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/views snowflake_views} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -712,7 +712,7 @@ export class DataSnowflakeViews extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_views',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -790,11 +790,11 @@ export class DataSnowflakeViews extends cdktf.TerraformDataSource {
   }
 
   // with_describe - computed: false, optional: true, required: false
-  private _withDescribe?: boolean | cdktf.IResolvable; 
+  private _withDescribe?: boolean | cdktn.IResolvable; 
   public get withDescribe() {
     return this.getBooleanAttribute('with_describe');
   }
-  public set withDescribe(value: boolean | cdktf.IResolvable) {
+  public set withDescribe(value: boolean | cdktn.IResolvable) {
     this._withDescribe = value;
   }
   public resetWithDescribe() {
@@ -843,10 +843,10 @@ export class DataSnowflakeViews extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      like: cdktf.stringToTerraform(this._like),
-      starts_with: cdktf.stringToTerraform(this._startsWith),
-      with_describe: cdktf.booleanToTerraform(this._withDescribe),
+      id: cdktn.stringToTerraform(this._id),
+      like: cdktn.stringToTerraform(this._like),
+      starts_with: cdktn.stringToTerraform(this._startsWith),
+      with_describe: cdktn.booleanToTerraform(this._withDescribe),
       in: dataSnowflakeViewsInToTerraform(this._in.internalValue),
       limit: dataSnowflakeViewsLimitToTerraform(this._limit.internalValue),
     };
@@ -855,25 +855,25 @@ export class DataSnowflakeViews extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       like: {
-        value: cdktf.stringToHclTerraform(this._like),
+        value: cdktn.stringToHclTerraform(this._like),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       starts_with: {
-        value: cdktf.stringToHclTerraform(this._startsWith),
+        value: cdktn.stringToHclTerraform(this._startsWith),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       with_describe: {
-        value: cdktf.booleanToHclTerraform(this._withDescribe),
+        value: cdktn.booleanToHclTerraform(this._withDescribe),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

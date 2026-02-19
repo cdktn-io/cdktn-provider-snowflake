@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StreamOnExternalTableConfig extends cdktf.TerraformMetaArguments {
+export interface StreamOnExternalTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies a comment for the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#comment StreamOnExternalTable#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#comment StreamOnExternalTable#comment}
   */
   readonly comment?: string;
   /**
   * (Default: `false`) Retains the access permissions from the original stream when a stream is recreated using the OR REPLACE clause. This is used when the provider detects changes for fields that can not be changed by ALTER. This value will not have any effect during creating a new object with Terraform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#copy_grants StreamOnExternalTable#copy_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#copy_grants StreamOnExternalTable#copy_grants}
   */
-  readonly copyGrants?: boolean | cdktf.IResolvable;
+  readonly copyGrants?: boolean | cdktn.IResolvable;
   /**
   * The database in which to create the stream. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#database StreamOnExternalTable#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#database StreamOnExternalTable#database}
   */
   readonly database: string;
   /**
   * Specifies an identifier for the external table the stream will monitor. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`. For more information about this resource, see [docs](./external_table).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#external_table StreamOnExternalTable#external_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#external_table StreamOnExternalTable#external_table}
   */
   readonly externalTable: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#id StreamOnExternalTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#id StreamOnExternalTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,37 +46,37 @@ export interface StreamOnExternalTableConfig extends cdktf.TerraformMetaArgument
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether this is an insert-only stream. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#insert_only StreamOnExternalTable#insert_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#insert_only StreamOnExternalTable#insert_only}
   */
   readonly insertOnly?: string;
   /**
   * Specifies the identifier for the stream; must be unique for the database and schema in which the stream is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#name StreamOnExternalTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#name StreamOnExternalTable#name}
   */
   readonly name: string;
   /**
   * The schema in which to create the stream. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#schema StreamOnExternalTable#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#schema StreamOnExternalTable#schema}
   */
   readonly schema: string;
   /**
   * at block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#at StreamOnExternalTable#at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#at StreamOnExternalTable#at}
   */
   readonly at?: StreamOnExternalTableAt;
   /**
   * before block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#before StreamOnExternalTable#before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#before StreamOnExternalTable#before}
   */
   readonly before?: StreamOnExternalTableBefore;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#timeouts StreamOnExternalTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#timeouts StreamOnExternalTable#timeouts}
   */
   readonly timeouts?: StreamOnExternalTableTimeouts;
 }
@@ -84,8 +84,8 @@ export interface StreamOnExternalTableDescribeOutput {
 }
 
 export function streamOnExternalTableDescribeOutputToTerraform(struct?: StreamOnExternalTableDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -94,8 +94,8 @@ export function streamOnExternalTableDescribeOutputToTerraform(struct?: StreamOn
 
 
 export function streamOnExternalTableDescribeOutputToHclTerraform(struct?: StreamOnExternalTableDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -103,7 +103,7 @@ export function streamOnExternalTableDescribeOutputToHclTerraform(struct?: Strea
   return attrs;
 }
 
-export class StreamOnExternalTableDescribeOutputOutputReference extends cdktf.ComplexObject {
+export class StreamOnExternalTableDescribeOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -112,7 +112,7 @@ export class StreamOnExternalTableDescribeOutputOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -207,14 +207,14 @@ export class StreamOnExternalTableDescribeOutputOutputReference extends cdktf.Co
   }
 }
 
-export class StreamOnExternalTableDescribeOutputList extends cdktf.ComplexList {
+export class StreamOnExternalTableDescribeOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -229,8 +229,8 @@ export interface StreamOnExternalTableShowOutput {
 }
 
 export function streamOnExternalTableShowOutputToTerraform(struct?: StreamOnExternalTableShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -239,8 +239,8 @@ export function streamOnExternalTableShowOutputToTerraform(struct?: StreamOnExte
 
 
 export function streamOnExternalTableShowOutputToHclTerraform(struct?: StreamOnExternalTableShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -248,7 +248,7 @@ export function streamOnExternalTableShowOutputToHclTerraform(struct?: StreamOnE
   return attrs;
 }
 
-export class StreamOnExternalTableShowOutputOutputReference extends cdktf.ComplexObject {
+export class StreamOnExternalTableShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -257,7 +257,7 @@ export class StreamOnExternalTableShowOutputOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -352,14 +352,14 @@ export class StreamOnExternalTableShowOutputOutputReference extends cdktf.Comple
   }
 }
 
-export class StreamOnExternalTableShowOutputList extends cdktf.ComplexList {
+export class StreamOnExternalTableShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -374,69 +374,69 @@ export interface StreamOnExternalTableAt {
   /**
   * Specifies the difference in seconds from the current time to use for Time Travel, in the form -N where N can be an integer or arithmetic expression (e.g. -120 is 120 seconds, -30*60 is 1800 seconds or 30 minutes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#offset StreamOnExternalTable#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#offset StreamOnExternalTable#offset}
   */
   readonly offset?: string;
   /**
   * Specifies the query ID of a statement to use as the reference point for Time Travel. This parameter supports any statement of one of the following types: DML (e.g. INSERT, UPDATE, DELETE), TCL (BEGIN, COMMIT transaction), SELECT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#statement StreamOnExternalTable#statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#statement StreamOnExternalTable#statement}
   */
   readonly statement?: string;
   /**
   * Specifies the identifier (i.e. name) for an existing stream on the queried table or view. The current offset in the stream is used as the AT point in time for returning change data for the source object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#stream StreamOnExternalTable#stream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#stream StreamOnExternalTable#stream}
   */
   readonly stream?: string;
   /**
   * Specifies an exact date and time to use for Time Travel. The value must be explicitly cast to a TIMESTAMP, TIMESTAMP_LTZ, TIMESTAMP_NTZ, or TIMESTAMP_TZ data type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#timestamp StreamOnExternalTable#timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#timestamp StreamOnExternalTable#timestamp}
   */
   readonly timestamp?: string;
 }
 
 export function streamOnExternalTableAtToTerraform(struct?: StreamOnExternalTableAtOutputReference | StreamOnExternalTableAt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    offset: cdktf.stringToTerraform(struct!.offset),
-    statement: cdktf.stringToTerraform(struct!.statement),
-    stream: cdktf.stringToTerraform(struct!.stream),
-    timestamp: cdktf.stringToTerraform(struct!.timestamp),
+    offset: cdktn.stringToTerraform(struct!.offset),
+    statement: cdktn.stringToTerraform(struct!.statement),
+    stream: cdktn.stringToTerraform(struct!.stream),
+    timestamp: cdktn.stringToTerraform(struct!.timestamp),
   }
 }
 
 
 export function streamOnExternalTableAtToHclTerraform(struct?: StreamOnExternalTableAtOutputReference | StreamOnExternalTableAt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     offset: {
-      value: cdktf.stringToHclTerraform(struct!.offset),
+      value: cdktn.stringToHclTerraform(struct!.offset),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     statement: {
-      value: cdktf.stringToHclTerraform(struct!.statement),
+      value: cdktn.stringToHclTerraform(struct!.statement),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stream: {
-      value: cdktf.stringToHclTerraform(struct!.stream),
+      value: cdktn.stringToHclTerraform(struct!.stream),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timestamp: {
-      value: cdktf.stringToHclTerraform(struct!.timestamp),
+      value: cdktn.stringToHclTerraform(struct!.timestamp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -447,14 +447,14 @@ export function streamOnExternalTableAtToHclTerraform(struct?: StreamOnExternalT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StreamOnExternalTableAtOutputReference extends cdktf.ComplexObject {
+export class StreamOnExternalTableAtOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -565,69 +565,69 @@ export interface StreamOnExternalTableBefore {
   /**
   * Specifies the difference in seconds from the current time to use for Time Travel, in the form -N where N can be an integer or arithmetic expression (e.g. -120 is 120 seconds, -30*60 is 1800 seconds or 30 minutes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#offset StreamOnExternalTable#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#offset StreamOnExternalTable#offset}
   */
   readonly offset?: string;
   /**
   * Specifies the query ID of a statement to use as the reference point for Time Travel. This parameter supports any statement of one of the following types: DML (e.g. INSERT, UPDATE, DELETE), TCL (BEGIN, COMMIT transaction), SELECT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#statement StreamOnExternalTable#statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#statement StreamOnExternalTable#statement}
   */
   readonly statement?: string;
   /**
   * Specifies the identifier (i.e. name) for an existing stream on the queried table or view. The current offset in the stream is used as the AT point in time for returning change data for the source object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#stream StreamOnExternalTable#stream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#stream StreamOnExternalTable#stream}
   */
   readonly stream?: string;
   /**
   * Specifies an exact date and time to use for Time Travel. The value must be explicitly cast to a TIMESTAMP, TIMESTAMP_LTZ, TIMESTAMP_NTZ, or TIMESTAMP_TZ data type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#timestamp StreamOnExternalTable#timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#timestamp StreamOnExternalTable#timestamp}
   */
   readonly timestamp?: string;
 }
 
 export function streamOnExternalTableBeforeToTerraform(struct?: StreamOnExternalTableBeforeOutputReference | StreamOnExternalTableBefore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    offset: cdktf.stringToTerraform(struct!.offset),
-    statement: cdktf.stringToTerraform(struct!.statement),
-    stream: cdktf.stringToTerraform(struct!.stream),
-    timestamp: cdktf.stringToTerraform(struct!.timestamp),
+    offset: cdktn.stringToTerraform(struct!.offset),
+    statement: cdktn.stringToTerraform(struct!.statement),
+    stream: cdktn.stringToTerraform(struct!.stream),
+    timestamp: cdktn.stringToTerraform(struct!.timestamp),
   }
 }
 
 
 export function streamOnExternalTableBeforeToHclTerraform(struct?: StreamOnExternalTableBeforeOutputReference | StreamOnExternalTableBefore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     offset: {
-      value: cdktf.stringToHclTerraform(struct!.offset),
+      value: cdktn.stringToHclTerraform(struct!.offset),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     statement: {
-      value: cdktf.stringToHclTerraform(struct!.statement),
+      value: cdktn.stringToHclTerraform(struct!.statement),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stream: {
-      value: cdktf.stringToHclTerraform(struct!.stream),
+      value: cdktn.stringToHclTerraform(struct!.stream),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timestamp: {
-      value: cdktf.stringToHclTerraform(struct!.timestamp),
+      value: cdktn.stringToHclTerraform(struct!.timestamp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -638,14 +638,14 @@ export function streamOnExternalTableBeforeToHclTerraform(struct?: StreamOnExter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StreamOnExternalTableBeforeOutputReference extends cdktf.ComplexObject {
+export class StreamOnExternalTableBeforeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -754,63 +754,63 @@ export class StreamOnExternalTableBeforeOutputReference extends cdktf.ComplexObj
 }
 export interface StreamOnExternalTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#create StreamOnExternalTable#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#create StreamOnExternalTable#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#delete StreamOnExternalTable#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#delete StreamOnExternalTable#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#read StreamOnExternalTable#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#read StreamOnExternalTable#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#update StreamOnExternalTable#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#update StreamOnExternalTable#update}
   */
   readonly update?: string;
 }
 
-export function streamOnExternalTableTimeoutsToTerraform(struct?: StreamOnExternalTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function streamOnExternalTableTimeoutsToTerraform(struct?: StreamOnExternalTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function streamOnExternalTableTimeoutsToHclTerraform(struct?: StreamOnExternalTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function streamOnExternalTableTimeoutsToHclTerraform(struct?: StreamOnExternalTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -821,19 +821,19 @@ export function streamOnExternalTableTimeoutsToHclTerraform(struct?: StreamOnExt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StreamOnExternalTableTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StreamOnExternalTableTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StreamOnExternalTableTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StreamOnExternalTableTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -858,7 +858,7 @@ export class StreamOnExternalTableTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StreamOnExternalTableTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StreamOnExternalTableTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -867,7 +867,7 @@ export class StreamOnExternalTableTimeoutsOutputReference extends cdktf.ComplexO
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -947,9 +947,9 @@ export class StreamOnExternalTableTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table snowflake_stream_on_external_table}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table snowflake_stream_on_external_table}
 */
-export class StreamOnExternalTable extends cdktf.TerraformResource {
+export class StreamOnExternalTable extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -960,14 +960,14 @@ export class StreamOnExternalTable extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StreamOnExternalTable resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StreamOnExternalTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StreamOnExternalTable to import
-  * @param importFromId The id of the existing StreamOnExternalTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StreamOnExternalTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StreamOnExternalTable to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_stream_on_external_table", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_stream_on_external_table", importId: importFromId, provider });
       }
 
   // ===========
@@ -975,7 +975,7 @@ export class StreamOnExternalTable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_external_table snowflake_stream_on_external_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_external_table snowflake_stream_on_external_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -986,7 +986,7 @@ export class StreamOnExternalTable extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_stream_on_external_table',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -1031,11 +1031,11 @@ export class StreamOnExternalTable extends cdktf.TerraformResource {
   }
 
   // copy_grants - computed: false, optional: true, required: false
-  private _copyGrants?: boolean | cdktf.IResolvable; 
+  private _copyGrants?: boolean | cdktn.IResolvable; 
   public get copyGrants() {
     return this.getBooleanAttribute('copy_grants');
   }
-  public set copyGrants(value: boolean | cdktf.IResolvable) {
+  public set copyGrants(value: boolean | cdktn.IResolvable) {
     this._copyGrants = value;
   }
   public resetCopyGrants() {
@@ -1211,14 +1211,14 @@ export class StreamOnExternalTable extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      copy_grants: cdktf.booleanToTerraform(this._copyGrants),
-      database: cdktf.stringToTerraform(this._database),
-      external_table: cdktf.stringToTerraform(this._externalTable),
-      id: cdktf.stringToTerraform(this._id),
-      insert_only: cdktf.stringToTerraform(this._insertOnly),
-      name: cdktf.stringToTerraform(this._name),
-      schema: cdktf.stringToTerraform(this._schema),
+      comment: cdktn.stringToTerraform(this._comment),
+      copy_grants: cdktn.booleanToTerraform(this._copyGrants),
+      database: cdktn.stringToTerraform(this._database),
+      external_table: cdktn.stringToTerraform(this._externalTable),
+      id: cdktn.stringToTerraform(this._id),
+      insert_only: cdktn.stringToTerraform(this._insertOnly),
+      name: cdktn.stringToTerraform(this._name),
+      schema: cdktn.stringToTerraform(this._schema),
       at: streamOnExternalTableAtToTerraform(this._at.internalValue),
       before: streamOnExternalTableBeforeToTerraform(this._before.internalValue),
       timeouts: streamOnExternalTableTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1228,49 +1228,49 @@ export class StreamOnExternalTable extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       copy_grants: {
-        value: cdktf.booleanToHclTerraform(this._copyGrants),
+        value: cdktn.booleanToHclTerraform(this._copyGrants),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_table: {
-        value: cdktf.stringToHclTerraform(this._externalTable),
+        value: cdktn.stringToHclTerraform(this._externalTable),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       insert_only: {
-        value: cdktf.stringToHclTerraform(this._insertOnly),
+        value: cdktn.stringToHclTerraform(this._insertOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SemanticViewConfig extends cdktf.TerraformMetaArguments {
+export interface SemanticViewConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies a comment for the semantic view.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#comment SemanticView#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#comment SemanticView#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the semantic view. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#database SemanticView#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#database SemanticView#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#id SemanticView#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#id SemanticView#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,49 +34,49 @@ export interface SemanticViewConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the identifier for the semantic view; must be unique within the schema. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#name SemanticView#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#name SemanticView#name}
   */
   readonly name: string;
   /**
   * The schema in which to create the semantic view. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#schema SemanticView#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#schema SemanticView#schema}
   */
   readonly schema: string;
   /**
   * dimensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#dimensions SemanticView#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#dimensions SemanticView#dimensions}
   */
-  readonly dimensions?: SemanticViewDimensions[] | cdktf.IResolvable;
+  readonly dimensions?: SemanticViewDimensions[] | cdktn.IResolvable;
   /**
   * facts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#facts SemanticView#facts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#facts SemanticView#facts}
   */
-  readonly facts?: SemanticViewFacts[] | cdktf.IResolvable;
+  readonly facts?: SemanticViewFacts[] | cdktn.IResolvable;
   /**
   * metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#metrics SemanticView#metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#metrics SemanticView#metrics}
   */
-  readonly metrics?: SemanticViewMetrics[] | cdktf.IResolvable;
+  readonly metrics?: SemanticViewMetrics[] | cdktn.IResolvable;
   /**
   * relationships block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#relationships SemanticView#relationships}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#relationships SemanticView#relationships}
   */
-  readonly relationships?: SemanticViewRelationships[] | cdktf.IResolvable;
+  readonly relationships?: SemanticViewRelationships[] | cdktn.IResolvable;
   /**
   * tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#tables SemanticView#tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#tables SemanticView#tables}
   */
-  readonly tables: SemanticViewTables[] | cdktf.IResolvable;
+  readonly tables: SemanticViewTables[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#timeouts SemanticView#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#timeouts SemanticView#timeouts}
   */
   readonly timeouts?: SemanticViewTimeouts;
 }
@@ -84,8 +84,8 @@ export interface SemanticViewShowOutput {
 }
 
 export function semanticViewShowOutputToTerraform(struct?: SemanticViewShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -94,8 +94,8 @@ export function semanticViewShowOutputToTerraform(struct?: SemanticViewShowOutpu
 
 
 export function semanticViewShowOutputToHclTerraform(struct?: SemanticViewShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -103,7 +103,7 @@ export function semanticViewShowOutputToHclTerraform(struct?: SemanticViewShowOu
   return attrs;
 }
 
-export class SemanticViewShowOutputOutputReference extends cdktf.ComplexObject {
+export class SemanticViewShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -112,7 +112,7 @@ export class SemanticViewShowOutputOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -172,14 +172,14 @@ export class SemanticViewShowOutputOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SemanticViewShowOutputList extends cdktf.ComplexList {
+export class SemanticViewShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -194,69 +194,69 @@ export interface SemanticViewDimensions {
   /**
   * Specifies a comment for the dimension.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#comment SemanticView#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#comment SemanticView#comment}
   */
   readonly comment?: string;
   /**
   * Specifies a qualified name for the dimension, including the table name and a unique identifier for the dimension: `<table_alias>.<semantic_expression_name>`. Remember to wrap each part in double quotes like `"\"<table_alias>\".\"<semantic_expression_name>\""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#qualified_expression_name SemanticView#qualified_expression_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#qualified_expression_name SemanticView#qualified_expression_name}
   */
   readonly qualifiedExpressionName: string;
   /**
   * The SQL expression used to compute the dimension.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#sql_expression SemanticView#sql_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#sql_expression SemanticView#sql_expression}
   */
   readonly sqlExpression: string;
   /**
   * List of synonyms for the dimension.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#synonym SemanticView#synonym}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#synonym SemanticView#synonym}
   */
   readonly synonym?: string[];
 }
 
-export function semanticViewDimensionsToTerraform(struct?: SemanticViewDimensions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function semanticViewDimensionsToTerraform(struct?: SemanticViewDimensions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comment: cdktf.stringToTerraform(struct!.comment),
-    qualified_expression_name: cdktf.stringToTerraform(struct!.qualifiedExpressionName),
-    sql_expression: cdktf.stringToTerraform(struct!.sqlExpression),
-    synonym: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.synonym),
+    comment: cdktn.stringToTerraform(struct!.comment),
+    qualified_expression_name: cdktn.stringToTerraform(struct!.qualifiedExpressionName),
+    sql_expression: cdktn.stringToTerraform(struct!.sqlExpression),
+    synonym: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.synonym),
   }
 }
 
 
-export function semanticViewDimensionsToHclTerraform(struct?: SemanticViewDimensions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function semanticViewDimensionsToHclTerraform(struct?: SemanticViewDimensions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comment: {
-      value: cdktf.stringToHclTerraform(struct!.comment),
+      value: cdktn.stringToHclTerraform(struct!.comment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     qualified_expression_name: {
-      value: cdktf.stringToHclTerraform(struct!.qualifiedExpressionName),
+      value: cdktn.stringToHclTerraform(struct!.qualifiedExpressionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sql_expression: {
-      value: cdktf.stringToHclTerraform(struct!.sqlExpression),
+      value: cdktn.stringToHclTerraform(struct!.sqlExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     synonym: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.synonym),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.synonym),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -267,9 +267,9 @@ export function semanticViewDimensionsToHclTerraform(struct?: SemanticViewDimens
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SemanticViewDimensionsOutputReference extends cdktf.ComplexObject {
+export class SemanticViewDimensionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -277,11 +277,11 @@ export class SemanticViewDimensionsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SemanticViewDimensions | cdktf.IResolvable | undefined {
+  public get internalValue(): SemanticViewDimensions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -306,7 +306,7 @@ export class SemanticViewDimensionsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SemanticViewDimensions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SemanticViewDimensions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -315,7 +315,7 @@ export class SemanticViewDimensionsOutputReference extends cdktf.ComplexObject {
       this._sqlExpression = undefined;
       this._synonym = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -374,7 +374,7 @@ export class SemanticViewDimensionsOutputReference extends cdktf.ComplexObject {
   // synonym - computed: false, optional: true, required: false
   private _synonym?: string[]; 
   public get synonym() {
-    return cdktf.Fn.tolist(this.getListAttribute('synonym'));
+    return cdktn.Fn.tolist(this.getListAttribute('synonym'));
   }
   public set synonym(value: string[]) {
     this._synonym = value;
@@ -388,15 +388,15 @@ export class SemanticViewDimensionsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SemanticViewDimensionsList extends cdktf.ComplexList {
-  public internalValue? : SemanticViewDimensions[] | cdktf.IResolvable
+export class SemanticViewDimensionsList extends cdktn.ComplexList {
+  public internalValue? : SemanticViewDimensions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -411,69 +411,69 @@ export interface SemanticViewFacts {
   /**
   * Specifies a comment for the fact.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#comment SemanticView#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#comment SemanticView#comment}
   */
   readonly comment?: string;
   /**
   * Specifies a qualified name for the fact, including the table name and a unique identifier for the fact: `<table_alias>.<semantic_expression_name>`. Remember to wrap each part in double quotes like `"\"<table_alias>\".\"<semantic_expression_name>\""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#qualified_expression_name SemanticView#qualified_expression_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#qualified_expression_name SemanticView#qualified_expression_name}
   */
   readonly qualifiedExpressionName: string;
   /**
   * The SQL expression used to compute the fact.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#sql_expression SemanticView#sql_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#sql_expression SemanticView#sql_expression}
   */
   readonly sqlExpression: string;
   /**
   * List of synonyms for the fact.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#synonym SemanticView#synonym}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#synonym SemanticView#synonym}
   */
   readonly synonym?: string[];
 }
 
-export function semanticViewFactsToTerraform(struct?: SemanticViewFacts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function semanticViewFactsToTerraform(struct?: SemanticViewFacts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comment: cdktf.stringToTerraform(struct!.comment),
-    qualified_expression_name: cdktf.stringToTerraform(struct!.qualifiedExpressionName),
-    sql_expression: cdktf.stringToTerraform(struct!.sqlExpression),
-    synonym: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.synonym),
+    comment: cdktn.stringToTerraform(struct!.comment),
+    qualified_expression_name: cdktn.stringToTerraform(struct!.qualifiedExpressionName),
+    sql_expression: cdktn.stringToTerraform(struct!.sqlExpression),
+    synonym: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.synonym),
   }
 }
 
 
-export function semanticViewFactsToHclTerraform(struct?: SemanticViewFacts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function semanticViewFactsToHclTerraform(struct?: SemanticViewFacts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comment: {
-      value: cdktf.stringToHclTerraform(struct!.comment),
+      value: cdktn.stringToHclTerraform(struct!.comment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     qualified_expression_name: {
-      value: cdktf.stringToHclTerraform(struct!.qualifiedExpressionName),
+      value: cdktn.stringToHclTerraform(struct!.qualifiedExpressionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sql_expression: {
-      value: cdktf.stringToHclTerraform(struct!.sqlExpression),
+      value: cdktn.stringToHclTerraform(struct!.sqlExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     synonym: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.synonym),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.synonym),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -484,9 +484,9 @@ export function semanticViewFactsToHclTerraform(struct?: SemanticViewFacts | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SemanticViewFactsOutputReference extends cdktf.ComplexObject {
+export class SemanticViewFactsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -494,11 +494,11 @@ export class SemanticViewFactsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SemanticViewFacts | cdktf.IResolvable | undefined {
+  public get internalValue(): SemanticViewFacts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -523,7 +523,7 @@ export class SemanticViewFactsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SemanticViewFacts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SemanticViewFacts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -532,7 +532,7 @@ export class SemanticViewFactsOutputReference extends cdktf.ComplexObject {
       this._sqlExpression = undefined;
       this._synonym = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -591,7 +591,7 @@ export class SemanticViewFactsOutputReference extends cdktf.ComplexObject {
   // synonym - computed: false, optional: true, required: false
   private _synonym?: string[]; 
   public get synonym() {
-    return cdktf.Fn.tolist(this.getListAttribute('synonym'));
+    return cdktn.Fn.tolist(this.getListAttribute('synonym'));
   }
   public set synonym(value: string[]) {
     this._synonym = value;
@@ -605,15 +605,15 @@ export class SemanticViewFactsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SemanticViewFactsList extends cdktf.ComplexList {
-  public internalValue? : SemanticViewFacts[] | cdktf.IResolvable
+export class SemanticViewFactsList extends cdktn.ComplexList {
+  public internalValue? : SemanticViewFacts[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -628,69 +628,69 @@ export interface SemanticViewMetricsSemanticExpression {
   /**
   * Specifies a comment for the semantic expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#comment SemanticView#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#comment SemanticView#comment}
   */
   readonly comment?: string;
   /**
   * Specifies a qualified name for the metric: `<table_alias>.<semantic_expression_name>`. Remember to wrap each part in double quotes like `"\"<table_alias>\".\"<semantic_expression_name>\""`. For the [derived metric](https://docs.snowflake.com/en/user-guide/views-semantic/sql#label-semantic-views-create-derived-metrics) omit the `<table_alias>.` part but still wrap in double quotes, e.g. `"\"<semantic_expression_name>\""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#qualified_expression_name SemanticView#qualified_expression_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#qualified_expression_name SemanticView#qualified_expression_name}
   */
   readonly qualifiedExpressionName: string;
   /**
   * The SQL expression used to compute the metric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#sql_expression SemanticView#sql_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#sql_expression SemanticView#sql_expression}
   */
   readonly sqlExpression: string;
   /**
   * List of synonyms for this semantic expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#synonym SemanticView#synonym}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#synonym SemanticView#synonym}
   */
   readonly synonym?: string[];
 }
 
 export function semanticViewMetricsSemanticExpressionToTerraform(struct?: SemanticViewMetricsSemanticExpressionOutputReference | SemanticViewMetricsSemanticExpression): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comment: cdktf.stringToTerraform(struct!.comment),
-    qualified_expression_name: cdktf.stringToTerraform(struct!.qualifiedExpressionName),
-    sql_expression: cdktf.stringToTerraform(struct!.sqlExpression),
-    synonym: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.synonym),
+    comment: cdktn.stringToTerraform(struct!.comment),
+    qualified_expression_name: cdktn.stringToTerraform(struct!.qualifiedExpressionName),
+    sql_expression: cdktn.stringToTerraform(struct!.sqlExpression),
+    synonym: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.synonym),
   }
 }
 
 
 export function semanticViewMetricsSemanticExpressionToHclTerraform(struct?: SemanticViewMetricsSemanticExpressionOutputReference | SemanticViewMetricsSemanticExpression): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comment: {
-      value: cdktf.stringToHclTerraform(struct!.comment),
+      value: cdktn.stringToHclTerraform(struct!.comment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     qualified_expression_name: {
-      value: cdktf.stringToHclTerraform(struct!.qualifiedExpressionName),
+      value: cdktn.stringToHclTerraform(struct!.qualifiedExpressionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sql_expression: {
-      value: cdktf.stringToHclTerraform(struct!.sqlExpression),
+      value: cdktn.stringToHclTerraform(struct!.sqlExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     synonym: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.synonym),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.synonym),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -701,14 +701,14 @@ export function semanticViewMetricsSemanticExpressionToHclTerraform(struct?: Sem
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SemanticViewMetricsSemanticExpressionOutputReference extends cdktf.ComplexObject {
+export class SemanticViewMetricsSemanticExpressionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -796,7 +796,7 @@ export class SemanticViewMetricsSemanticExpressionOutputReference extends cdktf.
   // synonym - computed: false, optional: true, required: false
   private _synonym?: string[]; 
   public get synonym() {
-    return cdktf.Fn.tolist(this.getListAttribute('synonym'));
+    return cdktn.Fn.tolist(this.getListAttribute('synonym'));
   }
   public set synonym(value: string[]) {
     this._synonym = value;
@@ -813,56 +813,56 @@ export interface SemanticViewMetricsWindowFunctionOverClause {
   /**
   * Specifies an order by clause. It must be a complete SQL expression, including any `[ ASC | DESC ] [ NULLS { FIRST | LAST } ]` modifiers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#order_by SemanticView#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#order_by SemanticView#order_by}
   */
   readonly orderBy?: string;
   /**
   * Specifies a partition by clause.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#partition_by SemanticView#partition_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#partition_by SemanticView#partition_by}
   */
   readonly partitionBy?: string;
   /**
   * Specifies a window frame clause.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#window_frame_clause SemanticView#window_frame_clause}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#window_frame_clause SemanticView#window_frame_clause}
   */
   readonly windowFrameClause?: string;
 }
 
 export function semanticViewMetricsWindowFunctionOverClauseToTerraform(struct?: SemanticViewMetricsWindowFunctionOverClauseOutputReference | SemanticViewMetricsWindowFunctionOverClause): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    order_by: cdktf.stringToTerraform(struct!.orderBy),
-    partition_by: cdktf.stringToTerraform(struct!.partitionBy),
-    window_frame_clause: cdktf.stringToTerraform(struct!.windowFrameClause),
+    order_by: cdktn.stringToTerraform(struct!.orderBy),
+    partition_by: cdktn.stringToTerraform(struct!.partitionBy),
+    window_frame_clause: cdktn.stringToTerraform(struct!.windowFrameClause),
   }
 }
 
 
 export function semanticViewMetricsWindowFunctionOverClauseToHclTerraform(struct?: SemanticViewMetricsWindowFunctionOverClauseOutputReference | SemanticViewMetricsWindowFunctionOverClause): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     order_by: {
-      value: cdktf.stringToHclTerraform(struct!.orderBy),
+      value: cdktn.stringToHclTerraform(struct!.orderBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     partition_by: {
-      value: cdktf.stringToHclTerraform(struct!.partitionBy),
+      value: cdktn.stringToHclTerraform(struct!.partitionBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     window_frame_clause: {
-      value: cdktf.stringToHclTerraform(struct!.windowFrameClause),
+      value: cdktn.stringToHclTerraform(struct!.windowFrameClause),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -873,14 +873,14 @@ export function semanticViewMetricsWindowFunctionOverClauseToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SemanticViewMetricsWindowFunctionOverClauseOutputReference extends cdktf.ComplexObject {
+export class SemanticViewMetricsWindowFunctionOverClauseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -969,50 +969,50 @@ export interface SemanticViewMetricsWindowFunction {
   /**
   * Specifies a qualified name for the metric: `<table_alias>.<semantic_expression_name>`. Remember to wrap each part in double quotes like `"\"<table_alias>\".\"<semantic_expression_name>\""`. For the [derived metric](https://docs.snowflake.com/en/user-guide/views-semantic/sql#label-semantic-views-create-derived-metrics) omit the `<table_alias>.` part but still wrap in double quotes, e.g. `"\"<semantic_expression_name>\""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#qualified_expression_name SemanticView#qualified_expression_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#qualified_expression_name SemanticView#qualified_expression_name}
   */
   readonly qualifiedExpressionName: string;
   /**
   * The SQL expression used to compute the metric following the `<window_function>(<metric>)` format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#sql_expression SemanticView#sql_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#sql_expression SemanticView#sql_expression}
   */
   readonly sqlExpression: string;
   /**
   * over_clause block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#over_clause SemanticView#over_clause}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#over_clause SemanticView#over_clause}
   */
   readonly overClause: SemanticViewMetricsWindowFunctionOverClause;
 }
 
 export function semanticViewMetricsWindowFunctionToTerraform(struct?: SemanticViewMetricsWindowFunctionOutputReference | SemanticViewMetricsWindowFunction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    qualified_expression_name: cdktf.stringToTerraform(struct!.qualifiedExpressionName),
-    sql_expression: cdktf.stringToTerraform(struct!.sqlExpression),
+    qualified_expression_name: cdktn.stringToTerraform(struct!.qualifiedExpressionName),
+    sql_expression: cdktn.stringToTerraform(struct!.sqlExpression),
     over_clause: semanticViewMetricsWindowFunctionOverClauseToTerraform(struct!.overClause),
   }
 }
 
 
 export function semanticViewMetricsWindowFunctionToHclTerraform(struct?: SemanticViewMetricsWindowFunctionOutputReference | SemanticViewMetricsWindowFunction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     qualified_expression_name: {
-      value: cdktf.stringToHclTerraform(struct!.qualifiedExpressionName),
+      value: cdktn.stringToHclTerraform(struct!.qualifiedExpressionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sql_expression: {
-      value: cdktf.stringToHclTerraform(struct!.sqlExpression),
+      value: cdktn.stringToHclTerraform(struct!.sqlExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1029,14 +1029,14 @@ export function semanticViewMetricsWindowFunctionToHclTerraform(struct?: Semanti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SemanticViewMetricsWindowFunctionOutputReference extends cdktf.ComplexObject {
+export class SemanticViewMetricsWindowFunctionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1116,20 +1116,20 @@ export interface SemanticViewMetrics {
   /**
   * semantic_expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#semantic_expression SemanticView#semantic_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#semantic_expression SemanticView#semantic_expression}
   */
   readonly semanticExpression?: SemanticViewMetricsSemanticExpression;
   /**
   * window_function block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#window_function SemanticView#window_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#window_function SemanticView#window_function}
   */
   readonly windowFunction?: SemanticViewMetricsWindowFunction;
 }
 
-export function semanticViewMetricsToTerraform(struct?: SemanticViewMetrics | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function semanticViewMetricsToTerraform(struct?: SemanticViewMetrics | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1139,9 +1139,9 @@ export function semanticViewMetricsToTerraform(struct?: SemanticViewMetrics | cd
 }
 
 
-export function semanticViewMetricsToHclTerraform(struct?: SemanticViewMetrics | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function semanticViewMetricsToHclTerraform(struct?: SemanticViewMetrics | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1163,9 +1163,9 @@ export function semanticViewMetricsToHclTerraform(struct?: SemanticViewMetrics |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SemanticViewMetricsOutputReference extends cdktf.ComplexObject {
+export class SemanticViewMetricsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1173,11 +1173,11 @@ export class SemanticViewMetricsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SemanticViewMetrics | cdktf.IResolvable | undefined {
+  public get internalValue(): SemanticViewMetrics | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1194,14 +1194,14 @@ export class SemanticViewMetricsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SemanticViewMetrics | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SemanticViewMetrics | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._semanticExpression.internalValue = undefined;
       this._windowFunction.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1246,15 +1246,15 @@ export class SemanticViewMetricsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SemanticViewMetricsList extends cdktf.ComplexList {
-  public internalValue? : SemanticViewMetrics[] | cdktf.IResolvable
+export class SemanticViewMetricsList extends cdktn.ComplexList {
+  public internalValue? : SemanticViewMetrics[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1269,43 +1269,43 @@ export interface SemanticViewRelationshipsReferencedTableNameOrAlias {
   /**
   * The alias used for the logical table, cannot be used in combination with the `table_name`. This field is case-sensitive - the provider uses double quotes to wrap it when sending the SQL to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#table_alias SemanticView#table_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#table_alias SemanticView#table_alias}
   */
   readonly tableAlias?: string;
   /**
   * The name of the logical table, cannot be used in combination with the `table_alias`. This field is case-sensitive - the provider uses double quotes to wrap it when sending the SQL to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#table_name SemanticView#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#table_name SemanticView#table_name}
   */
   readonly tableName?: string;
 }
 
 export function semanticViewRelationshipsReferencedTableNameOrAliasToTerraform(struct?: SemanticViewRelationshipsReferencedTableNameOrAliasOutputReference | SemanticViewRelationshipsReferencedTableNameOrAlias): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    table_alias: cdktf.stringToTerraform(struct!.tableAlias),
-    table_name: cdktf.stringToTerraform(struct!.tableName),
+    table_alias: cdktn.stringToTerraform(struct!.tableAlias),
+    table_name: cdktn.stringToTerraform(struct!.tableName),
   }
 }
 
 
 export function semanticViewRelationshipsReferencedTableNameOrAliasToHclTerraform(struct?: SemanticViewRelationshipsReferencedTableNameOrAliasOutputReference | SemanticViewRelationshipsReferencedTableNameOrAlias): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     table_alias: {
-      value: cdktf.stringToHclTerraform(struct!.tableAlias),
+      value: cdktn.stringToHclTerraform(struct!.tableAlias),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_name: {
-      value: cdktf.stringToHclTerraform(struct!.tableName),
+      value: cdktn.stringToHclTerraform(struct!.tableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1316,14 +1316,14 @@ export function semanticViewRelationshipsReferencedTableNameOrAliasToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SemanticViewRelationshipsReferencedTableNameOrAliasOutputReference extends cdktf.ComplexObject {
+export class SemanticViewRelationshipsReferencedTableNameOrAliasOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1390,43 +1390,43 @@ export interface SemanticViewRelationshipsTableNameOrAlias {
   /**
   * The alias used for the logical table, cannot be used in combination with the `table_name`. This field is case-sensitive - the provider uses double quotes to wrap it when sending the SQL to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#table_alias SemanticView#table_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#table_alias SemanticView#table_alias}
   */
   readonly tableAlias?: string;
   /**
   * The name of the logical table, cannot be used in combination with the `table_alias`. This field is case-sensitive - the provider uses double quotes to wrap it when sending the SQL to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#table_name SemanticView#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#table_name SemanticView#table_name}
   */
   readonly tableName?: string;
 }
 
 export function semanticViewRelationshipsTableNameOrAliasToTerraform(struct?: SemanticViewRelationshipsTableNameOrAliasOutputReference | SemanticViewRelationshipsTableNameOrAlias): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    table_alias: cdktf.stringToTerraform(struct!.tableAlias),
-    table_name: cdktf.stringToTerraform(struct!.tableName),
+    table_alias: cdktn.stringToTerraform(struct!.tableAlias),
+    table_name: cdktn.stringToTerraform(struct!.tableName),
   }
 }
 
 
 export function semanticViewRelationshipsTableNameOrAliasToHclTerraform(struct?: SemanticViewRelationshipsTableNameOrAliasOutputReference | SemanticViewRelationshipsTableNameOrAlias): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     table_alias: {
-      value: cdktf.stringToHclTerraform(struct!.tableAlias),
+      value: cdktn.stringToHclTerraform(struct!.tableAlias),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_name: {
-      value: cdktf.stringToHclTerraform(struct!.tableName),
+      value: cdktn.stringToHclTerraform(struct!.tableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1437,14 +1437,14 @@ export function semanticViewRelationshipsTableNameOrAliasToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SemanticViewRelationshipsTableNameOrAliasOutputReference extends cdktf.ComplexObject {
+export class SemanticViewRelationshipsTableNameOrAliasOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1511,70 +1511,70 @@ export interface SemanticViewRelationships {
   /**
   * Specifies one or more columns in the second logical table that are referred to by the first logical table. Column names in this list are case-sensitive - the provider uses double quotes to wrap each of them when sending the SQL to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#referenced_relationship_columns SemanticView#referenced_relationship_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#referenced_relationship_columns SemanticView#referenced_relationship_columns}
   */
   readonly referencedRelationshipColumns?: string[];
   /**
   * Specifies one or more columns in the first logical table that refers to columns in another logical table. Column names in this list are case-sensitive - the provider uses double quotes to wrap each of them when sending the SQL to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#relationship_columns SemanticView#relationship_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#relationship_columns SemanticView#relationship_columns}
   */
   readonly relationshipColumns: string[];
   /**
   * Specifies an optional identifier for the relationship. This field is case-sensitive - the provider uses double quotes to wrap it when sending the SQL to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#relationship_identifier SemanticView#relationship_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#relationship_identifier SemanticView#relationship_identifier}
   */
   readonly relationshipIdentifier?: string;
   /**
   * referenced_table_name_or_alias block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#referenced_table_name_or_alias SemanticView#referenced_table_name_or_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#referenced_table_name_or_alias SemanticView#referenced_table_name_or_alias}
   */
   readonly referencedTableNameOrAlias: SemanticViewRelationshipsReferencedTableNameOrAlias;
   /**
   * table_name_or_alias block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#table_name_or_alias SemanticView#table_name_or_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#table_name_or_alias SemanticView#table_name_or_alias}
   */
   readonly tableNameOrAlias: SemanticViewRelationshipsTableNameOrAlias;
 }
 
-export function semanticViewRelationshipsToTerraform(struct?: SemanticViewRelationships | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function semanticViewRelationshipsToTerraform(struct?: SemanticViewRelationships | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    referenced_relationship_columns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.referencedRelationshipColumns),
-    relationship_columns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.relationshipColumns),
-    relationship_identifier: cdktf.stringToTerraform(struct!.relationshipIdentifier),
+    referenced_relationship_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.referencedRelationshipColumns),
+    relationship_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.relationshipColumns),
+    relationship_identifier: cdktn.stringToTerraform(struct!.relationshipIdentifier),
     referenced_table_name_or_alias: semanticViewRelationshipsReferencedTableNameOrAliasToTerraform(struct!.referencedTableNameOrAlias),
     table_name_or_alias: semanticViewRelationshipsTableNameOrAliasToTerraform(struct!.tableNameOrAlias),
   }
 }
 
 
-export function semanticViewRelationshipsToHclTerraform(struct?: SemanticViewRelationships | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function semanticViewRelationshipsToHclTerraform(struct?: SemanticViewRelationships | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     referenced_relationship_columns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.referencedRelationshipColumns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.referencedRelationshipColumns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     relationship_columns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.relationshipColumns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.relationshipColumns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     relationship_identifier: {
-      value: cdktf.stringToHclTerraform(struct!.relationshipIdentifier),
+      value: cdktn.stringToHclTerraform(struct!.relationshipIdentifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1597,9 +1597,9 @@ export function semanticViewRelationshipsToHclTerraform(struct?: SemanticViewRel
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SemanticViewRelationshipsOutputReference extends cdktf.ComplexObject {
+export class SemanticViewRelationshipsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1607,11 +1607,11 @@ export class SemanticViewRelationshipsOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SemanticViewRelationships | cdktf.IResolvable | undefined {
+  public get internalValue(): SemanticViewRelationships | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1640,7 +1640,7 @@ export class SemanticViewRelationshipsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SemanticViewRelationships | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SemanticViewRelationships | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1650,7 +1650,7 @@ export class SemanticViewRelationshipsOutputReference extends cdktf.ComplexObjec
       this._referencedTableNameOrAlias.internalValue = undefined;
       this._tableNameOrAlias.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1737,15 +1737,15 @@ export class SemanticViewRelationshipsOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class SemanticViewRelationshipsList extends cdktf.ComplexList {
-  public internalValue? : SemanticViewRelationships[] | cdktf.IResolvable
+export class SemanticViewRelationshipsList extends cdktn.ComplexList {
+  public internalValue? : SemanticViewRelationships[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1760,30 +1760,30 @@ export interface SemanticViewTablesUnique {
   /**
   * Unique key combinations in the logical table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#values SemanticView#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#values SemanticView#values}
   */
   readonly values: string[];
 }
 
-export function semanticViewTablesUniqueToTerraform(struct?: SemanticViewTablesUnique | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function semanticViewTablesUniqueToTerraform(struct?: SemanticViewTablesUnique | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function semanticViewTablesUniqueToHclTerraform(struct?: SemanticViewTablesUnique | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function semanticViewTablesUniqueToHclTerraform(struct?: SemanticViewTablesUnique | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1794,9 +1794,9 @@ export function semanticViewTablesUniqueToHclTerraform(struct?: SemanticViewTabl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SemanticViewTablesUniqueOutputReference extends cdktf.ComplexObject {
+export class SemanticViewTablesUniqueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1804,11 +1804,11 @@ export class SemanticViewTablesUniqueOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SemanticViewTablesUnique | cdktf.IResolvable | undefined {
+  public get internalValue(): SemanticViewTablesUnique | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1821,13 +1821,13 @@ export class SemanticViewTablesUniqueOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SemanticViewTablesUnique | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SemanticViewTablesUnique | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1852,15 +1852,15 @@ export class SemanticViewTablesUniqueOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class SemanticViewTablesUniqueList extends cdktf.ComplexList {
-  public internalValue? : SemanticViewTablesUnique[] | cdktf.IResolvable
+export class SemanticViewTablesUniqueList extends cdktn.ComplexList {
+  public internalValue? : SemanticViewTablesUnique[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1875,95 +1875,95 @@ export interface SemanticViewTables {
   /**
   * Specifies a comment for the logical table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#comment SemanticView#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#comment SemanticView#comment}
   */
   readonly comment?: string;
   /**
   * Definitions of primary keys in the logical table. This field is case-sensitive - the provider uses double quotes to wrap it when sending the SQL to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#primary_key SemanticView#primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#primary_key SemanticView#primary_key}
   */
   readonly primaryKey?: string[];
   /**
   * List of synonyms for the logical table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#synonym SemanticView#synonym}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#synonym SemanticView#synonym}
   */
   readonly synonym?: string[];
   /**
   * Specifies an alias for a logical table in the semantic view. This field is case-sensitive - the provider uses double quotes to wrap it when sending the SQL to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#table_alias SemanticView#table_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#table_alias SemanticView#table_alias}
   */
   readonly tableAlias: string;
   /**
   * Specifies an identifier for the logical table. Example: `"\"<db_name>\".\"<schema_name>\".\"<table_name>\""`. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#table_name SemanticView#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#table_name SemanticView#table_name}
   */
   readonly tableName: string;
   /**
   * unique block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#unique SemanticView#unique}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#unique SemanticView#unique}
   */
-  readonly unique?: SemanticViewTablesUnique[] | cdktf.IResolvable;
+  readonly unique?: SemanticViewTablesUnique[] | cdktn.IResolvable;
 }
 
-export function semanticViewTablesToTerraform(struct?: SemanticViewTables | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function semanticViewTablesToTerraform(struct?: SemanticViewTables | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comment: cdktf.stringToTerraform(struct!.comment),
-    primary_key: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.primaryKey),
-    synonym: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.synonym),
-    table_alias: cdktf.stringToTerraform(struct!.tableAlias),
-    table_name: cdktf.stringToTerraform(struct!.tableName),
-    unique: cdktf.listMapper(semanticViewTablesUniqueToTerraform, true)(struct!.unique),
+    comment: cdktn.stringToTerraform(struct!.comment),
+    primary_key: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.primaryKey),
+    synonym: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.synonym),
+    table_alias: cdktn.stringToTerraform(struct!.tableAlias),
+    table_name: cdktn.stringToTerraform(struct!.tableName),
+    unique: cdktn.listMapper(semanticViewTablesUniqueToTerraform, true)(struct!.unique),
   }
 }
 
 
-export function semanticViewTablesToHclTerraform(struct?: SemanticViewTables | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function semanticViewTablesToHclTerraform(struct?: SemanticViewTables | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comment: {
-      value: cdktf.stringToHclTerraform(struct!.comment),
+      value: cdktn.stringToHclTerraform(struct!.comment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_key: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.primaryKey),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.primaryKey),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     synonym: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.synonym),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.synonym),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     table_alias: {
-      value: cdktf.stringToHclTerraform(struct!.tableAlias),
+      value: cdktn.stringToHclTerraform(struct!.tableAlias),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_name: {
-      value: cdktf.stringToHclTerraform(struct!.tableName),
+      value: cdktn.stringToHclTerraform(struct!.tableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unique: {
-      value: cdktf.listMapperHcl(semanticViewTablesUniqueToHclTerraform, true)(struct!.unique),
+      value: cdktn.listMapperHcl(semanticViewTablesUniqueToHclTerraform, true)(struct!.unique),
       isBlock: true,
       type: "list",
       storageClassType: "SemanticViewTablesUniqueList",
@@ -1974,9 +1974,9 @@ export function semanticViewTablesToHclTerraform(struct?: SemanticViewTables | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SemanticViewTablesOutputReference extends cdktf.ComplexObject {
+export class SemanticViewTablesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1984,11 +1984,11 @@ export class SemanticViewTablesOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SemanticViewTables | cdktf.IResolvable | undefined {
+  public get internalValue(): SemanticViewTables | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2021,7 +2021,7 @@ export class SemanticViewTablesOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SemanticViewTables | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SemanticViewTables | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2032,7 +2032,7 @@ export class SemanticViewTablesOutputReference extends cdktf.ComplexObject {
       this._tableName = undefined;
       this._unique.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2083,7 +2083,7 @@ export class SemanticViewTablesOutputReference extends cdktf.ComplexObject {
   // synonym - computed: false, optional: true, required: false
   private _synonym?: string[]; 
   public get synonym() {
-    return cdktf.Fn.tolist(this.getListAttribute('synonym'));
+    return cdktn.Fn.tolist(this.getListAttribute('synonym'));
   }
   public set synonym(value: string[]) {
     this._synonym = value;
@@ -2127,7 +2127,7 @@ export class SemanticViewTablesOutputReference extends cdktf.ComplexObject {
   public get unique() {
     return this._unique;
   }
-  public putUnique(value: SemanticViewTablesUnique[] | cdktf.IResolvable) {
+  public putUnique(value: SemanticViewTablesUnique[] | cdktn.IResolvable) {
     this._unique.internalValue = value;
   }
   public resetUnique() {
@@ -2139,15 +2139,15 @@ export class SemanticViewTablesOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SemanticViewTablesList extends cdktf.ComplexList {
-  public internalValue? : SemanticViewTables[] | cdktf.IResolvable
+export class SemanticViewTablesList extends cdktn.ComplexList {
+  public internalValue? : SemanticViewTables[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2160,63 +2160,63 @@ export class SemanticViewTablesList extends cdktf.ComplexList {
 }
 export interface SemanticViewTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#create SemanticView#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#create SemanticView#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#delete SemanticView#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#delete SemanticView#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#read SemanticView#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#read SemanticView#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#update SemanticView#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#update SemanticView#update}
   */
   readonly update?: string;
 }
 
-export function semanticViewTimeoutsToTerraform(struct?: SemanticViewTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function semanticViewTimeoutsToTerraform(struct?: SemanticViewTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function semanticViewTimeoutsToHclTerraform(struct?: SemanticViewTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function semanticViewTimeoutsToHclTerraform(struct?: SemanticViewTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2227,19 +2227,19 @@ export function semanticViewTimeoutsToHclTerraform(struct?: SemanticViewTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SemanticViewTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SemanticViewTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SemanticViewTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SemanticViewTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2264,7 +2264,7 @@ export class SemanticViewTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SemanticViewTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SemanticViewTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2273,7 +2273,7 @@ export class SemanticViewTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2353,9 +2353,9 @@ export class SemanticViewTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view snowflake_semantic_view}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view snowflake_semantic_view}
 */
-export class SemanticView extends cdktf.TerraformResource {
+export class SemanticView extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2366,14 +2366,14 @@ export class SemanticView extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SemanticView resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SemanticView resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SemanticView to import
-  * @param importFromId The id of the existing SemanticView that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SemanticView that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SemanticView to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_semantic_view", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_semantic_view", importId: importFromId, provider });
       }
 
   // ===========
@@ -2381,7 +2381,7 @@ export class SemanticView extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/semantic_view snowflake_semantic_view} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/semantic_view snowflake_semantic_view} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2392,7 +2392,7 @@ export class SemanticView extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_semantic_view',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -2507,7 +2507,7 @@ export class SemanticView extends cdktf.TerraformResource {
   public get dimensions() {
     return this._dimensions;
   }
-  public putDimensions(value: SemanticViewDimensions[] | cdktf.IResolvable) {
+  public putDimensions(value: SemanticViewDimensions[] | cdktn.IResolvable) {
     this._dimensions.internalValue = value;
   }
   public resetDimensions() {
@@ -2523,7 +2523,7 @@ export class SemanticView extends cdktf.TerraformResource {
   public get facts() {
     return this._facts;
   }
-  public putFacts(value: SemanticViewFacts[] | cdktf.IResolvable) {
+  public putFacts(value: SemanticViewFacts[] | cdktn.IResolvable) {
     this._facts.internalValue = value;
   }
   public resetFacts() {
@@ -2539,7 +2539,7 @@ export class SemanticView extends cdktf.TerraformResource {
   public get metrics() {
     return this._metrics;
   }
-  public putMetrics(value: SemanticViewMetrics[] | cdktf.IResolvable) {
+  public putMetrics(value: SemanticViewMetrics[] | cdktn.IResolvable) {
     this._metrics.internalValue = value;
   }
   public resetMetrics() {
@@ -2555,7 +2555,7 @@ export class SemanticView extends cdktf.TerraformResource {
   public get relationships() {
     return this._relationships;
   }
-  public putRelationships(value: SemanticViewRelationships[] | cdktf.IResolvable) {
+  public putRelationships(value: SemanticViewRelationships[] | cdktn.IResolvable) {
     this._relationships.internalValue = value;
   }
   public resetRelationships() {
@@ -2571,7 +2571,7 @@ export class SemanticView extends cdktf.TerraformResource {
   public get tables() {
     return this._tables;
   }
-  public putTables(value: SemanticViewTables[] | cdktf.IResolvable) {
+  public putTables(value: SemanticViewTables[] | cdktn.IResolvable) {
     this._tables.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2601,16 +2601,16 @@ export class SemanticView extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      database: cdktf.stringToTerraform(this._database),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      schema: cdktf.stringToTerraform(this._schema),
-      dimensions: cdktf.listMapper(semanticViewDimensionsToTerraform, true)(this._dimensions.internalValue),
-      facts: cdktf.listMapper(semanticViewFactsToTerraform, true)(this._facts.internalValue),
-      metrics: cdktf.listMapper(semanticViewMetricsToTerraform, true)(this._metrics.internalValue),
-      relationships: cdktf.listMapper(semanticViewRelationshipsToTerraform, true)(this._relationships.internalValue),
-      tables: cdktf.listMapper(semanticViewTablesToTerraform, true)(this._tables.internalValue),
+      comment: cdktn.stringToTerraform(this._comment),
+      database: cdktn.stringToTerraform(this._database),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      schema: cdktn.stringToTerraform(this._schema),
+      dimensions: cdktn.listMapper(semanticViewDimensionsToTerraform, true)(this._dimensions.internalValue),
+      facts: cdktn.listMapper(semanticViewFactsToTerraform, true)(this._facts.internalValue),
+      metrics: cdktn.listMapper(semanticViewMetricsToTerraform, true)(this._metrics.internalValue),
+      relationships: cdktn.listMapper(semanticViewRelationshipsToTerraform, true)(this._relationships.internalValue),
+      tables: cdktn.listMapper(semanticViewTablesToTerraform, true)(this._tables.internalValue),
       timeouts: semanticViewTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -2618,61 +2618,61 @@ export class SemanticView extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dimensions: {
-        value: cdktf.listMapperHcl(semanticViewDimensionsToHclTerraform, true)(this._dimensions.internalValue),
+        value: cdktn.listMapperHcl(semanticViewDimensionsToHclTerraform, true)(this._dimensions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SemanticViewDimensionsList",
       },
       facts: {
-        value: cdktf.listMapperHcl(semanticViewFactsToHclTerraform, true)(this._facts.internalValue),
+        value: cdktn.listMapperHcl(semanticViewFactsToHclTerraform, true)(this._facts.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SemanticViewFactsList",
       },
       metrics: {
-        value: cdktf.listMapperHcl(semanticViewMetricsToHclTerraform, true)(this._metrics.internalValue),
+        value: cdktn.listMapperHcl(semanticViewMetricsToHclTerraform, true)(this._metrics.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SemanticViewMetricsList",
       },
       relationships: {
-        value: cdktf.listMapperHcl(semanticViewRelationshipsToHclTerraform, true)(this._relationships.internalValue),
+        value: cdktn.listMapperHcl(semanticViewRelationshipsToHclTerraform, true)(this._relationships.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SemanticViewRelationshipsList",
       },
       tables: {
-        value: cdktf.listMapperHcl(semanticViewTablesToHclTerraform, true)(this._tables.internalValue),
+        value: cdktn.listMapperHcl(semanticViewTablesToHclTerraform, true)(this._tables.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SemanticViewTablesList",

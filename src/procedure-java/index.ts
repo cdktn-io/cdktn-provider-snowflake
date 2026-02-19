@@ -1,55 +1,55 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ProcedureJavaConfig extends cdktf.TerraformMetaArguments {
+export interface ProcedureJavaConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Default: `user-defined procedure`) Specifies a comment for the procedure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#comment ProcedureJava#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#comment ProcedureJava#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the procedure. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#database ProcedureJava#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#database ProcedureJava#database}
   */
   readonly database: string;
   /**
   * Enable stdout/stderr fast path logging for anonyous stored procs. This is a public parameter (similar to LOG_LEVEL). For more information, check [ENABLE_CONSOLE_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-console-output).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#enable_console_output ProcedureJava#enable_console_output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#enable_console_output ProcedureJava#enable_console_output}
   */
-  readonly enableConsoleOutput?: boolean | cdktf.IResolvable;
+  readonly enableConsoleOutput?: boolean | cdktn.IResolvable;
   /**
   * Specifies whether the stored procedure executes with the privileges of the owner (an “owner’s rights” stored procedure) or with the privileges of the caller (a “caller’s rights” stored procedure). If you execute the statement CREATE PROCEDURE … EXECUTE AS CALLER, then in the future the procedure will execute as a caller’s rights procedure. If you execute CREATE PROCEDURE … EXECUTE AS OWNER, then the procedure will execute as an owner’s rights procedure. For more information, see [Understanding caller’s rights and owner’s rights stored procedures](https://docs.snowflake.com/en/developer-guide/stored-procedure/stored-procedures-rights). Valid values are (case-insensitive): `CALLER` | `OWNER`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#execute_as ProcedureJava#execute_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#execute_as ProcedureJava#execute_as}
   */
   readonly executeAs?: string;
   /**
   * The names of [external access integrations](https://docs.snowflake.com/en/sql-reference/sql/create-external-access-integration) needed in order for this procedure’s handler code to access external networks. An external access integration specifies [network rules](https://docs.snowflake.com/en/sql-reference/sql/create-network-rule) and [secrets](https://docs.snowflake.com/en/sql-reference/sql/create-secret) that specify external locations and credentials (if any) allowed for use by handler code when making requests of an external network, such as an external REST API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#external_access_integrations ProcedureJava#external_access_integrations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#external_access_integrations ProcedureJava#external_access_integrations}
   */
   readonly externalAccessIntegrations?: string[];
   /**
   * Use the fully qualified name of the method or function for the stored procedure. This is typically in the following form `com.my_company.my_package.MyClass.myMethod` where `com.my_company.my_package` corresponds to the package containing the object or class: `package com.my_company.my_package;`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#handler ProcedureJava#handler}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#handler ProcedureJava#handler}
   */
   readonly handler: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#id ProcedureJava#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#id ProcedureJava#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,103 +58,103 @@ export interface ProcedureJavaConfig extends cdktf.TerraformMetaArguments {
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the procedure is secure. For more information about secure procedures, see [Protecting Sensitive Information with Secure UDFs and Stored Procedures](https://docs.snowflake.com/en/developer-guide/secure-udf-procedure). Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#is_secure ProcedureJava#is_secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#is_secure ProcedureJava#is_secure}
   */
   readonly isSecure?: string;
   /**
   * LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#log_level ProcedureJava#log_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#log_level ProcedureJava#log_level}
   */
   readonly logLevel?: string;
   /**
   * METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#metric_level ProcedureJava#metric_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#metric_level ProcedureJava#metric_level}
   */
   readonly metricLevel?: string;
   /**
   * The name of the procedure; the identifier does not need to be unique for the schema in which the procedure is created because stored procedures are [identified and resolved by the combination of the name and argument types](https://docs.snowflake.com/en/developer-guide/udf-stored-procedure-naming-conventions.html#label-procedure-function-name-overloading). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#name ProcedureJava#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#name ProcedureJava#name}
   */
   readonly name: string;
   /**
   * Specifies the behavior of the procedure when called with null inputs. Valid values are (case-insensitive): `CALLED ON NULL INPUT` | `RETURNS NULL ON NULL INPUT`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#null_input_behavior ProcedureJava#null_input_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#null_input_behavior ProcedureJava#null_input_behavior}
   */
   readonly nullInputBehavior?: string;
   /**
   * List of the names of packages deployed in Snowflake that should be included in the handler code’s execution environment. The Snowpark package is required for stored procedures, but is specified in the `snowpark_package` attribute. For more information about Snowpark, see [Snowpark API](https://docs.snowflake.com/en/developer-guide/snowpark/index).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#packages ProcedureJava#packages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#packages ProcedureJava#packages}
   */
   readonly packages?: string[];
   /**
   * Defines the code executed by the stored procedure. The definition can consist of any valid code. Wrapping `$$` signs are added by the provider automatically; do not include them. The `procedure_definition` value must be Java source code. For more information, see [Java (using Snowpark)](https://docs.snowflake.com/en/developer-guide/stored-procedure/stored-procedures-java). To mitigate permadiff on this field, the provider replaces blank characters with a space. This can lead to false positives in cases where a change in case or run of whitespace is semantically significant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#procedure_definition ProcedureJava#procedure_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#procedure_definition ProcedureJava#procedure_definition}
   */
   readonly procedureDefinition?: string;
   /**
   * Specifies the type of the result returned by the stored procedure. For `<result_data_type>`, use the Snowflake data type that corresponds to the type of the language that you are using (see [SQL-Java Data Type Mappings](https://docs.snowflake.com/en/developer-guide/udf-stored-procedure-data-type-mapping.html#label-sql-java-data-type-mappings)). For `RETURNS TABLE ( [ col_name col_data_type [ , ... ] ] )`, if you know the Snowflake data types of the columns in the returned table, specify the column names and types. Otherwise (e.g. if you are determining the column types during run time), you can omit the column names and types (i.e. `TABLE ()`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#return_type ProcedureJava#return_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#return_type ProcedureJava#return_type}
   */
   readonly returnType: string;
   /**
   * The language runtime version to use. Currently, the supported versions are: 11.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#runtime_version ProcedureJava#runtime_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#runtime_version ProcedureJava#runtime_version}
   */
   readonly runtimeVersion: string;
   /**
   * The schema in which to create the procedure. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#schema ProcedureJava#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#schema ProcedureJava#schema}
   */
   readonly schema: string;
   /**
   * The Snowpark package is required for stored procedures, so it must always be present. For more information about Snowpark, see [Snowpark API](https://docs.snowflake.com/en/developer-guide/snowpark/index).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#snowpark_package ProcedureJava#snowpark_package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#snowpark_package ProcedureJava#snowpark_package}
   */
   readonly snowparkPackage: string;
   /**
   * Trace level value to use when generating/filtering trace events For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#trace_level ProcedureJava#trace_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#trace_level ProcedureJava#trace_level}
   */
   readonly traceLevel?: string;
   /**
   * arguments block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#arguments ProcedureJava#arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#arguments ProcedureJava#arguments}
   */
-  readonly arguments?: ProcedureJavaArguments[] | cdktf.IResolvable;
+  readonly arguments?: ProcedureJavaArguments[] | cdktn.IResolvable;
   /**
   * imports block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#imports ProcedureJava#imports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#imports ProcedureJava#imports}
   */
-  readonly imports?: ProcedureJavaImports[] | cdktf.IResolvable;
+  readonly imports?: ProcedureJavaImports[] | cdktn.IResolvable;
   /**
   * secrets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#secrets ProcedureJava#secrets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#secrets ProcedureJava#secrets}
   */
-  readonly secrets?: ProcedureJavaSecrets[] | cdktf.IResolvable;
+  readonly secrets?: ProcedureJavaSecrets[] | cdktn.IResolvable;
   /**
   * target_path block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#target_path ProcedureJava#target_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#target_path ProcedureJava#target_path}
   */
   readonly targetPath?: ProcedureJavaTargetPath;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#timeouts ProcedureJava#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#timeouts ProcedureJava#timeouts}
   */
   readonly timeouts?: ProcedureJavaTimeouts;
 }
@@ -162,8 +162,8 @@ export interface ProcedureJavaParametersEnableConsoleOutput {
 }
 
 export function procedureJavaParametersEnableConsoleOutputToTerraform(struct?: ProcedureJavaParametersEnableConsoleOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -172,8 +172,8 @@ export function procedureJavaParametersEnableConsoleOutputToTerraform(struct?: P
 
 
 export function procedureJavaParametersEnableConsoleOutputToHclTerraform(struct?: ProcedureJavaParametersEnableConsoleOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -181,7 +181,7 @@ export function procedureJavaParametersEnableConsoleOutputToHclTerraform(struct?
   return attrs;
 }
 
-export class ProcedureJavaParametersEnableConsoleOutputOutputReference extends cdktf.ComplexObject {
+export class ProcedureJavaParametersEnableConsoleOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -190,7 +190,7 @@ export class ProcedureJavaParametersEnableConsoleOutputOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -235,14 +235,14 @@ export class ProcedureJavaParametersEnableConsoleOutputOutputReference extends c
   }
 }
 
-export class ProcedureJavaParametersEnableConsoleOutputList extends cdktf.ComplexList {
+export class ProcedureJavaParametersEnableConsoleOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -257,8 +257,8 @@ export interface ProcedureJavaParametersLogLevel {
 }
 
 export function procedureJavaParametersLogLevelToTerraform(struct?: ProcedureJavaParametersLogLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -267,8 +267,8 @@ export function procedureJavaParametersLogLevelToTerraform(struct?: ProcedureJav
 
 
 export function procedureJavaParametersLogLevelToHclTerraform(struct?: ProcedureJavaParametersLogLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -276,7 +276,7 @@ export function procedureJavaParametersLogLevelToHclTerraform(struct?: Procedure
   return attrs;
 }
 
-export class ProcedureJavaParametersLogLevelOutputReference extends cdktf.ComplexObject {
+export class ProcedureJavaParametersLogLevelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -285,7 +285,7 @@ export class ProcedureJavaParametersLogLevelOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -330,14 +330,14 @@ export class ProcedureJavaParametersLogLevelOutputReference extends cdktf.Comple
   }
 }
 
-export class ProcedureJavaParametersLogLevelList extends cdktf.ComplexList {
+export class ProcedureJavaParametersLogLevelList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -352,8 +352,8 @@ export interface ProcedureJavaParametersMetricLevel {
 }
 
 export function procedureJavaParametersMetricLevelToTerraform(struct?: ProcedureJavaParametersMetricLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -362,8 +362,8 @@ export function procedureJavaParametersMetricLevelToTerraform(struct?: Procedure
 
 
 export function procedureJavaParametersMetricLevelToHclTerraform(struct?: ProcedureJavaParametersMetricLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -371,7 +371,7 @@ export function procedureJavaParametersMetricLevelToHclTerraform(struct?: Proced
   return attrs;
 }
 
-export class ProcedureJavaParametersMetricLevelOutputReference extends cdktf.ComplexObject {
+export class ProcedureJavaParametersMetricLevelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -380,7 +380,7 @@ export class ProcedureJavaParametersMetricLevelOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -425,14 +425,14 @@ export class ProcedureJavaParametersMetricLevelOutputReference extends cdktf.Com
   }
 }
 
-export class ProcedureJavaParametersMetricLevelList extends cdktf.ComplexList {
+export class ProcedureJavaParametersMetricLevelList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -447,8 +447,8 @@ export interface ProcedureJavaParametersTraceLevel {
 }
 
 export function procedureJavaParametersTraceLevelToTerraform(struct?: ProcedureJavaParametersTraceLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -457,8 +457,8 @@ export function procedureJavaParametersTraceLevelToTerraform(struct?: ProcedureJ
 
 
 export function procedureJavaParametersTraceLevelToHclTerraform(struct?: ProcedureJavaParametersTraceLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -466,7 +466,7 @@ export function procedureJavaParametersTraceLevelToHclTerraform(struct?: Procedu
   return attrs;
 }
 
-export class ProcedureJavaParametersTraceLevelOutputReference extends cdktf.ComplexObject {
+export class ProcedureJavaParametersTraceLevelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -475,7 +475,7 @@ export class ProcedureJavaParametersTraceLevelOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -520,14 +520,14 @@ export class ProcedureJavaParametersTraceLevelOutputReference extends cdktf.Comp
   }
 }
 
-export class ProcedureJavaParametersTraceLevelList extends cdktf.ComplexList {
+export class ProcedureJavaParametersTraceLevelList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -542,8 +542,8 @@ export interface ProcedureJavaParameters {
 }
 
 export function procedureJavaParametersToTerraform(struct?: ProcedureJavaParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -552,8 +552,8 @@ export function procedureJavaParametersToTerraform(struct?: ProcedureJavaParamet
 
 
 export function procedureJavaParametersToHclTerraform(struct?: ProcedureJavaParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -561,7 +561,7 @@ export function procedureJavaParametersToHclTerraform(struct?: ProcedureJavaPara
   return attrs;
 }
 
-export class ProcedureJavaParametersOutputReference extends cdktf.ComplexObject {
+export class ProcedureJavaParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -570,7 +570,7 @@ export class ProcedureJavaParametersOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -614,14 +614,14 @@ export class ProcedureJavaParametersOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class ProcedureJavaParametersList extends cdktf.ComplexList {
+export class ProcedureJavaParametersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -636,8 +636,8 @@ export interface ProcedureJavaShowOutput {
 }
 
 export function procedureJavaShowOutputToTerraform(struct?: ProcedureJavaShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -646,8 +646,8 @@ export function procedureJavaShowOutputToTerraform(struct?: ProcedureJavaShowOut
 
 
 export function procedureJavaShowOutputToHclTerraform(struct?: ProcedureJavaShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -655,7 +655,7 @@ export function procedureJavaShowOutputToHclTerraform(struct?: ProcedureJavaShow
   return attrs;
 }
 
-export class ProcedureJavaShowOutputOutputReference extends cdktf.ComplexObject {
+export class ProcedureJavaShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -664,7 +664,7 @@ export class ProcedureJavaShowOutputOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -764,14 +764,14 @@ export class ProcedureJavaShowOutputOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class ProcedureJavaShowOutputList extends cdktf.ComplexList {
+export class ProcedureJavaShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -786,56 +786,56 @@ export interface ProcedureJavaArguments {
   /**
   * The argument type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#arg_data_type ProcedureJava#arg_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#arg_data_type ProcedureJava#arg_data_type}
   */
   readonly argDataType: string;
   /**
   * Optional default value for the argument. For text values use single quotes. Numeric values can be unquoted. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#arg_default_value ProcedureJava#arg_default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#arg_default_value ProcedureJava#arg_default_value}
   */
   readonly argDefaultValue?: string;
   /**
   * The argument name. The provider wraps it in double quotes by default, so be aware of that while referencing the argument in the procedure definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#arg_name ProcedureJava#arg_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#arg_name ProcedureJava#arg_name}
   */
   readonly argName: string;
 }
 
-export function procedureJavaArgumentsToTerraform(struct?: ProcedureJavaArguments | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function procedureJavaArgumentsToTerraform(struct?: ProcedureJavaArguments | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arg_data_type: cdktf.stringToTerraform(struct!.argDataType),
-    arg_default_value: cdktf.stringToTerraform(struct!.argDefaultValue),
-    arg_name: cdktf.stringToTerraform(struct!.argName),
+    arg_data_type: cdktn.stringToTerraform(struct!.argDataType),
+    arg_default_value: cdktn.stringToTerraform(struct!.argDefaultValue),
+    arg_name: cdktn.stringToTerraform(struct!.argName),
   }
 }
 
 
-export function procedureJavaArgumentsToHclTerraform(struct?: ProcedureJavaArguments | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function procedureJavaArgumentsToHclTerraform(struct?: ProcedureJavaArguments | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arg_data_type: {
-      value: cdktf.stringToHclTerraform(struct!.argDataType),
+      value: cdktn.stringToHclTerraform(struct!.argDataType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     arg_default_value: {
-      value: cdktf.stringToHclTerraform(struct!.argDefaultValue),
+      value: cdktn.stringToHclTerraform(struct!.argDefaultValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     arg_name: {
-      value: cdktf.stringToHclTerraform(struct!.argName),
+      value: cdktn.stringToHclTerraform(struct!.argName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -846,9 +846,9 @@ export function procedureJavaArgumentsToHclTerraform(struct?: ProcedureJavaArgum
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ProcedureJavaArgumentsOutputReference extends cdktf.ComplexObject {
+export class ProcedureJavaArgumentsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -856,11 +856,11 @@ export class ProcedureJavaArgumentsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ProcedureJavaArguments | cdktf.IResolvable | undefined {
+  public get internalValue(): ProcedureJavaArguments | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -881,7 +881,7 @@ export class ProcedureJavaArgumentsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ProcedureJavaArguments | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ProcedureJavaArguments | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -889,7 +889,7 @@ export class ProcedureJavaArgumentsOutputReference extends cdktf.ComplexObject {
       this._argDefaultValue = undefined;
       this._argName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -945,15 +945,15 @@ export class ProcedureJavaArgumentsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ProcedureJavaArgumentsList extends cdktf.ComplexList {
-  public internalValue? : ProcedureJavaArguments[] | cdktf.IResolvable
+export class ProcedureJavaArgumentsList extends cdktn.ComplexList {
+  public internalValue? : ProcedureJavaArguments[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -968,43 +968,43 @@ export interface ProcedureJavaImports {
   /**
   * Path for import on stage, without the leading `/`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#path_on_stage ProcedureJava#path_on_stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#path_on_stage ProcedureJava#path_on_stage}
   */
   readonly pathOnStage: string;
   /**
   * Stage location without leading `@`. To use your user's stage set this to `~`, otherwise pass fully qualified name of the stage (with every part contained in double quotes or use `snowflake_stage.<your stage's resource name>.fully_qualified_name` if you manage this stage through terraform).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#stage_location ProcedureJava#stage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#stage_location ProcedureJava#stage_location}
   */
   readonly stageLocation: string;
 }
 
-export function procedureJavaImportsToTerraform(struct?: ProcedureJavaImports | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function procedureJavaImportsToTerraform(struct?: ProcedureJavaImports | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path_on_stage: cdktf.stringToTerraform(struct!.pathOnStage),
-    stage_location: cdktf.stringToTerraform(struct!.stageLocation),
+    path_on_stage: cdktn.stringToTerraform(struct!.pathOnStage),
+    stage_location: cdktn.stringToTerraform(struct!.stageLocation),
   }
 }
 
 
-export function procedureJavaImportsToHclTerraform(struct?: ProcedureJavaImports | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function procedureJavaImportsToHclTerraform(struct?: ProcedureJavaImports | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path_on_stage: {
-      value: cdktf.stringToHclTerraform(struct!.pathOnStage),
+      value: cdktn.stringToHclTerraform(struct!.pathOnStage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stage_location: {
-      value: cdktf.stringToHclTerraform(struct!.stageLocation),
+      value: cdktn.stringToHclTerraform(struct!.stageLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1015,9 +1015,9 @@ export function procedureJavaImportsToHclTerraform(struct?: ProcedureJavaImports
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ProcedureJavaImportsOutputReference extends cdktf.ComplexObject {
+export class ProcedureJavaImportsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1025,11 +1025,11 @@ export class ProcedureJavaImportsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ProcedureJavaImports | cdktf.IResolvable | undefined {
+  public get internalValue(): ProcedureJavaImports | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1046,14 +1046,14 @@ export class ProcedureJavaImportsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ProcedureJavaImports | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ProcedureJavaImports | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._pathOnStage = undefined;
       this._stageLocation = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1092,15 +1092,15 @@ export class ProcedureJavaImportsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ProcedureJavaImportsList extends cdktf.ComplexList {
-  public internalValue? : ProcedureJavaImports[] | cdktf.IResolvable
+export class ProcedureJavaImportsList extends cdktn.ComplexList {
+  public internalValue? : ProcedureJavaImports[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1115,43 +1115,43 @@ export interface ProcedureJavaSecrets {
   /**
   * Fully qualified name of the allowed [secret](https://docs.snowflake.com/en/sql-reference/sql/create-secret). You will receive an error if you specify a SECRETS value whose secret isn’t also included in an integration specified by the EXTERNAL_ACCESS_INTEGRATIONS parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#secret_id ProcedureJava#secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#secret_id ProcedureJava#secret_id}
   */
   readonly secretId: string;
   /**
   * The variable that will be used in handler code when retrieving information from the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#secret_variable_name ProcedureJava#secret_variable_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#secret_variable_name ProcedureJava#secret_variable_name}
   */
   readonly secretVariableName: string;
 }
 
-export function procedureJavaSecretsToTerraform(struct?: ProcedureJavaSecrets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function procedureJavaSecretsToTerraform(struct?: ProcedureJavaSecrets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_id: cdktf.stringToTerraform(struct!.secretId),
-    secret_variable_name: cdktf.stringToTerraform(struct!.secretVariableName),
+    secret_id: cdktn.stringToTerraform(struct!.secretId),
+    secret_variable_name: cdktn.stringToTerraform(struct!.secretVariableName),
   }
 }
 
 
-export function procedureJavaSecretsToHclTerraform(struct?: ProcedureJavaSecrets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function procedureJavaSecretsToHclTerraform(struct?: ProcedureJavaSecrets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_id: {
-      value: cdktf.stringToHclTerraform(struct!.secretId),
+      value: cdktn.stringToHclTerraform(struct!.secretId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_variable_name: {
-      value: cdktf.stringToHclTerraform(struct!.secretVariableName),
+      value: cdktn.stringToHclTerraform(struct!.secretVariableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1162,9 +1162,9 @@ export function procedureJavaSecretsToHclTerraform(struct?: ProcedureJavaSecrets
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ProcedureJavaSecretsOutputReference extends cdktf.ComplexObject {
+export class ProcedureJavaSecretsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1172,11 +1172,11 @@ export class ProcedureJavaSecretsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ProcedureJavaSecrets | cdktf.IResolvable | undefined {
+  public get internalValue(): ProcedureJavaSecrets | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1193,14 +1193,14 @@ export class ProcedureJavaSecretsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ProcedureJavaSecrets | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ProcedureJavaSecrets | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._secretId = undefined;
       this._secretVariableName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1239,15 +1239,15 @@ export class ProcedureJavaSecretsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ProcedureJavaSecretsList extends cdktf.ComplexList {
-  public internalValue? : ProcedureJavaSecrets[] | cdktf.IResolvable
+export class ProcedureJavaSecretsList extends cdktn.ComplexList {
+  public internalValue? : ProcedureJavaSecrets[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1262,43 +1262,43 @@ export interface ProcedureJavaTargetPath {
   /**
   * Path for import on stage, without the leading `/`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#path_on_stage ProcedureJava#path_on_stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#path_on_stage ProcedureJava#path_on_stage}
   */
   readonly pathOnStage: string;
   /**
   * Stage location without leading `@`. To use your user's stage set this to `~`, otherwise pass fully qualified name of the stage (with every part contained in double quotes or use `snowflake_stage.<your stage's resource name>.fully_qualified_name` if you manage this stage through terraform).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#stage_location ProcedureJava#stage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#stage_location ProcedureJava#stage_location}
   */
   readonly stageLocation: string;
 }
 
 export function procedureJavaTargetPathToTerraform(struct?: ProcedureJavaTargetPathOutputReference | ProcedureJavaTargetPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path_on_stage: cdktf.stringToTerraform(struct!.pathOnStage),
-    stage_location: cdktf.stringToTerraform(struct!.stageLocation),
+    path_on_stage: cdktn.stringToTerraform(struct!.pathOnStage),
+    stage_location: cdktn.stringToTerraform(struct!.stageLocation),
   }
 }
 
 
 export function procedureJavaTargetPathToHclTerraform(struct?: ProcedureJavaTargetPathOutputReference | ProcedureJavaTargetPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path_on_stage: {
-      value: cdktf.stringToHclTerraform(struct!.pathOnStage),
+      value: cdktn.stringToHclTerraform(struct!.pathOnStage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stage_location: {
-      value: cdktf.stringToHclTerraform(struct!.stageLocation),
+      value: cdktn.stringToHclTerraform(struct!.stageLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1309,14 +1309,14 @@ export function procedureJavaTargetPathToHclTerraform(struct?: ProcedureJavaTarg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ProcedureJavaTargetPathOutputReference extends cdktf.ComplexObject {
+export class ProcedureJavaTargetPathOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1375,63 +1375,63 @@ export class ProcedureJavaTargetPathOutputReference extends cdktf.ComplexObject 
 }
 export interface ProcedureJavaTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#create ProcedureJava#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#create ProcedureJava#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#delete ProcedureJava#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#delete ProcedureJava#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#read ProcedureJava#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#read ProcedureJava#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#update ProcedureJava#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#update ProcedureJava#update}
   */
   readonly update?: string;
 }
 
-export function procedureJavaTimeoutsToTerraform(struct?: ProcedureJavaTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function procedureJavaTimeoutsToTerraform(struct?: ProcedureJavaTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function procedureJavaTimeoutsToHclTerraform(struct?: ProcedureJavaTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function procedureJavaTimeoutsToHclTerraform(struct?: ProcedureJavaTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1442,19 +1442,19 @@ export function procedureJavaTimeoutsToHclTerraform(struct?: ProcedureJavaTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ProcedureJavaTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ProcedureJavaTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ProcedureJavaTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ProcedureJavaTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1479,7 +1479,7 @@ export class ProcedureJavaTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ProcedureJavaTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ProcedureJavaTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1488,7 +1488,7 @@ export class ProcedureJavaTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1568,9 +1568,9 @@ export class ProcedureJavaTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java snowflake_procedure_java}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java snowflake_procedure_java}
 */
-export class ProcedureJava extends cdktf.TerraformResource {
+export class ProcedureJava extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1581,14 +1581,14 @@ export class ProcedureJava extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ProcedureJava resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ProcedureJava resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProcedureJava to import
-  * @param importFromId The id of the existing ProcedureJava that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ProcedureJava that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProcedureJava to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_procedure_java", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_procedure_java", importId: importFromId, provider });
       }
 
   // ===========
@@ -1596,7 +1596,7 @@ export class ProcedureJava extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/procedure_java snowflake_procedure_java} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/procedure_java snowflake_procedure_java} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1607,7 +1607,7 @@ export class ProcedureJava extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_procedure_java',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -1678,11 +1678,11 @@ export class ProcedureJava extends cdktf.TerraformResource {
   }
 
   // enable_console_output - computed: true, optional: true, required: false
-  private _enableConsoleOutput?: boolean | cdktf.IResolvable; 
+  private _enableConsoleOutput?: boolean | cdktn.IResolvable; 
   public get enableConsoleOutput() {
     return this.getBooleanAttribute('enable_console_output');
   }
-  public set enableConsoleOutput(value: boolean | cdktf.IResolvable) {
+  public set enableConsoleOutput(value: boolean | cdktn.IResolvable) {
     this._enableConsoleOutput = value;
   }
   public resetEnableConsoleOutput() {
@@ -1712,7 +1712,7 @@ export class ProcedureJava extends cdktf.TerraformResource {
   // external_access_integrations - computed: false, optional: true, required: false
   private _externalAccessIntegrations?: string[]; 
   public get externalAccessIntegrations() {
-    return cdktf.Fn.tolist(this.getListAttribute('external_access_integrations'));
+    return cdktn.Fn.tolist(this.getListAttribute('external_access_integrations'));
   }
   public set externalAccessIntegrations(value: string[]) {
     this._externalAccessIntegrations = value;
@@ -1839,7 +1839,7 @@ export class ProcedureJava extends cdktf.TerraformResource {
   // packages - computed: false, optional: true, required: false
   private _packages?: string[]; 
   public get packages() {
-    return cdktf.Fn.tolist(this.getListAttribute('packages'));
+    return cdktn.Fn.tolist(this.getListAttribute('packages'));
   }
   public set packages(value: string[]) {
     this._packages = value;
@@ -1958,7 +1958,7 @@ export class ProcedureJava extends cdktf.TerraformResource {
   public get arguments() {
     return this._arguments;
   }
-  public putArguments(value: ProcedureJavaArguments[] | cdktf.IResolvable) {
+  public putArguments(value: ProcedureJavaArguments[] | cdktn.IResolvable) {
     this._arguments.internalValue = value;
   }
   public resetArguments() {
@@ -1974,7 +1974,7 @@ export class ProcedureJava extends cdktf.TerraformResource {
   public get imports() {
     return this._imports;
   }
-  public putImports(value: ProcedureJavaImports[] | cdktf.IResolvable) {
+  public putImports(value: ProcedureJavaImports[] | cdktn.IResolvable) {
     this._imports.internalValue = value;
   }
   public resetImports() {
@@ -1990,7 +1990,7 @@ export class ProcedureJava extends cdktf.TerraformResource {
   public get secrets() {
     return this._secrets;
   }
-  public putSecrets(value: ProcedureJavaSecrets[] | cdktf.IResolvable) {
+  public putSecrets(value: ProcedureJavaSecrets[] | cdktn.IResolvable) {
     this._secrets.internalValue = value;
   }
   public resetSecrets() {
@@ -2039,28 +2039,28 @@ export class ProcedureJava extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      database: cdktf.stringToTerraform(this._database),
-      enable_console_output: cdktf.booleanToTerraform(this._enableConsoleOutput),
-      execute_as: cdktf.stringToTerraform(this._executeAs),
-      external_access_integrations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._externalAccessIntegrations),
-      handler: cdktf.stringToTerraform(this._handler),
-      id: cdktf.stringToTerraform(this._id),
-      is_secure: cdktf.stringToTerraform(this._isSecure),
-      log_level: cdktf.stringToTerraform(this._logLevel),
-      metric_level: cdktf.stringToTerraform(this._metricLevel),
-      name: cdktf.stringToTerraform(this._name),
-      null_input_behavior: cdktf.stringToTerraform(this._nullInputBehavior),
-      packages: cdktf.listMapper(cdktf.stringToTerraform, false)(this._packages),
-      procedure_definition: cdktf.stringToTerraform(this._procedureDefinition),
-      return_type: cdktf.stringToTerraform(this._returnType),
-      runtime_version: cdktf.stringToTerraform(this._runtimeVersion),
-      schema: cdktf.stringToTerraform(this._schema),
-      snowpark_package: cdktf.stringToTerraform(this._snowparkPackage),
-      trace_level: cdktf.stringToTerraform(this._traceLevel),
-      arguments: cdktf.listMapper(procedureJavaArgumentsToTerraform, true)(this._arguments.internalValue),
-      imports: cdktf.listMapper(procedureJavaImportsToTerraform, true)(this._imports.internalValue),
-      secrets: cdktf.listMapper(procedureJavaSecretsToTerraform, true)(this._secrets.internalValue),
+      comment: cdktn.stringToTerraform(this._comment),
+      database: cdktn.stringToTerraform(this._database),
+      enable_console_output: cdktn.booleanToTerraform(this._enableConsoleOutput),
+      execute_as: cdktn.stringToTerraform(this._executeAs),
+      external_access_integrations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._externalAccessIntegrations),
+      handler: cdktn.stringToTerraform(this._handler),
+      id: cdktn.stringToTerraform(this._id),
+      is_secure: cdktn.stringToTerraform(this._isSecure),
+      log_level: cdktn.stringToTerraform(this._logLevel),
+      metric_level: cdktn.stringToTerraform(this._metricLevel),
+      name: cdktn.stringToTerraform(this._name),
+      null_input_behavior: cdktn.stringToTerraform(this._nullInputBehavior),
+      packages: cdktn.listMapper(cdktn.stringToTerraform, false)(this._packages),
+      procedure_definition: cdktn.stringToTerraform(this._procedureDefinition),
+      return_type: cdktn.stringToTerraform(this._returnType),
+      runtime_version: cdktn.stringToTerraform(this._runtimeVersion),
+      schema: cdktn.stringToTerraform(this._schema),
+      snowpark_package: cdktn.stringToTerraform(this._snowparkPackage),
+      trace_level: cdktn.stringToTerraform(this._traceLevel),
+      arguments: cdktn.listMapper(procedureJavaArgumentsToTerraform, true)(this._arguments.internalValue),
+      imports: cdktn.listMapper(procedureJavaImportsToTerraform, true)(this._imports.internalValue),
+      secrets: cdktn.listMapper(procedureJavaSecretsToTerraform, true)(this._secrets.internalValue),
       target_path: procedureJavaTargetPathToTerraform(this._targetPath.internalValue),
       timeouts: procedureJavaTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -2069,133 +2069,133 @@ export class ProcedureJava extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_console_output: {
-        value: cdktf.booleanToHclTerraform(this._enableConsoleOutput),
+        value: cdktn.booleanToHclTerraform(this._enableConsoleOutput),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       execute_as: {
-        value: cdktf.stringToHclTerraform(this._executeAs),
+        value: cdktn.stringToHclTerraform(this._executeAs),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_access_integrations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._externalAccessIntegrations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._externalAccessIntegrations),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       handler: {
-        value: cdktf.stringToHclTerraform(this._handler),
+        value: cdktn.stringToHclTerraform(this._handler),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_secure: {
-        value: cdktf.stringToHclTerraform(this._isSecure),
+        value: cdktn.stringToHclTerraform(this._isSecure),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_level: {
-        value: cdktf.stringToHclTerraform(this._logLevel),
+        value: cdktn.stringToHclTerraform(this._logLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metric_level: {
-        value: cdktf.stringToHclTerraform(this._metricLevel),
+        value: cdktn.stringToHclTerraform(this._metricLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       null_input_behavior: {
-        value: cdktf.stringToHclTerraform(this._nullInputBehavior),
+        value: cdktn.stringToHclTerraform(this._nullInputBehavior),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       packages: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._packages),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._packages),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       procedure_definition: {
-        value: cdktf.stringToHclTerraform(this._procedureDefinition),
+        value: cdktn.stringToHclTerraform(this._procedureDefinition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       return_type: {
-        value: cdktf.stringToHclTerraform(this._returnType),
+        value: cdktn.stringToHclTerraform(this._returnType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       runtime_version: {
-        value: cdktf.stringToHclTerraform(this._runtimeVersion),
+        value: cdktn.stringToHclTerraform(this._runtimeVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       snowpark_package: {
-        value: cdktf.stringToHclTerraform(this._snowparkPackage),
+        value: cdktn.stringToHclTerraform(this._snowparkPackage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trace_level: {
-        value: cdktf.stringToHclTerraform(this._traceLevel),
+        value: cdktn.stringToHclTerraform(this._traceLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       arguments: {
-        value: cdktf.listMapperHcl(procedureJavaArgumentsToHclTerraform, true)(this._arguments.internalValue),
+        value: cdktn.listMapperHcl(procedureJavaArgumentsToHclTerraform, true)(this._arguments.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ProcedureJavaArgumentsList",
       },
       imports: {
-        value: cdktf.listMapperHcl(procedureJavaImportsToHclTerraform, true)(this._imports.internalValue),
+        value: cdktn.listMapperHcl(procedureJavaImportsToHclTerraform, true)(this._imports.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ProcedureJavaImportsList",
       },
       secrets: {
-        value: cdktf.listMapperHcl(procedureJavaSecretsToHclTerraform, true)(this._secrets.internalValue),
+        value: cdktn.listMapperHcl(procedureJavaSecretsToHclTerraform, true)(this._secrets.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ProcedureJavaSecretsList",

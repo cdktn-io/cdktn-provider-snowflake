@@ -1,49 +1,49 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WarehouseConfig extends cdktf.TerraformMetaArguments {
+export interface WarehouseConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically resume a warehouse when a SQL statement (e.g. query) is submitted to it. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#auto_resume Warehouse#auto_resume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#auto_resume Warehouse#auto_resume}
   */
   readonly autoResume?: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of seconds of inactivity after which a warehouse is automatically suspended.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#auto_suspend Warehouse#auto_suspend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#auto_suspend Warehouse#auto_suspend}
   */
   readonly autoSuspend?: number;
   /**
   * Specifies a comment for the warehouse.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#comment Warehouse#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#comment Warehouse#comment}
   */
   readonly comment?: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to enable the query acceleration service for queries that rely on this warehouse for compute resources. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#enable_query_acceleration Warehouse#enable_query_acceleration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#enable_query_acceleration Warehouse#enable_query_acceleration}
   */
   readonly enableQueryAcceleration?: string;
   /**
-  * Specifies the generation for the warehouse. Only available for standard warehouses. Valid values are (case-insensitive): `1` | `2`.
+  * Specifies the generation for the warehouse. Only available for standard warehouses. Valid values are (case-insensitive): `1` | `2`. Gen2 warehouses are not available in all regions. Please consult the [Snowflake Gen2 Region Availability documentation](https://docs.snowflake.com/en/user-guide/warehouses-gen2#region-availability) prior to configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#generation Warehouse#generation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#generation Warehouse#generation}
   */
   readonly generation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#id Warehouse#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#id Warehouse#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,85 +52,85 @@ export interface WarehouseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies whether the warehouse is created initially in the ‘Suspended’ state.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#initially_suspended Warehouse#initially_suspended}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#initially_suspended Warehouse#initially_suspended}
   */
-  readonly initiallySuspended?: boolean | cdktf.IResolvable;
+  readonly initiallySuspended?: boolean | cdktn.IResolvable;
   /**
   * Specifies the maximum number of server clusters for the warehouse.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#max_cluster_count Warehouse#max_cluster_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#max_cluster_count Warehouse#max_cluster_count}
   */
   readonly maxClusterCount?: number;
   /**
   * Object parameter that specifies the concurrency level for SQL statements (i.e. queries and DML) executed by a warehouse.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#max_concurrency_level Warehouse#max_concurrency_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#max_concurrency_level Warehouse#max_concurrency_level}
   */
   readonly maxConcurrencyLevel?: number;
   /**
   * Specifies the minimum number of server clusters for the warehouse (only applies to multi-cluster warehouses).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#min_cluster_count Warehouse#min_cluster_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#min_cluster_count Warehouse#min_cluster_count}
   */
   readonly minClusterCount?: number;
   /**
   * Identifier for the virtual warehouse; must be unique for your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#name Warehouse#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#name Warehouse#name}
   */
   readonly name: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the maximum scale factor for leasing compute resources for query acceleration. The scale factor is used as a multiplier based on warehouse size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#query_acceleration_max_scale_factor Warehouse#query_acceleration_max_scale_factor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#query_acceleration_max_scale_factor Warehouse#query_acceleration_max_scale_factor}
   */
   readonly queryAccelerationMaxScaleFactor?: number;
   /**
-  * Specifies the resource constraint for the warehouse. Only available for snowpark-optimized warehouses. For setting generation please use the `generation` field. Please check [Snowflake documentation](https://docs.snowflake.com/en/sql-reference/sql/create-warehouse#optional-properties-objectproperties) for required warehouse sizes for each resource constraint. Valid values are (case-insensitive): `MEMORY_1X` | `MEMORY_1X_x86` | `MEMORY_16X` | `MEMORY_16X_x86` | `MEMORY_64X` | `MEMORY_64X_x86`.
+  * Specifies the resource constraint for the warehouse. Only available for snowpark-optimized warehouses. For setting generation please use the `generation` field. Please check [Snowflake documentation](https://docs.snowflake.com/en/sql-reference/sql/create-warehouse#optional-properties-objectproperties) for required warehouse sizes for each resource constraint. Valid values are (case-insensitive): `MEMORY_1X` | `MEMORY_1X_x86` | `MEMORY_16X` | `MEMORY_16X_x86` | `MEMORY_64X` | `MEMORY_64X_x86`. Gen2 warehouses are not available in all regions. Please consult the [Snowflake Gen2 Region Availability documentation](https://docs.snowflake.com/en/user-guide/warehouses-gen2#region-availability) prior to configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#resource_constraint Warehouse#resource_constraint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#resource_constraint Warehouse#resource_constraint}
   */
   readonly resourceConstraint?: string;
   /**
   * Specifies the name of a resource monitor that is explicitly assigned to the warehouse. For more information about this resource, see [docs](./resource_monitor).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#resource_monitor Warehouse#resource_monitor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#resource_monitor Warehouse#resource_monitor}
   */
   readonly resourceMonitor?: string;
   /**
   * Specifies the policy for automatically starting and shutting down clusters in a multi-cluster warehouse running in Auto-scale mode. Valid values are (case-insensitive): `STANDARD` | `ECONOMY`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#scaling_policy Warehouse#scaling_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#scaling_policy Warehouse#scaling_policy}
   */
   readonly scalingPolicy?: string;
   /**
   * Object parameter that specifies the time, in seconds, a SQL statement (query, DDL, DML, etc.) can be queued on a warehouse before it is canceled by the system.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#statement_queued_timeout_in_seconds Warehouse#statement_queued_timeout_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#statement_queued_timeout_in_seconds Warehouse#statement_queued_timeout_in_seconds}
   */
   readonly statementQueuedTimeoutInSeconds?: number;
   /**
   * Specifies the time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#statement_timeout_in_seconds Warehouse#statement_timeout_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#statement_timeout_in_seconds Warehouse#statement_timeout_in_seconds}
   */
   readonly statementTimeoutInSeconds?: number;
   /**
   * Specifies the size of the virtual warehouse. Valid values are (case-insensitive): `XSMALL` | `X-SMALL` | `SMALL` | `MEDIUM` | `LARGE` | `XLARGE` | `X-LARGE` | `XXLARGE` | `X2LARGE` | `2X-LARGE` | `XXXLARGE` | `X3LARGE` | `3X-LARGE` | `X4LARGE` | `4X-LARGE` | `X5LARGE` | `5X-LARGE` | `X6LARGE` | `6X-LARGE`. Consult [warehouse documentation](https://docs.snowflake.com/en/sql-reference/sql/create-warehouse#optional-properties-objectproperties) for the details. Note: removing the size from config will result in the resource recreation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#warehouse_size Warehouse#warehouse_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#warehouse_size Warehouse#warehouse_size}
   */
   readonly warehouseSize?: string;
   /**
   * Specifies warehouse type. Valid values are (case-insensitive): `STANDARD` | `SNOWPARK-OPTIMIZED`. Warehouse needs to be suspended to change its type. Provider will handle automatic suspension and resumption if needed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#warehouse_type Warehouse#warehouse_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#warehouse_type Warehouse#warehouse_type}
   */
   readonly warehouseType?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#timeouts Warehouse#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#timeouts Warehouse#timeouts}
   */
   readonly timeouts?: WarehouseTimeouts;
 }
@@ -138,8 +138,8 @@ export interface WarehouseParametersMaxConcurrencyLevel {
 }
 
 export function warehouseParametersMaxConcurrencyLevelToTerraform(struct?: WarehouseParametersMaxConcurrencyLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -148,8 +148,8 @@ export function warehouseParametersMaxConcurrencyLevelToTerraform(struct?: Wareh
 
 
 export function warehouseParametersMaxConcurrencyLevelToHclTerraform(struct?: WarehouseParametersMaxConcurrencyLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -157,7 +157,7 @@ export function warehouseParametersMaxConcurrencyLevelToHclTerraform(struct?: Wa
   return attrs;
 }
 
-export class WarehouseParametersMaxConcurrencyLevelOutputReference extends cdktf.ComplexObject {
+export class WarehouseParametersMaxConcurrencyLevelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -166,7 +166,7 @@ export class WarehouseParametersMaxConcurrencyLevelOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -211,14 +211,14 @@ export class WarehouseParametersMaxConcurrencyLevelOutputReference extends cdktf
   }
 }
 
-export class WarehouseParametersMaxConcurrencyLevelList extends cdktf.ComplexList {
+export class WarehouseParametersMaxConcurrencyLevelList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -233,8 +233,8 @@ export interface WarehouseParametersStatementQueuedTimeoutInSeconds {
 }
 
 export function warehouseParametersStatementQueuedTimeoutInSecondsToTerraform(struct?: WarehouseParametersStatementQueuedTimeoutInSeconds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -243,8 +243,8 @@ export function warehouseParametersStatementQueuedTimeoutInSecondsToTerraform(st
 
 
 export function warehouseParametersStatementQueuedTimeoutInSecondsToHclTerraform(struct?: WarehouseParametersStatementQueuedTimeoutInSeconds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -252,7 +252,7 @@ export function warehouseParametersStatementQueuedTimeoutInSecondsToHclTerraform
   return attrs;
 }
 
-export class WarehouseParametersStatementQueuedTimeoutInSecondsOutputReference extends cdktf.ComplexObject {
+export class WarehouseParametersStatementQueuedTimeoutInSecondsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -261,7 +261,7 @@ export class WarehouseParametersStatementQueuedTimeoutInSecondsOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -306,14 +306,14 @@ export class WarehouseParametersStatementQueuedTimeoutInSecondsOutputReference e
   }
 }
 
-export class WarehouseParametersStatementQueuedTimeoutInSecondsList extends cdktf.ComplexList {
+export class WarehouseParametersStatementQueuedTimeoutInSecondsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -328,8 +328,8 @@ export interface WarehouseParametersStatementTimeoutInSeconds {
 }
 
 export function warehouseParametersStatementTimeoutInSecondsToTerraform(struct?: WarehouseParametersStatementTimeoutInSeconds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -338,8 +338,8 @@ export function warehouseParametersStatementTimeoutInSecondsToTerraform(struct?:
 
 
 export function warehouseParametersStatementTimeoutInSecondsToHclTerraform(struct?: WarehouseParametersStatementTimeoutInSeconds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -347,7 +347,7 @@ export function warehouseParametersStatementTimeoutInSecondsToHclTerraform(struc
   return attrs;
 }
 
-export class WarehouseParametersStatementTimeoutInSecondsOutputReference extends cdktf.ComplexObject {
+export class WarehouseParametersStatementTimeoutInSecondsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -356,7 +356,7 @@ export class WarehouseParametersStatementTimeoutInSecondsOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -401,14 +401,14 @@ export class WarehouseParametersStatementTimeoutInSecondsOutputReference extends
   }
 }
 
-export class WarehouseParametersStatementTimeoutInSecondsList extends cdktf.ComplexList {
+export class WarehouseParametersStatementTimeoutInSecondsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -423,8 +423,8 @@ export interface WarehouseParameters {
 }
 
 export function warehouseParametersToTerraform(struct?: WarehouseParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -433,8 +433,8 @@ export function warehouseParametersToTerraform(struct?: WarehouseParameters): an
 
 
 export function warehouseParametersToHclTerraform(struct?: WarehouseParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -442,7 +442,7 @@ export function warehouseParametersToHclTerraform(struct?: WarehouseParameters):
   return attrs;
 }
 
-export class WarehouseParametersOutputReference extends cdktf.ComplexObject {
+export class WarehouseParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -451,7 +451,7 @@ export class WarehouseParametersOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -489,14 +489,14 @@ export class WarehouseParametersOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class WarehouseParametersList extends cdktf.ComplexList {
+export class WarehouseParametersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -511,8 +511,8 @@ export interface WarehouseShowOutput {
 }
 
 export function warehouseShowOutputToTerraform(struct?: WarehouseShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -521,8 +521,8 @@ export function warehouseShowOutputToTerraform(struct?: WarehouseShowOutput): an
 
 
 export function warehouseShowOutputToHclTerraform(struct?: WarehouseShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -530,7 +530,7 @@ export function warehouseShowOutputToHclTerraform(struct?: WarehouseShowOutput):
   return attrs;
 }
 
-export class WarehouseShowOutputOutputReference extends cdktf.ComplexObject {
+export class WarehouseShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -539,7 +539,7 @@ export class WarehouseShowOutputOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -704,14 +704,14 @@ export class WarehouseShowOutputOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class WarehouseShowOutputList extends cdktf.ComplexList {
+export class WarehouseShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -724,63 +724,63 @@ export class WarehouseShowOutputList extends cdktf.ComplexList {
 }
 export interface WarehouseTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#create Warehouse#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#create Warehouse#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#delete Warehouse#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#delete Warehouse#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#read Warehouse#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#read Warehouse#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#update Warehouse#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#update Warehouse#update}
   */
   readonly update?: string;
 }
 
-export function warehouseTimeoutsToTerraform(struct?: WarehouseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function warehouseTimeoutsToTerraform(struct?: WarehouseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function warehouseTimeoutsToHclTerraform(struct?: WarehouseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function warehouseTimeoutsToHclTerraform(struct?: WarehouseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -791,19 +791,19 @@ export function warehouseTimeoutsToHclTerraform(struct?: WarehouseTimeouts | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WarehouseTimeoutsOutputReference extends cdktf.ComplexObject {
+export class WarehouseTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WarehouseTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): WarehouseTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -828,7 +828,7 @@ export class WarehouseTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WarehouseTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WarehouseTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -837,7 +837,7 @@ export class WarehouseTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -917,9 +917,9 @@ export class WarehouseTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse snowflake_warehouse}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse snowflake_warehouse}
 */
-export class Warehouse extends cdktf.TerraformResource {
+export class Warehouse extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -930,14 +930,14 @@ export class Warehouse extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Warehouse resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Warehouse resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Warehouse to import
-  * @param importFromId The id of the existing Warehouse that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Warehouse that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Warehouse to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_warehouse", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_warehouse", importId: importFromId, provider });
       }
 
   // ===========
@@ -945,7 +945,7 @@ export class Warehouse extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/warehouse snowflake_warehouse} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/warehouse snowflake_warehouse} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -956,7 +956,7 @@ export class Warehouse extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_warehouse',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -1095,11 +1095,11 @@ export class Warehouse extends cdktf.TerraformResource {
   }
 
   // initially_suspended - computed: false, optional: true, required: false
-  private _initiallySuspended?: boolean | cdktf.IResolvable; 
+  private _initiallySuspended?: boolean | cdktn.IResolvable; 
   public get initiallySuspended() {
     return this.getBooleanAttribute('initially_suspended');
   }
-  public set initiallySuspended(value: boolean | cdktf.IResolvable) {
+  public set initiallySuspended(value: boolean | cdktn.IResolvable) {
     this._initiallySuspended = value;
   }
   public resetInitiallySuspended() {
@@ -1333,25 +1333,25 @@ export class Warehouse extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_resume: cdktf.stringToTerraform(this._autoResume),
-      auto_suspend: cdktf.numberToTerraform(this._autoSuspend),
-      comment: cdktf.stringToTerraform(this._comment),
-      enable_query_acceleration: cdktf.stringToTerraform(this._enableQueryAcceleration),
-      generation: cdktf.stringToTerraform(this._generation),
-      id: cdktf.stringToTerraform(this._id),
-      initially_suspended: cdktf.booleanToTerraform(this._initiallySuspended),
-      max_cluster_count: cdktf.numberToTerraform(this._maxClusterCount),
-      max_concurrency_level: cdktf.numberToTerraform(this._maxConcurrencyLevel),
-      min_cluster_count: cdktf.numberToTerraform(this._minClusterCount),
-      name: cdktf.stringToTerraform(this._name),
-      query_acceleration_max_scale_factor: cdktf.numberToTerraform(this._queryAccelerationMaxScaleFactor),
-      resource_constraint: cdktf.stringToTerraform(this._resourceConstraint),
-      resource_monitor: cdktf.stringToTerraform(this._resourceMonitor),
-      scaling_policy: cdktf.stringToTerraform(this._scalingPolicy),
-      statement_queued_timeout_in_seconds: cdktf.numberToTerraform(this._statementQueuedTimeoutInSeconds),
-      statement_timeout_in_seconds: cdktf.numberToTerraform(this._statementTimeoutInSeconds),
-      warehouse_size: cdktf.stringToTerraform(this._warehouseSize),
-      warehouse_type: cdktf.stringToTerraform(this._warehouseType),
+      auto_resume: cdktn.stringToTerraform(this._autoResume),
+      auto_suspend: cdktn.numberToTerraform(this._autoSuspend),
+      comment: cdktn.stringToTerraform(this._comment),
+      enable_query_acceleration: cdktn.stringToTerraform(this._enableQueryAcceleration),
+      generation: cdktn.stringToTerraform(this._generation),
+      id: cdktn.stringToTerraform(this._id),
+      initially_suspended: cdktn.booleanToTerraform(this._initiallySuspended),
+      max_cluster_count: cdktn.numberToTerraform(this._maxClusterCount),
+      max_concurrency_level: cdktn.numberToTerraform(this._maxConcurrencyLevel),
+      min_cluster_count: cdktn.numberToTerraform(this._minClusterCount),
+      name: cdktn.stringToTerraform(this._name),
+      query_acceleration_max_scale_factor: cdktn.numberToTerraform(this._queryAccelerationMaxScaleFactor),
+      resource_constraint: cdktn.stringToTerraform(this._resourceConstraint),
+      resource_monitor: cdktn.stringToTerraform(this._resourceMonitor),
+      scaling_policy: cdktn.stringToTerraform(this._scalingPolicy),
+      statement_queued_timeout_in_seconds: cdktn.numberToTerraform(this._statementQueuedTimeoutInSeconds),
+      statement_timeout_in_seconds: cdktn.numberToTerraform(this._statementTimeoutInSeconds),
+      warehouse_size: cdktn.stringToTerraform(this._warehouseSize),
+      warehouse_type: cdktn.stringToTerraform(this._warehouseType),
       timeouts: warehouseTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1359,115 +1359,115 @@ export class Warehouse extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_resume: {
-        value: cdktf.stringToHclTerraform(this._autoResume),
+        value: cdktn.stringToHclTerraform(this._autoResume),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auto_suspend: {
-        value: cdktf.numberToHclTerraform(this._autoSuspend),
+        value: cdktn.numberToHclTerraform(this._autoSuspend),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_query_acceleration: {
-        value: cdktf.stringToHclTerraform(this._enableQueryAcceleration),
+        value: cdktn.stringToHclTerraform(this._enableQueryAcceleration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       generation: {
-        value: cdktf.stringToHclTerraform(this._generation),
+        value: cdktn.stringToHclTerraform(this._generation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       initially_suspended: {
-        value: cdktf.booleanToHclTerraform(this._initiallySuspended),
+        value: cdktn.booleanToHclTerraform(this._initiallySuspended),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       max_cluster_count: {
-        value: cdktf.numberToHclTerraform(this._maxClusterCount),
+        value: cdktn.numberToHclTerraform(this._maxClusterCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       max_concurrency_level: {
-        value: cdktf.numberToHclTerraform(this._maxConcurrencyLevel),
+        value: cdktn.numberToHclTerraform(this._maxConcurrencyLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_cluster_count: {
-        value: cdktf.numberToHclTerraform(this._minClusterCount),
+        value: cdktn.numberToHclTerraform(this._minClusterCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query_acceleration_max_scale_factor: {
-        value: cdktf.numberToHclTerraform(this._queryAccelerationMaxScaleFactor),
+        value: cdktn.numberToHclTerraform(this._queryAccelerationMaxScaleFactor),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       resource_constraint: {
-        value: cdktf.stringToHclTerraform(this._resourceConstraint),
+        value: cdktn.stringToHclTerraform(this._resourceConstraint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_monitor: {
-        value: cdktf.stringToHclTerraform(this._resourceMonitor),
+        value: cdktn.stringToHclTerraform(this._resourceMonitor),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scaling_policy: {
-        value: cdktf.stringToHclTerraform(this._scalingPolicy),
+        value: cdktn.stringToHclTerraform(this._scalingPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       statement_queued_timeout_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._statementQueuedTimeoutInSeconds),
+        value: cdktn.numberToHclTerraform(this._statementQueuedTimeoutInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       statement_timeout_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._statementTimeoutInSeconds),
+        value: cdktn.numberToHclTerraform(this._statementTimeoutInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       warehouse_size: {
-        value: cdktf.stringToHclTerraform(this._warehouseSize),
+        value: cdktn.stringToHclTerraform(this._warehouseSize),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       warehouse_type: {
-        value: cdktf.stringToHclTerraform(this._warehouseType),
+        value: cdktn.stringToHclTerraform(this._warehouseType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

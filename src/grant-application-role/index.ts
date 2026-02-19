@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_application_role
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_application_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GrantApplicationRoleConfig extends cdktf.TerraformMetaArguments {
+export interface GrantApplicationRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The fully qualified name of the application on which application role will be granted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_application_role#application_name GrantApplicationRole#application_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_application_role#application_name GrantApplicationRole#application_name}
   */
   readonly applicationName?: string;
   /**
   * Specifies the identifier for the application role to grant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_application_role#application_role_name GrantApplicationRole#application_role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_application_role#application_role_name GrantApplicationRole#application_role_name}
   */
   readonly applicationRoleName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_application_role#id GrantApplicationRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_application_role#id GrantApplicationRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,75 +34,75 @@ export interface GrantApplicationRoleConfig extends cdktf.TerraformMetaArguments
   /**
   * The fully qualified name of the account role on which application role will be granted. For more information about this resource, see [docs](./account_role).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_application_role#parent_account_role_name GrantApplicationRole#parent_account_role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_application_role#parent_account_role_name GrantApplicationRole#parent_account_role_name}
   */
   readonly parentAccountRoleName?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_application_role#timeouts GrantApplicationRole#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_application_role#timeouts GrantApplicationRole#timeouts}
   */
   readonly timeouts?: GrantApplicationRoleTimeouts;
 }
 export interface GrantApplicationRoleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_application_role#create GrantApplicationRole#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_application_role#create GrantApplicationRole#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_application_role#delete GrantApplicationRole#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_application_role#delete GrantApplicationRole#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_application_role#read GrantApplicationRole#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_application_role#read GrantApplicationRole#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_application_role#update GrantApplicationRole#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_application_role#update GrantApplicationRole#update}
   */
   readonly update?: string;
 }
 
-export function grantApplicationRoleTimeoutsToTerraform(struct?: GrantApplicationRoleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function grantApplicationRoleTimeoutsToTerraform(struct?: GrantApplicationRoleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function grantApplicationRoleTimeoutsToHclTerraform(struct?: GrantApplicationRoleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function grantApplicationRoleTimeoutsToHclTerraform(struct?: GrantApplicationRoleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -113,19 +113,19 @@ export function grantApplicationRoleTimeoutsToHclTerraform(struct?: GrantApplica
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GrantApplicationRoleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GrantApplicationRoleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GrantApplicationRoleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GrantApplicationRoleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -150,7 +150,7 @@ export class GrantApplicationRoleTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GrantApplicationRoleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GrantApplicationRoleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -159,7 +159,7 @@ export class GrantApplicationRoleTimeoutsOutputReference extends cdktf.ComplexOb
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -239,9 +239,9 @@ export class GrantApplicationRoleTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_application_role snowflake_grant_application_role}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_application_role snowflake_grant_application_role}
 */
-export class GrantApplicationRole extends cdktf.TerraformResource {
+export class GrantApplicationRole extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -252,14 +252,14 @@ export class GrantApplicationRole extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GrantApplicationRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GrantApplicationRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GrantApplicationRole to import
-  * @param importFromId The id of the existing GrantApplicationRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_application_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GrantApplicationRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_application_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GrantApplicationRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_grant_application_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_grant_application_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -267,7 +267,7 @@ export class GrantApplicationRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_application_role snowflake_grant_application_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_application_role snowflake_grant_application_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -278,7 +278,7 @@ export class GrantApplicationRole extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_grant_application_role',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -383,10 +383,10 @@ export class GrantApplicationRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_name: cdktf.stringToTerraform(this._applicationName),
-      application_role_name: cdktf.stringToTerraform(this._applicationRoleName),
-      id: cdktf.stringToTerraform(this._id),
-      parent_account_role_name: cdktf.stringToTerraform(this._parentAccountRoleName),
+      application_name: cdktn.stringToTerraform(this._applicationName),
+      application_role_name: cdktn.stringToTerraform(this._applicationRoleName),
+      id: cdktn.stringToTerraform(this._id),
+      parent_account_role_name: cdktn.stringToTerraform(this._parentAccountRoleName),
       timeouts: grantApplicationRoleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -394,25 +394,25 @@ export class GrantApplicationRole extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_name: {
-        value: cdktf.stringToHclTerraform(this._applicationName),
+        value: cdktn.stringToHclTerraform(this._applicationName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       application_role_name: {
-        value: cdktf.stringToHclTerraform(this._applicationRoleName),
+        value: cdktn.stringToHclTerraform(this._applicationRoleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent_account_role_name: {
-        value: cdktf.stringToHclTerraform(this._parentAccountRoleName),
+        value: cdktn.stringToHclTerraform(this._parentAccountRoleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

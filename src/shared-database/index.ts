@@ -1,55 +1,55 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SharedDatabaseConfig extends cdktf.TerraformMetaArguments {
+export interface SharedDatabaseConfig extends cdktn.TerraformMetaArguments {
   /**
   * The database parameter that specifies the default catalog to use for Iceberg tables. For more information, see [CATALOG](https://docs.snowflake.com/en/sql-reference/parameters#catalog).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#catalog SharedDatabase#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#catalog SharedDatabase#catalog}
   */
   readonly catalog?: string;
   /**
   * Specifies a comment for the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#comment SharedDatabase#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#comment SharedDatabase#comment}
   */
   readonly comment?: string;
   /**
   * Specifies a default collation specification for all schemas and tables added to the database. It can be overridden on schema or table level. For more information, see [collation specification](https://docs.snowflake.com/en/sql-reference/collation#label-collation-specification).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#default_ddl_collation SharedDatabase#default_ddl_collation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#default_ddl_collation SharedDatabase#default_ddl_collation}
   */
   readonly defaultDdlCollation?: string;
   /**
   * If true, enables stdout/stderr fast path logging for anonymous stored procedures.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#enable_console_output SharedDatabase#enable_console_output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#enable_console_output SharedDatabase#enable_console_output}
   */
-  readonly enableConsoleOutput?: boolean | cdktf.IResolvable;
+  readonly enableConsoleOutput?: boolean | cdktn.IResolvable;
   /**
   * The database parameter that specifies the default external volume to use for Iceberg tables. For more information, see [EXTERNAL_VOLUME](https://docs.snowflake.com/en/sql-reference/parameters#external-volume).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#external_volume SharedDatabase#external_volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#external_volume SharedDatabase#external_volume}
   */
   readonly externalVolume?: string;
   /**
   * A fully qualified path to a share from which the database will be created. A fully qualified path follows the format of `"<organization_name>"."<account_name>"."<share_name>"`. For more information about this resource, see [docs](./share).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#from_share SharedDatabase#from_share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#from_share SharedDatabase#from_share}
   */
   readonly fromShare: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#id SharedDatabase#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#id SharedDatabase#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,135 +58,135 @@ export interface SharedDatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the severity level of messages that should be ingested and made available in the active event table. Valid options are: [TRACE DEBUG INFO WARN ERROR FATAL OFF]. Messages at the specified level (and at more severe levels) are ingested. For more information, see [LOG_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters.html#label-log-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#log_level SharedDatabase#log_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#log_level SharedDatabase#log_level}
   */
   readonly logLevel?: string;
   /**
   * Specifies the identifier for the database; must be unique for your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#name SharedDatabase#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#name SharedDatabase#name}
   */
   readonly name: string;
   /**
   * If true, the case of quoted identifiers is ignored. For more information, see [QUOTED_IDENTIFIERS_IGNORE_CASE](https://docs.snowflake.com/en/sql-reference/parameters#quoted-identifiers-ignore-case).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#quoted_identifiers_ignore_case SharedDatabase#quoted_identifiers_ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#quoted_identifiers_ignore_case SharedDatabase#quoted_identifiers_ignore_case}
   */
-  readonly quotedIdentifiersIgnoreCase?: boolean | cdktf.IResolvable;
+  readonly quotedIdentifiersIgnoreCase?: boolean | cdktn.IResolvable;
   /**
   * Specifies whether to replace invalid UTF-8 characters with the Unicode replacement character (�) in query results for an Iceberg table. You can only set this parameter for tables that use an external Iceberg catalog. For more information, see [REPLACE_INVALID_CHARACTERS](https://docs.snowflake.com/en/sql-reference/parameters#replace-invalid-characters).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#replace_invalid_characters SharedDatabase#replace_invalid_characters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#replace_invalid_characters SharedDatabase#replace_invalid_characters}
   */
-  readonly replaceInvalidCharacters?: boolean | cdktf.IResolvable;
+  readonly replaceInvalidCharacters?: boolean | cdktn.IResolvable;
   /**
   * The storage serialization policy for Iceberg tables that use Snowflake as the catalog. Valid options are: [COMPATIBLE OPTIMIZED]. COMPATIBLE: Snowflake performs encoding and compression of data files that ensures interoperability with third-party compute engines. OPTIMIZED: Snowflake performs encoding and compression of data files that ensures the best table performance within Snowflake. For more information, see [STORAGE_SERIALIZATION_POLICY](https://docs.snowflake.com/en/sql-reference/parameters#storage-serialization-policy).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#storage_serialization_policy SharedDatabase#storage_serialization_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#storage_serialization_policy SharedDatabase#storage_serialization_policy}
   */
   readonly storageSerializationPolicy?: string;
   /**
   * How many times a task must fail in a row before it is automatically suspended. 0 disables auto-suspending. For more information, see [SUSPEND_TASK_AFTER_NUM_FAILURES](https://docs.snowflake.com/en/sql-reference/parameters#suspend-task-after-num-failures).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#suspend_task_after_num_failures SharedDatabase#suspend_task_after_num_failures}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#suspend_task_after_num_failures SharedDatabase#suspend_task_after_num_failures}
   */
   readonly suspendTaskAfterNumFailures?: number;
   /**
   * Maximum automatic retries allowed for a user task. For more information, see [TASK_AUTO_RETRY_ATTEMPTS](https://docs.snowflake.com/en/sql-reference/parameters#task-auto-retry-attempts).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#task_auto_retry_attempts SharedDatabase#task_auto_retry_attempts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#task_auto_retry_attempts SharedDatabase#task_auto_retry_attempts}
   */
   readonly taskAutoRetryAttempts?: number;
   /**
   * Controls how trace events are ingested into the event table. Valid options are: `ALWAYS` | `ON_EVENT` | `PROPAGATE` | `OFF`. For information about levels, see [TRACE_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters.html#label-trace-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#trace_level SharedDatabase#trace_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#trace_level SharedDatabase#trace_level}
   */
   readonly traceLevel?: string;
   /**
   * The initial size of warehouse to use for managed warehouses in the absence of history. For more information, see [USER_TASK_MANAGED_INITIAL_WAREHOUSE_SIZE](https://docs.snowflake.com/en/sql-reference/parameters#user-task-managed-initial-warehouse-size).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#user_task_managed_initial_warehouse_size SharedDatabase#user_task_managed_initial_warehouse_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#user_task_managed_initial_warehouse_size SharedDatabase#user_task_managed_initial_warehouse_size}
   */
   readonly userTaskManagedInitialWarehouseSize?: string;
   /**
   * Minimum amount of time between Triggered Task executions in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#user_task_minimum_trigger_interval_in_seconds SharedDatabase#user_task_minimum_trigger_interval_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#user_task_minimum_trigger_interval_in_seconds SharedDatabase#user_task_minimum_trigger_interval_in_seconds}
   */
   readonly userTaskMinimumTriggerIntervalInSeconds?: number;
   /**
   * User task execution timeout in milliseconds. For more information, see [USER_TASK_TIMEOUT_MS](https://docs.snowflake.com/en/sql-reference/parameters#user-task-timeout-ms).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#user_task_timeout_ms SharedDatabase#user_task_timeout_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#user_task_timeout_ms SharedDatabase#user_task_timeout_ms}
   */
   readonly userTaskTimeoutMs?: number;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#timeouts SharedDatabase#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#timeouts SharedDatabase#timeouts}
   */
   readonly timeouts?: SharedDatabaseTimeouts;
 }
 export interface SharedDatabaseTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#create SharedDatabase#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#create SharedDatabase#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#delete SharedDatabase#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#delete SharedDatabase#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#read SharedDatabase#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#read SharedDatabase#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#update SharedDatabase#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#update SharedDatabase#update}
   */
   readonly update?: string;
 }
 
-export function sharedDatabaseTimeoutsToTerraform(struct?: SharedDatabaseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sharedDatabaseTimeoutsToTerraform(struct?: SharedDatabaseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function sharedDatabaseTimeoutsToHclTerraform(struct?: SharedDatabaseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sharedDatabaseTimeoutsToHclTerraform(struct?: SharedDatabaseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -197,19 +197,19 @@ export function sharedDatabaseTimeoutsToHclTerraform(struct?: SharedDatabaseTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SharedDatabaseTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SharedDatabaseTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SharedDatabaseTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SharedDatabaseTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -234,7 +234,7 @@ export class SharedDatabaseTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SharedDatabaseTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SharedDatabaseTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -243,7 +243,7 @@ export class SharedDatabaseTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -323,9 +323,9 @@ export class SharedDatabaseTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database snowflake_shared_database}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database snowflake_shared_database}
 */
-export class SharedDatabase extends cdktf.TerraformResource {
+export class SharedDatabase extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -336,14 +336,14 @@ export class SharedDatabase extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SharedDatabase resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SharedDatabase resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SharedDatabase to import
-  * @param importFromId The id of the existing SharedDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SharedDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SharedDatabase to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_shared_database", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_shared_database", importId: importFromId, provider });
       }
 
   // ===========
@@ -351,7 +351,7 @@ export class SharedDatabase extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/shared_database snowflake_shared_database} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/shared_database snowflake_shared_database} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -362,7 +362,7 @@ export class SharedDatabase extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_shared_database',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -447,11 +447,11 @@ export class SharedDatabase extends cdktf.TerraformResource {
   }
 
   // enable_console_output - computed: true, optional: true, required: false
-  private _enableConsoleOutput?: boolean | cdktf.IResolvable; 
+  private _enableConsoleOutput?: boolean | cdktn.IResolvable; 
   public get enableConsoleOutput() {
     return this.getBooleanAttribute('enable_console_output');
   }
-  public set enableConsoleOutput(value: boolean | cdktf.IResolvable) {
+  public set enableConsoleOutput(value: boolean | cdktn.IResolvable) {
     this._enableConsoleOutput = value;
   }
   public resetEnableConsoleOutput() {
@@ -542,11 +542,11 @@ export class SharedDatabase extends cdktf.TerraformResource {
   }
 
   // quoted_identifiers_ignore_case - computed: true, optional: true, required: false
-  private _quotedIdentifiersIgnoreCase?: boolean | cdktf.IResolvable; 
+  private _quotedIdentifiersIgnoreCase?: boolean | cdktn.IResolvable; 
   public get quotedIdentifiersIgnoreCase() {
     return this.getBooleanAttribute('quoted_identifiers_ignore_case');
   }
-  public set quotedIdentifiersIgnoreCase(value: boolean | cdktf.IResolvable) {
+  public set quotedIdentifiersIgnoreCase(value: boolean | cdktn.IResolvable) {
     this._quotedIdentifiersIgnoreCase = value;
   }
   public resetQuotedIdentifiersIgnoreCase() {
@@ -558,11 +558,11 @@ export class SharedDatabase extends cdktf.TerraformResource {
   }
 
   // replace_invalid_characters - computed: true, optional: true, required: false
-  private _replaceInvalidCharacters?: boolean | cdktf.IResolvable; 
+  private _replaceInvalidCharacters?: boolean | cdktn.IResolvable; 
   public get replaceInvalidCharacters() {
     return this.getBooleanAttribute('replace_invalid_characters');
   }
-  public set replaceInvalidCharacters(value: boolean | cdktf.IResolvable) {
+  public set replaceInvalidCharacters(value: boolean | cdktn.IResolvable) {
     this._replaceInvalidCharacters = value;
   }
   public resetReplaceInvalidCharacters() {
@@ -707,24 +707,24 @@ export class SharedDatabase extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      catalog: cdktf.stringToTerraform(this._catalog),
-      comment: cdktf.stringToTerraform(this._comment),
-      default_ddl_collation: cdktf.stringToTerraform(this._defaultDdlCollation),
-      enable_console_output: cdktf.booleanToTerraform(this._enableConsoleOutput),
-      external_volume: cdktf.stringToTerraform(this._externalVolume),
-      from_share: cdktf.stringToTerraform(this._fromShare),
-      id: cdktf.stringToTerraform(this._id),
-      log_level: cdktf.stringToTerraform(this._logLevel),
-      name: cdktf.stringToTerraform(this._name),
-      quoted_identifiers_ignore_case: cdktf.booleanToTerraform(this._quotedIdentifiersIgnoreCase),
-      replace_invalid_characters: cdktf.booleanToTerraform(this._replaceInvalidCharacters),
-      storage_serialization_policy: cdktf.stringToTerraform(this._storageSerializationPolicy),
-      suspend_task_after_num_failures: cdktf.numberToTerraform(this._suspendTaskAfterNumFailures),
-      task_auto_retry_attempts: cdktf.numberToTerraform(this._taskAutoRetryAttempts),
-      trace_level: cdktf.stringToTerraform(this._traceLevel),
-      user_task_managed_initial_warehouse_size: cdktf.stringToTerraform(this._userTaskManagedInitialWarehouseSize),
-      user_task_minimum_trigger_interval_in_seconds: cdktf.numberToTerraform(this._userTaskMinimumTriggerIntervalInSeconds),
-      user_task_timeout_ms: cdktf.numberToTerraform(this._userTaskTimeoutMs),
+      catalog: cdktn.stringToTerraform(this._catalog),
+      comment: cdktn.stringToTerraform(this._comment),
+      default_ddl_collation: cdktn.stringToTerraform(this._defaultDdlCollation),
+      enable_console_output: cdktn.booleanToTerraform(this._enableConsoleOutput),
+      external_volume: cdktn.stringToTerraform(this._externalVolume),
+      from_share: cdktn.stringToTerraform(this._fromShare),
+      id: cdktn.stringToTerraform(this._id),
+      log_level: cdktn.stringToTerraform(this._logLevel),
+      name: cdktn.stringToTerraform(this._name),
+      quoted_identifiers_ignore_case: cdktn.booleanToTerraform(this._quotedIdentifiersIgnoreCase),
+      replace_invalid_characters: cdktn.booleanToTerraform(this._replaceInvalidCharacters),
+      storage_serialization_policy: cdktn.stringToTerraform(this._storageSerializationPolicy),
+      suspend_task_after_num_failures: cdktn.numberToTerraform(this._suspendTaskAfterNumFailures),
+      task_auto_retry_attempts: cdktn.numberToTerraform(this._taskAutoRetryAttempts),
+      trace_level: cdktn.stringToTerraform(this._traceLevel),
+      user_task_managed_initial_warehouse_size: cdktn.stringToTerraform(this._userTaskManagedInitialWarehouseSize),
+      user_task_minimum_trigger_interval_in_seconds: cdktn.numberToTerraform(this._userTaskMinimumTriggerIntervalInSeconds),
+      user_task_timeout_ms: cdktn.numberToTerraform(this._userTaskTimeoutMs),
       timeouts: sharedDatabaseTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -732,109 +732,109 @@ export class SharedDatabase extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       catalog: {
-        value: cdktf.stringToHclTerraform(this._catalog),
+        value: cdktn.stringToHclTerraform(this._catalog),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_ddl_collation: {
-        value: cdktf.stringToHclTerraform(this._defaultDdlCollation),
+        value: cdktn.stringToHclTerraform(this._defaultDdlCollation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_console_output: {
-        value: cdktf.booleanToHclTerraform(this._enableConsoleOutput),
+        value: cdktn.booleanToHclTerraform(this._enableConsoleOutput),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       external_volume: {
-        value: cdktf.stringToHclTerraform(this._externalVolume),
+        value: cdktn.stringToHclTerraform(this._externalVolume),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       from_share: {
-        value: cdktf.stringToHclTerraform(this._fromShare),
+        value: cdktn.stringToHclTerraform(this._fromShare),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_level: {
-        value: cdktf.stringToHclTerraform(this._logLevel),
+        value: cdktn.stringToHclTerraform(this._logLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       quoted_identifiers_ignore_case: {
-        value: cdktf.booleanToHclTerraform(this._quotedIdentifiersIgnoreCase),
+        value: cdktn.booleanToHclTerraform(this._quotedIdentifiersIgnoreCase),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       replace_invalid_characters: {
-        value: cdktf.booleanToHclTerraform(this._replaceInvalidCharacters),
+        value: cdktn.booleanToHclTerraform(this._replaceInvalidCharacters),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       storage_serialization_policy: {
-        value: cdktf.stringToHclTerraform(this._storageSerializationPolicy),
+        value: cdktn.stringToHclTerraform(this._storageSerializationPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       suspend_task_after_num_failures: {
-        value: cdktf.numberToHclTerraform(this._suspendTaskAfterNumFailures),
+        value: cdktn.numberToHclTerraform(this._suspendTaskAfterNumFailures),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       task_auto_retry_attempts: {
-        value: cdktf.numberToHclTerraform(this._taskAutoRetryAttempts),
+        value: cdktn.numberToHclTerraform(this._taskAutoRetryAttempts),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       trace_level: {
-        value: cdktf.stringToHclTerraform(this._traceLevel),
+        value: cdktn.stringToHclTerraform(this._traceLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_task_managed_initial_warehouse_size: {
-        value: cdktf.stringToHclTerraform(this._userTaskManagedInitialWarehouseSize),
+        value: cdktn.stringToHclTerraform(this._userTaskManagedInitialWarehouseSize),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_task_minimum_trigger_interval_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._userTaskMinimumTriggerIntervalInSeconds),
+        value: cdktn.numberToHclTerraform(this._userTaskMinimumTriggerIntervalInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       user_task_timeout_ms: {
-        value: cdktf.numberToHclTerraform(this._userTaskTimeoutMs),
+        value: cdktn.numberToHclTerraform(this._userTaskTimeoutMs),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

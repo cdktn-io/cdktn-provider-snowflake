@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/database_roles
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/database_roles
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataSnowflakeDatabaseRolesConfig extends cdktf.TerraformMetaArguments {
+export interface DataSnowflakeDatabaseRolesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface DataSnowflakeDatabaseRolesConfig extends cdktf.TerraformMetaArg
   /**
   * The database from which to return the database roles from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/database_roles#in_database DataSnowflakeDatabaseRoles#in_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/database_roles#in_database DataSnowflakeDatabaseRoles#in_database}
   */
   readonly inDatabase: string;
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/database_roles#like DataSnowflakeDatabaseRoles#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/database_roles#like DataSnowflakeDatabaseRoles#like}
   */
   readonly like?: string;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/database_roles#limit DataSnowflakeDatabaseRoles#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/database_roles#limit DataSnowflakeDatabaseRoles#limit}
   */
   readonly limit?: DataSnowflakeDatabaseRolesLimit;
 }
@@ -42,8 +42,8 @@ export interface DataSnowflakeDatabaseRolesDatabaseRolesShowOutput {
 }
 
 export function dataSnowflakeDatabaseRolesDatabaseRolesShowOutputToTerraform(struct?: DataSnowflakeDatabaseRolesDatabaseRolesShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function dataSnowflakeDatabaseRolesDatabaseRolesShowOutputToTerraform(str
 
 
 export function dataSnowflakeDatabaseRolesDatabaseRolesShowOutputToHclTerraform(struct?: DataSnowflakeDatabaseRolesDatabaseRolesShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function dataSnowflakeDatabaseRolesDatabaseRolesShowOutputToHclTerraform(
   return attrs;
 }
 
-export class DataSnowflakeDatabaseRolesDatabaseRolesShowOutputOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeDatabaseRolesDatabaseRolesShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class DataSnowflakeDatabaseRolesDatabaseRolesShowOutputOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -150,14 +150,14 @@ export class DataSnowflakeDatabaseRolesDatabaseRolesShowOutputOutputReference ex
   }
 }
 
-export class DataSnowflakeDatabaseRolesDatabaseRolesShowOutputList extends cdktf.ComplexList {
+export class DataSnowflakeDatabaseRolesDatabaseRolesShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -172,8 +172,8 @@ export interface DataSnowflakeDatabaseRolesDatabaseRoles {
 }
 
 export function dataSnowflakeDatabaseRolesDatabaseRolesToTerraform(struct?: DataSnowflakeDatabaseRolesDatabaseRoles): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -182,8 +182,8 @@ export function dataSnowflakeDatabaseRolesDatabaseRolesToTerraform(struct?: Data
 
 
 export function dataSnowflakeDatabaseRolesDatabaseRolesToHclTerraform(struct?: DataSnowflakeDatabaseRolesDatabaseRoles): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -191,7 +191,7 @@ export function dataSnowflakeDatabaseRolesDatabaseRolesToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataSnowflakeDatabaseRolesDatabaseRolesOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeDatabaseRolesDatabaseRolesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -200,7 +200,7 @@ export class DataSnowflakeDatabaseRolesDatabaseRolesOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -226,14 +226,14 @@ export class DataSnowflakeDatabaseRolesDatabaseRolesOutputReference extends cdkt
   }
 }
 
-export class DataSnowflakeDatabaseRolesDatabaseRolesList extends cdktf.ComplexList {
+export class DataSnowflakeDatabaseRolesDatabaseRolesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -248,43 +248,43 @@ export interface DataSnowflakeDatabaseRolesLimit {
   /**
   * Specifies a **case-sensitive** pattern that is used to match object name. After the first match, the limit on the number of rows will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/database_roles#from DataSnowflakeDatabaseRoles#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/database_roles#from DataSnowflakeDatabaseRoles#from}
   */
   readonly from?: string;
   /**
   * The maximum number of rows to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/database_roles#rows DataSnowflakeDatabaseRoles#rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/database_roles#rows DataSnowflakeDatabaseRoles#rows}
   */
   readonly rows: number;
 }
 
 export function dataSnowflakeDatabaseRolesLimitToTerraform(struct?: DataSnowflakeDatabaseRolesLimitOutputReference | DataSnowflakeDatabaseRolesLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from: cdktf.stringToTerraform(struct!.from),
-    rows: cdktf.numberToTerraform(struct!.rows),
+    from: cdktn.stringToTerraform(struct!.from),
+    rows: cdktn.numberToTerraform(struct!.rows),
   }
 }
 
 
 export function dataSnowflakeDatabaseRolesLimitToHclTerraform(struct?: DataSnowflakeDatabaseRolesLimitOutputReference | DataSnowflakeDatabaseRolesLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from: {
-      value: cdktf.stringToHclTerraform(struct!.from),
+      value: cdktn.stringToHclTerraform(struct!.from),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rows: {
-      value: cdktf.numberToHclTerraform(struct!.rows),
+      value: cdktn.numberToHclTerraform(struct!.rows),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -295,14 +295,14 @@ export function dataSnowflakeDatabaseRolesLimitToHclTerraform(struct?: DataSnowf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataSnowflakeDatabaseRolesLimitOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeDatabaseRolesLimitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -364,9 +364,9 @@ export class DataSnowflakeDatabaseRolesLimitOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/database_roles snowflake_database_roles}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/database_roles snowflake_database_roles}
 */
-export class DataSnowflakeDatabaseRoles extends cdktf.TerraformDataSource {
+export class DataSnowflakeDatabaseRoles extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -377,14 +377,14 @@ export class DataSnowflakeDatabaseRoles extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataSnowflakeDatabaseRoles resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataSnowflakeDatabaseRoles resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeDatabaseRoles to import
-  * @param importFromId The id of the existing DataSnowflakeDatabaseRoles that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/database_roles#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeDatabaseRoles that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/database_roles#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeDatabaseRoles to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_database_roles", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_database_roles", importId: importFromId, provider });
       }
 
   // ===========
@@ -392,7 +392,7 @@ export class DataSnowflakeDatabaseRoles extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/database_roles snowflake_database_roles} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/database_roles snowflake_database_roles} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -403,7 +403,7 @@ export class DataSnowflakeDatabaseRoles extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_database_roles',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -497,9 +497,9 @@ export class DataSnowflakeDatabaseRoles extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      in_database: cdktf.stringToTerraform(this._inDatabase),
-      like: cdktf.stringToTerraform(this._like),
+      id: cdktn.stringToTerraform(this._id),
+      in_database: cdktn.stringToTerraform(this._inDatabase),
+      like: cdktn.stringToTerraform(this._like),
       limit: dataSnowflakeDatabaseRolesLimitToTerraform(this._limit.internalValue),
     };
   }
@@ -507,19 +507,19 @@ export class DataSnowflakeDatabaseRoles extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       in_database: {
-        value: cdktf.stringToHclTerraform(this._inDatabase),
+        value: cdktn.stringToHclTerraform(this._inDatabase),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       like: {
-        value: cdktf.stringToHclTerraform(this._like),
+        value: cdktn.stringToHclTerraform(this._like),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

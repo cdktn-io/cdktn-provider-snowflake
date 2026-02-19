@@ -1,55 +1,55 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PipeConfig extends cdktf.TerraformMetaArguments {
+export interface PipeConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Default: `false`) Specifies a auto_ingest param for the pipe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe#auto_ingest Pipe#auto_ingest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe#auto_ingest Pipe#auto_ingest}
   */
-  readonly autoIngest?: boolean | cdktf.IResolvable;
+  readonly autoIngest?: boolean | cdktn.IResolvable;
   /**
   * Specifies the Amazon Resource Name (ARN) for the SNS topic for your S3 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe#aws_sns_topic_arn Pipe#aws_sns_topic_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe#aws_sns_topic_arn Pipe#aws_sns_topic_arn}
   */
   readonly awsSnsTopicArn?: string;
   /**
   * Specifies a comment for the pipe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe#comment Pipe#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe#comment Pipe#comment}
   */
   readonly comment?: string;
   /**
   * Specifies the copy statement for the pipe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe#copy_statement Pipe#copy_statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe#copy_statement Pipe#copy_statement}
   */
   readonly copyStatement: string;
   /**
   * The database in which to create the pipe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe#database Pipe#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe#database Pipe#database}
   */
   readonly database: string;
   /**
   * Specifies the name of the notification integration used for error notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe#error_integration Pipe#error_integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe#error_integration Pipe#error_integration}
   */
   readonly errorIntegration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe#id Pipe#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe#id Pipe#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,87 +58,87 @@ export interface PipeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies an integration for the pipe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe#integration Pipe#integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe#integration Pipe#integration}
   */
   readonly integration?: string;
   /**
   * Specifies the identifier for the pipe; must be unique for the database and schema in which the pipe is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe#name Pipe#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe#name Pipe#name}
   */
   readonly name: string;
   /**
   * The schema in which to create the pipe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe#schema Pipe#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe#schema Pipe#schema}
   */
   readonly schema: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe#timeouts Pipe#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe#timeouts Pipe#timeouts}
   */
   readonly timeouts?: PipeTimeouts;
 }
 export interface PipeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe#create Pipe#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe#create Pipe#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe#delete Pipe#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe#delete Pipe#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe#read Pipe#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe#read Pipe#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe#update Pipe#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe#update Pipe#update}
   */
   readonly update?: string;
 }
 
-export function pipeTimeoutsToTerraform(struct?: PipeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipeTimeoutsToTerraform(struct?: PipeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function pipeTimeoutsToHclTerraform(struct?: PipeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pipeTimeoutsToHclTerraform(struct?: PipeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -149,19 +149,19 @@ export function pipeTimeoutsToHclTerraform(struct?: PipeTimeouts | cdktf.IResolv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PipeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PipeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PipeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PipeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -186,7 +186,7 @@ export class PipeTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PipeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PipeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -195,7 +195,7 @@ export class PipeTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -275,9 +275,9 @@ export class PipeTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe snowflake_pipe}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe snowflake_pipe}
 */
-export class Pipe extends cdktf.TerraformResource {
+export class Pipe extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -288,14 +288,14 @@ export class Pipe extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Pipe resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Pipe resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Pipe to import
-  * @param importFromId The id of the existing Pipe that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Pipe that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Pipe to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_pipe", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_pipe", importId: importFromId, provider });
       }
 
   // ===========
@@ -303,7 +303,7 @@ export class Pipe extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/pipe snowflake_pipe} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/pipe snowflake_pipe} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -314,7 +314,7 @@ export class Pipe extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_pipe',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -343,11 +343,11 @@ export class Pipe extends cdktf.TerraformResource {
   // ==========
 
   // auto_ingest - computed: false, optional: true, required: false
-  private _autoIngest?: boolean | cdktf.IResolvable; 
+  private _autoIngest?: boolean | cdktn.IResolvable; 
   public get autoIngest() {
     return this.getBooleanAttribute('auto_ingest');
   }
-  public set autoIngest(value: boolean | cdktf.IResolvable) {
+  public set autoIngest(value: boolean | cdktn.IResolvable) {
     this._autoIngest = value;
   }
   public resetAutoIngest() {
@@ -527,16 +527,16 @@ export class Pipe extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_ingest: cdktf.booleanToTerraform(this._autoIngest),
-      aws_sns_topic_arn: cdktf.stringToTerraform(this._awsSnsTopicArn),
-      comment: cdktf.stringToTerraform(this._comment),
-      copy_statement: cdktf.stringToTerraform(this._copyStatement),
-      database: cdktf.stringToTerraform(this._database),
-      error_integration: cdktf.stringToTerraform(this._errorIntegration),
-      id: cdktf.stringToTerraform(this._id),
-      integration: cdktf.stringToTerraform(this._integration),
-      name: cdktf.stringToTerraform(this._name),
-      schema: cdktf.stringToTerraform(this._schema),
+      auto_ingest: cdktn.booleanToTerraform(this._autoIngest),
+      aws_sns_topic_arn: cdktn.stringToTerraform(this._awsSnsTopicArn),
+      comment: cdktn.stringToTerraform(this._comment),
+      copy_statement: cdktn.stringToTerraform(this._copyStatement),
+      database: cdktn.stringToTerraform(this._database),
+      error_integration: cdktn.stringToTerraform(this._errorIntegration),
+      id: cdktn.stringToTerraform(this._id),
+      integration: cdktn.stringToTerraform(this._integration),
+      name: cdktn.stringToTerraform(this._name),
+      schema: cdktn.stringToTerraform(this._schema),
       timeouts: pipeTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -544,61 +544,61 @@ export class Pipe extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_ingest: {
-        value: cdktf.booleanToHclTerraform(this._autoIngest),
+        value: cdktn.booleanToHclTerraform(this._autoIngest),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       aws_sns_topic_arn: {
-        value: cdktf.stringToHclTerraform(this._awsSnsTopicArn),
+        value: cdktn.stringToHclTerraform(this._awsSnsTopicArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       copy_statement: {
-        value: cdktf.stringToHclTerraform(this._copyStatement),
+        value: cdktn.stringToHclTerraform(this._copyStatement),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       error_integration: {
-        value: cdktf.stringToHclTerraform(this._errorIntegration),
+        value: cdktn.stringToHclTerraform(this._errorIntegration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration: {
-        value: cdktf.stringToHclTerraform(this._integration),
+        value: cdktn.stringToHclTerraform(this._integration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

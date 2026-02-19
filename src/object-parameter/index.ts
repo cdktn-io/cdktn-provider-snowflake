@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/object_parameter
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ObjectParameterConfig extends cdktf.TerraformMetaArguments {
+export interface ObjectParameterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/object_parameter#id ObjectParameter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter#id ObjectParameter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,37 +22,37 @@ export interface ObjectParameterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of object parameter. Valid values are those in [object parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#object-parameters).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/object_parameter#key ObjectParameter#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter#key ObjectParameter#key}
   */
   readonly key: string;
   /**
   * Type of object to which the parameter applies. Valid values are those in [object types](https://docs.snowflake.com/en/sql-reference/parameters.html#object-types). If no value is provided, then the resource will default to setting the object parameter at account level.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/object_parameter#object_type ObjectParameter#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter#object_type ObjectParameter#object_type}
   */
   readonly objectType?: string;
   /**
   * (Default: `false`) If true, the object parameter will be set on the account level.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/object_parameter#on_account ObjectParameter#on_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter#on_account ObjectParameter#on_account}
   */
-  readonly onAccount?: boolean | cdktf.IResolvable;
+  readonly onAccount?: boolean | cdktn.IResolvable;
   /**
   * Value of object parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/object_parameter#value ObjectParameter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter#value ObjectParameter#value}
   */
   readonly value: string;
   /**
   * object_identifier block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/object_parameter#object_identifier ObjectParameter#object_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter#object_identifier ObjectParameter#object_identifier}
   */
-  readonly objectIdentifier?: ObjectParameterObjectIdentifier[] | cdktf.IResolvable;
+  readonly objectIdentifier?: ObjectParameterObjectIdentifier[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/object_parameter#timeouts ObjectParameter#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter#timeouts ObjectParameter#timeouts}
   */
   readonly timeouts?: ObjectParameterTimeouts;
 }
@@ -60,56 +60,56 @@ export interface ObjectParameterObjectIdentifier {
   /**
   * Name of the database that the object was created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/object_parameter#database ObjectParameter#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter#database ObjectParameter#database}
   */
   readonly database?: string;
   /**
   * Name of the object to set the parameter for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/object_parameter#name ObjectParameter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter#name ObjectParameter#name}
   */
   readonly name: string;
   /**
   * Name of the schema that the object was created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/object_parameter#schema ObjectParameter#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter#schema ObjectParameter#schema}
   */
   readonly schema?: string;
 }
 
-export function objectParameterObjectIdentifierToTerraform(struct?: ObjectParameterObjectIdentifier | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function objectParameterObjectIdentifierToTerraform(struct?: ObjectParameterObjectIdentifier | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database: cdktf.stringToTerraform(struct!.database),
-    name: cdktf.stringToTerraform(struct!.name),
-    schema: cdktf.stringToTerraform(struct!.schema),
+    database: cdktn.stringToTerraform(struct!.database),
+    name: cdktn.stringToTerraform(struct!.name),
+    schema: cdktn.stringToTerraform(struct!.schema),
   }
 }
 
 
-export function objectParameterObjectIdentifierToHclTerraform(struct?: ObjectParameterObjectIdentifier | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function objectParameterObjectIdentifierToHclTerraform(struct?: ObjectParameterObjectIdentifier | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schema: {
-      value: cdktf.stringToHclTerraform(struct!.schema),
+      value: cdktn.stringToHclTerraform(struct!.schema),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -120,9 +120,9 @@ export function objectParameterObjectIdentifierToHclTerraform(struct?: ObjectPar
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ObjectParameterObjectIdentifierOutputReference extends cdktf.ComplexObject {
+export class ObjectParameterObjectIdentifierOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -130,11 +130,11 @@ export class ObjectParameterObjectIdentifierOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ObjectParameterObjectIdentifier | cdktf.IResolvable | undefined {
+  public get internalValue(): ObjectParameterObjectIdentifier | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -155,7 +155,7 @@ export class ObjectParameterObjectIdentifierOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ObjectParameterObjectIdentifier | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ObjectParameterObjectIdentifier | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -163,7 +163,7 @@ export class ObjectParameterObjectIdentifierOutputReference extends cdktf.Comple
       this._name = undefined;
       this._schema = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -222,15 +222,15 @@ export class ObjectParameterObjectIdentifierOutputReference extends cdktf.Comple
   }
 }
 
-export class ObjectParameterObjectIdentifierList extends cdktf.ComplexList {
-  public internalValue? : ObjectParameterObjectIdentifier[] | cdktf.IResolvable
+export class ObjectParameterObjectIdentifierList extends cdktn.ComplexList {
+  public internalValue? : ObjectParameterObjectIdentifier[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -243,63 +243,63 @@ export class ObjectParameterObjectIdentifierList extends cdktf.ComplexList {
 }
 export interface ObjectParameterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/object_parameter#create ObjectParameter#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter#create ObjectParameter#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/object_parameter#delete ObjectParameter#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter#delete ObjectParameter#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/object_parameter#read ObjectParameter#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter#read ObjectParameter#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/object_parameter#update ObjectParameter#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter#update ObjectParameter#update}
   */
   readonly update?: string;
 }
 
-export function objectParameterTimeoutsToTerraform(struct?: ObjectParameterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function objectParameterTimeoutsToTerraform(struct?: ObjectParameterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function objectParameterTimeoutsToHclTerraform(struct?: ObjectParameterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function objectParameterTimeoutsToHclTerraform(struct?: ObjectParameterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -310,19 +310,19 @@ export function objectParameterTimeoutsToHclTerraform(struct?: ObjectParameterTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ObjectParameterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ObjectParameterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ObjectParameterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ObjectParameterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -347,7 +347,7 @@ export class ObjectParameterTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ObjectParameterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ObjectParameterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -356,7 +356,7 @@ export class ObjectParameterTimeoutsOutputReference extends cdktf.ComplexObject 
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -436,9 +436,9 @@ export class ObjectParameterTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/object_parameter snowflake_object_parameter}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter snowflake_object_parameter}
 */
-export class ObjectParameter extends cdktf.TerraformResource {
+export class ObjectParameter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -449,14 +449,14 @@ export class ObjectParameter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ObjectParameter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ObjectParameter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObjectParameter to import
-  * @param importFromId The id of the existing ObjectParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/object_parameter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ObjectParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObjectParameter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_object_parameter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_object_parameter", importId: importFromId, provider });
       }
 
   // ===========
@@ -464,7 +464,7 @@ export class ObjectParameter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/object_parameter snowflake_object_parameter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/object_parameter snowflake_object_parameter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -475,7 +475,7 @@ export class ObjectParameter extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_object_parameter',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -545,11 +545,11 @@ export class ObjectParameter extends cdktf.TerraformResource {
   }
 
   // on_account - computed: false, optional: true, required: false
-  private _onAccount?: boolean | cdktf.IResolvable; 
+  private _onAccount?: boolean | cdktn.IResolvable; 
   public get onAccount() {
     return this.getBooleanAttribute('on_account');
   }
-  public set onAccount(value: boolean | cdktf.IResolvable) {
+  public set onAccount(value: boolean | cdktn.IResolvable) {
     this._onAccount = value;
   }
   public resetOnAccount() {
@@ -578,7 +578,7 @@ export class ObjectParameter extends cdktf.TerraformResource {
   public get objectIdentifier() {
     return this._objectIdentifier;
   }
-  public putObjectIdentifier(value: ObjectParameterObjectIdentifier[] | cdktf.IResolvable) {
+  public putObjectIdentifier(value: ObjectParameterObjectIdentifier[] | cdktn.IResolvable) {
     this._objectIdentifier.internalValue = value;
   }
   public resetObjectIdentifier() {
@@ -611,12 +611,12 @@ export class ObjectParameter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      key: cdktf.stringToTerraform(this._key),
-      object_type: cdktf.stringToTerraform(this._objectType),
-      on_account: cdktf.booleanToTerraform(this._onAccount),
-      value: cdktf.stringToTerraform(this._value),
-      object_identifier: cdktf.listMapper(objectParameterObjectIdentifierToTerraform, true)(this._objectIdentifier.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      key: cdktn.stringToTerraform(this._key),
+      object_type: cdktn.stringToTerraform(this._objectType),
+      on_account: cdktn.booleanToTerraform(this._onAccount),
+      value: cdktn.stringToTerraform(this._value),
+      object_identifier: cdktn.listMapper(objectParameterObjectIdentifierToTerraform, true)(this._objectIdentifier.internalValue),
       timeouts: objectParameterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -624,37 +624,37 @@ export class ObjectParameter extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key: {
-        value: cdktf.stringToHclTerraform(this._key),
+        value: cdktn.stringToHclTerraform(this._key),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_type: {
-        value: cdktf.stringToHclTerraform(this._objectType),
+        value: cdktn.stringToHclTerraform(this._objectType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       on_account: {
-        value: cdktf.booleanToHclTerraform(this._onAccount),
+        value: cdktn.booleanToHclTerraform(this._onAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       value: {
-        value: cdktf.stringToHclTerraform(this._value),
+        value: cdktn.stringToHclTerraform(this._value),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_identifier: {
-        value: cdktf.listMapperHcl(objectParameterObjectIdentifierToHclTerraform, true)(this._objectIdentifier.internalValue),
+        value: cdktn.listMapperHcl(objectParameterObjectIdentifierToHclTerraform, true)(this._objectIdentifier.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ObjectParameterObjectIdentifierList",

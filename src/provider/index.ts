@@ -1,13 +1,13 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
@@ -15,331 +15,409 @@ export interface SnowflakeProviderConfig {
   /**
   * Specifies your Snowflake account name assigned by Snowflake. For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#account-name). Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_ACCOUNT_NAME` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#account_name SnowflakeProvider#account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#account_name SnowflakeProvider#account_name}
   */
   readonly accountName?: string;
   /**
   * Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid options are: `SNOWFLAKE` | `OAUTH` | `EXTERNALBROWSER` | `OKTA` | `SNOWFLAKE_JWT` | `TOKENACCESSOR` | `USERNAMEPASSWORDMFA` | `PROGRAMMATIC_ACCESS_TOKEN` | `OAUTH_CLIENT_CREDENTIALS` | `OAUTH_AUTHORIZATION_CODE` | `WORKLOAD_IDENTITY`. Can also be sourced from the `SNOWFLAKE_AUTHENTICATOR` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#authenticator SnowflakeProvider#authenticator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#authenticator SnowflakeProvider#authenticator}
   */
   readonly authenticator?: string;
   /**
+  * Specifies the certificate revocation check mode. Valid options are: `DISABLED` | `ADVISORY` | `ENABLED`. The value is case-insensitive. Can also be sourced from the `SNOWFLAKE_CERT_REVOCATION_CHECK_MODE` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#cert_revocation_check_mode SnowflakeProvider#cert_revocation_check_mode}
+  */
+  readonly certRevocationCheckMode?: string;
+  /**
   * IP address for network checks. Can also be sourced from the `SNOWFLAKE_CLIENT_IP` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#client_ip SnowflakeProvider#client_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#client_ip SnowflakeProvider#client_ip}
   */
   readonly clientIp?: string;
   /**
   * When true the MFA token is cached in the credential manager. True by default in Windows/OSX. False for Linux. Can also be sourced from the `SNOWFLAKE_CLIENT_REQUEST_MFA_TOKEN` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#client_request_mfa_token SnowflakeProvider#client_request_mfa_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#client_request_mfa_token SnowflakeProvider#client_request_mfa_token}
   */
   readonly clientRequestMfaToken?: string;
   /**
   * When true the ID token is cached in the credential manager. True by default in Windows/OSX. False for Linux. Can also be sourced from the `SNOWFLAKE_CLIENT_STORE_TEMPORARY_CREDENTIAL` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#client_store_temporary_credential SnowflakeProvider#client_store_temporary_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#client_store_temporary_credential SnowflakeProvider#client_store_temporary_credential}
   */
   readonly clientStoreTemporaryCredential?: string;
   /**
   * The timeout in seconds for the client to complete the authentication. Can also be sourced from the `SNOWFLAKE_CLIENT_TIMEOUT` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#client_timeout SnowflakeProvider#client_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#client_timeout SnowflakeProvider#client_timeout}
   */
   readonly clientTimeout?: number;
   /**
+  * Allow certificates (not short-lived) without CRL DP included to be treated as correct ones. Can also be sourced from the `SNOWFLAKE_CRL_ALLOW_CERTIFICATES_WITHOUT_CRL_URL` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#crl_allow_certificates_without_crl_url SnowflakeProvider#crl_allow_certificates_without_crl_url}
+  */
+  readonly crlAllowCertificatesWithoutCrlUrl?: string;
+  /**
+  * Timeout in seconds for HTTP client used to download CRL. Can also be sourced from the `SNOWFLAKE_CRL_HTTP_CLIENT_TIMEOUT` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#crl_http_client_timeout SnowflakeProvider#crl_http_client_timeout}
+  */
+  readonly crlHttpClientTimeout?: number;
+  /**
+  * False by default. When set to true, the CRL in-memory cache is disabled. Can also be sourced from the `SNOWFLAKE_CRL_IN_MEMORY_CACHE_DISABLED` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#crl_in_memory_cache_disabled SnowflakeProvider#crl_in_memory_cache_disabled}
+  */
+  readonly crlInMemoryCacheDisabled?: boolean | cdktn.IResolvable;
+  /**
+  * False by default. When set to true, the CRL on-disk cache is disabled. Can also be sourced from the `SNOWFLAKE_CRL_ON_DISK_CACHE_DISABLED` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#crl_on_disk_cache_disabled SnowflakeProvider#crl_on_disk_cache_disabled}
+  */
+  readonly crlOnDiskCacheDisabled?: boolean | cdktn.IResolvable;
+  /**
   * Indicates whether console login should be disabled in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_CONSOLE_LOGIN` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#disable_console_login SnowflakeProvider#disable_console_login}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#disable_console_login SnowflakeProvider#disable_console_login}
   */
   readonly disableConsoleLogin?: string;
   /**
+  * False by default. When set to true, the driver doesn't check certificate revocation status. Can also be sourced from the `SNOWFLAKE_DISABLE_OCSP_CHECKS` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#disable_ocsp_checks SnowflakeProvider#disable_ocsp_checks}
+  */
+  readonly disableOcspChecks?: boolean | cdktn.IResolvable;
+  /**
   * Disables HTAP query context cache in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#disable_query_context_cache SnowflakeProvider#disable_query_context_cache}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#disable_query_context_cache SnowflakeProvider#disable_query_context_cache}
   */
-  readonly disableQueryContextCache?: boolean | cdktf.IResolvable;
+  readonly disableQueryContextCache?: boolean | cdktn.IResolvable;
+  /**
+  * Indicates whether the SAML URL check should be disabled. Can also be sourced from the `SNOWFLAKE_DISABLE_SAML_URL_CHECK` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#disable_saml_url_check SnowflakeProvider#disable_saml_url_check}
+  */
+  readonly disableSamlUrlCheck?: string;
   /**
   * Disables telemetry in the driver. Can also be sourced from the `DISABLE_TELEMETRY` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#disable_telemetry SnowflakeProvider#disable_telemetry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#disable_telemetry SnowflakeProvider#disable_telemetry}
   */
-  readonly disableTelemetry?: boolean | cdktf.IResolvable;
+  readonly disableTelemetry?: boolean | cdktn.IResolvable;
   /**
   * Specifies the logging level to be used by the driver. Valid options are: `trace` | `debug` | `info` | `print` | `warning` | `error` | `fatal` | `panic`. Can also be sourced from the `SNOWFLAKE_DRIVER_TRACING` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#driver_tracing SnowflakeProvider#driver_tracing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#driver_tracing SnowflakeProvider#driver_tracing}
   */
   readonly driverTracing?: string;
   /**
   * Enables single use refresh tokens for Snowflake IdP. Can also be sourced from the `SNOWFLAKE_ENABLE_SINGLE_USE_REFRESH_TOKENS` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#enable_single_use_refresh_tokens SnowflakeProvider#enable_single_use_refresh_tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#enable_single_use_refresh_tokens SnowflakeProvider#enable_single_use_refresh_tokens}
   */
-  readonly enableSingleUseRefreshTokens?: boolean | cdktf.IResolvable;
+  readonly enableSingleUseRefreshTokens?: boolean | cdktn.IResolvable;
   /**
-  * A list of experimental features. Similarly to preview features, they are not yet stable features of the provider. Enabling given experiment is still considered a preview feature, even when applied to the stable resource. These switches offer experiments altering the provider behavior. If the given experiment is successful, it can be considered an addition in the future provider versions. This field can not be set with environmental variables. Valid options are: `PARAMETERS_IGNORE_VALUE_CHANGES_IF_NOT_ON_OBJECT_LEVEL` | `WAREHOUSE_SHOW_IMPROVED_PERFORMANCE`.
+  * A list of experimental features. Similarly to preview features, they are not yet stable features of the provider. Enabling given experiment is still considered a preview feature, even when applied to the stable resource. These switches offer experiments altering the provider behavior. If the given experiment is successful, it can be considered an addition in the future provider versions. This field can not be set with environmental variables. Check more details in the [experimental features section](#experimental-features). Active experiments are: `WAREHOUSE_SHOW_IMPROVED_PERFORMANCE` | `GRANTS_STRICT_PRIVILEGE_MANAGEMENT` | `PARAMETERS_IGNORE_VALUE_CHANGES_IF_NOT_ON_OBJECT_LEVEL` | `PARAMETERS_REDUCED_OUTPUT` | `USER_ENABLE_DEFAULT_WORKLOAD_IDENTITY`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#experimental_features_enabled SnowflakeProvider#experimental_features_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#experimental_features_enabled SnowflakeProvider#experimental_features_enabled}
   */
   readonly experimentalFeaturesEnabled?: string[];
   /**
   * The timeout in seconds for the external browser to complete the authentication. Can also be sourced from the `SNOWFLAKE_EXTERNAL_BROWSER_TIMEOUT` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#external_browser_timeout SnowflakeProvider#external_browser_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#external_browser_timeout SnowflakeProvider#external_browser_timeout}
   */
   readonly externalBrowserTimeout?: number;
   /**
   * Specifies a custom host value used by the driver for privatelink connections. Can also be sourced from the `SNOWFLAKE_HOST` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#host SnowflakeProvider#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#host SnowflakeProvider#host}
   */
   readonly host?: string;
   /**
   * Should retried request contain retry reason. Can also be sourced from the `SNOWFLAKE_INCLUDE_RETRY_REASON` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#include_retry_reason SnowflakeProvider#include_retry_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#include_retry_reason SnowflakeProvider#include_retry_reason}
   */
   readonly includeRetryReason?: string;
   /**
-  * If true, bypass the Online Certificate Status Protocol (OCSP) certificate revocation check. IMPORTANT: Change the default value for testing or emergency situations only. Can also be sourced from the `SNOWFLAKE_INSECURE_MODE` environment variable.
+  * This field is deprecated. Use `disable_ocsp_checks` instead. If true, bypass the Online Certificate Status Protocol (OCSP) certificate revocation check. IMPORTANT: Change the default value for testing or emergency situations only. Can also be sourced from the `SNOWFLAKE_INSECURE_MODE` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#insecure_mode SnowflakeProvider#insecure_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#insecure_mode SnowflakeProvider#insecure_mode}
   */
-  readonly insecureMode?: boolean | cdktf.IResolvable;
+  readonly insecureMode?: boolean | cdktn.IResolvable;
   /**
   * The timeout in seconds for the JWT client to complete the authentication. Can also be sourced from the `SNOWFLAKE_JWT_CLIENT_TIMEOUT` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#jwt_client_timeout SnowflakeProvider#jwt_client_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#jwt_client_timeout SnowflakeProvider#jwt_client_timeout}
   */
   readonly jwtClientTimeout?: number;
   /**
   * JWT expire after timeout in seconds. Can also be sourced from the `SNOWFLAKE_JWT_EXPIRE_TIMEOUT` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#jwt_expire_timeout SnowflakeProvider#jwt_expire_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#jwt_expire_timeout SnowflakeProvider#jwt_expire_timeout}
   */
   readonly jwtExpireTimeout?: number;
   /**
   * Enables the session to persist even after the connection is closed. Can also be sourced from the `SNOWFLAKE_KEEP_SESSION_ALIVE` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#keep_session_alive SnowflakeProvider#keep_session_alive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#keep_session_alive SnowflakeProvider#keep_session_alive}
   */
-  readonly keepSessionAlive?: boolean | cdktf.IResolvable;
+  readonly keepSessionAlive?: boolean | cdktn.IResolvable;
   /**
   * When set to true, the parameters will be logged. Requires logQueryText to be enabled first. Be aware that it may include sensitive information. Default value is false. Can also be sourced from the `SNOWFLAKE_LOG_QUERY_PARAMETERS` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#log_query_parameters SnowflakeProvider#log_query_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#log_query_parameters SnowflakeProvider#log_query_parameters}
   */
-  readonly logQueryParameters?: boolean | cdktf.IResolvable;
+  readonly logQueryParameters?: boolean | cdktn.IResolvable;
   /**
   * When set to true, the full query text will be logged. Be aware that it may include sensitive information. Default value is false. Can also be sourced from the `SNOWFLAKE_LOG_QUERY_TEXT` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#log_query_text SnowflakeProvider#log_query_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#log_query_text SnowflakeProvider#log_query_text}
   */
-  readonly logQueryText?: boolean | cdktf.IResolvable;
+  readonly logQueryText?: boolean | cdktn.IResolvable;
   /**
   * Login retry timeout in seconds EXCLUDING network roundtrip and read out http response. Can also be sourced from the `SNOWFLAKE_LOGIN_TIMEOUT` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#login_timeout SnowflakeProvider#login_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#login_timeout SnowflakeProvider#login_timeout}
   */
   readonly loginTimeout?: number;
   /**
   * Specifies how many times non-periodic HTTP request can be retried by the driver. Can also be sourced from the `SNOWFLAKE_MAX_RETRY_COUNT` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#max_retry_count SnowflakeProvider#max_retry_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#max_retry_count SnowflakeProvider#max_retry_count}
   */
   readonly maxRetryCount?: number;
   /**
+  * A comma-separated list of hostnames, domains, and IP addresses to exclude from proxying. See more in [the proxy section below](#proxy). Can also be sourced from the `SNOWFLAKE_NO_PROXY` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#no_proxy SnowflakeProvider#no_proxy}
+  */
+  readonly noProxy?: string;
+  /**
   * Authorization URL of OAuth2 external IdP. See [Snowflake OAuth documentation](https://docs.snowflake.com/en/user-guide/oauth). Can also be sourced from the `SNOWFLAKE_OAUTH_AUTHORIZATION_URL` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#oauth_authorization_url SnowflakeProvider#oauth_authorization_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#oauth_authorization_url SnowflakeProvider#oauth_authorization_url}
   */
   readonly oauthAuthorizationUrl?: string;
   /**
   * Client id for OAuth2 external IdP. See [Snowflake OAuth documentation](https://docs.snowflake.com/en/user-guide/oauth). Can also be sourced from the `SNOWFLAKE_OAUTH_CLIENT_ID` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#oauth_client_id SnowflakeProvider#oauth_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#oauth_client_id SnowflakeProvider#oauth_client_id}
   */
   readonly oauthClientId?: string;
   /**
   * Client secret for OAuth2 external IdP. See [Snowflake OAuth documentation](https://docs.snowflake.com/en/user-guide/oauth). Can also be sourced from the `SNOWFLAKE_OAUTH_CLIENT_SECRET` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#oauth_client_secret SnowflakeProvider#oauth_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#oauth_client_secret SnowflakeProvider#oauth_client_secret}
   */
   readonly oauthClientSecret?: string;
   /**
   * Redirect URI registered in IdP. See [Snowflake OAuth documentation](https://docs.snowflake.com/en/user-guide/oauth). Can also be sourced from the `SNOWFLAKE_OAUTH_REDIRECT_URI` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#oauth_redirect_uri SnowflakeProvider#oauth_redirect_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#oauth_redirect_uri SnowflakeProvider#oauth_redirect_uri}
   */
   readonly oauthRedirectUri?: string;
   /**
   * Comma separated list of scopes. If empty it is derived from role. See [Snowflake OAuth documentation](https://docs.snowflake.com/en/user-guide/oauth). Can also be sourced from the `SNOWFLAKE_OAUTH_SCOPE` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#oauth_scope SnowflakeProvider#oauth_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#oauth_scope SnowflakeProvider#oauth_scope}
   */
   readonly oauthScope?: string;
   /**
   * Token request URL of OAuth2 external IdP. See [Snowflake OAuth documentation](https://docs.snowflake.com/en/user-guide/oauth). Can also be sourced from the `SNOWFLAKE_OAUTH_TOKEN_REQUEST_URL` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#oauth_token_request_url SnowflakeProvider#oauth_token_request_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#oauth_token_request_url SnowflakeProvider#oauth_token_request_url}
   */
   readonly oauthTokenRequestUrl?: string;
   /**
   * True represents OCSP fail open mode. False represents OCSP fail closed mode. Fail open true by default. Can also be sourced from the `SNOWFLAKE_OCSP_FAIL_OPEN` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#ocsp_fail_open SnowflakeProvider#ocsp_fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#ocsp_fail_open SnowflakeProvider#ocsp_fail_open}
   */
   readonly ocspFailOpen?: string;
   /**
   * The URL of the Okta server. e.g. https://example.okta.com. Okta URL host needs to to have a suffix `okta.com`. Read more in Snowflake [docs](https://docs.snowflake.com/en/user-guide/oauth-okta). Can also be sourced from the `SNOWFLAKE_OKTA_URL` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#okta_url SnowflakeProvider#okta_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#okta_url SnowflakeProvider#okta_url}
   */
   readonly oktaUrl?: string;
   /**
   * Specifies your Snowflake organization name assigned by Snowflake. For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#organization-name). Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_ORGANIZATION_NAME` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#organization_name SnowflakeProvider#organization_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#organization_name SnowflakeProvider#organization_name}
   */
   readonly organizationName?: string;
   /**
   * Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). This field can not be set with environmental variables.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#params SnowflakeProvider#params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#params SnowflakeProvider#params}
   */
   readonly params?: { [key: string]: string };
   /**
   * Specifies the passcode provided by Duo when using multi-factor authentication (MFA) for login. Can also be sourced from the `SNOWFLAKE_PASSCODE` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#passcode SnowflakeProvider#passcode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#passcode SnowflakeProvider#passcode}
   */
   readonly passcode?: string;
   /**
   * False by default. Set to true if the MFA passcode is embedded to the configured password. Can also be sourced from the `SNOWFLAKE_PASSCODE_IN_PASSWORD` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#passcode_in_password SnowflakeProvider#passcode_in_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#passcode_in_password SnowflakeProvider#passcode_in_password}
   */
-  readonly passcodeInPassword?: boolean | cdktf.IResolvable;
+  readonly passcodeInPassword?: boolean | cdktn.IResolvable;
   /**
   * Password for user + password or [token](https://docs.snowflake.com/en/user-guide/programmatic-access-tokens#generating-a-programmatic-access-token) for [PAT auth](https://docs.snowflake.com/en/user-guide/programmatic-access-tokens). Cannot be used with `private_key` and `private_key_passphrase`. Can also be sourced from the `SNOWFLAKE_PASSWORD` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#password SnowflakeProvider#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#password SnowflakeProvider#password}
   */
   readonly password?: string;
   /**
   * Specifies a custom port value used by the driver for privatelink connections. Can also be sourced from the `SNOWFLAKE_PORT` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#port SnowflakeProvider#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#port SnowflakeProvider#port}
   */
   readonly port?: number;
   /**
-  * A list of preview features that are handled by the provider. See [preview features list](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/v1-preparations/LIST_OF_PREVIEW_FEATURES_FOR_V1.md). Preview features may have breaking changes in future releases, even without raising the major version. This field can not be set with environmental variables. Preview features that can be enabled are: `snowflake_account_authentication_policy_attachment_resource` | `snowflake_account_password_policy_attachment_resource` | `snowflake_alert_resource` | `snowflake_alerts_datasource` | `snowflake_api_integration_resource` | `snowflake_authentication_policy_resource` | `snowflake_authentication_policies_datasource` | `snowflake_cortex_search_service_resource` | `snowflake_cortex_search_services_datasource` | `snowflake_current_account_resource` | `snowflake_current_account_datasource` | `snowflake_current_organization_account_resource` | `snowflake_database_datasource` | `snowflake_database_role_datasource` | `snowflake_dynamic_table_resource` | `snowflake_dynamic_tables_datasource` | `snowflake_external_function_resource` | `snowflake_external_functions_datasource` | `snowflake_external_table_resource` | `snowflake_external_tables_datasource` | `snowflake_external_volume_resource` | `snowflake_failover_group_resource` | `snowflake_failover_groups_datasource` | `snowflake_file_format_resource` | `snowflake_file_formats_datasource` | `snowflake_function_java_resource` | `snowflake_function_javascript_resource` | `snowflake_function_python_resource` | `snowflake_function_scala_resource` | `snowflake_function_sql_resource` | `snowflake_functions_datasource` | `snowflake_job_service_resource` | `snowflake_managed_account_resource` | `snowflake_materialized_view_resource` | `snowflake_materialized_views_datasource` | `snowflake_network_policy_attachment_resource` | `snowflake_network_rule_resource` | `snowflake_notebook_resource` | `snowflake_notebooks_datasource` | `snowflake_email_notification_integration_resource` | `snowflake_notification_integration_resource` | `snowflake_object_parameter_resource` | `snowflake_password_policy_resource` | `snowflake_pipe_resource` | `snowflake_pipes_datasource` | `snowflake_current_role_datasource` | `snowflake_semantic_view_resource` | `snowflake_semantic_views_datasource` | `snowflake_sequence_resource` | `snowflake_sequences_datasource` | `snowflake_share_resource` | `snowflake_shares_datasource` | `snowflake_parameters_datasource` | `snowflake_procedure_java_resource` | `snowflake_procedure_javascript_resource` | `snowflake_procedure_python_resource` | `snowflake_procedure_scala_resource` | `snowflake_procedure_sql_resource` | `snowflake_procedures_datasource` | `snowflake_stage_resource` | `snowflake_stages_datasource` | `snowflake_storage_integration_resource` | `snowflake_storage_integrations_datasource` | `snowflake_system_generate_scim_access_token_datasource` | `snowflake_system_get_aws_sns_iam_policy_datasource` | `snowflake_system_get_privatelink_config_datasource` | `snowflake_system_get_snowflake_platform_info_datasource` | `snowflake_table_column_masking_policy_application_resource` | `snowflake_table_constraint_resource` | `snowflake_table_resource` | `snowflake_tables_datasource` | `snowflake_user_authentication_policy_attachment_resource` | `snowflake_user_public_keys_resource` | `snowflake_user_password_policy_attachment_resource`. Promoted features that are stable and are enabled by default are: `snowflake_compute_pool_resource` | `snowflake_compute_pools_datasource` | `snowflake_git_repository_resource` | `snowflake_git_repositories_datasource` | `snowflake_image_repository_resource` | `snowflake_image_repositories_datasource` | `snowflake_listing_resource` | `snowflake_service_resource` | `snowflake_services_datasource` | `snowflake_user_programmatic_access_token_resource` | `snowflake_user_programmatic_access_tokens_datasource`. Promoted features can be safely removed from this field. They will be removed in the next major version.
+  * A list of preview features that are handled by the provider. See [preview features list](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/v1-preparations/LIST_OF_PREVIEW_FEATURES_FOR_V1.md). Preview features may have breaking changes in future releases, even without raising the major version. This field can not be set with environmental variables. Preview features that can be enabled are: `snowflake_account_authentication_policy_attachment_resource` | `snowflake_account_password_policy_attachment_resource` | `snowflake_alert_resource` | `snowflake_alerts_datasource` | `snowflake_api_integration_resource` | `snowflake_authentication_policy_resource` | `snowflake_authentication_policies_datasource` | `snowflake_cortex_search_service_resource` | `snowflake_cortex_search_services_datasource` | `snowflake_current_account_resource` | `snowflake_current_account_datasource` | `snowflake_current_organization_account_resource` | `snowflake_database_datasource` | `snowflake_database_role_datasource` | `snowflake_dynamic_table_resource` | `snowflake_dynamic_tables_datasource` | `snowflake_stage_external_azure_resource` | `snowflake_external_function_resource` | `snowflake_external_functions_datasource` | `snowflake_stage_external_gcs_resource` | `snowflake_stage_external_s3_resource` | `snowflake_stage_external_s3_compatible_resource` | `snowflake_external_table_resource` | `snowflake_external_tables_datasource` | `snowflake_external_volume_resource` | `snowflake_failover_group_resource` | `snowflake_failover_groups_datasource` | `snowflake_file_format_resource` | `snowflake_file_formats_datasource` | `snowflake_function_java_resource` | `snowflake_function_javascript_resource` | `snowflake_function_python_resource` | `snowflake_function_scala_resource` | `snowflake_function_sql_resource` | `snowflake_functions_datasource` | `snowflake_stage_internal_resource` | `snowflake_job_service_resource` | `snowflake_listings_datasource` | `snowflake_managed_account_resource` | `snowflake_materialized_view_resource` | `snowflake_materialized_views_datasource` | `snowflake_network_policy_attachment_resource` | `snowflake_network_rule_resource` | `snowflake_notebook_resource` | `snowflake_notebooks_datasource` | `snowflake_email_notification_integration_resource` | `snowflake_notification_integration_resource` | `snowflake_object_parameter_resource` | `snowflake_password_policy_resource` | `snowflake_pipe_resource` | `snowflake_pipes_datasource` | `snowflake_current_role_datasource` | `snowflake_semantic_view_resource` | `snowflake_semantic_views_datasource` | `snowflake_sequence_resource` | `snowflake_sequences_datasource` | `snowflake_share_resource` | `snowflake_shares_datasource` | `snowflake_parameters_datasource` | `snowflake_procedure_java_resource` | `snowflake_procedure_javascript_resource` | `snowflake_procedure_python_resource` | `snowflake_procedure_scala_resource` | `snowflake_procedure_sql_resource` | `snowflake_procedures_datasource` | `snowflake_stage_resource` | `snowflake_stages_datasource` | `snowflake_storage_integration_resource` | `snowflake_storage_integration_aws_resource` | `snowflake_storage_integration_azure_resource` | `snowflake_storage_integration_gcs_resource` | `snowflake_storage_integrations_datasource` | `snowflake_system_generate_scim_access_token_datasource` | `snowflake_system_get_aws_sns_iam_policy_datasource` | `snowflake_system_get_privatelink_config_datasource` | `snowflake_system_get_snowflake_platform_info_datasource` | `snowflake_table_column_masking_policy_application_resource` | `snowflake_table_constraint_resource` | `snowflake_table_resource` | `snowflake_tables_datasource` | `snowflake_user_authentication_policy_attachment_resource` | `snowflake_user_public_keys_resource` | `snowflake_user_password_policy_attachment_resource`. Promoted features that are stable and are enabled by default are: `snowflake_compute_pool_resource` | `snowflake_compute_pools_datasource` | `snowflake_git_repository_resource` | `snowflake_git_repositories_datasource` | `snowflake_image_repository_resource` | `snowflake_image_repositories_datasource` | `snowflake_listing_resource` | `snowflake_service_resource` | `snowflake_services_datasource` | `snowflake_user_programmatic_access_token_resource` | `snowflake_user_programmatic_access_tokens_datasource`. Promoted features can be safely removed from this field. They will be removed in the next major version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#preview_features_enabled SnowflakeProvider#preview_features_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#preview_features_enabled SnowflakeProvider#preview_features_enabled}
   */
   readonly previewFeaturesEnabled?: string[];
   /**
   * Private Key for username+private-key auth. Cannot be used with `password`. Can also be sourced from the `SNOWFLAKE_PRIVATE_KEY` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#private_key SnowflakeProvider#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#private_key SnowflakeProvider#private_key}
   */
   readonly privateKey?: string;
   /**
   * Supports the encryption ciphers aes-128-cbc, aes-128-gcm, aes-192-cbc, aes-192-gcm, aes-256-cbc, aes-256-gcm, and des-ede3-cbc. Can also be sourced from the `SNOWFLAKE_PRIVATE_KEY_PASSPHRASE` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#private_key_passphrase SnowflakeProvider#private_key_passphrase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#private_key_passphrase SnowflakeProvider#private_key_passphrase}
   */
   readonly privateKeyPassphrase?: string;
   /**
   * Sets the profile to read from ~/.snowflake/config file. Can also be sourced from the `SNOWFLAKE_PROFILE` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#profile SnowflakeProvider#profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#profile SnowflakeProvider#profile}
   */
   readonly profile?: string;
   /**
   * A protocol used in the connection. Valid options are: `http` | `https`. Can also be sourced from the `SNOWFLAKE_PROTOCOL` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#protocol SnowflakeProvider#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#protocol SnowflakeProvider#protocol}
   */
   readonly protocol?: string;
   /**
+  * The host of the proxy to use for the connection. See more in [the proxy section below](#proxy). Can also be sourced from the `SNOWFLAKE_PROXY_HOST` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#proxy_host SnowflakeProvider#proxy_host}
+  */
+  readonly proxyHost?: string;
+  /**
+  * The password of the proxy to use for the connection. See more in [the proxy section below](#proxy). Can also be sourced from the `SNOWFLAKE_PROXY_PASSWORD` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#proxy_password SnowflakeProvider#proxy_password}
+  */
+  readonly proxyPassword?: string;
+  /**
+  * The port of the proxy to use for the connection. See more in [the proxy section below](#proxy). Can also be sourced from the `SNOWFLAKE_PROXY_PORT` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#proxy_port SnowflakeProvider#proxy_port}
+  */
+  readonly proxyPort?: number;
+  /**
+  * The protocol of the proxy to use for the connection. Valid options are: `http` | `https`. The value is case-insensitive. See more in [the proxy section below](#proxy). Can also be sourced from the `SNOWFLAKE_PROXY_PROTOCOL` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#proxy_protocol SnowflakeProvider#proxy_protocol}
+  */
+  readonly proxyProtocol?: string;
+  /**
+  * The user of the proxy to use for the connection. See more in [the proxy section below](#proxy). Can also be sourced from the `SNOWFLAKE_PROXY_USER` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#proxy_user SnowflakeProvider#proxy_user}
+  */
+  readonly proxyUser?: string;
+  /**
   * request retry timeout in seconds EXCLUDING network roundtrip and read out http response. Can also be sourced from the `SNOWFLAKE_REQUEST_TIMEOUT` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#request_timeout SnowflakeProvider#request_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#request_timeout SnowflakeProvider#request_timeout}
   */
   readonly requestTimeout?: number;
   /**
   * Specifies the role to use by default for accessing Snowflake objects in the client session. Can also be sourced from the `SNOWFLAKE_ROLE` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#role SnowflakeProvider#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#role SnowflakeProvider#role}
   */
   readonly role?: string;
   /**
   * False by default. Skips TOML configuration file permission verification. This flag has no effect on Windows systems, as the permissions are not checked on this platform. Instead of skipping the permissions verification, we recommend setting the proper privileges - see [the section below](#toml-file-limitations). Can also be sourced from the `SNOWFLAKE_SKIP_TOML_FILE_PERMISSION_VERIFICATION` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#skip_toml_file_permission_verification SnowflakeProvider#skip_toml_file_permission_verification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#skip_toml_file_permission_verification SnowflakeProvider#skip_toml_file_permission_verification}
   */
-  readonly skipTomlFilePermissionVerification?: boolean | cdktf.IResolvable;
+  readonly skipTomlFilePermissionVerification?: boolean | cdktn.IResolvable;
   /**
   * Sets temporary directory used by the driver for operations like encrypting, compressing etc. Can also be sourced from the `SNOWFLAKE_TMP_DIRECTORY_PATH` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#tmp_directory_path SnowflakeProvider#tmp_directory_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#tmp_directory_path SnowflakeProvider#tmp_directory_path}
   */
   readonly tmpDirectoryPath?: string;
   /**
   * Token to use for OAuth and other forms of token based auth. When this field is set here, or in the TOML file, the provider sets the `authenticator` to `OAUTH`. Optionally, set the `authenticator` field to the authenticator you want to use. Can also be sourced from the `SNOWFLAKE_TOKEN` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#token SnowflakeProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#token SnowflakeProvider#token}
   */
   readonly token?: string;
   /**
   * False by default. When this is set to true, the provider expects the legacy TOML format. Otherwise, it expects the new format. See more in [the section below](#examples) Can also be sourced from the `SNOWFLAKE_USE_LEGACY_TOML_FILE` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#use_legacy_toml_file SnowflakeProvider#use_legacy_toml_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#use_legacy_toml_file SnowflakeProvider#use_legacy_toml_file}
   */
-  readonly useLegacyTomlFile?: boolean | cdktf.IResolvable;
+  readonly useLegacyTomlFile?: boolean | cdktn.IResolvable;
   /**
   * Username. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USER` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#user SnowflakeProvider#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#user SnowflakeProvider#user}
   */
   readonly user?: string;
   /**
   * True by default. If false, disables the validation checks for Database, Schema, Warehouse and Role at the time a connection is established. Can also be sourced from the `SNOWFLAKE_VALIDATE_DEFAULT_PARAMETERS` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#validate_default_parameters SnowflakeProvider#validate_default_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#validate_default_parameters SnowflakeProvider#validate_default_parameters}
   */
   readonly validateDefaultParameters?: string;
   /**
   * Specifies the virtual warehouse to use by default for queries, loading, etc. in the client session. Can also be sourced from the `SNOWFLAKE_WAREHOUSE` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#warehouse SnowflakeProvider#warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#warehouse SnowflakeProvider#warehouse}
   */
   readonly warehouse?: string;
   /**
   * The resource to use for WIF authentication on Azure environment. Can also be sourced from the `SNOWFLAKE_WORKLOAD_IDENTITY_ENTRA_RESOURCE` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#workload_identity_entra_resource SnowflakeProvider#workload_identity_entra_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#workload_identity_entra_resource SnowflakeProvider#workload_identity_entra_resource}
   */
   readonly workloadIdentityEntraResource?: string;
   /**
   * The workload identity provider to use for WIF authentication. Can also be sourced from the `SNOWFLAKE_WORKLOAD_IDENTITY_PROVIDER` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#workload_identity_provider SnowflakeProvider#workload_identity_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#workload_identity_provider SnowflakeProvider#workload_identity_provider}
   */
   readonly workloadIdentityProvider?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#alias SnowflakeProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#alias SnowflakeProvider#alias}
   */
   readonly alias?: string;
   /**
   * token_accessor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#token_accessor SnowflakeProvider#token_accessor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#token_accessor SnowflakeProvider#token_accessor}
   */
   readonly tokenAccessor?: SnowflakeProviderTokenAccessor;
 }
@@ -347,82 +425,82 @@ export interface SnowflakeProviderTokenAccessor {
   /**
   * The client ID for the OAuth provider when using a refresh token to renew access token. Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_CLIENT_ID` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#client_id SnowflakeProvider#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#client_id SnowflakeProvider#client_id}
   */
   readonly clientId: string;
   /**
   * The client secret for the OAuth provider when using a refresh token to renew access token. Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_CLIENT_SECRET` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#client_secret SnowflakeProvider#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#client_secret SnowflakeProvider#client_secret}
   */
   readonly clientSecret: string;
   /**
   * The redirect URI for the OAuth provider when using a refresh token to renew access token. Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_REDIRECT_URI` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#redirect_uri SnowflakeProvider#redirect_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#redirect_uri SnowflakeProvider#redirect_uri}
   */
   readonly redirectUri: string;
   /**
   * The refresh token for the OAuth provider when using a refresh token to renew access token. Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_REFRESH_TOKEN` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#refresh_token SnowflakeProvider#refresh_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#refresh_token SnowflakeProvider#refresh_token}
   */
   readonly refreshToken: string;
   /**
   * The token endpoint for the OAuth provider e.g. https://{yourDomain}/oauth/token when using a refresh token to renew access token. Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_TOKEN_ENDPOINT` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#token_endpoint SnowflakeProvider#token_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#token_endpoint SnowflakeProvider#token_endpoint}
   */
   readonly tokenEndpoint: string;
 }
 
 export function snowflakeProviderTokenAccessorToTerraform(struct?: SnowflakeProviderTokenAccessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    redirect_uri: cdktf.stringToTerraform(struct!.redirectUri),
-    refresh_token: cdktf.stringToTerraform(struct!.refreshToken),
-    token_endpoint: cdktf.stringToTerraform(struct!.tokenEndpoint),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    redirect_uri: cdktn.stringToTerraform(struct!.redirectUri),
+    refresh_token: cdktn.stringToTerraform(struct!.refreshToken),
+    token_endpoint: cdktn.stringToTerraform(struct!.tokenEndpoint),
   }
 }
 
 
 export function snowflakeProviderTokenAccessorToHclTerraform(struct?: SnowflakeProviderTokenAccessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redirect_uri: {
-      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      value: cdktn.stringToHclTerraform(struct!.redirectUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     refresh_token: {
-      value: cdktf.stringToHclTerraform(struct!.refreshToken),
+      value: cdktn.stringToHclTerraform(struct!.refreshToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.tokenEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.tokenEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -435,9 +513,9 @@ export function snowflakeProviderTokenAccessorToHclTerraform(struct?: SnowflakeP
 
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs snowflake}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs snowflake}
 */
-export class SnowflakeProvider extends cdktf.TerraformProvider {
+export class SnowflakeProvider extends cdktn.TerraformProvider {
 
   // =================
   // STATIC PROPERTIES
@@ -448,14 +526,14 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SnowflakeProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SnowflakeProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SnowflakeProvider to import
-  * @param importFromId The id of the existing SnowflakeProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SnowflakeProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SnowflakeProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake", importId: importFromId, provider });
       }
 
   // ===========
@@ -463,7 +541,7 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs snowflake} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs snowflake} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -474,19 +552,26 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'snowflake',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       terraformProviderSource: 'snowflakedb/snowflake'
     });
     this._accountName = config.accountName;
     this._authenticator = config.authenticator;
+    this._certRevocationCheckMode = config.certRevocationCheckMode;
     this._clientIp = config.clientIp;
     this._clientRequestMfaToken = config.clientRequestMfaToken;
     this._clientStoreTemporaryCredential = config.clientStoreTemporaryCredential;
     this._clientTimeout = config.clientTimeout;
+    this._crlAllowCertificatesWithoutCrlUrl = config.crlAllowCertificatesWithoutCrlUrl;
+    this._crlHttpClientTimeout = config.crlHttpClientTimeout;
+    this._crlInMemoryCacheDisabled = config.crlInMemoryCacheDisabled;
+    this._crlOnDiskCacheDisabled = config.crlOnDiskCacheDisabled;
     this._disableConsoleLogin = config.disableConsoleLogin;
+    this._disableOcspChecks = config.disableOcspChecks;
     this._disableQueryContextCache = config.disableQueryContextCache;
+    this._disableSamlUrlCheck = config.disableSamlUrlCheck;
     this._disableTelemetry = config.disableTelemetry;
     this._driverTracing = config.driverTracing;
     this._enableSingleUseRefreshTokens = config.enableSingleUseRefreshTokens;
@@ -502,6 +587,7 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
     this._logQueryText = config.logQueryText;
     this._loginTimeout = config.loginTimeout;
     this._maxRetryCount = config.maxRetryCount;
+    this._noProxy = config.noProxy;
     this._oauthAuthorizationUrl = config.oauthAuthorizationUrl;
     this._oauthClientId = config.oauthClientId;
     this._oauthClientSecret = config.oauthClientSecret;
@@ -521,6 +607,11 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
     this._privateKeyPassphrase = config.privateKeyPassphrase;
     this._profile = config.profile;
     this._protocol = config.protocol;
+    this._proxyHost = config.proxyHost;
+    this._proxyPassword = config.proxyPassword;
+    this._proxyPort = config.proxyPort;
+    this._proxyProtocol = config.proxyProtocol;
+    this._proxyUser = config.proxyUser;
     this._requestTimeout = config.requestTimeout;
     this._role = config.role;
     this._skipTomlFilePermissionVerification = config.skipTomlFilePermissionVerification;
@@ -570,6 +661,22 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get authenticatorInput() {
     return this._authenticator;
+  }
+
+  // cert_revocation_check_mode - computed: false, optional: true, required: false
+  private _certRevocationCheckMode?: string; 
+  public get certRevocationCheckMode() {
+    return this._certRevocationCheckMode;
+  }
+  public set certRevocationCheckMode(value: string | undefined) {
+    this._certRevocationCheckMode = value;
+  }
+  public resetCertRevocationCheckMode() {
+    this._certRevocationCheckMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certRevocationCheckModeInput() {
+    return this._certRevocationCheckMode;
   }
 
   // client_ip - computed: false, optional: true, required: false
@@ -636,6 +743,70 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
     return this._clientTimeout;
   }
 
+  // crl_allow_certificates_without_crl_url - computed: false, optional: true, required: false
+  private _crlAllowCertificatesWithoutCrlUrl?: string; 
+  public get crlAllowCertificatesWithoutCrlUrl() {
+    return this._crlAllowCertificatesWithoutCrlUrl;
+  }
+  public set crlAllowCertificatesWithoutCrlUrl(value: string | undefined) {
+    this._crlAllowCertificatesWithoutCrlUrl = value;
+  }
+  public resetCrlAllowCertificatesWithoutCrlUrl() {
+    this._crlAllowCertificatesWithoutCrlUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crlAllowCertificatesWithoutCrlUrlInput() {
+    return this._crlAllowCertificatesWithoutCrlUrl;
+  }
+
+  // crl_http_client_timeout - computed: false, optional: true, required: false
+  private _crlHttpClientTimeout?: number; 
+  public get crlHttpClientTimeout() {
+    return this._crlHttpClientTimeout;
+  }
+  public set crlHttpClientTimeout(value: number | undefined) {
+    this._crlHttpClientTimeout = value;
+  }
+  public resetCrlHttpClientTimeout() {
+    this._crlHttpClientTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crlHttpClientTimeoutInput() {
+    return this._crlHttpClientTimeout;
+  }
+
+  // crl_in_memory_cache_disabled - computed: false, optional: true, required: false
+  private _crlInMemoryCacheDisabled?: boolean | cdktn.IResolvable; 
+  public get crlInMemoryCacheDisabled() {
+    return this._crlInMemoryCacheDisabled;
+  }
+  public set crlInMemoryCacheDisabled(value: boolean | cdktn.IResolvable | undefined) {
+    this._crlInMemoryCacheDisabled = value;
+  }
+  public resetCrlInMemoryCacheDisabled() {
+    this._crlInMemoryCacheDisabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crlInMemoryCacheDisabledInput() {
+    return this._crlInMemoryCacheDisabled;
+  }
+
+  // crl_on_disk_cache_disabled - computed: false, optional: true, required: false
+  private _crlOnDiskCacheDisabled?: boolean | cdktn.IResolvable; 
+  public get crlOnDiskCacheDisabled() {
+    return this._crlOnDiskCacheDisabled;
+  }
+  public set crlOnDiskCacheDisabled(value: boolean | cdktn.IResolvable | undefined) {
+    this._crlOnDiskCacheDisabled = value;
+  }
+  public resetCrlOnDiskCacheDisabled() {
+    this._crlOnDiskCacheDisabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crlOnDiskCacheDisabledInput() {
+    return this._crlOnDiskCacheDisabled;
+  }
+
   // disable_console_login - computed: false, optional: true, required: false
   private _disableConsoleLogin?: string; 
   public get disableConsoleLogin() {
@@ -652,12 +823,28 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
     return this._disableConsoleLogin;
   }
 
+  // disable_ocsp_checks - computed: false, optional: true, required: false
+  private _disableOcspChecks?: boolean | cdktn.IResolvable; 
+  public get disableOcspChecks() {
+    return this._disableOcspChecks;
+  }
+  public set disableOcspChecks(value: boolean | cdktn.IResolvable | undefined) {
+    this._disableOcspChecks = value;
+  }
+  public resetDisableOcspChecks() {
+    this._disableOcspChecks = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableOcspChecksInput() {
+    return this._disableOcspChecks;
+  }
+
   // disable_query_context_cache - computed: false, optional: true, required: false
-  private _disableQueryContextCache?: boolean | cdktf.IResolvable; 
+  private _disableQueryContextCache?: boolean | cdktn.IResolvable; 
   public get disableQueryContextCache() {
     return this._disableQueryContextCache;
   }
-  public set disableQueryContextCache(value: boolean | cdktf.IResolvable | undefined) {
+  public set disableQueryContextCache(value: boolean | cdktn.IResolvable | undefined) {
     this._disableQueryContextCache = value;
   }
   public resetDisableQueryContextCache() {
@@ -668,12 +855,28 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
     return this._disableQueryContextCache;
   }
 
+  // disable_saml_url_check - computed: false, optional: true, required: false
+  private _disableSamlUrlCheck?: string; 
+  public get disableSamlUrlCheck() {
+    return this._disableSamlUrlCheck;
+  }
+  public set disableSamlUrlCheck(value: string | undefined) {
+    this._disableSamlUrlCheck = value;
+  }
+  public resetDisableSamlUrlCheck() {
+    this._disableSamlUrlCheck = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableSamlUrlCheckInput() {
+    return this._disableSamlUrlCheck;
+  }
+
   // disable_telemetry - computed: false, optional: true, required: false
-  private _disableTelemetry?: boolean | cdktf.IResolvable; 
+  private _disableTelemetry?: boolean | cdktn.IResolvable; 
   public get disableTelemetry() {
     return this._disableTelemetry;
   }
-  public set disableTelemetry(value: boolean | cdktf.IResolvable | undefined) {
+  public set disableTelemetry(value: boolean | cdktn.IResolvable | undefined) {
     this._disableTelemetry = value;
   }
   public resetDisableTelemetry() {
@@ -701,11 +904,11 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   }
 
   // enable_single_use_refresh_tokens - computed: false, optional: true, required: false
-  private _enableSingleUseRefreshTokens?: boolean | cdktf.IResolvable; 
+  private _enableSingleUseRefreshTokens?: boolean | cdktn.IResolvable; 
   public get enableSingleUseRefreshTokens() {
     return this._enableSingleUseRefreshTokens;
   }
-  public set enableSingleUseRefreshTokens(value: boolean | cdktf.IResolvable | undefined) {
+  public set enableSingleUseRefreshTokens(value: boolean | cdktn.IResolvable | undefined) {
     this._enableSingleUseRefreshTokens = value;
   }
   public resetEnableSingleUseRefreshTokens() {
@@ -781,11 +984,11 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   }
 
   // insecure_mode - computed: false, optional: true, required: false
-  private _insecureMode?: boolean | cdktf.IResolvable; 
+  private _insecureMode?: boolean | cdktn.IResolvable; 
   public get insecureMode() {
     return this._insecureMode;
   }
-  public set insecureMode(value: boolean | cdktf.IResolvable | undefined) {
+  public set insecureMode(value: boolean | cdktn.IResolvable | undefined) {
     this._insecureMode = value;
   }
   public resetInsecureMode() {
@@ -829,11 +1032,11 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   }
 
   // keep_session_alive - computed: false, optional: true, required: false
-  private _keepSessionAlive?: boolean | cdktf.IResolvable; 
+  private _keepSessionAlive?: boolean | cdktn.IResolvable; 
   public get keepSessionAlive() {
     return this._keepSessionAlive;
   }
-  public set keepSessionAlive(value: boolean | cdktf.IResolvable | undefined) {
+  public set keepSessionAlive(value: boolean | cdktn.IResolvable | undefined) {
     this._keepSessionAlive = value;
   }
   public resetKeepSessionAlive() {
@@ -845,11 +1048,11 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   }
 
   // log_query_parameters - computed: false, optional: true, required: false
-  private _logQueryParameters?: boolean | cdktf.IResolvable; 
+  private _logQueryParameters?: boolean | cdktn.IResolvable; 
   public get logQueryParameters() {
     return this._logQueryParameters;
   }
-  public set logQueryParameters(value: boolean | cdktf.IResolvable | undefined) {
+  public set logQueryParameters(value: boolean | cdktn.IResolvable | undefined) {
     this._logQueryParameters = value;
   }
   public resetLogQueryParameters() {
@@ -861,11 +1064,11 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   }
 
   // log_query_text - computed: false, optional: true, required: false
-  private _logQueryText?: boolean | cdktf.IResolvable; 
+  private _logQueryText?: boolean | cdktn.IResolvable; 
   public get logQueryText() {
     return this._logQueryText;
   }
-  public set logQueryText(value: boolean | cdktf.IResolvable | undefined) {
+  public set logQueryText(value: boolean | cdktn.IResolvable | undefined) {
     this._logQueryText = value;
   }
   public resetLogQueryText() {
@@ -906,6 +1109,22 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get maxRetryCountInput() {
     return this._maxRetryCount;
+  }
+
+  // no_proxy - computed: false, optional: true, required: false
+  private _noProxy?: string; 
+  public get noProxy() {
+    return this._noProxy;
+  }
+  public set noProxy(value: string | undefined) {
+    this._noProxy = value;
+  }
+  public resetNoProxy() {
+    this._noProxy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noProxyInput() {
+    return this._noProxy;
   }
 
   // oauth_authorization_url - computed: false, optional: true, required: false
@@ -1085,11 +1304,11 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   }
 
   // passcode_in_password - computed: false, optional: true, required: false
-  private _passcodeInPassword?: boolean | cdktf.IResolvable; 
+  private _passcodeInPassword?: boolean | cdktn.IResolvable; 
   public get passcodeInPassword() {
     return this._passcodeInPassword;
   }
-  public set passcodeInPassword(value: boolean | cdktf.IResolvable | undefined) {
+  public set passcodeInPassword(value: boolean | cdktn.IResolvable | undefined) {
     this._passcodeInPassword = value;
   }
   public resetPasscodeInPassword() {
@@ -1212,6 +1431,86 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
     return this._protocol;
   }
 
+  // proxy_host - computed: false, optional: true, required: false
+  private _proxyHost?: string; 
+  public get proxyHost() {
+    return this._proxyHost;
+  }
+  public set proxyHost(value: string | undefined) {
+    this._proxyHost = value;
+  }
+  public resetProxyHost() {
+    this._proxyHost = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get proxyHostInput() {
+    return this._proxyHost;
+  }
+
+  // proxy_password - computed: false, optional: true, required: false
+  private _proxyPassword?: string; 
+  public get proxyPassword() {
+    return this._proxyPassword;
+  }
+  public set proxyPassword(value: string | undefined) {
+    this._proxyPassword = value;
+  }
+  public resetProxyPassword() {
+    this._proxyPassword = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get proxyPasswordInput() {
+    return this._proxyPassword;
+  }
+
+  // proxy_port - computed: false, optional: true, required: false
+  private _proxyPort?: number; 
+  public get proxyPort() {
+    return this._proxyPort;
+  }
+  public set proxyPort(value: number | undefined) {
+    this._proxyPort = value;
+  }
+  public resetProxyPort() {
+    this._proxyPort = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get proxyPortInput() {
+    return this._proxyPort;
+  }
+
+  // proxy_protocol - computed: false, optional: true, required: false
+  private _proxyProtocol?: string; 
+  public get proxyProtocol() {
+    return this._proxyProtocol;
+  }
+  public set proxyProtocol(value: string | undefined) {
+    this._proxyProtocol = value;
+  }
+  public resetProxyProtocol() {
+    this._proxyProtocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get proxyProtocolInput() {
+    return this._proxyProtocol;
+  }
+
+  // proxy_user - computed: false, optional: true, required: false
+  private _proxyUser?: string; 
+  public get proxyUser() {
+    return this._proxyUser;
+  }
+  public set proxyUser(value: string | undefined) {
+    this._proxyUser = value;
+  }
+  public resetProxyUser() {
+    this._proxyUser = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get proxyUserInput() {
+    return this._proxyUser;
+  }
+
   // request_timeout - computed: false, optional: true, required: false
   private _requestTimeout?: number; 
   public get requestTimeout() {
@@ -1245,11 +1544,11 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   }
 
   // skip_toml_file_permission_verification - computed: false, optional: true, required: false
-  private _skipTomlFilePermissionVerification?: boolean | cdktf.IResolvable; 
+  private _skipTomlFilePermissionVerification?: boolean | cdktn.IResolvable; 
   public get skipTomlFilePermissionVerification() {
     return this._skipTomlFilePermissionVerification;
   }
-  public set skipTomlFilePermissionVerification(value: boolean | cdktf.IResolvable | undefined) {
+  public set skipTomlFilePermissionVerification(value: boolean | cdktn.IResolvable | undefined) {
     this._skipTomlFilePermissionVerification = value;
   }
   public resetSkipTomlFilePermissionVerification() {
@@ -1293,11 +1592,11 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   }
 
   // use_legacy_toml_file - computed: false, optional: true, required: false
-  private _useLegacyTomlFile?: boolean | cdktf.IResolvable; 
+  private _useLegacyTomlFile?: boolean | cdktn.IResolvable; 
   public get useLegacyTomlFile() {
     return this._useLegacyTomlFile;
   }
-  public set useLegacyTomlFile(value: boolean | cdktf.IResolvable | undefined) {
+  public set useLegacyTomlFile(value: boolean | cdktn.IResolvable | undefined) {
     this._useLegacyTomlFile = value;
   }
   public resetUseLegacyTomlFile() {
@@ -1426,60 +1725,73 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_name: cdktf.stringToTerraform(this._accountName),
-      authenticator: cdktf.stringToTerraform(this._authenticator),
-      client_ip: cdktf.stringToTerraform(this._clientIp),
-      client_request_mfa_token: cdktf.stringToTerraform(this._clientRequestMfaToken),
-      client_store_temporary_credential: cdktf.stringToTerraform(this._clientStoreTemporaryCredential),
-      client_timeout: cdktf.numberToTerraform(this._clientTimeout),
-      disable_console_login: cdktf.stringToTerraform(this._disableConsoleLogin),
-      disable_query_context_cache: cdktf.booleanToTerraform(this._disableQueryContextCache),
-      disable_telemetry: cdktf.booleanToTerraform(this._disableTelemetry),
-      driver_tracing: cdktf.stringToTerraform(this._driverTracing),
-      enable_single_use_refresh_tokens: cdktf.booleanToTerraform(this._enableSingleUseRefreshTokens),
-      experimental_features_enabled: cdktf.listMapper(cdktf.stringToTerraform, false)(this._experimentalFeaturesEnabled),
-      external_browser_timeout: cdktf.numberToTerraform(this._externalBrowserTimeout),
-      host: cdktf.stringToTerraform(this._host),
-      include_retry_reason: cdktf.stringToTerraform(this._includeRetryReason),
-      insecure_mode: cdktf.booleanToTerraform(this._insecureMode),
-      jwt_client_timeout: cdktf.numberToTerraform(this._jwtClientTimeout),
-      jwt_expire_timeout: cdktf.numberToTerraform(this._jwtExpireTimeout),
-      keep_session_alive: cdktf.booleanToTerraform(this._keepSessionAlive),
-      log_query_parameters: cdktf.booleanToTerraform(this._logQueryParameters),
-      log_query_text: cdktf.booleanToTerraform(this._logQueryText),
-      login_timeout: cdktf.numberToTerraform(this._loginTimeout),
-      max_retry_count: cdktf.numberToTerraform(this._maxRetryCount),
-      oauth_authorization_url: cdktf.stringToTerraform(this._oauthAuthorizationUrl),
-      oauth_client_id: cdktf.stringToTerraform(this._oauthClientId),
-      oauth_client_secret: cdktf.stringToTerraform(this._oauthClientSecret),
-      oauth_redirect_uri: cdktf.stringToTerraform(this._oauthRedirectUri),
-      oauth_scope: cdktf.stringToTerraform(this._oauthScope),
-      oauth_token_request_url: cdktf.stringToTerraform(this._oauthTokenRequestUrl),
-      ocsp_fail_open: cdktf.stringToTerraform(this._ocspFailOpen),
-      okta_url: cdktf.stringToTerraform(this._oktaUrl),
-      organization_name: cdktf.stringToTerraform(this._organizationName),
-      params: cdktf.hashMapper(cdktf.stringToTerraform)(this._params),
-      passcode: cdktf.stringToTerraform(this._passcode),
-      passcode_in_password: cdktf.booleanToTerraform(this._passcodeInPassword),
-      password: cdktf.stringToTerraform(this._password),
-      port: cdktf.numberToTerraform(this._port),
-      preview_features_enabled: cdktf.listMapper(cdktf.stringToTerraform, false)(this._previewFeaturesEnabled),
-      private_key: cdktf.stringToTerraform(this._privateKey),
-      private_key_passphrase: cdktf.stringToTerraform(this._privateKeyPassphrase),
-      profile: cdktf.stringToTerraform(this._profile),
-      protocol: cdktf.stringToTerraform(this._protocol),
-      request_timeout: cdktf.numberToTerraform(this._requestTimeout),
-      role: cdktf.stringToTerraform(this._role),
-      skip_toml_file_permission_verification: cdktf.booleanToTerraform(this._skipTomlFilePermissionVerification),
-      tmp_directory_path: cdktf.stringToTerraform(this._tmpDirectoryPath),
-      token: cdktf.stringToTerraform(this._token),
-      use_legacy_toml_file: cdktf.booleanToTerraform(this._useLegacyTomlFile),
-      user: cdktf.stringToTerraform(this._user),
-      validate_default_parameters: cdktf.stringToTerraform(this._validateDefaultParameters),
-      warehouse: cdktf.stringToTerraform(this._warehouse),
-      workload_identity_entra_resource: cdktf.stringToTerraform(this._workloadIdentityEntraResource),
-      workload_identity_provider: cdktf.stringToTerraform(this._workloadIdentityProvider),
-      alias: cdktf.stringToTerraform(this._alias),
+      account_name: cdktn.stringToTerraform(this._accountName),
+      authenticator: cdktn.stringToTerraform(this._authenticator),
+      cert_revocation_check_mode: cdktn.stringToTerraform(this._certRevocationCheckMode),
+      client_ip: cdktn.stringToTerraform(this._clientIp),
+      client_request_mfa_token: cdktn.stringToTerraform(this._clientRequestMfaToken),
+      client_store_temporary_credential: cdktn.stringToTerraform(this._clientStoreTemporaryCredential),
+      client_timeout: cdktn.numberToTerraform(this._clientTimeout),
+      crl_allow_certificates_without_crl_url: cdktn.stringToTerraform(this._crlAllowCertificatesWithoutCrlUrl),
+      crl_http_client_timeout: cdktn.numberToTerraform(this._crlHttpClientTimeout),
+      crl_in_memory_cache_disabled: cdktn.booleanToTerraform(this._crlInMemoryCacheDisabled),
+      crl_on_disk_cache_disabled: cdktn.booleanToTerraform(this._crlOnDiskCacheDisabled),
+      disable_console_login: cdktn.stringToTerraform(this._disableConsoleLogin),
+      disable_ocsp_checks: cdktn.booleanToTerraform(this._disableOcspChecks),
+      disable_query_context_cache: cdktn.booleanToTerraform(this._disableQueryContextCache),
+      disable_saml_url_check: cdktn.stringToTerraform(this._disableSamlUrlCheck),
+      disable_telemetry: cdktn.booleanToTerraform(this._disableTelemetry),
+      driver_tracing: cdktn.stringToTerraform(this._driverTracing),
+      enable_single_use_refresh_tokens: cdktn.booleanToTerraform(this._enableSingleUseRefreshTokens),
+      experimental_features_enabled: cdktn.listMapper(cdktn.stringToTerraform, false)(this._experimentalFeaturesEnabled),
+      external_browser_timeout: cdktn.numberToTerraform(this._externalBrowserTimeout),
+      host: cdktn.stringToTerraform(this._host),
+      include_retry_reason: cdktn.stringToTerraform(this._includeRetryReason),
+      insecure_mode: cdktn.booleanToTerraform(this._insecureMode),
+      jwt_client_timeout: cdktn.numberToTerraform(this._jwtClientTimeout),
+      jwt_expire_timeout: cdktn.numberToTerraform(this._jwtExpireTimeout),
+      keep_session_alive: cdktn.booleanToTerraform(this._keepSessionAlive),
+      log_query_parameters: cdktn.booleanToTerraform(this._logQueryParameters),
+      log_query_text: cdktn.booleanToTerraform(this._logQueryText),
+      login_timeout: cdktn.numberToTerraform(this._loginTimeout),
+      max_retry_count: cdktn.numberToTerraform(this._maxRetryCount),
+      no_proxy: cdktn.stringToTerraform(this._noProxy),
+      oauth_authorization_url: cdktn.stringToTerraform(this._oauthAuthorizationUrl),
+      oauth_client_id: cdktn.stringToTerraform(this._oauthClientId),
+      oauth_client_secret: cdktn.stringToTerraform(this._oauthClientSecret),
+      oauth_redirect_uri: cdktn.stringToTerraform(this._oauthRedirectUri),
+      oauth_scope: cdktn.stringToTerraform(this._oauthScope),
+      oauth_token_request_url: cdktn.stringToTerraform(this._oauthTokenRequestUrl),
+      ocsp_fail_open: cdktn.stringToTerraform(this._ocspFailOpen),
+      okta_url: cdktn.stringToTerraform(this._oktaUrl),
+      organization_name: cdktn.stringToTerraform(this._organizationName),
+      params: cdktn.hashMapper(cdktn.stringToTerraform)(this._params),
+      passcode: cdktn.stringToTerraform(this._passcode),
+      passcode_in_password: cdktn.booleanToTerraform(this._passcodeInPassword),
+      password: cdktn.stringToTerraform(this._password),
+      port: cdktn.numberToTerraform(this._port),
+      preview_features_enabled: cdktn.listMapper(cdktn.stringToTerraform, false)(this._previewFeaturesEnabled),
+      private_key: cdktn.stringToTerraform(this._privateKey),
+      private_key_passphrase: cdktn.stringToTerraform(this._privateKeyPassphrase),
+      profile: cdktn.stringToTerraform(this._profile),
+      protocol: cdktn.stringToTerraform(this._protocol),
+      proxy_host: cdktn.stringToTerraform(this._proxyHost),
+      proxy_password: cdktn.stringToTerraform(this._proxyPassword),
+      proxy_port: cdktn.numberToTerraform(this._proxyPort),
+      proxy_protocol: cdktn.stringToTerraform(this._proxyProtocol),
+      proxy_user: cdktn.stringToTerraform(this._proxyUser),
+      request_timeout: cdktn.numberToTerraform(this._requestTimeout),
+      role: cdktn.stringToTerraform(this._role),
+      skip_toml_file_permission_verification: cdktn.booleanToTerraform(this._skipTomlFilePermissionVerification),
+      tmp_directory_path: cdktn.stringToTerraform(this._tmpDirectoryPath),
+      token: cdktn.stringToTerraform(this._token),
+      use_legacy_toml_file: cdktn.booleanToTerraform(this._useLegacyTomlFile),
+      user: cdktn.stringToTerraform(this._user),
+      validate_default_parameters: cdktn.stringToTerraform(this._validateDefaultParameters),
+      warehouse: cdktn.stringToTerraform(this._warehouse),
+      workload_identity_entra_resource: cdktn.stringToTerraform(this._workloadIdentityEntraResource),
+      workload_identity_provider: cdktn.stringToTerraform(this._workloadIdentityProvider),
+      alias: cdktn.stringToTerraform(this._alias),
       token_accessor: snowflakeProviderTokenAccessorToTerraform(this._tokenAccessor),
     };
   }
@@ -1487,325 +1799,403 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_name: {
-        value: cdktf.stringToHclTerraform(this._accountName),
+        value: cdktn.stringToHclTerraform(this._accountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       authenticator: {
-        value: cdktf.stringToHclTerraform(this._authenticator),
+        value: cdktn.stringToHclTerraform(this._authenticator),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cert_revocation_check_mode: {
+        value: cdktn.stringToHclTerraform(this._certRevocationCheckMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_ip: {
-        value: cdktf.stringToHclTerraform(this._clientIp),
+        value: cdktn.stringToHclTerraform(this._clientIp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_request_mfa_token: {
-        value: cdktf.stringToHclTerraform(this._clientRequestMfaToken),
+        value: cdktn.stringToHclTerraform(this._clientRequestMfaToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_store_temporary_credential: {
-        value: cdktf.stringToHclTerraform(this._clientStoreTemporaryCredential),
+        value: cdktn.stringToHclTerraform(this._clientStoreTemporaryCredential),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_timeout: {
-        value: cdktf.numberToHclTerraform(this._clientTimeout),
+        value: cdktn.numberToHclTerraform(this._clientTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
-      disable_console_login: {
-        value: cdktf.stringToHclTerraform(this._disableConsoleLogin),
+      crl_allow_certificates_without_crl_url: {
+        value: cdktn.stringToHclTerraform(this._crlAllowCertificatesWithoutCrlUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
-      disable_query_context_cache: {
-        value: cdktf.booleanToHclTerraform(this._disableQueryContextCache),
+      crl_http_client_timeout: {
+        value: cdktn.numberToHclTerraform(this._crlHttpClientTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      crl_in_memory_cache_disabled: {
+        value: cdktn.booleanToHclTerraform(this._crlInMemoryCacheDisabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
+      crl_on_disk_cache_disabled: {
+        value: cdktn.booleanToHclTerraform(this._crlOnDiskCacheDisabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      disable_console_login: {
+        value: cdktn.stringToHclTerraform(this._disableConsoleLogin),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_ocsp_checks: {
+        value: cdktn.booleanToHclTerraform(this._disableOcspChecks),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      disable_query_context_cache: {
+        value: cdktn.booleanToHclTerraform(this._disableQueryContextCache),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      disable_saml_url_check: {
+        value: cdktn.stringToHclTerraform(this._disableSamlUrlCheck),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       disable_telemetry: {
-        value: cdktf.booleanToHclTerraform(this._disableTelemetry),
+        value: cdktn.booleanToHclTerraform(this._disableTelemetry),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       driver_tracing: {
-        value: cdktf.stringToHclTerraform(this._driverTracing),
+        value: cdktn.stringToHclTerraform(this._driverTracing),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_single_use_refresh_tokens: {
-        value: cdktf.booleanToHclTerraform(this._enableSingleUseRefreshTokens),
+        value: cdktn.booleanToHclTerraform(this._enableSingleUseRefreshTokens),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       experimental_features_enabled: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._experimentalFeaturesEnabled),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._experimentalFeaturesEnabled),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       external_browser_timeout: {
-        value: cdktf.numberToHclTerraform(this._externalBrowserTimeout),
+        value: cdktn.numberToHclTerraform(this._externalBrowserTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       host: {
-        value: cdktf.stringToHclTerraform(this._host),
+        value: cdktn.stringToHclTerraform(this._host),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_retry_reason: {
-        value: cdktf.stringToHclTerraform(this._includeRetryReason),
+        value: cdktn.stringToHclTerraform(this._includeRetryReason),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       insecure_mode: {
-        value: cdktf.booleanToHclTerraform(this._insecureMode),
+        value: cdktn.booleanToHclTerraform(this._insecureMode),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       jwt_client_timeout: {
-        value: cdktf.numberToHclTerraform(this._jwtClientTimeout),
+        value: cdktn.numberToHclTerraform(this._jwtClientTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       jwt_expire_timeout: {
-        value: cdktf.numberToHclTerraform(this._jwtExpireTimeout),
+        value: cdktn.numberToHclTerraform(this._jwtExpireTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       keep_session_alive: {
-        value: cdktf.booleanToHclTerraform(this._keepSessionAlive),
+        value: cdktn.booleanToHclTerraform(this._keepSessionAlive),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       log_query_parameters: {
-        value: cdktf.booleanToHclTerraform(this._logQueryParameters),
+        value: cdktn.booleanToHclTerraform(this._logQueryParameters),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       log_query_text: {
-        value: cdktf.booleanToHclTerraform(this._logQueryText),
+        value: cdktn.booleanToHclTerraform(this._logQueryText),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       login_timeout: {
-        value: cdktf.numberToHclTerraform(this._loginTimeout),
+        value: cdktn.numberToHclTerraform(this._loginTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       max_retry_count: {
-        value: cdktf.numberToHclTerraform(this._maxRetryCount),
+        value: cdktn.numberToHclTerraform(this._maxRetryCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
+      no_proxy: {
+        value: cdktn.stringToHclTerraform(this._noProxy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       oauth_authorization_url: {
-        value: cdktf.stringToHclTerraform(this._oauthAuthorizationUrl),
+        value: cdktn.stringToHclTerraform(this._oauthAuthorizationUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oauth_client_id: {
-        value: cdktf.stringToHclTerraform(this._oauthClientId),
+        value: cdktn.stringToHclTerraform(this._oauthClientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oauth_client_secret: {
-        value: cdktf.stringToHclTerraform(this._oauthClientSecret),
+        value: cdktn.stringToHclTerraform(this._oauthClientSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oauth_redirect_uri: {
-        value: cdktf.stringToHclTerraform(this._oauthRedirectUri),
+        value: cdktn.stringToHclTerraform(this._oauthRedirectUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oauth_scope: {
-        value: cdktf.stringToHclTerraform(this._oauthScope),
+        value: cdktn.stringToHclTerraform(this._oauthScope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oauth_token_request_url: {
-        value: cdktf.stringToHclTerraform(this._oauthTokenRequestUrl),
+        value: cdktn.stringToHclTerraform(this._oauthTokenRequestUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ocsp_fail_open: {
-        value: cdktf.stringToHclTerraform(this._ocspFailOpen),
+        value: cdktn.stringToHclTerraform(this._ocspFailOpen),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       okta_url: {
-        value: cdktf.stringToHclTerraform(this._oktaUrl),
+        value: cdktn.stringToHclTerraform(this._oktaUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organization_name: {
-        value: cdktf.stringToHclTerraform(this._organizationName),
+        value: cdktn.stringToHclTerraform(this._organizationName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       params: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._params),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._params),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       passcode: {
-        value: cdktf.stringToHclTerraform(this._passcode),
+        value: cdktn.stringToHclTerraform(this._passcode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       passcode_in_password: {
-        value: cdktf.booleanToHclTerraform(this._passcodeInPassword),
+        value: cdktn.booleanToHclTerraform(this._passcodeInPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       preview_features_enabled: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._previewFeaturesEnabled),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._previewFeaturesEnabled),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       private_key: {
-        value: cdktf.stringToHclTerraform(this._privateKey),
+        value: cdktn.stringToHclTerraform(this._privateKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_key_passphrase: {
-        value: cdktf.stringToHclTerraform(this._privateKeyPassphrase),
+        value: cdktn.stringToHclTerraform(this._privateKeyPassphrase),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       profile: {
-        value: cdktf.stringToHclTerraform(this._profile),
+        value: cdktn.stringToHclTerraform(this._profile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protocol: {
-        value: cdktf.stringToHclTerraform(this._protocol),
+        value: cdktn.stringToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      proxy_host: {
+        value: cdktn.stringToHclTerraform(this._proxyHost),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      proxy_password: {
+        value: cdktn.stringToHclTerraform(this._proxyPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      proxy_port: {
+        value: cdktn.numberToHclTerraform(this._proxyPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      proxy_protocol: {
+        value: cdktn.stringToHclTerraform(this._proxyProtocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      proxy_user: {
+        value: cdktn.stringToHclTerraform(this._proxyUser),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       request_timeout: {
-        value: cdktf.numberToHclTerraform(this._requestTimeout),
+        value: cdktn.numberToHclTerraform(this._requestTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_toml_file_permission_verification: {
-        value: cdktf.booleanToHclTerraform(this._skipTomlFilePermissionVerification),
+        value: cdktn.booleanToHclTerraform(this._skipTomlFilePermissionVerification),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tmp_directory_path: {
-        value: cdktf.stringToHclTerraform(this._tmpDirectoryPath),
+        value: cdktn.stringToHclTerraform(this._tmpDirectoryPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token: {
-        value: cdktf.stringToHclTerraform(this._token),
+        value: cdktn.stringToHclTerraform(this._token),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_legacy_toml_file: {
-        value: cdktf.booleanToHclTerraform(this._useLegacyTomlFile),
+        value: cdktn.booleanToHclTerraform(this._useLegacyTomlFile),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       user: {
-        value: cdktf.stringToHclTerraform(this._user),
+        value: cdktn.stringToHclTerraform(this._user),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       validate_default_parameters: {
-        value: cdktf.stringToHclTerraform(this._validateDefaultParameters),
+        value: cdktn.stringToHclTerraform(this._validateDefaultParameters),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       warehouse: {
-        value: cdktf.stringToHclTerraform(this._warehouse),
+        value: cdktn.stringToHclTerraform(this._warehouse),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workload_identity_entra_resource: {
-        value: cdktf.stringToHclTerraform(this._workloadIdentityEntraResource),
+        value: cdktn.stringToHclTerraform(this._workloadIdentityEntraResource),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workload_identity_provider: {
-        value: cdktf.stringToHclTerraform(this._workloadIdentityProvider),
+        value: cdktn.stringToHclTerraform(this._workloadIdentityProvider),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

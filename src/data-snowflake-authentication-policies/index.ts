@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataSnowflakeAuthenticationPoliciesConfig extends cdktf.TerraformMetaArguments {
+export interface DataSnowflakeAuthenticationPoliciesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies#id DataSnowflakeAuthenticationPolicies#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies#id DataSnowflakeAuthenticationPolicies#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,37 +22,37 @@ export interface DataSnowflakeAuthenticationPoliciesConfig extends cdktf.Terrafo
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies#like DataSnowflakeAuthenticationPolicies#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies#like DataSnowflakeAuthenticationPolicies#like}
   */
   readonly like?: string;
   /**
   * Filters the output with **case-sensitive** characters indicating the beginning of the object name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies#starts_with DataSnowflakeAuthenticationPolicies#starts_with}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies#starts_with DataSnowflakeAuthenticationPolicies#starts_with}
   */
   readonly startsWith?: string;
   /**
   * (Default: `true`) Runs DESC AUTHENTICATION POLICY for each service returned by SHOW AUTHENTICATION POLICIES. The output of describe is saved to the description field. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies#with_describe DataSnowflakeAuthenticationPolicies#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies#with_describe DataSnowflakeAuthenticationPolicies#with_describe}
   */
-  readonly withDescribe?: boolean | cdktf.IResolvable;
+  readonly withDescribe?: boolean | cdktn.IResolvable;
   /**
   * in block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies#in DataSnowflakeAuthenticationPolicies#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies#in DataSnowflakeAuthenticationPolicies#in}
   */
   readonly in?: DataSnowflakeAuthenticationPoliciesIn;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies#limit DataSnowflakeAuthenticationPolicies#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies#limit DataSnowflakeAuthenticationPolicies#limit}
   */
   readonly limit?: DataSnowflakeAuthenticationPoliciesLimit;
   /**
   * on block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies#on DataSnowflakeAuthenticationPolicies#on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies#on DataSnowflakeAuthenticationPolicies#on}
   */
   readonly on?: DataSnowflakeAuthenticationPoliciesOn;
 }
@@ -60,8 +60,8 @@ export interface DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescri
 }
 
 export function dataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputToTerraform(struct?: DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -70,8 +70,8 @@ export function dataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescrib
 
 
 export function dataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputToHclTerraform(struct?: DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -79,7 +79,7 @@ export function dataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescrib
   return attrs;
 }
 
-export class DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -88,7 +88,7 @@ export class DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -163,14 +163,14 @@ export class DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOu
   }
 }
 
-export class DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList extends cdktf.ComplexList {
+export class DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesDescribeOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -185,8 +185,8 @@ export interface DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesShowOu
 }
 
 export function dataSnowflakeAuthenticationPoliciesAuthenticationPoliciesShowOutputToTerraform(struct?: DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -195,8 +195,8 @@ export function dataSnowflakeAuthenticationPoliciesAuthenticationPoliciesShowOut
 
 
 export function dataSnowflakeAuthenticationPoliciesAuthenticationPoliciesShowOutputToHclTerraform(struct?: DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -204,7 +204,7 @@ export function dataSnowflakeAuthenticationPoliciesAuthenticationPoliciesShowOut
   return attrs;
 }
 
-export class DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesShowOutputOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -213,7 +213,7 @@ export class DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesShowOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -278,14 +278,14 @@ export class DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesShowOutput
   }
 }
 
-export class DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesShowOutputList extends cdktf.ComplexList {
+export class DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -300,8 +300,8 @@ export interface DataSnowflakeAuthenticationPoliciesAuthenticationPolicies {
 }
 
 export function dataSnowflakeAuthenticationPoliciesAuthenticationPoliciesToTerraform(struct?: DataSnowflakeAuthenticationPoliciesAuthenticationPolicies): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -310,8 +310,8 @@ export function dataSnowflakeAuthenticationPoliciesAuthenticationPoliciesToTerra
 
 
 export function dataSnowflakeAuthenticationPoliciesAuthenticationPoliciesToHclTerraform(struct?: DataSnowflakeAuthenticationPoliciesAuthenticationPolicies): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -319,7 +319,7 @@ export function dataSnowflakeAuthenticationPoliciesAuthenticationPoliciesToHclTe
   return attrs;
 }
 
-export class DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -328,7 +328,7 @@ export class DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -360,14 +360,14 @@ export class DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesOutputRefe
   }
 }
 
-export class DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesList extends cdktf.ComplexList {
+export class DataSnowflakeAuthenticationPoliciesAuthenticationPoliciesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -382,82 +382,82 @@ export interface DataSnowflakeAuthenticationPoliciesIn {
   /**
   * Returns records for the entire account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies#account DataSnowflakeAuthenticationPolicies#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies#account DataSnowflakeAuthenticationPolicies#account}
   */
-  readonly account?: boolean | cdktf.IResolvable;
+  readonly account?: boolean | cdktn.IResolvable;
   /**
   * Returns records for the specified application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies#application DataSnowflakeAuthenticationPolicies#application}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies#application DataSnowflakeAuthenticationPolicies#application}
   */
   readonly application?: string;
   /**
   * Returns records for the specified application package.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies#application_package DataSnowflakeAuthenticationPolicies#application_package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies#application_package DataSnowflakeAuthenticationPolicies#application_package}
   */
   readonly applicationPackage?: string;
   /**
   * Returns records for the current database in use or for a specified database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies#database DataSnowflakeAuthenticationPolicies#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies#database DataSnowflakeAuthenticationPolicies#database}
   */
   readonly database?: string;
   /**
   * Returns records for the current schema in use or a specified schema. Use fully qualified name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies#schema DataSnowflakeAuthenticationPolicies#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies#schema DataSnowflakeAuthenticationPolicies#schema}
   */
   readonly schema?: string;
 }
 
 export function dataSnowflakeAuthenticationPoliciesInToTerraform(struct?: DataSnowflakeAuthenticationPoliciesInOutputReference | DataSnowflakeAuthenticationPoliciesIn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account: cdktf.booleanToTerraform(struct!.account),
-    application: cdktf.stringToTerraform(struct!.application),
-    application_package: cdktf.stringToTerraform(struct!.applicationPackage),
-    database: cdktf.stringToTerraform(struct!.database),
-    schema: cdktf.stringToTerraform(struct!.schema),
+    account: cdktn.booleanToTerraform(struct!.account),
+    application: cdktn.stringToTerraform(struct!.application),
+    application_package: cdktn.stringToTerraform(struct!.applicationPackage),
+    database: cdktn.stringToTerraform(struct!.database),
+    schema: cdktn.stringToTerraform(struct!.schema),
   }
 }
 
 
 export function dataSnowflakeAuthenticationPoliciesInToHclTerraform(struct?: DataSnowflakeAuthenticationPoliciesInOutputReference | DataSnowflakeAuthenticationPoliciesIn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account: {
-      value: cdktf.booleanToHclTerraform(struct!.account),
+      value: cdktn.booleanToHclTerraform(struct!.account),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     application: {
-      value: cdktf.stringToHclTerraform(struct!.application),
+      value: cdktn.stringToHclTerraform(struct!.application),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     application_package: {
-      value: cdktf.stringToHclTerraform(struct!.applicationPackage),
+      value: cdktn.stringToHclTerraform(struct!.applicationPackage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schema: {
-      value: cdktf.stringToHclTerraform(struct!.schema),
+      value: cdktn.stringToHclTerraform(struct!.schema),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -468,14 +468,14 @@ export function dataSnowflakeAuthenticationPoliciesInToHclTerraform(struct?: Dat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataSnowflakeAuthenticationPoliciesInOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeAuthenticationPoliciesInOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -525,11 +525,11 @@ export class DataSnowflakeAuthenticationPoliciesInOutputReference extends cdktf.
   }
 
   // account - computed: false, optional: true, required: false
-  private _account?: boolean | cdktf.IResolvable; 
+  private _account?: boolean | cdktn.IResolvable; 
   public get account() {
     return this.getBooleanAttribute('account');
   }
-  public set account(value: boolean | cdktf.IResolvable) {
+  public set account(value: boolean | cdktn.IResolvable) {
     this._account = value;
   }
   public resetAccount() {
@@ -608,43 +608,43 @@ export interface DataSnowflakeAuthenticationPoliciesLimit {
   /**
   * Specifies a **case-sensitive** pattern that is used to match object name. After the first match, the limit on the number of rows will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies#from DataSnowflakeAuthenticationPolicies#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies#from DataSnowflakeAuthenticationPolicies#from}
   */
   readonly from?: string;
   /**
   * The maximum number of rows to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies#rows DataSnowflakeAuthenticationPolicies#rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies#rows DataSnowflakeAuthenticationPolicies#rows}
   */
   readonly rows: number;
 }
 
 export function dataSnowflakeAuthenticationPoliciesLimitToTerraform(struct?: DataSnowflakeAuthenticationPoliciesLimitOutputReference | DataSnowflakeAuthenticationPoliciesLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from: cdktf.stringToTerraform(struct!.from),
-    rows: cdktf.numberToTerraform(struct!.rows),
+    from: cdktn.stringToTerraform(struct!.from),
+    rows: cdktn.numberToTerraform(struct!.rows),
   }
 }
 
 
 export function dataSnowflakeAuthenticationPoliciesLimitToHclTerraform(struct?: DataSnowflakeAuthenticationPoliciesLimitOutputReference | DataSnowflakeAuthenticationPoliciesLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from: {
-      value: cdktf.stringToHclTerraform(struct!.from),
+      value: cdktn.stringToHclTerraform(struct!.from),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rows: {
-      value: cdktf.numberToHclTerraform(struct!.rows),
+      value: cdktn.numberToHclTerraform(struct!.rows),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -655,14 +655,14 @@ export function dataSnowflakeAuthenticationPoliciesLimitToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataSnowflakeAuthenticationPoliciesLimitOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeAuthenticationPoliciesLimitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -726,43 +726,43 @@ export interface DataSnowflakeAuthenticationPoliciesOn {
   /**
   * Returns records for the entire account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies#account DataSnowflakeAuthenticationPolicies#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies#account DataSnowflakeAuthenticationPolicies#account}
   */
-  readonly account?: boolean | cdktf.IResolvable;
+  readonly account?: boolean | cdktn.IResolvable;
   /**
   * Returns records for the specified user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies#user DataSnowflakeAuthenticationPolicies#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies#user DataSnowflakeAuthenticationPolicies#user}
   */
   readonly user?: string;
 }
 
 export function dataSnowflakeAuthenticationPoliciesOnToTerraform(struct?: DataSnowflakeAuthenticationPoliciesOnOutputReference | DataSnowflakeAuthenticationPoliciesOn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account: cdktf.booleanToTerraform(struct!.account),
-    user: cdktf.stringToTerraform(struct!.user),
+    account: cdktn.booleanToTerraform(struct!.account),
+    user: cdktn.stringToTerraform(struct!.user),
   }
 }
 
 
 export function dataSnowflakeAuthenticationPoliciesOnToHclTerraform(struct?: DataSnowflakeAuthenticationPoliciesOnOutputReference | DataSnowflakeAuthenticationPoliciesOn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account: {
-      value: cdktf.booleanToHclTerraform(struct!.account),
+      value: cdktn.booleanToHclTerraform(struct!.account),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     user: {
-      value: cdktf.stringToHclTerraform(struct!.user),
+      value: cdktn.stringToHclTerraform(struct!.user),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -773,14 +773,14 @@ export function dataSnowflakeAuthenticationPoliciesOnToHclTerraform(struct?: Dat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataSnowflakeAuthenticationPoliciesOnOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeAuthenticationPoliciesOnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -812,11 +812,11 @@ export class DataSnowflakeAuthenticationPoliciesOnOutputReference extends cdktf.
   }
 
   // account - computed: false, optional: true, required: false
-  private _account?: boolean | cdktf.IResolvable; 
+  private _account?: boolean | cdktn.IResolvable; 
   public get account() {
     return this.getBooleanAttribute('account');
   }
-  public set account(value: boolean | cdktf.IResolvable) {
+  public set account(value: boolean | cdktn.IResolvable) {
     this._account = value;
   }
   public resetAccount() {
@@ -845,9 +845,9 @@ export class DataSnowflakeAuthenticationPoliciesOnOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies snowflake_authentication_policies}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies snowflake_authentication_policies}
 */
-export class DataSnowflakeAuthenticationPolicies extends cdktf.TerraformDataSource {
+export class DataSnowflakeAuthenticationPolicies extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -858,14 +858,14 @@ export class DataSnowflakeAuthenticationPolicies extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataSnowflakeAuthenticationPolicies resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataSnowflakeAuthenticationPolicies resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeAuthenticationPolicies to import
-  * @param importFromId The id of the existing DataSnowflakeAuthenticationPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeAuthenticationPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeAuthenticationPolicies to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_authentication_policies", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_authentication_policies", importId: importFromId, provider });
       }
 
   // ===========
@@ -873,7 +873,7 @@ export class DataSnowflakeAuthenticationPolicies extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/authentication_policies snowflake_authentication_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/authentication_policies snowflake_authentication_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -884,7 +884,7 @@ export class DataSnowflakeAuthenticationPolicies extends cdktf.TerraformDataSour
       terraformResourceType: 'snowflake_authentication_policies',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -963,11 +963,11 @@ export class DataSnowflakeAuthenticationPolicies extends cdktf.TerraformDataSour
   }
 
   // with_describe - computed: false, optional: true, required: false
-  private _withDescribe?: boolean | cdktf.IResolvable; 
+  private _withDescribe?: boolean | cdktn.IResolvable; 
   public get withDescribe() {
     return this.getBooleanAttribute('with_describe');
   }
-  public set withDescribe(value: boolean | cdktf.IResolvable) {
+  public set withDescribe(value: boolean | cdktn.IResolvable) {
     this._withDescribe = value;
   }
   public resetWithDescribe() {
@@ -1032,10 +1032,10 @@ export class DataSnowflakeAuthenticationPolicies extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      like: cdktf.stringToTerraform(this._like),
-      starts_with: cdktf.stringToTerraform(this._startsWith),
-      with_describe: cdktf.booleanToTerraform(this._withDescribe),
+      id: cdktn.stringToTerraform(this._id),
+      like: cdktn.stringToTerraform(this._like),
+      starts_with: cdktn.stringToTerraform(this._startsWith),
+      with_describe: cdktn.booleanToTerraform(this._withDescribe),
       in: dataSnowflakeAuthenticationPoliciesInToTerraform(this._in.internalValue),
       limit: dataSnowflakeAuthenticationPoliciesLimitToTerraform(this._limit.internalValue),
       on: dataSnowflakeAuthenticationPoliciesOnToTerraform(this._on.internalValue),
@@ -1045,25 +1045,25 @@ export class DataSnowflakeAuthenticationPolicies extends cdktf.TerraformDataSour
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       like: {
-        value: cdktf.stringToHclTerraform(this._like),
+        value: cdktn.stringToHclTerraform(this._like),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       starts_with: {
-        value: cdktf.stringToHclTerraform(this._startsWith),
+        value: cdktn.stringToHclTerraform(this._startsWith),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       with_describe: {
-        value: cdktf.booleanToHclTerraform(this._withDescribe),
+        value: cdktn.booleanToHclTerraform(this._withDescribe),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

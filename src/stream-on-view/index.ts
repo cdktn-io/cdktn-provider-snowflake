@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StreamOnViewConfig extends cdktf.TerraformMetaArguments {
+export interface StreamOnViewConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether this is an append-only stream. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#append_only StreamOnView#append_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#append_only StreamOnView#append_only}
   */
   readonly appendOnly?: string;
   /**
   * Specifies a comment for the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#comment StreamOnView#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#comment StreamOnView#comment}
   */
   readonly comment?: string;
   /**
   * (Default: `false`) Retains the access permissions from the original stream when a stream is recreated using the OR REPLACE clause. This is used when the provider detects changes for fields that can not be changed by ALTER. This value will not have any effect during creating a new object with Terraform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#copy_grants StreamOnView#copy_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#copy_grants StreamOnView#copy_grants}
   */
-  readonly copyGrants?: boolean | cdktf.IResolvable;
+  readonly copyGrants?: boolean | cdktn.IResolvable;
   /**
   * The database in which to create the stream. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#database StreamOnView#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#database StreamOnView#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#id StreamOnView#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#id StreamOnView#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,43 +46,43 @@ export interface StreamOnViewConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the identifier for the stream; must be unique for the database and schema in which the stream is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#name StreamOnView#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#name StreamOnView#name}
   */
   readonly name: string;
   /**
   * The schema in which to create the stream. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#schema StreamOnView#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#schema StreamOnView#schema}
   */
   readonly schema: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to return all existing rows in the source table as row inserts the first time the stream is consumed. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#show_initial_rows StreamOnView#show_initial_rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#show_initial_rows StreamOnView#show_initial_rows}
   */
   readonly showInitialRows?: string;
   /**
   * Specifies an identifier for the view the stream will monitor. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`. For more information about this resource, see [docs](./view).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#view StreamOnView#view}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#view StreamOnView#view}
   */
   readonly view: string;
   /**
   * at block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#at StreamOnView#at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#at StreamOnView#at}
   */
   readonly at?: StreamOnViewAt;
   /**
   * before block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#before StreamOnView#before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#before StreamOnView#before}
   */
   readonly before?: StreamOnViewBefore;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#timeouts StreamOnView#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#timeouts StreamOnView#timeouts}
   */
   readonly timeouts?: StreamOnViewTimeouts;
 }
@@ -90,8 +90,8 @@ export interface StreamOnViewDescribeOutput {
 }
 
 export function streamOnViewDescribeOutputToTerraform(struct?: StreamOnViewDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -100,8 +100,8 @@ export function streamOnViewDescribeOutputToTerraform(struct?: StreamOnViewDescr
 
 
 export function streamOnViewDescribeOutputToHclTerraform(struct?: StreamOnViewDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -109,7 +109,7 @@ export function streamOnViewDescribeOutputToHclTerraform(struct?: StreamOnViewDe
   return attrs;
 }
 
-export class StreamOnViewDescribeOutputOutputReference extends cdktf.ComplexObject {
+export class StreamOnViewDescribeOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -118,7 +118,7 @@ export class StreamOnViewDescribeOutputOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -213,14 +213,14 @@ export class StreamOnViewDescribeOutputOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class StreamOnViewDescribeOutputList extends cdktf.ComplexList {
+export class StreamOnViewDescribeOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -235,8 +235,8 @@ export interface StreamOnViewShowOutput {
 }
 
 export function streamOnViewShowOutputToTerraform(struct?: StreamOnViewShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -245,8 +245,8 @@ export function streamOnViewShowOutputToTerraform(struct?: StreamOnViewShowOutpu
 
 
 export function streamOnViewShowOutputToHclTerraform(struct?: StreamOnViewShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -254,7 +254,7 @@ export function streamOnViewShowOutputToHclTerraform(struct?: StreamOnViewShowOu
   return attrs;
 }
 
-export class StreamOnViewShowOutputOutputReference extends cdktf.ComplexObject {
+export class StreamOnViewShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -263,7 +263,7 @@ export class StreamOnViewShowOutputOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -358,14 +358,14 @@ export class StreamOnViewShowOutputOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class StreamOnViewShowOutputList extends cdktf.ComplexList {
+export class StreamOnViewShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -380,69 +380,69 @@ export interface StreamOnViewAt {
   /**
   * Specifies the difference in seconds from the current time to use for Time Travel, in the form -N where N can be an integer or arithmetic expression (e.g. -120 is 120 seconds, -30*60 is 1800 seconds or 30 minutes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#offset StreamOnView#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#offset StreamOnView#offset}
   */
   readonly offset?: string;
   /**
   * Specifies the query ID of a statement to use as the reference point for Time Travel. This parameter supports any statement of one of the following types: DML (e.g. INSERT, UPDATE, DELETE), TCL (BEGIN, COMMIT transaction), SELECT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#statement StreamOnView#statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#statement StreamOnView#statement}
   */
   readonly statement?: string;
   /**
   * Specifies the identifier (i.e. name) for an existing stream on the queried table or view. The current offset in the stream is used as the AT point in time for returning change data for the source object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#stream StreamOnView#stream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#stream StreamOnView#stream}
   */
   readonly stream?: string;
   /**
   * Specifies an exact date and time to use for Time Travel. The value must be explicitly cast to a TIMESTAMP, TIMESTAMP_LTZ, TIMESTAMP_NTZ, or TIMESTAMP_TZ data type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#timestamp StreamOnView#timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#timestamp StreamOnView#timestamp}
   */
   readonly timestamp?: string;
 }
 
 export function streamOnViewAtToTerraform(struct?: StreamOnViewAtOutputReference | StreamOnViewAt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    offset: cdktf.stringToTerraform(struct!.offset),
-    statement: cdktf.stringToTerraform(struct!.statement),
-    stream: cdktf.stringToTerraform(struct!.stream),
-    timestamp: cdktf.stringToTerraform(struct!.timestamp),
+    offset: cdktn.stringToTerraform(struct!.offset),
+    statement: cdktn.stringToTerraform(struct!.statement),
+    stream: cdktn.stringToTerraform(struct!.stream),
+    timestamp: cdktn.stringToTerraform(struct!.timestamp),
   }
 }
 
 
 export function streamOnViewAtToHclTerraform(struct?: StreamOnViewAtOutputReference | StreamOnViewAt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     offset: {
-      value: cdktf.stringToHclTerraform(struct!.offset),
+      value: cdktn.stringToHclTerraform(struct!.offset),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     statement: {
-      value: cdktf.stringToHclTerraform(struct!.statement),
+      value: cdktn.stringToHclTerraform(struct!.statement),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stream: {
-      value: cdktf.stringToHclTerraform(struct!.stream),
+      value: cdktn.stringToHclTerraform(struct!.stream),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timestamp: {
-      value: cdktf.stringToHclTerraform(struct!.timestamp),
+      value: cdktn.stringToHclTerraform(struct!.timestamp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -453,14 +453,14 @@ export function streamOnViewAtToHclTerraform(struct?: StreamOnViewAtOutputRefere
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StreamOnViewAtOutputReference extends cdktf.ComplexObject {
+export class StreamOnViewAtOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -571,69 +571,69 @@ export interface StreamOnViewBefore {
   /**
   * Specifies the difference in seconds from the current time to use for Time Travel, in the form -N where N can be an integer or arithmetic expression (e.g. -120 is 120 seconds, -30*60 is 1800 seconds or 30 minutes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#offset StreamOnView#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#offset StreamOnView#offset}
   */
   readonly offset?: string;
   /**
   * Specifies the query ID of a statement to use as the reference point for Time Travel. This parameter supports any statement of one of the following types: DML (e.g. INSERT, UPDATE, DELETE), TCL (BEGIN, COMMIT transaction), SELECT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#statement StreamOnView#statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#statement StreamOnView#statement}
   */
   readonly statement?: string;
   /**
   * Specifies the identifier (i.e. name) for an existing stream on the queried table or view. The current offset in the stream is used as the AT point in time for returning change data for the source object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#stream StreamOnView#stream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#stream StreamOnView#stream}
   */
   readonly stream?: string;
   /**
   * Specifies an exact date and time to use for Time Travel. The value must be explicitly cast to a TIMESTAMP, TIMESTAMP_LTZ, TIMESTAMP_NTZ, or TIMESTAMP_TZ data type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#timestamp StreamOnView#timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#timestamp StreamOnView#timestamp}
   */
   readonly timestamp?: string;
 }
 
 export function streamOnViewBeforeToTerraform(struct?: StreamOnViewBeforeOutputReference | StreamOnViewBefore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    offset: cdktf.stringToTerraform(struct!.offset),
-    statement: cdktf.stringToTerraform(struct!.statement),
-    stream: cdktf.stringToTerraform(struct!.stream),
-    timestamp: cdktf.stringToTerraform(struct!.timestamp),
+    offset: cdktn.stringToTerraform(struct!.offset),
+    statement: cdktn.stringToTerraform(struct!.statement),
+    stream: cdktn.stringToTerraform(struct!.stream),
+    timestamp: cdktn.stringToTerraform(struct!.timestamp),
   }
 }
 
 
 export function streamOnViewBeforeToHclTerraform(struct?: StreamOnViewBeforeOutputReference | StreamOnViewBefore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     offset: {
-      value: cdktf.stringToHclTerraform(struct!.offset),
+      value: cdktn.stringToHclTerraform(struct!.offset),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     statement: {
-      value: cdktf.stringToHclTerraform(struct!.statement),
+      value: cdktn.stringToHclTerraform(struct!.statement),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stream: {
-      value: cdktf.stringToHclTerraform(struct!.stream),
+      value: cdktn.stringToHclTerraform(struct!.stream),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timestamp: {
-      value: cdktf.stringToHclTerraform(struct!.timestamp),
+      value: cdktn.stringToHclTerraform(struct!.timestamp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -644,14 +644,14 @@ export function streamOnViewBeforeToHclTerraform(struct?: StreamOnViewBeforeOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StreamOnViewBeforeOutputReference extends cdktf.ComplexObject {
+export class StreamOnViewBeforeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -760,63 +760,63 @@ export class StreamOnViewBeforeOutputReference extends cdktf.ComplexObject {
 }
 export interface StreamOnViewTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#create StreamOnView#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#create StreamOnView#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#delete StreamOnView#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#delete StreamOnView#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#read StreamOnView#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#read StreamOnView#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#update StreamOnView#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#update StreamOnView#update}
   */
   readonly update?: string;
 }
 
-export function streamOnViewTimeoutsToTerraform(struct?: StreamOnViewTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function streamOnViewTimeoutsToTerraform(struct?: StreamOnViewTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function streamOnViewTimeoutsToHclTerraform(struct?: StreamOnViewTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function streamOnViewTimeoutsToHclTerraform(struct?: StreamOnViewTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -827,19 +827,19 @@ export function streamOnViewTimeoutsToHclTerraform(struct?: StreamOnViewTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StreamOnViewTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StreamOnViewTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StreamOnViewTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StreamOnViewTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -864,7 +864,7 @@ export class StreamOnViewTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StreamOnViewTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StreamOnViewTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -873,7 +873,7 @@ export class StreamOnViewTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -953,9 +953,9 @@ export class StreamOnViewTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view snowflake_stream_on_view}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view snowflake_stream_on_view}
 */
-export class StreamOnView extends cdktf.TerraformResource {
+export class StreamOnView extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -966,14 +966,14 @@ export class StreamOnView extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StreamOnView resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StreamOnView resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StreamOnView to import
-  * @param importFromId The id of the existing StreamOnView that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StreamOnView that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StreamOnView to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_stream_on_view", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_stream_on_view", importId: importFromId, provider });
       }
 
   // ===========
@@ -981,7 +981,7 @@ export class StreamOnView extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/stream_on_view snowflake_stream_on_view} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/stream_on_view snowflake_stream_on_view} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -992,7 +992,7 @@ export class StreamOnView extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_stream_on_view',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -1054,11 +1054,11 @@ export class StreamOnView extends cdktf.TerraformResource {
   }
 
   // copy_grants - computed: false, optional: true, required: false
-  private _copyGrants?: boolean | cdktf.IResolvable; 
+  private _copyGrants?: boolean | cdktn.IResolvable; 
   public get copyGrants() {
     return this.getBooleanAttribute('copy_grants');
   }
-  public set copyGrants(value: boolean | cdktf.IResolvable) {
+  public set copyGrants(value: boolean | cdktn.IResolvable) {
     this._copyGrants = value;
   }
   public resetCopyGrants() {
@@ -1234,15 +1234,15 @@ export class StreamOnView extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      append_only: cdktf.stringToTerraform(this._appendOnly),
-      comment: cdktf.stringToTerraform(this._comment),
-      copy_grants: cdktf.booleanToTerraform(this._copyGrants),
-      database: cdktf.stringToTerraform(this._database),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      schema: cdktf.stringToTerraform(this._schema),
-      show_initial_rows: cdktf.stringToTerraform(this._showInitialRows),
-      view: cdktf.stringToTerraform(this._view),
+      append_only: cdktn.stringToTerraform(this._appendOnly),
+      comment: cdktn.stringToTerraform(this._comment),
+      copy_grants: cdktn.booleanToTerraform(this._copyGrants),
+      database: cdktn.stringToTerraform(this._database),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      schema: cdktn.stringToTerraform(this._schema),
+      show_initial_rows: cdktn.stringToTerraform(this._showInitialRows),
+      view: cdktn.stringToTerraform(this._view),
       at: streamOnViewAtToTerraform(this._at.internalValue),
       before: streamOnViewBeforeToTerraform(this._before.internalValue),
       timeouts: streamOnViewTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1252,55 +1252,55 @@ export class StreamOnView extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       append_only: {
-        value: cdktf.stringToHclTerraform(this._appendOnly),
+        value: cdktn.stringToHclTerraform(this._appendOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       copy_grants: {
-        value: cdktf.booleanToHclTerraform(this._copyGrants),
+        value: cdktn.booleanToHclTerraform(this._copyGrants),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       show_initial_rows: {
-        value: cdktf.stringToHclTerraform(this._showInitialRows),
+        value: cdktn.stringToHclTerraform(this._showInitialRows),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       view: {
-        value: cdktf.stringToHclTerraform(this._view),
+        value: cdktn.stringToHclTerraform(this._view),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

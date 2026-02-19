@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/tag_association
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TagAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface TagAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/tag_association#id TagAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag_association#id TagAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,99 +22,99 @@ export interface TagAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the object identifiers for the tag association.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/tag_association#object_identifiers TagAssociation#object_identifiers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag_association#object_identifiers TagAssociation#object_identifiers}
   */
   readonly objectIdentifiers: string[];
   /**
   * Specifies the type of object to add a tag. Allowed object types: `ACCOUNT` | `APPLICATION` | `APPLICATION PACKAGE` | `COMPUTE POOL` | `DATABASE` | `FAILOVER GROUP` | `INTEGRATION` | `NETWORK POLICY` | `REPLICATION GROUP` | `ROLE` | `SHARE` | `USER` | `WAREHOUSE` | `DATABASE ROLE` | `SCHEMA` | `ALERT` | `SNOWFLAKE.CORE.BUDGET` | `SNOWFLAKE.ML.CLASSIFICATION` | `EXTERNAL FUNCTION` | `EXTERNAL TABLE` | `FUNCTION` | `IMAGE REPOSITORY` | `GIT REPOSITORY` | `ICEBERG TABLE` | `MATERIALIZED VIEW` | `PIPE` | `MASKING POLICY` | `PASSWORD POLICY` | `ROW ACCESS POLICY` | `SESSION POLICY` | `PRIVACY POLICY` | `PROCEDURE` | `SERVICE` | `STAGE` | `STREAM` | `TABLE` | `TASK` | `VIEW` | `COLUMN` | `EVENT TABLE`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/tag_association#object_type TagAssociation#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag_association#object_type TagAssociation#object_type}
   */
   readonly objectType: string;
   /**
   * (Default: `true`) If true, skips validation of the tag association.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/tag_association#skip_validation TagAssociation#skip_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag_association#skip_validation TagAssociation#skip_validation}
   */
-  readonly skipValidation?: boolean | cdktf.IResolvable;
+  readonly skipValidation?: boolean | cdktn.IResolvable;
   /**
   * Specifies the identifier for the tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/tag_association#tag_id TagAssociation#tag_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag_association#tag_id TagAssociation#tag_id}
   */
   readonly tagId: string;
   /**
   * Specifies the value of the tag, (e.g. 'finance' or 'engineering')
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/tag_association#tag_value TagAssociation#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag_association#tag_value TagAssociation#tag_value}
   */
   readonly tagValue: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/tag_association#timeouts TagAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag_association#timeouts TagAssociation#timeouts}
   */
   readonly timeouts?: TagAssociationTimeouts;
 }
 export interface TagAssociationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/tag_association#create TagAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag_association#create TagAssociation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/tag_association#delete TagAssociation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag_association#delete TagAssociation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/tag_association#read TagAssociation#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag_association#read TagAssociation#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/tag_association#update TagAssociation#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag_association#update TagAssociation#update}
   */
   readonly update?: string;
 }
 
-export function tagAssociationTimeoutsToTerraform(struct?: TagAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tagAssociationTimeoutsToTerraform(struct?: TagAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function tagAssociationTimeoutsToHclTerraform(struct?: TagAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tagAssociationTimeoutsToHclTerraform(struct?: TagAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -125,19 +125,19 @@ export function tagAssociationTimeoutsToHclTerraform(struct?: TagAssociationTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TagAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class TagAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): TagAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): TagAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -162,7 +162,7 @@ export class TagAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TagAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TagAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -171,7 +171,7 @@ export class TagAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -251,9 +251,9 @@ export class TagAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/tag_association snowflake_tag_association}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag_association snowflake_tag_association}
 */
-export class TagAssociation extends cdktf.TerraformResource {
+export class TagAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -264,14 +264,14 @@ export class TagAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TagAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TagAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TagAssociation to import
-  * @param importFromId The id of the existing TagAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/tag_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TagAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TagAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_tag_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_tag_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -279,7 +279,7 @@ export class TagAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/tag_association snowflake_tag_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag_association snowflake_tag_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -290,7 +290,7 @@ export class TagAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_tag_association',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -333,7 +333,7 @@ export class TagAssociation extends cdktf.TerraformResource {
   // object_identifiers - computed: false, optional: false, required: true
   private _objectIdentifiers?: string[]; 
   public get objectIdentifiers() {
-    return cdktf.Fn.tolist(this.getListAttribute('object_identifiers'));
+    return cdktn.Fn.tolist(this.getListAttribute('object_identifiers'));
   }
   public set objectIdentifiers(value: string[]) {
     this._objectIdentifiers = value;
@@ -357,11 +357,11 @@ export class TagAssociation extends cdktf.TerraformResource {
   }
 
   // skip_validation - computed: false, optional: true, required: false
-  private _skipValidation?: boolean | cdktf.IResolvable; 
+  private _skipValidation?: boolean | cdktn.IResolvable; 
   public get skipValidation() {
     return this.getBooleanAttribute('skip_validation');
   }
-  public set skipValidation(value: boolean | cdktf.IResolvable) {
+  public set skipValidation(value: boolean | cdktn.IResolvable) {
     this._skipValidation = value;
   }
   public resetSkipValidation() {
@@ -420,12 +420,12 @@ export class TagAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      object_identifiers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._objectIdentifiers),
-      object_type: cdktf.stringToTerraform(this._objectType),
-      skip_validation: cdktf.booleanToTerraform(this._skipValidation),
-      tag_id: cdktf.stringToTerraform(this._tagId),
-      tag_value: cdktf.stringToTerraform(this._tagValue),
+      id: cdktn.stringToTerraform(this._id),
+      object_identifiers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._objectIdentifiers),
+      object_type: cdktn.stringToTerraform(this._objectType),
+      skip_validation: cdktn.booleanToTerraform(this._skipValidation),
+      tag_id: cdktn.stringToTerraform(this._tagId),
+      tag_value: cdktn.stringToTerraform(this._tagValue),
       timeouts: tagAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -433,37 +433,37 @@ export class TagAssociation extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_identifiers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._objectIdentifiers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._objectIdentifiers),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       object_type: {
-        value: cdktf.stringToHclTerraform(this._objectType),
+        value: cdktn.stringToHclTerraform(this._objectType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_validation: {
-        value: cdktf.booleanToHclTerraform(this._skipValidation),
+        value: cdktn.booleanToHclTerraform(this._skipValidation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tag_id: {
-        value: cdktf.stringToHclTerraform(this._tagId),
+        value: cdktn.stringToHclTerraform(this._tagId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tag_value: {
-        value: cdktf.stringToHclTerraform(this._tagValue),
+        value: cdktn.stringToHclTerraform(this._tagValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

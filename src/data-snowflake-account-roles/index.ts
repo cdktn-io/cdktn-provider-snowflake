@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/account_roles
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/account_roles
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataSnowflakeAccountRolesConfig extends cdktf.TerraformMetaArguments {
+export interface DataSnowflakeAccountRolesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/account_roles#id DataSnowflakeAccountRoles#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/account_roles#id DataSnowflakeAccountRoles#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataSnowflakeAccountRolesConfig extends cdktf.TerraformMetaArgu
   /**
   * Filters the SHOW GRANTS output by class name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/account_roles#in_class DataSnowflakeAccountRoles#in_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/account_roles#in_class DataSnowflakeAccountRoles#in_class}
   */
   readonly inClass?: string;
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/account_roles#like DataSnowflakeAccountRoles#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/account_roles#like DataSnowflakeAccountRoles#like}
   */
   readonly like?: string;
 }
@@ -36,8 +36,8 @@ export interface DataSnowflakeAccountRolesAccountRolesShowOutput {
 }
 
 export function dataSnowflakeAccountRolesAccountRolesShowOutputToTerraform(struct?: DataSnowflakeAccountRolesAccountRolesShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -46,8 +46,8 @@ export function dataSnowflakeAccountRolesAccountRolesShowOutputToTerraform(struc
 
 
 export function dataSnowflakeAccountRolesAccountRolesShowOutputToHclTerraform(struct?: DataSnowflakeAccountRolesAccountRolesShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -55,7 +55,7 @@ export function dataSnowflakeAccountRolesAccountRolesShowOutputToHclTerraform(st
   return attrs;
 }
 
-export class DataSnowflakeAccountRolesAccountRolesShowOutputOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeAccountRolesAccountRolesShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -64,7 +64,7 @@ export class DataSnowflakeAccountRolesAccountRolesShowOutputOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -134,14 +134,14 @@ export class DataSnowflakeAccountRolesAccountRolesShowOutputOutputReference exte
   }
 }
 
-export class DataSnowflakeAccountRolesAccountRolesShowOutputList extends cdktf.ComplexList {
+export class DataSnowflakeAccountRolesAccountRolesShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -156,8 +156,8 @@ export interface DataSnowflakeAccountRolesAccountRoles {
 }
 
 export function dataSnowflakeAccountRolesAccountRolesToTerraform(struct?: DataSnowflakeAccountRolesAccountRoles): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -166,8 +166,8 @@ export function dataSnowflakeAccountRolesAccountRolesToTerraform(struct?: DataSn
 
 
 export function dataSnowflakeAccountRolesAccountRolesToHclTerraform(struct?: DataSnowflakeAccountRolesAccountRoles): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -175,7 +175,7 @@ export function dataSnowflakeAccountRolesAccountRolesToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataSnowflakeAccountRolesAccountRolesOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeAccountRolesAccountRolesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -184,7 +184,7 @@ export class DataSnowflakeAccountRolesAccountRolesOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -210,14 +210,14 @@ export class DataSnowflakeAccountRolesAccountRolesOutputReference extends cdktf.
   }
 }
 
-export class DataSnowflakeAccountRolesAccountRolesList extends cdktf.ComplexList {
+export class DataSnowflakeAccountRolesAccountRolesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -230,9 +230,9 @@ export class DataSnowflakeAccountRolesAccountRolesList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/account_roles snowflake_account_roles}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/account_roles snowflake_account_roles}
 */
-export class DataSnowflakeAccountRoles extends cdktf.TerraformDataSource {
+export class DataSnowflakeAccountRoles extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -243,14 +243,14 @@ export class DataSnowflakeAccountRoles extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataSnowflakeAccountRoles resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataSnowflakeAccountRoles resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeAccountRoles to import
-  * @param importFromId The id of the existing DataSnowflakeAccountRoles that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/account_roles#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeAccountRoles that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/account_roles#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeAccountRoles to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_account_roles", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_account_roles", importId: importFromId, provider });
       }
 
   // ===========
@@ -258,7 +258,7 @@ export class DataSnowflakeAccountRoles extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/account_roles snowflake_account_roles} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/account_roles snowflake_account_roles} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -269,7 +269,7 @@ export class DataSnowflakeAccountRoles extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_account_roles',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -349,28 +349,28 @@ export class DataSnowflakeAccountRoles extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      in_class: cdktf.stringToTerraform(this._inClass),
-      like: cdktf.stringToTerraform(this._like),
+      id: cdktn.stringToTerraform(this._id),
+      in_class: cdktn.stringToTerraform(this._inClass),
+      like: cdktn.stringToTerraform(this._like),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       in_class: {
-        value: cdktf.stringToHclTerraform(this._inClass),
+        value: cdktn.stringToHclTerraform(this._inClass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       like: {
-        value: cdktf.stringToHclTerraform(this._like),
+        value: cdktn.stringToHclTerraform(this._like),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

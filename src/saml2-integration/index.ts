@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface Saml2IntegrationConfig extends cdktf.TerraformMetaArguments {
+export interface Saml2IntegrationConfig extends cdktn.TerraformMetaArguments {
   /**
   * A list of regular expressions that email addresses are matched against to authenticate with a SAML2 security integration. If this field changes value from non-empty to empty, the whole resource is recreated because of Snowflake limitations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#allowed_email_patterns Saml2Integration#allowed_email_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#allowed_email_patterns Saml2Integration#allowed_email_patterns}
   */
   readonly allowedEmailPatterns?: string[];
   /**
   * A list of email domains that can authenticate with a SAML2 security integration. If this field changes value from non-empty to empty, the whole resource is recreated because of Snowflake limitations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#allowed_user_domains Saml2Integration#allowed_user_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#allowed_user_domains Saml2Integration#allowed_user_domains}
   */
   readonly allowedUserDomains?: string[];
   /**
   * Specifies a comment for the integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#comment Saml2Integration#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#comment Saml2Integration#comment}
   */
   readonly comment?: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether this security integration is enabled or disabled. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#enabled Saml2Integration#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#enabled Saml2Integration#enabled}
   */
   readonly enabled?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#id Saml2Integration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#id Saml2Integration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,85 +46,85 @@ export interface Saml2IntegrationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the name of the SAML2 integration. This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#name Saml2Integration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#name Saml2Integration#name}
   */
   readonly name: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) The Boolean indicating if the Log In With button will be shown on the login page. TRUE: displays the Log in With button on the login page. FALSE: does not display the Log in With button on the login page. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#saml2_enable_sp_initiated Saml2Integration#saml2_enable_sp_initiated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#saml2_enable_sp_initiated Saml2Integration#saml2_enable_sp_initiated}
   */
   readonly saml2EnableSpInitiated?: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) The Boolean indicating whether users, during the initial authentication flow, are forced to authenticate again to access Snowflake. When set to TRUE, Snowflake sets the ForceAuthn SAML parameter to TRUE in the outgoing request from Snowflake to the identity provider. TRUE: forces users to authenticate again to access Snowflake, even if a valid session with the identity provider exists. FALSE: does not force users to authenticate again to access Snowflake. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#saml2_force_authn Saml2Integration#saml2_force_authn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#saml2_force_authn Saml2Integration#saml2_force_authn}
   */
   readonly saml2ForceAuthn?: string;
   /**
   * The string containing the IdP EntityID / Issuer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#saml2_issuer Saml2Integration#saml2_issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#saml2_issuer Saml2Integration#saml2_issuer}
   */
   readonly saml2Issuer: string;
   /**
   * The endpoint to which Snowflake redirects users after clicking the Log Out button in the classic Snowflake web interface. Snowflake terminates the Snowflake session upon redirecting to the specified endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#saml2_post_logout_redirect_url Saml2Integration#saml2_post_logout_redirect_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#saml2_post_logout_redirect_url Saml2Integration#saml2_post_logout_redirect_url}
   */
   readonly saml2PostLogoutRedirectUrl?: string;
   /**
   * The string describing the IdP. Valid options are: `OKTA` | `ADFS` | `CUSTOM`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#saml2_provider Saml2Integration#saml2_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#saml2_provider Saml2Integration#saml2_provider}
   */
   readonly saml2Provider: string;
   /**
   * The SAML NameID format allows Snowflake to set an expectation of the identifying attribute of the user (i.e. SAML Subject) in the SAML assertion from the IdP to ensure a valid authentication to Snowflake. Valid options are: `urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified` | `urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress` | `urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName` | `urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName` | `urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos` | `urn:oasis:names:tc:SAML:2.0:nameid-format:persistent` | `urn:oasis:names:tc:SAML:2.0:nameid-format:transient`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#saml2_requested_nameid_format Saml2Integration#saml2_requested_nameid_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#saml2_requested_nameid_format Saml2Integration#saml2_requested_nameid_format}
   */
   readonly saml2RequestedNameidFormat?: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) The Boolean indicating whether SAML requests are signed. TRUE: allows SAML requests to be signed. FALSE: does not allow SAML requests to be signed. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#saml2_sign_request Saml2Integration#saml2_sign_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#saml2_sign_request Saml2Integration#saml2_sign_request}
   */
   readonly saml2SignRequest?: string;
   /**
   * The string containing the Snowflake Assertion Consumer Service URL to which the IdP will send its SAML authentication response back to Snowflake. This property will be set in the SAML authentication request generated by Snowflake when initiating a SAML SSO operation with the IdP. If an incorrect value is specified, Snowflake returns an error message indicating the acceptable values to use. Because Okta does not support underscores in URLs, the underscore in the account name must be converted to a hyphen. See [docs](https://docs.snowflake.com/en/user-guide/organizations-connect#okta-urls).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#saml2_snowflake_acs_url Saml2Integration#saml2_snowflake_acs_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#saml2_snowflake_acs_url Saml2Integration#saml2_snowflake_acs_url}
   */
   readonly saml2SnowflakeAcsUrl?: string;
   /**
   * The string containing the EntityID / Issuer for the Snowflake service provider. If an incorrect value is specified, Snowflake returns an error message indicating the acceptable values to use. Because Okta does not support underscores in URLs, the underscore in the account name must be converted to a hyphen. See [docs](https://docs.snowflake.com/en/user-guide/organizations-connect#okta-urls).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#saml2_snowflake_issuer_url Saml2Integration#saml2_snowflake_issuer_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#saml2_snowflake_issuer_url Saml2Integration#saml2_snowflake_issuer_url}
   */
   readonly saml2SnowflakeIssuerUrl?: string;
   /**
   * The string containing the label to display after the Log In With button on the login page. If this field changes value from non-empty to empty, the whole resource is recreated because of Snowflake limitations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#saml2_sp_initiated_login_page_label Saml2Integration#saml2_sp_initiated_login_page_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#saml2_sp_initiated_login_page_label Saml2Integration#saml2_sp_initiated_login_page_label}
   */
   readonly saml2SpInitiatedLoginPageLabel?: string;
   /**
   * The string containing the IdP SSO URL, where the user should be redirected by Snowflake (the Service Provider) with a SAML AuthnRequest message.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#saml2_sso_url Saml2Integration#saml2_sso_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#saml2_sso_url Saml2Integration#saml2_sso_url}
   */
   readonly saml2SsoUrl: string;
   /**
   * The Base64 encoded IdP signing certificate on a single line without the leading -----BEGIN CERTIFICATE----- and ending -----END CERTIFICATE----- markers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#saml2_x509_cert Saml2Integration#saml2_x509_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#saml2_x509_cert Saml2Integration#saml2_x509_cert}
   */
   readonly saml2X509Cert: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#timeouts Saml2Integration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#timeouts Saml2Integration#timeouts}
   */
   readonly timeouts?: Saml2IntegrationTimeouts;
 }
@@ -132,8 +132,8 @@ export interface Saml2IntegrationDescribeOutputAllowedEmailPatterns {
 }
 
 export function saml2IntegrationDescribeOutputAllowedEmailPatternsToTerraform(struct?: Saml2IntegrationDescribeOutputAllowedEmailPatterns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -142,8 +142,8 @@ export function saml2IntegrationDescribeOutputAllowedEmailPatternsToTerraform(st
 
 
 export function saml2IntegrationDescribeOutputAllowedEmailPatternsToHclTerraform(struct?: Saml2IntegrationDescribeOutputAllowedEmailPatterns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -151,7 +151,7 @@ export function saml2IntegrationDescribeOutputAllowedEmailPatternsToHclTerraform
   return attrs;
 }
 
-export class Saml2IntegrationDescribeOutputAllowedEmailPatternsOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationDescribeOutputAllowedEmailPatternsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -160,7 +160,7 @@ export class Saml2IntegrationDescribeOutputAllowedEmailPatternsOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -200,14 +200,14 @@ export class Saml2IntegrationDescribeOutputAllowedEmailPatternsOutputReference e
   }
 }
 
-export class Saml2IntegrationDescribeOutputAllowedEmailPatternsList extends cdktf.ComplexList {
+export class Saml2IntegrationDescribeOutputAllowedEmailPatternsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -222,8 +222,8 @@ export interface Saml2IntegrationDescribeOutputAllowedUserDomains {
 }
 
 export function saml2IntegrationDescribeOutputAllowedUserDomainsToTerraform(struct?: Saml2IntegrationDescribeOutputAllowedUserDomains): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -232,8 +232,8 @@ export function saml2IntegrationDescribeOutputAllowedUserDomainsToTerraform(stru
 
 
 export function saml2IntegrationDescribeOutputAllowedUserDomainsToHclTerraform(struct?: Saml2IntegrationDescribeOutputAllowedUserDomains): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -241,7 +241,7 @@ export function saml2IntegrationDescribeOutputAllowedUserDomainsToHclTerraform(s
   return attrs;
 }
 
-export class Saml2IntegrationDescribeOutputAllowedUserDomainsOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationDescribeOutputAllowedUserDomainsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -250,7 +250,7 @@ export class Saml2IntegrationDescribeOutputAllowedUserDomainsOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -290,14 +290,14 @@ export class Saml2IntegrationDescribeOutputAllowedUserDomainsOutputReference ext
   }
 }
 
-export class Saml2IntegrationDescribeOutputAllowedUserDomainsList extends cdktf.ComplexList {
+export class Saml2IntegrationDescribeOutputAllowedUserDomainsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -312,8 +312,8 @@ export interface Saml2IntegrationDescribeOutputComment {
 }
 
 export function saml2IntegrationDescribeOutputCommentToTerraform(struct?: Saml2IntegrationDescribeOutputComment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -322,8 +322,8 @@ export function saml2IntegrationDescribeOutputCommentToTerraform(struct?: Saml2I
 
 
 export function saml2IntegrationDescribeOutputCommentToHclTerraform(struct?: Saml2IntegrationDescribeOutputComment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -331,7 +331,7 @@ export function saml2IntegrationDescribeOutputCommentToHclTerraform(struct?: Sam
   return attrs;
 }
 
-export class Saml2IntegrationDescribeOutputCommentOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationDescribeOutputCommentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -340,7 +340,7 @@ export class Saml2IntegrationDescribeOutputCommentOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -380,14 +380,14 @@ export class Saml2IntegrationDescribeOutputCommentOutputReference extends cdktf.
   }
 }
 
-export class Saml2IntegrationDescribeOutputCommentList extends cdktf.ComplexList {
+export class Saml2IntegrationDescribeOutputCommentList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -402,8 +402,8 @@ export interface Saml2IntegrationDescribeOutputSaml2DigestMethodsUsed {
 }
 
 export function saml2IntegrationDescribeOutputSaml2DigestMethodsUsedToTerraform(struct?: Saml2IntegrationDescribeOutputSaml2DigestMethodsUsed): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -412,8 +412,8 @@ export function saml2IntegrationDescribeOutputSaml2DigestMethodsUsedToTerraform(
 
 
 export function saml2IntegrationDescribeOutputSaml2DigestMethodsUsedToHclTerraform(struct?: Saml2IntegrationDescribeOutputSaml2DigestMethodsUsed): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -421,7 +421,7 @@ export function saml2IntegrationDescribeOutputSaml2DigestMethodsUsedToHclTerrafo
   return attrs;
 }
 
-export class Saml2IntegrationDescribeOutputSaml2DigestMethodsUsedOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationDescribeOutputSaml2DigestMethodsUsedOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -430,7 +430,7 @@ export class Saml2IntegrationDescribeOutputSaml2DigestMethodsUsedOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -470,14 +470,14 @@ export class Saml2IntegrationDescribeOutputSaml2DigestMethodsUsedOutputReference
   }
 }
 
-export class Saml2IntegrationDescribeOutputSaml2DigestMethodsUsedList extends cdktf.ComplexList {
+export class Saml2IntegrationDescribeOutputSaml2DigestMethodsUsedList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -492,8 +492,8 @@ export interface Saml2IntegrationDescribeOutputSaml2EnableSpInitiated {
 }
 
 export function saml2IntegrationDescribeOutputSaml2EnableSpInitiatedToTerraform(struct?: Saml2IntegrationDescribeOutputSaml2EnableSpInitiated): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -502,8 +502,8 @@ export function saml2IntegrationDescribeOutputSaml2EnableSpInitiatedToTerraform(
 
 
 export function saml2IntegrationDescribeOutputSaml2EnableSpInitiatedToHclTerraform(struct?: Saml2IntegrationDescribeOutputSaml2EnableSpInitiated): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -511,7 +511,7 @@ export function saml2IntegrationDescribeOutputSaml2EnableSpInitiatedToHclTerrafo
   return attrs;
 }
 
-export class Saml2IntegrationDescribeOutputSaml2EnableSpInitiatedOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationDescribeOutputSaml2EnableSpInitiatedOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -520,7 +520,7 @@ export class Saml2IntegrationDescribeOutputSaml2EnableSpInitiatedOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -560,14 +560,14 @@ export class Saml2IntegrationDescribeOutputSaml2EnableSpInitiatedOutputReference
   }
 }
 
-export class Saml2IntegrationDescribeOutputSaml2EnableSpInitiatedList extends cdktf.ComplexList {
+export class Saml2IntegrationDescribeOutputSaml2EnableSpInitiatedList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -582,8 +582,8 @@ export interface Saml2IntegrationDescribeOutputSaml2ForceAuthn {
 }
 
 export function saml2IntegrationDescribeOutputSaml2ForceAuthnToTerraform(struct?: Saml2IntegrationDescribeOutputSaml2ForceAuthn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -592,8 +592,8 @@ export function saml2IntegrationDescribeOutputSaml2ForceAuthnToTerraform(struct?
 
 
 export function saml2IntegrationDescribeOutputSaml2ForceAuthnToHclTerraform(struct?: Saml2IntegrationDescribeOutputSaml2ForceAuthn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -601,7 +601,7 @@ export function saml2IntegrationDescribeOutputSaml2ForceAuthnToHclTerraform(stru
   return attrs;
 }
 
-export class Saml2IntegrationDescribeOutputSaml2ForceAuthnOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationDescribeOutputSaml2ForceAuthnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -610,7 +610,7 @@ export class Saml2IntegrationDescribeOutputSaml2ForceAuthnOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -650,14 +650,14 @@ export class Saml2IntegrationDescribeOutputSaml2ForceAuthnOutputReference extend
   }
 }
 
-export class Saml2IntegrationDescribeOutputSaml2ForceAuthnList extends cdktf.ComplexList {
+export class Saml2IntegrationDescribeOutputSaml2ForceAuthnList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -672,8 +672,8 @@ export interface Saml2IntegrationDescribeOutputSaml2Issuer {
 }
 
 export function saml2IntegrationDescribeOutputSaml2IssuerToTerraform(struct?: Saml2IntegrationDescribeOutputSaml2Issuer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -682,8 +682,8 @@ export function saml2IntegrationDescribeOutputSaml2IssuerToTerraform(struct?: Sa
 
 
 export function saml2IntegrationDescribeOutputSaml2IssuerToHclTerraform(struct?: Saml2IntegrationDescribeOutputSaml2Issuer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -691,7 +691,7 @@ export function saml2IntegrationDescribeOutputSaml2IssuerToHclTerraform(struct?:
   return attrs;
 }
 
-export class Saml2IntegrationDescribeOutputSaml2IssuerOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationDescribeOutputSaml2IssuerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -700,7 +700,7 @@ export class Saml2IntegrationDescribeOutputSaml2IssuerOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -740,14 +740,14 @@ export class Saml2IntegrationDescribeOutputSaml2IssuerOutputReference extends cd
   }
 }
 
-export class Saml2IntegrationDescribeOutputSaml2IssuerList extends cdktf.ComplexList {
+export class Saml2IntegrationDescribeOutputSaml2IssuerList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -762,8 +762,8 @@ export interface Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrl {
 }
 
 export function saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlToTerraform(struct?: Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -772,8 +772,8 @@ export function saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlToTerraf
 
 
 export function saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlToHclTerraform(struct?: Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -781,7 +781,7 @@ export function saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlToHclTer
   return attrs;
 }
 
-export class Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -790,7 +790,7 @@ export class Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -830,14 +830,14 @@ export class Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlOutputRefer
   }
 }
 
-export class Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlList extends cdktf.ComplexList {
+export class Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -852,8 +852,8 @@ export interface Saml2IntegrationDescribeOutputSaml2Provider {
 }
 
 export function saml2IntegrationDescribeOutputSaml2ProviderToTerraform(struct?: Saml2IntegrationDescribeOutputSaml2Provider): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -862,8 +862,8 @@ export function saml2IntegrationDescribeOutputSaml2ProviderToTerraform(struct?: 
 
 
 export function saml2IntegrationDescribeOutputSaml2ProviderToHclTerraform(struct?: Saml2IntegrationDescribeOutputSaml2Provider): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -871,7 +871,7 @@ export function saml2IntegrationDescribeOutputSaml2ProviderToHclTerraform(struct
   return attrs;
 }
 
-export class Saml2IntegrationDescribeOutputSaml2ProviderOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationDescribeOutputSaml2ProviderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -880,7 +880,7 @@ export class Saml2IntegrationDescribeOutputSaml2ProviderOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -920,14 +920,14 @@ export class Saml2IntegrationDescribeOutputSaml2ProviderOutputReference extends 
   }
 }
 
-export class Saml2IntegrationDescribeOutputSaml2ProviderList extends cdktf.ComplexList {
+export class Saml2IntegrationDescribeOutputSaml2ProviderList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -942,8 +942,8 @@ export interface Saml2IntegrationDescribeOutputSaml2RequestedNameidFormat {
 }
 
 export function saml2IntegrationDescribeOutputSaml2RequestedNameidFormatToTerraform(struct?: Saml2IntegrationDescribeOutputSaml2RequestedNameidFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -952,8 +952,8 @@ export function saml2IntegrationDescribeOutputSaml2RequestedNameidFormatToTerraf
 
 
 export function saml2IntegrationDescribeOutputSaml2RequestedNameidFormatToHclTerraform(struct?: Saml2IntegrationDescribeOutputSaml2RequestedNameidFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -961,7 +961,7 @@ export function saml2IntegrationDescribeOutputSaml2RequestedNameidFormatToHclTer
   return attrs;
 }
 
-export class Saml2IntegrationDescribeOutputSaml2RequestedNameidFormatOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationDescribeOutputSaml2RequestedNameidFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -970,7 +970,7 @@ export class Saml2IntegrationDescribeOutputSaml2RequestedNameidFormatOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1010,14 +1010,14 @@ export class Saml2IntegrationDescribeOutputSaml2RequestedNameidFormatOutputRefer
   }
 }
 
-export class Saml2IntegrationDescribeOutputSaml2RequestedNameidFormatList extends cdktf.ComplexList {
+export class Saml2IntegrationDescribeOutputSaml2RequestedNameidFormatList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1032,8 +1032,8 @@ export interface Saml2IntegrationDescribeOutputSaml2SignRequest {
 }
 
 export function saml2IntegrationDescribeOutputSaml2SignRequestToTerraform(struct?: Saml2IntegrationDescribeOutputSaml2SignRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1042,8 +1042,8 @@ export function saml2IntegrationDescribeOutputSaml2SignRequestToTerraform(struct
 
 
 export function saml2IntegrationDescribeOutputSaml2SignRequestToHclTerraform(struct?: Saml2IntegrationDescribeOutputSaml2SignRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1051,7 +1051,7 @@ export function saml2IntegrationDescribeOutputSaml2SignRequestToHclTerraform(str
   return attrs;
 }
 
-export class Saml2IntegrationDescribeOutputSaml2SignRequestOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationDescribeOutputSaml2SignRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1060,7 +1060,7 @@ export class Saml2IntegrationDescribeOutputSaml2SignRequestOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1100,14 +1100,14 @@ export class Saml2IntegrationDescribeOutputSaml2SignRequestOutputReference exten
   }
 }
 
-export class Saml2IntegrationDescribeOutputSaml2SignRequestList extends cdktf.ComplexList {
+export class Saml2IntegrationDescribeOutputSaml2SignRequestList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1122,8 +1122,8 @@ export interface Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsed {
 }
 
 export function saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedToTerraform(struct?: Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsed): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1132,8 +1132,8 @@ export function saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedToTerrafo
 
 
 export function saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedToHclTerraform(struct?: Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsed): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1141,7 +1141,7 @@ export function saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedToHclTerr
   return attrs;
 }
 
-export class Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1150,7 +1150,7 @@ export class Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1190,14 +1190,14 @@ export class Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedOutputRefere
   }
 }
 
-export class Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedList extends cdktf.ComplexList {
+export class Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1212,8 +1212,8 @@ export interface Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrl {
 }
 
 export function saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlToTerraform(struct?: Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1222,8 +1222,8 @@ export function saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlToTerraform(st
 
 
 export function saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlToHclTerraform(struct?: Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1231,7 +1231,7 @@ export function saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlToHclTerraform
   return attrs;
 }
 
-export class Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1240,7 +1240,7 @@ export class Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1280,14 +1280,14 @@ export class Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlOutputReference e
   }
 }
 
-export class Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlList extends cdktf.ComplexList {
+export class Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1302,8 +1302,8 @@ export interface Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrl {
 }
 
 export function saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlToTerraform(struct?: Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1312,8 +1312,8 @@ export function saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlToTerraform
 
 
 export function saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlToHclTerraform(struct?: Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1321,7 +1321,7 @@ export function saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlToHclTerraf
   return attrs;
 }
 
-export class Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1330,7 +1330,7 @@ export class Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1370,14 +1370,14 @@ export class Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlOutputReferenc
   }
 }
 
-export class Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlList extends cdktf.ComplexList {
+export class Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1392,8 +1392,8 @@ export interface Saml2IntegrationDescribeOutputSaml2SnowflakeMetadata {
 }
 
 export function saml2IntegrationDescribeOutputSaml2SnowflakeMetadataToTerraform(struct?: Saml2IntegrationDescribeOutputSaml2SnowflakeMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1402,8 +1402,8 @@ export function saml2IntegrationDescribeOutputSaml2SnowflakeMetadataToTerraform(
 
 
 export function saml2IntegrationDescribeOutputSaml2SnowflakeMetadataToHclTerraform(struct?: Saml2IntegrationDescribeOutputSaml2SnowflakeMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1411,7 +1411,7 @@ export function saml2IntegrationDescribeOutputSaml2SnowflakeMetadataToHclTerrafo
   return attrs;
 }
 
-export class Saml2IntegrationDescribeOutputSaml2SnowflakeMetadataOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationDescribeOutputSaml2SnowflakeMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1420,7 +1420,7 @@ export class Saml2IntegrationDescribeOutputSaml2SnowflakeMetadataOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1460,14 +1460,14 @@ export class Saml2IntegrationDescribeOutputSaml2SnowflakeMetadataOutputReference
   }
 }
 
-export class Saml2IntegrationDescribeOutputSaml2SnowflakeMetadataList extends cdktf.ComplexList {
+export class Saml2IntegrationDescribeOutputSaml2SnowflakeMetadataList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1482,8 +1482,8 @@ export interface Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabel {
 }
 
 export function saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelToTerraform(struct?: Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1492,8 +1492,8 @@ export function saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelToTe
 
 
 export function saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelToHclTerraform(struct?: Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1501,7 +1501,7 @@ export function saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelToHc
   return attrs;
 }
 
-export class Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1510,7 +1510,7 @@ export class Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1550,14 +1550,14 @@ export class Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelOutputR
   }
 }
 
-export class Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelList extends cdktf.ComplexList {
+export class Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1572,8 +1572,8 @@ export interface Saml2IntegrationDescribeOutputSaml2SsoUrl {
 }
 
 export function saml2IntegrationDescribeOutputSaml2SsoUrlToTerraform(struct?: Saml2IntegrationDescribeOutputSaml2SsoUrl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1582,8 +1582,8 @@ export function saml2IntegrationDescribeOutputSaml2SsoUrlToTerraform(struct?: Sa
 
 
 export function saml2IntegrationDescribeOutputSaml2SsoUrlToHclTerraform(struct?: Saml2IntegrationDescribeOutputSaml2SsoUrl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1591,7 +1591,7 @@ export function saml2IntegrationDescribeOutputSaml2SsoUrlToHclTerraform(struct?:
   return attrs;
 }
 
-export class Saml2IntegrationDescribeOutputSaml2SsoUrlOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationDescribeOutputSaml2SsoUrlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1600,7 +1600,7 @@ export class Saml2IntegrationDescribeOutputSaml2SsoUrlOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1640,14 +1640,14 @@ export class Saml2IntegrationDescribeOutputSaml2SsoUrlOutputReference extends cd
   }
 }
 
-export class Saml2IntegrationDescribeOutputSaml2SsoUrlList extends cdktf.ComplexList {
+export class Saml2IntegrationDescribeOutputSaml2SsoUrlList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1662,8 +1662,8 @@ export interface Saml2IntegrationDescribeOutput {
 }
 
 export function saml2IntegrationDescribeOutputToTerraform(struct?: Saml2IntegrationDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1672,8 +1672,8 @@ export function saml2IntegrationDescribeOutputToTerraform(struct?: Saml2Integrat
 
 
 export function saml2IntegrationDescribeOutputToHclTerraform(struct?: Saml2IntegrationDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1681,7 +1681,7 @@ export function saml2IntegrationDescribeOutputToHclTerraform(struct?: Saml2Integ
   return attrs;
 }
 
-export class Saml2IntegrationDescribeOutputOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationDescribeOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1690,7 +1690,7 @@ export class Saml2IntegrationDescribeOutputOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1812,14 +1812,14 @@ export class Saml2IntegrationDescribeOutputOutputReference extends cdktf.Complex
   }
 }
 
-export class Saml2IntegrationDescribeOutputList extends cdktf.ComplexList {
+export class Saml2IntegrationDescribeOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1834,8 +1834,8 @@ export interface Saml2IntegrationShowOutput {
 }
 
 export function saml2IntegrationShowOutputToTerraform(struct?: Saml2IntegrationShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1844,8 +1844,8 @@ export function saml2IntegrationShowOutputToTerraform(struct?: Saml2IntegrationS
 
 
 export function saml2IntegrationShowOutputToHclTerraform(struct?: Saml2IntegrationShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1853,7 +1853,7 @@ export function saml2IntegrationShowOutputToHclTerraform(struct?: Saml2Integrati
   return attrs;
 }
 
-export class Saml2IntegrationShowOutputOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1862,7 +1862,7 @@ export class Saml2IntegrationShowOutputOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1912,14 +1912,14 @@ export class Saml2IntegrationShowOutputOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class Saml2IntegrationShowOutputList extends cdktf.ComplexList {
+export class Saml2IntegrationShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1932,63 +1932,63 @@ export class Saml2IntegrationShowOutputList extends cdktf.ComplexList {
 }
 export interface Saml2IntegrationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#create Saml2Integration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#create Saml2Integration#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#delete Saml2Integration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#delete Saml2Integration#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#read Saml2Integration#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#read Saml2Integration#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#update Saml2Integration#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#update Saml2Integration#update}
   */
   readonly update?: string;
 }
 
-export function saml2IntegrationTimeoutsToTerraform(struct?: Saml2IntegrationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function saml2IntegrationTimeoutsToTerraform(struct?: Saml2IntegrationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function saml2IntegrationTimeoutsToHclTerraform(struct?: Saml2IntegrationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function saml2IntegrationTimeoutsToHclTerraform(struct?: Saml2IntegrationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1999,19 +1999,19 @@ export function saml2IntegrationTimeoutsToHclTerraform(struct?: Saml2Integration
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class Saml2IntegrationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class Saml2IntegrationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): Saml2IntegrationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): Saml2IntegrationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2036,7 +2036,7 @@ export class Saml2IntegrationTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: Saml2IntegrationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: Saml2IntegrationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2045,7 +2045,7 @@ export class Saml2IntegrationTimeoutsOutputReference extends cdktf.ComplexObject
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2125,9 +2125,9 @@ export class Saml2IntegrationTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration snowflake_saml2_integration}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration snowflake_saml2_integration}
 */
-export class Saml2Integration extends cdktf.TerraformResource {
+export class Saml2Integration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2138,14 +2138,14 @@ export class Saml2Integration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Saml2Integration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Saml2Integration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Saml2Integration to import
-  * @param importFromId The id of the existing Saml2Integration that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Saml2Integration that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Saml2Integration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_saml2_integration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_saml2_integration", importId: importFromId, provider });
       }
 
   // ===========
@@ -2153,7 +2153,7 @@ export class Saml2Integration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/saml2_integration snowflake_saml2_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/saml2_integration snowflake_saml2_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2164,7 +2164,7 @@ export class Saml2Integration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_saml2_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -2203,7 +2203,7 @@ export class Saml2Integration extends cdktf.TerraformResource {
   // allowed_email_patterns - computed: false, optional: true, required: false
   private _allowedEmailPatterns?: string[]; 
   public get allowedEmailPatterns() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_email_patterns'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_email_patterns'));
   }
   public set allowedEmailPatterns(value: string[]) {
     this._allowedEmailPatterns = value;
@@ -2219,7 +2219,7 @@ export class Saml2Integration extends cdktf.TerraformResource {
   // allowed_user_domains - computed: false, optional: true, required: false
   private _allowedUserDomains?: string[]; 
   public get allowedUserDomains() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_user_domains'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_user_domains'));
   }
   public set allowedUserDomains(value: string[]) {
     this._allowedUserDomains = value;
@@ -2512,24 +2512,24 @@ export class Saml2Integration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_email_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedEmailPatterns),
-      allowed_user_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedUserDomains),
-      comment: cdktf.stringToTerraform(this._comment),
-      enabled: cdktf.stringToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      saml2_enable_sp_initiated: cdktf.stringToTerraform(this._saml2EnableSpInitiated),
-      saml2_force_authn: cdktf.stringToTerraform(this._saml2ForceAuthn),
-      saml2_issuer: cdktf.stringToTerraform(this._saml2Issuer),
-      saml2_post_logout_redirect_url: cdktf.stringToTerraform(this._saml2PostLogoutRedirectUrl),
-      saml2_provider: cdktf.stringToTerraform(this._saml2Provider),
-      saml2_requested_nameid_format: cdktf.stringToTerraform(this._saml2RequestedNameidFormat),
-      saml2_sign_request: cdktf.stringToTerraform(this._saml2SignRequest),
-      saml2_snowflake_acs_url: cdktf.stringToTerraform(this._saml2SnowflakeAcsUrl),
-      saml2_snowflake_issuer_url: cdktf.stringToTerraform(this._saml2SnowflakeIssuerUrl),
-      saml2_sp_initiated_login_page_label: cdktf.stringToTerraform(this._saml2SpInitiatedLoginPageLabel),
-      saml2_sso_url: cdktf.stringToTerraform(this._saml2SsoUrl),
-      saml2_x509_cert: cdktf.stringToTerraform(this._saml2X509Cert),
+      allowed_email_patterns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedEmailPatterns),
+      allowed_user_domains: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedUserDomains),
+      comment: cdktn.stringToTerraform(this._comment),
+      enabled: cdktn.stringToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      saml2_enable_sp_initiated: cdktn.stringToTerraform(this._saml2EnableSpInitiated),
+      saml2_force_authn: cdktn.stringToTerraform(this._saml2ForceAuthn),
+      saml2_issuer: cdktn.stringToTerraform(this._saml2Issuer),
+      saml2_post_logout_redirect_url: cdktn.stringToTerraform(this._saml2PostLogoutRedirectUrl),
+      saml2_provider: cdktn.stringToTerraform(this._saml2Provider),
+      saml2_requested_nameid_format: cdktn.stringToTerraform(this._saml2RequestedNameidFormat),
+      saml2_sign_request: cdktn.stringToTerraform(this._saml2SignRequest),
+      saml2_snowflake_acs_url: cdktn.stringToTerraform(this._saml2SnowflakeAcsUrl),
+      saml2_snowflake_issuer_url: cdktn.stringToTerraform(this._saml2SnowflakeIssuerUrl),
+      saml2_sp_initiated_login_page_label: cdktn.stringToTerraform(this._saml2SpInitiatedLoginPageLabel),
+      saml2_sso_url: cdktn.stringToTerraform(this._saml2SsoUrl),
+      saml2_x509_cert: cdktn.stringToTerraform(this._saml2X509Cert),
       timeouts: saml2IntegrationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -2537,109 +2537,109 @@ export class Saml2Integration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_email_patterns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedEmailPatterns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedEmailPatterns),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       allowed_user_domains: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedUserDomains),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedUserDomains),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.stringToHclTerraform(this._enabled),
+        value: cdktn.stringToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       saml2_enable_sp_initiated: {
-        value: cdktf.stringToHclTerraform(this._saml2EnableSpInitiated),
+        value: cdktn.stringToHclTerraform(this._saml2EnableSpInitiated),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       saml2_force_authn: {
-        value: cdktf.stringToHclTerraform(this._saml2ForceAuthn),
+        value: cdktn.stringToHclTerraform(this._saml2ForceAuthn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       saml2_issuer: {
-        value: cdktf.stringToHclTerraform(this._saml2Issuer),
+        value: cdktn.stringToHclTerraform(this._saml2Issuer),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       saml2_post_logout_redirect_url: {
-        value: cdktf.stringToHclTerraform(this._saml2PostLogoutRedirectUrl),
+        value: cdktn.stringToHclTerraform(this._saml2PostLogoutRedirectUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       saml2_provider: {
-        value: cdktf.stringToHclTerraform(this._saml2Provider),
+        value: cdktn.stringToHclTerraform(this._saml2Provider),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       saml2_requested_nameid_format: {
-        value: cdktf.stringToHclTerraform(this._saml2RequestedNameidFormat),
+        value: cdktn.stringToHclTerraform(this._saml2RequestedNameidFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       saml2_sign_request: {
-        value: cdktf.stringToHclTerraform(this._saml2SignRequest),
+        value: cdktn.stringToHclTerraform(this._saml2SignRequest),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       saml2_snowflake_acs_url: {
-        value: cdktf.stringToHclTerraform(this._saml2SnowflakeAcsUrl),
+        value: cdktn.stringToHclTerraform(this._saml2SnowflakeAcsUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       saml2_snowflake_issuer_url: {
-        value: cdktf.stringToHclTerraform(this._saml2SnowflakeIssuerUrl),
+        value: cdktn.stringToHclTerraform(this._saml2SnowflakeIssuerUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       saml2_sp_initiated_login_page_label: {
-        value: cdktf.stringToHclTerraform(this._saml2SpInitiatedLoginPageLabel),
+        value: cdktn.stringToHclTerraform(this._saml2SpInitiatedLoginPageLabel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       saml2_sso_url: {
-        value: cdktf.stringToHclTerraform(this._saml2SsoUrl),
+        value: cdktn.stringToHclTerraform(this._saml2SsoUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       saml2_x509_cert: {
-        value: cdktf.stringToHclTerraform(this._saml2X509Cert),
+        value: cdktn.stringToHclTerraform(this._saml2X509Cert),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

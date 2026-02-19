@@ -1,109 +1,109 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ExternalOauthIntegrationConfig extends cdktf.TerraformMetaArguments {
+export interface ExternalOauthIntegrationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies a comment for the OAuth integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#comment ExternalOauthIntegration#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#comment ExternalOauthIntegration#comment}
   */
   readonly comment?: string;
   /**
   * Specifies whether to initiate operation of the integration or suspend it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#enabled ExternalOauthIntegration#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#enabled ExternalOauthIntegration#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Specifies the list of roles that the client can set as the primary role. For more information about this resource, see [docs](./account_role).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#external_oauth_allowed_roles_list ExternalOauthIntegration#external_oauth_allowed_roles_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#external_oauth_allowed_roles_list ExternalOauthIntegration#external_oauth_allowed_roles_list}
   */
   readonly externalOauthAllowedRolesList?: string[];
   /**
   * Specifies whether the OAuth client or user can use a role that is not defined in the OAuth access token. Valid values are (case-insensitive): `DISABLE` | `ENABLE` | `ENABLE_FOR_PRIVILEGE`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#external_oauth_any_role_mode ExternalOauthIntegration#external_oauth_any_role_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#external_oauth_any_role_mode ExternalOauthIntegration#external_oauth_any_role_mode}
   */
   readonly externalOauthAnyRoleMode?: string;
   /**
   * Specifies additional values that can be used for the access token's audience validation on top of using the Customer's Snowflake Account URL 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#external_oauth_audience_list ExternalOauthIntegration#external_oauth_audience_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#external_oauth_audience_list ExternalOauthIntegration#external_oauth_audience_list}
   */
   readonly externalOauthAudienceList?: string[];
   /**
   * Specifies the list of roles that a client cannot set as the primary role. By default, this list includes the ACCOUNTADMIN, ORGADMIN and SECURITYADMIN roles. To remove these privileged roles from the list, use the ALTER ACCOUNT command to set the EXTERNAL_OAUTH_ADD_PRIVILEGED_ROLES_TO_BLOCKED_LIST account parameter to FALSE. For more information about this resource, see [docs](./account_role).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#external_oauth_blocked_roles_list ExternalOauthIntegration#external_oauth_blocked_roles_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#external_oauth_blocked_roles_list ExternalOauthIntegration#external_oauth_blocked_roles_list}
   */
   readonly externalOauthBlockedRolesList?: string[];
   /**
   * Specifies the URL to define the OAuth 2.0 authorization server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#external_oauth_issuer ExternalOauthIntegration#external_oauth_issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#external_oauth_issuer ExternalOauthIntegration#external_oauth_issuer}
   */
   readonly externalOauthIssuer: string;
   /**
   * Specifies the endpoint or a list of endpoints from which to download public keys or certificates to validate an External OAuth access token. The maximum number of URLs that can be specified in the list is 3. If removed from the config, the resource is recreated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#external_oauth_jws_keys_url ExternalOauthIntegration#external_oauth_jws_keys_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#external_oauth_jws_keys_url ExternalOauthIntegration#external_oauth_jws_keys_url}
   */
   readonly externalOauthJwsKeysUrl?: string[];
   /**
   * Specifies a Base64-encoded RSA public key, without the -----BEGIN PUBLIC KEY----- and -----END PUBLIC KEY----- headers. If removed from the config, the resource is recreated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#external_oauth_rsa_public_key ExternalOauthIntegration#external_oauth_rsa_public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#external_oauth_rsa_public_key ExternalOauthIntegration#external_oauth_rsa_public_key}
   */
   readonly externalOauthRsaPublicKey?: string;
   /**
   * Specifies a second RSA public key, without the -----BEGIN PUBLIC KEY----- and -----END PUBLIC KEY----- headers. Used for key rotation. If removed from the config, the resource is recreated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#external_oauth_rsa_public_key_2 ExternalOauthIntegration#external_oauth_rsa_public_key_2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#external_oauth_rsa_public_key_2 ExternalOauthIntegration#external_oauth_rsa_public_key_2}
   */
   readonly externalOauthRsaPublicKey2?: string;
   /**
   * Specifies the scope delimiter in the authorization token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#external_oauth_scope_delimiter ExternalOauthIntegration#external_oauth_scope_delimiter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#external_oauth_scope_delimiter ExternalOauthIntegration#external_oauth_scope_delimiter}
   */
   readonly externalOauthScopeDelimiter?: string;
   /**
   * Specifies the access token claim to map the access token to an account role. If removed from the config, the resource is recreated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#external_oauth_scope_mapping_attribute ExternalOauthIntegration#external_oauth_scope_mapping_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#external_oauth_scope_mapping_attribute ExternalOauthIntegration#external_oauth_scope_mapping_attribute}
   */
   readonly externalOauthScopeMappingAttribute?: string;
   /**
   * Indicates which Snowflake user record attribute should be used to map the access token to a Snowflake user record. Valid values are (case-insensitive): `LOGIN_NAME` | `EMAIL_ADDRESS`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#external_oauth_snowflake_user_mapping_attribute ExternalOauthIntegration#external_oauth_snowflake_user_mapping_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#external_oauth_snowflake_user_mapping_attribute ExternalOauthIntegration#external_oauth_snowflake_user_mapping_attribute}
   */
   readonly externalOauthSnowflakeUserMappingAttribute: string;
   /**
   * Specifies the access token claim or claims that can be used to map the access token to a Snowflake user record. If removed from the config, the resource is recreated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#external_oauth_token_user_mapping_claim ExternalOauthIntegration#external_oauth_token_user_mapping_claim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#external_oauth_token_user_mapping_claim ExternalOauthIntegration#external_oauth_token_user_mapping_claim}
   */
   readonly externalOauthTokenUserMappingClaim: string[];
   /**
   * Specifies the OAuth 2.0 authorization server to be Okta, Microsoft Azure AD, Ping Identity PingFederate, or a Custom OAuth 2.0 authorization server. Valid values are (case-insensitive): `OKTA` | `AZURE` | `PING_FEDERATE` | `CUSTOM`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#external_oauth_type ExternalOauthIntegration#external_oauth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#external_oauth_type ExternalOauthIntegration#external_oauth_type}
   */
   readonly externalOauthType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#id ExternalOauthIntegration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#id ExternalOauthIntegration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -112,13 +112,13 @@ export interface ExternalOauthIntegrationConfig extends cdktf.TerraformMetaArgum
   /**
   * Specifies the name of the External Oath integration. This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#name ExternalOauthIntegration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#name ExternalOauthIntegration#name}
   */
   readonly name: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#timeouts ExternalOauthIntegration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#timeouts ExternalOauthIntegration#timeouts}
   */
   readonly timeouts?: ExternalOauthIntegrationTimeouts;
 }
@@ -126,8 +126,8 @@ export interface ExternalOauthIntegrationDescribeOutputComment {
 }
 
 export function externalOauthIntegrationDescribeOutputCommentToTerraform(struct?: ExternalOauthIntegrationDescribeOutputComment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -136,8 +136,8 @@ export function externalOauthIntegrationDescribeOutputCommentToTerraform(struct?
 
 
 export function externalOauthIntegrationDescribeOutputCommentToHclTerraform(struct?: ExternalOauthIntegrationDescribeOutputComment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -145,7 +145,7 @@ export function externalOauthIntegrationDescribeOutputCommentToHclTerraform(stru
   return attrs;
 }
 
-export class ExternalOauthIntegrationDescribeOutputCommentOutputReference extends cdktf.ComplexObject {
+export class ExternalOauthIntegrationDescribeOutputCommentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -154,7 +154,7 @@ export class ExternalOauthIntegrationDescribeOutputCommentOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -194,14 +194,14 @@ export class ExternalOauthIntegrationDescribeOutputCommentOutputReference extend
   }
 }
 
-export class ExternalOauthIntegrationDescribeOutputCommentList extends cdktf.ComplexList {
+export class ExternalOauthIntegrationDescribeOutputCommentList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -216,8 +216,8 @@ export interface ExternalOauthIntegrationDescribeOutputEnabled {
 }
 
 export function externalOauthIntegrationDescribeOutputEnabledToTerraform(struct?: ExternalOauthIntegrationDescribeOutputEnabled): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -226,8 +226,8 @@ export function externalOauthIntegrationDescribeOutputEnabledToTerraform(struct?
 
 
 export function externalOauthIntegrationDescribeOutputEnabledToHclTerraform(struct?: ExternalOauthIntegrationDescribeOutputEnabled): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -235,7 +235,7 @@ export function externalOauthIntegrationDescribeOutputEnabledToHclTerraform(stru
   return attrs;
 }
 
-export class ExternalOauthIntegrationDescribeOutputEnabledOutputReference extends cdktf.ComplexObject {
+export class ExternalOauthIntegrationDescribeOutputEnabledOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -244,7 +244,7 @@ export class ExternalOauthIntegrationDescribeOutputEnabledOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -284,14 +284,14 @@ export class ExternalOauthIntegrationDescribeOutputEnabledOutputReference extend
   }
 }
 
-export class ExternalOauthIntegrationDescribeOutputEnabledList extends cdktf.ComplexList {
+export class ExternalOauthIntegrationDescribeOutputEnabledList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -306,8 +306,8 @@ export interface ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRoles
 }
 
 export function externalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructToTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -316,8 +316,8 @@ export function externalOauthIntegrationDescribeOutputExternalOauthAllowedRolesL
 
 
 export function externalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructToHclTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -325,7 +325,7 @@ export function externalOauthIntegrationDescribeOutputExternalOauthAllowedRolesL
   return attrs;
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference extends cdktf.ComplexObject {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -334,7 +334,7 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesList
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -374,14 +374,14 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesList
   }
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructList extends cdktf.ComplexList {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthAllowedRolesListStructList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -396,8 +396,8 @@ export interface ExternalOauthIntegrationDescribeOutputExternalOauthAnyRoleMode 
 }
 
 export function externalOauthIntegrationDescribeOutputExternalOauthAnyRoleModeToTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthAnyRoleMode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -406,8 +406,8 @@ export function externalOauthIntegrationDescribeOutputExternalOauthAnyRoleModeTo
 
 
 export function externalOauthIntegrationDescribeOutputExternalOauthAnyRoleModeToHclTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthAnyRoleMode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -415,7 +415,7 @@ export function externalOauthIntegrationDescribeOutputExternalOauthAnyRoleModeTo
   return attrs;
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthAnyRoleModeOutputReference extends cdktf.ComplexObject {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthAnyRoleModeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -424,7 +424,7 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthAnyRoleModeOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -464,14 +464,14 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthAnyRoleModeOutpu
   }
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthAnyRoleModeList extends cdktf.ComplexList {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthAnyRoleModeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -486,8 +486,8 @@ export interface ExternalOauthIntegrationDescribeOutputExternalOauthAudienceList
 }
 
 export function externalOauthIntegrationDescribeOutputExternalOauthAudienceListStructToTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthAudienceListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -496,8 +496,8 @@ export function externalOauthIntegrationDescribeOutputExternalOauthAudienceListS
 
 
 export function externalOauthIntegrationDescribeOutputExternalOauthAudienceListStructToHclTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthAudienceListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -505,7 +505,7 @@ export function externalOauthIntegrationDescribeOutputExternalOauthAudienceListS
   return attrs;
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthAudienceListStructOutputReference extends cdktf.ComplexObject {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthAudienceListStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -514,7 +514,7 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthAudienceListStru
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -554,14 +554,14 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthAudienceListStru
   }
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthAudienceListStructList extends cdktf.ComplexList {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthAudienceListStructList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -576,8 +576,8 @@ export interface ExternalOauthIntegrationDescribeOutputExternalOauthBlockedRoles
 }
 
 export function externalOauthIntegrationDescribeOutputExternalOauthBlockedRolesListStructToTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthBlockedRolesListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -586,8 +586,8 @@ export function externalOauthIntegrationDescribeOutputExternalOauthBlockedRolesL
 
 
 export function externalOauthIntegrationDescribeOutputExternalOauthBlockedRolesListStructToHclTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthBlockedRolesListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -595,7 +595,7 @@ export function externalOauthIntegrationDescribeOutputExternalOauthBlockedRolesL
   return attrs;
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthBlockedRolesListStructOutputReference extends cdktf.ComplexObject {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthBlockedRolesListStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -604,7 +604,7 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthBlockedRolesList
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -644,14 +644,14 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthBlockedRolesList
   }
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthBlockedRolesListStructList extends cdktf.ComplexList {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthBlockedRolesListStructList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -666,8 +666,8 @@ export interface ExternalOauthIntegrationDescribeOutputExternalOauthIssuer {
 }
 
 export function externalOauthIntegrationDescribeOutputExternalOauthIssuerToTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthIssuer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -676,8 +676,8 @@ export function externalOauthIntegrationDescribeOutputExternalOauthIssuerToTerra
 
 
 export function externalOauthIntegrationDescribeOutputExternalOauthIssuerToHclTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthIssuer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -685,7 +685,7 @@ export function externalOauthIntegrationDescribeOutputExternalOauthIssuerToHclTe
   return attrs;
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthIssuerOutputReference extends cdktf.ComplexObject {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthIssuerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -694,7 +694,7 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthIssuerOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -734,14 +734,14 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthIssuerOutputRefe
   }
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthIssuerList extends cdktf.ComplexList {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthIssuerList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -756,8 +756,8 @@ export interface ExternalOauthIntegrationDescribeOutputExternalOauthJwsKeysUrl {
 }
 
 export function externalOauthIntegrationDescribeOutputExternalOauthJwsKeysUrlToTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthJwsKeysUrl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -766,8 +766,8 @@ export function externalOauthIntegrationDescribeOutputExternalOauthJwsKeysUrlToT
 
 
 export function externalOauthIntegrationDescribeOutputExternalOauthJwsKeysUrlToHclTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthJwsKeysUrl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -775,7 +775,7 @@ export function externalOauthIntegrationDescribeOutputExternalOauthJwsKeysUrlToH
   return attrs;
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthJwsKeysUrlOutputReference extends cdktf.ComplexObject {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthJwsKeysUrlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -784,7 +784,7 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthJwsKeysUrlOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -824,14 +824,14 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthJwsKeysUrlOutput
   }
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthJwsKeysUrlList extends cdktf.ComplexList {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthJwsKeysUrlList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -846,8 +846,8 @@ export interface ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey
 }
 
 export function externalOauthIntegrationDescribeOutputExternalOauthRsaPublicKeyToTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -856,8 +856,8 @@ export function externalOauthIntegrationDescribeOutputExternalOauthRsaPublicKeyT
 
 
 export function externalOauthIntegrationDescribeOutputExternalOauthRsaPublicKeyToHclTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -865,7 +865,7 @@ export function externalOauthIntegrationDescribeOutputExternalOauthRsaPublicKeyT
   return attrs;
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKeyOutputReference extends cdktf.ComplexObject {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -874,7 +874,7 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKeyOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -914,14 +914,14 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKeyOutp
   }
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKeyList extends cdktf.ComplexList {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKeyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -936,8 +936,8 @@ export interface ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey
 }
 
 export function externalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey2ToTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -946,8 +946,8 @@ export function externalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey2
 
 
 export function externalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey2ToHclTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -955,7 +955,7 @@ export function externalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey2
   return attrs;
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey2OutputReference extends cdktf.ComplexObject {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -964,7 +964,7 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey2Out
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1004,14 +1004,14 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey2Out
   }
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey2List extends cdktf.ComplexList {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthRsaPublicKey2List extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1026,8 +1026,8 @@ export interface ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimit
 }
 
 export function externalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterToTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1036,8 +1036,8 @@ export function externalOauthIntegrationDescribeOutputExternalOauthScopeDelimite
 
 
 export function externalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterToHclTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1045,7 +1045,7 @@ export function externalOauthIntegrationDescribeOutputExternalOauthScopeDelimite
   return attrs;
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference extends cdktf.ComplexObject {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1054,7 +1054,7 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1094,14 +1094,14 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterOu
   }
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterList extends cdktf.ComplexList {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthScopeDelimiterList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1116,8 +1116,8 @@ export interface ExternalOauthIntegrationDescribeOutputExternalOauthSnowflakeUse
 }
 
 export function externalOauthIntegrationDescribeOutputExternalOauthSnowflakeUserMappingAttributeToTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthSnowflakeUserMappingAttribute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1126,8 +1126,8 @@ export function externalOauthIntegrationDescribeOutputExternalOauthSnowflakeUser
 
 
 export function externalOauthIntegrationDescribeOutputExternalOauthSnowflakeUserMappingAttributeToHclTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthSnowflakeUserMappingAttribute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1135,7 +1135,7 @@ export function externalOauthIntegrationDescribeOutputExternalOauthSnowflakeUser
   return attrs;
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthSnowflakeUserMappingAttributeOutputReference extends cdktf.ComplexObject {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthSnowflakeUserMappingAttributeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1144,7 +1144,7 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthSnowflakeUserMap
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1184,14 +1184,14 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthSnowflakeUserMap
   }
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthSnowflakeUserMappingAttributeList extends cdktf.ComplexList {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthSnowflakeUserMappingAttributeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1206,8 +1206,8 @@ export interface ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMap
 }
 
 export function externalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimToTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaim): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1216,8 +1216,8 @@ export function externalOauthIntegrationDescribeOutputExternalOauthTokenUserMapp
 
 
 export function externalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimToHclTerraform(struct?: ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaim): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1225,7 +1225,7 @@ export function externalOauthIntegrationDescribeOutputExternalOauthTokenUserMapp
   return attrs;
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimOutputReference extends cdktf.ComplexObject {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1234,7 +1234,7 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMapping
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1274,14 +1274,14 @@ export class ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMapping
   }
 }
 
-export class ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList extends cdktf.ComplexList {
+export class ExternalOauthIntegrationDescribeOutputExternalOauthTokenUserMappingClaimList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1296,8 +1296,8 @@ export interface ExternalOauthIntegrationDescribeOutput {
 }
 
 export function externalOauthIntegrationDescribeOutputToTerraform(struct?: ExternalOauthIntegrationDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1306,8 +1306,8 @@ export function externalOauthIntegrationDescribeOutputToTerraform(struct?: Exter
 
 
 export function externalOauthIntegrationDescribeOutputToHclTerraform(struct?: ExternalOauthIntegrationDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1315,7 +1315,7 @@ export function externalOauthIntegrationDescribeOutputToHclTerraform(struct?: Ex
   return attrs;
 }
 
-export class ExternalOauthIntegrationDescribeOutputOutputReference extends cdktf.ComplexObject {
+export class ExternalOauthIntegrationDescribeOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1324,7 +1324,7 @@ export class ExternalOauthIntegrationDescribeOutputOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1422,14 +1422,14 @@ export class ExternalOauthIntegrationDescribeOutputOutputReference extends cdktf
   }
 }
 
-export class ExternalOauthIntegrationDescribeOutputList extends cdktf.ComplexList {
+export class ExternalOauthIntegrationDescribeOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1444,8 +1444,8 @@ export interface ExternalOauthIntegrationRelatedParametersExternalOauthAddPrivil
 }
 
 export function externalOauthIntegrationRelatedParametersExternalOauthAddPrivilegedRolesToBlockedListStructToTerraform(struct?: ExternalOauthIntegrationRelatedParametersExternalOauthAddPrivilegedRolesToBlockedListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1454,8 +1454,8 @@ export function externalOauthIntegrationRelatedParametersExternalOauthAddPrivile
 
 
 export function externalOauthIntegrationRelatedParametersExternalOauthAddPrivilegedRolesToBlockedListStructToHclTerraform(struct?: ExternalOauthIntegrationRelatedParametersExternalOauthAddPrivilegedRolesToBlockedListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1463,7 +1463,7 @@ export function externalOauthIntegrationRelatedParametersExternalOauthAddPrivile
   return attrs;
 }
 
-export class ExternalOauthIntegrationRelatedParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReference extends cdktf.ComplexObject {
+export class ExternalOauthIntegrationRelatedParametersExternalOauthAddPrivilegedRolesToBlockedListStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1472,7 +1472,7 @@ export class ExternalOauthIntegrationRelatedParametersExternalOauthAddPrivileged
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1517,14 +1517,14 @@ export class ExternalOauthIntegrationRelatedParametersExternalOauthAddPrivileged
   }
 }
 
-export class ExternalOauthIntegrationRelatedParametersExternalOauthAddPrivilegedRolesToBlockedListStructList extends cdktf.ComplexList {
+export class ExternalOauthIntegrationRelatedParametersExternalOauthAddPrivilegedRolesToBlockedListStructList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1539,8 +1539,8 @@ export interface ExternalOauthIntegrationRelatedParameters {
 }
 
 export function externalOauthIntegrationRelatedParametersToTerraform(struct?: ExternalOauthIntegrationRelatedParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1549,8 +1549,8 @@ export function externalOauthIntegrationRelatedParametersToTerraform(struct?: Ex
 
 
 export function externalOauthIntegrationRelatedParametersToHclTerraform(struct?: ExternalOauthIntegrationRelatedParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1558,7 +1558,7 @@ export function externalOauthIntegrationRelatedParametersToHclTerraform(struct?:
   return attrs;
 }
 
-export class ExternalOauthIntegrationRelatedParametersOutputReference extends cdktf.ComplexObject {
+export class ExternalOauthIntegrationRelatedParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1567,7 +1567,7 @@ export class ExternalOauthIntegrationRelatedParametersOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1593,14 +1593,14 @@ export class ExternalOauthIntegrationRelatedParametersOutputReference extends cd
   }
 }
 
-export class ExternalOauthIntegrationRelatedParametersList extends cdktf.ComplexList {
+export class ExternalOauthIntegrationRelatedParametersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1615,8 +1615,8 @@ export interface ExternalOauthIntegrationShowOutput {
 }
 
 export function externalOauthIntegrationShowOutputToTerraform(struct?: ExternalOauthIntegrationShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1625,8 +1625,8 @@ export function externalOauthIntegrationShowOutputToTerraform(struct?: ExternalO
 
 
 export function externalOauthIntegrationShowOutputToHclTerraform(struct?: ExternalOauthIntegrationShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1634,7 +1634,7 @@ export function externalOauthIntegrationShowOutputToHclTerraform(struct?: Extern
   return attrs;
 }
 
-export class ExternalOauthIntegrationShowOutputOutputReference extends cdktf.ComplexObject {
+export class ExternalOauthIntegrationShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1643,7 +1643,7 @@ export class ExternalOauthIntegrationShowOutputOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1693,14 +1693,14 @@ export class ExternalOauthIntegrationShowOutputOutputReference extends cdktf.Com
   }
 }
 
-export class ExternalOauthIntegrationShowOutputList extends cdktf.ComplexList {
+export class ExternalOauthIntegrationShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1713,63 +1713,63 @@ export class ExternalOauthIntegrationShowOutputList extends cdktf.ComplexList {
 }
 export interface ExternalOauthIntegrationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#create ExternalOauthIntegration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#create ExternalOauthIntegration#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#delete ExternalOauthIntegration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#delete ExternalOauthIntegration#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#read ExternalOauthIntegration#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#read ExternalOauthIntegration#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#update ExternalOauthIntegration#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#update ExternalOauthIntegration#update}
   */
   readonly update?: string;
 }
 
-export function externalOauthIntegrationTimeoutsToTerraform(struct?: ExternalOauthIntegrationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function externalOauthIntegrationTimeoutsToTerraform(struct?: ExternalOauthIntegrationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function externalOauthIntegrationTimeoutsToHclTerraform(struct?: ExternalOauthIntegrationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function externalOauthIntegrationTimeoutsToHclTerraform(struct?: ExternalOauthIntegrationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1780,19 +1780,19 @@ export function externalOauthIntegrationTimeoutsToHclTerraform(struct?: External
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ExternalOauthIntegrationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ExternalOauthIntegrationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ExternalOauthIntegrationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ExternalOauthIntegrationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1817,7 +1817,7 @@ export class ExternalOauthIntegrationTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ExternalOauthIntegrationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ExternalOauthIntegrationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1826,7 +1826,7 @@ export class ExternalOauthIntegrationTimeoutsOutputReference extends cdktf.Compl
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1906,9 +1906,9 @@ export class ExternalOauthIntegrationTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration snowflake_external_oauth_integration}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration snowflake_external_oauth_integration}
 */
-export class ExternalOauthIntegration extends cdktf.TerraformResource {
+export class ExternalOauthIntegration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1919,14 +1919,14 @@ export class ExternalOauthIntegration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ExternalOauthIntegration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ExternalOauthIntegration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ExternalOauthIntegration to import
-  * @param importFromId The id of the existing ExternalOauthIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ExternalOauthIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ExternalOauthIntegration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_external_oauth_integration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_external_oauth_integration", importId: importFromId, provider });
       }
 
   // ===========
@@ -1934,7 +1934,7 @@ export class ExternalOauthIntegration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_oauth_integration snowflake_external_oauth_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_oauth_integration snowflake_external_oauth_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1945,7 +1945,7 @@ export class ExternalOauthIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_external_oauth_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -2003,11 +2003,11 @@ export class ExternalOauthIntegration extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2018,7 +2018,7 @@ export class ExternalOauthIntegration extends cdktf.TerraformResource {
   // external_oauth_allowed_roles_list - computed: false, optional: true, required: false
   private _externalOauthAllowedRolesList?: string[]; 
   public get externalOauthAllowedRolesList() {
-    return cdktf.Fn.tolist(this.getListAttribute('external_oauth_allowed_roles_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('external_oauth_allowed_roles_list'));
   }
   public set externalOauthAllowedRolesList(value: string[]) {
     this._externalOauthAllowedRolesList = value;
@@ -2050,7 +2050,7 @@ export class ExternalOauthIntegration extends cdktf.TerraformResource {
   // external_oauth_audience_list - computed: false, optional: true, required: false
   private _externalOauthAudienceList?: string[]; 
   public get externalOauthAudienceList() {
-    return cdktf.Fn.tolist(this.getListAttribute('external_oauth_audience_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('external_oauth_audience_list'));
   }
   public set externalOauthAudienceList(value: string[]) {
     this._externalOauthAudienceList = value;
@@ -2066,7 +2066,7 @@ export class ExternalOauthIntegration extends cdktf.TerraformResource {
   // external_oauth_blocked_roles_list - computed: false, optional: true, required: false
   private _externalOauthBlockedRolesList?: string[]; 
   public get externalOauthBlockedRolesList() {
-    return cdktf.Fn.tolist(this.getListAttribute('external_oauth_blocked_roles_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('external_oauth_blocked_roles_list'));
   }
   public set externalOauthBlockedRolesList(value: string[]) {
     this._externalOauthBlockedRolesList = value;
@@ -2095,7 +2095,7 @@ export class ExternalOauthIntegration extends cdktf.TerraformResource {
   // external_oauth_jws_keys_url - computed: false, optional: true, required: false
   private _externalOauthJwsKeysUrl?: string[]; 
   public get externalOauthJwsKeysUrl() {
-    return cdktf.Fn.tolist(this.getListAttribute('external_oauth_jws_keys_url'));
+    return cdktn.Fn.tolist(this.getListAttribute('external_oauth_jws_keys_url'));
   }
   public set externalOauthJwsKeysUrl(value: string[]) {
     this._externalOauthJwsKeysUrl = value;
@@ -2188,7 +2188,7 @@ export class ExternalOauthIntegration extends cdktf.TerraformResource {
   // external_oauth_token_user_mapping_claim - computed: false, optional: false, required: true
   private _externalOauthTokenUserMappingClaim?: string[]; 
   public get externalOauthTokenUserMappingClaim() {
-    return cdktf.Fn.tolist(this.getListAttribute('external_oauth_token_user_mapping_claim'));
+    return cdktn.Fn.tolist(this.getListAttribute('external_oauth_token_user_mapping_claim'));
   }
   public set externalOauthTokenUserMappingClaim(value: string[]) {
     this._externalOauthTokenUserMappingClaim = value;
@@ -2279,23 +2279,23 @@ export class ExternalOauthIntegration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      external_oauth_allowed_roles_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._externalOauthAllowedRolesList),
-      external_oauth_any_role_mode: cdktf.stringToTerraform(this._externalOauthAnyRoleMode),
-      external_oauth_audience_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._externalOauthAudienceList),
-      external_oauth_blocked_roles_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._externalOauthBlockedRolesList),
-      external_oauth_issuer: cdktf.stringToTerraform(this._externalOauthIssuer),
-      external_oauth_jws_keys_url: cdktf.listMapper(cdktf.stringToTerraform, false)(this._externalOauthJwsKeysUrl),
-      external_oauth_rsa_public_key: cdktf.stringToTerraform(this._externalOauthRsaPublicKey),
-      external_oauth_rsa_public_key_2: cdktf.stringToTerraform(this._externalOauthRsaPublicKey2),
-      external_oauth_scope_delimiter: cdktf.stringToTerraform(this._externalOauthScopeDelimiter),
-      external_oauth_scope_mapping_attribute: cdktf.stringToTerraform(this._externalOauthScopeMappingAttribute),
-      external_oauth_snowflake_user_mapping_attribute: cdktf.stringToTerraform(this._externalOauthSnowflakeUserMappingAttribute),
-      external_oauth_token_user_mapping_claim: cdktf.listMapper(cdktf.stringToTerraform, false)(this._externalOauthTokenUserMappingClaim),
-      external_oauth_type: cdktf.stringToTerraform(this._externalOauthType),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      comment: cdktn.stringToTerraform(this._comment),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      external_oauth_allowed_roles_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._externalOauthAllowedRolesList),
+      external_oauth_any_role_mode: cdktn.stringToTerraform(this._externalOauthAnyRoleMode),
+      external_oauth_audience_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._externalOauthAudienceList),
+      external_oauth_blocked_roles_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._externalOauthBlockedRolesList),
+      external_oauth_issuer: cdktn.stringToTerraform(this._externalOauthIssuer),
+      external_oauth_jws_keys_url: cdktn.listMapper(cdktn.stringToTerraform, false)(this._externalOauthJwsKeysUrl),
+      external_oauth_rsa_public_key: cdktn.stringToTerraform(this._externalOauthRsaPublicKey),
+      external_oauth_rsa_public_key_2: cdktn.stringToTerraform(this._externalOauthRsaPublicKey2),
+      external_oauth_scope_delimiter: cdktn.stringToTerraform(this._externalOauthScopeDelimiter),
+      external_oauth_scope_mapping_attribute: cdktn.stringToTerraform(this._externalOauthScopeMappingAttribute),
+      external_oauth_snowflake_user_mapping_attribute: cdktn.stringToTerraform(this._externalOauthSnowflakeUserMappingAttribute),
+      external_oauth_token_user_mapping_claim: cdktn.listMapper(cdktn.stringToTerraform, false)(this._externalOauthTokenUserMappingClaim),
+      external_oauth_type: cdktn.stringToTerraform(this._externalOauthType),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
       timeouts: externalOauthIntegrationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -2303,103 +2303,103 @@ export class ExternalOauthIntegration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       external_oauth_allowed_roles_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._externalOauthAllowedRolesList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._externalOauthAllowedRolesList),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       external_oauth_any_role_mode: {
-        value: cdktf.stringToHclTerraform(this._externalOauthAnyRoleMode),
+        value: cdktn.stringToHclTerraform(this._externalOauthAnyRoleMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_oauth_audience_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._externalOauthAudienceList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._externalOauthAudienceList),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       external_oauth_blocked_roles_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._externalOauthBlockedRolesList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._externalOauthBlockedRolesList),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       external_oauth_issuer: {
-        value: cdktf.stringToHclTerraform(this._externalOauthIssuer),
+        value: cdktn.stringToHclTerraform(this._externalOauthIssuer),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_oauth_jws_keys_url: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._externalOauthJwsKeysUrl),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._externalOauthJwsKeysUrl),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       external_oauth_rsa_public_key: {
-        value: cdktf.stringToHclTerraform(this._externalOauthRsaPublicKey),
+        value: cdktn.stringToHclTerraform(this._externalOauthRsaPublicKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_oauth_rsa_public_key_2: {
-        value: cdktf.stringToHclTerraform(this._externalOauthRsaPublicKey2),
+        value: cdktn.stringToHclTerraform(this._externalOauthRsaPublicKey2),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_oauth_scope_delimiter: {
-        value: cdktf.stringToHclTerraform(this._externalOauthScopeDelimiter),
+        value: cdktn.stringToHclTerraform(this._externalOauthScopeDelimiter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_oauth_scope_mapping_attribute: {
-        value: cdktf.stringToHclTerraform(this._externalOauthScopeMappingAttribute),
+        value: cdktn.stringToHclTerraform(this._externalOauthScopeMappingAttribute),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_oauth_snowflake_user_mapping_attribute: {
-        value: cdktf.stringToHclTerraform(this._externalOauthSnowflakeUserMappingAttribute),
+        value: cdktn.stringToHclTerraform(this._externalOauthSnowflakeUserMappingAttribute),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_oauth_token_user_mapping_claim: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._externalOauthTokenUserMappingClaim),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._externalOauthTokenUserMappingClaim),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       external_oauth_type: {
-        value: cdktf.stringToHclTerraform(this._externalOauthType),
+        value: cdktn.stringToHclTerraform(this._externalOauthType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
