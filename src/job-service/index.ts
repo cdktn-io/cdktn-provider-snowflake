@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface JobServiceConfig extends cdktf.TerraformMetaArguments {
+export interface JobServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies a comment for the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#comment JobService#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#comment JobService#comment}
   */
   readonly comment?: string;
   /**
   * Specifies the name of the compute pool in your account on which to run the service. Identifiers with special or lower-case characters are not supported. This limitation in the provider follows the limitation in Snowflake (see [docs](https://docs.snowflake.com/en/sql-reference/sql/create-compute-pool)). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#compute_pool JobService#compute_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#compute_pool JobService#compute_pool}
   */
   readonly computePool: string;
   /**
   * The database in which to create the service. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#database JobService#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#database JobService#database}
   */
   readonly database: string;
   /**
   * Specifies the names of the external access integrations that allow your service to access external sites.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#external_access_integrations JobService#external_access_integrations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#external_access_integrations JobService#external_access_integrations}
   */
   readonly externalAccessIntegrations?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#id JobService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#id JobService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,37 +46,37 @@ export interface JobServiceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the identifier for the service; must be unique for the schema in which the service is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#name JobService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#name JobService#name}
   */
   readonly name: string;
   /**
   * Warehouse to use if a service container connects to Snowflake to execute a query but does not explicitly specify a warehouse to use. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#query_warehouse JobService#query_warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#query_warehouse JobService#query_warehouse}
   */
   readonly queryWarehouse?: string;
   /**
   * The schema in which to create the service. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#schema JobService#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#schema JobService#schema}
   */
   readonly schema: string;
   /**
   * from_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#from_specification JobService#from_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#from_specification JobService#from_specification}
   */
   readonly fromSpecification?: JobServiceFromSpecification;
   /**
   * from_specification_template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#from_specification_template JobService#from_specification_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#from_specification_template JobService#from_specification_template}
   */
   readonly fromSpecificationTemplate?: JobServiceFromSpecificationTemplate;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#timeouts JobService#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#timeouts JobService#timeouts}
   */
   readonly timeouts?: JobServiceTimeouts;
 }
@@ -84,8 +84,8 @@ export interface JobServiceDescribeOutput {
 }
 
 export function jobServiceDescribeOutputToTerraform(struct?: JobServiceDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -94,8 +94,8 @@ export function jobServiceDescribeOutputToTerraform(struct?: JobServiceDescribeO
 
 
 export function jobServiceDescribeOutputToHclTerraform(struct?: JobServiceDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -103,7 +103,7 @@ export function jobServiceDescribeOutputToHclTerraform(struct?: JobServiceDescri
   return attrs;
 }
 
-export class JobServiceDescribeOutputOutputReference extends cdktf.ComplexObject {
+export class JobServiceDescribeOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -112,7 +112,7 @@ export class JobServiceDescribeOutputOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -173,7 +173,7 @@ export class JobServiceDescribeOutputOutputReference extends cdktf.ComplexObject
 
   // external_access_integrations - computed: true, optional: false, required: false
   public get externalAccessIntegrations() {
-    return cdktf.Fn.tolist(this.getListAttribute('external_access_integrations'));
+    return cdktn.Fn.tolist(this.getListAttribute('external_access_integrations'));
   }
 
   // is_async_job - computed: true, optional: false, required: false
@@ -277,14 +277,14 @@ export class JobServiceDescribeOutputOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class JobServiceDescribeOutputList extends cdktf.ComplexList {
+export class JobServiceDescribeOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -299,8 +299,8 @@ export interface JobServiceShowOutput {
 }
 
 export function jobServiceShowOutputToTerraform(struct?: JobServiceShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -309,8 +309,8 @@ export function jobServiceShowOutputToTerraform(struct?: JobServiceShowOutput): 
 
 
 export function jobServiceShowOutputToHclTerraform(struct?: JobServiceShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -318,7 +318,7 @@ export function jobServiceShowOutputToHclTerraform(struct?: JobServiceShowOutput
   return attrs;
 }
 
-export class JobServiceShowOutputOutputReference extends cdktf.ComplexObject {
+export class JobServiceShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -327,7 +327,7 @@ export class JobServiceShowOutputOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -388,7 +388,7 @@ export class JobServiceShowOutputOutputReference extends cdktf.ComplexObject {
 
   // external_access_integrations - computed: true, optional: false, required: false
   public get externalAccessIntegrations() {
-    return cdktf.Fn.tolist(this.getListAttribute('external_access_integrations'));
+    return cdktn.Fn.tolist(this.getListAttribute('external_access_integrations'));
   }
 
   // is_async_job - computed: true, optional: false, required: false
@@ -487,14 +487,14 @@ export class JobServiceShowOutputOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class JobServiceShowOutputList extends cdktf.ComplexList {
+export class JobServiceShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -509,69 +509,69 @@ export interface JobServiceFromSpecification {
   /**
   * The file name of the service specification. Example: `spec.yaml`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#file JobService#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#file JobService#file}
   */
   readonly file?: string;
   /**
   * The path to the service specification file on the given stage. When the path is specified, the `/` character is automatically added as a path prefix. Example: `path/to/spec`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#path JobService#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#path JobService#path}
   */
   readonly path?: string;
   /**
   * The fully qualified name of the stage containing the service specification file. At symbol (`@`) is added automatically. Example: `"\"<db_name>\".\"<schema_name>\".\"<stage_name>\""`. For more information about this resource, see [docs](./stage).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#stage JobService#stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#stage JobService#stage}
   */
   readonly stage?: string;
   /**
   * The embedded text of the service specification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#text JobService#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#text JobService#text}
   */
   readonly text?: string;
 }
 
 export function jobServiceFromSpecificationToTerraform(struct?: JobServiceFromSpecificationOutputReference | JobServiceFromSpecification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    file: cdktf.stringToTerraform(struct!.file),
-    path: cdktf.stringToTerraform(struct!.path),
-    stage: cdktf.stringToTerraform(struct!.stage),
-    text: cdktf.stringToTerraform(struct!.text),
+    file: cdktn.stringToTerraform(struct!.file),
+    path: cdktn.stringToTerraform(struct!.path),
+    stage: cdktn.stringToTerraform(struct!.stage),
+    text: cdktn.stringToTerraform(struct!.text),
   }
 }
 
 
 export function jobServiceFromSpecificationToHclTerraform(struct?: JobServiceFromSpecificationOutputReference | JobServiceFromSpecification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     file: {
-      value: cdktf.stringToHclTerraform(struct!.file),
+      value: cdktn.stringToHclTerraform(struct!.file),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stage: {
-      value: cdktf.stringToHclTerraform(struct!.stage),
+      value: cdktn.stringToHclTerraform(struct!.stage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text: {
-      value: cdktf.stringToHclTerraform(struct!.text),
+      value: cdktn.stringToHclTerraform(struct!.text),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -582,14 +582,14 @@ export function jobServiceFromSpecificationToHclTerraform(struct?: JobServiceFro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobServiceFromSpecificationOutputReference extends cdktf.ComplexObject {
+export class JobServiceFromSpecificationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -700,43 +700,43 @@ export interface JobServiceFromSpecificationTemplateUsing {
   /**
   * The name of the template variable. The provider wraps it in double quotes by default, so be aware of that while referencing the argument in the spec definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#key JobService#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#key JobService#key}
   */
   readonly key: string;
   /**
   * The value to assign to the variable in the template. The provider wraps it in `$$` by default, so be aware of that while referencing the argument in the spec definition. The value must either be alphanumeric or valid JSON.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#value JobService#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#value JobService#value}
   */
   readonly value: string;
 }
 
-export function jobServiceFromSpecificationTemplateUsingToTerraform(struct?: JobServiceFromSpecificationTemplateUsing | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobServiceFromSpecificationTemplateUsingToTerraform(struct?: JobServiceFromSpecificationTemplateUsing | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function jobServiceFromSpecificationTemplateUsingToHclTerraform(struct?: JobServiceFromSpecificationTemplateUsing | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobServiceFromSpecificationTemplateUsingToHclTerraform(struct?: JobServiceFromSpecificationTemplateUsing | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -747,9 +747,9 @@ export function jobServiceFromSpecificationTemplateUsingToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobServiceFromSpecificationTemplateUsingOutputReference extends cdktf.ComplexObject {
+export class JobServiceFromSpecificationTemplateUsingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -757,11 +757,11 @@ export class JobServiceFromSpecificationTemplateUsingOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobServiceFromSpecificationTemplateUsing | cdktf.IResolvable | undefined {
+  public get internalValue(): JobServiceFromSpecificationTemplateUsing | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -778,14 +778,14 @@ export class JobServiceFromSpecificationTemplateUsingOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobServiceFromSpecificationTemplateUsing | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobServiceFromSpecificationTemplateUsing | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -824,15 +824,15 @@ export class JobServiceFromSpecificationTemplateUsingOutputReference extends cdk
   }
 }
 
-export class JobServiceFromSpecificationTemplateUsingList extends cdktf.ComplexList {
-  public internalValue? : JobServiceFromSpecificationTemplateUsing[] | cdktf.IResolvable
+export class JobServiceFromSpecificationTemplateUsingList extends cdktn.ComplexList {
+  public internalValue? : JobServiceFromSpecificationTemplateUsing[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -847,82 +847,82 @@ export interface JobServiceFromSpecificationTemplate {
   /**
   * The file name of the service specification template. Example: `spec.yaml`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#file JobService#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#file JobService#file}
   */
   readonly file?: string;
   /**
   * The path to the service specification template file on the given stage. When the path is specified, the `/` character is automatically added as a path prefix. Example: `path/to/spec`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#path JobService#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#path JobService#path}
   */
   readonly path?: string;
   /**
   * The fully qualified name of the stage containing the service specification template file. At symbol (`@`) is added automatically. Example: `"\"<db_name>\".\"<schema_name>\".\"<stage_name>\""`. For more information about this resource, see [docs](./stage).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#stage JobService#stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#stage JobService#stage}
   */
   readonly stage?: string;
   /**
   * The embedded text of the service specification template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#text JobService#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#text JobService#text}
   */
   readonly text?: string;
   /**
   * using block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#using JobService#using}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#using JobService#using}
   */
-  readonly using: JobServiceFromSpecificationTemplateUsing[] | cdktf.IResolvable;
+  readonly using: JobServiceFromSpecificationTemplateUsing[] | cdktn.IResolvable;
 }
 
 export function jobServiceFromSpecificationTemplateToTerraform(struct?: JobServiceFromSpecificationTemplateOutputReference | JobServiceFromSpecificationTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    file: cdktf.stringToTerraform(struct!.file),
-    path: cdktf.stringToTerraform(struct!.path),
-    stage: cdktf.stringToTerraform(struct!.stage),
-    text: cdktf.stringToTerraform(struct!.text),
-    using: cdktf.listMapper(jobServiceFromSpecificationTemplateUsingToTerraform, true)(struct!.using),
+    file: cdktn.stringToTerraform(struct!.file),
+    path: cdktn.stringToTerraform(struct!.path),
+    stage: cdktn.stringToTerraform(struct!.stage),
+    text: cdktn.stringToTerraform(struct!.text),
+    using: cdktn.listMapper(jobServiceFromSpecificationTemplateUsingToTerraform, true)(struct!.using),
   }
 }
 
 
 export function jobServiceFromSpecificationTemplateToHclTerraform(struct?: JobServiceFromSpecificationTemplateOutputReference | JobServiceFromSpecificationTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     file: {
-      value: cdktf.stringToHclTerraform(struct!.file),
+      value: cdktn.stringToHclTerraform(struct!.file),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stage: {
-      value: cdktf.stringToHclTerraform(struct!.stage),
+      value: cdktn.stringToHclTerraform(struct!.stage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text: {
-      value: cdktf.stringToHclTerraform(struct!.text),
+      value: cdktn.stringToHclTerraform(struct!.text),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     using: {
-      value: cdktf.listMapperHcl(jobServiceFromSpecificationTemplateUsingToHclTerraform, true)(struct!.using),
+      value: cdktn.listMapperHcl(jobServiceFromSpecificationTemplateUsingToHclTerraform, true)(struct!.using),
       isBlock: true,
       type: "list",
       storageClassType: "JobServiceFromSpecificationTemplateUsingList",
@@ -933,14 +933,14 @@ export function jobServiceFromSpecificationTemplateToHclTerraform(struct?: JobSe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobServiceFromSpecificationTemplateOutputReference extends cdktf.ComplexObject {
+export class JobServiceFromSpecificationTemplateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1058,7 +1058,7 @@ export class JobServiceFromSpecificationTemplateOutputReference extends cdktf.Co
   public get using() {
     return this._using;
   }
-  public putUsing(value: JobServiceFromSpecificationTemplateUsing[] | cdktf.IResolvable) {
+  public putUsing(value: JobServiceFromSpecificationTemplateUsing[] | cdktn.IResolvable) {
     this._using.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1068,63 +1068,63 @@ export class JobServiceFromSpecificationTemplateOutputReference extends cdktf.Co
 }
 export interface JobServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#create JobService#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#create JobService#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#delete JobService#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#delete JobService#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#read JobService#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#read JobService#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#update JobService#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#update JobService#update}
   */
   readonly update?: string;
 }
 
-export function jobServiceTimeoutsToTerraform(struct?: JobServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobServiceTimeoutsToTerraform(struct?: JobServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function jobServiceTimeoutsToHclTerraform(struct?: JobServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobServiceTimeoutsToHclTerraform(struct?: JobServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1135,19 +1135,19 @@ export function jobServiceTimeoutsToHclTerraform(struct?: JobServiceTimeouts | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobServiceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class JobServiceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): JobServiceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): JobServiceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1172,7 +1172,7 @@ export class JobServiceTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobServiceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobServiceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1181,7 +1181,7 @@ export class JobServiceTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1261,9 +1261,9 @@ export class JobServiceTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service snowflake_job_service}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service snowflake_job_service}
 */
-export class JobService extends cdktf.TerraformResource {
+export class JobService extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1274,14 +1274,14 @@ export class JobService extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a JobService resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a JobService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the JobService to import
-  * @param importFromId The id of the existing JobService that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing JobService that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the JobService to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_job_service", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_job_service", importId: importFromId, provider });
       }
 
   // ===========
@@ -1289,7 +1289,7 @@ export class JobService extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/job_service snowflake_job_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/job_service snowflake_job_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1300,7 +1300,7 @@ export class JobService extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_job_service',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -1379,7 +1379,7 @@ export class JobService extends cdktf.TerraformResource {
   // external_access_integrations - computed: false, optional: true, required: false
   private _externalAccessIntegrations?: string[]; 
   public get externalAccessIntegrations() {
-    return cdktf.Fn.tolist(this.getListAttribute('external_access_integrations'));
+    return cdktn.Fn.tolist(this.getListAttribute('external_access_integrations'));
   }
   public set externalAccessIntegrations(value: string[]) {
     this._externalAccessIntegrations = value;
@@ -1520,14 +1520,14 @@ export class JobService extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      compute_pool: cdktf.stringToTerraform(this._computePool),
-      database: cdktf.stringToTerraform(this._database),
-      external_access_integrations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._externalAccessIntegrations),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      query_warehouse: cdktf.stringToTerraform(this._queryWarehouse),
-      schema: cdktf.stringToTerraform(this._schema),
+      comment: cdktn.stringToTerraform(this._comment),
+      compute_pool: cdktn.stringToTerraform(this._computePool),
+      database: cdktn.stringToTerraform(this._database),
+      external_access_integrations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._externalAccessIntegrations),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      query_warehouse: cdktn.stringToTerraform(this._queryWarehouse),
+      schema: cdktn.stringToTerraform(this._schema),
       from_specification: jobServiceFromSpecificationToTerraform(this._fromSpecification.internalValue),
       from_specification_template: jobServiceFromSpecificationTemplateToTerraform(this._fromSpecificationTemplate.internalValue),
       timeouts: jobServiceTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1537,49 +1537,49 @@ export class JobService extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       compute_pool: {
-        value: cdktf.stringToHclTerraform(this._computePool),
+        value: cdktn.stringToHclTerraform(this._computePool),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_access_integrations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._externalAccessIntegrations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._externalAccessIntegrations),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query_warehouse: {
-        value: cdktf.stringToHclTerraform(this._queryWarehouse),
+        value: cdktn.stringToHclTerraform(this._queryWarehouse),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

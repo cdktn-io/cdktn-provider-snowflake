@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ViewConfig extends cdktf.TerraformMetaArguments {
+export interface ViewConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies to enable or disable change tracking on the table. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#change_tracking View#change_tracking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#change_tracking View#change_tracking}
   */
   readonly changeTracking?: string;
   /**
   * Specifies a comment for the view.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#comment View#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#comment View#comment}
   */
   readonly comment?: string;
   /**
   * (Default: `false`) Retains the access permissions from the original view when a view is recreated using the OR REPLACE clause. This is used when the provider detects changes for fields that can not be changed by ALTER. This value will not have any effect during creating a new object with Terraform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#copy_grants View#copy_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#copy_grants View#copy_grants}
   */
-  readonly copyGrants?: boolean | cdktf.IResolvable;
+  readonly copyGrants?: boolean | cdktn.IResolvable;
   /**
   * The database in which to create the view. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#database View#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#database View#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#id View#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#id View#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,73 +46,73 @@ export interface ViewConfig extends cdktf.TerraformMetaArguments {
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the view can refer to itself using recursive syntax without necessarily using a CTE (common table expression). Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#is_recursive View#is_recursive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#is_recursive View#is_recursive}
   */
   readonly isRecursive?: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the view is secure. By design, the Snowflake's `SHOW VIEWS` command does not provide information about secure views (consult [view usage notes](https://docs.snowflake.com/en/sql-reference/sql/create-view#usage-notes)) which is essential to manage/import view with Terraform. Use the role owning the view while managing secure views. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#is_secure View#is_secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#is_secure View#is_secure}
   */
   readonly isSecure?: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the view persists only for the duration of the session that you created it in. A temporary view and all its contents are dropped at the end of the session. In context of this provider, it means that it's dropped after a Terraform operation. This results in a permanent plan with object creation. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#is_temporary View#is_temporary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#is_temporary View#is_temporary}
   */
   readonly isTemporary?: string;
   /**
   * Specifies the identifier for the view; must be unique for the schema in which the view is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#name View#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#name View#name}
   */
   readonly name: string;
   /**
   * The schema in which to create the view. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#schema View#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#schema View#schema}
   */
   readonly schema: string;
   /**
   * Specifies the query used to create the view. To mitigate permadiff on this field, the provider replaces blank characters with a space. This can lead to false positives in cases where a change in case or run of whitespace is semantically significant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#statement View#statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#statement View#statement}
   */
   readonly statement: string;
   /**
   * aggregation_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#aggregation_policy View#aggregation_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#aggregation_policy View#aggregation_policy}
   */
   readonly aggregationPolicy?: ViewAggregationPolicy;
   /**
   * column block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#column View#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#column View#column}
   */
-  readonly column?: ViewColumn[] | cdktf.IResolvable;
+  readonly column?: ViewColumn[] | cdktn.IResolvable;
   /**
   * data_metric_function block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#data_metric_function View#data_metric_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#data_metric_function View#data_metric_function}
   */
-  readonly dataMetricFunction?: ViewDataMetricFunction[] | cdktf.IResolvable;
+  readonly dataMetricFunction?: ViewDataMetricFunction[] | cdktn.IResolvable;
   /**
   * data_metric_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#data_metric_schedule View#data_metric_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#data_metric_schedule View#data_metric_schedule}
   */
   readonly dataMetricSchedule?: ViewDataMetricSchedule;
   /**
   * row_access_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#row_access_policy View#row_access_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#row_access_policy View#row_access_policy}
   */
   readonly rowAccessPolicy?: ViewRowAccessPolicy;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#timeouts View#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#timeouts View#timeouts}
   */
   readonly timeouts?: ViewTimeouts;
 }
@@ -120,8 +120,8 @@ export interface ViewDescribeOutput {
 }
 
 export function viewDescribeOutputToTerraform(struct?: ViewDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -130,8 +130,8 @@ export function viewDescribeOutputToTerraform(struct?: ViewDescribeOutput): any 
 
 
 export function viewDescribeOutputToHclTerraform(struct?: ViewDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -139,7 +139,7 @@ export function viewDescribeOutputToHclTerraform(struct?: ViewDescribeOutput): a
   return attrs;
 }
 
-export class ViewDescribeOutputOutputReference extends cdktf.ComplexObject {
+export class ViewDescribeOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -148,7 +148,7 @@ export class ViewDescribeOutputOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -228,14 +228,14 @@ export class ViewDescribeOutputOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ViewDescribeOutputList extends cdktf.ComplexList {
+export class ViewDescribeOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -250,8 +250,8 @@ export interface ViewShowOutput {
 }
 
 export function viewShowOutputToTerraform(struct?: ViewShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -260,8 +260,8 @@ export function viewShowOutputToTerraform(struct?: ViewShowOutput): any {
 
 
 export function viewShowOutputToHclTerraform(struct?: ViewShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -269,7 +269,7 @@ export function viewShowOutputToHclTerraform(struct?: ViewShowOutput): any {
   return attrs;
 }
 
-export class ViewShowOutputOutputReference extends cdktf.ComplexObject {
+export class ViewShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -278,7 +278,7 @@ export class ViewShowOutputOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -363,14 +363,14 @@ export class ViewShowOutputOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ViewShowOutputList extends cdktf.ComplexList {
+export class ViewShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -385,43 +385,43 @@ export interface ViewAggregationPolicy {
   /**
   * Defines which columns uniquely identify an entity within the view.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#entity_key View#entity_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#entity_key View#entity_key}
   */
   readonly entityKey?: string[];
   /**
   * Aggregation policy name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#policy_name View#policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#policy_name View#policy_name}
   */
   readonly policyName: string;
 }
 
 export function viewAggregationPolicyToTerraform(struct?: ViewAggregationPolicyOutputReference | ViewAggregationPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entity_key: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.entityKey),
-    policy_name: cdktf.stringToTerraform(struct!.policyName),
+    entity_key: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.entityKey),
+    policy_name: cdktn.stringToTerraform(struct!.policyName),
   }
 }
 
 
 export function viewAggregationPolicyToHclTerraform(struct?: ViewAggregationPolicyOutputReference | ViewAggregationPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entity_key: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.entityKey),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.entityKey),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     policy_name: {
-      value: cdktf.stringToHclTerraform(struct!.policyName),
+      value: cdktn.stringToHclTerraform(struct!.policyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -432,14 +432,14 @@ export function viewAggregationPolicyToHclTerraform(struct?: ViewAggregationPoli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ViewAggregationPolicyOutputReference extends cdktf.ComplexObject {
+export class ViewAggregationPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -473,7 +473,7 @@ export class ViewAggregationPolicyOutputReference extends cdktf.ComplexObject {
   // entity_key - computed: false, optional: true, required: false
   private _entityKey?: string[]; 
   public get entityKey() {
-    return cdktf.Fn.tolist(this.getListAttribute('entity_key'));
+    return cdktn.Fn.tolist(this.getListAttribute('entity_key'));
   }
   public set entityKey(value: string[]) {
     this._entityKey = value;
@@ -503,43 +503,43 @@ export interface ViewColumnMaskingPolicy {
   /**
   * Specifies the masking policy to set on a column. For more information about this resource, see [docs](./masking_policy).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#policy_name View#policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#policy_name View#policy_name}
   */
   readonly policyName: string;
   /**
   * Specifies the arguments to pass into the conditional masking policy SQL expression. The first column in the list specifies the column for the policy conditions to mask or tokenize the data and must match the column to which the masking policy is set. The additional columns specify the columns to evaluate to determine whether to mask or tokenize the data in each row of the query result when a query is made on the first column. If the USING clause is omitted, Snowflake treats the conditional masking policy as a normal masking policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#using View#using}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#using View#using}
   */
   readonly using?: string[];
 }
 
 export function viewColumnMaskingPolicyToTerraform(struct?: ViewColumnMaskingPolicyOutputReference | ViewColumnMaskingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    policy_name: cdktf.stringToTerraform(struct!.policyName),
-    using: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.using),
+    policy_name: cdktn.stringToTerraform(struct!.policyName),
+    using: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.using),
   }
 }
 
 
 export function viewColumnMaskingPolicyToHclTerraform(struct?: ViewColumnMaskingPolicyOutputReference | ViewColumnMaskingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     policy_name: {
-      value: cdktf.stringToHclTerraform(struct!.policyName),
+      value: cdktn.stringToHclTerraform(struct!.policyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     using: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.using),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.using),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -550,14 +550,14 @@ export function viewColumnMaskingPolicyToHclTerraform(struct?: ViewColumnMasking
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ViewColumnMaskingPolicyOutputReference extends cdktf.ComplexObject {
+export class ViewColumnMaskingPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -621,30 +621,30 @@ export interface ViewColumnProjectionPolicy {
   /**
   * Specifies the projection policy to set on a column.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#policy_name View#policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#policy_name View#policy_name}
   */
   readonly policyName: string;
 }
 
 export function viewColumnProjectionPolicyToTerraform(struct?: ViewColumnProjectionPolicyOutputReference | ViewColumnProjectionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    policy_name: cdktf.stringToTerraform(struct!.policyName),
+    policy_name: cdktn.stringToTerraform(struct!.policyName),
   }
 }
 
 
 export function viewColumnProjectionPolicyToHclTerraform(struct?: ViewColumnProjectionPolicyOutputReference | ViewColumnProjectionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     policy_name: {
-      value: cdktf.stringToHclTerraform(struct!.policyName),
+      value: cdktn.stringToHclTerraform(struct!.policyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -655,14 +655,14 @@ export function viewColumnProjectionPolicyToHclTerraform(struct?: ViewColumnProj
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ViewColumnProjectionPolicyOutputReference extends cdktf.ComplexObject {
+export class ViewColumnProjectionPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -704,57 +704,57 @@ export interface ViewColumn {
   /**
   * Specifies affected column name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#column_name View#column_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#column_name View#column_name}
   */
   readonly columnName: string;
   /**
   * Specifies a comment for the column.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#comment View#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#comment View#comment}
   */
   readonly comment?: string;
   /**
   * masking_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#masking_policy View#masking_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#masking_policy View#masking_policy}
   */
   readonly maskingPolicy?: ViewColumnMaskingPolicy;
   /**
   * projection_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#projection_policy View#projection_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#projection_policy View#projection_policy}
   */
   readonly projectionPolicy?: ViewColumnProjectionPolicy;
 }
 
-export function viewColumnToTerraform(struct?: ViewColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function viewColumnToTerraform(struct?: ViewColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column_name: cdktf.stringToTerraform(struct!.columnName),
-    comment: cdktf.stringToTerraform(struct!.comment),
+    column_name: cdktn.stringToTerraform(struct!.columnName),
+    comment: cdktn.stringToTerraform(struct!.comment),
     masking_policy: viewColumnMaskingPolicyToTerraform(struct!.maskingPolicy),
     projection_policy: viewColumnProjectionPolicyToTerraform(struct!.projectionPolicy),
   }
 }
 
 
-export function viewColumnToHclTerraform(struct?: ViewColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function viewColumnToHclTerraform(struct?: ViewColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column_name: {
-      value: cdktf.stringToHclTerraform(struct!.columnName),
+      value: cdktn.stringToHclTerraform(struct!.columnName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     comment: {
-      value: cdktf.stringToHclTerraform(struct!.comment),
+      value: cdktn.stringToHclTerraform(struct!.comment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -777,9 +777,9 @@ export function viewColumnToHclTerraform(struct?: ViewColumn | cdktf.IResolvable
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ViewColumnOutputReference extends cdktf.ComplexObject {
+export class ViewColumnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -787,11 +787,11 @@ export class ViewColumnOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ViewColumn | cdktf.IResolvable | undefined {
+  public get internalValue(): ViewColumn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -816,7 +816,7 @@ export class ViewColumnOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ViewColumn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ViewColumn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -825,7 +825,7 @@ export class ViewColumnOutputReference extends cdktf.ComplexObject {
       this._maskingPolicy.internalValue = undefined;
       this._projectionPolicy.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -901,15 +901,15 @@ export class ViewColumnOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ViewColumnList extends cdktf.ComplexList {
-  public internalValue? : ViewColumn[] | cdktf.IResolvable
+export class ViewColumnList extends cdktn.ComplexList {
+  public internalValue? : ViewColumn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -924,56 +924,56 @@ export interface ViewDataMetricFunction {
   /**
   * Identifier of the data metric function to add to the table or view or drop from the table or view. This function identifier must be provided without arguments in parenthesis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#function_name View#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#function_name View#function_name}
   */
   readonly functionName: string;
   /**
   * The table or view columns on which to associate the data metric function. The data types of the columns must match the data types of the columns specified in the data metric function definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#on View#on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#on View#on}
   */
   readonly on: string[];
   /**
   * The status of the metrics association. Valid values are: `STARTED` | `SUSPENDED`. When status of a data metric function is changed, it is being reassigned with `DROP DATA METRIC FUNCTION` and `ADD DATA METRIC FUNCTION`, and then its status is changed by `MODIFY DATA METRIC FUNCTION` 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#schedule_status View#schedule_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#schedule_status View#schedule_status}
   */
   readonly scheduleStatus: string;
 }
 
-export function viewDataMetricFunctionToTerraform(struct?: ViewDataMetricFunction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function viewDataMetricFunctionToTerraform(struct?: ViewDataMetricFunction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    function_name: cdktf.stringToTerraform(struct!.functionName),
-    on: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.on),
-    schedule_status: cdktf.stringToTerraform(struct!.scheduleStatus),
+    function_name: cdktn.stringToTerraform(struct!.functionName),
+    on: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.on),
+    schedule_status: cdktn.stringToTerraform(struct!.scheduleStatus),
   }
 }
 
 
-export function viewDataMetricFunctionToHclTerraform(struct?: ViewDataMetricFunction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function viewDataMetricFunctionToHclTerraform(struct?: ViewDataMetricFunction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     function_name: {
-      value: cdktf.stringToHclTerraform(struct!.functionName),
+      value: cdktn.stringToHclTerraform(struct!.functionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     on: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.on),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.on),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     schedule_status: {
-      value: cdktf.stringToHclTerraform(struct!.scheduleStatus),
+      value: cdktn.stringToHclTerraform(struct!.scheduleStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -984,9 +984,9 @@ export function viewDataMetricFunctionToHclTerraform(struct?: ViewDataMetricFunc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ViewDataMetricFunctionOutputReference extends cdktf.ComplexObject {
+export class ViewDataMetricFunctionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -994,11 +994,11 @@ export class ViewDataMetricFunctionOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ViewDataMetricFunction | cdktf.IResolvable | undefined {
+  public get internalValue(): ViewDataMetricFunction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1019,7 +1019,7 @@ export class ViewDataMetricFunctionOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ViewDataMetricFunction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ViewDataMetricFunction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1027,7 +1027,7 @@ export class ViewDataMetricFunctionOutputReference extends cdktf.ComplexObject {
       this._on = undefined;
       this._scheduleStatus = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1056,7 +1056,7 @@ export class ViewDataMetricFunctionOutputReference extends cdktf.ComplexObject {
   // on - computed: false, optional: false, required: true
   private _on?: string[]; 
   public get on() {
-    return cdktf.Fn.tolist(this.getListAttribute('on'));
+    return cdktn.Fn.tolist(this.getListAttribute('on'));
   }
   public set on(value: string[]) {
     this._on = value;
@@ -1080,15 +1080,15 @@ export class ViewDataMetricFunctionOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ViewDataMetricFunctionList extends cdktf.ComplexList {
-  public internalValue? : ViewDataMetricFunction[] | cdktf.IResolvable
+export class ViewDataMetricFunctionList extends cdktn.ComplexList {
+  public internalValue? : ViewDataMetricFunction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1103,43 +1103,43 @@ export interface ViewDataMetricSchedule {
   /**
   * Specifies an interval (in minutes) of wait time inserted between runs of the data metric function. Conflicts with `using_cron`. Valid values are: `5` | `15` | `30` | `60` | `720` | `1440`. Due to Snowflake limitations, changes in this field are not managed by the provider. Please consider using [taint](https://developer.hashicorp.com/terraform/cli/commands/taint) command, `using_cron` field, or [replace_triggered_by](https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle#replace_triggered_by) metadata argument.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#minutes View#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#minutes View#minutes}
   */
   readonly minutes?: number;
   /**
   * Specifies a cron expression and time zone for periodically running the data metric function. Supports a subset of standard cron utility syntax. Conflicts with `minutes`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#using_cron View#using_cron}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#using_cron View#using_cron}
   */
   readonly usingCron?: string;
 }
 
 export function viewDataMetricScheduleToTerraform(struct?: ViewDataMetricScheduleOutputReference | ViewDataMetricSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    minutes: cdktf.numberToTerraform(struct!.minutes),
-    using_cron: cdktf.stringToTerraform(struct!.usingCron),
+    minutes: cdktn.numberToTerraform(struct!.minutes),
+    using_cron: cdktn.stringToTerraform(struct!.usingCron),
   }
 }
 
 
 export function viewDataMetricScheduleToHclTerraform(struct?: ViewDataMetricScheduleOutputReference | ViewDataMetricSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     minutes: {
-      value: cdktf.numberToHclTerraform(struct!.minutes),
+      value: cdktn.numberToHclTerraform(struct!.minutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     using_cron: {
-      value: cdktf.stringToHclTerraform(struct!.usingCron),
+      value: cdktn.stringToHclTerraform(struct!.usingCron),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1150,14 +1150,14 @@ export function viewDataMetricScheduleToHclTerraform(struct?: ViewDataMetricSche
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ViewDataMetricScheduleOutputReference extends cdktf.ComplexObject {
+export class ViewDataMetricScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1224,43 +1224,43 @@ export interface ViewRowAccessPolicy {
   /**
   * Defines which columns are affected by the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#on View#on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#on View#on}
   */
   readonly on: string[];
   /**
   * Row access policy name. For more information about this resource, see [docs](./row_access_policy).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#policy_name View#policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#policy_name View#policy_name}
   */
   readonly policyName: string;
 }
 
 export function viewRowAccessPolicyToTerraform(struct?: ViewRowAccessPolicyOutputReference | ViewRowAccessPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    on: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.on),
-    policy_name: cdktf.stringToTerraform(struct!.policyName),
+    on: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.on),
+    policy_name: cdktn.stringToTerraform(struct!.policyName),
   }
 }
 
 
 export function viewRowAccessPolicyToHclTerraform(struct?: ViewRowAccessPolicyOutputReference | ViewRowAccessPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     on: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.on),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.on),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     policy_name: {
-      value: cdktf.stringToHclTerraform(struct!.policyName),
+      value: cdktn.stringToHclTerraform(struct!.policyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1271,14 +1271,14 @@ export function viewRowAccessPolicyToHclTerraform(struct?: ViewRowAccessPolicyOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ViewRowAccessPolicyOutputReference extends cdktf.ComplexObject {
+export class ViewRowAccessPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1312,7 +1312,7 @@ export class ViewRowAccessPolicyOutputReference extends cdktf.ComplexObject {
   // on - computed: false, optional: false, required: true
   private _on?: string[]; 
   public get on() {
-    return cdktf.Fn.tolist(this.getListAttribute('on'));
+    return cdktn.Fn.tolist(this.getListAttribute('on'));
   }
   public set on(value: string[]) {
     this._on = value;
@@ -1337,63 +1337,63 @@ export class ViewRowAccessPolicyOutputReference extends cdktf.ComplexObject {
 }
 export interface ViewTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#create View#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#create View#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#delete View#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#delete View#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#read View#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#read View#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#update View#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#update View#update}
   */
   readonly update?: string;
 }
 
-export function viewTimeoutsToTerraform(struct?: ViewTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function viewTimeoutsToTerraform(struct?: ViewTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function viewTimeoutsToHclTerraform(struct?: ViewTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function viewTimeoutsToHclTerraform(struct?: ViewTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1404,19 +1404,19 @@ export function viewTimeoutsToHclTerraform(struct?: ViewTimeouts | cdktf.IResolv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ViewTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ViewTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ViewTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ViewTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1441,7 +1441,7 @@ export class ViewTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ViewTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ViewTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1450,7 +1450,7 @@ export class ViewTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1530,9 +1530,9 @@ export class ViewTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view snowflake_view}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view snowflake_view}
 */
-export class View extends cdktf.TerraformResource {
+export class View extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1543,14 +1543,14 @@ export class View extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a View resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a View resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the View to import
-  * @param importFromId The id of the existing View that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing View that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the View to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_view", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_view", importId: importFromId, provider });
       }
 
   // ===========
@@ -1558,7 +1558,7 @@ export class View extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/view snowflake_view} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/view snowflake_view} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1569,7 +1569,7 @@ export class View extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_view',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -1636,11 +1636,11 @@ export class View extends cdktf.TerraformResource {
   }
 
   // copy_grants - computed: false, optional: true, required: false
-  private _copyGrants?: boolean | cdktf.IResolvable; 
+  private _copyGrants?: boolean | cdktn.IResolvable; 
   public get copyGrants() {
     return this.getBooleanAttribute('copy_grants');
   }
-  public set copyGrants(value: boolean | cdktf.IResolvable) {
+  public set copyGrants(value: boolean | cdktn.IResolvable) {
     this._copyGrants = value;
   }
   public resetCopyGrants() {
@@ -1805,7 +1805,7 @@ export class View extends cdktf.TerraformResource {
   public get column() {
     return this._column;
   }
-  public putColumn(value: ViewColumn[] | cdktf.IResolvable) {
+  public putColumn(value: ViewColumn[] | cdktn.IResolvable) {
     this._column.internalValue = value;
   }
   public resetColumn() {
@@ -1821,7 +1821,7 @@ export class View extends cdktf.TerraformResource {
   public get dataMetricFunction() {
     return this._dataMetricFunction;
   }
-  public putDataMetricFunction(value: ViewDataMetricFunction[] | cdktf.IResolvable) {
+  public putDataMetricFunction(value: ViewDataMetricFunction[] | cdktn.IResolvable) {
     this._dataMetricFunction.internalValue = value;
   }
   public resetDataMetricFunction() {
@@ -1886,20 +1886,20 @@ export class View extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      change_tracking: cdktf.stringToTerraform(this._changeTracking),
-      comment: cdktf.stringToTerraform(this._comment),
-      copy_grants: cdktf.booleanToTerraform(this._copyGrants),
-      database: cdktf.stringToTerraform(this._database),
-      id: cdktf.stringToTerraform(this._id),
-      is_recursive: cdktf.stringToTerraform(this._isRecursive),
-      is_secure: cdktf.stringToTerraform(this._isSecure),
-      is_temporary: cdktf.stringToTerraform(this._isTemporary),
-      name: cdktf.stringToTerraform(this._name),
-      schema: cdktf.stringToTerraform(this._schema),
-      statement: cdktf.stringToTerraform(this._statement),
+      change_tracking: cdktn.stringToTerraform(this._changeTracking),
+      comment: cdktn.stringToTerraform(this._comment),
+      copy_grants: cdktn.booleanToTerraform(this._copyGrants),
+      database: cdktn.stringToTerraform(this._database),
+      id: cdktn.stringToTerraform(this._id),
+      is_recursive: cdktn.stringToTerraform(this._isRecursive),
+      is_secure: cdktn.stringToTerraform(this._isSecure),
+      is_temporary: cdktn.stringToTerraform(this._isTemporary),
+      name: cdktn.stringToTerraform(this._name),
+      schema: cdktn.stringToTerraform(this._schema),
+      statement: cdktn.stringToTerraform(this._statement),
       aggregation_policy: viewAggregationPolicyToTerraform(this._aggregationPolicy.internalValue),
-      column: cdktf.listMapper(viewColumnToTerraform, true)(this._column.internalValue),
-      data_metric_function: cdktf.listMapper(viewDataMetricFunctionToTerraform, true)(this._dataMetricFunction.internalValue),
+      column: cdktn.listMapper(viewColumnToTerraform, true)(this._column.internalValue),
+      data_metric_function: cdktn.listMapper(viewDataMetricFunctionToTerraform, true)(this._dataMetricFunction.internalValue),
       data_metric_schedule: viewDataMetricScheduleToTerraform(this._dataMetricSchedule.internalValue),
       row_access_policy: viewRowAccessPolicyToTerraform(this._rowAccessPolicy.internalValue),
       timeouts: viewTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1909,67 +1909,67 @@ export class View extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       change_tracking: {
-        value: cdktf.stringToHclTerraform(this._changeTracking),
+        value: cdktn.stringToHclTerraform(this._changeTracking),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       copy_grants: {
-        value: cdktf.booleanToHclTerraform(this._copyGrants),
+        value: cdktn.booleanToHclTerraform(this._copyGrants),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_recursive: {
-        value: cdktf.stringToHclTerraform(this._isRecursive),
+        value: cdktn.stringToHclTerraform(this._isRecursive),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_secure: {
-        value: cdktf.stringToHclTerraform(this._isSecure),
+        value: cdktn.stringToHclTerraform(this._isSecure),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_temporary: {
-        value: cdktf.stringToHclTerraform(this._isTemporary),
+        value: cdktn.stringToHclTerraform(this._isTemporary),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       statement: {
-        value: cdktf.stringToHclTerraform(this._statement),
+        value: cdktn.stringToHclTerraform(this._statement),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1981,13 +1981,13 @@ export class View extends cdktf.TerraformResource {
         storageClassType: "ViewAggregationPolicyList",
       },
       column: {
-        value: cdktf.listMapperHcl(viewColumnToHclTerraform, true)(this._column.internalValue),
+        value: cdktn.listMapperHcl(viewColumnToHclTerraform, true)(this._column.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ViewColumnList",
       },
       data_metric_function: {
-        value: cdktf.listMapperHcl(viewDataMetricFunctionToHclTerraform, true)(this._dataMetricFunction.internalValue),
+        value: cdktn.listMapperHcl(viewDataMetricFunctionToHclTerraform, true)(this._dataMetricFunction.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ViewDataMetricFunctionList",

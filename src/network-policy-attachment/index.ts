@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/network_policy_attachment
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_policy_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkPolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkPolicyAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/network_policy_attachment#id NetworkPolicyAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_policy_attachment#id NetworkPolicyAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,87 +22,87 @@ export interface NetworkPolicyAttachmentConfig extends cdktf.TerraformMetaArgume
   /**
   * Specifies the identifier for the network policy; must be unique for the account in which the network policy is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/network_policy_attachment#network_policy_name NetworkPolicyAttachment#network_policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_policy_attachment#network_policy_name NetworkPolicyAttachment#network_policy_name}
   */
   readonly networkPolicyName: string;
   /**
   * (Default: `false`) Specifies whether the network policy should be applied globally to your Snowflake account<br><br>**Note:** The Snowflake user running `terraform apply` must be on an IP address allowed by the network policy to set that policy globally on the Snowflake account.<br><br>Additionally, a Snowflake account can only have one network policy set globally at any given time. This resource does not enforce one-policy-per-account, it is the user's responsibility to enforce this. If multiple network policy resources have `set_for_account: true`, the final policy set on the account will be non-deterministic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/network_policy_attachment#set_for_account NetworkPolicyAttachment#set_for_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_policy_attachment#set_for_account NetworkPolicyAttachment#set_for_account}
   */
-  readonly setForAccount?: boolean | cdktf.IResolvable;
+  readonly setForAccount?: boolean | cdktn.IResolvable;
   /**
   * Specifies which users the network policy should be attached to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/network_policy_attachment#users NetworkPolicyAttachment#users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_policy_attachment#users NetworkPolicyAttachment#users}
   */
   readonly users?: string[];
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/network_policy_attachment#timeouts NetworkPolicyAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_policy_attachment#timeouts NetworkPolicyAttachment#timeouts}
   */
   readonly timeouts?: NetworkPolicyAttachmentTimeouts;
 }
 export interface NetworkPolicyAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/network_policy_attachment#create NetworkPolicyAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_policy_attachment#create NetworkPolicyAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/network_policy_attachment#delete NetworkPolicyAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_policy_attachment#delete NetworkPolicyAttachment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/network_policy_attachment#read NetworkPolicyAttachment#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_policy_attachment#read NetworkPolicyAttachment#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/network_policy_attachment#update NetworkPolicyAttachment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_policy_attachment#update NetworkPolicyAttachment#update}
   */
   readonly update?: string;
 }
 
-export function networkPolicyAttachmentTimeoutsToTerraform(struct?: NetworkPolicyAttachmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicyAttachmentTimeoutsToTerraform(struct?: NetworkPolicyAttachmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkPolicyAttachmentTimeoutsToHclTerraform(struct?: NetworkPolicyAttachmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkPolicyAttachmentTimeoutsToHclTerraform(struct?: NetworkPolicyAttachmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -113,19 +113,19 @@ export function networkPolicyAttachmentTimeoutsToHclTerraform(struct?: NetworkPo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkPolicyAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkPolicyAttachmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkPolicyAttachmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkPolicyAttachmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -150,7 +150,7 @@ export class NetworkPolicyAttachmentTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkPolicyAttachmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkPolicyAttachmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -159,7 +159,7 @@ export class NetworkPolicyAttachmentTimeoutsOutputReference extends cdktf.Comple
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -239,9 +239,9 @@ export class NetworkPolicyAttachmentTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/network_policy_attachment snowflake_network_policy_attachment}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_policy_attachment snowflake_network_policy_attachment}
 */
-export class NetworkPolicyAttachment extends cdktf.TerraformResource {
+export class NetworkPolicyAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -252,14 +252,14 @@ export class NetworkPolicyAttachment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkPolicyAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkPolicyAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkPolicyAttachment to import
-  * @param importFromId The id of the existing NetworkPolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/network_policy_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkPolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_policy_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkPolicyAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_network_policy_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_network_policy_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -267,7 +267,7 @@ export class NetworkPolicyAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/network_policy_attachment snowflake_network_policy_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/network_policy_attachment snowflake_network_policy_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -278,7 +278,7 @@ export class NetworkPolicyAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_network_policy_attachment',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -330,11 +330,11 @@ export class NetworkPolicyAttachment extends cdktf.TerraformResource {
   }
 
   // set_for_account - computed: false, optional: true, required: false
-  private _setForAccount?: boolean | cdktf.IResolvable; 
+  private _setForAccount?: boolean | cdktn.IResolvable; 
   public get setForAccount() {
     return this.getBooleanAttribute('set_for_account');
   }
-  public set setForAccount(value: boolean | cdktf.IResolvable) {
+  public set setForAccount(value: boolean | cdktn.IResolvable) {
     this._setForAccount = value;
   }
   public resetSetForAccount() {
@@ -348,7 +348,7 @@ export class NetworkPolicyAttachment extends cdktf.TerraformResource {
   // users - computed: false, optional: true, required: false
   private _users?: string[]; 
   public get users() {
-    return cdktf.Fn.tolist(this.getListAttribute('users'));
+    return cdktn.Fn.tolist(this.getListAttribute('users'));
   }
   public set users(value: string[]) {
     this._users = value;
@@ -383,10 +383,10 @@ export class NetworkPolicyAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      network_policy_name: cdktf.stringToTerraform(this._networkPolicyName),
-      set_for_account: cdktf.booleanToTerraform(this._setForAccount),
-      users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._users),
+      id: cdktn.stringToTerraform(this._id),
+      network_policy_name: cdktn.stringToTerraform(this._networkPolicyName),
+      set_for_account: cdktn.booleanToTerraform(this._setForAccount),
+      users: cdktn.listMapper(cdktn.stringToTerraform, false)(this._users),
       timeouts: networkPolicyAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -394,25 +394,25 @@ export class NetworkPolicyAttachment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_policy_name: {
-        value: cdktf.stringToHclTerraform(this._networkPolicyName),
+        value: cdktn.stringToHclTerraform(this._networkPolicyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       set_for_account: {
-        value: cdktf.booleanToHclTerraform(this._setForAccount),
+        value: cdktn.booleanToHclTerraform(this._setForAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       users: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._users),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._users),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

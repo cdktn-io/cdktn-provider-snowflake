@@ -1,55 +1,55 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ExternalTableConfig extends cdktf.TerraformMetaArguments {
+export interface ExternalTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Default: `true`) Specifies whether to automatically refresh the external table metadata once, immediately after the external table is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#auto_refresh ExternalTable#auto_refresh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#auto_refresh ExternalTable#auto_refresh}
   */
-  readonly autoRefresh?: boolean | cdktf.IResolvable;
+  readonly autoRefresh?: boolean | cdktn.IResolvable;
   /**
   * Specifies the aws sns topic for the external table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#aws_sns_topic ExternalTable#aws_sns_topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#aws_sns_topic ExternalTable#aws_sns_topic}
   */
   readonly awsSnsTopic?: string;
   /**
   * Specifies a comment for the external table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#comment ExternalTable#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#comment ExternalTable#comment}
   */
   readonly comment?: string;
   /**
   * (Default: `false`) Specifies to retain the access permissions from the original table when an external table is recreated using the CREATE OR REPLACE TABLE variant
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#copy_grants ExternalTable#copy_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#copy_grants ExternalTable#copy_grants}
   */
-  readonly copyGrants?: boolean | cdktf.IResolvable;
+  readonly copyGrants?: boolean | cdktn.IResolvable;
   /**
   * The database in which to create the external table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#database ExternalTable#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#database ExternalTable#database}
   */
   readonly database: string;
   /**
   * Specifies the file format for the external table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#file_format ExternalTable#file_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#file_format ExternalTable#file_format}
   */
   readonly fileFormat: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#id ExternalTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#id ExternalTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,61 +58,61 @@ export interface ExternalTableConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies a location for the external table, using its FQDN. You can hardcode it (`"@MYDB.MYSCHEMA.MYSTAGE"`), or populate dynamically (`"@${snowflake_stage.mystage.fully_qualified_name}"`)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#location ExternalTable#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#location ExternalTable#location}
   */
   readonly location: string;
   /**
   * Specifies the identifier for the external table; must be unique for the database and schema in which the externalTable is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#name ExternalTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#name ExternalTable#name}
   */
   readonly name: string;
   /**
   * Specifies any partition columns to evaluate for the external table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#partition_by ExternalTable#partition_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#partition_by ExternalTable#partition_by}
   */
   readonly partitionBy?: string[];
   /**
   * Specifies the file names and/or paths on the external stage to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#pattern ExternalTable#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#pattern ExternalTable#pattern}
   */
   readonly pattern?: string;
   /**
   * (Default: `true`) Specifies weather to refresh when an external table is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#refresh_on_create ExternalTable#refresh_on_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#refresh_on_create ExternalTable#refresh_on_create}
   */
-  readonly refreshOnCreate?: boolean | cdktf.IResolvable;
+  readonly refreshOnCreate?: boolean | cdktn.IResolvable;
   /**
   * The schema in which to create the external table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#schema ExternalTable#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#schema ExternalTable#schema}
   */
   readonly schema: string;
   /**
   * Identifies the external table table type. For now, only "delta" for Delta Lake table format is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#table_format ExternalTable#table_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#table_format ExternalTable#table_format}
   */
   readonly tableFormat?: string;
   /**
   * column block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#column ExternalTable#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#column ExternalTable#column}
   */
-  readonly column: ExternalTableColumn[] | cdktf.IResolvable;
+  readonly column: ExternalTableColumn[] | cdktn.IResolvable;
   /**
   * tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#tag ExternalTable#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#tag ExternalTable#tag}
   */
-  readonly tag?: ExternalTableTag[] | cdktf.IResolvable;
+  readonly tag?: ExternalTableTag[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#timeouts ExternalTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#timeouts ExternalTable#timeouts}
   */
   readonly timeouts?: ExternalTableTimeouts;
 }
@@ -120,56 +120,56 @@ export interface ExternalTableColumn {
   /**
   * String that specifies the expression for the column. When queried, the column returns results derived from this expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#as ExternalTable#as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#as ExternalTable#as}
   */
   readonly as: string;
   /**
   * Column name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#name ExternalTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#name ExternalTable#name}
   */
   readonly name: string;
   /**
   * Column type, e.g. VARIANT
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#type ExternalTable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#type ExternalTable#type}
   */
   readonly type: string;
 }
 
-export function externalTableColumnToTerraform(struct?: ExternalTableColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function externalTableColumnToTerraform(struct?: ExternalTableColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    as: cdktf.stringToTerraform(struct!.as),
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
+    as: cdktn.stringToTerraform(struct!.as),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function externalTableColumnToHclTerraform(struct?: ExternalTableColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function externalTableColumnToHclTerraform(struct?: ExternalTableColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     as: {
-      value: cdktf.stringToHclTerraform(struct!.as),
+      value: cdktn.stringToHclTerraform(struct!.as),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -180,9 +180,9 @@ export function externalTableColumnToHclTerraform(struct?: ExternalTableColumn |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ExternalTableColumnOutputReference extends cdktf.ComplexObject {
+export class ExternalTableColumnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -190,11 +190,11 @@ export class ExternalTableColumnOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ExternalTableColumn | cdktf.IResolvable | undefined {
+  public get internalValue(): ExternalTableColumn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -215,7 +215,7 @@ export class ExternalTableColumnOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ExternalTableColumn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ExternalTableColumn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -223,7 +223,7 @@ export class ExternalTableColumnOutputReference extends cdktf.ComplexObject {
       this._name = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -276,15 +276,15 @@ export class ExternalTableColumnOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ExternalTableColumnList extends cdktf.ComplexList {
-  public internalValue? : ExternalTableColumn[] | cdktf.IResolvable
+export class ExternalTableColumnList extends cdktn.ComplexList {
+  public internalValue? : ExternalTableColumn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -299,69 +299,69 @@ export interface ExternalTableTag {
   /**
   * Name of the database that the tag was created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#database ExternalTable#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#database ExternalTable#database}
   */
   readonly database?: string;
   /**
   * Tag name, e.g. department.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#name ExternalTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#name ExternalTable#name}
   */
   readonly name: string;
   /**
   * Name of the schema that the tag was created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#schema ExternalTable#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#schema ExternalTable#schema}
   */
   readonly schema?: string;
   /**
   * Tag value, e.g. marketing_info.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#value ExternalTable#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#value ExternalTable#value}
   */
   readonly value: string;
 }
 
-export function externalTableTagToTerraform(struct?: ExternalTableTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function externalTableTagToTerraform(struct?: ExternalTableTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database: cdktf.stringToTerraform(struct!.database),
-    name: cdktf.stringToTerraform(struct!.name),
-    schema: cdktf.stringToTerraform(struct!.schema),
-    value: cdktf.stringToTerraform(struct!.value),
+    database: cdktn.stringToTerraform(struct!.database),
+    name: cdktn.stringToTerraform(struct!.name),
+    schema: cdktn.stringToTerraform(struct!.schema),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function externalTableTagToHclTerraform(struct?: ExternalTableTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function externalTableTagToHclTerraform(struct?: ExternalTableTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schema: {
-      value: cdktf.stringToHclTerraform(struct!.schema),
+      value: cdktn.stringToHclTerraform(struct!.schema),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -372,9 +372,9 @@ export function externalTableTagToHclTerraform(struct?: ExternalTableTag | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ExternalTableTagOutputReference extends cdktf.ComplexObject {
+export class ExternalTableTagOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -382,11 +382,11 @@ export class ExternalTableTagOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ExternalTableTag | cdktf.IResolvable | undefined {
+  public get internalValue(): ExternalTableTag | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -411,7 +411,7 @@ export class ExternalTableTagOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ExternalTableTag | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ExternalTableTag | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -420,7 +420,7 @@ export class ExternalTableTagOutputReference extends cdktf.ComplexObject {
       this._schema = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -493,15 +493,15 @@ export class ExternalTableTagOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ExternalTableTagList extends cdktf.ComplexList {
-  public internalValue? : ExternalTableTag[] | cdktf.IResolvable
+export class ExternalTableTagList extends cdktn.ComplexList {
+  public internalValue? : ExternalTableTag[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -514,63 +514,63 @@ export class ExternalTableTagList extends cdktf.ComplexList {
 }
 export interface ExternalTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#create ExternalTable#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#create ExternalTable#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#delete ExternalTable#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#delete ExternalTable#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#read ExternalTable#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#read ExternalTable#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#update ExternalTable#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#update ExternalTable#update}
   */
   readonly update?: string;
 }
 
-export function externalTableTimeoutsToTerraform(struct?: ExternalTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function externalTableTimeoutsToTerraform(struct?: ExternalTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function externalTableTimeoutsToHclTerraform(struct?: ExternalTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function externalTableTimeoutsToHclTerraform(struct?: ExternalTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -581,19 +581,19 @@ export function externalTableTimeoutsToHclTerraform(struct?: ExternalTableTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ExternalTableTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ExternalTableTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ExternalTableTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ExternalTableTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -618,7 +618,7 @@ export class ExternalTableTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ExternalTableTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ExternalTableTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -627,7 +627,7 @@ export class ExternalTableTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -707,9 +707,9 @@ export class ExternalTableTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table snowflake_external_table}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table snowflake_external_table}
 */
-export class ExternalTable extends cdktf.TerraformResource {
+export class ExternalTable extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -720,14 +720,14 @@ export class ExternalTable extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ExternalTable resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ExternalTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ExternalTable to import
-  * @param importFromId The id of the existing ExternalTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ExternalTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ExternalTable to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_external_table", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_external_table", importId: importFromId, provider });
       }
 
   // ===========
@@ -735,7 +735,7 @@ export class ExternalTable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table snowflake_external_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table snowflake_external_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -746,7 +746,7 @@ export class ExternalTable extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_external_table',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -781,11 +781,11 @@ export class ExternalTable extends cdktf.TerraformResource {
   // ==========
 
   // auto_refresh - computed: false, optional: true, required: false
-  private _autoRefresh?: boolean | cdktf.IResolvable; 
+  private _autoRefresh?: boolean | cdktn.IResolvable; 
   public get autoRefresh() {
     return this.getBooleanAttribute('auto_refresh');
   }
-  public set autoRefresh(value: boolean | cdktf.IResolvable) {
+  public set autoRefresh(value: boolean | cdktn.IResolvable) {
     this._autoRefresh = value;
   }
   public resetAutoRefresh() {
@@ -829,11 +829,11 @@ export class ExternalTable extends cdktf.TerraformResource {
   }
 
   // copy_grants - computed: false, optional: true, required: false
-  private _copyGrants?: boolean | cdktf.IResolvable; 
+  private _copyGrants?: boolean | cdktn.IResolvable; 
   public get copyGrants() {
     return this.getBooleanAttribute('copy_grants');
   }
-  public set copyGrants(value: boolean | cdktf.IResolvable) {
+  public set copyGrants(value: boolean | cdktn.IResolvable) {
     this._copyGrants = value;
   }
   public resetCopyGrants() {
@@ -955,11 +955,11 @@ export class ExternalTable extends cdktf.TerraformResource {
   }
 
   // refresh_on_create - computed: false, optional: true, required: false
-  private _refreshOnCreate?: boolean | cdktf.IResolvable; 
+  private _refreshOnCreate?: boolean | cdktn.IResolvable; 
   public get refreshOnCreate() {
     return this.getBooleanAttribute('refresh_on_create');
   }
-  public set refreshOnCreate(value: boolean | cdktf.IResolvable) {
+  public set refreshOnCreate(value: boolean | cdktn.IResolvable) {
     this._refreshOnCreate = value;
   }
   public resetRefreshOnCreate() {
@@ -1004,7 +1004,7 @@ export class ExternalTable extends cdktf.TerraformResource {
   public get column() {
     return this._column;
   }
-  public putColumn(value: ExternalTableColumn[] | cdktf.IResolvable) {
+  public putColumn(value: ExternalTableColumn[] | cdktn.IResolvable) {
     this._column.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1017,7 +1017,7 @@ export class ExternalTable extends cdktf.TerraformResource {
   public get tag() {
     return this._tag;
   }
-  public putTag(value: ExternalTableTag[] | cdktf.IResolvable) {
+  public putTag(value: ExternalTableTag[] | cdktn.IResolvable) {
     this._tag.internalValue = value;
   }
   public resetTag() {
@@ -1050,22 +1050,22 @@ export class ExternalTable extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_refresh: cdktf.booleanToTerraform(this._autoRefresh),
-      aws_sns_topic: cdktf.stringToTerraform(this._awsSnsTopic),
-      comment: cdktf.stringToTerraform(this._comment),
-      copy_grants: cdktf.booleanToTerraform(this._copyGrants),
-      database: cdktf.stringToTerraform(this._database),
-      file_format: cdktf.stringToTerraform(this._fileFormat),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      partition_by: cdktf.listMapper(cdktf.stringToTerraform, false)(this._partitionBy),
-      pattern: cdktf.stringToTerraform(this._pattern),
-      refresh_on_create: cdktf.booleanToTerraform(this._refreshOnCreate),
-      schema: cdktf.stringToTerraform(this._schema),
-      table_format: cdktf.stringToTerraform(this._tableFormat),
-      column: cdktf.listMapper(externalTableColumnToTerraform, true)(this._column.internalValue),
-      tag: cdktf.listMapper(externalTableTagToTerraform, true)(this._tag.internalValue),
+      auto_refresh: cdktn.booleanToTerraform(this._autoRefresh),
+      aws_sns_topic: cdktn.stringToTerraform(this._awsSnsTopic),
+      comment: cdktn.stringToTerraform(this._comment),
+      copy_grants: cdktn.booleanToTerraform(this._copyGrants),
+      database: cdktn.stringToTerraform(this._database),
+      file_format: cdktn.stringToTerraform(this._fileFormat),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      partition_by: cdktn.listMapper(cdktn.stringToTerraform, false)(this._partitionBy),
+      pattern: cdktn.stringToTerraform(this._pattern),
+      refresh_on_create: cdktn.booleanToTerraform(this._refreshOnCreate),
+      schema: cdktn.stringToTerraform(this._schema),
+      table_format: cdktn.stringToTerraform(this._tableFormat),
+      column: cdktn.listMapper(externalTableColumnToTerraform, true)(this._column.internalValue),
+      tag: cdktn.listMapper(externalTableTagToTerraform, true)(this._tag.internalValue),
       timeouts: externalTableTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1073,97 +1073,97 @@ export class ExternalTable extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_refresh: {
-        value: cdktf.booleanToHclTerraform(this._autoRefresh),
+        value: cdktn.booleanToHclTerraform(this._autoRefresh),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       aws_sns_topic: {
-        value: cdktf.stringToHclTerraform(this._awsSnsTopic),
+        value: cdktn.stringToHclTerraform(this._awsSnsTopic),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       copy_grants: {
-        value: cdktf.booleanToHclTerraform(this._copyGrants),
+        value: cdktn.booleanToHclTerraform(this._copyGrants),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       file_format: {
-        value: cdktf.stringToHclTerraform(this._fileFormat),
+        value: cdktn.stringToHclTerraform(this._fileFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       partition_by: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._partitionBy),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._partitionBy),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       pattern: {
-        value: cdktf.stringToHclTerraform(this._pattern),
+        value: cdktn.stringToHclTerraform(this._pattern),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       refresh_on_create: {
-        value: cdktf.booleanToHclTerraform(this._refreshOnCreate),
+        value: cdktn.booleanToHclTerraform(this._refreshOnCreate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table_format: {
-        value: cdktf.stringToHclTerraform(this._tableFormat),
+        value: cdktn.stringToHclTerraform(this._tableFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       column: {
-        value: cdktf.listMapperHcl(externalTableColumnToHclTerraform, true)(this._column.internalValue),
+        value: cdktn.listMapperHcl(externalTableColumnToHclTerraform, true)(this._column.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ExternalTableColumnList",
       },
       tag: {
-        value: cdktf.listMapperHcl(externalTableTagToHclTerraform, true)(this._tag.internalValue),
+        value: cdktn.listMapperHcl(externalTableTagToHclTerraform, true)(this._tag.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ExternalTableTagList",

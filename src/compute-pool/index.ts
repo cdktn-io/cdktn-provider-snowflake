@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputePoolConfig extends cdktf.TerraformMetaArguments {
+export interface ComputePoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically resume a compute pool when a service or job is submitted to it. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool#auto_resume ComputePool#auto_resume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool#auto_resume ComputePool#auto_resume}
   */
   readonly autoResume?: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Number of seconds of inactivity after which you want Snowflake to automatically suspend the compute pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool#auto_suspend_secs ComputePool#auto_suspend_secs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool#auto_suspend_secs ComputePool#auto_suspend_secs}
   */
   readonly autoSuspendSecs?: number;
   /**
   * Specifies a comment for the compute pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool#comment ComputePool#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool#comment ComputePool#comment}
   */
   readonly comment?: string;
   /**
   * Specifies the Snowflake Native App name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool#for_application ComputePool#for_application}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool#for_application ComputePool#for_application}
   */
   readonly forApplication?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool#id ComputePool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool#id ComputePool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,37 +46,37 @@ export interface ComputePoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether the compute pool is created initially in the suspended state. This field is used only when creating a compute pool. Changes on this field are ignored after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool#initially_suspended ComputePool#initially_suspended}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool#initially_suspended ComputePool#initially_suspended}
   */
   readonly initiallySuspended?: string;
   /**
   * Identifies the type of machine you want to provision for the nodes in the compute pool. Valid values are (case-insensitive): `CPU_X64_XS` | `CPU_X64_S` | `CPU_X64_M` | `CPU_X64_SL` | `CPU_X64_L` | `HIGHMEM_X64_S` | `HIGHMEM_X64_M` | `HIGHMEM_X64_L` | `HIGHMEM_X64_SL` | `GPU_NV_S` | `GPU_NV_M` | `GPU_NV_L` | `GPU_NV_XS` | `GPU_NV_SM` | `GPU_NV_2M` | `GPU_NV_3M` | `GPU_NV_SL` | `GPU_GCP_NV_L4_1_24G` | `GPU_GCP_NV_L4_4_24G` | `GPU_GCP_NV_A100_8_40G`. Not all instance families are supported in all regions. Run `SHOW COMPUTE POOL INSTANCE FAMILIES` to see the list of supported instance families in your region.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool#instance_family ComputePool#instance_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool#instance_family ComputePool#instance_family}
   */
   readonly instanceFamily: string;
   /**
   * Specifies the maximum number of nodes for the compute pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool#max_nodes ComputePool#max_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool#max_nodes ComputePool#max_nodes}
   */
   readonly maxNodes: number;
   /**
   * Specifies the minimum number of nodes for the compute pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool#min_nodes ComputePool#min_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool#min_nodes ComputePool#min_nodes}
   */
   readonly minNodes: number;
   /**
   * Specifies the identifier for the compute pool; must be unique for the account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool#name ComputePool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool#name ComputePool#name}
   */
   readonly name: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool#timeouts ComputePool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool#timeouts ComputePool#timeouts}
   */
   readonly timeouts?: ComputePoolTimeouts;
 }
@@ -84,8 +84,8 @@ export interface ComputePoolDescribeOutput {
 }
 
 export function computePoolDescribeOutputToTerraform(struct?: ComputePoolDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -94,8 +94,8 @@ export function computePoolDescribeOutputToTerraform(struct?: ComputePoolDescrib
 
 
 export function computePoolDescribeOutputToHclTerraform(struct?: ComputePoolDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -103,7 +103,7 @@ export function computePoolDescribeOutputToHclTerraform(struct?: ComputePoolDesc
   return attrs;
 }
 
-export class ComputePoolDescribeOutputOutputReference extends cdktf.ComplexObject {
+export class ComputePoolDescribeOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -112,7 +112,7 @@ export class ComputePoolDescribeOutputOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -237,14 +237,14 @@ export class ComputePoolDescribeOutputOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class ComputePoolDescribeOutputList extends cdktf.ComplexList {
+export class ComputePoolDescribeOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -259,8 +259,8 @@ export interface ComputePoolShowOutput {
 }
 
 export function computePoolShowOutputToTerraform(struct?: ComputePoolShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -269,8 +269,8 @@ export function computePoolShowOutputToTerraform(struct?: ComputePoolShowOutput)
 
 
 export function computePoolShowOutputToHclTerraform(struct?: ComputePoolShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -278,7 +278,7 @@ export function computePoolShowOutputToHclTerraform(struct?: ComputePoolShowOutp
   return attrs;
 }
 
-export class ComputePoolShowOutputOutputReference extends cdktf.ComplexObject {
+export class ComputePoolShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -287,7 +287,7 @@ export class ComputePoolShowOutputOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -402,14 +402,14 @@ export class ComputePoolShowOutputOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ComputePoolShowOutputList extends cdktf.ComplexList {
+export class ComputePoolShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -422,63 +422,63 @@ export class ComputePoolShowOutputList extends cdktf.ComplexList {
 }
 export interface ComputePoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool#create ComputePool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool#create ComputePool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool#delete ComputePool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool#delete ComputePool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool#read ComputePool#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool#read ComputePool#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool#update ComputePool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool#update ComputePool#update}
   */
   readonly update?: string;
 }
 
-export function computePoolTimeoutsToTerraform(struct?: ComputePoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computePoolTimeoutsToTerraform(struct?: ComputePoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computePoolTimeoutsToHclTerraform(struct?: ComputePoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computePoolTimeoutsToHclTerraform(struct?: ComputePoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -489,19 +489,19 @@ export function computePoolTimeoutsToHclTerraform(struct?: ComputePoolTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputePoolTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputePoolTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputePoolTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputePoolTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -526,7 +526,7 @@ export class ComputePoolTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputePoolTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputePoolTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -535,7 +535,7 @@ export class ComputePoolTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -615,9 +615,9 @@ export class ComputePoolTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool snowflake_compute_pool}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool snowflake_compute_pool}
 */
-export class ComputePool extends cdktf.TerraformResource {
+export class ComputePool extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -628,14 +628,14 @@ export class ComputePool extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputePool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputePool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputePool to import
-  * @param importFromId The id of the existing ComputePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputePool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_compute_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_compute_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -643,7 +643,7 @@ export class ComputePool extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/compute_pool snowflake_compute_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/compute_pool snowflake_compute_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -654,7 +654,7 @@ export class ComputePool extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_compute_pool',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -869,16 +869,16 @@ export class ComputePool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_resume: cdktf.stringToTerraform(this._autoResume),
-      auto_suspend_secs: cdktf.numberToTerraform(this._autoSuspendSecs),
-      comment: cdktf.stringToTerraform(this._comment),
-      for_application: cdktf.stringToTerraform(this._forApplication),
-      id: cdktf.stringToTerraform(this._id),
-      initially_suspended: cdktf.stringToTerraform(this._initiallySuspended),
-      instance_family: cdktf.stringToTerraform(this._instanceFamily),
-      max_nodes: cdktf.numberToTerraform(this._maxNodes),
-      min_nodes: cdktf.numberToTerraform(this._minNodes),
-      name: cdktf.stringToTerraform(this._name),
+      auto_resume: cdktn.stringToTerraform(this._autoResume),
+      auto_suspend_secs: cdktn.numberToTerraform(this._autoSuspendSecs),
+      comment: cdktn.stringToTerraform(this._comment),
+      for_application: cdktn.stringToTerraform(this._forApplication),
+      id: cdktn.stringToTerraform(this._id),
+      initially_suspended: cdktn.stringToTerraform(this._initiallySuspended),
+      instance_family: cdktn.stringToTerraform(this._instanceFamily),
+      max_nodes: cdktn.numberToTerraform(this._maxNodes),
+      min_nodes: cdktn.numberToTerraform(this._minNodes),
+      name: cdktn.stringToTerraform(this._name),
       timeouts: computePoolTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -886,61 +886,61 @@ export class ComputePool extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_resume: {
-        value: cdktf.stringToHclTerraform(this._autoResume),
+        value: cdktn.stringToHclTerraform(this._autoResume),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auto_suspend_secs: {
-        value: cdktf.numberToHclTerraform(this._autoSuspendSecs),
+        value: cdktn.numberToHclTerraform(this._autoSuspendSecs),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       for_application: {
-        value: cdktf.stringToHclTerraform(this._forApplication),
+        value: cdktn.stringToHclTerraform(this._forApplication),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       initially_suspended: {
-        value: cdktf.stringToHclTerraform(this._initiallySuspended),
+        value: cdktn.stringToHclTerraform(this._initiallySuspended),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_family: {
-        value: cdktf.stringToHclTerraform(this._instanceFamily),
+        value: cdktn.stringToHclTerraform(this._instanceFamily),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_nodes: {
-        value: cdktf.numberToHclTerraform(this._maxNodes),
+        value: cdktn.numberToHclTerraform(this._maxNodes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_nodes: {
-        value: cdktf.numberToHclTerraform(this._minNodes),
+        value: cdktn.numberToHclTerraform(this._minNodes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,49 +1,49 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TableConstraintConfig extends cdktf.TerraformMetaArguments {
+export interface TableConstraintConfig extends cdktn.TerraformMetaArguments {
   /**
   * Columns to use in constraint key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#columns TableConstraint#columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#columns TableConstraint#columns}
   */
   readonly columns: string[];
   /**
   * Comment for the table constraint
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#comment TableConstraint#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#comment TableConstraint#comment}
   */
   readonly comment?: string;
   /**
   * (Default: `true`) Whether the constraint is deferrable
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#deferrable TableConstraint#deferrable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#deferrable TableConstraint#deferrable}
   */
-  readonly deferrable?: boolean | cdktf.IResolvable;
+  readonly deferrable?: boolean | cdktn.IResolvable;
   /**
   * (Default: `true`) Specifies whether the constraint is enabled or disabled. These properties are provided for compatibility with Oracle.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#enable TableConstraint#enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#enable TableConstraint#enable}
   */
-  readonly enable?: boolean | cdktf.IResolvable;
+  readonly enable?: boolean | cdktn.IResolvable;
   /**
   * (Default: `false`) Whether the constraint is enforced
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#enforced TableConstraint#enforced}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#enforced TableConstraint#enforced}
   */
-  readonly enforced?: boolean | cdktf.IResolvable;
+  readonly enforced?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#id TableConstraint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#id TableConstraint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,49 +52,49 @@ export interface TableConstraintConfig extends cdktf.TerraformMetaArguments {
   /**
   * (Default: `DEFERRED`) Whether the constraint is initially deferred or immediate
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#initially TableConstraint#initially}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#initially TableConstraint#initially}
   */
   readonly initially?: string;
   /**
   * Name of constraint
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#name TableConstraint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#name TableConstraint#name}
   */
   readonly name: string;
   /**
   * (Default: `true`) Specifies whether a constraint in NOVALIDATE mode is taken into account during query rewrite.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#rely TableConstraint#rely}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#rely TableConstraint#rely}
   */
-  readonly rely?: boolean | cdktf.IResolvable;
+  readonly rely?: boolean | cdktn.IResolvable;
   /**
   * Identifier for table to create constraint on. Format must follow: "\"&lt;db_name&gt;\".\"&lt;schema_name&gt;\".\"&lt;table_name&gt;\"" or "&lt;db_name&gt;.&lt;schema_name&gt;.&lt;table_name&gt;" (snowflake_table.my_table.id)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#table_id TableConstraint#table_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#table_id TableConstraint#table_id}
   */
   readonly tableId: string;
   /**
   * Type of constraint, one of 'UNIQUE', 'PRIMARY KEY', or 'FOREIGN KEY'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#type TableConstraint#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#type TableConstraint#type}
   */
   readonly type: string;
   /**
   * (Default: `false`) Specifies whether to validate existing data on the table when a constraint is created. Only used in conjunction with the ENABLE property.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#validate TableConstraint#validate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#validate TableConstraint#validate}
   */
-  readonly validate?: boolean | cdktf.IResolvable;
+  readonly validate?: boolean | cdktn.IResolvable;
   /**
   * foreign_key_properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#foreign_key_properties TableConstraint#foreign_key_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#foreign_key_properties TableConstraint#foreign_key_properties}
   */
   readonly foreignKeyProperties?: TableConstraintForeignKeyProperties;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#timeouts TableConstraint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#timeouts TableConstraint#timeouts}
   */
   readonly timeouts?: TableConstraintTimeouts;
 }
@@ -102,43 +102,43 @@ export interface TableConstraintForeignKeyPropertiesReferences {
   /**
   * Columns to use in foreign key reference
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#columns TableConstraint#columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#columns TableConstraint#columns}
   */
   readonly columns: string[];
   /**
   * Name of constraint
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#table_id TableConstraint#table_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#table_id TableConstraint#table_id}
   */
   readonly tableId: string;
 }
 
 export function tableConstraintForeignKeyPropertiesReferencesToTerraform(struct?: TableConstraintForeignKeyPropertiesReferencesOutputReference | TableConstraintForeignKeyPropertiesReferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    columns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.columns),
-    table_id: cdktf.stringToTerraform(struct!.tableId),
+    columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.columns),
+    table_id: cdktn.stringToTerraform(struct!.tableId),
   }
 }
 
 
 export function tableConstraintForeignKeyPropertiesReferencesToHclTerraform(struct?: TableConstraintForeignKeyPropertiesReferencesOutputReference | TableConstraintForeignKeyPropertiesReferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     columns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.columns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.columns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     table_id: {
-      value: cdktf.stringToHclTerraform(struct!.tableId),
+      value: cdktn.stringToHclTerraform(struct!.tableId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -149,14 +149,14 @@ export function tableConstraintForeignKeyPropertiesReferencesToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TableConstraintForeignKeyPropertiesReferencesOutputReference extends cdktf.ComplexObject {
+export class TableConstraintForeignKeyPropertiesReferencesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -217,63 +217,63 @@ export interface TableConstraintForeignKeyProperties {
   /**
   * (Default: `FULL`) The match type for the foreign key. Not applicable for primary/unique keys
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#match TableConstraint#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#match TableConstraint#match}
   */
   readonly match?: string;
   /**
   * (Default: `NO ACTION`) Specifies the action performed when the primary/unique key for the foreign key is deleted. Not applicable for primary/unique keys
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#on_delete TableConstraint#on_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#on_delete TableConstraint#on_delete}
   */
   readonly onDelete?: string;
   /**
   * (Default: `NO ACTION`) Specifies the action performed when the primary/unique key for the foreign key is updated. Not applicable for primary/unique keys
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#on_update TableConstraint#on_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#on_update TableConstraint#on_update}
   */
   readonly onUpdate?: string;
   /**
   * references block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#references TableConstraint#references}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#references TableConstraint#references}
   */
   readonly references: TableConstraintForeignKeyPropertiesReferences;
 }
 
 export function tableConstraintForeignKeyPropertiesToTerraform(struct?: TableConstraintForeignKeyPropertiesOutputReference | TableConstraintForeignKeyProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match: cdktf.stringToTerraform(struct!.match),
-    on_delete: cdktf.stringToTerraform(struct!.onDelete),
-    on_update: cdktf.stringToTerraform(struct!.onUpdate),
+    match: cdktn.stringToTerraform(struct!.match),
+    on_delete: cdktn.stringToTerraform(struct!.onDelete),
+    on_update: cdktn.stringToTerraform(struct!.onUpdate),
     references: tableConstraintForeignKeyPropertiesReferencesToTerraform(struct!.references),
   }
 }
 
 
 export function tableConstraintForeignKeyPropertiesToHclTerraform(struct?: TableConstraintForeignKeyPropertiesOutputReference | TableConstraintForeignKeyProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match: {
-      value: cdktf.stringToHclTerraform(struct!.match),
+      value: cdktn.stringToHclTerraform(struct!.match),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     on_delete: {
-      value: cdktf.stringToHclTerraform(struct!.onDelete),
+      value: cdktn.stringToHclTerraform(struct!.onDelete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     on_update: {
-      value: cdktf.stringToHclTerraform(struct!.onUpdate),
+      value: cdktn.stringToHclTerraform(struct!.onUpdate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -290,14 +290,14 @@ export function tableConstraintForeignKeyPropertiesToHclTerraform(struct?: Table
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TableConstraintForeignKeyPropertiesOutputReference extends cdktf.ComplexObject {
+export class TableConstraintForeignKeyPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -403,63 +403,63 @@ export class TableConstraintForeignKeyPropertiesOutputReference extends cdktf.Co
 }
 export interface TableConstraintTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#create TableConstraint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#create TableConstraint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#delete TableConstraint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#delete TableConstraint#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#read TableConstraint#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#read TableConstraint#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#update TableConstraint#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#update TableConstraint#update}
   */
   readonly update?: string;
 }
 
-export function tableConstraintTimeoutsToTerraform(struct?: TableConstraintTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tableConstraintTimeoutsToTerraform(struct?: TableConstraintTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function tableConstraintTimeoutsToHclTerraform(struct?: TableConstraintTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tableConstraintTimeoutsToHclTerraform(struct?: TableConstraintTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -470,19 +470,19 @@ export function tableConstraintTimeoutsToHclTerraform(struct?: TableConstraintTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TableConstraintTimeoutsOutputReference extends cdktf.ComplexObject {
+export class TableConstraintTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): TableConstraintTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): TableConstraintTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -507,7 +507,7 @@ export class TableConstraintTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TableConstraintTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TableConstraintTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -516,7 +516,7 @@ export class TableConstraintTimeoutsOutputReference extends cdktf.ComplexObject 
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -596,9 +596,9 @@ export class TableConstraintTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint snowflake_table_constraint}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint snowflake_table_constraint}
 */
-export class TableConstraint extends cdktf.TerraformResource {
+export class TableConstraint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -609,14 +609,14 @@ export class TableConstraint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TableConstraint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TableConstraint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TableConstraint to import
-  * @param importFromId The id of the existing TableConstraint that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TableConstraint that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TableConstraint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_table_constraint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_table_constraint", importId: importFromId, provider });
       }
 
   // ===========
@@ -624,7 +624,7 @@ export class TableConstraint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/table_constraint snowflake_table_constraint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/table_constraint snowflake_table_constraint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -635,7 +635,7 @@ export class TableConstraint extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_table_constraint',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -696,11 +696,11 @@ export class TableConstraint extends cdktf.TerraformResource {
   }
 
   // deferrable - computed: false, optional: true, required: false
-  private _deferrable?: boolean | cdktf.IResolvable; 
+  private _deferrable?: boolean | cdktn.IResolvable; 
   public get deferrable() {
     return this.getBooleanAttribute('deferrable');
   }
-  public set deferrable(value: boolean | cdktf.IResolvable) {
+  public set deferrable(value: boolean | cdktn.IResolvable) {
     this._deferrable = value;
   }
   public resetDeferrable() {
@@ -712,11 +712,11 @@ export class TableConstraint extends cdktf.TerraformResource {
   }
 
   // enable - computed: false, optional: true, required: false
-  private _enable?: boolean | cdktf.IResolvable; 
+  private _enable?: boolean | cdktn.IResolvable; 
   public get enable() {
     return this.getBooleanAttribute('enable');
   }
-  public set enable(value: boolean | cdktf.IResolvable) {
+  public set enable(value: boolean | cdktn.IResolvable) {
     this._enable = value;
   }
   public resetEnable() {
@@ -728,11 +728,11 @@ export class TableConstraint extends cdktf.TerraformResource {
   }
 
   // enforced - computed: false, optional: true, required: false
-  private _enforced?: boolean | cdktf.IResolvable; 
+  private _enforced?: boolean | cdktn.IResolvable; 
   public get enforced() {
     return this.getBooleanAttribute('enforced');
   }
-  public set enforced(value: boolean | cdktf.IResolvable) {
+  public set enforced(value: boolean | cdktn.IResolvable) {
     this._enforced = value;
   }
   public resetEnforced() {
@@ -789,11 +789,11 @@ export class TableConstraint extends cdktf.TerraformResource {
   }
 
   // rely - computed: false, optional: true, required: false
-  private _rely?: boolean | cdktf.IResolvable; 
+  private _rely?: boolean | cdktn.IResolvable; 
   public get rely() {
     return this.getBooleanAttribute('rely');
   }
-  public set rely(value: boolean | cdktf.IResolvable) {
+  public set rely(value: boolean | cdktn.IResolvable) {
     this._rely = value;
   }
   public resetRely() {
@@ -831,11 +831,11 @@ export class TableConstraint extends cdktf.TerraformResource {
   }
 
   // validate - computed: false, optional: true, required: false
-  private _validate?: boolean | cdktf.IResolvable; 
+  private _validate?: boolean | cdktn.IResolvable; 
   public get validate() {
     return this.getBooleanAttribute('validate');
   }
-  public set validate(value: boolean | cdktf.IResolvable) {
+  public set validate(value: boolean | cdktn.IResolvable) {
     this._validate = value;
   }
   public resetValidate() {
@@ -884,18 +884,18 @@ export class TableConstraint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      columns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._columns),
-      comment: cdktf.stringToTerraform(this._comment),
-      deferrable: cdktf.booleanToTerraform(this._deferrable),
-      enable: cdktf.booleanToTerraform(this._enable),
-      enforced: cdktf.booleanToTerraform(this._enforced),
-      id: cdktf.stringToTerraform(this._id),
-      initially: cdktf.stringToTerraform(this._initially),
-      name: cdktf.stringToTerraform(this._name),
-      rely: cdktf.booleanToTerraform(this._rely),
-      table_id: cdktf.stringToTerraform(this._tableId),
-      type: cdktf.stringToTerraform(this._type),
-      validate: cdktf.booleanToTerraform(this._validate),
+      columns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._columns),
+      comment: cdktn.stringToTerraform(this._comment),
+      deferrable: cdktn.booleanToTerraform(this._deferrable),
+      enable: cdktn.booleanToTerraform(this._enable),
+      enforced: cdktn.booleanToTerraform(this._enforced),
+      id: cdktn.stringToTerraform(this._id),
+      initially: cdktn.stringToTerraform(this._initially),
+      name: cdktn.stringToTerraform(this._name),
+      rely: cdktn.booleanToTerraform(this._rely),
+      table_id: cdktn.stringToTerraform(this._tableId),
+      type: cdktn.stringToTerraform(this._type),
+      validate: cdktn.booleanToTerraform(this._validate),
       foreign_key_properties: tableConstraintForeignKeyPropertiesToTerraform(this._foreignKeyProperties.internalValue),
       timeouts: tableConstraintTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -904,73 +904,73 @@ export class TableConstraint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       columns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._columns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._columns),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deferrable: {
-        value: cdktf.booleanToHclTerraform(this._deferrable),
+        value: cdktn.booleanToHclTerraform(this._deferrable),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable: {
-        value: cdktf.booleanToHclTerraform(this._enable),
+        value: cdktn.booleanToHclTerraform(this._enable),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enforced: {
-        value: cdktf.booleanToHclTerraform(this._enforced),
+        value: cdktn.booleanToHclTerraform(this._enforced),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       initially: {
-        value: cdktf.stringToHclTerraform(this._initially),
+        value: cdktn.stringToHclTerraform(this._initially),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rely: {
-        value: cdktf.booleanToHclTerraform(this._rely),
+        value: cdktn.booleanToHclTerraform(this._rely),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       table_id: {
-        value: cdktf.stringToHclTerraform(this._tableId),
+        value: cdktn.stringToHclTerraform(this._tableId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       validate: {
-        value: cdktf.booleanToHclTerraform(this._validate),
+        value: cdktn.booleanToHclTerraform(this._validate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/accounts
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/accounts
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataSnowflakeAccountsConfig extends cdktf.TerraformMetaArguments {
+export interface DataSnowflakeAccountsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/accounts#id DataSnowflakeAccounts#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/accounts#id DataSnowflakeAccounts#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,22 +22,22 @@ export interface DataSnowflakeAccountsConfig extends cdktf.TerraformMetaArgument
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/accounts#like DataSnowflakeAccounts#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/accounts#like DataSnowflakeAccounts#like}
   */
   readonly like?: string;
   /**
   * Includes dropped accounts that have not yet been deleted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/accounts#with_history DataSnowflakeAccounts#with_history}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/accounts#with_history DataSnowflakeAccounts#with_history}
   */
-  readonly withHistory?: boolean | cdktf.IResolvable;
+  readonly withHistory?: boolean | cdktn.IResolvable;
 }
 export interface DataSnowflakeAccountsAccountsShowOutput {
 }
 
 export function dataSnowflakeAccountsAccountsShowOutputToTerraform(struct?: DataSnowflakeAccountsAccountsShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -46,8 +46,8 @@ export function dataSnowflakeAccountsAccountsShowOutputToTerraform(struct?: Data
 
 
 export function dataSnowflakeAccountsAccountsShowOutputToHclTerraform(struct?: DataSnowflakeAccountsAccountsShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -55,7 +55,7 @@ export function dataSnowflakeAccountsAccountsShowOutputToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataSnowflakeAccountsAccountsShowOutputOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeAccountsAccountsShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -64,7 +64,7 @@ export class DataSnowflakeAccountsAccountsShowOutputOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -229,14 +229,14 @@ export class DataSnowflakeAccountsAccountsShowOutputOutputReference extends cdkt
   }
 }
 
-export class DataSnowflakeAccountsAccountsShowOutputList extends cdktf.ComplexList {
+export class DataSnowflakeAccountsAccountsShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -251,8 +251,8 @@ export interface DataSnowflakeAccountsAccounts {
 }
 
 export function dataSnowflakeAccountsAccountsToTerraform(struct?: DataSnowflakeAccountsAccounts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -261,8 +261,8 @@ export function dataSnowflakeAccountsAccountsToTerraform(struct?: DataSnowflakeA
 
 
 export function dataSnowflakeAccountsAccountsToHclTerraform(struct?: DataSnowflakeAccountsAccounts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -270,7 +270,7 @@ export function dataSnowflakeAccountsAccountsToHclTerraform(struct?: DataSnowfla
   return attrs;
 }
 
-export class DataSnowflakeAccountsAccountsOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeAccountsAccountsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -279,7 +279,7 @@ export class DataSnowflakeAccountsAccountsOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -305,14 +305,14 @@ export class DataSnowflakeAccountsAccountsOutputReference extends cdktf.ComplexO
   }
 }
 
-export class DataSnowflakeAccountsAccountsList extends cdktf.ComplexList {
+export class DataSnowflakeAccountsAccountsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -325,9 +325,9 @@ export class DataSnowflakeAccountsAccountsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/accounts snowflake_accounts}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/accounts snowflake_accounts}
 */
-export class DataSnowflakeAccounts extends cdktf.TerraformDataSource {
+export class DataSnowflakeAccounts extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -338,14 +338,14 @@ export class DataSnowflakeAccounts extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataSnowflakeAccounts resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataSnowflakeAccounts resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeAccounts to import
-  * @param importFromId The id of the existing DataSnowflakeAccounts that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/accounts#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeAccounts that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/accounts#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeAccounts to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_accounts", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_accounts", importId: importFromId, provider });
       }
 
   // ===========
@@ -353,7 +353,7 @@ export class DataSnowflakeAccounts extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/accounts snowflake_accounts} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/accounts snowflake_accounts} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -364,7 +364,7 @@ export class DataSnowflakeAccounts extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_accounts',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -423,11 +423,11 @@ export class DataSnowflakeAccounts extends cdktf.TerraformDataSource {
   }
 
   // with_history - computed: false, optional: true, required: false
-  private _withHistory?: boolean | cdktf.IResolvable; 
+  private _withHistory?: boolean | cdktn.IResolvable; 
   public get withHistory() {
     return this.getBooleanAttribute('with_history');
   }
-  public set withHistory(value: boolean | cdktf.IResolvable) {
+  public set withHistory(value: boolean | cdktn.IResolvable) {
     this._withHistory = value;
   }
   public resetWithHistory() {
@@ -444,28 +444,28 @@ export class DataSnowflakeAccounts extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      like: cdktf.stringToTerraform(this._like),
-      with_history: cdktf.booleanToTerraform(this._withHistory),
+      id: cdktn.stringToTerraform(this._id),
+      like: cdktn.stringToTerraform(this._like),
+      with_history: cdktn.booleanToTerraform(this._withHistory),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       like: {
-        value: cdktf.stringToHclTerraform(this._like),
+        value: cdktn.stringToHclTerraform(this._like),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       with_history: {
-        value: cdktf.booleanToHclTerraform(this._withHistory),
+        value: cdktn.booleanToHclTerraform(this._withHistory),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/warehouses
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/warehouses
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataSnowflakeWarehousesConfig extends cdktf.TerraformMetaArguments {
+export interface DataSnowflakeWarehousesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/warehouses#id DataSnowflakeWarehouses#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/warehouses#id DataSnowflakeWarehouses#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,28 +22,28 @@ export interface DataSnowflakeWarehousesConfig extends cdktf.TerraformMetaArgume
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/warehouses#like DataSnowflakeWarehouses#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/warehouses#like DataSnowflakeWarehouses#like}
   */
   readonly like?: string;
   /**
   * (Default: `true`) Runs DESC WAREHOUSE for each warehouse returned by SHOW WAREHOUSES. The output of describe is saved to the description field. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/warehouses#with_describe DataSnowflakeWarehouses#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/warehouses#with_describe DataSnowflakeWarehouses#with_describe}
   */
-  readonly withDescribe?: boolean | cdktf.IResolvable;
+  readonly withDescribe?: boolean | cdktn.IResolvable;
   /**
   * (Default: `true`) Runs SHOW PARAMETERS FOR WAREHOUSE for each warehouse returned by SHOW WAREHOUSES. The output of describe is saved to the parameters field as a map. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/warehouses#with_parameters DataSnowflakeWarehouses#with_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/warehouses#with_parameters DataSnowflakeWarehouses#with_parameters}
   */
-  readonly withParameters?: boolean | cdktf.IResolvable;
+  readonly withParameters?: boolean | cdktn.IResolvable;
 }
 export interface DataSnowflakeWarehousesWarehousesDescribeOutput {
 }
 
 export function dataSnowflakeWarehousesWarehousesDescribeOutputToTerraform(struct?: DataSnowflakeWarehousesWarehousesDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function dataSnowflakeWarehousesWarehousesDescribeOutputToTerraform(struc
 
 
 export function dataSnowflakeWarehousesWarehousesDescribeOutputToHclTerraform(struct?: DataSnowflakeWarehousesWarehousesDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function dataSnowflakeWarehousesWarehousesDescribeOutputToHclTerraform(st
   return attrs;
 }
 
-export class DataSnowflakeWarehousesWarehousesDescribeOutputOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeWarehousesWarehousesDescribeOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class DataSnowflakeWarehousesWarehousesDescribeOutputOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -105,14 +105,14 @@ export class DataSnowflakeWarehousesWarehousesDescribeOutputOutputReference exte
   }
 }
 
-export class DataSnowflakeWarehousesWarehousesDescribeOutputList extends cdktf.ComplexList {
+export class DataSnowflakeWarehousesWarehousesDescribeOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -127,8 +127,8 @@ export interface DataSnowflakeWarehousesWarehousesParametersMaxConcurrencyLevel 
 }
 
 export function dataSnowflakeWarehousesWarehousesParametersMaxConcurrencyLevelToTerraform(struct?: DataSnowflakeWarehousesWarehousesParametersMaxConcurrencyLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -137,8 +137,8 @@ export function dataSnowflakeWarehousesWarehousesParametersMaxConcurrencyLevelTo
 
 
 export function dataSnowflakeWarehousesWarehousesParametersMaxConcurrencyLevelToHclTerraform(struct?: DataSnowflakeWarehousesWarehousesParametersMaxConcurrencyLevel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -146,7 +146,7 @@ export function dataSnowflakeWarehousesWarehousesParametersMaxConcurrencyLevelTo
   return attrs;
 }
 
-export class DataSnowflakeWarehousesWarehousesParametersMaxConcurrencyLevelOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeWarehousesWarehousesParametersMaxConcurrencyLevelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -155,7 +155,7 @@ export class DataSnowflakeWarehousesWarehousesParametersMaxConcurrencyLevelOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -200,14 +200,14 @@ export class DataSnowflakeWarehousesWarehousesParametersMaxConcurrencyLevelOutpu
   }
 }
 
-export class DataSnowflakeWarehousesWarehousesParametersMaxConcurrencyLevelList extends cdktf.ComplexList {
+export class DataSnowflakeWarehousesWarehousesParametersMaxConcurrencyLevelList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -222,8 +222,8 @@ export interface DataSnowflakeWarehousesWarehousesParametersStatementQueuedTimeo
 }
 
 export function dataSnowflakeWarehousesWarehousesParametersStatementQueuedTimeoutInSecondsToTerraform(struct?: DataSnowflakeWarehousesWarehousesParametersStatementQueuedTimeoutInSeconds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -232,8 +232,8 @@ export function dataSnowflakeWarehousesWarehousesParametersStatementQueuedTimeou
 
 
 export function dataSnowflakeWarehousesWarehousesParametersStatementQueuedTimeoutInSecondsToHclTerraform(struct?: DataSnowflakeWarehousesWarehousesParametersStatementQueuedTimeoutInSeconds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -241,7 +241,7 @@ export function dataSnowflakeWarehousesWarehousesParametersStatementQueuedTimeou
   return attrs;
 }
 
-export class DataSnowflakeWarehousesWarehousesParametersStatementQueuedTimeoutInSecondsOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeWarehousesWarehousesParametersStatementQueuedTimeoutInSecondsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -250,7 +250,7 @@ export class DataSnowflakeWarehousesWarehousesParametersStatementQueuedTimeoutIn
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -295,14 +295,14 @@ export class DataSnowflakeWarehousesWarehousesParametersStatementQueuedTimeoutIn
   }
 }
 
-export class DataSnowflakeWarehousesWarehousesParametersStatementQueuedTimeoutInSecondsList extends cdktf.ComplexList {
+export class DataSnowflakeWarehousesWarehousesParametersStatementQueuedTimeoutInSecondsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -317,8 +317,8 @@ export interface DataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSe
 }
 
 export function dataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSecondsToTerraform(struct?: DataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSeconds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -327,8 +327,8 @@ export function dataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSec
 
 
 export function dataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSecondsToHclTerraform(struct?: DataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSeconds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -336,7 +336,7 @@ export function dataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSec
   return attrs;
 }
 
-export class DataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSecondsOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSecondsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -345,7 +345,7 @@ export class DataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSecond
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -390,14 +390,14 @@ export class DataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSecond
   }
 }
 
-export class DataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSecondsList extends cdktf.ComplexList {
+export class DataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSecondsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -412,8 +412,8 @@ export interface DataSnowflakeWarehousesWarehousesParameters {
 }
 
 export function dataSnowflakeWarehousesWarehousesParametersToTerraform(struct?: DataSnowflakeWarehousesWarehousesParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -422,8 +422,8 @@ export function dataSnowflakeWarehousesWarehousesParametersToTerraform(struct?: 
 
 
 export function dataSnowflakeWarehousesWarehousesParametersToHclTerraform(struct?: DataSnowflakeWarehousesWarehousesParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -431,7 +431,7 @@ export function dataSnowflakeWarehousesWarehousesParametersToHclTerraform(struct
   return attrs;
 }
 
-export class DataSnowflakeWarehousesWarehousesParametersOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeWarehousesWarehousesParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -440,7 +440,7 @@ export class DataSnowflakeWarehousesWarehousesParametersOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -478,14 +478,14 @@ export class DataSnowflakeWarehousesWarehousesParametersOutputReference extends 
   }
 }
 
-export class DataSnowflakeWarehousesWarehousesParametersList extends cdktf.ComplexList {
+export class DataSnowflakeWarehousesWarehousesParametersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -500,8 +500,8 @@ export interface DataSnowflakeWarehousesWarehousesShowOutput {
 }
 
 export function dataSnowflakeWarehousesWarehousesShowOutputToTerraform(struct?: DataSnowflakeWarehousesWarehousesShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -510,8 +510,8 @@ export function dataSnowflakeWarehousesWarehousesShowOutputToTerraform(struct?: 
 
 
 export function dataSnowflakeWarehousesWarehousesShowOutputToHclTerraform(struct?: DataSnowflakeWarehousesWarehousesShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -519,7 +519,7 @@ export function dataSnowflakeWarehousesWarehousesShowOutputToHclTerraform(struct
   return attrs;
 }
 
-export class DataSnowflakeWarehousesWarehousesShowOutputOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeWarehousesWarehousesShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -528,7 +528,7 @@ export class DataSnowflakeWarehousesWarehousesShowOutputOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -693,14 +693,14 @@ export class DataSnowflakeWarehousesWarehousesShowOutputOutputReference extends 
   }
 }
 
-export class DataSnowflakeWarehousesWarehousesShowOutputList extends cdktf.ComplexList {
+export class DataSnowflakeWarehousesWarehousesShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -715,8 +715,8 @@ export interface DataSnowflakeWarehousesWarehouses {
 }
 
 export function dataSnowflakeWarehousesWarehousesToTerraform(struct?: DataSnowflakeWarehousesWarehouses): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -725,8 +725,8 @@ export function dataSnowflakeWarehousesWarehousesToTerraform(struct?: DataSnowfl
 
 
 export function dataSnowflakeWarehousesWarehousesToHclTerraform(struct?: DataSnowflakeWarehousesWarehouses): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -734,7 +734,7 @@ export function dataSnowflakeWarehousesWarehousesToHclTerraform(struct?: DataSno
   return attrs;
 }
 
-export class DataSnowflakeWarehousesWarehousesOutputReference extends cdktf.ComplexObject {
+export class DataSnowflakeWarehousesWarehousesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -743,7 +743,7 @@ export class DataSnowflakeWarehousesWarehousesOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -781,14 +781,14 @@ export class DataSnowflakeWarehousesWarehousesOutputReference extends cdktf.Comp
   }
 }
 
-export class DataSnowflakeWarehousesWarehousesList extends cdktf.ComplexList {
+export class DataSnowflakeWarehousesWarehousesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -801,9 +801,9 @@ export class DataSnowflakeWarehousesWarehousesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/warehouses snowflake_warehouses}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/warehouses snowflake_warehouses}
 */
-export class DataSnowflakeWarehouses extends cdktf.TerraformDataSource {
+export class DataSnowflakeWarehouses extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -814,14 +814,14 @@ export class DataSnowflakeWarehouses extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataSnowflakeWarehouses resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataSnowflakeWarehouses resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeWarehouses to import
-  * @param importFromId The id of the existing DataSnowflakeWarehouses that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/warehouses#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeWarehouses that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/warehouses#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeWarehouses to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_warehouses", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_warehouses", importId: importFromId, provider });
       }
 
   // ===========
@@ -829,7 +829,7 @@ export class DataSnowflakeWarehouses extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/warehouses snowflake_warehouses} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/warehouses snowflake_warehouses} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -840,7 +840,7 @@ export class DataSnowflakeWarehouses extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_warehouses',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -900,11 +900,11 @@ export class DataSnowflakeWarehouses extends cdktf.TerraformDataSource {
   }
 
   // with_describe - computed: false, optional: true, required: false
-  private _withDescribe?: boolean | cdktf.IResolvable; 
+  private _withDescribe?: boolean | cdktn.IResolvable; 
   public get withDescribe() {
     return this.getBooleanAttribute('with_describe');
   }
-  public set withDescribe(value: boolean | cdktf.IResolvable) {
+  public set withDescribe(value: boolean | cdktn.IResolvable) {
     this._withDescribe = value;
   }
   public resetWithDescribe() {
@@ -916,11 +916,11 @@ export class DataSnowflakeWarehouses extends cdktf.TerraformDataSource {
   }
 
   // with_parameters - computed: false, optional: true, required: false
-  private _withParameters?: boolean | cdktf.IResolvable; 
+  private _withParameters?: boolean | cdktn.IResolvable; 
   public get withParameters() {
     return this.getBooleanAttribute('with_parameters');
   }
-  public set withParameters(value: boolean | cdktf.IResolvable) {
+  public set withParameters(value: boolean | cdktn.IResolvable) {
     this._withParameters = value;
   }
   public resetWithParameters() {
@@ -937,35 +937,35 @@ export class DataSnowflakeWarehouses extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      like: cdktf.stringToTerraform(this._like),
-      with_describe: cdktf.booleanToTerraform(this._withDescribe),
-      with_parameters: cdktf.booleanToTerraform(this._withParameters),
+      id: cdktn.stringToTerraform(this._id),
+      like: cdktn.stringToTerraform(this._like),
+      with_describe: cdktn.booleanToTerraform(this._withDescribe),
+      with_parameters: cdktn.booleanToTerraform(this._withParameters),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       like: {
-        value: cdktf.stringToHclTerraform(this._like),
+        value: cdktn.stringToHclTerraform(this._like),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       with_describe: {
-        value: cdktf.booleanToHclTerraform(this._withDescribe),
+        value: cdktn.booleanToHclTerraform(this._withDescribe),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       with_parameters: {
-        value: cdktf.booleanToHclTerraform(this._withParameters),
+        value: cdktn.booleanToHclTerraform(this._withParameters),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

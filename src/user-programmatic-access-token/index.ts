@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface UserProgrammaticAccessTokenConfig extends cdktf.TerraformMetaArguments {
+export interface UserProgrammaticAccessTokenConfig extends cdktn.TerraformMetaArguments {
   /**
   * Descriptive comment about the programmatic access token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token#comment UserProgrammaticAccessToken#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token#comment UserProgrammaticAccessToken#comment}
   */
   readonly comment?: string;
   /**
   * The number of days that the programmatic access token can be used for authentication. This field cannot be altered after the token is created. Instead, you must rotate the token with the `keeper` field. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token#days_to_expiry UserProgrammaticAccessToken#days_to_expiry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token#days_to_expiry UserProgrammaticAccessToken#days_to_expiry}
   */
   readonly daysToExpiry?: number;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Disables or enables the programmatic access token. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token#disabled UserProgrammaticAccessToken#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token#disabled UserProgrammaticAccessToken#disabled}
   */
   readonly disabled?: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) This field is only used when the token is rotated by changing the `keeper` field. Sets the expiration time of the existing token secret to expire after the specified number of hours. You can set this to a value of 0 to expire the current token secret immediately.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token#expire_rotated_token_after_hours UserProgrammaticAccessToken#expire_rotated_token_after_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token#expire_rotated_token_after_hours UserProgrammaticAccessToken#expire_rotated_token_after_hours}
   */
   readonly expireRotatedTokenAfterHours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token#id UserProgrammaticAccessToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token#id UserProgrammaticAccessToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,37 +46,37 @@ export interface UserProgrammaticAccessTokenConfig extends cdktf.TerraformMetaAr
   /**
   * Arbitrary string that, if and only if, changed from a non-empty to a different non-empty value (or known after apply), will trigger a key to be rotated. When you add this field to the configuration, or remove it from the configuration, the rotation is not triggered. When the token is rotated, the `token` and `rotated_token_name` fields are marked as computed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token#keeper UserProgrammaticAccessToken#keeper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token#keeper UserProgrammaticAccessToken#keeper}
   */
   readonly keeper?: string;
   /**
   * The number of minutes during which a user can use this token to access Snowflake without being subject to an active network policy. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token#mins_to_bypass_network_policy_requirement UserProgrammaticAccessToken#mins_to_bypass_network_policy_requirement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token#mins_to_bypass_network_policy_requirement UserProgrammaticAccessToken#mins_to_bypass_network_policy_requirement}
   */
   readonly minsToBypassNetworkPolicyRequirement?: number;
   /**
   * Specifies the name for the programmatic access token; must be unique for the user. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token#name UserProgrammaticAccessToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token#name UserProgrammaticAccessToken#name}
   */
   readonly name: string;
   /**
   * The name of the role used for privilege evaluation and object creation. This must be one of the roles that has already been granted to the user. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token#role_restriction UserProgrammaticAccessToken#role_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token#role_restriction UserProgrammaticAccessToken#role_restriction}
   */
   readonly roleRestriction?: string;
   /**
   * The name of the user that the token is associated with. A user cannot use another user's programmatic access token to authenticate. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token#user UserProgrammaticAccessToken#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token#user UserProgrammaticAccessToken#user}
   */
   readonly user: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token#timeouts UserProgrammaticAccessToken#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token#timeouts UserProgrammaticAccessToken#timeouts}
   */
   readonly timeouts?: UserProgrammaticAccessTokenTimeouts;
 }
@@ -84,8 +84,8 @@ export interface UserProgrammaticAccessTokenShowOutput {
 }
 
 export function userProgrammaticAccessTokenShowOutputToTerraform(struct?: UserProgrammaticAccessTokenShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -94,8 +94,8 @@ export function userProgrammaticAccessTokenShowOutputToTerraform(struct?: UserPr
 
 
 export function userProgrammaticAccessTokenShowOutputToHclTerraform(struct?: UserProgrammaticAccessTokenShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -103,7 +103,7 @@ export function userProgrammaticAccessTokenShowOutputToHclTerraform(struct?: Use
   return attrs;
 }
 
-export class UserProgrammaticAccessTokenShowOutputOutputReference extends cdktf.ComplexObject {
+export class UserProgrammaticAccessTokenShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -112,7 +112,7 @@ export class UserProgrammaticAccessTokenShowOutputOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -182,14 +182,14 @@ export class UserProgrammaticAccessTokenShowOutputOutputReference extends cdktf.
   }
 }
 
-export class UserProgrammaticAccessTokenShowOutputList extends cdktf.ComplexList {
+export class UserProgrammaticAccessTokenShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -202,63 +202,63 @@ export class UserProgrammaticAccessTokenShowOutputList extends cdktf.ComplexList
 }
 export interface UserProgrammaticAccessTokenTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token#create UserProgrammaticAccessToken#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token#create UserProgrammaticAccessToken#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token#delete UserProgrammaticAccessToken#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token#delete UserProgrammaticAccessToken#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token#read UserProgrammaticAccessToken#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token#read UserProgrammaticAccessToken#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token#update UserProgrammaticAccessToken#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token#update UserProgrammaticAccessToken#update}
   */
   readonly update?: string;
 }
 
-export function userProgrammaticAccessTokenTimeoutsToTerraform(struct?: UserProgrammaticAccessTokenTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function userProgrammaticAccessTokenTimeoutsToTerraform(struct?: UserProgrammaticAccessTokenTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function userProgrammaticAccessTokenTimeoutsToHclTerraform(struct?: UserProgrammaticAccessTokenTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function userProgrammaticAccessTokenTimeoutsToHclTerraform(struct?: UserProgrammaticAccessTokenTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -269,19 +269,19 @@ export function userProgrammaticAccessTokenTimeoutsToHclTerraform(struct?: UserP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class UserProgrammaticAccessTokenTimeoutsOutputReference extends cdktf.ComplexObject {
+export class UserProgrammaticAccessTokenTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): UserProgrammaticAccessTokenTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): UserProgrammaticAccessTokenTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -306,7 +306,7 @@ export class UserProgrammaticAccessTokenTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: UserProgrammaticAccessTokenTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: UserProgrammaticAccessTokenTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -315,7 +315,7 @@ export class UserProgrammaticAccessTokenTimeoutsOutputReference extends cdktf.Co
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -395,9 +395,9 @@ export class UserProgrammaticAccessTokenTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token}
 */
-export class UserProgrammaticAccessToken extends cdktf.TerraformResource {
+export class UserProgrammaticAccessToken extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -408,14 +408,14 @@ export class UserProgrammaticAccessToken extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a UserProgrammaticAccessToken resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a UserProgrammaticAccessToken resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserProgrammaticAccessToken to import
-  * @param importFromId The id of the existing UserProgrammaticAccessToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserProgrammaticAccessToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserProgrammaticAccessToken to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_user_programmatic_access_token", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_user_programmatic_access_token", importId: importFromId, provider });
       }
 
   // ===========
@@ -423,7 +423,7 @@ export class UserProgrammaticAccessToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/user_programmatic_access_token snowflake_user_programmatic_access_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -434,7 +434,7 @@ export class UserProgrammaticAccessToken extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_user_programmatic_access_token',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -654,16 +654,16 @@ export class UserProgrammaticAccessToken extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      days_to_expiry: cdktf.numberToTerraform(this._daysToExpiry),
-      disabled: cdktf.stringToTerraform(this._disabled),
-      expire_rotated_token_after_hours: cdktf.numberToTerraform(this._expireRotatedTokenAfterHours),
-      id: cdktf.stringToTerraform(this._id),
-      keeper: cdktf.stringToTerraform(this._keeper),
-      mins_to_bypass_network_policy_requirement: cdktf.numberToTerraform(this._minsToBypassNetworkPolicyRequirement),
-      name: cdktf.stringToTerraform(this._name),
-      role_restriction: cdktf.stringToTerraform(this._roleRestriction),
-      user: cdktf.stringToTerraform(this._user),
+      comment: cdktn.stringToTerraform(this._comment),
+      days_to_expiry: cdktn.numberToTerraform(this._daysToExpiry),
+      disabled: cdktn.stringToTerraform(this._disabled),
+      expire_rotated_token_after_hours: cdktn.numberToTerraform(this._expireRotatedTokenAfterHours),
+      id: cdktn.stringToTerraform(this._id),
+      keeper: cdktn.stringToTerraform(this._keeper),
+      mins_to_bypass_network_policy_requirement: cdktn.numberToTerraform(this._minsToBypassNetworkPolicyRequirement),
+      name: cdktn.stringToTerraform(this._name),
+      role_restriction: cdktn.stringToTerraform(this._roleRestriction),
+      user: cdktn.stringToTerraform(this._user),
       timeouts: userProgrammaticAccessTokenTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -671,61 +671,61 @@ export class UserProgrammaticAccessToken extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       days_to_expiry: {
-        value: cdktf.numberToHclTerraform(this._daysToExpiry),
+        value: cdktn.numberToHclTerraform(this._daysToExpiry),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       disabled: {
-        value: cdktf.stringToHclTerraform(this._disabled),
+        value: cdktn.stringToHclTerraform(this._disabled),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expire_rotated_token_after_hours: {
-        value: cdktf.numberToHclTerraform(this._expireRotatedTokenAfterHours),
+        value: cdktn.numberToHclTerraform(this._expireRotatedTokenAfterHours),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       keeper: {
-        value: cdktf.stringToHclTerraform(this._keeper),
+        value: cdktn.stringToHclTerraform(this._keeper),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mins_to_bypass_network_policy_requirement: {
-        value: cdktf.numberToHclTerraform(this._minsToBypassNetworkPolicyRequirement),
+        value: cdktn.numberToHclTerraform(this._minsToBypassNetworkPolicyRequirement),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_restriction: {
-        value: cdktf.stringToHclTerraform(this._roleRestriction),
+        value: cdktn.stringToHclTerraform(this._roleRestriction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user: {
-        value: cdktf.stringToHclTerraform(this._user),
+        value: cdktn.stringToHclTerraform(this._user),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GrantPrivilegesToShareConfig extends cdktf.TerraformMetaArguments {
+export interface GrantPrivilegesToShareConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share#id GrantPrivilegesToShare#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share#id GrantPrivilegesToShare#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,123 +22,123 @@ export interface GrantPrivilegesToShareConfig extends cdktf.TerraformMetaArgumen
   /**
   * The fully qualified identifier for the schema for which the specified privilege will be granted for all tables.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share#on_all_tables_in_schema GrantPrivilegesToShare#on_all_tables_in_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share#on_all_tables_in_schema GrantPrivilegesToShare#on_all_tables_in_schema}
   */
   readonly onAllTablesInSchema?: string;
   /**
   * The fully qualified name of the database on which privileges will be granted. For more information about this resource, see [docs](./database).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share#on_database GrantPrivilegesToShare#on_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share#on_database GrantPrivilegesToShare#on_database}
   */
   readonly onDatabase?: string;
   /**
   * The fully qualified name of the function on which privileges will be granted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share#on_function GrantPrivilegesToShare#on_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share#on_function GrantPrivilegesToShare#on_function}
   */
   readonly onFunction?: string;
   /**
   * The fully qualified name of the schema on which privileges will be granted. For more information about this resource, see [docs](./schema).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share#on_schema GrantPrivilegesToShare#on_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share#on_schema GrantPrivilegesToShare#on_schema}
   */
   readonly onSchema?: string;
   /**
   * The fully qualified name of the table on which privileges will be granted. For more information about this resource, see [docs](./table).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share#on_table GrantPrivilegesToShare#on_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share#on_table GrantPrivilegesToShare#on_table}
   */
   readonly onTable?: string;
   /**
   * The fully qualified name of the tag on which privileges will be granted. For more information about this resource, see [docs](./tag).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share#on_tag GrantPrivilegesToShare#on_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share#on_tag GrantPrivilegesToShare#on_tag}
   */
   readonly onTag?: string;
   /**
   * The fully qualified name of the view on which privileges will be granted. For more information about this resource, see [docs](./view).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share#on_view GrantPrivilegesToShare#on_view}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share#on_view GrantPrivilegesToShare#on_view}
   */
   readonly onView?: string;
   /**
   * The privileges to grant on the share. See available list of privileges: https://docs.snowflake.com/en/sql-reference/sql/grant-privilege-share#syntax
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share#privileges GrantPrivilegesToShare#privileges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share#privileges GrantPrivilegesToShare#privileges}
   */
   readonly privileges: string[];
   /**
   * The fully qualified name of the share on which privileges will be granted. For more information about this resource, see [docs](./share).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share#to_share GrantPrivilegesToShare#to_share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share#to_share GrantPrivilegesToShare#to_share}
   */
   readonly toShare: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share#timeouts GrantPrivilegesToShare#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share#timeouts GrantPrivilegesToShare#timeouts}
   */
   readonly timeouts?: GrantPrivilegesToShareTimeouts;
 }
 export interface GrantPrivilegesToShareTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share#create GrantPrivilegesToShare#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share#create GrantPrivilegesToShare#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share#delete GrantPrivilegesToShare#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share#delete GrantPrivilegesToShare#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share#read GrantPrivilegesToShare#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share#read GrantPrivilegesToShare#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share#update GrantPrivilegesToShare#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share#update GrantPrivilegesToShare#update}
   */
   readonly update?: string;
 }
 
-export function grantPrivilegesToShareTimeoutsToTerraform(struct?: GrantPrivilegesToShareTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function grantPrivilegesToShareTimeoutsToTerraform(struct?: GrantPrivilegesToShareTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function grantPrivilegesToShareTimeoutsToHclTerraform(struct?: GrantPrivilegesToShareTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function grantPrivilegesToShareTimeoutsToHclTerraform(struct?: GrantPrivilegesToShareTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -149,19 +149,19 @@ export function grantPrivilegesToShareTimeoutsToHclTerraform(struct?: GrantPrivi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GrantPrivilegesToShareTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GrantPrivilegesToShareTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GrantPrivilegesToShareTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GrantPrivilegesToShareTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -186,7 +186,7 @@ export class GrantPrivilegesToShareTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GrantPrivilegesToShareTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GrantPrivilegesToShareTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -195,7 +195,7 @@ export class GrantPrivilegesToShareTimeoutsOutputReference extends cdktf.Complex
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -275,9 +275,9 @@ export class GrantPrivilegesToShareTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share}
 */
-export class GrantPrivilegesToShare extends cdktf.TerraformResource {
+export class GrantPrivilegesToShare extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -288,14 +288,14 @@ export class GrantPrivilegesToShare extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GrantPrivilegesToShare resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GrantPrivilegesToShare resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GrantPrivilegesToShare to import
-  * @param importFromId The id of the existing GrantPrivilegesToShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GrantPrivilegesToShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GrantPrivilegesToShare to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_grant_privileges_to_share", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_grant_privileges_to_share", importId: importFromId, provider });
       }
 
   // ===========
@@ -303,7 +303,7 @@ export class GrantPrivilegesToShare extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -314,7 +314,7 @@ export class GrantPrivilegesToShare extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_grant_privileges_to_share',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -473,7 +473,7 @@ export class GrantPrivilegesToShare extends cdktf.TerraformResource {
   // privileges - computed: false, optional: false, required: true
   private _privileges?: string[]; 
   public get privileges() {
-    return cdktf.Fn.tolist(this.getListAttribute('privileges'));
+    return cdktn.Fn.tolist(this.getListAttribute('privileges'));
   }
   public set privileges(value: string[]) {
     this._privileges = value;
@@ -518,16 +518,16 @@ export class GrantPrivilegesToShare extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      on_all_tables_in_schema: cdktf.stringToTerraform(this._onAllTablesInSchema),
-      on_database: cdktf.stringToTerraform(this._onDatabase),
-      on_function: cdktf.stringToTerraform(this._onFunction),
-      on_schema: cdktf.stringToTerraform(this._onSchema),
-      on_table: cdktf.stringToTerraform(this._onTable),
-      on_tag: cdktf.stringToTerraform(this._onTag),
-      on_view: cdktf.stringToTerraform(this._onView),
-      privileges: cdktf.listMapper(cdktf.stringToTerraform, false)(this._privileges),
-      to_share: cdktf.stringToTerraform(this._toShare),
+      id: cdktn.stringToTerraform(this._id),
+      on_all_tables_in_schema: cdktn.stringToTerraform(this._onAllTablesInSchema),
+      on_database: cdktn.stringToTerraform(this._onDatabase),
+      on_function: cdktn.stringToTerraform(this._onFunction),
+      on_schema: cdktn.stringToTerraform(this._onSchema),
+      on_table: cdktn.stringToTerraform(this._onTable),
+      on_tag: cdktn.stringToTerraform(this._onTag),
+      on_view: cdktn.stringToTerraform(this._onView),
+      privileges: cdktn.listMapper(cdktn.stringToTerraform, false)(this._privileges),
+      to_share: cdktn.stringToTerraform(this._toShare),
       timeouts: grantPrivilegesToShareTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -535,61 +535,61 @@ export class GrantPrivilegesToShare extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       on_all_tables_in_schema: {
-        value: cdktf.stringToHclTerraform(this._onAllTablesInSchema),
+        value: cdktn.stringToHclTerraform(this._onAllTablesInSchema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       on_database: {
-        value: cdktf.stringToHclTerraform(this._onDatabase),
+        value: cdktn.stringToHclTerraform(this._onDatabase),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       on_function: {
-        value: cdktf.stringToHclTerraform(this._onFunction),
+        value: cdktn.stringToHclTerraform(this._onFunction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       on_schema: {
-        value: cdktf.stringToHclTerraform(this._onSchema),
+        value: cdktn.stringToHclTerraform(this._onSchema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       on_table: {
-        value: cdktf.stringToHclTerraform(this._onTable),
+        value: cdktn.stringToHclTerraform(this._onTable),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       on_tag: {
-        value: cdktf.stringToHclTerraform(this._onTag),
+        value: cdktn.stringToHclTerraform(this._onTag),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       on_view: {
-        value: cdktf.stringToHclTerraform(this._onView),
+        value: cdktn.stringToHclTerraform(this._onView),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       privileges: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._privileges),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._privileges),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       to_share: {
-        value: cdktf.stringToHclTerraform(this._toShare),
+        value: cdktn.stringToHclTerraform(this._toShare),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

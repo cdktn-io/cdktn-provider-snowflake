@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GrantPrivilegesToAccountRoleConfig extends cdktf.TerraformMetaArguments {
+export interface GrantPrivilegesToAccountRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The fully qualified name of the account role to which privileges will be granted. For more information about this resource, see [docs](./account_role).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#account_role_name GrantPrivilegesToAccountRole#account_role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#account_role_name GrantPrivilegesToAccountRole#account_role_name}
   */
   readonly accountRoleName: string;
   /**
   * (Default: `false`) Grant all privileges on the account role. When all privileges cannot be granted, the provider returns a warning, which is aligned with the Snowsight behavior.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#all_privileges GrantPrivilegesToAccountRole#all_privileges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#all_privileges GrantPrivilegesToAccountRole#all_privileges}
   */
-  readonly allPrivileges?: boolean | cdktf.IResolvable;
+  readonly allPrivileges?: boolean | cdktn.IResolvable;
   /**
   * (Default: `false`) If true, the resource will always produce a “plan” and on “apply” it will re-grant defined privileges. It is supposed to be used only in “grant privileges on all X’s in database / schema Y” or “grant all privileges to X” scenarios to make sure that every new object in a given database / schema is granted by the account role and every new privilege is granted to the database role. Important note: this flag is not compliant with the Terraform assumptions of the config being eventually convergent (producing an empty plan).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#always_apply GrantPrivilegesToAccountRole#always_apply}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#always_apply GrantPrivilegesToAccountRole#always_apply}
   */
-  readonly alwaysApply?: boolean | cdktf.IResolvable;
+  readonly alwaysApply?: boolean | cdktn.IResolvable;
   /**
   * (Default: ``) This is a helper field and should not be set. Its main purpose is to help to achieve the functionality described by the always_apply field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#always_apply_trigger GrantPrivilegesToAccountRole#always_apply_trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#always_apply_trigger GrantPrivilegesToAccountRole#always_apply_trigger}
   */
   readonly alwaysApplyTrigger?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#id GrantPrivilegesToAccountRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#id GrantPrivilegesToAccountRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,43 +46,49 @@ export interface GrantPrivilegesToAccountRoleConfig extends cdktf.TerraformMetaA
   /**
   * (Default: `false`) If true, the privileges will be granted on the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#on_account GrantPrivilegesToAccountRole#on_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#on_account GrantPrivilegesToAccountRole#on_account}
   */
-  readonly onAccount?: boolean | cdktf.IResolvable;
+  readonly onAccount?: boolean | cdktn.IResolvable;
   /**
   * The privileges to grant on the account role. This field is case-sensitive; use only upper-case privileges.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#privileges GrantPrivilegesToAccountRole#privileges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#privileges GrantPrivilegesToAccountRole#privileges}
   */
   readonly privileges?: string[];
   /**
+  * (Default: `false`) If true, the resource will revoke all privileges that are not explicitly defined in the config making it a central source of truth for the privileges granted on an object to an account role. If false, the resource will be only concerned with the privileges that are explicitly defined in the config. The potential privilege removals will be planned only after second `terraform apply` run, after setting the flag in resource configuration. This means, the flag update doesn't revoke immediately any externally granted privileges. This is a Terraform limitation, and two steps are needed to properly show the potential privilege changes (e.g., revoking privileges not specified in the configuration) in the plan. External privileges will be detected regardless of their grant option. The parameter can be only used when `GRANTS_STRICT_PRIVILEGE_MANAGEMENT` option is specified in provider block in the [`experimental_features_enabled`](https://registry.terraform.io/providers/snowflakedb/snowflake/latest/docs#experimental_features_enabled-1) field. Regular and future grants are treated separately, meaning, more resources need to be defined to control regular and future grants for a given object and role (and for a given database or schema they're defined in for future grants). See our [Strict privilege management](https://registry.terraform.io/providers/snowflakedb/snowflake/latest/docs/guides/strict_privilege_management) guide for more information.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#strict_privilege_management GrantPrivilegesToAccountRole#strict_privilege_management}
+  */
+  readonly strictPrivilegeManagement?: boolean | cdktn.IResolvable;
+  /**
   * (Default: `false`) Specifies whether the grantee can grant the privileges to other users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#with_grant_option GrantPrivilegesToAccountRole#with_grant_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#with_grant_option GrantPrivilegesToAccountRole#with_grant_option}
   */
-  readonly withGrantOption?: boolean | cdktf.IResolvable;
+  readonly withGrantOption?: boolean | cdktn.IResolvable;
   /**
   * on_account_object block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#on_account_object GrantPrivilegesToAccountRole#on_account_object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#on_account_object GrantPrivilegesToAccountRole#on_account_object}
   */
   readonly onAccountObject?: GrantPrivilegesToAccountRoleOnAccountObject;
   /**
   * on_schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#on_schema GrantPrivilegesToAccountRole#on_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#on_schema GrantPrivilegesToAccountRole#on_schema}
   */
   readonly onSchema?: GrantPrivilegesToAccountRoleOnSchema;
   /**
   * on_schema_object block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#on_schema_object GrantPrivilegesToAccountRole#on_schema_object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#on_schema_object GrantPrivilegesToAccountRole#on_schema_object}
   */
   readonly onSchemaObject?: GrantPrivilegesToAccountRoleOnSchemaObject;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#timeouts GrantPrivilegesToAccountRole#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#timeouts GrantPrivilegesToAccountRole#timeouts}
   */
   readonly timeouts?: GrantPrivilegesToAccountRoleTimeouts;
 }
@@ -90,43 +96,43 @@ export interface GrantPrivilegesToAccountRoleOnAccountObject {
   /**
   * The fully qualified name of the object on which privileges will be granted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#object_name GrantPrivilegesToAccountRole#object_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#object_name GrantPrivilegesToAccountRole#object_name}
   */
   readonly objectName: string;
   /**
   * The object type of the account object on which privileges will be granted. Valid values are: `USER` | `RESOURCE MONITOR` | `WAREHOUSE` | `COMPUTE POOL` | `DATABASE` | `INTEGRATION` | `CONNECTION` | `FAILOVER GROUP` | `REPLICATION GROUP` | `EXTERNAL VOLUME`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#object_type GrantPrivilegesToAccountRole#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#object_type GrantPrivilegesToAccountRole#object_type}
   */
   readonly objectType: string;
 }
 
 export function grantPrivilegesToAccountRoleOnAccountObjectToTerraform(struct?: GrantPrivilegesToAccountRoleOnAccountObjectOutputReference | GrantPrivilegesToAccountRoleOnAccountObject): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    object_name: cdktf.stringToTerraform(struct!.objectName),
-    object_type: cdktf.stringToTerraform(struct!.objectType),
+    object_name: cdktn.stringToTerraform(struct!.objectName),
+    object_type: cdktn.stringToTerraform(struct!.objectType),
   }
 }
 
 
 export function grantPrivilegesToAccountRoleOnAccountObjectToHclTerraform(struct?: GrantPrivilegesToAccountRoleOnAccountObjectOutputReference | GrantPrivilegesToAccountRoleOnAccountObject): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     object_name: {
-      value: cdktf.stringToHclTerraform(struct!.objectName),
+      value: cdktn.stringToHclTerraform(struct!.objectName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     object_type: {
-      value: cdktf.stringToHclTerraform(struct!.objectType),
+      value: cdktn.stringToHclTerraform(struct!.objectType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -137,14 +143,14 @@ export function grantPrivilegesToAccountRoleOnAccountObjectToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GrantPrivilegesToAccountRoleOnAccountObjectOutputReference extends cdktf.ComplexObject {
+export class GrantPrivilegesToAccountRoleOnAccountObjectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -205,56 +211,56 @@ export interface GrantPrivilegesToAccountRoleOnSchema {
   /**
   * The fully qualified name of the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#all_schemas_in_database GrantPrivilegesToAccountRole#all_schemas_in_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#all_schemas_in_database GrantPrivilegesToAccountRole#all_schemas_in_database}
   */
   readonly allSchemasInDatabase?: string;
   /**
   * The fully qualified name of the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#future_schemas_in_database GrantPrivilegesToAccountRole#future_schemas_in_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#future_schemas_in_database GrantPrivilegesToAccountRole#future_schemas_in_database}
   */
   readonly futureSchemasInDatabase?: string;
   /**
   * The fully qualified name of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#schema_name GrantPrivilegesToAccountRole#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#schema_name GrantPrivilegesToAccountRole#schema_name}
   */
   readonly schemaName?: string;
 }
 
 export function grantPrivilegesToAccountRoleOnSchemaToTerraform(struct?: GrantPrivilegesToAccountRoleOnSchemaOutputReference | GrantPrivilegesToAccountRoleOnSchema): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    all_schemas_in_database: cdktf.stringToTerraform(struct!.allSchemasInDatabase),
-    future_schemas_in_database: cdktf.stringToTerraform(struct!.futureSchemasInDatabase),
-    schema_name: cdktf.stringToTerraform(struct!.schemaName),
+    all_schemas_in_database: cdktn.stringToTerraform(struct!.allSchemasInDatabase),
+    future_schemas_in_database: cdktn.stringToTerraform(struct!.futureSchemasInDatabase),
+    schema_name: cdktn.stringToTerraform(struct!.schemaName),
   }
 }
 
 
 export function grantPrivilegesToAccountRoleOnSchemaToHclTerraform(struct?: GrantPrivilegesToAccountRoleOnSchemaOutputReference | GrantPrivilegesToAccountRoleOnSchema): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     all_schemas_in_database: {
-      value: cdktf.stringToHclTerraform(struct!.allSchemasInDatabase),
+      value: cdktn.stringToHclTerraform(struct!.allSchemasInDatabase),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     future_schemas_in_database: {
-      value: cdktf.stringToHclTerraform(struct!.futureSchemasInDatabase),
+      value: cdktn.stringToHclTerraform(struct!.futureSchemasInDatabase),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schema_name: {
-      value: cdktf.stringToHclTerraform(struct!.schemaName),
+      value: cdktn.stringToHclTerraform(struct!.schemaName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -265,14 +271,14 @@ export function grantPrivilegesToAccountRoleOnSchemaToHclTerraform(struct?: Gran
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GrantPrivilegesToAccountRoleOnSchemaOutputReference extends cdktf.ComplexObject {
+export class GrantPrivilegesToAccountRoleOnSchemaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -359,54 +365,54 @@ export class GrantPrivilegesToAccountRoleOnSchemaOutputReference extends cdktf.C
 }
 export interface GrantPrivilegesToAccountRoleOnSchemaObjectAll {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#in_database GrantPrivilegesToAccountRole#in_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#in_database GrantPrivilegesToAccountRole#in_database}
   */
   readonly inDatabase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#in_schema GrantPrivilegesToAccountRole#in_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#in_schema GrantPrivilegesToAccountRole#in_schema}
   */
   readonly inSchema?: string;
   /**
   * The plural object type of the schema object on which privileges will be granted. Valid values are: AGGREGATION POLICIES | ALERTS | AUTHENTICATION POLICIES | CORTEX SEARCH SERVICES | DATA METRIC FUNCTIONS | DATASETS | DBT PROJECTS | DYNAMIC TABLES | EVENT TABLES | EXTERNAL TABLES | FILE FORMATS | FUNCTIONS | GIT REPOSITORIES | HYBRID TABLES | IMAGE REPOSITORIES | ICEBERG TABLES | JOIN POLICIES | MASKING POLICIES | MATERIALIZED VIEWS | MODELS | MODEL MONITORS | NETWORK RULES | NOTEBOOKS | PACKAGES POLICIES | PASSWORD POLICIES | PIPES | PRIVACY POLICIES | PROCEDURES | PROJECTION POLICIES | ROW ACCESS POLICIES | SECRETS | SEMANTIC VIEWS | SERVICES | SESSION POLICIES | SEQUENCES | SNAPSHOTS | SNAPSHOT POLICIES | SNAPSHOT SETS | STAGES | STREAMS | STREAMLITS | ONLINE FEATURE TABLES | TABLES | TAGS | TASKS | VIEWS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#object_type_plural GrantPrivilegesToAccountRole#object_type_plural}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#object_type_plural GrantPrivilegesToAccountRole#object_type_plural}
   */
   readonly objectTypePlural: string;
 }
 
 export function grantPrivilegesToAccountRoleOnSchemaObjectAllToTerraform(struct?: GrantPrivilegesToAccountRoleOnSchemaObjectAllOutputReference | GrantPrivilegesToAccountRoleOnSchemaObjectAll): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    in_database: cdktf.stringToTerraform(struct!.inDatabase),
-    in_schema: cdktf.stringToTerraform(struct!.inSchema),
-    object_type_plural: cdktf.stringToTerraform(struct!.objectTypePlural),
+    in_database: cdktn.stringToTerraform(struct!.inDatabase),
+    in_schema: cdktn.stringToTerraform(struct!.inSchema),
+    object_type_plural: cdktn.stringToTerraform(struct!.objectTypePlural),
   }
 }
 
 
 export function grantPrivilegesToAccountRoleOnSchemaObjectAllToHclTerraform(struct?: GrantPrivilegesToAccountRoleOnSchemaObjectAllOutputReference | GrantPrivilegesToAccountRoleOnSchemaObjectAll): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     in_database: {
-      value: cdktf.stringToHclTerraform(struct!.inDatabase),
+      value: cdktn.stringToHclTerraform(struct!.inDatabase),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     in_schema: {
-      value: cdktf.stringToHclTerraform(struct!.inSchema),
+      value: cdktn.stringToHclTerraform(struct!.inSchema),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     object_type_plural: {
-      value: cdktf.stringToHclTerraform(struct!.objectTypePlural),
+      value: cdktn.stringToHclTerraform(struct!.objectTypePlural),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -417,14 +423,14 @@ export function grantPrivilegesToAccountRoleOnSchemaObjectAllToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GrantPrivilegesToAccountRoleOnSchemaObjectAllOutputReference extends cdktf.ComplexObject {
+export class GrantPrivilegesToAccountRoleOnSchemaObjectAllOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -508,54 +514,54 @@ export class GrantPrivilegesToAccountRoleOnSchemaObjectAllOutputReference extend
 }
 export interface GrantPrivilegesToAccountRoleOnSchemaObjectFuture {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#in_database GrantPrivilegesToAccountRole#in_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#in_database GrantPrivilegesToAccountRole#in_database}
   */
   readonly inDatabase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#in_schema GrantPrivilegesToAccountRole#in_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#in_schema GrantPrivilegesToAccountRole#in_schema}
   */
   readonly inSchema?: string;
   /**
   * The plural object type of the schema object on which privileges will be granted. Valid values are: ALERTS | AUTHENTICATION POLICIES | CORTEX SEARCH SERVICES | DATA METRIC FUNCTIONS | DATASETS | DBT PROJECTS | DYNAMIC TABLES | EVENT TABLES | EXTERNAL TABLES | FILE FORMATS | FUNCTIONS | GIT REPOSITORIES | HYBRID TABLES | ICEBERG TABLES | JOIN POLICIES | MATERIALIZED VIEWS | MODELS | MODEL MONITORS | NETWORK RULES | NOTEBOOKS | PASSWORD POLICIES | PIPES | PRIVACY POLICIES | PROCEDURES | SECRETS | SEMANTIC VIEWS | SERVICES | SEQUENCES | SNAPSHOTS | SNAPSHOT POLICIES | SNAPSHOT SETS | STAGES | STREAMS | STREAMLITS | ONLINE FEATURE TABLES | TABLES | TASKS | VIEWS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#object_type_plural GrantPrivilegesToAccountRole#object_type_plural}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#object_type_plural GrantPrivilegesToAccountRole#object_type_plural}
   */
   readonly objectTypePlural: string;
 }
 
 export function grantPrivilegesToAccountRoleOnSchemaObjectFutureToTerraform(struct?: GrantPrivilegesToAccountRoleOnSchemaObjectFutureOutputReference | GrantPrivilegesToAccountRoleOnSchemaObjectFuture): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    in_database: cdktf.stringToTerraform(struct!.inDatabase),
-    in_schema: cdktf.stringToTerraform(struct!.inSchema),
-    object_type_plural: cdktf.stringToTerraform(struct!.objectTypePlural),
+    in_database: cdktn.stringToTerraform(struct!.inDatabase),
+    in_schema: cdktn.stringToTerraform(struct!.inSchema),
+    object_type_plural: cdktn.stringToTerraform(struct!.objectTypePlural),
   }
 }
 
 
 export function grantPrivilegesToAccountRoleOnSchemaObjectFutureToHclTerraform(struct?: GrantPrivilegesToAccountRoleOnSchemaObjectFutureOutputReference | GrantPrivilegesToAccountRoleOnSchemaObjectFuture): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     in_database: {
-      value: cdktf.stringToHclTerraform(struct!.inDatabase),
+      value: cdktn.stringToHclTerraform(struct!.inDatabase),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     in_schema: {
-      value: cdktf.stringToHclTerraform(struct!.inSchema),
+      value: cdktn.stringToHclTerraform(struct!.inSchema),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     object_type_plural: {
-      value: cdktf.stringToHclTerraform(struct!.objectTypePlural),
+      value: cdktn.stringToHclTerraform(struct!.objectTypePlural),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -566,14 +572,14 @@ export function grantPrivilegesToAccountRoleOnSchemaObjectFutureToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GrantPrivilegesToAccountRoleOnSchemaObjectFutureOutputReference extends cdktf.ComplexObject {
+export class GrantPrivilegesToAccountRoleOnSchemaObjectFutureOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -659,37 +665,37 @@ export interface GrantPrivilegesToAccountRoleOnSchemaObject {
   /**
   * The fully qualified name of the object on which privileges will be granted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#object_name GrantPrivilegesToAccountRole#object_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#object_name GrantPrivilegesToAccountRole#object_name}
   */
   readonly objectName?: string;
   /**
   * The object type of the schema object on which privileges will be granted. Valid values are: AGGREGATION POLICY | ALERT | AUTHENTICATION POLICY | CORTEX SEARCH SERVICE | DATA METRIC FUNCTION | DATASET | DBT PROJECT | DYNAMIC TABLE | EVENT TABLE | EXTERNAL TABLE | FILE FORMAT | FUNCTION | GIT REPOSITORY | HYBRID TABLE | IMAGE REPOSITORY | ICEBERG TABLE | JOIN POLICY | MASKING POLICY | MATERIALIZED VIEW | MODEL | MODEL MONITOR | NETWORK RULE | NOTEBOOK | PACKAGES POLICY | PASSWORD POLICY | PIPE | PRIVACY POLICY | PROCEDURE | PROJECTION POLICY | ROW ACCESS POLICY | SECRET | SEMANTIC VIEW | SERVICE | SESSION POLICY | SEQUENCE | STORAGE LIFECYCLE POLICY | SNAPSHOT | SNAPSHOT POLICY | SNAPSHOT SET | STAGE | STREAM | STREAMLIT | ONLINE FEATURE TABLE | TABLE | TAG | TASK | VIEW | WORKSPACE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#object_type GrantPrivilegesToAccountRole#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#object_type GrantPrivilegesToAccountRole#object_type}
   */
   readonly objectType?: string;
   /**
   * all block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#all GrantPrivilegesToAccountRole#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#all GrantPrivilegesToAccountRole#all}
   */
   readonly all?: GrantPrivilegesToAccountRoleOnSchemaObjectAll;
   /**
   * future block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#future GrantPrivilegesToAccountRole#future}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#future GrantPrivilegesToAccountRole#future}
   */
   readonly future?: GrantPrivilegesToAccountRoleOnSchemaObjectFuture;
 }
 
 export function grantPrivilegesToAccountRoleOnSchemaObjectToTerraform(struct?: GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference | GrantPrivilegesToAccountRoleOnSchemaObject): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    object_name: cdktf.stringToTerraform(struct!.objectName),
-    object_type: cdktf.stringToTerraform(struct!.objectType),
+    object_name: cdktn.stringToTerraform(struct!.objectName),
+    object_type: cdktn.stringToTerraform(struct!.objectType),
     all: grantPrivilegesToAccountRoleOnSchemaObjectAllToTerraform(struct!.all),
     future: grantPrivilegesToAccountRoleOnSchemaObjectFutureToTerraform(struct!.future),
   }
@@ -697,19 +703,19 @@ export function grantPrivilegesToAccountRoleOnSchemaObjectToTerraform(struct?: G
 
 
 export function grantPrivilegesToAccountRoleOnSchemaObjectToHclTerraform(struct?: GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference | GrantPrivilegesToAccountRoleOnSchemaObject): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     object_name: {
-      value: cdktf.stringToHclTerraform(struct!.objectName),
+      value: cdktn.stringToHclTerraform(struct!.objectName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     object_type: {
-      value: cdktf.stringToHclTerraform(struct!.objectType),
+      value: cdktn.stringToHclTerraform(struct!.objectType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -732,14 +738,14 @@ export function grantPrivilegesToAccountRoleOnSchemaObjectToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference extends cdktf.ComplexObject {
+export class GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -848,63 +854,63 @@ export class GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference extends c
 }
 export interface GrantPrivilegesToAccountRoleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#create GrantPrivilegesToAccountRole#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#create GrantPrivilegesToAccountRole#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#delete GrantPrivilegesToAccountRole#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#delete GrantPrivilegesToAccountRole#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#read GrantPrivilegesToAccountRole#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#read GrantPrivilegesToAccountRole#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#update GrantPrivilegesToAccountRole#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#update GrantPrivilegesToAccountRole#update}
   */
   readonly update?: string;
 }
 
-export function grantPrivilegesToAccountRoleTimeoutsToTerraform(struct?: GrantPrivilegesToAccountRoleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function grantPrivilegesToAccountRoleTimeoutsToTerraform(struct?: GrantPrivilegesToAccountRoleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function grantPrivilegesToAccountRoleTimeoutsToHclTerraform(struct?: GrantPrivilegesToAccountRoleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function grantPrivilegesToAccountRoleTimeoutsToHclTerraform(struct?: GrantPrivilegesToAccountRoleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -915,19 +921,19 @@ export function grantPrivilegesToAccountRoleTimeoutsToHclTerraform(struct?: Gran
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GrantPrivilegesToAccountRoleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GrantPrivilegesToAccountRoleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GrantPrivilegesToAccountRoleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GrantPrivilegesToAccountRoleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -952,7 +958,7 @@ export class GrantPrivilegesToAccountRoleTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GrantPrivilegesToAccountRoleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GrantPrivilegesToAccountRoleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -961,7 +967,7 @@ export class GrantPrivilegesToAccountRoleTimeoutsOutputReference extends cdktf.C
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1041,9 +1047,9 @@ export class GrantPrivilegesToAccountRoleTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role snowflake_grant_privileges_to_account_role}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role snowflake_grant_privileges_to_account_role}
 */
-export class GrantPrivilegesToAccountRole extends cdktf.TerraformResource {
+export class GrantPrivilegesToAccountRole extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1054,14 +1060,14 @@ export class GrantPrivilegesToAccountRole extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GrantPrivilegesToAccountRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GrantPrivilegesToAccountRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GrantPrivilegesToAccountRole to import
-  * @param importFromId The id of the existing GrantPrivilegesToAccountRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GrantPrivilegesToAccountRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GrantPrivilegesToAccountRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_grant_privileges_to_account_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_grant_privileges_to_account_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -1069,7 +1075,7 @@ export class GrantPrivilegesToAccountRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_account_role snowflake_grant_privileges_to_account_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/grant_privileges_to_account_role snowflake_grant_privileges_to_account_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1080,7 +1086,7 @@ export class GrantPrivilegesToAccountRole extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_grant_privileges_to_account_role',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -1098,6 +1104,7 @@ export class GrantPrivilegesToAccountRole extends cdktf.TerraformResource {
     this._id = config.id;
     this._onAccount = config.onAccount;
     this._privileges = config.privileges;
+    this._strictPrivilegeManagement = config.strictPrivilegeManagement;
     this._withGrantOption = config.withGrantOption;
     this._onAccountObject.internalValue = config.onAccountObject;
     this._onSchema.internalValue = config.onSchema;
@@ -1123,11 +1130,11 @@ export class GrantPrivilegesToAccountRole extends cdktf.TerraformResource {
   }
 
   // all_privileges - computed: false, optional: true, required: false
-  private _allPrivileges?: boolean | cdktf.IResolvable; 
+  private _allPrivileges?: boolean | cdktn.IResolvable; 
   public get allPrivileges() {
     return this.getBooleanAttribute('all_privileges');
   }
-  public set allPrivileges(value: boolean | cdktf.IResolvable) {
+  public set allPrivileges(value: boolean | cdktn.IResolvable) {
     this._allPrivileges = value;
   }
   public resetAllPrivileges() {
@@ -1139,11 +1146,11 @@ export class GrantPrivilegesToAccountRole extends cdktf.TerraformResource {
   }
 
   // always_apply - computed: false, optional: true, required: false
-  private _alwaysApply?: boolean | cdktf.IResolvable; 
+  private _alwaysApply?: boolean | cdktn.IResolvable; 
   public get alwaysApply() {
     return this.getBooleanAttribute('always_apply');
   }
-  public set alwaysApply(value: boolean | cdktf.IResolvable) {
+  public set alwaysApply(value: boolean | cdktn.IResolvable) {
     this._alwaysApply = value;
   }
   public resetAlwaysApply() {
@@ -1187,11 +1194,11 @@ export class GrantPrivilegesToAccountRole extends cdktf.TerraformResource {
   }
 
   // on_account - computed: false, optional: true, required: false
-  private _onAccount?: boolean | cdktf.IResolvable; 
+  private _onAccount?: boolean | cdktn.IResolvable; 
   public get onAccount() {
     return this.getBooleanAttribute('on_account');
   }
-  public set onAccount(value: boolean | cdktf.IResolvable) {
+  public set onAccount(value: boolean | cdktn.IResolvable) {
     this._onAccount = value;
   }
   public resetOnAccount() {
@@ -1205,7 +1212,7 @@ export class GrantPrivilegesToAccountRole extends cdktf.TerraformResource {
   // privileges - computed: false, optional: true, required: false
   private _privileges?: string[]; 
   public get privileges() {
-    return cdktf.Fn.tolist(this.getListAttribute('privileges'));
+    return cdktn.Fn.tolist(this.getListAttribute('privileges'));
   }
   public set privileges(value: string[]) {
     this._privileges = value;
@@ -1218,12 +1225,28 @@ export class GrantPrivilegesToAccountRole extends cdktf.TerraformResource {
     return this._privileges;
   }
 
+  // strict_privilege_management - computed: false, optional: true, required: false
+  private _strictPrivilegeManagement?: boolean | cdktn.IResolvable; 
+  public get strictPrivilegeManagement() {
+    return this.getBooleanAttribute('strict_privilege_management');
+  }
+  public set strictPrivilegeManagement(value: boolean | cdktn.IResolvable) {
+    this._strictPrivilegeManagement = value;
+  }
+  public resetStrictPrivilegeManagement() {
+    this._strictPrivilegeManagement = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get strictPrivilegeManagementInput() {
+    return this._strictPrivilegeManagement;
+  }
+
   // with_grant_option - computed: false, optional: true, required: false
-  private _withGrantOption?: boolean | cdktf.IResolvable; 
+  private _withGrantOption?: boolean | cdktn.IResolvable; 
   public get withGrantOption() {
     return this.getBooleanAttribute('with_grant_option');
   }
-  public set withGrantOption(value: boolean | cdktf.IResolvable) {
+  public set withGrantOption(value: boolean | cdktn.IResolvable) {
     this._withGrantOption = value;
   }
   public resetWithGrantOption() {
@@ -1304,14 +1327,15 @@ export class GrantPrivilegesToAccountRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_role_name: cdktf.stringToTerraform(this._accountRoleName),
-      all_privileges: cdktf.booleanToTerraform(this._allPrivileges),
-      always_apply: cdktf.booleanToTerraform(this._alwaysApply),
-      always_apply_trigger: cdktf.stringToTerraform(this._alwaysApplyTrigger),
-      id: cdktf.stringToTerraform(this._id),
-      on_account: cdktf.booleanToTerraform(this._onAccount),
-      privileges: cdktf.listMapper(cdktf.stringToTerraform, false)(this._privileges),
-      with_grant_option: cdktf.booleanToTerraform(this._withGrantOption),
+      account_role_name: cdktn.stringToTerraform(this._accountRoleName),
+      all_privileges: cdktn.booleanToTerraform(this._allPrivileges),
+      always_apply: cdktn.booleanToTerraform(this._alwaysApply),
+      always_apply_trigger: cdktn.stringToTerraform(this._alwaysApplyTrigger),
+      id: cdktn.stringToTerraform(this._id),
+      on_account: cdktn.booleanToTerraform(this._onAccount),
+      privileges: cdktn.listMapper(cdktn.stringToTerraform, false)(this._privileges),
+      strict_privilege_management: cdktn.booleanToTerraform(this._strictPrivilegeManagement),
+      with_grant_option: cdktn.booleanToTerraform(this._withGrantOption),
       on_account_object: grantPrivilegesToAccountRoleOnAccountObjectToTerraform(this._onAccountObject.internalValue),
       on_schema: grantPrivilegesToAccountRoleOnSchemaToTerraform(this._onSchema.internalValue),
       on_schema_object: grantPrivilegesToAccountRoleOnSchemaObjectToTerraform(this._onSchemaObject.internalValue),
@@ -1322,49 +1346,55 @@ export class GrantPrivilegesToAccountRole extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_role_name: {
-        value: cdktf.stringToHclTerraform(this._accountRoleName),
+        value: cdktn.stringToHclTerraform(this._accountRoleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       all_privileges: {
-        value: cdktf.booleanToHclTerraform(this._allPrivileges),
+        value: cdktn.booleanToHclTerraform(this._allPrivileges),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       always_apply: {
-        value: cdktf.booleanToHclTerraform(this._alwaysApply),
+        value: cdktn.booleanToHclTerraform(this._alwaysApply),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       always_apply_trigger: {
-        value: cdktf.stringToHclTerraform(this._alwaysApplyTrigger),
+        value: cdktn.stringToHclTerraform(this._alwaysApplyTrigger),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       on_account: {
-        value: cdktf.booleanToHclTerraform(this._onAccount),
+        value: cdktn.booleanToHclTerraform(this._onAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       privileges: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._privileges),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._privileges),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
+      strict_privilege_management: {
+        value: cdktn.booleanToHclTerraform(this._strictPrivilegeManagement),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       with_grant_option: {
-        value: cdktf.booleanToHclTerraform(this._withGrantOption),
+        value: cdktn.booleanToHclTerraform(this._withGrantOption),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

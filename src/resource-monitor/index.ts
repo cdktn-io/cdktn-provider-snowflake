@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ResourceMonitorConfig extends cdktf.TerraformMetaArguments {
+export interface ResourceMonitorConfig extends cdktn.TerraformMetaArguments {
   /**
   * The number of credits allocated to the resource monitor per frequency interval. When total usage for all warehouses assigned to the monitor reaches this number for the current frequency interval, the resource monitor is considered to be at 100% of quota.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor#credit_quota ResourceMonitor#credit_quota}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor#credit_quota ResourceMonitor#credit_quota}
   */
   readonly creditQuota?: number;
   /**
   * The date and time when the resource monitor suspends the assigned warehouses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor#end_timestamp ResourceMonitor#end_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor#end_timestamp ResourceMonitor#end_timestamp}
   */
   readonly endTimestamp?: string;
   /**
   * The frequency interval at which the credit usage resets to 0. Valid values are (case-insensitive): `MONTHLY` | `DAILY` | `WEEKLY` | `YEARLY` | `NEVER`. If you set a `frequency` for a resource monitor, you must also set `start_timestamp`. If you specify `NEVER` for the frequency, the credit usage for the warehouse does not reset. After removing this field from the config, the previously set value will be preserved on the Snowflake side, not the default value. That's due to Snowflake limitation and the lack of unset functionality for this parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor#frequency ResourceMonitor#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor#frequency ResourceMonitor#frequency}
   */
   readonly frequency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor#id ResourceMonitor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor#id ResourceMonitor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,43 +40,43 @@ export interface ResourceMonitorConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier for the resource monitor; must be unique for your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor#name ResourceMonitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor#name ResourceMonitor#name}
   */
   readonly name: string;
   /**
   * Specifies a list of percentages of the credit quota. After reaching any of the values the users passed in the notify_users field will be notified (to receive the notification they should have notifications enabled). Values over 100 are supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor#notify_triggers ResourceMonitor#notify_triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor#notify_triggers ResourceMonitor#notify_triggers}
   */
   readonly notifyTriggers?: number[];
   /**
   * Specifies the list of users (their identifiers) to receive email notifications on resource monitors. For more information about this resource, see [docs](./user).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor#notify_users ResourceMonitor#notify_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor#notify_users ResourceMonitor#notify_users}
   */
   readonly notifyUsers?: string[];
   /**
-  * The date and time when the resource monitor starts monitoring credit usage for the assigned warehouses. If you set a `start_timestamp` for a resource monitor, you must also set `frequency`.  After removing this field from the config, the previously set value will be preserved on the Snowflake side, not the default value. That's due to Snowflake limitation and the lack of unset functionality for this parameter.
+  * The date and time when the resource monitor starts monitoring credit usage for the assigned warehouses. If you set a `start_timestamp` for a resource monitor, you must also set `frequency`. If you specify the special value `IMMEDIATELY`, the current date is used. In this case, the field of this value in `show_output` may be not consistent across different Terraform runs. After removing this field from the config, the previously set value will be preserved on the Snowflake side, not the default value. That's due to Snowflake limitation and the lack of unset functionality for this parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor#start_timestamp ResourceMonitor#start_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor#start_timestamp ResourceMonitor#start_timestamp}
   */
   readonly startTimestamp?: string;
   /**
   * Represents a numeric value specified as a percentage of the credit quota. Values over 100 are supported. After reaching this value, all assigned warehouses immediately cancel any currently running queries or statements. In addition, this action sends a notification to all users who have enabled notifications for themselves.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor#suspend_immediate_trigger ResourceMonitor#suspend_immediate_trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor#suspend_immediate_trigger ResourceMonitor#suspend_immediate_trigger}
   */
   readonly suspendImmediateTrigger?: number;
   /**
   * Represents a numeric value specified as a percentage of the credit quota. Values over 100 are supported. After reaching this value, all assigned warehouses while allowing currently running queries to complete will be suspended. No new queries can be executed by the warehouses until the credit quota for the resource monitor is increased. In addition, this action sends a notification to all users who have enabled notifications for themselves.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor#suspend_trigger ResourceMonitor#suspend_trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor#suspend_trigger ResourceMonitor#suspend_trigger}
   */
   readonly suspendTrigger?: number;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor#timeouts ResourceMonitor#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor#timeouts ResourceMonitor#timeouts}
   */
   readonly timeouts?: ResourceMonitorTimeouts;
 }
@@ -84,8 +84,8 @@ export interface ResourceMonitorShowOutput {
 }
 
 export function resourceMonitorShowOutputToTerraform(struct?: ResourceMonitorShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -94,8 +94,8 @@ export function resourceMonitorShowOutputToTerraform(struct?: ResourceMonitorSho
 
 
 export function resourceMonitorShowOutputToHclTerraform(struct?: ResourceMonitorShowOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -103,7 +103,7 @@ export function resourceMonitorShowOutputToHclTerraform(struct?: ResourceMonitor
   return attrs;
 }
 
-export class ResourceMonitorShowOutputOutputReference extends cdktf.ComplexObject {
+export class ResourceMonitorShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -112,7 +112,7 @@ export class ResourceMonitorShowOutputOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -197,14 +197,14 @@ export class ResourceMonitorShowOutputOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class ResourceMonitorShowOutputList extends cdktf.ComplexList {
+export class ResourceMonitorShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -217,63 +217,63 @@ export class ResourceMonitorShowOutputList extends cdktf.ComplexList {
 }
 export interface ResourceMonitorTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor#create ResourceMonitor#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor#create ResourceMonitor#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor#delete ResourceMonitor#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor#delete ResourceMonitor#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor#read ResourceMonitor#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor#read ResourceMonitor#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor#update ResourceMonitor#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor#update ResourceMonitor#update}
   */
   readonly update?: string;
 }
 
-export function resourceMonitorTimeoutsToTerraform(struct?: ResourceMonitorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resourceMonitorTimeoutsToTerraform(struct?: ResourceMonitorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function resourceMonitorTimeoutsToHclTerraform(struct?: ResourceMonitorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resourceMonitorTimeoutsToHclTerraform(struct?: ResourceMonitorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -284,19 +284,19 @@ export function resourceMonitorTimeoutsToHclTerraform(struct?: ResourceMonitorTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ResourceMonitorTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ResourceMonitorTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ResourceMonitorTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ResourceMonitorTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -321,7 +321,7 @@ export class ResourceMonitorTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ResourceMonitorTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ResourceMonitorTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -330,7 +330,7 @@ export class ResourceMonitorTimeoutsOutputReference extends cdktf.ComplexObject 
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -410,9 +410,9 @@ export class ResourceMonitorTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor snowflake_resource_monitor}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor snowflake_resource_monitor}
 */
-export class ResourceMonitor extends cdktf.TerraformResource {
+export class ResourceMonitor extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -423,14 +423,14 @@ export class ResourceMonitor extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ResourceMonitor resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ResourceMonitor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ResourceMonitor to import
-  * @param importFromId The id of the existing ResourceMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ResourceMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ResourceMonitor to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_resource_monitor", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_resource_monitor", importId: importFromId, provider });
       }
 
   // ===========
@@ -438,7 +438,7 @@ export class ResourceMonitor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/resource_monitor snowflake_resource_monitor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/resource_monitor snowflake_resource_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -449,7 +449,7 @@ export class ResourceMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_resource_monitor',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -562,7 +562,7 @@ export class ResourceMonitor extends cdktf.TerraformResource {
   // notify_triggers - computed: false, optional: true, required: false
   private _notifyTriggers?: number[]; 
   public get notifyTriggers() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('notify_triggers')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('notify_triggers')));
   }
   public set notifyTriggers(value: number[]) {
     this._notifyTriggers = value;
@@ -578,7 +578,7 @@ export class ResourceMonitor extends cdktf.TerraformResource {
   // notify_users - computed: false, optional: true, required: false
   private _notifyUsers?: string[]; 
   public get notifyUsers() {
-    return cdktf.Fn.tolist(this.getListAttribute('notify_users'));
+    return cdktn.Fn.tolist(this.getListAttribute('notify_users'));
   }
   public set notifyUsers(value: string[]) {
     this._notifyUsers = value;
@@ -667,16 +667,16 @@ export class ResourceMonitor extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      credit_quota: cdktf.numberToTerraform(this._creditQuota),
-      end_timestamp: cdktf.stringToTerraform(this._endTimestamp),
-      frequency: cdktf.stringToTerraform(this._frequency),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      notify_triggers: cdktf.listMapper(cdktf.numberToTerraform, false)(this._notifyTriggers),
-      notify_users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notifyUsers),
-      start_timestamp: cdktf.stringToTerraform(this._startTimestamp),
-      suspend_immediate_trigger: cdktf.numberToTerraform(this._suspendImmediateTrigger),
-      suspend_trigger: cdktf.numberToTerraform(this._suspendTrigger),
+      credit_quota: cdktn.numberToTerraform(this._creditQuota),
+      end_timestamp: cdktn.stringToTerraform(this._endTimestamp),
+      frequency: cdktn.stringToTerraform(this._frequency),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      notify_triggers: cdktn.listMapper(cdktn.numberToTerraform, false)(this._notifyTriggers),
+      notify_users: cdktn.listMapper(cdktn.stringToTerraform, false)(this._notifyUsers),
+      start_timestamp: cdktn.stringToTerraform(this._startTimestamp),
+      suspend_immediate_trigger: cdktn.numberToTerraform(this._suspendImmediateTrigger),
+      suspend_trigger: cdktn.numberToTerraform(this._suspendTrigger),
       timeouts: resourceMonitorTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -684,61 +684,61 @@ export class ResourceMonitor extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       credit_quota: {
-        value: cdktf.numberToHclTerraform(this._creditQuota),
+        value: cdktn.numberToHclTerraform(this._creditQuota),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       end_timestamp: {
-        value: cdktf.stringToHclTerraform(this._endTimestamp),
+        value: cdktn.stringToHclTerraform(this._endTimestamp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       frequency: {
-        value: cdktf.stringToHclTerraform(this._frequency),
+        value: cdktn.stringToHclTerraform(this._frequency),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notify_triggers: {
-        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._notifyTriggers),
+        value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(this._notifyTriggers),
         isBlock: false,
         type: "set",
         storageClassType: "numberList",
       },
       notify_users: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notifyUsers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._notifyUsers),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       start_timestamp: {
-        value: cdktf.stringToHclTerraform(this._startTimestamp),
+        value: cdktn.stringToHclTerraform(this._startTimestamp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       suspend_immediate_trigger: {
-        value: cdktf.numberToHclTerraform(this._suspendImmediateTrigger),
+        value: cdktn.numberToHclTerraform(this._suspendImmediateTrigger),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       suspend_trigger: {
-        value: cdktf.numberToHclTerraform(this._suspendTrigger),
+        value: cdktn.numberToHclTerraform(this._suspendTrigger),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

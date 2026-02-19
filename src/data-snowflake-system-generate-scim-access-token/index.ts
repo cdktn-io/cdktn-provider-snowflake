@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/system_generate_scim_access_token
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/system_generate_scim_access_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataSnowflakeSystemGenerateScimAccessTokenConfig extends cdktf.TerraformMetaArguments {
+export interface DataSnowflakeSystemGenerateScimAccessTokenConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/system_generate_scim_access_token#id DataSnowflakeSystemGenerateScimAccessToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/system_generate_scim_access_token#id DataSnowflakeSystemGenerateScimAccessToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,15 +22,15 @@ export interface DataSnowflakeSystemGenerateScimAccessTokenConfig extends cdktf.
   /**
   * SCIM Integration Name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/system_generate_scim_access_token#integration_name DataSnowflakeSystemGenerateScimAccessToken#integration_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/system_generate_scim_access_token#integration_name DataSnowflakeSystemGenerateScimAccessToken#integration_name}
   */
   readonly integrationName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/system_generate_scim_access_token snowflake_system_generate_scim_access_token}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/system_generate_scim_access_token snowflake_system_generate_scim_access_token}
 */
-export class DataSnowflakeSystemGenerateScimAccessToken extends cdktf.TerraformDataSource {
+export class DataSnowflakeSystemGenerateScimAccessToken extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -41,14 +41,14 @@ export class DataSnowflakeSystemGenerateScimAccessToken extends cdktf.TerraformD
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataSnowflakeSystemGenerateScimAccessToken resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataSnowflakeSystemGenerateScimAccessToken resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeSystemGenerateScimAccessToken to import
-  * @param importFromId The id of the existing DataSnowflakeSystemGenerateScimAccessToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/system_generate_scim_access_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeSystemGenerateScimAccessToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/system_generate_scim_access_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeSystemGenerateScimAccessToken to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_system_generate_scim_access_token", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_system_generate_scim_access_token", importId: importFromId, provider });
       }
 
   // ===========
@@ -56,7 +56,7 @@ export class DataSnowflakeSystemGenerateScimAccessToken extends cdktf.TerraformD
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/system_generate_scim_access_token snowflake_system_generate_scim_access_token} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/system_generate_scim_access_token snowflake_system_generate_scim_access_token} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,7 @@ export class DataSnowflakeSystemGenerateScimAccessToken extends cdktf.TerraformD
       terraformResourceType: 'snowflake_system_generate_scim_access_token',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -126,21 +126,21 @@ export class DataSnowflakeSystemGenerateScimAccessToken extends cdktf.TerraformD
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      integration_name: cdktf.stringToTerraform(this._integrationName),
+      id: cdktn.stringToTerraform(this._id),
+      integration_name: cdktn.stringToTerraform(this._integrationName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_name: {
-        value: cdktf.stringToHclTerraform(this._integrationName),
+        value: cdktn.stringToHclTerraform(this._integrationName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

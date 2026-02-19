@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StorageIntegrationConfig extends cdktf.TerraformMetaArguments {
+export interface StorageIntegrationConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Default: ``) Specifies the ID for your Office 365 tenant that the allowed and blocked storage accounts belong to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#azure_tenant_id StorageIntegration#azure_tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#azure_tenant_id StorageIntegration#azure_tenant_id}
   */
   readonly azureTenantId?: string;
   /**
   * (Default: ``) Specifies a comment for the storage integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#comment StorageIntegration#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#comment StorageIntegration#comment}
   */
   readonly comment?: string;
   /**
   * (Default: `true`) 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#enabled StorageIntegration#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#enabled StorageIntegration#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#id StorageIntegration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#id StorageIntegration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,61 +40,61 @@ export interface StorageIntegrationConfig extends cdktf.TerraformMetaArguments {
   /**
   * String that specifies the identifier (i.e. name) for the integration; must be unique in your account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#name StorageIntegration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#name StorageIntegration#name}
   */
   readonly name: string;
   /**
   * Explicitly limits external stages that use the integration to reference one or more storage locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#storage_allowed_locations StorageIntegration#storage_allowed_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#storage_allowed_locations StorageIntegration#storage_allowed_locations}
   */
   readonly storageAllowedLocations: string[];
   /**
   * Optionally specifies an external ID that Snowflake uses to establish a trust relationship with AWS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#storage_aws_external_id StorageIntegration#storage_aws_external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#storage_aws_external_id StorageIntegration#storage_aws_external_id}
   */
   readonly storageAwsExternalId?: string;
   /**
   * "bucket-owner-full-control" Enables support for AWS access control lists (ACLs) to grant the bucket owner full control.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#storage_aws_object_acl StorageIntegration#storage_aws_object_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#storage_aws_object_acl StorageIntegration#storage_aws_object_acl}
   */
   readonly storageAwsObjectAcl?: string;
   /**
   * (Default: ``) Specifies the Amazon Resource Name (ARN) of the AWS identity and access management (IAM) role that grants privileges on the S3 bucket containing your data files.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#storage_aws_role_arn StorageIntegration#storage_aws_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#storage_aws_role_arn StorageIntegration#storage_aws_role_arn}
   */
   readonly storageAwsRoleArn?: string;
   /**
   * Explicitly prohibits external stages that use the integration from referencing one or more storage locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#storage_blocked_locations StorageIntegration#storage_blocked_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#storage_blocked_locations StorageIntegration#storage_blocked_locations}
   */
   readonly storageBlockedLocations?: string[];
   /**
   * Specifies the storage provider for the integration. Valid options are: `S3` | `S3GOV` | `S3CHINA` | `GCS` | `AZURE`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#storage_provider StorageIntegration#storage_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#storage_provider StorageIntegration#storage_provider}
   */
   readonly storageProvider: string;
   /**
   * (Default: `EXTERNAL_STAGE`) Specifies the type of the storage integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#type StorageIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#type StorageIntegration#type}
   */
   readonly type?: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to use outbound private connectivity to harden the security posture. Supported for AWS S3 and Azure storage providers. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#use_privatelink_endpoint StorageIntegration#use_privatelink_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#use_privatelink_endpoint StorageIntegration#use_privatelink_endpoint}
   */
   readonly usePrivatelinkEndpoint?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#timeouts StorageIntegration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#timeouts StorageIntegration#timeouts}
   */
   readonly timeouts?: StorageIntegrationTimeouts;
 }
@@ -102,8 +102,8 @@ export interface StorageIntegrationDescribeOutputAzureConsentUrl {
 }
 
 export function storageIntegrationDescribeOutputAzureConsentUrlToTerraform(struct?: StorageIntegrationDescribeOutputAzureConsentUrl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -112,8 +112,8 @@ export function storageIntegrationDescribeOutputAzureConsentUrlToTerraform(struc
 
 
 export function storageIntegrationDescribeOutputAzureConsentUrlToHclTerraform(struct?: StorageIntegrationDescribeOutputAzureConsentUrl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -121,7 +121,7 @@ export function storageIntegrationDescribeOutputAzureConsentUrlToHclTerraform(st
   return attrs;
 }
 
-export class StorageIntegrationDescribeOutputAzureConsentUrlOutputReference extends cdktf.ComplexObject {
+export class StorageIntegrationDescribeOutputAzureConsentUrlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -130,7 +130,7 @@ export class StorageIntegrationDescribeOutputAzureConsentUrlOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -170,14 +170,14 @@ export class StorageIntegrationDescribeOutputAzureConsentUrlOutputReference exte
   }
 }
 
-export class StorageIntegrationDescribeOutputAzureConsentUrlList extends cdktf.ComplexList {
+export class StorageIntegrationDescribeOutputAzureConsentUrlList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -192,8 +192,8 @@ export interface StorageIntegrationDescribeOutputAzureMultiTenantAppName {
 }
 
 export function storageIntegrationDescribeOutputAzureMultiTenantAppNameToTerraform(struct?: StorageIntegrationDescribeOutputAzureMultiTenantAppName): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -202,8 +202,8 @@ export function storageIntegrationDescribeOutputAzureMultiTenantAppNameToTerrafo
 
 
 export function storageIntegrationDescribeOutputAzureMultiTenantAppNameToHclTerraform(struct?: StorageIntegrationDescribeOutputAzureMultiTenantAppName): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -211,7 +211,7 @@ export function storageIntegrationDescribeOutputAzureMultiTenantAppNameToHclTerr
   return attrs;
 }
 
-export class StorageIntegrationDescribeOutputAzureMultiTenantAppNameOutputReference extends cdktf.ComplexObject {
+export class StorageIntegrationDescribeOutputAzureMultiTenantAppNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -220,7 +220,7 @@ export class StorageIntegrationDescribeOutputAzureMultiTenantAppNameOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -260,14 +260,14 @@ export class StorageIntegrationDescribeOutputAzureMultiTenantAppNameOutputRefere
   }
 }
 
-export class StorageIntegrationDescribeOutputAzureMultiTenantAppNameList extends cdktf.ComplexList {
+export class StorageIntegrationDescribeOutputAzureMultiTenantAppNameList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -282,8 +282,8 @@ export interface StorageIntegrationDescribeOutputComment {
 }
 
 export function storageIntegrationDescribeOutputCommentToTerraform(struct?: StorageIntegrationDescribeOutputComment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -292,8 +292,8 @@ export function storageIntegrationDescribeOutputCommentToTerraform(struct?: Stor
 
 
 export function storageIntegrationDescribeOutputCommentToHclTerraform(struct?: StorageIntegrationDescribeOutputComment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -301,7 +301,7 @@ export function storageIntegrationDescribeOutputCommentToHclTerraform(struct?: S
   return attrs;
 }
 
-export class StorageIntegrationDescribeOutputCommentOutputReference extends cdktf.ComplexObject {
+export class StorageIntegrationDescribeOutputCommentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -310,7 +310,7 @@ export class StorageIntegrationDescribeOutputCommentOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -350,14 +350,14 @@ export class StorageIntegrationDescribeOutputCommentOutputReference extends cdkt
   }
 }
 
-export class StorageIntegrationDescribeOutputCommentList extends cdktf.ComplexList {
+export class StorageIntegrationDescribeOutputCommentList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -372,8 +372,8 @@ export interface StorageIntegrationDescribeOutputEnabled {
 }
 
 export function storageIntegrationDescribeOutputEnabledToTerraform(struct?: StorageIntegrationDescribeOutputEnabled): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -382,8 +382,8 @@ export function storageIntegrationDescribeOutputEnabledToTerraform(struct?: Stor
 
 
 export function storageIntegrationDescribeOutputEnabledToHclTerraform(struct?: StorageIntegrationDescribeOutputEnabled): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -391,7 +391,7 @@ export function storageIntegrationDescribeOutputEnabledToHclTerraform(struct?: S
   return attrs;
 }
 
-export class StorageIntegrationDescribeOutputEnabledOutputReference extends cdktf.ComplexObject {
+export class StorageIntegrationDescribeOutputEnabledOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -400,7 +400,7 @@ export class StorageIntegrationDescribeOutputEnabledOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -440,14 +440,14 @@ export class StorageIntegrationDescribeOutputEnabledOutputReference extends cdkt
   }
 }
 
-export class StorageIntegrationDescribeOutputEnabledList extends cdktf.ComplexList {
+export class StorageIntegrationDescribeOutputEnabledList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -462,8 +462,8 @@ export interface StorageIntegrationDescribeOutputStorageAllowedLocations {
 }
 
 export function storageIntegrationDescribeOutputStorageAllowedLocationsToTerraform(struct?: StorageIntegrationDescribeOutputStorageAllowedLocations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -472,8 +472,8 @@ export function storageIntegrationDescribeOutputStorageAllowedLocationsToTerrafo
 
 
 export function storageIntegrationDescribeOutputStorageAllowedLocationsToHclTerraform(struct?: StorageIntegrationDescribeOutputStorageAllowedLocations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -481,7 +481,7 @@ export function storageIntegrationDescribeOutputStorageAllowedLocationsToHclTerr
   return attrs;
 }
 
-export class StorageIntegrationDescribeOutputStorageAllowedLocationsOutputReference extends cdktf.ComplexObject {
+export class StorageIntegrationDescribeOutputStorageAllowedLocationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -490,7 +490,7 @@ export class StorageIntegrationDescribeOutputStorageAllowedLocationsOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -530,14 +530,14 @@ export class StorageIntegrationDescribeOutputStorageAllowedLocationsOutputRefere
   }
 }
 
-export class StorageIntegrationDescribeOutputStorageAllowedLocationsList extends cdktf.ComplexList {
+export class StorageIntegrationDescribeOutputStorageAllowedLocationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -552,8 +552,8 @@ export interface StorageIntegrationDescribeOutputStorageAwsExternalId {
 }
 
 export function storageIntegrationDescribeOutputStorageAwsExternalIdToTerraform(struct?: StorageIntegrationDescribeOutputStorageAwsExternalId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -562,8 +562,8 @@ export function storageIntegrationDescribeOutputStorageAwsExternalIdToTerraform(
 
 
 export function storageIntegrationDescribeOutputStorageAwsExternalIdToHclTerraform(struct?: StorageIntegrationDescribeOutputStorageAwsExternalId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -571,7 +571,7 @@ export function storageIntegrationDescribeOutputStorageAwsExternalIdToHclTerrafo
   return attrs;
 }
 
-export class StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference extends cdktf.ComplexObject {
+export class StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -580,7 +580,7 @@ export class StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -620,14 +620,14 @@ export class StorageIntegrationDescribeOutputStorageAwsExternalIdOutputReference
   }
 }
 
-export class StorageIntegrationDescribeOutputStorageAwsExternalIdList extends cdktf.ComplexList {
+export class StorageIntegrationDescribeOutputStorageAwsExternalIdList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -642,8 +642,8 @@ export interface StorageIntegrationDescribeOutputStorageAwsIamUserArn {
 }
 
 export function storageIntegrationDescribeOutputStorageAwsIamUserArnToTerraform(struct?: StorageIntegrationDescribeOutputStorageAwsIamUserArn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -652,8 +652,8 @@ export function storageIntegrationDescribeOutputStorageAwsIamUserArnToTerraform(
 
 
 export function storageIntegrationDescribeOutputStorageAwsIamUserArnToHclTerraform(struct?: StorageIntegrationDescribeOutputStorageAwsIamUserArn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -661,7 +661,7 @@ export function storageIntegrationDescribeOutputStorageAwsIamUserArnToHclTerrafo
   return attrs;
 }
 
-export class StorageIntegrationDescribeOutputStorageAwsIamUserArnOutputReference extends cdktf.ComplexObject {
+export class StorageIntegrationDescribeOutputStorageAwsIamUserArnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -670,7 +670,7 @@ export class StorageIntegrationDescribeOutputStorageAwsIamUserArnOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -710,14 +710,14 @@ export class StorageIntegrationDescribeOutputStorageAwsIamUserArnOutputReference
   }
 }
 
-export class StorageIntegrationDescribeOutputStorageAwsIamUserArnList extends cdktf.ComplexList {
+export class StorageIntegrationDescribeOutputStorageAwsIamUserArnList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -732,8 +732,8 @@ export interface StorageIntegrationDescribeOutputStorageAwsObjectAcl {
 }
 
 export function storageIntegrationDescribeOutputStorageAwsObjectAclToTerraform(struct?: StorageIntegrationDescribeOutputStorageAwsObjectAcl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -742,8 +742,8 @@ export function storageIntegrationDescribeOutputStorageAwsObjectAclToTerraform(s
 
 
 export function storageIntegrationDescribeOutputStorageAwsObjectAclToHclTerraform(struct?: StorageIntegrationDescribeOutputStorageAwsObjectAcl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -751,7 +751,7 @@ export function storageIntegrationDescribeOutputStorageAwsObjectAclToHclTerrafor
   return attrs;
 }
 
-export class StorageIntegrationDescribeOutputStorageAwsObjectAclOutputReference extends cdktf.ComplexObject {
+export class StorageIntegrationDescribeOutputStorageAwsObjectAclOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -760,7 +760,7 @@ export class StorageIntegrationDescribeOutputStorageAwsObjectAclOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -800,14 +800,14 @@ export class StorageIntegrationDescribeOutputStorageAwsObjectAclOutputReference 
   }
 }
 
-export class StorageIntegrationDescribeOutputStorageAwsObjectAclList extends cdktf.ComplexList {
+export class StorageIntegrationDescribeOutputStorageAwsObjectAclList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -822,8 +822,8 @@ export interface StorageIntegrationDescribeOutputStorageAwsRoleArn {
 }
 
 export function storageIntegrationDescribeOutputStorageAwsRoleArnToTerraform(struct?: StorageIntegrationDescribeOutputStorageAwsRoleArn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -832,8 +832,8 @@ export function storageIntegrationDescribeOutputStorageAwsRoleArnToTerraform(str
 
 
 export function storageIntegrationDescribeOutputStorageAwsRoleArnToHclTerraform(struct?: StorageIntegrationDescribeOutputStorageAwsRoleArn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -841,7 +841,7 @@ export function storageIntegrationDescribeOutputStorageAwsRoleArnToHclTerraform(
   return attrs;
 }
 
-export class StorageIntegrationDescribeOutputStorageAwsRoleArnOutputReference extends cdktf.ComplexObject {
+export class StorageIntegrationDescribeOutputStorageAwsRoleArnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -850,7 +850,7 @@ export class StorageIntegrationDescribeOutputStorageAwsRoleArnOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -890,14 +890,14 @@ export class StorageIntegrationDescribeOutputStorageAwsRoleArnOutputReference ex
   }
 }
 
-export class StorageIntegrationDescribeOutputStorageAwsRoleArnList extends cdktf.ComplexList {
+export class StorageIntegrationDescribeOutputStorageAwsRoleArnList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -912,8 +912,8 @@ export interface StorageIntegrationDescribeOutputStorageBlockedLocations {
 }
 
 export function storageIntegrationDescribeOutputStorageBlockedLocationsToTerraform(struct?: StorageIntegrationDescribeOutputStorageBlockedLocations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -922,8 +922,8 @@ export function storageIntegrationDescribeOutputStorageBlockedLocationsToTerrafo
 
 
 export function storageIntegrationDescribeOutputStorageBlockedLocationsToHclTerraform(struct?: StorageIntegrationDescribeOutputStorageBlockedLocations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -931,7 +931,7 @@ export function storageIntegrationDescribeOutputStorageBlockedLocationsToHclTerr
   return attrs;
 }
 
-export class StorageIntegrationDescribeOutputStorageBlockedLocationsOutputReference extends cdktf.ComplexObject {
+export class StorageIntegrationDescribeOutputStorageBlockedLocationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -940,7 +940,7 @@ export class StorageIntegrationDescribeOutputStorageBlockedLocationsOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -980,14 +980,14 @@ export class StorageIntegrationDescribeOutputStorageBlockedLocationsOutputRefere
   }
 }
 
-export class StorageIntegrationDescribeOutputStorageBlockedLocationsList extends cdktf.ComplexList {
+export class StorageIntegrationDescribeOutputStorageBlockedLocationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1002,8 +1002,8 @@ export interface StorageIntegrationDescribeOutputStorageGcpServiceAccount {
 }
 
 export function storageIntegrationDescribeOutputStorageGcpServiceAccountToTerraform(struct?: StorageIntegrationDescribeOutputStorageGcpServiceAccount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1012,8 +1012,8 @@ export function storageIntegrationDescribeOutputStorageGcpServiceAccountToTerraf
 
 
 export function storageIntegrationDescribeOutputStorageGcpServiceAccountToHclTerraform(struct?: StorageIntegrationDescribeOutputStorageGcpServiceAccount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1021,7 +1021,7 @@ export function storageIntegrationDescribeOutputStorageGcpServiceAccountToHclTer
   return attrs;
 }
 
-export class StorageIntegrationDescribeOutputStorageGcpServiceAccountOutputReference extends cdktf.ComplexObject {
+export class StorageIntegrationDescribeOutputStorageGcpServiceAccountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1030,7 +1030,7 @@ export class StorageIntegrationDescribeOutputStorageGcpServiceAccountOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1070,14 +1070,14 @@ export class StorageIntegrationDescribeOutputStorageGcpServiceAccountOutputRefer
   }
 }
 
-export class StorageIntegrationDescribeOutputStorageGcpServiceAccountList extends cdktf.ComplexList {
+export class StorageIntegrationDescribeOutputStorageGcpServiceAccountList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1092,8 +1092,8 @@ export interface StorageIntegrationDescribeOutputStorageProvider {
 }
 
 export function storageIntegrationDescribeOutputStorageProviderToTerraform(struct?: StorageIntegrationDescribeOutputStorageProvider): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1102,8 +1102,8 @@ export function storageIntegrationDescribeOutputStorageProviderToTerraform(struc
 
 
 export function storageIntegrationDescribeOutputStorageProviderToHclTerraform(struct?: StorageIntegrationDescribeOutputStorageProvider): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1111,7 +1111,7 @@ export function storageIntegrationDescribeOutputStorageProviderToHclTerraform(st
   return attrs;
 }
 
-export class StorageIntegrationDescribeOutputStorageProviderOutputReference extends cdktf.ComplexObject {
+export class StorageIntegrationDescribeOutputStorageProviderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1120,7 +1120,7 @@ export class StorageIntegrationDescribeOutputStorageProviderOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1160,14 +1160,14 @@ export class StorageIntegrationDescribeOutputStorageProviderOutputReference exte
   }
 }
 
-export class StorageIntegrationDescribeOutputStorageProviderList extends cdktf.ComplexList {
+export class StorageIntegrationDescribeOutputStorageProviderList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1182,8 +1182,8 @@ export interface StorageIntegrationDescribeOutputUsePrivatelinkEndpoint {
 }
 
 export function storageIntegrationDescribeOutputUsePrivatelinkEndpointToTerraform(struct?: StorageIntegrationDescribeOutputUsePrivatelinkEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1192,8 +1192,8 @@ export function storageIntegrationDescribeOutputUsePrivatelinkEndpointToTerrafor
 
 
 export function storageIntegrationDescribeOutputUsePrivatelinkEndpointToHclTerraform(struct?: StorageIntegrationDescribeOutputUsePrivatelinkEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1201,7 +1201,7 @@ export function storageIntegrationDescribeOutputUsePrivatelinkEndpointToHclTerra
   return attrs;
 }
 
-export class StorageIntegrationDescribeOutputUsePrivatelinkEndpointOutputReference extends cdktf.ComplexObject {
+export class StorageIntegrationDescribeOutputUsePrivatelinkEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1210,7 +1210,7 @@ export class StorageIntegrationDescribeOutputUsePrivatelinkEndpointOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1250,14 +1250,14 @@ export class StorageIntegrationDescribeOutputUsePrivatelinkEndpointOutputReferen
   }
 }
 
-export class StorageIntegrationDescribeOutputUsePrivatelinkEndpointList extends cdktf.ComplexList {
+export class StorageIntegrationDescribeOutputUsePrivatelinkEndpointList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1272,8 +1272,8 @@ export interface StorageIntegrationDescribeOutput {
 }
 
 export function storageIntegrationDescribeOutputToTerraform(struct?: StorageIntegrationDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1282,8 +1282,8 @@ export function storageIntegrationDescribeOutputToTerraform(struct?: StorageInte
 
 
 export function storageIntegrationDescribeOutputToHclTerraform(struct?: StorageIntegrationDescribeOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1291,7 +1291,7 @@ export function storageIntegrationDescribeOutputToHclTerraform(struct?: StorageI
   return attrs;
 }
 
-export class StorageIntegrationDescribeOutputOutputReference extends cdktf.ComplexObject {
+export class StorageIntegrationDescribeOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1300,7 +1300,7 @@ export class StorageIntegrationDescribeOutputOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1398,14 +1398,14 @@ export class StorageIntegrationDescribeOutputOutputReference extends cdktf.Compl
   }
 }
 
-export class StorageIntegrationDescribeOutputList extends cdktf.ComplexList {
+export class StorageIntegrationDescribeOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1418,63 +1418,63 @@ export class StorageIntegrationDescribeOutputList extends cdktf.ComplexList {
 }
 export interface StorageIntegrationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#create StorageIntegration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#create StorageIntegration#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#delete StorageIntegration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#delete StorageIntegration#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#read StorageIntegration#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#read StorageIntegration#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#update StorageIntegration#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#update StorageIntegration#update}
   */
   readonly update?: string;
 }
 
-export function storageIntegrationTimeoutsToTerraform(struct?: StorageIntegrationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageIntegrationTimeoutsToTerraform(struct?: StorageIntegrationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function storageIntegrationTimeoutsToHclTerraform(struct?: StorageIntegrationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageIntegrationTimeoutsToHclTerraform(struct?: StorageIntegrationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1485,19 +1485,19 @@ export function storageIntegrationTimeoutsToHclTerraform(struct?: StorageIntegra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageIntegrationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StorageIntegrationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StorageIntegrationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StorageIntegrationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1522,7 +1522,7 @@ export class StorageIntegrationTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageIntegrationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StorageIntegrationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1531,7 +1531,7 @@ export class StorageIntegrationTimeoutsOutputReference extends cdktf.ComplexObje
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1611,9 +1611,9 @@ export class StorageIntegrationTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration snowflake_storage_integration}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration snowflake_storage_integration}
 */
-export class StorageIntegration extends cdktf.TerraformResource {
+export class StorageIntegration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1624,14 +1624,14 @@ export class StorageIntegration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StorageIntegration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StorageIntegration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageIntegration to import
-  * @param importFromId The id of the existing StorageIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageIntegration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_storage_integration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_storage_integration", importId: importFromId, provider });
       }
 
   // ===========
@@ -1639,7 +1639,7 @@ export class StorageIntegration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/storage_integration snowflake_storage_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration snowflake_storage_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1650,7 +1650,7 @@ export class StorageIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_storage_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.11.0',
+        providerVersion: '2.13.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -1735,11 +1735,11 @@ export class StorageIntegration extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1938,19 +1938,19 @@ export class StorageIntegration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      azure_tenant_id: cdktf.stringToTerraform(this._azureTenantId),
-      comment: cdktf.stringToTerraform(this._comment),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      storage_allowed_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._storageAllowedLocations),
-      storage_aws_external_id: cdktf.stringToTerraform(this._storageAwsExternalId),
-      storage_aws_object_acl: cdktf.stringToTerraform(this._storageAwsObjectAcl),
-      storage_aws_role_arn: cdktf.stringToTerraform(this._storageAwsRoleArn),
-      storage_blocked_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._storageBlockedLocations),
-      storage_provider: cdktf.stringToTerraform(this._storageProvider),
-      type: cdktf.stringToTerraform(this._type),
-      use_privatelink_endpoint: cdktf.stringToTerraform(this._usePrivatelinkEndpoint),
+      azure_tenant_id: cdktn.stringToTerraform(this._azureTenantId),
+      comment: cdktn.stringToTerraform(this._comment),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      storage_allowed_locations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._storageAllowedLocations),
+      storage_aws_external_id: cdktn.stringToTerraform(this._storageAwsExternalId),
+      storage_aws_object_acl: cdktn.stringToTerraform(this._storageAwsObjectAcl),
+      storage_aws_role_arn: cdktn.stringToTerraform(this._storageAwsRoleArn),
+      storage_blocked_locations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._storageBlockedLocations),
+      storage_provider: cdktn.stringToTerraform(this._storageProvider),
+      type: cdktn.stringToTerraform(this._type),
+      use_privatelink_endpoint: cdktn.stringToTerraform(this._usePrivatelinkEndpoint),
       timeouts: storageIntegrationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1958,79 +1958,79 @@ export class StorageIntegration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       azure_tenant_id: {
-        value: cdktf.stringToHclTerraform(this._azureTenantId),
+        value: cdktn.stringToHclTerraform(this._azureTenantId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_allowed_locations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._storageAllowedLocations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._storageAllowedLocations),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       storage_aws_external_id: {
-        value: cdktf.stringToHclTerraform(this._storageAwsExternalId),
+        value: cdktn.stringToHclTerraform(this._storageAwsExternalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_aws_object_acl: {
-        value: cdktf.stringToHclTerraform(this._storageAwsObjectAcl),
+        value: cdktn.stringToHclTerraform(this._storageAwsObjectAcl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_aws_role_arn: {
-        value: cdktf.stringToHclTerraform(this._storageAwsRoleArn),
+        value: cdktn.stringToHclTerraform(this._storageAwsRoleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_blocked_locations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._storageBlockedLocations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._storageBlockedLocations),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       storage_provider: {
-        value: cdktf.stringToHclTerraform(this._storageProvider),
+        value: cdktn.stringToHclTerraform(this._storageProvider),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_privatelink_endpoint: {
-        value: cdktf.stringToHclTerraform(this._usePrivatelinkEndpoint),
+        value: cdktn.stringToHclTerraform(this._usePrivatelinkEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
