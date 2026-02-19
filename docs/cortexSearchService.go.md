@@ -1,28 +1,28 @@
-# `cortexSearchService` Submodule <a name="`cortexSearchService` Submodule" id="@cdktf/provider-snowflake.cortexSearchService"></a>
+# `cortexSearchService` Submodule <a name="`cortexSearchService` Submodule" id="@cdktn/provider-snowflake.cortexSearchService"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### CortexSearchService <a name="CortexSearchService" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService"></a>
+### CortexSearchService <a name="CortexSearchService" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service snowflake_cortex_search_service}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service snowflake_cortex_search_service}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/cortexsearchservice"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/cortexsearchservice"
 
 cortexsearchservice.NewCortexSearchService(scope Construct, id *string, config CortexSearchServiceConfig) CortexSearchService
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig">CortexSearchServiceConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig">CortexSearchServiceConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig">CortexSearchServiceConfig</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig">CortexSearchServiceConfig</a>
 
 ---
 
@@ -50,39 +50,39 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.resetAttributes">ResetAttributes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.resetComment">ResetComment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.resetEmbeddingModel">ResetEmbeddingModel</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetAttributes">ResetAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetComment">ResetComment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetEmbeddingModel">ResetEmbeddingModel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.toString"></a>
 
 ```go
 func ToString() *string
@@ -90,25 +90,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -116,7 +116,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -124,7 +124,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -132,19 +132,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -152,7 +152,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -160,7 +160,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -168,151 +168,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -322,7 +322,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -330,7 +330,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -338,7 +338,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -346,7 +346,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -354,7 +354,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -362,7 +362,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -370,43 +370,43 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.putTimeouts"></a>
 
 ```go
 func PutTimeouts(value CortexSearchServiceTimeouts)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts">CortexSearchServiceTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts">CortexSearchServiceTimeouts</a>
 
 ---
 
-##### `ResetAttributes` <a name="ResetAttributes" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.resetAttributes"></a>
+##### `ResetAttributes` <a name="ResetAttributes" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetAttributes"></a>
 
 ```go
 func ResetAttributes()
 ```
 
-##### `ResetComment` <a name="ResetComment" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.resetComment"></a>
+##### `ResetComment` <a name="ResetComment" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetComment"></a>
 
 ```go
 func ResetComment()
 ```
 
-##### `ResetEmbeddingModel` <a name="ResetEmbeddingModel" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.resetEmbeddingModel"></a>
+##### `ResetEmbeddingModel` <a name="ResetEmbeddingModel" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetEmbeddingModel"></a>
 
 ```go
 func ResetEmbeddingModel()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
@@ -416,17 +416,17 @@ func ResetTimeouts()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a CortexSearchService resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a CortexSearchService resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/cortexsearchservice"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/cortexsearchservice"
 
 cortexsearchservice.CortexSearchService_IsConstruct(x interface{}) *bool
 ```
@@ -447,7 +447,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -455,45 +455,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/cortexsearchservice"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/cortexsearchservice"
 
 cortexsearchservice.CortexSearchService_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/cortexsearchservice"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/cortexsearchservice"
 
 cortexsearchservice.CortexSearchService_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/cortexsearchservice"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/cortexsearchservice"
 
 cortexsearchservice.CortexSearchService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a CortexSearchService resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a CortexSearchService resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -501,7 +501,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -509,19 +509,19 @@ The construct id used in the generated config for the CortexSearchService to imp
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing CortexSearchService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the CortexSearchService to import is found.
 
@@ -531,51 +531,51 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.describeOutput">DescribeOutput</a></code> | <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList">CortexSearchServiceDescribeOutputList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.fullyQualifiedName">FullyQualifiedName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference">CortexSearchServiceTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.attributesInput">AttributesInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.commentInput">CommentInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.databaseInput">DatabaseInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.embeddingModelInput">EmbeddingModelInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.onInput">OnInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.queryInput">QueryInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.schemaInput">SchemaInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.targetLagInput">TargetLagInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.warehouseInput">WarehouseInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.attributes">Attributes</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.database">Database</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.embeddingModel">EmbeddingModel</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.on">On</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.query">Query</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.schema">Schema</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.targetLag">TargetLag</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.warehouse">Warehouse</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.describeOutput">DescribeOutput</a></code> | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList">CortexSearchServiceDescribeOutputList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.fullyQualifiedName">FullyQualifiedName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference">CortexSearchServiceTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.attributesInput">AttributesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.commentInput">CommentInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.databaseInput">DatabaseInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.embeddingModelInput">EmbeddingModelInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.onInput">OnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.queryInput">QueryInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.schemaInput">SchemaInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.targetLagInput">TargetLagInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.warehouseInput">WarehouseInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.attributes">Attributes</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.database">Database</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.embeddingModel">EmbeddingModel</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.on">On</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.query">Query</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.schema">Schema</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.targetLag">TargetLag</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.warehouse">Warehouse</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.node"></a>
 
 ```go
 func Node() Node
@@ -587,17 +587,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -607,7 +607,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -617,7 +617,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -627,7 +627,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -637,17 +637,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -657,7 +657,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -667,7 +667,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -677,37 +677,37 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -717,7 +717,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `CreatedOn`<sup>Required</sup> <a name="CreatedOn" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.createdOn"></a>
+##### `CreatedOn`<sup>Required</sup> <a name="CreatedOn" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.createdOn"></a>
 
 ```go
 func CreatedOn() *string
@@ -727,17 +727,17 @@ func CreatedOn() *string
 
 ---
 
-##### `DescribeOutput`<sup>Required</sup> <a name="DescribeOutput" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.describeOutput"></a>
+##### `DescribeOutput`<sup>Required</sup> <a name="DescribeOutput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.describeOutput"></a>
 
 ```go
 func DescribeOutput() CortexSearchServiceDescribeOutputList
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList">CortexSearchServiceDescribeOutputList</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList">CortexSearchServiceDescribeOutputList</a>
 
 ---
 
-##### `FullyQualifiedName`<sup>Required</sup> <a name="FullyQualifiedName" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.fullyQualifiedName"></a>
+##### `FullyQualifiedName`<sup>Required</sup> <a name="FullyQualifiedName" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.fullyQualifiedName"></a>
 
 ```go
 func FullyQualifiedName() *string
@@ -747,17 +747,17 @@ func FullyQualifiedName() *string
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.timeouts"></a>
 
 ```go
 func Timeouts() CortexSearchServiceTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference">CortexSearchServiceTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference">CortexSearchServiceTimeoutsOutputReference</a>
 
 ---
 
-##### `AttributesInput`<sup>Optional</sup> <a name="AttributesInput" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.attributesInput"></a>
+##### `AttributesInput`<sup>Optional</sup> <a name="AttributesInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.attributesInput"></a>
 
 ```go
 func AttributesInput() *[]*string
@@ -767,7 +767,7 @@ func AttributesInput() *[]*string
 
 ---
 
-##### `CommentInput`<sup>Optional</sup> <a name="CommentInput" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.commentInput"></a>
+##### `CommentInput`<sup>Optional</sup> <a name="CommentInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.commentInput"></a>
 
 ```go
 func CommentInput() *string
@@ -777,7 +777,7 @@ func CommentInput() *string
 
 ---
 
-##### `DatabaseInput`<sup>Optional</sup> <a name="DatabaseInput" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.databaseInput"></a>
+##### `DatabaseInput`<sup>Optional</sup> <a name="DatabaseInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.databaseInput"></a>
 
 ```go
 func DatabaseInput() *string
@@ -787,7 +787,7 @@ func DatabaseInput() *string
 
 ---
 
-##### `EmbeddingModelInput`<sup>Optional</sup> <a name="EmbeddingModelInput" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.embeddingModelInput"></a>
+##### `EmbeddingModelInput`<sup>Optional</sup> <a name="EmbeddingModelInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.embeddingModelInput"></a>
 
 ```go
 func EmbeddingModelInput() *string
@@ -797,7 +797,7 @@ func EmbeddingModelInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -807,7 +807,7 @@ func IdInput() *string
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.nameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.nameInput"></a>
 
 ```go
 func NameInput() *string
@@ -817,7 +817,7 @@ func NameInput() *string
 
 ---
 
-##### `OnInput`<sup>Optional</sup> <a name="OnInput" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.onInput"></a>
+##### `OnInput`<sup>Optional</sup> <a name="OnInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.onInput"></a>
 
 ```go
 func OnInput() *string
@@ -827,7 +827,7 @@ func OnInput() *string
 
 ---
 
-##### `QueryInput`<sup>Optional</sup> <a name="QueryInput" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.queryInput"></a>
+##### `QueryInput`<sup>Optional</sup> <a name="QueryInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.queryInput"></a>
 
 ```go
 func QueryInput() *string
@@ -837,7 +837,7 @@ func QueryInput() *string
 
 ---
 
-##### `SchemaInput`<sup>Optional</sup> <a name="SchemaInput" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.schemaInput"></a>
+##### `SchemaInput`<sup>Optional</sup> <a name="SchemaInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.schemaInput"></a>
 
 ```go
 func SchemaInput() *string
@@ -847,7 +847,7 @@ func SchemaInput() *string
 
 ---
 
-##### `TargetLagInput`<sup>Optional</sup> <a name="TargetLagInput" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.targetLagInput"></a>
+##### `TargetLagInput`<sup>Optional</sup> <a name="TargetLagInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.targetLagInput"></a>
 
 ```go
 func TargetLagInput() *string
@@ -857,7 +857,7 @@ func TargetLagInput() *string
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.timeoutsInput"></a>
 
 ```go
 func TimeoutsInput() interface{}
@@ -867,7 +867,7 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `WarehouseInput`<sup>Optional</sup> <a name="WarehouseInput" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.warehouseInput"></a>
+##### `WarehouseInput`<sup>Optional</sup> <a name="WarehouseInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.warehouseInput"></a>
 
 ```go
 func WarehouseInput() *string
@@ -877,7 +877,7 @@ func WarehouseInput() *string
 
 ---
 
-##### `Attributes`<sup>Required</sup> <a name="Attributes" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.attributes"></a>
+##### `Attributes`<sup>Required</sup> <a name="Attributes" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.attributes"></a>
 
 ```go
 func Attributes() *[]*string
@@ -887,7 +887,7 @@ func Attributes() *[]*string
 
 ---
 
-##### `Comment`<sup>Required</sup> <a name="Comment" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.comment"></a>
+##### `Comment`<sup>Required</sup> <a name="Comment" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.comment"></a>
 
 ```go
 func Comment() *string
@@ -897,7 +897,7 @@ func Comment() *string
 
 ---
 
-##### `Database`<sup>Required</sup> <a name="Database" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.database"></a>
+##### `Database`<sup>Required</sup> <a name="Database" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.database"></a>
 
 ```go
 func Database() *string
@@ -907,7 +907,7 @@ func Database() *string
 
 ---
 
-##### `EmbeddingModel`<sup>Required</sup> <a name="EmbeddingModel" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.embeddingModel"></a>
+##### `EmbeddingModel`<sup>Required</sup> <a name="EmbeddingModel" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.embeddingModel"></a>
 
 ```go
 func EmbeddingModel() *string
@@ -917,7 +917,7 @@ func EmbeddingModel() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.id"></a>
 
 ```go
 func Id() *string
@@ -927,7 +927,7 @@ func Id() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.name"></a>
 
 ```go
 func Name() *string
@@ -937,7 +937,7 @@ func Name() *string
 
 ---
 
-##### `On`<sup>Required</sup> <a name="On" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.on"></a>
+##### `On`<sup>Required</sup> <a name="On" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.on"></a>
 
 ```go
 func On() *string
@@ -947,7 +947,7 @@ func On() *string
 
 ---
 
-##### `Query`<sup>Required</sup> <a name="Query" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.query"></a>
+##### `Query`<sup>Required</sup> <a name="Query" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.query"></a>
 
 ```go
 func Query() *string
@@ -957,7 +957,7 @@ func Query() *string
 
 ---
 
-##### `Schema`<sup>Required</sup> <a name="Schema" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.schema"></a>
+##### `Schema`<sup>Required</sup> <a name="Schema" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.schema"></a>
 
 ```go
 func Schema() *string
@@ -967,7 +967,7 @@ func Schema() *string
 
 ---
 
-##### `TargetLag`<sup>Required</sup> <a name="TargetLag" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.targetLag"></a>
+##### `TargetLag`<sup>Required</sup> <a name="TargetLag" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.targetLag"></a>
 
 ```go
 func TargetLag() *string
@@ -977,7 +977,7 @@ func TargetLag() *string
 
 ---
 
-##### `Warehouse`<sup>Required</sup> <a name="Warehouse" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.warehouse"></a>
+##### `Warehouse`<sup>Required</sup> <a name="Warehouse" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.warehouse"></a>
 
 ```go
 func Warehouse() *string
@@ -991,11 +991,11 @@ func Warehouse() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchService.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -1007,20 +1007,20 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### CortexSearchServiceConfig <a name="CortexSearchServiceConfig" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig"></a>
+### CortexSearchServiceConfig <a name="CortexSearchServiceConfig" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/cortexsearchservice"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/cortexsearchservice"
 
 &cortexsearchservice.CortexSearchServiceConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Database: *string,
 	Name: *string,
@@ -1033,7 +1033,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/cortexsearchs
 	Comment: *string,
 	EmbeddingModel: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.cortexSearchService.CortexSearchServiceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.cortexSearchService.CortexSearchServiceTimeouts,
 }
 ```
 
@@ -1041,29 +1041,29 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/cortexsearchs
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.database">Database</a></code> | <code>*string</code> | The database in which to create the Cortex search service. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the name of the Cortex search service. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.on">On</a></code> | <code>*string</code> | Specifies the column to use as the search column for the Cortex search service; must be a text value. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.query">Query</a></code> | <code>*string</code> | Specifies the query to use to populate the Cortex search service. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema in which to create the Cortex search service. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.targetLag">TargetLag</a></code> | <code>*string</code> | Specifies the maximum target lag time for the Cortex search service. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.warehouse">Warehouse</a></code> | <code>*string</code> | The warehouse in which to create the Cortex search service. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.attributes">Attributes</a></code> | <code>*[]*string</code> | Specifies the list of columns in the base table to enable filtering on when issuing queries to the service. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the Cortex search service. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.embeddingModel">EmbeddingModel</a></code> | <code>*string</code> | Specifies the embedding model to use for the Cortex search service. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#id CortexSearchService#id}. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts">CortexSearchServiceTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.database">Database</a></code> | <code>*string</code> | The database in which to create the Cortex search service. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the name of the Cortex search service. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.on">On</a></code> | <code>*string</code> | Specifies the column to use as the search column for the Cortex search service; must be a text value. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.query">Query</a></code> | <code>*string</code> | Specifies the query to use to populate the Cortex search service. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema in which to create the Cortex search service. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.targetLag">TargetLag</a></code> | <code>*string</code> | Specifies the maximum target lag time for the Cortex search service. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.warehouse">Warehouse</a></code> | <code>*string</code> | The warehouse in which to create the Cortex search service. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.attributes">Attributes</a></code> | <code>*[]*string</code> | Specifies the list of columns in the base table to enable filtering on when issuing queries to the service. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the Cortex search service. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.embeddingModel">EmbeddingModel</a></code> | <code>*string</code> | Specifies the embedding model to use for the Cortex search service. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#id CortexSearchService#id}. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts">CortexSearchServiceTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -1073,7 +1073,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -1083,47 +1083,47 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1133,7 +1133,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Database`<sup>Required</sup> <a name="Database" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.database"></a>
+##### `Database`<sup>Required</sup> <a name="Database" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.database"></a>
 
 ```go
 Database *string
@@ -1143,11 +1143,11 @@ Database *string
 
 The database in which to create the Cortex search service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#database CortexSearchService#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#database CortexSearchService#database}
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.name"></a>
 
 ```go
 Name *string
@@ -1159,11 +1159,11 @@ Specifies the name of the Cortex search service.
 
 The name must be unique for the schema in which the service is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#name CortexSearchService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#name CortexSearchService#name}
 
 ---
 
-##### `On`<sup>Required</sup> <a name="On" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.on"></a>
+##### `On`<sup>Required</sup> <a name="On" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.on"></a>
 
 ```go
 On *string
@@ -1173,11 +1173,11 @@ On *string
 
 Specifies the column to use as the search column for the Cortex search service; must be a text value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#on CortexSearchService#on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#on CortexSearchService#on}
 
 ---
 
-##### `Query`<sup>Required</sup> <a name="Query" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.query"></a>
+##### `Query`<sup>Required</sup> <a name="Query" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.query"></a>
 
 ```go
 Query *string
@@ -1187,11 +1187,11 @@ Query *string
 
 Specifies the query to use to populate the Cortex search service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#query CortexSearchService#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#query CortexSearchService#query}
 
 ---
 
-##### `Schema`<sup>Required</sup> <a name="Schema" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.schema"></a>
+##### `Schema`<sup>Required</sup> <a name="Schema" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.schema"></a>
 
 ```go
 Schema *string
@@ -1201,11 +1201,11 @@ Schema *string
 
 The schema in which to create the Cortex search service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#schema CortexSearchService#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#schema CortexSearchService#schema}
 
 ---
 
-##### `TargetLag`<sup>Required</sup> <a name="TargetLag" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.targetLag"></a>
+##### `TargetLag`<sup>Required</sup> <a name="TargetLag" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.targetLag"></a>
 
 ```go
 TargetLag *string
@@ -1215,11 +1215,11 @@ TargetLag *string
 
 Specifies the maximum target lag time for the Cortex search service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#target_lag CortexSearchService#target_lag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#target_lag CortexSearchService#target_lag}
 
 ---
 
-##### `Warehouse`<sup>Required</sup> <a name="Warehouse" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.warehouse"></a>
+##### `Warehouse`<sup>Required</sup> <a name="Warehouse" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.warehouse"></a>
 
 ```go
 Warehouse *string
@@ -1229,11 +1229,11 @@ Warehouse *string
 
 The warehouse in which to create the Cortex search service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#warehouse CortexSearchService#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#warehouse CortexSearchService#warehouse}
 
 ---
 
-##### `Attributes`<sup>Optional</sup> <a name="Attributes" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.attributes"></a>
+##### `Attributes`<sup>Optional</sup> <a name="Attributes" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.attributes"></a>
 
 ```go
 Attributes *[]*string
@@ -1243,11 +1243,11 @@ Attributes *[]*string
 
 Specifies the list of columns in the base table to enable filtering on when issuing queries to the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#attributes CortexSearchService#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#attributes CortexSearchService#attributes}
 
 ---
 
-##### `Comment`<sup>Optional</sup> <a name="Comment" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.comment"></a>
+##### `Comment`<sup>Optional</sup> <a name="Comment" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.comment"></a>
 
 ```go
 Comment *string
@@ -1257,11 +1257,11 @@ Comment *string
 
 Specifies a comment for the Cortex search service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#comment CortexSearchService#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#comment CortexSearchService#comment}
 
 ---
 
-##### `EmbeddingModel`<sup>Optional</sup> <a name="EmbeddingModel" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.embeddingModel"></a>
+##### `EmbeddingModel`<sup>Optional</sup> <a name="EmbeddingModel" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.embeddingModel"></a>
 
 ```go
 EmbeddingModel *string
@@ -1271,11 +1271,11 @@ EmbeddingModel *string
 
 Specifies the embedding model to use for the Cortex search service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#embedding_model CortexSearchService#embedding_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#embedding_model CortexSearchService#embedding_model}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1283,33 +1283,33 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#id CortexSearchService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#id CortexSearchService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.timeouts"></a>
 
 ```go
 Timeouts CortexSearchServiceTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts">CortexSearchServiceTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts">CortexSearchServiceTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#timeouts CortexSearchService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#timeouts CortexSearchService#timeouts}
 
 ---
 
-### CortexSearchServiceDescribeOutput <a name="CortexSearchServiceDescribeOutput" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutput"></a>
+### CortexSearchServiceDescribeOutput <a name="CortexSearchServiceDescribeOutput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutput"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutput.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/cortexsearchservice"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/cortexsearchservice"
 
 &cortexsearchservice.CortexSearchServiceDescribeOutput {
 
@@ -1317,12 +1317,12 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/cortexsearchs
 ```
 
 
-### CortexSearchServiceTimeouts <a name="CortexSearchServiceTimeouts" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts"></a>
+### CortexSearchServiceTimeouts <a name="CortexSearchServiceTimeouts" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/cortexsearchservice"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/cortexsearchservice"
 
 &cortexsearchservice.CortexSearchServiceTimeouts {
 	Create: *string,
@@ -1336,14 +1336,14 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/cortexsearchs
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#create CortexSearchService#create}. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#delete CortexSearchService#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#read CortexSearchService#read}. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#update CortexSearchService#update}. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#create CortexSearchService#create}. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#delete CortexSearchService#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#read CortexSearchService#read}. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#update CortexSearchService#update}. |
 
 ---
 
-##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.create"></a>
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.create"></a>
 
 ```go
 Create *string
@@ -1351,11 +1351,11 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#create CortexSearchService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#create CortexSearchService#create}.
 
 ---
 
-##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.delete"></a>
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.delete"></a>
 
 ```go
 Delete *string
@@ -1363,11 +1363,11 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#delete CortexSearchService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#delete CortexSearchService#delete}.
 
 ---
 
-##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.read"></a>
+##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.read"></a>
 
 ```go
 Read *string
@@ -1375,11 +1375,11 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#read CortexSearchService#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#read CortexSearchService#read}.
 
 ---
 
-##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.update"></a>
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.update"></a>
 
 ```go
 Update *string
@@ -1387,39 +1387,39 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/cortex_search_service#update CortexSearchService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/cortex_search_service#update CortexSearchService#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### CortexSearchServiceDescribeOutputList <a name="CortexSearchServiceDescribeOutputList" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList"></a>
+### CortexSearchServiceDescribeOutputList <a name="CortexSearchServiceDescribeOutputList" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/cortexsearchservice"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/cortexsearchservice"
 
 cortexsearchservice.NewCortexSearchServiceDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CortexSearchServiceDescribeOutputList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1427,7 +1427,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -1439,15 +1439,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -1457,19 +1457,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1477,13 +1477,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.toString"></a>
 
 ```go
 func ToString() *string
@@ -1493,13 +1493,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.get"></a>
 
 ```go
 func Get(index *f64) CortexSearchServiceDescribeOutputOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -1512,12 +1512,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1531,7 +1531,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1542,34 +1542,34 @@ func Fqn() *string
 ---
 
 
-### CortexSearchServiceDescribeOutputOutputReference <a name="CortexSearchServiceDescribeOutputOutputReference" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference"></a>
+### CortexSearchServiceDescribeOutputOutputReference <a name="CortexSearchServiceDescribeOutputOutputReference" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/cortexsearchservice"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/cortexsearchservice"
 
 cortexsearchservice.NewCortexSearchServiceDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CortexSearchServiceDescribeOutputOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1577,7 +1577,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -1585,7 +1585,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -1597,149 +1597,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1747,13 +1747,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1768,30 +1768,30 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.attributeColumns">AttributeColumns</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.columns">Columns</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.databaseName">DatabaseName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.dataTimestamp">DataTimestamp</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.definition">Definition</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.embeddingModel">EmbeddingModel</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.indexingError">IndexingError</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.indexingState">IndexingState</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.schemaName">SchemaName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.searchColumn">SearchColumn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.serviceQueryUrl">ServiceQueryUrl</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.sourceDataNumRows">SourceDataNumRows</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.targetLag">TargetLag</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.warehouse">Warehouse</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutput">CortexSearchServiceDescribeOutput</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.attributeColumns">AttributeColumns</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.columns">Columns</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.databaseName">DatabaseName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.dataTimestamp">DataTimestamp</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.definition">Definition</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.embeddingModel">EmbeddingModel</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.indexingError">IndexingError</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.indexingState">IndexingState</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.schemaName">SchemaName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.searchColumn">SearchColumn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.serviceQueryUrl">ServiceQueryUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.sourceDataNumRows">SourceDataNumRows</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.targetLag">TargetLag</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.warehouse">Warehouse</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutput">CortexSearchServiceDescribeOutput</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1805,7 +1805,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1815,7 +1815,7 @@ func Fqn() *string
 
 ---
 
-##### `AttributeColumns`<sup>Required</sup> <a name="AttributeColumns" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.attributeColumns"></a>
+##### `AttributeColumns`<sup>Required</sup> <a name="AttributeColumns" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.attributeColumns"></a>
 
 ```go
 func AttributeColumns() *[]*string
@@ -1825,7 +1825,7 @@ func AttributeColumns() *[]*string
 
 ---
 
-##### `Columns`<sup>Required</sup> <a name="Columns" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.columns"></a>
+##### `Columns`<sup>Required</sup> <a name="Columns" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.columns"></a>
 
 ```go
 func Columns() *[]*string
@@ -1835,7 +1835,7 @@ func Columns() *[]*string
 
 ---
 
-##### `Comment`<sup>Required</sup> <a name="Comment" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.comment"></a>
+##### `Comment`<sup>Required</sup> <a name="Comment" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.comment"></a>
 
 ```go
 func Comment() *string
@@ -1845,7 +1845,7 @@ func Comment() *string
 
 ---
 
-##### `CreatedOn`<sup>Required</sup> <a name="CreatedOn" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.createdOn"></a>
+##### `CreatedOn`<sup>Required</sup> <a name="CreatedOn" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.createdOn"></a>
 
 ```go
 func CreatedOn() *string
@@ -1855,7 +1855,7 @@ func CreatedOn() *string
 
 ---
 
-##### `DatabaseName`<sup>Required</sup> <a name="DatabaseName" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.databaseName"></a>
+##### `DatabaseName`<sup>Required</sup> <a name="DatabaseName" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.databaseName"></a>
 
 ```go
 func DatabaseName() *string
@@ -1865,7 +1865,7 @@ func DatabaseName() *string
 
 ---
 
-##### `DataTimestamp`<sup>Required</sup> <a name="DataTimestamp" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.dataTimestamp"></a>
+##### `DataTimestamp`<sup>Required</sup> <a name="DataTimestamp" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.dataTimestamp"></a>
 
 ```go
 func DataTimestamp() *string
@@ -1875,7 +1875,7 @@ func DataTimestamp() *string
 
 ---
 
-##### `Definition`<sup>Required</sup> <a name="Definition" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.definition"></a>
+##### `Definition`<sup>Required</sup> <a name="Definition" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.definition"></a>
 
 ```go
 func Definition() *string
@@ -1885,7 +1885,7 @@ func Definition() *string
 
 ---
 
-##### `EmbeddingModel`<sup>Required</sup> <a name="EmbeddingModel" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.embeddingModel"></a>
+##### `EmbeddingModel`<sup>Required</sup> <a name="EmbeddingModel" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.embeddingModel"></a>
 
 ```go
 func EmbeddingModel() *string
@@ -1895,7 +1895,7 @@ func EmbeddingModel() *string
 
 ---
 
-##### `IndexingError`<sup>Required</sup> <a name="IndexingError" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.indexingError"></a>
+##### `IndexingError`<sup>Required</sup> <a name="IndexingError" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.indexingError"></a>
 
 ```go
 func IndexingError() *string
@@ -1905,7 +1905,7 @@ func IndexingError() *string
 
 ---
 
-##### `IndexingState`<sup>Required</sup> <a name="IndexingState" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.indexingState"></a>
+##### `IndexingState`<sup>Required</sup> <a name="IndexingState" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.indexingState"></a>
 
 ```go
 func IndexingState() *string
@@ -1915,7 +1915,7 @@ func IndexingState() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.name"></a>
 
 ```go
 func Name() *string
@@ -1925,7 +1925,7 @@ func Name() *string
 
 ---
 
-##### `SchemaName`<sup>Required</sup> <a name="SchemaName" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.schemaName"></a>
+##### `SchemaName`<sup>Required</sup> <a name="SchemaName" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.schemaName"></a>
 
 ```go
 func SchemaName() *string
@@ -1935,7 +1935,7 @@ func SchemaName() *string
 
 ---
 
-##### `SearchColumn`<sup>Required</sup> <a name="SearchColumn" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.searchColumn"></a>
+##### `SearchColumn`<sup>Required</sup> <a name="SearchColumn" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.searchColumn"></a>
 
 ```go
 func SearchColumn() *string
@@ -1945,7 +1945,7 @@ func SearchColumn() *string
 
 ---
 
-##### `ServiceQueryUrl`<sup>Required</sup> <a name="ServiceQueryUrl" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.serviceQueryUrl"></a>
+##### `ServiceQueryUrl`<sup>Required</sup> <a name="ServiceQueryUrl" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.serviceQueryUrl"></a>
 
 ```go
 func ServiceQueryUrl() *string
@@ -1955,7 +1955,7 @@ func ServiceQueryUrl() *string
 
 ---
 
-##### `SourceDataNumRows`<sup>Required</sup> <a name="SourceDataNumRows" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.sourceDataNumRows"></a>
+##### `SourceDataNumRows`<sup>Required</sup> <a name="SourceDataNumRows" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.sourceDataNumRows"></a>
 
 ```go
 func SourceDataNumRows() *f64
@@ -1965,7 +1965,7 @@ func SourceDataNumRows() *f64
 
 ---
 
-##### `TargetLag`<sup>Required</sup> <a name="TargetLag" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.targetLag"></a>
+##### `TargetLag`<sup>Required</sup> <a name="TargetLag" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.targetLag"></a>
 
 ```go
 func TargetLag() *string
@@ -1975,7 +1975,7 @@ func TargetLag() *string
 
 ---
 
-##### `Warehouse`<sup>Required</sup> <a name="Warehouse" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.warehouse"></a>
+##### `Warehouse`<sup>Required</sup> <a name="Warehouse" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.warehouse"></a>
 
 ```go
 func Warehouse() *string
@@ -1985,43 +1985,43 @@ func Warehouse() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() CortexSearchServiceDescribeOutput
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutput">CortexSearchServiceDescribeOutput</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutput">CortexSearchServiceDescribeOutput</a>
 
 ---
 
 
-### CortexSearchServiceTimeoutsOutputReference <a name="CortexSearchServiceTimeoutsOutputReference" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference"></a>
+### CortexSearchServiceTimeoutsOutputReference <a name="CortexSearchServiceTimeoutsOutputReference" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/cortexsearchservice"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/cortexsearchservice"
 
 cortexsearchservice.NewCortexSearchServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CortexSearchServiceTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -2033,153 +2033,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -2187,13 +2187,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -2203,25 +2203,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resetCreate"></a>
+##### `ResetCreate` <a name="ResetCreate" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resetCreate"></a>
 
 ```go
 func ResetCreate()
 ```
 
-##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resetDelete"></a>
+##### `ResetDelete` <a name="ResetDelete" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resetDelete"></a>
 
 ```go
 func ResetDelete()
 ```
 
-##### `ResetRead` <a name="ResetRead" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resetRead"></a>
+##### `ResetRead` <a name="ResetRead" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resetRead"></a>
 
 ```go
 func ResetRead()
 ```
 
-##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resetUpdate"></a>
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.resetUpdate"></a>
 
 ```go
 func ResetUpdate()
@@ -2232,21 +2232,21 @@ func ResetUpdate()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -2260,7 +2260,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -2270,7 +2270,7 @@ func Fqn() *string
 
 ---
 
-##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.createInput"></a>
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.createInput"></a>
 
 ```go
 func CreateInput() *string
@@ -2280,7 +2280,7 @@ func CreateInput() *string
 
 ---
 
-##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.deleteInput"></a>
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.deleteInput"></a>
 
 ```go
 func DeleteInput() *string
@@ -2290,7 +2290,7 @@ func DeleteInput() *string
 
 ---
 
-##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.readInput"></a>
+##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.readInput"></a>
 
 ```go
 func ReadInput() *string
@@ -2300,7 +2300,7 @@ func ReadInput() *string
 
 ---
 
-##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.updateInput"></a>
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.updateInput"></a>
 
 ```go
 func UpdateInput() *string
@@ -2310,7 +2310,7 @@ func UpdateInput() *string
 
 ---
 
-##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.create"></a>
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.create"></a>
 
 ```go
 func Create() *string
@@ -2320,7 +2320,7 @@ func Create() *string
 
 ---
 
-##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.delete"></a>
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.delete"></a>
 
 ```go
 func Delete() *string
@@ -2330,7 +2330,7 @@ func Delete() *string
 
 ---
 
-##### `Read`<sup>Required</sup> <a name="Read" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.read"></a>
+##### `Read`<sup>Required</sup> <a name="Read" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.read"></a>
 
 ```go
 func Read() *string
@@ -2340,7 +2340,7 @@ func Read() *string
 
 ---
 
-##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.update"></a>
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.update"></a>
 
 ```go
 func Update() *string
@@ -2350,7 +2350,7 @@ func Update() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

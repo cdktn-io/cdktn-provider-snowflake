@@ -1,15 +1,15 @@
-# `databaseRole` Submodule <a name="`databaseRole` Submodule" id="@cdktf/provider-snowflake.databaseRole"></a>
+# `databaseRole` Submodule <a name="`databaseRole` Submodule" id="@cdktn/provider-snowflake.databaseRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DatabaseRole <a name="DatabaseRole" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole"></a>
+### DatabaseRole <a name="DatabaseRole" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role snowflake_database_role}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role snowflake_database_role}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import database_role
+from cdktn_provider_snowflake import database_role
 
 databaseRole.DatabaseRole(
   scope: Construct,
@@ -31,24 +31,24 @@ databaseRole.DatabaseRole(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.database">database</a></code> | <code>str</code> | The database in which to create the database role. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.name">name</a></code> | <code>str</code> | Specifies the identifier for the database role. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the database role. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#id DatabaseRole#id}. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts">DatabaseRoleTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.database">database</a></code> | <code>str</code> | The database in which to create the database role. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.name">name</a></code> | <code>str</code> | Specifies the identifier for the database role. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the database role. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#id DatabaseRole#id}. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts">DatabaseRoleTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -56,7 +56,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -66,49 +66,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.count"></a>
-
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.dependsOn"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.count"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
-
----
-
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.forEach"></a>
-
-- *Type:* cdktf.ITerraformIterator
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.lifecycle"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.dependsOn"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
-
----
-
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.provider"></a>
-
-- *Type:* cdktf.TerraformProvider
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.provisioners"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.forEach"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.database"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `database`<sup>Required</sup> <a name="database" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.database"></a>
 
 - *Type:* str
 
@@ -116,11 +116,11 @@ The database in which to create the database role.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#database DatabaseRole#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#database DatabaseRole#database}
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.name"></a>
 
 - *Type:* str
 
@@ -128,38 +128,38 @@ Specifies the identifier for the database role.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#name DatabaseRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#name DatabaseRole#name}
 
 ---
 
-##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.comment"></a>
+##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.comment"></a>
 
 - *Type:* str
 
 Specifies a comment for the database role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#comment DatabaseRole#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#comment DatabaseRole#comment}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#id DatabaseRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#id DatabaseRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts">DatabaseRoleTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts">DatabaseRoleTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#timeouts DatabaseRole#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#timeouts DatabaseRole#timeouts}
 
 ---
 
@@ -167,37 +167,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.resetComment">reset_comment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.resetComment">reset_comment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.toString"></a>
 
 ```python
 def to_string() -> str
@@ -205,7 +205,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.addOverride"></a>
 
 ```python
 def add_override(
@@ -214,19 +214,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -236,7 +236,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -244,7 +244,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -252,19 +252,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -272,7 +272,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -282,7 +282,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -290,7 +290,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -298,13 +298,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -312,13 +312,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -326,13 +326,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -340,13 +340,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -354,13 +354,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -368,13 +368,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -382,13 +382,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -396,13 +396,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -410,19 +410,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.importFrom"></a>
 
 ```python
 def import_from(
@@ -431,19 +431,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -451,13 +451,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -469,7 +469,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -477,7 +477,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.moveTo"></a>
 
 ```python
 def move_to(
@@ -488,7 +488,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -496,7 +496,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -504,7 +504,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -514,7 +514,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -522,7 +522,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -533,51 +533,51 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#create DatabaseRole#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#create DatabaseRole#create}.
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#delete DatabaseRole#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#delete DatabaseRole#delete}.
 
 ---
 
-###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.putTimeouts.parameter.read"></a>
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.putTimeouts.parameter.read"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#read DatabaseRole#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#read DatabaseRole#read}.
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#update DatabaseRole#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#update DatabaseRole#update}.
 
 ---
 
-##### `reset_comment` <a name="reset_comment" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.resetComment"></a>
+##### `reset_comment` <a name="reset_comment" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.resetComment"></a>
 
 ```python
 def reset_comment() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -587,17 +587,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DatabaseRole resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a DatabaseRole resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import database_role
+from cdktn_provider_snowflake import database_role
 
 databaseRole.DatabaseRole.is_construct(
   x: typing.Any
@@ -620,7 +620,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -628,42 +628,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import database_role
+from cdktn_provider_snowflake import database_role
 
 databaseRole.DatabaseRole.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import database_role
+from cdktn_provider_snowflake import database_role
 
 databaseRole.DatabaseRole.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import database_role
+from cdktn_provider_snowflake import database_role
 
 databaseRole.DatabaseRole.generate_config_for_import(
   scope: Construct,
@@ -673,9 +673,9 @@ databaseRole.DatabaseRole.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a DatabaseRole resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DatabaseRole resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -683,7 +683,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -691,19 +691,19 @@ The construct id used in the generated config for the DatabaseRole to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing DatabaseRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DatabaseRole to import is found.
 
@@ -713,36 +713,36 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.fullyQualifiedName">fully_qualified_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.showOutput">show_output</a></code> | <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList">DatabaseRoleShowOutputList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference">DatabaseRoleTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts">DatabaseRoleTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.comment">comment</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.database">database</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.fullyQualifiedName">fully_qualified_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.showOutput">show_output</a></code> | <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList">DatabaseRoleShowOutputList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference">DatabaseRoleTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts">DatabaseRoleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.comment">comment</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.database">database</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.name">name</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.node"></a>
 
 ```python
 node: Node
@@ -754,17 +754,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.fqn"></a>
 
 ```python
 fqn: str
@@ -774,7 +774,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -784,7 +784,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -794,7 +794,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -804,37 +804,37 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -844,47 +844,47 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `fully_qualified_name`<sup>Required</sup> <a name="fully_qualified_name" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.fullyQualifiedName"></a>
+##### `fully_qualified_name`<sup>Required</sup> <a name="fully_qualified_name" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.fullyQualifiedName"></a>
 
 ```python
 fully_qualified_name: str
@@ -894,27 +894,27 @@ fully_qualified_name: str
 
 ---
 
-##### `show_output`<sup>Required</sup> <a name="show_output" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.showOutput"></a>
+##### `show_output`<sup>Required</sup> <a name="show_output" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.showOutput"></a>
 
 ```python
 show_output: DatabaseRoleShowOutputList
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList">DatabaseRoleShowOutputList</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList">DatabaseRoleShowOutputList</a>
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.timeouts"></a>
 
 ```python
 timeouts: DatabaseRoleTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference">DatabaseRoleTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference">DatabaseRoleTimeoutsOutputReference</a>
 
 ---
 
-##### `comment_input`<sup>Optional</sup> <a name="comment_input" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.commentInput"></a>
+##### `comment_input`<sup>Optional</sup> <a name="comment_input" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.commentInput"></a>
 
 ```python
 comment_input: str
@@ -924,7 +924,7 @@ comment_input: str
 
 ---
 
-##### `database_input`<sup>Optional</sup> <a name="database_input" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.databaseInput"></a>
+##### `database_input`<sup>Optional</sup> <a name="database_input" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.databaseInput"></a>
 
 ```python
 database_input: str
@@ -934,7 +934,7 @@ database_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.idInput"></a>
 
 ```python
 id_input: str
@@ -944,7 +944,7 @@ id_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -954,17 +954,17 @@ name_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | DatabaseRoleTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts">DatabaseRoleTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts">DatabaseRoleTimeouts</a>
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.comment"></a>
 
 ```python
 comment: str
@@ -974,7 +974,7 @@ comment: str
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.database"></a>
 
 ```python
 database: str
@@ -984,7 +984,7 @@ database: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.id"></a>
 
 ```python
 id: str
@@ -994,7 +994,7 @@ id: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.name"></a>
 
 ```python
 name: str
@@ -1008,11 +1008,11 @@ name: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-snowflake.databaseRole.DatabaseRole.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1024,12 +1024,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DatabaseRoleConfig <a name="DatabaseRoleConfig" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig"></a>
+### DatabaseRoleConfig <a name="DatabaseRoleConfig" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import database_role
+from cdktn_provider_snowflake import database_role
 
 databaseRole.DatabaseRoleConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1051,92 +1051,92 @@ databaseRole.DatabaseRoleConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.database">database</a></code> | <code>str</code> | The database in which to create the database role. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.name">name</a></code> | <code>str</code> | Specifies the identifier for the database role. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the database role. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#id DatabaseRole#id}. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts">DatabaseRoleTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.database">database</a></code> | <code>str</code> | The database in which to create the database role. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.name">name</a></code> | <code>str</code> | Specifies the identifier for the database role. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the database role. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#id DatabaseRole#id}. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts">DatabaseRoleTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.database"></a>
 
 ```python
 database: str
@@ -1148,11 +1148,11 @@ The database in which to create the database role.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#database DatabaseRole#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#database DatabaseRole#database}
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.name"></a>
 
 ```python
 name: str
@@ -1164,11 +1164,11 @@ Specifies the identifier for the database role.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#name DatabaseRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#name DatabaseRole#name}
 
 ---
 
-##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.comment"></a>
+##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.comment"></a>
 
 ```python
 comment: str
@@ -1178,11 +1178,11 @@ comment: str
 
 Specifies a comment for the database role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#comment DatabaseRole#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#comment DatabaseRole#comment}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.id"></a>
 
 ```python
 id: str
@@ -1190,44 +1190,44 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#id DatabaseRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#id DatabaseRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleConfig.property.timeouts"></a>
 
 ```python
 timeouts: DatabaseRoleTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts">DatabaseRoleTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts">DatabaseRoleTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#timeouts DatabaseRole#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#timeouts DatabaseRole#timeouts}
 
 ---
 
-### DatabaseRoleShowOutput <a name="DatabaseRoleShowOutput" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutput"></a>
+### DatabaseRoleShowOutput <a name="DatabaseRoleShowOutput" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutput"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutput.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutput.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import database_role
+from cdktn_provider_snowflake import database_role
 
 databaseRole.DatabaseRoleShowOutput()
 ```
 
 
-### DatabaseRoleTimeouts <a name="DatabaseRoleTimeouts" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts"></a>
+### DatabaseRoleTimeouts <a name="DatabaseRoleTimeouts" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import database_role
+from cdktn_provider_snowflake import database_role
 
 databaseRole.DatabaseRoleTimeouts(
   create: str = None,
@@ -1241,14 +1241,14 @@ databaseRole.DatabaseRoleTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#create DatabaseRole#create}. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#delete DatabaseRole#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#read DatabaseRole#read}. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#update DatabaseRole#update}. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#create DatabaseRole#create}. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#delete DatabaseRole#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#read DatabaseRole#read}. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#update DatabaseRole#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -1256,11 +1256,11 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#create DatabaseRole#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#create DatabaseRole#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -1268,11 +1268,11 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#delete DatabaseRole#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#delete DatabaseRole#delete}.
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.read"></a>
 
 ```python
 read: str
@@ -1280,11 +1280,11 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#read DatabaseRole#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#read DatabaseRole#read}.
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -1292,18 +1292,18 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/database_role#update DatabaseRole#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/database_role#update DatabaseRole#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DatabaseRoleShowOutputList <a name="DatabaseRoleShowOutputList" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList"></a>
+### DatabaseRoleShowOutputList <a name="DatabaseRoleShowOutputList" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import database_role
+from cdktn_provider_snowflake import database_role
 
 databaseRole.DatabaseRoleShowOutputList(
   terraform_resource: IInterpolatingParent,
@@ -1314,21 +1314,21 @@ databaseRole.DatabaseRoleShowOutputList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1336,7 +1336,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -1348,15 +1348,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -1368,19 +1368,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.resolve"></a>
 
 ```python
 def resolve(
@@ -1390,13 +1390,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1406,7 +1406,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.get"></a>
 
 ```python
 def get(
@@ -1414,7 +1414,7 @@ def get(
 ) -> DatabaseRoleShowOutputOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1427,12 +1427,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1446,7 +1446,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1457,12 +1457,12 @@ fqn: str
 ---
 
 
-### DatabaseRoleShowOutputOutputReference <a name="DatabaseRoleShowOutputOutputReference" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference"></a>
+### DatabaseRoleShowOutputOutputReference <a name="DatabaseRoleShowOutputOutputReference" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import database_role
+from cdktn_provider_snowflake import database_role
 
 databaseRole.DatabaseRoleShowOutputOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1474,22 +1474,22 @@ databaseRole.DatabaseRoleShowOutputOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1497,7 +1497,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1505,7 +1505,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -1517,29 +1517,29 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1547,13 +1547,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1561,13 +1561,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1575,13 +1575,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1589,13 +1589,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1603,13 +1603,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1617,13 +1617,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1631,13 +1631,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1645,13 +1645,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1659,13 +1659,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1673,13 +1673,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1689,13 +1689,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1710,25 +1710,25 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.comment">comment</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.databaseName">database_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.grantedDatabaseRoles">granted_database_roles</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.grantedToDatabaseRoles">granted_to_database_roles</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.grantedToRoles">granted_to_roles</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.isCurrent">is_current</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.isDefault">is_default</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.isInherited">is_inherited</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.owner">owner</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.ownerRoleType">owner_role_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutput">DatabaseRoleShowOutput</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.comment">comment</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.databaseName">database_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.grantedDatabaseRoles">granted_database_roles</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.grantedToDatabaseRoles">granted_to_database_roles</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.grantedToRoles">granted_to_roles</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.isCurrent">is_current</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.isDefault">is_default</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.isInherited">is_inherited</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.owner">owner</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.ownerRoleType">owner_role_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutput">DatabaseRoleShowOutput</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1742,7 +1742,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1752,7 +1752,7 @@ fqn: str
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.comment"></a>
 
 ```python
 comment: str
@@ -1762,7 +1762,7 @@ comment: str
 
 ---
 
-##### `created_on`<sup>Required</sup> <a name="created_on" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.createdOn"></a>
+##### `created_on`<sup>Required</sup> <a name="created_on" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.createdOn"></a>
 
 ```python
 created_on: str
@@ -1772,7 +1772,7 @@ created_on: str
 
 ---
 
-##### `database_name`<sup>Required</sup> <a name="database_name" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.databaseName"></a>
+##### `database_name`<sup>Required</sup> <a name="database_name" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.databaseName"></a>
 
 ```python
 database_name: str
@@ -1782,7 +1782,7 @@ database_name: str
 
 ---
 
-##### `granted_database_roles`<sup>Required</sup> <a name="granted_database_roles" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.grantedDatabaseRoles"></a>
+##### `granted_database_roles`<sup>Required</sup> <a name="granted_database_roles" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.grantedDatabaseRoles"></a>
 
 ```python
 granted_database_roles: typing.Union[int, float]
@@ -1792,7 +1792,7 @@ granted_database_roles: typing.Union[int, float]
 
 ---
 
-##### `granted_to_database_roles`<sup>Required</sup> <a name="granted_to_database_roles" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.grantedToDatabaseRoles"></a>
+##### `granted_to_database_roles`<sup>Required</sup> <a name="granted_to_database_roles" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.grantedToDatabaseRoles"></a>
 
 ```python
 granted_to_database_roles: typing.Union[int, float]
@@ -1802,7 +1802,7 @@ granted_to_database_roles: typing.Union[int, float]
 
 ---
 
-##### `granted_to_roles`<sup>Required</sup> <a name="granted_to_roles" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.grantedToRoles"></a>
+##### `granted_to_roles`<sup>Required</sup> <a name="granted_to_roles" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.grantedToRoles"></a>
 
 ```python
 granted_to_roles: typing.Union[int, float]
@@ -1812,37 +1812,37 @@ granted_to_roles: typing.Union[int, float]
 
 ---
 
-##### `is_current`<sup>Required</sup> <a name="is_current" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.isCurrent"></a>
+##### `is_current`<sup>Required</sup> <a name="is_current" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.isCurrent"></a>
 
 ```python
 is_current: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `is_default`<sup>Required</sup> <a name="is_default" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.isDefault"></a>
+##### `is_default`<sup>Required</sup> <a name="is_default" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.isDefault"></a>
 
 ```python
 is_default: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `is_inherited`<sup>Required</sup> <a name="is_inherited" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.isInherited"></a>
+##### `is_inherited`<sup>Required</sup> <a name="is_inherited" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.isInherited"></a>
 
 ```python
 is_inherited: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.name"></a>
 
 ```python
 name: str
@@ -1852,7 +1852,7 @@ name: str
 
 ---
 
-##### `owner`<sup>Required</sup> <a name="owner" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.owner"></a>
+##### `owner`<sup>Required</sup> <a name="owner" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.owner"></a>
 
 ```python
 owner: str
@@ -1862,7 +1862,7 @@ owner: str
 
 ---
 
-##### `owner_role_type`<sup>Required</sup> <a name="owner_role_type" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.ownerRoleType"></a>
+##### `owner_role_type`<sup>Required</sup> <a name="owner_role_type" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.ownerRoleType"></a>
 
 ```python
 owner_role_type: str
@@ -1872,23 +1872,23 @@ owner_role_type: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: DatabaseRoleShowOutput
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutput">DatabaseRoleShowOutput</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleShowOutput">DatabaseRoleShowOutput</a>
 
 ---
 
 
-### DatabaseRoleTimeoutsOutputReference <a name="DatabaseRoleTimeoutsOutputReference" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference"></a>
+### DatabaseRoleTimeoutsOutputReference <a name="DatabaseRoleTimeoutsOutputReference" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import database_role
+from cdktn_provider_snowflake import database_role
 
 databaseRole.DatabaseRoleTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1898,20 +1898,20 @@ databaseRole.DatabaseRoleTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1923,33 +1923,33 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1957,13 +1957,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1971,13 +1971,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1985,13 +1985,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1999,13 +1999,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2013,13 +2013,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2027,13 +2027,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2041,13 +2041,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2055,13 +2055,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2069,13 +2069,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2083,13 +2083,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2099,13 +2099,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2115,25 +2115,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_read` <a name="reset_read" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resetRead"></a>
+##### `reset_read` <a name="reset_read" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resetRead"></a>
 
 ```python
 def reset_read() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -2144,21 +2144,21 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts">DatabaseRoleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts">DatabaseRoleTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2172,7 +2172,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2182,7 +2182,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -2192,7 +2192,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -2202,7 +2202,7 @@ delete_input: str
 
 ---
 
-##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.readInput"></a>
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.readInput"></a>
 
 ```python
 read_input: str
@@ -2212,7 +2212,7 @@ read_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -2222,7 +2222,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -2232,7 +2232,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -2242,7 +2242,7 @@ delete: str
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.read"></a>
 
 ```python
 read: str
@@ -2252,7 +2252,7 @@ read: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -2262,13 +2262,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | DatabaseRoleTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts">DatabaseRoleTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-snowflake.databaseRole.DatabaseRoleTimeouts">DatabaseRoleTimeouts</a>
 
 ---
 

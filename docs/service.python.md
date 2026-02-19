@@ -1,15 +1,15 @@
-# `service` Submodule <a name="`service` Submodule" id="@cdktf/provider-snowflake.service"></a>
+# `service` Submodule <a name="`service` Submodule" id="@cdktn/provider-snowflake.service"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### Service <a name="Service" id="@cdktf/provider-snowflake.service.Service"></a>
+### Service <a name="Service" id="@cdktn/provider-snowflake.service.Service"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service snowflake_service}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service snowflake_service}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.Service.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.service.Service.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.Service(
   scope: Construct,
@@ -42,35 +42,35 @@ service.Service(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.computePool">compute_pool</a></code> | <code>str</code> | Specifies the name of the compute pool in your account on which to run the service. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.database">database</a></code> | <code>str</code> | The database in which to create the service. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.name">name</a></code> | <code>str</code> | Specifies the identifier for the service; |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.schema">schema</a></code> | <code>str</code> | The schema in which to create the service. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.autoResume">auto_resume</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically resume a service. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.autoSuspendSecs">auto_suspend_secs</a></code> | <code>typing.Union[int, float]</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of seconds of inactivity (service is idle) after which Snowflake automatically suspends the service. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the service. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.externalAccessIntegrations">external_access_integrations</a></code> | <code>typing.List[str]</code> | Specifies the names of the external access integrations that allow your service to access external sites. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.fromSpecification">from_specification</a></code> | <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecification">ServiceFromSpecification</a></code> | from_specification block. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.fromSpecificationTemplate">from_specification_template</a></code> | <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate">ServiceFromSpecificationTemplate</a></code> | from_specification_template block. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#id Service#id}. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.maxInstances">max_instances</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum number of service instances to run. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.minInstances">min_instances</a></code> | <code>typing.Union[int, float]</code> | Specifies the minimum number of service instances to run. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.minReadyInstances">min_ready_instances</a></code> | <code>typing.Union[int, float]</code> | Indicates the minimum service instances that must be ready for Snowflake to consider the service is ready to process requests. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.queryWarehouse">query_warehouse</a></code> | <code>str</code> | Warehouse to use if a service container connects to Snowflake to execute a query but does not explicitly specify a warehouse to use. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeouts">ServiceTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.computePool">compute_pool</a></code> | <code>str</code> | Specifies the name of the compute pool in your account on which to run the service. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.database">database</a></code> | <code>str</code> | The database in which to create the service. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.name">name</a></code> | <code>str</code> | Specifies the identifier for the service; |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.schema">schema</a></code> | <code>str</code> | The schema in which to create the service. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.autoResume">auto_resume</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically resume a service. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.autoSuspendSecs">auto_suspend_secs</a></code> | <code>typing.Union[int, float]</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of seconds of inactivity (service is idle) after which Snowflake automatically suspends the service. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the service. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.externalAccessIntegrations">external_access_integrations</a></code> | <code>typing.List[str]</code> | Specifies the names of the external access integrations that allow your service to access external sites. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.fromSpecification">from_specification</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecification">ServiceFromSpecification</a></code> | from_specification block. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.fromSpecificationTemplate">from_specification_template</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate">ServiceFromSpecificationTemplate</a></code> | from_specification_template block. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#id Service#id}. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.maxInstances">max_instances</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum number of service instances to run. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.minInstances">min_instances</a></code> | <code>typing.Union[int, float]</code> | Specifies the minimum number of service instances to run. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.minReadyInstances">min_ready_instances</a></code> | <code>typing.Union[int, float]</code> | Indicates the minimum service instances that must be ready for Snowflake to consider the service is ready to process requests. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.queryWarehouse">query_warehouse</a></code> | <code>str</code> | Warehouse to use if a service container connects to Snowflake to execute a query but does not explicitly specify a warehouse to use. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeouts">ServiceTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -78,7 +78,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -88,49 +88,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.count"></a>
-
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.dependsOn"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.count"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
-
----
-
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.forEach"></a>
-
-- *Type:* cdktf.ITerraformIterator
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.lifecycle"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.dependsOn"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
-
----
-
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.provider"></a>
-
-- *Type:* cdktf.TerraformProvider
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.provisioners"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.forEach"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `compute_pool`<sup>Required</sup> <a name="compute_pool" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.computePool"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `compute_pool`<sup>Required</sup> <a name="compute_pool" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.computePool"></a>
 
 - *Type:* str
 
@@ -138,11 +138,11 @@ Specifies the name of the compute pool in your account on which to run the servi
 
 Identifiers with special or lower-case characters are not supported. This limitation in the provider follows the limitation in Snowflake (see [docs](https://docs.snowflake.com/en/sql-reference/sql/create-compute-pool)). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#compute_pool Service#compute_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#compute_pool Service#compute_pool}
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.database"></a>
 
 - *Type:* str
 
@@ -150,11 +150,11 @@ The database in which to create the service.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#database Service#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#database Service#database}
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.name"></a>
 
 - *Type:* str
 
@@ -162,11 +162,11 @@ Specifies the identifier for the service;
 
 must be unique for the schema in which the service is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#name Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#name Service#name}
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.schema"></a>
 
 - *Type:* str
 
@@ -174,11 +174,11 @@ The schema in which to create the service.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#schema Service#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#schema Service#schema}
 
 ---
 
-##### `auto_resume`<sup>Optional</sup> <a name="auto_resume" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.autoResume"></a>
+##### `auto_resume`<sup>Optional</sup> <a name="auto_resume" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.autoResume"></a>
 
 - *Type:* str
 
@@ -186,102 +186,102 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#auto_resume Service#auto_resume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#auto_resume Service#auto_resume}
 
 ---
 
-##### `auto_suspend_secs`<sup>Optional</sup> <a name="auto_suspend_secs" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.autoSuspendSecs"></a>
+##### `auto_suspend_secs`<sup>Optional</sup> <a name="auto_suspend_secs" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.autoSuspendSecs"></a>
 
 - *Type:* typing.Union[int, float]
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of seconds of inactivity (service is idle) after which Snowflake automatically suspends the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#auto_suspend_secs Service#auto_suspend_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#auto_suspend_secs Service#auto_suspend_secs}
 
 ---
 
-##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.comment"></a>
+##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.comment"></a>
 
 - *Type:* str
 
 Specifies a comment for the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#comment Service#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#comment Service#comment}
 
 ---
 
-##### `external_access_integrations`<sup>Optional</sup> <a name="external_access_integrations" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.externalAccessIntegrations"></a>
+##### `external_access_integrations`<sup>Optional</sup> <a name="external_access_integrations" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.externalAccessIntegrations"></a>
 
 - *Type:* typing.List[str]
 
 Specifies the names of the external access integrations that allow your service to access external sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#external_access_integrations Service#external_access_integrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#external_access_integrations Service#external_access_integrations}
 
 ---
 
-##### `from_specification`<sup>Optional</sup> <a name="from_specification" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.fromSpecification"></a>
+##### `from_specification`<sup>Optional</sup> <a name="from_specification" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.fromSpecification"></a>
 
-- *Type:* <a href="#@cdktf/provider-snowflake.service.ServiceFromSpecification">ServiceFromSpecification</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.service.ServiceFromSpecification">ServiceFromSpecification</a>
 
 from_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#from_specification Service#from_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#from_specification Service#from_specification}
 
 ---
 
-##### `from_specification_template`<sup>Optional</sup> <a name="from_specification_template" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.fromSpecificationTemplate"></a>
+##### `from_specification_template`<sup>Optional</sup> <a name="from_specification_template" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.fromSpecificationTemplate"></a>
 
-- *Type:* <a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate">ServiceFromSpecificationTemplate</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate">ServiceFromSpecificationTemplate</a>
 
 from_specification_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#from_specification_template Service#from_specification_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#from_specification_template Service#from_specification_template}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#id Service#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#id Service#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `max_instances`<sup>Optional</sup> <a name="max_instances" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.maxInstances"></a>
+##### `max_instances`<sup>Optional</sup> <a name="max_instances" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.maxInstances"></a>
 
 - *Type:* typing.Union[int, float]
 
 Specifies the maximum number of service instances to run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#max_instances Service#max_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#max_instances Service#max_instances}
 
 ---
 
-##### `min_instances`<sup>Optional</sup> <a name="min_instances" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.minInstances"></a>
+##### `min_instances`<sup>Optional</sup> <a name="min_instances" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.minInstances"></a>
 
 - *Type:* typing.Union[int, float]
 
 Specifies the minimum number of service instances to run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#min_instances Service#min_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#min_instances Service#min_instances}
 
 ---
 
-##### `min_ready_instances`<sup>Optional</sup> <a name="min_ready_instances" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.minReadyInstances"></a>
+##### `min_ready_instances`<sup>Optional</sup> <a name="min_ready_instances" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.minReadyInstances"></a>
 
 - *Type:* typing.Union[int, float]
 
 Indicates the minimum service instances that must be ready for Snowflake to consider the service is ready to process requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#min_ready_instances Service#min_ready_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#min_ready_instances Service#min_ready_instances}
 
 ---
 
-##### `query_warehouse`<sup>Optional</sup> <a name="query_warehouse" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.queryWarehouse"></a>
+##### `query_warehouse`<sup>Optional</sup> <a name="query_warehouse" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.queryWarehouse"></a>
 
 - *Type:* str
 
@@ -289,17 +289,17 @@ Warehouse to use if a service container connects to Snowflake to execute a query
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#query_warehouse Service#query_warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#query_warehouse Service#query_warehouse}
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.service.Service.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-snowflake.service.Service.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-snowflake.service.ServiceTimeouts">ServiceTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.service.ServiceTimeouts">ServiceTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#timeouts Service#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#timeouts Service#timeouts}
 
 ---
 
@@ -307,48 +307,48 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.putFromSpecification">put_from_specification</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.putFromSpecificationTemplate">put_from_specification_template</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.resetAutoResume">reset_auto_resume</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.resetAutoSuspendSecs">reset_auto_suspend_secs</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.resetComment">reset_comment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.resetExternalAccessIntegrations">reset_external_access_integrations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.resetFromSpecification">reset_from_specification</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.resetFromSpecificationTemplate">reset_from_specification_template</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.resetMaxInstances">reset_max_instances</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.resetMinInstances">reset_min_instances</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.resetMinReadyInstances">reset_min_ready_instances</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.resetQueryWarehouse">reset_query_warehouse</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.putFromSpecification">put_from_specification</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.putFromSpecificationTemplate">put_from_specification_template</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.resetAutoResume">reset_auto_resume</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.resetAutoSuspendSecs">reset_auto_suspend_secs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.resetComment">reset_comment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.resetExternalAccessIntegrations">reset_external_access_integrations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.resetFromSpecification">reset_from_specification</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.resetFromSpecificationTemplate">reset_from_specification_template</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.resetMaxInstances">reset_max_instances</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.resetMinInstances">reset_min_instances</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.resetMinReadyInstances">reset_min_ready_instances</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.resetQueryWarehouse">reset_query_warehouse</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-snowflake.service.Service.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.service.Service.toString"></a>
 
 ```python
 def to_string() -> str
@@ -356,7 +356,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-snowflake.service.Service.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-snowflake.service.Service.addOverride"></a>
 
 ```python
 def add_override(
@@ -365,19 +365,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.service.Service.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-snowflake.service.Service.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.service.Service.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.service.Service.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-snowflake.service.Service.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-snowflake.service.Service.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -387,7 +387,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-snowflake.service.Service.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-snowflake.service.Service.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -395,7 +395,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-snowflake.service.Service.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-snowflake.service.Service.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -403,19 +403,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-snowflake.service.Service.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-snowflake.service.Service.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-snowflake.service.Service.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-snowflake.service.Service.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-snowflake.service.Service.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-snowflake.service.Service.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -423,7 +423,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-snowflake.service.Service.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-snowflake.service.Service.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -433,7 +433,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-snowflake.service.Service.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-snowflake.service.Service.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -441,7 +441,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-snowflake.service.Service.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.service.Service.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -449,13 +449,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.Service.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.Service.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-snowflake.service.Service.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.service.Service.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -463,13 +463,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.Service.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.Service.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-snowflake.service.Service.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.service.Service.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -477,13 +477,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.Service.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.Service.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-snowflake.service.Service.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.service.Service.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -491,13 +491,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.Service.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.Service.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-snowflake.service.Service.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.service.Service.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -505,13 +505,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.Service.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.Service.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-snowflake.service.Service.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.service.Service.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -519,13 +519,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.Service.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.Service.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-snowflake.service.Service.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.service.Service.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -533,13 +533,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.Service.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.Service.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-snowflake.service.Service.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.service.Service.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -547,13 +547,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.Service.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.Service.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-snowflake.service.Service.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.service.Service.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -561,19 +561,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.Service.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.Service.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-snowflake.service.Service.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-snowflake.service.Service.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-snowflake.service.Service.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-snowflake.service.Service.importFrom"></a>
 
 ```python
 def import_from(
@@ -582,19 +582,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.service.Service.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.service.Service.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.service.Service.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.service.Service.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-snowflake.service.Service.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.service.Service.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -602,13 +602,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.Service.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.Service.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-snowflake.service.Service.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-snowflake.service.Service.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -620,7 +620,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.service.Service.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.service.Service.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -628,7 +628,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-snowflake.service.Service.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-snowflake.service.Service.moveTo"></a>
 
 ```python
 def move_to(
@@ -639,7 +639,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-snowflake.service.Service.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-snowflake.service.Service.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -647,7 +647,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-snowflake.service.Service.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-snowflake.service.Service.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -655,7 +655,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-snowflake.service.Service.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-snowflake.service.Service.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -665,7 +665,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.service.Service.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.service.Service.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -673,7 +673,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_from_specification` <a name="put_from_specification" id="@cdktf/provider-snowflake.service.Service.putFromSpecification"></a>
+##### `put_from_specification` <a name="put_from_specification" id="@cdktn/provider-snowflake.service.Service.putFromSpecification"></a>
 
 ```python
 def put_from_specification(
@@ -684,17 +684,17 @@ def put_from_specification(
 ) -> None
 ```
 
-###### `file`<sup>Optional</sup> <a name="file" id="@cdktf/provider-snowflake.service.Service.putFromSpecification.parameter.file"></a>
+###### `file`<sup>Optional</sup> <a name="file" id="@cdktn/provider-snowflake.service.Service.putFromSpecification.parameter.file"></a>
 
 - *Type:* str
 
 The file name of the service specification. Example: `spec.yaml`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#file Service#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#file Service#file}
 
 ---
 
-###### `path`<sup>Optional</sup> <a name="path" id="@cdktf/provider-snowflake.service.Service.putFromSpecification.parameter.path"></a>
+###### `path`<sup>Optional</sup> <a name="path" id="@cdktn/provider-snowflake.service.Service.putFromSpecification.parameter.path"></a>
 
 - *Type:* str
 
@@ -702,11 +702,11 @@ The path to the service specification file on the given stage.
 
 When the path is specified, the `/` character is automatically added as a path prefix. Example: `path/to/spec`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#path Service#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#path Service#path}
 
 ---
 
-###### `stage`<sup>Optional</sup> <a name="stage" id="@cdktf/provider-snowflake.service.Service.putFromSpecification.parameter.stage"></a>
+###### `stage`<sup>Optional</sup> <a name="stage" id="@cdktn/provider-snowflake.service.Service.putFromSpecification.parameter.stage"></a>
 
 - *Type:* str
 
@@ -714,21 +714,21 @@ The fully qualified name of the stage containing the service specification file.
 
 At symbol (`@`) is added automatically. Example: `"\"<db_name>\".\"<schema_name>\".\"<stage_name>\""`. For more information about this resource, see [docs](./stage).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#stage Service#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#stage Service#stage}
 
 ---
 
-###### `text`<sup>Optional</sup> <a name="text" id="@cdktf/provider-snowflake.service.Service.putFromSpecification.parameter.text"></a>
+###### `text`<sup>Optional</sup> <a name="text" id="@cdktn/provider-snowflake.service.Service.putFromSpecification.parameter.text"></a>
 
 - *Type:* str
 
 The embedded text of the service specification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#text Service#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#text Service#text}
 
 ---
 
-##### `put_from_specification_template` <a name="put_from_specification_template" id="@cdktf/provider-snowflake.service.Service.putFromSpecificationTemplate"></a>
+##### `put_from_specification_template` <a name="put_from_specification_template" id="@cdktn/provider-snowflake.service.Service.putFromSpecificationTemplate"></a>
 
 ```python
 def put_from_specification_template(
@@ -740,27 +740,27 @@ def put_from_specification_template(
 ) -> None
 ```
 
-###### `using`<sup>Required</sup> <a name="using" id="@cdktf/provider-snowflake.service.Service.putFromSpecificationTemplate.parameter.using"></a>
+###### `using`<sup>Required</sup> <a name="using" id="@cdktn/provider-snowflake.service.Service.putFromSpecificationTemplate.parameter.using"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a>]
 
 using block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#using Service#using}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#using Service#using}
 
 ---
 
-###### `file`<sup>Optional</sup> <a name="file" id="@cdktf/provider-snowflake.service.Service.putFromSpecificationTemplate.parameter.file"></a>
+###### `file`<sup>Optional</sup> <a name="file" id="@cdktn/provider-snowflake.service.Service.putFromSpecificationTemplate.parameter.file"></a>
 
 - *Type:* str
 
 The file name of the service specification template. Example: `spec.yaml`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#file Service#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#file Service#file}
 
 ---
 
-###### `path`<sup>Optional</sup> <a name="path" id="@cdktf/provider-snowflake.service.Service.putFromSpecificationTemplate.parameter.path"></a>
+###### `path`<sup>Optional</sup> <a name="path" id="@cdktn/provider-snowflake.service.Service.putFromSpecificationTemplate.parameter.path"></a>
 
 - *Type:* str
 
@@ -768,11 +768,11 @@ The path to the service specification template file on the given stage.
 
 When the path is specified, the `/` character is automatically added as a path prefix. Example: `path/to/spec`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#path Service#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#path Service#path}
 
 ---
 
-###### `stage`<sup>Optional</sup> <a name="stage" id="@cdktf/provider-snowflake.service.Service.putFromSpecificationTemplate.parameter.stage"></a>
+###### `stage`<sup>Optional</sup> <a name="stage" id="@cdktn/provider-snowflake.service.Service.putFromSpecificationTemplate.parameter.stage"></a>
 
 - *Type:* str
 
@@ -780,21 +780,21 @@ The fully qualified name of the stage containing the service specification templ
 
 At symbol (`@`) is added automatically. Example: `"\"<db_name>\".\"<schema_name>\".\"<stage_name>\""`. For more information about this resource, see [docs](./stage).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#stage Service#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#stage Service#stage}
 
 ---
 
-###### `text`<sup>Optional</sup> <a name="text" id="@cdktf/provider-snowflake.service.Service.putFromSpecificationTemplate.parameter.text"></a>
+###### `text`<sup>Optional</sup> <a name="text" id="@cdktn/provider-snowflake.service.Service.putFromSpecificationTemplate.parameter.text"></a>
 
 - *Type:* str
 
 The embedded text of the service specification template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#text Service#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#text Service#text}
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-snowflake.service.Service.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-snowflake.service.Service.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -805,105 +805,105 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-snowflake.service.Service.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-snowflake.service.Service.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#create Service#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#create Service#create}.
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-snowflake.service.Service.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-snowflake.service.Service.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#delete Service#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#delete Service#delete}.
 
 ---
 
-###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-snowflake.service.Service.putTimeouts.parameter.read"></a>
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-snowflake.service.Service.putTimeouts.parameter.read"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#read Service#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#read Service#read}.
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-snowflake.service.Service.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-snowflake.service.Service.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#update Service#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#update Service#update}.
 
 ---
 
-##### `reset_auto_resume` <a name="reset_auto_resume" id="@cdktf/provider-snowflake.service.Service.resetAutoResume"></a>
+##### `reset_auto_resume` <a name="reset_auto_resume" id="@cdktn/provider-snowflake.service.Service.resetAutoResume"></a>
 
 ```python
 def reset_auto_resume() -> None
 ```
 
-##### `reset_auto_suspend_secs` <a name="reset_auto_suspend_secs" id="@cdktf/provider-snowflake.service.Service.resetAutoSuspendSecs"></a>
+##### `reset_auto_suspend_secs` <a name="reset_auto_suspend_secs" id="@cdktn/provider-snowflake.service.Service.resetAutoSuspendSecs"></a>
 
 ```python
 def reset_auto_suspend_secs() -> None
 ```
 
-##### `reset_comment` <a name="reset_comment" id="@cdktf/provider-snowflake.service.Service.resetComment"></a>
+##### `reset_comment` <a name="reset_comment" id="@cdktn/provider-snowflake.service.Service.resetComment"></a>
 
 ```python
 def reset_comment() -> None
 ```
 
-##### `reset_external_access_integrations` <a name="reset_external_access_integrations" id="@cdktf/provider-snowflake.service.Service.resetExternalAccessIntegrations"></a>
+##### `reset_external_access_integrations` <a name="reset_external_access_integrations" id="@cdktn/provider-snowflake.service.Service.resetExternalAccessIntegrations"></a>
 
 ```python
 def reset_external_access_integrations() -> None
 ```
 
-##### `reset_from_specification` <a name="reset_from_specification" id="@cdktf/provider-snowflake.service.Service.resetFromSpecification"></a>
+##### `reset_from_specification` <a name="reset_from_specification" id="@cdktn/provider-snowflake.service.Service.resetFromSpecification"></a>
 
 ```python
 def reset_from_specification() -> None
 ```
 
-##### `reset_from_specification_template` <a name="reset_from_specification_template" id="@cdktf/provider-snowflake.service.Service.resetFromSpecificationTemplate"></a>
+##### `reset_from_specification_template` <a name="reset_from_specification_template" id="@cdktn/provider-snowflake.service.Service.resetFromSpecificationTemplate"></a>
 
 ```python
 def reset_from_specification_template() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-snowflake.service.Service.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-snowflake.service.Service.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_max_instances` <a name="reset_max_instances" id="@cdktf/provider-snowflake.service.Service.resetMaxInstances"></a>
+##### `reset_max_instances` <a name="reset_max_instances" id="@cdktn/provider-snowflake.service.Service.resetMaxInstances"></a>
 
 ```python
 def reset_max_instances() -> None
 ```
 
-##### `reset_min_instances` <a name="reset_min_instances" id="@cdktf/provider-snowflake.service.Service.resetMinInstances"></a>
+##### `reset_min_instances` <a name="reset_min_instances" id="@cdktn/provider-snowflake.service.Service.resetMinInstances"></a>
 
 ```python
 def reset_min_instances() -> None
 ```
 
-##### `reset_min_ready_instances` <a name="reset_min_ready_instances" id="@cdktf/provider-snowflake.service.Service.resetMinReadyInstances"></a>
+##### `reset_min_ready_instances` <a name="reset_min_ready_instances" id="@cdktn/provider-snowflake.service.Service.resetMinReadyInstances"></a>
 
 ```python
 def reset_min_ready_instances() -> None
 ```
 
-##### `reset_query_warehouse` <a name="reset_query_warehouse" id="@cdktf/provider-snowflake.service.Service.resetQueryWarehouse"></a>
+##### `reset_query_warehouse` <a name="reset_query_warehouse" id="@cdktn/provider-snowflake.service.Service.resetQueryWarehouse"></a>
 
 ```python
 def reset_query_warehouse() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-snowflake.service.Service.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-snowflake.service.Service.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -913,17 +913,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a Service resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a Service resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-snowflake.service.Service.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-snowflake.service.Service.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.Service.is_construct(
   x: typing.Any
@@ -946,7 +946,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.service.Service.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.service.Service.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -954,42 +954,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-snowflake.service.Service.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-snowflake.service.Service.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.Service.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.service.Service.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.service.Service.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-snowflake.service.Service.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-snowflake.service.Service.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.Service.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.service.Service.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.service.Service.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-snowflake.service.Service.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-snowflake.service.Service.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.Service.generate_config_for_import(
   scope: Construct,
@@ -999,9 +999,9 @@ service.Service.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a Service resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a Service resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.service.Service.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-snowflake.service.Service.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -1009,7 +1009,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-snowflake.service.Service.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-snowflake.service.Service.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -1017,19 +1017,19 @@ The construct id used in the generated config for the Service to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-snowflake.service.Service.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-snowflake.service.Service.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing Service that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.service.Service.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.service.Service.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the Service to import is found.
 
@@ -1039,60 +1039,60 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.describeOutput">describe_output</a></code> | <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputList">ServiceDescribeOutputList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.fromSpecification">from_specification</a></code> | <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference">ServiceFromSpecificationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.fromSpecificationTemplate">from_specification_template</a></code> | <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference">ServiceFromSpecificationTemplateOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.fullyQualifiedName">fully_qualified_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.serviceType">service_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.showOutput">show_output</a></code> | <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputList">ServiceShowOutputList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference">ServiceTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.autoResumeInput">auto_resume_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.autoSuspendSecsInput">auto_suspend_secs_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.computePoolInput">compute_pool_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.externalAccessIntegrationsInput">external_access_integrations_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.fromSpecificationInput">from_specification_input</a></code> | <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecification">ServiceFromSpecification</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.fromSpecificationTemplateInput">from_specification_template_input</a></code> | <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate">ServiceFromSpecificationTemplate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.maxInstancesInput">max_instances_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.minInstancesInput">min_instances_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.minReadyInstancesInput">min_ready_instances_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.queryWarehouseInput">query_warehouse_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.schemaInput">schema_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.service.ServiceTimeouts">ServiceTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.autoResume">auto_resume</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.autoSuspendSecs">auto_suspend_secs</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.comment">comment</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.computePool">compute_pool</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.database">database</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.externalAccessIntegrations">external_access_integrations</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.maxInstances">max_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.minInstances">min_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.minReadyInstances">min_ready_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.queryWarehouse">query_warehouse</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.schema">schema</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.describeOutput">describe_output</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputList">ServiceDescribeOutputList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.fromSpecification">from_specification</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference">ServiceFromSpecificationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.fromSpecificationTemplate">from_specification_template</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference">ServiceFromSpecificationTemplateOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.fullyQualifiedName">fully_qualified_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.serviceType">service_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.showOutput">show_output</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputList">ServiceShowOutputList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference">ServiceTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.autoResumeInput">auto_resume_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.autoSuspendSecsInput">auto_suspend_secs_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.computePoolInput">compute_pool_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.externalAccessIntegrationsInput">external_access_integrations_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.fromSpecificationInput">from_specification_input</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecification">ServiceFromSpecification</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.fromSpecificationTemplateInput">from_specification_template_input</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate">ServiceFromSpecificationTemplate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.maxInstancesInput">max_instances_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.minInstancesInput">min_instances_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.minReadyInstancesInput">min_ready_instances_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.queryWarehouseInput">query_warehouse_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.schemaInput">schema_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.service.ServiceTimeouts">ServiceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.autoResume">auto_resume</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.autoSuspendSecs">auto_suspend_secs</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.comment">comment</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.computePool">compute_pool</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.database">database</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.externalAccessIntegrations">external_access_integrations</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.maxInstances">max_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.minInstances">min_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.minReadyInstances">min_ready_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.queryWarehouse">query_warehouse</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.schema">schema</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-snowflake.service.Service.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-snowflake.service.Service.property.node"></a>
 
 ```python
 node: Node
@@ -1104,17 +1104,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-snowflake.service.Service.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-snowflake.service.Service.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.service.Service.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.service.Service.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1124,7 +1124,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-snowflake.service.Service.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-snowflake.service.Service.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1134,7 +1134,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-snowflake.service.Service.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-snowflake.service.Service.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1144,7 +1144,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-snowflake.service.Service.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-snowflake.service.Service.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1154,37 +1154,37 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-snowflake.service.Service.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-snowflake.service.Service.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.service.Service.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-snowflake.service.Service.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.service.Service.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-snowflake.service.Service.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-snowflake.service.Service.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-snowflake.service.Service.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1194,77 +1194,77 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-snowflake.service.Service.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-snowflake.service.Service.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.service.Service.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-snowflake.service.Service.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.service.Service.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.service.Service.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.service.Service.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-snowflake.service.Service.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `describe_output`<sup>Required</sup> <a name="describe_output" id="@cdktf/provider-snowflake.service.Service.property.describeOutput"></a>
+##### `describe_output`<sup>Required</sup> <a name="describe_output" id="@cdktn/provider-snowflake.service.Service.property.describeOutput"></a>
 
 ```python
 describe_output: ServiceDescribeOutputList
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputList">ServiceDescribeOutputList</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputList">ServiceDescribeOutputList</a>
 
 ---
 
-##### `from_specification`<sup>Required</sup> <a name="from_specification" id="@cdktf/provider-snowflake.service.Service.property.fromSpecification"></a>
+##### `from_specification`<sup>Required</sup> <a name="from_specification" id="@cdktn/provider-snowflake.service.Service.property.fromSpecification"></a>
 
 ```python
 from_specification: ServiceFromSpecificationOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference">ServiceFromSpecificationOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference">ServiceFromSpecificationOutputReference</a>
 
 ---
 
-##### `from_specification_template`<sup>Required</sup> <a name="from_specification_template" id="@cdktf/provider-snowflake.service.Service.property.fromSpecificationTemplate"></a>
+##### `from_specification_template`<sup>Required</sup> <a name="from_specification_template" id="@cdktn/provider-snowflake.service.Service.property.fromSpecificationTemplate"></a>
 
 ```python
 from_specification_template: ServiceFromSpecificationTemplateOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference">ServiceFromSpecificationTemplateOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference">ServiceFromSpecificationTemplateOutputReference</a>
 
 ---
 
-##### `fully_qualified_name`<sup>Required</sup> <a name="fully_qualified_name" id="@cdktf/provider-snowflake.service.Service.property.fullyQualifiedName"></a>
+##### `fully_qualified_name`<sup>Required</sup> <a name="fully_qualified_name" id="@cdktn/provider-snowflake.service.Service.property.fullyQualifiedName"></a>
 
 ```python
 fully_qualified_name: str
@@ -1274,7 +1274,7 @@ fully_qualified_name: str
 
 ---
 
-##### `service_type`<sup>Required</sup> <a name="service_type" id="@cdktf/provider-snowflake.service.Service.property.serviceType"></a>
+##### `service_type`<sup>Required</sup> <a name="service_type" id="@cdktn/provider-snowflake.service.Service.property.serviceType"></a>
 
 ```python
 service_type: str
@@ -1284,27 +1284,27 @@ service_type: str
 
 ---
 
-##### `show_output`<sup>Required</sup> <a name="show_output" id="@cdktf/provider-snowflake.service.Service.property.showOutput"></a>
+##### `show_output`<sup>Required</sup> <a name="show_output" id="@cdktn/provider-snowflake.service.Service.property.showOutput"></a>
 
 ```python
 show_output: ServiceShowOutputList
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.service.ServiceShowOutputList">ServiceShowOutputList</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.service.ServiceShowOutputList">ServiceShowOutputList</a>
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-snowflake.service.Service.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-snowflake.service.Service.property.timeouts"></a>
 
 ```python
 timeouts: ServiceTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference">ServiceTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference">ServiceTimeoutsOutputReference</a>
 
 ---
 
-##### `auto_resume_input`<sup>Optional</sup> <a name="auto_resume_input" id="@cdktf/provider-snowflake.service.Service.property.autoResumeInput"></a>
+##### `auto_resume_input`<sup>Optional</sup> <a name="auto_resume_input" id="@cdktn/provider-snowflake.service.Service.property.autoResumeInput"></a>
 
 ```python
 auto_resume_input: str
@@ -1314,7 +1314,7 @@ auto_resume_input: str
 
 ---
 
-##### `auto_suspend_secs_input`<sup>Optional</sup> <a name="auto_suspend_secs_input" id="@cdktf/provider-snowflake.service.Service.property.autoSuspendSecsInput"></a>
+##### `auto_suspend_secs_input`<sup>Optional</sup> <a name="auto_suspend_secs_input" id="@cdktn/provider-snowflake.service.Service.property.autoSuspendSecsInput"></a>
 
 ```python
 auto_suspend_secs_input: typing.Union[int, float]
@@ -1324,7 +1324,7 @@ auto_suspend_secs_input: typing.Union[int, float]
 
 ---
 
-##### `comment_input`<sup>Optional</sup> <a name="comment_input" id="@cdktf/provider-snowflake.service.Service.property.commentInput"></a>
+##### `comment_input`<sup>Optional</sup> <a name="comment_input" id="@cdktn/provider-snowflake.service.Service.property.commentInput"></a>
 
 ```python
 comment_input: str
@@ -1334,7 +1334,7 @@ comment_input: str
 
 ---
 
-##### `compute_pool_input`<sup>Optional</sup> <a name="compute_pool_input" id="@cdktf/provider-snowflake.service.Service.property.computePoolInput"></a>
+##### `compute_pool_input`<sup>Optional</sup> <a name="compute_pool_input" id="@cdktn/provider-snowflake.service.Service.property.computePoolInput"></a>
 
 ```python
 compute_pool_input: str
@@ -1344,7 +1344,7 @@ compute_pool_input: str
 
 ---
 
-##### `database_input`<sup>Optional</sup> <a name="database_input" id="@cdktf/provider-snowflake.service.Service.property.databaseInput"></a>
+##### `database_input`<sup>Optional</sup> <a name="database_input" id="@cdktn/provider-snowflake.service.Service.property.databaseInput"></a>
 
 ```python
 database_input: str
@@ -1354,7 +1354,7 @@ database_input: str
 
 ---
 
-##### `external_access_integrations_input`<sup>Optional</sup> <a name="external_access_integrations_input" id="@cdktf/provider-snowflake.service.Service.property.externalAccessIntegrationsInput"></a>
+##### `external_access_integrations_input`<sup>Optional</sup> <a name="external_access_integrations_input" id="@cdktn/provider-snowflake.service.Service.property.externalAccessIntegrationsInput"></a>
 
 ```python
 external_access_integrations_input: typing.List[str]
@@ -1364,27 +1364,27 @@ external_access_integrations_input: typing.List[str]
 
 ---
 
-##### `from_specification_input`<sup>Optional</sup> <a name="from_specification_input" id="@cdktf/provider-snowflake.service.Service.property.fromSpecificationInput"></a>
+##### `from_specification_input`<sup>Optional</sup> <a name="from_specification_input" id="@cdktn/provider-snowflake.service.Service.property.fromSpecificationInput"></a>
 
 ```python
 from_specification_input: ServiceFromSpecification
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.service.ServiceFromSpecification">ServiceFromSpecification</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.service.ServiceFromSpecification">ServiceFromSpecification</a>
 
 ---
 
-##### `from_specification_template_input`<sup>Optional</sup> <a name="from_specification_template_input" id="@cdktf/provider-snowflake.service.Service.property.fromSpecificationTemplateInput"></a>
+##### `from_specification_template_input`<sup>Optional</sup> <a name="from_specification_template_input" id="@cdktn/provider-snowflake.service.Service.property.fromSpecificationTemplateInput"></a>
 
 ```python
 from_specification_template_input: ServiceFromSpecificationTemplate
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate">ServiceFromSpecificationTemplate</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate">ServiceFromSpecificationTemplate</a>
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-snowflake.service.Service.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-snowflake.service.Service.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1394,7 +1394,7 @@ id_input: str
 
 ---
 
-##### `max_instances_input`<sup>Optional</sup> <a name="max_instances_input" id="@cdktf/provider-snowflake.service.Service.property.maxInstancesInput"></a>
+##### `max_instances_input`<sup>Optional</sup> <a name="max_instances_input" id="@cdktn/provider-snowflake.service.Service.property.maxInstancesInput"></a>
 
 ```python
 max_instances_input: typing.Union[int, float]
@@ -1404,7 +1404,7 @@ max_instances_input: typing.Union[int, float]
 
 ---
 
-##### `min_instances_input`<sup>Optional</sup> <a name="min_instances_input" id="@cdktf/provider-snowflake.service.Service.property.minInstancesInput"></a>
+##### `min_instances_input`<sup>Optional</sup> <a name="min_instances_input" id="@cdktn/provider-snowflake.service.Service.property.minInstancesInput"></a>
 
 ```python
 min_instances_input: typing.Union[int, float]
@@ -1414,7 +1414,7 @@ min_instances_input: typing.Union[int, float]
 
 ---
 
-##### `min_ready_instances_input`<sup>Optional</sup> <a name="min_ready_instances_input" id="@cdktf/provider-snowflake.service.Service.property.minReadyInstancesInput"></a>
+##### `min_ready_instances_input`<sup>Optional</sup> <a name="min_ready_instances_input" id="@cdktn/provider-snowflake.service.Service.property.minReadyInstancesInput"></a>
 
 ```python
 min_ready_instances_input: typing.Union[int, float]
@@ -1424,7 +1424,7 @@ min_ready_instances_input: typing.Union[int, float]
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-snowflake.service.Service.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-snowflake.service.Service.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1434,7 +1434,7 @@ name_input: str
 
 ---
 
-##### `query_warehouse_input`<sup>Optional</sup> <a name="query_warehouse_input" id="@cdktf/provider-snowflake.service.Service.property.queryWarehouseInput"></a>
+##### `query_warehouse_input`<sup>Optional</sup> <a name="query_warehouse_input" id="@cdktn/provider-snowflake.service.Service.property.queryWarehouseInput"></a>
 
 ```python
 query_warehouse_input: str
@@ -1444,7 +1444,7 @@ query_warehouse_input: str
 
 ---
 
-##### `schema_input`<sup>Optional</sup> <a name="schema_input" id="@cdktf/provider-snowflake.service.Service.property.schemaInput"></a>
+##### `schema_input`<sup>Optional</sup> <a name="schema_input" id="@cdktn/provider-snowflake.service.Service.property.schemaInput"></a>
 
 ```python
 schema_input: str
@@ -1454,17 +1454,17 @@ schema_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-snowflake.service.Service.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-snowflake.service.Service.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | ServiceTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.service.ServiceTimeouts">ServiceTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-snowflake.service.ServiceTimeouts">ServiceTimeouts</a>
 
 ---
 
-##### `auto_resume`<sup>Required</sup> <a name="auto_resume" id="@cdktf/provider-snowflake.service.Service.property.autoResume"></a>
+##### `auto_resume`<sup>Required</sup> <a name="auto_resume" id="@cdktn/provider-snowflake.service.Service.property.autoResume"></a>
 
 ```python
 auto_resume: str
@@ -1474,7 +1474,7 @@ auto_resume: str
 
 ---
 
-##### `auto_suspend_secs`<sup>Required</sup> <a name="auto_suspend_secs" id="@cdktf/provider-snowflake.service.Service.property.autoSuspendSecs"></a>
+##### `auto_suspend_secs`<sup>Required</sup> <a name="auto_suspend_secs" id="@cdktn/provider-snowflake.service.Service.property.autoSuspendSecs"></a>
 
 ```python
 auto_suspend_secs: typing.Union[int, float]
@@ -1484,7 +1484,7 @@ auto_suspend_secs: typing.Union[int, float]
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.service.Service.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktn/provider-snowflake.service.Service.property.comment"></a>
 
 ```python
 comment: str
@@ -1494,7 +1494,7 @@ comment: str
 
 ---
 
-##### `compute_pool`<sup>Required</sup> <a name="compute_pool" id="@cdktf/provider-snowflake.service.Service.property.computePool"></a>
+##### `compute_pool`<sup>Required</sup> <a name="compute_pool" id="@cdktn/provider-snowflake.service.Service.property.computePool"></a>
 
 ```python
 compute_pool: str
@@ -1504,7 +1504,7 @@ compute_pool: str
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.service.Service.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktn/provider-snowflake.service.Service.property.database"></a>
 
 ```python
 database: str
@@ -1514,7 +1514,7 @@ database: str
 
 ---
 
-##### `external_access_integrations`<sup>Required</sup> <a name="external_access_integrations" id="@cdktf/provider-snowflake.service.Service.property.externalAccessIntegrations"></a>
+##### `external_access_integrations`<sup>Required</sup> <a name="external_access_integrations" id="@cdktn/provider-snowflake.service.Service.property.externalAccessIntegrations"></a>
 
 ```python
 external_access_integrations: typing.List[str]
@@ -1524,7 +1524,7 @@ external_access_integrations: typing.List[str]
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.service.Service.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.service.Service.property.id"></a>
 
 ```python
 id: str
@@ -1534,7 +1534,7 @@ id: str
 
 ---
 
-##### `max_instances`<sup>Required</sup> <a name="max_instances" id="@cdktf/provider-snowflake.service.Service.property.maxInstances"></a>
+##### `max_instances`<sup>Required</sup> <a name="max_instances" id="@cdktn/provider-snowflake.service.Service.property.maxInstances"></a>
 
 ```python
 max_instances: typing.Union[int, float]
@@ -1544,7 +1544,7 @@ max_instances: typing.Union[int, float]
 
 ---
 
-##### `min_instances`<sup>Required</sup> <a name="min_instances" id="@cdktf/provider-snowflake.service.Service.property.minInstances"></a>
+##### `min_instances`<sup>Required</sup> <a name="min_instances" id="@cdktn/provider-snowflake.service.Service.property.minInstances"></a>
 
 ```python
 min_instances: typing.Union[int, float]
@@ -1554,7 +1554,7 @@ min_instances: typing.Union[int, float]
 
 ---
 
-##### `min_ready_instances`<sup>Required</sup> <a name="min_ready_instances" id="@cdktf/provider-snowflake.service.Service.property.minReadyInstances"></a>
+##### `min_ready_instances`<sup>Required</sup> <a name="min_ready_instances" id="@cdktn/provider-snowflake.service.Service.property.minReadyInstances"></a>
 
 ```python
 min_ready_instances: typing.Union[int, float]
@@ -1564,7 +1564,7 @@ min_ready_instances: typing.Union[int, float]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.service.Service.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-snowflake.service.Service.property.name"></a>
 
 ```python
 name: str
@@ -1574,7 +1574,7 @@ name: str
 
 ---
 
-##### `query_warehouse`<sup>Required</sup> <a name="query_warehouse" id="@cdktf/provider-snowflake.service.Service.property.queryWarehouse"></a>
+##### `query_warehouse`<sup>Required</sup> <a name="query_warehouse" id="@cdktn/provider-snowflake.service.Service.property.queryWarehouse"></a>
 
 ```python
 query_warehouse: str
@@ -1584,7 +1584,7 @@ query_warehouse: str
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.service.Service.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktn/provider-snowflake.service.Service.property.schema"></a>
 
 ```python
 schema: str
@@ -1598,11 +1598,11 @@ schema: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.Service.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-snowflake.service.Service.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-snowflake.service.Service.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1614,12 +1614,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### ServiceConfig <a name="ServiceConfig" id="@cdktf/provider-snowflake.service.ServiceConfig"></a>
+### ServiceConfig <a name="ServiceConfig" id="@cdktn/provider-snowflake.service.ServiceConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.service.ServiceConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.service.ServiceConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.ServiceConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1652,103 +1652,103 @@ service.ServiceConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.computePool">compute_pool</a></code> | <code>str</code> | Specifies the name of the compute pool in your account on which to run the service. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.database">database</a></code> | <code>str</code> | The database in which to create the service. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.name">name</a></code> | <code>str</code> | Specifies the identifier for the service; |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.schema">schema</a></code> | <code>str</code> | The schema in which to create the service. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.autoResume">auto_resume</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically resume a service. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.autoSuspendSecs">auto_suspend_secs</a></code> | <code>typing.Union[int, float]</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of seconds of inactivity (service is idle) after which Snowflake automatically suspends the service. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the service. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.externalAccessIntegrations">external_access_integrations</a></code> | <code>typing.List[str]</code> | Specifies the names of the external access integrations that allow your service to access external sites. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.fromSpecification">from_specification</a></code> | <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecification">ServiceFromSpecification</a></code> | from_specification block. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.fromSpecificationTemplate">from_specification_template</a></code> | <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate">ServiceFromSpecificationTemplate</a></code> | from_specification_template block. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#id Service#id}. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.maxInstances">max_instances</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum number of service instances to run. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.minInstances">min_instances</a></code> | <code>typing.Union[int, float]</code> | Specifies the minimum number of service instances to run. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.minReadyInstances">min_ready_instances</a></code> | <code>typing.Union[int, float]</code> | Indicates the minimum service instances that must be ready for Snowflake to consider the service is ready to process requests. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.queryWarehouse">query_warehouse</a></code> | <code>str</code> | Warehouse to use if a service container connects to Snowflake to execute a query but does not explicitly specify a warehouse to use. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeouts">ServiceTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.computePool">compute_pool</a></code> | <code>str</code> | Specifies the name of the compute pool in your account on which to run the service. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.database">database</a></code> | <code>str</code> | The database in which to create the service. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.name">name</a></code> | <code>str</code> | Specifies the identifier for the service; |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.schema">schema</a></code> | <code>str</code> | The schema in which to create the service. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.autoResume">auto_resume</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically resume a service. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.autoSuspendSecs">auto_suspend_secs</a></code> | <code>typing.Union[int, float]</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of seconds of inactivity (service is idle) after which Snowflake automatically suspends the service. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the service. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.externalAccessIntegrations">external_access_integrations</a></code> | <code>typing.List[str]</code> | Specifies the names of the external access integrations that allow your service to access external sites. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.fromSpecification">from_specification</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecification">ServiceFromSpecification</a></code> | from_specification block. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.fromSpecificationTemplate">from_specification_template</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate">ServiceFromSpecificationTemplate</a></code> | from_specification_template block. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#id Service#id}. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.maxInstances">max_instances</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum number of service instances to run. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.minInstances">min_instances</a></code> | <code>typing.Union[int, float]</code> | Specifies the minimum number of service instances to run. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.minReadyInstances">min_ready_instances</a></code> | <code>typing.Union[int, float]</code> | Indicates the minimum service instances that must be ready for Snowflake to consider the service is ready to process requests. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.queryWarehouse">query_warehouse</a></code> | <code>str</code> | Warehouse to use if a service container connects to Snowflake to execute a query but does not explicitly specify a warehouse to use. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeouts">ServiceTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.service.ServiceConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-snowflake.service.ServiceConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.service.ServiceConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-snowflake.service.ServiceConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-snowflake.service.ServiceConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-snowflake.service.ServiceConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-snowflake.service.ServiceConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-snowflake.service.ServiceConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.service.ServiceConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-snowflake.service.ServiceConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.service.ServiceConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.service.ServiceConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.service.ServiceConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-snowflake.service.ServiceConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `compute_pool`<sup>Required</sup> <a name="compute_pool" id="@cdktf/provider-snowflake.service.ServiceConfig.property.computePool"></a>
+##### `compute_pool`<sup>Required</sup> <a name="compute_pool" id="@cdktn/provider-snowflake.service.ServiceConfig.property.computePool"></a>
 
 ```python
 compute_pool: str
@@ -1760,11 +1760,11 @@ Specifies the name of the compute pool in your account on which to run the servi
 
 Identifiers with special or lower-case characters are not supported. This limitation in the provider follows the limitation in Snowflake (see [docs](https://docs.snowflake.com/en/sql-reference/sql/create-compute-pool)). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#compute_pool Service#compute_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#compute_pool Service#compute_pool}
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.service.ServiceConfig.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktn/provider-snowflake.service.ServiceConfig.property.database"></a>
 
 ```python
 database: str
@@ -1776,11 +1776,11 @@ The database in which to create the service.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#database Service#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#database Service#database}
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.service.ServiceConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-snowflake.service.ServiceConfig.property.name"></a>
 
 ```python
 name: str
@@ -1792,11 +1792,11 @@ Specifies the identifier for the service;
 
 must be unique for the schema in which the service is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#name Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#name Service#name}
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.service.ServiceConfig.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktn/provider-snowflake.service.ServiceConfig.property.schema"></a>
 
 ```python
 schema: str
@@ -1808,11 +1808,11 @@ The schema in which to create the service.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#schema Service#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#schema Service#schema}
 
 ---
 
-##### `auto_resume`<sup>Optional</sup> <a name="auto_resume" id="@cdktf/provider-snowflake.service.ServiceConfig.property.autoResume"></a>
+##### `auto_resume`<sup>Optional</sup> <a name="auto_resume" id="@cdktn/provider-snowflake.service.ServiceConfig.property.autoResume"></a>
 
 ```python
 auto_resume: str
@@ -1824,11 +1824,11 @@ auto_resume: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#auto_resume Service#auto_resume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#auto_resume Service#auto_resume}
 
 ---
 
-##### `auto_suspend_secs`<sup>Optional</sup> <a name="auto_suspend_secs" id="@cdktf/provider-snowflake.service.ServiceConfig.property.autoSuspendSecs"></a>
+##### `auto_suspend_secs`<sup>Optional</sup> <a name="auto_suspend_secs" id="@cdktn/provider-snowflake.service.ServiceConfig.property.autoSuspendSecs"></a>
 
 ```python
 auto_suspend_secs: typing.Union[int, float]
@@ -1838,11 +1838,11 @@ auto_suspend_secs: typing.Union[int, float]
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of seconds of inactivity (service is idle) after which Snowflake automatically suspends the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#auto_suspend_secs Service#auto_suspend_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#auto_suspend_secs Service#auto_suspend_secs}
 
 ---
 
-##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktf/provider-snowflake.service.ServiceConfig.property.comment"></a>
+##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktn/provider-snowflake.service.ServiceConfig.property.comment"></a>
 
 ```python
 comment: str
@@ -1852,11 +1852,11 @@ comment: str
 
 Specifies a comment for the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#comment Service#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#comment Service#comment}
 
 ---
 
-##### `external_access_integrations`<sup>Optional</sup> <a name="external_access_integrations" id="@cdktf/provider-snowflake.service.ServiceConfig.property.externalAccessIntegrations"></a>
+##### `external_access_integrations`<sup>Optional</sup> <a name="external_access_integrations" id="@cdktn/provider-snowflake.service.ServiceConfig.property.externalAccessIntegrations"></a>
 
 ```python
 external_access_integrations: typing.List[str]
@@ -1866,39 +1866,39 @@ external_access_integrations: typing.List[str]
 
 Specifies the names of the external access integrations that allow your service to access external sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#external_access_integrations Service#external_access_integrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#external_access_integrations Service#external_access_integrations}
 
 ---
 
-##### `from_specification`<sup>Optional</sup> <a name="from_specification" id="@cdktf/provider-snowflake.service.ServiceConfig.property.fromSpecification"></a>
+##### `from_specification`<sup>Optional</sup> <a name="from_specification" id="@cdktn/provider-snowflake.service.ServiceConfig.property.fromSpecification"></a>
 
 ```python
 from_specification: ServiceFromSpecification
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.service.ServiceFromSpecification">ServiceFromSpecification</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.service.ServiceFromSpecification">ServiceFromSpecification</a>
 
 from_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#from_specification Service#from_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#from_specification Service#from_specification}
 
 ---
 
-##### `from_specification_template`<sup>Optional</sup> <a name="from_specification_template" id="@cdktf/provider-snowflake.service.ServiceConfig.property.fromSpecificationTemplate"></a>
+##### `from_specification_template`<sup>Optional</sup> <a name="from_specification_template" id="@cdktn/provider-snowflake.service.ServiceConfig.property.fromSpecificationTemplate"></a>
 
 ```python
 from_specification_template: ServiceFromSpecificationTemplate
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate">ServiceFromSpecificationTemplate</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate">ServiceFromSpecificationTemplate</a>
 
 from_specification_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#from_specification_template Service#from_specification_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#from_specification_template Service#from_specification_template}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-snowflake.service.ServiceConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-snowflake.service.ServiceConfig.property.id"></a>
 
 ```python
 id: str
@@ -1906,14 +1906,14 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#id Service#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#id Service#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `max_instances`<sup>Optional</sup> <a name="max_instances" id="@cdktf/provider-snowflake.service.ServiceConfig.property.maxInstances"></a>
+##### `max_instances`<sup>Optional</sup> <a name="max_instances" id="@cdktn/provider-snowflake.service.ServiceConfig.property.maxInstances"></a>
 
 ```python
 max_instances: typing.Union[int, float]
@@ -1923,11 +1923,11 @@ max_instances: typing.Union[int, float]
 
 Specifies the maximum number of service instances to run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#max_instances Service#max_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#max_instances Service#max_instances}
 
 ---
 
-##### `min_instances`<sup>Optional</sup> <a name="min_instances" id="@cdktf/provider-snowflake.service.ServiceConfig.property.minInstances"></a>
+##### `min_instances`<sup>Optional</sup> <a name="min_instances" id="@cdktn/provider-snowflake.service.ServiceConfig.property.minInstances"></a>
 
 ```python
 min_instances: typing.Union[int, float]
@@ -1937,11 +1937,11 @@ min_instances: typing.Union[int, float]
 
 Specifies the minimum number of service instances to run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#min_instances Service#min_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#min_instances Service#min_instances}
 
 ---
 
-##### `min_ready_instances`<sup>Optional</sup> <a name="min_ready_instances" id="@cdktf/provider-snowflake.service.ServiceConfig.property.minReadyInstances"></a>
+##### `min_ready_instances`<sup>Optional</sup> <a name="min_ready_instances" id="@cdktn/provider-snowflake.service.ServiceConfig.property.minReadyInstances"></a>
 
 ```python
 min_ready_instances: typing.Union[int, float]
@@ -1951,11 +1951,11 @@ min_ready_instances: typing.Union[int, float]
 
 Indicates the minimum service instances that must be ready for Snowflake to consider the service is ready to process requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#min_ready_instances Service#min_ready_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#min_ready_instances Service#min_ready_instances}
 
 ---
 
-##### `query_warehouse`<sup>Optional</sup> <a name="query_warehouse" id="@cdktf/provider-snowflake.service.ServiceConfig.property.queryWarehouse"></a>
+##### `query_warehouse`<sup>Optional</sup> <a name="query_warehouse" id="@cdktn/provider-snowflake.service.ServiceConfig.property.queryWarehouse"></a>
 
 ```python
 query_warehouse: str
@@ -1967,41 +1967,41 @@ Warehouse to use if a service container connects to Snowflake to execute a query
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#query_warehouse Service#query_warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#query_warehouse Service#query_warehouse}
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.service.ServiceConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-snowflake.service.ServiceConfig.property.timeouts"></a>
 
 ```python
 timeouts: ServiceTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.service.ServiceTimeouts">ServiceTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.service.ServiceTimeouts">ServiceTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#timeouts Service#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#timeouts Service#timeouts}
 
 ---
 
-### ServiceDescribeOutput <a name="ServiceDescribeOutput" id="@cdktf/provider-snowflake.service.ServiceDescribeOutput"></a>
+### ServiceDescribeOutput <a name="ServiceDescribeOutput" id="@cdktn/provider-snowflake.service.ServiceDescribeOutput"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.service.ServiceDescribeOutput.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.service.ServiceDescribeOutput.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.ServiceDescribeOutput()
 ```
 
 
-### ServiceFromSpecification <a name="ServiceFromSpecification" id="@cdktf/provider-snowflake.service.ServiceFromSpecification"></a>
+### ServiceFromSpecification <a name="ServiceFromSpecification" id="@cdktn/provider-snowflake.service.ServiceFromSpecification"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.service.ServiceFromSpecification.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.service.ServiceFromSpecification.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.ServiceFromSpecification(
   file: str = None,
@@ -2015,14 +2015,14 @@ service.ServiceFromSpecification(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecification.property.file">file</a></code> | <code>str</code> | The file name of the service specification. Example: `spec.yaml`. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecification.property.path">path</a></code> | <code>str</code> | The path to the service specification file on the given stage. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecification.property.stage">stage</a></code> | <code>str</code> | The fully qualified name of the stage containing the service specification file. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecification.property.text">text</a></code> | <code>str</code> | The embedded text of the service specification. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecification.property.file">file</a></code> | <code>str</code> | The file name of the service specification. Example: `spec.yaml`. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecification.property.path">path</a></code> | <code>str</code> | The path to the service specification file on the given stage. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecification.property.stage">stage</a></code> | <code>str</code> | The fully qualified name of the stage containing the service specification file. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecification.property.text">text</a></code> | <code>str</code> | The embedded text of the service specification. |
 
 ---
 
-##### `file`<sup>Optional</sup> <a name="file" id="@cdktf/provider-snowflake.service.ServiceFromSpecification.property.file"></a>
+##### `file`<sup>Optional</sup> <a name="file" id="@cdktn/provider-snowflake.service.ServiceFromSpecification.property.file"></a>
 
 ```python
 file: str
@@ -2032,11 +2032,11 @@ file: str
 
 The file name of the service specification. Example: `spec.yaml`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#file Service#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#file Service#file}
 
 ---
 
-##### `path`<sup>Optional</sup> <a name="path" id="@cdktf/provider-snowflake.service.ServiceFromSpecification.property.path"></a>
+##### `path`<sup>Optional</sup> <a name="path" id="@cdktn/provider-snowflake.service.ServiceFromSpecification.property.path"></a>
 
 ```python
 path: str
@@ -2048,11 +2048,11 @@ The path to the service specification file on the given stage.
 
 When the path is specified, the `/` character is automatically added as a path prefix. Example: `path/to/spec`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#path Service#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#path Service#path}
 
 ---
 
-##### `stage`<sup>Optional</sup> <a name="stage" id="@cdktf/provider-snowflake.service.ServiceFromSpecification.property.stage"></a>
+##### `stage`<sup>Optional</sup> <a name="stage" id="@cdktn/provider-snowflake.service.ServiceFromSpecification.property.stage"></a>
 
 ```python
 stage: str
@@ -2064,11 +2064,11 @@ The fully qualified name of the stage containing the service specification file.
 
 At symbol (`@`) is added automatically. Example: `"\"<db_name>\".\"<schema_name>\".\"<stage_name>\""`. For more information about this resource, see [docs](./stage).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#stage Service#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#stage Service#stage}
 
 ---
 
-##### `text`<sup>Optional</sup> <a name="text" id="@cdktf/provider-snowflake.service.ServiceFromSpecification.property.text"></a>
+##### `text`<sup>Optional</sup> <a name="text" id="@cdktn/provider-snowflake.service.ServiceFromSpecification.property.text"></a>
 
 ```python
 text: str
@@ -2078,16 +2078,16 @@ text: str
 
 The embedded text of the service specification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#text Service#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#text Service#text}
 
 ---
 
-### ServiceFromSpecificationTemplate <a name="ServiceFromSpecificationTemplate" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate"></a>
+### ServiceFromSpecificationTemplate <a name="ServiceFromSpecificationTemplate" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.ServiceFromSpecificationTemplate(
   using: IResolvable | typing.List[ServiceFromSpecificationTemplateUsing],
@@ -2102,29 +2102,29 @@ service.ServiceFromSpecificationTemplate(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate.property.using">using</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a>]</code> | using block. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate.property.file">file</a></code> | <code>str</code> | The file name of the service specification template. Example: `spec.yaml`. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate.property.path">path</a></code> | <code>str</code> | The path to the service specification template file on the given stage. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate.property.stage">stage</a></code> | <code>str</code> | The fully qualified name of the stage containing the service specification template file. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate.property.text">text</a></code> | <code>str</code> | The embedded text of the service specification template. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate.property.using">using</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a>]</code> | using block. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate.property.file">file</a></code> | <code>str</code> | The file name of the service specification template. Example: `spec.yaml`. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate.property.path">path</a></code> | <code>str</code> | The path to the service specification template file on the given stage. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate.property.stage">stage</a></code> | <code>str</code> | The fully qualified name of the stage containing the service specification template file. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate.property.text">text</a></code> | <code>str</code> | The embedded text of the service specification template. |
 
 ---
 
-##### `using`<sup>Required</sup> <a name="using" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate.property.using"></a>
+##### `using`<sup>Required</sup> <a name="using" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate.property.using"></a>
 
 ```python
 using: IResolvable | typing.List[ServiceFromSpecificationTemplateUsing]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a>]
 
 using block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#using Service#using}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#using Service#using}
 
 ---
 
-##### `file`<sup>Optional</sup> <a name="file" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate.property.file"></a>
+##### `file`<sup>Optional</sup> <a name="file" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate.property.file"></a>
 
 ```python
 file: str
@@ -2134,11 +2134,11 @@ file: str
 
 The file name of the service specification template. Example: `spec.yaml`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#file Service#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#file Service#file}
 
 ---
 
-##### `path`<sup>Optional</sup> <a name="path" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate.property.path"></a>
+##### `path`<sup>Optional</sup> <a name="path" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate.property.path"></a>
 
 ```python
 path: str
@@ -2150,11 +2150,11 @@ The path to the service specification template file on the given stage.
 
 When the path is specified, the `/` character is automatically added as a path prefix. Example: `path/to/spec`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#path Service#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#path Service#path}
 
 ---
 
-##### `stage`<sup>Optional</sup> <a name="stage" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate.property.stage"></a>
+##### `stage`<sup>Optional</sup> <a name="stage" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate.property.stage"></a>
 
 ```python
 stage: str
@@ -2166,11 +2166,11 @@ The fully qualified name of the stage containing the service specification templ
 
 At symbol (`@`) is added automatically. Example: `"\"<db_name>\".\"<schema_name>\".\"<stage_name>\""`. For more information about this resource, see [docs](./stage).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#stage Service#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#stage Service#stage}
 
 ---
 
-##### `text`<sup>Optional</sup> <a name="text" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate.property.text"></a>
+##### `text`<sup>Optional</sup> <a name="text" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate.property.text"></a>
 
 ```python
 text: str
@@ -2180,16 +2180,16 @@ text: str
 
 The embedded text of the service specification template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#text Service#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#text Service#text}
 
 ---
 
-### ServiceFromSpecificationTemplateUsing <a name="ServiceFromSpecificationTemplateUsing" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsing"></a>
+### ServiceFromSpecificationTemplateUsing <a name="ServiceFromSpecificationTemplateUsing" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsing"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsing.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsing.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.ServiceFromSpecificationTemplateUsing(
   key: str,
@@ -2201,12 +2201,12 @@ service.ServiceFromSpecificationTemplateUsing(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsing.property.key">key</a></code> | <code>str</code> | The name of the template variable. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsing.property.value">value</a></code> | <code>str</code> | The value to assign to the variable in the template. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsing.property.key">key</a></code> | <code>str</code> | The name of the template variable. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsing.property.value">value</a></code> | <code>str</code> | The value to assign to the variable in the template. |
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsing.property.key"></a>
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsing.property.key"></a>
 
 ```python
 key: str
@@ -2218,11 +2218,11 @@ The name of the template variable.
 
 The provider wraps it in double quotes by default, so be aware of that while referencing the argument in the spec definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#key Service#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#key Service#key}
 
 ---
 
-##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsing.property.value"></a>
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsing.property.value"></a>
 
 ```python
 value: str
@@ -2234,27 +2234,27 @@ The value to assign to the variable in the template.
 
 The provider wraps it in `$$` by default, so be aware of that while referencing the argument in the spec definition. The value must either be alphanumeric or valid JSON.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#value Service#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#value Service#value}
 
 ---
 
-### ServiceShowOutput <a name="ServiceShowOutput" id="@cdktf/provider-snowflake.service.ServiceShowOutput"></a>
+### ServiceShowOutput <a name="ServiceShowOutput" id="@cdktn/provider-snowflake.service.ServiceShowOutput"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.service.ServiceShowOutput.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.service.ServiceShowOutput.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.ServiceShowOutput()
 ```
 
 
-### ServiceTimeouts <a name="ServiceTimeouts" id="@cdktf/provider-snowflake.service.ServiceTimeouts"></a>
+### ServiceTimeouts <a name="ServiceTimeouts" id="@cdktn/provider-snowflake.service.ServiceTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.service.ServiceTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.service.ServiceTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.ServiceTimeouts(
   create: str = None,
@@ -2268,14 +2268,14 @@ service.ServiceTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#create Service#create}. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#delete Service#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#read Service#read}. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#update Service#update}. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#create Service#create}. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#delete Service#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#read Service#read}. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#update Service#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-snowflake.service.ServiceTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-snowflake.service.ServiceTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -2283,11 +2283,11 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#create Service#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#create Service#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-snowflake.service.ServiceTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-snowflake.service.ServiceTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -2295,11 +2295,11 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#delete Service#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#delete Service#delete}.
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-snowflake.service.ServiceTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-snowflake.service.ServiceTimeouts.property.read"></a>
 
 ```python
 read: str
@@ -2307,11 +2307,11 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#read Service#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#read Service#read}.
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-snowflake.service.ServiceTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-snowflake.service.ServiceTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -2319,18 +2319,18 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/service#update Service#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/service#update Service#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### ServiceDescribeOutputList <a name="ServiceDescribeOutputList" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputList"></a>
+### ServiceDescribeOutputList <a name="ServiceDescribeOutputList" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.ServiceDescribeOutputList(
   terraform_resource: IInterpolatingParent,
@@ -2341,21 +2341,21 @@ service.ServiceDescribeOutputList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2363,7 +2363,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -2375,15 +2375,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -2395,19 +2395,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputList.resolve"></a>
 
 ```python
 def resolve(
@@ -2417,13 +2417,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2433,7 +2433,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputList.get"></a>
 
 ```python
 def get(
@@ -2441,7 +2441,7 @@ def get(
 ) -> ServiceDescribeOutputOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -2454,12 +2454,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2473,7 +2473,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2484,12 +2484,12 @@ fqn: str
 ---
 
 
-### ServiceDescribeOutputOutputReference <a name="ServiceDescribeOutputOutputReference" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference"></a>
+### ServiceDescribeOutputOutputReference <a name="ServiceDescribeOutputOutputReference" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.ServiceDescribeOutputOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2501,22 +2501,22 @@ service.ServiceDescribeOutputOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2524,7 +2524,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -2532,7 +2532,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -2544,29 +2544,29 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2574,13 +2574,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2588,13 +2588,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2602,13 +2602,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2616,13 +2616,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2630,13 +2630,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2644,13 +2644,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2658,13 +2658,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2672,13 +2672,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2686,13 +2686,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2700,13 +2700,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2716,13 +2716,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2737,42 +2737,42 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.autoResume">auto_resume</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.autoSuspendSecs">auto_suspend_secs</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.comment">comment</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.computePool">compute_pool</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.currentInstances">current_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.databaseName">database_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.dnsName">dns_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.externalAccessIntegrations">external_access_integrations</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.isAsyncJob">is_async_job</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.isJob">is_job</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.isUpgrading">is_upgrading</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.managingObjectDomain">managing_object_domain</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.managingObjectName">managing_object_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.maxInstances">max_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.minInstances">min_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.minReadyInstances">min_ready_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.owner">owner</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.ownerRoleType">owner_role_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.queryWarehouse">query_warehouse</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.resumedOn">resumed_on</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.schemaName">schema_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.spec">spec</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.specDigest">spec_digest</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.suspendedOn">suspended_on</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.targetInstances">target_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.updatedOn">updated_on</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutput">ServiceDescribeOutput</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.autoResume">auto_resume</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.autoSuspendSecs">auto_suspend_secs</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.comment">comment</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.computePool">compute_pool</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.currentInstances">current_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.databaseName">database_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.dnsName">dns_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.externalAccessIntegrations">external_access_integrations</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.isAsyncJob">is_async_job</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.isJob">is_job</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.isUpgrading">is_upgrading</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.managingObjectDomain">managing_object_domain</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.managingObjectName">managing_object_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.maxInstances">max_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.minInstances">min_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.minReadyInstances">min_ready_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.owner">owner</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.ownerRoleType">owner_role_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.queryWarehouse">query_warehouse</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.resumedOn">resumed_on</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.schemaName">schema_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.spec">spec</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.specDigest">spec_digest</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.suspendedOn">suspended_on</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.targetInstances">target_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.updatedOn">updated_on</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutput">ServiceDescribeOutput</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2786,7 +2786,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2796,17 +2796,17 @@ fqn: str
 
 ---
 
-##### `auto_resume`<sup>Required</sup> <a name="auto_resume" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.autoResume"></a>
+##### `auto_resume`<sup>Required</sup> <a name="auto_resume" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.autoResume"></a>
 
 ```python
 auto_resume: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `auto_suspend_secs`<sup>Required</sup> <a name="auto_suspend_secs" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.autoSuspendSecs"></a>
+##### `auto_suspend_secs`<sup>Required</sup> <a name="auto_suspend_secs" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.autoSuspendSecs"></a>
 
 ```python
 auto_suspend_secs: typing.Union[int, float]
@@ -2816,7 +2816,7 @@ auto_suspend_secs: typing.Union[int, float]
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.comment"></a>
 
 ```python
 comment: str
@@ -2826,7 +2826,7 @@ comment: str
 
 ---
 
-##### `compute_pool`<sup>Required</sup> <a name="compute_pool" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.computePool"></a>
+##### `compute_pool`<sup>Required</sup> <a name="compute_pool" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.computePool"></a>
 
 ```python
 compute_pool: str
@@ -2836,7 +2836,7 @@ compute_pool: str
 
 ---
 
-##### `created_on`<sup>Required</sup> <a name="created_on" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.createdOn"></a>
+##### `created_on`<sup>Required</sup> <a name="created_on" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.createdOn"></a>
 
 ```python
 created_on: str
@@ -2846,7 +2846,7 @@ created_on: str
 
 ---
 
-##### `current_instances`<sup>Required</sup> <a name="current_instances" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.currentInstances"></a>
+##### `current_instances`<sup>Required</sup> <a name="current_instances" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.currentInstances"></a>
 
 ```python
 current_instances: typing.Union[int, float]
@@ -2856,7 +2856,7 @@ current_instances: typing.Union[int, float]
 
 ---
 
-##### `database_name`<sup>Required</sup> <a name="database_name" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.databaseName"></a>
+##### `database_name`<sup>Required</sup> <a name="database_name" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.databaseName"></a>
 
 ```python
 database_name: str
@@ -2866,7 +2866,7 @@ database_name: str
 
 ---
 
-##### `dns_name`<sup>Required</sup> <a name="dns_name" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.dnsName"></a>
+##### `dns_name`<sup>Required</sup> <a name="dns_name" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.dnsName"></a>
 
 ```python
 dns_name: str
@@ -2876,7 +2876,7 @@ dns_name: str
 
 ---
 
-##### `external_access_integrations`<sup>Required</sup> <a name="external_access_integrations" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.externalAccessIntegrations"></a>
+##### `external_access_integrations`<sup>Required</sup> <a name="external_access_integrations" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.externalAccessIntegrations"></a>
 
 ```python
 external_access_integrations: typing.List[str]
@@ -2886,37 +2886,37 @@ external_access_integrations: typing.List[str]
 
 ---
 
-##### `is_async_job`<sup>Required</sup> <a name="is_async_job" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.isAsyncJob"></a>
+##### `is_async_job`<sup>Required</sup> <a name="is_async_job" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.isAsyncJob"></a>
 
 ```python
 is_async_job: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `is_job`<sup>Required</sup> <a name="is_job" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.isJob"></a>
+##### `is_job`<sup>Required</sup> <a name="is_job" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.isJob"></a>
 
 ```python
 is_job: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `is_upgrading`<sup>Required</sup> <a name="is_upgrading" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.isUpgrading"></a>
+##### `is_upgrading`<sup>Required</sup> <a name="is_upgrading" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.isUpgrading"></a>
 
 ```python
 is_upgrading: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `managing_object_domain`<sup>Required</sup> <a name="managing_object_domain" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.managingObjectDomain"></a>
+##### `managing_object_domain`<sup>Required</sup> <a name="managing_object_domain" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.managingObjectDomain"></a>
 
 ```python
 managing_object_domain: str
@@ -2926,7 +2926,7 @@ managing_object_domain: str
 
 ---
 
-##### `managing_object_name`<sup>Required</sup> <a name="managing_object_name" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.managingObjectName"></a>
+##### `managing_object_name`<sup>Required</sup> <a name="managing_object_name" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.managingObjectName"></a>
 
 ```python
 managing_object_name: str
@@ -2936,7 +2936,7 @@ managing_object_name: str
 
 ---
 
-##### `max_instances`<sup>Required</sup> <a name="max_instances" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.maxInstances"></a>
+##### `max_instances`<sup>Required</sup> <a name="max_instances" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.maxInstances"></a>
 
 ```python
 max_instances: typing.Union[int, float]
@@ -2946,7 +2946,7 @@ max_instances: typing.Union[int, float]
 
 ---
 
-##### `min_instances`<sup>Required</sup> <a name="min_instances" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.minInstances"></a>
+##### `min_instances`<sup>Required</sup> <a name="min_instances" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.minInstances"></a>
 
 ```python
 min_instances: typing.Union[int, float]
@@ -2956,7 +2956,7 @@ min_instances: typing.Union[int, float]
 
 ---
 
-##### `min_ready_instances`<sup>Required</sup> <a name="min_ready_instances" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.minReadyInstances"></a>
+##### `min_ready_instances`<sup>Required</sup> <a name="min_ready_instances" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.minReadyInstances"></a>
 
 ```python
 min_ready_instances: typing.Union[int, float]
@@ -2966,7 +2966,7 @@ min_ready_instances: typing.Union[int, float]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.name"></a>
 
 ```python
 name: str
@@ -2976,7 +2976,7 @@ name: str
 
 ---
 
-##### `owner`<sup>Required</sup> <a name="owner" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.owner"></a>
+##### `owner`<sup>Required</sup> <a name="owner" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.owner"></a>
 
 ```python
 owner: str
@@ -2986,7 +2986,7 @@ owner: str
 
 ---
 
-##### `owner_role_type`<sup>Required</sup> <a name="owner_role_type" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.ownerRoleType"></a>
+##### `owner_role_type`<sup>Required</sup> <a name="owner_role_type" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.ownerRoleType"></a>
 
 ```python
 owner_role_type: str
@@ -2996,7 +2996,7 @@ owner_role_type: str
 
 ---
 
-##### `query_warehouse`<sup>Required</sup> <a name="query_warehouse" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.queryWarehouse"></a>
+##### `query_warehouse`<sup>Required</sup> <a name="query_warehouse" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.queryWarehouse"></a>
 
 ```python
 query_warehouse: str
@@ -3006,7 +3006,7 @@ query_warehouse: str
 
 ---
 
-##### `resumed_on`<sup>Required</sup> <a name="resumed_on" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.resumedOn"></a>
+##### `resumed_on`<sup>Required</sup> <a name="resumed_on" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.resumedOn"></a>
 
 ```python
 resumed_on: str
@@ -3016,7 +3016,7 @@ resumed_on: str
 
 ---
 
-##### `schema_name`<sup>Required</sup> <a name="schema_name" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.schemaName"></a>
+##### `schema_name`<sup>Required</sup> <a name="schema_name" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.schemaName"></a>
 
 ```python
 schema_name: str
@@ -3026,7 +3026,7 @@ schema_name: str
 
 ---
 
-##### `spec`<sup>Required</sup> <a name="spec" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.spec"></a>
+##### `spec`<sup>Required</sup> <a name="spec" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.spec"></a>
 
 ```python
 spec: str
@@ -3036,7 +3036,7 @@ spec: str
 
 ---
 
-##### `spec_digest`<sup>Required</sup> <a name="spec_digest" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.specDigest"></a>
+##### `spec_digest`<sup>Required</sup> <a name="spec_digest" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.specDigest"></a>
 
 ```python
 spec_digest: str
@@ -3046,7 +3046,7 @@ spec_digest: str
 
 ---
 
-##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.status"></a>
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.status"></a>
 
 ```python
 status: str
@@ -3056,7 +3056,7 @@ status: str
 
 ---
 
-##### `suspended_on`<sup>Required</sup> <a name="suspended_on" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.suspendedOn"></a>
+##### `suspended_on`<sup>Required</sup> <a name="suspended_on" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.suspendedOn"></a>
 
 ```python
 suspended_on: str
@@ -3066,7 +3066,7 @@ suspended_on: str
 
 ---
 
-##### `target_instances`<sup>Required</sup> <a name="target_instances" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.targetInstances"></a>
+##### `target_instances`<sup>Required</sup> <a name="target_instances" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.targetInstances"></a>
 
 ```python
 target_instances: typing.Union[int, float]
@@ -3076,7 +3076,7 @@ target_instances: typing.Union[int, float]
 
 ---
 
-##### `updated_on`<sup>Required</sup> <a name="updated_on" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.updatedOn"></a>
+##### `updated_on`<sup>Required</sup> <a name="updated_on" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.updatedOn"></a>
 
 ```python
 updated_on: str
@@ -3086,23 +3086,23 @@ updated_on: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.service.ServiceDescribeOutputOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: ServiceDescribeOutput
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.service.ServiceDescribeOutput">ServiceDescribeOutput</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.service.ServiceDescribeOutput">ServiceDescribeOutput</a>
 
 ---
 
 
-### ServiceFromSpecificationOutputReference <a name="ServiceFromSpecificationOutputReference" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference"></a>
+### ServiceFromSpecificationOutputReference <a name="ServiceFromSpecificationOutputReference" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.ServiceFromSpecificationOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3112,20 +3112,20 @@ service.ServiceFromSpecificationOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3137,33 +3137,33 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.resetFile">reset_file</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.resetPath">reset_path</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.resetStage">reset_stage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.resetText">reset_text</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.resetFile">reset_file</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.resetPath">reset_path</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.resetStage">reset_stage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.resetText">reset_text</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3171,13 +3171,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3185,13 +3185,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3199,13 +3199,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3213,13 +3213,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3227,13 +3227,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3241,13 +3241,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3255,13 +3255,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3269,13 +3269,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3283,13 +3283,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3297,13 +3297,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3313,13 +3313,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3329,25 +3329,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_file` <a name="reset_file" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.resetFile"></a>
+##### `reset_file` <a name="reset_file" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.resetFile"></a>
 
 ```python
 def reset_file() -> None
 ```
 
-##### `reset_path` <a name="reset_path" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.resetPath"></a>
+##### `reset_path` <a name="reset_path" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.resetPath"></a>
 
 ```python
 def reset_path() -> None
 ```
 
-##### `reset_stage` <a name="reset_stage" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.resetStage"></a>
+##### `reset_stage` <a name="reset_stage" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.resetStage"></a>
 
 ```python
 def reset_stage() -> None
 ```
 
-##### `reset_text` <a name="reset_text" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.resetText"></a>
+##### `reset_text` <a name="reset_text" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.resetText"></a>
 
 ```python
 def reset_text() -> None
@@ -3358,21 +3358,21 @@ def reset_text() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.fileInput">file_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.stageInput">stage_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.textInput">text_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.file">file</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.stage">stage</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.text">text</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecification">ServiceFromSpecification</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.fileInput">file_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.stageInput">stage_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.textInput">text_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.file">file</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.stage">stage</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.text">text</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecification">ServiceFromSpecification</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3386,7 +3386,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3396,7 +3396,7 @@ fqn: str
 
 ---
 
-##### `file_input`<sup>Optional</sup> <a name="file_input" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.fileInput"></a>
+##### `file_input`<sup>Optional</sup> <a name="file_input" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.fileInput"></a>
 
 ```python
 file_input: str
@@ -3406,7 +3406,7 @@ file_input: str
 
 ---
 
-##### `path_input`<sup>Optional</sup> <a name="path_input" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.pathInput"></a>
+##### `path_input`<sup>Optional</sup> <a name="path_input" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.pathInput"></a>
 
 ```python
 path_input: str
@@ -3416,7 +3416,7 @@ path_input: str
 
 ---
 
-##### `stage_input`<sup>Optional</sup> <a name="stage_input" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.stageInput"></a>
+##### `stage_input`<sup>Optional</sup> <a name="stage_input" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.stageInput"></a>
 
 ```python
 stage_input: str
@@ -3426,7 +3426,7 @@ stage_input: str
 
 ---
 
-##### `text_input`<sup>Optional</sup> <a name="text_input" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.textInput"></a>
+##### `text_input`<sup>Optional</sup> <a name="text_input" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.textInput"></a>
 
 ```python
 text_input: str
@@ -3436,7 +3436,7 @@ text_input: str
 
 ---
 
-##### `file`<sup>Required</sup> <a name="file" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.file"></a>
+##### `file`<sup>Required</sup> <a name="file" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.file"></a>
 
 ```python
 file: str
@@ -3446,7 +3446,7 @@ file: str
 
 ---
 
-##### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.path"></a>
+##### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.path"></a>
 
 ```python
 path: str
@@ -3456,7 +3456,7 @@ path: str
 
 ---
 
-##### `stage`<sup>Required</sup> <a name="stage" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.stage"></a>
+##### `stage`<sup>Required</sup> <a name="stage" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.stage"></a>
 
 ```python
 stage: str
@@ -3466,7 +3466,7 @@ stage: str
 
 ---
 
-##### `text`<sup>Required</sup> <a name="text" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.text"></a>
+##### `text`<sup>Required</sup> <a name="text" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.text"></a>
 
 ```python
 text: str
@@ -3476,23 +3476,23 @@ text: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: ServiceFromSpecification
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.service.ServiceFromSpecification">ServiceFromSpecification</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.service.ServiceFromSpecification">ServiceFromSpecification</a>
 
 ---
 
 
-### ServiceFromSpecificationTemplateOutputReference <a name="ServiceFromSpecificationTemplateOutputReference" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference"></a>
+### ServiceFromSpecificationTemplateOutputReference <a name="ServiceFromSpecificationTemplateOutputReference" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.ServiceFromSpecificationTemplateOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3502,20 +3502,20 @@ service.ServiceFromSpecificationTemplateOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3527,34 +3527,34 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.putUsing">put_using</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resetFile">reset_file</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resetPath">reset_path</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resetStage">reset_stage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resetText">reset_text</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.putUsing">put_using</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resetFile">reset_file</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resetPath">reset_path</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resetStage">reset_stage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resetText">reset_text</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3562,13 +3562,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3576,13 +3576,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3590,13 +3590,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3604,13 +3604,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3618,13 +3618,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3632,13 +3632,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3646,13 +3646,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3660,13 +3660,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3674,13 +3674,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3688,13 +3688,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3704,13 +3704,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3720,7 +3720,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `put_using` <a name="put_using" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.putUsing"></a>
+##### `put_using` <a name="put_using" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.putUsing"></a>
 
 ```python
 def put_using(
@@ -3728,31 +3728,31 @@ def put_using(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.putUsing.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.putUsing.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a>]
 
 ---
 
-##### `reset_file` <a name="reset_file" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resetFile"></a>
+##### `reset_file` <a name="reset_file" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resetFile"></a>
 
 ```python
 def reset_file() -> None
 ```
 
-##### `reset_path` <a name="reset_path" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resetPath"></a>
+##### `reset_path` <a name="reset_path" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resetPath"></a>
 
 ```python
 def reset_path() -> None
 ```
 
-##### `reset_stage` <a name="reset_stage" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resetStage"></a>
+##### `reset_stage` <a name="reset_stage" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resetStage"></a>
 
 ```python
 def reset_stage() -> None
 ```
 
-##### `reset_text` <a name="reset_text" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resetText"></a>
+##### `reset_text` <a name="reset_text" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.resetText"></a>
 
 ```python
 def reset_text() -> None
@@ -3763,23 +3763,23 @@ def reset_text() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.using">using</a></code> | <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList">ServiceFromSpecificationTemplateUsingList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.fileInput">file_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.stageInput">stage_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.textInput">text_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.usingInput">using_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.file">file</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.stage">stage</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.text">text</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate">ServiceFromSpecificationTemplate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.using">using</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList">ServiceFromSpecificationTemplateUsingList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.fileInput">file_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.stageInput">stage_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.textInput">text_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.usingInput">using_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.file">file</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.stage">stage</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.text">text</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate">ServiceFromSpecificationTemplate</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3793,7 +3793,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3803,17 +3803,17 @@ fqn: str
 
 ---
 
-##### `using`<sup>Required</sup> <a name="using" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.using"></a>
+##### `using`<sup>Required</sup> <a name="using" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.using"></a>
 
 ```python
 using: ServiceFromSpecificationTemplateUsingList
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList">ServiceFromSpecificationTemplateUsingList</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList">ServiceFromSpecificationTemplateUsingList</a>
 
 ---
 
-##### `file_input`<sup>Optional</sup> <a name="file_input" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.fileInput"></a>
+##### `file_input`<sup>Optional</sup> <a name="file_input" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.fileInput"></a>
 
 ```python
 file_input: str
@@ -3823,7 +3823,7 @@ file_input: str
 
 ---
 
-##### `path_input`<sup>Optional</sup> <a name="path_input" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.pathInput"></a>
+##### `path_input`<sup>Optional</sup> <a name="path_input" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.pathInput"></a>
 
 ```python
 path_input: str
@@ -3833,7 +3833,7 @@ path_input: str
 
 ---
 
-##### `stage_input`<sup>Optional</sup> <a name="stage_input" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.stageInput"></a>
+##### `stage_input`<sup>Optional</sup> <a name="stage_input" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.stageInput"></a>
 
 ```python
 stage_input: str
@@ -3843,7 +3843,7 @@ stage_input: str
 
 ---
 
-##### `text_input`<sup>Optional</sup> <a name="text_input" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.textInput"></a>
+##### `text_input`<sup>Optional</sup> <a name="text_input" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.textInput"></a>
 
 ```python
 text_input: str
@@ -3853,17 +3853,17 @@ text_input: str
 
 ---
 
-##### `using_input`<sup>Optional</sup> <a name="using_input" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.usingInput"></a>
+##### `using_input`<sup>Optional</sup> <a name="using_input" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.usingInput"></a>
 
 ```python
 using_input: IResolvable | typing.List[ServiceFromSpecificationTemplateUsing]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a>]
 
 ---
 
-##### `file`<sup>Required</sup> <a name="file" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.file"></a>
+##### `file`<sup>Required</sup> <a name="file" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.file"></a>
 
 ```python
 file: str
@@ -3873,7 +3873,7 @@ file: str
 
 ---
 
-##### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.path"></a>
+##### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.path"></a>
 
 ```python
 path: str
@@ -3883,7 +3883,7 @@ path: str
 
 ---
 
-##### `stage`<sup>Required</sup> <a name="stage" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.stage"></a>
+##### `stage`<sup>Required</sup> <a name="stage" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.stage"></a>
 
 ```python
 stage: str
@@ -3893,7 +3893,7 @@ stage: str
 
 ---
 
-##### `text`<sup>Required</sup> <a name="text" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.text"></a>
+##### `text`<sup>Required</sup> <a name="text" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.text"></a>
 
 ```python
 text: str
@@ -3903,23 +3903,23 @@ text: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: ServiceFromSpecificationTemplate
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplate">ServiceFromSpecificationTemplate</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate">ServiceFromSpecificationTemplate</a>
 
 ---
 
 
-### ServiceFromSpecificationTemplateUsingList <a name="ServiceFromSpecificationTemplateUsingList" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList"></a>
+### ServiceFromSpecificationTemplateUsingList <a name="ServiceFromSpecificationTemplateUsingList" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.ServiceFromSpecificationTemplateUsingList(
   terraform_resource: IInterpolatingParent,
@@ -3930,21 +3930,21 @@ service.ServiceFromSpecificationTemplateUsingList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3952,7 +3952,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -3964,15 +3964,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -3984,19 +3984,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.resolve"></a>
 
 ```python
 def resolve(
@@ -4006,13 +4006,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4022,7 +4022,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.get"></a>
 
 ```python
 def get(
@@ -4030,7 +4030,7 @@ def get(
 ) -> ServiceFromSpecificationTemplateUsingOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -4043,13 +4043,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4063,7 +4063,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4073,23 +4073,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[ServiceFromSpecificationTemplateUsing]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a>]
 
 ---
 
 
-### ServiceFromSpecificationTemplateUsingOutputReference <a name="ServiceFromSpecificationTemplateUsingOutputReference" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference"></a>
+### ServiceFromSpecificationTemplateUsingOutputReference <a name="ServiceFromSpecificationTemplateUsingOutputReference" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.ServiceFromSpecificationTemplateUsingOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -4101,22 +4101,22 @@ service.ServiceFromSpecificationTemplateUsingOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4124,7 +4124,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -4132,7 +4132,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -4144,29 +4144,29 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -4174,13 +4174,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -4188,13 +4188,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -4202,13 +4202,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -4216,13 +4216,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -4230,13 +4230,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -4244,13 +4244,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -4258,13 +4258,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -4272,13 +4272,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -4286,13 +4286,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -4300,13 +4300,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -4316,13 +4316,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4337,17 +4337,17 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4361,7 +4361,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4371,7 +4371,7 @@ fqn: str
 
 ---
 
-##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.keyInput"></a>
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.keyInput"></a>
 
 ```python
 key_input: str
@@ -4381,7 +4381,7 @@ key_input: str
 
 ---
 
-##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.valueInput"></a>
+##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.valueInput"></a>
 
 ```python
 value_input: str
@@ -4391,7 +4391,7 @@ value_input: str
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.key"></a>
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.key"></a>
 
 ```python
 key: str
@@ -4401,7 +4401,7 @@ key: str
 
 ---
 
-##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.value"></a>
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.value"></a>
 
 ```python
 value: str
@@ -4411,23 +4411,23 @@ value: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsingOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | ServiceFromSpecificationTemplateUsing
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplateUsing">ServiceFromSpecificationTemplateUsing</a>
 
 ---
 
 
-### ServiceShowOutputList <a name="ServiceShowOutputList" id="@cdktf/provider-snowflake.service.ServiceShowOutputList"></a>
+### ServiceShowOutputList <a name="ServiceShowOutputList" id="@cdktn/provider-snowflake.service.ServiceShowOutputList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.ServiceShowOutputList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.service.ServiceShowOutputList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.ServiceShowOutputList(
   terraform_resource: IInterpolatingParent,
@@ -4438,21 +4438,21 @@ service.ServiceShowOutputList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-snowflake.service.ServiceShowOutputList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.service.ServiceShowOutputList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4460,7 +4460,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-snowflake.service.ServiceShowOutputList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-snowflake.service.ServiceShowOutputList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -4472,15 +4472,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-snowflake.service.ServiceShowOutputList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-snowflake.service.ServiceShowOutputList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -4492,19 +4492,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-snowflake.service.ServiceShowOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-snowflake.service.ServiceShowOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-snowflake.service.ServiceShowOutputList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.service.ServiceShowOutputList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.service.ServiceShowOutputList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.service.ServiceShowOutputList.resolve"></a>
 
 ```python
 def resolve(
@@ -4514,13 +4514,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.service.ServiceShowOutputList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.service.ServiceShowOutputList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-snowflake.service.ServiceShowOutputList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.service.ServiceShowOutputList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4530,7 +4530,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-snowflake.service.ServiceShowOutputList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-snowflake.service.ServiceShowOutputList.get"></a>
 
 ```python
 def get(
@@ -4538,7 +4538,7 @@ def get(
 ) -> ServiceShowOutputOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.service.ServiceShowOutputList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.service.ServiceShowOutputList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -4551,12 +4551,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-snowflake.service.ServiceShowOutputList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.service.ServiceShowOutputList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4570,7 +4570,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.service.ServiceShowOutputList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.service.ServiceShowOutputList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4581,12 +4581,12 @@ fqn: str
 ---
 
 
-### ServiceShowOutputOutputReference <a name="ServiceShowOutputOutputReference" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference"></a>
+### ServiceShowOutputOutputReference <a name="ServiceShowOutputOutputReference" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.ServiceShowOutputOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -4598,22 +4598,22 @@ service.ServiceShowOutputOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4621,7 +4621,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -4629,7 +4629,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -4641,29 +4641,29 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -4671,13 +4671,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -4685,13 +4685,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -4699,13 +4699,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -4713,13 +4713,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -4727,13 +4727,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -4741,13 +4741,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -4755,13 +4755,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -4769,13 +4769,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -4783,13 +4783,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -4797,13 +4797,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -4813,13 +4813,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4834,41 +4834,41 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.autoResume">auto_resume</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.autoSuspendSecs">auto_suspend_secs</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.comment">comment</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.computePool">compute_pool</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.currentInstances">current_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.databaseName">database_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.dnsName">dns_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.externalAccessIntegrations">external_access_integrations</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.isAsyncJob">is_async_job</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.isJob">is_job</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.isUpgrading">is_upgrading</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.managingObjectDomain">managing_object_domain</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.managingObjectName">managing_object_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.maxInstances">max_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.minInstances">min_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.minReadyInstances">min_ready_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.owner">owner</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.ownerRoleType">owner_role_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.queryWarehouse">query_warehouse</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.resumedOn">resumed_on</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.schemaName">schema_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.specDigest">spec_digest</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.suspendedOn">suspended_on</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.targetInstances">target_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.updatedOn">updated_on</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-snowflake.service.ServiceShowOutput">ServiceShowOutput</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.autoResume">auto_resume</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.autoSuspendSecs">auto_suspend_secs</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.comment">comment</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.computePool">compute_pool</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.currentInstances">current_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.databaseName">database_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.dnsName">dns_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.externalAccessIntegrations">external_access_integrations</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.isAsyncJob">is_async_job</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.isJob">is_job</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.isUpgrading">is_upgrading</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.managingObjectDomain">managing_object_domain</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.managingObjectName">managing_object_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.maxInstances">max_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.minInstances">min_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.minReadyInstances">min_ready_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.owner">owner</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.ownerRoleType">owner_role_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.queryWarehouse">query_warehouse</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.resumedOn">resumed_on</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.schemaName">schema_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.specDigest">spec_digest</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.suspendedOn">suspended_on</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.targetInstances">target_instances</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.updatedOn">updated_on</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceShowOutput">ServiceShowOutput</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4882,7 +4882,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4892,17 +4892,17 @@ fqn: str
 
 ---
 
-##### `auto_resume`<sup>Required</sup> <a name="auto_resume" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.autoResume"></a>
+##### `auto_resume`<sup>Required</sup> <a name="auto_resume" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.autoResume"></a>
 
 ```python
 auto_resume: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `auto_suspend_secs`<sup>Required</sup> <a name="auto_suspend_secs" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.autoSuspendSecs"></a>
+##### `auto_suspend_secs`<sup>Required</sup> <a name="auto_suspend_secs" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.autoSuspendSecs"></a>
 
 ```python
 auto_suspend_secs: typing.Union[int, float]
@@ -4912,7 +4912,7 @@ auto_suspend_secs: typing.Union[int, float]
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.comment"></a>
 
 ```python
 comment: str
@@ -4922,7 +4922,7 @@ comment: str
 
 ---
 
-##### `compute_pool`<sup>Required</sup> <a name="compute_pool" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.computePool"></a>
+##### `compute_pool`<sup>Required</sup> <a name="compute_pool" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.computePool"></a>
 
 ```python
 compute_pool: str
@@ -4932,7 +4932,7 @@ compute_pool: str
 
 ---
 
-##### `created_on`<sup>Required</sup> <a name="created_on" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.createdOn"></a>
+##### `created_on`<sup>Required</sup> <a name="created_on" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.createdOn"></a>
 
 ```python
 created_on: str
@@ -4942,7 +4942,7 @@ created_on: str
 
 ---
 
-##### `current_instances`<sup>Required</sup> <a name="current_instances" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.currentInstances"></a>
+##### `current_instances`<sup>Required</sup> <a name="current_instances" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.currentInstances"></a>
 
 ```python
 current_instances: typing.Union[int, float]
@@ -4952,7 +4952,7 @@ current_instances: typing.Union[int, float]
 
 ---
 
-##### `database_name`<sup>Required</sup> <a name="database_name" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.databaseName"></a>
+##### `database_name`<sup>Required</sup> <a name="database_name" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.databaseName"></a>
 
 ```python
 database_name: str
@@ -4962,7 +4962,7 @@ database_name: str
 
 ---
 
-##### `dns_name`<sup>Required</sup> <a name="dns_name" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.dnsName"></a>
+##### `dns_name`<sup>Required</sup> <a name="dns_name" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.dnsName"></a>
 
 ```python
 dns_name: str
@@ -4972,7 +4972,7 @@ dns_name: str
 
 ---
 
-##### `external_access_integrations`<sup>Required</sup> <a name="external_access_integrations" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.externalAccessIntegrations"></a>
+##### `external_access_integrations`<sup>Required</sup> <a name="external_access_integrations" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.externalAccessIntegrations"></a>
 
 ```python
 external_access_integrations: typing.List[str]
@@ -4982,37 +4982,37 @@ external_access_integrations: typing.List[str]
 
 ---
 
-##### `is_async_job`<sup>Required</sup> <a name="is_async_job" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.isAsyncJob"></a>
+##### `is_async_job`<sup>Required</sup> <a name="is_async_job" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.isAsyncJob"></a>
 
 ```python
 is_async_job: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `is_job`<sup>Required</sup> <a name="is_job" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.isJob"></a>
+##### `is_job`<sup>Required</sup> <a name="is_job" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.isJob"></a>
 
 ```python
 is_job: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `is_upgrading`<sup>Required</sup> <a name="is_upgrading" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.isUpgrading"></a>
+##### `is_upgrading`<sup>Required</sup> <a name="is_upgrading" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.isUpgrading"></a>
 
 ```python
 is_upgrading: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `managing_object_domain`<sup>Required</sup> <a name="managing_object_domain" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.managingObjectDomain"></a>
+##### `managing_object_domain`<sup>Required</sup> <a name="managing_object_domain" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.managingObjectDomain"></a>
 
 ```python
 managing_object_domain: str
@@ -5022,7 +5022,7 @@ managing_object_domain: str
 
 ---
 
-##### `managing_object_name`<sup>Required</sup> <a name="managing_object_name" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.managingObjectName"></a>
+##### `managing_object_name`<sup>Required</sup> <a name="managing_object_name" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.managingObjectName"></a>
 
 ```python
 managing_object_name: str
@@ -5032,7 +5032,7 @@ managing_object_name: str
 
 ---
 
-##### `max_instances`<sup>Required</sup> <a name="max_instances" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.maxInstances"></a>
+##### `max_instances`<sup>Required</sup> <a name="max_instances" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.maxInstances"></a>
 
 ```python
 max_instances: typing.Union[int, float]
@@ -5042,7 +5042,7 @@ max_instances: typing.Union[int, float]
 
 ---
 
-##### `min_instances`<sup>Required</sup> <a name="min_instances" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.minInstances"></a>
+##### `min_instances`<sup>Required</sup> <a name="min_instances" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.minInstances"></a>
 
 ```python
 min_instances: typing.Union[int, float]
@@ -5052,7 +5052,7 @@ min_instances: typing.Union[int, float]
 
 ---
 
-##### `min_ready_instances`<sup>Required</sup> <a name="min_ready_instances" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.minReadyInstances"></a>
+##### `min_ready_instances`<sup>Required</sup> <a name="min_ready_instances" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.minReadyInstances"></a>
 
 ```python
 min_ready_instances: typing.Union[int, float]
@@ -5062,7 +5062,7 @@ min_ready_instances: typing.Union[int, float]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.name"></a>
 
 ```python
 name: str
@@ -5072,7 +5072,7 @@ name: str
 
 ---
 
-##### `owner`<sup>Required</sup> <a name="owner" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.owner"></a>
+##### `owner`<sup>Required</sup> <a name="owner" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.owner"></a>
 
 ```python
 owner: str
@@ -5082,7 +5082,7 @@ owner: str
 
 ---
 
-##### `owner_role_type`<sup>Required</sup> <a name="owner_role_type" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.ownerRoleType"></a>
+##### `owner_role_type`<sup>Required</sup> <a name="owner_role_type" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.ownerRoleType"></a>
 
 ```python
 owner_role_type: str
@@ -5092,7 +5092,7 @@ owner_role_type: str
 
 ---
 
-##### `query_warehouse`<sup>Required</sup> <a name="query_warehouse" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.queryWarehouse"></a>
+##### `query_warehouse`<sup>Required</sup> <a name="query_warehouse" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.queryWarehouse"></a>
 
 ```python
 query_warehouse: str
@@ -5102,7 +5102,7 @@ query_warehouse: str
 
 ---
 
-##### `resumed_on`<sup>Required</sup> <a name="resumed_on" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.resumedOn"></a>
+##### `resumed_on`<sup>Required</sup> <a name="resumed_on" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.resumedOn"></a>
 
 ```python
 resumed_on: str
@@ -5112,7 +5112,7 @@ resumed_on: str
 
 ---
 
-##### `schema_name`<sup>Required</sup> <a name="schema_name" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.schemaName"></a>
+##### `schema_name`<sup>Required</sup> <a name="schema_name" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.schemaName"></a>
 
 ```python
 schema_name: str
@@ -5122,7 +5122,7 @@ schema_name: str
 
 ---
 
-##### `spec_digest`<sup>Required</sup> <a name="spec_digest" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.specDigest"></a>
+##### `spec_digest`<sup>Required</sup> <a name="spec_digest" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.specDigest"></a>
 
 ```python
 spec_digest: str
@@ -5132,7 +5132,7 @@ spec_digest: str
 
 ---
 
-##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.status"></a>
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.status"></a>
 
 ```python
 status: str
@@ -5142,7 +5142,7 @@ status: str
 
 ---
 
-##### `suspended_on`<sup>Required</sup> <a name="suspended_on" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.suspendedOn"></a>
+##### `suspended_on`<sup>Required</sup> <a name="suspended_on" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.suspendedOn"></a>
 
 ```python
 suspended_on: str
@@ -5152,7 +5152,7 @@ suspended_on: str
 
 ---
 
-##### `target_instances`<sup>Required</sup> <a name="target_instances" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.targetInstances"></a>
+##### `target_instances`<sup>Required</sup> <a name="target_instances" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.targetInstances"></a>
 
 ```python
 target_instances: typing.Union[int, float]
@@ -5162,7 +5162,7 @@ target_instances: typing.Union[int, float]
 
 ---
 
-##### `updated_on`<sup>Required</sup> <a name="updated_on" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.updatedOn"></a>
+##### `updated_on`<sup>Required</sup> <a name="updated_on" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.updatedOn"></a>
 
 ```python
 updated_on: str
@@ -5172,23 +5172,23 @@ updated_on: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-snowflake.service.ServiceShowOutputOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.service.ServiceShowOutputOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: ServiceShowOutput
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.service.ServiceShowOutput">ServiceShowOutput</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.service.ServiceShowOutput">ServiceShowOutput</a>
 
 ---
 
 
-### ServiceTimeoutsOutputReference <a name="ServiceTimeoutsOutputReference" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference"></a>
+### ServiceTimeoutsOutputReference <a name="ServiceTimeoutsOutputReference" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_snowflake import service
+from cdktn_provider_snowflake import service
 
 service.ServiceTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -5198,20 +5198,20 @@ service.ServiceTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -5223,33 +5223,33 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -5257,13 +5257,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -5271,13 +5271,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -5285,13 +5285,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -5299,13 +5299,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -5313,13 +5313,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -5327,13 +5327,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -5341,13 +5341,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -5355,13 +5355,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -5369,13 +5369,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -5383,13 +5383,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -5399,13 +5399,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -5415,25 +5415,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_read` <a name="reset_read" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.resetRead"></a>
+##### `reset_read` <a name="reset_read" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.resetRead"></a>
 
 ```python
 def reset_read() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -5444,21 +5444,21 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.service.ServiceTimeouts">ServiceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.service.ServiceTimeouts">ServiceTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -5472,7 +5472,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -5482,7 +5482,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -5492,7 +5492,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -5502,7 +5502,7 @@ delete_input: str
 
 ---
 
-##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.readInput"></a>
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.readInput"></a>
 
 ```python
 read_input: str
@@ -5512,7 +5512,7 @@ read_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -5522,7 +5522,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -5532,7 +5532,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -5542,7 +5542,7 @@ delete: str
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.read"></a>
 
 ```python
 read: str
@@ -5552,7 +5552,7 @@ read: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -5562,13 +5562,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-snowflake.service.ServiceTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.service.ServiceTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | ServiceTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.service.ServiceTimeouts">ServiceTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-snowflake.service.ServiceTimeouts">ServiceTimeouts</a>
 
 ---
 

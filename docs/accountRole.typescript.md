@@ -1,28 +1,28 @@
-# `accountRole` Submodule <a name="`accountRole` Submodule" id="@cdktf/provider-snowflake.accountRole"></a>
+# `accountRole` Submodule <a name="`accountRole` Submodule" id="@cdktn/provider-snowflake.accountRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### AccountRole <a name="AccountRole" id="@cdktf/provider-snowflake.accountRole.AccountRole"></a>
+### AccountRole <a name="AccountRole" id="@cdktn/provider-snowflake.accountRole.AccountRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_role snowflake_account_role}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role snowflake_account_role}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.accountRole.AccountRole.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.accountRole.AccountRole.Initializer"></a>
 
 ```typescript
-import { accountRole } from '@cdktf/provider-snowflake'
+import { accountRole } from '@cdktn/provider-snowflake'
 
 new accountRole.AccountRole(scope: Construct, id: string, config: AccountRoleConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig">AccountRoleConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleConfig">AccountRoleConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.accountRole.AccountRole.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-snowflake.accountRole.AccountRole.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.accountRole.AccountRole.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.accountRole.AccountRole.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-snowflake.accountRole.AccountRole.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-snowflake.accountRole.AccountRole.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig">AccountRoleConfig</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.accountRole.AccountRoleConfig">AccountRoleConfig</a>
 
 ---
 
@@ -50,37 +50,37 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.resetComment">resetComment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.resetComment">resetComment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-snowflake.accountRole.AccountRole.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.accountRole.AccountRole.toString"></a>
 
 ```typescript
 public toString(): string
@@ -88,25 +88,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.accountRole.AccountRole.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-snowflake.accountRole.AccountRole.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.accountRole.AccountRole.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-snowflake.accountRole.AccountRole.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.accountRole.AccountRole.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.accountRole.AccountRole.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.accountRole.AccountRole.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-snowflake.accountRole.AccountRole.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -114,7 +114,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-snowflake.accountRole.AccountRole.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-snowflake.accountRole.AccountRole.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -122,7 +122,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.accountRole.AccountRole.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-snowflake.accountRole.AccountRole.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -130,19 +130,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-snowflake.accountRole.AccountRole.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-snowflake.accountRole.AccountRole.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.accountRole.AccountRole.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-snowflake.accountRole.AccountRole.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.accountRole.AccountRole.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-snowflake.accountRole.AccountRole.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -150,7 +150,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-snowflake.accountRole.AccountRole.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-snowflake.accountRole.AccountRole.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -158,7 +158,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-snowflake.accountRole.AccountRole.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-snowflake.accountRole.AccountRole.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -166,151 +166,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-snowflake.accountRole.AccountRole.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-snowflake.accountRole.AccountRole.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-snowflake.accountRole.AccountRole.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-snowflake.accountRole.AccountRole.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.accountRole.AccountRole.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.accountRole.AccountRole.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.accountRole.AccountRole.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.accountRole.AccountRole.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRole.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRole.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-snowflake.accountRole.AccountRole.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-snowflake.accountRole.AccountRole.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -320,7 +320,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.accountRole.AccountRole.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.accountRole.AccountRole.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -328,7 +328,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-snowflake.accountRole.AccountRole.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-snowflake.accountRole.AccountRole.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -336,7 +336,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-snowflake.accountRole.AccountRole.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-snowflake.accountRole.AccountRole.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -344,7 +344,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-snowflake.accountRole.AccountRole.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-snowflake.accountRole.AccountRole.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -352,7 +352,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-snowflake.accountRole.AccountRole.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-snowflake.accountRole.AccountRole.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -360,7 +360,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.accountRole.AccountRole.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.accountRole.AccountRole.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -368,31 +368,31 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-snowflake.accountRole.AccountRole.putTimeouts"></a>
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-snowflake.accountRole.AccountRole.putTimeouts"></a>
 
 ```typescript
 public putTimeouts(value: AccountRoleTimeouts): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.accountRole.AccountRole.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.accountRole.AccountRole.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts">AccountRoleTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeouts">AccountRoleTimeouts</a>
 
 ---
 
-##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.accountRole.AccountRole.resetComment"></a>
+##### `resetComment` <a name="resetComment" id="@cdktn/provider-snowflake.accountRole.AccountRole.resetComment"></a>
 
 ```typescript
 public resetComment(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-snowflake.accountRole.AccountRole.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-snowflake.accountRole.AccountRole.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-snowflake.accountRole.AccountRole.resetTimeouts"></a>
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-snowflake.accountRole.AccountRole.resetTimeouts"></a>
 
 ```typescript
 public resetTimeouts(): void
@@ -402,17 +402,17 @@ public resetTimeouts(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a AccountRole resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a AccountRole resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.accountRole.AccountRole.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-snowflake.accountRole.AccountRole.isConstruct"></a>
 
 ```typescript
-import { accountRole } from '@cdktf/provider-snowflake'
+import { accountRole } from '@cdktn/provider-snowflake'
 
 accountRole.AccountRole.isConstruct(x: any)
 ```
@@ -433,7 +433,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.accountRole.AccountRole.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.accountRole.AccountRole.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -441,45 +441,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-snowflake.accountRole.AccountRole.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-snowflake.accountRole.AccountRole.isTerraformElement"></a>
 
 ```typescript
-import { accountRole } from '@cdktf/provider-snowflake'
+import { accountRole } from '@cdktn/provider-snowflake'
 
 accountRole.AccountRole.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.accountRole.AccountRole.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.accountRole.AccountRole.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-snowflake.accountRole.AccountRole.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-snowflake.accountRole.AccountRole.isTerraformResource"></a>
 
 ```typescript
-import { accountRole } from '@cdktf/provider-snowflake'
+import { accountRole } from '@cdktn/provider-snowflake'
 
 accountRole.AccountRole.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.accountRole.AccountRole.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.accountRole.AccountRole.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-snowflake.accountRole.AccountRole.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-snowflake.accountRole.AccountRole.generateConfigForImport"></a>
 
 ```typescript
-import { accountRole } from '@cdktf/provider-snowflake'
+import { accountRole } from '@cdktn/provider-snowflake'
 
 accountRole.AccountRole.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a AccountRole resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a AccountRole resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.accountRole.AccountRole.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-snowflake.accountRole.AccountRole.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -487,7 +487,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-snowflake.accountRole.AccountRole.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-snowflake.accountRole.AccountRole.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -495,19 +495,19 @@ The construct id used in the generated config for the AccountRole to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-snowflake.accountRole.AccountRole.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-snowflake.accountRole.AccountRole.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing AccountRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.accountRole.AccountRole.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.accountRole.AccountRole.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the AccountRole to import is found.
 
@@ -517,34 +517,34 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.fullyQualifiedName">fullyQualifiedName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.showOutput">showOutput</a></code> | <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList">AccountRoleShowOutputList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference">AccountRoleTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts">AccountRoleTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.fullyQualifiedName">fullyQualifiedName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.showOutput">showOutput</a></code> | <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList">AccountRoleShowOutputList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference">AccountRoleTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeouts">AccountRoleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.name">name</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -556,17 +556,17 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -576,7 +576,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -586,7 +586,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -596,7 +596,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -606,37 +606,37 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -646,47 +646,47 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `fullyQualifiedName`<sup>Required</sup> <a name="fullyQualifiedName" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.fullyQualifiedName"></a>
+##### `fullyQualifiedName`<sup>Required</sup> <a name="fullyQualifiedName" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.fullyQualifiedName"></a>
 
 ```typescript
 public readonly fullyQualifiedName: string;
@@ -696,27 +696,27 @@ public readonly fullyQualifiedName: string;
 
 ---
 
-##### `showOutput`<sup>Required</sup> <a name="showOutput" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.showOutput"></a>
+##### `showOutput`<sup>Required</sup> <a name="showOutput" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.showOutput"></a>
 
 ```typescript
 public readonly showOutput: AccountRoleShowOutputList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList">AccountRoleShowOutputList</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList">AccountRoleShowOutputList</a>
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: AccountRoleTimeoutsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference">AccountRoleTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference">AccountRoleTimeoutsOutputReference</a>
 
 ---
 
-##### `commentInput`<sup>Optional</sup> <a name="commentInput" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.commentInput"></a>
+##### `commentInput`<sup>Optional</sup> <a name="commentInput" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.commentInput"></a>
 
 ```typescript
 public readonly commentInput: string;
@@ -726,7 +726,7 @@ public readonly commentInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -736,7 +736,7 @@ public readonly idInput: string;
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -746,17 +746,17 @@ public readonly nameInput: string;
 
 ---
 
-##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.timeoutsInput"></a>
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.timeoutsInput"></a>
 
 ```typescript
 public readonly timeoutsInput: IResolvable | AccountRoleTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts">AccountRoleTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeouts">AccountRoleTimeouts</a>
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -766,7 +766,7 @@ public readonly comment: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -776,7 +776,7 @@ public readonly id: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -790,11 +790,11 @@ public readonly name: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRole.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRole.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-snowflake.accountRole.AccountRole.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-snowflake.accountRole.AccountRole.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -806,12 +806,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### AccountRoleConfig <a name="AccountRoleConfig" id="@cdktf/provider-snowflake.accountRole.AccountRoleConfig"></a>
+### AccountRoleConfig <a name="AccountRoleConfig" id="@cdktn/provider-snowflake.accountRole.AccountRoleConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.accountRole.AccountRoleConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.accountRole.AccountRoleConfig.Initializer"></a>
 
 ```typescript
-import { accountRole } from '@cdktf/provider-snowflake'
+import { accountRole } from '@cdktn/provider-snowflake'
 
 const accountRoleConfig: accountRole.AccountRoleConfig = { ... }
 ```
@@ -820,91 +820,91 @@ const accountRoleConfig: accountRole.AccountRoleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.name">name</a></code> | <code>string</code> | Identifier for the role; |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_role#comment AccountRole#comment}. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_role#id AccountRole#id}. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts">AccountRoleTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.name">name</a></code> | <code>string</code> | Identifier for the role; |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role#comment AccountRole#comment}. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role#id AccountRole#id}. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeouts">AccountRoleTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -916,11 +916,11 @@ Identifier for the role;
 
 must be unique for your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_role#name AccountRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role#name AccountRole#name}
 
 ---
 
-##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.comment"></a>
+##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -928,11 +928,11 @@ public readonly comment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_role#comment AccountRole#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role#comment AccountRole#comment}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -940,44 +940,44 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_role#id AccountRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role#id AccountRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-snowflake.accountRole.AccountRoleConfig.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: AccountRoleTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts">AccountRoleTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeouts">AccountRoleTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_role#timeouts AccountRole#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role#timeouts AccountRole#timeouts}
 
 ---
 
-### AccountRoleShowOutput <a name="AccountRoleShowOutput" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutput"></a>
+### AccountRoleShowOutput <a name="AccountRoleShowOutput" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutput"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutput.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutput.Initializer"></a>
 
 ```typescript
-import { accountRole } from '@cdktf/provider-snowflake'
+import { accountRole } from '@cdktn/provider-snowflake'
 
 const accountRoleShowOutput: accountRole.AccountRoleShowOutput = { ... }
 ```
 
 
-### AccountRoleTimeouts <a name="AccountRoleTimeouts" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts"></a>
+### AccountRoleTimeouts <a name="AccountRoleTimeouts" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeouts.Initializer"></a>
 
 ```typescript
-import { accountRole } from '@cdktf/provider-snowflake'
+import { accountRole } from '@cdktn/provider-snowflake'
 
 const accountRoleTimeouts: accountRole.AccountRoleTimeouts = { ... }
 ```
@@ -986,14 +986,14 @@ const accountRoleTimeouts: accountRole.AccountRoleTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_role#create AccountRole#create}. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_role#delete AccountRole#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_role#read AccountRole#read}. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_role#update AccountRole#update}. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role#create AccountRole#create}. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role#delete AccountRole#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role#read AccountRole#read}. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role#update AccountRole#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeouts.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1001,11 +1001,11 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_role#create AccountRole#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role#create AccountRole#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeouts.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -1013,11 +1013,11 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_role#delete AccountRole#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role#delete AccountRole#delete}.
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeouts.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -1025,11 +1025,11 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_role#read AccountRole#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role#read AccountRole#read}.
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeouts.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -1037,39 +1037,39 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/account_role#update AccountRole#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/account_role#update AccountRole#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### AccountRoleShowOutputList <a name="AccountRoleShowOutputList" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList"></a>
+### AccountRoleShowOutputList <a name="AccountRoleShowOutputList" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.Initializer"></a>
 
 ```typescript
-import { accountRole } from '@cdktf/provider-snowflake'
+import { accountRole } from '@cdktn/provider-snowflake'
 
 new accountRole.AccountRoleShowOutputList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1077,7 +1077,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
 
@@ -1089,15 +1089,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.allWithMapKey"></a>
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.allWithMapKey"></a>
 
 ```typescript
 public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
@@ -1107,19 +1107,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* string
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1127,13 +1127,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1143,13 +1143,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.get"></a>
 
 ```typescript
 public get(index: number): AccountRoleShowOutputOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.get.parameter.index"></a>
 
 - *Type:* number
 
@@ -1162,12 +1162,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1181,7 +1181,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputList.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1192,34 +1192,34 @@ public readonly fqn: string;
 ---
 
 
-### AccountRoleShowOutputOutputReference <a name="AccountRoleShowOutputOutputReference" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference"></a>
+### AccountRoleShowOutputOutputReference <a name="AccountRoleShowOutputOutputReference" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.Initializer"></a>
 
 ```typescript
-import { accountRole } from '@cdktf/provider-snowflake'
+import { accountRole } from '@cdktn/provider-snowflake'
 
 new accountRole.AccountRoleShowOutputOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1227,7 +1227,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* number
 
@@ -1235,7 +1235,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* boolean
 
@@ -1247,149 +1247,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1397,13 +1397,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1418,23 +1418,23 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.assignedToUsers">assignedToUsers</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.grantedRoles">grantedRoles</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.grantedToRoles">grantedToRoles</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.isCurrent">isCurrent</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.isDefault">isDefault</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.isInherited">isInherited</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.owner">owner</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutput">AccountRoleShowOutput</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.assignedToUsers">assignedToUsers</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.grantedRoles">grantedRoles</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.grantedToRoles">grantedToRoles</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.isCurrent">isCurrent</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.isDefault">isDefault</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.isInherited">isInherited</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.owner">owner</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutput">AccountRoleShowOutput</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1448,7 +1448,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1458,7 +1458,7 @@ public readonly fqn: string;
 
 ---
 
-##### `assignedToUsers`<sup>Required</sup> <a name="assignedToUsers" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.assignedToUsers"></a>
+##### `assignedToUsers`<sup>Required</sup> <a name="assignedToUsers" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.assignedToUsers"></a>
 
 ```typescript
 public readonly assignedToUsers: number;
@@ -1468,7 +1468,7 @@ public readonly assignedToUsers: number;
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -1478,7 +1478,7 @@ public readonly comment: string;
 
 ---
 
-##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.createdOn"></a>
+##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.createdOn"></a>
 
 ```typescript
 public readonly createdOn: string;
@@ -1488,7 +1488,7 @@ public readonly createdOn: string;
 
 ---
 
-##### `grantedRoles`<sup>Required</sup> <a name="grantedRoles" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.grantedRoles"></a>
+##### `grantedRoles`<sup>Required</sup> <a name="grantedRoles" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.grantedRoles"></a>
 
 ```typescript
 public readonly grantedRoles: number;
@@ -1498,7 +1498,7 @@ public readonly grantedRoles: number;
 
 ---
 
-##### `grantedToRoles`<sup>Required</sup> <a name="grantedToRoles" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.grantedToRoles"></a>
+##### `grantedToRoles`<sup>Required</sup> <a name="grantedToRoles" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.grantedToRoles"></a>
 
 ```typescript
 public readonly grantedToRoles: number;
@@ -1508,37 +1508,37 @@ public readonly grantedToRoles: number;
 
 ---
 
-##### `isCurrent`<sup>Required</sup> <a name="isCurrent" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.isCurrent"></a>
+##### `isCurrent`<sup>Required</sup> <a name="isCurrent" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.isCurrent"></a>
 
 ```typescript
 public readonly isCurrent: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `isDefault`<sup>Required</sup> <a name="isDefault" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.isDefault"></a>
+##### `isDefault`<sup>Required</sup> <a name="isDefault" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.isDefault"></a>
 
 ```typescript
 public readonly isDefault: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `isInherited`<sup>Required</sup> <a name="isInherited" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.isInherited"></a>
+##### `isInherited`<sup>Required</sup> <a name="isInherited" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.isInherited"></a>
 
 ```typescript
 public readonly isInherited: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1548,7 +1548,7 @@ public readonly name: string;
 
 ---
 
-##### `owner`<sup>Required</sup> <a name="owner" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.owner"></a>
+##### `owner`<sup>Required</sup> <a name="owner" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.owner"></a>
 
 ```typescript
 public readonly owner: string;
@@ -1558,43 +1558,43 @@ public readonly owner: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-snowflake.accountRole.AccountRoleShowOutputOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: AccountRoleShowOutput;
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.accountRole.AccountRoleShowOutput">AccountRoleShowOutput</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.accountRole.AccountRoleShowOutput">AccountRoleShowOutput</a>
 
 ---
 
 
-### AccountRoleTimeoutsOutputReference <a name="AccountRoleTimeoutsOutputReference" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference"></a>
+### AccountRoleTimeoutsOutputReference <a name="AccountRoleTimeoutsOutputReference" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.Initializer"></a>
 
 ```typescript
-import { accountRole } from '@cdktf/provider-snowflake'
+import { accountRole } from '@cdktn/provider-snowflake'
 
 new accountRole.AccountRoleTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1606,153 +1606,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1760,13 +1760,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1776,25 +1776,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resetCreate"></a>
+##### `resetCreate` <a name="resetCreate" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resetCreate"></a>
 
 ```typescript
 public resetCreate(): void
 ```
 
-##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resetDelete"></a>
+##### `resetDelete` <a name="resetDelete" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resetDelete"></a>
 
 ```typescript
 public resetDelete(): void
 ```
 
-##### `resetRead` <a name="resetRead" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resetRead"></a>
+##### `resetRead` <a name="resetRead" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resetRead"></a>
 
 ```typescript
 public resetRead(): void
 ```
 
-##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resetUpdate"></a>
+##### `resetUpdate` <a name="resetUpdate" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.resetUpdate"></a>
 
 ```typescript
 public resetUpdate(): void
@@ -1805,21 +1805,21 @@ public resetUpdate(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts">AccountRoleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeouts">AccountRoleTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1833,7 +1833,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1843,7 +1843,7 @@ public readonly fqn: string;
 
 ---
 
-##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.createInput"></a>
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.createInput"></a>
 
 ```typescript
 public readonly createInput: string;
@@ -1853,7 +1853,7 @@ public readonly createInput: string;
 
 ---
 
-##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.deleteInput"></a>
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.deleteInput"></a>
 
 ```typescript
 public readonly deleteInput: string;
@@ -1863,7 +1863,7 @@ public readonly deleteInput: string;
 
 ---
 
-##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.readInput"></a>
+##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.readInput"></a>
 
 ```typescript
 public readonly readInput: string;
@@ -1873,7 +1873,7 @@ public readonly readInput: string;
 
 ---
 
-##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.updateInput"></a>
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.updateInput"></a>
 
 ```typescript
 public readonly updateInput: string;
@@ -1883,7 +1883,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1893,7 +1893,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -1903,7 +1903,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -1913,7 +1913,7 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -1923,13 +1923,13 @@ public readonly update: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-snowflake.accountRole.AccountRoleTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | AccountRoleTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts">AccountRoleTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-snowflake.accountRole.AccountRoleTimeouts">AccountRoleTimeouts</a>
 
 ---
 

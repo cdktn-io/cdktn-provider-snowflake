@@ -1,28 +1,28 @@
-# `externalTable` Submodule <a name="`externalTable` Submodule" id="@cdktf/provider-snowflake.externalTable"></a>
+# `externalTable` Submodule <a name="`externalTable` Submodule" id="@cdktn/provider-snowflake.externalTable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### ExternalTable <a name="ExternalTable" id="@cdktf/provider-snowflake.externalTable.ExternalTable"></a>
+### ExternalTable <a name="ExternalTable" id="@cdktn/provider-snowflake.externalTable.ExternalTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table snowflake_external_table}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table snowflake_external_table}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalTable.ExternalTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externaltable"
 
 externaltable.NewExternalTable(scope Construct, id *string, config ExternalTableConfig) ExternalTable
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig">ExternalTableConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig">ExternalTableConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig">ExternalTableConfig</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig">ExternalTableConfig</a>
 
 ---
 
@@ -50,47 +50,47 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.putColumn">PutColumn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.putTag">PutTag</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.resetAutoRefresh">ResetAutoRefresh</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.resetAwsSnsTopic">ResetAwsSnsTopic</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.resetComment">ResetComment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.resetCopyGrants">ResetCopyGrants</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.resetPartitionBy">ResetPartitionBy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.resetPattern">ResetPattern</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.resetRefreshOnCreate">ResetRefreshOnCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.resetTableFormat">ResetTableFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.resetTag">ResetTag</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.putColumn">PutColumn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.putTag">PutTag</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.resetAutoRefresh">ResetAutoRefresh</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.resetAwsSnsTopic">ResetAwsSnsTopic</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.resetComment">ResetComment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.resetCopyGrants">ResetCopyGrants</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.resetPartitionBy">ResetPartitionBy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.resetPattern">ResetPattern</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.resetRefreshOnCreate">ResetRefreshOnCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.resetTableFormat">ResetTableFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.resetTag">ResetTag</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-snowflake.externalTable.ExternalTable.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.externalTable.ExternalTable.toString"></a>
 
 ```go
 func ToString() *string
@@ -98,25 +98,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-snowflake.externalTable.ExternalTable.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-snowflake.externalTable.ExternalTable.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.externalTable.ExternalTable.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-snowflake.externalTable.ExternalTable.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.externalTable.ExternalTable.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.externalTable.ExternalTable.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-snowflake.externalTable.ExternalTable.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-snowflake.externalTable.ExternalTable.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -124,7 +124,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-snowflake.externalTable.ExternalTable.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-snowflake.externalTable.ExternalTable.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -132,7 +132,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-snowflake.externalTable.ExternalTable.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-snowflake.externalTable.ExternalTable.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -140,19 +140,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-snowflake.externalTable.ExternalTable.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-snowflake.externalTable.ExternalTable.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-snowflake.externalTable.ExternalTable.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-snowflake.externalTable.ExternalTable.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-snowflake.externalTable.ExternalTable.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-snowflake.externalTable.ExternalTable.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -160,7 +160,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-snowflake.externalTable.ExternalTable.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-snowflake.externalTable.ExternalTable.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -168,7 +168,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-snowflake.externalTable.ExternalTable.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-snowflake.externalTable.ExternalTable.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -176,151 +176,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-snowflake.externalTable.ExternalTable.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-snowflake.externalTable.ExternalTable.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-snowflake.externalTable.ExternalTable.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-snowflake.externalTable.ExternalTable.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.externalTable.ExternalTable.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.externalTable.ExternalTable.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.externalTable.ExternalTable.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.externalTable.ExternalTable.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTable.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTable.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-snowflake.externalTable.ExternalTable.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-snowflake.externalTable.ExternalTable.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -330,7 +330,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.externalTable.ExternalTable.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.externalTable.ExternalTable.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -338,7 +338,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-snowflake.externalTable.ExternalTable.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-snowflake.externalTable.ExternalTable.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -346,7 +346,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-snowflake.externalTable.ExternalTable.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-snowflake.externalTable.ExternalTable.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -354,7 +354,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-snowflake.externalTable.ExternalTable.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-snowflake.externalTable.ExternalTable.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -362,7 +362,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-snowflake.externalTable.ExternalTable.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-snowflake.externalTable.ExternalTable.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -370,7 +370,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.externalTable.ExternalTable.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.externalTable.ExternalTable.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -378,103 +378,103 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutColumn` <a name="PutColumn" id="@cdktf/provider-snowflake.externalTable.ExternalTable.putColumn"></a>
+##### `PutColumn` <a name="PutColumn" id="@cdktn/provider-snowflake.externalTable.ExternalTable.putColumn"></a>
 
 ```go
 func PutColumn(value interface{})
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.externalTable.ExternalTable.putColumn.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.externalTable.ExternalTable.putColumn.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `PutTag` <a name="PutTag" id="@cdktf/provider-snowflake.externalTable.ExternalTable.putTag"></a>
+##### `PutTag` <a name="PutTag" id="@cdktn/provider-snowflake.externalTable.ExternalTable.putTag"></a>
 
 ```go
 func PutTag(value interface{})
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.externalTable.ExternalTable.putTag.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.externalTable.ExternalTable.putTag.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-snowflake.externalTable.ExternalTable.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-snowflake.externalTable.ExternalTable.putTimeouts"></a>
 
 ```go
 func PutTimeouts(value ExternalTableTimeouts)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.externalTable.ExternalTable.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.externalTable.ExternalTable.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeouts">ExternalTableTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeouts">ExternalTableTimeouts</a>
 
 ---
 
-##### `ResetAutoRefresh` <a name="ResetAutoRefresh" id="@cdktf/provider-snowflake.externalTable.ExternalTable.resetAutoRefresh"></a>
+##### `ResetAutoRefresh` <a name="ResetAutoRefresh" id="@cdktn/provider-snowflake.externalTable.ExternalTable.resetAutoRefresh"></a>
 
 ```go
 func ResetAutoRefresh()
 ```
 
-##### `ResetAwsSnsTopic` <a name="ResetAwsSnsTopic" id="@cdktf/provider-snowflake.externalTable.ExternalTable.resetAwsSnsTopic"></a>
+##### `ResetAwsSnsTopic` <a name="ResetAwsSnsTopic" id="@cdktn/provider-snowflake.externalTable.ExternalTable.resetAwsSnsTopic"></a>
 
 ```go
 func ResetAwsSnsTopic()
 ```
 
-##### `ResetComment` <a name="ResetComment" id="@cdktf/provider-snowflake.externalTable.ExternalTable.resetComment"></a>
+##### `ResetComment` <a name="ResetComment" id="@cdktn/provider-snowflake.externalTable.ExternalTable.resetComment"></a>
 
 ```go
 func ResetComment()
 ```
 
-##### `ResetCopyGrants` <a name="ResetCopyGrants" id="@cdktf/provider-snowflake.externalTable.ExternalTable.resetCopyGrants"></a>
+##### `ResetCopyGrants` <a name="ResetCopyGrants" id="@cdktn/provider-snowflake.externalTable.ExternalTable.resetCopyGrants"></a>
 
 ```go
 func ResetCopyGrants()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-snowflake.externalTable.ExternalTable.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-snowflake.externalTable.ExternalTable.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetPartitionBy` <a name="ResetPartitionBy" id="@cdktf/provider-snowflake.externalTable.ExternalTable.resetPartitionBy"></a>
+##### `ResetPartitionBy` <a name="ResetPartitionBy" id="@cdktn/provider-snowflake.externalTable.ExternalTable.resetPartitionBy"></a>
 
 ```go
 func ResetPartitionBy()
 ```
 
-##### `ResetPattern` <a name="ResetPattern" id="@cdktf/provider-snowflake.externalTable.ExternalTable.resetPattern"></a>
+##### `ResetPattern` <a name="ResetPattern" id="@cdktn/provider-snowflake.externalTable.ExternalTable.resetPattern"></a>
 
 ```go
 func ResetPattern()
 ```
 
-##### `ResetRefreshOnCreate` <a name="ResetRefreshOnCreate" id="@cdktf/provider-snowflake.externalTable.ExternalTable.resetRefreshOnCreate"></a>
+##### `ResetRefreshOnCreate` <a name="ResetRefreshOnCreate" id="@cdktn/provider-snowflake.externalTable.ExternalTable.resetRefreshOnCreate"></a>
 
 ```go
 func ResetRefreshOnCreate()
 ```
 
-##### `ResetTableFormat` <a name="ResetTableFormat" id="@cdktf/provider-snowflake.externalTable.ExternalTable.resetTableFormat"></a>
+##### `ResetTableFormat` <a name="ResetTableFormat" id="@cdktn/provider-snowflake.externalTable.ExternalTable.resetTableFormat"></a>
 
 ```go
 func ResetTableFormat()
 ```
 
-##### `ResetTag` <a name="ResetTag" id="@cdktf/provider-snowflake.externalTable.ExternalTable.resetTag"></a>
+##### `ResetTag` <a name="ResetTag" id="@cdktn/provider-snowflake.externalTable.ExternalTable.resetTag"></a>
 
 ```go
 func ResetTag()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-snowflake.externalTable.ExternalTable.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-snowflake.externalTable.ExternalTable.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
@@ -484,17 +484,17 @@ func ResetTimeouts()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a ExternalTable resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a ExternalTable resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.externalTable.ExternalTable.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.externalTable.ExternalTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externaltable"
 
 externaltable.ExternalTable_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.externalTable.ExternalTable.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.externalTable.ExternalTable.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -523,45 +523,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.externalTable.ExternalTable.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.externalTable.ExternalTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externaltable"
 
 externaltable.ExternalTable_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.externalTable.ExternalTable.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.externalTable.ExternalTable.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.externalTable.ExternalTable.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.externalTable.ExternalTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externaltable"
 
 externaltable.ExternalTable_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.externalTable.ExternalTable.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.externalTable.ExternalTable.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.externalTable.ExternalTable.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.externalTable.ExternalTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externaltable"
 
 externaltable.ExternalTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a ExternalTable resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ExternalTable resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.externalTable.ExternalTable.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-snowflake.externalTable.ExternalTable.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -569,7 +569,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-snowflake.externalTable.ExternalTable.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-snowflake.externalTable.ExternalTable.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -577,19 +577,19 @@ The construct id used in the generated config for the ExternalTable to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-snowflake.externalTable.ExternalTable.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-snowflake.externalTable.ExternalTable.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing ExternalTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.externalTable.ExternalTable.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.externalTable.ExternalTable.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ExternalTable to import is found.
 
@@ -599,60 +599,60 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.column">Column</a></code> | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnList">ExternalTableColumnList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.fullyQualifiedName">FullyQualifiedName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.owner">Owner</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.tag">Tag</a></code> | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagList">ExternalTableTagList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference">ExternalTableTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.autoRefreshInput">AutoRefreshInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.awsSnsTopicInput">AwsSnsTopicInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.columnInput">ColumnInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.commentInput">CommentInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.copyGrantsInput">CopyGrantsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.databaseInput">DatabaseInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.fileFormatInput">FileFormatInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.partitionByInput">PartitionByInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.patternInput">PatternInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.refreshOnCreateInput">RefreshOnCreateInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.schemaInput">SchemaInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.tableFormatInput">TableFormatInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.tagInput">TagInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.autoRefresh">AutoRefresh</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.awsSnsTopic">AwsSnsTopic</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.copyGrants">CopyGrants</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.database">Database</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.fileFormat">FileFormat</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.location">Location</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.partitionBy">PartitionBy</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.pattern">Pattern</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.refreshOnCreate">RefreshOnCreate</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.schema">Schema</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.tableFormat">TableFormat</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.column">Column</a></code> | <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnList">ExternalTableColumnList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.fullyQualifiedName">FullyQualifiedName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.owner">Owner</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.tag">Tag</a></code> | <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagList">ExternalTableTagList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference">ExternalTableTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.autoRefreshInput">AutoRefreshInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.awsSnsTopicInput">AwsSnsTopicInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.columnInput">ColumnInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.commentInput">CommentInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.copyGrantsInput">CopyGrantsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.databaseInput">DatabaseInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.fileFormatInput">FileFormatInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.partitionByInput">PartitionByInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.patternInput">PatternInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.refreshOnCreateInput">RefreshOnCreateInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.schemaInput">SchemaInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.tableFormatInput">TableFormatInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.tagInput">TagInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.autoRefresh">AutoRefresh</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.awsSnsTopic">AwsSnsTopic</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.copyGrants">CopyGrants</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.database">Database</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.fileFormat">FileFormat</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.location">Location</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.partitionBy">PartitionBy</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.pattern">Pattern</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.refreshOnCreate">RefreshOnCreate</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.schema">Schema</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.tableFormat">TableFormat</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.node"></a>
 
 ```go
 func Node() Node
@@ -664,17 +664,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -684,7 +684,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -694,7 +694,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -704,7 +704,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -714,17 +714,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -734,7 +734,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -744,7 +744,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -754,37 +754,37 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -794,17 +794,17 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `Column`<sup>Required</sup> <a name="Column" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.column"></a>
+##### `Column`<sup>Required</sup> <a name="Column" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.column"></a>
 
 ```go
 func Column() ExternalTableColumnList
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnList">ExternalTableColumnList</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnList">ExternalTableColumnList</a>
 
 ---
 
-##### `FullyQualifiedName`<sup>Required</sup> <a name="FullyQualifiedName" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.fullyQualifiedName"></a>
+##### `FullyQualifiedName`<sup>Required</sup> <a name="FullyQualifiedName" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.fullyQualifiedName"></a>
 
 ```go
 func FullyQualifiedName() *string
@@ -814,7 +814,7 @@ func FullyQualifiedName() *string
 
 ---
 
-##### `Owner`<sup>Required</sup> <a name="Owner" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.owner"></a>
+##### `Owner`<sup>Required</sup> <a name="Owner" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.owner"></a>
 
 ```go
 func Owner() *string
@@ -824,27 +824,27 @@ func Owner() *string
 
 ---
 
-##### `Tag`<sup>Required</sup> <a name="Tag" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.tag"></a>
+##### `Tag`<sup>Required</sup> <a name="Tag" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.tag"></a>
 
 ```go
 func Tag() ExternalTableTagList
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagList">ExternalTableTagList</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagList">ExternalTableTagList</a>
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.timeouts"></a>
 
 ```go
 func Timeouts() ExternalTableTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference">ExternalTableTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference">ExternalTableTimeoutsOutputReference</a>
 
 ---
 
-##### `AutoRefreshInput`<sup>Optional</sup> <a name="AutoRefreshInput" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.autoRefreshInput"></a>
+##### `AutoRefreshInput`<sup>Optional</sup> <a name="AutoRefreshInput" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.autoRefreshInput"></a>
 
 ```go
 func AutoRefreshInput() interface{}
@@ -854,7 +854,7 @@ func AutoRefreshInput() interface{}
 
 ---
 
-##### `AwsSnsTopicInput`<sup>Optional</sup> <a name="AwsSnsTopicInput" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.awsSnsTopicInput"></a>
+##### `AwsSnsTopicInput`<sup>Optional</sup> <a name="AwsSnsTopicInput" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.awsSnsTopicInput"></a>
 
 ```go
 func AwsSnsTopicInput() *string
@@ -864,7 +864,7 @@ func AwsSnsTopicInput() *string
 
 ---
 
-##### `ColumnInput`<sup>Optional</sup> <a name="ColumnInput" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.columnInput"></a>
+##### `ColumnInput`<sup>Optional</sup> <a name="ColumnInput" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.columnInput"></a>
 
 ```go
 func ColumnInput() interface{}
@@ -874,7 +874,7 @@ func ColumnInput() interface{}
 
 ---
 
-##### `CommentInput`<sup>Optional</sup> <a name="CommentInput" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.commentInput"></a>
+##### `CommentInput`<sup>Optional</sup> <a name="CommentInput" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.commentInput"></a>
 
 ```go
 func CommentInput() *string
@@ -884,7 +884,7 @@ func CommentInput() *string
 
 ---
 
-##### `CopyGrantsInput`<sup>Optional</sup> <a name="CopyGrantsInput" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.copyGrantsInput"></a>
+##### `CopyGrantsInput`<sup>Optional</sup> <a name="CopyGrantsInput" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.copyGrantsInput"></a>
 
 ```go
 func CopyGrantsInput() interface{}
@@ -894,7 +894,7 @@ func CopyGrantsInput() interface{}
 
 ---
 
-##### `DatabaseInput`<sup>Optional</sup> <a name="DatabaseInput" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.databaseInput"></a>
+##### `DatabaseInput`<sup>Optional</sup> <a name="DatabaseInput" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.databaseInput"></a>
 
 ```go
 func DatabaseInput() *string
@@ -904,7 +904,7 @@ func DatabaseInput() *string
 
 ---
 
-##### `FileFormatInput`<sup>Optional</sup> <a name="FileFormatInput" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.fileFormatInput"></a>
+##### `FileFormatInput`<sup>Optional</sup> <a name="FileFormatInput" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.fileFormatInput"></a>
 
 ```go
 func FileFormatInput() *string
@@ -914,7 +914,7 @@ func FileFormatInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -924,7 +924,7 @@ func IdInput() *string
 
 ---
 
-##### `LocationInput`<sup>Optional</sup> <a name="LocationInput" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.locationInput"></a>
+##### `LocationInput`<sup>Optional</sup> <a name="LocationInput" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.locationInput"></a>
 
 ```go
 func LocationInput() *string
@@ -934,7 +934,7 @@ func LocationInput() *string
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.nameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.nameInput"></a>
 
 ```go
 func NameInput() *string
@@ -944,7 +944,7 @@ func NameInput() *string
 
 ---
 
-##### `PartitionByInput`<sup>Optional</sup> <a name="PartitionByInput" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.partitionByInput"></a>
+##### `PartitionByInput`<sup>Optional</sup> <a name="PartitionByInput" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.partitionByInput"></a>
 
 ```go
 func PartitionByInput() *[]*string
@@ -954,7 +954,7 @@ func PartitionByInput() *[]*string
 
 ---
 
-##### `PatternInput`<sup>Optional</sup> <a name="PatternInput" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.patternInput"></a>
+##### `PatternInput`<sup>Optional</sup> <a name="PatternInput" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.patternInput"></a>
 
 ```go
 func PatternInput() *string
@@ -964,7 +964,7 @@ func PatternInput() *string
 
 ---
 
-##### `RefreshOnCreateInput`<sup>Optional</sup> <a name="RefreshOnCreateInput" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.refreshOnCreateInput"></a>
+##### `RefreshOnCreateInput`<sup>Optional</sup> <a name="RefreshOnCreateInput" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.refreshOnCreateInput"></a>
 
 ```go
 func RefreshOnCreateInput() interface{}
@@ -974,7 +974,7 @@ func RefreshOnCreateInput() interface{}
 
 ---
 
-##### `SchemaInput`<sup>Optional</sup> <a name="SchemaInput" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.schemaInput"></a>
+##### `SchemaInput`<sup>Optional</sup> <a name="SchemaInput" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.schemaInput"></a>
 
 ```go
 func SchemaInput() *string
@@ -984,7 +984,7 @@ func SchemaInput() *string
 
 ---
 
-##### `TableFormatInput`<sup>Optional</sup> <a name="TableFormatInput" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.tableFormatInput"></a>
+##### `TableFormatInput`<sup>Optional</sup> <a name="TableFormatInput" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.tableFormatInput"></a>
 
 ```go
 func TableFormatInput() *string
@@ -994,7 +994,7 @@ func TableFormatInput() *string
 
 ---
 
-##### `TagInput`<sup>Optional</sup> <a name="TagInput" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.tagInput"></a>
+##### `TagInput`<sup>Optional</sup> <a name="TagInput" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.tagInput"></a>
 
 ```go
 func TagInput() interface{}
@@ -1004,7 +1004,7 @@ func TagInput() interface{}
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.timeoutsInput"></a>
 
 ```go
 func TimeoutsInput() interface{}
@@ -1014,7 +1014,7 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `AutoRefresh`<sup>Required</sup> <a name="AutoRefresh" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.autoRefresh"></a>
+##### `AutoRefresh`<sup>Required</sup> <a name="AutoRefresh" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.autoRefresh"></a>
 
 ```go
 func AutoRefresh() interface{}
@@ -1024,7 +1024,7 @@ func AutoRefresh() interface{}
 
 ---
 
-##### `AwsSnsTopic`<sup>Required</sup> <a name="AwsSnsTopic" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.awsSnsTopic"></a>
+##### `AwsSnsTopic`<sup>Required</sup> <a name="AwsSnsTopic" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.awsSnsTopic"></a>
 
 ```go
 func AwsSnsTopic() *string
@@ -1034,7 +1034,7 @@ func AwsSnsTopic() *string
 
 ---
 
-##### `Comment`<sup>Required</sup> <a name="Comment" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.comment"></a>
+##### `Comment`<sup>Required</sup> <a name="Comment" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.comment"></a>
 
 ```go
 func Comment() *string
@@ -1044,7 +1044,7 @@ func Comment() *string
 
 ---
 
-##### `CopyGrants`<sup>Required</sup> <a name="CopyGrants" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.copyGrants"></a>
+##### `CopyGrants`<sup>Required</sup> <a name="CopyGrants" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.copyGrants"></a>
 
 ```go
 func CopyGrants() interface{}
@@ -1054,7 +1054,7 @@ func CopyGrants() interface{}
 
 ---
 
-##### `Database`<sup>Required</sup> <a name="Database" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.database"></a>
+##### `Database`<sup>Required</sup> <a name="Database" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.database"></a>
 
 ```go
 func Database() *string
@@ -1064,7 +1064,7 @@ func Database() *string
 
 ---
 
-##### `FileFormat`<sup>Required</sup> <a name="FileFormat" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.fileFormat"></a>
+##### `FileFormat`<sup>Required</sup> <a name="FileFormat" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.fileFormat"></a>
 
 ```go
 func FileFormat() *string
@@ -1074,7 +1074,7 @@ func FileFormat() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.id"></a>
 
 ```go
 func Id() *string
@@ -1084,7 +1084,7 @@ func Id() *string
 
 ---
 
-##### `Location`<sup>Required</sup> <a name="Location" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.location"></a>
+##### `Location`<sup>Required</sup> <a name="Location" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.location"></a>
 
 ```go
 func Location() *string
@@ -1094,7 +1094,7 @@ func Location() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.name"></a>
 
 ```go
 func Name() *string
@@ -1104,7 +1104,7 @@ func Name() *string
 
 ---
 
-##### `PartitionBy`<sup>Required</sup> <a name="PartitionBy" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.partitionBy"></a>
+##### `PartitionBy`<sup>Required</sup> <a name="PartitionBy" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.partitionBy"></a>
 
 ```go
 func PartitionBy() *[]*string
@@ -1114,7 +1114,7 @@ func PartitionBy() *[]*string
 
 ---
 
-##### `Pattern`<sup>Required</sup> <a name="Pattern" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.pattern"></a>
+##### `Pattern`<sup>Required</sup> <a name="Pattern" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.pattern"></a>
 
 ```go
 func Pattern() *string
@@ -1124,7 +1124,7 @@ func Pattern() *string
 
 ---
 
-##### `RefreshOnCreate`<sup>Required</sup> <a name="RefreshOnCreate" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.refreshOnCreate"></a>
+##### `RefreshOnCreate`<sup>Required</sup> <a name="RefreshOnCreate" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.refreshOnCreate"></a>
 
 ```go
 func RefreshOnCreate() interface{}
@@ -1134,7 +1134,7 @@ func RefreshOnCreate() interface{}
 
 ---
 
-##### `Schema`<sup>Required</sup> <a name="Schema" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.schema"></a>
+##### `Schema`<sup>Required</sup> <a name="Schema" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.schema"></a>
 
 ```go
 func Schema() *string
@@ -1144,7 +1144,7 @@ func Schema() *string
 
 ---
 
-##### `TableFormat`<sup>Required</sup> <a name="TableFormat" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.tableFormat"></a>
+##### `TableFormat`<sup>Required</sup> <a name="TableFormat" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.tableFormat"></a>
 
 ```go
 func TableFormat() *string
@@ -1158,11 +1158,11 @@ func TableFormat() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTable.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-snowflake.externalTable.ExternalTable.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -1174,12 +1174,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### ExternalTableColumn <a name="ExternalTableColumn" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumn"></a>
+### ExternalTableColumn <a name="ExternalTableColumn" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumn"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumn.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externaltable"
 
 &externaltable.ExternalTableColumn {
 	As: *string,
@@ -1192,13 +1192,13 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumn.property.as">As</a></code> | <code>*string</code> | String that specifies the expression for the column. When queried, the column returns results derived from this expression. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumn.property.name">Name</a></code> | <code>*string</code> | Column name. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumn.property.type">Type</a></code> | <code>*string</code> | Column type, e.g. VARIANT. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumn.property.as">As</a></code> | <code>*string</code> | String that specifies the expression for the column. When queried, the column returns results derived from this expression. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumn.property.name">Name</a></code> | <code>*string</code> | Column name. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumn.property.type">Type</a></code> | <code>*string</code> | Column type, e.g. VARIANT. |
 
 ---
 
-##### `As`<sup>Required</sup> <a name="As" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumn.property.as"></a>
+##### `As`<sup>Required</sup> <a name="As" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumn.property.as"></a>
 
 ```go
 As *string
@@ -1208,11 +1208,11 @@ As *string
 
 String that specifies the expression for the column. When queried, the column returns results derived from this expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#as ExternalTable#as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#as ExternalTable#as}
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumn.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumn.property.name"></a>
 
 ```go
 Name *string
@@ -1222,11 +1222,11 @@ Name *string
 
 Column name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#name ExternalTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#name ExternalTable#name}
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumn.property.type"></a>
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumn.property.type"></a>
 
 ```go
 Type *string
@@ -1236,24 +1236,24 @@ Type *string
 
 Column type, e.g. VARIANT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#type ExternalTable#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#type ExternalTable#type}
 
 ---
 
-### ExternalTableConfig <a name="ExternalTableConfig" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig"></a>
+### ExternalTableConfig <a name="ExternalTableConfig" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externaltable"
 
 &externaltable.ExternalTableConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Column: interface{},
 	Database: *string,
@@ -1271,7 +1271,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable
 	RefreshOnCreate: interface{},
 	TableFormat: *string,
 	Tag: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.externalTable.ExternalTableTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.externalTable.ExternalTableTimeouts,
 }
 ```
 
@@ -1279,34 +1279,34 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.column">Column</a></code> | <code>interface{}</code> | column block. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.database">Database</a></code> | <code>*string</code> | The database in which to create the external table. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.fileFormat">FileFormat</a></code> | <code>*string</code> | Specifies the file format for the external table. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.location">Location</a></code> | <code>*string</code> | Specifies a location for the external table, using its FQDN. You can hardcode it (`"@MYDB.MYSCHEMA.MYSTAGE"`), or populate dynamically (`"@${snowflake_stage.mystage.fully_qualified_name}"`). |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the identifier for the external table; |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema in which to create the external table. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.autoRefresh">AutoRefresh</a></code> | <code>interface{}</code> | (Default: `true`) Specifies whether to automatically refresh the external table metadata once, immediately after the external table is created. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.awsSnsTopic">AwsSnsTopic</a></code> | <code>*string</code> | Specifies the aws sns topic for the external table. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the external table. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.copyGrants">CopyGrants</a></code> | <code>interface{}</code> | (Default: `false`) Specifies to retain the access permissions from the original table when an external table is recreated using the CREATE OR REPLACE TABLE variant. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#id ExternalTable#id}. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.partitionBy">PartitionBy</a></code> | <code>*[]*string</code> | Specifies any partition columns to evaluate for the external table. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.pattern">Pattern</a></code> | <code>*string</code> | Specifies the file names and/or paths on the external stage to match. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.refreshOnCreate">RefreshOnCreate</a></code> | <code>interface{}</code> | (Default: `true`) Specifies weather to refresh when an external table is created. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.tableFormat">TableFormat</a></code> | <code>*string</code> | Identifies the external table table type. For now, only "delta" for Delta Lake table format is supported. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.tag">Tag</a></code> | <code>interface{}</code> | tag block. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeouts">ExternalTableTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.column">Column</a></code> | <code>interface{}</code> | column block. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.database">Database</a></code> | <code>*string</code> | The database in which to create the external table. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.fileFormat">FileFormat</a></code> | <code>*string</code> | Specifies the file format for the external table. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.location">Location</a></code> | <code>*string</code> | Specifies a location for the external table, using its FQDN. You can hardcode it (`"@MYDB.MYSCHEMA.MYSTAGE"`), or populate dynamically (`"@${snowflake_stage.mystage.fully_qualified_name}"`). |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the identifier for the external table; |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema in which to create the external table. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.autoRefresh">AutoRefresh</a></code> | <code>interface{}</code> | (Default: `true`) Specifies whether to automatically refresh the external table metadata once, immediately after the external table is created. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.awsSnsTopic">AwsSnsTopic</a></code> | <code>*string</code> | Specifies the aws sns topic for the external table. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the external table. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.copyGrants">CopyGrants</a></code> | <code>interface{}</code> | (Default: `false`) Specifies to retain the access permissions from the original table when an external table is recreated using the CREATE OR REPLACE TABLE variant. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#id ExternalTable#id}. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.partitionBy">PartitionBy</a></code> | <code>*[]*string</code> | Specifies any partition columns to evaluate for the external table. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.pattern">Pattern</a></code> | <code>*string</code> | Specifies the file names and/or paths on the external stage to match. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.refreshOnCreate">RefreshOnCreate</a></code> | <code>interface{}</code> | (Default: `true`) Specifies weather to refresh when an external table is created. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.tableFormat">TableFormat</a></code> | <code>*string</code> | Identifies the external table table type. For now, only "delta" for Delta Lake table format is supported. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.tag">Tag</a></code> | <code>interface{}</code> | tag block. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeouts">ExternalTableTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -1316,7 +1316,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -1326,47 +1326,47 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1376,7 +1376,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Column`<sup>Required</sup> <a name="Column" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.column"></a>
+##### `Column`<sup>Required</sup> <a name="Column" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.column"></a>
 
 ```go
 Column interface{}
@@ -1386,11 +1386,11 @@ Column interface{}
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#column ExternalTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#column ExternalTable#column}
 
 ---
 
-##### `Database`<sup>Required</sup> <a name="Database" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.database"></a>
+##### `Database`<sup>Required</sup> <a name="Database" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.database"></a>
 
 ```go
 Database *string
@@ -1400,11 +1400,11 @@ Database *string
 
 The database in which to create the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#database ExternalTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#database ExternalTable#database}
 
 ---
 
-##### `FileFormat`<sup>Required</sup> <a name="FileFormat" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.fileFormat"></a>
+##### `FileFormat`<sup>Required</sup> <a name="FileFormat" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.fileFormat"></a>
 
 ```go
 FileFormat *string
@@ -1414,11 +1414,11 @@ FileFormat *string
 
 Specifies the file format for the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#file_format ExternalTable#file_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#file_format ExternalTable#file_format}
 
 ---
 
-##### `Location`<sup>Required</sup> <a name="Location" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.location"></a>
+##### `Location`<sup>Required</sup> <a name="Location" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.location"></a>
 
 ```go
 Location *string
@@ -1428,11 +1428,11 @@ Location *string
 
 Specifies a location for the external table, using its FQDN. You can hardcode it (`"@MYDB.MYSCHEMA.MYSTAGE"`), or populate dynamically (`"@${snowflake_stage.mystage.fully_qualified_name}"`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#location ExternalTable#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#location ExternalTable#location}
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.name"></a>
 
 ```go
 Name *string
@@ -1444,11 +1444,11 @@ Specifies the identifier for the external table;
 
 must be unique for the database and schema in which the externalTable is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#name ExternalTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#name ExternalTable#name}
 
 ---
 
-##### `Schema`<sup>Required</sup> <a name="Schema" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.schema"></a>
+##### `Schema`<sup>Required</sup> <a name="Schema" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.schema"></a>
 
 ```go
 Schema *string
@@ -1458,11 +1458,11 @@ Schema *string
 
 The schema in which to create the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#schema ExternalTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#schema ExternalTable#schema}
 
 ---
 
-##### `AutoRefresh`<sup>Optional</sup> <a name="AutoRefresh" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.autoRefresh"></a>
+##### `AutoRefresh`<sup>Optional</sup> <a name="AutoRefresh" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.autoRefresh"></a>
 
 ```go
 AutoRefresh interface{}
@@ -1472,11 +1472,11 @@ AutoRefresh interface{}
 
 (Default: `true`) Specifies whether to automatically refresh the external table metadata once, immediately after the external table is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#auto_refresh ExternalTable#auto_refresh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#auto_refresh ExternalTable#auto_refresh}
 
 ---
 
-##### `AwsSnsTopic`<sup>Optional</sup> <a name="AwsSnsTopic" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.awsSnsTopic"></a>
+##### `AwsSnsTopic`<sup>Optional</sup> <a name="AwsSnsTopic" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.awsSnsTopic"></a>
 
 ```go
 AwsSnsTopic *string
@@ -1486,11 +1486,11 @@ AwsSnsTopic *string
 
 Specifies the aws sns topic for the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#aws_sns_topic ExternalTable#aws_sns_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#aws_sns_topic ExternalTable#aws_sns_topic}
 
 ---
 
-##### `Comment`<sup>Optional</sup> <a name="Comment" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.comment"></a>
+##### `Comment`<sup>Optional</sup> <a name="Comment" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.comment"></a>
 
 ```go
 Comment *string
@@ -1500,11 +1500,11 @@ Comment *string
 
 Specifies a comment for the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#comment ExternalTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#comment ExternalTable#comment}
 
 ---
 
-##### `CopyGrants`<sup>Optional</sup> <a name="CopyGrants" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.copyGrants"></a>
+##### `CopyGrants`<sup>Optional</sup> <a name="CopyGrants" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.copyGrants"></a>
 
 ```go
 CopyGrants interface{}
@@ -1514,11 +1514,11 @@ CopyGrants interface{}
 
 (Default: `false`) Specifies to retain the access permissions from the original table when an external table is recreated using the CREATE OR REPLACE TABLE variant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#copy_grants ExternalTable#copy_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#copy_grants ExternalTable#copy_grants}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1526,14 +1526,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#id ExternalTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#id ExternalTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `PartitionBy`<sup>Optional</sup> <a name="PartitionBy" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.partitionBy"></a>
+##### `PartitionBy`<sup>Optional</sup> <a name="PartitionBy" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.partitionBy"></a>
 
 ```go
 PartitionBy *[]*string
@@ -1543,11 +1543,11 @@ PartitionBy *[]*string
 
 Specifies any partition columns to evaluate for the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#partition_by ExternalTable#partition_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#partition_by ExternalTable#partition_by}
 
 ---
 
-##### `Pattern`<sup>Optional</sup> <a name="Pattern" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.pattern"></a>
+##### `Pattern`<sup>Optional</sup> <a name="Pattern" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.pattern"></a>
 
 ```go
 Pattern *string
@@ -1557,11 +1557,11 @@ Pattern *string
 
 Specifies the file names and/or paths on the external stage to match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#pattern ExternalTable#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#pattern ExternalTable#pattern}
 
 ---
 
-##### `RefreshOnCreate`<sup>Optional</sup> <a name="RefreshOnCreate" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.refreshOnCreate"></a>
+##### `RefreshOnCreate`<sup>Optional</sup> <a name="RefreshOnCreate" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.refreshOnCreate"></a>
 
 ```go
 RefreshOnCreate interface{}
@@ -1571,11 +1571,11 @@ RefreshOnCreate interface{}
 
 (Default: `true`) Specifies weather to refresh when an external table is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#refresh_on_create ExternalTable#refresh_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#refresh_on_create ExternalTable#refresh_on_create}
 
 ---
 
-##### `TableFormat`<sup>Optional</sup> <a name="TableFormat" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.tableFormat"></a>
+##### `TableFormat`<sup>Optional</sup> <a name="TableFormat" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.tableFormat"></a>
 
 ```go
 TableFormat *string
@@ -1585,11 +1585,11 @@ TableFormat *string
 
 Identifies the external table table type. For now, only "delta" for Delta Lake table format is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#table_format ExternalTable#table_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#table_format ExternalTable#table_format}
 
 ---
 
-##### `Tag`<sup>Optional</sup> <a name="Tag" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.tag"></a>
+##### `Tag`<sup>Optional</sup> <a name="Tag" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.tag"></a>
 
 ```go
 Tag interface{}
@@ -1599,30 +1599,30 @@ Tag interface{}
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#tag ExternalTable#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#tag ExternalTable#tag}
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-snowflake.externalTable.ExternalTableConfig.property.timeouts"></a>
 
 ```go
 Timeouts ExternalTableTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeouts">ExternalTableTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeouts">ExternalTableTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#timeouts ExternalTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#timeouts ExternalTable#timeouts}
 
 ---
 
-### ExternalTableTag <a name="ExternalTableTag" id="@cdktf/provider-snowflake.externalTable.ExternalTableTag"></a>
+### ExternalTableTag <a name="ExternalTableTag" id="@cdktn/provider-snowflake.externalTable.ExternalTableTag"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.externalTable.ExternalTableTag.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalTable.ExternalTableTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externaltable"
 
 &externaltable.ExternalTableTag {
 	Name: *string,
@@ -1636,14 +1636,14 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTag.property.name">Name</a></code> | <code>*string</code> | Tag name, e.g. department. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTag.property.value">Value</a></code> | <code>*string</code> | Tag value, e.g. marketing_info. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTag.property.database">Database</a></code> | <code>*string</code> | Name of the database that the tag was created in. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTag.property.schema">Schema</a></code> | <code>*string</code> | Name of the schema that the tag was created in. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTag.property.name">Name</a></code> | <code>*string</code> | Tag name, e.g. department. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTag.property.value">Value</a></code> | <code>*string</code> | Tag value, e.g. marketing_info. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTag.property.database">Database</a></code> | <code>*string</code> | Name of the database that the tag was created in. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTag.property.schema">Schema</a></code> | <code>*string</code> | Name of the schema that the tag was created in. |
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-snowflake.externalTable.ExternalTableTag.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-snowflake.externalTable.ExternalTableTag.property.name"></a>
 
 ```go
 Name *string
@@ -1653,11 +1653,11 @@ Name *string
 
 Tag name, e.g. department.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#name ExternalTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#name ExternalTable#name}
 
 ---
 
-##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-snowflake.externalTable.ExternalTableTag.property.value"></a>
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-snowflake.externalTable.ExternalTableTag.property.value"></a>
 
 ```go
 Value *string
@@ -1667,11 +1667,11 @@ Value *string
 
 Tag value, e.g. marketing_info.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#value ExternalTable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#value ExternalTable#value}
 
 ---
 
-##### `Database`<sup>Optional</sup> <a name="Database" id="@cdktf/provider-snowflake.externalTable.ExternalTableTag.property.database"></a>
+##### `Database`<sup>Optional</sup> <a name="Database" id="@cdktn/provider-snowflake.externalTable.ExternalTableTag.property.database"></a>
 
 ```go
 Database *string
@@ -1681,11 +1681,11 @@ Database *string
 
 Name of the database that the tag was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#database ExternalTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#database ExternalTable#database}
 
 ---
 
-##### `Schema`<sup>Optional</sup> <a name="Schema" id="@cdktf/provider-snowflake.externalTable.ExternalTableTag.property.schema"></a>
+##### `Schema`<sup>Optional</sup> <a name="Schema" id="@cdktn/provider-snowflake.externalTable.ExternalTableTag.property.schema"></a>
 
 ```go
 Schema *string
@@ -1695,16 +1695,16 @@ Schema *string
 
 Name of the schema that the tag was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#schema ExternalTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#schema ExternalTable#schema}
 
 ---
 
-### ExternalTableTimeouts <a name="ExternalTableTimeouts" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeouts"></a>
+### ExternalTableTimeouts <a name="ExternalTableTimeouts" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externaltable"
 
 &externaltable.ExternalTableTimeouts {
 	Create: *string,
@@ -1718,14 +1718,14 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#create ExternalTable#create}. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#delete ExternalTable#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#read ExternalTable#read}. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#update ExternalTable#update}. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#create ExternalTable#create}. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#delete ExternalTable#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#read ExternalTable#read}. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#update ExternalTable#update}. |
 
 ---
 
-##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeouts.property.create"></a>
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeouts.property.create"></a>
 
 ```go
 Create *string
@@ -1733,11 +1733,11 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#create ExternalTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#create ExternalTable#create}.
 
 ---
 
-##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeouts.property.delete"></a>
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeouts.property.delete"></a>
 
 ```go
 Delete *string
@@ -1745,11 +1745,11 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#delete ExternalTable#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#delete ExternalTable#delete}.
 
 ---
 
-##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeouts.property.read"></a>
+##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeouts.property.read"></a>
 
 ```go
 Read *string
@@ -1757,11 +1757,11 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#read ExternalTable#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#read ExternalTable#read}.
 
 ---
 
-##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeouts.property.update"></a>
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeouts.property.update"></a>
 
 ```go
 Update *string
@@ -1769,39 +1769,39 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/external_table#update ExternalTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_table#update ExternalTable#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### ExternalTableColumnList <a name="ExternalTableColumnList" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnList"></a>
+### ExternalTableColumnList <a name="ExternalTableColumnList" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externaltable"
 
 externaltable.NewExternalTableColumnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalTableColumnList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1809,7 +1809,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -1821,15 +1821,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -1839,19 +1839,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1859,13 +1859,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.toString"></a>
 
 ```go
 func ToString() *string
@@ -1875,13 +1875,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.get"></a>
 
 ```go
 func Get(index *f64) ExternalTableColumnOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -1894,13 +1894,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1914,7 +1914,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1924,7 +1924,7 @@ func Fqn() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnList.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnList.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -1935,34 +1935,34 @@ func InternalValue() interface{}
 ---
 
 
-### ExternalTableColumnOutputReference <a name="ExternalTableColumnOutputReference" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference"></a>
+### ExternalTableColumnOutputReference <a name="ExternalTableColumnOutputReference" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externaltable"
 
 externaltable.NewExternalTableColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalTableColumnOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1970,7 +1970,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -1978,7 +1978,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -1990,149 +1990,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -2140,13 +2140,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -2161,19 +2161,19 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.asInput">AsInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.as">As</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.type">Type</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.asInput">AsInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.as">As</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.type">Type</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -2187,7 +2187,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -2197,7 +2197,7 @@ func Fqn() *string
 
 ---
 
-##### `AsInput`<sup>Optional</sup> <a name="AsInput" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.asInput"></a>
+##### `AsInput`<sup>Optional</sup> <a name="AsInput" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.asInput"></a>
 
 ```go
 func AsInput() *string
@@ -2207,7 +2207,7 @@ func AsInput() *string
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.nameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.nameInput"></a>
 
 ```go
 func NameInput() *string
@@ -2217,7 +2217,7 @@ func NameInput() *string
 
 ---
 
-##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.typeInput"></a>
+##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.typeInput"></a>
 
 ```go
 func TypeInput() *string
@@ -2227,7 +2227,7 @@ func TypeInput() *string
 
 ---
 
-##### `As`<sup>Required</sup> <a name="As" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.as"></a>
+##### `As`<sup>Required</sup> <a name="As" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.as"></a>
 
 ```go
 func As() *string
@@ -2237,7 +2237,7 @@ func As() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.name"></a>
 
 ```go
 func Name() *string
@@ -2247,7 +2247,7 @@ func Name() *string
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.type"></a>
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.type"></a>
 
 ```go
 func Type() *string
@@ -2257,7 +2257,7 @@ func Type() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.externalTable.ExternalTableColumnOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -2268,33 +2268,33 @@ func InternalValue() interface{}
 ---
 
 
-### ExternalTableTagList <a name="ExternalTableTagList" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagList"></a>
+### ExternalTableTagList <a name="ExternalTableTagList" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externaltable"
 
 externaltable.NewExternalTableTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalTableTagList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -2302,7 +2302,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -2314,15 +2314,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -2332,19 +2332,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -2352,13 +2352,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagList.toString"></a>
 
 ```go
 func ToString() *string
@@ -2368,13 +2368,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagList.get"></a>
 
 ```go
 func Get(index *f64) ExternalTableTagOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -2387,13 +2387,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -2407,7 +2407,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -2417,7 +2417,7 @@ func Fqn() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagList.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagList.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -2428,34 +2428,34 @@ func InternalValue() interface{}
 ---
 
 
-### ExternalTableTagOutputReference <a name="ExternalTableTagOutputReference" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference"></a>
+### ExternalTableTagOutputReference <a name="ExternalTableTagOutputReference" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externaltable"
 
 externaltable.NewExternalTableTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalTableTagOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -2463,7 +2463,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -2471,7 +2471,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -2483,151 +2483,151 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.resetDatabase">ResetDatabase</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.resetSchema">ResetSchema</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.resetDatabase">ResetDatabase</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.resetSchema">ResetSchema</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -2635,13 +2635,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -2651,13 +2651,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetDatabase` <a name="ResetDatabase" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.resetDatabase"></a>
+##### `ResetDatabase` <a name="ResetDatabase" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.resetDatabase"></a>
 
 ```go
 func ResetDatabase()
 ```
 
-##### `ResetSchema` <a name="ResetSchema" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.resetSchema"></a>
+##### `ResetSchema` <a name="ResetSchema" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.resetSchema"></a>
 
 ```go
 func ResetSchema()
@@ -2668,21 +2668,21 @@ func ResetSchema()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.databaseInput">DatabaseInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.schemaInput">SchemaInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.database">Database</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.schema">Schema</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.databaseInput">DatabaseInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.schemaInput">SchemaInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.database">Database</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.schema">Schema</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -2696,7 +2696,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -2706,7 +2706,7 @@ func Fqn() *string
 
 ---
 
-##### `DatabaseInput`<sup>Optional</sup> <a name="DatabaseInput" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.databaseInput"></a>
+##### `DatabaseInput`<sup>Optional</sup> <a name="DatabaseInput" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.databaseInput"></a>
 
 ```go
 func DatabaseInput() *string
@@ -2716,7 +2716,7 @@ func DatabaseInput() *string
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.nameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.nameInput"></a>
 
 ```go
 func NameInput() *string
@@ -2726,7 +2726,7 @@ func NameInput() *string
 
 ---
 
-##### `SchemaInput`<sup>Optional</sup> <a name="SchemaInput" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.schemaInput"></a>
+##### `SchemaInput`<sup>Optional</sup> <a name="SchemaInput" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.schemaInput"></a>
 
 ```go
 func SchemaInput() *string
@@ -2736,7 +2736,7 @@ func SchemaInput() *string
 
 ---
 
-##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.valueInput"></a>
+##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.valueInput"></a>
 
 ```go
 func ValueInput() *string
@@ -2746,7 +2746,7 @@ func ValueInput() *string
 
 ---
 
-##### `Database`<sup>Required</sup> <a name="Database" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.database"></a>
+##### `Database`<sup>Required</sup> <a name="Database" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.database"></a>
 
 ```go
 func Database() *string
@@ -2756,7 +2756,7 @@ func Database() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.name"></a>
 
 ```go
 func Name() *string
@@ -2766,7 +2766,7 @@ func Name() *string
 
 ---
 
-##### `Schema`<sup>Required</sup> <a name="Schema" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.schema"></a>
+##### `Schema`<sup>Required</sup> <a name="Schema" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.schema"></a>
 
 ```go
 func Schema() *string
@@ -2776,7 +2776,7 @@ func Schema() *string
 
 ---
 
-##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.value"></a>
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.value"></a>
 
 ```go
 func Value() *string
@@ -2786,7 +2786,7 @@ func Value() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.externalTable.ExternalTableTagOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -2797,32 +2797,32 @@ func InternalValue() interface{}
 ---
 
 
-### ExternalTableTimeoutsOutputReference <a name="ExternalTableTimeoutsOutputReference" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference"></a>
+### ExternalTableTimeoutsOutputReference <a name="ExternalTableTimeoutsOutputReference" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externaltable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externaltable"
 
 externaltable.NewExternalTableTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalTableTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -2834,153 +2834,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -2988,13 +2988,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -3004,25 +3004,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resetCreate"></a>
+##### `ResetCreate` <a name="ResetCreate" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resetCreate"></a>
 
 ```go
 func ResetCreate()
 ```
 
-##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resetDelete"></a>
+##### `ResetDelete` <a name="ResetDelete" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resetDelete"></a>
 
 ```go
 func ResetDelete()
 ```
 
-##### `ResetRead` <a name="ResetRead" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resetRead"></a>
+##### `ResetRead` <a name="ResetRead" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resetRead"></a>
 
 ```go
 func ResetRead()
 ```
 
-##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resetUpdate"></a>
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.resetUpdate"></a>
 
 ```go
 func ResetUpdate()
@@ -3033,21 +3033,21 @@ func ResetUpdate()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -3061,7 +3061,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -3071,7 +3071,7 @@ func Fqn() *string
 
 ---
 
-##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.createInput"></a>
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.createInput"></a>
 
 ```go
 func CreateInput() *string
@@ -3081,7 +3081,7 @@ func CreateInput() *string
 
 ---
 
-##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.deleteInput"></a>
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.deleteInput"></a>
 
 ```go
 func DeleteInput() *string
@@ -3091,7 +3091,7 @@ func DeleteInput() *string
 
 ---
 
-##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.readInput"></a>
+##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.readInput"></a>
 
 ```go
 func ReadInput() *string
@@ -3101,7 +3101,7 @@ func ReadInput() *string
 
 ---
 
-##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.updateInput"></a>
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.updateInput"></a>
 
 ```go
 func UpdateInput() *string
@@ -3111,7 +3111,7 @@ func UpdateInput() *string
 
 ---
 
-##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.create"></a>
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.create"></a>
 
 ```go
 func Create() *string
@@ -3121,7 +3121,7 @@ func Create() *string
 
 ---
 
-##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.delete"></a>
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.delete"></a>
 
 ```go
 func Delete() *string
@@ -3131,7 +3131,7 @@ func Delete() *string
 
 ---
 
-##### `Read`<sup>Required</sup> <a name="Read" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.read"></a>
+##### `Read`<sup>Required</sup> <a name="Read" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.read"></a>
 
 ```go
 func Read() *string
@@ -3141,7 +3141,7 @@ func Read() *string
 
 ---
 
-##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.update"></a>
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.update"></a>
 
 ```go
 func Update() *string
@@ -3151,7 +3151,7 @@ func Update() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.externalTable.ExternalTableTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

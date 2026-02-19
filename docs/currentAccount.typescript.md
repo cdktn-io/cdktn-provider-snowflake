@@ -1,28 +1,28 @@
-# `currentAccount` Submodule <a name="`currentAccount` Submodule" id="@cdktf/provider-snowflake.currentAccount"></a>
+# `currentAccount` Submodule <a name="`currentAccount` Submodule" id="@cdktn/provider-snowflake.currentAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### CurrentAccount <a name="CurrentAccount" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount"></a>
+### CurrentAccount <a name="CurrentAccount" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account snowflake_current_account}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account snowflake_current_account}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.Initializer"></a>
 
 ```typescript
-import { currentAccount } from '@cdktf/provider-snowflake'
+import { currentAccount } from '@cdktn/provider-snowflake'
 
 new currentAccount.CurrentAccount(scope: Construct, id: string, config?: CurrentAccountConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig">CurrentAccountConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig">CurrentAccountConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig">CurrentAccountConfig</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig">CurrentAccountConfig</a>
 
 ---
 
@@ -50,159 +50,158 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetAbortDetachedQuery">resetAbortDetachedQuery</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetActivePythonProfiler">resetActivePythonProfiler</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetAllowClientMfaCaching">resetAllowClientMfaCaching</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetAllowIdToken">resetAllowIdToken</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetAuthenticationPolicy">resetAuthenticationPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetAutocommit">resetAutocommit</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetBaseLocationPrefix">resetBaseLocationPrefix</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetBinaryInputFormat">resetBinaryInputFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetBinaryOutputFormat">resetBinaryOutputFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetCatalog">resetCatalog</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetCatalogSync">resetCatalogSync</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientEnableLogInfoStatementParameters">resetClientEnableLogInfoStatementParameters</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientEncryptionKeySize">resetClientEncryptionKeySize</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientMemoryLimit">resetClientMemoryLimit</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientMetadataRequestUseConnectionCtx">resetClientMetadataRequestUseConnectionCtx</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientMetadataUseSessionDatabase">resetClientMetadataUseSessionDatabase</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientPrefetchThreads">resetClientPrefetchThreads</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientResultChunkSize">resetClientResultChunkSize</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientResultColumnCaseInsensitive">resetClientResultColumnCaseInsensitive</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientSessionKeepAlive">resetClientSessionKeepAlive</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientSessionKeepAliveHeartbeatFrequency">resetClientSessionKeepAliveHeartbeatFrequency</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientTimestampTypeMapping">resetClientTimestampTypeMapping</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetCortexEnabledCrossRegion">resetCortexEnabledCrossRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetCortexModelsAllowlist">resetCortexModelsAllowlist</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetCsvTimestampFormat">resetCsvTimestampFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDataRetentionTimeInDays">resetDataRetentionTimeInDays</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDateInputFormat">resetDateInputFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDateOutputFormat">resetDateOutputFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDefaultDdlCollation">resetDefaultDdlCollation</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDefaultNotebookComputePoolCpu">resetDefaultNotebookComputePoolCpu</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDefaultNotebookComputePoolGpu">resetDefaultNotebookComputePoolGpu</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDefaultNullOrdering">resetDefaultNullOrdering</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDefaultStreamlitNotebookWarehouse">resetDefaultStreamlitNotebookWarehouse</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDisableUiDownloadButton">resetDisableUiDownloadButton</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDisableUserPrivilegeGrants">resetDisableUserPrivilegeGrants</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableAutomaticSensitiveDataClassificationLog">resetEnableAutomaticSensitiveDataClassificationLog</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableEgressCostOptimizer">resetEnableEgressCostOptimizer</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableIdentifierFirstLogin">resetEnableIdentifierFirstLogin</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableInternalStagesPrivatelink">resetEnableInternalStagesPrivatelink</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableTriSecretAndRekeyOptOutForImageRepository">resetEnableTriSecretAndRekeyOptOutForImageRepository</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableTriSecretAndRekeyOptOutForSpcsBlockStorage">resetEnableTriSecretAndRekeyOptOutForSpcsBlockStorage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableUnhandledExceptionsReporting">resetEnableUnhandledExceptionsReporting</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableUnloadPhysicalTypeOptimization">resetEnableUnloadPhysicalTypeOptimization</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableUnredactedQuerySyntaxError">resetEnableUnredactedQuerySyntaxError</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableUnredactedSecureObjectError">resetEnableUnredactedSecureObjectError</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnforceNetworkRulesForInternalStages">resetEnforceNetworkRulesForInternalStages</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetErrorOnNondeterministicMerge">resetErrorOnNondeterministicMerge</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetErrorOnNondeterministicUpdate">resetErrorOnNondeterministicUpdate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEventTable">resetEventTable</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetExternalOauthAddPrivilegedRolesToBlockedList">resetExternalOauthAddPrivilegedRolesToBlockedList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetExternalVolume">resetExternalVolume</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetFeaturePolicy">resetFeaturePolicy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetGeographyOutputFormat">resetGeographyOutputFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetGeometryOutputFormat">resetGeometryOutputFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetHybridTableLockTimeout">resetHybridTableLockTimeout</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetInitialReplicationSizeLimitInTb">resetInitialReplicationSizeLimitInTb</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetJdbcTreatDecimalAsInt">resetJdbcTreatDecimalAsInt</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetJdbcTreatTimestampNtzAsUtc">resetJdbcTreatTimestampNtzAsUtc</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetJdbcUseSessionTimezone">resetJdbcUseSessionTimezone</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetJsonIndent">resetJsonIndent</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetJsTreatIntegerAsBigint">resetJsTreatIntegerAsBigint</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetListingAutoFulfillmentReplicationRefreshSchedule">resetListingAutoFulfillmentReplicationRefreshSchedule</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetLockTimeout">resetLockTimeout</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetLogLevel">resetLogLevel</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetMaxConcurrencyLevel">resetMaxConcurrencyLevel</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetMaxDataExtensionTimeInDays">resetMaxDataExtensionTimeInDays</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetMetricLevel">resetMetricLevel</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetMinDataRetentionTimeInDays">resetMinDataRetentionTimeInDays</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetMultiStatementCount">resetMultiStatementCount</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetNetworkPolicy">resetNetworkPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetNoorderSequenceAsDefault">resetNoorderSequenceAsDefault</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetOauthAddPrivilegedRolesToBlockedList">resetOauthAddPrivilegedRolesToBlockedList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetOdbcTreatDecimalAsInt">resetOdbcTreatDecimalAsInt</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetPackagesPolicy">resetPackagesPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetPasswordPolicy">resetPasswordPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetPeriodicDataRekeying">resetPeriodicDataRekeying</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetPipeExecutionPaused">resetPipeExecutionPaused</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetPreventUnloadToInlineUrl">resetPreventUnloadToInlineUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetPreventUnloadToInternalStages">resetPreventUnloadToInternalStages</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetPythonProfilerModules">resetPythonProfilerModules</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetPythonProfilerTargetStage">resetPythonProfilerTargetStage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetQueryTag">resetQueryTag</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetQuotedIdentifiersIgnoreCase">resetQuotedIdentifiersIgnoreCase</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetReplaceInvalidCharacters">resetReplaceInvalidCharacters</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetRequireStorageIntegrationForStageCreation">resetRequireStorageIntegrationForStageCreation</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetRequireStorageIntegrationForStageOperation">resetRequireStorageIntegrationForStageOperation</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetResourceMonitor">resetResourceMonitor</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetRowsPerResultset">resetRowsPerResultset</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetS3StageVpceDnsName">resetS3StageVpceDnsName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetSamlIdentityProvider">resetSamlIdentityProvider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetSearchPath">resetSearchPath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetServerlessTaskMaxStatementSize">resetServerlessTaskMaxStatementSize</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetServerlessTaskMinStatementSize">resetServerlessTaskMinStatementSize</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetSessionPolicy">resetSessionPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetSimulatedDataSharingConsumer">resetSimulatedDataSharingConsumer</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetSsoLoginPage">resetSsoLoginPage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetStatementQueuedTimeoutInSeconds">resetStatementQueuedTimeoutInSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetStatementTimeoutInSeconds">resetStatementTimeoutInSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetStorageSerializationPolicy">resetStorageSerializationPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetStrictJsonOutput">resetStrictJsonOutput</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetSuspendTaskAfterNumFailures">resetSuspendTaskAfterNumFailures</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTaskAutoRetryAttempts">resetTaskAutoRetryAttempts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimeInputFormat">resetTimeInputFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimeOutputFormat">resetTimeOutputFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimeouts">resetTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimestampDayIsAlways24H">resetTimestampDayIsAlways24H</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimestampInputFormat">resetTimestampInputFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimestampLtzOutputFormat">resetTimestampLtzOutputFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimestampNtzOutputFormat">resetTimestampNtzOutputFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimestampOutputFormat">resetTimestampOutputFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimestampTypeMapping">resetTimestampTypeMapping</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimestampTzOutputFormat">resetTimestampTzOutputFormat</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimezone">resetTimezone</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTraceLevel">resetTraceLevel</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTransactionAbortOnError">resetTransactionAbortOnError</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTransactionDefaultIsolationLevel">resetTransactionDefaultIsolationLevel</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTwoDigitCenturyStart">resetTwoDigitCenturyStart</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetUnsupportedDdlAction">resetUnsupportedDdlAction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetUseCachedResult">resetUseCachedResult</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetUserTaskManagedInitialWarehouseSize">resetUserTaskManagedInitialWarehouseSize</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetUserTaskMinimumTriggerIntervalInSeconds">resetUserTaskMinimumTriggerIntervalInSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetUserTaskTimeoutMs">resetUserTaskTimeoutMs</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetWeekOfYearPolicy">resetWeekOfYearPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetWeekStart">resetWeekStart</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetAbortDetachedQuery">resetAbortDetachedQuery</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetActivePythonProfiler">resetActivePythonProfiler</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetAllowClientMfaCaching">resetAllowClientMfaCaching</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetAllowIdToken">resetAllowIdToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetAuthenticationPolicy">resetAuthenticationPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetAutocommit">resetAutocommit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetBaseLocationPrefix">resetBaseLocationPrefix</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetBinaryInputFormat">resetBinaryInputFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetBinaryOutputFormat">resetBinaryOutputFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetCatalog">resetCatalog</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetCatalogSync">resetCatalogSync</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientEnableLogInfoStatementParameters">resetClientEnableLogInfoStatementParameters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientEncryptionKeySize">resetClientEncryptionKeySize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientMemoryLimit">resetClientMemoryLimit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientMetadataRequestUseConnectionCtx">resetClientMetadataRequestUseConnectionCtx</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientMetadataUseSessionDatabase">resetClientMetadataUseSessionDatabase</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientPrefetchThreads">resetClientPrefetchThreads</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientResultChunkSize">resetClientResultChunkSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientResultColumnCaseInsensitive">resetClientResultColumnCaseInsensitive</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientSessionKeepAlive">resetClientSessionKeepAlive</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientSessionKeepAliveHeartbeatFrequency">resetClientSessionKeepAliveHeartbeatFrequency</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientTimestampTypeMapping">resetClientTimestampTypeMapping</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetCortexEnabledCrossRegion">resetCortexEnabledCrossRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetCortexModelsAllowlist">resetCortexModelsAllowlist</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetCsvTimestampFormat">resetCsvTimestampFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDataRetentionTimeInDays">resetDataRetentionTimeInDays</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDateInputFormat">resetDateInputFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDateOutputFormat">resetDateOutputFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDefaultDdlCollation">resetDefaultDdlCollation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDefaultNotebookComputePoolCpu">resetDefaultNotebookComputePoolCpu</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDefaultNotebookComputePoolGpu">resetDefaultNotebookComputePoolGpu</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDefaultNullOrdering">resetDefaultNullOrdering</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDefaultStreamlitNotebookWarehouse">resetDefaultStreamlitNotebookWarehouse</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDisableUiDownloadButton">resetDisableUiDownloadButton</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDisableUserPrivilegeGrants">resetDisableUserPrivilegeGrants</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableAutomaticSensitiveDataClassificationLog">resetEnableAutomaticSensitiveDataClassificationLog</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableEgressCostOptimizer">resetEnableEgressCostOptimizer</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableIdentifierFirstLogin">resetEnableIdentifierFirstLogin</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableInternalStagesPrivatelink">resetEnableInternalStagesPrivatelink</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableTriSecretAndRekeyOptOutForImageRepository">resetEnableTriSecretAndRekeyOptOutForImageRepository</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableTriSecretAndRekeyOptOutForSpcsBlockStorage">resetEnableTriSecretAndRekeyOptOutForSpcsBlockStorage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableUnhandledExceptionsReporting">resetEnableUnhandledExceptionsReporting</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableUnloadPhysicalTypeOptimization">resetEnableUnloadPhysicalTypeOptimization</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableUnredactedQuerySyntaxError">resetEnableUnredactedQuerySyntaxError</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableUnredactedSecureObjectError">resetEnableUnredactedSecureObjectError</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnforceNetworkRulesForInternalStages">resetEnforceNetworkRulesForInternalStages</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetErrorOnNondeterministicMerge">resetErrorOnNondeterministicMerge</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetErrorOnNondeterministicUpdate">resetErrorOnNondeterministicUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEventTable">resetEventTable</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetExternalOauthAddPrivilegedRolesToBlockedList">resetExternalOauthAddPrivilegedRolesToBlockedList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetExternalVolume">resetExternalVolume</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetFeaturePolicy">resetFeaturePolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetGeographyOutputFormat">resetGeographyOutputFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetGeometryOutputFormat">resetGeometryOutputFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetHybridTableLockTimeout">resetHybridTableLockTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetInitialReplicationSizeLimitInTb">resetInitialReplicationSizeLimitInTb</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetJdbcTreatDecimalAsInt">resetJdbcTreatDecimalAsInt</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetJdbcTreatTimestampNtzAsUtc">resetJdbcTreatTimestampNtzAsUtc</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetJdbcUseSessionTimezone">resetJdbcUseSessionTimezone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetJsonIndent">resetJsonIndent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetJsTreatIntegerAsBigint">resetJsTreatIntegerAsBigint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetListingAutoFulfillmentReplicationRefreshSchedule">resetListingAutoFulfillmentReplicationRefreshSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetLockTimeout">resetLockTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetLogLevel">resetLogLevel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetMaxConcurrencyLevel">resetMaxConcurrencyLevel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetMaxDataExtensionTimeInDays">resetMaxDataExtensionTimeInDays</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetMetricLevel">resetMetricLevel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetMinDataRetentionTimeInDays">resetMinDataRetentionTimeInDays</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetMultiStatementCount">resetMultiStatementCount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetNetworkPolicy">resetNetworkPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetNoorderSequenceAsDefault">resetNoorderSequenceAsDefault</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetOauthAddPrivilegedRolesToBlockedList">resetOauthAddPrivilegedRolesToBlockedList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetOdbcTreatDecimalAsInt">resetOdbcTreatDecimalAsInt</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetPackagesPolicy">resetPackagesPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetPasswordPolicy">resetPasswordPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetPeriodicDataRekeying">resetPeriodicDataRekeying</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetPipeExecutionPaused">resetPipeExecutionPaused</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetPreventUnloadToInlineUrl">resetPreventUnloadToInlineUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetPreventUnloadToInternalStages">resetPreventUnloadToInternalStages</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetPythonProfilerModules">resetPythonProfilerModules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetPythonProfilerTargetStage">resetPythonProfilerTargetStage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetQueryTag">resetQueryTag</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetQuotedIdentifiersIgnoreCase">resetQuotedIdentifiersIgnoreCase</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetReplaceInvalidCharacters">resetReplaceInvalidCharacters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetRequireStorageIntegrationForStageCreation">resetRequireStorageIntegrationForStageCreation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetRequireStorageIntegrationForStageOperation">resetRequireStorageIntegrationForStageOperation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetResourceMonitor">resetResourceMonitor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetRowsPerResultset">resetRowsPerResultset</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetS3StageVpceDnsName">resetS3StageVpceDnsName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetSearchPath">resetSearchPath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetServerlessTaskMaxStatementSize">resetServerlessTaskMaxStatementSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetServerlessTaskMinStatementSize">resetServerlessTaskMinStatementSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetSessionPolicy">resetSessionPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetSimulatedDataSharingConsumer">resetSimulatedDataSharingConsumer</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetSsoLoginPage">resetSsoLoginPage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetStatementQueuedTimeoutInSeconds">resetStatementQueuedTimeoutInSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetStatementTimeoutInSeconds">resetStatementTimeoutInSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetStorageSerializationPolicy">resetStorageSerializationPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetStrictJsonOutput">resetStrictJsonOutput</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetSuspendTaskAfterNumFailures">resetSuspendTaskAfterNumFailures</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTaskAutoRetryAttempts">resetTaskAutoRetryAttempts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimeInputFormat">resetTimeInputFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimeOutputFormat">resetTimeOutputFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimestampDayIsAlways24H">resetTimestampDayIsAlways24H</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimestampInputFormat">resetTimestampInputFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimestampLtzOutputFormat">resetTimestampLtzOutputFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimestampNtzOutputFormat">resetTimestampNtzOutputFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimestampOutputFormat">resetTimestampOutputFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimestampTypeMapping">resetTimestampTypeMapping</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimestampTzOutputFormat">resetTimestampTzOutputFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimezone">resetTimezone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTraceLevel">resetTraceLevel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTransactionAbortOnError">resetTransactionAbortOnError</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTransactionDefaultIsolationLevel">resetTransactionDefaultIsolationLevel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTwoDigitCenturyStart">resetTwoDigitCenturyStart</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetUnsupportedDdlAction">resetUnsupportedDdlAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetUseCachedResult">resetUseCachedResult</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetUserTaskManagedInitialWarehouseSize">resetUserTaskManagedInitialWarehouseSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetUserTaskMinimumTriggerIntervalInSeconds">resetUserTaskMinimumTriggerIntervalInSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetUserTaskTimeoutMs">resetUserTaskTimeoutMs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetWeekOfYearPolicy">resetWeekOfYearPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetWeekStart">resetWeekStart</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.toString"></a>
 
 ```typescript
 public toString(): string
@@ -210,25 +209,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -236,7 +235,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -244,7 +243,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -252,19 +251,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -272,7 +271,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -280,7 +279,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -288,151 +287,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -442,7 +441,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -450,7 +449,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -458,7 +457,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -466,7 +465,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -474,7 +473,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -482,7 +481,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -490,763 +489,757 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.putTimeouts"></a>
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.putTimeouts"></a>
 
 ```typescript
 public putTimeouts(value: CurrentAccountTimeouts): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts">CurrentAccountTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeouts">CurrentAccountTimeouts</a>
 
 ---
 
-##### `resetAbortDetachedQuery` <a name="resetAbortDetachedQuery" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetAbortDetachedQuery"></a>
+##### `resetAbortDetachedQuery` <a name="resetAbortDetachedQuery" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetAbortDetachedQuery"></a>
 
 ```typescript
 public resetAbortDetachedQuery(): void
 ```
 
-##### `resetActivePythonProfiler` <a name="resetActivePythonProfiler" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetActivePythonProfiler"></a>
+##### `resetActivePythonProfiler` <a name="resetActivePythonProfiler" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetActivePythonProfiler"></a>
 
 ```typescript
 public resetActivePythonProfiler(): void
 ```
 
-##### `resetAllowClientMfaCaching` <a name="resetAllowClientMfaCaching" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetAllowClientMfaCaching"></a>
+##### `resetAllowClientMfaCaching` <a name="resetAllowClientMfaCaching" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetAllowClientMfaCaching"></a>
 
 ```typescript
 public resetAllowClientMfaCaching(): void
 ```
 
-##### `resetAllowIdToken` <a name="resetAllowIdToken" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetAllowIdToken"></a>
+##### `resetAllowIdToken` <a name="resetAllowIdToken" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetAllowIdToken"></a>
 
 ```typescript
 public resetAllowIdToken(): void
 ```
 
-##### `resetAuthenticationPolicy` <a name="resetAuthenticationPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetAuthenticationPolicy"></a>
+##### `resetAuthenticationPolicy` <a name="resetAuthenticationPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetAuthenticationPolicy"></a>
 
 ```typescript
 public resetAuthenticationPolicy(): void
 ```
 
-##### `resetAutocommit` <a name="resetAutocommit" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetAutocommit"></a>
+##### `resetAutocommit` <a name="resetAutocommit" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetAutocommit"></a>
 
 ```typescript
 public resetAutocommit(): void
 ```
 
-##### `resetBaseLocationPrefix` <a name="resetBaseLocationPrefix" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetBaseLocationPrefix"></a>
+##### `resetBaseLocationPrefix` <a name="resetBaseLocationPrefix" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetBaseLocationPrefix"></a>
 
 ```typescript
 public resetBaseLocationPrefix(): void
 ```
 
-##### `resetBinaryInputFormat` <a name="resetBinaryInputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetBinaryInputFormat"></a>
+##### `resetBinaryInputFormat` <a name="resetBinaryInputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetBinaryInputFormat"></a>
 
 ```typescript
 public resetBinaryInputFormat(): void
 ```
 
-##### `resetBinaryOutputFormat` <a name="resetBinaryOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetBinaryOutputFormat"></a>
+##### `resetBinaryOutputFormat` <a name="resetBinaryOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetBinaryOutputFormat"></a>
 
 ```typescript
 public resetBinaryOutputFormat(): void
 ```
 
-##### `resetCatalog` <a name="resetCatalog" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetCatalog"></a>
+##### `resetCatalog` <a name="resetCatalog" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetCatalog"></a>
 
 ```typescript
 public resetCatalog(): void
 ```
 
-##### `resetCatalogSync` <a name="resetCatalogSync" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetCatalogSync"></a>
+##### `resetCatalogSync` <a name="resetCatalogSync" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetCatalogSync"></a>
 
 ```typescript
 public resetCatalogSync(): void
 ```
 
-##### `resetClientEnableLogInfoStatementParameters` <a name="resetClientEnableLogInfoStatementParameters" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientEnableLogInfoStatementParameters"></a>
+##### `resetClientEnableLogInfoStatementParameters` <a name="resetClientEnableLogInfoStatementParameters" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientEnableLogInfoStatementParameters"></a>
 
 ```typescript
 public resetClientEnableLogInfoStatementParameters(): void
 ```
 
-##### `resetClientEncryptionKeySize` <a name="resetClientEncryptionKeySize" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientEncryptionKeySize"></a>
+##### `resetClientEncryptionKeySize` <a name="resetClientEncryptionKeySize" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientEncryptionKeySize"></a>
 
 ```typescript
 public resetClientEncryptionKeySize(): void
 ```
 
-##### `resetClientMemoryLimit` <a name="resetClientMemoryLimit" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientMemoryLimit"></a>
+##### `resetClientMemoryLimit` <a name="resetClientMemoryLimit" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientMemoryLimit"></a>
 
 ```typescript
 public resetClientMemoryLimit(): void
 ```
 
-##### `resetClientMetadataRequestUseConnectionCtx` <a name="resetClientMetadataRequestUseConnectionCtx" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientMetadataRequestUseConnectionCtx"></a>
+##### `resetClientMetadataRequestUseConnectionCtx` <a name="resetClientMetadataRequestUseConnectionCtx" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientMetadataRequestUseConnectionCtx"></a>
 
 ```typescript
 public resetClientMetadataRequestUseConnectionCtx(): void
 ```
 
-##### `resetClientMetadataUseSessionDatabase` <a name="resetClientMetadataUseSessionDatabase" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientMetadataUseSessionDatabase"></a>
+##### `resetClientMetadataUseSessionDatabase` <a name="resetClientMetadataUseSessionDatabase" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientMetadataUseSessionDatabase"></a>
 
 ```typescript
 public resetClientMetadataUseSessionDatabase(): void
 ```
 
-##### `resetClientPrefetchThreads` <a name="resetClientPrefetchThreads" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientPrefetchThreads"></a>
+##### `resetClientPrefetchThreads` <a name="resetClientPrefetchThreads" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientPrefetchThreads"></a>
 
 ```typescript
 public resetClientPrefetchThreads(): void
 ```
 
-##### `resetClientResultChunkSize` <a name="resetClientResultChunkSize" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientResultChunkSize"></a>
+##### `resetClientResultChunkSize` <a name="resetClientResultChunkSize" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientResultChunkSize"></a>
 
 ```typescript
 public resetClientResultChunkSize(): void
 ```
 
-##### `resetClientResultColumnCaseInsensitive` <a name="resetClientResultColumnCaseInsensitive" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientResultColumnCaseInsensitive"></a>
+##### `resetClientResultColumnCaseInsensitive` <a name="resetClientResultColumnCaseInsensitive" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientResultColumnCaseInsensitive"></a>
 
 ```typescript
 public resetClientResultColumnCaseInsensitive(): void
 ```
 
-##### `resetClientSessionKeepAlive` <a name="resetClientSessionKeepAlive" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientSessionKeepAlive"></a>
+##### `resetClientSessionKeepAlive` <a name="resetClientSessionKeepAlive" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientSessionKeepAlive"></a>
 
 ```typescript
 public resetClientSessionKeepAlive(): void
 ```
 
-##### `resetClientSessionKeepAliveHeartbeatFrequency` <a name="resetClientSessionKeepAliveHeartbeatFrequency" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientSessionKeepAliveHeartbeatFrequency"></a>
+##### `resetClientSessionKeepAliveHeartbeatFrequency` <a name="resetClientSessionKeepAliveHeartbeatFrequency" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientSessionKeepAliveHeartbeatFrequency"></a>
 
 ```typescript
 public resetClientSessionKeepAliveHeartbeatFrequency(): void
 ```
 
-##### `resetClientTimestampTypeMapping` <a name="resetClientTimestampTypeMapping" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetClientTimestampTypeMapping"></a>
+##### `resetClientTimestampTypeMapping` <a name="resetClientTimestampTypeMapping" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetClientTimestampTypeMapping"></a>
 
 ```typescript
 public resetClientTimestampTypeMapping(): void
 ```
 
-##### `resetCortexEnabledCrossRegion` <a name="resetCortexEnabledCrossRegion" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetCortexEnabledCrossRegion"></a>
+##### `resetCortexEnabledCrossRegion` <a name="resetCortexEnabledCrossRegion" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetCortexEnabledCrossRegion"></a>
 
 ```typescript
 public resetCortexEnabledCrossRegion(): void
 ```
 
-##### `resetCortexModelsAllowlist` <a name="resetCortexModelsAllowlist" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetCortexModelsAllowlist"></a>
+##### `resetCortexModelsAllowlist` <a name="resetCortexModelsAllowlist" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetCortexModelsAllowlist"></a>
 
 ```typescript
 public resetCortexModelsAllowlist(): void
 ```
 
-##### `resetCsvTimestampFormat` <a name="resetCsvTimestampFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetCsvTimestampFormat"></a>
+##### `resetCsvTimestampFormat` <a name="resetCsvTimestampFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetCsvTimestampFormat"></a>
 
 ```typescript
 public resetCsvTimestampFormat(): void
 ```
 
-##### `resetDataRetentionTimeInDays` <a name="resetDataRetentionTimeInDays" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDataRetentionTimeInDays"></a>
+##### `resetDataRetentionTimeInDays` <a name="resetDataRetentionTimeInDays" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDataRetentionTimeInDays"></a>
 
 ```typescript
 public resetDataRetentionTimeInDays(): void
 ```
 
-##### `resetDateInputFormat` <a name="resetDateInputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDateInputFormat"></a>
+##### `resetDateInputFormat` <a name="resetDateInputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDateInputFormat"></a>
 
 ```typescript
 public resetDateInputFormat(): void
 ```
 
-##### `resetDateOutputFormat` <a name="resetDateOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDateOutputFormat"></a>
+##### `resetDateOutputFormat` <a name="resetDateOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDateOutputFormat"></a>
 
 ```typescript
 public resetDateOutputFormat(): void
 ```
 
-##### `resetDefaultDdlCollation` <a name="resetDefaultDdlCollation" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDefaultDdlCollation"></a>
+##### `resetDefaultDdlCollation` <a name="resetDefaultDdlCollation" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDefaultDdlCollation"></a>
 
 ```typescript
 public resetDefaultDdlCollation(): void
 ```
 
-##### `resetDefaultNotebookComputePoolCpu` <a name="resetDefaultNotebookComputePoolCpu" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDefaultNotebookComputePoolCpu"></a>
+##### `resetDefaultNotebookComputePoolCpu` <a name="resetDefaultNotebookComputePoolCpu" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDefaultNotebookComputePoolCpu"></a>
 
 ```typescript
 public resetDefaultNotebookComputePoolCpu(): void
 ```
 
-##### `resetDefaultNotebookComputePoolGpu` <a name="resetDefaultNotebookComputePoolGpu" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDefaultNotebookComputePoolGpu"></a>
+##### `resetDefaultNotebookComputePoolGpu` <a name="resetDefaultNotebookComputePoolGpu" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDefaultNotebookComputePoolGpu"></a>
 
 ```typescript
 public resetDefaultNotebookComputePoolGpu(): void
 ```
 
-##### `resetDefaultNullOrdering` <a name="resetDefaultNullOrdering" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDefaultNullOrdering"></a>
+##### `resetDefaultNullOrdering` <a name="resetDefaultNullOrdering" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDefaultNullOrdering"></a>
 
 ```typescript
 public resetDefaultNullOrdering(): void
 ```
 
-##### `resetDefaultStreamlitNotebookWarehouse` <a name="resetDefaultStreamlitNotebookWarehouse" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDefaultStreamlitNotebookWarehouse"></a>
+##### `resetDefaultStreamlitNotebookWarehouse` <a name="resetDefaultStreamlitNotebookWarehouse" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDefaultStreamlitNotebookWarehouse"></a>
 
 ```typescript
 public resetDefaultStreamlitNotebookWarehouse(): void
 ```
 
-##### `resetDisableUiDownloadButton` <a name="resetDisableUiDownloadButton" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDisableUiDownloadButton"></a>
+##### `resetDisableUiDownloadButton` <a name="resetDisableUiDownloadButton" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDisableUiDownloadButton"></a>
 
 ```typescript
 public resetDisableUiDownloadButton(): void
 ```
 
-##### `resetDisableUserPrivilegeGrants` <a name="resetDisableUserPrivilegeGrants" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetDisableUserPrivilegeGrants"></a>
+##### `resetDisableUserPrivilegeGrants` <a name="resetDisableUserPrivilegeGrants" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetDisableUserPrivilegeGrants"></a>
 
 ```typescript
 public resetDisableUserPrivilegeGrants(): void
 ```
 
-##### `resetEnableAutomaticSensitiveDataClassificationLog` <a name="resetEnableAutomaticSensitiveDataClassificationLog" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableAutomaticSensitiveDataClassificationLog"></a>
+##### `resetEnableAutomaticSensitiveDataClassificationLog` <a name="resetEnableAutomaticSensitiveDataClassificationLog" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableAutomaticSensitiveDataClassificationLog"></a>
 
 ```typescript
 public resetEnableAutomaticSensitiveDataClassificationLog(): void
 ```
 
-##### `resetEnableEgressCostOptimizer` <a name="resetEnableEgressCostOptimizer" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableEgressCostOptimizer"></a>
+##### `resetEnableEgressCostOptimizer` <a name="resetEnableEgressCostOptimizer" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableEgressCostOptimizer"></a>
 
 ```typescript
 public resetEnableEgressCostOptimizer(): void
 ```
 
-##### `resetEnableIdentifierFirstLogin` <a name="resetEnableIdentifierFirstLogin" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableIdentifierFirstLogin"></a>
+##### `resetEnableIdentifierFirstLogin` <a name="resetEnableIdentifierFirstLogin" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableIdentifierFirstLogin"></a>
 
 ```typescript
 public resetEnableIdentifierFirstLogin(): void
 ```
 
-##### `resetEnableInternalStagesPrivatelink` <a name="resetEnableInternalStagesPrivatelink" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableInternalStagesPrivatelink"></a>
+##### `resetEnableInternalStagesPrivatelink` <a name="resetEnableInternalStagesPrivatelink" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableInternalStagesPrivatelink"></a>
 
 ```typescript
 public resetEnableInternalStagesPrivatelink(): void
 ```
 
-##### `resetEnableTriSecretAndRekeyOptOutForImageRepository` <a name="resetEnableTriSecretAndRekeyOptOutForImageRepository" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableTriSecretAndRekeyOptOutForImageRepository"></a>
+##### `resetEnableTriSecretAndRekeyOptOutForImageRepository` <a name="resetEnableTriSecretAndRekeyOptOutForImageRepository" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableTriSecretAndRekeyOptOutForImageRepository"></a>
 
 ```typescript
 public resetEnableTriSecretAndRekeyOptOutForImageRepository(): void
 ```
 
-##### `resetEnableTriSecretAndRekeyOptOutForSpcsBlockStorage` <a name="resetEnableTriSecretAndRekeyOptOutForSpcsBlockStorage" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableTriSecretAndRekeyOptOutForSpcsBlockStorage"></a>
+##### `resetEnableTriSecretAndRekeyOptOutForSpcsBlockStorage` <a name="resetEnableTriSecretAndRekeyOptOutForSpcsBlockStorage" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableTriSecretAndRekeyOptOutForSpcsBlockStorage"></a>
 
 ```typescript
 public resetEnableTriSecretAndRekeyOptOutForSpcsBlockStorage(): void
 ```
 
-##### `resetEnableUnhandledExceptionsReporting` <a name="resetEnableUnhandledExceptionsReporting" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableUnhandledExceptionsReporting"></a>
+##### `resetEnableUnhandledExceptionsReporting` <a name="resetEnableUnhandledExceptionsReporting" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableUnhandledExceptionsReporting"></a>
 
 ```typescript
 public resetEnableUnhandledExceptionsReporting(): void
 ```
 
-##### `resetEnableUnloadPhysicalTypeOptimization` <a name="resetEnableUnloadPhysicalTypeOptimization" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableUnloadPhysicalTypeOptimization"></a>
+##### `resetEnableUnloadPhysicalTypeOptimization` <a name="resetEnableUnloadPhysicalTypeOptimization" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableUnloadPhysicalTypeOptimization"></a>
 
 ```typescript
 public resetEnableUnloadPhysicalTypeOptimization(): void
 ```
 
-##### `resetEnableUnredactedQuerySyntaxError` <a name="resetEnableUnredactedQuerySyntaxError" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableUnredactedQuerySyntaxError"></a>
+##### `resetEnableUnredactedQuerySyntaxError` <a name="resetEnableUnredactedQuerySyntaxError" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableUnredactedQuerySyntaxError"></a>
 
 ```typescript
 public resetEnableUnredactedQuerySyntaxError(): void
 ```
 
-##### `resetEnableUnredactedSecureObjectError` <a name="resetEnableUnredactedSecureObjectError" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnableUnredactedSecureObjectError"></a>
+##### `resetEnableUnredactedSecureObjectError` <a name="resetEnableUnredactedSecureObjectError" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnableUnredactedSecureObjectError"></a>
 
 ```typescript
 public resetEnableUnredactedSecureObjectError(): void
 ```
 
-##### `resetEnforceNetworkRulesForInternalStages` <a name="resetEnforceNetworkRulesForInternalStages" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEnforceNetworkRulesForInternalStages"></a>
+##### `resetEnforceNetworkRulesForInternalStages` <a name="resetEnforceNetworkRulesForInternalStages" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEnforceNetworkRulesForInternalStages"></a>
 
 ```typescript
 public resetEnforceNetworkRulesForInternalStages(): void
 ```
 
-##### `resetErrorOnNondeterministicMerge` <a name="resetErrorOnNondeterministicMerge" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetErrorOnNondeterministicMerge"></a>
+##### `resetErrorOnNondeterministicMerge` <a name="resetErrorOnNondeterministicMerge" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetErrorOnNondeterministicMerge"></a>
 
 ```typescript
 public resetErrorOnNondeterministicMerge(): void
 ```
 
-##### `resetErrorOnNondeterministicUpdate` <a name="resetErrorOnNondeterministicUpdate" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetErrorOnNondeterministicUpdate"></a>
+##### `resetErrorOnNondeterministicUpdate` <a name="resetErrorOnNondeterministicUpdate" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetErrorOnNondeterministicUpdate"></a>
 
 ```typescript
 public resetErrorOnNondeterministicUpdate(): void
 ```
 
-##### `resetEventTable` <a name="resetEventTable" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetEventTable"></a>
+##### `resetEventTable` <a name="resetEventTable" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetEventTable"></a>
 
 ```typescript
 public resetEventTable(): void
 ```
 
-##### `resetExternalOauthAddPrivilegedRolesToBlockedList` <a name="resetExternalOauthAddPrivilegedRolesToBlockedList" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetExternalOauthAddPrivilegedRolesToBlockedList"></a>
+##### `resetExternalOauthAddPrivilegedRolesToBlockedList` <a name="resetExternalOauthAddPrivilegedRolesToBlockedList" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetExternalOauthAddPrivilegedRolesToBlockedList"></a>
 
 ```typescript
 public resetExternalOauthAddPrivilegedRolesToBlockedList(): void
 ```
 
-##### `resetExternalVolume` <a name="resetExternalVolume" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetExternalVolume"></a>
+##### `resetExternalVolume` <a name="resetExternalVolume" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetExternalVolume"></a>
 
 ```typescript
 public resetExternalVolume(): void
 ```
 
-##### `resetFeaturePolicy` <a name="resetFeaturePolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetFeaturePolicy"></a>
+##### `resetFeaturePolicy` <a name="resetFeaturePolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetFeaturePolicy"></a>
 
 ```typescript
 public resetFeaturePolicy(): void
 ```
 
-##### `resetGeographyOutputFormat` <a name="resetGeographyOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetGeographyOutputFormat"></a>
+##### `resetGeographyOutputFormat` <a name="resetGeographyOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetGeographyOutputFormat"></a>
 
 ```typescript
 public resetGeographyOutputFormat(): void
 ```
 
-##### `resetGeometryOutputFormat` <a name="resetGeometryOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetGeometryOutputFormat"></a>
+##### `resetGeometryOutputFormat` <a name="resetGeometryOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetGeometryOutputFormat"></a>
 
 ```typescript
 public resetGeometryOutputFormat(): void
 ```
 
-##### `resetHybridTableLockTimeout` <a name="resetHybridTableLockTimeout" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetHybridTableLockTimeout"></a>
+##### `resetHybridTableLockTimeout` <a name="resetHybridTableLockTimeout" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetHybridTableLockTimeout"></a>
 
 ```typescript
 public resetHybridTableLockTimeout(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetInitialReplicationSizeLimitInTb` <a name="resetInitialReplicationSizeLimitInTb" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetInitialReplicationSizeLimitInTb"></a>
+##### `resetInitialReplicationSizeLimitInTb` <a name="resetInitialReplicationSizeLimitInTb" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetInitialReplicationSizeLimitInTb"></a>
 
 ```typescript
 public resetInitialReplicationSizeLimitInTb(): void
 ```
 
-##### `resetJdbcTreatDecimalAsInt` <a name="resetJdbcTreatDecimalAsInt" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetJdbcTreatDecimalAsInt"></a>
+##### `resetJdbcTreatDecimalAsInt` <a name="resetJdbcTreatDecimalAsInt" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetJdbcTreatDecimalAsInt"></a>
 
 ```typescript
 public resetJdbcTreatDecimalAsInt(): void
 ```
 
-##### `resetJdbcTreatTimestampNtzAsUtc` <a name="resetJdbcTreatTimestampNtzAsUtc" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetJdbcTreatTimestampNtzAsUtc"></a>
+##### `resetJdbcTreatTimestampNtzAsUtc` <a name="resetJdbcTreatTimestampNtzAsUtc" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetJdbcTreatTimestampNtzAsUtc"></a>
 
 ```typescript
 public resetJdbcTreatTimestampNtzAsUtc(): void
 ```
 
-##### `resetJdbcUseSessionTimezone` <a name="resetJdbcUseSessionTimezone" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetJdbcUseSessionTimezone"></a>
+##### `resetJdbcUseSessionTimezone` <a name="resetJdbcUseSessionTimezone" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetJdbcUseSessionTimezone"></a>
 
 ```typescript
 public resetJdbcUseSessionTimezone(): void
 ```
 
-##### `resetJsonIndent` <a name="resetJsonIndent" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetJsonIndent"></a>
+##### `resetJsonIndent` <a name="resetJsonIndent" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetJsonIndent"></a>
 
 ```typescript
 public resetJsonIndent(): void
 ```
 
-##### `resetJsTreatIntegerAsBigint` <a name="resetJsTreatIntegerAsBigint" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetJsTreatIntegerAsBigint"></a>
+##### `resetJsTreatIntegerAsBigint` <a name="resetJsTreatIntegerAsBigint" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetJsTreatIntegerAsBigint"></a>
 
 ```typescript
 public resetJsTreatIntegerAsBigint(): void
 ```
 
-##### `resetListingAutoFulfillmentReplicationRefreshSchedule` <a name="resetListingAutoFulfillmentReplicationRefreshSchedule" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetListingAutoFulfillmentReplicationRefreshSchedule"></a>
+##### `resetListingAutoFulfillmentReplicationRefreshSchedule` <a name="resetListingAutoFulfillmentReplicationRefreshSchedule" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetListingAutoFulfillmentReplicationRefreshSchedule"></a>
 
 ```typescript
 public resetListingAutoFulfillmentReplicationRefreshSchedule(): void
 ```
 
-##### `resetLockTimeout` <a name="resetLockTimeout" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetLockTimeout"></a>
+##### `resetLockTimeout` <a name="resetLockTimeout" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetLockTimeout"></a>
 
 ```typescript
 public resetLockTimeout(): void
 ```
 
-##### `resetLogLevel` <a name="resetLogLevel" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetLogLevel"></a>
+##### `resetLogLevel` <a name="resetLogLevel" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetLogLevel"></a>
 
 ```typescript
 public resetLogLevel(): void
 ```
 
-##### `resetMaxConcurrencyLevel` <a name="resetMaxConcurrencyLevel" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetMaxConcurrencyLevel"></a>
+##### `resetMaxConcurrencyLevel` <a name="resetMaxConcurrencyLevel" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetMaxConcurrencyLevel"></a>
 
 ```typescript
 public resetMaxConcurrencyLevel(): void
 ```
 
-##### `resetMaxDataExtensionTimeInDays` <a name="resetMaxDataExtensionTimeInDays" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetMaxDataExtensionTimeInDays"></a>
+##### `resetMaxDataExtensionTimeInDays` <a name="resetMaxDataExtensionTimeInDays" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetMaxDataExtensionTimeInDays"></a>
 
 ```typescript
 public resetMaxDataExtensionTimeInDays(): void
 ```
 
-##### `resetMetricLevel` <a name="resetMetricLevel" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetMetricLevel"></a>
+##### `resetMetricLevel` <a name="resetMetricLevel" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetMetricLevel"></a>
 
 ```typescript
 public resetMetricLevel(): void
 ```
 
-##### `resetMinDataRetentionTimeInDays` <a name="resetMinDataRetentionTimeInDays" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetMinDataRetentionTimeInDays"></a>
+##### `resetMinDataRetentionTimeInDays` <a name="resetMinDataRetentionTimeInDays" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetMinDataRetentionTimeInDays"></a>
 
 ```typescript
 public resetMinDataRetentionTimeInDays(): void
 ```
 
-##### `resetMultiStatementCount` <a name="resetMultiStatementCount" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetMultiStatementCount"></a>
+##### `resetMultiStatementCount` <a name="resetMultiStatementCount" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetMultiStatementCount"></a>
 
 ```typescript
 public resetMultiStatementCount(): void
 ```
 
-##### `resetNetworkPolicy` <a name="resetNetworkPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetNetworkPolicy"></a>
+##### `resetNetworkPolicy` <a name="resetNetworkPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetNetworkPolicy"></a>
 
 ```typescript
 public resetNetworkPolicy(): void
 ```
 
-##### `resetNoorderSequenceAsDefault` <a name="resetNoorderSequenceAsDefault" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetNoorderSequenceAsDefault"></a>
+##### `resetNoorderSequenceAsDefault` <a name="resetNoorderSequenceAsDefault" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetNoorderSequenceAsDefault"></a>
 
 ```typescript
 public resetNoorderSequenceAsDefault(): void
 ```
 
-##### `resetOauthAddPrivilegedRolesToBlockedList` <a name="resetOauthAddPrivilegedRolesToBlockedList" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetOauthAddPrivilegedRolesToBlockedList"></a>
+##### `resetOauthAddPrivilegedRolesToBlockedList` <a name="resetOauthAddPrivilegedRolesToBlockedList" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetOauthAddPrivilegedRolesToBlockedList"></a>
 
 ```typescript
 public resetOauthAddPrivilegedRolesToBlockedList(): void
 ```
 
-##### `resetOdbcTreatDecimalAsInt` <a name="resetOdbcTreatDecimalAsInt" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetOdbcTreatDecimalAsInt"></a>
+##### `resetOdbcTreatDecimalAsInt` <a name="resetOdbcTreatDecimalAsInt" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetOdbcTreatDecimalAsInt"></a>
 
 ```typescript
 public resetOdbcTreatDecimalAsInt(): void
 ```
 
-##### `resetPackagesPolicy` <a name="resetPackagesPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetPackagesPolicy"></a>
+##### `resetPackagesPolicy` <a name="resetPackagesPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetPackagesPolicy"></a>
 
 ```typescript
 public resetPackagesPolicy(): void
 ```
 
-##### `resetPasswordPolicy` <a name="resetPasswordPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetPasswordPolicy"></a>
+##### `resetPasswordPolicy` <a name="resetPasswordPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetPasswordPolicy"></a>
 
 ```typescript
 public resetPasswordPolicy(): void
 ```
 
-##### `resetPeriodicDataRekeying` <a name="resetPeriodicDataRekeying" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetPeriodicDataRekeying"></a>
+##### `resetPeriodicDataRekeying` <a name="resetPeriodicDataRekeying" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetPeriodicDataRekeying"></a>
 
 ```typescript
 public resetPeriodicDataRekeying(): void
 ```
 
-##### `resetPipeExecutionPaused` <a name="resetPipeExecutionPaused" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetPipeExecutionPaused"></a>
+##### `resetPipeExecutionPaused` <a name="resetPipeExecutionPaused" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetPipeExecutionPaused"></a>
 
 ```typescript
 public resetPipeExecutionPaused(): void
 ```
 
-##### `resetPreventUnloadToInlineUrl` <a name="resetPreventUnloadToInlineUrl" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetPreventUnloadToInlineUrl"></a>
+##### `resetPreventUnloadToInlineUrl` <a name="resetPreventUnloadToInlineUrl" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetPreventUnloadToInlineUrl"></a>
 
 ```typescript
 public resetPreventUnloadToInlineUrl(): void
 ```
 
-##### `resetPreventUnloadToInternalStages` <a name="resetPreventUnloadToInternalStages" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetPreventUnloadToInternalStages"></a>
+##### `resetPreventUnloadToInternalStages` <a name="resetPreventUnloadToInternalStages" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetPreventUnloadToInternalStages"></a>
 
 ```typescript
 public resetPreventUnloadToInternalStages(): void
 ```
 
-##### `resetPythonProfilerModules` <a name="resetPythonProfilerModules" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetPythonProfilerModules"></a>
+##### `resetPythonProfilerModules` <a name="resetPythonProfilerModules" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetPythonProfilerModules"></a>
 
 ```typescript
 public resetPythonProfilerModules(): void
 ```
 
-##### `resetPythonProfilerTargetStage` <a name="resetPythonProfilerTargetStage" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetPythonProfilerTargetStage"></a>
+##### `resetPythonProfilerTargetStage` <a name="resetPythonProfilerTargetStage" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetPythonProfilerTargetStage"></a>
 
 ```typescript
 public resetPythonProfilerTargetStage(): void
 ```
 
-##### `resetQueryTag` <a name="resetQueryTag" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetQueryTag"></a>
+##### `resetQueryTag` <a name="resetQueryTag" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetQueryTag"></a>
 
 ```typescript
 public resetQueryTag(): void
 ```
 
-##### `resetQuotedIdentifiersIgnoreCase` <a name="resetQuotedIdentifiersIgnoreCase" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetQuotedIdentifiersIgnoreCase"></a>
+##### `resetQuotedIdentifiersIgnoreCase` <a name="resetQuotedIdentifiersIgnoreCase" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetQuotedIdentifiersIgnoreCase"></a>
 
 ```typescript
 public resetQuotedIdentifiersIgnoreCase(): void
 ```
 
-##### `resetReplaceInvalidCharacters` <a name="resetReplaceInvalidCharacters" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetReplaceInvalidCharacters"></a>
+##### `resetReplaceInvalidCharacters` <a name="resetReplaceInvalidCharacters" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetReplaceInvalidCharacters"></a>
 
 ```typescript
 public resetReplaceInvalidCharacters(): void
 ```
 
-##### `resetRequireStorageIntegrationForStageCreation` <a name="resetRequireStorageIntegrationForStageCreation" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetRequireStorageIntegrationForStageCreation"></a>
+##### `resetRequireStorageIntegrationForStageCreation` <a name="resetRequireStorageIntegrationForStageCreation" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetRequireStorageIntegrationForStageCreation"></a>
 
 ```typescript
 public resetRequireStorageIntegrationForStageCreation(): void
 ```
 
-##### `resetRequireStorageIntegrationForStageOperation` <a name="resetRequireStorageIntegrationForStageOperation" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetRequireStorageIntegrationForStageOperation"></a>
+##### `resetRequireStorageIntegrationForStageOperation` <a name="resetRequireStorageIntegrationForStageOperation" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetRequireStorageIntegrationForStageOperation"></a>
 
 ```typescript
 public resetRequireStorageIntegrationForStageOperation(): void
 ```
 
-##### `resetResourceMonitor` <a name="resetResourceMonitor" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetResourceMonitor"></a>
+##### `resetResourceMonitor` <a name="resetResourceMonitor" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetResourceMonitor"></a>
 
 ```typescript
 public resetResourceMonitor(): void
 ```
 
-##### `resetRowsPerResultset` <a name="resetRowsPerResultset" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetRowsPerResultset"></a>
+##### `resetRowsPerResultset` <a name="resetRowsPerResultset" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetRowsPerResultset"></a>
 
 ```typescript
 public resetRowsPerResultset(): void
 ```
 
-##### `resetS3StageVpceDnsName` <a name="resetS3StageVpceDnsName" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetS3StageVpceDnsName"></a>
+##### `resetS3StageVpceDnsName` <a name="resetS3StageVpceDnsName" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetS3StageVpceDnsName"></a>
 
 ```typescript
 public resetS3StageVpceDnsName(): void
 ```
 
-##### `resetSamlIdentityProvider` <a name="resetSamlIdentityProvider" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetSamlIdentityProvider"></a>
-
-```typescript
-public resetSamlIdentityProvider(): void
-```
-
-##### `resetSearchPath` <a name="resetSearchPath" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetSearchPath"></a>
+##### `resetSearchPath` <a name="resetSearchPath" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetSearchPath"></a>
 
 ```typescript
 public resetSearchPath(): void
 ```
 
-##### `resetServerlessTaskMaxStatementSize` <a name="resetServerlessTaskMaxStatementSize" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetServerlessTaskMaxStatementSize"></a>
+##### `resetServerlessTaskMaxStatementSize` <a name="resetServerlessTaskMaxStatementSize" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetServerlessTaskMaxStatementSize"></a>
 
 ```typescript
 public resetServerlessTaskMaxStatementSize(): void
 ```
 
-##### `resetServerlessTaskMinStatementSize` <a name="resetServerlessTaskMinStatementSize" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetServerlessTaskMinStatementSize"></a>
+##### `resetServerlessTaskMinStatementSize` <a name="resetServerlessTaskMinStatementSize" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetServerlessTaskMinStatementSize"></a>
 
 ```typescript
 public resetServerlessTaskMinStatementSize(): void
 ```
 
-##### `resetSessionPolicy` <a name="resetSessionPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetSessionPolicy"></a>
+##### `resetSessionPolicy` <a name="resetSessionPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetSessionPolicy"></a>
 
 ```typescript
 public resetSessionPolicy(): void
 ```
 
-##### `resetSimulatedDataSharingConsumer` <a name="resetSimulatedDataSharingConsumer" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetSimulatedDataSharingConsumer"></a>
+##### `resetSimulatedDataSharingConsumer` <a name="resetSimulatedDataSharingConsumer" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetSimulatedDataSharingConsumer"></a>
 
 ```typescript
 public resetSimulatedDataSharingConsumer(): void
 ```
 
-##### `resetSsoLoginPage` <a name="resetSsoLoginPage" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetSsoLoginPage"></a>
+##### `resetSsoLoginPage` <a name="resetSsoLoginPage" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetSsoLoginPage"></a>
 
 ```typescript
 public resetSsoLoginPage(): void
 ```
 
-##### `resetStatementQueuedTimeoutInSeconds` <a name="resetStatementQueuedTimeoutInSeconds" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetStatementQueuedTimeoutInSeconds"></a>
+##### `resetStatementQueuedTimeoutInSeconds` <a name="resetStatementQueuedTimeoutInSeconds" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetStatementQueuedTimeoutInSeconds"></a>
 
 ```typescript
 public resetStatementQueuedTimeoutInSeconds(): void
 ```
 
-##### `resetStatementTimeoutInSeconds` <a name="resetStatementTimeoutInSeconds" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetStatementTimeoutInSeconds"></a>
+##### `resetStatementTimeoutInSeconds` <a name="resetStatementTimeoutInSeconds" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetStatementTimeoutInSeconds"></a>
 
 ```typescript
 public resetStatementTimeoutInSeconds(): void
 ```
 
-##### `resetStorageSerializationPolicy` <a name="resetStorageSerializationPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetStorageSerializationPolicy"></a>
+##### `resetStorageSerializationPolicy` <a name="resetStorageSerializationPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetStorageSerializationPolicy"></a>
 
 ```typescript
 public resetStorageSerializationPolicy(): void
 ```
 
-##### `resetStrictJsonOutput` <a name="resetStrictJsonOutput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetStrictJsonOutput"></a>
+##### `resetStrictJsonOutput` <a name="resetStrictJsonOutput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetStrictJsonOutput"></a>
 
 ```typescript
 public resetStrictJsonOutput(): void
 ```
 
-##### `resetSuspendTaskAfterNumFailures` <a name="resetSuspendTaskAfterNumFailures" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetSuspendTaskAfterNumFailures"></a>
+##### `resetSuspendTaskAfterNumFailures` <a name="resetSuspendTaskAfterNumFailures" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetSuspendTaskAfterNumFailures"></a>
 
 ```typescript
 public resetSuspendTaskAfterNumFailures(): void
 ```
 
-##### `resetTaskAutoRetryAttempts` <a name="resetTaskAutoRetryAttempts" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTaskAutoRetryAttempts"></a>
+##### `resetTaskAutoRetryAttempts` <a name="resetTaskAutoRetryAttempts" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTaskAutoRetryAttempts"></a>
 
 ```typescript
 public resetTaskAutoRetryAttempts(): void
 ```
 
-##### `resetTimeInputFormat` <a name="resetTimeInputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimeInputFormat"></a>
+##### `resetTimeInputFormat` <a name="resetTimeInputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimeInputFormat"></a>
 
 ```typescript
 public resetTimeInputFormat(): void
 ```
 
-##### `resetTimeOutputFormat` <a name="resetTimeOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimeOutputFormat"></a>
+##### `resetTimeOutputFormat` <a name="resetTimeOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimeOutputFormat"></a>
 
 ```typescript
 public resetTimeOutputFormat(): void
 ```
 
-##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimeouts"></a>
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimeouts"></a>
 
 ```typescript
 public resetTimeouts(): void
 ```
 
-##### `resetTimestampDayIsAlways24H` <a name="resetTimestampDayIsAlways24H" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimestampDayIsAlways24H"></a>
+##### `resetTimestampDayIsAlways24H` <a name="resetTimestampDayIsAlways24H" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimestampDayIsAlways24H"></a>
 
 ```typescript
 public resetTimestampDayIsAlways24H(): void
 ```
 
-##### `resetTimestampInputFormat` <a name="resetTimestampInputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimestampInputFormat"></a>
+##### `resetTimestampInputFormat` <a name="resetTimestampInputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimestampInputFormat"></a>
 
 ```typescript
 public resetTimestampInputFormat(): void
 ```
 
-##### `resetTimestampLtzOutputFormat` <a name="resetTimestampLtzOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimestampLtzOutputFormat"></a>
+##### `resetTimestampLtzOutputFormat` <a name="resetTimestampLtzOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimestampLtzOutputFormat"></a>
 
 ```typescript
 public resetTimestampLtzOutputFormat(): void
 ```
 
-##### `resetTimestampNtzOutputFormat` <a name="resetTimestampNtzOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimestampNtzOutputFormat"></a>
+##### `resetTimestampNtzOutputFormat` <a name="resetTimestampNtzOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimestampNtzOutputFormat"></a>
 
 ```typescript
 public resetTimestampNtzOutputFormat(): void
 ```
 
-##### `resetTimestampOutputFormat` <a name="resetTimestampOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimestampOutputFormat"></a>
+##### `resetTimestampOutputFormat` <a name="resetTimestampOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimestampOutputFormat"></a>
 
 ```typescript
 public resetTimestampOutputFormat(): void
 ```
 
-##### `resetTimestampTypeMapping` <a name="resetTimestampTypeMapping" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimestampTypeMapping"></a>
+##### `resetTimestampTypeMapping` <a name="resetTimestampTypeMapping" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimestampTypeMapping"></a>
 
 ```typescript
 public resetTimestampTypeMapping(): void
 ```
 
-##### `resetTimestampTzOutputFormat` <a name="resetTimestampTzOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimestampTzOutputFormat"></a>
+##### `resetTimestampTzOutputFormat` <a name="resetTimestampTzOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimestampTzOutputFormat"></a>
 
 ```typescript
 public resetTimestampTzOutputFormat(): void
 ```
 
-##### `resetTimezone` <a name="resetTimezone" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTimezone"></a>
+##### `resetTimezone` <a name="resetTimezone" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTimezone"></a>
 
 ```typescript
 public resetTimezone(): void
 ```
 
-##### `resetTraceLevel` <a name="resetTraceLevel" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTraceLevel"></a>
+##### `resetTraceLevel` <a name="resetTraceLevel" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTraceLevel"></a>
 
 ```typescript
 public resetTraceLevel(): void
 ```
 
-##### `resetTransactionAbortOnError` <a name="resetTransactionAbortOnError" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTransactionAbortOnError"></a>
+##### `resetTransactionAbortOnError` <a name="resetTransactionAbortOnError" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTransactionAbortOnError"></a>
 
 ```typescript
 public resetTransactionAbortOnError(): void
 ```
 
-##### `resetTransactionDefaultIsolationLevel` <a name="resetTransactionDefaultIsolationLevel" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTransactionDefaultIsolationLevel"></a>
+##### `resetTransactionDefaultIsolationLevel` <a name="resetTransactionDefaultIsolationLevel" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTransactionDefaultIsolationLevel"></a>
 
 ```typescript
 public resetTransactionDefaultIsolationLevel(): void
 ```
 
-##### `resetTwoDigitCenturyStart` <a name="resetTwoDigitCenturyStart" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetTwoDigitCenturyStart"></a>
+##### `resetTwoDigitCenturyStart` <a name="resetTwoDigitCenturyStart" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetTwoDigitCenturyStart"></a>
 
 ```typescript
 public resetTwoDigitCenturyStart(): void
 ```
 
-##### `resetUnsupportedDdlAction` <a name="resetUnsupportedDdlAction" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetUnsupportedDdlAction"></a>
+##### `resetUnsupportedDdlAction` <a name="resetUnsupportedDdlAction" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetUnsupportedDdlAction"></a>
 
 ```typescript
 public resetUnsupportedDdlAction(): void
 ```
 
-##### `resetUseCachedResult` <a name="resetUseCachedResult" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetUseCachedResult"></a>
+##### `resetUseCachedResult` <a name="resetUseCachedResult" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetUseCachedResult"></a>
 
 ```typescript
 public resetUseCachedResult(): void
 ```
 
-##### `resetUserTaskManagedInitialWarehouseSize` <a name="resetUserTaskManagedInitialWarehouseSize" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetUserTaskManagedInitialWarehouseSize"></a>
+##### `resetUserTaskManagedInitialWarehouseSize` <a name="resetUserTaskManagedInitialWarehouseSize" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetUserTaskManagedInitialWarehouseSize"></a>
 
 ```typescript
 public resetUserTaskManagedInitialWarehouseSize(): void
 ```
 
-##### `resetUserTaskMinimumTriggerIntervalInSeconds` <a name="resetUserTaskMinimumTriggerIntervalInSeconds" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetUserTaskMinimumTriggerIntervalInSeconds"></a>
+##### `resetUserTaskMinimumTriggerIntervalInSeconds` <a name="resetUserTaskMinimumTriggerIntervalInSeconds" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetUserTaskMinimumTriggerIntervalInSeconds"></a>
 
 ```typescript
 public resetUserTaskMinimumTriggerIntervalInSeconds(): void
 ```
 
-##### `resetUserTaskTimeoutMs` <a name="resetUserTaskTimeoutMs" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetUserTaskTimeoutMs"></a>
+##### `resetUserTaskTimeoutMs` <a name="resetUserTaskTimeoutMs" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetUserTaskTimeoutMs"></a>
 
 ```typescript
 public resetUserTaskTimeoutMs(): void
 ```
 
-##### `resetWeekOfYearPolicy` <a name="resetWeekOfYearPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetWeekOfYearPolicy"></a>
+##### `resetWeekOfYearPolicy` <a name="resetWeekOfYearPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetWeekOfYearPolicy"></a>
 
 ```typescript
 public resetWeekOfYearPolicy(): void
 ```
 
-##### `resetWeekStart` <a name="resetWeekStart" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.resetWeekStart"></a>
+##### `resetWeekStart` <a name="resetWeekStart" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.resetWeekStart"></a>
 
 ```typescript
 public resetWeekStart(): void
@@ -1256,17 +1249,17 @@ public resetWeekStart(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a CurrentAccount resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a CurrentAccount resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.isConstruct"></a>
 
 ```typescript
-import { currentAccount } from '@cdktf/provider-snowflake'
+import { currentAccount } from '@cdktn/provider-snowflake'
 
 currentAccount.CurrentAccount.isConstruct(x: any)
 ```
@@ -1287,7 +1280,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -1295,45 +1288,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.isTerraformElement"></a>
 
 ```typescript
-import { currentAccount } from '@cdktf/provider-snowflake'
+import { currentAccount } from '@cdktn/provider-snowflake'
 
 currentAccount.CurrentAccount.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.isTerraformResource"></a>
 
 ```typescript
-import { currentAccount } from '@cdktf/provider-snowflake'
+import { currentAccount } from '@cdktn/provider-snowflake'
 
 currentAccount.CurrentAccount.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.generateConfigForImport"></a>
 
 ```typescript
-import { currentAccount } from '@cdktf/provider-snowflake'
+import { currentAccount } from '@cdktn/provider-snowflake'
 
 currentAccount.CurrentAccount.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a CurrentAccount resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a CurrentAccount resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -1341,7 +1334,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -1349,19 +1342,19 @@ The construct id used in the generated config for the CurrentAccount to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing CurrentAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the CurrentAccount to import is found.
 
@@ -1371,274 +1364,272 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference">CurrentAccountTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.abortDetachedQueryInput">abortDetachedQueryInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.activePythonProfilerInput">activePythonProfilerInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.allowClientMfaCachingInput">allowClientMfaCachingInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.allowIdTokenInput">allowIdTokenInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.authenticationPolicyInput">authenticationPolicyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.autocommitInput">autocommitInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.baseLocationPrefixInput">baseLocationPrefixInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.binaryInputFormatInput">binaryInputFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.binaryOutputFormatInput">binaryOutputFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.catalogInput">catalogInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.catalogSyncInput">catalogSyncInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientEnableLogInfoStatementParametersInput">clientEnableLogInfoStatementParametersInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientEncryptionKeySizeInput">clientEncryptionKeySizeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientMemoryLimitInput">clientMemoryLimitInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientMetadataRequestUseConnectionCtxInput">clientMetadataRequestUseConnectionCtxInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientMetadataUseSessionDatabaseInput">clientMetadataUseSessionDatabaseInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientPrefetchThreadsInput">clientPrefetchThreadsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientResultChunkSizeInput">clientResultChunkSizeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientResultColumnCaseInsensitiveInput">clientResultColumnCaseInsensitiveInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientSessionKeepAliveHeartbeatFrequencyInput">clientSessionKeepAliveHeartbeatFrequencyInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientSessionKeepAliveInput">clientSessionKeepAliveInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientTimestampTypeMappingInput">clientTimestampTypeMappingInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.cortexEnabledCrossRegionInput">cortexEnabledCrossRegionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.cortexModelsAllowlistInput">cortexModelsAllowlistInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.csvTimestampFormatInput">csvTimestampFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.dataRetentionTimeInDaysInput">dataRetentionTimeInDaysInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.dateInputFormatInput">dateInputFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.dateOutputFormatInput">dateOutputFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultDdlCollationInput">defaultDdlCollationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultNotebookComputePoolCpuInput">defaultNotebookComputePoolCpuInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultNotebookComputePoolGpuInput">defaultNotebookComputePoolGpuInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultNullOrderingInput">defaultNullOrderingInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultStreamlitNotebookWarehouseInput">defaultStreamlitNotebookWarehouseInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.disableUiDownloadButtonInput">disableUiDownloadButtonInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.disableUserPrivilegeGrantsInput">disableUserPrivilegeGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableAutomaticSensitiveDataClassificationLogInput">enableAutomaticSensitiveDataClassificationLogInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableEgressCostOptimizerInput">enableEgressCostOptimizerInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableIdentifierFirstLoginInput">enableIdentifierFirstLoginInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableInternalStagesPrivatelinkInput">enableInternalStagesPrivatelinkInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableTriSecretAndRekeyOptOutForImageRepositoryInput">enableTriSecretAndRekeyOptOutForImageRepositoryInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableTriSecretAndRekeyOptOutForSpcsBlockStorageInput">enableTriSecretAndRekeyOptOutForSpcsBlockStorageInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableUnhandledExceptionsReportingInput">enableUnhandledExceptionsReportingInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableUnloadPhysicalTypeOptimizationInput">enableUnloadPhysicalTypeOptimizationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableUnredactedQuerySyntaxErrorInput">enableUnredactedQuerySyntaxErrorInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableUnredactedSecureObjectErrorInput">enableUnredactedSecureObjectErrorInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enforceNetworkRulesForInternalStagesInput">enforceNetworkRulesForInternalStagesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.errorOnNondeterministicMergeInput">errorOnNondeterministicMergeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.errorOnNondeterministicUpdateInput">errorOnNondeterministicUpdateInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.eventTableInput">eventTableInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.externalOauthAddPrivilegedRolesToBlockedListInput">externalOauthAddPrivilegedRolesToBlockedListInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.externalVolumeInput">externalVolumeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.featurePolicyInput">featurePolicyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.geographyOutputFormatInput">geographyOutputFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.geometryOutputFormatInput">geometryOutputFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.hybridTableLockTimeoutInput">hybridTableLockTimeoutInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.initialReplicationSizeLimitInTbInput">initialReplicationSizeLimitInTbInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jdbcTreatDecimalAsIntInput">jdbcTreatDecimalAsIntInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jdbcTreatTimestampNtzAsUtcInput">jdbcTreatTimestampNtzAsUtcInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jdbcUseSessionTimezoneInput">jdbcUseSessionTimezoneInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jsonIndentInput">jsonIndentInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jsTreatIntegerAsBigintInput">jsTreatIntegerAsBigintInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.listingAutoFulfillmentReplicationRefreshScheduleInput">listingAutoFulfillmentReplicationRefreshScheduleInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.lockTimeoutInput">lockTimeoutInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.logLevelInput">logLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.maxConcurrencyLevelInput">maxConcurrencyLevelInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.maxDataExtensionTimeInDaysInput">maxDataExtensionTimeInDaysInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.metricLevelInput">metricLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.minDataRetentionTimeInDaysInput">minDataRetentionTimeInDaysInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.multiStatementCountInput">multiStatementCountInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.networkPolicyInput">networkPolicyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.noorderSequenceAsDefaultInput">noorderSequenceAsDefaultInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.oauthAddPrivilegedRolesToBlockedListInput">oauthAddPrivilegedRolesToBlockedListInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.odbcTreatDecimalAsIntInput">odbcTreatDecimalAsIntInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.packagesPolicyInput">packagesPolicyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.passwordPolicyInput">passwordPolicyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.periodicDataRekeyingInput">periodicDataRekeyingInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.pipeExecutionPausedInput">pipeExecutionPausedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.preventUnloadToInlineUrlInput">preventUnloadToInlineUrlInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.preventUnloadToInternalStagesInput">preventUnloadToInternalStagesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.pythonProfilerModulesInput">pythonProfilerModulesInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.pythonProfilerTargetStageInput">pythonProfilerTargetStageInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.queryTagInput">queryTagInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.quotedIdentifiersIgnoreCaseInput">quotedIdentifiersIgnoreCaseInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.replaceInvalidCharactersInput">replaceInvalidCharactersInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.requireStorageIntegrationForStageCreationInput">requireStorageIntegrationForStageCreationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.requireStorageIntegrationForStageOperationInput">requireStorageIntegrationForStageOperationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.resourceMonitorInput">resourceMonitorInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.rowsPerResultsetInput">rowsPerResultsetInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.s3StageVpceDnsNameInput">s3StageVpceDnsNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.samlIdentityProviderInput">samlIdentityProviderInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.searchPathInput">searchPathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.serverlessTaskMaxStatementSizeInput">serverlessTaskMaxStatementSizeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.serverlessTaskMinStatementSizeInput">serverlessTaskMinStatementSizeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.sessionPolicyInput">sessionPolicyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.simulatedDataSharingConsumerInput">simulatedDataSharingConsumerInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.ssoLoginPageInput">ssoLoginPageInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.statementQueuedTimeoutInSecondsInput">statementQueuedTimeoutInSecondsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.statementTimeoutInSecondsInput">statementTimeoutInSecondsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.storageSerializationPolicyInput">storageSerializationPolicyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.strictJsonOutputInput">strictJsonOutputInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.suspendTaskAfterNumFailuresInput">suspendTaskAfterNumFailuresInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.taskAutoRetryAttemptsInput">taskAutoRetryAttemptsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timeInputFormatInput">timeInputFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timeOutputFormatInput">timeOutputFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts">CurrentAccountTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampDayIsAlways24HInput">timestampDayIsAlways24HInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampInputFormatInput">timestampInputFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampLtzOutputFormatInput">timestampLtzOutputFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampNtzOutputFormatInput">timestampNtzOutputFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampOutputFormatInput">timestampOutputFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampTypeMappingInput">timestampTypeMappingInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampTzOutputFormatInput">timestampTzOutputFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timezoneInput">timezoneInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.traceLevelInput">traceLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.transactionAbortOnErrorInput">transactionAbortOnErrorInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.transactionDefaultIsolationLevelInput">transactionDefaultIsolationLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.twoDigitCenturyStartInput">twoDigitCenturyStartInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.unsupportedDdlActionInput">unsupportedDdlActionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.useCachedResultInput">useCachedResultInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.userTaskManagedInitialWarehouseSizeInput">userTaskManagedInitialWarehouseSizeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.userTaskMinimumTriggerIntervalInSecondsInput">userTaskMinimumTriggerIntervalInSecondsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.userTaskTimeoutMsInput">userTaskTimeoutMsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.weekOfYearPolicyInput">weekOfYearPolicyInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.weekStartInput">weekStartInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.abortDetachedQuery">abortDetachedQuery</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.activePythonProfiler">activePythonProfiler</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.allowClientMfaCaching">allowClientMfaCaching</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.allowIdToken">allowIdToken</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.authenticationPolicy">authenticationPolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.autocommit">autocommit</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.baseLocationPrefix">baseLocationPrefix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.binaryInputFormat">binaryInputFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.binaryOutputFormat">binaryOutputFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.catalog">catalog</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.catalogSync">catalogSync</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientEnableLogInfoStatementParameters">clientEnableLogInfoStatementParameters</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientEncryptionKeySize">clientEncryptionKeySize</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientMemoryLimit">clientMemoryLimit</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientMetadataRequestUseConnectionCtx">clientMetadataRequestUseConnectionCtx</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientMetadataUseSessionDatabase">clientMetadataUseSessionDatabase</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientPrefetchThreads">clientPrefetchThreads</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientResultChunkSize">clientResultChunkSize</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientResultColumnCaseInsensitive">clientResultColumnCaseInsensitive</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientSessionKeepAlive">clientSessionKeepAlive</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientSessionKeepAliveHeartbeatFrequency">clientSessionKeepAliveHeartbeatFrequency</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientTimestampTypeMapping">clientTimestampTypeMapping</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.cortexEnabledCrossRegion">cortexEnabledCrossRegion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.cortexModelsAllowlist">cortexModelsAllowlist</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.csvTimestampFormat">csvTimestampFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.dataRetentionTimeInDays">dataRetentionTimeInDays</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.dateInputFormat">dateInputFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.dateOutputFormat">dateOutputFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultDdlCollation">defaultDdlCollation</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultNotebookComputePoolCpu">defaultNotebookComputePoolCpu</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultNotebookComputePoolGpu">defaultNotebookComputePoolGpu</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultNullOrdering">defaultNullOrdering</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultStreamlitNotebookWarehouse">defaultStreamlitNotebookWarehouse</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.disableUiDownloadButton">disableUiDownloadButton</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.disableUserPrivilegeGrants">disableUserPrivilegeGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableAutomaticSensitiveDataClassificationLog">enableAutomaticSensitiveDataClassificationLog</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableEgressCostOptimizer">enableEgressCostOptimizer</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableIdentifierFirstLogin">enableIdentifierFirstLogin</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableInternalStagesPrivatelink">enableInternalStagesPrivatelink</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableTriSecretAndRekeyOptOutForImageRepository">enableTriSecretAndRekeyOptOutForImageRepository</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableTriSecretAndRekeyOptOutForSpcsBlockStorage">enableTriSecretAndRekeyOptOutForSpcsBlockStorage</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableUnhandledExceptionsReporting">enableUnhandledExceptionsReporting</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableUnloadPhysicalTypeOptimization">enableUnloadPhysicalTypeOptimization</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableUnredactedQuerySyntaxError">enableUnredactedQuerySyntaxError</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableUnredactedSecureObjectError">enableUnredactedSecureObjectError</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enforceNetworkRulesForInternalStages">enforceNetworkRulesForInternalStages</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.errorOnNondeterministicMerge">errorOnNondeterministicMerge</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.errorOnNondeterministicUpdate">errorOnNondeterministicUpdate</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.eventTable">eventTable</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.externalOauthAddPrivilegedRolesToBlockedList">externalOauthAddPrivilegedRolesToBlockedList</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.externalVolume">externalVolume</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.featurePolicy">featurePolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.geographyOutputFormat">geographyOutputFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.geometryOutputFormat">geometryOutputFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.hybridTableLockTimeout">hybridTableLockTimeout</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.initialReplicationSizeLimitInTb">initialReplicationSizeLimitInTb</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jdbcTreatDecimalAsInt">jdbcTreatDecimalAsInt</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jdbcTreatTimestampNtzAsUtc">jdbcTreatTimestampNtzAsUtc</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jdbcUseSessionTimezone">jdbcUseSessionTimezone</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jsonIndent">jsonIndent</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jsTreatIntegerAsBigint">jsTreatIntegerAsBigint</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.listingAutoFulfillmentReplicationRefreshSchedule">listingAutoFulfillmentReplicationRefreshSchedule</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.lockTimeout">lockTimeout</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.logLevel">logLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.maxConcurrencyLevel">maxConcurrencyLevel</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.maxDataExtensionTimeInDays">maxDataExtensionTimeInDays</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.metricLevel">metricLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.minDataRetentionTimeInDays">minDataRetentionTimeInDays</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.multiStatementCount">multiStatementCount</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.networkPolicy">networkPolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.noorderSequenceAsDefault">noorderSequenceAsDefault</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.oauthAddPrivilegedRolesToBlockedList">oauthAddPrivilegedRolesToBlockedList</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.odbcTreatDecimalAsInt">odbcTreatDecimalAsInt</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.packagesPolicy">packagesPolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.passwordPolicy">passwordPolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.periodicDataRekeying">periodicDataRekeying</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.pipeExecutionPaused">pipeExecutionPaused</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.preventUnloadToInlineUrl">preventUnloadToInlineUrl</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.preventUnloadToInternalStages">preventUnloadToInternalStages</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.pythonProfilerModules">pythonProfilerModules</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.pythonProfilerTargetStage">pythonProfilerTargetStage</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.queryTag">queryTag</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.quotedIdentifiersIgnoreCase">quotedIdentifiersIgnoreCase</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.replaceInvalidCharacters">replaceInvalidCharacters</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.requireStorageIntegrationForStageCreation">requireStorageIntegrationForStageCreation</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.requireStorageIntegrationForStageOperation">requireStorageIntegrationForStageOperation</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.resourceMonitor">resourceMonitor</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.rowsPerResultset">rowsPerResultset</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.s3StageVpceDnsName">s3StageVpceDnsName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.samlIdentityProvider">samlIdentityProvider</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.searchPath">searchPath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.serverlessTaskMaxStatementSize">serverlessTaskMaxStatementSize</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.serverlessTaskMinStatementSize">serverlessTaskMinStatementSize</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.sessionPolicy">sessionPolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.simulatedDataSharingConsumer">simulatedDataSharingConsumer</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.ssoLoginPage">ssoLoginPage</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.statementQueuedTimeoutInSeconds">statementQueuedTimeoutInSeconds</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.statementTimeoutInSeconds">statementTimeoutInSeconds</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.storageSerializationPolicy">storageSerializationPolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.strictJsonOutput">strictJsonOutput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.suspendTaskAfterNumFailures">suspendTaskAfterNumFailures</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.taskAutoRetryAttempts">taskAutoRetryAttempts</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timeInputFormat">timeInputFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timeOutputFormat">timeOutputFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampDayIsAlways24H">timestampDayIsAlways24H</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampInputFormat">timestampInputFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampLtzOutputFormat">timestampLtzOutputFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampNtzOutputFormat">timestampNtzOutputFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampOutputFormat">timestampOutputFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampTypeMapping">timestampTypeMapping</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampTzOutputFormat">timestampTzOutputFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timezone">timezone</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.traceLevel">traceLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.transactionAbortOnError">transactionAbortOnError</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.transactionDefaultIsolationLevel">transactionDefaultIsolationLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.twoDigitCenturyStart">twoDigitCenturyStart</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.unsupportedDdlAction">unsupportedDdlAction</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.useCachedResult">useCachedResult</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.userTaskManagedInitialWarehouseSize">userTaskManagedInitialWarehouseSize</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.userTaskMinimumTriggerIntervalInSeconds">userTaskMinimumTriggerIntervalInSeconds</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.userTaskTimeoutMs">userTaskTimeoutMs</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.weekOfYearPolicy">weekOfYearPolicy</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.weekStart">weekStart</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference">CurrentAccountTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.abortDetachedQueryInput">abortDetachedQueryInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.activePythonProfilerInput">activePythonProfilerInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.allowClientMfaCachingInput">allowClientMfaCachingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.allowIdTokenInput">allowIdTokenInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.authenticationPolicyInput">authenticationPolicyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.autocommitInput">autocommitInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.baseLocationPrefixInput">baseLocationPrefixInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.binaryInputFormatInput">binaryInputFormatInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.binaryOutputFormatInput">binaryOutputFormatInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.catalogInput">catalogInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.catalogSyncInput">catalogSyncInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientEnableLogInfoStatementParametersInput">clientEnableLogInfoStatementParametersInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientEncryptionKeySizeInput">clientEncryptionKeySizeInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientMemoryLimitInput">clientMemoryLimitInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientMetadataRequestUseConnectionCtxInput">clientMetadataRequestUseConnectionCtxInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientMetadataUseSessionDatabaseInput">clientMetadataUseSessionDatabaseInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientPrefetchThreadsInput">clientPrefetchThreadsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientResultChunkSizeInput">clientResultChunkSizeInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientResultColumnCaseInsensitiveInput">clientResultColumnCaseInsensitiveInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientSessionKeepAliveHeartbeatFrequencyInput">clientSessionKeepAliveHeartbeatFrequencyInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientSessionKeepAliveInput">clientSessionKeepAliveInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientTimestampTypeMappingInput">clientTimestampTypeMappingInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.cortexEnabledCrossRegionInput">cortexEnabledCrossRegionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.cortexModelsAllowlistInput">cortexModelsAllowlistInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.csvTimestampFormatInput">csvTimestampFormatInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.dataRetentionTimeInDaysInput">dataRetentionTimeInDaysInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.dateInputFormatInput">dateInputFormatInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.dateOutputFormatInput">dateOutputFormatInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultDdlCollationInput">defaultDdlCollationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultNotebookComputePoolCpuInput">defaultNotebookComputePoolCpuInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultNotebookComputePoolGpuInput">defaultNotebookComputePoolGpuInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultNullOrderingInput">defaultNullOrderingInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultStreamlitNotebookWarehouseInput">defaultStreamlitNotebookWarehouseInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.disableUiDownloadButtonInput">disableUiDownloadButtonInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.disableUserPrivilegeGrantsInput">disableUserPrivilegeGrantsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableAutomaticSensitiveDataClassificationLogInput">enableAutomaticSensitiveDataClassificationLogInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableEgressCostOptimizerInput">enableEgressCostOptimizerInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableIdentifierFirstLoginInput">enableIdentifierFirstLoginInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableInternalStagesPrivatelinkInput">enableInternalStagesPrivatelinkInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableTriSecretAndRekeyOptOutForImageRepositoryInput">enableTriSecretAndRekeyOptOutForImageRepositoryInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableTriSecretAndRekeyOptOutForSpcsBlockStorageInput">enableTriSecretAndRekeyOptOutForSpcsBlockStorageInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableUnhandledExceptionsReportingInput">enableUnhandledExceptionsReportingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableUnloadPhysicalTypeOptimizationInput">enableUnloadPhysicalTypeOptimizationInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableUnredactedQuerySyntaxErrorInput">enableUnredactedQuerySyntaxErrorInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableUnredactedSecureObjectErrorInput">enableUnredactedSecureObjectErrorInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enforceNetworkRulesForInternalStagesInput">enforceNetworkRulesForInternalStagesInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.errorOnNondeterministicMergeInput">errorOnNondeterministicMergeInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.errorOnNondeterministicUpdateInput">errorOnNondeterministicUpdateInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.eventTableInput">eventTableInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.externalOauthAddPrivilegedRolesToBlockedListInput">externalOauthAddPrivilegedRolesToBlockedListInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.externalVolumeInput">externalVolumeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.featurePolicyInput">featurePolicyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.geographyOutputFormatInput">geographyOutputFormatInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.geometryOutputFormatInput">geometryOutputFormatInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.hybridTableLockTimeoutInput">hybridTableLockTimeoutInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.initialReplicationSizeLimitInTbInput">initialReplicationSizeLimitInTbInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jdbcTreatDecimalAsIntInput">jdbcTreatDecimalAsIntInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jdbcTreatTimestampNtzAsUtcInput">jdbcTreatTimestampNtzAsUtcInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jdbcUseSessionTimezoneInput">jdbcUseSessionTimezoneInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jsonIndentInput">jsonIndentInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jsTreatIntegerAsBigintInput">jsTreatIntegerAsBigintInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.listingAutoFulfillmentReplicationRefreshScheduleInput">listingAutoFulfillmentReplicationRefreshScheduleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.lockTimeoutInput">lockTimeoutInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.logLevelInput">logLevelInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.maxConcurrencyLevelInput">maxConcurrencyLevelInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.maxDataExtensionTimeInDaysInput">maxDataExtensionTimeInDaysInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.metricLevelInput">metricLevelInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.minDataRetentionTimeInDaysInput">minDataRetentionTimeInDaysInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.multiStatementCountInput">multiStatementCountInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.networkPolicyInput">networkPolicyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.noorderSequenceAsDefaultInput">noorderSequenceAsDefaultInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.oauthAddPrivilegedRolesToBlockedListInput">oauthAddPrivilegedRolesToBlockedListInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.odbcTreatDecimalAsIntInput">odbcTreatDecimalAsIntInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.packagesPolicyInput">packagesPolicyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.passwordPolicyInput">passwordPolicyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.periodicDataRekeyingInput">periodicDataRekeyingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.pipeExecutionPausedInput">pipeExecutionPausedInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.preventUnloadToInlineUrlInput">preventUnloadToInlineUrlInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.preventUnloadToInternalStagesInput">preventUnloadToInternalStagesInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.pythonProfilerModulesInput">pythonProfilerModulesInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.pythonProfilerTargetStageInput">pythonProfilerTargetStageInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.queryTagInput">queryTagInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.quotedIdentifiersIgnoreCaseInput">quotedIdentifiersIgnoreCaseInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.replaceInvalidCharactersInput">replaceInvalidCharactersInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.requireStorageIntegrationForStageCreationInput">requireStorageIntegrationForStageCreationInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.requireStorageIntegrationForStageOperationInput">requireStorageIntegrationForStageOperationInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.resourceMonitorInput">resourceMonitorInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.rowsPerResultsetInput">rowsPerResultsetInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.s3StageVpceDnsNameInput">s3StageVpceDnsNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.searchPathInput">searchPathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.serverlessTaskMaxStatementSizeInput">serverlessTaskMaxStatementSizeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.serverlessTaskMinStatementSizeInput">serverlessTaskMinStatementSizeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.sessionPolicyInput">sessionPolicyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.simulatedDataSharingConsumerInput">simulatedDataSharingConsumerInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.ssoLoginPageInput">ssoLoginPageInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.statementQueuedTimeoutInSecondsInput">statementQueuedTimeoutInSecondsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.statementTimeoutInSecondsInput">statementTimeoutInSecondsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.storageSerializationPolicyInput">storageSerializationPolicyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.strictJsonOutputInput">strictJsonOutputInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.suspendTaskAfterNumFailuresInput">suspendTaskAfterNumFailuresInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.taskAutoRetryAttemptsInput">taskAutoRetryAttemptsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timeInputFormatInput">timeInputFormatInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timeOutputFormatInput">timeOutputFormatInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeouts">CurrentAccountTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampDayIsAlways24HInput">timestampDayIsAlways24HInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampInputFormatInput">timestampInputFormatInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampLtzOutputFormatInput">timestampLtzOutputFormatInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampNtzOutputFormatInput">timestampNtzOutputFormatInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampOutputFormatInput">timestampOutputFormatInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampTypeMappingInput">timestampTypeMappingInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampTzOutputFormatInput">timestampTzOutputFormatInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timezoneInput">timezoneInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.traceLevelInput">traceLevelInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.transactionAbortOnErrorInput">transactionAbortOnErrorInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.transactionDefaultIsolationLevelInput">transactionDefaultIsolationLevelInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.twoDigitCenturyStartInput">twoDigitCenturyStartInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.unsupportedDdlActionInput">unsupportedDdlActionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.useCachedResultInput">useCachedResultInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.userTaskManagedInitialWarehouseSizeInput">userTaskManagedInitialWarehouseSizeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.userTaskMinimumTriggerIntervalInSecondsInput">userTaskMinimumTriggerIntervalInSecondsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.userTaskTimeoutMsInput">userTaskTimeoutMsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.weekOfYearPolicyInput">weekOfYearPolicyInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.weekStartInput">weekStartInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.abortDetachedQuery">abortDetachedQuery</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.activePythonProfiler">activePythonProfiler</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.allowClientMfaCaching">allowClientMfaCaching</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.allowIdToken">allowIdToken</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.authenticationPolicy">authenticationPolicy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.autocommit">autocommit</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.baseLocationPrefix">baseLocationPrefix</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.binaryInputFormat">binaryInputFormat</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.binaryOutputFormat">binaryOutputFormat</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.catalog">catalog</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.catalogSync">catalogSync</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientEnableLogInfoStatementParameters">clientEnableLogInfoStatementParameters</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientEncryptionKeySize">clientEncryptionKeySize</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientMemoryLimit">clientMemoryLimit</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientMetadataRequestUseConnectionCtx">clientMetadataRequestUseConnectionCtx</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientMetadataUseSessionDatabase">clientMetadataUseSessionDatabase</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientPrefetchThreads">clientPrefetchThreads</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientResultChunkSize">clientResultChunkSize</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientResultColumnCaseInsensitive">clientResultColumnCaseInsensitive</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientSessionKeepAlive">clientSessionKeepAlive</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientSessionKeepAliveHeartbeatFrequency">clientSessionKeepAliveHeartbeatFrequency</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientTimestampTypeMapping">clientTimestampTypeMapping</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.cortexEnabledCrossRegion">cortexEnabledCrossRegion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.cortexModelsAllowlist">cortexModelsAllowlist</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.csvTimestampFormat">csvTimestampFormat</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.dataRetentionTimeInDays">dataRetentionTimeInDays</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.dateInputFormat">dateInputFormat</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.dateOutputFormat">dateOutputFormat</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultDdlCollation">defaultDdlCollation</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultNotebookComputePoolCpu">defaultNotebookComputePoolCpu</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultNotebookComputePoolGpu">defaultNotebookComputePoolGpu</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultNullOrdering">defaultNullOrdering</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultStreamlitNotebookWarehouse">defaultStreamlitNotebookWarehouse</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.disableUiDownloadButton">disableUiDownloadButton</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.disableUserPrivilegeGrants">disableUserPrivilegeGrants</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableAutomaticSensitiveDataClassificationLog">enableAutomaticSensitiveDataClassificationLog</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableEgressCostOptimizer">enableEgressCostOptimizer</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableIdentifierFirstLogin">enableIdentifierFirstLogin</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableInternalStagesPrivatelink">enableInternalStagesPrivatelink</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableTriSecretAndRekeyOptOutForImageRepository">enableTriSecretAndRekeyOptOutForImageRepository</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableTriSecretAndRekeyOptOutForSpcsBlockStorage">enableTriSecretAndRekeyOptOutForSpcsBlockStorage</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableUnhandledExceptionsReporting">enableUnhandledExceptionsReporting</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableUnloadPhysicalTypeOptimization">enableUnloadPhysicalTypeOptimization</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableUnredactedQuerySyntaxError">enableUnredactedQuerySyntaxError</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableUnredactedSecureObjectError">enableUnredactedSecureObjectError</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enforceNetworkRulesForInternalStages">enforceNetworkRulesForInternalStages</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.errorOnNondeterministicMerge">errorOnNondeterministicMerge</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.errorOnNondeterministicUpdate">errorOnNondeterministicUpdate</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.eventTable">eventTable</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.externalOauthAddPrivilegedRolesToBlockedList">externalOauthAddPrivilegedRolesToBlockedList</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.externalVolume">externalVolume</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.featurePolicy">featurePolicy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.geographyOutputFormat">geographyOutputFormat</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.geometryOutputFormat">geometryOutputFormat</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.hybridTableLockTimeout">hybridTableLockTimeout</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.initialReplicationSizeLimitInTb">initialReplicationSizeLimitInTb</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jdbcTreatDecimalAsInt">jdbcTreatDecimalAsInt</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jdbcTreatTimestampNtzAsUtc">jdbcTreatTimestampNtzAsUtc</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jdbcUseSessionTimezone">jdbcUseSessionTimezone</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jsonIndent">jsonIndent</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jsTreatIntegerAsBigint">jsTreatIntegerAsBigint</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.listingAutoFulfillmentReplicationRefreshSchedule">listingAutoFulfillmentReplicationRefreshSchedule</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.lockTimeout">lockTimeout</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.logLevel">logLevel</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.maxConcurrencyLevel">maxConcurrencyLevel</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.maxDataExtensionTimeInDays">maxDataExtensionTimeInDays</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.metricLevel">metricLevel</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.minDataRetentionTimeInDays">minDataRetentionTimeInDays</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.multiStatementCount">multiStatementCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.networkPolicy">networkPolicy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.noorderSequenceAsDefault">noorderSequenceAsDefault</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.oauthAddPrivilegedRolesToBlockedList">oauthAddPrivilegedRolesToBlockedList</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.odbcTreatDecimalAsInt">odbcTreatDecimalAsInt</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.packagesPolicy">packagesPolicy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.passwordPolicy">passwordPolicy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.periodicDataRekeying">periodicDataRekeying</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.pipeExecutionPaused">pipeExecutionPaused</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.preventUnloadToInlineUrl">preventUnloadToInlineUrl</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.preventUnloadToInternalStages">preventUnloadToInternalStages</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.pythonProfilerModules">pythonProfilerModules</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.pythonProfilerTargetStage">pythonProfilerTargetStage</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.queryTag">queryTag</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.quotedIdentifiersIgnoreCase">quotedIdentifiersIgnoreCase</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.replaceInvalidCharacters">replaceInvalidCharacters</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.requireStorageIntegrationForStageCreation">requireStorageIntegrationForStageCreation</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.requireStorageIntegrationForStageOperation">requireStorageIntegrationForStageOperation</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.resourceMonitor">resourceMonitor</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.rowsPerResultset">rowsPerResultset</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.s3StageVpceDnsName">s3StageVpceDnsName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.searchPath">searchPath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.serverlessTaskMaxStatementSize">serverlessTaskMaxStatementSize</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.serverlessTaskMinStatementSize">serverlessTaskMinStatementSize</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.sessionPolicy">sessionPolicy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.simulatedDataSharingConsumer">simulatedDataSharingConsumer</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.ssoLoginPage">ssoLoginPage</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.statementQueuedTimeoutInSeconds">statementQueuedTimeoutInSeconds</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.statementTimeoutInSeconds">statementTimeoutInSeconds</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.storageSerializationPolicy">storageSerializationPolicy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.strictJsonOutput">strictJsonOutput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.suspendTaskAfterNumFailures">suspendTaskAfterNumFailures</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.taskAutoRetryAttempts">taskAutoRetryAttempts</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timeInputFormat">timeInputFormat</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timeOutputFormat">timeOutputFormat</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampDayIsAlways24H">timestampDayIsAlways24H</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampInputFormat">timestampInputFormat</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampLtzOutputFormat">timestampLtzOutputFormat</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampNtzOutputFormat">timestampNtzOutputFormat</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampOutputFormat">timestampOutputFormat</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampTypeMapping">timestampTypeMapping</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampTzOutputFormat">timestampTzOutputFormat</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timezone">timezone</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.traceLevel">traceLevel</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.transactionAbortOnError">transactionAbortOnError</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.transactionDefaultIsolationLevel">transactionDefaultIsolationLevel</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.twoDigitCenturyStart">twoDigitCenturyStart</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.unsupportedDdlAction">unsupportedDdlAction</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.useCachedResult">useCachedResult</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.userTaskManagedInitialWarehouseSize">userTaskManagedInitialWarehouseSize</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.userTaskMinimumTriggerIntervalInSeconds">userTaskMinimumTriggerIntervalInSeconds</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.userTaskTimeoutMs">userTaskTimeoutMs</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.weekOfYearPolicy">weekOfYearPolicy</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.weekStart">weekStart</a></code> | <code>number</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -1650,17 +1641,17 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1670,7 +1661,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -1680,7 +1671,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -1690,7 +1681,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -1700,37 +1691,37 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -1740,67 +1731,67 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: CurrentAccountTimeoutsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference">CurrentAccountTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference">CurrentAccountTimeoutsOutputReference</a>
 
 ---
 
-##### `abortDetachedQueryInput`<sup>Optional</sup> <a name="abortDetachedQueryInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.abortDetachedQueryInput"></a>
+##### `abortDetachedQueryInput`<sup>Optional</sup> <a name="abortDetachedQueryInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.abortDetachedQueryInput"></a>
 
 ```typescript
 public readonly abortDetachedQueryInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `activePythonProfilerInput`<sup>Optional</sup> <a name="activePythonProfilerInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.activePythonProfilerInput"></a>
+##### `activePythonProfilerInput`<sup>Optional</sup> <a name="activePythonProfilerInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.activePythonProfilerInput"></a>
 
 ```typescript
 public readonly activePythonProfilerInput: string;
@@ -1810,27 +1801,27 @@ public readonly activePythonProfilerInput: string;
 
 ---
 
-##### `allowClientMfaCachingInput`<sup>Optional</sup> <a name="allowClientMfaCachingInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.allowClientMfaCachingInput"></a>
+##### `allowClientMfaCachingInput`<sup>Optional</sup> <a name="allowClientMfaCachingInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.allowClientMfaCachingInput"></a>
 
 ```typescript
 public readonly allowClientMfaCachingInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `allowIdTokenInput`<sup>Optional</sup> <a name="allowIdTokenInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.allowIdTokenInput"></a>
+##### `allowIdTokenInput`<sup>Optional</sup> <a name="allowIdTokenInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.allowIdTokenInput"></a>
 
 ```typescript
 public readonly allowIdTokenInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `authenticationPolicyInput`<sup>Optional</sup> <a name="authenticationPolicyInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.authenticationPolicyInput"></a>
+##### `authenticationPolicyInput`<sup>Optional</sup> <a name="authenticationPolicyInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.authenticationPolicyInput"></a>
 
 ```typescript
 public readonly authenticationPolicyInput: string;
@@ -1840,17 +1831,17 @@ public readonly authenticationPolicyInput: string;
 
 ---
 
-##### `autocommitInput`<sup>Optional</sup> <a name="autocommitInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.autocommitInput"></a>
+##### `autocommitInput`<sup>Optional</sup> <a name="autocommitInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.autocommitInput"></a>
 
 ```typescript
 public readonly autocommitInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `baseLocationPrefixInput`<sup>Optional</sup> <a name="baseLocationPrefixInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.baseLocationPrefixInput"></a>
+##### `baseLocationPrefixInput`<sup>Optional</sup> <a name="baseLocationPrefixInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.baseLocationPrefixInput"></a>
 
 ```typescript
 public readonly baseLocationPrefixInput: string;
@@ -1860,7 +1851,7 @@ public readonly baseLocationPrefixInput: string;
 
 ---
 
-##### `binaryInputFormatInput`<sup>Optional</sup> <a name="binaryInputFormatInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.binaryInputFormatInput"></a>
+##### `binaryInputFormatInput`<sup>Optional</sup> <a name="binaryInputFormatInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.binaryInputFormatInput"></a>
 
 ```typescript
 public readonly binaryInputFormatInput: string;
@@ -1870,7 +1861,7 @@ public readonly binaryInputFormatInput: string;
 
 ---
 
-##### `binaryOutputFormatInput`<sup>Optional</sup> <a name="binaryOutputFormatInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.binaryOutputFormatInput"></a>
+##### `binaryOutputFormatInput`<sup>Optional</sup> <a name="binaryOutputFormatInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.binaryOutputFormatInput"></a>
 
 ```typescript
 public readonly binaryOutputFormatInput: string;
@@ -1880,7 +1871,7 @@ public readonly binaryOutputFormatInput: string;
 
 ---
 
-##### `catalogInput`<sup>Optional</sup> <a name="catalogInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.catalogInput"></a>
+##### `catalogInput`<sup>Optional</sup> <a name="catalogInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.catalogInput"></a>
 
 ```typescript
 public readonly catalogInput: string;
@@ -1890,7 +1881,7 @@ public readonly catalogInput: string;
 
 ---
 
-##### `catalogSyncInput`<sup>Optional</sup> <a name="catalogSyncInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.catalogSyncInput"></a>
+##### `catalogSyncInput`<sup>Optional</sup> <a name="catalogSyncInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.catalogSyncInput"></a>
 
 ```typescript
 public readonly catalogSyncInput: string;
@@ -1900,17 +1891,17 @@ public readonly catalogSyncInput: string;
 
 ---
 
-##### `clientEnableLogInfoStatementParametersInput`<sup>Optional</sup> <a name="clientEnableLogInfoStatementParametersInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientEnableLogInfoStatementParametersInput"></a>
+##### `clientEnableLogInfoStatementParametersInput`<sup>Optional</sup> <a name="clientEnableLogInfoStatementParametersInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientEnableLogInfoStatementParametersInput"></a>
 
 ```typescript
 public readonly clientEnableLogInfoStatementParametersInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `clientEncryptionKeySizeInput`<sup>Optional</sup> <a name="clientEncryptionKeySizeInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientEncryptionKeySizeInput"></a>
+##### `clientEncryptionKeySizeInput`<sup>Optional</sup> <a name="clientEncryptionKeySizeInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientEncryptionKeySizeInput"></a>
 
 ```typescript
 public readonly clientEncryptionKeySizeInput: number;
@@ -1920,7 +1911,7 @@ public readonly clientEncryptionKeySizeInput: number;
 
 ---
 
-##### `clientMemoryLimitInput`<sup>Optional</sup> <a name="clientMemoryLimitInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientMemoryLimitInput"></a>
+##### `clientMemoryLimitInput`<sup>Optional</sup> <a name="clientMemoryLimitInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientMemoryLimitInput"></a>
 
 ```typescript
 public readonly clientMemoryLimitInput: number;
@@ -1930,27 +1921,27 @@ public readonly clientMemoryLimitInput: number;
 
 ---
 
-##### `clientMetadataRequestUseConnectionCtxInput`<sup>Optional</sup> <a name="clientMetadataRequestUseConnectionCtxInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientMetadataRequestUseConnectionCtxInput"></a>
+##### `clientMetadataRequestUseConnectionCtxInput`<sup>Optional</sup> <a name="clientMetadataRequestUseConnectionCtxInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientMetadataRequestUseConnectionCtxInput"></a>
 
 ```typescript
 public readonly clientMetadataRequestUseConnectionCtxInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `clientMetadataUseSessionDatabaseInput`<sup>Optional</sup> <a name="clientMetadataUseSessionDatabaseInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientMetadataUseSessionDatabaseInput"></a>
+##### `clientMetadataUseSessionDatabaseInput`<sup>Optional</sup> <a name="clientMetadataUseSessionDatabaseInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientMetadataUseSessionDatabaseInput"></a>
 
 ```typescript
 public readonly clientMetadataUseSessionDatabaseInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `clientPrefetchThreadsInput`<sup>Optional</sup> <a name="clientPrefetchThreadsInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientPrefetchThreadsInput"></a>
+##### `clientPrefetchThreadsInput`<sup>Optional</sup> <a name="clientPrefetchThreadsInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientPrefetchThreadsInput"></a>
 
 ```typescript
 public readonly clientPrefetchThreadsInput: number;
@@ -1960,7 +1951,7 @@ public readonly clientPrefetchThreadsInput: number;
 
 ---
 
-##### `clientResultChunkSizeInput`<sup>Optional</sup> <a name="clientResultChunkSizeInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientResultChunkSizeInput"></a>
+##### `clientResultChunkSizeInput`<sup>Optional</sup> <a name="clientResultChunkSizeInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientResultChunkSizeInput"></a>
 
 ```typescript
 public readonly clientResultChunkSizeInput: number;
@@ -1970,17 +1961,17 @@ public readonly clientResultChunkSizeInput: number;
 
 ---
 
-##### `clientResultColumnCaseInsensitiveInput`<sup>Optional</sup> <a name="clientResultColumnCaseInsensitiveInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientResultColumnCaseInsensitiveInput"></a>
+##### `clientResultColumnCaseInsensitiveInput`<sup>Optional</sup> <a name="clientResultColumnCaseInsensitiveInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientResultColumnCaseInsensitiveInput"></a>
 
 ```typescript
 public readonly clientResultColumnCaseInsensitiveInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `clientSessionKeepAliveHeartbeatFrequencyInput`<sup>Optional</sup> <a name="clientSessionKeepAliveHeartbeatFrequencyInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientSessionKeepAliveHeartbeatFrequencyInput"></a>
+##### `clientSessionKeepAliveHeartbeatFrequencyInput`<sup>Optional</sup> <a name="clientSessionKeepAliveHeartbeatFrequencyInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientSessionKeepAliveHeartbeatFrequencyInput"></a>
 
 ```typescript
 public readonly clientSessionKeepAliveHeartbeatFrequencyInput: number;
@@ -1990,17 +1981,17 @@ public readonly clientSessionKeepAliveHeartbeatFrequencyInput: number;
 
 ---
 
-##### `clientSessionKeepAliveInput`<sup>Optional</sup> <a name="clientSessionKeepAliveInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientSessionKeepAliveInput"></a>
+##### `clientSessionKeepAliveInput`<sup>Optional</sup> <a name="clientSessionKeepAliveInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientSessionKeepAliveInput"></a>
 
 ```typescript
 public readonly clientSessionKeepAliveInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `clientTimestampTypeMappingInput`<sup>Optional</sup> <a name="clientTimestampTypeMappingInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientTimestampTypeMappingInput"></a>
+##### `clientTimestampTypeMappingInput`<sup>Optional</sup> <a name="clientTimestampTypeMappingInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientTimestampTypeMappingInput"></a>
 
 ```typescript
 public readonly clientTimestampTypeMappingInput: string;
@@ -2010,7 +2001,7 @@ public readonly clientTimestampTypeMappingInput: string;
 
 ---
 
-##### `cortexEnabledCrossRegionInput`<sup>Optional</sup> <a name="cortexEnabledCrossRegionInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.cortexEnabledCrossRegionInput"></a>
+##### `cortexEnabledCrossRegionInput`<sup>Optional</sup> <a name="cortexEnabledCrossRegionInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.cortexEnabledCrossRegionInput"></a>
 
 ```typescript
 public readonly cortexEnabledCrossRegionInput: string;
@@ -2020,7 +2011,7 @@ public readonly cortexEnabledCrossRegionInput: string;
 
 ---
 
-##### `cortexModelsAllowlistInput`<sup>Optional</sup> <a name="cortexModelsAllowlistInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.cortexModelsAllowlistInput"></a>
+##### `cortexModelsAllowlistInput`<sup>Optional</sup> <a name="cortexModelsAllowlistInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.cortexModelsAllowlistInput"></a>
 
 ```typescript
 public readonly cortexModelsAllowlistInput: string;
@@ -2030,7 +2021,7 @@ public readonly cortexModelsAllowlistInput: string;
 
 ---
 
-##### `csvTimestampFormatInput`<sup>Optional</sup> <a name="csvTimestampFormatInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.csvTimestampFormatInput"></a>
+##### `csvTimestampFormatInput`<sup>Optional</sup> <a name="csvTimestampFormatInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.csvTimestampFormatInput"></a>
 
 ```typescript
 public readonly csvTimestampFormatInput: string;
@@ -2040,7 +2031,7 @@ public readonly csvTimestampFormatInput: string;
 
 ---
 
-##### `dataRetentionTimeInDaysInput`<sup>Optional</sup> <a name="dataRetentionTimeInDaysInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.dataRetentionTimeInDaysInput"></a>
+##### `dataRetentionTimeInDaysInput`<sup>Optional</sup> <a name="dataRetentionTimeInDaysInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.dataRetentionTimeInDaysInput"></a>
 
 ```typescript
 public readonly dataRetentionTimeInDaysInput: number;
@@ -2050,7 +2041,7 @@ public readonly dataRetentionTimeInDaysInput: number;
 
 ---
 
-##### `dateInputFormatInput`<sup>Optional</sup> <a name="dateInputFormatInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.dateInputFormatInput"></a>
+##### `dateInputFormatInput`<sup>Optional</sup> <a name="dateInputFormatInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.dateInputFormatInput"></a>
 
 ```typescript
 public readonly dateInputFormatInput: string;
@@ -2060,7 +2051,7 @@ public readonly dateInputFormatInput: string;
 
 ---
 
-##### `dateOutputFormatInput`<sup>Optional</sup> <a name="dateOutputFormatInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.dateOutputFormatInput"></a>
+##### `dateOutputFormatInput`<sup>Optional</sup> <a name="dateOutputFormatInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.dateOutputFormatInput"></a>
 
 ```typescript
 public readonly dateOutputFormatInput: string;
@@ -2070,7 +2061,7 @@ public readonly dateOutputFormatInput: string;
 
 ---
 
-##### `defaultDdlCollationInput`<sup>Optional</sup> <a name="defaultDdlCollationInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultDdlCollationInput"></a>
+##### `defaultDdlCollationInput`<sup>Optional</sup> <a name="defaultDdlCollationInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultDdlCollationInput"></a>
 
 ```typescript
 public readonly defaultDdlCollationInput: string;
@@ -2080,7 +2071,7 @@ public readonly defaultDdlCollationInput: string;
 
 ---
 
-##### `defaultNotebookComputePoolCpuInput`<sup>Optional</sup> <a name="defaultNotebookComputePoolCpuInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultNotebookComputePoolCpuInput"></a>
+##### `defaultNotebookComputePoolCpuInput`<sup>Optional</sup> <a name="defaultNotebookComputePoolCpuInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultNotebookComputePoolCpuInput"></a>
 
 ```typescript
 public readonly defaultNotebookComputePoolCpuInput: string;
@@ -2090,7 +2081,7 @@ public readonly defaultNotebookComputePoolCpuInput: string;
 
 ---
 
-##### `defaultNotebookComputePoolGpuInput`<sup>Optional</sup> <a name="defaultNotebookComputePoolGpuInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultNotebookComputePoolGpuInput"></a>
+##### `defaultNotebookComputePoolGpuInput`<sup>Optional</sup> <a name="defaultNotebookComputePoolGpuInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultNotebookComputePoolGpuInput"></a>
 
 ```typescript
 public readonly defaultNotebookComputePoolGpuInput: string;
@@ -2100,7 +2091,7 @@ public readonly defaultNotebookComputePoolGpuInput: string;
 
 ---
 
-##### `defaultNullOrderingInput`<sup>Optional</sup> <a name="defaultNullOrderingInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultNullOrderingInput"></a>
+##### `defaultNullOrderingInput`<sup>Optional</sup> <a name="defaultNullOrderingInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultNullOrderingInput"></a>
 
 ```typescript
 public readonly defaultNullOrderingInput: string;
@@ -2110,7 +2101,7 @@ public readonly defaultNullOrderingInput: string;
 
 ---
 
-##### `defaultStreamlitNotebookWarehouseInput`<sup>Optional</sup> <a name="defaultStreamlitNotebookWarehouseInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultStreamlitNotebookWarehouseInput"></a>
+##### `defaultStreamlitNotebookWarehouseInput`<sup>Optional</sup> <a name="defaultStreamlitNotebookWarehouseInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultStreamlitNotebookWarehouseInput"></a>
 
 ```typescript
 public readonly defaultStreamlitNotebookWarehouseInput: string;
@@ -2120,157 +2111,157 @@ public readonly defaultStreamlitNotebookWarehouseInput: string;
 
 ---
 
-##### `disableUiDownloadButtonInput`<sup>Optional</sup> <a name="disableUiDownloadButtonInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.disableUiDownloadButtonInput"></a>
+##### `disableUiDownloadButtonInput`<sup>Optional</sup> <a name="disableUiDownloadButtonInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.disableUiDownloadButtonInput"></a>
 
 ```typescript
 public readonly disableUiDownloadButtonInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `disableUserPrivilegeGrantsInput`<sup>Optional</sup> <a name="disableUserPrivilegeGrantsInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.disableUserPrivilegeGrantsInput"></a>
+##### `disableUserPrivilegeGrantsInput`<sup>Optional</sup> <a name="disableUserPrivilegeGrantsInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.disableUserPrivilegeGrantsInput"></a>
 
 ```typescript
 public readonly disableUserPrivilegeGrantsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableAutomaticSensitiveDataClassificationLogInput`<sup>Optional</sup> <a name="enableAutomaticSensitiveDataClassificationLogInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableAutomaticSensitiveDataClassificationLogInput"></a>
+##### `enableAutomaticSensitiveDataClassificationLogInput`<sup>Optional</sup> <a name="enableAutomaticSensitiveDataClassificationLogInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableAutomaticSensitiveDataClassificationLogInput"></a>
 
 ```typescript
 public readonly enableAutomaticSensitiveDataClassificationLogInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableEgressCostOptimizerInput`<sup>Optional</sup> <a name="enableEgressCostOptimizerInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableEgressCostOptimizerInput"></a>
+##### `enableEgressCostOptimizerInput`<sup>Optional</sup> <a name="enableEgressCostOptimizerInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableEgressCostOptimizerInput"></a>
 
 ```typescript
 public readonly enableEgressCostOptimizerInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableIdentifierFirstLoginInput`<sup>Optional</sup> <a name="enableIdentifierFirstLoginInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableIdentifierFirstLoginInput"></a>
+##### `enableIdentifierFirstLoginInput`<sup>Optional</sup> <a name="enableIdentifierFirstLoginInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableIdentifierFirstLoginInput"></a>
 
 ```typescript
 public readonly enableIdentifierFirstLoginInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableInternalStagesPrivatelinkInput`<sup>Optional</sup> <a name="enableInternalStagesPrivatelinkInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableInternalStagesPrivatelinkInput"></a>
+##### `enableInternalStagesPrivatelinkInput`<sup>Optional</sup> <a name="enableInternalStagesPrivatelinkInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableInternalStagesPrivatelinkInput"></a>
 
 ```typescript
 public readonly enableInternalStagesPrivatelinkInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableTriSecretAndRekeyOptOutForImageRepositoryInput`<sup>Optional</sup> <a name="enableTriSecretAndRekeyOptOutForImageRepositoryInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableTriSecretAndRekeyOptOutForImageRepositoryInput"></a>
+##### `enableTriSecretAndRekeyOptOutForImageRepositoryInput`<sup>Optional</sup> <a name="enableTriSecretAndRekeyOptOutForImageRepositoryInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableTriSecretAndRekeyOptOutForImageRepositoryInput"></a>
 
 ```typescript
 public readonly enableTriSecretAndRekeyOptOutForImageRepositoryInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableTriSecretAndRekeyOptOutForSpcsBlockStorageInput`<sup>Optional</sup> <a name="enableTriSecretAndRekeyOptOutForSpcsBlockStorageInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableTriSecretAndRekeyOptOutForSpcsBlockStorageInput"></a>
+##### `enableTriSecretAndRekeyOptOutForSpcsBlockStorageInput`<sup>Optional</sup> <a name="enableTriSecretAndRekeyOptOutForSpcsBlockStorageInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableTriSecretAndRekeyOptOutForSpcsBlockStorageInput"></a>
 
 ```typescript
 public readonly enableTriSecretAndRekeyOptOutForSpcsBlockStorageInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableUnhandledExceptionsReportingInput`<sup>Optional</sup> <a name="enableUnhandledExceptionsReportingInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableUnhandledExceptionsReportingInput"></a>
+##### `enableUnhandledExceptionsReportingInput`<sup>Optional</sup> <a name="enableUnhandledExceptionsReportingInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableUnhandledExceptionsReportingInput"></a>
 
 ```typescript
 public readonly enableUnhandledExceptionsReportingInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableUnloadPhysicalTypeOptimizationInput`<sup>Optional</sup> <a name="enableUnloadPhysicalTypeOptimizationInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableUnloadPhysicalTypeOptimizationInput"></a>
+##### `enableUnloadPhysicalTypeOptimizationInput`<sup>Optional</sup> <a name="enableUnloadPhysicalTypeOptimizationInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableUnloadPhysicalTypeOptimizationInput"></a>
 
 ```typescript
 public readonly enableUnloadPhysicalTypeOptimizationInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableUnredactedQuerySyntaxErrorInput`<sup>Optional</sup> <a name="enableUnredactedQuerySyntaxErrorInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableUnredactedQuerySyntaxErrorInput"></a>
+##### `enableUnredactedQuerySyntaxErrorInput`<sup>Optional</sup> <a name="enableUnredactedQuerySyntaxErrorInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableUnredactedQuerySyntaxErrorInput"></a>
 
 ```typescript
 public readonly enableUnredactedQuerySyntaxErrorInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableUnredactedSecureObjectErrorInput`<sup>Optional</sup> <a name="enableUnredactedSecureObjectErrorInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableUnredactedSecureObjectErrorInput"></a>
+##### `enableUnredactedSecureObjectErrorInput`<sup>Optional</sup> <a name="enableUnredactedSecureObjectErrorInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableUnredactedSecureObjectErrorInput"></a>
 
 ```typescript
 public readonly enableUnredactedSecureObjectErrorInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enforceNetworkRulesForInternalStagesInput`<sup>Optional</sup> <a name="enforceNetworkRulesForInternalStagesInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enforceNetworkRulesForInternalStagesInput"></a>
+##### `enforceNetworkRulesForInternalStagesInput`<sup>Optional</sup> <a name="enforceNetworkRulesForInternalStagesInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enforceNetworkRulesForInternalStagesInput"></a>
 
 ```typescript
 public readonly enforceNetworkRulesForInternalStagesInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `errorOnNondeterministicMergeInput`<sup>Optional</sup> <a name="errorOnNondeterministicMergeInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.errorOnNondeterministicMergeInput"></a>
+##### `errorOnNondeterministicMergeInput`<sup>Optional</sup> <a name="errorOnNondeterministicMergeInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.errorOnNondeterministicMergeInput"></a>
 
 ```typescript
 public readonly errorOnNondeterministicMergeInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `errorOnNondeterministicUpdateInput`<sup>Optional</sup> <a name="errorOnNondeterministicUpdateInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.errorOnNondeterministicUpdateInput"></a>
+##### `errorOnNondeterministicUpdateInput`<sup>Optional</sup> <a name="errorOnNondeterministicUpdateInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.errorOnNondeterministicUpdateInput"></a>
 
 ```typescript
 public readonly errorOnNondeterministicUpdateInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `eventTableInput`<sup>Optional</sup> <a name="eventTableInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.eventTableInput"></a>
+##### `eventTableInput`<sup>Optional</sup> <a name="eventTableInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.eventTableInput"></a>
 
 ```typescript
 public readonly eventTableInput: string;
@@ -2280,17 +2271,17 @@ public readonly eventTableInput: string;
 
 ---
 
-##### `externalOauthAddPrivilegedRolesToBlockedListInput`<sup>Optional</sup> <a name="externalOauthAddPrivilegedRolesToBlockedListInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.externalOauthAddPrivilegedRolesToBlockedListInput"></a>
+##### `externalOauthAddPrivilegedRolesToBlockedListInput`<sup>Optional</sup> <a name="externalOauthAddPrivilegedRolesToBlockedListInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.externalOauthAddPrivilegedRolesToBlockedListInput"></a>
 
 ```typescript
 public readonly externalOauthAddPrivilegedRolesToBlockedListInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `externalVolumeInput`<sup>Optional</sup> <a name="externalVolumeInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.externalVolumeInput"></a>
+##### `externalVolumeInput`<sup>Optional</sup> <a name="externalVolumeInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.externalVolumeInput"></a>
 
 ```typescript
 public readonly externalVolumeInput: string;
@@ -2300,7 +2291,7 @@ public readonly externalVolumeInput: string;
 
 ---
 
-##### `featurePolicyInput`<sup>Optional</sup> <a name="featurePolicyInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.featurePolicyInput"></a>
+##### `featurePolicyInput`<sup>Optional</sup> <a name="featurePolicyInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.featurePolicyInput"></a>
 
 ```typescript
 public readonly featurePolicyInput: string;
@@ -2310,7 +2301,7 @@ public readonly featurePolicyInput: string;
 
 ---
 
-##### `geographyOutputFormatInput`<sup>Optional</sup> <a name="geographyOutputFormatInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.geographyOutputFormatInput"></a>
+##### `geographyOutputFormatInput`<sup>Optional</sup> <a name="geographyOutputFormatInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.geographyOutputFormatInput"></a>
 
 ```typescript
 public readonly geographyOutputFormatInput: string;
@@ -2320,7 +2311,7 @@ public readonly geographyOutputFormatInput: string;
 
 ---
 
-##### `geometryOutputFormatInput`<sup>Optional</sup> <a name="geometryOutputFormatInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.geometryOutputFormatInput"></a>
+##### `geometryOutputFormatInput`<sup>Optional</sup> <a name="geometryOutputFormatInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.geometryOutputFormatInput"></a>
 
 ```typescript
 public readonly geometryOutputFormatInput: string;
@@ -2330,7 +2321,7 @@ public readonly geometryOutputFormatInput: string;
 
 ---
 
-##### `hybridTableLockTimeoutInput`<sup>Optional</sup> <a name="hybridTableLockTimeoutInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.hybridTableLockTimeoutInput"></a>
+##### `hybridTableLockTimeoutInput`<sup>Optional</sup> <a name="hybridTableLockTimeoutInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.hybridTableLockTimeoutInput"></a>
 
 ```typescript
 public readonly hybridTableLockTimeoutInput: number;
@@ -2340,7 +2331,7 @@ public readonly hybridTableLockTimeoutInput: number;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -2350,7 +2341,7 @@ public readonly idInput: string;
 
 ---
 
-##### `initialReplicationSizeLimitInTbInput`<sup>Optional</sup> <a name="initialReplicationSizeLimitInTbInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.initialReplicationSizeLimitInTbInput"></a>
+##### `initialReplicationSizeLimitInTbInput`<sup>Optional</sup> <a name="initialReplicationSizeLimitInTbInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.initialReplicationSizeLimitInTbInput"></a>
 
 ```typescript
 public readonly initialReplicationSizeLimitInTbInput: string;
@@ -2360,37 +2351,37 @@ public readonly initialReplicationSizeLimitInTbInput: string;
 
 ---
 
-##### `jdbcTreatDecimalAsIntInput`<sup>Optional</sup> <a name="jdbcTreatDecimalAsIntInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jdbcTreatDecimalAsIntInput"></a>
+##### `jdbcTreatDecimalAsIntInput`<sup>Optional</sup> <a name="jdbcTreatDecimalAsIntInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jdbcTreatDecimalAsIntInput"></a>
 
 ```typescript
 public readonly jdbcTreatDecimalAsIntInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `jdbcTreatTimestampNtzAsUtcInput`<sup>Optional</sup> <a name="jdbcTreatTimestampNtzAsUtcInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jdbcTreatTimestampNtzAsUtcInput"></a>
+##### `jdbcTreatTimestampNtzAsUtcInput`<sup>Optional</sup> <a name="jdbcTreatTimestampNtzAsUtcInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jdbcTreatTimestampNtzAsUtcInput"></a>
 
 ```typescript
 public readonly jdbcTreatTimestampNtzAsUtcInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `jdbcUseSessionTimezoneInput`<sup>Optional</sup> <a name="jdbcUseSessionTimezoneInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jdbcUseSessionTimezoneInput"></a>
+##### `jdbcUseSessionTimezoneInput`<sup>Optional</sup> <a name="jdbcUseSessionTimezoneInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jdbcUseSessionTimezoneInput"></a>
 
 ```typescript
 public readonly jdbcUseSessionTimezoneInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `jsonIndentInput`<sup>Optional</sup> <a name="jsonIndentInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jsonIndentInput"></a>
+##### `jsonIndentInput`<sup>Optional</sup> <a name="jsonIndentInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jsonIndentInput"></a>
 
 ```typescript
 public readonly jsonIndentInput: number;
@@ -2400,17 +2391,17 @@ public readonly jsonIndentInput: number;
 
 ---
 
-##### `jsTreatIntegerAsBigintInput`<sup>Optional</sup> <a name="jsTreatIntegerAsBigintInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jsTreatIntegerAsBigintInput"></a>
+##### `jsTreatIntegerAsBigintInput`<sup>Optional</sup> <a name="jsTreatIntegerAsBigintInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jsTreatIntegerAsBigintInput"></a>
 
 ```typescript
 public readonly jsTreatIntegerAsBigintInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `listingAutoFulfillmentReplicationRefreshScheduleInput`<sup>Optional</sup> <a name="listingAutoFulfillmentReplicationRefreshScheduleInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.listingAutoFulfillmentReplicationRefreshScheduleInput"></a>
+##### `listingAutoFulfillmentReplicationRefreshScheduleInput`<sup>Optional</sup> <a name="listingAutoFulfillmentReplicationRefreshScheduleInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.listingAutoFulfillmentReplicationRefreshScheduleInput"></a>
 
 ```typescript
 public readonly listingAutoFulfillmentReplicationRefreshScheduleInput: string;
@@ -2420,7 +2411,7 @@ public readonly listingAutoFulfillmentReplicationRefreshScheduleInput: string;
 
 ---
 
-##### `lockTimeoutInput`<sup>Optional</sup> <a name="lockTimeoutInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.lockTimeoutInput"></a>
+##### `lockTimeoutInput`<sup>Optional</sup> <a name="lockTimeoutInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.lockTimeoutInput"></a>
 
 ```typescript
 public readonly lockTimeoutInput: number;
@@ -2430,7 +2421,7 @@ public readonly lockTimeoutInput: number;
 
 ---
 
-##### `logLevelInput`<sup>Optional</sup> <a name="logLevelInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.logLevelInput"></a>
+##### `logLevelInput`<sup>Optional</sup> <a name="logLevelInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.logLevelInput"></a>
 
 ```typescript
 public readonly logLevelInput: string;
@@ -2440,7 +2431,7 @@ public readonly logLevelInput: string;
 
 ---
 
-##### `maxConcurrencyLevelInput`<sup>Optional</sup> <a name="maxConcurrencyLevelInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.maxConcurrencyLevelInput"></a>
+##### `maxConcurrencyLevelInput`<sup>Optional</sup> <a name="maxConcurrencyLevelInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.maxConcurrencyLevelInput"></a>
 
 ```typescript
 public readonly maxConcurrencyLevelInput: number;
@@ -2450,7 +2441,7 @@ public readonly maxConcurrencyLevelInput: number;
 
 ---
 
-##### `maxDataExtensionTimeInDaysInput`<sup>Optional</sup> <a name="maxDataExtensionTimeInDaysInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.maxDataExtensionTimeInDaysInput"></a>
+##### `maxDataExtensionTimeInDaysInput`<sup>Optional</sup> <a name="maxDataExtensionTimeInDaysInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.maxDataExtensionTimeInDaysInput"></a>
 
 ```typescript
 public readonly maxDataExtensionTimeInDaysInput: number;
@@ -2460,7 +2451,7 @@ public readonly maxDataExtensionTimeInDaysInput: number;
 
 ---
 
-##### `metricLevelInput`<sup>Optional</sup> <a name="metricLevelInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.metricLevelInput"></a>
+##### `metricLevelInput`<sup>Optional</sup> <a name="metricLevelInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.metricLevelInput"></a>
 
 ```typescript
 public readonly metricLevelInput: string;
@@ -2470,7 +2461,7 @@ public readonly metricLevelInput: string;
 
 ---
 
-##### `minDataRetentionTimeInDaysInput`<sup>Optional</sup> <a name="minDataRetentionTimeInDaysInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.minDataRetentionTimeInDaysInput"></a>
+##### `minDataRetentionTimeInDaysInput`<sup>Optional</sup> <a name="minDataRetentionTimeInDaysInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.minDataRetentionTimeInDaysInput"></a>
 
 ```typescript
 public readonly minDataRetentionTimeInDaysInput: number;
@@ -2480,7 +2471,7 @@ public readonly minDataRetentionTimeInDaysInput: number;
 
 ---
 
-##### `multiStatementCountInput`<sup>Optional</sup> <a name="multiStatementCountInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.multiStatementCountInput"></a>
+##### `multiStatementCountInput`<sup>Optional</sup> <a name="multiStatementCountInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.multiStatementCountInput"></a>
 
 ```typescript
 public readonly multiStatementCountInput: number;
@@ -2490,7 +2481,7 @@ public readonly multiStatementCountInput: number;
 
 ---
 
-##### `networkPolicyInput`<sup>Optional</sup> <a name="networkPolicyInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.networkPolicyInput"></a>
+##### `networkPolicyInput`<sup>Optional</sup> <a name="networkPolicyInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.networkPolicyInput"></a>
 
 ```typescript
 public readonly networkPolicyInput: string;
@@ -2500,37 +2491,37 @@ public readonly networkPolicyInput: string;
 
 ---
 
-##### `noorderSequenceAsDefaultInput`<sup>Optional</sup> <a name="noorderSequenceAsDefaultInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.noorderSequenceAsDefaultInput"></a>
+##### `noorderSequenceAsDefaultInput`<sup>Optional</sup> <a name="noorderSequenceAsDefaultInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.noorderSequenceAsDefaultInput"></a>
 
 ```typescript
 public readonly noorderSequenceAsDefaultInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `oauthAddPrivilegedRolesToBlockedListInput`<sup>Optional</sup> <a name="oauthAddPrivilegedRolesToBlockedListInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.oauthAddPrivilegedRolesToBlockedListInput"></a>
+##### `oauthAddPrivilegedRolesToBlockedListInput`<sup>Optional</sup> <a name="oauthAddPrivilegedRolesToBlockedListInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.oauthAddPrivilegedRolesToBlockedListInput"></a>
 
 ```typescript
 public readonly oauthAddPrivilegedRolesToBlockedListInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `odbcTreatDecimalAsIntInput`<sup>Optional</sup> <a name="odbcTreatDecimalAsIntInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.odbcTreatDecimalAsIntInput"></a>
+##### `odbcTreatDecimalAsIntInput`<sup>Optional</sup> <a name="odbcTreatDecimalAsIntInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.odbcTreatDecimalAsIntInput"></a>
 
 ```typescript
 public readonly odbcTreatDecimalAsIntInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `packagesPolicyInput`<sup>Optional</sup> <a name="packagesPolicyInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.packagesPolicyInput"></a>
+##### `packagesPolicyInput`<sup>Optional</sup> <a name="packagesPolicyInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.packagesPolicyInput"></a>
 
 ```typescript
 public readonly packagesPolicyInput: string;
@@ -2540,7 +2531,7 @@ public readonly packagesPolicyInput: string;
 
 ---
 
-##### `passwordPolicyInput`<sup>Optional</sup> <a name="passwordPolicyInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.passwordPolicyInput"></a>
+##### `passwordPolicyInput`<sup>Optional</sup> <a name="passwordPolicyInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.passwordPolicyInput"></a>
 
 ```typescript
 public readonly passwordPolicyInput: string;
@@ -2550,47 +2541,47 @@ public readonly passwordPolicyInput: string;
 
 ---
 
-##### `periodicDataRekeyingInput`<sup>Optional</sup> <a name="periodicDataRekeyingInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.periodicDataRekeyingInput"></a>
+##### `periodicDataRekeyingInput`<sup>Optional</sup> <a name="periodicDataRekeyingInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.periodicDataRekeyingInput"></a>
 
 ```typescript
 public readonly periodicDataRekeyingInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `pipeExecutionPausedInput`<sup>Optional</sup> <a name="pipeExecutionPausedInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.pipeExecutionPausedInput"></a>
+##### `pipeExecutionPausedInput`<sup>Optional</sup> <a name="pipeExecutionPausedInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.pipeExecutionPausedInput"></a>
 
 ```typescript
 public readonly pipeExecutionPausedInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `preventUnloadToInlineUrlInput`<sup>Optional</sup> <a name="preventUnloadToInlineUrlInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.preventUnloadToInlineUrlInput"></a>
+##### `preventUnloadToInlineUrlInput`<sup>Optional</sup> <a name="preventUnloadToInlineUrlInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.preventUnloadToInlineUrlInput"></a>
 
 ```typescript
 public readonly preventUnloadToInlineUrlInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `preventUnloadToInternalStagesInput`<sup>Optional</sup> <a name="preventUnloadToInternalStagesInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.preventUnloadToInternalStagesInput"></a>
+##### `preventUnloadToInternalStagesInput`<sup>Optional</sup> <a name="preventUnloadToInternalStagesInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.preventUnloadToInternalStagesInput"></a>
 
 ```typescript
 public readonly preventUnloadToInternalStagesInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `pythonProfilerModulesInput`<sup>Optional</sup> <a name="pythonProfilerModulesInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.pythonProfilerModulesInput"></a>
+##### `pythonProfilerModulesInput`<sup>Optional</sup> <a name="pythonProfilerModulesInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.pythonProfilerModulesInput"></a>
 
 ```typescript
 public readonly pythonProfilerModulesInput: string;
@@ -2600,7 +2591,7 @@ public readonly pythonProfilerModulesInput: string;
 
 ---
 
-##### `pythonProfilerTargetStageInput`<sup>Optional</sup> <a name="pythonProfilerTargetStageInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.pythonProfilerTargetStageInput"></a>
+##### `pythonProfilerTargetStageInput`<sup>Optional</sup> <a name="pythonProfilerTargetStageInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.pythonProfilerTargetStageInput"></a>
 
 ```typescript
 public readonly pythonProfilerTargetStageInput: string;
@@ -2610,7 +2601,7 @@ public readonly pythonProfilerTargetStageInput: string;
 
 ---
 
-##### `queryTagInput`<sup>Optional</sup> <a name="queryTagInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.queryTagInput"></a>
+##### `queryTagInput`<sup>Optional</sup> <a name="queryTagInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.queryTagInput"></a>
 
 ```typescript
 public readonly queryTagInput: string;
@@ -2620,47 +2611,47 @@ public readonly queryTagInput: string;
 
 ---
 
-##### `quotedIdentifiersIgnoreCaseInput`<sup>Optional</sup> <a name="quotedIdentifiersIgnoreCaseInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.quotedIdentifiersIgnoreCaseInput"></a>
+##### `quotedIdentifiersIgnoreCaseInput`<sup>Optional</sup> <a name="quotedIdentifiersIgnoreCaseInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.quotedIdentifiersIgnoreCaseInput"></a>
 
 ```typescript
 public readonly quotedIdentifiersIgnoreCaseInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `replaceInvalidCharactersInput`<sup>Optional</sup> <a name="replaceInvalidCharactersInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.replaceInvalidCharactersInput"></a>
+##### `replaceInvalidCharactersInput`<sup>Optional</sup> <a name="replaceInvalidCharactersInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.replaceInvalidCharactersInput"></a>
 
 ```typescript
 public readonly replaceInvalidCharactersInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `requireStorageIntegrationForStageCreationInput`<sup>Optional</sup> <a name="requireStorageIntegrationForStageCreationInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.requireStorageIntegrationForStageCreationInput"></a>
+##### `requireStorageIntegrationForStageCreationInput`<sup>Optional</sup> <a name="requireStorageIntegrationForStageCreationInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.requireStorageIntegrationForStageCreationInput"></a>
 
 ```typescript
 public readonly requireStorageIntegrationForStageCreationInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `requireStorageIntegrationForStageOperationInput`<sup>Optional</sup> <a name="requireStorageIntegrationForStageOperationInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.requireStorageIntegrationForStageOperationInput"></a>
+##### `requireStorageIntegrationForStageOperationInput`<sup>Optional</sup> <a name="requireStorageIntegrationForStageOperationInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.requireStorageIntegrationForStageOperationInput"></a>
 
 ```typescript
 public readonly requireStorageIntegrationForStageOperationInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `resourceMonitorInput`<sup>Optional</sup> <a name="resourceMonitorInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.resourceMonitorInput"></a>
+##### `resourceMonitorInput`<sup>Optional</sup> <a name="resourceMonitorInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.resourceMonitorInput"></a>
 
 ```typescript
 public readonly resourceMonitorInput: string;
@@ -2670,7 +2661,7 @@ public readonly resourceMonitorInput: string;
 
 ---
 
-##### `rowsPerResultsetInput`<sup>Optional</sup> <a name="rowsPerResultsetInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.rowsPerResultsetInput"></a>
+##### `rowsPerResultsetInput`<sup>Optional</sup> <a name="rowsPerResultsetInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.rowsPerResultsetInput"></a>
 
 ```typescript
 public readonly rowsPerResultsetInput: number;
@@ -2680,7 +2671,7 @@ public readonly rowsPerResultsetInput: number;
 
 ---
 
-##### `s3StageVpceDnsNameInput`<sup>Optional</sup> <a name="s3StageVpceDnsNameInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.s3StageVpceDnsNameInput"></a>
+##### `s3StageVpceDnsNameInput`<sup>Optional</sup> <a name="s3StageVpceDnsNameInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.s3StageVpceDnsNameInput"></a>
 
 ```typescript
 public readonly s3StageVpceDnsNameInput: string;
@@ -2690,17 +2681,7 @@ public readonly s3StageVpceDnsNameInput: string;
 
 ---
 
-##### `samlIdentityProviderInput`<sup>Optional</sup> <a name="samlIdentityProviderInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.samlIdentityProviderInput"></a>
-
-```typescript
-public readonly samlIdentityProviderInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `searchPathInput`<sup>Optional</sup> <a name="searchPathInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.searchPathInput"></a>
+##### `searchPathInput`<sup>Optional</sup> <a name="searchPathInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.searchPathInput"></a>
 
 ```typescript
 public readonly searchPathInput: string;
@@ -2710,7 +2691,7 @@ public readonly searchPathInput: string;
 
 ---
 
-##### `serverlessTaskMaxStatementSizeInput`<sup>Optional</sup> <a name="serverlessTaskMaxStatementSizeInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.serverlessTaskMaxStatementSizeInput"></a>
+##### `serverlessTaskMaxStatementSizeInput`<sup>Optional</sup> <a name="serverlessTaskMaxStatementSizeInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.serverlessTaskMaxStatementSizeInput"></a>
 
 ```typescript
 public readonly serverlessTaskMaxStatementSizeInput: string;
@@ -2720,7 +2701,7 @@ public readonly serverlessTaskMaxStatementSizeInput: string;
 
 ---
 
-##### `serverlessTaskMinStatementSizeInput`<sup>Optional</sup> <a name="serverlessTaskMinStatementSizeInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.serverlessTaskMinStatementSizeInput"></a>
+##### `serverlessTaskMinStatementSizeInput`<sup>Optional</sup> <a name="serverlessTaskMinStatementSizeInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.serverlessTaskMinStatementSizeInput"></a>
 
 ```typescript
 public readonly serverlessTaskMinStatementSizeInput: string;
@@ -2730,7 +2711,7 @@ public readonly serverlessTaskMinStatementSizeInput: string;
 
 ---
 
-##### `sessionPolicyInput`<sup>Optional</sup> <a name="sessionPolicyInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.sessionPolicyInput"></a>
+##### `sessionPolicyInput`<sup>Optional</sup> <a name="sessionPolicyInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.sessionPolicyInput"></a>
 
 ```typescript
 public readonly sessionPolicyInput: string;
@@ -2740,7 +2721,7 @@ public readonly sessionPolicyInput: string;
 
 ---
 
-##### `simulatedDataSharingConsumerInput`<sup>Optional</sup> <a name="simulatedDataSharingConsumerInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.simulatedDataSharingConsumerInput"></a>
+##### `simulatedDataSharingConsumerInput`<sup>Optional</sup> <a name="simulatedDataSharingConsumerInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.simulatedDataSharingConsumerInput"></a>
 
 ```typescript
 public readonly simulatedDataSharingConsumerInput: string;
@@ -2750,17 +2731,17 @@ public readonly simulatedDataSharingConsumerInput: string;
 
 ---
 
-##### `ssoLoginPageInput`<sup>Optional</sup> <a name="ssoLoginPageInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.ssoLoginPageInput"></a>
+##### `ssoLoginPageInput`<sup>Optional</sup> <a name="ssoLoginPageInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.ssoLoginPageInput"></a>
 
 ```typescript
 public readonly ssoLoginPageInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `statementQueuedTimeoutInSecondsInput`<sup>Optional</sup> <a name="statementQueuedTimeoutInSecondsInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.statementQueuedTimeoutInSecondsInput"></a>
+##### `statementQueuedTimeoutInSecondsInput`<sup>Optional</sup> <a name="statementQueuedTimeoutInSecondsInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.statementQueuedTimeoutInSecondsInput"></a>
 
 ```typescript
 public readonly statementQueuedTimeoutInSecondsInput: number;
@@ -2770,7 +2751,7 @@ public readonly statementQueuedTimeoutInSecondsInput: number;
 
 ---
 
-##### `statementTimeoutInSecondsInput`<sup>Optional</sup> <a name="statementTimeoutInSecondsInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.statementTimeoutInSecondsInput"></a>
+##### `statementTimeoutInSecondsInput`<sup>Optional</sup> <a name="statementTimeoutInSecondsInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.statementTimeoutInSecondsInput"></a>
 
 ```typescript
 public readonly statementTimeoutInSecondsInput: number;
@@ -2780,7 +2761,7 @@ public readonly statementTimeoutInSecondsInput: number;
 
 ---
 
-##### `storageSerializationPolicyInput`<sup>Optional</sup> <a name="storageSerializationPolicyInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.storageSerializationPolicyInput"></a>
+##### `storageSerializationPolicyInput`<sup>Optional</sup> <a name="storageSerializationPolicyInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.storageSerializationPolicyInput"></a>
 
 ```typescript
 public readonly storageSerializationPolicyInput: string;
@@ -2790,17 +2771,17 @@ public readonly storageSerializationPolicyInput: string;
 
 ---
 
-##### `strictJsonOutputInput`<sup>Optional</sup> <a name="strictJsonOutputInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.strictJsonOutputInput"></a>
+##### `strictJsonOutputInput`<sup>Optional</sup> <a name="strictJsonOutputInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.strictJsonOutputInput"></a>
 
 ```typescript
 public readonly strictJsonOutputInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `suspendTaskAfterNumFailuresInput`<sup>Optional</sup> <a name="suspendTaskAfterNumFailuresInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.suspendTaskAfterNumFailuresInput"></a>
+##### `suspendTaskAfterNumFailuresInput`<sup>Optional</sup> <a name="suspendTaskAfterNumFailuresInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.suspendTaskAfterNumFailuresInput"></a>
 
 ```typescript
 public readonly suspendTaskAfterNumFailuresInput: number;
@@ -2810,7 +2791,7 @@ public readonly suspendTaskAfterNumFailuresInput: number;
 
 ---
 
-##### `taskAutoRetryAttemptsInput`<sup>Optional</sup> <a name="taskAutoRetryAttemptsInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.taskAutoRetryAttemptsInput"></a>
+##### `taskAutoRetryAttemptsInput`<sup>Optional</sup> <a name="taskAutoRetryAttemptsInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.taskAutoRetryAttemptsInput"></a>
 
 ```typescript
 public readonly taskAutoRetryAttemptsInput: number;
@@ -2820,7 +2801,7 @@ public readonly taskAutoRetryAttemptsInput: number;
 
 ---
 
-##### `timeInputFormatInput`<sup>Optional</sup> <a name="timeInputFormatInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timeInputFormatInput"></a>
+##### `timeInputFormatInput`<sup>Optional</sup> <a name="timeInputFormatInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timeInputFormatInput"></a>
 
 ```typescript
 public readonly timeInputFormatInput: string;
@@ -2830,7 +2811,7 @@ public readonly timeInputFormatInput: string;
 
 ---
 
-##### `timeOutputFormatInput`<sup>Optional</sup> <a name="timeOutputFormatInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timeOutputFormatInput"></a>
+##### `timeOutputFormatInput`<sup>Optional</sup> <a name="timeOutputFormatInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timeOutputFormatInput"></a>
 
 ```typescript
 public readonly timeOutputFormatInput: string;
@@ -2840,27 +2821,27 @@ public readonly timeOutputFormatInput: string;
 
 ---
 
-##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timeoutsInput"></a>
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timeoutsInput"></a>
 
 ```typescript
 public readonly timeoutsInput: IResolvable | CurrentAccountTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts">CurrentAccountTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeouts">CurrentAccountTimeouts</a>
 
 ---
 
-##### `timestampDayIsAlways24HInput`<sup>Optional</sup> <a name="timestampDayIsAlways24HInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampDayIsAlways24HInput"></a>
+##### `timestampDayIsAlways24HInput`<sup>Optional</sup> <a name="timestampDayIsAlways24HInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampDayIsAlways24HInput"></a>
 
 ```typescript
 public readonly timestampDayIsAlways24HInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `timestampInputFormatInput`<sup>Optional</sup> <a name="timestampInputFormatInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampInputFormatInput"></a>
+##### `timestampInputFormatInput`<sup>Optional</sup> <a name="timestampInputFormatInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampInputFormatInput"></a>
 
 ```typescript
 public readonly timestampInputFormatInput: string;
@@ -2870,7 +2851,7 @@ public readonly timestampInputFormatInput: string;
 
 ---
 
-##### `timestampLtzOutputFormatInput`<sup>Optional</sup> <a name="timestampLtzOutputFormatInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampLtzOutputFormatInput"></a>
+##### `timestampLtzOutputFormatInput`<sup>Optional</sup> <a name="timestampLtzOutputFormatInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampLtzOutputFormatInput"></a>
 
 ```typescript
 public readonly timestampLtzOutputFormatInput: string;
@@ -2880,7 +2861,7 @@ public readonly timestampLtzOutputFormatInput: string;
 
 ---
 
-##### `timestampNtzOutputFormatInput`<sup>Optional</sup> <a name="timestampNtzOutputFormatInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampNtzOutputFormatInput"></a>
+##### `timestampNtzOutputFormatInput`<sup>Optional</sup> <a name="timestampNtzOutputFormatInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampNtzOutputFormatInput"></a>
 
 ```typescript
 public readonly timestampNtzOutputFormatInput: string;
@@ -2890,7 +2871,7 @@ public readonly timestampNtzOutputFormatInput: string;
 
 ---
 
-##### `timestampOutputFormatInput`<sup>Optional</sup> <a name="timestampOutputFormatInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampOutputFormatInput"></a>
+##### `timestampOutputFormatInput`<sup>Optional</sup> <a name="timestampOutputFormatInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampOutputFormatInput"></a>
 
 ```typescript
 public readonly timestampOutputFormatInput: string;
@@ -2900,7 +2881,7 @@ public readonly timestampOutputFormatInput: string;
 
 ---
 
-##### `timestampTypeMappingInput`<sup>Optional</sup> <a name="timestampTypeMappingInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampTypeMappingInput"></a>
+##### `timestampTypeMappingInput`<sup>Optional</sup> <a name="timestampTypeMappingInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampTypeMappingInput"></a>
 
 ```typescript
 public readonly timestampTypeMappingInput: string;
@@ -2910,7 +2891,7 @@ public readonly timestampTypeMappingInput: string;
 
 ---
 
-##### `timestampTzOutputFormatInput`<sup>Optional</sup> <a name="timestampTzOutputFormatInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampTzOutputFormatInput"></a>
+##### `timestampTzOutputFormatInput`<sup>Optional</sup> <a name="timestampTzOutputFormatInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampTzOutputFormatInput"></a>
 
 ```typescript
 public readonly timestampTzOutputFormatInput: string;
@@ -2920,7 +2901,7 @@ public readonly timestampTzOutputFormatInput: string;
 
 ---
 
-##### `timezoneInput`<sup>Optional</sup> <a name="timezoneInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timezoneInput"></a>
+##### `timezoneInput`<sup>Optional</sup> <a name="timezoneInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timezoneInput"></a>
 
 ```typescript
 public readonly timezoneInput: string;
@@ -2930,7 +2911,7 @@ public readonly timezoneInput: string;
 
 ---
 
-##### `traceLevelInput`<sup>Optional</sup> <a name="traceLevelInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.traceLevelInput"></a>
+##### `traceLevelInput`<sup>Optional</sup> <a name="traceLevelInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.traceLevelInput"></a>
 
 ```typescript
 public readonly traceLevelInput: string;
@@ -2940,17 +2921,17 @@ public readonly traceLevelInput: string;
 
 ---
 
-##### `transactionAbortOnErrorInput`<sup>Optional</sup> <a name="transactionAbortOnErrorInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.transactionAbortOnErrorInput"></a>
+##### `transactionAbortOnErrorInput`<sup>Optional</sup> <a name="transactionAbortOnErrorInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.transactionAbortOnErrorInput"></a>
 
 ```typescript
 public readonly transactionAbortOnErrorInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `transactionDefaultIsolationLevelInput`<sup>Optional</sup> <a name="transactionDefaultIsolationLevelInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.transactionDefaultIsolationLevelInput"></a>
+##### `transactionDefaultIsolationLevelInput`<sup>Optional</sup> <a name="transactionDefaultIsolationLevelInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.transactionDefaultIsolationLevelInput"></a>
 
 ```typescript
 public readonly transactionDefaultIsolationLevelInput: string;
@@ -2960,7 +2941,7 @@ public readonly transactionDefaultIsolationLevelInput: string;
 
 ---
 
-##### `twoDigitCenturyStartInput`<sup>Optional</sup> <a name="twoDigitCenturyStartInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.twoDigitCenturyStartInput"></a>
+##### `twoDigitCenturyStartInput`<sup>Optional</sup> <a name="twoDigitCenturyStartInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.twoDigitCenturyStartInput"></a>
 
 ```typescript
 public readonly twoDigitCenturyStartInput: number;
@@ -2970,7 +2951,7 @@ public readonly twoDigitCenturyStartInput: number;
 
 ---
 
-##### `unsupportedDdlActionInput`<sup>Optional</sup> <a name="unsupportedDdlActionInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.unsupportedDdlActionInput"></a>
+##### `unsupportedDdlActionInput`<sup>Optional</sup> <a name="unsupportedDdlActionInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.unsupportedDdlActionInput"></a>
 
 ```typescript
 public readonly unsupportedDdlActionInput: string;
@@ -2980,17 +2961,17 @@ public readonly unsupportedDdlActionInput: string;
 
 ---
 
-##### `useCachedResultInput`<sup>Optional</sup> <a name="useCachedResultInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.useCachedResultInput"></a>
+##### `useCachedResultInput`<sup>Optional</sup> <a name="useCachedResultInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.useCachedResultInput"></a>
 
 ```typescript
 public readonly useCachedResultInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `userTaskManagedInitialWarehouseSizeInput`<sup>Optional</sup> <a name="userTaskManagedInitialWarehouseSizeInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.userTaskManagedInitialWarehouseSizeInput"></a>
+##### `userTaskManagedInitialWarehouseSizeInput`<sup>Optional</sup> <a name="userTaskManagedInitialWarehouseSizeInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.userTaskManagedInitialWarehouseSizeInput"></a>
 
 ```typescript
 public readonly userTaskManagedInitialWarehouseSizeInput: string;
@@ -3000,7 +2981,7 @@ public readonly userTaskManagedInitialWarehouseSizeInput: string;
 
 ---
 
-##### `userTaskMinimumTriggerIntervalInSecondsInput`<sup>Optional</sup> <a name="userTaskMinimumTriggerIntervalInSecondsInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.userTaskMinimumTriggerIntervalInSecondsInput"></a>
+##### `userTaskMinimumTriggerIntervalInSecondsInput`<sup>Optional</sup> <a name="userTaskMinimumTriggerIntervalInSecondsInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.userTaskMinimumTriggerIntervalInSecondsInput"></a>
 
 ```typescript
 public readonly userTaskMinimumTriggerIntervalInSecondsInput: number;
@@ -3010,7 +2991,7 @@ public readonly userTaskMinimumTriggerIntervalInSecondsInput: number;
 
 ---
 
-##### `userTaskTimeoutMsInput`<sup>Optional</sup> <a name="userTaskTimeoutMsInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.userTaskTimeoutMsInput"></a>
+##### `userTaskTimeoutMsInput`<sup>Optional</sup> <a name="userTaskTimeoutMsInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.userTaskTimeoutMsInput"></a>
 
 ```typescript
 public readonly userTaskTimeoutMsInput: number;
@@ -3020,7 +3001,7 @@ public readonly userTaskTimeoutMsInput: number;
 
 ---
 
-##### `weekOfYearPolicyInput`<sup>Optional</sup> <a name="weekOfYearPolicyInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.weekOfYearPolicyInput"></a>
+##### `weekOfYearPolicyInput`<sup>Optional</sup> <a name="weekOfYearPolicyInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.weekOfYearPolicyInput"></a>
 
 ```typescript
 public readonly weekOfYearPolicyInput: number;
@@ -3030,7 +3011,7 @@ public readonly weekOfYearPolicyInput: number;
 
 ---
 
-##### `weekStartInput`<sup>Optional</sup> <a name="weekStartInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.weekStartInput"></a>
+##### `weekStartInput`<sup>Optional</sup> <a name="weekStartInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.weekStartInput"></a>
 
 ```typescript
 public readonly weekStartInput: number;
@@ -3040,17 +3021,17 @@ public readonly weekStartInput: number;
 
 ---
 
-##### `abortDetachedQuery`<sup>Required</sup> <a name="abortDetachedQuery" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.abortDetachedQuery"></a>
+##### `abortDetachedQuery`<sup>Required</sup> <a name="abortDetachedQuery" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.abortDetachedQuery"></a>
 
 ```typescript
 public readonly abortDetachedQuery: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `activePythonProfiler`<sup>Required</sup> <a name="activePythonProfiler" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.activePythonProfiler"></a>
+##### `activePythonProfiler`<sup>Required</sup> <a name="activePythonProfiler" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.activePythonProfiler"></a>
 
 ```typescript
 public readonly activePythonProfiler: string;
@@ -3060,27 +3041,27 @@ public readonly activePythonProfiler: string;
 
 ---
 
-##### `allowClientMfaCaching`<sup>Required</sup> <a name="allowClientMfaCaching" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.allowClientMfaCaching"></a>
+##### `allowClientMfaCaching`<sup>Required</sup> <a name="allowClientMfaCaching" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.allowClientMfaCaching"></a>
 
 ```typescript
 public readonly allowClientMfaCaching: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `allowIdToken`<sup>Required</sup> <a name="allowIdToken" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.allowIdToken"></a>
+##### `allowIdToken`<sup>Required</sup> <a name="allowIdToken" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.allowIdToken"></a>
 
 ```typescript
 public readonly allowIdToken: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `authenticationPolicy`<sup>Required</sup> <a name="authenticationPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.authenticationPolicy"></a>
+##### `authenticationPolicy`<sup>Required</sup> <a name="authenticationPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.authenticationPolicy"></a>
 
 ```typescript
 public readonly authenticationPolicy: string;
@@ -3090,17 +3071,17 @@ public readonly authenticationPolicy: string;
 
 ---
 
-##### `autocommit`<sup>Required</sup> <a name="autocommit" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.autocommit"></a>
+##### `autocommit`<sup>Required</sup> <a name="autocommit" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.autocommit"></a>
 
 ```typescript
 public readonly autocommit: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `baseLocationPrefix`<sup>Required</sup> <a name="baseLocationPrefix" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.baseLocationPrefix"></a>
+##### `baseLocationPrefix`<sup>Required</sup> <a name="baseLocationPrefix" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.baseLocationPrefix"></a>
 
 ```typescript
 public readonly baseLocationPrefix: string;
@@ -3110,7 +3091,7 @@ public readonly baseLocationPrefix: string;
 
 ---
 
-##### `binaryInputFormat`<sup>Required</sup> <a name="binaryInputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.binaryInputFormat"></a>
+##### `binaryInputFormat`<sup>Required</sup> <a name="binaryInputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.binaryInputFormat"></a>
 
 ```typescript
 public readonly binaryInputFormat: string;
@@ -3120,7 +3101,7 @@ public readonly binaryInputFormat: string;
 
 ---
 
-##### `binaryOutputFormat`<sup>Required</sup> <a name="binaryOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.binaryOutputFormat"></a>
+##### `binaryOutputFormat`<sup>Required</sup> <a name="binaryOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.binaryOutputFormat"></a>
 
 ```typescript
 public readonly binaryOutputFormat: string;
@@ -3130,7 +3111,7 @@ public readonly binaryOutputFormat: string;
 
 ---
 
-##### `catalog`<sup>Required</sup> <a name="catalog" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.catalog"></a>
+##### `catalog`<sup>Required</sup> <a name="catalog" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.catalog"></a>
 
 ```typescript
 public readonly catalog: string;
@@ -3140,7 +3121,7 @@ public readonly catalog: string;
 
 ---
 
-##### `catalogSync`<sup>Required</sup> <a name="catalogSync" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.catalogSync"></a>
+##### `catalogSync`<sup>Required</sup> <a name="catalogSync" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.catalogSync"></a>
 
 ```typescript
 public readonly catalogSync: string;
@@ -3150,17 +3131,17 @@ public readonly catalogSync: string;
 
 ---
 
-##### `clientEnableLogInfoStatementParameters`<sup>Required</sup> <a name="clientEnableLogInfoStatementParameters" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientEnableLogInfoStatementParameters"></a>
+##### `clientEnableLogInfoStatementParameters`<sup>Required</sup> <a name="clientEnableLogInfoStatementParameters" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientEnableLogInfoStatementParameters"></a>
 
 ```typescript
 public readonly clientEnableLogInfoStatementParameters: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `clientEncryptionKeySize`<sup>Required</sup> <a name="clientEncryptionKeySize" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientEncryptionKeySize"></a>
+##### `clientEncryptionKeySize`<sup>Required</sup> <a name="clientEncryptionKeySize" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientEncryptionKeySize"></a>
 
 ```typescript
 public readonly clientEncryptionKeySize: number;
@@ -3170,7 +3151,7 @@ public readonly clientEncryptionKeySize: number;
 
 ---
 
-##### `clientMemoryLimit`<sup>Required</sup> <a name="clientMemoryLimit" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientMemoryLimit"></a>
+##### `clientMemoryLimit`<sup>Required</sup> <a name="clientMemoryLimit" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientMemoryLimit"></a>
 
 ```typescript
 public readonly clientMemoryLimit: number;
@@ -3180,27 +3161,27 @@ public readonly clientMemoryLimit: number;
 
 ---
 
-##### `clientMetadataRequestUseConnectionCtx`<sup>Required</sup> <a name="clientMetadataRequestUseConnectionCtx" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientMetadataRequestUseConnectionCtx"></a>
+##### `clientMetadataRequestUseConnectionCtx`<sup>Required</sup> <a name="clientMetadataRequestUseConnectionCtx" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientMetadataRequestUseConnectionCtx"></a>
 
 ```typescript
 public readonly clientMetadataRequestUseConnectionCtx: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `clientMetadataUseSessionDatabase`<sup>Required</sup> <a name="clientMetadataUseSessionDatabase" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientMetadataUseSessionDatabase"></a>
+##### `clientMetadataUseSessionDatabase`<sup>Required</sup> <a name="clientMetadataUseSessionDatabase" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientMetadataUseSessionDatabase"></a>
 
 ```typescript
 public readonly clientMetadataUseSessionDatabase: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `clientPrefetchThreads`<sup>Required</sup> <a name="clientPrefetchThreads" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientPrefetchThreads"></a>
+##### `clientPrefetchThreads`<sup>Required</sup> <a name="clientPrefetchThreads" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientPrefetchThreads"></a>
 
 ```typescript
 public readonly clientPrefetchThreads: number;
@@ -3210,7 +3191,7 @@ public readonly clientPrefetchThreads: number;
 
 ---
 
-##### `clientResultChunkSize`<sup>Required</sup> <a name="clientResultChunkSize" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientResultChunkSize"></a>
+##### `clientResultChunkSize`<sup>Required</sup> <a name="clientResultChunkSize" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientResultChunkSize"></a>
 
 ```typescript
 public readonly clientResultChunkSize: number;
@@ -3220,27 +3201,27 @@ public readonly clientResultChunkSize: number;
 
 ---
 
-##### `clientResultColumnCaseInsensitive`<sup>Required</sup> <a name="clientResultColumnCaseInsensitive" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientResultColumnCaseInsensitive"></a>
+##### `clientResultColumnCaseInsensitive`<sup>Required</sup> <a name="clientResultColumnCaseInsensitive" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientResultColumnCaseInsensitive"></a>
 
 ```typescript
 public readonly clientResultColumnCaseInsensitive: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `clientSessionKeepAlive`<sup>Required</sup> <a name="clientSessionKeepAlive" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientSessionKeepAlive"></a>
+##### `clientSessionKeepAlive`<sup>Required</sup> <a name="clientSessionKeepAlive" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientSessionKeepAlive"></a>
 
 ```typescript
 public readonly clientSessionKeepAlive: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `clientSessionKeepAliveHeartbeatFrequency`<sup>Required</sup> <a name="clientSessionKeepAliveHeartbeatFrequency" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientSessionKeepAliveHeartbeatFrequency"></a>
+##### `clientSessionKeepAliveHeartbeatFrequency`<sup>Required</sup> <a name="clientSessionKeepAliveHeartbeatFrequency" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientSessionKeepAliveHeartbeatFrequency"></a>
 
 ```typescript
 public readonly clientSessionKeepAliveHeartbeatFrequency: number;
@@ -3250,7 +3231,7 @@ public readonly clientSessionKeepAliveHeartbeatFrequency: number;
 
 ---
 
-##### `clientTimestampTypeMapping`<sup>Required</sup> <a name="clientTimestampTypeMapping" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.clientTimestampTypeMapping"></a>
+##### `clientTimestampTypeMapping`<sup>Required</sup> <a name="clientTimestampTypeMapping" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.clientTimestampTypeMapping"></a>
 
 ```typescript
 public readonly clientTimestampTypeMapping: string;
@@ -3260,7 +3241,7 @@ public readonly clientTimestampTypeMapping: string;
 
 ---
 
-##### `cortexEnabledCrossRegion`<sup>Required</sup> <a name="cortexEnabledCrossRegion" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.cortexEnabledCrossRegion"></a>
+##### `cortexEnabledCrossRegion`<sup>Required</sup> <a name="cortexEnabledCrossRegion" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.cortexEnabledCrossRegion"></a>
 
 ```typescript
 public readonly cortexEnabledCrossRegion: string;
@@ -3270,7 +3251,7 @@ public readonly cortexEnabledCrossRegion: string;
 
 ---
 
-##### `cortexModelsAllowlist`<sup>Required</sup> <a name="cortexModelsAllowlist" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.cortexModelsAllowlist"></a>
+##### `cortexModelsAllowlist`<sup>Required</sup> <a name="cortexModelsAllowlist" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.cortexModelsAllowlist"></a>
 
 ```typescript
 public readonly cortexModelsAllowlist: string;
@@ -3280,7 +3261,7 @@ public readonly cortexModelsAllowlist: string;
 
 ---
 
-##### `csvTimestampFormat`<sup>Required</sup> <a name="csvTimestampFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.csvTimestampFormat"></a>
+##### `csvTimestampFormat`<sup>Required</sup> <a name="csvTimestampFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.csvTimestampFormat"></a>
 
 ```typescript
 public readonly csvTimestampFormat: string;
@@ -3290,7 +3271,7 @@ public readonly csvTimestampFormat: string;
 
 ---
 
-##### `dataRetentionTimeInDays`<sup>Required</sup> <a name="dataRetentionTimeInDays" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.dataRetentionTimeInDays"></a>
+##### `dataRetentionTimeInDays`<sup>Required</sup> <a name="dataRetentionTimeInDays" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.dataRetentionTimeInDays"></a>
 
 ```typescript
 public readonly dataRetentionTimeInDays: number;
@@ -3300,7 +3281,7 @@ public readonly dataRetentionTimeInDays: number;
 
 ---
 
-##### `dateInputFormat`<sup>Required</sup> <a name="dateInputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.dateInputFormat"></a>
+##### `dateInputFormat`<sup>Required</sup> <a name="dateInputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.dateInputFormat"></a>
 
 ```typescript
 public readonly dateInputFormat: string;
@@ -3310,7 +3291,7 @@ public readonly dateInputFormat: string;
 
 ---
 
-##### `dateOutputFormat`<sup>Required</sup> <a name="dateOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.dateOutputFormat"></a>
+##### `dateOutputFormat`<sup>Required</sup> <a name="dateOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.dateOutputFormat"></a>
 
 ```typescript
 public readonly dateOutputFormat: string;
@@ -3320,7 +3301,7 @@ public readonly dateOutputFormat: string;
 
 ---
 
-##### `defaultDdlCollation`<sup>Required</sup> <a name="defaultDdlCollation" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultDdlCollation"></a>
+##### `defaultDdlCollation`<sup>Required</sup> <a name="defaultDdlCollation" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultDdlCollation"></a>
 
 ```typescript
 public readonly defaultDdlCollation: string;
@@ -3330,7 +3311,7 @@ public readonly defaultDdlCollation: string;
 
 ---
 
-##### `defaultNotebookComputePoolCpu`<sup>Required</sup> <a name="defaultNotebookComputePoolCpu" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultNotebookComputePoolCpu"></a>
+##### `defaultNotebookComputePoolCpu`<sup>Required</sup> <a name="defaultNotebookComputePoolCpu" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultNotebookComputePoolCpu"></a>
 
 ```typescript
 public readonly defaultNotebookComputePoolCpu: string;
@@ -3340,7 +3321,7 @@ public readonly defaultNotebookComputePoolCpu: string;
 
 ---
 
-##### `defaultNotebookComputePoolGpu`<sup>Required</sup> <a name="defaultNotebookComputePoolGpu" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultNotebookComputePoolGpu"></a>
+##### `defaultNotebookComputePoolGpu`<sup>Required</sup> <a name="defaultNotebookComputePoolGpu" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultNotebookComputePoolGpu"></a>
 
 ```typescript
 public readonly defaultNotebookComputePoolGpu: string;
@@ -3350,7 +3331,7 @@ public readonly defaultNotebookComputePoolGpu: string;
 
 ---
 
-##### `defaultNullOrdering`<sup>Required</sup> <a name="defaultNullOrdering" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultNullOrdering"></a>
+##### `defaultNullOrdering`<sup>Required</sup> <a name="defaultNullOrdering" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultNullOrdering"></a>
 
 ```typescript
 public readonly defaultNullOrdering: string;
@@ -3360,7 +3341,7 @@ public readonly defaultNullOrdering: string;
 
 ---
 
-##### `defaultStreamlitNotebookWarehouse`<sup>Required</sup> <a name="defaultStreamlitNotebookWarehouse" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.defaultStreamlitNotebookWarehouse"></a>
+##### `defaultStreamlitNotebookWarehouse`<sup>Required</sup> <a name="defaultStreamlitNotebookWarehouse" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.defaultStreamlitNotebookWarehouse"></a>
 
 ```typescript
 public readonly defaultStreamlitNotebookWarehouse: string;
@@ -3370,157 +3351,157 @@ public readonly defaultStreamlitNotebookWarehouse: string;
 
 ---
 
-##### `disableUiDownloadButton`<sup>Required</sup> <a name="disableUiDownloadButton" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.disableUiDownloadButton"></a>
+##### `disableUiDownloadButton`<sup>Required</sup> <a name="disableUiDownloadButton" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.disableUiDownloadButton"></a>
 
 ```typescript
 public readonly disableUiDownloadButton: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `disableUserPrivilegeGrants`<sup>Required</sup> <a name="disableUserPrivilegeGrants" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.disableUserPrivilegeGrants"></a>
+##### `disableUserPrivilegeGrants`<sup>Required</sup> <a name="disableUserPrivilegeGrants" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.disableUserPrivilegeGrants"></a>
 
 ```typescript
 public readonly disableUserPrivilegeGrants: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableAutomaticSensitiveDataClassificationLog`<sup>Required</sup> <a name="enableAutomaticSensitiveDataClassificationLog" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableAutomaticSensitiveDataClassificationLog"></a>
+##### `enableAutomaticSensitiveDataClassificationLog`<sup>Required</sup> <a name="enableAutomaticSensitiveDataClassificationLog" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableAutomaticSensitiveDataClassificationLog"></a>
 
 ```typescript
 public readonly enableAutomaticSensitiveDataClassificationLog: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableEgressCostOptimizer`<sup>Required</sup> <a name="enableEgressCostOptimizer" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableEgressCostOptimizer"></a>
+##### `enableEgressCostOptimizer`<sup>Required</sup> <a name="enableEgressCostOptimizer" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableEgressCostOptimizer"></a>
 
 ```typescript
 public readonly enableEgressCostOptimizer: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableIdentifierFirstLogin`<sup>Required</sup> <a name="enableIdentifierFirstLogin" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableIdentifierFirstLogin"></a>
+##### `enableIdentifierFirstLogin`<sup>Required</sup> <a name="enableIdentifierFirstLogin" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableIdentifierFirstLogin"></a>
 
 ```typescript
 public readonly enableIdentifierFirstLogin: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableInternalStagesPrivatelink`<sup>Required</sup> <a name="enableInternalStagesPrivatelink" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableInternalStagesPrivatelink"></a>
+##### `enableInternalStagesPrivatelink`<sup>Required</sup> <a name="enableInternalStagesPrivatelink" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableInternalStagesPrivatelink"></a>
 
 ```typescript
 public readonly enableInternalStagesPrivatelink: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableTriSecretAndRekeyOptOutForImageRepository`<sup>Required</sup> <a name="enableTriSecretAndRekeyOptOutForImageRepository" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableTriSecretAndRekeyOptOutForImageRepository"></a>
+##### `enableTriSecretAndRekeyOptOutForImageRepository`<sup>Required</sup> <a name="enableTriSecretAndRekeyOptOutForImageRepository" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableTriSecretAndRekeyOptOutForImageRepository"></a>
 
 ```typescript
 public readonly enableTriSecretAndRekeyOptOutForImageRepository: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableTriSecretAndRekeyOptOutForSpcsBlockStorage`<sup>Required</sup> <a name="enableTriSecretAndRekeyOptOutForSpcsBlockStorage" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableTriSecretAndRekeyOptOutForSpcsBlockStorage"></a>
+##### `enableTriSecretAndRekeyOptOutForSpcsBlockStorage`<sup>Required</sup> <a name="enableTriSecretAndRekeyOptOutForSpcsBlockStorage" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableTriSecretAndRekeyOptOutForSpcsBlockStorage"></a>
 
 ```typescript
 public readonly enableTriSecretAndRekeyOptOutForSpcsBlockStorage: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableUnhandledExceptionsReporting`<sup>Required</sup> <a name="enableUnhandledExceptionsReporting" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableUnhandledExceptionsReporting"></a>
+##### `enableUnhandledExceptionsReporting`<sup>Required</sup> <a name="enableUnhandledExceptionsReporting" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableUnhandledExceptionsReporting"></a>
 
 ```typescript
 public readonly enableUnhandledExceptionsReporting: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableUnloadPhysicalTypeOptimization`<sup>Required</sup> <a name="enableUnloadPhysicalTypeOptimization" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableUnloadPhysicalTypeOptimization"></a>
+##### `enableUnloadPhysicalTypeOptimization`<sup>Required</sup> <a name="enableUnloadPhysicalTypeOptimization" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableUnloadPhysicalTypeOptimization"></a>
 
 ```typescript
 public readonly enableUnloadPhysicalTypeOptimization: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableUnredactedQuerySyntaxError`<sup>Required</sup> <a name="enableUnredactedQuerySyntaxError" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableUnredactedQuerySyntaxError"></a>
+##### `enableUnredactedQuerySyntaxError`<sup>Required</sup> <a name="enableUnredactedQuerySyntaxError" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableUnredactedQuerySyntaxError"></a>
 
 ```typescript
 public readonly enableUnredactedQuerySyntaxError: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enableUnredactedSecureObjectError`<sup>Required</sup> <a name="enableUnredactedSecureObjectError" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enableUnredactedSecureObjectError"></a>
+##### `enableUnredactedSecureObjectError`<sup>Required</sup> <a name="enableUnredactedSecureObjectError" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enableUnredactedSecureObjectError"></a>
 
 ```typescript
 public readonly enableUnredactedSecureObjectError: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `enforceNetworkRulesForInternalStages`<sup>Required</sup> <a name="enforceNetworkRulesForInternalStages" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.enforceNetworkRulesForInternalStages"></a>
+##### `enforceNetworkRulesForInternalStages`<sup>Required</sup> <a name="enforceNetworkRulesForInternalStages" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.enforceNetworkRulesForInternalStages"></a>
 
 ```typescript
 public readonly enforceNetworkRulesForInternalStages: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `errorOnNondeterministicMerge`<sup>Required</sup> <a name="errorOnNondeterministicMerge" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.errorOnNondeterministicMerge"></a>
+##### `errorOnNondeterministicMerge`<sup>Required</sup> <a name="errorOnNondeterministicMerge" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.errorOnNondeterministicMerge"></a>
 
 ```typescript
 public readonly errorOnNondeterministicMerge: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `errorOnNondeterministicUpdate`<sup>Required</sup> <a name="errorOnNondeterministicUpdate" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.errorOnNondeterministicUpdate"></a>
+##### `errorOnNondeterministicUpdate`<sup>Required</sup> <a name="errorOnNondeterministicUpdate" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.errorOnNondeterministicUpdate"></a>
 
 ```typescript
 public readonly errorOnNondeterministicUpdate: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `eventTable`<sup>Required</sup> <a name="eventTable" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.eventTable"></a>
+##### `eventTable`<sup>Required</sup> <a name="eventTable" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.eventTable"></a>
 
 ```typescript
 public readonly eventTable: string;
@@ -3530,17 +3511,17 @@ public readonly eventTable: string;
 
 ---
 
-##### `externalOauthAddPrivilegedRolesToBlockedList`<sup>Required</sup> <a name="externalOauthAddPrivilegedRolesToBlockedList" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.externalOauthAddPrivilegedRolesToBlockedList"></a>
+##### `externalOauthAddPrivilegedRolesToBlockedList`<sup>Required</sup> <a name="externalOauthAddPrivilegedRolesToBlockedList" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.externalOauthAddPrivilegedRolesToBlockedList"></a>
 
 ```typescript
 public readonly externalOauthAddPrivilegedRolesToBlockedList: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `externalVolume`<sup>Required</sup> <a name="externalVolume" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.externalVolume"></a>
+##### `externalVolume`<sup>Required</sup> <a name="externalVolume" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.externalVolume"></a>
 
 ```typescript
 public readonly externalVolume: string;
@@ -3550,7 +3531,7 @@ public readonly externalVolume: string;
 
 ---
 
-##### `featurePolicy`<sup>Required</sup> <a name="featurePolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.featurePolicy"></a>
+##### `featurePolicy`<sup>Required</sup> <a name="featurePolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.featurePolicy"></a>
 
 ```typescript
 public readonly featurePolicy: string;
@@ -3560,7 +3541,7 @@ public readonly featurePolicy: string;
 
 ---
 
-##### `geographyOutputFormat`<sup>Required</sup> <a name="geographyOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.geographyOutputFormat"></a>
+##### `geographyOutputFormat`<sup>Required</sup> <a name="geographyOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.geographyOutputFormat"></a>
 
 ```typescript
 public readonly geographyOutputFormat: string;
@@ -3570,7 +3551,7 @@ public readonly geographyOutputFormat: string;
 
 ---
 
-##### `geometryOutputFormat`<sup>Required</sup> <a name="geometryOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.geometryOutputFormat"></a>
+##### `geometryOutputFormat`<sup>Required</sup> <a name="geometryOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.geometryOutputFormat"></a>
 
 ```typescript
 public readonly geometryOutputFormat: string;
@@ -3580,7 +3561,7 @@ public readonly geometryOutputFormat: string;
 
 ---
 
-##### `hybridTableLockTimeout`<sup>Required</sup> <a name="hybridTableLockTimeout" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.hybridTableLockTimeout"></a>
+##### `hybridTableLockTimeout`<sup>Required</sup> <a name="hybridTableLockTimeout" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.hybridTableLockTimeout"></a>
 
 ```typescript
 public readonly hybridTableLockTimeout: number;
@@ -3590,7 +3571,7 @@ public readonly hybridTableLockTimeout: number;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -3600,7 +3581,7 @@ public readonly id: string;
 
 ---
 
-##### `initialReplicationSizeLimitInTb`<sup>Required</sup> <a name="initialReplicationSizeLimitInTb" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.initialReplicationSizeLimitInTb"></a>
+##### `initialReplicationSizeLimitInTb`<sup>Required</sup> <a name="initialReplicationSizeLimitInTb" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.initialReplicationSizeLimitInTb"></a>
 
 ```typescript
 public readonly initialReplicationSizeLimitInTb: string;
@@ -3610,37 +3591,37 @@ public readonly initialReplicationSizeLimitInTb: string;
 
 ---
 
-##### `jdbcTreatDecimalAsInt`<sup>Required</sup> <a name="jdbcTreatDecimalAsInt" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jdbcTreatDecimalAsInt"></a>
+##### `jdbcTreatDecimalAsInt`<sup>Required</sup> <a name="jdbcTreatDecimalAsInt" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jdbcTreatDecimalAsInt"></a>
 
 ```typescript
 public readonly jdbcTreatDecimalAsInt: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `jdbcTreatTimestampNtzAsUtc`<sup>Required</sup> <a name="jdbcTreatTimestampNtzAsUtc" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jdbcTreatTimestampNtzAsUtc"></a>
+##### `jdbcTreatTimestampNtzAsUtc`<sup>Required</sup> <a name="jdbcTreatTimestampNtzAsUtc" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jdbcTreatTimestampNtzAsUtc"></a>
 
 ```typescript
 public readonly jdbcTreatTimestampNtzAsUtc: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `jdbcUseSessionTimezone`<sup>Required</sup> <a name="jdbcUseSessionTimezone" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jdbcUseSessionTimezone"></a>
+##### `jdbcUseSessionTimezone`<sup>Required</sup> <a name="jdbcUseSessionTimezone" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jdbcUseSessionTimezone"></a>
 
 ```typescript
 public readonly jdbcUseSessionTimezone: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `jsonIndent`<sup>Required</sup> <a name="jsonIndent" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jsonIndent"></a>
+##### `jsonIndent`<sup>Required</sup> <a name="jsonIndent" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jsonIndent"></a>
 
 ```typescript
 public readonly jsonIndent: number;
@@ -3650,17 +3631,17 @@ public readonly jsonIndent: number;
 
 ---
 
-##### `jsTreatIntegerAsBigint`<sup>Required</sup> <a name="jsTreatIntegerAsBigint" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.jsTreatIntegerAsBigint"></a>
+##### `jsTreatIntegerAsBigint`<sup>Required</sup> <a name="jsTreatIntegerAsBigint" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.jsTreatIntegerAsBigint"></a>
 
 ```typescript
 public readonly jsTreatIntegerAsBigint: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `listingAutoFulfillmentReplicationRefreshSchedule`<sup>Required</sup> <a name="listingAutoFulfillmentReplicationRefreshSchedule" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.listingAutoFulfillmentReplicationRefreshSchedule"></a>
+##### `listingAutoFulfillmentReplicationRefreshSchedule`<sup>Required</sup> <a name="listingAutoFulfillmentReplicationRefreshSchedule" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.listingAutoFulfillmentReplicationRefreshSchedule"></a>
 
 ```typescript
 public readonly listingAutoFulfillmentReplicationRefreshSchedule: string;
@@ -3670,7 +3651,7 @@ public readonly listingAutoFulfillmentReplicationRefreshSchedule: string;
 
 ---
 
-##### `lockTimeout`<sup>Required</sup> <a name="lockTimeout" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.lockTimeout"></a>
+##### `lockTimeout`<sup>Required</sup> <a name="lockTimeout" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.lockTimeout"></a>
 
 ```typescript
 public readonly lockTimeout: number;
@@ -3680,7 +3661,7 @@ public readonly lockTimeout: number;
 
 ---
 
-##### `logLevel`<sup>Required</sup> <a name="logLevel" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.logLevel"></a>
+##### `logLevel`<sup>Required</sup> <a name="logLevel" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.logLevel"></a>
 
 ```typescript
 public readonly logLevel: string;
@@ -3690,7 +3671,7 @@ public readonly logLevel: string;
 
 ---
 
-##### `maxConcurrencyLevel`<sup>Required</sup> <a name="maxConcurrencyLevel" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.maxConcurrencyLevel"></a>
+##### `maxConcurrencyLevel`<sup>Required</sup> <a name="maxConcurrencyLevel" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.maxConcurrencyLevel"></a>
 
 ```typescript
 public readonly maxConcurrencyLevel: number;
@@ -3700,7 +3681,7 @@ public readonly maxConcurrencyLevel: number;
 
 ---
 
-##### `maxDataExtensionTimeInDays`<sup>Required</sup> <a name="maxDataExtensionTimeInDays" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.maxDataExtensionTimeInDays"></a>
+##### `maxDataExtensionTimeInDays`<sup>Required</sup> <a name="maxDataExtensionTimeInDays" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.maxDataExtensionTimeInDays"></a>
 
 ```typescript
 public readonly maxDataExtensionTimeInDays: number;
@@ -3710,7 +3691,7 @@ public readonly maxDataExtensionTimeInDays: number;
 
 ---
 
-##### `metricLevel`<sup>Required</sup> <a name="metricLevel" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.metricLevel"></a>
+##### `metricLevel`<sup>Required</sup> <a name="metricLevel" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.metricLevel"></a>
 
 ```typescript
 public readonly metricLevel: string;
@@ -3720,7 +3701,7 @@ public readonly metricLevel: string;
 
 ---
 
-##### `minDataRetentionTimeInDays`<sup>Required</sup> <a name="minDataRetentionTimeInDays" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.minDataRetentionTimeInDays"></a>
+##### `minDataRetentionTimeInDays`<sup>Required</sup> <a name="minDataRetentionTimeInDays" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.minDataRetentionTimeInDays"></a>
 
 ```typescript
 public readonly minDataRetentionTimeInDays: number;
@@ -3730,7 +3711,7 @@ public readonly minDataRetentionTimeInDays: number;
 
 ---
 
-##### `multiStatementCount`<sup>Required</sup> <a name="multiStatementCount" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.multiStatementCount"></a>
+##### `multiStatementCount`<sup>Required</sup> <a name="multiStatementCount" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.multiStatementCount"></a>
 
 ```typescript
 public readonly multiStatementCount: number;
@@ -3740,7 +3721,7 @@ public readonly multiStatementCount: number;
 
 ---
 
-##### `networkPolicy`<sup>Required</sup> <a name="networkPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.networkPolicy"></a>
+##### `networkPolicy`<sup>Required</sup> <a name="networkPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.networkPolicy"></a>
 
 ```typescript
 public readonly networkPolicy: string;
@@ -3750,37 +3731,37 @@ public readonly networkPolicy: string;
 
 ---
 
-##### `noorderSequenceAsDefault`<sup>Required</sup> <a name="noorderSequenceAsDefault" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.noorderSequenceAsDefault"></a>
+##### `noorderSequenceAsDefault`<sup>Required</sup> <a name="noorderSequenceAsDefault" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.noorderSequenceAsDefault"></a>
 
 ```typescript
 public readonly noorderSequenceAsDefault: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `oauthAddPrivilegedRolesToBlockedList`<sup>Required</sup> <a name="oauthAddPrivilegedRolesToBlockedList" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.oauthAddPrivilegedRolesToBlockedList"></a>
+##### `oauthAddPrivilegedRolesToBlockedList`<sup>Required</sup> <a name="oauthAddPrivilegedRolesToBlockedList" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.oauthAddPrivilegedRolesToBlockedList"></a>
 
 ```typescript
 public readonly oauthAddPrivilegedRolesToBlockedList: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `odbcTreatDecimalAsInt`<sup>Required</sup> <a name="odbcTreatDecimalAsInt" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.odbcTreatDecimalAsInt"></a>
+##### `odbcTreatDecimalAsInt`<sup>Required</sup> <a name="odbcTreatDecimalAsInt" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.odbcTreatDecimalAsInt"></a>
 
 ```typescript
 public readonly odbcTreatDecimalAsInt: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `packagesPolicy`<sup>Required</sup> <a name="packagesPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.packagesPolicy"></a>
+##### `packagesPolicy`<sup>Required</sup> <a name="packagesPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.packagesPolicy"></a>
 
 ```typescript
 public readonly packagesPolicy: string;
@@ -3790,7 +3771,7 @@ public readonly packagesPolicy: string;
 
 ---
 
-##### `passwordPolicy`<sup>Required</sup> <a name="passwordPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.passwordPolicy"></a>
+##### `passwordPolicy`<sup>Required</sup> <a name="passwordPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.passwordPolicy"></a>
 
 ```typescript
 public readonly passwordPolicy: string;
@@ -3800,47 +3781,47 @@ public readonly passwordPolicy: string;
 
 ---
 
-##### `periodicDataRekeying`<sup>Required</sup> <a name="periodicDataRekeying" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.periodicDataRekeying"></a>
+##### `periodicDataRekeying`<sup>Required</sup> <a name="periodicDataRekeying" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.periodicDataRekeying"></a>
 
 ```typescript
 public readonly periodicDataRekeying: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `pipeExecutionPaused`<sup>Required</sup> <a name="pipeExecutionPaused" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.pipeExecutionPaused"></a>
+##### `pipeExecutionPaused`<sup>Required</sup> <a name="pipeExecutionPaused" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.pipeExecutionPaused"></a>
 
 ```typescript
 public readonly pipeExecutionPaused: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `preventUnloadToInlineUrl`<sup>Required</sup> <a name="preventUnloadToInlineUrl" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.preventUnloadToInlineUrl"></a>
+##### `preventUnloadToInlineUrl`<sup>Required</sup> <a name="preventUnloadToInlineUrl" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.preventUnloadToInlineUrl"></a>
 
 ```typescript
 public readonly preventUnloadToInlineUrl: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `preventUnloadToInternalStages`<sup>Required</sup> <a name="preventUnloadToInternalStages" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.preventUnloadToInternalStages"></a>
+##### `preventUnloadToInternalStages`<sup>Required</sup> <a name="preventUnloadToInternalStages" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.preventUnloadToInternalStages"></a>
 
 ```typescript
 public readonly preventUnloadToInternalStages: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `pythonProfilerModules`<sup>Required</sup> <a name="pythonProfilerModules" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.pythonProfilerModules"></a>
+##### `pythonProfilerModules`<sup>Required</sup> <a name="pythonProfilerModules" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.pythonProfilerModules"></a>
 
 ```typescript
 public readonly pythonProfilerModules: string;
@@ -3850,7 +3831,7 @@ public readonly pythonProfilerModules: string;
 
 ---
 
-##### `pythonProfilerTargetStage`<sup>Required</sup> <a name="pythonProfilerTargetStage" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.pythonProfilerTargetStage"></a>
+##### `pythonProfilerTargetStage`<sup>Required</sup> <a name="pythonProfilerTargetStage" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.pythonProfilerTargetStage"></a>
 
 ```typescript
 public readonly pythonProfilerTargetStage: string;
@@ -3860,7 +3841,7 @@ public readonly pythonProfilerTargetStage: string;
 
 ---
 
-##### `queryTag`<sup>Required</sup> <a name="queryTag" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.queryTag"></a>
+##### `queryTag`<sup>Required</sup> <a name="queryTag" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.queryTag"></a>
 
 ```typescript
 public readonly queryTag: string;
@@ -3870,47 +3851,47 @@ public readonly queryTag: string;
 
 ---
 
-##### `quotedIdentifiersIgnoreCase`<sup>Required</sup> <a name="quotedIdentifiersIgnoreCase" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.quotedIdentifiersIgnoreCase"></a>
+##### `quotedIdentifiersIgnoreCase`<sup>Required</sup> <a name="quotedIdentifiersIgnoreCase" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.quotedIdentifiersIgnoreCase"></a>
 
 ```typescript
 public readonly quotedIdentifiersIgnoreCase: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `replaceInvalidCharacters`<sup>Required</sup> <a name="replaceInvalidCharacters" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.replaceInvalidCharacters"></a>
+##### `replaceInvalidCharacters`<sup>Required</sup> <a name="replaceInvalidCharacters" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.replaceInvalidCharacters"></a>
 
 ```typescript
 public readonly replaceInvalidCharacters: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `requireStorageIntegrationForStageCreation`<sup>Required</sup> <a name="requireStorageIntegrationForStageCreation" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.requireStorageIntegrationForStageCreation"></a>
+##### `requireStorageIntegrationForStageCreation`<sup>Required</sup> <a name="requireStorageIntegrationForStageCreation" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.requireStorageIntegrationForStageCreation"></a>
 
 ```typescript
 public readonly requireStorageIntegrationForStageCreation: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `requireStorageIntegrationForStageOperation`<sup>Required</sup> <a name="requireStorageIntegrationForStageOperation" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.requireStorageIntegrationForStageOperation"></a>
+##### `requireStorageIntegrationForStageOperation`<sup>Required</sup> <a name="requireStorageIntegrationForStageOperation" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.requireStorageIntegrationForStageOperation"></a>
 
 ```typescript
 public readonly requireStorageIntegrationForStageOperation: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `resourceMonitor`<sup>Required</sup> <a name="resourceMonitor" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.resourceMonitor"></a>
+##### `resourceMonitor`<sup>Required</sup> <a name="resourceMonitor" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.resourceMonitor"></a>
 
 ```typescript
 public readonly resourceMonitor: string;
@@ -3920,7 +3901,7 @@ public readonly resourceMonitor: string;
 
 ---
 
-##### `rowsPerResultset`<sup>Required</sup> <a name="rowsPerResultset" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.rowsPerResultset"></a>
+##### `rowsPerResultset`<sup>Required</sup> <a name="rowsPerResultset" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.rowsPerResultset"></a>
 
 ```typescript
 public readonly rowsPerResultset: number;
@@ -3930,7 +3911,7 @@ public readonly rowsPerResultset: number;
 
 ---
 
-##### `s3StageVpceDnsName`<sup>Required</sup> <a name="s3StageVpceDnsName" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.s3StageVpceDnsName"></a>
+##### `s3StageVpceDnsName`<sup>Required</sup> <a name="s3StageVpceDnsName" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.s3StageVpceDnsName"></a>
 
 ```typescript
 public readonly s3StageVpceDnsName: string;
@@ -3940,17 +3921,7 @@ public readonly s3StageVpceDnsName: string;
 
 ---
 
-##### `samlIdentityProvider`<sup>Required</sup> <a name="samlIdentityProvider" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.samlIdentityProvider"></a>
-
-```typescript
-public readonly samlIdentityProvider: string;
-```
-
-- *Type:* string
-
----
-
-##### `searchPath`<sup>Required</sup> <a name="searchPath" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.searchPath"></a>
+##### `searchPath`<sup>Required</sup> <a name="searchPath" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.searchPath"></a>
 
 ```typescript
 public readonly searchPath: string;
@@ -3960,7 +3931,7 @@ public readonly searchPath: string;
 
 ---
 
-##### `serverlessTaskMaxStatementSize`<sup>Required</sup> <a name="serverlessTaskMaxStatementSize" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.serverlessTaskMaxStatementSize"></a>
+##### `serverlessTaskMaxStatementSize`<sup>Required</sup> <a name="serverlessTaskMaxStatementSize" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.serverlessTaskMaxStatementSize"></a>
 
 ```typescript
 public readonly serverlessTaskMaxStatementSize: string;
@@ -3970,7 +3941,7 @@ public readonly serverlessTaskMaxStatementSize: string;
 
 ---
 
-##### `serverlessTaskMinStatementSize`<sup>Required</sup> <a name="serverlessTaskMinStatementSize" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.serverlessTaskMinStatementSize"></a>
+##### `serverlessTaskMinStatementSize`<sup>Required</sup> <a name="serverlessTaskMinStatementSize" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.serverlessTaskMinStatementSize"></a>
 
 ```typescript
 public readonly serverlessTaskMinStatementSize: string;
@@ -3980,7 +3951,7 @@ public readonly serverlessTaskMinStatementSize: string;
 
 ---
 
-##### `sessionPolicy`<sup>Required</sup> <a name="sessionPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.sessionPolicy"></a>
+##### `sessionPolicy`<sup>Required</sup> <a name="sessionPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.sessionPolicy"></a>
 
 ```typescript
 public readonly sessionPolicy: string;
@@ -3990,7 +3961,7 @@ public readonly sessionPolicy: string;
 
 ---
 
-##### `simulatedDataSharingConsumer`<sup>Required</sup> <a name="simulatedDataSharingConsumer" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.simulatedDataSharingConsumer"></a>
+##### `simulatedDataSharingConsumer`<sup>Required</sup> <a name="simulatedDataSharingConsumer" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.simulatedDataSharingConsumer"></a>
 
 ```typescript
 public readonly simulatedDataSharingConsumer: string;
@@ -4000,17 +3971,17 @@ public readonly simulatedDataSharingConsumer: string;
 
 ---
 
-##### `ssoLoginPage`<sup>Required</sup> <a name="ssoLoginPage" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.ssoLoginPage"></a>
+##### `ssoLoginPage`<sup>Required</sup> <a name="ssoLoginPage" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.ssoLoginPage"></a>
 
 ```typescript
 public readonly ssoLoginPage: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `statementQueuedTimeoutInSeconds`<sup>Required</sup> <a name="statementQueuedTimeoutInSeconds" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.statementQueuedTimeoutInSeconds"></a>
+##### `statementQueuedTimeoutInSeconds`<sup>Required</sup> <a name="statementQueuedTimeoutInSeconds" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.statementQueuedTimeoutInSeconds"></a>
 
 ```typescript
 public readonly statementQueuedTimeoutInSeconds: number;
@@ -4020,7 +3991,7 @@ public readonly statementQueuedTimeoutInSeconds: number;
 
 ---
 
-##### `statementTimeoutInSeconds`<sup>Required</sup> <a name="statementTimeoutInSeconds" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.statementTimeoutInSeconds"></a>
+##### `statementTimeoutInSeconds`<sup>Required</sup> <a name="statementTimeoutInSeconds" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.statementTimeoutInSeconds"></a>
 
 ```typescript
 public readonly statementTimeoutInSeconds: number;
@@ -4030,7 +4001,7 @@ public readonly statementTimeoutInSeconds: number;
 
 ---
 
-##### `storageSerializationPolicy`<sup>Required</sup> <a name="storageSerializationPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.storageSerializationPolicy"></a>
+##### `storageSerializationPolicy`<sup>Required</sup> <a name="storageSerializationPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.storageSerializationPolicy"></a>
 
 ```typescript
 public readonly storageSerializationPolicy: string;
@@ -4040,17 +4011,17 @@ public readonly storageSerializationPolicy: string;
 
 ---
 
-##### `strictJsonOutput`<sup>Required</sup> <a name="strictJsonOutput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.strictJsonOutput"></a>
+##### `strictJsonOutput`<sup>Required</sup> <a name="strictJsonOutput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.strictJsonOutput"></a>
 
 ```typescript
 public readonly strictJsonOutput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `suspendTaskAfterNumFailures`<sup>Required</sup> <a name="suspendTaskAfterNumFailures" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.suspendTaskAfterNumFailures"></a>
+##### `suspendTaskAfterNumFailures`<sup>Required</sup> <a name="suspendTaskAfterNumFailures" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.suspendTaskAfterNumFailures"></a>
 
 ```typescript
 public readonly suspendTaskAfterNumFailures: number;
@@ -4060,7 +4031,7 @@ public readonly suspendTaskAfterNumFailures: number;
 
 ---
 
-##### `taskAutoRetryAttempts`<sup>Required</sup> <a name="taskAutoRetryAttempts" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.taskAutoRetryAttempts"></a>
+##### `taskAutoRetryAttempts`<sup>Required</sup> <a name="taskAutoRetryAttempts" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.taskAutoRetryAttempts"></a>
 
 ```typescript
 public readonly taskAutoRetryAttempts: number;
@@ -4070,7 +4041,7 @@ public readonly taskAutoRetryAttempts: number;
 
 ---
 
-##### `timeInputFormat`<sup>Required</sup> <a name="timeInputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timeInputFormat"></a>
+##### `timeInputFormat`<sup>Required</sup> <a name="timeInputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timeInputFormat"></a>
 
 ```typescript
 public readonly timeInputFormat: string;
@@ -4080,7 +4051,7 @@ public readonly timeInputFormat: string;
 
 ---
 
-##### `timeOutputFormat`<sup>Required</sup> <a name="timeOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timeOutputFormat"></a>
+##### `timeOutputFormat`<sup>Required</sup> <a name="timeOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timeOutputFormat"></a>
 
 ```typescript
 public readonly timeOutputFormat: string;
@@ -4090,17 +4061,17 @@ public readonly timeOutputFormat: string;
 
 ---
 
-##### `timestampDayIsAlways24H`<sup>Required</sup> <a name="timestampDayIsAlways24H" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampDayIsAlways24H"></a>
+##### `timestampDayIsAlways24H`<sup>Required</sup> <a name="timestampDayIsAlways24H" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampDayIsAlways24H"></a>
 
 ```typescript
 public readonly timestampDayIsAlways24H: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `timestampInputFormat`<sup>Required</sup> <a name="timestampInputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampInputFormat"></a>
+##### `timestampInputFormat`<sup>Required</sup> <a name="timestampInputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampInputFormat"></a>
 
 ```typescript
 public readonly timestampInputFormat: string;
@@ -4110,7 +4081,7 @@ public readonly timestampInputFormat: string;
 
 ---
 
-##### `timestampLtzOutputFormat`<sup>Required</sup> <a name="timestampLtzOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampLtzOutputFormat"></a>
+##### `timestampLtzOutputFormat`<sup>Required</sup> <a name="timestampLtzOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampLtzOutputFormat"></a>
 
 ```typescript
 public readonly timestampLtzOutputFormat: string;
@@ -4120,7 +4091,7 @@ public readonly timestampLtzOutputFormat: string;
 
 ---
 
-##### `timestampNtzOutputFormat`<sup>Required</sup> <a name="timestampNtzOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampNtzOutputFormat"></a>
+##### `timestampNtzOutputFormat`<sup>Required</sup> <a name="timestampNtzOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampNtzOutputFormat"></a>
 
 ```typescript
 public readonly timestampNtzOutputFormat: string;
@@ -4130,7 +4101,7 @@ public readonly timestampNtzOutputFormat: string;
 
 ---
 
-##### `timestampOutputFormat`<sup>Required</sup> <a name="timestampOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampOutputFormat"></a>
+##### `timestampOutputFormat`<sup>Required</sup> <a name="timestampOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampOutputFormat"></a>
 
 ```typescript
 public readonly timestampOutputFormat: string;
@@ -4140,7 +4111,7 @@ public readonly timestampOutputFormat: string;
 
 ---
 
-##### `timestampTypeMapping`<sup>Required</sup> <a name="timestampTypeMapping" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampTypeMapping"></a>
+##### `timestampTypeMapping`<sup>Required</sup> <a name="timestampTypeMapping" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampTypeMapping"></a>
 
 ```typescript
 public readonly timestampTypeMapping: string;
@@ -4150,7 +4121,7 @@ public readonly timestampTypeMapping: string;
 
 ---
 
-##### `timestampTzOutputFormat`<sup>Required</sup> <a name="timestampTzOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timestampTzOutputFormat"></a>
+##### `timestampTzOutputFormat`<sup>Required</sup> <a name="timestampTzOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timestampTzOutputFormat"></a>
 
 ```typescript
 public readonly timestampTzOutputFormat: string;
@@ -4160,7 +4131,7 @@ public readonly timestampTzOutputFormat: string;
 
 ---
 
-##### `timezone`<sup>Required</sup> <a name="timezone" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.timezone"></a>
+##### `timezone`<sup>Required</sup> <a name="timezone" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.timezone"></a>
 
 ```typescript
 public readonly timezone: string;
@@ -4170,7 +4141,7 @@ public readonly timezone: string;
 
 ---
 
-##### `traceLevel`<sup>Required</sup> <a name="traceLevel" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.traceLevel"></a>
+##### `traceLevel`<sup>Required</sup> <a name="traceLevel" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.traceLevel"></a>
 
 ```typescript
 public readonly traceLevel: string;
@@ -4180,17 +4151,17 @@ public readonly traceLevel: string;
 
 ---
 
-##### `transactionAbortOnError`<sup>Required</sup> <a name="transactionAbortOnError" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.transactionAbortOnError"></a>
+##### `transactionAbortOnError`<sup>Required</sup> <a name="transactionAbortOnError" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.transactionAbortOnError"></a>
 
 ```typescript
 public readonly transactionAbortOnError: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `transactionDefaultIsolationLevel`<sup>Required</sup> <a name="transactionDefaultIsolationLevel" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.transactionDefaultIsolationLevel"></a>
+##### `transactionDefaultIsolationLevel`<sup>Required</sup> <a name="transactionDefaultIsolationLevel" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.transactionDefaultIsolationLevel"></a>
 
 ```typescript
 public readonly transactionDefaultIsolationLevel: string;
@@ -4200,7 +4171,7 @@ public readonly transactionDefaultIsolationLevel: string;
 
 ---
 
-##### `twoDigitCenturyStart`<sup>Required</sup> <a name="twoDigitCenturyStart" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.twoDigitCenturyStart"></a>
+##### `twoDigitCenturyStart`<sup>Required</sup> <a name="twoDigitCenturyStart" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.twoDigitCenturyStart"></a>
 
 ```typescript
 public readonly twoDigitCenturyStart: number;
@@ -4210,7 +4181,7 @@ public readonly twoDigitCenturyStart: number;
 
 ---
 
-##### `unsupportedDdlAction`<sup>Required</sup> <a name="unsupportedDdlAction" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.unsupportedDdlAction"></a>
+##### `unsupportedDdlAction`<sup>Required</sup> <a name="unsupportedDdlAction" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.unsupportedDdlAction"></a>
 
 ```typescript
 public readonly unsupportedDdlAction: string;
@@ -4220,17 +4191,17 @@ public readonly unsupportedDdlAction: string;
 
 ---
 
-##### `useCachedResult`<sup>Required</sup> <a name="useCachedResult" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.useCachedResult"></a>
+##### `useCachedResult`<sup>Required</sup> <a name="useCachedResult" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.useCachedResult"></a>
 
 ```typescript
 public readonly useCachedResult: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `userTaskManagedInitialWarehouseSize`<sup>Required</sup> <a name="userTaskManagedInitialWarehouseSize" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.userTaskManagedInitialWarehouseSize"></a>
+##### `userTaskManagedInitialWarehouseSize`<sup>Required</sup> <a name="userTaskManagedInitialWarehouseSize" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.userTaskManagedInitialWarehouseSize"></a>
 
 ```typescript
 public readonly userTaskManagedInitialWarehouseSize: string;
@@ -4240,7 +4211,7 @@ public readonly userTaskManagedInitialWarehouseSize: string;
 
 ---
 
-##### `userTaskMinimumTriggerIntervalInSeconds`<sup>Required</sup> <a name="userTaskMinimumTriggerIntervalInSeconds" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.userTaskMinimumTriggerIntervalInSeconds"></a>
+##### `userTaskMinimumTriggerIntervalInSeconds`<sup>Required</sup> <a name="userTaskMinimumTriggerIntervalInSeconds" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.userTaskMinimumTriggerIntervalInSeconds"></a>
 
 ```typescript
 public readonly userTaskMinimumTriggerIntervalInSeconds: number;
@@ -4250,7 +4221,7 @@ public readonly userTaskMinimumTriggerIntervalInSeconds: number;
 
 ---
 
-##### `userTaskTimeoutMs`<sup>Required</sup> <a name="userTaskTimeoutMs" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.userTaskTimeoutMs"></a>
+##### `userTaskTimeoutMs`<sup>Required</sup> <a name="userTaskTimeoutMs" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.userTaskTimeoutMs"></a>
 
 ```typescript
 public readonly userTaskTimeoutMs: number;
@@ -4260,7 +4231,7 @@ public readonly userTaskTimeoutMs: number;
 
 ---
 
-##### `weekOfYearPolicy`<sup>Required</sup> <a name="weekOfYearPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.weekOfYearPolicy"></a>
+##### `weekOfYearPolicy`<sup>Required</sup> <a name="weekOfYearPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.weekOfYearPolicy"></a>
 
 ```typescript
 public readonly weekOfYearPolicy: number;
@@ -4270,7 +4241,7 @@ public readonly weekOfYearPolicy: number;
 
 ---
 
-##### `weekStart`<sup>Required</sup> <a name="weekStart" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.weekStart"></a>
+##### `weekStart`<sup>Required</sup> <a name="weekStart" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.weekStart"></a>
 
 ```typescript
 public readonly weekStart: number;
@@ -4284,11 +4255,11 @@ public readonly weekStart: number;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-snowflake.currentAccount.CurrentAccount.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-snowflake.currentAccount.CurrentAccount.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -4300,12 +4271,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### CurrentAccountConfig <a name="CurrentAccountConfig" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig"></a>
+### CurrentAccountConfig <a name="CurrentAccountConfig" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.Initializer"></a>
 
 ```typescript
-import { currentAccount } from '@cdktf/provider-snowflake'
+import { currentAccount } from '@cdktn/provider-snowflake'
 
 const currentAccountConfig: currentAccount.CurrentAccountConfig = { ... }
 ```
@@ -4314,226 +4285,225 @@ const currentAccountConfig: currentAccount.CurrentAccountConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.abortDetachedQuery">abortDetachedQuery</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.activePythonProfiler">activePythonProfiler</a></code> | <code>string</code> | Sets the profiler to use for the session when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). Valid values are (case-insensitive): `LINE` \| `MEMORY`. For more information, check [ACTIVE_PYTHON_PROFILER docs](https://docs.snowflake.com/en/sql-reference/parameters#active-python-profiler). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.allowClientMfaCaching">allowClientMfaCaching</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether an MFA token can be saved in the client-side operating system keystore to promote continuous, secure connectivity without users needing to respond to an MFA prompt at the start of each connection attempt to Snowflake. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.allowIdToken">allowIdToken</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether a connection token can be saved in the client-side operating system keystore to promote continuous, secure connectivity without users needing to enter login credentials at the start of each connection attempt to Snowflake. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.authenticationPolicy">authenticationPolicy</a></code> | <code>string</code> | Specifies [authentication policy](https://docs.snowflake.com/en/user-guide/authentication-policies) for the current account. For more information about this resource, see [docs](./authentication_policy). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.autocommit">autocommit</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether autocommit is enabled for the session. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.baseLocationPrefix">baseLocationPrefix</a></code> | <code>string</code> | Specifies a prefix for Snowflake to use in the write path for Snowflake-managed Apache Iceberg™ tables. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.binaryInputFormat">binaryInputFormat</a></code> | <code>string</code> | The format of VARCHAR values passed as input to VARCHAR-to-BINARY conversion functions. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.binaryOutputFormat">binaryOutputFormat</a></code> | <code>string</code> | The format for VARCHAR values returned as output by BINARY-to-VARCHAR conversion functions. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.catalog">catalog</a></code> | <code>string</code> | Specifies the catalog for Apache Iceberg™ tables. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.catalogSync">catalogSync</a></code> | <code>string</code> | Specifies the name of your catalog integration for [Snowflake Open Catalog](https://other-docs.snowflake.com/en/opencatalog/overview). Snowflake syncs tables that use the specified catalog integration with your Snowflake Open Catalog account. For more information, see [Sync a Snowflake-managed table with Snowflake Open Catalog](https://docs.snowflake.com/en/user-guide/tables-iceberg-open-catalog-sync). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `\|`, `.`, `"`. For more information, check [CATALOG_SYNC docs](https://docs.snowflake.com/en/sql-reference/parameters#catalog-sync). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientEnableLogInfoStatementParameters">clientEnableLogInfoStatementParameters</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enables users to log the data values bound to [PreparedStatements](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-api.html#label-jdbc-api-preparedstatement) ([more details](https://docs.snowflake.com/en/sql-reference/parameters#client-enable-log-info-statement-parameters)). For more information, check [CLIENT_ENABLE_LOG_INFO_STATEMENT_PARAMETERS docs](https://docs.snowflake.com/en/sql-reference/parameters#client-enable-log-info-statement-parameters). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientEncryptionKeySize">clientEncryptionKeySize</a></code> | <code>number</code> | Specifies the AES encryption key size, in bits, used by Snowflake to encrypt/decrypt files stored on internal stages (for loading/unloading data) when you use the SNOWFLAKE_FULL encryption type. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientMemoryLimit">clientMemoryLimit</a></code> | <code>number</code> | Parameter that specifies the maximum amount of memory the JDBC driver or ODBC driver should use for the result set from queries (in MB). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientMetadataRequestUseConnectionCtx">clientMetadataRequestUseConnectionCtx</a></code> | <code>boolean \| cdktf.IResolvable</code> | For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientMetadataUseSessionDatabase">clientMetadataUseSessionDatabase</a></code> | <code>boolean \| cdktf.IResolvable</code> | For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases to the current database. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientPrefetchThreads">clientPrefetchThreads</a></code> | <code>number</code> | Parameter that specifies the number of threads used by the client to pre-fetch large result sets. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientResultChunkSize">clientResultChunkSize</a></code> | <code>number</code> | Parameter that specifies the maximum size of each set (or chunk) of query results to download (in MB). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientResultColumnCaseInsensitive">clientResultColumnCaseInsensitive</a></code> | <code>boolean \| cdktf.IResolvable</code> | Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientSessionKeepAlive">clientSessionKeepAlive</a></code> | <code>boolean \| cdktf.IResolvable</code> | Parameter that indicates whether to force a user to log in again after a period of inactivity in the session. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientSessionKeepAliveHeartbeatFrequency">clientSessionKeepAliveHeartbeatFrequency</a></code> | <code>number</code> | Number of seconds in-between client attempts to update the token for the session. For more information, check [CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive-heartbeat-frequency). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientTimestampTypeMapping">clientTimestampTypeMapping</a></code> | <code>string</code> | Specifies the [TIMESTAMP_* variation](https://docs.snowflake.com/en/sql-reference/data-types-datetime.html#label-datatypes-timestamp-variations) to use when binding timestamp variables for JDBC or ODBC applications that use the bind API to load data. Valid values are (case-insensitive): `TIMESTAMP_LTZ` \| `TIMESTAMP_NTZ`. For more information, check [CLIENT_TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#client-timestamp-type-mapping). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.cortexEnabledCrossRegion">cortexEnabledCrossRegion</a></code> | <code>string</code> | Specifies the regions where an inference request may be processed in case the request cannot be processed in the region where request is originally placed. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.cortexModelsAllowlist">cortexModelsAllowlist</a></code> | <code>string</code> | Specifies the models that users in the account can access. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.csvTimestampFormat">csvTimestampFormat</a></code> | <code>string</code> | Specifies the format for TIMESTAMP values in CSV files downloaded from Snowsight. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.dataRetentionTimeInDays">dataRetentionTimeInDays</a></code> | <code>number</code> | Number of days for which Snowflake retains historical data for performing Time Travel actions (SELECT, CLONE, UNDROP) on the object. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.dateInputFormat">dateInputFormat</a></code> | <code>string</code> | Specifies the input format for the DATE data type. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.dateOutputFormat">dateOutputFormat</a></code> | <code>string</code> | Specifies the display format for the DATE data type. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultDdlCollation">defaultDdlCollation</a></code> | <code>string</code> | Sets the default collation used for the following DDL operations: [CREATE TABLE](https://docs.snowflake.com/en/sql-reference/sql/create-table), [ALTER TABLE](https://docs.snowflake.com/en/sql-reference/sql/alter-table) … ADD COLUMN. Setting this parameter forces all subsequently-created columns in the affected objects (table, schema, database, or account) to have the specified collation as the default, unless the collation for the column is explicitly defined in the DDL. For more information, check [DEFAULT_DDL_COLLATION docs](https://docs.snowflake.com/en/sql-reference/parameters#default-ddl-collation). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultNotebookComputePoolCpu">defaultNotebookComputePoolCpu</a></code> | <code>string</code> | Sets the preferred CPU compute pool used for [Notebooks on CPU Container Runtime](https://docs.snowflake.com/en/developer-guide/snowflake-ml/notebooks-on-spcs). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `\|`, `.`, `"`. For more information, check [DEFAULT_NOTEBOOK_COMPUTE_POOL_CPU docs](https://docs.snowflake.com/en/sql-reference/parameters#default-notebook-compute-pool-cpu). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultNotebookComputePoolGpu">defaultNotebookComputePoolGpu</a></code> | <code>string</code> | Sets the preferred GPU compute pool used for [Notebooks on GPU Container Runtime](https://docs.snowflake.com/en/developer-guide/snowflake-ml/notebooks-on-spcs). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `\|`, `.`, `"`. For more information, check [DEFAULT_NOTEBOOK_COMPUTE_POOL_GPU docs](https://docs.snowflake.com/en/sql-reference/parameters#default-notebook-compute-pool-gpu). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultNullOrdering">defaultNullOrdering</a></code> | <code>string</code> | Specifies the default ordering of NULL values in a result set ([more details](https://docs.snowflake.com/en/sql-reference/parameters#default-null-ordering)). Valid values are (case-insensitive): `FIRST` \| `LAST`. For more information, check [DEFAULT_NULL_ORDERING docs](https://docs.snowflake.com/en/sql-reference/parameters#default-null-ordering). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultStreamlitNotebookWarehouse">defaultStreamlitNotebookWarehouse</a></code> | <code>string</code> | Specifies the name of the default warehouse to use when creating a notebook. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.disableUiDownloadButton">disableUiDownloadButton</a></code> | <code>boolean \| cdktf.IResolvable</code> | Controls whether users in an account see a button to download data in Snowsight or the Classic Console, such as a table returned from running a query in a worksheet. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.disableUserPrivilegeGrants">disableUserPrivilegeGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | Controls whether users in an account can grant privileges directly to other users. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableAutomaticSensitiveDataClassificationLog">enableAutomaticSensitiveDataClassificationLog</a></code> | <code>boolean \| cdktf.IResolvable</code> | Controls whether events from [automatic sensitive data classification](https://docs.snowflake.com/en/user-guide/classify-auto) are logged in the user event table. For more information, check [ENABLE_AUTOMATIC_SENSITIVE_DATA_CLASSIFICATION_LOG docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-automatic-sensitive-data-classification-log). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableEgressCostOptimizer">enableEgressCostOptimizer</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enables or disables the Listing Cross-cloud auto-fulfillment Egress cost optimizer. For more information, check [ENABLE_EGRESS_COST_OPTIMIZER docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-egress-cost-optimizer). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableIdentifierFirstLogin">enableIdentifierFirstLogin</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines the login flow for users. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableInternalStagesPrivatelink">enableInternalStagesPrivatelink</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether the [SYSTEM$GET_PRIVATELINK_CONFIG](https://docs.snowflake.com/en/sql-reference/functions/system_get_privatelink_config) function returns the private-internal-stages key in the query result. The corresponding value in the query result is used during the configuration process for private connectivity to internal stages. For more information, check [ENABLE_INTERNAL_STAGES_PRIVATELINK docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-internal-stages-privatelink). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableTriSecretAndRekeyOptOutForImageRepository">enableTriSecretAndRekeyOptOutForImageRepository</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies choice for the [image repository](https://docs.snowflake.com/en/developer-guide/snowpark-container-services/working-with-registry-repository.html#label-registry-and-repository-image-repository) to opt out of Tri-Secret Secure and [Periodic rekeying](https://docs.snowflake.com/en/user-guide/security-encryption-manage.html#label-periodic-rekeying). For more information, check [ENABLE_TRI_SECRET_AND_REKEY_OPT_OUT_FOR_IMAGE_REPOSITORY docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-tri-secret-and-rekey-opt-out-for-image-repository). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableTriSecretAndRekeyOptOutForSpcsBlockStorage">enableTriSecretAndRekeyOptOutForSpcsBlockStorage</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies the choice for the [Snowpark Container Services block storage volume](https://docs.snowflake.com/en/developer-guide/snowpark-container-services/block-storage-volume) to opt out of Tri-Secret Secure and [Periodic rekeying](https://docs.snowflake.com/en/user-guide/security-encryption-manage.html#label-periodic-rekeying). For more information, check [ENABLE_TRI_SECRET_AND_REKEY_OPT_OUT_FOR_SPCS_BLOCK_STORAGE docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-tri-secret-and-rekey-opt-out-for-spcs-block-storage). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableUnhandledExceptionsReporting">enableUnhandledExceptionsReporting</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether Snowflake may capture – in an event table – log messages or trace event data for unhandled exceptions in procedure or UDF handler code. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableUnloadPhysicalTypeOptimization">enableUnloadPhysicalTypeOptimization</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableUnredactedQuerySyntaxError">enableUnredactedQuerySyntaxError</a></code> | <code>boolean \| cdktf.IResolvable</code> | Controls whether query text is redacted if a SQL query fails due to a syntax or parsing error. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableUnredactedSecureObjectError">enableUnredactedSecureObjectError</a></code> | <code>boolean \| cdktf.IResolvable</code> | Controls whether error messages related to secure objects are redacted in metadata. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enforceNetworkRulesForInternalStages">enforceNetworkRulesForInternalStages</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether a network policy that uses network rules can restrict access to AWS internal stages. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.errorOnNondeterministicMerge">errorOnNondeterministicMerge</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.errorOnNondeterministicUpdate">errorOnNondeterministicUpdate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.eventTable">eventTable</a></code> | <code>string</code> | Specifies the name of the event table for logging messages from stored procedures and UDFs contained by the object with which the event table is associated. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.externalOauthAddPrivilegedRolesToBlockedList">externalOauthAddPrivilegedRolesToBlockedList</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines whether the ACCOUNTADMIN, ORGADMIN, GLOBALORGADMIN, and SECURITYADMIN roles can be used as the primary role when creating a Snowflake session based on the access token from the External OAuth authorization server. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.externalVolume">externalVolume</a></code> | <code>string</code> | Specifies the external volume for Apache Iceberg™ tables. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.featurePolicy">featurePolicy</a></code> | <code>string</code> | Specifies [feature policy](https://docs.snowflake.com/en/developer-guide/native-apps/ui-consumer-feature-policies) for the current account. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.geographyOutputFormat">geographyOutputFormat</a></code> | <code>string</code> | Display format for [GEOGRAPHY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geography). Valid values are (case-insensitive): `GeoJSON` \| `WKT` \| `WKB` \| `EWKT` \| `EWKB`. For more information, check [GEOGRAPHY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geography-output-format). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.geometryOutputFormat">geometryOutputFormat</a></code> | <code>string</code> | Display format for [GEOMETRY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geometry). Valid values are (case-insensitive): `GeoJSON` \| `WKT` \| `WKB` \| `EWKT` \| `EWKB`. For more information, check [GEOMETRY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geometry-output-format). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.hybridTableLockTimeout">hybridTableLockTimeout</a></code> | <code>number</code> | Number of seconds to wait while trying to acquire row-level locks on a hybrid table, before timing out and aborting the statement. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#id CurrentAccount#id}. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.initialReplicationSizeLimitInTb">initialReplicationSizeLimitInTb</a></code> | <code>string</code> | Sets the maximum estimated size limit for the initial replication of a primary database to a secondary database (in TB). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.jdbcTreatDecimalAsInt">jdbcTreatDecimalAsInt</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies how JDBC processes columns that have a scale of zero (0). For more information, check [JDBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-decimal-as-int). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.jdbcTreatTimestampNtzAsUtc">jdbcTreatTimestampNtzAsUtc</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies how JDBC processes TIMESTAMP_NTZ values ([more details](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc)). For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.jdbcUseSessionTimezone">jdbcUseSessionTimezone</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.jsonIndent">jsonIndent</a></code> | <code>number</code> | Specifies the number of blank spaces to indent each new element in JSON output in the session. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.jsTreatIntegerAsBigint">jsTreatIntegerAsBigint</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies how the Snowflake Node.js Driver processes numeric columns that have a scale of zero (0), for example INTEGER or NUMBER(p, 0). For more information, check [JS_TREAT_INTEGER_AS_BIGINT docs](https://docs.snowflake.com/en/sql-reference/parameters#js-treat-integer-as-bigint). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.listingAutoFulfillmentReplicationRefreshSchedule">listingAutoFulfillmentReplicationRefreshSchedule</a></code> | <code>string</code> | Sets the time interval used to refresh the application package based data products to other regions. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.lockTimeout">lockTimeout</a></code> | <code>number</code> | Number of seconds to wait while trying to lock a resource, before timing out and aborting the statement. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.logLevel">logLevel</a></code> | <code>string</code> | Specifies the severity level of messages that should be ingested and made available in the active event table. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.maxConcurrencyLevel">maxConcurrencyLevel</a></code> | <code>number</code> | Specifies the concurrency level for SQL statements (that is, queries and DML) executed by a warehouse ([more details](https://docs.snowflake.com/en/sql-reference/parameters#max-concurrency-level)). For more information, check [MAX_CONCURRENCY_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#max-concurrency-level). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.maxDataExtensionTimeInDays">maxDataExtensionTimeInDays</a></code> | <code>number</code> | Maximum number of days Snowflake can extend the data retention period for tables to prevent streams on the tables from becoming stale. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.metricLevel">metricLevel</a></code> | <code>string</code> | Controls how metrics data is ingested into the event table. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.minDataRetentionTimeInDays">minDataRetentionTimeInDays</a></code> | <code>number</code> | Minimum number of days for which Snowflake retains historical data for performing Time Travel actions (SELECT, CLONE, UNDROP) on an object. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.multiStatementCount">multiStatementCount</a></code> | <code>number</code> | Number of statements to execute when using the multi-statement capability. For more information, check [MULTI_STATEMENT_COUNT docs](https://docs.snowflake.com/en/sql-reference/parameters#multi-statement-count). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.networkPolicy">networkPolicy</a></code> | <code>string</code> | Specifies the network policy to enforce for your account. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.noorderSequenceAsDefault">noorderSequenceAsDefault</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.oauthAddPrivilegedRolesToBlockedList">oauthAddPrivilegedRolesToBlockedList</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines whether the ACCOUNTADMIN, ORGADMIN, GLOBALORGADMIN, and SECURITYADMIN roles can be used as the primary role when creating a Snowflake session based on the access token from Snowflake’s authorization server. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.odbcTreatDecimalAsInt">odbcTreatDecimalAsInt</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.packagesPolicy">packagesPolicy</a></code> | <code>string</code> | Specifies [packages policy](https://docs.snowflake.com/en/developer-guide/udf/python/packages-policy) for the current account. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.passwordPolicy">passwordPolicy</a></code> | <code>string</code> | Specifies [password policy](https://docs.snowflake.com/en/user-guide/password-authentication#label-using-password-policies) for the current account. For more information about this resource, see [docs](./password_policy). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.periodicDataRekeying">periodicDataRekeying</a></code> | <code>boolean \| cdktf.IResolvable</code> | It enables/disables re-encryption of table data with new keys on a yearly basis to provide additional levels of data protection ([more details](https://docs.snowflake.com/en/sql-reference/parameters#periodic-data-rekeying)). For more information, check [PERIODIC_DATA_REKEYING docs](https://docs.snowflake.com/en/sql-reference/parameters#periodic-data-rekeying). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.pipeExecutionPaused">pipeExecutionPaused</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether to pause a running pipe, primarily in preparation for transferring ownership of the pipe to a different role ([more details](https://docs.snowflake.com/en/sql-reference/parameters#pipe-execution-paused)). For more information, check [PIPE_EXECUTION_PAUSED docs](https://docs.snowflake.com/en/sql-reference/parameters#pipe-execution-paused). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.preventUnloadToInlineUrl">preventUnloadToInlineUrl</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether to prevent ad hoc data unload operations to external cloud storage locations (that is, [COPY INTO location](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location) statements that specify the cloud storage URL and access settings directly in the statement). For an example, see [Unloading data from a table directly to files in an external location](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location.html#label-copy-into-location-ad-hoc). For more information, check [PREVENT_UNLOAD_TO_INLINE_URL docs](https://docs.snowflake.com/en/sql-reference/parameters#prevent-unload-to-inline-url). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.preventUnloadToInternalStages">preventUnloadToInternalStages</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether to prevent data unload operations to internal (Snowflake) stages using [COPY INTO location](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location) statements. For more information, check [PREVENT_UNLOAD_TO_INTERNAL_STAGES docs](https://docs.snowflake.com/en/sql-reference/parameters#prevent-unload-to-internal-stages). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.pythonProfilerModules">pythonProfilerModules</a></code> | <code>string</code> | Specifies the list of Python modules to include in a report when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). For more information, check [PYTHON_PROFILER_MODULES docs](https://docs.snowflake.com/en/sql-reference/parameters#python-profiler-modules). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.pythonProfilerTargetStage">pythonProfilerTargetStage</a></code> | <code>string</code> | Specifies the fully-qualified name of the stage in which to save a report when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). For more information, check [PYTHON_PROFILER_TARGET_STAGE docs](https://docs.snowflake.com/en/sql-reference/parameters#python-profiler-target-stage). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.queryTag">queryTag</a></code> | <code>string</code> | Optional string that can be used to tag queries and other SQL statements executed within a session. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.quotedIdentifiersIgnoreCase">quotedIdentifiersIgnoreCase</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.replaceInvalidCharacters">replaceInvalidCharacters</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether to replace invalid UTF-8 characters with the Unicode replacement character (�) in query results for [Apache Iceberg™ tables](https://docs.snowflake.com/en/sql-reference/sql/create-iceberg-table) that use an external catalog. For more information, check [REPLACE_INVALID_CHARACTERS docs](https://docs.snowflake.com/en/sql-reference/parameters#replace-invalid-characters). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.requireStorageIntegrationForStageCreation">requireStorageIntegrationForStageCreation</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether to require a storage integration object as cloud credentials when creating a named external stage (using [CREATE STAGE](https://docs.snowflake.com/en/sql-reference/sql/create-stage)) to access a private cloud storage location. For more information, check [REQUIRE_STORAGE_INTEGRATION_FOR_STAGE_CREATION docs](https://docs.snowflake.com/en/sql-reference/parameters#require-storage-integration-for-stage-creation). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.requireStorageIntegrationForStageOperation">requireStorageIntegrationForStageOperation</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether to require using a named external stage that references a storage integration object as cloud credentials when loading data from or unloading data to a private cloud storage location. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.resourceMonitor">resourceMonitor</a></code> | <code>string</code> | Parameter that specifies the name of the resource monitor used to control all virtual warehouses created in the account. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.rowsPerResultset">rowsPerResultset</a></code> | <code>number</code> | Specifies the maximum number of rows returned in a result set. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.s3StageVpceDnsName">s3StageVpceDnsName</a></code> | <code>string</code> | Specifies the DNS name of an Amazon S3 interface endpoint. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.samlIdentityProvider">samlIdentityProvider</a></code> | <code>string</code> | Enables federated authentication. This deprecated parameter enables federated authentication ([more details](https://docs.snowflake.com/en/sql-reference/parameters#saml-identity-provider)). For more information, check [SAML_IDENTITY_PROVIDER docs](https://docs.snowflake.com/en/sql-reference/parameters#saml-identity-provider). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.searchPath">searchPath</a></code> | <code>string</code> | Specifies the path to search to resolve unqualified object names in queries. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.serverlessTaskMaxStatementSize">serverlessTaskMaxStatementSize</a></code> | <code>string</code> | Specifies the maximum allowed warehouse size for [Serverless tasks](https://docs.snowflake.com/en/user-guide/tasks-intro.html#label-tasks-compute-resources-serverless). Valid values are (case-insensitive): `XSMALL` \| `X-SMALL` \| `SMALL` \| `MEDIUM` \| `LARGE` \| `XLARGE` \| `X-LARGE` \| `XXLARGE` \| `X2LARGE` \| `2X-LARGE` \| `XXXLARGE` \| `X3LARGE` \| `3X-LARGE` \| `X4LARGE` \| `4X-LARGE` \| `X5LARGE` \| `5X-LARGE` \| `X6LARGE` \| `6X-LARGE`. For more information, check [SERVERLESS_TASK_MAX_STATEMENT_SIZE docs](https://docs.snowflake.com/en/sql-reference/parameters#serverless-task-max-statement-size). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.serverlessTaskMinStatementSize">serverlessTaskMinStatementSize</a></code> | <code>string</code> | Specifies the minimum allowed warehouse size for [Serverless tasks](https://docs.snowflake.com/en/user-guide/tasks-intro.html#label-tasks-compute-resources-serverless). Valid values are (case-insensitive): `XSMALL` \| `X-SMALL` \| `SMALL` \| `MEDIUM` \| `LARGE` \| `XLARGE` \| `X-LARGE` \| `XXLARGE` \| `X2LARGE` \| `2X-LARGE` \| `XXXLARGE` \| `X3LARGE` \| `3X-LARGE` \| `X4LARGE` \| `4X-LARGE` \| `X5LARGE` \| `5X-LARGE` \| `X6LARGE` \| `6X-LARGE`. For more information, check [SERVERLESS_TASK_MIN_STATEMENT_SIZE docs](https://docs.snowflake.com/en/sql-reference/parameters#serverless-task-min-statement-size). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.sessionPolicy">sessionPolicy</a></code> | <code>string</code> | Specifies [session policy](https://docs.snowflake.com/en/user-guide/session-policies-using) for the current account. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.simulatedDataSharingConsumer">simulatedDataSharingConsumer</a></code> | <code>string</code> | Specifies the name of a consumer account to simulate for testing/validating shared data, particularly shared secure views. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.ssoLoginPage">ssoLoginPage</a></code> | <code>boolean \| cdktf.IResolvable</code> | This deprecated parameter disables preview mode for testing SSO (after enabling federated authentication) before rolling it out to users. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.statementQueuedTimeoutInSeconds">statementQueuedTimeoutInSeconds</a></code> | <code>number</code> | Amount of time, in seconds, a SQL statement (query, DDL, DML, etc.) remains queued for a warehouse before it is canceled by the system. This parameter can be used in conjunction with the [MAX_CONCURRENCY_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#label-max-concurrency-level) parameter to ensure a warehouse is never backlogged. For more information, check [STATEMENT_QUEUED_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-queued-timeout-in-seconds). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.statementTimeoutInSeconds">statementTimeoutInSeconds</a></code> | <code>number</code> | Amount of time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system. For more information, check [STATEMENT_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-timeout-in-seconds). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.storageSerializationPolicy">storageSerializationPolicy</a></code> | <code>string</code> | Specifies the storage serialization policy for Snowflake-managed [Apache Iceberg™ tables](https://docs.snowflake.com/en/user-guide/tables-iceberg). Valid values are (case-insensitive): `COMPATIBLE` \| `OPTIMIZED`. For more information, check [STORAGE_SERIALIZATION_POLICY docs](https://docs.snowflake.com/en/sql-reference/parameters#storage-serialization-policy). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.strictJsonOutput">strictJsonOutput</a></code> | <code>boolean \| cdktf.IResolvable</code> | This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.suspendTaskAfterNumFailures">suspendTaskAfterNumFailures</a></code> | <code>number</code> | Specifies the number of consecutive failed task runs after which the current task is suspended automatically. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.taskAutoRetryAttempts">taskAutoRetryAttempts</a></code> | <code>number</code> | Specifies the number of automatic task graph retry attempts. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timeInputFormat">timeInputFormat</a></code> | <code>string</code> | Specifies the input format for the TIME data type. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timeOutputFormat">timeOutputFormat</a></code> | <code>string</code> | Specifies the display format for the TIME data type. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts">CurrentAccountTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampDayIsAlways24H">timestampDayIsAlways24H</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampInputFormat">timestampInputFormat</a></code> | <code>string</code> | Specifies the input format for the TIMESTAMP data type alias. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampLtzOutputFormat">timestampLtzOutputFormat</a></code> | <code>string</code> | Specifies the display format for the TIMESTAMP_LTZ data type. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampNtzOutputFormat">timestampNtzOutputFormat</a></code> | <code>string</code> | Specifies the display format for the TIMESTAMP_NTZ data type. For more information, check [TIMESTAMP_NTZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-ntz-output-format). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampOutputFormat">timestampOutputFormat</a></code> | <code>string</code> | Specifies the display format for the TIMESTAMP data type alias. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampTypeMapping">timestampTypeMapping</a></code> | <code>string</code> | Specifies the TIMESTAMP_* variation that the TIMESTAMP data type alias maps to. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampTzOutputFormat">timestampTzOutputFormat</a></code> | <code>string</code> | Specifies the display format for the TIMESTAMP_TZ data type. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timezone">timezone</a></code> | <code>string</code> | Specifies the time zone for the session. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.traceLevel">traceLevel</a></code> | <code>string</code> | Controls how trace events are ingested into the event table. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.transactionAbortOnError">transactionAbortOnError</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.transactionDefaultIsolationLevel">transactionDefaultIsolationLevel</a></code> | <code>string</code> | Specifies the isolation level for transactions in the user session. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.twoDigitCenturyStart">twoDigitCenturyStart</a></code> | <code>number</code> | Specifies the “century start” year for 2-digit years (i.e. the earliest year such dates can represent). This parameter prevents ambiguous dates when importing or converting data with the `YY` date format component (i.e. years represented as 2 digits). For more information, check [TWO_DIGIT_CENTURY_START docs](https://docs.snowflake.com/en/sql-reference/parameters#two-digit-century-start). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.unsupportedDdlAction">unsupportedDdlAction</a></code> | <code>string</code> | Determines if an unsupported (i.e. non-default) value specified for a constraint property returns an error. For more information, check [UNSUPPORTED_DDL_ACTION docs](https://docs.snowflake.com/en/sql-reference/parameters#unsupported-ddl-action). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.useCachedResult">useCachedResult</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether to reuse persisted query results, if available, when a matching query is submitted. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.userTaskManagedInitialWarehouseSize">userTaskManagedInitialWarehouseSize</a></code> | <code>string</code> | Specifies the size of the compute resources to provision for the first run of the task, before a task history is available for Snowflake to determine an ideal size. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.userTaskMinimumTriggerIntervalInSeconds">userTaskMinimumTriggerIntervalInSeconds</a></code> | <code>number</code> | Minimum amount of time between Triggered Task executions in seconds For more information, check [USER_TASK_MINIMUM_TRIGGER_INTERVAL_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#user-task-minimum-trigger-interval-in-seconds). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.userTaskTimeoutMs">userTaskTimeoutMs</a></code> | <code>number</code> | Specifies the time limit on a single run of the task before it times out (in milliseconds). |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.weekOfYearPolicy">weekOfYearPolicy</a></code> | <code>number</code> | Specifies how the weeks in a given year are computed. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.weekStart">weekStart</a></code> | <code>number</code> | Specifies the first day of the week (used by week-related date functions). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.abortDetachedQuery">abortDetachedQuery</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.activePythonProfiler">activePythonProfiler</a></code> | <code>string</code> | Sets the profiler to use for the session when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). Valid values are (case-insensitive): `LINE` \| `MEMORY`. For more information, check [ACTIVE_PYTHON_PROFILER docs](https://docs.snowflake.com/en/sql-reference/parameters#active-python-profiler). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.allowClientMfaCaching">allowClientMfaCaching</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether an MFA token can be saved in the client-side operating system keystore to promote continuous, secure connectivity without users needing to respond to an MFA prompt at the start of each connection attempt to Snowflake. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.allowIdToken">allowIdToken</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether a connection token can be saved in the client-side operating system keystore to promote continuous, secure connectivity without users needing to enter login credentials at the start of each connection attempt to Snowflake. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.authenticationPolicy">authenticationPolicy</a></code> | <code>string</code> | Specifies [authentication policy](https://docs.snowflake.com/en/user-guide/authentication-policies) for the current account. For more information about this resource, see [docs](./authentication_policy). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.autocommit">autocommit</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether autocommit is enabled for the session. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.baseLocationPrefix">baseLocationPrefix</a></code> | <code>string</code> | Specifies a prefix for Snowflake to use in the write path for Snowflake-managed Apache Iceberg™ tables. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.binaryInputFormat">binaryInputFormat</a></code> | <code>string</code> | The format of VARCHAR values passed as input to VARCHAR-to-BINARY conversion functions. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.binaryOutputFormat">binaryOutputFormat</a></code> | <code>string</code> | The format for VARCHAR values returned as output by BINARY-to-VARCHAR conversion functions. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.catalog">catalog</a></code> | <code>string</code> | Specifies the catalog for Apache Iceberg™ tables. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.catalogSync">catalogSync</a></code> | <code>string</code> | Specifies the name of your catalog integration for [Snowflake Open Catalog](https://other-docs.snowflake.com/en/opencatalog/overview). Snowflake syncs tables that use the specified catalog integration with your Snowflake Open Catalog account. For more information, see [Sync a Snowflake-managed table with Snowflake Open Catalog](https://docs.snowflake.com/en/user-guide/tables-iceberg-open-catalog-sync). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `\|`, `.`, `"`. For more information, check [CATALOG_SYNC docs](https://docs.snowflake.com/en/sql-reference/parameters#catalog-sync). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientEnableLogInfoStatementParameters">clientEnableLogInfoStatementParameters</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables users to log the data values bound to [PreparedStatements](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-api.html#label-jdbc-api-preparedstatement) ([more details](https://docs.snowflake.com/en/sql-reference/parameters#client-enable-log-info-statement-parameters)). For more information, check [CLIENT_ENABLE_LOG_INFO_STATEMENT_PARAMETERS docs](https://docs.snowflake.com/en/sql-reference/parameters#client-enable-log-info-statement-parameters). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientEncryptionKeySize">clientEncryptionKeySize</a></code> | <code>number</code> | Specifies the AES encryption key size, in bits, used by Snowflake to encrypt/decrypt files stored on internal stages (for loading/unloading data) when you use the SNOWFLAKE_FULL encryption type. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientMemoryLimit">clientMemoryLimit</a></code> | <code>number</code> | Parameter that specifies the maximum amount of memory the JDBC driver or ODBC driver should use for the result set from queries (in MB). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientMetadataRequestUseConnectionCtx">clientMetadataRequestUseConnectionCtx</a></code> | <code>boolean \| cdktn.IResolvable</code> | For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientMetadataUseSessionDatabase">clientMetadataUseSessionDatabase</a></code> | <code>boolean \| cdktn.IResolvable</code> | For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases to the current database. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientPrefetchThreads">clientPrefetchThreads</a></code> | <code>number</code> | Parameter that specifies the number of threads used by the client to pre-fetch large result sets. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientResultChunkSize">clientResultChunkSize</a></code> | <code>number</code> | Parameter that specifies the maximum size of each set (or chunk) of query results to download (in MB). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientResultColumnCaseInsensitive">clientResultColumnCaseInsensitive</a></code> | <code>boolean \| cdktn.IResolvable</code> | Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientSessionKeepAlive">clientSessionKeepAlive</a></code> | <code>boolean \| cdktn.IResolvable</code> | Parameter that indicates whether to force a user to log in again after a period of inactivity in the session. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientSessionKeepAliveHeartbeatFrequency">clientSessionKeepAliveHeartbeatFrequency</a></code> | <code>number</code> | Number of seconds in-between client attempts to update the token for the session. For more information, check [CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive-heartbeat-frequency). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientTimestampTypeMapping">clientTimestampTypeMapping</a></code> | <code>string</code> | Specifies the [TIMESTAMP_* variation](https://docs.snowflake.com/en/sql-reference/data-types-datetime.html#label-datatypes-timestamp-variations) to use when binding timestamp variables for JDBC or ODBC applications that use the bind API to load data. Valid values are (case-insensitive): `TIMESTAMP_LTZ` \| `TIMESTAMP_NTZ`. For more information, check [CLIENT_TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#client-timestamp-type-mapping). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.cortexEnabledCrossRegion">cortexEnabledCrossRegion</a></code> | <code>string</code> | Specifies the regions where an inference request may be processed in case the request cannot be processed in the region where request is originally placed. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.cortexModelsAllowlist">cortexModelsAllowlist</a></code> | <code>string</code> | Specifies the models that users in the account can access. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.csvTimestampFormat">csvTimestampFormat</a></code> | <code>string</code> | Specifies the format for TIMESTAMP values in CSV files downloaded from Snowsight. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.dataRetentionTimeInDays">dataRetentionTimeInDays</a></code> | <code>number</code> | Number of days for which Snowflake retains historical data for performing Time Travel actions (SELECT, CLONE, UNDROP) on the object. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.dateInputFormat">dateInputFormat</a></code> | <code>string</code> | Specifies the input format for the DATE data type. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.dateOutputFormat">dateOutputFormat</a></code> | <code>string</code> | Specifies the display format for the DATE data type. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultDdlCollation">defaultDdlCollation</a></code> | <code>string</code> | Sets the default collation used for the following DDL operations: [CREATE TABLE](https://docs.snowflake.com/en/sql-reference/sql/create-table), [ALTER TABLE](https://docs.snowflake.com/en/sql-reference/sql/alter-table) … ADD COLUMN. Setting this parameter forces all subsequently-created columns in the affected objects (table, schema, database, or account) to have the specified collation as the default, unless the collation for the column is explicitly defined in the DDL. For more information, check [DEFAULT_DDL_COLLATION docs](https://docs.snowflake.com/en/sql-reference/parameters#default-ddl-collation). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultNotebookComputePoolCpu">defaultNotebookComputePoolCpu</a></code> | <code>string</code> | Sets the preferred CPU compute pool used for [Notebooks on CPU Container Runtime](https://docs.snowflake.com/en/developer-guide/snowflake-ml/notebooks-on-spcs). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `\|`, `.`, `"`. For more information, check [DEFAULT_NOTEBOOK_COMPUTE_POOL_CPU docs](https://docs.snowflake.com/en/sql-reference/parameters#default-notebook-compute-pool-cpu). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultNotebookComputePoolGpu">defaultNotebookComputePoolGpu</a></code> | <code>string</code> | Sets the preferred GPU compute pool used for [Notebooks on GPU Container Runtime](https://docs.snowflake.com/en/developer-guide/snowflake-ml/notebooks-on-spcs). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `\|`, `.`, `"`. For more information, check [DEFAULT_NOTEBOOK_COMPUTE_POOL_GPU docs](https://docs.snowflake.com/en/sql-reference/parameters#default-notebook-compute-pool-gpu). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultNullOrdering">defaultNullOrdering</a></code> | <code>string</code> | Specifies the default ordering of NULL values in a result set ([more details](https://docs.snowflake.com/en/sql-reference/parameters#default-null-ordering)). Valid values are (case-insensitive): `FIRST` \| `LAST`. For more information, check [DEFAULT_NULL_ORDERING docs](https://docs.snowflake.com/en/sql-reference/parameters#default-null-ordering). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultStreamlitNotebookWarehouse">defaultStreamlitNotebookWarehouse</a></code> | <code>string</code> | Specifies the name of the default warehouse to use when creating a notebook. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.disableUiDownloadButton">disableUiDownloadButton</a></code> | <code>boolean \| cdktn.IResolvable</code> | Controls whether users in an account see a button to download data in Snowsight or the Classic Console, such as a table returned from running a query in a worksheet. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.disableUserPrivilegeGrants">disableUserPrivilegeGrants</a></code> | <code>boolean \| cdktn.IResolvable</code> | Controls whether users in an account can grant privileges directly to other users. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableAutomaticSensitiveDataClassificationLog">enableAutomaticSensitiveDataClassificationLog</a></code> | <code>boolean \| cdktn.IResolvable</code> | Controls whether events from [automatic sensitive data classification](https://docs.snowflake.com/en/user-guide/classify-auto) are logged in the user event table. For more information, check [ENABLE_AUTOMATIC_SENSITIVE_DATA_CLASSIFICATION_LOG docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-automatic-sensitive-data-classification-log). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableEgressCostOptimizer">enableEgressCostOptimizer</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables or disables the Listing Cross-cloud auto-fulfillment Egress cost optimizer. For more information, check [ENABLE_EGRESS_COST_OPTIMIZER docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-egress-cost-optimizer). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableIdentifierFirstLogin">enableIdentifierFirstLogin</a></code> | <code>boolean \| cdktn.IResolvable</code> | Determines the login flow for users. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableInternalStagesPrivatelink">enableInternalStagesPrivatelink</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether the [SYSTEM$GET_PRIVATELINK_CONFIG](https://docs.snowflake.com/en/sql-reference/functions/system_get_privatelink_config) function returns the private-internal-stages key in the query result. The corresponding value in the query result is used during the configuration process for private connectivity to internal stages. For more information, check [ENABLE_INTERNAL_STAGES_PRIVATELINK docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-internal-stages-privatelink). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableTriSecretAndRekeyOptOutForImageRepository">enableTriSecretAndRekeyOptOutForImageRepository</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies choice for the [image repository](https://docs.snowflake.com/en/developer-guide/snowpark-container-services/working-with-registry-repository.html#label-registry-and-repository-image-repository) to opt out of Tri-Secret Secure and [Periodic rekeying](https://docs.snowflake.com/en/user-guide/security-encryption-manage.html#label-periodic-rekeying). For more information, check [ENABLE_TRI_SECRET_AND_REKEY_OPT_OUT_FOR_IMAGE_REPOSITORY docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-tri-secret-and-rekey-opt-out-for-image-repository). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableTriSecretAndRekeyOptOutForSpcsBlockStorage">enableTriSecretAndRekeyOptOutForSpcsBlockStorage</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies the choice for the [Snowpark Container Services block storage volume](https://docs.snowflake.com/en/developer-guide/snowpark-container-services/block-storage-volume) to opt out of Tri-Secret Secure and [Periodic rekeying](https://docs.snowflake.com/en/user-guide/security-encryption-manage.html#label-periodic-rekeying). For more information, check [ENABLE_TRI_SECRET_AND_REKEY_OPT_OUT_FOR_SPCS_BLOCK_STORAGE docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-tri-secret-and-rekey-opt-out-for-spcs-block-storage). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableUnhandledExceptionsReporting">enableUnhandledExceptionsReporting</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether Snowflake may capture – in an event table – log messages or trace event data for unhandled exceptions in procedure or UDF handler code. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableUnloadPhysicalTypeOptimization">enableUnloadPhysicalTypeOptimization</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableUnredactedQuerySyntaxError">enableUnredactedQuerySyntaxError</a></code> | <code>boolean \| cdktn.IResolvable</code> | Controls whether query text is redacted if a SQL query fails due to a syntax or parsing error. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableUnredactedSecureObjectError">enableUnredactedSecureObjectError</a></code> | <code>boolean \| cdktn.IResolvable</code> | Controls whether error messages related to secure objects are redacted in metadata. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enforceNetworkRulesForInternalStages">enforceNetworkRulesForInternalStages</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether a network policy that uses network rules can restrict access to AWS internal stages. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.errorOnNondeterministicMerge">errorOnNondeterministicMerge</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.errorOnNondeterministicUpdate">errorOnNondeterministicUpdate</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.eventTable">eventTable</a></code> | <code>string</code> | Specifies the name of the event table for logging messages from stored procedures and UDFs contained by the object with which the event table is associated. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.externalOauthAddPrivilegedRolesToBlockedList">externalOauthAddPrivilegedRolesToBlockedList</a></code> | <code>boolean \| cdktn.IResolvable</code> | Determines whether the ACCOUNTADMIN, ORGADMIN, GLOBALORGADMIN, and SECURITYADMIN roles can be used as the primary role when creating a Snowflake session based on the access token from the External OAuth authorization server. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.externalVolume">externalVolume</a></code> | <code>string</code> | Specifies the external volume for Apache Iceberg™ tables. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.featurePolicy">featurePolicy</a></code> | <code>string</code> | Specifies [feature policy](https://docs.snowflake.com/en/developer-guide/native-apps/ui-consumer-feature-policies) for the current account. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.geographyOutputFormat">geographyOutputFormat</a></code> | <code>string</code> | Display format for [GEOGRAPHY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geography). Valid values are (case-insensitive): `GeoJSON` \| `WKT` \| `WKB` \| `EWKT` \| `EWKB`. For more information, check [GEOGRAPHY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geography-output-format). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.geometryOutputFormat">geometryOutputFormat</a></code> | <code>string</code> | Display format for [GEOMETRY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geometry). Valid values are (case-insensitive): `GeoJSON` \| `WKT` \| `WKB` \| `EWKT` \| `EWKB`. For more information, check [GEOMETRY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geometry-output-format). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.hybridTableLockTimeout">hybridTableLockTimeout</a></code> | <code>number</code> | Number of seconds to wait while trying to acquire row-level locks on a hybrid table, before timing out and aborting the statement. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#id CurrentAccount#id}. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.initialReplicationSizeLimitInTb">initialReplicationSizeLimitInTb</a></code> | <code>string</code> | Sets the maximum estimated size limit for the initial replication of a primary database to a secondary database (in TB). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.jdbcTreatDecimalAsInt">jdbcTreatDecimalAsInt</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies how JDBC processes columns that have a scale of zero (0). For more information, check [JDBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-decimal-as-int). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.jdbcTreatTimestampNtzAsUtc">jdbcTreatTimestampNtzAsUtc</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies how JDBC processes TIMESTAMP_NTZ values ([more details](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc)). For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.jdbcUseSessionTimezone">jdbcUseSessionTimezone</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.jsonIndent">jsonIndent</a></code> | <code>number</code> | Specifies the number of blank spaces to indent each new element in JSON output in the session. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.jsTreatIntegerAsBigint">jsTreatIntegerAsBigint</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies how the Snowflake Node.js Driver processes numeric columns that have a scale of zero (0), for example INTEGER or NUMBER(p, 0). For more information, check [JS_TREAT_INTEGER_AS_BIGINT docs](https://docs.snowflake.com/en/sql-reference/parameters#js-treat-integer-as-bigint). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.listingAutoFulfillmentReplicationRefreshSchedule">listingAutoFulfillmentReplicationRefreshSchedule</a></code> | <code>string</code> | Sets the time interval used to refresh the application package based data products to other regions. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.lockTimeout">lockTimeout</a></code> | <code>number</code> | Number of seconds to wait while trying to lock a resource, before timing out and aborting the statement. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.logLevel">logLevel</a></code> | <code>string</code> | Specifies the severity level of messages that should be ingested and made available in the active event table. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.maxConcurrencyLevel">maxConcurrencyLevel</a></code> | <code>number</code> | Specifies the concurrency level for SQL statements (that is, queries and DML) executed by a warehouse ([more details](https://docs.snowflake.com/en/sql-reference/parameters#max-concurrency-level)). For more information, check [MAX_CONCURRENCY_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#max-concurrency-level). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.maxDataExtensionTimeInDays">maxDataExtensionTimeInDays</a></code> | <code>number</code> | Maximum number of days Snowflake can extend the data retention period for tables to prevent streams on the tables from becoming stale. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.metricLevel">metricLevel</a></code> | <code>string</code> | Controls how metrics data is ingested into the event table. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.minDataRetentionTimeInDays">minDataRetentionTimeInDays</a></code> | <code>number</code> | Minimum number of days for which Snowflake retains historical data for performing Time Travel actions (SELECT, CLONE, UNDROP) on an object. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.multiStatementCount">multiStatementCount</a></code> | <code>number</code> | Number of statements to execute when using the multi-statement capability. For more information, check [MULTI_STATEMENT_COUNT docs](https://docs.snowflake.com/en/sql-reference/parameters#multi-statement-count). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.networkPolicy">networkPolicy</a></code> | <code>string</code> | Specifies the network policy to enforce for your account. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.noorderSequenceAsDefault">noorderSequenceAsDefault</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.oauthAddPrivilegedRolesToBlockedList">oauthAddPrivilegedRolesToBlockedList</a></code> | <code>boolean \| cdktn.IResolvable</code> | Determines whether the ACCOUNTADMIN, ORGADMIN, GLOBALORGADMIN, and SECURITYADMIN roles can be used as the primary role when creating a Snowflake session based on the access token from Snowflake’s authorization server. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.odbcTreatDecimalAsInt">odbcTreatDecimalAsInt</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.packagesPolicy">packagesPolicy</a></code> | <code>string</code> | Specifies [packages policy](https://docs.snowflake.com/en/developer-guide/udf/python/packages-policy) for the current account. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.passwordPolicy">passwordPolicy</a></code> | <code>string</code> | Specifies [password policy](https://docs.snowflake.com/en/user-guide/password-authentication#label-using-password-policies) for the current account. For more information about this resource, see [docs](./password_policy). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.periodicDataRekeying">periodicDataRekeying</a></code> | <code>boolean \| cdktn.IResolvable</code> | It enables/disables re-encryption of table data with new keys on a yearly basis to provide additional levels of data protection ([more details](https://docs.snowflake.com/en/sql-reference/parameters#periodic-data-rekeying)). For more information, check [PERIODIC_DATA_REKEYING docs](https://docs.snowflake.com/en/sql-reference/parameters#periodic-data-rekeying). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.pipeExecutionPaused">pipeExecutionPaused</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether to pause a running pipe, primarily in preparation for transferring ownership of the pipe to a different role ([more details](https://docs.snowflake.com/en/sql-reference/parameters#pipe-execution-paused)). For more information, check [PIPE_EXECUTION_PAUSED docs](https://docs.snowflake.com/en/sql-reference/parameters#pipe-execution-paused). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.preventUnloadToInlineUrl">preventUnloadToInlineUrl</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether to prevent ad hoc data unload operations to external cloud storage locations (that is, [COPY INTO location](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location) statements that specify the cloud storage URL and access settings directly in the statement). For an example, see [Unloading data from a table directly to files in an external location](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location.html#label-copy-into-location-ad-hoc). For more information, check [PREVENT_UNLOAD_TO_INLINE_URL docs](https://docs.snowflake.com/en/sql-reference/parameters#prevent-unload-to-inline-url). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.preventUnloadToInternalStages">preventUnloadToInternalStages</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether to prevent data unload operations to internal (Snowflake) stages using [COPY INTO location](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location) statements. For more information, check [PREVENT_UNLOAD_TO_INTERNAL_STAGES docs](https://docs.snowflake.com/en/sql-reference/parameters#prevent-unload-to-internal-stages). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.pythonProfilerModules">pythonProfilerModules</a></code> | <code>string</code> | Specifies the list of Python modules to include in a report when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). For more information, check [PYTHON_PROFILER_MODULES docs](https://docs.snowflake.com/en/sql-reference/parameters#python-profiler-modules). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.pythonProfilerTargetStage">pythonProfilerTargetStage</a></code> | <code>string</code> | Specifies the fully-qualified name of the stage in which to save a report when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). For more information, check [PYTHON_PROFILER_TARGET_STAGE docs](https://docs.snowflake.com/en/sql-reference/parameters#python-profiler-target-stage). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.queryTag">queryTag</a></code> | <code>string</code> | Optional string that can be used to tag queries and other SQL statements executed within a session. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.quotedIdentifiersIgnoreCase">quotedIdentifiersIgnoreCase</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.replaceInvalidCharacters">replaceInvalidCharacters</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether to replace invalid UTF-8 characters with the Unicode replacement character (�) in query results for [Apache Iceberg™ tables](https://docs.snowflake.com/en/sql-reference/sql/create-iceberg-table) that use an external catalog. For more information, check [REPLACE_INVALID_CHARACTERS docs](https://docs.snowflake.com/en/sql-reference/parameters#replace-invalid-characters). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.requireStorageIntegrationForStageCreation">requireStorageIntegrationForStageCreation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether to require a storage integration object as cloud credentials when creating a named external stage (using [CREATE STAGE](https://docs.snowflake.com/en/sql-reference/sql/create-stage)) to access a private cloud storage location. For more information, check [REQUIRE_STORAGE_INTEGRATION_FOR_STAGE_CREATION docs](https://docs.snowflake.com/en/sql-reference/parameters#require-storage-integration-for-stage-creation). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.requireStorageIntegrationForStageOperation">requireStorageIntegrationForStageOperation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether to require using a named external stage that references a storage integration object as cloud credentials when loading data from or unloading data to a private cloud storage location. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.resourceMonitor">resourceMonitor</a></code> | <code>string</code> | Parameter that specifies the name of the resource monitor used to control all virtual warehouses created in the account. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.rowsPerResultset">rowsPerResultset</a></code> | <code>number</code> | Specifies the maximum number of rows returned in a result set. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.s3StageVpceDnsName">s3StageVpceDnsName</a></code> | <code>string</code> | Specifies the DNS name of an Amazon S3 interface endpoint. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.searchPath">searchPath</a></code> | <code>string</code> | Specifies the path to search to resolve unqualified object names in queries. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.serverlessTaskMaxStatementSize">serverlessTaskMaxStatementSize</a></code> | <code>string</code> | Specifies the maximum allowed warehouse size for [Serverless tasks](https://docs.snowflake.com/en/user-guide/tasks-intro.html#label-tasks-compute-resources-serverless). Valid values are (case-insensitive): `XSMALL` \| `X-SMALL` \| `SMALL` \| `MEDIUM` \| `LARGE` \| `XLARGE` \| `X-LARGE` \| `XXLARGE` \| `X2LARGE` \| `2X-LARGE` \| `XXXLARGE` \| `X3LARGE` \| `3X-LARGE` \| `X4LARGE` \| `4X-LARGE` \| `X5LARGE` \| `5X-LARGE` \| `X6LARGE` \| `6X-LARGE`. For more information, check [SERVERLESS_TASK_MAX_STATEMENT_SIZE docs](https://docs.snowflake.com/en/sql-reference/parameters#serverless-task-max-statement-size). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.serverlessTaskMinStatementSize">serverlessTaskMinStatementSize</a></code> | <code>string</code> | Specifies the minimum allowed warehouse size for [Serverless tasks](https://docs.snowflake.com/en/user-guide/tasks-intro.html#label-tasks-compute-resources-serverless). Valid values are (case-insensitive): `XSMALL` \| `X-SMALL` \| `SMALL` \| `MEDIUM` \| `LARGE` \| `XLARGE` \| `X-LARGE` \| `XXLARGE` \| `X2LARGE` \| `2X-LARGE` \| `XXXLARGE` \| `X3LARGE` \| `3X-LARGE` \| `X4LARGE` \| `4X-LARGE` \| `X5LARGE` \| `5X-LARGE` \| `X6LARGE` \| `6X-LARGE`. For more information, check [SERVERLESS_TASK_MIN_STATEMENT_SIZE docs](https://docs.snowflake.com/en/sql-reference/parameters#serverless-task-min-statement-size). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.sessionPolicy">sessionPolicy</a></code> | <code>string</code> | Specifies [session policy](https://docs.snowflake.com/en/user-guide/session-policies-using) for the current account. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.simulatedDataSharingConsumer">simulatedDataSharingConsumer</a></code> | <code>string</code> | Specifies the name of a consumer account to simulate for testing/validating shared data, particularly shared secure views. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.ssoLoginPage">ssoLoginPage</a></code> | <code>boolean \| cdktn.IResolvable</code> | This deprecated parameter disables preview mode for testing SSO (after enabling federated authentication) before rolling it out to users. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.statementQueuedTimeoutInSeconds">statementQueuedTimeoutInSeconds</a></code> | <code>number</code> | Amount of time, in seconds, a SQL statement (query, DDL, DML, etc.) remains queued for a warehouse before it is canceled by the system. This parameter can be used in conjunction with the [MAX_CONCURRENCY_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#label-max-concurrency-level) parameter to ensure a warehouse is never backlogged. For more information, check [STATEMENT_QUEUED_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-queued-timeout-in-seconds). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.statementTimeoutInSeconds">statementTimeoutInSeconds</a></code> | <code>number</code> | Amount of time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system. For more information, check [STATEMENT_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-timeout-in-seconds). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.storageSerializationPolicy">storageSerializationPolicy</a></code> | <code>string</code> | Specifies the storage serialization policy for Snowflake-managed [Apache Iceberg™ tables](https://docs.snowflake.com/en/user-guide/tables-iceberg). Valid values are (case-insensitive): `COMPATIBLE` \| `OPTIMIZED`. For more information, check [STORAGE_SERIALIZATION_POLICY docs](https://docs.snowflake.com/en/sql-reference/parameters#storage-serialization-policy). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.strictJsonOutput">strictJsonOutput</a></code> | <code>boolean \| cdktn.IResolvable</code> | This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.suspendTaskAfterNumFailures">suspendTaskAfterNumFailures</a></code> | <code>number</code> | Specifies the number of consecutive failed task runs after which the current task is suspended automatically. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.taskAutoRetryAttempts">taskAutoRetryAttempts</a></code> | <code>number</code> | Specifies the number of automatic task graph retry attempts. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timeInputFormat">timeInputFormat</a></code> | <code>string</code> | Specifies the input format for the TIME data type. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timeOutputFormat">timeOutputFormat</a></code> | <code>string</code> | Specifies the display format for the TIME data type. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeouts">CurrentAccountTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampDayIsAlways24H">timestampDayIsAlways24H</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampInputFormat">timestampInputFormat</a></code> | <code>string</code> | Specifies the input format for the TIMESTAMP data type alias. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampLtzOutputFormat">timestampLtzOutputFormat</a></code> | <code>string</code> | Specifies the display format for the TIMESTAMP_LTZ data type. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampNtzOutputFormat">timestampNtzOutputFormat</a></code> | <code>string</code> | Specifies the display format for the TIMESTAMP_NTZ data type. For more information, check [TIMESTAMP_NTZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-ntz-output-format). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampOutputFormat">timestampOutputFormat</a></code> | <code>string</code> | Specifies the display format for the TIMESTAMP data type alias. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampTypeMapping">timestampTypeMapping</a></code> | <code>string</code> | Specifies the TIMESTAMP_* variation that the TIMESTAMP data type alias maps to. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampTzOutputFormat">timestampTzOutputFormat</a></code> | <code>string</code> | Specifies the display format for the TIMESTAMP_TZ data type. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timezone">timezone</a></code> | <code>string</code> | Specifies the time zone for the session. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.traceLevel">traceLevel</a></code> | <code>string</code> | Controls how trace events are ingested into the event table. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.transactionAbortOnError">transactionAbortOnError</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.transactionDefaultIsolationLevel">transactionDefaultIsolationLevel</a></code> | <code>string</code> | Specifies the isolation level for transactions in the user session. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.twoDigitCenturyStart">twoDigitCenturyStart</a></code> | <code>number</code> | Specifies the “century start” year for 2-digit years (i.e. the earliest year such dates can represent). This parameter prevents ambiguous dates when importing or converting data with the `YY` date format component (i.e. years represented as 2 digits). For more information, check [TWO_DIGIT_CENTURY_START docs](https://docs.snowflake.com/en/sql-reference/parameters#two-digit-century-start). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.unsupportedDdlAction">unsupportedDdlAction</a></code> | <code>string</code> | Determines if an unsupported (i.e. non-default) value specified for a constraint property returns an error. For more information, check [UNSUPPORTED_DDL_ACTION docs](https://docs.snowflake.com/en/sql-reference/parameters#unsupported-ddl-action). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.useCachedResult">useCachedResult</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether to reuse persisted query results, if available, when a matching query is submitted. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.userTaskManagedInitialWarehouseSize">userTaskManagedInitialWarehouseSize</a></code> | <code>string</code> | Specifies the size of the compute resources to provision for the first run of the task, before a task history is available for Snowflake to determine an ideal size. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.userTaskMinimumTriggerIntervalInSeconds">userTaskMinimumTriggerIntervalInSeconds</a></code> | <code>number</code> | Minimum amount of time between Triggered Task executions in seconds For more information, check [USER_TASK_MINIMUM_TRIGGER_INTERVAL_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#user-task-minimum-trigger-interval-in-seconds). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.userTaskTimeoutMs">userTaskTimeoutMs</a></code> | <code>number</code> | Specifies the time limit on a single run of the task before it times out (in milliseconds). |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.weekOfYearPolicy">weekOfYearPolicy</a></code> | <code>number</code> | Specifies how the weeks in a given year are computed. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.weekStart">weekStart</a></code> | <code>number</code> | Specifies the first day of the week (used by week-related date functions). |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `abortDetachedQuery`<sup>Optional</sup> <a name="abortDetachedQuery" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.abortDetachedQuery"></a>
+##### `abortDetachedQuery`<sup>Optional</sup> <a name="abortDetachedQuery" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.abortDetachedQuery"></a>
 
 ```typescript
 public readonly abortDetachedQuery: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#abort_detached_query CurrentAccount#abort_detached_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#abort_detached_query CurrentAccount#abort_detached_query}
 
 ---
 
-##### `activePythonProfiler`<sup>Optional</sup> <a name="activePythonProfiler" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.activePythonProfiler"></a>
+##### `activePythonProfiler`<sup>Optional</sup> <a name="activePythonProfiler" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.activePythonProfiler"></a>
 
 ```typescript
 public readonly activePythonProfiler: string;
@@ -4543,43 +4513,43 @@ public readonly activePythonProfiler: string;
 
 Sets the profiler to use for the session when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). Valid values are (case-insensitive): `LINE` | `MEMORY`. For more information, check [ACTIVE_PYTHON_PROFILER docs](https://docs.snowflake.com/en/sql-reference/parameters#active-python-profiler).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#active_python_profiler CurrentAccount#active_python_profiler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#active_python_profiler CurrentAccount#active_python_profiler}
 
 ---
 
-##### `allowClientMfaCaching`<sup>Optional</sup> <a name="allowClientMfaCaching" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.allowClientMfaCaching"></a>
+##### `allowClientMfaCaching`<sup>Optional</sup> <a name="allowClientMfaCaching" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.allowClientMfaCaching"></a>
 
 ```typescript
 public readonly allowClientMfaCaching: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether an MFA token can be saved in the client-side operating system keystore to promote continuous, secure connectivity without users needing to respond to an MFA prompt at the start of each connection attempt to Snowflake.
 
 For details and the list of supported Snowflake-provided clients, see [Using MFA token caching to minimize the number of prompts during authentication — optional.](https://docs.snowflake.com/en/user-guide/security-mfa.html#label-mfa-token-caching) For more information, check [ALLOW_CLIENT_MFA_CACHING docs](https://docs.snowflake.com/en/sql-reference/parameters#allow-client-mfa-caching).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#allow_client_mfa_caching CurrentAccount#allow_client_mfa_caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#allow_client_mfa_caching CurrentAccount#allow_client_mfa_caching}
 
 ---
 
-##### `allowIdToken`<sup>Optional</sup> <a name="allowIdToken" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.allowIdToken"></a>
+##### `allowIdToken`<sup>Optional</sup> <a name="allowIdToken" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.allowIdToken"></a>
 
 ```typescript
 public readonly allowIdToken: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether a connection token can be saved in the client-side operating system keystore to promote continuous, secure connectivity without users needing to enter login credentials at the start of each connection attempt to Snowflake.
 
 For details and the list of supported Snowflake-provided clients, see [Using connection caching to minimize the number of prompts for authentication — optional.](https://docs.snowflake.com/en/user-guide/admin-security-fed-auth-use.html#label-browser-based-sso-connection-caching) For more information, check [ALLOW_ID_TOKEN docs](https://docs.snowflake.com/en/sql-reference/parameters#allow-id-token).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#allow_id_token CurrentAccount#allow_id_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#allow_id_token CurrentAccount#allow_id_token}
 
 ---
 
-##### `authenticationPolicy`<sup>Optional</sup> <a name="authenticationPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.authenticationPolicy"></a>
+##### `authenticationPolicy`<sup>Optional</sup> <a name="authenticationPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.authenticationPolicy"></a>
 
 ```typescript
 public readonly authenticationPolicy: string;
@@ -4589,27 +4559,27 @@ public readonly authenticationPolicy: string;
 
 Specifies [authentication policy](https://docs.snowflake.com/en/user-guide/authentication-policies) for the current account. For more information about this resource, see [docs](./authentication_policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#authentication_policy CurrentAccount#authentication_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#authentication_policy CurrentAccount#authentication_policy}
 
 ---
 
-##### `autocommit`<sup>Optional</sup> <a name="autocommit" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.autocommit"></a>
+##### `autocommit`<sup>Optional</sup> <a name="autocommit" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.autocommit"></a>
 
 ```typescript
 public readonly autocommit: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether autocommit is enabled for the session.
 
 Autocommit determines whether a DML statement, when executed without an active transaction, is automatically committed after the statement successfully completes. For more information, see [Transactions](https://docs.snowflake.com/en/sql-reference/transactions). For more information, check [AUTOCOMMIT docs](https://docs.snowflake.com/en/sql-reference/parameters#autocommit).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#autocommit CurrentAccount#autocommit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#autocommit CurrentAccount#autocommit}
 
 ---
 
-##### `baseLocationPrefix`<sup>Optional</sup> <a name="baseLocationPrefix" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.baseLocationPrefix"></a>
+##### `baseLocationPrefix`<sup>Optional</sup> <a name="baseLocationPrefix" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.baseLocationPrefix"></a>
 
 ```typescript
 public readonly baseLocationPrefix: string;
@@ -4621,11 +4591,11 @@ Specifies a prefix for Snowflake to use in the write path for Snowflake-managed 
 
 For more information, see [data and metadata directories for Iceberg tables](https://docs.snowflake.com/en/user-guide/tables-iceberg-storage.html#label-tables-iceberg-configure-external-volume-base-location). For more information, check [BASE_LOCATION_PREFIX docs](https://docs.snowflake.com/en/sql-reference/parameters#base-location-prefix).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#base_location_prefix CurrentAccount#base_location_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#base_location_prefix CurrentAccount#base_location_prefix}
 
 ---
 
-##### `binaryInputFormat`<sup>Optional</sup> <a name="binaryInputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.binaryInputFormat"></a>
+##### `binaryInputFormat`<sup>Optional</sup> <a name="binaryInputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.binaryInputFormat"></a>
 
 ```typescript
 public readonly binaryInputFormat: string;
@@ -4637,11 +4607,11 @@ The format of VARCHAR values passed as input to VARCHAR-to-BINARY conversion fun
 
 For more information, see [Binary input and output](https://docs.snowflake.com/en/sql-reference/binary-input-output). Valid values are (case-insensitive): `HEX` | `BASE64` | `UTF8`. For more information, check [BINARY_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#binary-input-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#binary_input_format CurrentAccount#binary_input_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#binary_input_format CurrentAccount#binary_input_format}
 
 ---
 
-##### `binaryOutputFormat`<sup>Optional</sup> <a name="binaryOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.binaryOutputFormat"></a>
+##### `binaryOutputFormat`<sup>Optional</sup> <a name="binaryOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.binaryOutputFormat"></a>
 
 ```typescript
 public readonly binaryOutputFormat: string;
@@ -4653,11 +4623,11 @@ The format for VARCHAR values returned as output by BINARY-to-VARCHAR conversion
 
 For more information, see [Binary input and output](https://docs.snowflake.com/en/sql-reference/binary-input-output). Valid values are (case-insensitive): `HEX` | `BASE64`. For more information, check [BINARY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#binary-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#binary_output_format CurrentAccount#binary_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#binary_output_format CurrentAccount#binary_output_format}
 
 ---
 
-##### `catalog`<sup>Optional</sup> <a name="catalog" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.catalog"></a>
+##### `catalog`<sup>Optional</sup> <a name="catalog" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.catalog"></a>
 
 ```typescript
 public readonly catalog: string;
@@ -4669,11 +4639,11 @@ Specifies the catalog for Apache Iceberg™ tables.
 
 For more information, see the [Iceberg table documentation](https://docs.snowflake.com/en/user-guide/tables-iceberg.html#label-tables-iceberg-catalog-def). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`. For more information, check [CATALOG docs](https://docs.snowflake.com/en/sql-reference/parameters#catalog).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#catalog CurrentAccount#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#catalog CurrentAccount#catalog}
 
 ---
 
-##### `catalogSync`<sup>Optional</sup> <a name="catalogSync" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.catalogSync"></a>
+##### `catalogSync`<sup>Optional</sup> <a name="catalogSync" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.catalogSync"></a>
 
 ```typescript
 public readonly catalogSync: string;
@@ -4683,25 +4653,25 @@ public readonly catalogSync: string;
 
 Specifies the name of your catalog integration for [Snowflake Open Catalog](https://other-docs.snowflake.com/en/opencatalog/overview). Snowflake syncs tables that use the specified catalog integration with your Snowflake Open Catalog account. For more information, see [Sync a Snowflake-managed table with Snowflake Open Catalog](https://docs.snowflake.com/en/user-guide/tables-iceberg-open-catalog-sync). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`. For more information, check [CATALOG_SYNC docs](https://docs.snowflake.com/en/sql-reference/parameters#catalog-sync).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#catalog_sync CurrentAccount#catalog_sync}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#catalog_sync CurrentAccount#catalog_sync}
 
 ---
 
-##### `clientEnableLogInfoStatementParameters`<sup>Optional</sup> <a name="clientEnableLogInfoStatementParameters" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientEnableLogInfoStatementParameters"></a>
+##### `clientEnableLogInfoStatementParameters`<sup>Optional</sup> <a name="clientEnableLogInfoStatementParameters" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientEnableLogInfoStatementParameters"></a>
 
 ```typescript
 public readonly clientEnableLogInfoStatementParameters: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enables users to log the data values bound to [PreparedStatements](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-api.html#label-jdbc-api-preparedstatement) ([more details](https://docs.snowflake.com/en/sql-reference/parameters#client-enable-log-info-statement-parameters)). For more information, check [CLIENT_ENABLE_LOG_INFO_STATEMENT_PARAMETERS docs](https://docs.snowflake.com/en/sql-reference/parameters#client-enable-log-info-statement-parameters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#client_enable_log_info_statement_parameters CurrentAccount#client_enable_log_info_statement_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#client_enable_log_info_statement_parameters CurrentAccount#client_enable_log_info_statement_parameters}
 
 ---
 
-##### `clientEncryptionKeySize`<sup>Optional</sup> <a name="clientEncryptionKeySize" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientEncryptionKeySize"></a>
+##### `clientEncryptionKeySize`<sup>Optional</sup> <a name="clientEncryptionKeySize" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientEncryptionKeySize"></a>
 
 ```typescript
 public readonly clientEncryptionKeySize: number;
@@ -4713,11 +4683,11 @@ Specifies the AES encryption key size, in bits, used by Snowflake to encrypt/dec
 
 For more information, check [CLIENT_ENCRYPTION_KEY_SIZE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-encryption-key-size).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#client_encryption_key_size CurrentAccount#client_encryption_key_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#client_encryption_key_size CurrentAccount#client_encryption_key_size}
 
 ---
 
-##### `clientMemoryLimit`<sup>Optional</sup> <a name="clientMemoryLimit" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientMemoryLimit"></a>
+##### `clientMemoryLimit`<sup>Optional</sup> <a name="clientMemoryLimit" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientMemoryLimit"></a>
 
 ```typescript
 public readonly clientMemoryLimit: number;
@@ -4729,43 +4699,43 @@ Parameter that specifies the maximum amount of memory the JDBC driver or ODBC dr
 
 For more information, check [CLIENT_MEMORY_LIMIT docs](https://docs.snowflake.com/en/sql-reference/parameters#client-memory-limit).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#client_memory_limit CurrentAccount#client_memory_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#client_memory_limit CurrentAccount#client_memory_limit}
 
 ---
 
-##### `clientMetadataRequestUseConnectionCtx`<sup>Optional</sup> <a name="clientMetadataRequestUseConnectionCtx" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientMetadataRequestUseConnectionCtx"></a>
+##### `clientMetadataRequestUseConnectionCtx`<sup>Optional</sup> <a name="clientMetadataRequestUseConnectionCtx" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientMetadataRequestUseConnectionCtx"></a>
 
 ```typescript
 public readonly clientMetadataRequestUseConnectionCtx: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema.
 
 The narrower search typically returns fewer rows and executes more quickly. For more information, check [CLIENT_METADATA_REQUEST_USE_CONNECTION_CTX docs](https://docs.snowflake.com/en/sql-reference/parameters#client-metadata-request-use-connection-ctx).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#client_metadata_request_use_connection_ctx CurrentAccount#client_metadata_request_use_connection_ctx}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#client_metadata_request_use_connection_ctx CurrentAccount#client_metadata_request_use_connection_ctx}
 
 ---
 
-##### `clientMetadataUseSessionDatabase`<sup>Optional</sup> <a name="clientMetadataUseSessionDatabase" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientMetadataUseSessionDatabase"></a>
+##### `clientMetadataUseSessionDatabase`<sup>Optional</sup> <a name="clientMetadataUseSessionDatabase" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientMetadataUseSessionDatabase"></a>
 
 ```typescript
 public readonly clientMetadataUseSessionDatabase: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases to the current database.
 
 The narrower search typically returns fewer rows and executes more quickly ([more details on the usage](https://docs.snowflake.com/en/sql-reference/parameters#client-metadata-use-session-database)). For more information, check [CLIENT_METADATA_USE_SESSION_DATABASE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-metadata-use-session-database).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#client_metadata_use_session_database CurrentAccount#client_metadata_use_session_database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#client_metadata_use_session_database CurrentAccount#client_metadata_use_session_database}
 
 ---
 
-##### `clientPrefetchThreads`<sup>Optional</sup> <a name="clientPrefetchThreads" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientPrefetchThreads"></a>
+##### `clientPrefetchThreads`<sup>Optional</sup> <a name="clientPrefetchThreads" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientPrefetchThreads"></a>
 
 ```typescript
 public readonly clientPrefetchThreads: number;
@@ -4777,11 +4747,11 @@ Parameter that specifies the number of threads used by the client to pre-fetch l
 
 The driver will attempt to honor the parameter value, but defines the minimum and maximum values (depending on your system’s resources) to improve performance. For more information, check [CLIENT_PREFETCH_THREADS docs](https://docs.snowflake.com/en/sql-reference/parameters#client-prefetch-threads).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#client_prefetch_threads CurrentAccount#client_prefetch_threads}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#client_prefetch_threads CurrentAccount#client_prefetch_threads}
 
 ---
 
-##### `clientResultChunkSize`<sup>Optional</sup> <a name="clientResultChunkSize" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientResultChunkSize"></a>
+##### `clientResultChunkSize`<sup>Optional</sup> <a name="clientResultChunkSize" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientResultChunkSize"></a>
 
 ```typescript
 public readonly clientResultChunkSize: number;
@@ -4793,41 +4763,41 @@ Parameter that specifies the maximum size of each set (or chunk) of query result
 
 The JDBC driver downloads query results in chunks. For more information, check [CLIENT_RESULT_CHUNK_SIZE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-chunk-size).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#client_result_chunk_size CurrentAccount#client_result_chunk_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#client_result_chunk_size CurrentAccount#client_result_chunk_size}
 
 ---
 
-##### `clientResultColumnCaseInsensitive`<sup>Optional</sup> <a name="clientResultColumnCaseInsensitive" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientResultColumnCaseInsensitive"></a>
+##### `clientResultColumnCaseInsensitive`<sup>Optional</sup> <a name="clientResultColumnCaseInsensitive" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientResultColumnCaseInsensitive"></a>
 
 ```typescript
 public readonly clientResultColumnCaseInsensitive: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#client_result_column_case_insensitive CurrentAccount#client_result_column_case_insensitive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#client_result_column_case_insensitive CurrentAccount#client_result_column_case_insensitive}
 
 ---
 
-##### `clientSessionKeepAlive`<sup>Optional</sup> <a name="clientSessionKeepAlive" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientSessionKeepAlive"></a>
+##### `clientSessionKeepAlive`<sup>Optional</sup> <a name="clientSessionKeepAlive" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientSessionKeepAlive"></a>
 
 ```typescript
 public readonly clientSessionKeepAlive: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Parameter that indicates whether to force a user to log in again after a period of inactivity in the session.
 
 For more information, check [CLIENT_SESSION_KEEP_ALIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#client_session_keep_alive CurrentAccount#client_session_keep_alive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#client_session_keep_alive CurrentAccount#client_session_keep_alive}
 
 ---
 
-##### `clientSessionKeepAliveHeartbeatFrequency`<sup>Optional</sup> <a name="clientSessionKeepAliveHeartbeatFrequency" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientSessionKeepAliveHeartbeatFrequency"></a>
+##### `clientSessionKeepAliveHeartbeatFrequency`<sup>Optional</sup> <a name="clientSessionKeepAliveHeartbeatFrequency" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientSessionKeepAliveHeartbeatFrequency"></a>
 
 ```typescript
 public readonly clientSessionKeepAliveHeartbeatFrequency: number;
@@ -4837,11 +4807,11 @@ public readonly clientSessionKeepAliveHeartbeatFrequency: number;
 
 Number of seconds in-between client attempts to update the token for the session. For more information, check [CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive-heartbeat-frequency).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#client_session_keep_alive_heartbeat_frequency CurrentAccount#client_session_keep_alive_heartbeat_frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#client_session_keep_alive_heartbeat_frequency CurrentAccount#client_session_keep_alive_heartbeat_frequency}
 
 ---
 
-##### `clientTimestampTypeMapping`<sup>Optional</sup> <a name="clientTimestampTypeMapping" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientTimestampTypeMapping"></a>
+##### `clientTimestampTypeMapping`<sup>Optional</sup> <a name="clientTimestampTypeMapping" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.clientTimestampTypeMapping"></a>
 
 ```typescript
 public readonly clientTimestampTypeMapping: string;
@@ -4851,11 +4821,11 @@ public readonly clientTimestampTypeMapping: string;
 
 Specifies the [TIMESTAMP_* variation](https://docs.snowflake.com/en/sql-reference/data-types-datetime.html#label-datatypes-timestamp-variations) to use when binding timestamp variables for JDBC or ODBC applications that use the bind API to load data. Valid values are (case-insensitive): `TIMESTAMP_LTZ` | `TIMESTAMP_NTZ`. For more information, check [CLIENT_TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#client-timestamp-type-mapping).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#client_timestamp_type_mapping CurrentAccount#client_timestamp_type_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#client_timestamp_type_mapping CurrentAccount#client_timestamp_type_mapping}
 
 ---
 
-##### `cortexEnabledCrossRegion`<sup>Optional</sup> <a name="cortexEnabledCrossRegion" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.cortexEnabledCrossRegion"></a>
+##### `cortexEnabledCrossRegion`<sup>Optional</sup> <a name="cortexEnabledCrossRegion" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.cortexEnabledCrossRegion"></a>
 
 ```typescript
 public readonly cortexEnabledCrossRegion: string;
@@ -4867,11 +4837,11 @@ Specifies the regions where an inference request may be processed in case the re
 
 Specifying DISABLED disables cross-region inferencing. For examples and details, see [Cross-region inference](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cross-region-inference). For more information, check [CORTEX_ENABLED_CROSS_REGION docs](https://docs.snowflake.com/en/sql-reference/parameters#cortex-enabled-cross-region).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#cortex_enabled_cross_region CurrentAccount#cortex_enabled_cross_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#cortex_enabled_cross_region CurrentAccount#cortex_enabled_cross_region}
 
 ---
 
-##### `cortexModelsAllowlist`<sup>Optional</sup> <a name="cortexModelsAllowlist" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.cortexModelsAllowlist"></a>
+##### `cortexModelsAllowlist`<sup>Optional</sup> <a name="cortexModelsAllowlist" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.cortexModelsAllowlist"></a>
 
 ```typescript
 public readonly cortexModelsAllowlist: string;
@@ -4883,11 +4853,11 @@ Specifies the models that users in the account can access.
 
 Use this parameter to allowlist models for all users in the account. If you need to provide specific users with access beyond what you’ve specified in the allowlist, use role-based access control instead. For more information, see [Model allowlist](https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql.html#label-cortex-llm-allowlist). For more information, check [CORTEX_MODELS_ALLOWLIST docs](https://docs.snowflake.com/en/sql-reference/parameters#cortex-models-allowlist).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#cortex_models_allowlist CurrentAccount#cortex_models_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#cortex_models_allowlist CurrentAccount#cortex_models_allowlist}
 
 ---
 
-##### `csvTimestampFormat`<sup>Optional</sup> <a name="csvTimestampFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.csvTimestampFormat"></a>
+##### `csvTimestampFormat`<sup>Optional</sup> <a name="csvTimestampFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.csvTimestampFormat"></a>
 
 ```typescript
 public readonly csvTimestampFormat: string;
@@ -4899,11 +4869,11 @@ Specifies the format for TIMESTAMP values in CSV files downloaded from Snowsight
 
 If this parameter is not set, [TIMESTAMP_LTZ_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-ltz-output-format) will be used for TIMESTAMP_LTZ values, [TIMESTAMP_TZ_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-tz-output-format) will be used for TIMESTAMP_TZ and [TIMESTAMP_NTZ_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-ntz-output-format) for TIMESTAMP_NTZ values. For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output) or [Download your query results](https://docs.snowflake.com/en/user-guide/ui-snowsight-query.html#label-snowsight-download-query-results). For more information, check [CSV_TIMESTAMP_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#csv-timestamp-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#csv_timestamp_format CurrentAccount#csv_timestamp_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#csv_timestamp_format CurrentAccount#csv_timestamp_format}
 
 ---
 
-##### `dataRetentionTimeInDays`<sup>Optional</sup> <a name="dataRetentionTimeInDays" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.dataRetentionTimeInDays"></a>
+##### `dataRetentionTimeInDays`<sup>Optional</sup> <a name="dataRetentionTimeInDays" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.dataRetentionTimeInDays"></a>
 
 ```typescript
 public readonly dataRetentionTimeInDays: number;
@@ -4915,11 +4885,11 @@ Number of days for which Snowflake retains historical data for performing Time T
 
 A value of 0 effectively disables Time Travel for the specified database, schema, or table. For more information, see [Understanding & using Time Travel](https://docs.snowflake.com/en/user-guide/data-time-travel). For more information, check [DATA_RETENTION_TIME_IN_DAYS docs](https://docs.snowflake.com/en/sql-reference/parameters#data-retention-time-in-days).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#data_retention_time_in_days CurrentAccount#data_retention_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#data_retention_time_in_days CurrentAccount#data_retention_time_in_days}
 
 ---
 
-##### `dateInputFormat`<sup>Optional</sup> <a name="dateInputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.dateInputFormat"></a>
+##### `dateInputFormat`<sup>Optional</sup> <a name="dateInputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.dateInputFormat"></a>
 
 ```typescript
 public readonly dateInputFormat: string;
@@ -4931,11 +4901,11 @@ Specifies the input format for the DATE data type.
 
 For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [DATE_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#date-input-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#date_input_format CurrentAccount#date_input_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#date_input_format CurrentAccount#date_input_format}
 
 ---
 
-##### `dateOutputFormat`<sup>Optional</sup> <a name="dateOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.dateOutputFormat"></a>
+##### `dateOutputFormat`<sup>Optional</sup> <a name="dateOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.dateOutputFormat"></a>
 
 ```typescript
 public readonly dateOutputFormat: string;
@@ -4947,11 +4917,11 @@ Specifies the display format for the DATE data type.
 
 For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [DATE_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#date-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#date_output_format CurrentAccount#date_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#date_output_format CurrentAccount#date_output_format}
 
 ---
 
-##### `defaultDdlCollation`<sup>Optional</sup> <a name="defaultDdlCollation" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultDdlCollation"></a>
+##### `defaultDdlCollation`<sup>Optional</sup> <a name="defaultDdlCollation" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultDdlCollation"></a>
 
 ```typescript
 public readonly defaultDdlCollation: string;
@@ -4961,11 +4931,11 @@ public readonly defaultDdlCollation: string;
 
 Sets the default collation used for the following DDL operations: [CREATE TABLE](https://docs.snowflake.com/en/sql-reference/sql/create-table), [ALTER TABLE](https://docs.snowflake.com/en/sql-reference/sql/alter-table) … ADD COLUMN. Setting this parameter forces all subsequently-created columns in the affected objects (table, schema, database, or account) to have the specified collation as the default, unless the collation for the column is explicitly defined in the DDL. For more information, check [DEFAULT_DDL_COLLATION docs](https://docs.snowflake.com/en/sql-reference/parameters#default-ddl-collation).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#default_ddl_collation CurrentAccount#default_ddl_collation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#default_ddl_collation CurrentAccount#default_ddl_collation}
 
 ---
 
-##### `defaultNotebookComputePoolCpu`<sup>Optional</sup> <a name="defaultNotebookComputePoolCpu" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultNotebookComputePoolCpu"></a>
+##### `defaultNotebookComputePoolCpu`<sup>Optional</sup> <a name="defaultNotebookComputePoolCpu" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultNotebookComputePoolCpu"></a>
 
 ```typescript
 public readonly defaultNotebookComputePoolCpu: string;
@@ -4975,11 +4945,11 @@ public readonly defaultNotebookComputePoolCpu: string;
 
 Sets the preferred CPU compute pool used for [Notebooks on CPU Container Runtime](https://docs.snowflake.com/en/developer-guide/snowflake-ml/notebooks-on-spcs). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`. For more information, check [DEFAULT_NOTEBOOK_COMPUTE_POOL_CPU docs](https://docs.snowflake.com/en/sql-reference/parameters#default-notebook-compute-pool-cpu).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#default_notebook_compute_pool_cpu CurrentAccount#default_notebook_compute_pool_cpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#default_notebook_compute_pool_cpu CurrentAccount#default_notebook_compute_pool_cpu}
 
 ---
 
-##### `defaultNotebookComputePoolGpu`<sup>Optional</sup> <a name="defaultNotebookComputePoolGpu" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultNotebookComputePoolGpu"></a>
+##### `defaultNotebookComputePoolGpu`<sup>Optional</sup> <a name="defaultNotebookComputePoolGpu" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultNotebookComputePoolGpu"></a>
 
 ```typescript
 public readonly defaultNotebookComputePoolGpu: string;
@@ -4989,11 +4959,11 @@ public readonly defaultNotebookComputePoolGpu: string;
 
 Sets the preferred GPU compute pool used for [Notebooks on GPU Container Runtime](https://docs.snowflake.com/en/developer-guide/snowflake-ml/notebooks-on-spcs). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`. For more information, check [DEFAULT_NOTEBOOK_COMPUTE_POOL_GPU docs](https://docs.snowflake.com/en/sql-reference/parameters#default-notebook-compute-pool-gpu).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#default_notebook_compute_pool_gpu CurrentAccount#default_notebook_compute_pool_gpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#default_notebook_compute_pool_gpu CurrentAccount#default_notebook_compute_pool_gpu}
 
 ---
 
-##### `defaultNullOrdering`<sup>Optional</sup> <a name="defaultNullOrdering" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultNullOrdering"></a>
+##### `defaultNullOrdering`<sup>Optional</sup> <a name="defaultNullOrdering" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultNullOrdering"></a>
 
 ```typescript
 public readonly defaultNullOrdering: string;
@@ -5003,11 +4973,11 @@ public readonly defaultNullOrdering: string;
 
 Specifies the default ordering of NULL values in a result set ([more details](https://docs.snowflake.com/en/sql-reference/parameters#default-null-ordering)). Valid values are (case-insensitive): `FIRST` | `LAST`. For more information, check [DEFAULT_NULL_ORDERING docs](https://docs.snowflake.com/en/sql-reference/parameters#default-null-ordering).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#default_null_ordering CurrentAccount#default_null_ordering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#default_null_ordering CurrentAccount#default_null_ordering}
 
 ---
 
-##### `defaultStreamlitNotebookWarehouse`<sup>Optional</sup> <a name="defaultStreamlitNotebookWarehouse" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultStreamlitNotebookWarehouse"></a>
+##### `defaultStreamlitNotebookWarehouse`<sup>Optional</sup> <a name="defaultStreamlitNotebookWarehouse" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.defaultStreamlitNotebookWarehouse"></a>
 
 ```typescript
 public readonly defaultStreamlitNotebookWarehouse: string;
@@ -5019,235 +4989,235 @@ Specifies the name of the default warehouse to use when creating a notebook.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`. For more information, check [DEFAULT_STREAMLIT_NOTEBOOK_WAREHOUSE docs](https://docs.snowflake.com/en/sql-reference/parameters#default-streamlit-notebook-warehouse).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#default_streamlit_notebook_warehouse CurrentAccount#default_streamlit_notebook_warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#default_streamlit_notebook_warehouse CurrentAccount#default_streamlit_notebook_warehouse}
 
 ---
 
-##### `disableUiDownloadButton`<sup>Optional</sup> <a name="disableUiDownloadButton" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.disableUiDownloadButton"></a>
+##### `disableUiDownloadButton`<sup>Optional</sup> <a name="disableUiDownloadButton" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.disableUiDownloadButton"></a>
 
 ```typescript
 public readonly disableUiDownloadButton: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Controls whether users in an account see a button to download data in Snowsight or the Classic Console, such as a table returned from running a query in a worksheet.
 
 If the button to download is hidden in Snowsight or the Classic Console, users can still download or export data using [third-party software](https://docs.snowflake.com/en/user-guide/ecosystem). For more information, check [DISABLE_UI_DOWNLOAD_BUTTON docs](https://docs.snowflake.com/en/sql-reference/parameters#disable-ui-download-button).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#disable_ui_download_button CurrentAccount#disable_ui_download_button}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#disable_ui_download_button CurrentAccount#disable_ui_download_button}
 
 ---
 
-##### `disableUserPrivilegeGrants`<sup>Optional</sup> <a name="disableUserPrivilegeGrants" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.disableUserPrivilegeGrants"></a>
+##### `disableUserPrivilegeGrants`<sup>Optional</sup> <a name="disableUserPrivilegeGrants" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.disableUserPrivilegeGrants"></a>
 
 ```typescript
 public readonly disableUserPrivilegeGrants: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Controls whether users in an account can grant privileges directly to other users.
 
 Disabling user privilege grants (that is, setting DISABLE_USER_PRIVILEGE_GRANTS to TRUE) does not affect existing grants to users. Existing grants to users continue to confer privileges to those users. For more information, see [GRANT <privileges> … TO USER](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege-user). For more information, check [DISABLE_USER_PRIVILEGE_GRANTS docs](https://docs.snowflake.com/en/sql-reference/parameters#disable-user-privilege-grants).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#disable_user_privilege_grants CurrentAccount#disable_user_privilege_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#disable_user_privilege_grants CurrentAccount#disable_user_privilege_grants}
 
 ---
 
-##### `enableAutomaticSensitiveDataClassificationLog`<sup>Optional</sup> <a name="enableAutomaticSensitiveDataClassificationLog" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableAutomaticSensitiveDataClassificationLog"></a>
+##### `enableAutomaticSensitiveDataClassificationLog`<sup>Optional</sup> <a name="enableAutomaticSensitiveDataClassificationLog" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableAutomaticSensitiveDataClassificationLog"></a>
 
 ```typescript
 public readonly enableAutomaticSensitiveDataClassificationLog: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Controls whether events from [automatic sensitive data classification](https://docs.snowflake.com/en/user-guide/classify-auto) are logged in the user event table. For more information, check [ENABLE_AUTOMATIC_SENSITIVE_DATA_CLASSIFICATION_LOG docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-automatic-sensitive-data-classification-log).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#enable_automatic_sensitive_data_classification_log CurrentAccount#enable_automatic_sensitive_data_classification_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#enable_automatic_sensitive_data_classification_log CurrentAccount#enable_automatic_sensitive_data_classification_log}
 
 ---
 
-##### `enableEgressCostOptimizer`<sup>Optional</sup> <a name="enableEgressCostOptimizer" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableEgressCostOptimizer"></a>
+##### `enableEgressCostOptimizer`<sup>Optional</sup> <a name="enableEgressCostOptimizer" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableEgressCostOptimizer"></a>
 
 ```typescript
 public readonly enableEgressCostOptimizer: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enables or disables the Listing Cross-cloud auto-fulfillment Egress cost optimizer. For more information, check [ENABLE_EGRESS_COST_OPTIMIZER docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-egress-cost-optimizer).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#enable_egress_cost_optimizer CurrentAccount#enable_egress_cost_optimizer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#enable_egress_cost_optimizer CurrentAccount#enable_egress_cost_optimizer}
 
 ---
 
-##### `enableIdentifierFirstLogin`<sup>Optional</sup> <a name="enableIdentifierFirstLogin" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableIdentifierFirstLogin"></a>
+##### `enableIdentifierFirstLogin`<sup>Optional</sup> <a name="enableIdentifierFirstLogin" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableIdentifierFirstLogin"></a>
 
 ```typescript
 public readonly enableIdentifierFirstLogin: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Determines the login flow for users.
 
 When enabled, Snowflake prompts users for their username or email address before presenting authentication methods. For details, see [Identifier-first login](https://docs.snowflake.com/en/user-guide/identifier-first-login). For more information, check [ENABLE_IDENTIFIER_FIRST_LOGIN docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-identifier-first-login).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#enable_identifier_first_login CurrentAccount#enable_identifier_first_login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#enable_identifier_first_login CurrentAccount#enable_identifier_first_login}
 
 ---
 
-##### `enableInternalStagesPrivatelink`<sup>Optional</sup> <a name="enableInternalStagesPrivatelink" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableInternalStagesPrivatelink"></a>
+##### `enableInternalStagesPrivatelink`<sup>Optional</sup> <a name="enableInternalStagesPrivatelink" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableInternalStagesPrivatelink"></a>
 
 ```typescript
 public readonly enableInternalStagesPrivatelink: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether the [SYSTEM$GET_PRIVATELINK_CONFIG](https://docs.snowflake.com/en/sql-reference/functions/system_get_privatelink_config) function returns the private-internal-stages key in the query result. The corresponding value in the query result is used during the configuration process for private connectivity to internal stages. For more information, check [ENABLE_INTERNAL_STAGES_PRIVATELINK docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-internal-stages-privatelink).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#enable_internal_stages_privatelink CurrentAccount#enable_internal_stages_privatelink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#enable_internal_stages_privatelink CurrentAccount#enable_internal_stages_privatelink}
 
 ---
 
-##### `enableTriSecretAndRekeyOptOutForImageRepository`<sup>Optional</sup> <a name="enableTriSecretAndRekeyOptOutForImageRepository" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableTriSecretAndRekeyOptOutForImageRepository"></a>
+##### `enableTriSecretAndRekeyOptOutForImageRepository`<sup>Optional</sup> <a name="enableTriSecretAndRekeyOptOutForImageRepository" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableTriSecretAndRekeyOptOutForImageRepository"></a>
 
 ```typescript
 public readonly enableTriSecretAndRekeyOptOutForImageRepository: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies choice for the [image repository](https://docs.snowflake.com/en/developer-guide/snowpark-container-services/working-with-registry-repository.html#label-registry-and-repository-image-repository) to opt out of Tri-Secret Secure and [Periodic rekeying](https://docs.snowflake.com/en/user-guide/security-encryption-manage.html#label-periodic-rekeying). For more information, check [ENABLE_TRI_SECRET_AND_REKEY_OPT_OUT_FOR_IMAGE_REPOSITORY docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-tri-secret-and-rekey-opt-out-for-image-repository).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#enable_tri_secret_and_rekey_opt_out_for_image_repository CurrentAccount#enable_tri_secret_and_rekey_opt_out_for_image_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#enable_tri_secret_and_rekey_opt_out_for_image_repository CurrentAccount#enable_tri_secret_and_rekey_opt_out_for_image_repository}
 
 ---
 
-##### `enableTriSecretAndRekeyOptOutForSpcsBlockStorage`<sup>Optional</sup> <a name="enableTriSecretAndRekeyOptOutForSpcsBlockStorage" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableTriSecretAndRekeyOptOutForSpcsBlockStorage"></a>
+##### `enableTriSecretAndRekeyOptOutForSpcsBlockStorage`<sup>Optional</sup> <a name="enableTriSecretAndRekeyOptOutForSpcsBlockStorage" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableTriSecretAndRekeyOptOutForSpcsBlockStorage"></a>
 
 ```typescript
 public readonly enableTriSecretAndRekeyOptOutForSpcsBlockStorage: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies the choice for the [Snowpark Container Services block storage volume](https://docs.snowflake.com/en/developer-guide/snowpark-container-services/block-storage-volume) to opt out of Tri-Secret Secure and [Periodic rekeying](https://docs.snowflake.com/en/user-guide/security-encryption-manage.html#label-periodic-rekeying). For more information, check [ENABLE_TRI_SECRET_AND_REKEY_OPT_OUT_FOR_SPCS_BLOCK_STORAGE docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-tri-secret-and-rekey-opt-out-for-spcs-block-storage).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#enable_tri_secret_and_rekey_opt_out_for_spcs_block_storage CurrentAccount#enable_tri_secret_and_rekey_opt_out_for_spcs_block_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#enable_tri_secret_and_rekey_opt_out_for_spcs_block_storage CurrentAccount#enable_tri_secret_and_rekey_opt_out_for_spcs_block_storage}
 
 ---
 
-##### `enableUnhandledExceptionsReporting`<sup>Optional</sup> <a name="enableUnhandledExceptionsReporting" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableUnhandledExceptionsReporting"></a>
+##### `enableUnhandledExceptionsReporting`<sup>Optional</sup> <a name="enableUnhandledExceptionsReporting" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableUnhandledExceptionsReporting"></a>
 
 ```typescript
 public readonly enableUnhandledExceptionsReporting: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether Snowflake may capture – in an event table – log messages or trace event data for unhandled exceptions in procedure or UDF handler code.
 
 For more information, see [Capturing messages from unhandled exceptions](https://docs.snowflake.com/en/developer-guide/logging-tracing/unhandled-exception-messages). For more information, check [ENABLE_UNHANDLED_EXCEPTIONS_REPORTING docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unhandled-exceptions-reporting).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#enable_unhandled_exceptions_reporting CurrentAccount#enable_unhandled_exceptions_reporting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#enable_unhandled_exceptions_reporting CurrentAccount#enable_unhandled_exceptions_reporting}
 
 ---
 
-##### `enableUnloadPhysicalTypeOptimization`<sup>Optional</sup> <a name="enableUnloadPhysicalTypeOptimization" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableUnloadPhysicalTypeOptimization"></a>
+##### `enableUnloadPhysicalTypeOptimization`<sup>Optional</sup> <a name="enableUnloadPhysicalTypeOptimization" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableUnloadPhysicalTypeOptimization"></a>
 
 ```typescript
 public readonly enableUnloadPhysicalTypeOptimization: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#enable_unload_physical_type_optimization CurrentAccount#enable_unload_physical_type_optimization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#enable_unload_physical_type_optimization CurrentAccount#enable_unload_physical_type_optimization}
 
 ---
 
-##### `enableUnredactedQuerySyntaxError`<sup>Optional</sup> <a name="enableUnredactedQuerySyntaxError" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableUnredactedQuerySyntaxError"></a>
+##### `enableUnredactedQuerySyntaxError`<sup>Optional</sup> <a name="enableUnredactedQuerySyntaxError" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableUnredactedQuerySyntaxError"></a>
 
 ```typescript
 public readonly enableUnredactedQuerySyntaxError: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Controls whether query text is redacted if a SQL query fails due to a syntax or parsing error.
 
 If FALSE, the content of a failed query is redacted in the views, pages, and functions that provide a query history. Only users with a role that is granted or inherits the AUDIT privilege can set the ENABLE_UNREDACTED_QUERY_SYNTAX_ERROR parameter. When using the ALTER USER command to set the parameter to TRUE for a particular user, modify the user that you want to see the query text, not the user who executed the query (if those are different users). For more information, check [ENABLE_UNREDACTED_QUERY_SYNTAX_ERROR docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unredacted-query-syntax-error).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#enable_unredacted_query_syntax_error CurrentAccount#enable_unredacted_query_syntax_error}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#enable_unredacted_query_syntax_error CurrentAccount#enable_unredacted_query_syntax_error}
 
 ---
 
-##### `enableUnredactedSecureObjectError`<sup>Optional</sup> <a name="enableUnredactedSecureObjectError" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableUnredactedSecureObjectError"></a>
+##### `enableUnredactedSecureObjectError`<sup>Optional</sup> <a name="enableUnredactedSecureObjectError" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enableUnredactedSecureObjectError"></a>
 
 ```typescript
 public readonly enableUnredactedSecureObjectError: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Controls whether error messages related to secure objects are redacted in metadata.
 
 For more information, see [Secure objects: Redaction of information in error messages](https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-1858). Only users with a role that is granted or inherits the AUDIT privilege can set the ENABLE_UNREDACTED_SECURE_OBJECT_ERROR parameter. When using the ALTER USER command to set the parameter to TRUE for a particular user, modify the user that you want to see the redacted error messages in metadata, not the user who caused the error. For more information, check [ENABLE_UNREDACTED_SECURE_OBJECT_ERROR docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unredacted-secure-object-error).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#enable_unredacted_secure_object_error CurrentAccount#enable_unredacted_secure_object_error}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#enable_unredacted_secure_object_error CurrentAccount#enable_unredacted_secure_object_error}
 
 ---
 
-##### `enforceNetworkRulesForInternalStages`<sup>Optional</sup> <a name="enforceNetworkRulesForInternalStages" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.enforceNetworkRulesForInternalStages"></a>
+##### `enforceNetworkRulesForInternalStages`<sup>Optional</sup> <a name="enforceNetworkRulesForInternalStages" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.enforceNetworkRulesForInternalStages"></a>
 
 ```typescript
 public readonly enforceNetworkRulesForInternalStages: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether a network policy that uses network rules can restrict access to AWS internal stages.
 
 This parameter has no effect on network policies that do not use network rules. This account-level parameter affects both account-level and user-level network policies. For details about using network policies and network rules to restrict access to AWS internal stages, including the use of this parameter, see [Protecting internal stages on AWS](https://docs.snowflake.com/en/user-guide/network-policies.html#label-network-policies-rules-stages). For more information, check [ENFORCE_NETWORK_RULES_FOR_INTERNAL_STAGES docs](https://docs.snowflake.com/en/sql-reference/parameters#enforce-network-rules-for-internal-stages).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#enforce_network_rules_for_internal_stages CurrentAccount#enforce_network_rules_for_internal_stages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#enforce_network_rules_for_internal_stages CurrentAccount#enforce_network_rules_for_internal_stages}
 
 ---
 
-##### `errorOnNondeterministicMerge`<sup>Optional</sup> <a name="errorOnNondeterministicMerge" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.errorOnNondeterministicMerge"></a>
+##### `errorOnNondeterministicMerge`<sup>Optional</sup> <a name="errorOnNondeterministicMerge" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.errorOnNondeterministicMerge"></a>
 
 ```typescript
 public readonly errorOnNondeterministicMerge: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#error_on_nondeterministic_merge CurrentAccount#error_on_nondeterministic_merge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#error_on_nondeterministic_merge CurrentAccount#error_on_nondeterministic_merge}
 
 ---
 
-##### `errorOnNondeterministicUpdate`<sup>Optional</sup> <a name="errorOnNondeterministicUpdate" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.errorOnNondeterministicUpdate"></a>
+##### `errorOnNondeterministicUpdate`<sup>Optional</sup> <a name="errorOnNondeterministicUpdate" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.errorOnNondeterministicUpdate"></a>
 
 ```typescript
 public readonly errorOnNondeterministicUpdate: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#error_on_nondeterministic_update CurrentAccount#error_on_nondeterministic_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#error_on_nondeterministic_update CurrentAccount#error_on_nondeterministic_update}
 
 ---
 
-##### `eventTable`<sup>Optional</sup> <a name="eventTable" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.eventTable"></a>
+##### `eventTable`<sup>Optional</sup> <a name="eventTable" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.eventTable"></a>
 
 ```typescript
 public readonly eventTable: string;
@@ -5259,27 +5229,27 @@ Specifies the name of the event table for logging messages from stored procedure
 
 Associating an event table with a database is available in [Enterprise Edition or higher](https://docs.snowflake.com/en/user-guide/intro-editions). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`. For more information, check [EVENT_TABLE docs](https://docs.snowflake.com/en/sql-reference/parameters#event-table).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#event_table CurrentAccount#event_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#event_table CurrentAccount#event_table}
 
 ---
 
-##### `externalOauthAddPrivilegedRolesToBlockedList`<sup>Optional</sup> <a name="externalOauthAddPrivilegedRolesToBlockedList" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.externalOauthAddPrivilegedRolesToBlockedList"></a>
+##### `externalOauthAddPrivilegedRolesToBlockedList`<sup>Optional</sup> <a name="externalOauthAddPrivilegedRolesToBlockedList" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.externalOauthAddPrivilegedRolesToBlockedList"></a>
 
 ```typescript
 public readonly externalOauthAddPrivilegedRolesToBlockedList: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Determines whether the ACCOUNTADMIN, ORGADMIN, GLOBALORGADMIN, and SECURITYADMIN roles can be used as the primary role when creating a Snowflake session based on the access token from the External OAuth authorization server.
 
 For more information, check [EXTERNAL_OAUTH_ADD_PRIVILEGED_ROLES_TO_BLOCKED_LIST docs](https://docs.snowflake.com/en/sql-reference/parameters#external-oauth-add-privileged-roles-to-blocked-list).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#external_oauth_add_privileged_roles_to_blocked_list CurrentAccount#external_oauth_add_privileged_roles_to_blocked_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#external_oauth_add_privileged_roles_to_blocked_list CurrentAccount#external_oauth_add_privileged_roles_to_blocked_list}
 
 ---
 
-##### `externalVolume`<sup>Optional</sup> <a name="externalVolume" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.externalVolume"></a>
+##### `externalVolume`<sup>Optional</sup> <a name="externalVolume" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.externalVolume"></a>
 
 ```typescript
 public readonly externalVolume: string;
@@ -5291,11 +5261,11 @@ Specifies the external volume for Apache Iceberg™ tables.
 
 For more information, see the [Iceberg table documentation](https://docs.snowflake.com/en/user-guide/tables-iceberg.html#label-tables-iceberg-external-volume-def). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`. For more information, check [EXTERNAL_VOLUME docs](https://docs.snowflake.com/en/sql-reference/parameters#external-volume).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#external_volume CurrentAccount#external_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#external_volume CurrentAccount#external_volume}
 
 ---
 
-##### `featurePolicy`<sup>Optional</sup> <a name="featurePolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.featurePolicy"></a>
+##### `featurePolicy`<sup>Optional</sup> <a name="featurePolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.featurePolicy"></a>
 
 ```typescript
 public readonly featurePolicy: string;
@@ -5305,11 +5275,11 @@ public readonly featurePolicy: string;
 
 Specifies [feature policy](https://docs.snowflake.com/en/developer-guide/native-apps/ui-consumer-feature-policies) for the current account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#feature_policy CurrentAccount#feature_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#feature_policy CurrentAccount#feature_policy}
 
 ---
 
-##### `geographyOutputFormat`<sup>Optional</sup> <a name="geographyOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.geographyOutputFormat"></a>
+##### `geographyOutputFormat`<sup>Optional</sup> <a name="geographyOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.geographyOutputFormat"></a>
 
 ```typescript
 public readonly geographyOutputFormat: string;
@@ -5319,11 +5289,11 @@ public readonly geographyOutputFormat: string;
 
 Display format for [GEOGRAPHY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geography). Valid values are (case-insensitive): `GeoJSON` | `WKT` | `WKB` | `EWKT` | `EWKB`. For more information, check [GEOGRAPHY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geography-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#geography_output_format CurrentAccount#geography_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#geography_output_format CurrentAccount#geography_output_format}
 
 ---
 
-##### `geometryOutputFormat`<sup>Optional</sup> <a name="geometryOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.geometryOutputFormat"></a>
+##### `geometryOutputFormat`<sup>Optional</sup> <a name="geometryOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.geometryOutputFormat"></a>
 
 ```typescript
 public readonly geometryOutputFormat: string;
@@ -5333,11 +5303,11 @@ public readonly geometryOutputFormat: string;
 
 Display format for [GEOMETRY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geometry). Valid values are (case-insensitive): `GeoJSON` | `WKT` | `WKB` | `EWKT` | `EWKB`. For more information, check [GEOMETRY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geometry-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#geometry_output_format CurrentAccount#geometry_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#geometry_output_format CurrentAccount#geometry_output_format}
 
 ---
 
-##### `hybridTableLockTimeout`<sup>Optional</sup> <a name="hybridTableLockTimeout" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.hybridTableLockTimeout"></a>
+##### `hybridTableLockTimeout`<sup>Optional</sup> <a name="hybridTableLockTimeout" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.hybridTableLockTimeout"></a>
 
 ```typescript
 public readonly hybridTableLockTimeout: number;
@@ -5349,11 +5319,11 @@ Number of seconds to wait while trying to acquire row-level locks on a hybrid ta
 
 For more information, check [HYBRID_TABLE_LOCK_TIMEOUT docs](https://docs.snowflake.com/en/sql-reference/parameters#hybrid-table-lock-timeout).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#hybrid_table_lock_timeout CurrentAccount#hybrid_table_lock_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#hybrid_table_lock_timeout CurrentAccount#hybrid_table_lock_timeout}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -5361,14 +5331,14 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#id CurrentAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#id CurrentAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `initialReplicationSizeLimitInTb`<sup>Optional</sup> <a name="initialReplicationSizeLimitInTb" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.initialReplicationSizeLimitInTb"></a>
+##### `initialReplicationSizeLimitInTb`<sup>Optional</sup> <a name="initialReplicationSizeLimitInTb" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.initialReplicationSizeLimitInTb"></a>
 
 ```typescript
 public readonly initialReplicationSizeLimitInTb: string;
@@ -5380,53 +5350,53 @@ Sets the maximum estimated size limit for the initial replication of a primary d
 
 Set this parameter on any account that stores a secondary database. This size limit helps prevent accounts from accidentally incurring large database replication charges. To remove the size limit, set the value to 0.0. It is required to pass numbers with scale of at least 1 (e.g. 20.5, 32.25, 33.333, etc.). For more information, check [INITIAL_REPLICATION_SIZE_LIMIT_IN_TB docs](https://docs.snowflake.com/en/sql-reference/parameters#initial-replication-size-limit-in-tb).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#initial_replication_size_limit_in_tb CurrentAccount#initial_replication_size_limit_in_tb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#initial_replication_size_limit_in_tb CurrentAccount#initial_replication_size_limit_in_tb}
 
 ---
 
-##### `jdbcTreatDecimalAsInt`<sup>Optional</sup> <a name="jdbcTreatDecimalAsInt" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.jdbcTreatDecimalAsInt"></a>
+##### `jdbcTreatDecimalAsInt`<sup>Optional</sup> <a name="jdbcTreatDecimalAsInt" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.jdbcTreatDecimalAsInt"></a>
 
 ```typescript
 public readonly jdbcTreatDecimalAsInt: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies how JDBC processes columns that have a scale of zero (0). For more information, check [JDBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-decimal-as-int).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#jdbc_treat_decimal_as_int CurrentAccount#jdbc_treat_decimal_as_int}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#jdbc_treat_decimal_as_int CurrentAccount#jdbc_treat_decimal_as_int}
 
 ---
 
-##### `jdbcTreatTimestampNtzAsUtc`<sup>Optional</sup> <a name="jdbcTreatTimestampNtzAsUtc" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.jdbcTreatTimestampNtzAsUtc"></a>
+##### `jdbcTreatTimestampNtzAsUtc`<sup>Optional</sup> <a name="jdbcTreatTimestampNtzAsUtc" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.jdbcTreatTimestampNtzAsUtc"></a>
 
 ```typescript
 public readonly jdbcTreatTimestampNtzAsUtc: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies how JDBC processes TIMESTAMP_NTZ values ([more details](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc)). For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#jdbc_treat_timestamp_ntz_as_utc CurrentAccount#jdbc_treat_timestamp_ntz_as_utc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#jdbc_treat_timestamp_ntz_as_utc CurrentAccount#jdbc_treat_timestamp_ntz_as_utc}
 
 ---
 
-##### `jdbcUseSessionTimezone`<sup>Optional</sup> <a name="jdbcUseSessionTimezone" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.jdbcUseSessionTimezone"></a>
+##### `jdbcUseSessionTimezone`<sup>Optional</sup> <a name="jdbcUseSessionTimezone" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.jdbcUseSessionTimezone"></a>
 
 ```typescript
 public readonly jdbcUseSessionTimezone: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#jdbc_use_session_timezone CurrentAccount#jdbc_use_session_timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#jdbc_use_session_timezone CurrentAccount#jdbc_use_session_timezone}
 
 ---
 
-##### `jsonIndent`<sup>Optional</sup> <a name="jsonIndent" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.jsonIndent"></a>
+##### `jsonIndent`<sup>Optional</sup> <a name="jsonIndent" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.jsonIndent"></a>
 
 ```typescript
 public readonly jsonIndent: number;
@@ -5438,25 +5408,25 @@ Specifies the number of blank spaces to indent each new element in JSON output i
 
 Also specifies whether to insert newline characters after each element. For more information, check [JSON_INDENT docs](https://docs.snowflake.com/en/sql-reference/parameters#json-indent).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#json_indent CurrentAccount#json_indent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#json_indent CurrentAccount#json_indent}
 
 ---
 
-##### `jsTreatIntegerAsBigint`<sup>Optional</sup> <a name="jsTreatIntegerAsBigint" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.jsTreatIntegerAsBigint"></a>
+##### `jsTreatIntegerAsBigint`<sup>Optional</sup> <a name="jsTreatIntegerAsBigint" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.jsTreatIntegerAsBigint"></a>
 
 ```typescript
 public readonly jsTreatIntegerAsBigint: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies how the Snowflake Node.js Driver processes numeric columns that have a scale of zero (0), for example INTEGER or NUMBER(p, 0). For more information, check [JS_TREAT_INTEGER_AS_BIGINT docs](https://docs.snowflake.com/en/sql-reference/parameters#js-treat-integer-as-bigint).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#js_treat_integer_as_bigint CurrentAccount#js_treat_integer_as_bigint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#js_treat_integer_as_bigint CurrentAccount#js_treat_integer_as_bigint}
 
 ---
 
-##### `listingAutoFulfillmentReplicationRefreshSchedule`<sup>Optional</sup> <a name="listingAutoFulfillmentReplicationRefreshSchedule" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.listingAutoFulfillmentReplicationRefreshSchedule"></a>
+##### `listingAutoFulfillmentReplicationRefreshSchedule`<sup>Optional</sup> <a name="listingAutoFulfillmentReplicationRefreshSchedule" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.listingAutoFulfillmentReplicationRefreshSchedule"></a>
 
 ```typescript
 public readonly listingAutoFulfillmentReplicationRefreshSchedule: string;
@@ -5468,11 +5438,11 @@ Sets the time interval used to refresh the application package based data produc
 
 For more information, check [LISTING_AUTO_FULFILLMENT_REPLICATION_REFRESH_SCHEDULE docs](https://docs.snowflake.com/en/sql-reference/parameters#listing-auto-fulfillment-replication-refresh-schedule).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#listing_auto_fulfillment_replication_refresh_schedule CurrentAccount#listing_auto_fulfillment_replication_refresh_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#listing_auto_fulfillment_replication_refresh_schedule CurrentAccount#listing_auto_fulfillment_replication_refresh_schedule}
 
 ---
 
-##### `lockTimeout`<sup>Optional</sup> <a name="lockTimeout" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.lockTimeout"></a>
+##### `lockTimeout`<sup>Optional</sup> <a name="lockTimeout" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.lockTimeout"></a>
 
 ```typescript
 public readonly lockTimeout: number;
@@ -5484,11 +5454,11 @@ Number of seconds to wait while trying to lock a resource, before timing out and
 
 For more information, check [LOCK_TIMEOUT docs](https://docs.snowflake.com/en/sql-reference/parameters#lock-timeout).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#lock_timeout CurrentAccount#lock_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#lock_timeout CurrentAccount#lock_timeout}
 
 ---
 
-##### `logLevel`<sup>Optional</sup> <a name="logLevel" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.logLevel"></a>
+##### `logLevel`<sup>Optional</sup> <a name="logLevel" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.logLevel"></a>
 
 ```typescript
 public readonly logLevel: string;
@@ -5500,11 +5470,11 @@ Specifies the severity level of messages that should be ingested and made availa
 
 Messages at the specified level (and at more severe levels) are ingested. For more information about log levels, see [Setting levels for logging, metrics, and tracing](https://docs.snowflake.com/en/developer-guide/logging-tracing/telemetry-levels). Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`. For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#log_level CurrentAccount#log_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#log_level CurrentAccount#log_level}
 
 ---
 
-##### `maxConcurrencyLevel`<sup>Optional</sup> <a name="maxConcurrencyLevel" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.maxConcurrencyLevel"></a>
+##### `maxConcurrencyLevel`<sup>Optional</sup> <a name="maxConcurrencyLevel" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.maxConcurrencyLevel"></a>
 
 ```typescript
 public readonly maxConcurrencyLevel: number;
@@ -5514,11 +5484,11 @@ public readonly maxConcurrencyLevel: number;
 
 Specifies the concurrency level for SQL statements (that is, queries and DML) executed by a warehouse ([more details](https://docs.snowflake.com/en/sql-reference/parameters#max-concurrency-level)). For more information, check [MAX_CONCURRENCY_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#max-concurrency-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#max_concurrency_level CurrentAccount#max_concurrency_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#max_concurrency_level CurrentAccount#max_concurrency_level}
 
 ---
 
-##### `maxDataExtensionTimeInDays`<sup>Optional</sup> <a name="maxDataExtensionTimeInDays" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.maxDataExtensionTimeInDays"></a>
+##### `maxDataExtensionTimeInDays`<sup>Optional</sup> <a name="maxDataExtensionTimeInDays" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.maxDataExtensionTimeInDays"></a>
 
 ```typescript
 public readonly maxDataExtensionTimeInDays: number;
@@ -5530,11 +5500,11 @@ Maximum number of days Snowflake can extend the data retention period for tables
 
 By default, if the [DATA_RETENTION_TIME_IN_DAYS](https://docs.snowflake.com/en/sql-reference/parameters#data-retention-time-in-days) setting for a source table is less than 14 days, and a stream has not been consumed, Snowflake temporarily extends this period to the stream’s offset, up to a maximum of 14 days, regardless of the [Snowflake Edition](https://docs.snowflake.com/en/user-guide/intro-editions) for your account. The MAX_DATA_EXTENSION_TIME_IN_DAYS parameter enables you to limit this automatic extension period to control storage costs for data retention or for compliance reasons. For more information, check [MAX_DATA_EXTENSION_TIME_IN_DAYS docs](https://docs.snowflake.com/en/sql-reference/parameters#max-data-extension-time-in-days).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#max_data_extension_time_in_days CurrentAccount#max_data_extension_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#max_data_extension_time_in_days CurrentAccount#max_data_extension_time_in_days}
 
 ---
 
-##### `metricLevel`<sup>Optional</sup> <a name="metricLevel" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.metricLevel"></a>
+##### `metricLevel`<sup>Optional</sup> <a name="metricLevel" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.metricLevel"></a>
 
 ```typescript
 public readonly metricLevel: string;
@@ -5546,11 +5516,11 @@ Controls how metrics data is ingested into the event table.
 
 For more information about metric levels, see [Setting levels for logging, metrics, and tracing](https://docs.snowflake.com/en/developer-guide/logging-tracing/telemetry-levels). Valid values are (case-insensitive): `ALL` | `NONE`. For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#metric_level CurrentAccount#metric_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#metric_level CurrentAccount#metric_level}
 
 ---
 
-##### `minDataRetentionTimeInDays`<sup>Optional</sup> <a name="minDataRetentionTimeInDays" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.minDataRetentionTimeInDays"></a>
+##### `minDataRetentionTimeInDays`<sup>Optional</sup> <a name="minDataRetentionTimeInDays" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.minDataRetentionTimeInDays"></a>
 
 ```typescript
 public readonly minDataRetentionTimeInDays: number;
@@ -5562,11 +5532,11 @@ Minimum number of days for which Snowflake retains historical data for performin
 
 If a minimum number of days for data retention is set on an account, the data retention period for an object is determined by MAX([DATA_RETENTION_TIME_IN_DAYS](https://docs.snowflake.com/en/sql-reference/parameters#label-data-retention-time-in-days), MIN_DATA_RETENTION_TIME_IN_DAYS). For more information, check [MIN_DATA_RETENTION_TIME_IN_DAYS docs](https://docs.snowflake.com/en/sql-reference/parameters#min-data-retention-time-in-days).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#min_data_retention_time_in_days CurrentAccount#min_data_retention_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#min_data_retention_time_in_days CurrentAccount#min_data_retention_time_in_days}
 
 ---
 
-##### `multiStatementCount`<sup>Optional</sup> <a name="multiStatementCount" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.multiStatementCount"></a>
+##### `multiStatementCount`<sup>Optional</sup> <a name="multiStatementCount" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.multiStatementCount"></a>
 
 ```typescript
 public readonly multiStatementCount: number;
@@ -5576,11 +5546,11 @@ public readonly multiStatementCount: number;
 
 Number of statements to execute when using the multi-statement capability. For more information, check [MULTI_STATEMENT_COUNT docs](https://docs.snowflake.com/en/sql-reference/parameters#multi-statement-count).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#multi_statement_count CurrentAccount#multi_statement_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#multi_statement_count CurrentAccount#multi_statement_count}
 
 ---
 
-##### `networkPolicy`<sup>Optional</sup> <a name="networkPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.networkPolicy"></a>
+##### `networkPolicy`<sup>Optional</sup> <a name="networkPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.networkPolicy"></a>
 
 ```typescript
 public readonly networkPolicy: string;
@@ -5592,57 +5562,57 @@ Specifies the network policy to enforce for your account.
 
 Network policies enable restricting access to your account based on users’ IP address. For more details, see [Controlling network traffic with network policies](https://docs.snowflake.com/en/user-guide/network-policies). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`. For more information, check [NETWORK_POLICY docs](https://docs.snowflake.com/en/sql-reference/parameters#network-policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#network_policy CurrentAccount#network_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#network_policy CurrentAccount#network_policy}
 
 ---
 
-##### `noorderSequenceAsDefault`<sup>Optional</sup> <a name="noorderSequenceAsDefault" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.noorderSequenceAsDefault"></a>
+##### `noorderSequenceAsDefault`<sup>Optional</sup> <a name="noorderSequenceAsDefault" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.noorderSequenceAsDefault"></a>
 
 ```typescript
 public readonly noorderSequenceAsDefault: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column.
 
 The ORDER and NOORDER properties determine whether or not the values are generated for the sequence or auto-incremented column in [increasing or decreasing order](https://docs.snowflake.com/en/user-guide/querying-sequences.html#label-querying-sequences-increasing-values). For more information, check [NOORDER_SEQUENCE_AS_DEFAULT docs](https://docs.snowflake.com/en/sql-reference/parameters#noorder-sequence-as-default).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#noorder_sequence_as_default CurrentAccount#noorder_sequence_as_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#noorder_sequence_as_default CurrentAccount#noorder_sequence_as_default}
 
 ---
 
-##### `oauthAddPrivilegedRolesToBlockedList`<sup>Optional</sup> <a name="oauthAddPrivilegedRolesToBlockedList" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.oauthAddPrivilegedRolesToBlockedList"></a>
+##### `oauthAddPrivilegedRolesToBlockedList`<sup>Optional</sup> <a name="oauthAddPrivilegedRolesToBlockedList" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.oauthAddPrivilegedRolesToBlockedList"></a>
 
 ```typescript
 public readonly oauthAddPrivilegedRolesToBlockedList: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Determines whether the ACCOUNTADMIN, ORGADMIN, GLOBALORGADMIN, and SECURITYADMIN roles can be used as the primary role when creating a Snowflake session based on the access token from Snowflake’s authorization server.
 
 For more information, check [OAUTH_ADD_PRIVILEGED_ROLES_TO_BLOCKED_LIST docs](https://docs.snowflake.com/en/sql-reference/parameters#oauth-add-privileged-roles-to-blocked-list).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#oauth_add_privileged_roles_to_blocked_list CurrentAccount#oauth_add_privileged_roles_to_blocked_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#oauth_add_privileged_roles_to_blocked_list CurrentAccount#oauth_add_privileged_roles_to_blocked_list}
 
 ---
 
-##### `odbcTreatDecimalAsInt`<sup>Optional</sup> <a name="odbcTreatDecimalAsInt" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.odbcTreatDecimalAsInt"></a>
+##### `odbcTreatDecimalAsInt`<sup>Optional</sup> <a name="odbcTreatDecimalAsInt" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.odbcTreatDecimalAsInt"></a>
 
 ```typescript
 public readonly odbcTreatDecimalAsInt: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#odbc_treat_decimal_as_int CurrentAccount#odbc_treat_decimal_as_int}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#odbc_treat_decimal_as_int CurrentAccount#odbc_treat_decimal_as_int}
 
 ---
 
-##### `packagesPolicy`<sup>Optional</sup> <a name="packagesPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.packagesPolicy"></a>
+##### `packagesPolicy`<sup>Optional</sup> <a name="packagesPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.packagesPolicy"></a>
 
 ```typescript
 public readonly packagesPolicy: string;
@@ -5652,11 +5622,11 @@ public readonly packagesPolicy: string;
 
 Specifies [packages policy](https://docs.snowflake.com/en/developer-guide/udf/python/packages-policy) for the current account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#packages_policy CurrentAccount#packages_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#packages_policy CurrentAccount#packages_policy}
 
 ---
 
-##### `passwordPolicy`<sup>Optional</sup> <a name="passwordPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.passwordPolicy"></a>
+##### `passwordPolicy`<sup>Optional</sup> <a name="passwordPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.passwordPolicy"></a>
 
 ```typescript
 public readonly passwordPolicy: string;
@@ -5666,67 +5636,67 @@ public readonly passwordPolicy: string;
 
 Specifies [password policy](https://docs.snowflake.com/en/user-guide/password-authentication#label-using-password-policies) for the current account. For more information about this resource, see [docs](./password_policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#password_policy CurrentAccount#password_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#password_policy CurrentAccount#password_policy}
 
 ---
 
-##### `periodicDataRekeying`<sup>Optional</sup> <a name="periodicDataRekeying" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.periodicDataRekeying"></a>
+##### `periodicDataRekeying`<sup>Optional</sup> <a name="periodicDataRekeying" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.periodicDataRekeying"></a>
 
 ```typescript
 public readonly periodicDataRekeying: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 It enables/disables re-encryption of table data with new keys on a yearly basis to provide additional levels of data protection ([more details](https://docs.snowflake.com/en/sql-reference/parameters#periodic-data-rekeying)). For more information, check [PERIODIC_DATA_REKEYING docs](https://docs.snowflake.com/en/sql-reference/parameters#periodic-data-rekeying).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#periodic_data_rekeying CurrentAccount#periodic_data_rekeying}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#periodic_data_rekeying CurrentAccount#periodic_data_rekeying}
 
 ---
 
-##### `pipeExecutionPaused`<sup>Optional</sup> <a name="pipeExecutionPaused" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.pipeExecutionPaused"></a>
+##### `pipeExecutionPaused`<sup>Optional</sup> <a name="pipeExecutionPaused" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.pipeExecutionPaused"></a>
 
 ```typescript
 public readonly pipeExecutionPaused: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether to pause a running pipe, primarily in preparation for transferring ownership of the pipe to a different role ([more details](https://docs.snowflake.com/en/sql-reference/parameters#pipe-execution-paused)). For more information, check [PIPE_EXECUTION_PAUSED docs](https://docs.snowflake.com/en/sql-reference/parameters#pipe-execution-paused).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#pipe_execution_paused CurrentAccount#pipe_execution_paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#pipe_execution_paused CurrentAccount#pipe_execution_paused}
 
 ---
 
-##### `preventUnloadToInlineUrl`<sup>Optional</sup> <a name="preventUnloadToInlineUrl" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.preventUnloadToInlineUrl"></a>
+##### `preventUnloadToInlineUrl`<sup>Optional</sup> <a name="preventUnloadToInlineUrl" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.preventUnloadToInlineUrl"></a>
 
 ```typescript
 public readonly preventUnloadToInlineUrl: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether to prevent ad hoc data unload operations to external cloud storage locations (that is, [COPY INTO location](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location) statements that specify the cloud storage URL and access settings directly in the statement). For an example, see [Unloading data from a table directly to files in an external location](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location.html#label-copy-into-location-ad-hoc). For more information, check [PREVENT_UNLOAD_TO_INLINE_URL docs](https://docs.snowflake.com/en/sql-reference/parameters#prevent-unload-to-inline-url).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#prevent_unload_to_inline_url CurrentAccount#prevent_unload_to_inline_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#prevent_unload_to_inline_url CurrentAccount#prevent_unload_to_inline_url}
 
 ---
 
-##### `preventUnloadToInternalStages`<sup>Optional</sup> <a name="preventUnloadToInternalStages" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.preventUnloadToInternalStages"></a>
+##### `preventUnloadToInternalStages`<sup>Optional</sup> <a name="preventUnloadToInternalStages" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.preventUnloadToInternalStages"></a>
 
 ```typescript
 public readonly preventUnloadToInternalStages: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether to prevent data unload operations to internal (Snowflake) stages using [COPY INTO location](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location) statements. For more information, check [PREVENT_UNLOAD_TO_INTERNAL_STAGES docs](https://docs.snowflake.com/en/sql-reference/parameters#prevent-unload-to-internal-stages).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#prevent_unload_to_internal_stages CurrentAccount#prevent_unload_to_internal_stages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#prevent_unload_to_internal_stages CurrentAccount#prevent_unload_to_internal_stages}
 
 ---
 
-##### `pythonProfilerModules`<sup>Optional</sup> <a name="pythonProfilerModules" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.pythonProfilerModules"></a>
+##### `pythonProfilerModules`<sup>Optional</sup> <a name="pythonProfilerModules" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.pythonProfilerModules"></a>
 
 ```typescript
 public readonly pythonProfilerModules: string;
@@ -5736,11 +5706,11 @@ public readonly pythonProfilerModules: string;
 
 Specifies the list of Python modules to include in a report when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). For more information, check [PYTHON_PROFILER_MODULES docs](https://docs.snowflake.com/en/sql-reference/parameters#python-profiler-modules).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#python_profiler_modules CurrentAccount#python_profiler_modules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#python_profiler_modules CurrentAccount#python_profiler_modules}
 
 ---
 
-##### `pythonProfilerTargetStage`<sup>Optional</sup> <a name="pythonProfilerTargetStage" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.pythonProfilerTargetStage"></a>
+##### `pythonProfilerTargetStage`<sup>Optional</sup> <a name="pythonProfilerTargetStage" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.pythonProfilerTargetStage"></a>
 
 ```typescript
 public readonly pythonProfilerTargetStage: string;
@@ -5750,11 +5720,11 @@ public readonly pythonProfilerTargetStage: string;
 
 Specifies the fully-qualified name of the stage in which to save a report when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). For more information, check [PYTHON_PROFILER_TARGET_STAGE docs](https://docs.snowflake.com/en/sql-reference/parameters#python-profiler-target-stage).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#python_profiler_target_stage CurrentAccount#python_profiler_target_stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#python_profiler_target_stage CurrentAccount#python_profiler_target_stage}
 
 ---
 
-##### `queryTag`<sup>Optional</sup> <a name="queryTag" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.queryTag"></a>
+##### `queryTag`<sup>Optional</sup> <a name="queryTag" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.queryTag"></a>
 
 ```typescript
 public readonly queryTag: string;
@@ -5766,71 +5736,71 @@ Optional string that can be used to tag queries and other SQL statements execute
 
 The tags are displayed in the output of the [QUERY_HISTORY, QUERY_HISTORY_BY_*](https://docs.snowflake.com/en/sql-reference/functions/query_history) functions. For more information, check [QUERY_TAG docs](https://docs.snowflake.com/en/sql-reference/parameters#query-tag).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#query_tag CurrentAccount#query_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#query_tag CurrentAccount#query_tag}
 
 ---
 
-##### `quotedIdentifiersIgnoreCase`<sup>Optional</sup> <a name="quotedIdentifiersIgnoreCase" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.quotedIdentifiersIgnoreCase"></a>
+##### `quotedIdentifiersIgnoreCase`<sup>Optional</sup> <a name="quotedIdentifiersIgnoreCase" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.quotedIdentifiersIgnoreCase"></a>
 
 ```typescript
 public readonly quotedIdentifiersIgnoreCase: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters.
 
 By default, Snowflake preserves the case of alphabetic characters when storing and resolving double-quoted identifiers (see [Identifier resolution](https://docs.snowflake.com/en/sql-reference/identifiers-syntax.html#label-identifier-casing)). You can use this parameter in situations in which [third-party applications always use double quotes around identifiers](https://docs.snowflake.com/en/sql-reference/identifiers-syntax.html#label-identifier-casing-parameter). For more information, check [QUOTED_IDENTIFIERS_IGNORE_CASE docs](https://docs.snowflake.com/en/sql-reference/parameters#quoted-identifiers-ignore-case).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#quoted_identifiers_ignore_case CurrentAccount#quoted_identifiers_ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#quoted_identifiers_ignore_case CurrentAccount#quoted_identifiers_ignore_case}
 
 ---
 
-##### `replaceInvalidCharacters`<sup>Optional</sup> <a name="replaceInvalidCharacters" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.replaceInvalidCharacters"></a>
+##### `replaceInvalidCharacters`<sup>Optional</sup> <a name="replaceInvalidCharacters" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.replaceInvalidCharacters"></a>
 
 ```typescript
 public readonly replaceInvalidCharacters: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether to replace invalid UTF-8 characters with the Unicode replacement character (�) in query results for [Apache Iceberg™ tables](https://docs.snowflake.com/en/sql-reference/sql/create-iceberg-table) that use an external catalog. For more information, check [REPLACE_INVALID_CHARACTERS docs](https://docs.snowflake.com/en/sql-reference/parameters#replace-invalid-characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#replace_invalid_characters CurrentAccount#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#replace_invalid_characters CurrentAccount#replace_invalid_characters}
 
 ---
 
-##### `requireStorageIntegrationForStageCreation`<sup>Optional</sup> <a name="requireStorageIntegrationForStageCreation" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.requireStorageIntegrationForStageCreation"></a>
+##### `requireStorageIntegrationForStageCreation`<sup>Optional</sup> <a name="requireStorageIntegrationForStageCreation" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.requireStorageIntegrationForStageCreation"></a>
 
 ```typescript
 public readonly requireStorageIntegrationForStageCreation: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether to require a storage integration object as cloud credentials when creating a named external stage (using [CREATE STAGE](https://docs.snowflake.com/en/sql-reference/sql/create-stage)) to access a private cloud storage location. For more information, check [REQUIRE_STORAGE_INTEGRATION_FOR_STAGE_CREATION docs](https://docs.snowflake.com/en/sql-reference/parameters#require-storage-integration-for-stage-creation).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#require_storage_integration_for_stage_creation CurrentAccount#require_storage_integration_for_stage_creation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#require_storage_integration_for_stage_creation CurrentAccount#require_storage_integration_for_stage_creation}
 
 ---
 
-##### `requireStorageIntegrationForStageOperation`<sup>Optional</sup> <a name="requireStorageIntegrationForStageOperation" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.requireStorageIntegrationForStageOperation"></a>
+##### `requireStorageIntegrationForStageOperation`<sup>Optional</sup> <a name="requireStorageIntegrationForStageOperation" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.requireStorageIntegrationForStageOperation"></a>
 
 ```typescript
 public readonly requireStorageIntegrationForStageOperation: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether to require using a named external stage that references a storage integration object as cloud credentials when loading data from or unloading data to a private cloud storage location.
 
 For more information, check [REQUIRE_STORAGE_INTEGRATION_FOR_STAGE_OPERATION docs](https://docs.snowflake.com/en/sql-reference/parameters#require-storage-integration-for-stage-operation).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#require_storage_integration_for_stage_operation CurrentAccount#require_storage_integration_for_stage_operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#require_storage_integration_for_stage_operation CurrentAccount#require_storage_integration_for_stage_operation}
 
 ---
 
-##### `resourceMonitor`<sup>Optional</sup> <a name="resourceMonitor" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.resourceMonitor"></a>
+##### `resourceMonitor`<sup>Optional</sup> <a name="resourceMonitor" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.resourceMonitor"></a>
 
 ```typescript
 public readonly resourceMonitor: string;
@@ -5842,11 +5812,11 @@ Parameter that specifies the name of the resource monitor used to control all vi
 
 External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#resource_monitor CurrentAccount#resource_monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#resource_monitor CurrentAccount#resource_monitor}
 
 ---
 
-##### `rowsPerResultset`<sup>Optional</sup> <a name="rowsPerResultset" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.rowsPerResultset"></a>
+##### `rowsPerResultset`<sup>Optional</sup> <a name="rowsPerResultset" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.rowsPerResultset"></a>
 
 ```typescript
 public readonly rowsPerResultset: number;
@@ -5858,11 +5828,11 @@ Specifies the maximum number of rows returned in a result set.
 
 A value of 0 specifies no maximum. For more information, check [ROWS_PER_RESULTSET docs](https://docs.snowflake.com/en/sql-reference/parameters#rows-per-resultset).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#rows_per_resultset CurrentAccount#rows_per_resultset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#rows_per_resultset CurrentAccount#rows_per_resultset}
 
 ---
 
-##### `s3StageVpceDnsName`<sup>Optional</sup> <a name="s3StageVpceDnsName" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.s3StageVpceDnsName"></a>
+##### `s3StageVpceDnsName`<sup>Optional</sup> <a name="s3StageVpceDnsName" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.s3StageVpceDnsName"></a>
 
 ```typescript
 public readonly s3StageVpceDnsName: string;
@@ -5874,25 +5844,11 @@ Specifies the DNS name of an Amazon S3 interface endpoint.
 
 Requests sent to the internal stage of an account via [AWS PrivateLink for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html) use this endpoint to connect. For more information, see [Accessing Internal stages with dedicated interface endpoints](https://docs.snowflake.com/en/user-guide/private-internal-stages-aws.html#label-aws-privatelink-internal-stage-network-isolation). For more information, check [S3_STAGE_VPCE_DNS_NAME docs](https://docs.snowflake.com/en/sql-reference/parameters#s3-stage-vpce-dns-name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#s3_stage_vpce_dns_name CurrentAccount#s3_stage_vpce_dns_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#s3_stage_vpce_dns_name CurrentAccount#s3_stage_vpce_dns_name}
 
 ---
 
-##### `samlIdentityProvider`<sup>Optional</sup> <a name="samlIdentityProvider" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.samlIdentityProvider"></a>
-
-```typescript
-public readonly samlIdentityProvider: string;
-```
-
-- *Type:* string
-
-Enables federated authentication. This deprecated parameter enables federated authentication ([more details](https://docs.snowflake.com/en/sql-reference/parameters#saml-identity-provider)). For more information, check [SAML_IDENTITY_PROVIDER docs](https://docs.snowflake.com/en/sql-reference/parameters#saml-identity-provider).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#saml_identity_provider CurrentAccount#saml_identity_provider}
-
----
-
-##### `searchPath`<sup>Optional</sup> <a name="searchPath" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.searchPath"></a>
+##### `searchPath`<sup>Optional</sup> <a name="searchPath" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.searchPath"></a>
 
 ```typescript
 public readonly searchPath: string;
@@ -5904,11 +5860,11 @@ Specifies the path to search to resolve unqualified object names in queries.
 
 For more information, see [Name resolution in queries](https://docs.snowflake.com/en/sql-reference/name-resolution.html#label-object-name-resolution-search-path). Comma-separated list of identifiers. An identifier can be a fully or partially qualified schema name. For more information, check [SEARCH_PATH docs](https://docs.snowflake.com/en/sql-reference/parameters#search-path).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#search_path CurrentAccount#search_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#search_path CurrentAccount#search_path}
 
 ---
 
-##### `serverlessTaskMaxStatementSize`<sup>Optional</sup> <a name="serverlessTaskMaxStatementSize" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.serverlessTaskMaxStatementSize"></a>
+##### `serverlessTaskMaxStatementSize`<sup>Optional</sup> <a name="serverlessTaskMaxStatementSize" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.serverlessTaskMaxStatementSize"></a>
 
 ```typescript
 public readonly serverlessTaskMaxStatementSize: string;
@@ -5918,11 +5874,11 @@ public readonly serverlessTaskMaxStatementSize: string;
 
 Specifies the maximum allowed warehouse size for [Serverless tasks](https://docs.snowflake.com/en/user-guide/tasks-intro.html#label-tasks-compute-resources-serverless). Valid values are (case-insensitive): `XSMALL` | `X-SMALL` | `SMALL` | `MEDIUM` | `LARGE` | `XLARGE` | `X-LARGE` | `XXLARGE` | `X2LARGE` | `2X-LARGE` | `XXXLARGE` | `X3LARGE` | `3X-LARGE` | `X4LARGE` | `4X-LARGE` | `X5LARGE` | `5X-LARGE` | `X6LARGE` | `6X-LARGE`. For more information, check [SERVERLESS_TASK_MAX_STATEMENT_SIZE docs](https://docs.snowflake.com/en/sql-reference/parameters#serverless-task-max-statement-size).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#serverless_task_max_statement_size CurrentAccount#serverless_task_max_statement_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#serverless_task_max_statement_size CurrentAccount#serverless_task_max_statement_size}
 
 ---
 
-##### `serverlessTaskMinStatementSize`<sup>Optional</sup> <a name="serverlessTaskMinStatementSize" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.serverlessTaskMinStatementSize"></a>
+##### `serverlessTaskMinStatementSize`<sup>Optional</sup> <a name="serverlessTaskMinStatementSize" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.serverlessTaskMinStatementSize"></a>
 
 ```typescript
 public readonly serverlessTaskMinStatementSize: string;
@@ -5932,11 +5888,11 @@ public readonly serverlessTaskMinStatementSize: string;
 
 Specifies the minimum allowed warehouse size for [Serverless tasks](https://docs.snowflake.com/en/user-guide/tasks-intro.html#label-tasks-compute-resources-serverless). Valid values are (case-insensitive): `XSMALL` | `X-SMALL` | `SMALL` | `MEDIUM` | `LARGE` | `XLARGE` | `X-LARGE` | `XXLARGE` | `X2LARGE` | `2X-LARGE` | `XXXLARGE` | `X3LARGE` | `3X-LARGE` | `X4LARGE` | `4X-LARGE` | `X5LARGE` | `5X-LARGE` | `X6LARGE` | `6X-LARGE`. For more information, check [SERVERLESS_TASK_MIN_STATEMENT_SIZE docs](https://docs.snowflake.com/en/sql-reference/parameters#serverless-task-min-statement-size).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#serverless_task_min_statement_size CurrentAccount#serverless_task_min_statement_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#serverless_task_min_statement_size CurrentAccount#serverless_task_min_statement_size}
 
 ---
 
-##### `sessionPolicy`<sup>Optional</sup> <a name="sessionPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.sessionPolicy"></a>
+##### `sessionPolicy`<sup>Optional</sup> <a name="sessionPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.sessionPolicy"></a>
 
 ```typescript
 public readonly sessionPolicy: string;
@@ -5946,11 +5902,11 @@ public readonly sessionPolicy: string;
 
 Specifies [session policy](https://docs.snowflake.com/en/user-guide/session-policies-using) for the current account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#session_policy CurrentAccount#session_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#session_policy CurrentAccount#session_policy}
 
 ---
 
-##### `simulatedDataSharingConsumer`<sup>Optional</sup> <a name="simulatedDataSharingConsumer" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.simulatedDataSharingConsumer"></a>
+##### `simulatedDataSharingConsumer`<sup>Optional</sup> <a name="simulatedDataSharingConsumer" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.simulatedDataSharingConsumer"></a>
 
 ```typescript
 public readonly simulatedDataSharingConsumer: string;
@@ -5962,27 +5918,27 @@ Specifies the name of a consumer account to simulate for testing/validating shar
 
 When this parameter is set in a session, shared views return rows as if executed in the specified consumer account rather than the provider account. For more information, check [SIMULATED_DATA_SHARING_CONSUMER docs](https://docs.snowflake.com/en/sql-reference/parameters#simulated-data-sharing-consumer).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#simulated_data_sharing_consumer CurrentAccount#simulated_data_sharing_consumer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#simulated_data_sharing_consumer CurrentAccount#simulated_data_sharing_consumer}
 
 ---
 
-##### `ssoLoginPage`<sup>Optional</sup> <a name="ssoLoginPage" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.ssoLoginPage"></a>
+##### `ssoLoginPage`<sup>Optional</sup> <a name="ssoLoginPage" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.ssoLoginPage"></a>
 
 ```typescript
 public readonly ssoLoginPage: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 This deprecated parameter disables preview mode for testing SSO (after enabling federated authentication) before rolling it out to users.
 
 For more information, check [SSO_LOGIN_PAGE docs](https://docs.snowflake.com/en/sql-reference/parameters#sso-login-page).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#sso_login_page CurrentAccount#sso_login_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#sso_login_page CurrentAccount#sso_login_page}
 
 ---
 
-##### `statementQueuedTimeoutInSeconds`<sup>Optional</sup> <a name="statementQueuedTimeoutInSeconds" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.statementQueuedTimeoutInSeconds"></a>
+##### `statementQueuedTimeoutInSeconds`<sup>Optional</sup> <a name="statementQueuedTimeoutInSeconds" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.statementQueuedTimeoutInSeconds"></a>
 
 ```typescript
 public readonly statementQueuedTimeoutInSeconds: number;
@@ -5992,11 +5948,11 @@ public readonly statementQueuedTimeoutInSeconds: number;
 
 Amount of time, in seconds, a SQL statement (query, DDL, DML, etc.) remains queued for a warehouse before it is canceled by the system. This parameter can be used in conjunction with the [MAX_CONCURRENCY_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#label-max-concurrency-level) parameter to ensure a warehouse is never backlogged. For more information, check [STATEMENT_QUEUED_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-queued-timeout-in-seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#statement_queued_timeout_in_seconds CurrentAccount#statement_queued_timeout_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#statement_queued_timeout_in_seconds CurrentAccount#statement_queued_timeout_in_seconds}
 
 ---
 
-##### `statementTimeoutInSeconds`<sup>Optional</sup> <a name="statementTimeoutInSeconds" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.statementTimeoutInSeconds"></a>
+##### `statementTimeoutInSeconds`<sup>Optional</sup> <a name="statementTimeoutInSeconds" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.statementTimeoutInSeconds"></a>
 
 ```typescript
 public readonly statementTimeoutInSeconds: number;
@@ -6006,11 +5962,11 @@ public readonly statementTimeoutInSeconds: number;
 
 Amount of time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system. For more information, check [STATEMENT_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-timeout-in-seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#statement_timeout_in_seconds CurrentAccount#statement_timeout_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#statement_timeout_in_seconds CurrentAccount#statement_timeout_in_seconds}
 
 ---
 
-##### `storageSerializationPolicy`<sup>Optional</sup> <a name="storageSerializationPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.storageSerializationPolicy"></a>
+##### `storageSerializationPolicy`<sup>Optional</sup> <a name="storageSerializationPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.storageSerializationPolicy"></a>
 
 ```typescript
 public readonly storageSerializationPolicy: string;
@@ -6020,25 +5976,25 @@ public readonly storageSerializationPolicy: string;
 
 Specifies the storage serialization policy for Snowflake-managed [Apache Iceberg™ tables](https://docs.snowflake.com/en/user-guide/tables-iceberg). Valid values are (case-insensitive): `COMPATIBLE` | `OPTIMIZED`. For more information, check [STORAGE_SERIALIZATION_POLICY docs](https://docs.snowflake.com/en/sql-reference/parameters#storage-serialization-policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#storage_serialization_policy CurrentAccount#storage_serialization_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#storage_serialization_policy CurrentAccount#storage_serialization_policy}
 
 ---
 
-##### `strictJsonOutput`<sup>Optional</sup> <a name="strictJsonOutput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.strictJsonOutput"></a>
+##### `strictJsonOutput`<sup>Optional</sup> <a name="strictJsonOutput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.strictJsonOutput"></a>
 
 ```typescript
 public readonly strictJsonOutput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#strict_json_output CurrentAccount#strict_json_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#strict_json_output CurrentAccount#strict_json_output}
 
 ---
 
-##### `suspendTaskAfterNumFailures`<sup>Optional</sup> <a name="suspendTaskAfterNumFailures" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.suspendTaskAfterNumFailures"></a>
+##### `suspendTaskAfterNumFailures`<sup>Optional</sup> <a name="suspendTaskAfterNumFailures" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.suspendTaskAfterNumFailures"></a>
 
 ```typescript
 public readonly suspendTaskAfterNumFailures: number;
@@ -6050,11 +6006,11 @@ Specifies the number of consecutive failed task runs after which the current tas
 
 The default is 0 (no automatic suspension). For more information, check [SUSPEND_TASK_AFTER_NUM_FAILURES docs](https://docs.snowflake.com/en/sql-reference/parameters#suspend-task-after-num-failures).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#suspend_task_after_num_failures CurrentAccount#suspend_task_after_num_failures}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#suspend_task_after_num_failures CurrentAccount#suspend_task_after_num_failures}
 
 ---
 
-##### `taskAutoRetryAttempts`<sup>Optional</sup> <a name="taskAutoRetryAttempts" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.taskAutoRetryAttempts"></a>
+##### `taskAutoRetryAttempts`<sup>Optional</sup> <a name="taskAutoRetryAttempts" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.taskAutoRetryAttempts"></a>
 
 ```typescript
 public readonly taskAutoRetryAttempts: number;
@@ -6066,11 +6022,11 @@ Specifies the number of automatic task graph retry attempts.
 
 If any task graphs complete in a FAILED state, Snowflake can automatically retry the task graphs from the last task in the graph that failed. For more information, check [TASK_AUTO_RETRY_ATTEMPTS docs](https://docs.snowflake.com/en/sql-reference/parameters#task-auto-retry-attempts).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#task_auto_retry_attempts CurrentAccount#task_auto_retry_attempts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#task_auto_retry_attempts CurrentAccount#task_auto_retry_attempts}
 
 ---
 
-##### `timeInputFormat`<sup>Optional</sup> <a name="timeInputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timeInputFormat"></a>
+##### `timeInputFormat`<sup>Optional</sup> <a name="timeInputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timeInputFormat"></a>
 
 ```typescript
 public readonly timeInputFormat: string;
@@ -6082,11 +6038,11 @@ Specifies the input format for the TIME data type.
 
 For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). Any valid, supported time format or AUTO (AUTO specifies that Snowflake attempts to automatically detect the format of times stored in the system during the session). For more information, check [TIME_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#time-input-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#time_input_format CurrentAccount#time_input_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#time_input_format CurrentAccount#time_input_format}
 
 ---
 
-##### `timeOutputFormat`<sup>Optional</sup> <a name="timeOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timeOutputFormat"></a>
+##### `timeOutputFormat`<sup>Optional</sup> <a name="timeOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timeOutputFormat"></a>
 
 ```typescript
 public readonly timeOutputFormat: string;
@@ -6098,39 +6054,39 @@ Specifies the display format for the TIME data type.
 
 For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIME_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#time-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#time_output_format CurrentAccount#time_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#time_output_format CurrentAccount#time_output_format}
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: CurrentAccountTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts">CurrentAccountTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeouts">CurrentAccountTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#timeouts CurrentAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#timeouts CurrentAccount#timeouts}
 
 ---
 
-##### `timestampDayIsAlways24H`<sup>Optional</sup> <a name="timestampDayIsAlways24H" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampDayIsAlways24H"></a>
+##### `timestampDayIsAlways24H`<sup>Optional</sup> <a name="timestampDayIsAlways24H" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampDayIsAlways24H"></a>
 
 ```typescript
 public readonly timestampDayIsAlways24H: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#timestamp_day_is_always_24h CurrentAccount#timestamp_day_is_always_24h}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#timestamp_day_is_always_24h CurrentAccount#timestamp_day_is_always_24h}
 
 ---
 
-##### `timestampInputFormat`<sup>Optional</sup> <a name="timestampInputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampInputFormat"></a>
+##### `timestampInputFormat`<sup>Optional</sup> <a name="timestampInputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampInputFormat"></a>
 
 ```typescript
 public readonly timestampInputFormat: string;
@@ -6142,11 +6098,11 @@ Specifies the input format for the TIMESTAMP data type alias.
 
 For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). Any valid, supported timestamp format or AUTO (AUTO specifies that Snowflake attempts to automatically detect the format of timestamps stored in the system during the session). For more information, check [TIMESTAMP_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-input-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#timestamp_input_format CurrentAccount#timestamp_input_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#timestamp_input_format CurrentAccount#timestamp_input_format}
 
 ---
 
-##### `timestampLtzOutputFormat`<sup>Optional</sup> <a name="timestampLtzOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampLtzOutputFormat"></a>
+##### `timestampLtzOutputFormat`<sup>Optional</sup> <a name="timestampLtzOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampLtzOutputFormat"></a>
 
 ```typescript
 public readonly timestampLtzOutputFormat: string;
@@ -6158,11 +6114,11 @@ Specifies the display format for the TIMESTAMP_LTZ data type.
 
 If no format is specified, defaults to [TIMESTAMP_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-output-format). For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIMESTAMP_LTZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-ltz-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#timestamp_ltz_output_format CurrentAccount#timestamp_ltz_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#timestamp_ltz_output_format CurrentAccount#timestamp_ltz_output_format}
 
 ---
 
-##### `timestampNtzOutputFormat`<sup>Optional</sup> <a name="timestampNtzOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampNtzOutputFormat"></a>
+##### `timestampNtzOutputFormat`<sup>Optional</sup> <a name="timestampNtzOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampNtzOutputFormat"></a>
 
 ```typescript
 public readonly timestampNtzOutputFormat: string;
@@ -6172,11 +6128,11 @@ public readonly timestampNtzOutputFormat: string;
 
 Specifies the display format for the TIMESTAMP_NTZ data type. For more information, check [TIMESTAMP_NTZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-ntz-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#timestamp_ntz_output_format CurrentAccount#timestamp_ntz_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#timestamp_ntz_output_format CurrentAccount#timestamp_ntz_output_format}
 
 ---
 
-##### `timestampOutputFormat`<sup>Optional</sup> <a name="timestampOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampOutputFormat"></a>
+##### `timestampOutputFormat`<sup>Optional</sup> <a name="timestampOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampOutputFormat"></a>
 
 ```typescript
 public readonly timestampOutputFormat: string;
@@ -6188,11 +6144,11 @@ Specifies the display format for the TIMESTAMP data type alias.
 
 For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIMESTAMP_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#timestamp_output_format CurrentAccount#timestamp_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#timestamp_output_format CurrentAccount#timestamp_output_format}
 
 ---
 
-##### `timestampTypeMapping`<sup>Optional</sup> <a name="timestampTypeMapping" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampTypeMapping"></a>
+##### `timestampTypeMapping`<sup>Optional</sup> <a name="timestampTypeMapping" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampTypeMapping"></a>
 
 ```typescript
 public readonly timestampTypeMapping: string;
@@ -6204,11 +6160,11 @@ Specifies the TIMESTAMP_* variation that the TIMESTAMP data type alias maps to.
 
 Valid values are (case-insensitive): `TIMESTAMP_LTZ` | `TIMESTAMP_NTZ` | `TIMESTAMP_TZ`. For more information, check [TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-type-mapping).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#timestamp_type_mapping CurrentAccount#timestamp_type_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#timestamp_type_mapping CurrentAccount#timestamp_type_mapping}
 
 ---
 
-##### `timestampTzOutputFormat`<sup>Optional</sup> <a name="timestampTzOutputFormat" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampTzOutputFormat"></a>
+##### `timestampTzOutputFormat`<sup>Optional</sup> <a name="timestampTzOutputFormat" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timestampTzOutputFormat"></a>
 
 ```typescript
 public readonly timestampTzOutputFormat: string;
@@ -6220,11 +6176,11 @@ Specifies the display format for the TIMESTAMP_TZ data type.
 
 If no format is specified, defaults to [TIMESTAMP_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-output-format). For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIMESTAMP_TZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-tz-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#timestamp_tz_output_format CurrentAccount#timestamp_tz_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#timestamp_tz_output_format CurrentAccount#timestamp_tz_output_format}
 
 ---
 
-##### `timezone`<sup>Optional</sup> <a name="timezone" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.timezone"></a>
+##### `timezone`<sup>Optional</sup> <a name="timezone" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.timezone"></a>
 
 ```typescript
 public readonly timezone: string;
@@ -6236,11 +6192,11 @@ Specifies the time zone for the session.
 
 You can specify a [time zone name](https://data.iana.org/time-zones/tzdb-2021a/zone1970.tab) or a [link name](https://data.iana.org/time-zones/tzdb-2021a/backward) from release 2021a of the [IANA Time Zone Database](https://www.iana.org/time-zones) (e.g. America/Los_Angeles, Europe/London, UTC, Etc/GMT, etc.). For more information, check [TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#timezone).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#timezone CurrentAccount#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#timezone CurrentAccount#timezone}
 
 ---
 
-##### `traceLevel`<sup>Optional</sup> <a name="traceLevel" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.traceLevel"></a>
+##### `traceLevel`<sup>Optional</sup> <a name="traceLevel" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.traceLevel"></a>
 
 ```typescript
 public readonly traceLevel: string;
@@ -6252,27 +6208,27 @@ Controls how trace events are ingested into the event table.
 
 For more information about trace levels, see [Setting trace level](https://docs.snowflake.com/en/developer-guide/logging-tracing/tracing-trace-level). Valid values are (case-insensitive): `ALWAYS` | `ON_EVENT` | `PROPAGATE` | `OFF`. For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#trace_level CurrentAccount#trace_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#trace_level CurrentAccount#trace_level}
 
 ---
 
-##### `transactionAbortOnError`<sup>Optional</sup> <a name="transactionAbortOnError" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.transactionAbortOnError"></a>
+##### `transactionAbortOnError`<sup>Optional</sup> <a name="transactionAbortOnError" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.transactionAbortOnError"></a>
 
 ```typescript
 public readonly transactionAbortOnError: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error.
 
 For more information, check [TRANSACTION_ABORT_ON_ERROR docs](https://docs.snowflake.com/en/sql-reference/parameters#transaction-abort-on-error).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#transaction_abort_on_error CurrentAccount#transaction_abort_on_error}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#transaction_abort_on_error CurrentAccount#transaction_abort_on_error}
 
 ---
 
-##### `transactionDefaultIsolationLevel`<sup>Optional</sup> <a name="transactionDefaultIsolationLevel" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.transactionDefaultIsolationLevel"></a>
+##### `transactionDefaultIsolationLevel`<sup>Optional</sup> <a name="transactionDefaultIsolationLevel" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.transactionDefaultIsolationLevel"></a>
 
 ```typescript
 public readonly transactionDefaultIsolationLevel: string;
@@ -6284,11 +6240,11 @@ Specifies the isolation level for transactions in the user session.
 
 Valid values are (case-insensitive): `READ COMMITTED`. For more information, check [TRANSACTION_DEFAULT_ISOLATION_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#transaction-default-isolation-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#transaction_default_isolation_level CurrentAccount#transaction_default_isolation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#transaction_default_isolation_level CurrentAccount#transaction_default_isolation_level}
 
 ---
 
-##### `twoDigitCenturyStart`<sup>Optional</sup> <a name="twoDigitCenturyStart" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.twoDigitCenturyStart"></a>
+##### `twoDigitCenturyStart`<sup>Optional</sup> <a name="twoDigitCenturyStart" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.twoDigitCenturyStart"></a>
 
 ```typescript
 public readonly twoDigitCenturyStart: number;
@@ -6298,11 +6254,11 @@ public readonly twoDigitCenturyStart: number;
 
 Specifies the “century start” year for 2-digit years (i.e. the earliest year such dates can represent). This parameter prevents ambiguous dates when importing or converting data with the `YY` date format component (i.e. years represented as 2 digits). For more information, check [TWO_DIGIT_CENTURY_START docs](https://docs.snowflake.com/en/sql-reference/parameters#two-digit-century-start).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#two_digit_century_start CurrentAccount#two_digit_century_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#two_digit_century_start CurrentAccount#two_digit_century_start}
 
 ---
 
-##### `unsupportedDdlAction`<sup>Optional</sup> <a name="unsupportedDdlAction" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.unsupportedDdlAction"></a>
+##### `unsupportedDdlAction`<sup>Optional</sup> <a name="unsupportedDdlAction" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.unsupportedDdlAction"></a>
 
 ```typescript
 public readonly unsupportedDdlAction: string;
@@ -6312,27 +6268,27 @@ public readonly unsupportedDdlAction: string;
 
 Determines if an unsupported (i.e. non-default) value specified for a constraint property returns an error. For more information, check [UNSUPPORTED_DDL_ACTION docs](https://docs.snowflake.com/en/sql-reference/parameters#unsupported-ddl-action).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#unsupported_ddl_action CurrentAccount#unsupported_ddl_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#unsupported_ddl_action CurrentAccount#unsupported_ddl_action}
 
 ---
 
-##### `useCachedResult`<sup>Optional</sup> <a name="useCachedResult" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.useCachedResult"></a>
+##### `useCachedResult`<sup>Optional</sup> <a name="useCachedResult" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.useCachedResult"></a>
 
 ```typescript
 public readonly useCachedResult: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether to reuse persisted query results, if available, when a matching query is submitted.
 
 For more information, check [USE_CACHED_RESULT docs](https://docs.snowflake.com/en/sql-reference/parameters#use-cached-result).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#use_cached_result CurrentAccount#use_cached_result}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#use_cached_result CurrentAccount#use_cached_result}
 
 ---
 
-##### `userTaskManagedInitialWarehouseSize`<sup>Optional</sup> <a name="userTaskManagedInitialWarehouseSize" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.userTaskManagedInitialWarehouseSize"></a>
+##### `userTaskManagedInitialWarehouseSize`<sup>Optional</sup> <a name="userTaskManagedInitialWarehouseSize" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.userTaskManagedInitialWarehouseSize"></a>
 
 ```typescript
 public readonly userTaskManagedInitialWarehouseSize: string;
@@ -6344,11 +6300,11 @@ Specifies the size of the compute resources to provision for the first run of th
 
 Once a task has successfully completed a few runs, Snowflake ignores this parameter setting. Valid values are (case-insensitive): `XSMALL` | `X-SMALL` | `SMALL` | `MEDIUM` | `LARGE` | `XLARGE` | `X-LARGE` | `XXLARGE` | `X2LARGE` | `2X-LARGE` | `XXXLARGE` | `X3LARGE` | `3X-LARGE` | `X4LARGE` | `4X-LARGE` | `X5LARGE` | `5X-LARGE` | `X6LARGE` | `6X-LARGE`. For more information, check [USER_TASK_MANAGED_INITIAL_WAREHOUSE_SIZE docs](https://docs.snowflake.com/en/sql-reference/parameters#user-task-managed-initial-warehouse-size).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#user_task_managed_initial_warehouse_size CurrentAccount#user_task_managed_initial_warehouse_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#user_task_managed_initial_warehouse_size CurrentAccount#user_task_managed_initial_warehouse_size}
 
 ---
 
-##### `userTaskMinimumTriggerIntervalInSeconds`<sup>Optional</sup> <a name="userTaskMinimumTriggerIntervalInSeconds" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.userTaskMinimumTriggerIntervalInSeconds"></a>
+##### `userTaskMinimumTriggerIntervalInSeconds`<sup>Optional</sup> <a name="userTaskMinimumTriggerIntervalInSeconds" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.userTaskMinimumTriggerIntervalInSeconds"></a>
 
 ```typescript
 public readonly userTaskMinimumTriggerIntervalInSeconds: number;
@@ -6358,11 +6314,11 @@ public readonly userTaskMinimumTriggerIntervalInSeconds: number;
 
 Minimum amount of time between Triggered Task executions in seconds For more information, check [USER_TASK_MINIMUM_TRIGGER_INTERVAL_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#user-task-minimum-trigger-interval-in-seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#user_task_minimum_trigger_interval_in_seconds CurrentAccount#user_task_minimum_trigger_interval_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#user_task_minimum_trigger_interval_in_seconds CurrentAccount#user_task_minimum_trigger_interval_in_seconds}
 
 ---
 
-##### `userTaskTimeoutMs`<sup>Optional</sup> <a name="userTaskTimeoutMs" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.userTaskTimeoutMs"></a>
+##### `userTaskTimeoutMs`<sup>Optional</sup> <a name="userTaskTimeoutMs" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.userTaskTimeoutMs"></a>
 
 ```typescript
 public readonly userTaskTimeoutMs: number;
@@ -6374,11 +6330,11 @@ Specifies the time limit on a single run of the task before it times out (in mil
 
 For more information, check [USER_TASK_TIMEOUT_MS docs](https://docs.snowflake.com/en/sql-reference/parameters#user-task-timeout-ms).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#user_task_timeout_ms CurrentAccount#user_task_timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#user_task_timeout_ms CurrentAccount#user_task_timeout_ms}
 
 ---
 
-##### `weekOfYearPolicy`<sup>Optional</sup> <a name="weekOfYearPolicy" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.weekOfYearPolicy"></a>
+##### `weekOfYearPolicy`<sup>Optional</sup> <a name="weekOfYearPolicy" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.weekOfYearPolicy"></a>
 
 ```typescript
 public readonly weekOfYearPolicy: number;
@@ -6390,11 +6346,11 @@ Specifies how the weeks in a given year are computed.
 
 `0`: The semantics used are equivalent to the ISO semantics, in which a week belongs to a given year if at least 4 days of that week are in that year. `1`: January 1 is included in the first week of the year and December 31 is included in the last week of the year. For more information, check [WEEK_OF_YEAR_POLICY docs](https://docs.snowflake.com/en/sql-reference/parameters#week-of-year-policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#week_of_year_policy CurrentAccount#week_of_year_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#week_of_year_policy CurrentAccount#week_of_year_policy}
 
 ---
 
-##### `weekStart`<sup>Optional</sup> <a name="weekStart" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountConfig.property.weekStart"></a>
+##### `weekStart`<sup>Optional</sup> <a name="weekStart" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountConfig.property.weekStart"></a>
 
 ```typescript
 public readonly weekStart: number;
@@ -6406,16 +6362,16 @@ Specifies the first day of the week (used by week-related date functions).
 
 `0`: Legacy Snowflake behavior is used (i.e. ISO-like semantics). `1` (Monday) to `7` (Sunday): All the week-related functions use weeks that start on the specified day of the week. For more information, check [WEEK_START docs](https://docs.snowflake.com/en/sql-reference/parameters#week-start).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#week_start CurrentAccount#week_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#week_start CurrentAccount#week_start}
 
 ---
 
-### CurrentAccountTimeouts <a name="CurrentAccountTimeouts" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts"></a>
+### CurrentAccountTimeouts <a name="CurrentAccountTimeouts" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeouts.Initializer"></a>
 
 ```typescript
-import { currentAccount } from '@cdktf/provider-snowflake'
+import { currentAccount } from '@cdktn/provider-snowflake'
 
 const currentAccountTimeouts: currentAccount.CurrentAccountTimeouts = { ... }
 ```
@@ -6424,14 +6380,14 @@ const currentAccountTimeouts: currentAccount.CurrentAccountTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#create CurrentAccount#create}. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#delete CurrentAccount#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#read CurrentAccount#read}. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#update CurrentAccount#update}. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#create CurrentAccount#create}. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#delete CurrentAccount#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#read CurrentAccount#read}. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#update CurrentAccount#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeouts.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -6439,11 +6395,11 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#create CurrentAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#create CurrentAccount#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeouts.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -6451,11 +6407,11 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#delete CurrentAccount#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#delete CurrentAccount#delete}.
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeouts.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -6463,11 +6419,11 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#read CurrentAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#read CurrentAccount#read}.
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeouts.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -6475,38 +6431,38 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/current_account#update CurrentAccount#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/current_account#update CurrentAccount#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### CurrentAccountTimeoutsOutputReference <a name="CurrentAccountTimeoutsOutputReference" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference"></a>
+### CurrentAccountTimeoutsOutputReference <a name="CurrentAccountTimeoutsOutputReference" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.Initializer"></a>
 
 ```typescript
-import { currentAccount } from '@cdktf/provider-snowflake'
+import { currentAccount } from '@cdktn/provider-snowflake'
 
 new currentAccount.CurrentAccountTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -6518,153 +6474,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -6672,13 +6628,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -6688,25 +6644,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resetCreate"></a>
+##### `resetCreate` <a name="resetCreate" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resetCreate"></a>
 
 ```typescript
 public resetCreate(): void
 ```
 
-##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resetDelete"></a>
+##### `resetDelete` <a name="resetDelete" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resetDelete"></a>
 
 ```typescript
 public resetDelete(): void
 ```
 
-##### `resetRead` <a name="resetRead" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resetRead"></a>
+##### `resetRead` <a name="resetRead" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resetRead"></a>
 
 ```typescript
 public resetRead(): void
 ```
 
-##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resetUpdate"></a>
+##### `resetUpdate` <a name="resetUpdate" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.resetUpdate"></a>
 
 ```typescript
 public resetUpdate(): void
@@ -6717,21 +6673,21 @@ public resetUpdate(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts">CurrentAccountTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeouts">CurrentAccountTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -6745,7 +6701,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -6755,7 +6711,7 @@ public readonly fqn: string;
 
 ---
 
-##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.createInput"></a>
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.createInput"></a>
 
 ```typescript
 public readonly createInput: string;
@@ -6765,7 +6721,7 @@ public readonly createInput: string;
 
 ---
 
-##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.deleteInput"></a>
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.deleteInput"></a>
 
 ```typescript
 public readonly deleteInput: string;
@@ -6775,7 +6731,7 @@ public readonly deleteInput: string;
 
 ---
 
-##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.readInput"></a>
+##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.readInput"></a>
 
 ```typescript
 public readonly readInput: string;
@@ -6785,7 +6741,7 @@ public readonly readInput: string;
 
 ---
 
-##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.updateInput"></a>
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.updateInput"></a>
 
 ```typescript
 public readonly updateInput: string;
@@ -6795,7 +6751,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -6805,7 +6761,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -6815,7 +6771,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -6825,7 +6781,7 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -6835,13 +6791,13 @@ public readonly update: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | CurrentAccountTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.currentAccount.CurrentAccountTimeouts">CurrentAccountTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-snowflake.currentAccount.CurrentAccountTimeouts">CurrentAccountTimeouts</a>
 
 ---
 

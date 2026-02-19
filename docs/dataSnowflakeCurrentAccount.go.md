@@ -1,28 +1,28 @@
-# `dataSnowflakeCurrentAccount` Submodule <a name="`dataSnowflakeCurrentAccount` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount"></a>
+# `dataSnowflakeCurrentAccount` Submodule <a name="`dataSnowflakeCurrentAccount` Submodule" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataSnowflakeCurrentAccount <a name="DataSnowflakeCurrentAccount" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount"></a>
+### DataSnowflakeCurrentAccount <a name="DataSnowflakeCurrentAccount" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/current_account snowflake_current_account}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/current_account snowflake_current_account}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakecurrentaccount"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecurrentaccount"
 
 datasnowflakecurrentaccount.NewDataSnowflakeCurrentAccount(scope Construct, id *string, config DataSnowflakeCurrentAccountConfig) DataSnowflakeCurrentAccount
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig">DataSnowflakeCurrentAccountConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig">DataSnowflakeCurrentAccountConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig">DataSnowflakeCurrentAccountConfig</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig">DataSnowflakeCurrentAccountConfig</a>
 
 ---
 
@@ -50,28 +50,28 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.resetId">ResetId</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.toString"></a>
 
 ```go
 func ToString() *string
@@ -79,25 +79,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -105,7 +105,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -113,7 +113,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -121,7 +121,7 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
@@ -129,13 +129,13 @@ func ToHclTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -143,127 +143,127 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.resetId"></a>
 
 ```go
 func ResetId()
@@ -273,17 +273,17 @@ func ResetId()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataSnowflakeCurrentAccount resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a DataSnowflakeCurrentAccount resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakecurrentaccount"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecurrentaccount"
 
 datasnowflakecurrentaccount.DataSnowflakeCurrentAccount_IsConstruct(x interface{}) *bool
 ```
@@ -304,7 +304,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -312,45 +312,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakecurrentaccount"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecurrentaccount"
 
 datasnowflakecurrentaccount.DataSnowflakeCurrentAccount_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isTerraformDataSource"></a>
+##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakecurrentaccount"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecurrentaccount"
 
 datasnowflakecurrentaccount.DataSnowflakeCurrentAccount_IsTerraformDataSource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakecurrentaccount"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecurrentaccount"
 
 datasnowflakecurrentaccount.DataSnowflakeCurrentAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a DataSnowflakeCurrentAccount resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DataSnowflakeCurrentAccount resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -358,7 +358,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -366,19 +366,19 @@ The construct id used in the generated config for the DataSnowflakeCurrentAccoun
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing DataSnowflakeCurrentAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/current_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/current_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DataSnowflakeCurrentAccount to import is found.
 
@@ -388,27 +388,27 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.account">Account</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.region">Region</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.url">Url</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.account">Account</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.region">Region</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.url">Url</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.node"></a>
 
 ```go
 func Node() Node
@@ -420,17 +420,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -440,7 +440,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -450,7 +450,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -460,7 +460,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -470,17 +470,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -490,7 +490,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -500,37 +500,37 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Account`<sup>Required</sup> <a name="Account" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.account"></a>
+##### `Account`<sup>Required</sup> <a name="Account" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.account"></a>
 
 ```go
 func Account() *string
@@ -540,7 +540,7 @@ func Account() *string
 
 ---
 
-##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.region"></a>
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.region"></a>
 
 ```go
 func Region() *string
@@ -550,7 +550,7 @@ func Region() *string
 
 ---
 
-##### `Url`<sup>Required</sup> <a name="Url" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.url"></a>
+##### `Url`<sup>Required</sup> <a name="Url" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.url"></a>
 
 ```go
 func Url() *string
@@ -560,7 +560,7 @@ func Url() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -570,7 +570,7 @@ func IdInput() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.id"></a>
 
 ```go
 func Id() *string
@@ -584,11 +584,11 @@ func Id() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -600,20 +600,20 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataSnowflakeCurrentAccountConfig <a name="DataSnowflakeCurrentAccountConfig" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig"></a>
+### DataSnowflakeCurrentAccountConfig <a name="DataSnowflakeCurrentAccountConfig" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakecurrentaccount"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecurrentaccount"
 
 &datasnowflakecurrentaccount.DataSnowflakeCurrentAccountConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
 }
@@ -623,18 +623,18 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflake
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -644,7 +644,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -654,47 +654,47 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -704,7 +704,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.id"></a>
 
 ```go
 Id *string
@@ -712,7 +712,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

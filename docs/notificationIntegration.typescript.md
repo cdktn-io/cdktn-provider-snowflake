@@ -1,28 +1,28 @@
-# `notificationIntegration` Submodule <a name="`notificationIntegration` Submodule" id="@cdktf/provider-snowflake.notificationIntegration"></a>
+# `notificationIntegration` Submodule <a name="`notificationIntegration` Submodule" id="@cdktn/provider-snowflake.notificationIntegration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### NotificationIntegration <a name="NotificationIntegration" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration"></a>
+### NotificationIntegration <a name="NotificationIntegration" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration snowflake_notification_integration}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration snowflake_notification_integration}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.Initializer"></a>
 
 ```typescript
-import { notificationIntegration } from '@cdktf/provider-snowflake'
+import { notificationIntegration } from '@cdktn/provider-snowflake'
 
 new notificationIntegration.NotificationIntegration(scope: Construct, id: string, config: NotificationIntegrationConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig">NotificationIntegrationConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig">NotificationIntegrationConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig">NotificationIntegrationConfig</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig">NotificationIntegrationConfig</a>
 
 ---
 
@@ -50,48 +50,48 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetAwsSnsRoleArn">resetAwsSnsRoleArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetAwsSnsTopicArn">resetAwsSnsTopicArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetAwsSqsArn">resetAwsSqsArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetAwsSqsRoleArn">resetAwsSqsRoleArn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetAzureStorageQueuePrimaryUri">resetAzureStorageQueuePrimaryUri</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetAzureTenantId">resetAzureTenantId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetComment">resetComment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetDirection">resetDirection</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetEnabled">resetEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetGcpPubsubSubscriptionName">resetGcpPubsubSubscriptionName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetGcpPubsubTopicName">resetGcpPubsubTopicName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetTimeouts">resetTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetType">resetType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetAwsSnsRoleArn">resetAwsSnsRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetAwsSnsTopicArn">resetAwsSnsTopicArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetAwsSqsArn">resetAwsSqsArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetAwsSqsRoleArn">resetAwsSqsRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetAzureStorageQueuePrimaryUri">resetAzureStorageQueuePrimaryUri</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetAzureTenantId">resetAzureTenantId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetComment">resetComment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetDirection">resetDirection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetEnabled">resetEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetGcpPubsubSubscriptionName">resetGcpPubsubSubscriptionName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetGcpPubsubTopicName">resetGcpPubsubTopicName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetType">resetType</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.toString"></a>
 
 ```typescript
 public toString(): string
@@ -99,25 +99,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -125,7 +125,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -133,7 +133,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -141,19 +141,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -161,7 +161,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -169,7 +169,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -177,151 +177,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -331,7 +331,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -339,7 +339,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -347,7 +347,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -355,7 +355,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -363,7 +363,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -371,7 +371,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -379,97 +379,97 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.putTimeouts"></a>
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.putTimeouts"></a>
 
 ```typescript
 public putTimeouts(value: NotificationIntegrationTimeouts): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts">NotificationIntegrationTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts">NotificationIntegrationTimeouts</a>
 
 ---
 
-##### `resetAwsSnsRoleArn` <a name="resetAwsSnsRoleArn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetAwsSnsRoleArn"></a>
+##### `resetAwsSnsRoleArn` <a name="resetAwsSnsRoleArn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetAwsSnsRoleArn"></a>
 
 ```typescript
 public resetAwsSnsRoleArn(): void
 ```
 
-##### `resetAwsSnsTopicArn` <a name="resetAwsSnsTopicArn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetAwsSnsTopicArn"></a>
+##### `resetAwsSnsTopicArn` <a name="resetAwsSnsTopicArn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetAwsSnsTopicArn"></a>
 
 ```typescript
 public resetAwsSnsTopicArn(): void
 ```
 
-##### `resetAwsSqsArn` <a name="resetAwsSqsArn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetAwsSqsArn"></a>
+##### `resetAwsSqsArn` <a name="resetAwsSqsArn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetAwsSqsArn"></a>
 
 ```typescript
 public resetAwsSqsArn(): void
 ```
 
-##### `resetAwsSqsRoleArn` <a name="resetAwsSqsRoleArn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetAwsSqsRoleArn"></a>
+##### `resetAwsSqsRoleArn` <a name="resetAwsSqsRoleArn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetAwsSqsRoleArn"></a>
 
 ```typescript
 public resetAwsSqsRoleArn(): void
 ```
 
-##### `resetAzureStorageQueuePrimaryUri` <a name="resetAzureStorageQueuePrimaryUri" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetAzureStorageQueuePrimaryUri"></a>
+##### `resetAzureStorageQueuePrimaryUri` <a name="resetAzureStorageQueuePrimaryUri" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetAzureStorageQueuePrimaryUri"></a>
 
 ```typescript
 public resetAzureStorageQueuePrimaryUri(): void
 ```
 
-##### `resetAzureTenantId` <a name="resetAzureTenantId" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetAzureTenantId"></a>
+##### `resetAzureTenantId` <a name="resetAzureTenantId" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetAzureTenantId"></a>
 
 ```typescript
 public resetAzureTenantId(): void
 ```
 
-##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetComment"></a>
+##### `resetComment` <a name="resetComment" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetComment"></a>
 
 ```typescript
 public resetComment(): void
 ```
 
-##### `resetDirection` <a name="resetDirection" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetDirection"></a>
+##### `resetDirection` <a name="resetDirection" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetDirection"></a>
 
 ```typescript
 public resetDirection(): void
 ```
 
-##### `resetEnabled` <a name="resetEnabled" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetEnabled"></a>
+##### `resetEnabled` <a name="resetEnabled" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetEnabled"></a>
 
 ```typescript
 public resetEnabled(): void
 ```
 
-##### `resetGcpPubsubSubscriptionName` <a name="resetGcpPubsubSubscriptionName" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetGcpPubsubSubscriptionName"></a>
+##### `resetGcpPubsubSubscriptionName` <a name="resetGcpPubsubSubscriptionName" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetGcpPubsubSubscriptionName"></a>
 
 ```typescript
 public resetGcpPubsubSubscriptionName(): void
 ```
 
-##### `resetGcpPubsubTopicName` <a name="resetGcpPubsubTopicName" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetGcpPubsubTopicName"></a>
+##### `resetGcpPubsubTopicName` <a name="resetGcpPubsubTopicName" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetGcpPubsubTopicName"></a>
 
 ```typescript
 public resetGcpPubsubTopicName(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetTimeouts"></a>
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetTimeouts"></a>
 
 ```typescript
 public resetTimeouts(): void
 ```
 
-##### `resetType` <a name="resetType" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.resetType"></a>
+##### `resetType` <a name="resetType" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.resetType"></a>
 
 ```typescript
 public resetType(): void
@@ -479,17 +479,17 @@ public resetType(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a NotificationIntegration resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a NotificationIntegration resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.isConstruct"></a>
 
 ```typescript
-import { notificationIntegration } from '@cdktf/provider-snowflake'
+import { notificationIntegration } from '@cdktn/provider-snowflake'
 
 notificationIntegration.NotificationIntegration.isConstruct(x: any)
 ```
@@ -510,7 +510,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -518,45 +518,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.isTerraformElement"></a>
 
 ```typescript
-import { notificationIntegration } from '@cdktf/provider-snowflake'
+import { notificationIntegration } from '@cdktn/provider-snowflake'
 
 notificationIntegration.NotificationIntegration.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.isTerraformResource"></a>
 
 ```typescript
-import { notificationIntegration } from '@cdktf/provider-snowflake'
+import { notificationIntegration } from '@cdktn/provider-snowflake'
 
 notificationIntegration.NotificationIntegration.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.generateConfigForImport"></a>
 
 ```typescript
-import { notificationIntegration } from '@cdktf/provider-snowflake'
+import { notificationIntegration } from '@cdktn/provider-snowflake'
 
 notificationIntegration.NotificationIntegration.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a NotificationIntegration resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a NotificationIntegration resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -564,7 +564,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -572,19 +572,19 @@ The construct id used in the generated config for the NotificationIntegration to
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing NotificationIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the NotificationIntegration to import is found.
 
@@ -594,63 +594,63 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsExternalId">awsSnsExternalId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsIamUserArn">awsSnsIamUserArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsExternalId">awsSqsExternalId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsIamUserArn">awsSqsIamUserArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.fullyQualifiedName">fullyQualifiedName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubServiceAccount">gcpPubsubServiceAccount</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference">NotificationIntegrationTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsRoleArnInput">awsSnsRoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsTopicArnInput">awsSnsTopicArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsArnInput">awsSqsArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsRoleArnInput">awsSqsRoleArnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.azureStorageQueuePrimaryUriInput">azureStorageQueuePrimaryUriInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.azureTenantIdInput">azureTenantIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.directionInput">directionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubSubscriptionNameInput">gcpPubsubSubscriptionNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubTopicNameInput">gcpPubsubTopicNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.notificationProviderInput">notificationProviderInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts">NotificationIntegrationTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsRoleArn">awsSnsRoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsTopicArn">awsSnsTopicArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsArn">awsSqsArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsRoleArn">awsSqsRoleArn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.azureStorageQueuePrimaryUri">azureStorageQueuePrimaryUri</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.azureTenantId">azureTenantId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.direction">direction</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubSubscriptionName">gcpPubsubSubscriptionName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubTopicName">gcpPubsubTopicName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.notificationProvider">notificationProvider</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsExternalId">awsSnsExternalId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsIamUserArn">awsSnsIamUserArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsExternalId">awsSqsExternalId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsIamUserArn">awsSqsIamUserArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.fullyQualifiedName">fullyQualifiedName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubServiceAccount">gcpPubsubServiceAccount</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference">NotificationIntegrationTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsRoleArnInput">awsSnsRoleArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsTopicArnInput">awsSnsTopicArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsArnInput">awsSqsArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsRoleArnInput">awsSqsRoleArnInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.azureStorageQueuePrimaryUriInput">azureStorageQueuePrimaryUriInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.azureTenantIdInput">azureTenantIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.directionInput">directionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubSubscriptionNameInput">gcpPubsubSubscriptionNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubTopicNameInput">gcpPubsubTopicNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.notificationProviderInput">notificationProviderInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts">NotificationIntegrationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsRoleArn">awsSnsRoleArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsTopicArn">awsSnsTopicArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsArn">awsSqsArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsRoleArn">awsSqsRoleArn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.azureStorageQueuePrimaryUri">azureStorageQueuePrimaryUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.azureTenantId">azureTenantId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.direction">direction</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubSubscriptionName">gcpPubsubSubscriptionName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubTopicName">gcpPubsubTopicName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.notificationProvider">notificationProvider</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.type">type</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -662,17 +662,17 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -682,7 +682,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -692,7 +692,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -702,7 +702,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -712,37 +712,37 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -752,47 +752,47 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `awsSnsExternalId`<sup>Required</sup> <a name="awsSnsExternalId" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsExternalId"></a>
+##### `awsSnsExternalId`<sup>Required</sup> <a name="awsSnsExternalId" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsExternalId"></a>
 
 ```typescript
 public readonly awsSnsExternalId: string;
@@ -802,7 +802,7 @@ public readonly awsSnsExternalId: string;
 
 ---
 
-##### `awsSnsIamUserArn`<sup>Required</sup> <a name="awsSnsIamUserArn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsIamUserArn"></a>
+##### `awsSnsIamUserArn`<sup>Required</sup> <a name="awsSnsIamUserArn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsIamUserArn"></a>
 
 ```typescript
 public readonly awsSnsIamUserArn: string;
@@ -812,7 +812,7 @@ public readonly awsSnsIamUserArn: string;
 
 ---
 
-##### `awsSqsExternalId`<sup>Required</sup> <a name="awsSqsExternalId" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsExternalId"></a>
+##### `awsSqsExternalId`<sup>Required</sup> <a name="awsSqsExternalId" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsExternalId"></a>
 
 ```typescript
 public readonly awsSqsExternalId: string;
@@ -822,7 +822,7 @@ public readonly awsSqsExternalId: string;
 
 ---
 
-##### `awsSqsIamUserArn`<sup>Required</sup> <a name="awsSqsIamUserArn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsIamUserArn"></a>
+##### `awsSqsIamUserArn`<sup>Required</sup> <a name="awsSqsIamUserArn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsIamUserArn"></a>
 
 ```typescript
 public readonly awsSqsIamUserArn: string;
@@ -832,7 +832,7 @@ public readonly awsSqsIamUserArn: string;
 
 ---
 
-##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.createdOn"></a>
+##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.createdOn"></a>
 
 ```typescript
 public readonly createdOn: string;
@@ -842,7 +842,7 @@ public readonly createdOn: string;
 
 ---
 
-##### `fullyQualifiedName`<sup>Required</sup> <a name="fullyQualifiedName" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.fullyQualifiedName"></a>
+##### `fullyQualifiedName`<sup>Required</sup> <a name="fullyQualifiedName" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.fullyQualifiedName"></a>
 
 ```typescript
 public readonly fullyQualifiedName: string;
@@ -852,7 +852,7 @@ public readonly fullyQualifiedName: string;
 
 ---
 
-##### `gcpPubsubServiceAccount`<sup>Required</sup> <a name="gcpPubsubServiceAccount" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubServiceAccount"></a>
+##### `gcpPubsubServiceAccount`<sup>Required</sup> <a name="gcpPubsubServiceAccount" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubServiceAccount"></a>
 
 ```typescript
 public readonly gcpPubsubServiceAccount: string;
@@ -862,17 +862,17 @@ public readonly gcpPubsubServiceAccount: string;
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: NotificationIntegrationTimeoutsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference">NotificationIntegrationTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference">NotificationIntegrationTimeoutsOutputReference</a>
 
 ---
 
-##### `awsSnsRoleArnInput`<sup>Optional</sup> <a name="awsSnsRoleArnInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsRoleArnInput"></a>
+##### `awsSnsRoleArnInput`<sup>Optional</sup> <a name="awsSnsRoleArnInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsRoleArnInput"></a>
 
 ```typescript
 public readonly awsSnsRoleArnInput: string;
@@ -882,7 +882,7 @@ public readonly awsSnsRoleArnInput: string;
 
 ---
 
-##### `awsSnsTopicArnInput`<sup>Optional</sup> <a name="awsSnsTopicArnInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsTopicArnInput"></a>
+##### `awsSnsTopicArnInput`<sup>Optional</sup> <a name="awsSnsTopicArnInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsTopicArnInput"></a>
 
 ```typescript
 public readonly awsSnsTopicArnInput: string;
@@ -892,7 +892,7 @@ public readonly awsSnsTopicArnInput: string;
 
 ---
 
-##### `awsSqsArnInput`<sup>Optional</sup> <a name="awsSqsArnInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsArnInput"></a>
+##### `awsSqsArnInput`<sup>Optional</sup> <a name="awsSqsArnInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsArnInput"></a>
 
 ```typescript
 public readonly awsSqsArnInput: string;
@@ -902,7 +902,7 @@ public readonly awsSqsArnInput: string;
 
 ---
 
-##### `awsSqsRoleArnInput`<sup>Optional</sup> <a name="awsSqsRoleArnInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsRoleArnInput"></a>
+##### `awsSqsRoleArnInput`<sup>Optional</sup> <a name="awsSqsRoleArnInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsRoleArnInput"></a>
 
 ```typescript
 public readonly awsSqsRoleArnInput: string;
@@ -912,7 +912,7 @@ public readonly awsSqsRoleArnInput: string;
 
 ---
 
-##### `azureStorageQueuePrimaryUriInput`<sup>Optional</sup> <a name="azureStorageQueuePrimaryUriInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.azureStorageQueuePrimaryUriInput"></a>
+##### `azureStorageQueuePrimaryUriInput`<sup>Optional</sup> <a name="azureStorageQueuePrimaryUriInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.azureStorageQueuePrimaryUriInput"></a>
 
 ```typescript
 public readonly azureStorageQueuePrimaryUriInput: string;
@@ -922,7 +922,7 @@ public readonly azureStorageQueuePrimaryUriInput: string;
 
 ---
 
-##### `azureTenantIdInput`<sup>Optional</sup> <a name="azureTenantIdInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.azureTenantIdInput"></a>
+##### `azureTenantIdInput`<sup>Optional</sup> <a name="azureTenantIdInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.azureTenantIdInput"></a>
 
 ```typescript
 public readonly azureTenantIdInput: string;
@@ -932,7 +932,7 @@ public readonly azureTenantIdInput: string;
 
 ---
 
-##### `commentInput`<sup>Optional</sup> <a name="commentInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.commentInput"></a>
+##### `commentInput`<sup>Optional</sup> <a name="commentInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.commentInput"></a>
 
 ```typescript
 public readonly commentInput: string;
@@ -942,7 +942,7 @@ public readonly commentInput: string;
 
 ---
 
-##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.directionInput"></a>
+##### `directionInput`<sup>Optional</sup> <a name="directionInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.directionInput"></a>
 
 ```typescript
 public readonly directionInput: string;
@@ -952,17 +952,17 @@ public readonly directionInput: string;
 
 ---
 
-##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.enabledInput"></a>
+##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.enabledInput"></a>
 
 ```typescript
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `gcpPubsubSubscriptionNameInput`<sup>Optional</sup> <a name="gcpPubsubSubscriptionNameInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubSubscriptionNameInput"></a>
+##### `gcpPubsubSubscriptionNameInput`<sup>Optional</sup> <a name="gcpPubsubSubscriptionNameInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubSubscriptionNameInput"></a>
 
 ```typescript
 public readonly gcpPubsubSubscriptionNameInput: string;
@@ -972,7 +972,7 @@ public readonly gcpPubsubSubscriptionNameInput: string;
 
 ---
 
-##### `gcpPubsubTopicNameInput`<sup>Optional</sup> <a name="gcpPubsubTopicNameInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubTopicNameInput"></a>
+##### `gcpPubsubTopicNameInput`<sup>Optional</sup> <a name="gcpPubsubTopicNameInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubTopicNameInput"></a>
 
 ```typescript
 public readonly gcpPubsubTopicNameInput: string;
@@ -982,7 +982,7 @@ public readonly gcpPubsubTopicNameInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -992,7 +992,7 @@ public readonly idInput: string;
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -1002,7 +1002,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `notificationProviderInput`<sup>Optional</sup> <a name="notificationProviderInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.notificationProviderInput"></a>
+##### `notificationProviderInput`<sup>Optional</sup> <a name="notificationProviderInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.notificationProviderInput"></a>
 
 ```typescript
 public readonly notificationProviderInput: string;
@@ -1012,17 +1012,17 @@ public readonly notificationProviderInput: string;
 
 ---
 
-##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.timeoutsInput"></a>
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.timeoutsInput"></a>
 
 ```typescript
 public readonly timeoutsInput: IResolvable | NotificationIntegrationTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts">NotificationIntegrationTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts">NotificationIntegrationTimeouts</a>
 
 ---
 
-##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.typeInput"></a>
+##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.typeInput"></a>
 
 ```typescript
 public readonly typeInput: string;
@@ -1032,7 +1032,7 @@ public readonly typeInput: string;
 
 ---
 
-##### `awsSnsRoleArn`<sup>Required</sup> <a name="awsSnsRoleArn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsRoleArn"></a>
+##### `awsSnsRoleArn`<sup>Required</sup> <a name="awsSnsRoleArn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsRoleArn"></a>
 
 ```typescript
 public readonly awsSnsRoleArn: string;
@@ -1042,7 +1042,7 @@ public readonly awsSnsRoleArn: string;
 
 ---
 
-##### `awsSnsTopicArn`<sup>Required</sup> <a name="awsSnsTopicArn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsTopicArn"></a>
+##### `awsSnsTopicArn`<sup>Required</sup> <a name="awsSnsTopicArn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSnsTopicArn"></a>
 
 ```typescript
 public readonly awsSnsTopicArn: string;
@@ -1052,7 +1052,7 @@ public readonly awsSnsTopicArn: string;
 
 ---
 
-##### `awsSqsArn`<sup>Required</sup> <a name="awsSqsArn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsArn"></a>
+##### `awsSqsArn`<sup>Required</sup> <a name="awsSqsArn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsArn"></a>
 
 ```typescript
 public readonly awsSqsArn: string;
@@ -1062,7 +1062,7 @@ public readonly awsSqsArn: string;
 
 ---
 
-##### `awsSqsRoleArn`<sup>Required</sup> <a name="awsSqsRoleArn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsRoleArn"></a>
+##### `awsSqsRoleArn`<sup>Required</sup> <a name="awsSqsRoleArn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.awsSqsRoleArn"></a>
 
 ```typescript
 public readonly awsSqsRoleArn: string;
@@ -1072,7 +1072,7 @@ public readonly awsSqsRoleArn: string;
 
 ---
 
-##### `azureStorageQueuePrimaryUri`<sup>Required</sup> <a name="azureStorageQueuePrimaryUri" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.azureStorageQueuePrimaryUri"></a>
+##### `azureStorageQueuePrimaryUri`<sup>Required</sup> <a name="azureStorageQueuePrimaryUri" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.azureStorageQueuePrimaryUri"></a>
 
 ```typescript
 public readonly azureStorageQueuePrimaryUri: string;
@@ -1082,7 +1082,7 @@ public readonly azureStorageQueuePrimaryUri: string;
 
 ---
 
-##### `azureTenantId`<sup>Required</sup> <a name="azureTenantId" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.azureTenantId"></a>
+##### `azureTenantId`<sup>Required</sup> <a name="azureTenantId" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.azureTenantId"></a>
 
 ```typescript
 public readonly azureTenantId: string;
@@ -1092,7 +1092,7 @@ public readonly azureTenantId: string;
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -1102,7 +1102,7 @@ public readonly comment: string;
 
 ---
 
-##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.direction"></a>
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.direction"></a>
 
 ```typescript
 public readonly direction: string;
@@ -1112,17 +1112,17 @@ public readonly direction: string;
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.enabled"></a>
 
 ```typescript
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `gcpPubsubSubscriptionName`<sup>Required</sup> <a name="gcpPubsubSubscriptionName" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubSubscriptionName"></a>
+##### `gcpPubsubSubscriptionName`<sup>Required</sup> <a name="gcpPubsubSubscriptionName" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubSubscriptionName"></a>
 
 ```typescript
 public readonly gcpPubsubSubscriptionName: string;
@@ -1132,7 +1132,7 @@ public readonly gcpPubsubSubscriptionName: string;
 
 ---
 
-##### `gcpPubsubTopicName`<sup>Required</sup> <a name="gcpPubsubTopicName" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubTopicName"></a>
+##### `gcpPubsubTopicName`<sup>Required</sup> <a name="gcpPubsubTopicName" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.gcpPubsubTopicName"></a>
 
 ```typescript
 public readonly gcpPubsubTopicName: string;
@@ -1142,7 +1142,7 @@ public readonly gcpPubsubTopicName: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1152,7 +1152,7 @@ public readonly id: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1162,7 +1162,7 @@ public readonly name: string;
 
 ---
 
-##### `notificationProvider`<sup>Required</sup> <a name="notificationProvider" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.notificationProvider"></a>
+##### `notificationProvider`<sup>Required</sup> <a name="notificationProvider" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.notificationProvider"></a>
 
 ```typescript
 public readonly notificationProvider: string;
@@ -1172,7 +1172,7 @@ public readonly notificationProvider: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -1186,11 +1186,11 @@ public readonly type: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegration.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1202,12 +1202,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### NotificationIntegrationConfig <a name="NotificationIntegrationConfig" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig"></a>
+### NotificationIntegrationConfig <a name="NotificationIntegrationConfig" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.Initializer"></a>
 
 ```typescript
-import { notificationIntegration } from '@cdktf/provider-snowflake'
+import { notificationIntegration } from '@cdktn/provider-snowflake'
 
 const notificationIntegrationConfig: notificationIntegration.NotificationIntegrationConfig = { ... }
 ```
@@ -1216,103 +1216,103 @@ const notificationIntegrationConfig: notificationIntegration.NotificationIntegra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#name NotificationIntegration#name}. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.notificationProvider">notificationProvider</a></code> | <code>string</code> | The third-party cloud message queuing service (supported values: AZURE_STORAGE_QUEUE, AWS_SNS, GCP_PUBSUB; |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSnsRoleArn">awsSnsRoleArn</a></code> | <code>string</code> | AWS IAM role ARN for notification integration to assume. Required for AWS_SNS provider. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSnsTopicArn">awsSnsTopicArn</a></code> | <code>string</code> | AWS SNS Topic ARN for notification integration to connect to. Required for AWS_SNS provider. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSqsArn">awsSqsArn</a></code> | <code>string</code> | AWS SQS queue ARN for notification integration to connect to. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSqsRoleArn">awsSqsRoleArn</a></code> | <code>string</code> | AWS IAM role ARN for notification integration to assume. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.azureStorageQueuePrimaryUri">azureStorageQueuePrimaryUri</a></code> | <code>string</code> | The queue ID for the Azure Queue Storage queue created for Event Grid notifications. Required for AZURE_STORAGE_QUEUE provider. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.azureTenantId">azureTenantId</a></code> | <code>string</code> | The ID of the Azure Active Directory tenant used for identity management. Required for AZURE_STORAGE_QUEUE provider. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.comment">comment</a></code> | <code>string</code> | A comment for the integration. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.direction">direction</a></code> | <code>string</code> | Direction of the cloud messaging with respect to Snowflake (required only for error notifications). |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | (Default: `true`). |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.gcpPubsubSubscriptionName">gcpPubsubSubscriptionName</a></code> | <code>string</code> | The subscription id that Snowflake will listen to when using the GCP_PUBSUB provider. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.gcpPubsubTopicName">gcpPubsubTopicName</a></code> | <code>string</code> | The topic id that Snowflake will use to push notifications. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#id NotificationIntegration#id}. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts">NotificationIntegrationTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.type">type</a></code> | <code>string</code> | (Default: `QUEUE`) A type of integration. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#name NotificationIntegration#name}. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.notificationProvider">notificationProvider</a></code> | <code>string</code> | The third-party cloud message queuing service (supported values: AZURE_STORAGE_QUEUE, AWS_SNS, GCP_PUBSUB; |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSnsRoleArn">awsSnsRoleArn</a></code> | <code>string</code> | AWS IAM role ARN for notification integration to assume. Required for AWS_SNS provider. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSnsTopicArn">awsSnsTopicArn</a></code> | <code>string</code> | AWS SNS Topic ARN for notification integration to connect to. Required for AWS_SNS provider. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSqsArn">awsSqsArn</a></code> | <code>string</code> | AWS SQS queue ARN for notification integration to connect to. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSqsRoleArn">awsSqsRoleArn</a></code> | <code>string</code> | AWS IAM role ARN for notification integration to assume. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.azureStorageQueuePrimaryUri">azureStorageQueuePrimaryUri</a></code> | <code>string</code> | The queue ID for the Azure Queue Storage queue created for Event Grid notifications. Required for AZURE_STORAGE_QUEUE provider. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.azureTenantId">azureTenantId</a></code> | <code>string</code> | The ID of the Azure Active Directory tenant used for identity management. Required for AZURE_STORAGE_QUEUE provider. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.comment">comment</a></code> | <code>string</code> | A comment for the integration. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.direction">direction</a></code> | <code>string</code> | Direction of the cloud messaging with respect to Snowflake (required only for error notifications). |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | (Default: `true`). |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.gcpPubsubSubscriptionName">gcpPubsubSubscriptionName</a></code> | <code>string</code> | The subscription id that Snowflake will listen to when using the GCP_PUBSUB provider. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.gcpPubsubTopicName">gcpPubsubTopicName</a></code> | <code>string</code> | The topic id that Snowflake will use to push notifications. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#id NotificationIntegration#id}. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts">NotificationIntegrationTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.type">type</a></code> | <code>string</code> | (Default: `QUEUE`) A type of integration. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1320,11 +1320,11 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#name NotificationIntegration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#name NotificationIntegration#name}.
 
 ---
 
-##### `notificationProvider`<sup>Required</sup> <a name="notificationProvider" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.notificationProvider"></a>
+##### `notificationProvider`<sup>Required</sup> <a name="notificationProvider" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.notificationProvider"></a>
 
 ```typescript
 public readonly notificationProvider: string;
@@ -1336,11 +1336,11 @@ The third-party cloud message queuing service (supported values: AZURE_STORAGE_Q
 
 AWS_SQS is deprecated and will be removed in the future provider versions)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#notification_provider NotificationIntegration#notification_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#notification_provider NotificationIntegration#notification_provider}
 
 ---
 
-##### `awsSnsRoleArn`<sup>Optional</sup> <a name="awsSnsRoleArn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSnsRoleArn"></a>
+##### `awsSnsRoleArn`<sup>Optional</sup> <a name="awsSnsRoleArn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSnsRoleArn"></a>
 
 ```typescript
 public readonly awsSnsRoleArn: string;
@@ -1350,11 +1350,11 @@ public readonly awsSnsRoleArn: string;
 
 AWS IAM role ARN for notification integration to assume. Required for AWS_SNS provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#aws_sns_role_arn NotificationIntegration#aws_sns_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#aws_sns_role_arn NotificationIntegration#aws_sns_role_arn}
 
 ---
 
-##### `awsSnsTopicArn`<sup>Optional</sup> <a name="awsSnsTopicArn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSnsTopicArn"></a>
+##### `awsSnsTopicArn`<sup>Optional</sup> <a name="awsSnsTopicArn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSnsTopicArn"></a>
 
 ```typescript
 public readonly awsSnsTopicArn: string;
@@ -1364,11 +1364,11 @@ public readonly awsSnsTopicArn: string;
 
 AWS SNS Topic ARN for notification integration to connect to. Required for AWS_SNS provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#aws_sns_topic_arn NotificationIntegration#aws_sns_topic_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#aws_sns_topic_arn NotificationIntegration#aws_sns_topic_arn}
 
 ---
 
-##### `awsSqsArn`<sup>Optional</sup> <a name="awsSqsArn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSqsArn"></a>
+##### `awsSqsArn`<sup>Optional</sup> <a name="awsSqsArn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSqsArn"></a>
 
 ```typescript
 public readonly awsSqsArn: string;
@@ -1378,11 +1378,11 @@ public readonly awsSqsArn: string;
 
 AWS SQS queue ARN for notification integration to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#aws_sqs_arn NotificationIntegration#aws_sqs_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#aws_sqs_arn NotificationIntegration#aws_sqs_arn}
 
 ---
 
-##### `awsSqsRoleArn`<sup>Optional</sup> <a name="awsSqsRoleArn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSqsRoleArn"></a>
+##### `awsSqsRoleArn`<sup>Optional</sup> <a name="awsSqsRoleArn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSqsRoleArn"></a>
 
 ```typescript
 public readonly awsSqsRoleArn: string;
@@ -1392,11 +1392,11 @@ public readonly awsSqsRoleArn: string;
 
 AWS IAM role ARN for notification integration to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#aws_sqs_role_arn NotificationIntegration#aws_sqs_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#aws_sqs_role_arn NotificationIntegration#aws_sqs_role_arn}
 
 ---
 
-##### `azureStorageQueuePrimaryUri`<sup>Optional</sup> <a name="azureStorageQueuePrimaryUri" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.azureStorageQueuePrimaryUri"></a>
+##### `azureStorageQueuePrimaryUri`<sup>Optional</sup> <a name="azureStorageQueuePrimaryUri" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.azureStorageQueuePrimaryUri"></a>
 
 ```typescript
 public readonly azureStorageQueuePrimaryUri: string;
@@ -1406,11 +1406,11 @@ public readonly azureStorageQueuePrimaryUri: string;
 
 The queue ID for the Azure Queue Storage queue created for Event Grid notifications. Required for AZURE_STORAGE_QUEUE provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#azure_storage_queue_primary_uri NotificationIntegration#azure_storage_queue_primary_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#azure_storage_queue_primary_uri NotificationIntegration#azure_storage_queue_primary_uri}
 
 ---
 
-##### `azureTenantId`<sup>Optional</sup> <a name="azureTenantId" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.azureTenantId"></a>
+##### `azureTenantId`<sup>Optional</sup> <a name="azureTenantId" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.azureTenantId"></a>
 
 ```typescript
 public readonly azureTenantId: string;
@@ -1420,11 +1420,11 @@ public readonly azureTenantId: string;
 
 The ID of the Azure Active Directory tenant used for identity management. Required for AZURE_STORAGE_QUEUE provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#azure_tenant_id NotificationIntegration#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#azure_tenant_id NotificationIntegration#azure_tenant_id}
 
 ---
 
-##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.comment"></a>
+##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -1434,11 +1434,11 @@ public readonly comment: string;
 
 A comment for the integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#comment NotificationIntegration#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#comment NotificationIntegration#comment}
 
 ---
 
-##### `direction`<sup>Optional</sup> <a name="direction" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.direction"></a>
+##### `direction`<sup>Optional</sup> <a name="direction" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.direction"></a>
 
 ```typescript
 public readonly direction: string;
@@ -1448,25 +1448,25 @@ public readonly direction: string;
 
 Direction of the cloud messaging with respect to Snowflake (required only for error notifications).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#direction NotificationIntegration#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#direction NotificationIntegration#direction}
 
 ---
 
-##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.enabled"></a>
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.enabled"></a>
 
 ```typescript
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 (Default: `true`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#enabled NotificationIntegration#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#enabled NotificationIntegration#enabled}
 
 ---
 
-##### `gcpPubsubSubscriptionName`<sup>Optional</sup> <a name="gcpPubsubSubscriptionName" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.gcpPubsubSubscriptionName"></a>
+##### `gcpPubsubSubscriptionName`<sup>Optional</sup> <a name="gcpPubsubSubscriptionName" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.gcpPubsubSubscriptionName"></a>
 
 ```typescript
 public readonly gcpPubsubSubscriptionName: string;
@@ -1476,11 +1476,11 @@ public readonly gcpPubsubSubscriptionName: string;
 
 The subscription id that Snowflake will listen to when using the GCP_PUBSUB provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#gcp_pubsub_subscription_name NotificationIntegration#gcp_pubsub_subscription_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#gcp_pubsub_subscription_name NotificationIntegration#gcp_pubsub_subscription_name}
 
 ---
 
-##### `gcpPubsubTopicName`<sup>Optional</sup> <a name="gcpPubsubTopicName" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.gcpPubsubTopicName"></a>
+##### `gcpPubsubTopicName`<sup>Optional</sup> <a name="gcpPubsubTopicName" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.gcpPubsubTopicName"></a>
 
 ```typescript
 public readonly gcpPubsubTopicName: string;
@@ -1490,11 +1490,11 @@ public readonly gcpPubsubTopicName: string;
 
 The topic id that Snowflake will use to push notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#gcp_pubsub_topic_name NotificationIntegration#gcp_pubsub_topic_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#gcp_pubsub_topic_name NotificationIntegration#gcp_pubsub_topic_name}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1502,28 +1502,28 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#id NotificationIntegration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#id NotificationIntegration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: NotificationIntegrationTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts">NotificationIntegrationTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts">NotificationIntegrationTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#timeouts NotificationIntegration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#timeouts NotificationIntegration#timeouts}
 
 ---
 
-##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.type"></a>
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -1533,16 +1533,16 @@ public readonly type: string;
 
 (Default: `QUEUE`) A type of integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#type NotificationIntegration#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#type NotificationIntegration#type}
 
 ---
 
-### NotificationIntegrationTimeouts <a name="NotificationIntegrationTimeouts" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts"></a>
+### NotificationIntegrationTimeouts <a name="NotificationIntegrationTimeouts" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts.Initializer"></a>
 
 ```typescript
-import { notificationIntegration } from '@cdktf/provider-snowflake'
+import { notificationIntegration } from '@cdktn/provider-snowflake'
 
 const notificationIntegrationTimeouts: notificationIntegration.NotificationIntegrationTimeouts = { ... }
 ```
@@ -1551,14 +1551,14 @@ const notificationIntegrationTimeouts: notificationIntegration.NotificationInteg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#create NotificationIntegration#create}. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#delete NotificationIntegration#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#read NotificationIntegration#read}. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#update NotificationIntegration#update}. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#create NotificationIntegration#create}. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#delete NotificationIntegration#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#read NotificationIntegration#read}. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#update NotificationIntegration#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1566,11 +1566,11 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#create NotificationIntegration#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#create NotificationIntegration#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -1578,11 +1578,11 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#delete NotificationIntegration#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#delete NotificationIntegration#delete}.
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -1590,11 +1590,11 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#read NotificationIntegration#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#read NotificationIntegration#read}.
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -1602,38 +1602,38 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/notification_integration#update NotificationIntegration#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/notification_integration#update NotificationIntegration#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### NotificationIntegrationTimeoutsOutputReference <a name="NotificationIntegrationTimeoutsOutputReference" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference"></a>
+### NotificationIntegrationTimeoutsOutputReference <a name="NotificationIntegrationTimeoutsOutputReference" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.Initializer"></a>
 
 ```typescript
-import { notificationIntegration } from '@cdktf/provider-snowflake'
+import { notificationIntegration } from '@cdktn/provider-snowflake'
 
 new notificationIntegration.NotificationIntegrationTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1645,153 +1645,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1799,13 +1799,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1815,25 +1815,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resetCreate"></a>
+##### `resetCreate` <a name="resetCreate" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resetCreate"></a>
 
 ```typescript
 public resetCreate(): void
 ```
 
-##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resetDelete"></a>
+##### `resetDelete` <a name="resetDelete" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resetDelete"></a>
 
 ```typescript
 public resetDelete(): void
 ```
 
-##### `resetRead` <a name="resetRead" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resetRead"></a>
+##### `resetRead` <a name="resetRead" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resetRead"></a>
 
 ```typescript
 public resetRead(): void
 ```
 
-##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resetUpdate"></a>
+##### `resetUpdate` <a name="resetUpdate" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.resetUpdate"></a>
 
 ```typescript
 public resetUpdate(): void
@@ -1844,21 +1844,21 @@ public resetUpdate(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts">NotificationIntegrationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts">NotificationIntegrationTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1872,7 +1872,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1882,7 +1882,7 @@ public readonly fqn: string;
 
 ---
 
-##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.createInput"></a>
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.createInput"></a>
 
 ```typescript
 public readonly createInput: string;
@@ -1892,7 +1892,7 @@ public readonly createInput: string;
 
 ---
 
-##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.deleteInput"></a>
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.deleteInput"></a>
 
 ```typescript
 public readonly deleteInput: string;
@@ -1902,7 +1902,7 @@ public readonly deleteInput: string;
 
 ---
 
-##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.readInput"></a>
+##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.readInput"></a>
 
 ```typescript
 public readonly readInput: string;
@@ -1912,7 +1912,7 @@ public readonly readInput: string;
 
 ---
 
-##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.updateInput"></a>
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.updateInput"></a>
 
 ```typescript
 public readonly updateInput: string;
@@ -1922,7 +1922,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1932,7 +1932,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -1942,7 +1942,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -1952,7 +1952,7 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -1962,13 +1962,13 @@ public readonly update: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | NotificationIntegrationTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts">NotificationIntegrationTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-snowflake.notificationIntegration.NotificationIntegrationTimeouts">NotificationIntegrationTimeouts</a>
 
 ---
 
