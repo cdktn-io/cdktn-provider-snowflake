@@ -137,6 +137,7 @@ export * as dataSnowflakeListings from './data-snowflake-listings';
 export * as dataSnowflakeMaskingPolicies from './data-snowflake-masking-policies';
 export * as dataSnowflakeMaterializedViews from './data-snowflake-materialized-views';
 export * as dataSnowflakeNetworkPolicies from './data-snowflake-network-policies';
+export * as dataSnowflakeNetworkRules from './data-snowflake-network-rules';
 export * as dataSnowflakeNotebooks from './data-snowflake-notebooks';
 export * as dataSnowflakeParameters from './data-snowflake-parameters';
 export * as dataSnowflakePipes from './data-snowflake-pipes';

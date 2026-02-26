@@ -4,7 +4,7 @@
 
 ### StorageIntegrationGcs <a name="StorageIntegrationGcs" id="@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcs"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs snowflake_storage_integration_gcs}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs snowflake_storage_integration_gcs}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcs.Initializer"></a>
 
@@ -46,7 +46,7 @@ storageIntegrationGcs.StorageIntegrationGcs(
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcs.Initializer.parameter.name">name</a></code> | <code>str</code> | String that specifies the identifier (i.e. name) for the integration; must be unique in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `\|`, `.`, `"`. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcs.Initializer.parameter.storageAllowedLocations">storage_allowed_locations</a></code> | <code>typing.List[str]</code> | Explicitly limits external stages that use the integration to reference one or more storage locations. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcs.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the storage integration. |
-| <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcs.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#id StorageIntegrationGcs#id}. |
+| <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcs.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#id StorageIntegrationGcs#id}. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcs.Initializer.parameter.storageBlockedLocations">storage_blocked_locations</a></code> | <code>typing.List[str]</code> | Explicitly prohibits external stages that use the integration from referencing one or more storage locations. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcs.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsTimeouts">StorageIntegrationGcsTimeouts</a></code> | timeouts block. |
 
@@ -120,7 +120,7 @@ Specifies whether this storage integration is available for usage in stages.
 
 `TRUE` allows users to create new stages that reference this integration. Existing stages that reference this integration function normally. `FALSE` prevents users from creating new stages that reference this integration. Existing stages that reference this integration cannot access the storage location in the stage definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#enabled StorageIntegrationGcs#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#enabled StorageIntegrationGcs#enabled}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 String that specifies the identifier (i.e. name) for the integration; must be unique in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#name StorageIntegrationGcs#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#name StorageIntegrationGcs#name}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Explicitly limits external stages that use the integration to reference one or more storage locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#storage_allowed_locations StorageIntegrationGcs#storage_allowed_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#storage_allowed_locations StorageIntegrationGcs#storage_allowed_locations}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the storage integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#comment StorageIntegrationGcs#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#comment StorageIntegrationGcs#comment}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#id StorageIntegrationGcs#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#id StorageIntegrationGcs#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -171,7 +171,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Explicitly prohibits external stages that use the integration from referencing one or more storage locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#storage_blocked_locations StorageIntegrationGcs#storage_blocked_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#storage_blocked_locations StorageIntegrationGcs#storage_blocked_locations}
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#timeouts StorageIntegrationGcs#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#timeouts StorageIntegrationGcs#timeouts}
 
 ---
 
@@ -584,7 +584,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#create StorageIntegrationGcs#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#create StorageIntegrationGcs#create}.
 
 ---
 
@@ -592,7 +592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#delete StorageIntegrationGcs#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#delete StorageIntegrationGcs#delete}.
 
 ---
 
@@ -600,7 +600,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#read StorageIntegrationGcs#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#read StorageIntegrationGcs#read}.
 
 ---
 
@@ -608,7 +608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#update StorageIntegrationGcs#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#update StorageIntegrationGcs#update}.
 
 ---
 
@@ -750,7 +750,7 @@ The construct id used in the generated config for the StorageIntegrationGcs to i
 
 The id of the existing StorageIntegrationGcs that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1172,7 +1172,7 @@ storageIntegrationGcs.StorageIntegrationGcsConfig(
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsConfig.property.name">name</a></code> | <code>str</code> | String that specifies the identifier (i.e. name) for the integration; must be unique in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `\|`, `.`, `"`. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsConfig.property.storageAllowedLocations">storage_allowed_locations</a></code> | <code>typing.List[str]</code> | Explicitly limits external stages that use the integration to reference one or more storage locations. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the storage integration. |
-| <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#id StorageIntegrationGcs#id}. |
+| <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#id StorageIntegrationGcs#id}. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsConfig.property.storageBlockedLocations">storage_blocked_locations</a></code> | <code>typing.List[str]</code> | Explicitly prohibits external stages that use the integration from referencing one or more storage locations. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsTimeouts">StorageIntegrationGcsTimeouts</a></code> | timeouts block. |
 
@@ -1260,7 +1260,7 @@ Specifies whether this storage integration is available for usage in stages.
 
 `TRUE` allows users to create new stages that reference this integration. Existing stages that reference this integration function normally. `FALSE` prevents users from creating new stages that reference this integration. Existing stages that reference this integration cannot access the storage location in the stage definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#enabled StorageIntegrationGcs#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#enabled StorageIntegrationGcs#enabled}
 
 ---
 
@@ -1274,7 +1274,7 @@ name: str
 
 String that specifies the identifier (i.e. name) for the integration; must be unique in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#name StorageIntegrationGcs#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#name StorageIntegrationGcs#name}
 
 ---
 
@@ -1288,7 +1288,7 @@ storage_allowed_locations: typing.List[str]
 
 Explicitly limits external stages that use the integration to reference one or more storage locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#storage_allowed_locations StorageIntegrationGcs#storage_allowed_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#storage_allowed_locations StorageIntegrationGcs#storage_allowed_locations}
 
 ---
 
@@ -1302,7 +1302,7 @@ comment: str
 
 Specifies a comment for the storage integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#comment StorageIntegrationGcs#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#comment StorageIntegrationGcs#comment}
 
 ---
 
@@ -1314,7 +1314,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#id StorageIntegrationGcs#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#id StorageIntegrationGcs#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1331,7 +1331,7 @@ storage_blocked_locations: typing.List[str]
 
 Explicitly prohibits external stages that use the integration from referencing one or more storage locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#storage_blocked_locations StorageIntegrationGcs#storage_blocked_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#storage_blocked_locations StorageIntegrationGcs#storage_blocked_locations}
 
 ---
 
@@ -1345,7 +1345,7 @@ timeouts: StorageIntegrationGcsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#timeouts StorageIntegrationGcs#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#timeouts StorageIntegrationGcs#timeouts}
 
 ---
 
@@ -1390,10 +1390,10 @@ storageIntegrationGcs.StorageIntegrationGcsTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#create StorageIntegrationGcs#create}. |
-| <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#delete StorageIntegrationGcs#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#read StorageIntegrationGcs#read}. |
-| <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#update StorageIntegrationGcs#update}. |
+| <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#create StorageIntegrationGcs#create}. |
+| <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#delete StorageIntegrationGcs#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#read StorageIntegrationGcs#read}. |
+| <code><a href="#@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#update StorageIntegrationGcs#update}. |
 
 ---
 
@@ -1405,7 +1405,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#create StorageIntegrationGcs#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#create StorageIntegrationGcs#create}.
 
 ---
 
@@ -1417,7 +1417,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#delete StorageIntegrationGcs#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#delete StorageIntegrationGcs#delete}.
 
 ---
 
@@ -1429,7 +1429,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#read StorageIntegrationGcs#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#read StorageIntegrationGcs#read}.
 
 ---
 
@@ -1441,7 +1441,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/storage_integration_gcs#update StorageIntegrationGcs#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/storage_integration_gcs#update StorageIntegrationGcs#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ExternalVolume <a name="ExternalVolume" id="@cdktn/provider-snowflake.externalVolume.ExternalVolume"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume snowflake_external_volume}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume snowflake_external_volume}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolume.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the ExternalVolume to import.
 
 The id of the existing ExternalVolume that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -928,7 +928,7 @@ const externalVolumeConfig: externalVolume.ExternalVolumeConfig = { ... }
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeConfig.property.storageLocation">storageLocation</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation">ExternalVolumeStorageLocation</a>[]</code> | storage_location block. |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeConfig.property.allowWrites">allowWrites</a></code> | <code>string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether write operations are allowed for the external volume; |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the external volume. |
-| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#id ExternalVolume#id}. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#id ExternalVolume#id}. |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts">ExternalVolumeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1015,7 +1015,7 @@ Identifier for the external volume;
 
 must be unique for your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#name ExternalVolume#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#name ExternalVolume#name}
 
 ---
 
@@ -1029,7 +1029,7 @@ public readonly storageLocation: IResolvable | ExternalVolumeStorageLocation[];
 
 storage_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#storage_location ExternalVolume#storage_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#storage_location ExternalVolume#storage_location}
 
 ---
 
@@ -1045,7 +1045,7 @@ public readonly allowWrites: string;
 
 must be set to TRUE for Iceberg tables that use Snowflake as the catalog. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#allow_writes ExternalVolume#allow_writes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#allow_writes ExternalVolume#allow_writes}
 
 ---
 
@@ -1059,7 +1059,7 @@ public readonly comment: string;
 
 Specifies a comment for the external volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#comment ExternalVolume#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#comment ExternalVolume#comment}
 
 ---
 
@@ -1071,7 +1071,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#id ExternalVolume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#id ExternalVolume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1088,7 +1088,7 @@ public readonly timeouts: ExternalVolumeTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#timeouts ExternalVolume#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#timeouts ExternalVolume#timeouts}
 
 ---
 
@@ -1148,7 +1148,7 @@ public readonly storageBaseUrl: string;
 
 Specifies the base URL for your cloud storage location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#storage_base_url ExternalVolume#storage_base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#storage_base_url ExternalVolume#storage_base_url}
 
 ---
 
@@ -1164,7 +1164,7 @@ Name of the storage location.
 
 Must be unique for the external volume. Do not use the name `terraform_provider_sentinel_storage_location` - this is reserved for the provider for performing update operations. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#storage_location_name ExternalVolume#storage_location_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#storage_location_name ExternalVolume#storage_location_name}
 
 ---
 
@@ -1180,7 +1180,7 @@ Specifies the cloud storage provider that stores your data files.
 
 Valid values are (case-insensitive): `GCS` | `AZURE` | `S3` | `S3GOV`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#storage_provider ExternalVolume#storage_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#storage_provider ExternalVolume#storage_provider}
 
 ---
 
@@ -1194,7 +1194,7 @@ public readonly azureTenantId: string;
 
 Specifies the ID for your Office 365 tenant that the allowed and blocked storage accounts belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#azure_tenant_id ExternalVolume#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#azure_tenant_id ExternalVolume#azure_tenant_id}
 
 ---
 
@@ -1208,7 +1208,7 @@ public readonly encryptionKmsKeyId: string;
 
 Specifies the ID for the KMS-managed key used to encrypt files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#encryption_kms_key_id ExternalVolume#encryption_kms_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#encryption_kms_key_id ExternalVolume#encryption_kms_key_id}
 
 ---
 
@@ -1222,7 +1222,7 @@ public readonly encryptionType: string;
 
 Specifies the encryption type used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#encryption_type ExternalVolume#encryption_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#encryption_type ExternalVolume#encryption_type}
 
 ---
 
@@ -1236,7 +1236,7 @@ public readonly storageAwsRoleArn: string;
 
 Specifies the case-sensitive Amazon Resource Name (ARN) of the AWS identity and access management (IAM) role that grants privileges on the S3 bucket containing your data files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#storage_aws_role_arn ExternalVolume#storage_aws_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#storage_aws_role_arn ExternalVolume#storage_aws_role_arn}
 
 ---
 
@@ -1254,10 +1254,10 @@ const externalVolumeTimeouts: externalVolume.ExternalVolumeTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#create ExternalVolume#create}. |
-| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#delete ExternalVolume#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#read ExternalVolume#read}. |
-| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#update ExternalVolume#update}. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#create ExternalVolume#create}. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#delete ExternalVolume#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#read ExternalVolume#read}. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#update ExternalVolume#update}. |
 
 ---
 
@@ -1269,7 +1269,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#create ExternalVolume#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#create ExternalVolume#create}.
 
 ---
 
@@ -1281,7 +1281,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#delete ExternalVolume#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#delete ExternalVolume#delete}.
 
 ---
 
@@ -1293,7 +1293,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#read ExternalVolume#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#read ExternalVolume#read}.
 
 ---
 
@@ -1305,7 +1305,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/external_volume#update ExternalVolume#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/external_volume#update ExternalVolume#update}.
 
 ---
 
