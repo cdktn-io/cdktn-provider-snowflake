@@ -4,7 +4,7 @@
 
 ### Tag <a name="Tag" id="@cdktn/provider-snowflake.tag.Tag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag snowflake_tag}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag snowflake_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.tag.Tag.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the Tag to import.
 
 The id of the existing Tag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -972,7 +972,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
 | <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema in which to create the tag. |
 | <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.allowedValues">AllowedValues</a></code> | <code>*[]*string</code> | Set of allowed values for the tag. |
 | <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the tag. |
-| <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag#id Tag#id}. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag#id Tag#id}. |
 | <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.maskingPolicies">MaskingPolicies</a></code> | <code>*[]*string</code> | Set of masking policies for the tag. |
 | <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.tag.TagTimeouts">TagTimeouts</a></code> | timeouts block. |
 
@@ -1060,7 +1060,7 @@ The database in which to create the tag.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag#database Tag#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag#database Tag#database}
 
 ---
 
@@ -1076,7 +1076,7 @@ Specifies the identifier for the tag;
 
 must be unique for the database in which the tag is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag#name Tag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag#name Tag#name}
 
 ---
 
@@ -1092,7 +1092,7 @@ The schema in which to create the tag.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag#schema Tag#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag#schema Tag#schema}
 
 ---
 
@@ -1106,7 +1106,7 @@ AllowedValues *[]*string
 
 Set of allowed values for the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag#allowed_values Tag#allowed_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag#allowed_values Tag#allowed_values}
 
 ---
 
@@ -1120,7 +1120,7 @@ Comment *string
 
 Specifies a comment for the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag#comment Tag#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag#comment Tag#comment}
 
 ---
 
@@ -1132,7 +1132,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag#id Tag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag#id Tag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1151,7 +1151,7 @@ Set of masking policies for the tag.
 
 A tag can support one masking policy for each data type. If masking policies are assigned to the tag, before dropping the tag, the provider automatically unassigns them. For more information about this resource, see [docs](./masking_policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag#masking_policies Tag#masking_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag#masking_policies Tag#masking_policies}
 
 ---
 
@@ -1165,7 +1165,7 @@ Timeouts TagTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag#timeouts Tag#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag#timeouts Tag#timeouts}
 
 ---
 
@@ -1201,10 +1201,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.tag.TagTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag#create Tag#create}. |
-| <code><a href="#@cdktn/provider-snowflake.tag.TagTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag#delete Tag#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.tag.TagTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag#read Tag#read}. |
-| <code><a href="#@cdktn/provider-snowflake.tag.TagTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag#update Tag#update}. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag#create Tag#create}. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag#delete Tag#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag#read Tag#read}. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag#update Tag#update}. |
 
 ---
 
@@ -1216,7 +1216,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag#create Tag#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag#create Tag#create}.
 
 ---
 
@@ -1228,7 +1228,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag#delete Tag#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag#delete Tag#delete}.
 
 ---
 
@@ -1240,7 +1240,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag#read Tag#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag#read Tag#read}.
 
 ---
 
@@ -1252,7 +1252,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.13.0/docs/resources/tag#update Tag#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/tag#update Tag#update}.
 
 ---
 

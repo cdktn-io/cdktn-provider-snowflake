@@ -45,6 +45,7 @@ The following submodules are available:
 - [dataSnowflakeMaskingPolicies](./dataSnowflakeMaskingPolicies.typescript.md)
 - [dataSnowflakeMaterializedViews](./dataSnowflakeMaterializedViews.typescript.md)
 - [dataSnowflakeNetworkPolicies](./dataSnowflakeNetworkPolicies.typescript.md)
+- [dataSnowflakeNetworkRules](./dataSnowflakeNetworkRules.typescript.md)
 - [dataSnowflakeNotebooks](./dataSnowflakeNotebooks.typescript.md)
 - [dataSnowflakeParameters](./dataSnowflakeParameters.typescript.md)
 - [dataSnowflakePipes](./dataSnowflakePipes.typescript.md)

@@ -45,6 +45,7 @@ The following submodules are available:
 - [dataSnowflakeMaskingPolicies](./dataSnowflakeMaskingPolicies.python.md)
 - [dataSnowflakeMaterializedViews](./dataSnowflakeMaterializedViews.python.md)
 - [dataSnowflakeNetworkPolicies](./dataSnowflakeNetworkPolicies.python.md)
+- [dataSnowflakeNetworkRules](./dataSnowflakeNetworkRules.python.md)
 - [dataSnowflakeNotebooks](./dataSnowflakeNotebooks.python.md)
 - [dataSnowflakeParameters](./dataSnowflakeParameters.python.md)
 - [dataSnowflakePipes](./dataSnowflakePipes.python.md)
