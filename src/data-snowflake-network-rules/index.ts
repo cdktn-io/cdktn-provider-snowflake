@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/git_repositories
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,9 +11,9 @@ import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataSnowflakeGitRepositoriesConfig extends cdktn.TerraformMetaArguments {
+export interface DataSnowflakeNetworkRulesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/git_repositories#id DataSnowflakeGitRepositories#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#id DataSnowflakeNetworkRules#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,32 +22,38 @@ export interface DataSnowflakeGitRepositoriesConfig extends cdktn.TerraformMetaA
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/git_repositories#like DataSnowflakeGitRepositories#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#like DataSnowflakeNetworkRules#like}
   */
   readonly like?: string;
   /**
-  * (Default: `true`) Runs DESC GIT REPOSITORY for each git repository returned by SHOW GIT REPOSITORIES. The output of describe is saved to the description field. By default this value is set to true.
+  * Filters the output with **case-sensitive** characters indicating the beginning of the object name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/git_repositories#with_describe DataSnowflakeGitRepositories#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#starts_with DataSnowflakeNetworkRules#starts_with}
+  */
+  readonly startsWith?: string;
+  /**
+  * (Default: `true`) Runs DESC NETWORK RULE for each network rule returned by SHOW NETWORK RULES. The output of describe is saved to the description field. By default this value is set to true.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#with_describe DataSnowflakeNetworkRules#with_describe}
   */
   readonly withDescribe?: boolean | cdktn.IResolvable;
   /**
   * in block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/git_repositories#in DataSnowflakeGitRepositories#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#in DataSnowflakeNetworkRules#in}
   */
-  readonly in?: DataSnowflakeGitRepositoriesIn;
+  readonly in?: DataSnowflakeNetworkRulesIn;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/git_repositories#limit DataSnowflakeGitRepositories#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#limit DataSnowflakeNetworkRules#limit}
   */
-  readonly limit?: DataSnowflakeGitRepositoriesLimit;
+  readonly limit?: DataSnowflakeNetworkRulesLimit;
 }
-export interface DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutput {
+export interface DataSnowflakeNetworkRulesNetworkRulesDescribeOutput {
 }
 
-export function dataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputToTerraform(struct?: DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutput): any {
+export function dataSnowflakeNetworkRulesNetworkRulesDescribeOutputToTerraform(struct?: DataSnowflakeNetworkRulesNetworkRulesDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -57,7 +63,7 @@ export function dataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputToTerra
 }
 
 
-export function dataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputToHclTerraform(struct?: DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutput): any {
+export function dataSnowflakeNetworkRulesNetworkRulesDescribeOutputToHclTerraform(struct?: DataSnowflakeNetworkRulesNetworkRulesDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -67,7 +73,7 @@ export function dataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputToHclTe
   return attrs;
 }
 
-export class DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputOutputReference extends cdktn.ComplexObject {
+export class DataSnowflakeNetworkRulesNetworkRulesDescribeOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -80,24 +86,19 @@ export class DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputOutputRefe
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutput | undefined {
+  public get internalValue(): DataSnowflakeNetworkRulesNetworkRulesDescribeOutput | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutput | undefined) {
+  public set internalValue(value: DataSnowflakeNetworkRulesNetworkRulesDescribeOutput | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
-  }
-
-  // api_integration - computed: true, optional: false, required: false
-  public get apiIntegration() {
-    return this.getStringAttribute('api_integration');
   }
 
   // comment - computed: true, optional: false, required: false
@@ -115,14 +116,9 @@ export class DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputOutputRefe
     return this.getStringAttribute('database_name');
   }
 
-  // git_credentials - computed: true, optional: false, required: false
-  public get gitCredentials() {
-    return this.getStringAttribute('git_credentials');
-  }
-
-  // last_fetched_at - computed: true, optional: false, required: false
-  public get lastFetchedAt() {
-    return this.getStringAttribute('last_fetched_at');
+  // mode - computed: true, optional: false, required: false
+  public get mode() {
+    return this.getStringAttribute('mode');
   }
 
   // name - computed: true, optional: false, required: false
@@ -130,28 +126,28 @@ export class DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputOutputRefe
     return this.getStringAttribute('name');
   }
 
-  // origin - computed: true, optional: false, required: false
-  public get origin() {
-    return this.getStringAttribute('origin');
-  }
-
   // owner - computed: true, optional: false, required: false
   public get owner() {
     return this.getStringAttribute('owner');
-  }
-
-  // owner_role_type - computed: true, optional: false, required: false
-  public get ownerRoleType() {
-    return this.getStringAttribute('owner_role_type');
   }
 
   // schema_name - computed: true, optional: false, required: false
   public get schemaName() {
     return this.getStringAttribute('schema_name');
   }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+
+  // value_list - computed: true, optional: false, required: false
+  public get valueList() {
+    return this.getListAttribute('value_list');
+  }
 }
 
-export class DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputList extends cdktn.ComplexList {
+export class DataSnowflakeNetworkRulesNetworkRulesDescribeOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -165,14 +161,14 @@ export class DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputList exten
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputOutputReference {
-    return new DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataSnowflakeNetworkRulesNetworkRulesDescribeOutputOutputReference {
+    return new DataSnowflakeNetworkRulesNetworkRulesDescribeOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataSnowflakeGitRepositoriesGitRepositoriesShowOutput {
+export interface DataSnowflakeNetworkRulesNetworkRulesShowOutput {
 }
 
-export function dataSnowflakeGitRepositoriesGitRepositoriesShowOutputToTerraform(struct?: DataSnowflakeGitRepositoriesGitRepositoriesShowOutput): any {
+export function dataSnowflakeNetworkRulesNetworkRulesShowOutputToTerraform(struct?: DataSnowflakeNetworkRulesNetworkRulesShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -182,7 +178,7 @@ export function dataSnowflakeGitRepositoriesGitRepositoriesShowOutputToTerraform
 }
 
 
-export function dataSnowflakeGitRepositoriesGitRepositoriesShowOutputToHclTerraform(struct?: DataSnowflakeGitRepositoriesGitRepositoriesShowOutput): any {
+export function dataSnowflakeNetworkRulesNetworkRulesShowOutputToHclTerraform(struct?: DataSnowflakeNetworkRulesNetworkRulesShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -192,7 +188,7 @@ export function dataSnowflakeGitRepositoriesGitRepositoriesShowOutputToHclTerraf
   return attrs;
 }
 
-export class DataSnowflakeGitRepositoriesGitRepositoriesShowOutputOutputReference extends cdktn.ComplexObject {
+export class DataSnowflakeNetworkRulesNetworkRulesShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -205,24 +201,19 @@ export class DataSnowflakeGitRepositoriesGitRepositoriesShowOutputOutputReferenc
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataSnowflakeGitRepositoriesGitRepositoriesShowOutput | undefined {
+  public get internalValue(): DataSnowflakeNetworkRulesNetworkRulesShowOutput | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataSnowflakeGitRepositoriesGitRepositoriesShowOutput | undefined) {
+  public set internalValue(value: DataSnowflakeNetworkRulesNetworkRulesShowOutput | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
-  }
-
-  // api_integration - computed: true, optional: false, required: false
-  public get apiIntegration() {
-    return this.getStringAttribute('api_integration');
   }
 
   // comment - computed: true, optional: false, required: false
@@ -240,24 +231,19 @@ export class DataSnowflakeGitRepositoriesGitRepositoriesShowOutputOutputReferenc
     return this.getStringAttribute('database_name');
   }
 
-  // git_credentials - computed: true, optional: false, required: false
-  public get gitCredentials() {
-    return this.getStringAttribute('git_credentials');
+  // entries_in_value_list - computed: true, optional: false, required: false
+  public get entriesInValueList() {
+    return this.getNumberAttribute('entries_in_value_list');
   }
 
-  // last_fetched_at - computed: true, optional: false, required: false
-  public get lastFetchedAt() {
-    return this.getStringAttribute('last_fetched_at');
+  // mode - computed: true, optional: false, required: false
+  public get mode() {
+    return this.getStringAttribute('mode');
   }
 
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
-  }
-
-  // origin - computed: true, optional: false, required: false
-  public get origin() {
-    return this.getStringAttribute('origin');
   }
 
   // owner - computed: true, optional: false, required: false
@@ -274,9 +260,14 @@ export class DataSnowflakeGitRepositoriesGitRepositoriesShowOutputOutputReferenc
   public get schemaName() {
     return this.getStringAttribute('schema_name');
   }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
 }
 
-export class DataSnowflakeGitRepositoriesGitRepositoriesShowOutputList extends cdktn.ComplexList {
+export class DataSnowflakeNetworkRulesNetworkRulesShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -290,14 +281,14 @@ export class DataSnowflakeGitRepositoriesGitRepositoriesShowOutputList extends c
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataSnowflakeGitRepositoriesGitRepositoriesShowOutputOutputReference {
-    return new DataSnowflakeGitRepositoriesGitRepositoriesShowOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataSnowflakeNetworkRulesNetworkRulesShowOutputOutputReference {
+    return new DataSnowflakeNetworkRulesNetworkRulesShowOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataSnowflakeGitRepositoriesGitRepositories {
+export interface DataSnowflakeNetworkRulesNetworkRules {
 }
 
-export function dataSnowflakeGitRepositoriesGitRepositoriesToTerraform(struct?: DataSnowflakeGitRepositoriesGitRepositories): any {
+export function dataSnowflakeNetworkRulesNetworkRulesToTerraform(struct?: DataSnowflakeNetworkRulesNetworkRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -307,7 +298,7 @@ export function dataSnowflakeGitRepositoriesGitRepositoriesToTerraform(struct?: 
 }
 
 
-export function dataSnowflakeGitRepositoriesGitRepositoriesToHclTerraform(struct?: DataSnowflakeGitRepositoriesGitRepositories): any {
+export function dataSnowflakeNetworkRulesNetworkRulesToHclTerraform(struct?: DataSnowflakeNetworkRulesNetworkRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -317,7 +308,7 @@ export function dataSnowflakeGitRepositoriesGitRepositoriesToHclTerraform(struct
   return attrs;
 }
 
-export class DataSnowflakeGitRepositoriesGitRepositoriesOutputReference extends cdktn.ComplexObject {
+export class DataSnowflakeNetworkRulesNetworkRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -330,13 +321,13 @@ export class DataSnowflakeGitRepositoriesGitRepositoriesOutputReference extends 
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataSnowflakeGitRepositoriesGitRepositories | undefined {
+  public get internalValue(): DataSnowflakeNetworkRulesNetworkRules | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataSnowflakeGitRepositoriesGitRepositories | undefined) {
+  public set internalValue(value: DataSnowflakeNetworkRulesNetworkRules | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -346,19 +337,19 @@ export class DataSnowflakeGitRepositoriesGitRepositoriesOutputReference extends 
   }
 
   // describe_output - computed: true, optional: false, required: false
-  private _describeOutput = new DataSnowflakeGitRepositoriesGitRepositoriesDescribeOutputList(this, "describe_output", false);
+  private _describeOutput = new DataSnowflakeNetworkRulesNetworkRulesDescribeOutputList(this, "describe_output", false);
   public get describeOutput() {
     return this._describeOutput;
   }
 
   // show_output - computed: true, optional: false, required: false
-  private _showOutput = new DataSnowflakeGitRepositoriesGitRepositoriesShowOutputList(this, "show_output", false);
+  private _showOutput = new DataSnowflakeNetworkRulesNetworkRulesShowOutputList(this, "show_output", false);
   public get showOutput() {
     return this._showOutput;
   }
 }
 
-export class DataSnowflakeGitRepositoriesGitRepositoriesList extends cdktn.ComplexList {
+export class DataSnowflakeNetworkRulesNetworkRulesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -372,32 +363,32 @@ export class DataSnowflakeGitRepositoriesGitRepositoriesList extends cdktn.Compl
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataSnowflakeGitRepositoriesGitRepositoriesOutputReference {
-    return new DataSnowflakeGitRepositoriesGitRepositoriesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataSnowflakeNetworkRulesNetworkRulesOutputReference {
+    return new DataSnowflakeNetworkRulesNetworkRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataSnowflakeGitRepositoriesIn {
+export interface DataSnowflakeNetworkRulesIn {
   /**
   * Returns records for the entire account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/git_repositories#account DataSnowflakeGitRepositories#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#account DataSnowflakeNetworkRules#account}
   */
   readonly account?: boolean | cdktn.IResolvable;
   /**
   * Returns records for the current database in use or for a specified database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/git_repositories#database DataSnowflakeGitRepositories#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#database DataSnowflakeNetworkRules#database}
   */
   readonly database?: string;
   /**
   * Returns records for the current schema in use or a specified schema. Use fully qualified name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/git_repositories#schema DataSnowflakeGitRepositories#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#schema DataSnowflakeNetworkRules#schema}
   */
   readonly schema?: string;
 }
 
-export function dataSnowflakeGitRepositoriesInToTerraform(struct?: DataSnowflakeGitRepositoriesInOutputReference | DataSnowflakeGitRepositoriesIn): any {
+export function dataSnowflakeNetworkRulesInToTerraform(struct?: DataSnowflakeNetworkRulesInOutputReference | DataSnowflakeNetworkRulesIn): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -410,7 +401,7 @@ export function dataSnowflakeGitRepositoriesInToTerraform(struct?: DataSnowflake
 }
 
 
-export function dataSnowflakeGitRepositoriesInToHclTerraform(struct?: DataSnowflakeGitRepositoriesInOutputReference | DataSnowflakeGitRepositoriesIn): any {
+export function dataSnowflakeNetworkRulesInToHclTerraform(struct?: DataSnowflakeNetworkRulesInOutputReference | DataSnowflakeNetworkRulesIn): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -440,7 +431,7 @@ export function dataSnowflakeGitRepositoriesInToHclTerraform(struct?: DataSnowfl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataSnowflakeGitRepositoriesInOutputReference extends cdktn.ComplexObject {
+export class DataSnowflakeNetworkRulesInOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -451,7 +442,7 @@ export class DataSnowflakeGitRepositoriesInOutputReference extends cdktn.Complex
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): DataSnowflakeGitRepositoriesIn | undefined {
+  public get internalValue(): DataSnowflakeNetworkRulesIn | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._account !== undefined) {
@@ -469,7 +460,7 @@ export class DataSnowflakeGitRepositoriesInOutputReference extends cdktn.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataSnowflakeGitRepositoriesIn | undefined) {
+  public set internalValue(value: DataSnowflakeNetworkRulesIn | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._account = undefined;
@@ -532,22 +523,22 @@ export class DataSnowflakeGitRepositoriesInOutputReference extends cdktn.Complex
     return this._schema;
   }
 }
-export interface DataSnowflakeGitRepositoriesLimit {
+export interface DataSnowflakeNetworkRulesLimit {
   /**
   * Specifies a **case-sensitive** pattern that is used to match object name. After the first match, the limit on the number of rows will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/git_repositories#from DataSnowflakeGitRepositories#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#from DataSnowflakeNetworkRules#from}
   */
   readonly from?: string;
   /**
   * The maximum number of rows to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/git_repositories#rows DataSnowflakeGitRepositories#rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#rows DataSnowflakeNetworkRules#rows}
   */
   readonly rows: number;
 }
 
-export function dataSnowflakeGitRepositoriesLimitToTerraform(struct?: DataSnowflakeGitRepositoriesLimitOutputReference | DataSnowflakeGitRepositoriesLimit): any {
+export function dataSnowflakeNetworkRulesLimitToTerraform(struct?: DataSnowflakeNetworkRulesLimitOutputReference | DataSnowflakeNetworkRulesLimit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -559,7 +550,7 @@ export function dataSnowflakeGitRepositoriesLimitToTerraform(struct?: DataSnowfl
 }
 
 
-export function dataSnowflakeGitRepositoriesLimitToHclTerraform(struct?: DataSnowflakeGitRepositoriesLimitOutputReference | DataSnowflakeGitRepositoriesLimit): any {
+export function dataSnowflakeNetworkRulesLimitToHclTerraform(struct?: DataSnowflakeNetworkRulesLimitOutputReference | DataSnowflakeNetworkRulesLimit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -583,7 +574,7 @@ export function dataSnowflakeGitRepositoriesLimitToHclTerraform(struct?: DataSno
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataSnowflakeGitRepositoriesLimitOutputReference extends cdktn.ComplexObject {
+export class DataSnowflakeNetworkRulesLimitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -594,7 +585,7 @@ export class DataSnowflakeGitRepositoriesLimitOutputReference extends cdktn.Comp
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): DataSnowflakeGitRepositoriesLimit | undefined {
+  public get internalValue(): DataSnowflakeNetworkRulesLimit | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._from !== undefined) {
@@ -608,7 +599,7 @@ export class DataSnowflakeGitRepositoriesLimitOutputReference extends cdktn.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataSnowflakeGitRepositoriesLimit | undefined) {
+  public set internalValue(value: DataSnowflakeNetworkRulesLimit | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._from = undefined;
@@ -652,27 +643,27 @@ export class DataSnowflakeGitRepositoriesLimitOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/git_repositories snowflake_git_repositories}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules snowflake_network_rules}
 */
-export class DataSnowflakeGitRepositories extends cdktn.TerraformDataSource {
+export class DataSnowflakeNetworkRules extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "snowflake_git_repositories";
+  public static readonly tfResourceType = "snowflake_network_rules";
 
   // ==============
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTN code for importing a DataSnowflakeGitRepositories resource upon running "cdktn plan <stack-name>"
+  * Generates CDKTN code for importing a DataSnowflakeNetworkRules resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
-  * @param importToId The construct id used in the generated config for the DataSnowflakeGitRepositories to import
-  * @param importFromId The id of the existing DataSnowflakeGitRepositories that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/git_repositories#import import section} in the documentation of this resource for the id to use
-  * @param provider? Optional instance of the provider where the DataSnowflakeGitRepositories to import is found
+  * @param importToId The construct id used in the generated config for the DataSnowflakeNetworkRules to import
+  * @param importFromId The id of the existing DataSnowflakeNetworkRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataSnowflakeNetworkRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
-        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_git_repositories", importId: importFromId, provider });
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_network_rules", importId: importFromId, provider });
       }
 
   // ===========
@@ -680,15 +671,15 @@ export class DataSnowflakeGitRepositories extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/git_repositories snowflake_git_repositories} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules snowflake_network_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataSnowflakeGitRepositoriesConfig = {}
+  * @param options DataSnowflakeNetworkRulesConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataSnowflakeGitRepositoriesConfig = {}) {
+  public constructor(scope: Construct, id: string, config: DataSnowflakeNetworkRulesConfig = {}) {
     super(scope, id, {
-      terraformResourceType: 'snowflake_git_repositories',
+      terraformResourceType: 'snowflake_network_rules',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
         providerVersion: '2.14.0',
@@ -704,6 +695,7 @@ export class DataSnowflakeGitRepositories extends cdktn.TerraformDataSource {
     });
     this._id = config.id;
     this._like = config.like;
+    this._startsWith = config.startsWith;
     this._withDescribe = config.withDescribe;
     this._in.internalValue = config.in;
     this._limit.internalValue = config.limit;
@@ -712,12 +704,6 @@ export class DataSnowflakeGitRepositories extends cdktn.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // git_repositories - computed: true, optional: false, required: false
-  private _gitRepositories = new DataSnowflakeGitRepositoriesGitRepositoriesList(this, "git_repositories", false);
-  public get gitRepositories() {
-    return this._gitRepositories;
-  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -751,6 +737,28 @@ export class DataSnowflakeGitRepositories extends cdktn.TerraformDataSource {
     return this._like;
   }
 
+  // network_rules - computed: true, optional: false, required: false
+  private _networkRules = new DataSnowflakeNetworkRulesNetworkRulesList(this, "network_rules", false);
+  public get networkRules() {
+    return this._networkRules;
+  }
+
+  // starts_with - computed: false, optional: true, required: false
+  private _startsWith?: string; 
+  public get startsWith() {
+    return this.getStringAttribute('starts_with');
+  }
+  public set startsWith(value: string) {
+    this._startsWith = value;
+  }
+  public resetStartsWith() {
+    this._startsWith = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startsWithInput() {
+    return this._startsWith;
+  }
+
   // with_describe - computed: false, optional: true, required: false
   private _withDescribe?: boolean | cdktn.IResolvable; 
   public get withDescribe() {
@@ -768,11 +776,11 @@ export class DataSnowflakeGitRepositories extends cdktn.TerraformDataSource {
   }
 
   // in - computed: false, optional: true, required: false
-  private _in = new DataSnowflakeGitRepositoriesInOutputReference(this, "in");
+  private _in = new DataSnowflakeNetworkRulesInOutputReference(this, "in");
   public get in() {
     return this._in;
   }
-  public putIn(value: DataSnowflakeGitRepositoriesIn) {
+  public putIn(value: DataSnowflakeNetworkRulesIn) {
     this._in.internalValue = value;
   }
   public resetIn() {
@@ -784,11 +792,11 @@ export class DataSnowflakeGitRepositories extends cdktn.TerraformDataSource {
   }
 
   // limit - computed: false, optional: true, required: false
-  private _limit = new DataSnowflakeGitRepositoriesLimitOutputReference(this, "limit");
+  private _limit = new DataSnowflakeNetworkRulesLimitOutputReference(this, "limit");
   public get limit() {
     return this._limit;
   }
-  public putLimit(value: DataSnowflakeGitRepositoriesLimit) {
+  public putLimit(value: DataSnowflakeNetworkRulesLimit) {
     this._limit.internalValue = value;
   }
   public resetLimit() {
@@ -807,9 +815,10 @@ export class DataSnowflakeGitRepositories extends cdktn.TerraformDataSource {
     return {
       id: cdktn.stringToTerraform(this._id),
       like: cdktn.stringToTerraform(this._like),
+      starts_with: cdktn.stringToTerraform(this._startsWith),
       with_describe: cdktn.booleanToTerraform(this._withDescribe),
-      in: dataSnowflakeGitRepositoriesInToTerraform(this._in.internalValue),
-      limit: dataSnowflakeGitRepositoriesLimitToTerraform(this._limit.internalValue),
+      in: dataSnowflakeNetworkRulesInToTerraform(this._in.internalValue),
+      limit: dataSnowflakeNetworkRulesLimitToTerraform(this._limit.internalValue),
     };
   }
 
@@ -827,6 +836,12 @@ export class DataSnowflakeGitRepositories extends cdktn.TerraformDataSource {
         type: "simple",
         storageClassType: "string",
       },
+      starts_with: {
+        value: cdktn.stringToHclTerraform(this._startsWith),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       with_describe: {
         value: cdktn.booleanToHclTerraform(this._withDescribe),
         isBlock: false,
@@ -834,16 +849,16 @@ export class DataSnowflakeGitRepositories extends cdktn.TerraformDataSource {
         storageClassType: "boolean",
       },
       in: {
-        value: dataSnowflakeGitRepositoriesInToHclTerraform(this._in.internalValue),
+        value: dataSnowflakeNetworkRulesInToHclTerraform(this._in.internalValue),
         isBlock: true,
         type: "list",
-        storageClassType: "DataSnowflakeGitRepositoriesInList",
+        storageClassType: "DataSnowflakeNetworkRulesInList",
       },
       limit: {
-        value: dataSnowflakeGitRepositoriesLimitToHclTerraform(this._limit.internalValue),
+        value: dataSnowflakeNetworkRulesLimitToHclTerraform(this._limit.internalValue),
         isBlock: true,
         type: "list",
-        storageClassType: "DataSnowflakeGitRepositoriesLimitList",
+        storageClassType: "DataSnowflakeNetworkRulesLimitList",
       },
     };
 
