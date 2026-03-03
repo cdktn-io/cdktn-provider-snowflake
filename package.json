@@ -144,6 +144,13 @@
       }
     ]
   },
+  "cdktf": {
+    "isDeprecated": false,
+    "provider": {
+      "name": "registry.terraform.io/snowflakedb/snowflake",
+      "version": "2.14.0"
+    }
+  },
   "cdktn": {
     "isDeprecated": false,
     "provider": {
