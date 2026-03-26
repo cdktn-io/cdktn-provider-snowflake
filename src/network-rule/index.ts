@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface NetworkRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies a comment for the network rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule#comment NetworkRule#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_rule#comment NetworkRule#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the network rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule#database NetworkRule#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_rule#database NetworkRule#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule#id NetworkRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_rule#id NetworkRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,37 +34,37 @@ export interface NetworkRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies what is restricted by the network rule, see https://docs.snowflake.com/en/sql-reference/sql/create-network-rule#required-parameters for details. Valid values are (case-insensitive): `INGRESS` | `INTERNAL_STAGE` | `EGRESS` | `POSTGRES_INGRESS` | `POSTGRES_EGRESS`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule#mode NetworkRule#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_rule#mode NetworkRule#mode}
   */
   readonly mode: string;
   /**
   * Specifies the identifier for the network rule; must be unique for the database and schema in which the network rule is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule#name NetworkRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_rule#name NetworkRule#name}
   */
   readonly name: string;
   /**
   * The schema in which to create the network rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule#schema NetworkRule#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_rule#schema NetworkRule#schema}
   */
   readonly schema: string;
   /**
   * Specifies the type of network identifiers being allowed or blocked. A network rule can have only one type. Allowed values are determined by the mode of the network rule; see https://docs.snowflake.com/en/sql-reference/sql/create-network-rule#required-parameters for details. Valid values are (case-insensitive): `IPV4` | `AWSVPCEID` | `AZURELINKID` | `GCPPSCID` | `HOST_PORT` | `PRIVATE_HOST_PORT`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule#type NetworkRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_rule#type NetworkRule#type}
   */
   readonly type: string;
   /**
   * Specifies the network identifiers that will be allowed or blocked. Valid values in the list are determined by the type of network rule, see https://docs.snowflake.com/en/sql-reference/sql/create-network-rule#required-parameters for details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule#value_list NetworkRule#value_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_rule#value_list NetworkRule#value_list}
   */
   readonly valueList: string[];
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule#timeouts NetworkRule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_rule#timeouts NetworkRule#timeouts}
   */
   readonly timeouts?: NetworkRuleTimeouts;
 }
@@ -305,19 +305,19 @@ export class NetworkRuleShowOutputList extends cdktn.ComplexList {
 }
 export interface NetworkRuleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule#create NetworkRule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_rule#create NetworkRule#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule#delete NetworkRule#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_rule#delete NetworkRule#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule#read NetworkRule#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_rule#read NetworkRule#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule#update NetworkRule#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_rule#update NetworkRule#update}
   */
   readonly update?: string;
 }
@@ -498,7 +498,7 @@ export class NetworkRuleTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule snowflake_network_rule}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_rule snowflake_network_rule}
 */
 export class NetworkRule extends cdktn.TerraformResource {
 
@@ -514,7 +514,7 @@ export class NetworkRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkRule to import
-  * @param importFromId The id of the existing NetworkRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -526,7 +526,7 @@ export class NetworkRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_rule snowflake_network_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_rule snowflake_network_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -537,7 +537,7 @@ export class NetworkRule extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_network_rule',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.14.0',
+        providerVersion: '2.14.1',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
