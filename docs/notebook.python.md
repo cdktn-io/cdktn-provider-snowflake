@@ -4,7 +4,7 @@
 
 ### Notebook <a name="Notebook" id="@cdktn/provider-snowflake.notebook.Notebook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook snowflake_notebook}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook snowflake_notebook}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.notebook.Notebook.Initializer"></a>
 
@@ -51,7 +51,7 @@ notebook.Notebook(
 | <code><a href="#@cdktn/provider-snowflake.notebook.Notebook.Initializer.parameter.schema">schema</a></code> | <code>str</code> | The schema in which to create the notebook. |
 | <code><a href="#@cdktn/provider-snowflake.notebook.Notebook.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the notebook. |
 | <code><a href="#@cdktn/provider-snowflake.notebook.Notebook.Initializer.parameter.from">from</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-snowflake.notebook.NotebookFrom">NotebookFrom</a>]</code> | from block. |
-| <code><a href="#@cdktn/provider-snowflake.notebook.Notebook.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#id Notebook#id}. |
+| <code><a href="#@cdktn/provider-snowflake.notebook.Notebook.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#id Notebook#id}. |
 | <code><a href="#@cdktn/provider-snowflake.notebook.Notebook.Initializer.parameter.idleAutoShutdownTimeSeconds">idle_auto_shutdown_time_seconds</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of seconds of idle time before the notebook is shut down automatically. |
 | <code><a href="#@cdktn/provider-snowflake.notebook.Notebook.Initializer.parameter.mainFile">main_file</a></code> | <code>str</code> | Specifies a user-specified identifier for the notebook file name. |
 | <code><a href="#@cdktn/provider-snowflake.notebook.Notebook.Initializer.parameter.queryWarehouse">query_warehouse</a></code> | <code>str</code> | Specifies the warehouse where SQL queries in the notebook are run. Only upper-case identifiers are supported. |
@@ -128,7 +128,7 @@ The database in which to create the notebook.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#database Notebook#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#database Notebook#database}
 
 ---
 
@@ -140,7 +140,7 @@ Specifies the identifier for the notebook;
 
 must be unique for the schema in which the notebook is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#name Notebook#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#name Notebook#name}
 
 ---
 
@@ -152,7 +152,7 @@ The schema in which to create the notebook.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#schema Notebook#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#schema Notebook#schema}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the notebook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#comment Notebook#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#comment Notebook#comment}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#from Notebook#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#from Notebook#from}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#id Notebook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#id Notebook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -193,7 +193,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies the number of seconds of idle time before the notebook is shut down automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#idle_auto_shutdown_time_seconds Notebook#idle_auto_shutdown_time_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#idle_auto_shutdown_time_seconds Notebook#idle_auto_shutdown_time_seconds}
 
 ---
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a user-specified identifier for the notebook file name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#main_file Notebook#main_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#main_file Notebook#main_file}
 
 ---
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the warehouse where SQL queries in the notebook are run. Only upper-case identifiers are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#query_warehouse Notebook#query_warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#query_warehouse Notebook#query_warehouse}
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#timeouts Notebook#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#timeouts Notebook#timeouts}
 
 ---
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the warehouse that runs the notebook kernel and python code. Only upper-case identifiers are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#warehouse Notebook#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#warehouse Notebook#warehouse}
 
 ---
 
@@ -655,7 +655,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#create Notebook#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#create Notebook#create}.
 
 ---
 
@@ -663,7 +663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#delete Notebook#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#delete Notebook#delete}.
 
 ---
 
@@ -671,7 +671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#read Notebook#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#read Notebook#read}.
 
 ---
 
@@ -679,7 +679,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#update Notebook#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#update Notebook#update}.
 
 ---
 
@@ -845,7 +845,7 @@ The construct id used in the generated config for the Notebook to import.
 
 The id of the existing Notebook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1360,7 +1360,7 @@ notebook.NotebookConfig(
 | <code><a href="#@cdktn/provider-snowflake.notebook.NotebookConfig.property.schema">schema</a></code> | <code>str</code> | The schema in which to create the notebook. |
 | <code><a href="#@cdktn/provider-snowflake.notebook.NotebookConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the notebook. |
 | <code><a href="#@cdktn/provider-snowflake.notebook.NotebookConfig.property.from">from</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-snowflake.notebook.NotebookFrom">NotebookFrom</a>]</code> | from block. |
-| <code><a href="#@cdktn/provider-snowflake.notebook.NotebookConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#id Notebook#id}. |
+| <code><a href="#@cdktn/provider-snowflake.notebook.NotebookConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#id Notebook#id}. |
 | <code><a href="#@cdktn/provider-snowflake.notebook.NotebookConfig.property.idleAutoShutdownTimeSeconds">idle_auto_shutdown_time_seconds</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of seconds of idle time before the notebook is shut down automatically. |
 | <code><a href="#@cdktn/provider-snowflake.notebook.NotebookConfig.property.mainFile">main_file</a></code> | <code>str</code> | Specifies a user-specified identifier for the notebook file name. |
 | <code><a href="#@cdktn/provider-snowflake.notebook.NotebookConfig.property.queryWarehouse">query_warehouse</a></code> | <code>str</code> | Specifies the warehouse where SQL queries in the notebook are run. Only upper-case identifiers are supported. |
@@ -1451,7 +1451,7 @@ The database in which to create the notebook.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#database Notebook#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#database Notebook#database}
 
 ---
 
@@ -1467,7 +1467,7 @@ Specifies the identifier for the notebook;
 
 must be unique for the schema in which the notebook is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#name Notebook#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#name Notebook#name}
 
 ---
 
@@ -1483,7 +1483,7 @@ The schema in which to create the notebook.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#schema Notebook#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#schema Notebook#schema}
 
 ---
 
@@ -1497,7 +1497,7 @@ comment: str
 
 Specifies a comment for the notebook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#comment Notebook#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#comment Notebook#comment}
 
 ---
 
@@ -1511,7 +1511,7 @@ from: IResolvable | typing.List[NotebookFrom]
 
 from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#from Notebook#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#from Notebook#from}
 
 ---
 
@@ -1523,7 +1523,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#id Notebook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#id Notebook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1540,7 +1540,7 @@ idle_auto_shutdown_time_seconds: typing.Union[int, float]
 
 Specifies the number of seconds of idle time before the notebook is shut down automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#idle_auto_shutdown_time_seconds Notebook#idle_auto_shutdown_time_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#idle_auto_shutdown_time_seconds Notebook#idle_auto_shutdown_time_seconds}
 
 ---
 
@@ -1554,7 +1554,7 @@ main_file: str
 
 Specifies a user-specified identifier for the notebook file name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#main_file Notebook#main_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#main_file Notebook#main_file}
 
 ---
 
@@ -1568,7 +1568,7 @@ query_warehouse: str
 
 Specifies the warehouse where SQL queries in the notebook are run. Only upper-case identifiers are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#query_warehouse Notebook#query_warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#query_warehouse Notebook#query_warehouse}
 
 ---
 
@@ -1582,7 +1582,7 @@ timeouts: NotebookTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#timeouts Notebook#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#timeouts Notebook#timeouts}
 
 ---
 
@@ -1596,7 +1596,7 @@ warehouse: str
 
 Specifies the warehouse that runs the notebook kernel and python code. Only upper-case identifiers are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#warehouse Notebook#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#warehouse Notebook#warehouse}
 
 ---
 
@@ -1643,7 +1643,7 @@ stage: str
 
 Identifier of the stage where the .ipynb file is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#stage Notebook#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#stage Notebook#stage}
 
 ---
 
@@ -1657,7 +1657,7 @@ path: str
 
 Location of the .ipynb file in the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#path Notebook#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#path Notebook#path}
 
 ---
 
@@ -1691,10 +1691,10 @@ notebook.NotebookTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.notebook.NotebookTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#create Notebook#create}. |
-| <code><a href="#@cdktn/provider-snowflake.notebook.NotebookTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#delete Notebook#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.notebook.NotebookTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#read Notebook#read}. |
-| <code><a href="#@cdktn/provider-snowflake.notebook.NotebookTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#update Notebook#update}. |
+| <code><a href="#@cdktn/provider-snowflake.notebook.NotebookTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#create Notebook#create}. |
+| <code><a href="#@cdktn/provider-snowflake.notebook.NotebookTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#delete Notebook#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.notebook.NotebookTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#read Notebook#read}. |
+| <code><a href="#@cdktn/provider-snowflake.notebook.NotebookTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#update Notebook#update}. |
 
 ---
 
@@ -1706,7 +1706,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#create Notebook#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#create Notebook#create}.
 
 ---
 
@@ -1718,7 +1718,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#delete Notebook#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#delete Notebook#delete}.
 
 ---
 
@@ -1730,7 +1730,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#read Notebook#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#read Notebook#read}.
 
 ---
 
@@ -1742,7 +1742,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/notebook#update Notebook#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/notebook#update Notebook#update}.
 
 ---
 

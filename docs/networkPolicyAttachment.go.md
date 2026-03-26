@@ -4,7 +4,7 @@
 
 ### NetworkPolicyAttachment <a name="NetworkPolicyAttachment" id="@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment snowflake_network_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_policy_attachment snowflake_network_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachment.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the NetworkPolicyAttachment to
 
 The id of the existing NetworkPolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -870,7 +870,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkpol
 | <code><a href="#@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentConfig.property.networkPolicyName">NetworkPolicyName</a></code> | <code>*string</code> | Specifies the identifier for the network policy; |
-| <code><a href="#@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment#id NetworkPolicyAttachment#id}. |
+| <code><a href="#@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_policy_attachment#id NetworkPolicyAttachment#id}. |
 | <code><a href="#@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentConfig.property.setForAccount">SetForAccount</a></code> | <code>interface{}</code> | (Default: `false`) Specifies whether the network policy should be applied globally to your Snowflake account<br><br>**Note:** The Snowflake user running `terraform apply` must be on an IP address allowed by the network policy to set that policy globally on the Snowflake account.<br><br>Additionally, a Snowflake account can only have one network policy set globally at any given time. This resource does not enforce one-policy-per-account, it is the user's responsibility to enforce this. If multiple network policy resources have `set_for_account: true`, the final policy set on the account will be non-deterministic. |
 | <code><a href="#@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentTimeouts">NetworkPolicyAttachmentTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentConfig.property.users">Users</a></code> | <code>*[]*string</code> | Specifies which users the network policy should be attached to. |
@@ -959,7 +959,7 @@ Specifies the identifier for the network policy;
 
 must be unique for the account in which the network policy is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment#network_policy_name NetworkPolicyAttachment#network_policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_policy_attachment#network_policy_name NetworkPolicyAttachment#network_policy_name}
 
 ---
 
@@ -971,7 +971,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment#id NetworkPolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_policy_attachment#id NetworkPolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -988,7 +988,7 @@ SetForAccount interface{}
 
 (Default: `false`) Specifies whether the network policy should be applied globally to your Snowflake account<br><br>**Note:** The Snowflake user running `terraform apply` must be on an IP address allowed by the network policy to set that policy globally on the Snowflake account.<br><br>Additionally, a Snowflake account can only have one network policy set globally at any given time. This resource does not enforce one-policy-per-account, it is the user's responsibility to enforce this. If multiple network policy resources have `set_for_account: true`, the final policy set on the account will be non-deterministic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment#set_for_account NetworkPolicyAttachment#set_for_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_policy_attachment#set_for_account NetworkPolicyAttachment#set_for_account}
 
 ---
 
@@ -1002,7 +1002,7 @@ Timeouts NetworkPolicyAttachmentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment#timeouts NetworkPolicyAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_policy_attachment#timeouts NetworkPolicyAttachment#timeouts}
 
 ---
 
@@ -1016,7 +1016,7 @@ Users *[]*string
 
 Specifies which users the network policy should be attached to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment#users NetworkPolicyAttachment#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_policy_attachment#users NetworkPolicyAttachment#users}
 
 ---
 
@@ -1039,10 +1039,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkpol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment#create NetworkPolicyAttachment#create}. |
-| <code><a href="#@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment#delete NetworkPolicyAttachment#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment#read NetworkPolicyAttachment#read}. |
-| <code><a href="#@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment#update NetworkPolicyAttachment#update}. |
+| <code><a href="#@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_policy_attachment#create NetworkPolicyAttachment#create}. |
+| <code><a href="#@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_policy_attachment#delete NetworkPolicyAttachment#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_policy_attachment#read NetworkPolicyAttachment#read}. |
+| <code><a href="#@cdktn/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_policy_attachment#update NetworkPolicyAttachment#update}. |
 
 ---
 
@@ -1054,7 +1054,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment#create NetworkPolicyAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_policy_attachment#create NetworkPolicyAttachment#create}.
 
 ---
 
@@ -1066,7 +1066,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment#delete NetworkPolicyAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_policy_attachment#delete NetworkPolicyAttachment#delete}.
 
 ---
 
@@ -1078,7 +1078,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment#read NetworkPolicyAttachment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_policy_attachment#read NetworkPolicyAttachment#read}.
 
 ---
 
@@ -1090,7 +1090,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/network_policy_attachment#update NetworkPolicyAttachment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/network_policy_attachment#update NetworkPolicyAttachment#update}.
 
 ---
 
