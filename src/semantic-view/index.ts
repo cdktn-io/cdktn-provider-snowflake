@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface SemanticViewConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies a comment for the semantic view.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#comment SemanticView#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#comment SemanticView#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the semantic view. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#database SemanticView#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#database SemanticView#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#id SemanticView#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#id SemanticView#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,49 +34,49 @@ export interface SemanticViewConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies the identifier for the semantic view; must be unique within the schema. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#name SemanticView#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#name SemanticView#name}
   */
   readonly name: string;
   /**
   * The schema in which to create the semantic view. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#schema SemanticView#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#schema SemanticView#schema}
   */
   readonly schema: string;
   /**
   * dimensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#dimensions SemanticView#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#dimensions SemanticView#dimensions}
   */
   readonly dimensions?: SemanticViewDimensions[] | cdktn.IResolvable;
   /**
   * facts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#facts SemanticView#facts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#facts SemanticView#facts}
   */
   readonly facts?: SemanticViewFacts[] | cdktn.IResolvable;
   /**
   * metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#metrics SemanticView#metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#metrics SemanticView#metrics}
   */
   readonly metrics?: SemanticViewMetrics[] | cdktn.IResolvable;
   /**
   * relationships block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#relationships SemanticView#relationships}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#relationships SemanticView#relationships}
   */
   readonly relationships?: SemanticViewRelationships[] | cdktn.IResolvable;
   /**
   * tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#tables SemanticView#tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#tables SemanticView#tables}
   */
   readonly tables: SemanticViewTables[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#timeouts SemanticView#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#timeouts SemanticView#timeouts}
   */
   readonly timeouts?: SemanticViewTimeouts;
 }
@@ -194,25 +194,25 @@ export interface SemanticViewDimensions {
   /**
   * Specifies a comment for the dimension.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#comment SemanticView#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#comment SemanticView#comment}
   */
   readonly comment?: string;
   /**
   * Specifies a qualified name for the dimension, including the table name and a unique identifier for the dimension: `<table_alias>.<semantic_expression_name>`. Remember to wrap each part in double quotes like `"\"<table_alias>\".\"<semantic_expression_name>\""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#qualified_expression_name SemanticView#qualified_expression_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#qualified_expression_name SemanticView#qualified_expression_name}
   */
   readonly qualifiedExpressionName: string;
   /**
   * The SQL expression used to compute the dimension.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#sql_expression SemanticView#sql_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#sql_expression SemanticView#sql_expression}
   */
   readonly sqlExpression: string;
   /**
   * List of synonyms for the dimension.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#synonym SemanticView#synonym}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#synonym SemanticView#synonym}
   */
   readonly synonym?: string[];
 }
@@ -411,25 +411,25 @@ export interface SemanticViewFacts {
   /**
   * Specifies a comment for the fact.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#comment SemanticView#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#comment SemanticView#comment}
   */
   readonly comment?: string;
   /**
   * Specifies a qualified name for the fact, including the table name and a unique identifier for the fact: `<table_alias>.<semantic_expression_name>`. Remember to wrap each part in double quotes like `"\"<table_alias>\".\"<semantic_expression_name>\""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#qualified_expression_name SemanticView#qualified_expression_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#qualified_expression_name SemanticView#qualified_expression_name}
   */
   readonly qualifiedExpressionName: string;
   /**
   * The SQL expression used to compute the fact.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#sql_expression SemanticView#sql_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#sql_expression SemanticView#sql_expression}
   */
   readonly sqlExpression: string;
   /**
   * List of synonyms for the fact.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#synonym SemanticView#synonym}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#synonym SemanticView#synonym}
   */
   readonly synonym?: string[];
 }
@@ -628,25 +628,25 @@ export interface SemanticViewMetricsSemanticExpression {
   /**
   * Specifies a comment for the semantic expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#comment SemanticView#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#comment SemanticView#comment}
   */
   readonly comment?: string;
   /**
   * Specifies a qualified name for the metric: `<table_alias>.<semantic_expression_name>`. Remember to wrap each part in double quotes like `"\"<table_alias>\".\"<semantic_expression_name>\""`. For the [derived metric](https://docs.snowflake.com/en/user-guide/views-semantic/sql#label-semantic-views-create-derived-metrics) omit the `<table_alias>.` part but still wrap in double quotes, e.g. `"\"<semantic_expression_name>\""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#qualified_expression_name SemanticView#qualified_expression_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#qualified_expression_name SemanticView#qualified_expression_name}
   */
   readonly qualifiedExpressionName: string;
   /**
   * The SQL expression used to compute the metric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#sql_expression SemanticView#sql_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#sql_expression SemanticView#sql_expression}
   */
   readonly sqlExpression: string;
   /**
   * List of synonyms for this semantic expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#synonym SemanticView#synonym}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#synonym SemanticView#synonym}
   */
   readonly synonym?: string[];
 }
@@ -813,19 +813,19 @@ export interface SemanticViewMetricsWindowFunctionOverClause {
   /**
   * Specifies an order by clause. It must be a complete SQL expression, including any `[ ASC | DESC ] [ NULLS { FIRST | LAST } ]` modifiers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#order_by SemanticView#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#order_by SemanticView#order_by}
   */
   readonly orderBy?: string;
   /**
   * Specifies a partition by clause.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#partition_by SemanticView#partition_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#partition_by SemanticView#partition_by}
   */
   readonly partitionBy?: string;
   /**
   * Specifies a window frame clause.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#window_frame_clause SemanticView#window_frame_clause}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#window_frame_clause SemanticView#window_frame_clause}
   */
   readonly windowFrameClause?: string;
 }
@@ -969,19 +969,19 @@ export interface SemanticViewMetricsWindowFunction {
   /**
   * Specifies a qualified name for the metric: `<table_alias>.<semantic_expression_name>`. Remember to wrap each part in double quotes like `"\"<table_alias>\".\"<semantic_expression_name>\""`. For the [derived metric](https://docs.snowflake.com/en/user-guide/views-semantic/sql#label-semantic-views-create-derived-metrics) omit the `<table_alias>.` part but still wrap in double quotes, e.g. `"\"<semantic_expression_name>\""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#qualified_expression_name SemanticView#qualified_expression_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#qualified_expression_name SemanticView#qualified_expression_name}
   */
   readonly qualifiedExpressionName: string;
   /**
   * The SQL expression used to compute the metric following the `<window_function>(<metric>)` format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#sql_expression SemanticView#sql_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#sql_expression SemanticView#sql_expression}
   */
   readonly sqlExpression: string;
   /**
   * over_clause block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#over_clause SemanticView#over_clause}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#over_clause SemanticView#over_clause}
   */
   readonly overClause: SemanticViewMetricsWindowFunctionOverClause;
 }
@@ -1116,13 +1116,13 @@ export interface SemanticViewMetrics {
   /**
   * semantic_expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#semantic_expression SemanticView#semantic_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#semantic_expression SemanticView#semantic_expression}
   */
   readonly semanticExpression?: SemanticViewMetricsSemanticExpression;
   /**
   * window_function block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#window_function SemanticView#window_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#window_function SemanticView#window_function}
   */
   readonly windowFunction?: SemanticViewMetricsWindowFunction;
 }
@@ -1269,13 +1269,13 @@ export interface SemanticViewRelationshipsReferencedTableNameOrAlias {
   /**
   * The alias used for the logical table, cannot be used in combination with the `table_name`. This field is case-sensitive - the provider uses double quotes to wrap it when sending the SQL to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#table_alias SemanticView#table_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#table_alias SemanticView#table_alias}
   */
   readonly tableAlias?: string;
   /**
   * The name of the logical table, cannot be used in combination with the `table_alias`. This field is case-sensitive - the provider uses double quotes to wrap it when sending the SQL to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#table_name SemanticView#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#table_name SemanticView#table_name}
   */
   readonly tableName?: string;
 }
@@ -1390,13 +1390,13 @@ export interface SemanticViewRelationshipsTableNameOrAlias {
   /**
   * The alias used for the logical table, cannot be used in combination with the `table_name`. This field is case-sensitive - the provider uses double quotes to wrap it when sending the SQL to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#table_alias SemanticView#table_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#table_alias SemanticView#table_alias}
   */
   readonly tableAlias?: string;
   /**
   * The name of the logical table, cannot be used in combination with the `table_alias`. This field is case-sensitive - the provider uses double quotes to wrap it when sending the SQL to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#table_name SemanticView#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#table_name SemanticView#table_name}
   */
   readonly tableName?: string;
 }
@@ -1511,31 +1511,31 @@ export interface SemanticViewRelationships {
   /**
   * Specifies one or more columns in the second logical table that are referred to by the first logical table. Column names in this list are case-sensitive - the provider uses double quotes to wrap each of them when sending the SQL to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#referenced_relationship_columns SemanticView#referenced_relationship_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#referenced_relationship_columns SemanticView#referenced_relationship_columns}
   */
   readonly referencedRelationshipColumns?: string[];
   /**
   * Specifies one or more columns in the first logical table that refers to columns in another logical table. Column names in this list are case-sensitive - the provider uses double quotes to wrap each of them when sending the SQL to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#relationship_columns SemanticView#relationship_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#relationship_columns SemanticView#relationship_columns}
   */
   readonly relationshipColumns: string[];
   /**
   * Specifies an optional identifier for the relationship. This field is case-sensitive - the provider uses double quotes to wrap it when sending the SQL to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#relationship_identifier SemanticView#relationship_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#relationship_identifier SemanticView#relationship_identifier}
   */
   readonly relationshipIdentifier?: string;
   /**
   * referenced_table_name_or_alias block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#referenced_table_name_or_alias SemanticView#referenced_table_name_or_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#referenced_table_name_or_alias SemanticView#referenced_table_name_or_alias}
   */
   readonly referencedTableNameOrAlias: SemanticViewRelationshipsReferencedTableNameOrAlias;
   /**
   * table_name_or_alias block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#table_name_or_alias SemanticView#table_name_or_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#table_name_or_alias SemanticView#table_name_or_alias}
   */
   readonly tableNameOrAlias: SemanticViewRelationshipsTableNameOrAlias;
 }
@@ -1760,7 +1760,7 @@ export interface SemanticViewTablesUnique {
   /**
   * Unique key combinations in the logical table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#values SemanticView#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#values SemanticView#values}
   */
   readonly values: string[];
 }
@@ -1875,37 +1875,37 @@ export interface SemanticViewTables {
   /**
   * Specifies a comment for the logical table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#comment SemanticView#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#comment SemanticView#comment}
   */
   readonly comment?: string;
   /**
   * Definitions of primary keys in the logical table. This field is case-sensitive - the provider uses double quotes to wrap it when sending the SQL to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#primary_key SemanticView#primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#primary_key SemanticView#primary_key}
   */
   readonly primaryKey?: string[];
   /**
   * List of synonyms for the logical table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#synonym SemanticView#synonym}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#synonym SemanticView#synonym}
   */
   readonly synonym?: string[];
   /**
   * Specifies an alias for a logical table in the semantic view. This field is case-sensitive - the provider uses double quotes to wrap it when sending the SQL to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#table_alias SemanticView#table_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#table_alias SemanticView#table_alias}
   */
   readonly tableAlias: string;
   /**
   * Specifies an identifier for the logical table. Example: `"\"<db_name>\".\"<schema_name>\".\"<table_name>\""`. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#table_name SemanticView#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#table_name SemanticView#table_name}
   */
   readonly tableName: string;
   /**
   * unique block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#unique SemanticView#unique}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#unique SemanticView#unique}
   */
   readonly unique?: SemanticViewTablesUnique[] | cdktn.IResolvable;
 }
@@ -2160,19 +2160,19 @@ export class SemanticViewTablesList extends cdktn.ComplexList {
 }
 export interface SemanticViewTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#create SemanticView#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#create SemanticView#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#delete SemanticView#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#delete SemanticView#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#read SemanticView#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#read SemanticView#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#update SemanticView#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#update SemanticView#update}
   */
   readonly update?: string;
 }
@@ -2353,7 +2353,7 @@ export class SemanticViewTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view snowflake_semantic_view}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view snowflake_semantic_view}
 */
 export class SemanticView extends cdktn.TerraformResource {
 
@@ -2369,7 +2369,7 @@ export class SemanticView extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SemanticView resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SemanticView to import
-  * @param importFromId The id of the existing SemanticView that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SemanticView that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SemanticView to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2381,7 +2381,7 @@ export class SemanticView extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/semantic_view snowflake_semantic_view} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/semantic_view snowflake_semantic_view} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2392,7 +2392,7 @@ export class SemanticView extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_semantic_view',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.14.0',
+        providerVersion: '2.14.1',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

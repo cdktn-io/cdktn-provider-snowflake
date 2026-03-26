@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/network_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataSnowflakeNetworkRulesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#id DataSnowflakeNetworkRules#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/network_rules#id DataSnowflakeNetworkRules#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +22,31 @@ export interface DataSnowflakeNetworkRulesConfig extends cdktn.TerraformMetaArgu
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#like DataSnowflakeNetworkRules#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/network_rules#like DataSnowflakeNetworkRules#like}
   */
   readonly like?: string;
   /**
   * Filters the output with **case-sensitive** characters indicating the beginning of the object name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#starts_with DataSnowflakeNetworkRules#starts_with}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/network_rules#starts_with DataSnowflakeNetworkRules#starts_with}
   */
   readonly startsWith?: string;
   /**
   * (Default: `true`) Runs DESC NETWORK RULE for each network rule returned by SHOW NETWORK RULES. The output of describe is saved to the description field. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#with_describe DataSnowflakeNetworkRules#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/network_rules#with_describe DataSnowflakeNetworkRules#with_describe}
   */
   readonly withDescribe?: boolean | cdktn.IResolvable;
   /**
   * in block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#in DataSnowflakeNetworkRules#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/network_rules#in DataSnowflakeNetworkRules#in}
   */
   readonly in?: DataSnowflakeNetworkRulesIn;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#limit DataSnowflakeNetworkRules#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/network_rules#limit DataSnowflakeNetworkRules#limit}
   */
   readonly limit?: DataSnowflakeNetworkRulesLimit;
 }
@@ -371,19 +371,19 @@ export interface DataSnowflakeNetworkRulesIn {
   /**
   * Returns records for the entire account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#account DataSnowflakeNetworkRules#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/network_rules#account DataSnowflakeNetworkRules#account}
   */
   readonly account?: boolean | cdktn.IResolvable;
   /**
   * Returns records for the current database in use or for a specified database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#database DataSnowflakeNetworkRules#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/network_rules#database DataSnowflakeNetworkRules#database}
   */
   readonly database?: string;
   /**
   * Returns records for the current schema in use or a specified schema. Use fully qualified name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#schema DataSnowflakeNetworkRules#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/network_rules#schema DataSnowflakeNetworkRules#schema}
   */
   readonly schema?: string;
 }
@@ -527,13 +527,13 @@ export interface DataSnowflakeNetworkRulesLimit {
   /**
   * Specifies a **case-sensitive** pattern that is used to match object name. After the first match, the limit on the number of rows will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#from DataSnowflakeNetworkRules#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/network_rules#from DataSnowflakeNetworkRules#from}
   */
   readonly from?: string;
   /**
   * The maximum number of rows to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#rows DataSnowflakeNetworkRules#rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/network_rules#rows DataSnowflakeNetworkRules#rows}
   */
   readonly rows: number;
 }
@@ -643,7 +643,7 @@ export class DataSnowflakeNetworkRulesLimitOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules snowflake_network_rules}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/network_rules snowflake_network_rules}
 */
 export class DataSnowflakeNetworkRules extends cdktn.TerraformDataSource {
 
@@ -659,7 +659,7 @@ export class DataSnowflakeNetworkRules extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataSnowflakeNetworkRules resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeNetworkRules to import
-  * @param importFromId The id of the existing DataSnowflakeNetworkRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeNetworkRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/network_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeNetworkRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -671,7 +671,7 @@ export class DataSnowflakeNetworkRules extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/data-sources/network_rules snowflake_network_rules} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/network_rules snowflake_network_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -682,7 +682,7 @@ export class DataSnowflakeNetworkRules extends cdktn.TerraformDataSource {
       terraformResourceType: 'snowflake_network_rules',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.14.0',
+        providerVersion: '2.14.1',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

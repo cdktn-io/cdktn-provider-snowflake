@@ -1,3 +1,3 @@
 # `snowflake_execute`
 
-Refer to the Terraform Registry for docs: [`snowflake_execute`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.0/docs/resources/execute).
+Refer to the Terraform Registry for docs: [`snowflake_execute`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/execute).
