@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/warehouses
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/warehouses
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataSnowflakeWarehousesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/warehouses#id DataSnowflakeWarehouses#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/warehouses#id DataSnowflakeWarehouses#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface DataSnowflakeWarehousesConfig extends cdktn.TerraformMetaArgume
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/warehouses#like DataSnowflakeWarehouses#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/warehouses#like DataSnowflakeWarehouses#like}
   */
   readonly like?: string;
   /**
   * (Default: `true`) Runs DESC WAREHOUSE for each warehouse returned by SHOW WAREHOUSES. The output of describe is saved to the description field. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/warehouses#with_describe DataSnowflakeWarehouses#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/warehouses#with_describe DataSnowflakeWarehouses#with_describe}
   */
   readonly withDescribe?: boolean | cdktn.IResolvable;
   /**
   * (Default: `true`) Runs SHOW PARAMETERS FOR WAREHOUSE for each warehouse returned by SHOW WAREHOUSES. The output of describe is saved to the parameters field as a map. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/warehouses#with_parameters DataSnowflakeWarehouses#with_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/warehouses#with_parameters DataSnowflakeWarehouses#with_parameters}
   */
   readonly withParameters?: boolean | cdktn.IResolvable;
 }
@@ -112,7 +112,7 @@ export class DataSnowflakeWarehousesWarehousesDescribeOutputList extends cdktn.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -207,7 +207,7 @@ export class DataSnowflakeWarehousesWarehousesParametersMaxConcurrencyLevelList 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -302,7 +302,7 @@ export class DataSnowflakeWarehousesWarehousesParametersStatementQueuedTimeoutIn
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -397,7 +397,7 @@ export class DataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSecond
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -485,7 +485,7 @@ export class DataSnowflakeWarehousesWarehousesParametersList extends cdktn.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -597,6 +597,11 @@ export class DataSnowflakeWarehousesWarehousesShowOutputOutputReference extends 
     return this.getNumberAttribute('max_cluster_count');
   }
 
+  // max_query_performance_level - computed: true, optional: false, required: false
+  public get maxQueryPerformanceLevel() {
+    return this.getStringAttribute('max_query_performance_level');
+  }
+
   // min_cluster_count - computed: true, optional: false, required: false
   public get minClusterCount() {
     return this.getNumberAttribute('min_cluster_count');
@@ -630,6 +635,11 @@ export class DataSnowflakeWarehousesWarehousesShowOutputOutputReference extends 
   // query_acceleration_max_scale_factor - computed: true, optional: false, required: false
   public get queryAccelerationMaxScaleFactor() {
     return this.getNumberAttribute('query_acceleration_max_scale_factor');
+  }
+
+  // query_throughput_multiplier - computed: true, optional: false, required: false
+  public get queryThroughputMultiplier() {
+    return this.getNumberAttribute('query_throughput_multiplier');
   }
 
   // queued - computed: true, optional: false, required: false
@@ -700,7 +710,7 @@ export class DataSnowflakeWarehousesWarehousesShowOutputList extends cdktn.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -788,7 +798,7 @@ export class DataSnowflakeWarehousesWarehousesList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -801,7 +811,7 @@ export class DataSnowflakeWarehousesWarehousesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/warehouses snowflake_warehouses}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/warehouses snowflake_warehouses}
 */
 export class DataSnowflakeWarehouses extends cdktn.TerraformDataSource {
 
@@ -817,7 +827,7 @@ export class DataSnowflakeWarehouses extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataSnowflakeWarehouses resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeWarehouses to import
-  * @param importFromId The id of the existing DataSnowflakeWarehouses that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/warehouses#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeWarehouses that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/warehouses#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeWarehouses to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -829,7 +839,7 @@ export class DataSnowflakeWarehouses extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/warehouses snowflake_warehouses} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/warehouses snowflake_warehouses} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -840,7 +850,7 @@ export class DataSnowflakeWarehouses extends cdktn.TerraformDataSource {
       terraformResourceType: 'snowflake_warehouses',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.14.1',
+        providerVersion: '2.15.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

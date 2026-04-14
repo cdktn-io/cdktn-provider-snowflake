@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface ExternalVolumeConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether write operations are allowed for the external volume; must be set to TRUE for Iceberg tables that use Snowflake as the catalog. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#allow_writes ExternalVolume#allow_writes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#allow_writes ExternalVolume#allow_writes}
   */
   readonly allowWrites?: string;
   /**
   * Specifies a comment for the external volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#comment ExternalVolume#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#comment ExternalVolume#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#id ExternalVolume#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#id ExternalVolume#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,21 +34,490 @@ export interface ExternalVolumeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier for the external volume; must be unique for your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#name ExternalVolume#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#name ExternalVolume#name}
   */
   readonly name: string;
   /**
   * storage_location block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#storage_location ExternalVolume#storage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_location ExternalVolume#storage_location}
   */
   readonly storageLocation: ExternalVolumeStorageLocation[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#timeouts ExternalVolume#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#timeouts ExternalVolume#timeouts}
   */
   readonly timeouts?: ExternalVolumeTimeouts;
+}
+export interface ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation {
+}
+
+export function externalVolumeDescribeOutputStorageLocationsAzureStorageLocationToTerraform(struct?: ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function externalVolumeDescribeOutputStorageLocationsAzureStorageLocationToHclTerraform(struct?: ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // azure_consent_url - computed: true, optional: false, required: false
+  public get azureConsentUrl() {
+    return this.getStringAttribute('azure_consent_url');
+  }
+
+  // azure_multi_tenant_app_name - computed: true, optional: false, required: false
+  public get azureMultiTenantAppName() {
+    return this.getStringAttribute('azure_multi_tenant_app_name');
+  }
+
+  // azure_tenant_id - computed: true, optional: false, required: false
+  public get azureTenantId() {
+    return this.getStringAttribute('azure_tenant_id');
+  }
+}
+
+export class ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference {
+    return new ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation {
+}
+
+export function externalVolumeDescribeOutputStorageLocationsGcsStorageLocationToTerraform(struct?: ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function externalVolumeDescribeOutputStorageLocationsGcsStorageLocationToHclTerraform(struct?: ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // encryption_kms_key_id - computed: true, optional: false, required: false
+  public get encryptionKmsKeyId() {
+    return this.getStringAttribute('encryption_kms_key_id');
+  }
+
+  // storage_gcp_service_account - computed: true, optional: false, required: false
+  public get storageGcpServiceAccount() {
+    return this.getStringAttribute('storage_gcp_service_account');
+  }
+}
+
+export class ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference {
+    return new ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation {
+}
+
+export function externalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationToTerraform(struct?: ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function externalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationToHclTerraform(struct?: ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // aws_access_key_id - computed: true, optional: false, required: false
+  public get awsAccessKeyId() {
+    return this.getStringAttribute('aws_access_key_id');
+  }
+
+  // encryption_kms_key_id - computed: true, optional: false, required: false
+  public get encryptionKmsKeyId() {
+    return this.getStringAttribute('encryption_kms_key_id');
+  }
+
+  // endpoint - computed: true, optional: false, required: false
+  public get endpoint() {
+    return this.getStringAttribute('endpoint');
+  }
+}
+
+export class ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference {
+    return new ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation {
+}
+
+export function externalVolumeDescribeOutputStorageLocationsS3StorageLocationToTerraform(struct?: ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function externalVolumeDescribeOutputStorageLocationsS3StorageLocationToHclTerraform(struct?: ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // encryption_kms_key_id - computed: true, optional: false, required: false
+  public get encryptionKmsKeyId() {
+    return this.getStringAttribute('encryption_kms_key_id');
+  }
+
+  // storage_aws_access_point_arn - computed: true, optional: false, required: false
+  public get storageAwsAccessPointArn() {
+    return this.getStringAttribute('storage_aws_access_point_arn');
+  }
+
+  // storage_aws_external_id - computed: true, optional: false, required: false
+  public get storageAwsExternalId() {
+    return this.getStringAttribute('storage_aws_external_id');
+  }
+
+  // storage_aws_iam_user_arn - computed: true, optional: false, required: false
+  public get storageAwsIamUserArn() {
+    return this.getStringAttribute('storage_aws_iam_user_arn');
+  }
+
+  // storage_aws_role_arn - computed: true, optional: false, required: false
+  public get storageAwsRoleArn() {
+    return this.getStringAttribute('storage_aws_role_arn');
+  }
+
+  // use_privatelink_endpoint - computed: true, optional: false, required: false
+  public get usePrivatelinkEndpoint() {
+    return this.getStringAttribute('use_privatelink_endpoint');
+  }
+}
+
+export class ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference {
+    return new ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ExternalVolumeDescribeOutputStorageLocations {
+}
+
+export function externalVolumeDescribeOutputStorageLocationsToTerraform(struct?: ExternalVolumeDescribeOutputStorageLocations): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function externalVolumeDescribeOutputStorageLocationsToHclTerraform(struct?: ExternalVolumeDescribeOutputStorageLocations): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ExternalVolumeDescribeOutputStorageLocationsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ExternalVolumeDescribeOutputStorageLocations | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ExternalVolumeDescribeOutputStorageLocations | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // azure_storage_location - computed: true, optional: false, required: false
+  private _azureStorageLocation = new ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList(this, "azure_storage_location", false);
+  public get azureStorageLocation() {
+    return this._azureStorageLocation;
+  }
+
+  // encryption_type - computed: true, optional: false, required: false
+  public get encryptionType() {
+    return this.getStringAttribute('encryption_type');
+  }
+
+  // gcs_storage_location - computed: true, optional: false, required: false
+  private _gcsStorageLocation = new ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList(this, "gcs_storage_location", false);
+  public get gcsStorageLocation() {
+    return this._gcsStorageLocation;
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // s3_compat_storage_location - computed: true, optional: false, required: false
+  private _s3CompatStorageLocation = new ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList(this, "s3_compat_storage_location", false);
+  public get s3CompatStorageLocation() {
+    return this._s3CompatStorageLocation;
+  }
+
+  // s3_storage_location - computed: true, optional: false, required: false
+  private _s3StorageLocation = new ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList(this, "s3_storage_location", false);
+  public get s3StorageLocation() {
+    return this._s3StorageLocation;
+  }
+
+  // storage_allowed_locations - computed: true, optional: false, required: false
+  public get storageAllowedLocations() {
+    return this.getListAttribute('storage_allowed_locations');
+  }
+
+  // storage_base_url - computed: true, optional: false, required: false
+  public get storageBaseUrl() {
+    return this.getStringAttribute('storage_base_url');
+  }
+
+  // storage_provider - computed: true, optional: false, required: false
+  public get storageProvider() {
+    return this.getStringAttribute('storage_provider');
+  }
+}
+
+export class ExternalVolumeDescribeOutputStorageLocationsList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ExternalVolumeDescribeOutputStorageLocationsOutputReference {
+    return new ExternalVolumeDescribeOutputStorageLocationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface ExternalVolumeDescribeOutput {
 }
@@ -101,29 +570,25 @@ export class ExternalVolumeDescribeOutputOutputReference extends cdktn.ComplexOb
     }
   }
 
-  // default - computed: true, optional: false, required: false
-  public get default() {
-    return this.getStringAttribute('default');
+  // active - computed: true, optional: false, required: false
+  public get active() {
+    return this.getStringAttribute('active');
   }
 
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
+  // allow_writes - computed: true, optional: false, required: false
+  public get allowWrites() {
+    return this.getStringAttribute('allow_writes');
   }
 
-  // parent - computed: true, optional: false, required: false
-  public get parent() {
-    return this.getStringAttribute('parent');
+  // comment - computed: true, optional: false, required: false
+  public get comment() {
+    return this.getStringAttribute('comment');
   }
 
-  // type - computed: true, optional: false, required: false
-  public get type() {
-    return this.getStringAttribute('type');
-  }
-
-  // value - computed: true, optional: false, required: false
-  public get value() {
-    return this.getStringAttribute('value');
+  // storage_locations - computed: true, optional: false, required: false
+  private _storageLocations = new ExternalVolumeDescribeOutputStorageLocationsList(this, "storage_locations", false);
+  public get storageLocations() {
+    return this._storageLocations;
   }
 }
 
@@ -134,7 +599,7 @@ export class ExternalVolumeDescribeOutputList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -219,7 +684,7 @@ export class ExternalVolumeShowOutputList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -234,45 +699,81 @@ export interface ExternalVolumeStorageLocation {
   /**
   * Specifies the ID for your Office 365 tenant that the allowed and blocked storage accounts belong to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#azure_tenant_id ExternalVolume#azure_tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#azure_tenant_id ExternalVolume#azure_tenant_id}
   */
   readonly azureTenantId?: string;
   /**
   * Specifies the ID for the KMS-managed key used to encrypt files.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#encryption_kms_key_id ExternalVolume#encryption_kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#encryption_kms_key_id ExternalVolume#encryption_kms_key_id}
   */
   readonly encryptionKmsKeyId?: string;
   /**
   * Specifies the encryption type used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#encryption_type ExternalVolume#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#encryption_type ExternalVolume#encryption_type}
   */
   readonly encryptionType?: string;
   /**
+  * Specifies the access point ARN for the S3 bucket containing your data files. Only applicable for S3 and S3GOV storage providers.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_aws_access_point_arn ExternalVolume#storage_aws_access_point_arn}
+  */
+  readonly storageAwsAccessPointArn?: string;
+  /**
+  * External ID that Snowflake uses to establish a trust relationship with AWS.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_aws_external_id ExternalVolume#storage_aws_external_id}
+  */
+  readonly storageAwsExternalId?: string;
+  /**
+  * Specifies the AWS key ID for the S3-compatible storage location. Only applicable for S3COMPAT storage provider.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_aws_key_id ExternalVolume#storage_aws_key_id}
+  */
+  readonly storageAwsKeyId?: string;
+  /**
   * Specifies the case-sensitive Amazon Resource Name (ARN) of the AWS identity and access management (IAM) role that grants privileges on the S3 bucket containing your data files.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#storage_aws_role_arn ExternalVolume#storage_aws_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_aws_role_arn ExternalVolume#storage_aws_role_arn}
   */
   readonly storageAwsRoleArn?: string;
   /**
+  * Specifies the AWS secret key for the S3-compatible storage location. Only applicable for S3COMPAT storage provider.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_aws_secret_key ExternalVolume#storage_aws_secret_key}
+  */
+  readonly storageAwsSecretKey?: string;
+  /**
   * Specifies the base URL for your cloud storage location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#storage_base_url ExternalVolume#storage_base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_base_url ExternalVolume#storage_base_url}
   */
   readonly storageBaseUrl: string;
   /**
+  * Specifies the endpoint for the S3-compatible storage location. Only applicable for S3COMPAT storage provider.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_endpoint ExternalVolume#storage_endpoint}
+  */
+  readonly storageEndpoint?: string;
+  /**
   * Name of the storage location. Must be unique for the external volume. Do not use the name `terraform_provider_sentinel_storage_location` - this is reserved for the provider for performing update operations. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#storage_location_name ExternalVolume#storage_location_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_location_name ExternalVolume#storage_location_name}
   */
   readonly storageLocationName: string;
   /**
-  * Specifies the cloud storage provider that stores your data files. Valid values are (case-insensitive): `GCS` | `AZURE` | `S3` | `S3GOV`.
+  * Specifies the cloud storage provider that stores your data files. Valid values are (case-insensitive): `GCS` | `AZURE` | `S3` | `S3GOV` | `S3COMPAT`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#storage_provider ExternalVolume#storage_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_provider ExternalVolume#storage_provider}
   */
   readonly storageProvider: string;
+  /**
+  * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to use a privatelink endpoint for the storage location. Only applicable for S3, S3GOV, and AZURE storage providers. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#use_privatelink_endpoint ExternalVolume#use_privatelink_endpoint}
+  */
+  readonly usePrivatelinkEndpoint?: string;
 }
 
 export function externalVolumeStorageLocationToTerraform(struct?: ExternalVolumeStorageLocation | cdktn.IResolvable): any {
@@ -284,10 +785,16 @@ export function externalVolumeStorageLocationToTerraform(struct?: ExternalVolume
     azure_tenant_id: cdktn.stringToTerraform(struct!.azureTenantId),
     encryption_kms_key_id: cdktn.stringToTerraform(struct!.encryptionKmsKeyId),
     encryption_type: cdktn.stringToTerraform(struct!.encryptionType),
+    storage_aws_access_point_arn: cdktn.stringToTerraform(struct!.storageAwsAccessPointArn),
+    storage_aws_external_id: cdktn.stringToTerraform(struct!.storageAwsExternalId),
+    storage_aws_key_id: cdktn.stringToTerraform(struct!.storageAwsKeyId),
     storage_aws_role_arn: cdktn.stringToTerraform(struct!.storageAwsRoleArn),
+    storage_aws_secret_key: cdktn.stringToTerraform(struct!.storageAwsSecretKey),
     storage_base_url: cdktn.stringToTerraform(struct!.storageBaseUrl),
+    storage_endpoint: cdktn.stringToTerraform(struct!.storageEndpoint),
     storage_location_name: cdktn.stringToTerraform(struct!.storageLocationName),
     storage_provider: cdktn.stringToTerraform(struct!.storageProvider),
+    use_privatelink_endpoint: cdktn.stringToTerraform(struct!.usePrivatelinkEndpoint),
   }
 }
 
@@ -316,14 +823,44 @@ export function externalVolumeStorageLocationToHclTerraform(struct?: ExternalVol
       type: "simple",
       storageClassType: "string",
     },
+    storage_aws_access_point_arn: {
+      value: cdktn.stringToHclTerraform(struct!.storageAwsAccessPointArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_aws_external_id: {
+      value: cdktn.stringToHclTerraform(struct!.storageAwsExternalId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_aws_key_id: {
+      value: cdktn.stringToHclTerraform(struct!.storageAwsKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     storage_aws_role_arn: {
       value: cdktn.stringToHclTerraform(struct!.storageAwsRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
+    storage_aws_secret_key: {
+      value: cdktn.stringToHclTerraform(struct!.storageAwsSecretKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     storage_base_url: {
       value: cdktn.stringToHclTerraform(struct!.storageBaseUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_endpoint: {
+      value: cdktn.stringToHclTerraform(struct!.storageEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -336,6 +873,12 @@ export function externalVolumeStorageLocationToHclTerraform(struct?: ExternalVol
     },
     storage_provider: {
       value: cdktn.stringToHclTerraform(struct!.storageProvider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    use_privatelink_endpoint: {
+      value: cdktn.stringToHclTerraform(struct!.usePrivatelinkEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -378,13 +921,33 @@ export class ExternalVolumeStorageLocationOutputReference extends cdktn.ComplexO
       hasAnyValues = true;
       internalValueResult.encryptionType = this._encryptionType;
     }
+    if (this._storageAwsAccessPointArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageAwsAccessPointArn = this._storageAwsAccessPointArn;
+    }
+    if (this._storageAwsExternalId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageAwsExternalId = this._storageAwsExternalId;
+    }
+    if (this._storageAwsKeyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageAwsKeyId = this._storageAwsKeyId;
+    }
     if (this._storageAwsRoleArn !== undefined) {
       hasAnyValues = true;
       internalValueResult.storageAwsRoleArn = this._storageAwsRoleArn;
     }
+    if (this._storageAwsSecretKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageAwsSecretKey = this._storageAwsSecretKey;
+    }
     if (this._storageBaseUrl !== undefined) {
       hasAnyValues = true;
       internalValueResult.storageBaseUrl = this._storageBaseUrl;
+    }
+    if (this._storageEndpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageEndpoint = this._storageEndpoint;
     }
     if (this._storageLocationName !== undefined) {
       hasAnyValues = true;
@@ -393,6 +956,10 @@ export class ExternalVolumeStorageLocationOutputReference extends cdktn.ComplexO
     if (this._storageProvider !== undefined) {
       hasAnyValues = true;
       internalValueResult.storageProvider = this._storageProvider;
+    }
+    if (this._usePrivatelinkEndpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.usePrivatelinkEndpoint = this._usePrivatelinkEndpoint;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -404,10 +971,16 @@ export class ExternalVolumeStorageLocationOutputReference extends cdktn.ComplexO
       this._azureTenantId = undefined;
       this._encryptionKmsKeyId = undefined;
       this._encryptionType = undefined;
+      this._storageAwsAccessPointArn = undefined;
+      this._storageAwsExternalId = undefined;
+      this._storageAwsKeyId = undefined;
       this._storageAwsRoleArn = undefined;
+      this._storageAwsSecretKey = undefined;
       this._storageBaseUrl = undefined;
+      this._storageEndpoint = undefined;
       this._storageLocationName = undefined;
       this._storageProvider = undefined;
+      this._usePrivatelinkEndpoint = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -419,10 +992,16 @@ export class ExternalVolumeStorageLocationOutputReference extends cdktn.ComplexO
       this._azureTenantId = value.azureTenantId;
       this._encryptionKmsKeyId = value.encryptionKmsKeyId;
       this._encryptionType = value.encryptionType;
+      this._storageAwsAccessPointArn = value.storageAwsAccessPointArn;
+      this._storageAwsExternalId = value.storageAwsExternalId;
+      this._storageAwsKeyId = value.storageAwsKeyId;
       this._storageAwsRoleArn = value.storageAwsRoleArn;
+      this._storageAwsSecretKey = value.storageAwsSecretKey;
       this._storageBaseUrl = value.storageBaseUrl;
+      this._storageEndpoint = value.storageEndpoint;
       this._storageLocationName = value.storageLocationName;
       this._storageProvider = value.storageProvider;
+      this._usePrivatelinkEndpoint = value.usePrivatelinkEndpoint;
     }
   }
 
@@ -474,9 +1053,52 @@ export class ExternalVolumeStorageLocationOutputReference extends cdktn.ComplexO
     return this._encryptionType;
   }
 
-  // storage_aws_external_id - computed: true, optional: false, required: false
+  // storage_aws_access_point_arn - computed: false, optional: true, required: false
+  private _storageAwsAccessPointArn?: string; 
+  public get storageAwsAccessPointArn() {
+    return this.getStringAttribute('storage_aws_access_point_arn');
+  }
+  public set storageAwsAccessPointArn(value: string) {
+    this._storageAwsAccessPointArn = value;
+  }
+  public resetStorageAwsAccessPointArn() {
+    this._storageAwsAccessPointArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageAwsAccessPointArnInput() {
+    return this._storageAwsAccessPointArn;
+  }
+
+  // storage_aws_external_id - computed: false, optional: true, required: false
+  private _storageAwsExternalId?: string; 
   public get storageAwsExternalId() {
     return this.getStringAttribute('storage_aws_external_id');
+  }
+  public set storageAwsExternalId(value: string) {
+    this._storageAwsExternalId = value;
+  }
+  public resetStorageAwsExternalId() {
+    this._storageAwsExternalId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageAwsExternalIdInput() {
+    return this._storageAwsExternalId;
+  }
+
+  // storage_aws_key_id - computed: false, optional: true, required: false
+  private _storageAwsKeyId?: string; 
+  public get storageAwsKeyId() {
+    return this.getStringAttribute('storage_aws_key_id');
+  }
+  public set storageAwsKeyId(value: string) {
+    this._storageAwsKeyId = value;
+  }
+  public resetStorageAwsKeyId() {
+    this._storageAwsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageAwsKeyIdInput() {
+    return this._storageAwsKeyId;
   }
 
   // storage_aws_role_arn - computed: false, optional: true, required: false
@@ -495,6 +1117,22 @@ export class ExternalVolumeStorageLocationOutputReference extends cdktn.ComplexO
     return this._storageAwsRoleArn;
   }
 
+  // storage_aws_secret_key - computed: false, optional: true, required: false
+  private _storageAwsSecretKey?: string; 
+  public get storageAwsSecretKey() {
+    return this.getStringAttribute('storage_aws_secret_key');
+  }
+  public set storageAwsSecretKey(value: string) {
+    this._storageAwsSecretKey = value;
+  }
+  public resetStorageAwsSecretKey() {
+    this._storageAwsSecretKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageAwsSecretKeyInput() {
+    return this._storageAwsSecretKey;
+  }
+
   // storage_base_url - computed: false, optional: false, required: true
   private _storageBaseUrl?: string; 
   public get storageBaseUrl() {
@@ -506,6 +1144,22 @@ export class ExternalVolumeStorageLocationOutputReference extends cdktn.ComplexO
   // Temporarily expose input value. Use with caution.
   public get storageBaseUrlInput() {
     return this._storageBaseUrl;
+  }
+
+  // storage_endpoint - computed: false, optional: true, required: false
+  private _storageEndpoint?: string; 
+  public get storageEndpoint() {
+    return this.getStringAttribute('storage_endpoint');
+  }
+  public set storageEndpoint(value: string) {
+    this._storageEndpoint = value;
+  }
+  public resetStorageEndpoint() {
+    this._storageEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageEndpointInput() {
+    return this._storageEndpoint;
   }
 
   // storage_location_name - computed: false, optional: false, required: true
@@ -533,6 +1187,22 @@ export class ExternalVolumeStorageLocationOutputReference extends cdktn.ComplexO
   public get storageProviderInput() {
     return this._storageProvider;
   }
+
+  // use_privatelink_endpoint - computed: false, optional: true, required: false
+  private _usePrivatelinkEndpoint?: string; 
+  public get usePrivatelinkEndpoint() {
+    return this.getStringAttribute('use_privatelink_endpoint');
+  }
+  public set usePrivatelinkEndpoint(value: string) {
+    this._usePrivatelinkEndpoint = value;
+  }
+  public resetUsePrivatelinkEndpoint() {
+    this._usePrivatelinkEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usePrivatelinkEndpointInput() {
+    return this._usePrivatelinkEndpoint;
+  }
 }
 
 export class ExternalVolumeStorageLocationList extends cdktn.ComplexList {
@@ -543,7 +1213,7 @@ export class ExternalVolumeStorageLocationList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -556,19 +1226,19 @@ export class ExternalVolumeStorageLocationList extends cdktn.ComplexList {
 }
 export interface ExternalVolumeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#create ExternalVolume#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#create ExternalVolume#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#delete ExternalVolume#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#delete ExternalVolume#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#read ExternalVolume#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#read ExternalVolume#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#update ExternalVolume#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#update ExternalVolume#update}
   */
   readonly update?: string;
 }
@@ -749,7 +1419,7 @@ export class ExternalVolumeTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume snowflake_external_volume}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume snowflake_external_volume}
 */
 export class ExternalVolume extends cdktn.TerraformResource {
 
@@ -765,7 +1435,7 @@ export class ExternalVolume extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ExternalVolume resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ExternalVolume to import
-  * @param importFromId The id of the existing ExternalVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ExternalVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ExternalVolume to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -777,7 +1447,7 @@ export class ExternalVolume extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume snowflake_external_volume} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume snowflake_external_volume} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -788,7 +1458,7 @@ export class ExternalVolume extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_external_volume',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.14.1',
+        providerVersion: '2.15.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface TagConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Set of allowed values for the tag.
+  * Set of allowed values for the tag (unordered). When specified, only these values can be assigned. When the `TAGS_ALLOW_EMPTY_ALLOWED_VALUES` experiment is enabled, removing this field from the configuration reverts the tag to accepting any value. Conflicts with `no_allowed_values` and `ordered_allowed_values`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#allowed_values Tag#allowed_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#allowed_values Tag#allowed_values}
   */
   readonly allowedValues?: string[];
   /**
   * Specifies a comment for the tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#comment Tag#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#comment Tag#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the tag. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#database Tag#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#database Tag#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#id Tag#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#id Tag#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,25 +40,49 @@ export interface TagConfig extends cdktn.TerraformMetaArguments {
   /**
   * Set of masking policies for the tag. A tag can support one masking policy for each data type. If masking policies are assigned to the tag, before dropping the tag, the provider automatically unassigns them. For more information about this resource, see [docs](./masking_policy).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#masking_policies Tag#masking_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#masking_policies Tag#masking_policies}
   */
   readonly maskingPolicies?: string[];
   /**
   * Specifies the identifier for the tag; must be unique for the database in which the tag is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#name Tag#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#name Tag#name}
   */
   readonly name: string;
   /**
+  * When set to true, the tag explicitly disallows any value from being assigned. This is different from omitting `allowed_values`, which means any value is accepted. Available only when the `TAGS_ALLOW_EMPTY_ALLOWED_VALUES` experiment is enabled. Conflicts with `allowed_values` and `ordered_allowed_values`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#no_allowed_values Tag#no_allowed_values}
+  */
+  readonly noAllowedValues?: boolean | cdktn.IResolvable;
+  /**
+  * Ordered list of allowed values for the tag. The order is preserved in Snowflake and is significant when `on_conflict.allowed_values_sequence` is used — the first matching value in the sequence wins. Use this instead of `allowed_values` when order matters. Conflicts with `allowed_values` and `no_allowed_values`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#ordered_allowed_values Tag#ordered_allowed_values}
+  */
+  readonly orderedAllowedValues?: string[];
+  /**
+  * Specifies that the tag will be automatically propagated from source objects to target objects. See more about tag propagation in the [official documentation](https://docs.snowflake.com/en/user-guide/object-tagging/propagation). Valid options are: `NONE` | `ON_DEPENDENCY` | `ON_DATA_MOVEMENT` | `ON_DEPENDENCY_AND_DATA_MOVEMENT`
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#propagate Tag#propagate}
+  */
+  readonly propagate?: string;
+  /**
   * The schema in which to create the tag. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#schema Tag#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#schema Tag#schema}
   */
   readonly schema: string;
   /**
+  * on_conflict block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#on_conflict Tag#on_conflict}
+  */
+  readonly onConflict?: TagOnConflict;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#timeouts Tag#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#timeouts Tag#timeouts}
   */
   readonly timeouts?: TagTimeouts;
 }
@@ -148,6 +172,11 @@ export class TagShowOutputOutputReference extends cdktn.ComplexObject {
     return this.getStringAttribute('owner_role_type');
   }
 
+  // propagate - computed: true, optional: false, required: false
+  public get propagate() {
+    return this.getStringAttribute('propagate');
+  }
+
   // schema_name - computed: true, optional: false, required: false
   public get schemaName() {
     return this.getStringAttribute('schema_name');
@@ -161,7 +190,7 @@ export class TagShowOutputList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -172,21 +201,142 @@ export class TagShowOutputList extends cdktn.ComplexList {
     return new TagShowOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface TagOnConflict {
+  /**
+  * The order of the values in the ALLOWED_VALUES property of the tag determines which value is used when there is a conflict. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#allowed_values_sequence Tag#allowed_values_sequence}
+  */
+  readonly allowedValuesSequence?: boolean | cdktn.IResolvable;
+  /**
+  * Whenever there is a conflict, the value of tag is set to custom_value. If `allowed_values` are set, the value set in this field should be one of the values in the `allowed_values` list. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#custom_value Tag#custom_value}
+  */
+  readonly customValue?: string;
+}
+
+export function tagOnConflictToTerraform(struct?: TagOnConflictOutputReference | TagOnConflict): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allowed_values_sequence: cdktn.booleanToTerraform(struct!.allowedValuesSequence),
+    custom_value: cdktn.stringToTerraform(struct!.customValue),
+  }
+}
+
+
+export function tagOnConflictToHclTerraform(struct?: TagOnConflictOutputReference | TagOnConflict): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_values_sequence: {
+      value: cdktn.booleanToHclTerraform(struct!.allowedValuesSequence),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    custom_value: {
+      value: cdktn.stringToHclTerraform(struct!.customValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class TagOnConflictOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TagOnConflict | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowedValuesSequence !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedValuesSequence = this._allowedValuesSequence;
+    }
+    if (this._customValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customValue = this._customValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TagOnConflict | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allowedValuesSequence = undefined;
+      this._customValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allowedValuesSequence = value.allowedValuesSequence;
+      this._customValue = value.customValue;
+    }
+  }
+
+  // allowed_values_sequence - computed: false, optional: true, required: false
+  private _allowedValuesSequence?: boolean | cdktn.IResolvable; 
+  public get allowedValuesSequence() {
+    return this.getBooleanAttribute('allowed_values_sequence');
+  }
+  public set allowedValuesSequence(value: boolean | cdktn.IResolvable) {
+    this._allowedValuesSequence = value;
+  }
+  public resetAllowedValuesSequence() {
+    this._allowedValuesSequence = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedValuesSequenceInput() {
+    return this._allowedValuesSequence;
+  }
+
+  // custom_value - computed: false, optional: true, required: false
+  private _customValue?: string; 
+  public get customValue() {
+    return this.getStringAttribute('custom_value');
+  }
+  public set customValue(value: string) {
+    this._customValue = value;
+  }
+  public resetCustomValue() {
+    this._customValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customValueInput() {
+    return this._customValue;
+  }
+}
 export interface TagTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#create Tag#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#create Tag#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#delete Tag#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#delete Tag#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#read Tag#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#read Tag#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#update Tag#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#update Tag#update}
   */
   readonly update?: string;
 }
@@ -367,7 +517,7 @@ export class TagTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag snowflake_tag}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag snowflake_tag}
 */
 export class Tag extends cdktn.TerraformResource {
 
@@ -383,7 +533,7 @@ export class Tag extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Tag resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Tag to import
-  * @param importFromId The id of the existing Tag that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Tag that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Tag to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -395,7 +545,7 @@ export class Tag extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag snowflake_tag} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag snowflake_tag} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -406,7 +556,7 @@ export class Tag extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_tag',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.14.1',
+        providerVersion: '2.15.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -423,7 +573,11 @@ export class Tag extends cdktn.TerraformResource {
     this._id = config.id;
     this._maskingPolicies = config.maskingPolicies;
     this._name = config.name;
+    this._noAllowedValues = config.noAllowedValues;
+    this._orderedAllowedValues = config.orderedAllowedValues;
+    this._propagate = config.propagate;
     this._schema = config.schema;
+    this._onConflict.internalValue = config.onConflict;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -526,6 +680,54 @@ export class Tag extends cdktn.TerraformResource {
     return this._name;
   }
 
+  // no_allowed_values - computed: false, optional: true, required: false
+  private _noAllowedValues?: boolean | cdktn.IResolvable; 
+  public get noAllowedValues() {
+    return this.getBooleanAttribute('no_allowed_values');
+  }
+  public set noAllowedValues(value: boolean | cdktn.IResolvable) {
+    this._noAllowedValues = value;
+  }
+  public resetNoAllowedValues() {
+    this._noAllowedValues = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noAllowedValuesInput() {
+    return this._noAllowedValues;
+  }
+
+  // ordered_allowed_values - computed: false, optional: true, required: false
+  private _orderedAllowedValues?: string[]; 
+  public get orderedAllowedValues() {
+    return this.getListAttribute('ordered_allowed_values');
+  }
+  public set orderedAllowedValues(value: string[]) {
+    this._orderedAllowedValues = value;
+  }
+  public resetOrderedAllowedValues() {
+    this._orderedAllowedValues = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orderedAllowedValuesInput() {
+    return this._orderedAllowedValues;
+  }
+
+  // propagate - computed: false, optional: true, required: false
+  private _propagate?: string; 
+  public get propagate() {
+    return this.getStringAttribute('propagate');
+  }
+  public set propagate(value: string) {
+    this._propagate = value;
+  }
+  public resetPropagate() {
+    this._propagate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propagateInput() {
+    return this._propagate;
+  }
+
   // schema - computed: false, optional: false, required: true
   private _schema?: string; 
   public get schema() {
@@ -543,6 +745,22 @@ export class Tag extends cdktn.TerraformResource {
   private _showOutput = new TagShowOutputList(this, "show_output", false);
   public get showOutput() {
     return this._showOutput;
+  }
+
+  // on_conflict - computed: false, optional: true, required: false
+  private _onConflict = new TagOnConflictOutputReference(this, "on_conflict");
+  public get onConflict() {
+    return this._onConflict;
+  }
+  public putOnConflict(value: TagOnConflict) {
+    this._onConflict.internalValue = value;
+  }
+  public resetOnConflict() {
+    this._onConflict.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onConflictInput() {
+    return this._onConflict.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -573,7 +791,11 @@ export class Tag extends cdktn.TerraformResource {
       id: cdktn.stringToTerraform(this._id),
       masking_policies: cdktn.listMapper(cdktn.stringToTerraform, false)(this._maskingPolicies),
       name: cdktn.stringToTerraform(this._name),
+      no_allowed_values: cdktn.booleanToTerraform(this._noAllowedValues),
+      ordered_allowed_values: cdktn.listMapper(cdktn.stringToTerraform, false)(this._orderedAllowedValues),
+      propagate: cdktn.stringToTerraform(this._propagate),
       schema: cdktn.stringToTerraform(this._schema),
+      on_conflict: tagOnConflictToTerraform(this._onConflict.internalValue),
       timeouts: tagTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -616,11 +838,35 @@ export class Tag extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      no_allowed_values: {
+        value: cdktn.booleanToHclTerraform(this._noAllowedValues),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      ordered_allowed_values: {
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._orderedAllowedValues),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      propagate: {
+        value: cdktn.stringToHclTerraform(this._propagate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       schema: {
         value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      on_conflict: {
+        value: tagOnConflictToHclTerraform(this._onConflict.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TagOnConflictList",
       },
       timeouts: {
         value: tagTimeoutsToHclTerraform(this._timeouts.internalValue),
