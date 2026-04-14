@@ -15,6 +15,10 @@ The following submodules are available:
 - [apiAuthenticationIntegrationWithJwtBearer](./apiAuthenticationIntegrationWithJwtBearer.python.md)
 - [apiIntegration](./apiIntegration.python.md)
 - [authenticationPolicy](./authenticationPolicy.python.md)
+- [catalogIntegrationAwsGlue](./catalogIntegrationAwsGlue.python.md)
+- [catalogIntegrationIcebergRest](./catalogIntegrationIcebergRest.python.md)
+- [catalogIntegrationObjectStorage](./catalogIntegrationObjectStorage.python.md)
+- [catalogIntegrationOpenCatalog](./catalogIntegrationOpenCatalog.python.md)
 - [computePool](./computePool.python.md)
 - [cortexSearchService](./cortexSearchService.python.md)
 - [currentAccount](./currentAccount.python.md)
@@ -23,6 +27,7 @@ The following submodules are available:
 - [dataSnowflakeAccounts](./dataSnowflakeAccounts.python.md)
 - [dataSnowflakeAlerts](./dataSnowflakeAlerts.python.md)
 - [dataSnowflakeAuthenticationPolicies](./dataSnowflakeAuthenticationPolicies.python.md)
+- [dataSnowflakeCatalogIntegrations](./dataSnowflakeCatalogIntegrations.python.md)
 - [dataSnowflakeComputePools](./dataSnowflakeComputePools.python.md)
 - [dataSnowflakeConnections](./dataSnowflakeConnections.python.md)
 - [dataSnowflakeCortexSearchServices](./dataSnowflakeCortexSearchServices.python.md)
@@ -35,6 +40,7 @@ The following submodules are available:
 - [dataSnowflakeDynamicTables](./dataSnowflakeDynamicTables.python.md)
 - [dataSnowflakeExternalFunctions](./dataSnowflakeExternalFunctions.python.md)
 - [dataSnowflakeExternalTables](./dataSnowflakeExternalTables.python.md)
+- [dataSnowflakeExternalVolumes](./dataSnowflakeExternalVolumes.python.md)
 - [dataSnowflakeFailoverGroups](./dataSnowflakeFailoverGroups.python.md)
 - [dataSnowflakeFileFormats](./dataSnowflakeFileFormats.python.md)
 - [dataSnowflakeFunctions](./dataSnowflakeFunctions.python.md)
@@ -167,6 +173,7 @@ The following submodules are available:
 - [userPublicKeys](./userPublicKeys.python.md)
 - [view](./view.python.md)
 - [warehouse](./warehouse.python.md)
+- [warehouseAdaptive](./warehouseAdaptive.python.md)
 
 
 

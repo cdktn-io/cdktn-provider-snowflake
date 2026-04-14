@@ -15,6 +15,10 @@ The following submodules are available:
 - [apiAuthenticationIntegrationWithJwtBearer](./apiAuthenticationIntegrationWithJwtBearer.go.md)
 - [apiIntegration](./apiIntegration.go.md)
 - [authenticationPolicy](./authenticationPolicy.go.md)
+- [catalogIntegrationAwsGlue](./catalogIntegrationAwsGlue.go.md)
+- [catalogIntegrationIcebergRest](./catalogIntegrationIcebergRest.go.md)
+- [catalogIntegrationObjectStorage](./catalogIntegrationObjectStorage.go.md)
+- [catalogIntegrationOpenCatalog](./catalogIntegrationOpenCatalog.go.md)
 - [computePool](./computePool.go.md)
 - [cortexSearchService](./cortexSearchService.go.md)
 - [currentAccount](./currentAccount.go.md)
@@ -23,6 +27,7 @@ The following submodules are available:
 - [dataSnowflakeAccounts](./dataSnowflakeAccounts.go.md)
 - [dataSnowflakeAlerts](./dataSnowflakeAlerts.go.md)
 - [dataSnowflakeAuthenticationPolicies](./dataSnowflakeAuthenticationPolicies.go.md)
+- [dataSnowflakeCatalogIntegrations](./dataSnowflakeCatalogIntegrations.go.md)
 - [dataSnowflakeComputePools](./dataSnowflakeComputePools.go.md)
 - [dataSnowflakeConnections](./dataSnowflakeConnections.go.md)
 - [dataSnowflakeCortexSearchServices](./dataSnowflakeCortexSearchServices.go.md)
@@ -35,6 +40,7 @@ The following submodules are available:
 - [dataSnowflakeDynamicTables](./dataSnowflakeDynamicTables.go.md)
 - [dataSnowflakeExternalFunctions](./dataSnowflakeExternalFunctions.go.md)
 - [dataSnowflakeExternalTables](./dataSnowflakeExternalTables.go.md)
+- [dataSnowflakeExternalVolumes](./dataSnowflakeExternalVolumes.go.md)
 - [dataSnowflakeFailoverGroups](./dataSnowflakeFailoverGroups.go.md)
 - [dataSnowflakeFileFormats](./dataSnowflakeFileFormats.go.md)
 - [dataSnowflakeFunctions](./dataSnowflakeFunctions.go.md)
@@ -167,6 +173,7 @@ The following submodules are available:
 - [userPublicKeys](./userPublicKeys.go.md)
 - [view](./view.go.md)
 - [warehouse](./warehouse.go.md)
+- [warehouseAdaptive](./warehouseAdaptive.go.md)
 
 
 

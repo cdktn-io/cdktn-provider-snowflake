@@ -4,7 +4,7 @@
 
 ### ImageRepository <a name="ImageRepository" id="@cdktn/provider-snowflake.imageRepository.ImageRepository"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository snowflake_image_repository}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository snowflake_image_repository}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.imageRepository.ImageRepository.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.resetComment">ResetComment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.resetEncryption">ResetEncryption</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
@@ -408,6 +409,12 @@ func PutTimeouts(value ImageRepositoryTimeouts)
 func ResetComment()
 ```
 
+##### `ResetEncryption` <a name="ResetEncryption" id="@cdktn/provider-snowflake.imageRepository.ImageRepository.resetEncryption"></a>
+
+```go
+func ResetEncryption()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-snowflake.imageRepository.ImageRepository.resetId"></a>
 
 ```go
@@ -523,7 +530,7 @@ The construct id used in the generated config for the ImageRepository to import.
 
 The id of the existing ImageRepository that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -558,12 +565,14 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryTimeoutsOutputReference">ImageRepositoryTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.property.commentInput">CommentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.property.databaseInput">DatabaseInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.property.encryptionInput">EncryptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.property.schemaInput">SchemaInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.property.database">Database</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.property.encryption">Encryption</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepository.property.schema">Schema</a></code> | <code>*string</code> | *No description.* |
@@ -762,6 +771,16 @@ func DatabaseInput() *string
 
 ---
 
+##### `EncryptionInput`<sup>Optional</sup> <a name="EncryptionInput" id="@cdktn/provider-snowflake.imageRepository.ImageRepository.property.encryptionInput"></a>
+
+```go
+func EncryptionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-snowflake.imageRepository.ImageRepository.property.idInput"></a>
 
 ```go
@@ -816,6 +835,16 @@ func Comment() *string
 
 ```go
 func Database() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Encryption`<sup>Required</sup> <a name="Encryption" id="@cdktn/provider-snowflake.imageRepository.ImageRepository.property.encryption"></a>
+
+```go
+func Encryption() *string
 ```
 
 - *Type:* *string
@@ -891,6 +920,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/imagerepos
 	Name: *string,
 	Schema: *string,
 	Comment: *string,
+	Encryption: *string,
 	Id: *string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.imageRepository.ImageRepositoryTimeouts,
 }
@@ -911,7 +941,8 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/imagerepos
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the identifier for the image repository; |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema in which to create the image repository. |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the object. |
-| <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#id ImageRepository#id}. |
+| <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryConfig.property.encryption">Encryption</a></code> | <code>*string</code> | Specifies the encryption type for the image repository. |
+| <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#id ImageRepository#id}. |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryTimeouts">ImageRepositoryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -998,7 +1029,7 @@ The database in which to create the image repository.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#database ImageRepository#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#database ImageRepository#database}
 
 ---
 
@@ -1014,7 +1045,7 @@ Specifies the identifier for the image repository;
 
 must be unique for the schema in which the image repository is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#name ImageRepository#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#name ImageRepository#name}
 
 ---
 
@@ -1030,7 +1061,7 @@ The schema in which to create the image repository.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#schema ImageRepository#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#schema ImageRepository#schema}
 
 ---
 
@@ -1044,7 +1075,23 @@ Comment *string
 
 Specifies a comment for the object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#comment ImageRepository#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#comment ImageRepository#comment}
+
+---
+
+##### `Encryption`<sup>Optional</sup> <a name="Encryption" id="@cdktn/provider-snowflake.imageRepository.ImageRepositoryConfig.property.encryption"></a>
+
+```go
+Encryption *string
+```
+
+- *Type:* *string
+
+Specifies the encryption type for the image repository.
+
+Can only be set at creation time. Valid values are (case-insensitive): `SNOWFLAKE_FULL` | `SNOWFLAKE_SSE`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#encryption ImageRepository#encryption}
 
 ---
 
@@ -1056,7 +1103,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#id ImageRepository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#id ImageRepository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1073,7 +1120,7 @@ Timeouts ImageRepositoryTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#timeouts ImageRepository#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#timeouts ImageRepository#timeouts}
 
 ---
 
@@ -1109,10 +1156,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/imagerepos
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#create ImageRepository#create}. |
-| <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#delete ImageRepository#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#read ImageRepository#read}. |
-| <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#update ImageRepository#update}. |
+| <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#create ImageRepository#create}. |
+| <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#delete ImageRepository#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#read ImageRepository#read}. |
+| <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#update ImageRepository#update}. |
 
 ---
 
@@ -1124,7 +1171,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#create ImageRepository#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#create ImageRepository#create}.
 
 ---
 
@@ -1136,7 +1183,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#delete ImageRepository#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#delete ImageRepository#delete}.
 
 ---
 
@@ -1148,7 +1195,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#read ImageRepository#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#read ImageRepository#read}.
 
 ---
 
@@ -1160,7 +1207,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#update ImageRepository#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#update ImageRepository#update}.
 
 ---
 
@@ -1546,6 +1593,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryShowOutputOutputReference.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryShowOutputOutputReference.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryShowOutputOutputReference.property.databaseName">DatabaseName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryShowOutputOutputReference.property.encryption">Encryption</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryShowOutputOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryShowOutputOutputReference.property.owner">Owner</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.imageRepository.ImageRepositoryShowOutputOutputReference.property.ownerRoleType">OwnerRoleType</a></code> | <code>*string</code> | *No description.* |
@@ -1604,6 +1652,16 @@ func CreatedOn() *string
 
 ```go
 func DatabaseName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Encryption`<sup>Required</sup> <a name="Encryption" id="@cdktn/provider-snowflake.imageRepository.ImageRepositoryShowOutputOutputReference.property.encryption"></a>
+
+```go
+func Encryption() *string
 ```
 
 - *Type:* *string

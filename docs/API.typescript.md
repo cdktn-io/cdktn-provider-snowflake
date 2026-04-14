@@ -15,6 +15,10 @@ The following submodules are available:
 - [apiAuthenticationIntegrationWithJwtBearer](./apiAuthenticationIntegrationWithJwtBearer.typescript.md)
 - [apiIntegration](./apiIntegration.typescript.md)
 - [authenticationPolicy](./authenticationPolicy.typescript.md)
+- [catalogIntegrationAwsGlue](./catalogIntegrationAwsGlue.typescript.md)
+- [catalogIntegrationIcebergRest](./catalogIntegrationIcebergRest.typescript.md)
+- [catalogIntegrationObjectStorage](./catalogIntegrationObjectStorage.typescript.md)
+- [catalogIntegrationOpenCatalog](./catalogIntegrationOpenCatalog.typescript.md)
 - [computePool](./computePool.typescript.md)
 - [cortexSearchService](./cortexSearchService.typescript.md)
 - [currentAccount](./currentAccount.typescript.md)
@@ -23,6 +27,7 @@ The following submodules are available:
 - [dataSnowflakeAccounts](./dataSnowflakeAccounts.typescript.md)
 - [dataSnowflakeAlerts](./dataSnowflakeAlerts.typescript.md)
 - [dataSnowflakeAuthenticationPolicies](./dataSnowflakeAuthenticationPolicies.typescript.md)
+- [dataSnowflakeCatalogIntegrations](./dataSnowflakeCatalogIntegrations.typescript.md)
 - [dataSnowflakeComputePools](./dataSnowflakeComputePools.typescript.md)
 - [dataSnowflakeConnections](./dataSnowflakeConnections.typescript.md)
 - [dataSnowflakeCortexSearchServices](./dataSnowflakeCortexSearchServices.typescript.md)
@@ -35,6 +40,7 @@ The following submodules are available:
 - [dataSnowflakeDynamicTables](./dataSnowflakeDynamicTables.typescript.md)
 - [dataSnowflakeExternalFunctions](./dataSnowflakeExternalFunctions.typescript.md)
 - [dataSnowflakeExternalTables](./dataSnowflakeExternalTables.typescript.md)
+- [dataSnowflakeExternalVolumes](./dataSnowflakeExternalVolumes.typescript.md)
 - [dataSnowflakeFailoverGroups](./dataSnowflakeFailoverGroups.typescript.md)
 - [dataSnowflakeFileFormats](./dataSnowflakeFileFormats.typescript.md)
 - [dataSnowflakeFunctions](./dataSnowflakeFunctions.typescript.md)
@@ -167,6 +173,7 @@ The following submodules are available:
 - [userPublicKeys](./userPublicKeys.typescript.md)
 - [view](./view.typescript.md)
 - [warehouse](./warehouse.typescript.md)
+- [warehouseAdaptive](./warehouseAdaptive.typescript.md)
 
 
 

@@ -1,3 +1,3 @@
 # `snowflake_user`
 
-Refer to the Terraform Registry for docs: [`snowflake_user`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/user).
+Refer to the Terraform Registry for docs: [`snowflake_user`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/user).

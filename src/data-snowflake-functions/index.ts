@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/functions
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/functions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataSnowflakeFunctionsConfig extends cdktn.TerraformMetaArgumen
   /**
   * The database from which to return the schemas from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/functions#database DataSnowflakeFunctions#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/functions#database DataSnowflakeFunctions#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/functions#id DataSnowflakeFunctions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/functions#id DataSnowflakeFunctions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +28,7 @@ export interface DataSnowflakeFunctionsConfig extends cdktn.TerraformMetaArgumen
   /**
   * The schema from which to return the functions from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/functions#schema DataSnowflakeFunctions#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/functions#schema DataSnowflakeFunctions#schema}
   */
   readonly schema: string;
 }
@@ -121,7 +121,7 @@ export class DataSnowflakeFunctionsFunctionsList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -134,7 +134,7 @@ export class DataSnowflakeFunctionsFunctionsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/functions snowflake_functions}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/functions snowflake_functions}
 */
 export class DataSnowflakeFunctions extends cdktn.TerraformDataSource {
 
@@ -150,7 +150,7 @@ export class DataSnowflakeFunctions extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataSnowflakeFunctions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeFunctions to import
-  * @param importFromId The id of the existing DataSnowflakeFunctions that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/functions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeFunctions that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/functions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeFunctions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -162,7 +162,7 @@ export class DataSnowflakeFunctions extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/functions snowflake_functions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/functions snowflake_functions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -173,7 +173,7 @@ export class DataSnowflakeFunctions extends cdktn.TerraformDataSource {
       terraformResourceType: 'snowflake_functions',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.14.1',
+        providerVersion: '2.15.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

@@ -1,3 +1,3 @@
 # `snowflake_procedure_scala`
 
-Refer to the Terraform Registry for docs: [`snowflake_procedure_scala`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/procedure_scala).
+Refer to the Terraform Registry for docs: [`snowflake_procedure_scala`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/procedure_scala).

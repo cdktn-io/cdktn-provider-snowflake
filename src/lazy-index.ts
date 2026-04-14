@@ -15,6 +15,10 @@ Object.defineProperty(exports, 'apiAuthenticationIntegrationWithClientCredential
 Object.defineProperty(exports, 'apiAuthenticationIntegrationWithJwtBearer', { get: function () { return require('./api-authentication-integration-with-jwt-bearer'); } });
 Object.defineProperty(exports, 'apiIntegration', { get: function () { return require('./api-integration'); } });
 Object.defineProperty(exports, 'authenticationPolicy', { get: function () { return require('./authentication-policy'); } });
+Object.defineProperty(exports, 'catalogIntegrationAwsGlue', { get: function () { return require('./catalog-integration-aws-glue'); } });
+Object.defineProperty(exports, 'catalogIntegrationIcebergRest', { get: function () { return require('./catalog-integration-iceberg-rest'); } });
+Object.defineProperty(exports, 'catalogIntegrationObjectStorage', { get: function () { return require('./catalog-integration-object-storage'); } });
+Object.defineProperty(exports, 'catalogIntegrationOpenCatalog', { get: function () { return require('./catalog-integration-open-catalog'); } });
 Object.defineProperty(exports, 'computePool', { get: function () { return require('./compute-pool'); } });
 Object.defineProperty(exports, 'cortexSearchService', { get: function () { return require('./cortex-search-service'); } });
 Object.defineProperty(exports, 'currentAccount', { get: function () { return require('./current-account'); } });
@@ -111,10 +115,12 @@ Object.defineProperty(exports, 'userProgrammaticAccessToken', { get: function ()
 Object.defineProperty(exports, 'userPublicKeys', { get: function () { return require('./user-public-keys'); } });
 Object.defineProperty(exports, 'view', { get: function () { return require('./view'); } });
 Object.defineProperty(exports, 'warehouse', { get: function () { return require('./warehouse'); } });
+Object.defineProperty(exports, 'warehouseAdaptive', { get: function () { return require('./warehouse-adaptive'); } });
 Object.defineProperty(exports, 'dataSnowflakeAccountRoles', { get: function () { return require('./data-snowflake-account-roles'); } });
 Object.defineProperty(exports, 'dataSnowflakeAccounts', { get: function () { return require('./data-snowflake-accounts'); } });
 Object.defineProperty(exports, 'dataSnowflakeAlerts', { get: function () { return require('./data-snowflake-alerts'); } });
 Object.defineProperty(exports, 'dataSnowflakeAuthenticationPolicies', { get: function () { return require('./data-snowflake-authentication-policies'); } });
+Object.defineProperty(exports, 'dataSnowflakeCatalogIntegrations', { get: function () { return require('./data-snowflake-catalog-integrations'); } });
 Object.defineProperty(exports, 'dataSnowflakeComputePools', { get: function () { return require('./data-snowflake-compute-pools'); } });
 Object.defineProperty(exports, 'dataSnowflakeConnections', { get: function () { return require('./data-snowflake-connections'); } });
 Object.defineProperty(exports, 'dataSnowflakeCortexSearchServices', { get: function () { return require('./data-snowflake-cortex-search-services'); } });
@@ -127,6 +133,7 @@ Object.defineProperty(exports, 'dataSnowflakeDatabases', { get: function () { re
 Object.defineProperty(exports, 'dataSnowflakeDynamicTables', { get: function () { return require('./data-snowflake-dynamic-tables'); } });
 Object.defineProperty(exports, 'dataSnowflakeExternalFunctions', { get: function () { return require('./data-snowflake-external-functions'); } });
 Object.defineProperty(exports, 'dataSnowflakeExternalTables', { get: function () { return require('./data-snowflake-external-tables'); } });
+Object.defineProperty(exports, 'dataSnowflakeExternalVolumes', { get: function () { return require('./data-snowflake-external-volumes'); } });
 Object.defineProperty(exports, 'dataSnowflakeFailoverGroups', { get: function () { return require('./data-snowflake-failover-groups'); } });
 Object.defineProperty(exports, 'dataSnowflakeFileFormats', { get: function () { return require('./data-snowflake-file-formats'); } });
 Object.defineProperty(exports, 'dataSnowflakeFunctions', { get: function () { return require('./data-snowflake-functions'); } });

@@ -4,7 +4,7 @@
 
 ### AuthenticationPolicy <a name="AuthenticationPolicy" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy snowflake_authentication_policy}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy snowflake_authentication_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.Initializer"></a>
 
@@ -74,11 +74,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.putClientPolicy">putClientPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.putMfaPolicy">putMfaPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.putPatPolicy">putPatPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.putWorkloadIdentityPolicy">putWorkloadIdentityPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.resetAuthenticationMethods">resetAuthenticationMethods</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.resetClientPolicy">resetClientPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.resetClientTypes">resetClientTypes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.resetComment">resetComment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.resetId">resetId</a></code> | *No description.* |
@@ -401,6 +403,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putClientPolicy` <a name="putClientPolicy" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.putClientPolicy"></a>
+
+```typescript
+public putClientPolicy(value: IResolvable | AuthenticationPolicyClientPolicy[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.putClientPolicy.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicy">AuthenticationPolicyClientPolicy</a>[]
+
+---
+
 ##### `putMfaPolicy` <a name="putMfaPolicy" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.putMfaPolicy"></a>
 
 ```typescript
@@ -453,6 +467,12 @@ public putWorkloadIdentityPolicy(value: AuthenticationPolicyWorkloadIdentityPoli
 
 ```typescript
 public resetAuthenticationMethods(): void
+```
+
+##### `resetClientPolicy` <a name="resetClientPolicy" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.resetClientPolicy"></a>
+
+```typescript
+public resetClientPolicy(): void
 ```
 
 ##### `resetClientTypes` <a name="resetClientTypes" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.resetClientTypes"></a>
@@ -618,7 +638,7 @@ The construct id used in the generated config for the AuthenticationPolicy to im
 
 The id of the existing AuthenticationPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -648,6 +668,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.property.clientPolicy">clientPolicy</a></code> | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList">AuthenticationPolicyClientPolicyList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.property.describeOutput">describeOutput</a></code> | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutputList">AuthenticationPolicyDescribeOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.property.fullyQualifiedName">fullyQualifiedName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.property.mfaPolicy">mfaPolicy</a></code> | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyMfaPolicyOutputReference">AuthenticationPolicyMfaPolicyOutputReference</a></code> | *No description.* |
@@ -656,6 +677,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyTimeoutsOutputReference">AuthenticationPolicyTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.property.workloadIdentityPolicy">workloadIdentityPolicy</a></code> | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyWorkloadIdentityPolicyOutputReference">AuthenticationPolicyWorkloadIdentityPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.property.authenticationMethodsInput">authenticationMethodsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.property.clientPolicyInput">clientPolicyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicy">AuthenticationPolicyClientPolicy</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.property.clientTypesInput">clientTypesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
@@ -824,6 +846,16 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
+##### `clientPolicy`<sup>Required</sup> <a name="clientPolicy" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.property.clientPolicy"></a>
+
+```typescript
+public readonly clientPolicy: AuthenticationPolicyClientPolicyList;
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList">AuthenticationPolicyClientPolicyList</a>
+
+---
+
 ##### `describeOutput`<sup>Required</sup> <a name="describeOutput" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.property.describeOutput"></a>
 
 ```typescript
@@ -901,6 +933,16 @@ public readonly authenticationMethodsInput: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `clientPolicyInput`<sup>Optional</sup> <a name="clientPolicyInput" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicy.property.clientPolicyInput"></a>
+
+```typescript
+public readonly clientPolicyInput: IResolvable | AuthenticationPolicyClientPolicy[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicy">AuthenticationPolicyClientPolicy</a>[]
 
 ---
 
@@ -1154,6 +1196,55 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### AuthenticationPolicyClientPolicy <a name="AuthenticationPolicyClientPolicy" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicy"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicy.Initializer"></a>
+
+```typescript
+import { authenticationPolicy } from '@cdktn/provider-snowflake'
+
+const authenticationPolicyClientPolicy: authenticationPolicy.AuthenticationPolicyClientPolicy = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicy.property.clientType">clientType</a></code> | <code>string</code> | The client or driver type. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicy.property.minimumVersion">minimumVersion</a></code> | <code>string</code> | Minimum allowed version for this client/driver type (e.g. '1.14.1'). |
+
+---
+
+##### `clientType`<sup>Required</sup> <a name="clientType" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicy.property.clientType"></a>
+
+```typescript
+public readonly clientType: string;
+```
+
+- *Type:* string
+
+The client or driver type.
+
+Valid values (case-insensitive): `JDBC_DRIVER` | `ODBC_DRIVER` | `PYTHON_DRIVER` | `JAVASCRIPT_DRIVER` | `C_DRIVER` | `GO_DRIVER` | `PHP_DRIVER` | `DOTNET_DRIVER` | `SQL_API` | `SNOWPIPE_STREAMING_CLIENT_SDK` | `PY_CORE` | `SPROC_PYTHON` | `PYTHON_SNOWPARK` | `SQL_ALCHEMY` | `SNOWPARK` | `SNOWFLAKE_CLIENT`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#client_type AuthenticationPolicy#client_type}
+
+---
+
+##### `minimumVersion`<sup>Required</sup> <a name="minimumVersion" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicy.property.minimumVersion"></a>
+
+```typescript
+public readonly minimumVersion: string;
+```
+
+- *Type:* string
+
+Minimum allowed version for this client/driver type (e.g. '1.14.1').
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#minimum_version AuthenticationPolicy#minimum_version}
+
+---
+
 ### AuthenticationPolicyConfig <a name="AuthenticationPolicyConfig" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyConfig.Initializer"></a>
@@ -1179,9 +1270,10 @@ const authenticationPolicyConfig: authenticationPolicy.AuthenticationPolicyConfi
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyConfig.property.name">name</a></code> | <code>string</code> | Specifies the identifier for the authentication policy. |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyConfig.property.schema">schema</a></code> | <code>string</code> | The schema in which to create the authentication policy. |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyConfig.property.authenticationMethods">authenticationMethods</a></code> | <code>string[]</code> | A list of authentication methods that are allowed during login. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyConfig.property.clientPolicy">clientPolicy</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicy">AuthenticationPolicyClientPolicy</a>[]</code> | client_policy block. |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyConfig.property.clientTypes">clientTypes</a></code> | <code>string[]</code> | A list of clients that can authenticate with Snowflake. |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the authentication policy. |
-| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#id AuthenticationPolicy#id}. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#id AuthenticationPolicy#id}. |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyConfig.property.mfaAuthenticationMethods">mfaAuthenticationMethods</a></code> | <code>string[]</code> | A list of authentication methods that enforce multi-factor authentication (MFA) during login. |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyConfig.property.mfaEnrollment">mfaEnrollment</a></code> | <code>string</code> | Determines whether a user must enroll in multi-factor authentication. |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyConfig.property.mfaPolicy">mfaPolicy</a></code> | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyMfaPolicy">AuthenticationPolicyMfaPolicy</a></code> | mfa_policy block. |
@@ -1274,7 +1366,7 @@ The database in which to create the authentication policy.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#database AuthenticationPolicy#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#database AuthenticationPolicy#database}
 
 ---
 
@@ -1290,7 +1382,7 @@ Specifies the identifier for the authentication policy.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#name AuthenticationPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#name AuthenticationPolicy#name}
 
 ---
 
@@ -1306,7 +1398,7 @@ The schema in which to create the authentication policy.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#schema AuthenticationPolicy#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#schema AuthenticationPolicy#schema}
 
 ---
 
@@ -1322,7 +1414,21 @@ A list of authentication methods that are allowed during login.
 
 Valid values are (case-insensitive): `ALL` | `SAML` | `PASSWORD` | `OAUTH` | `KEYPAIR` | `PROGRAMMATIC_ACCESS_TOKEN` | `WORKLOAD_IDENTITY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#authentication_methods AuthenticationPolicy#authentication_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#authentication_methods AuthenticationPolicy#authentication_methods}
+
+---
+
+##### `clientPolicy`<sup>Optional</sup> <a name="clientPolicy" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyConfig.property.clientPolicy"></a>
+
+```typescript
+public readonly clientPolicy: IResolvable | AuthenticationPolicyClientPolicy[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicy">AuthenticationPolicyClientPolicy</a>[]
+
+client_policy block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#client_policy AuthenticationPolicy#client_policy}
 
 ---
 
@@ -1338,7 +1444,7 @@ A list of clients that can authenticate with Snowflake.
 
 If a client tries to connect, and the client is not one of the valid `client_types`, then the login attempt fails. Valid values are (case-insensitive): `ALL` | `SNOWFLAKE_UI` | `DRIVERS` | `SNOWSQL` | `SNOWFLAKE_CLI`. The `client_types` property of an authentication policy is a best effort method to block user logins based on specific clients. It should not be used as the sole control to establish a security boundary.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#client_types AuthenticationPolicy#client_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#client_types AuthenticationPolicy#client_types}
 
 ---
 
@@ -1352,7 +1458,7 @@ public readonly comment: string;
 
 Specifies a comment for the authentication policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#comment AuthenticationPolicy#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#comment AuthenticationPolicy#comment}
 
 ---
 
@@ -1364,7 +1470,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#id AuthenticationPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#id AuthenticationPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1383,7 +1489,7 @@ A list of authentication methods that enforce multi-factor authentication (MFA) 
 
 Authentication methods not listed in this parameter do not prompt for multi-factor authentication. Allowed values are `ALL` | `SAML` | `PASSWORD`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#mfa_authentication_methods AuthenticationPolicy#mfa_authentication_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#mfa_authentication_methods AuthenticationPolicy#mfa_authentication_methods}
 
 ---
 
@@ -1399,7 +1505,7 @@ Determines whether a user must enroll in multi-factor authentication.
 
 Valid values are (case-insensitive): `REQUIRED` | `REQUIRED_PASSWORD_ONLY` | `OPTIONAL`. When REQUIRED is specified, Enforces users to enroll in MFA. If this value is used, then the `client_types` parameter must include `snowflake_ui`, because Snowsight is the only place users can enroll in multi-factor authentication (MFA). Note that when you set this value to OPTIONAL, and your account setup forces users to enroll in MFA, then Snowflake may set quietly this value to `REQUIRED_PASSWORD_ONLY`, which may cause permadiff. In this case, you may want to adjust this field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#mfa_enrollment AuthenticationPolicy#mfa_enrollment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#mfa_enrollment AuthenticationPolicy#mfa_enrollment}
 
 ---
 
@@ -1413,7 +1519,7 @@ public readonly mfaPolicy: AuthenticationPolicyMfaPolicy;
 
 mfa_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#mfa_policy AuthenticationPolicy#mfa_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#mfa_policy AuthenticationPolicy#mfa_policy}
 
 ---
 
@@ -1427,7 +1533,7 @@ public readonly patPolicy: AuthenticationPolicyPatPolicy;
 
 pat_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#pat_policy AuthenticationPolicy#pat_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#pat_policy AuthenticationPolicy#pat_policy}
 
 ---
 
@@ -1443,7 +1549,7 @@ A list of security integrations the authentication policy is associated with.
 
 This parameter has no effect when `saml` or `oauth` are not in the `authentication_methods` list. All values in the `security_integrations` list must be compatible with the values in the `authentication_methods` list. For example, if `security_integrations` contains a SAML security integration, and `authentication_methods` contains OAUTH, then you cannot create the authentication policy. To allow all security integrations use `ALL` as parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#security_integrations AuthenticationPolicy#security_integrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#security_integrations AuthenticationPolicy#security_integrations}
 
 ---
 
@@ -1457,7 +1563,7 @@ public readonly timeouts: AuthenticationPolicyTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#timeouts AuthenticationPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#timeouts AuthenticationPolicy#timeouts}
 
 ---
 
@@ -1471,7 +1577,7 @@ public readonly workloadIdentityPolicy: AuthenticationPolicyWorkloadIdentityPoli
 
 workload_identity_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#workload_identity_policy AuthenticationPolicy#workload_identity_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#workload_identity_policy AuthenticationPolicy#workload_identity_policy}
 
 ---
 
@@ -1515,9 +1621,9 @@ public readonly allowedMethods: string[];
 
 Specifies the allowed methods for the MFA policy.
 
-Valid values are: `ALL` | `PASSKEY` | `TOTP` | `DUO`. These values are case-sensitive due to Terraform limitations (it's a nested field). Prefer using uppercased values.
+Valid values are: `ALL` | `PASSKEY` | `TOTP` | `OTP` | `DUO`. These values are case-sensitive due to Terraform limitations (it's a nested field). Prefer using uppercased values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#allowed_methods AuthenticationPolicy#allowed_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#allowed_methods AuthenticationPolicy#allowed_methods}
 
 ---
 
@@ -1531,7 +1637,7 @@ public readonly enforceMfaOnExternalAuthentication: string;
 
 Determines whether multi-factor authentication (MFA) is enforced on external authentication. Valid values are (case-insensitive): `ALL` | `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#enforce_mfa_on_external_authentication AuthenticationPolicy#enforce_mfa_on_external_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#enforce_mfa_on_external_authentication AuthenticationPolicy#enforce_mfa_on_external_authentication}
 
 ---
 
@@ -1551,7 +1657,8 @@ const authenticationPolicyPatPolicy: authenticationPolicy.AuthenticationPolicyPa
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicy.property.defaultExpiryInDays">defaultExpiryInDays</a></code> | <code>number</code> | Specifies the default expiration time (in days) for a programmatic access token. |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicy.property.maxExpiryInDays">maxExpiryInDays</a></code> | <code>number</code> | Specifies the maximum number of days that can be set for the expiration time for a programmatic access token. |
-| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicy.property.networkPolicyEvaluation">networkPolicyEvaluation</a></code> | <code>string</code> | Specifies the network policy evaluation for the PAT. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicy.property.networkPolicyEvaluation">networkPolicyEvaluation</a></code> | <code>string</code> | Specifies the network policy evaluation for the PAT. Valid values are: `ENFORCED_REQUIRED` \| `ENFORCED_NOT_REQUIRED` \| `NOT_ENFORCED`. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicy.property.requireRoleRestrictionForServiceUsers">requireRoleRestrictionForServiceUsers</a></code> | <code>string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) If true, when you generate a programmatic access token for a service user, you must restrict the use of that token to a specific role. |
 
 ---
 
@@ -1565,7 +1672,7 @@ public readonly defaultExpiryInDays: number;
 
 Specifies the default expiration time (in days) for a programmatic access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#default_expiry_in_days AuthenticationPolicy#default_expiry_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#default_expiry_in_days AuthenticationPolicy#default_expiry_in_days}
 
 ---
 
@@ -1579,7 +1686,7 @@ public readonly maxExpiryInDays: number;
 
 Specifies the maximum number of days that can be set for the expiration time for a programmatic access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#max_expiry_in_days AuthenticationPolicy#max_expiry_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#max_expiry_in_days AuthenticationPolicy#max_expiry_in_days}
 
 ---
 
@@ -1591,9 +1698,25 @@ public readonly networkPolicyEvaluation: string;
 
 - *Type:* string
 
-Specifies the network policy evaluation for the PAT.
+Specifies the network policy evaluation for the PAT. Valid values are: `ENFORCED_REQUIRED` | `ENFORCED_NOT_REQUIRED` | `NOT_ENFORCED`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#network_policy_evaluation AuthenticationPolicy#network_policy_evaluation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#network_policy_evaluation AuthenticationPolicy#network_policy_evaluation}
+
+---
+
+##### `requireRoleRestrictionForServiceUsers`<sup>Optional</sup> <a name="requireRoleRestrictionForServiceUsers" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicy.property.requireRoleRestrictionForServiceUsers"></a>
+
+```typescript
+public readonly requireRoleRestrictionForServiceUsers: string;
+```
+
+- *Type:* string
+
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) If true, when you generate a programmatic access token for a service user, you must restrict the use of that token to a specific role.
+
+Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#require_role_restriction_for_service_users AuthenticationPolicy#require_role_restriction_for_service_users}
 
 ---
 
@@ -1622,10 +1745,10 @@ const authenticationPolicyTimeouts: authenticationPolicy.AuthenticationPolicyTim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#create AuthenticationPolicy#create}. |
-| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#delete AuthenticationPolicy#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#read AuthenticationPolicy#read}. |
-| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#update AuthenticationPolicy#update}. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#create AuthenticationPolicy#create}. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#delete AuthenticationPolicy#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#read AuthenticationPolicy#read}. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#update AuthenticationPolicy#update}. |
 
 ---
 
@@ -1637,7 +1760,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#create AuthenticationPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#create AuthenticationPolicy#create}.
 
 ---
 
@@ -1649,7 +1772,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#delete AuthenticationPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#delete AuthenticationPolicy#delete}.
 
 ---
 
@@ -1661,7 +1784,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#read AuthenticationPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#read AuthenticationPolicy#read}.
 
 ---
 
@@ -1673,7 +1796,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#update AuthenticationPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#update AuthenticationPolicy#update}.
 
 ---
 
@@ -1708,7 +1831,7 @@ public readonly allowedAwsAccounts: string[];
 
 Specifies the list of AWS account IDs allowed by the authentication policy during workload identity authentication of type `AWS`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#allowed_aws_accounts AuthenticationPolicy#allowed_aws_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#allowed_aws_accounts AuthenticationPolicy#allowed_aws_accounts}
 
 ---
 
@@ -1722,7 +1845,7 @@ public readonly allowedAzureIssuers: string[];
 
 Specifies the list of Azure Entra ID issuers allowed by the authentication policy during workload identity authentication of type `AZURE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#allowed_azure_issuers AuthenticationPolicy#allowed_azure_issuers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#allowed_azure_issuers AuthenticationPolicy#allowed_azure_issuers}
 
 ---
 
@@ -1736,7 +1859,7 @@ public readonly allowedOidcIssuers: string[];
 
 Specifies the list of OIDC issuers allowed by the authentication policy during workload identity authentication of type `OIDC`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#allowed_oidc_issuers AuthenticationPolicy#allowed_oidc_issuers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#allowed_oidc_issuers AuthenticationPolicy#allowed_oidc_issuers}
 
 ---
 
@@ -1752,11 +1875,482 @@ Specifies the allowed providers for the workload identity policy.
 
 Valid values are: `ALL` | `AWS` | `AZURE` | `GCP` | `OIDC`. These values are case-sensitive due to Terraform limitations (it's a nested field). Prefer using uppercased values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/authentication_policy#allowed_providers AuthenticationPolicy#allowed_providers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/authentication_policy#allowed_providers AuthenticationPolicy#allowed_providers}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### AuthenticationPolicyClientPolicyList <a name="AuthenticationPolicyClientPolicyList" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.Initializer"></a>
+
+```typescript
+import { authenticationPolicy } from '@cdktn/provider-snowflake'
+
+new authenticationPolicy.AuthenticationPolicyClientPolicyList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.get"></a>
+
+```typescript
+public get(index: number): AuthenticationPolicyClientPolicyOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicy">AuthenticationPolicyClientPolicy</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | AuthenticationPolicyClientPolicy[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicy">AuthenticationPolicyClientPolicy</a>[]
+
+---
+
+
+### AuthenticationPolicyClientPolicyOutputReference <a name="AuthenticationPolicyClientPolicyOutputReference" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.Initializer"></a>
+
+```typescript
+import { authenticationPolicy } from '@cdktn/provider-snowflake'
+
+new authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.property.clientTypeInput">clientTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.property.minimumVersionInput">minimumVersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.property.clientType">clientType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.property.minimumVersion">minimumVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicy">AuthenticationPolicyClientPolicy</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clientTypeInput`<sup>Optional</sup> <a name="clientTypeInput" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.property.clientTypeInput"></a>
+
+```typescript
+public readonly clientTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `minimumVersionInput`<sup>Optional</sup> <a name="minimumVersionInput" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.property.minimumVersionInput"></a>
+
+```typescript
+public readonly minimumVersionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clientType`<sup>Required</sup> <a name="clientType" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.property.clientType"></a>
+
+```typescript
+public readonly clientType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `minimumVersion`<sup>Required</sup> <a name="minimumVersion" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.property.minimumVersion"></a>
+
+```typescript
+public readonly minimumVersion: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | AuthenticationPolicyClientPolicy;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyClientPolicy">AuthenticationPolicyClientPolicy</a>
+
+---
+
 
 ### AuthenticationPolicyDescribeOutputList <a name="AuthenticationPolicyDescribeOutputList" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutputList"></a>
 
@@ -2136,6 +2730,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutputOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutputOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutputOutputReference.property.authenticationMethods">authenticationMethods</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutputOutputReference.property.clientPolicy">clientPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutputOutputReference.property.clientTypes">clientTypes</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutputOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutputOutputReference.property.mfaEnrollment">mfaEnrollment</a></code> | <code>string</code> | *No description.* |
@@ -2177,6 +2772,16 @@ public readonly fqn: string;
 
 ```typescript
 public readonly authenticationMethods: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clientPolicy`<sup>Required</sup> <a name="clientPolicy" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyDescribeOutputOutputReference.property.clientPolicy"></a>
+
+```typescript
+public readonly clientPolicy: string;
 ```
 
 - *Type:* string
@@ -2644,6 +3249,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference.resetDefaultExpiryInDays">resetDefaultExpiryInDays</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference.resetMaxExpiryInDays">resetMaxExpiryInDays</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference.resetNetworkPolicyEvaluation">resetNetworkPolicyEvaluation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference.resetRequireRoleRestrictionForServiceUsers">resetRequireRoleRestrictionForServiceUsers</a></code> | *No description.* |
 
 ---
 
@@ -2815,6 +3421,12 @@ public resetMaxExpiryInDays(): void
 public resetNetworkPolicyEvaluation(): void
 ```
 
+##### `resetRequireRoleRestrictionForServiceUsers` <a name="resetRequireRoleRestrictionForServiceUsers" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference.resetRequireRoleRestrictionForServiceUsers"></a>
+
+```typescript
+public resetRequireRoleRestrictionForServiceUsers(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2825,9 +3437,11 @@ public resetNetworkPolicyEvaluation(): void
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference.property.defaultExpiryInDaysInput">defaultExpiryInDaysInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference.property.maxExpiryInDaysInput">maxExpiryInDaysInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference.property.networkPolicyEvaluationInput">networkPolicyEvaluationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference.property.requireRoleRestrictionForServiceUsersInput">requireRoleRestrictionForServiceUsersInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference.property.defaultExpiryInDays">defaultExpiryInDays</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference.property.maxExpiryInDays">maxExpiryInDays</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference.property.networkPolicyEvaluation">networkPolicyEvaluation</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference.property.requireRoleRestrictionForServiceUsers">requireRoleRestrictionForServiceUsers</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicy">AuthenticationPolicyPatPolicy</a></code> | *No description.* |
 
 ---
@@ -2886,6 +3500,16 @@ public readonly networkPolicyEvaluationInput: string;
 
 ---
 
+##### `requireRoleRestrictionForServiceUsersInput`<sup>Optional</sup> <a name="requireRoleRestrictionForServiceUsersInput" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference.property.requireRoleRestrictionForServiceUsersInput"></a>
+
+```typescript
+public readonly requireRoleRestrictionForServiceUsersInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `defaultExpiryInDays`<sup>Required</sup> <a name="defaultExpiryInDays" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference.property.defaultExpiryInDays"></a>
 
 ```typescript
@@ -2910,6 +3534,16 @@ public readonly maxExpiryInDays: number;
 
 ```typescript
 public readonly networkPolicyEvaluation: string;
+```
+
+- *Type:* string
+
+---
+
+##### `requireRoleRestrictionForServiceUsers`<sup>Required</sup> <a name="requireRoleRestrictionForServiceUsers" id="@cdktn/provider-snowflake.authenticationPolicy.AuthenticationPolicyPatPolicyOutputReference.property.requireRoleRestrictionForServiceUsers"></a>
+
+```typescript
+public readonly requireRoleRestrictionForServiceUsers: string;
 ```
 
 - *Type:* string

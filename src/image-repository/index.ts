@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,23 @@ export interface ImageRepositoryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies a comment for the object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#comment ImageRepository#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#comment ImageRepository#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the image repository. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#database ImageRepository#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#database ImageRepository#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#id ImageRepository#id}
+  * Specifies the encryption type for the image repository. Can only be set at creation time. Valid values are (case-insensitive): `SNOWFLAKE_FULL` | `SNOWFLAKE_SSE`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#encryption ImageRepository#encryption}
+  */
+  readonly encryption?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#id ImageRepository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +40,19 @@ export interface ImageRepositoryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies the identifier for the image repository; must be unique for the schema in which the image repository is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#name ImageRepository#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#name ImageRepository#name}
   */
   readonly name: string;
   /**
   * The schema in which to create the image repository. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#schema ImageRepository#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#schema ImageRepository#schema}
   */
   readonly schema: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#timeouts ImageRepository#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#timeouts ImageRepository#timeouts}
   */
   readonly timeouts?: ImageRepositoryTimeouts;
 }
@@ -116,6 +122,11 @@ export class ImageRepositoryShowOutputOutputReference extends cdktn.ComplexObjec
     return this.getStringAttribute('database_name');
   }
 
+  // encryption - computed: true, optional: false, required: false
+  public get encryption() {
+    return this.getStringAttribute('encryption');
+  }
+
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
@@ -154,7 +165,7 @@ export class ImageRepositoryShowOutputList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -167,19 +178,19 @@ export class ImageRepositoryShowOutputList extends cdktn.ComplexList {
 }
 export interface ImageRepositoryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#create ImageRepository#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#create ImageRepository#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#delete ImageRepository#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#delete ImageRepository#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#read ImageRepository#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#read ImageRepository#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#update ImageRepository#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#update ImageRepository#update}
   */
   readonly update?: string;
 }
@@ -360,7 +371,7 @@ export class ImageRepositoryTimeoutsOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository snowflake_image_repository}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository snowflake_image_repository}
 */
 export class ImageRepository extends cdktn.TerraformResource {
 
@@ -376,7 +387,7 @@ export class ImageRepository extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ImageRepository resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ImageRepository to import
-  * @param importFromId The id of the existing ImageRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ImageRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ImageRepository to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -388,7 +399,7 @@ export class ImageRepository extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/image_repository snowflake_image_repository} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/image_repository snowflake_image_repository} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -399,7 +410,7 @@ export class ImageRepository extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_image_repository',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.14.1',
+        providerVersion: '2.15.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -412,6 +423,7 @@ export class ImageRepository extends cdktn.TerraformResource {
     });
     this._comment = config.comment;
     this._database = config.database;
+    this._encryption = config.encryption;
     this._id = config.id;
     this._name = config.name;
     this._schema = config.schema;
@@ -449,6 +461,22 @@ export class ImageRepository extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get databaseInput() {
     return this._database;
+  }
+
+  // encryption - computed: false, optional: true, required: false
+  private _encryption?: string; 
+  public get encryption() {
+    return this.getStringAttribute('encryption');
+  }
+  public set encryption(value: string) {
+    this._encryption = value;
+  }
+  public resetEncryption() {
+    this._encryption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionInput() {
+    return this._encryption;
   }
 
   // fully_qualified_name - computed: true, optional: false, required: false
@@ -528,6 +556,7 @@ export class ImageRepository extends cdktn.TerraformResource {
     return {
       comment: cdktn.stringToTerraform(this._comment),
       database: cdktn.stringToTerraform(this._database),
+      encryption: cdktn.stringToTerraform(this._encryption),
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
       schema: cdktn.stringToTerraform(this._schema),
@@ -545,6 +574,12 @@ export class ImageRepository extends cdktn.TerraformResource {
       },
       database: {
         value: cdktn.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encryption: {
+        value: cdktn.stringToHclTerraform(this._encryption),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
