@@ -4,7 +4,7 @@
 
 ### ExternalVolume <a name="ExternalVolume" id="@cdktn/provider-snowflake.externalVolume.ExternalVolume"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume snowflake_external_volume}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume snowflake_external_volume}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolume.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the ExternalVolume to import.
 
 The id of the existing ExternalVolume that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -942,7 +942,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvo
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeConfig.property.storageLocation">StorageLocation</a></code> | <code>interface{}</code> | storage_location block. |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeConfig.property.allowWrites">AllowWrites</a></code> | <code>*string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether write operations are allowed for the external volume; |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the external volume. |
-| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#id ExternalVolume#id}. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#id ExternalVolume#id}. |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts">ExternalVolumeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1029,7 +1029,7 @@ Identifier for the external volume;
 
 must be unique for your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#name ExternalVolume#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#name ExternalVolume#name}
 
 ---
 
@@ -1043,7 +1043,7 @@ StorageLocation interface{}
 
 storage_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#storage_location ExternalVolume#storage_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_location ExternalVolume#storage_location}
 
 ---
 
@@ -1059,7 +1059,7 @@ AllowWrites *string
 
 must be set to TRUE for Iceberg tables that use Snowflake as the catalog. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#allow_writes ExternalVolume#allow_writes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#allow_writes ExternalVolume#allow_writes}
 
 ---
 
@@ -1073,7 +1073,7 @@ Comment *string
 
 Specifies a comment for the external volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#comment ExternalVolume#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#comment ExternalVolume#comment}
 
 ---
 
@@ -1085,7 +1085,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#id ExternalVolume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#id ExternalVolume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1102,7 +1102,7 @@ Timeouts ExternalVolumeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#timeouts ExternalVolume#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#timeouts ExternalVolume#timeouts}
 
 ---
 
@@ -1114,6 +1114,71 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
 
 &externalvolume.ExternalVolumeDescribeOutput {
+
+}
+```
+
+
+### ExternalVolumeDescribeOutputStorageLocations <a name="ExternalVolumeDescribeOutputStorageLocations" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocations"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocations.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+
+&externalvolume.ExternalVolumeDescribeOutputStorageLocations {
+
+}
+```
+
+
+### ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation <a name="ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+
+&externalvolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation {
+
+}
+```
+
+
+### ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation <a name="ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+
+&externalvolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation {
+
+}
+```
+
+
+### ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation <a name="ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+
+&externalvolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation {
+
+}
+```
+
+
+### ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation <a name="ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+
+&externalvolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation {
 
 }
 ```
@@ -1146,7 +1211,13 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvo
 	AzureTenantId: *string,
 	EncryptionKmsKeyId: *string,
 	EncryptionType: *string,
+	StorageAwsAccessPointArn: *string,
+	StorageAwsExternalId: *string,
+	StorageAwsKeyId: *string,
 	StorageAwsRoleArn: *string,
+	StorageAwsSecretKey: *string,
+	StorageEndpoint: *string,
+	UsePrivatelinkEndpoint: *string,
 }
 ```
 
@@ -1160,7 +1231,13 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvo
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation.property.azureTenantId">AzureTenantId</a></code> | <code>*string</code> | Specifies the ID for your Office 365 tenant that the allowed and blocked storage accounts belong to. |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation.property.encryptionKmsKeyId">EncryptionKmsKeyId</a></code> | <code>*string</code> | Specifies the ID for the KMS-managed key used to encrypt files. |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Specifies the encryption type used. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation.property.storageAwsAccessPointArn">StorageAwsAccessPointArn</a></code> | <code>*string</code> | Specifies the access point ARN for the S3 bucket containing your data files. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation.property.storageAwsExternalId">StorageAwsExternalId</a></code> | <code>*string</code> | External ID that Snowflake uses to establish a trust relationship with AWS. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation.property.storageAwsKeyId">StorageAwsKeyId</a></code> | <code>*string</code> | Specifies the AWS key ID for the S3-compatible storage location. Only applicable for S3COMPAT storage provider. |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation.property.storageAwsRoleArn">StorageAwsRoleArn</a></code> | <code>*string</code> | Specifies the case-sensitive Amazon Resource Name (ARN) of the AWS identity and access management (IAM) role that grants privileges on the S3 bucket containing your data files. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation.property.storageAwsSecretKey">StorageAwsSecretKey</a></code> | <code>*string</code> | Specifies the AWS secret key for the S3-compatible storage location. Only applicable for S3COMPAT storage provider. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation.property.storageEndpoint">StorageEndpoint</a></code> | <code>*string</code> | Specifies the endpoint for the S3-compatible storage location. Only applicable for S3COMPAT storage provider. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation.property.usePrivatelinkEndpoint">UsePrivatelinkEndpoint</a></code> | <code>*string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to use a privatelink endpoint for the storage location. |
 
 ---
 
@@ -1174,7 +1251,7 @@ StorageBaseUrl *string
 
 Specifies the base URL for your cloud storage location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#storage_base_url ExternalVolume#storage_base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_base_url ExternalVolume#storage_base_url}
 
 ---
 
@@ -1190,7 +1267,7 @@ Name of the storage location.
 
 Must be unique for the external volume. Do not use the name `terraform_provider_sentinel_storage_location` - this is reserved for the provider for performing update operations. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#storage_location_name ExternalVolume#storage_location_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_location_name ExternalVolume#storage_location_name}
 
 ---
 
@@ -1204,9 +1281,9 @@ StorageProvider *string
 
 Specifies the cloud storage provider that stores your data files.
 
-Valid values are (case-insensitive): `GCS` | `AZURE` | `S3` | `S3GOV`.
+Valid values are (case-insensitive): `GCS` | `AZURE` | `S3` | `S3GOV` | `S3COMPAT`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#storage_provider ExternalVolume#storage_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_provider ExternalVolume#storage_provider}
 
 ---
 
@@ -1220,7 +1297,7 @@ AzureTenantId *string
 
 Specifies the ID for your Office 365 tenant that the allowed and blocked storage accounts belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#azure_tenant_id ExternalVolume#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#azure_tenant_id ExternalVolume#azure_tenant_id}
 
 ---
 
@@ -1234,7 +1311,7 @@ EncryptionKmsKeyId *string
 
 Specifies the ID for the KMS-managed key used to encrypt files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#encryption_kms_key_id ExternalVolume#encryption_kms_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#encryption_kms_key_id ExternalVolume#encryption_kms_key_id}
 
 ---
 
@@ -1248,7 +1325,51 @@ EncryptionType *string
 
 Specifies the encryption type used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#encryption_type ExternalVolume#encryption_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#encryption_type ExternalVolume#encryption_type}
+
+---
+
+##### `StorageAwsAccessPointArn`<sup>Optional</sup> <a name="StorageAwsAccessPointArn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation.property.storageAwsAccessPointArn"></a>
+
+```go
+StorageAwsAccessPointArn *string
+```
+
+- *Type:* *string
+
+Specifies the access point ARN for the S3 bucket containing your data files.
+
+Only applicable for S3 and S3GOV storage providers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_aws_access_point_arn ExternalVolume#storage_aws_access_point_arn}
+
+---
+
+##### `StorageAwsExternalId`<sup>Optional</sup> <a name="StorageAwsExternalId" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation.property.storageAwsExternalId"></a>
+
+```go
+StorageAwsExternalId *string
+```
+
+- *Type:* *string
+
+External ID that Snowflake uses to establish a trust relationship with AWS.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_aws_external_id ExternalVolume#storage_aws_external_id}
+
+---
+
+##### `StorageAwsKeyId`<sup>Optional</sup> <a name="StorageAwsKeyId" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation.property.storageAwsKeyId"></a>
+
+```go
+StorageAwsKeyId *string
+```
+
+- *Type:* *string
+
+Specifies the AWS key ID for the S3-compatible storage location. Only applicable for S3COMPAT storage provider.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_aws_key_id ExternalVolume#storage_aws_key_id}
 
 ---
 
@@ -1262,7 +1383,51 @@ StorageAwsRoleArn *string
 
 Specifies the case-sensitive Amazon Resource Name (ARN) of the AWS identity and access management (IAM) role that grants privileges on the S3 bucket containing your data files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#storage_aws_role_arn ExternalVolume#storage_aws_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_aws_role_arn ExternalVolume#storage_aws_role_arn}
+
+---
+
+##### `StorageAwsSecretKey`<sup>Optional</sup> <a name="StorageAwsSecretKey" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation.property.storageAwsSecretKey"></a>
+
+```go
+StorageAwsSecretKey *string
+```
+
+- *Type:* *string
+
+Specifies the AWS secret key for the S3-compatible storage location. Only applicable for S3COMPAT storage provider.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_aws_secret_key ExternalVolume#storage_aws_secret_key}
+
+---
+
+##### `StorageEndpoint`<sup>Optional</sup> <a name="StorageEndpoint" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation.property.storageEndpoint"></a>
+
+```go
+StorageEndpoint *string
+```
+
+- *Type:* *string
+
+Specifies the endpoint for the S3-compatible storage location. Only applicable for S3COMPAT storage provider.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#storage_endpoint ExternalVolume#storage_endpoint}
+
+---
+
+##### `UsePrivatelinkEndpoint`<sup>Optional</sup> <a name="UsePrivatelinkEndpoint" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation.property.usePrivatelinkEndpoint"></a>
+
+```go
+UsePrivatelinkEndpoint *string
+```
+
+- *Type:* *string
+
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to use a privatelink endpoint for the storage location.
+
+Only applicable for S3, S3GOV, and AZURE storage providers. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#use_privatelink_endpoint ExternalVolume#use_privatelink_endpoint}
 
 ---
 
@@ -1285,10 +1450,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#create ExternalVolume#create}. |
-| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#delete ExternalVolume#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#read ExternalVolume#read}. |
-| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#update ExternalVolume#update}. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#create ExternalVolume#create}. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#delete ExternalVolume#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#read ExternalVolume#read}. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#update ExternalVolume#update}. |
 
 ---
 
@@ -1300,7 +1465,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#create ExternalVolume#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#create ExternalVolume#create}.
 
 ---
 
@@ -1312,7 +1477,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#delete ExternalVolume#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#delete ExternalVolume#delete}.
 
 ---
 
@@ -1324,7 +1489,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#read ExternalVolume#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#read ExternalVolume#read}.
 
 ---
 
@@ -1336,7 +1501,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/external_volume#update ExternalVolume#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/external_volume#update ExternalVolume#update}.
 
 ---
 
@@ -1719,11 +1884,10 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.default">Default</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.parent">Parent</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.type">Type</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.active">Active</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.allowWrites">AllowWrites</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.storageLocations">StorageLocations</a></code> | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList">ExternalVolumeDescribeOutputStorageLocationsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutput">ExternalVolumeDescribeOutput</a></code> | *No description.* |
 
 ---
@@ -1752,53 +1916,43 @@ func Fqn() *string
 
 ---
 
-##### `Default`<sup>Required</sup> <a name="Default" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.default"></a>
+##### `Active`<sup>Required</sup> <a name="Active" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.active"></a>
 
 ```go
-func Default() *string
+func Active() *string
 ```
 
 - *Type:* *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.name"></a>
+##### `AllowWrites`<sup>Required</sup> <a name="AllowWrites" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.allowWrites"></a>
 
 ```go
-func Name() *string
+func AllowWrites() *string
 ```
 
 - *Type:* *string
 
 ---
 
-##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.parent"></a>
+##### `Comment`<sup>Required</sup> <a name="Comment" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.comment"></a>
 
 ```go
-func Parent() *string
+func Comment() *string
 ```
 
 - *Type:* *string
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.type"></a>
+##### `StorageLocations`<sup>Required</sup> <a name="StorageLocations" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.storageLocations"></a>
 
 ```go
-func Type() *string
+func StorageLocations() ExternalVolumeDescribeOutputStorageLocationsList
 ```
 
-- *Type:* *string
-
----
-
-##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.property.value"></a>
-
-```go
-func Value() *string
-```
-
-- *Type:* *string
+- *Type:* <a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList">ExternalVolumeDescribeOutputStorageLocationsList</a>
 
 ---
 
@@ -1809,6 +1963,2339 @@ func InternalValue() ExternalVolumeDescribeOutput
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutput">ExternalVolumeDescribeOutput</a>
+
+---
+
+
+### ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList <a name="ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+
+externalvolume.NewExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.get"></a>
+
+```go
+func Get(index *f64) ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference <a name="ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+
+externalvolume.NewExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.property.azureConsentUrl">AzureConsentUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.property.azureMultiTenantAppName">AzureMultiTenantAppName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.property.azureTenantId">AzureTenantId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation">ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AzureConsentUrl`<sup>Required</sup> <a name="AzureConsentUrl" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.property.azureConsentUrl"></a>
+
+```go
+func AzureConsentUrl() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AzureMultiTenantAppName`<sup>Required</sup> <a name="AzureMultiTenantAppName" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.property.azureMultiTenantAppName"></a>
+
+```go
+func AzureMultiTenantAppName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AzureTenantId`<sup>Required</sup> <a name="AzureTenantId" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.property.azureTenantId"></a>
+
+```go
+func AzureTenantId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation">ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation</a>
+
+---
+
+
+### ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList <a name="ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+
+externalvolume.NewExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.get"></a>
+
+```go
+func Get(index *f64) ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference <a name="ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+
+externalvolume.NewExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.property.encryptionKmsKeyId">EncryptionKmsKeyId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.property.storageGcpServiceAccount">StorageGcpServiceAccount</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation">ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EncryptionKmsKeyId`<sup>Required</sup> <a name="EncryptionKmsKeyId" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.property.encryptionKmsKeyId"></a>
+
+```go
+func EncryptionKmsKeyId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StorageGcpServiceAccount`<sup>Required</sup> <a name="StorageGcpServiceAccount" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.property.storageGcpServiceAccount"></a>
+
+```go
+func StorageGcpServiceAccount() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation">ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation</a>
+
+---
+
+
+### ExternalVolumeDescribeOutputStorageLocationsList <a name="ExternalVolumeDescribeOutputStorageLocationsList" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+
+externalvolume.NewExternalVolumeDescribeOutputStorageLocationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalVolumeDescribeOutputStorageLocationsList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.get"></a>
+
+```go
+func Get(index *f64) ExternalVolumeDescribeOutputStorageLocationsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### ExternalVolumeDescribeOutputStorageLocationsOutputReference <a name="ExternalVolumeDescribeOutputStorageLocationsOutputReference" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+
+externalvolume.NewExternalVolumeDescribeOutputStorageLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalVolumeDescribeOutputStorageLocationsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.azureStorageLocation">AzureStorageLocation</a></code> | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList">ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.gcsStorageLocation">GcsStorageLocation</a></code> | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList">ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.s3CompatStorageLocation">S3CompatStorageLocation</a></code> | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList">ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.s3StorageLocation">S3StorageLocation</a></code> | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList">ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.storageAllowedLocations">StorageAllowedLocations</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.storageBaseUrl">StorageBaseUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.storageProvider">StorageProvider</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocations">ExternalVolumeDescribeOutputStorageLocations</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AzureStorageLocation`<sup>Required</sup> <a name="AzureStorageLocation" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.azureStorageLocation"></a>
+
+```go
+func AzureStorageLocation() ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList">ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList</a>
+
+---
+
+##### `EncryptionType`<sup>Required</sup> <a name="EncryptionType" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.encryptionType"></a>
+
+```go
+func EncryptionType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `GcsStorageLocation`<sup>Required</sup> <a name="GcsStorageLocation" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.gcsStorageLocation"></a>
+
+```go
+func GcsStorageLocation() ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList">ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList</a>
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.name"></a>
+
+```go
+func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `S3CompatStorageLocation`<sup>Required</sup> <a name="S3CompatStorageLocation" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.s3CompatStorageLocation"></a>
+
+```go
+func S3CompatStorageLocation() ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList">ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList</a>
+
+---
+
+##### `S3StorageLocation`<sup>Required</sup> <a name="S3StorageLocation" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.s3StorageLocation"></a>
+
+```go
+func S3StorageLocation() ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList">ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList</a>
+
+---
+
+##### `StorageAllowedLocations`<sup>Required</sup> <a name="StorageAllowedLocations" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.storageAllowedLocations"></a>
+
+```go
+func StorageAllowedLocations() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `StorageBaseUrl`<sup>Required</sup> <a name="StorageBaseUrl" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.storageBaseUrl"></a>
+
+```go
+func StorageBaseUrl() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StorageProvider`<sup>Required</sup> <a name="StorageProvider" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.storageProvider"></a>
+
+```go
+func StorageProvider() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ExternalVolumeDescribeOutputStorageLocations
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocations">ExternalVolumeDescribeOutputStorageLocations</a>
+
+---
+
+
+### ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList <a name="ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+
+externalvolume.NewExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.get"></a>
+
+```go
+func Get(index *f64) ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference <a name="ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+
+externalvolume.NewExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.property.awsAccessKeyId">AwsAccessKeyId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.property.encryptionKmsKeyId">EncryptionKmsKeyId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.property.endpoint">Endpoint</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation">ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AwsAccessKeyId`<sup>Required</sup> <a name="AwsAccessKeyId" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.property.awsAccessKeyId"></a>
+
+```go
+func AwsAccessKeyId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EncryptionKmsKeyId`<sup>Required</sup> <a name="EncryptionKmsKeyId" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.property.encryptionKmsKeyId"></a>
+
+```go
+func EncryptionKmsKeyId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Endpoint`<sup>Required</sup> <a name="Endpoint" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.property.endpoint"></a>
+
+```go
+func Endpoint() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation">ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation</a>
+
+---
+
+
+### ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList <a name="ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+
+externalvolume.NewExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.get"></a>
+
+```go
+func Get(index *f64) ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference <a name="ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+
+externalvolume.NewExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.property.encryptionKmsKeyId">EncryptionKmsKeyId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.property.storageAwsAccessPointArn">StorageAwsAccessPointArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.property.storageAwsExternalId">StorageAwsExternalId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.property.storageAwsIamUserArn">StorageAwsIamUserArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.property.storageAwsRoleArn">StorageAwsRoleArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.property.usePrivatelinkEndpoint">UsePrivatelinkEndpoint</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation">ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EncryptionKmsKeyId`<sup>Required</sup> <a name="EncryptionKmsKeyId" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.property.encryptionKmsKeyId"></a>
+
+```go
+func EncryptionKmsKeyId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StorageAwsAccessPointArn`<sup>Required</sup> <a name="StorageAwsAccessPointArn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.property.storageAwsAccessPointArn"></a>
+
+```go
+func StorageAwsAccessPointArn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StorageAwsExternalId`<sup>Required</sup> <a name="StorageAwsExternalId" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.property.storageAwsExternalId"></a>
+
+```go
+func StorageAwsExternalId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StorageAwsIamUserArn`<sup>Required</sup> <a name="StorageAwsIamUserArn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.property.storageAwsIamUserArn"></a>
+
+```go
+func StorageAwsIamUserArn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StorageAwsRoleArn`<sup>Required</sup> <a name="StorageAwsRoleArn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.property.storageAwsRoleArn"></a>
+
+```go
+func StorageAwsRoleArn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `UsePrivatelinkEndpoint`<sup>Required</sup> <a name="UsePrivatelinkEndpoint" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.property.usePrivatelinkEndpoint"></a>
+
+```go
+func UsePrivatelinkEndpoint() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation">ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation</a>
 
 ---
 
@@ -2493,7 +4980,13 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.resetAzureTenantId">ResetAzureTenantId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.resetEncryptionKmsKeyId">ResetEncryptionKmsKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.resetEncryptionType">ResetEncryptionType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.resetStorageAwsAccessPointArn">ResetStorageAwsAccessPointArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.resetStorageAwsExternalId">ResetStorageAwsExternalId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.resetStorageAwsKeyId">ResetStorageAwsKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.resetStorageAwsRoleArn">ResetStorageAwsRoleArn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.resetStorageAwsSecretKey">ResetStorageAwsSecretKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.resetStorageEndpoint">ResetStorageEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.resetUsePrivatelinkEndpoint">ResetUsePrivatelinkEndpoint</a></code> | *No description.* |
 
 ---
 
@@ -2665,10 +5158,46 @@ func ResetEncryptionKmsKeyId()
 func ResetEncryptionType()
 ```
 
+##### `ResetStorageAwsAccessPointArn` <a name="ResetStorageAwsAccessPointArn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.resetStorageAwsAccessPointArn"></a>
+
+```go
+func ResetStorageAwsAccessPointArn()
+```
+
+##### `ResetStorageAwsExternalId` <a name="ResetStorageAwsExternalId" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.resetStorageAwsExternalId"></a>
+
+```go
+func ResetStorageAwsExternalId()
+```
+
+##### `ResetStorageAwsKeyId` <a name="ResetStorageAwsKeyId" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.resetStorageAwsKeyId"></a>
+
+```go
+func ResetStorageAwsKeyId()
+```
+
 ##### `ResetStorageAwsRoleArn` <a name="ResetStorageAwsRoleArn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.resetStorageAwsRoleArn"></a>
 
 ```go
 func ResetStorageAwsRoleArn()
+```
+
+##### `ResetStorageAwsSecretKey` <a name="ResetStorageAwsSecretKey" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.resetStorageAwsSecretKey"></a>
+
+```go
+func ResetStorageAwsSecretKey()
+```
+
+##### `ResetStorageEndpoint` <a name="ResetStorageEndpoint" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.resetStorageEndpoint"></a>
+
+```go
+func ResetStorageEndpoint()
+```
+
+##### `ResetUsePrivatelinkEndpoint` <a name="ResetUsePrivatelinkEndpoint" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.resetUsePrivatelinkEndpoint"></a>
+
+```go
+func ResetUsePrivatelinkEndpoint()
 ```
 
 
@@ -2678,21 +5207,32 @@ func ResetStorageAwsRoleArn()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsExternalId">StorageAwsExternalId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.azureTenantIdInput">AzureTenantIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.encryptionKmsKeyIdInput">EncryptionKmsKeyIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.encryptionTypeInput">EncryptionTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsAccessPointArnInput">StorageAwsAccessPointArnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsExternalIdInput">StorageAwsExternalIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsKeyIdInput">StorageAwsKeyIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsRoleArnInput">StorageAwsRoleArnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsSecretKeyInput">StorageAwsSecretKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageBaseUrlInput">StorageBaseUrlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageEndpointInput">StorageEndpointInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageLocationNameInput">StorageLocationNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageProviderInput">StorageProviderInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.usePrivatelinkEndpointInput">UsePrivatelinkEndpointInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.azureTenantId">AzureTenantId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.encryptionKmsKeyId">EncryptionKmsKeyId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsAccessPointArn">StorageAwsAccessPointArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsExternalId">StorageAwsExternalId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsKeyId">StorageAwsKeyId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsRoleArn">StorageAwsRoleArn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsSecretKey">StorageAwsSecretKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageBaseUrl">StorageBaseUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageEndpoint">StorageEndpoint</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageLocationName">StorageLocationName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageProvider">StorageProvider</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.usePrivatelinkEndpoint">UsePrivatelinkEndpoint</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
@@ -2715,16 +5255,6 @@ If this returns an empty array the stack will not be attached.
 
 ```go
 func Fqn() *string
-```
-
-- *Type:* *string
-
----
-
-##### `StorageAwsExternalId`<sup>Required</sup> <a name="StorageAwsExternalId" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsExternalId"></a>
-
-```go
-func StorageAwsExternalId() *string
 ```
 
 - *Type:* *string
@@ -2761,6 +5291,36 @@ func EncryptionTypeInput() *string
 
 ---
 
+##### `StorageAwsAccessPointArnInput`<sup>Optional</sup> <a name="StorageAwsAccessPointArnInput" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsAccessPointArnInput"></a>
+
+```go
+func StorageAwsAccessPointArnInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StorageAwsExternalIdInput`<sup>Optional</sup> <a name="StorageAwsExternalIdInput" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsExternalIdInput"></a>
+
+```go
+func StorageAwsExternalIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StorageAwsKeyIdInput`<sup>Optional</sup> <a name="StorageAwsKeyIdInput" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsKeyIdInput"></a>
+
+```go
+func StorageAwsKeyIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `StorageAwsRoleArnInput`<sup>Optional</sup> <a name="StorageAwsRoleArnInput" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsRoleArnInput"></a>
 
 ```go
@@ -2771,10 +5331,30 @@ func StorageAwsRoleArnInput() *string
 
 ---
 
+##### `StorageAwsSecretKeyInput`<sup>Optional</sup> <a name="StorageAwsSecretKeyInput" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsSecretKeyInput"></a>
+
+```go
+func StorageAwsSecretKeyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `StorageBaseUrlInput`<sup>Optional</sup> <a name="StorageBaseUrlInput" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageBaseUrlInput"></a>
 
 ```go
 func StorageBaseUrlInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StorageEndpointInput`<sup>Optional</sup> <a name="StorageEndpointInput" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageEndpointInput"></a>
+
+```go
+func StorageEndpointInput() *string
 ```
 
 - *Type:* *string
@@ -2795,6 +5375,16 @@ func StorageLocationNameInput() *string
 
 ```go
 func StorageProviderInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `UsePrivatelinkEndpointInput`<sup>Optional</sup> <a name="UsePrivatelinkEndpointInput" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.usePrivatelinkEndpointInput"></a>
+
+```go
+func UsePrivatelinkEndpointInput() *string
 ```
 
 - *Type:* *string
@@ -2831,6 +5421,36 @@ func EncryptionType() *string
 
 ---
 
+##### `StorageAwsAccessPointArn`<sup>Required</sup> <a name="StorageAwsAccessPointArn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsAccessPointArn"></a>
+
+```go
+func StorageAwsAccessPointArn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StorageAwsExternalId`<sup>Required</sup> <a name="StorageAwsExternalId" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsExternalId"></a>
+
+```go
+func StorageAwsExternalId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StorageAwsKeyId`<sup>Required</sup> <a name="StorageAwsKeyId" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsKeyId"></a>
+
+```go
+func StorageAwsKeyId() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `StorageAwsRoleArn`<sup>Required</sup> <a name="StorageAwsRoleArn" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsRoleArn"></a>
 
 ```go
@@ -2841,10 +5461,30 @@ func StorageAwsRoleArn() *string
 
 ---
 
+##### `StorageAwsSecretKey`<sup>Required</sup> <a name="StorageAwsSecretKey" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageAwsSecretKey"></a>
+
+```go
+func StorageAwsSecretKey() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `StorageBaseUrl`<sup>Required</sup> <a name="StorageBaseUrl" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageBaseUrl"></a>
 
 ```go
 func StorageBaseUrl() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StorageEndpoint`<sup>Required</sup> <a name="StorageEndpoint" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.storageEndpoint"></a>
+
+```go
+func StorageEndpoint() *string
 ```
 
 - *Type:* *string
@@ -2865,6 +5505,16 @@ func StorageLocationName() *string
 
 ```go
 func StorageProvider() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `UsePrivatelinkEndpoint`<sup>Required</sup> <a name="UsePrivatelinkEndpoint" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.property.usePrivatelinkEndpoint"></a>
+
+```go
+func UsePrivatelinkEndpoint() *string
 ```
 
 - *Type:* *string

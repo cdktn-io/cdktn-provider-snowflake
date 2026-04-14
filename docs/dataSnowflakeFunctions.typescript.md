@@ -4,7 +4,7 @@
 
 ### DataSnowflakeFunctions <a name="DataSnowflakeFunctions" id="@cdktn/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/functions snowflake_functions}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/functions snowflake_functions}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctions.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataSnowflakeFunctions to 
 
 The id of the existing DataSnowflakeFunctions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/functions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/functions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -667,7 +667,7 @@ const dataSnowflakeFunctionsConfig: dataSnowflakeFunctions.DataSnowflakeFunction
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctionsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctionsConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctionsConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the functions from. |
-| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/functions#id DataSnowflakeFunctions#id}. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/functions#id DataSnowflakeFunctions#id}. |
 
 ---
 
@@ -751,7 +751,7 @@ public readonly database: string;
 
 The database from which to return the schemas from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/functions#database DataSnowflakeFunctions#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/functions#database DataSnowflakeFunctions#database}
 
 ---
 
@@ -765,7 +765,7 @@ public readonly schema: string;
 
 The schema from which to return the functions from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/functions#schema DataSnowflakeFunctions#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/functions#schema DataSnowflakeFunctions#schema}
 
 ---
 
@@ -777,7 +777,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/functions#id DataSnowflakeFunctions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/functions#id DataSnowflakeFunctions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

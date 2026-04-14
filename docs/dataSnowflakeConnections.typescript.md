@@ -4,7 +4,7 @@
 
 ### DataSnowflakeConnections <a name="DataSnowflakeConnections" id="@cdktn/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnections"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/connections snowflake_connections}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/connections snowflake_connections}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnections.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataSnowflakeConnections t
 
 The id of the existing DataSnowflakeConnections that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/connections#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/connections#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -650,7 +650,7 @@ const dataSnowflakeConnectionsConfig: dataSnowflakeConnections.DataSnowflakeConn
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/connections#id DataSnowflakeConnections#id}. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/connections#id DataSnowflakeConnections#id}. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeConnections.DataSnowflakeConnectionsConfig.property.like">like</a></code> | <code>string</code> | Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`). |
 
 ---
@@ -733,7 +733,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/connections#id DataSnowflakeConnections#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/connections#id DataSnowflakeConnections#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -750,7 +750,7 @@ public readonly like: string;
 
 Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/data-sources/connections#like DataSnowflakeConnections#like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/data-sources/connections#like DataSnowflakeConnections#like}
 
 ---
 

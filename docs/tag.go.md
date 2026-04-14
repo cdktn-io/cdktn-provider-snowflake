@@ -4,7 +4,7 @@
 
 ### Tag <a name="Tag" id="@cdktn/provider-snowflake.tag.Tag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag snowflake_tag}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag snowflake_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.tag.Tag.Initializer"></a>
 
@@ -74,11 +74,16 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-snowflake.tag.Tag.putOnConflict">PutOnConflict</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.resetAllowedValues">ResetAllowedValues</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.resetMaskingPolicies">ResetMaskingPolicies</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.Tag.resetNoAllowedValues">ResetNoAllowedValues</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.Tag.resetOnConflict">ResetOnConflict</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.Tag.resetOrderedAllowedValues">ResetOrderedAllowedValues</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.Tag.resetPropagate">ResetPropagate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -392,6 +397,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutOnConflict` <a name="PutOnConflict" id="@cdktn/provider-snowflake.tag.Tag.putOnConflict"></a>
+
+```go
+func PutOnConflict(value TagOnConflict)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.tag.Tag.putOnConflict.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-snowflake.tag.TagOnConflict">TagOnConflict</a>
+
+---
+
 ##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-snowflake.tag.Tag.putTimeouts"></a>
 
 ```go
@@ -426,6 +443,30 @@ func ResetId()
 
 ```go
 func ResetMaskingPolicies()
+```
+
+##### `ResetNoAllowedValues` <a name="ResetNoAllowedValues" id="@cdktn/provider-snowflake.tag.Tag.resetNoAllowedValues"></a>
+
+```go
+func ResetNoAllowedValues()
+```
+
+##### `ResetOnConflict` <a name="ResetOnConflict" id="@cdktn/provider-snowflake.tag.Tag.resetOnConflict"></a>
+
+```go
+func ResetOnConflict()
+```
+
+##### `ResetOrderedAllowedValues` <a name="ResetOrderedAllowedValues" id="@cdktn/provider-snowflake.tag.Tag.resetOrderedAllowedValues"></a>
+
+```go
+func ResetOrderedAllowedValues()
+```
+
+##### `ResetPropagate` <a name="ResetPropagate" id="@cdktn/provider-snowflake.tag.Tag.resetPropagate"></a>
+
+```go
+func ResetPropagate()
 ```
 
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-snowflake.tag.Tag.resetTimeouts"></a>
@@ -537,7 +578,7 @@ The construct id used in the generated config for the Tag to import.
 
 The id of the existing Tag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -568,6 +609,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.fullyQualifiedName">FullyQualifiedName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.onConflict">OnConflict</a></code> | <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference">TagOnConflictOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.showOutput">ShowOutput</a></code> | <code><a href="#@cdktn/provider-snowflake.tag.TagShowOutputList">TagShowOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.tag.TagTimeoutsOutputReference">TagTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.allowedValuesInput">AllowedValuesInput</a></code> | <code>*[]*string</code> | *No description.* |
@@ -576,6 +618,10 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.maskingPoliciesInput">MaskingPoliciesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.noAllowedValuesInput">NoAllowedValuesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.onConflictInput">OnConflictInput</a></code> | <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflict">TagOnConflict</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.orderedAllowedValuesInput">OrderedAllowedValuesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.propagateInput">PropagateInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.schemaInput">SchemaInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.allowedValues">AllowedValues</a></code> | <code>*[]*string</code> | *No description.* |
@@ -584,6 +630,9 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.maskingPolicies">MaskingPolicies</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.noAllowedValues">NoAllowedValues</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.orderedAllowedValues">OrderedAllowedValues</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.propagate">Propagate</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.Tag.property.schema">Schema</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -740,6 +789,16 @@ func FullyQualifiedName() *string
 
 ---
 
+##### `OnConflict`<sup>Required</sup> <a name="OnConflict" id="@cdktn/provider-snowflake.tag.Tag.property.onConflict"></a>
+
+```go
+func OnConflict() TagOnConflictOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference">TagOnConflictOutputReference</a>
+
+---
+
 ##### `ShowOutput`<sup>Required</sup> <a name="ShowOutput" id="@cdktn/provider-snowflake.tag.Tag.property.showOutput"></a>
 
 ```go
@@ -814,6 +873,46 @@ func MaskingPoliciesInput() *[]*string
 
 ```go
 func NameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `NoAllowedValuesInput`<sup>Optional</sup> <a name="NoAllowedValuesInput" id="@cdktn/provider-snowflake.tag.Tag.property.noAllowedValuesInput"></a>
+
+```go
+func NoAllowedValuesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `OnConflictInput`<sup>Optional</sup> <a name="OnConflictInput" id="@cdktn/provider-snowflake.tag.Tag.property.onConflictInput"></a>
+
+```go
+func OnConflictInput() TagOnConflict
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.tag.TagOnConflict">TagOnConflict</a>
+
+---
+
+##### `OrderedAllowedValuesInput`<sup>Optional</sup> <a name="OrderedAllowedValuesInput" id="@cdktn/provider-snowflake.tag.Tag.property.orderedAllowedValuesInput"></a>
+
+```go
+func OrderedAllowedValuesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `PropagateInput`<sup>Optional</sup> <a name="PropagateInput" id="@cdktn/provider-snowflake.tag.Tag.property.propagateInput"></a>
+
+```go
+func PropagateInput() *string
 ```
 
 - *Type:* *string
@@ -900,6 +999,36 @@ func Name() *string
 
 ---
 
+##### `NoAllowedValues`<sup>Required</sup> <a name="NoAllowedValues" id="@cdktn/provider-snowflake.tag.Tag.property.noAllowedValues"></a>
+
+```go
+func NoAllowedValues() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `OrderedAllowedValues`<sup>Required</sup> <a name="OrderedAllowedValues" id="@cdktn/provider-snowflake.tag.Tag.property.orderedAllowedValues"></a>
+
+```go
+func OrderedAllowedValues() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Propagate`<sup>Required</sup> <a name="Propagate" id="@cdktn/provider-snowflake.tag.Tag.property.propagate"></a>
+
+```go
+func Propagate() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Schema`<sup>Required</sup> <a name="Schema" id="@cdktn/provider-snowflake.tag.Tag.property.schema"></a>
 
 ```go
@@ -952,6 +1081,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
 	Comment: *string,
 	Id: *string,
 	MaskingPolicies: *[]*string,
+	NoAllowedValues: interface{},
+	OnConflict: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.tag.TagOnConflict,
+	OrderedAllowedValues: *[]*string,
+	Propagate: *string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.tag.TagTimeouts,
 }
 ```
@@ -970,10 +1103,14 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
 | <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.database">Database</a></code> | <code>*string</code> | The database in which to create the tag. |
 | <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the identifier for the tag; |
 | <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema in which to create the tag. |
-| <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.allowedValues">AllowedValues</a></code> | <code>*[]*string</code> | Set of allowed values for the tag. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.allowedValues">AllowedValues</a></code> | <code>*[]*string</code> | Set of allowed values for the tag (unordered). |
 | <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the tag. |
-| <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#id Tag#id}. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#id Tag#id}. |
 | <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.maskingPolicies">MaskingPolicies</a></code> | <code>*[]*string</code> | Set of masking policies for the tag. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.noAllowedValues">NoAllowedValues</a></code> | <code>interface{}</code> | When set to true, the tag explicitly disallows any value from being assigned. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.onConflict">OnConflict</a></code> | <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflict">TagOnConflict</a></code> | on_conflict block. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.orderedAllowedValues">OrderedAllowedValues</a></code> | <code>*[]*string</code> | Ordered list of allowed values for the tag. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.propagate">Propagate</a></code> | <code>*string</code> | Specifies that the tag will be automatically propagated from source objects to target objects. |
 | <code><a href="#@cdktn/provider-snowflake.tag.TagConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.tag.TagTimeouts">TagTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1060,7 +1197,7 @@ The database in which to create the tag.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#database Tag#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#database Tag#database}
 
 ---
 
@@ -1076,7 +1213,7 @@ Specifies the identifier for the tag;
 
 must be unique for the database in which the tag is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#name Tag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#name Tag#name}
 
 ---
 
@@ -1092,7 +1229,7 @@ The schema in which to create the tag.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#schema Tag#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#schema Tag#schema}
 
 ---
 
@@ -1104,9 +1241,11 @@ AllowedValues *[]*string
 
 - *Type:* *[]*string
 
-Set of allowed values for the tag.
+Set of allowed values for the tag (unordered).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#allowed_values Tag#allowed_values}
+When specified, only these values can be assigned. When the `TAGS_ALLOW_EMPTY_ALLOWED_VALUES` experiment is enabled, removing this field from the configuration reverts the tag to accepting any value. Conflicts with `no_allowed_values` and `ordered_allowed_values`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#allowed_values Tag#allowed_values}
 
 ---
 
@@ -1120,7 +1259,7 @@ Comment *string
 
 Specifies a comment for the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#comment Tag#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#comment Tag#comment}
 
 ---
 
@@ -1132,7 +1271,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#id Tag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#id Tag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1151,7 +1290,69 @@ Set of masking policies for the tag.
 
 A tag can support one masking policy for each data type. If masking policies are assigned to the tag, before dropping the tag, the provider automatically unassigns them. For more information about this resource, see [docs](./masking_policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#masking_policies Tag#masking_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#masking_policies Tag#masking_policies}
+
+---
+
+##### `NoAllowedValues`<sup>Optional</sup> <a name="NoAllowedValues" id="@cdktn/provider-snowflake.tag.TagConfig.property.noAllowedValues"></a>
+
+```go
+NoAllowedValues interface{}
+```
+
+- *Type:* interface{}
+
+When set to true, the tag explicitly disallows any value from being assigned.
+
+This is different from omitting `allowed_values`, which means any value is accepted. Available only when the `TAGS_ALLOW_EMPTY_ALLOWED_VALUES` experiment is enabled. Conflicts with `allowed_values` and `ordered_allowed_values`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#no_allowed_values Tag#no_allowed_values}
+
+---
+
+##### `OnConflict`<sup>Optional</sup> <a name="OnConflict" id="@cdktn/provider-snowflake.tag.TagConfig.property.onConflict"></a>
+
+```go
+OnConflict TagOnConflict
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.tag.TagOnConflict">TagOnConflict</a>
+
+on_conflict block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#on_conflict Tag#on_conflict}
+
+---
+
+##### `OrderedAllowedValues`<sup>Optional</sup> <a name="OrderedAllowedValues" id="@cdktn/provider-snowflake.tag.TagConfig.property.orderedAllowedValues"></a>
+
+```go
+OrderedAllowedValues *[]*string
+```
+
+- *Type:* *[]*string
+
+Ordered list of allowed values for the tag.
+
+The order is preserved in Snowflake and is significant when `on_conflict.allowed_values_sequence` is used — the first matching value in the sequence wins. Use this instead of `allowed_values` when order matters. Conflicts with `allowed_values` and `no_allowed_values`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#ordered_allowed_values Tag#ordered_allowed_values}
+
+---
+
+##### `Propagate`<sup>Optional</sup> <a name="Propagate" id="@cdktn/provider-snowflake.tag.TagConfig.property.propagate"></a>
+
+```go
+Propagate *string
+```
+
+- *Type:* *string
+
+Specifies that the tag will be automatically propagated from source objects to target objects.
+
+See more about tag propagation in the [official documentation](https://docs.snowflake.com/en/user-guide/object-tagging/propagation). Valid options are: `NONE` | `ON_DEPENDENCY` | `ON_DATA_MOVEMENT` | `ON_DEPENDENCY_AND_DATA_MOVEMENT`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#propagate Tag#propagate}
 
 ---
 
@@ -1165,7 +1366,61 @@ Timeouts TagTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#timeouts Tag#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#timeouts Tag#timeouts}
+
+---
+
+### TagOnConflict <a name="TagOnConflict" id="@cdktn/provider-snowflake.tag.TagOnConflict"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.tag.TagOnConflict.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
+
+&tag.TagOnConflict {
+	AllowedValuesSequence: interface{},
+	CustomValue: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflict.property.allowedValuesSequence">AllowedValuesSequence</a></code> | <code>interface{}</code> | The order of the values in the ALLOWED_VALUES property of the tag determines which value is used when there is a conflict. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflict.property.customValue">CustomValue</a></code> | <code>*string</code> | Whenever there is a conflict, the value of tag is set to custom_value. |
+
+---
+
+##### `AllowedValuesSequence`<sup>Optional</sup> <a name="AllowedValuesSequence" id="@cdktn/provider-snowflake.tag.TagOnConflict.property.allowedValuesSequence"></a>
+
+```go
+AllowedValuesSequence interface{}
+```
+
+- *Type:* interface{}
+
+The order of the values in the ALLOWED_VALUES property of the tag determines which value is used when there is a conflict.
+
+External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#allowed_values_sequence Tag#allowed_values_sequence}
+
+---
+
+##### `CustomValue`<sup>Optional</sup> <a name="CustomValue" id="@cdktn/provider-snowflake.tag.TagOnConflict.property.customValue"></a>
+
+```go
+CustomValue *string
+```
+
+- *Type:* *string
+
+Whenever there is a conflict, the value of tag is set to custom_value.
+
+If `allowed_values` are set, the value set in this field should be one of the values in the `allowed_values` list. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#custom_value Tag#custom_value}
 
 ---
 
@@ -1201,10 +1456,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.tag.TagTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#create Tag#create}. |
-| <code><a href="#@cdktn/provider-snowflake.tag.TagTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#delete Tag#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.tag.TagTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#read Tag#read}. |
-| <code><a href="#@cdktn/provider-snowflake.tag.TagTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#update Tag#update}. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#create Tag#create}. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#delete Tag#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#read Tag#read}. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#update Tag#update}. |
 
 ---
 
@@ -1216,7 +1471,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#create Tag#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#create Tag#create}.
 
 ---
 
@@ -1228,7 +1483,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#delete Tag#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#delete Tag#delete}.
 
 ---
 
@@ -1240,7 +1495,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#read Tag#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#read Tag#read}.
 
 ---
 
@@ -1252,11 +1507,318 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/tag#update Tag#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/tag#update Tag#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### TagOnConflictOutputReference <a name="TagOnConflictOutputReference" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
+
+tag.NewTagOnConflictOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagOnConflictOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.resetAllowedValuesSequence">ResetAllowedValuesSequence</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.resetCustomValue">ResetCustomValue</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAllowedValuesSequence` <a name="ResetAllowedValuesSequence" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.resetAllowedValuesSequence"></a>
+
+```go
+func ResetAllowedValuesSequence()
+```
+
+##### `ResetCustomValue` <a name="ResetCustomValue" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.resetCustomValue"></a>
+
+```go
+func ResetCustomValue()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.property.allowedValuesSequenceInput">AllowedValuesSequenceInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.property.customValueInput">CustomValueInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.property.allowedValuesSequence">AllowedValuesSequence</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.property.customValue">CustomValue</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.tag.TagOnConflict">TagOnConflict</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AllowedValuesSequenceInput`<sup>Optional</sup> <a name="AllowedValuesSequenceInput" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.property.allowedValuesSequenceInput"></a>
+
+```go
+func AllowedValuesSequenceInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `CustomValueInput`<sup>Optional</sup> <a name="CustomValueInput" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.property.customValueInput"></a>
+
+```go
+func CustomValueInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AllowedValuesSequence`<sup>Required</sup> <a name="AllowedValuesSequence" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.property.allowedValuesSequence"></a>
+
+```go
+func AllowedValuesSequence() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `CustomValue`<sup>Required</sup> <a name="CustomValue" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.property.customValue"></a>
+
+```go
+func CustomValue() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() TagOnConflict
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.tag.TagOnConflict">TagOnConflict</a>
+
+---
+
 
 ### TagShowOutputList <a name="TagShowOutputList" id="@cdktn/provider-snowflake.tag.TagShowOutputList"></a>
 
@@ -1642,6 +2204,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.tag.TagShowOutputOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.TagShowOutputOutputReference.property.owner">Owner</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.TagShowOutputOutputReference.property.ownerRoleType">OwnerRoleType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.tag.TagShowOutputOutputReference.property.propagate">Propagate</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.TagShowOutputOutputReference.property.schemaName">SchemaName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.tag.TagShowOutputOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.tag.TagShowOutput">TagShowOutput</a></code> | *No description.* |
 
@@ -1735,6 +2298,16 @@ func Owner() *string
 
 ```go
 func OwnerRoleType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Propagate`<sup>Required</sup> <a name="Propagate" id="@cdktn/provider-snowflake.tag.TagShowOutputOutputReference.property.propagate"></a>
+
+```go
+func Propagate() *string
 ```
 
 - *Type:* *string

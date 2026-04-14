@@ -4,7 +4,7 @@
 
 ### GrantApplicationRole <a name="GrantApplicationRole" id="@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_application_role snowflake_grant_application_role}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_application_role snowflake_grant_application_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRole.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the GrantApplicationRole to im
 
 The id of the existing GrantApplicationRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_application_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_application_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -858,7 +858,7 @@ const grantApplicationRoleConfig: grantApplicationRole.GrantApplicationRoleConfi
 | <code><a href="#@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRoleConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRoleConfig.property.applicationRoleName">applicationRoleName</a></code> | <code>string</code> | Specifies the identifier for the application role to grant. |
 | <code><a href="#@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRoleConfig.property.applicationName">applicationName</a></code> | <code>string</code> | The fully qualified name of the application on which application role will be granted. |
-| <code><a href="#@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_application_role#id GrantApplicationRole#id}. |
+| <code><a href="#@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_application_role#id GrantApplicationRole#id}. |
 | <code><a href="#@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRoleConfig.property.parentAccountRoleName">parentAccountRoleName</a></code> | <code>string</code> | The fully qualified name of the account role on which application role will be granted. |
 | <code><a href="#@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRoleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRoleTimeouts">GrantApplicationRoleTimeouts</a></code> | timeouts block. |
 
@@ -944,7 +944,7 @@ public readonly applicationRoleName: string;
 
 Specifies the identifier for the application role to grant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_application_role#application_role_name GrantApplicationRole#application_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_application_role#application_role_name GrantApplicationRole#application_role_name}
 
 ---
 
@@ -958,7 +958,7 @@ public readonly applicationName: string;
 
 The fully qualified name of the application on which application role will be granted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_application_role#application_name GrantApplicationRole#application_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_application_role#application_name GrantApplicationRole#application_name}
 
 ---
 
@@ -970,7 +970,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_application_role#id GrantApplicationRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_application_role#id GrantApplicationRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -989,7 +989,7 @@ The fully qualified name of the account role on which application role will be g
 
 For more information about this resource, see [docs](./account_role).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_application_role#parent_account_role_name GrantApplicationRole#parent_account_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_application_role#parent_account_role_name GrantApplicationRole#parent_account_role_name}
 
 ---
 
@@ -1003,7 +1003,7 @@ public readonly timeouts: GrantApplicationRoleTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_application_role#timeouts GrantApplicationRole#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_application_role#timeouts GrantApplicationRole#timeouts}
 
 ---
 
@@ -1021,10 +1021,10 @@ const grantApplicationRoleTimeouts: grantApplicationRole.GrantApplicationRoleTim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRoleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_application_role#create GrantApplicationRole#create}. |
-| <code><a href="#@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRoleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_application_role#delete GrantApplicationRole#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRoleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_application_role#read GrantApplicationRole#read}. |
-| <code><a href="#@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRoleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_application_role#update GrantApplicationRole#update}. |
+| <code><a href="#@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRoleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_application_role#create GrantApplicationRole#create}. |
+| <code><a href="#@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRoleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_application_role#delete GrantApplicationRole#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRoleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_application_role#read GrantApplicationRole#read}. |
+| <code><a href="#@cdktn/provider-snowflake.grantApplicationRole.GrantApplicationRoleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_application_role#update GrantApplicationRole#update}. |
 
 ---
 
@@ -1036,7 +1036,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_application_role#create GrantApplicationRole#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_application_role#create GrantApplicationRole#create}.
 
 ---
 
@@ -1048,7 +1048,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_application_role#delete GrantApplicationRole#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_application_role#delete GrantApplicationRole#delete}.
 
 ---
 
@@ -1060,7 +1060,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_application_role#read GrantApplicationRole#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_application_role#read GrantApplicationRole#read}.
 
 ---
 
@@ -1072,7 +1072,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.14.1/docs/resources/grant_application_role#update GrantApplicationRole#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/grant_application_role#update GrantApplicationRole#update}.
 
 ---
 
