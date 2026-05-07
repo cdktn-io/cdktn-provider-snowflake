@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.execute.Execute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/execute"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/execute"
 
 execute.NewExecute(scope Construct, id *string, config ExecuteConfig) Execute
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.execute.Execute.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/execute"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/execute"
 
 execute.Execute_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.execute.Execute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/execute"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/execute"
 
 execute.Execute_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ execute.Execute_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.execute.Execute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/execute"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/execute"
 
 execute.Execute_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ execute.Execute_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.execute.Execute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/execute"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/execute"
 
 execute.Execute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.execute.ExecuteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/execute"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/execute"
 
 &execute.ExecuteConfig {
 	Connection: interface{},
@@ -858,7 +858,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/execute"
 	Revert: *string,
 	Id: *string,
 	Query: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.execute.ExecuteTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.execute.ExecuteTimeouts,
 }
 ```
 
@@ -1027,7 +1027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.execute.ExecuteTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/execute"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/execute"
 
 &execute.ExecuteTimeouts {
 	Create: *string,
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.execute.ExecuteTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/execute"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/execute"
 
 execute.NewExecuteTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExecuteTimeoutsOutputReference
 ```

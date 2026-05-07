@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeCortexSearchServices.DataSnowflakeCortexSearchServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecortexsearchservices"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakecortexsearchservices"
 
 datasnowflakecortexsearchservices.NewDataSnowflakeCortexSearchServices(scope Construct, id *string, config DataSnowflakeCortexSearchServicesConfig) DataSnowflakeCortexSearchServices
 ```
@@ -359,7 +359,7 @@ func ResetStartsWith()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.dataSnowflakeCortexSearchServices.DataSnowflakeCortexSearchServices.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecortexsearchservices"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakecortexsearchservices"
 
 datasnowflakecortexsearchservices.DataSnowflakeCortexSearchServices_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.dataSnowflakeCortexSearchServices.DataSnowflakeCortexSearchServices.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecortexsearchservices"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakecortexsearchservices"
 
 datasnowflakecortexsearchservices.DataSnowflakeCortexSearchServices_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ datasnowflakecortexsearchservices.DataSnowflakeCortexSearchServices_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-snowflake.dataSnowflakeCortexSearchServices.DataSnowflakeCortexSearchServices.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecortexsearchservices"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakecortexsearchservices"
 
 datasnowflakecortexsearchservices.DataSnowflakeCortexSearchServices_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ datasnowflakecortexsearchservices.DataSnowflakeCortexSearchServices_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.dataSnowflakeCortexSearchServices.DataSnowflakeCortexSearchServices.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecortexsearchservices"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakecortexsearchservices"
 
 datasnowflakecortexsearchservices.DataSnowflakeCortexSearchServices_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeCortexSearchServices.DataSnowflakeCortexSearchServicesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecortexsearchservices"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakecortexsearchservices"
 
 &datasnowflakecortexsearchservices.DataSnowflakeCortexSearchServicesConfig {
 	Connection: interface{},
@@ -758,9 +758,9 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowfl
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	In: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.dataSnowflakeCortexSearchServices.DataSnowflakeCortexSearchServicesIn,
+	In: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.dataSnowflakeCortexSearchServices.DataSnowflakeCortexSearchServicesIn,
 	Like: *string,
-	Limit: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.dataSnowflakeCortexSearchServices.DataSnowflakeCortexSearchServicesLimit,
+	Limit: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.dataSnowflakeCortexSearchServices.DataSnowflakeCortexSearchServicesLimit,
 	StartsWith: *string,
 }
 ```
@@ -930,7 +930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeCortexSearchServices.DataSnowflakeCortexSearchServicesCortexSearchServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecortexsearchservices"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakecortexsearchservices"
 
 &datasnowflakecortexsearchservices.DataSnowflakeCortexSearchServicesCortexSearchServices {
 
@@ -943,7 +943,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeCortexSearchServices.DataSnowflakeCortexSearchServicesIn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecortexsearchservices"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakecortexsearchservices"
 
 &datasnowflakecortexsearchservices.DataSnowflakeCortexSearchServicesIn {
 	Account: interface{},
@@ -1009,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeCortexSearchServices.DataSnowflakeCortexSearchServicesLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecortexsearchservices"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakecortexsearchservices"
 
 &datasnowflakecortexsearchservices.DataSnowflakeCortexSearchServicesLimit {
 	Rows: *f64,
@@ -1063,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeCortexSearchServices.DataSnowflakeCortexSearchServicesCortexSearchServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecortexsearchservices"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakecortexsearchservices"
 
 datasnowflakecortexsearchservices.NewDataSnowflakeCortexSearchServicesCortexSearchServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeCortexSearchServicesCortexSearchServicesList
 ```
@@ -1212,7 +1212,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeCortexSearchServices.DataSnowflakeCortexSearchServicesCortexSearchServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecortexsearchservices"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakecortexsearchservices"
 
 datasnowflakecortexsearchservices.NewDataSnowflakeCortexSearchServicesCortexSearchServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeCortexSearchServicesCortexSearchServicesOutputReference
 ```
@@ -1534,7 +1534,7 @@ func InternalValue() DataSnowflakeCortexSearchServicesCortexSearchServices
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeCortexSearchServices.DataSnowflakeCortexSearchServicesInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecortexsearchservices"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakecortexsearchservices"
 
 datasnowflakecortexsearchservices.NewDataSnowflakeCortexSearchServicesInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeCortexSearchServicesInOutputReference
 ```
@@ -1870,7 +1870,7 @@ func InternalValue() DataSnowflakeCortexSearchServicesIn
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeCortexSearchServices.DataSnowflakeCortexSearchServicesLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakecortexsearchservices"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakecortexsearchservices"
 
 datasnowflakecortexsearchservices.NewDataSnowflakeCortexSearchServicesLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeCortexSearchServicesLimitOutputReference
 ```

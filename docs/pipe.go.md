@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.pipe.Pipe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/pipe"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/pipe"
 
 pipe.NewPipe(scope Construct, id *string, config PipeConfig) Pipe
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.pipe.Pipe.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/pipe"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/pipe"
 
 pipe.Pipe_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.pipe.Pipe.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/pipe"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/pipe"
 
 pipe.Pipe_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ pipe.Pipe_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.pipe.Pipe.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/pipe"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/pipe"
 
 pipe.Pipe_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ pipe.Pipe_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.pipe.Pipe.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/pipe"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/pipe"
 
 pipe.Pipe_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1026,7 +1026,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.pipe.PipeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/pipe"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/pipe"
 
 &pipe.PipeConfig {
 	Connection: interface{},
@@ -1046,7 +1046,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/pipe"
 	ErrorIntegration: *string,
 	Id: *string,
 	Integration: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.pipe.PipeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.pipe.PipeTimeouts,
 }
 ```
 
@@ -1307,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.pipe.PipeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/pipe"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/pipe"
 
 &pipe.PipeTimeouts {
 	Create: *string,
@@ -1383,7 +1383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.pipe.PipeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/pipe"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/pipe"
 
 pipe.NewPipeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipeTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.accountPasswordPolicyAttachment.AccountPasswordPolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/accountpasswordpolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/accountpasswordpolicyattachment"
 
 accountpasswordpolicyattachment.NewAccountPasswordPolicyAttachment(scope Construct, id *string, config AccountPasswordPolicyAttachmentConfig) AccountPasswordPolicyAttachment
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.accountPasswordPolicyAttachment.AccountPasswordPolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/accountpasswordpolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/accountpasswordpolicyattachment"
 
 accountpasswordpolicyattachment.AccountPasswordPolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.accountPasswordPolicyAttachment.AccountPasswordPolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/accountpasswordpolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/accountpasswordpolicyattachment"
 
 accountpasswordpolicyattachment.AccountPasswordPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ accountpasswordpolicyattachment.AccountPasswordPolicyAttachment_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.accountPasswordPolicyAttachment.AccountPasswordPolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/accountpasswordpolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/accountpasswordpolicyattachment"
 
 accountpasswordpolicyattachment.AccountPasswordPolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ accountpasswordpolicyattachment.AccountPasswordPolicyAttachment_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.accountPasswordPolicyAttachment.AccountPasswordPolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/accountpasswordpolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/accountpasswordpolicyattachment"
 
 accountpasswordpolicyattachment.AccountPasswordPolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.accountPasswordPolicyAttachment.AccountPasswordPolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/accountpasswordpolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/accountpasswordpolicyattachment"
 
 &accountpasswordpolicyattachment.AccountPasswordPolicyAttachmentConfig {
 	Connection: interface{},
@@ -794,7 +794,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/accountpas
 	Provisioners: *[]interface{},
 	PasswordPolicy: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.accountPasswordPolicyAttachment.AccountPasswordPolicyAttachmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.accountPasswordPolicyAttachment.AccountPasswordPolicyAttachmentTimeouts,
 }
 ```
 
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.accountPasswordPolicyAttachment.AccountPasswordPolicyAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/accountpasswordpolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/accountpasswordpolicyattachment"
 
 &accountpasswordpolicyattachment.AccountPasswordPolicyAttachmentTimeouts {
 	Create: *string,
@@ -1009,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.accountPasswordPolicyAttachment.AccountPasswordPolicyAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/accountpasswordpolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/accountpasswordpolicyattachment"
 
 accountpasswordpolicyattachment.NewAccountPasswordPolicyAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountPasswordPolicyAttachmentTimeoutsOutputReference
 ```

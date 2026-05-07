@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzure(scope Construct, id *string, config StageExternalAzureConfig) StageExternalAzure
 ```
@@ -528,7 +528,7 @@ func ResetUsePrivatelinkEndpoint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzure.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.StageExternalAzure_IsConstruct(x interface{}) *bool
 ```
@@ -560,7 +560,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzure.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.StageExternalAzure_IsTerraformElement(x interface{}) *bool
 ```
@@ -574,7 +574,7 @@ stageexternalazure.StageExternalAzure_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzure.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.StageExternalAzure_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ stageexternalazure.StageExternalAzure_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzure.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.StageExternalAzure_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1158,7 +1158,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureConfig {
 	Connection: interface{},
@@ -1173,13 +1173,13 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 	Schema: *string,
 	Url: *string,
 	Comment: *string,
-	Credentials: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalAzure.StageExternalAzureCredentials,
-	Directory: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalAzure.StageExternalAzureDirectory,
-	Encryption: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalAzure.StageExternalAzureEncryption,
-	FileFormat: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalAzure.StageExternalAzureFileFormat,
+	Credentials: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalAzure.StageExternalAzureCredentials,
+	Directory: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalAzure.StageExternalAzureDirectory,
+	Encryption: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalAzure.StageExternalAzureEncryption,
+	FileFormat: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalAzure.StageExternalAzureFileFormat,
 	Id: *string,
 	StorageIntegration: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalAzure.StageExternalAzureTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalAzure.StageExternalAzureTimeouts,
 	UsePrivatelinkEndpoint: *string,
 }
 ```
@@ -1477,7 +1477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureCredentials {
 	AzureSasToken: *string,
@@ -1511,7 +1511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureDescribeOutput {
 
@@ -1524,7 +1524,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputDirectoryTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureDescribeOutputDirectoryTable {
 
@@ -1537,7 +1537,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureDescribeOutputFileFormat {
 
@@ -1550,7 +1550,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatAvro.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureDescribeOutputFileFormatAvro {
 
@@ -1563,7 +1563,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatCsv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureDescribeOutputFileFormatCsv {
 
@@ -1576,7 +1576,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureDescribeOutputFileFormatJson {
 
@@ -1589,7 +1589,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatOrc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureDescribeOutputFileFormatOrc {
 
@@ -1602,7 +1602,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatParquet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureDescribeOutputFileFormatParquet {
 
@@ -1615,7 +1615,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatXml.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureDescribeOutputFileFormatXml {
 
@@ -1628,7 +1628,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureDirectory {
 	Enable: interface{},
@@ -1712,11 +1712,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureEncryption {
-	AzureCse: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalAzure.StageExternalAzureEncryptionAzureCse,
-	None: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalAzure.StageExternalAzureEncryptionNone,
+	AzureCse: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalAzure.StageExternalAzureEncryptionAzureCse,
+	None: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalAzure.StageExternalAzureEncryptionNone,
 }
 ```
 
@@ -1762,7 +1762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureEncryptionAzureCse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureEncryptionAzureCse {
 	MasterKey: *string,
@@ -1796,7 +1796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureEncryptionNone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureEncryptionNone {
 
@@ -1809,16 +1809,16 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureFileFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureFileFormat {
-	Avro: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalAzure.StageExternalAzureFileFormatAvro,
-	Csv: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalAzure.StageExternalAzureFileFormatCsv,
+	Avro: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalAzure.StageExternalAzureFileFormatAvro,
+	Csv: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalAzure.StageExternalAzureFileFormatCsv,
 	FormatName: *string,
-	Json: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalAzure.StageExternalAzureFileFormatJson,
-	Orc: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalAzure.StageExternalAzureFileFormatOrc,
-	Parquet: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalAzure.StageExternalAzureFileFormatParquet,
-	Xml: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalAzure.StageExternalAzureFileFormatXml,
+	Json: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalAzure.StageExternalAzureFileFormatJson,
+	Orc: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalAzure.StageExternalAzureFileFormatOrc,
+	Parquet: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalAzure.StageExternalAzureFileFormatParquet,
+	Xml: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalAzure.StageExternalAzureFileFormatXml,
 }
 ```
 
@@ -1939,7 +1939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureFileFormatAvro.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureFileFormatAvro {
 	Compression: *string,
@@ -2025,7 +2025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureFileFormatCsv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureFileFormatCsv {
 	BinaryFormat: *string,
@@ -2423,7 +2423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureFileFormatJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureFileFormatJson {
 	AllowDuplicate: *string,
@@ -2717,7 +2717,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureFileFormatOrc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureFileFormatOrc {
 	NullIf: *[]*string,
@@ -2787,7 +2787,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureFileFormatParquet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureFileFormatParquet {
 	BinaryAsText: *string,
@@ -2927,7 +2927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureFileFormatXml.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureFileFormatXml {
 	Compression: *string,
@@ -3071,7 +3071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureShowOutput {
 
@@ -3084,7 +3084,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 &stageexternalazure.StageExternalAzureTimeouts {
 	Create: *string,
@@ -3160,7 +3160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalAzureCredentialsOutputReference
 ```
@@ -3431,7 +3431,7 @@ func InternalValue() StageExternalAzureCredentials
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputDirectoryTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDescribeOutputDirectoryTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalAzureDescribeOutputDirectoryTableList
 ```
@@ -3580,7 +3580,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputDirectoryTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDescribeOutputDirectoryTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalAzureDescribeOutputDirectoryTableOutputReference
 ```
@@ -3880,7 +3880,7 @@ func InternalValue() StageExternalAzureDescribeOutputDirectoryTable
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatAvroList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDescribeOutputFileFormatAvroList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalAzureDescribeOutputFileFormatAvroList
 ```
@@ -4029,7 +4029,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatAvroOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDescribeOutputFileFormatAvroOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalAzureDescribeOutputFileFormatAvroOutputReference
 ```
@@ -4351,7 +4351,7 @@ func InternalValue() StageExternalAzureDescribeOutputFileFormatAvro
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatCsvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDescribeOutputFileFormatCsvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalAzureDescribeOutputFileFormatCsvList
 ```
@@ -4500,7 +4500,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatCsvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDescribeOutputFileFormatCsvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalAzureDescribeOutputFileFormatCsvOutputReference
 ```
@@ -5031,7 +5031,7 @@ func InternalValue() StageExternalAzureDescribeOutputFileFormatCsv
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatJsonList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDescribeOutputFileFormatJsonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalAzureDescribeOutputFileFormatJsonList
 ```
@@ -5180,7 +5180,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDescribeOutputFileFormatJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalAzureDescribeOutputFileFormatJsonOutputReference
 ```
@@ -5634,7 +5634,7 @@ func InternalValue() StageExternalAzureDescribeOutputFileFormatJson
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDescribeOutputFileFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalAzureDescribeOutputFileFormatList
 ```
@@ -5783,7 +5783,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatOrcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDescribeOutputFileFormatOrcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalAzureDescribeOutputFileFormatOrcList
 ```
@@ -5932,7 +5932,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatOrcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDescribeOutputFileFormatOrcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalAzureDescribeOutputFileFormatOrcOutputReference
 ```
@@ -6243,7 +6243,7 @@ func InternalValue() StageExternalAzureDescribeOutputFileFormatOrc
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDescribeOutputFileFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalAzureDescribeOutputFileFormatOutputReference
 ```
@@ -6587,7 +6587,7 @@ func InternalValue() StageExternalAzureDescribeOutputFileFormat
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatParquetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDescribeOutputFileFormatParquetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalAzureDescribeOutputFileFormatParquetList
 ```
@@ -6736,7 +6736,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatParquetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDescribeOutputFileFormatParquetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalAzureDescribeOutputFileFormatParquetOutputReference
 ```
@@ -7091,7 +7091,7 @@ func InternalValue() StageExternalAzureDescribeOutputFileFormatParquet
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatXmlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDescribeOutputFileFormatXmlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalAzureDescribeOutputFileFormatXmlList
 ```
@@ -7240,7 +7240,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputFileFormatXmlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDescribeOutputFileFormatXmlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalAzureDescribeOutputFileFormatXmlOutputReference
 ```
@@ -7595,7 +7595,7 @@ func InternalValue() StageExternalAzureDescribeOutputFileFormatXml
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalAzureDescribeOutputList
 ```
@@ -7744,7 +7744,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalAzureDescribeOutputOutputReference
 ```
@@ -8033,7 +8033,7 @@ func InternalValue() StageExternalAzureDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureDirectoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureDirectoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalAzureDirectoryOutputReference
 ```
@@ -8391,7 +8391,7 @@ func InternalValue() StageExternalAzureDirectory
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureEncryptionAzureCseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureEncryptionAzureCseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalAzureEncryptionAzureCseOutputReference
 ```
@@ -8662,7 +8662,7 @@ func InternalValue() StageExternalAzureEncryptionAzureCse
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureEncryptionNoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureEncryptionNoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalAzureEncryptionNoneOutputReference
 ```
@@ -8911,7 +8911,7 @@ func InternalValue() StageExternalAzureEncryptionNone
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalAzureEncryptionOutputReference
 ```
@@ -9244,7 +9244,7 @@ func InternalValue() StageExternalAzureEncryption
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureFileFormatAvroOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureFileFormatAvroOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalAzureFileFormatAvroOutputReference
 ```
@@ -9609,7 +9609,7 @@ func InternalValue() StageExternalAzureFileFormatAvro
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureFileFormatCsvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureFileFormatCsvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalAzureFileFormatCsvOutputReference
 ```
@@ -10496,7 +10496,7 @@ func InternalValue() StageExternalAzureFileFormatCsv
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureFileFormatJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureFileFormatJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalAzureFileFormatJsonOutputReference
 ```
@@ -11209,7 +11209,7 @@ func InternalValue() StageExternalAzureFileFormatJson
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureFileFormatOrcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureFileFormatOrcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalAzureFileFormatOrcOutputReference
 ```
@@ -11545,7 +11545,7 @@ func InternalValue() StageExternalAzureFileFormatOrc
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureFileFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureFileFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalAzureFileFormatOutputReference
 ```
@@ -12075,7 +12075,7 @@ func InternalValue() StageExternalAzureFileFormat
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureFileFormatParquetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureFileFormatParquetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalAzureFileFormatParquetOutputReference
 ```
@@ -12527,7 +12527,7 @@ func InternalValue() StageExternalAzureFileFormatParquet
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureFileFormatXmlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureFileFormatXmlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalAzureFileFormatXmlOutputReference
 ```
@@ -12979,7 +12979,7 @@ func InternalValue() StageExternalAzureFileFormatXml
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalAzureShowOutputList
 ```
@@ -13128,7 +13128,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalAzureShowOutputOutputReference
 ```
@@ -13571,7 +13571,7 @@ func InternalValue() StageExternalAzureShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalAzure.StageExternalAzureTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternalazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternalazure"
 
 stageexternalazure.NewStageExternalAzureTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalAzureTimeoutsOutputReference
 ```

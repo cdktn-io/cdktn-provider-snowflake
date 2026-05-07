@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3Compatible.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3Compatible(scope Construct, id *string, config StageExternalS3CompatibleConfig) StageExternalS3Compatible
 ```
@@ -494,7 +494,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3Compatible.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.StageExternalS3Compatible_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3Compatible.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.StageExternalS3Compatible_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ stageexternals3compatible.StageExternalS3Compatible_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3Compatible.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.StageExternalS3Compatible_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ stageexternals3compatible.StageExternalS3Compatible_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3Compatible.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.StageExternalS3Compatible_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1080,7 +1080,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleConfig {
 	Connection: interface{},
@@ -1096,11 +1096,11 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 	Schema: *string,
 	Url: *string,
 	Comment: *string,
-	Credentials: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalS3Compatible.StageExternalS3CompatibleCredentials,
-	Directory: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalS3Compatible.StageExternalS3CompatibleDirectory,
-	FileFormat: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalS3Compatible.StageExternalS3CompatibleFileFormat,
+	Credentials: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalS3Compatible.StageExternalS3CompatibleCredentials,
+	Directory: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalS3Compatible.StageExternalS3CompatibleDirectory,
+	FileFormat: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalS3Compatible.StageExternalS3CompatibleFileFormat,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalS3Compatible.StageExternalS3CompatibleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalS3Compatible.StageExternalS3CompatibleTimeouts,
 }
 ```
 
@@ -1365,7 +1365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleCredentials {
 	AwsKeyId: *string,
@@ -1415,7 +1415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleDescribeOutput {
 
@@ -1428,7 +1428,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputDirectoryTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleDescribeOutputDirectoryTable {
 
@@ -1441,7 +1441,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleDescribeOutputFileFormat {
 
@@ -1454,7 +1454,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatAvro.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleDescribeOutputFileFormatAvro {
 
@@ -1467,7 +1467,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatCsv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleDescribeOutputFileFormatCsv {
 
@@ -1480,7 +1480,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleDescribeOutputFileFormatJson {
 
@@ -1493,7 +1493,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatOrc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleDescribeOutputFileFormatOrc {
 
@@ -1506,7 +1506,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatParquet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleDescribeOutputFileFormatParquet {
 
@@ -1519,7 +1519,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatXml.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleDescribeOutputFileFormatXml {
 
@@ -1532,7 +1532,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleDescribeOutputLocation {
 
@@ -1545,7 +1545,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleDirectory {
 	Enable: interface{},
@@ -1611,16 +1611,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleFileFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleFileFormat {
-	Avro: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatAvro,
-	Csv: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatCsv,
+	Avro: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatAvro,
+	Csv: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatCsv,
 	FormatName: *string,
-	Json: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatJson,
-	Orc: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatOrc,
-	Parquet: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatParquet,
-	Xml: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatXml,
+	Json: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatJson,
+	Orc: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatOrc,
+	Parquet: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatParquet,
+	Xml: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatXml,
 }
 ```
 
@@ -1741,7 +1741,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatAvro.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleFileFormatAvro {
 	Compression: *string,
@@ -1827,7 +1827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatCsv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleFileFormatCsv {
 	BinaryFormat: *string,
@@ -2225,7 +2225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleFileFormatJson {
 	AllowDuplicate: *string,
@@ -2519,7 +2519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatOrc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleFileFormatOrc {
 	NullIf: *[]*string,
@@ -2589,7 +2589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatParquet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleFileFormatParquet {
 	BinaryAsText: *string,
@@ -2729,7 +2729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatXml.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleFileFormatXml {
 	Compression: *string,
@@ -2873,7 +2873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleShowOutput {
 
@@ -2886,7 +2886,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 &stageexternals3compatible.StageExternalS3CompatibleTimeouts {
 	Create: *string,
@@ -2962,7 +2962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalS3CompatibleCredentialsOutputReference
 ```
@@ -3255,7 +3255,7 @@ func InternalValue() StageExternalS3CompatibleCredentials
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputDirectoryTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputDirectoryTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalS3CompatibleDescribeOutputDirectoryTableList
 ```
@@ -3404,7 +3404,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputDirectoryTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputDirectoryTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalS3CompatibleDescribeOutputDirectoryTableOutputReference
 ```
@@ -3704,7 +3704,7 @@ func InternalValue() StageExternalS3CompatibleDescribeOutputDirectoryTable
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatAvroList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputFileFormatAvroList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalS3CompatibleDescribeOutputFileFormatAvroList
 ```
@@ -3853,7 +3853,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatAvroOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputFileFormatAvroOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalS3CompatibleDescribeOutputFileFormatAvroOutputReference
 ```
@@ -4175,7 +4175,7 @@ func InternalValue() StageExternalS3CompatibleDescribeOutputFileFormatAvro
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatCsvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputFileFormatCsvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalS3CompatibleDescribeOutputFileFormatCsvList
 ```
@@ -4324,7 +4324,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatCsvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputFileFormatCsvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalS3CompatibleDescribeOutputFileFormatCsvOutputReference
 ```
@@ -4855,7 +4855,7 @@ func InternalValue() StageExternalS3CompatibleDescribeOutputFileFormatCsv
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatJsonList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputFileFormatJsonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalS3CompatibleDescribeOutputFileFormatJsonList
 ```
@@ -5004,7 +5004,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputFileFormatJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalS3CompatibleDescribeOutputFileFormatJsonOutputReference
 ```
@@ -5458,7 +5458,7 @@ func InternalValue() StageExternalS3CompatibleDescribeOutputFileFormatJson
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputFileFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalS3CompatibleDescribeOutputFileFormatList
 ```
@@ -5607,7 +5607,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatOrcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputFileFormatOrcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalS3CompatibleDescribeOutputFileFormatOrcList
 ```
@@ -5756,7 +5756,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatOrcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputFileFormatOrcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalS3CompatibleDescribeOutputFileFormatOrcOutputReference
 ```
@@ -6067,7 +6067,7 @@ func InternalValue() StageExternalS3CompatibleDescribeOutputFileFormatOrc
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputFileFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalS3CompatibleDescribeOutputFileFormatOutputReference
 ```
@@ -6411,7 +6411,7 @@ func InternalValue() StageExternalS3CompatibleDescribeOutputFileFormat
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatParquetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputFileFormatParquetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalS3CompatibleDescribeOutputFileFormatParquetList
 ```
@@ -6560,7 +6560,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatParquetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputFileFormatParquetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalS3CompatibleDescribeOutputFileFormatParquetOutputReference
 ```
@@ -6915,7 +6915,7 @@ func InternalValue() StageExternalS3CompatibleDescribeOutputFileFormatParquet
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatXmlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputFileFormatXmlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalS3CompatibleDescribeOutputFileFormatXmlList
 ```
@@ -7064,7 +7064,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputFileFormatXmlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputFileFormatXmlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalS3CompatibleDescribeOutputFileFormatXmlOutputReference
 ```
@@ -7419,7 +7419,7 @@ func InternalValue() StageExternalS3CompatibleDescribeOutputFileFormatXml
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalS3CompatibleDescribeOutputList
 ```
@@ -7568,7 +7568,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalS3CompatibleDescribeOutputLocationList
 ```
@@ -7717,7 +7717,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalS3CompatibleDescribeOutputLocationOutputReference
 ```
@@ -7995,7 +7995,7 @@ func InternalValue() StageExternalS3CompatibleDescribeOutputLocation
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalS3CompatibleDescribeOutputOutputReference
 ```
@@ -8295,7 +8295,7 @@ func InternalValue() StageExternalS3CompatibleDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleDirectoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleDirectoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalS3CompatibleDirectoryOutputReference
 ```
@@ -8624,7 +8624,7 @@ func InternalValue() StageExternalS3CompatibleDirectory
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatAvroOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleFileFormatAvroOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalS3CompatibleFileFormatAvroOutputReference
 ```
@@ -8989,7 +8989,7 @@ func InternalValue() StageExternalS3CompatibleFileFormatAvro
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatCsvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleFileFormatCsvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalS3CompatibleFileFormatCsvOutputReference
 ```
@@ -9876,7 +9876,7 @@ func InternalValue() StageExternalS3CompatibleFileFormatCsv
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleFileFormatJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalS3CompatibleFileFormatJsonOutputReference
 ```
@@ -10589,7 +10589,7 @@ func InternalValue() StageExternalS3CompatibleFileFormatJson
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatOrcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleFileFormatOrcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalS3CompatibleFileFormatOrcOutputReference
 ```
@@ -10925,7 +10925,7 @@ func InternalValue() StageExternalS3CompatibleFileFormatOrc
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleFileFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalS3CompatibleFileFormatOutputReference
 ```
@@ -11455,7 +11455,7 @@ func InternalValue() StageExternalS3CompatibleFileFormat
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatParquetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleFileFormatParquetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalS3CompatibleFileFormatParquetOutputReference
 ```
@@ -11907,7 +11907,7 @@ func InternalValue() StageExternalS3CompatibleFileFormatParquet
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleFileFormatXmlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleFileFormatXmlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalS3CompatibleFileFormatXmlOutputReference
 ```
@@ -12359,7 +12359,7 @@ func InternalValue() StageExternalS3CompatibleFileFormatXml
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageExternalS3CompatibleShowOutputList
 ```
@@ -12508,7 +12508,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageExternalS3CompatibleShowOutputOutputReference
 ```
@@ -12951,7 +12951,7 @@ func InternalValue() StageExternalS3CompatibleShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3Compatible.StageExternalS3CompatibleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageexternals3compatible"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageexternals3compatible"
 
 stageexternals3compatible.NewStageExternalS3CompatibleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageExternalS3CompatibleTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeTags.DataSnowflakeTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflaketags"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflaketags"
 
 datasnowflaketags.NewDataSnowflakeTags(scope Construct, id *string, config DataSnowflakeTagsConfig) DataSnowflakeTags
 ```
@@ -332,7 +332,7 @@ func ResetLike()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.dataSnowflakeTags.DataSnowflakeTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflaketags"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflaketags"
 
 datasnowflaketags.DataSnowflakeTags_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.dataSnowflakeTags.DataSnowflakeTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflaketags"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflaketags"
 
 datasnowflaketags.DataSnowflakeTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datasnowflaketags.DataSnowflakeTags_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-snowflake.dataSnowflakeTags.DataSnowflakeTags.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflaketags"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflaketags"
 
 datasnowflaketags.DataSnowflakeTags_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ datasnowflaketags.DataSnowflakeTags_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.dataSnowflakeTags.DataSnowflakeTags.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflaketags"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflaketags"
 
 datasnowflaketags.DataSnowflakeTags_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -676,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeTags.DataSnowflakeTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflaketags"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflaketags"
 
 &datasnowflaketags.DataSnowflakeTagsConfig {
 	Connection: interface{},
@@ -687,7 +687,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowfl
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	In: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.dataSnowflakeTags.DataSnowflakeTagsIn,
+	In: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.dataSnowflakeTags.DataSnowflakeTagsIn,
 	Like: *string,
 }
 ```
@@ -827,7 +827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeTags.DataSnowflakeTagsIn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflaketags"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflaketags"
 
 &datasnowflaketags.DataSnowflakeTagsIn {
 	Account: interface{},
@@ -925,7 +925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeTags.DataSnowflakeTagsTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflaketags"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflaketags"
 
 &datasnowflaketags.DataSnowflakeTagsTags {
 
@@ -938,7 +938,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeTags.DataSnowflakeTagsTagsShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflaketags"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflaketags"
 
 &datasnowflaketags.DataSnowflakeTagsTagsShowOutput {
 
@@ -953,7 +953,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowfl
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeTags.DataSnowflakeTagsInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflaketags"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflaketags"
 
 datasnowflaketags.NewDataSnowflakeTagsInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeTagsInOutputReference
 ```
@@ -1347,7 +1347,7 @@ func InternalValue() DataSnowflakeTagsIn
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeTags.DataSnowflakeTagsTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflaketags"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflaketags"
 
 datasnowflaketags.NewDataSnowflakeTagsTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTagsTagsList
 ```
@@ -1496,7 +1496,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeTags.DataSnowflakeTagsTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflaketags"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflaketags"
 
 datasnowflaketags.NewDataSnowflakeTagsTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTagsTagsOutputReference
 ```
@@ -1774,7 +1774,7 @@ func InternalValue() DataSnowflakeTagsTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeTags.DataSnowflakeTagsTagsShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflaketags"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflaketags"
 
 datasnowflaketags.NewDataSnowflakeTagsTagsShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTagsTagsShowOutputList
 ```
@@ -1923,7 +1923,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeTags.DataSnowflakeTagsTagsShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflaketags"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflaketags"
 
 datasnowflaketags.NewDataSnowflakeTagsTagsShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTagsTagsShowOutputOutputReference
 ```

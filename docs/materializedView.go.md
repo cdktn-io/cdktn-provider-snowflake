@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.materializedView.MaterializedView.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/materializedview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/materializedview"
 
 materializedview.NewMaterializedView(scope Construct, id *string, config MaterializedViewConfig) MaterializedView
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.materializedView.MaterializedView.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/materializedview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/materializedview"
 
 materializedview.MaterializedView_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.materializedView.MaterializedView.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/materializedview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/materializedview"
 
 materializedview.MaterializedView_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ materializedview.MaterializedView_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.materializedView.MaterializedView.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/materializedview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/materializedview"
 
 materializedview.MaterializedView_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ materializedview.MaterializedView_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.materializedView.MaterializedView.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/materializedview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/materializedview"
 
 materializedview.MaterializedView_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1010,7 +1010,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.materializedView.MaterializedViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/materializedview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/materializedview"
 
 &materializedview.MaterializedViewConfig {
 	Connection: interface{},
@@ -1030,7 +1030,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/materializ
 	IsSecure: interface{},
 	OrReplace: interface{},
 	Tag: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.materializedView.MaterializedViewTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.materializedView.MaterializedViewTimeouts,
 }
 ```
 
@@ -1293,7 +1293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.materializedView.MaterializedViewTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/materializedview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/materializedview"
 
 &materializedview.MaterializedViewTag {
 	Name: *string,
@@ -1375,7 +1375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.materializedView.MaterializedViewTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/materializedview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/materializedview"
 
 &materializedview.MaterializedViewTimeouts {
 	Create: *string,
@@ -1451,7 +1451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.materializedView.MaterializedViewTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/materializedview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/materializedview"
 
 materializedview.NewMaterializedViewTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MaterializedViewTagList
 ```
@@ -1611,7 +1611,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.materializedView.MaterializedViewTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/materializedview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/materializedview"
 
 materializedview.NewMaterializedViewTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MaterializedViewTagOutputReference
 ```
@@ -1980,7 +1980,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.materializedView.MaterializedViewTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/materializedview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/materializedview"
 
 materializedview.NewMaterializedViewTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MaterializedViewTimeoutsOutputReference
 ```

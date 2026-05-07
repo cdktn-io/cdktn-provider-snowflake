@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationazure"
 
 storageintegrationazure.NewStorageIntegrationAzure(scope Construct, id *string, config StorageIntegrationAzureConfig) StorageIntegrationAzure
 ```
@@ -448,7 +448,7 @@ func ResetUsePrivatelinkEndpoint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzure.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationazure"
 
 storageintegrationazure.StorageIntegrationAzure_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzure.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationazure"
 
 storageintegrationazure.StorageIntegrationAzure_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ storageintegrationazure.StorageIntegrationAzure_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzure.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationazure"
 
 storageintegrationazure.StorageIntegrationAzure_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ storageintegrationazure.StorageIntegrationAzure_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzure.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationazure"
 
 storageintegrationazure.StorageIntegrationAzure_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -968,7 +968,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationazure"
 
 &storageintegrationazure.StorageIntegrationAzureConfig {
 	Connection: interface{},
@@ -985,7 +985,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageint
 	Comment: *string,
 	Id: *string,
 	StorageBlockedLocations: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.storageIntegrationAzure.StorageIntegrationAzureTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.storageIntegrationAzure.StorageIntegrationAzureTimeouts,
 	UsePrivatelinkEndpoint: *string,
 }
 ```
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationazure"
 
 &storageintegrationazure.StorageIntegrationAzureDescribeOutput {
 
@@ -1232,7 +1232,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageint
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationazure"
 
 &storageintegrationazure.StorageIntegrationAzureShowOutput {
 
@@ -1245,7 +1245,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageint
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationazure"
 
 &storageintegrationazure.StorageIntegrationAzureTimeouts {
 	Create: *string,
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationazure"
 
 storageintegrationazure.NewStorageIntegrationAzureDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageIntegrationAzureDescribeOutputList
 ```
@@ -1470,7 +1470,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationazure"
 
 storageintegrationazure.NewStorageIntegrationAzureDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageIntegrationAzureDescribeOutputOutputReference
 ```
@@ -1847,7 +1847,7 @@ func InternalValue() StorageIntegrationAzureDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationazure"
 
 storageintegrationazure.NewStorageIntegrationAzureShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageIntegrationAzureShowOutputList
 ```
@@ -1996,7 +1996,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationazure"
 
 storageintegrationazure.NewStorageIntegrationAzureShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageIntegrationAzureShowOutputOutputReference
 ```
@@ -2329,7 +2329,7 @@ func InternalValue() StorageIntegrationAzureShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationazure"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationazure"
 
 storageintegrationazure.NewStorageIntegrationAzureTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageIntegrationAzureTimeoutsOutputReference
 ```

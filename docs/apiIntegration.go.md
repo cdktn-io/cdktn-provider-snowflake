@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegration.ApiIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/apiintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegration"
 
 apiintegration.NewApiIntegration(scope Construct, id *string, config ApiIntegrationConfig) ApiIntegration
 ```
@@ -490,7 +490,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.apiIntegration.ApiIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/apiintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegration"
 
 apiintegration.ApiIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.apiIntegration.ApiIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/apiintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegration"
 
 apiintegration.ApiIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ apiintegration.ApiIntegration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.apiIntegration.ApiIntegration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/apiintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegration"
 
 apiintegration.ApiIntegration_IsTerraformResource(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ apiintegration.ApiIntegration_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.apiIntegration.ApiIntegration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/apiintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegration"
 
 apiintegration.ApiIntegration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1153,7 +1153,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegration.ApiIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/apiintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegration"
 
 &apiintegration.ApiIntegrationConfig {
 	Connection: interface{},
@@ -1176,7 +1176,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/apiintegra
 	Enabled: interface{},
 	GoogleAudience: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.apiIntegration.ApiIntegrationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.apiIntegration.ApiIntegrationTimeouts,
 }
 ```
 
@@ -1482,7 +1482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegration.ApiIntegrationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/apiintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegration"
 
 &apiintegration.ApiIntegrationTimeouts {
 	Create: *string,
@@ -1558,7 +1558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegration.ApiIntegrationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/apiintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegration"
 
 apiintegration.NewApiIntegrationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiIntegrationTimeoutsOutputReference
 ```

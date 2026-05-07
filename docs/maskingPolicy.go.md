@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicy(scope Construct, id *string, config MaskingPolicyConfig) MaskingPolicy
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 maskingpolicy.MaskingPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 maskingpolicy.MaskingPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ maskingpolicy.MaskingPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 maskingpolicy.MaskingPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ maskingpolicy.MaskingPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 maskingpolicy.MaskingPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -996,7 +996,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 &maskingpolicy.MaskingPolicyArgument {
 	Name: *string,
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 &maskingpolicy.MaskingPolicyConfig {
 	Connection: interface{},
@@ -1065,7 +1065,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpol
 	Comment: *string,
 	ExemptOtherPolicies: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.maskingPolicy.MaskingPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.maskingPolicy.MaskingPolicyTimeouts,
 }
 ```
 
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 &maskingpolicy.MaskingPolicyDescribeOutput {
 
@@ -1334,7 +1334,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpol
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyDescribeOutputSignature.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 &maskingpolicy.MaskingPolicyDescribeOutputSignature {
 
@@ -1347,7 +1347,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpol
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 &maskingpolicy.MaskingPolicyShowOutput {
 
@@ -1360,7 +1360,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpol
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 &maskingpolicy.MaskingPolicyTimeouts {
 	Create: *string,
@@ -1436,7 +1436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyArgumentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicyArgumentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MaskingPolicyArgumentList
 ```
@@ -1596,7 +1596,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyArgumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicyArgumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MaskingPolicyArgumentOutputReference
 ```
@@ -1907,7 +1907,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicyDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MaskingPolicyDescribeOutputList
 ```
@@ -2056,7 +2056,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicyDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MaskingPolicyDescribeOutputOutputReference
 ```
@@ -2367,7 +2367,7 @@ func InternalValue() MaskingPolicyDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyDescribeOutputSignatureList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicyDescribeOutputSignatureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MaskingPolicyDescribeOutputSignatureList
 ```
@@ -2516,7 +2516,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyDescribeOutputSignatureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicyDescribeOutputSignatureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MaskingPolicyDescribeOutputSignatureOutputReference
 ```
@@ -2805,7 +2805,7 @@ func InternalValue() MaskingPolicyDescribeOutputSignature
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicyShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MaskingPolicyShowOutputList
 ```
@@ -2954,7 +2954,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicyShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MaskingPolicyShowOutputOutputReference
 ```
@@ -3320,7 +3320,7 @@ func InternalValue() MaskingPolicyShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.maskingPolicy.MaskingPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/maskingpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MaskingPolicyTimeoutsOutputReference
 ```

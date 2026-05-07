@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationgcs"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationgcs"
 
 storageintegrationgcs.NewStorageIntegrationGcs(scope Construct, id *string, config StorageIntegrationGcsConfig) StorageIntegrationGcs
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcs.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationgcs"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationgcs"
 
 storageintegrationgcs.StorageIntegrationGcs_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationgcs"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationgcs"
 
 storageintegrationgcs.StorageIntegrationGcs_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ storageintegrationgcs.StorageIntegrationGcs_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcs.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationgcs"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationgcs"
 
 storageintegrationgcs.StorageIntegrationGcs_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ storageintegrationgcs.StorageIntegrationGcs_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcs.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationgcs"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationgcs"
 
 storageintegrationgcs.StorageIntegrationGcs_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -917,7 +917,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationgcs"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationgcs"
 
 &storageintegrationgcs.StorageIntegrationGcsConfig {
 	Connection: interface{},
@@ -933,7 +933,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageint
 	Comment: *string,
 	Id: *string,
 	StorageBlockedLocations: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.storageIntegrationGcs.StorageIntegrationGcsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.storageIntegrationGcs.StorageIntegrationGcsTimeouts,
 }
 ```
 
@@ -1134,7 +1134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationgcs"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationgcs"
 
 &storageintegrationgcs.StorageIntegrationGcsDescribeOutput {
 
@@ -1147,7 +1147,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageint
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationgcs"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationgcs"
 
 &storageintegrationgcs.StorageIntegrationGcsShowOutput {
 
@@ -1160,7 +1160,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageint
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationgcs"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationgcs"
 
 &storageintegrationgcs.StorageIntegrationGcsTimeouts {
 	Create: *string,
@@ -1236,7 +1236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationgcs"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationgcs"
 
 storageintegrationgcs.NewStorageIntegrationGcsDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageIntegrationGcsDescribeOutputList
 ```
@@ -1385,7 +1385,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationgcs"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationgcs"
 
 storageintegrationgcs.NewStorageIntegrationGcsDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageIntegrationGcsDescribeOutputOutputReference
 ```
@@ -1740,7 +1740,7 @@ func InternalValue() StorageIntegrationGcsDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationgcs"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationgcs"
 
 storageintegrationgcs.NewStorageIntegrationGcsShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageIntegrationGcsShowOutputList
 ```
@@ -1889,7 +1889,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationgcs"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationgcs"
 
 storageintegrationgcs.NewStorageIntegrationGcsShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageIntegrationGcsShowOutputOutputReference
 ```
@@ -2222,7 +2222,7 @@ func InternalValue() StorageIntegrationGcsShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageIntegrationGcs.StorageIntegrationGcsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/storageintegrationgcs"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storageintegrationgcs"
 
 storageintegrationgcs.NewStorageIntegrationGcsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageIntegrationGcsTimeoutsOutputReference
 ```

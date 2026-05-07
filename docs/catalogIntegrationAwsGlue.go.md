@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationAwsGlue.CatalogIntegrationAwsGlue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationawsglue"
 
 catalogintegrationawsglue.NewCatalogIntegrationAwsGlue(scope Construct, id *string, config CatalogIntegrationAwsGlueConfig) CatalogIntegrationAwsGlue
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.catalogIntegrationAwsGlue.CatalogIntegrationAwsGlue.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationawsglue"
 
 catalogintegrationawsglue.CatalogIntegrationAwsGlue_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.catalogIntegrationAwsGlue.CatalogIntegrationAwsGlue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationawsglue"
 
 catalogintegrationawsglue.CatalogIntegrationAwsGlue_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ catalogintegrationawsglue.CatalogIntegrationAwsGlue_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.catalogIntegrationAwsGlue.CatalogIntegrationAwsGlue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationawsglue"
 
 catalogintegrationawsglue.CatalogIntegrationAwsGlue_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ catalogintegrationawsglue.CatalogIntegrationAwsGlue_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.catalogIntegrationAwsGlue.CatalogIntegrationAwsGlue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationawsglue"
 
 catalogintegrationawsglue.CatalogIntegrationAwsGlue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -997,7 +997,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationAwsGlue.CatalogIntegrationAwsGlueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationawsglue"
 
 &catalogintegrationawsglue.CatalogIntegrationAwsGlueConfig {
 	Connection: interface{},
@@ -1016,7 +1016,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogint
 	GlueRegion: *string,
 	Id: *string,
 	RefreshIntervalSeconds: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.catalogIntegrationAwsGlue.CatalogIntegrationAwsGlueTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.catalogIntegrationAwsGlue.CatalogIntegrationAwsGlueTimeouts,
 }
 ```
 
@@ -1266,7 +1266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationAwsGlue.CatalogIntegrationAwsGlueDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationawsglue"
 
 &catalogintegrationawsglue.CatalogIntegrationAwsGlueDescribeOutput {
 
@@ -1279,7 +1279,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogint
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationAwsGlue.CatalogIntegrationAwsGlueShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationawsglue"
 
 &catalogintegrationawsglue.CatalogIntegrationAwsGlueShowOutput {
 
@@ -1292,7 +1292,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogint
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationAwsGlue.CatalogIntegrationAwsGlueTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationawsglue"
 
 &catalogintegrationawsglue.CatalogIntegrationAwsGlueTimeouts {
 	Create: *string,
@@ -1368,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationAwsGlue.CatalogIntegrationAwsGlueDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationawsglue"
 
 catalogintegrationawsglue.NewCatalogIntegrationAwsGlueDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CatalogIntegrationAwsGlueDescribeOutputList
 ```
@@ -1517,7 +1517,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationAwsGlue.CatalogIntegrationAwsGlueDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationawsglue"
 
 catalogintegrationawsglue.NewCatalogIntegrationAwsGlueDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CatalogIntegrationAwsGlueDescribeOutputOutputReference
 ```
@@ -1894,7 +1894,7 @@ func InternalValue() CatalogIntegrationAwsGlueDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationAwsGlue.CatalogIntegrationAwsGlueShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationawsglue"
 
 catalogintegrationawsglue.NewCatalogIntegrationAwsGlueShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CatalogIntegrationAwsGlueShowOutputList
 ```
@@ -2043,7 +2043,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationAwsGlue.CatalogIntegrationAwsGlueShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationawsglue"
 
 catalogintegrationawsglue.NewCatalogIntegrationAwsGlueShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CatalogIntegrationAwsGlueShowOutputOutputReference
 ```
@@ -2376,7 +2376,7 @@ func InternalValue() CatalogIntegrationAwsGlueShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationAwsGlue.CatalogIntegrationAwsGlueTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationawsglue"
 
 catalogintegrationawsglue.NewCatalogIntegrationAwsGlueTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CatalogIntegrationAwsGlueTimeoutsOutputReference
 ```

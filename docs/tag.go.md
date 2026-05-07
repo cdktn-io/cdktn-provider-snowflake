@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.tag.Tag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/tag"
 
 tag.NewTag(scope Construct, id *string, config TagConfig) Tag
 ```
@@ -489,7 +489,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.tag.Tag.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/tag"
 
 tag.Tag_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.tag.Tag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/tag"
 
 tag.Tag_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ tag.Tag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.tag.Tag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/tag"
 
 tag.Tag_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ tag.Tag_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.tag.Tag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/tag"
 
 tag.Tag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1064,7 +1064,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.tag.TagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/tag"
 
 &tag.TagConfig {
 	Connection: interface{},
@@ -1082,10 +1082,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
 	Id: *string,
 	MaskingPolicies: *[]*string,
 	NoAllowedValues: interface{},
-	OnConflict: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.tag.TagOnConflict,
+	OnConflict: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.tag.TagOnConflict,
 	OrderedAllowedValues: *[]*string,
 	Propagate: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.tag.TagTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.tag.TagTimeouts,
 }
 ```
 
@@ -1375,7 +1375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.tag.TagOnConflict.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/tag"
 
 &tag.TagOnConflict {
 	AllowedValuesSequence: interface{},
@@ -1429,7 +1429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.tag.TagShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/tag"
 
 &tag.TagShowOutput {
 
@@ -1442,7 +1442,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.tag.TagTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/tag"
 
 &tag.TagTimeouts {
 	Create: *string,
@@ -1518,7 +1518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.tag.TagOnConflictOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/tag"
 
 tag.NewTagOnConflictOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagOnConflictOutputReference
 ```
@@ -1825,7 +1825,7 @@ func InternalValue() TagOnConflict
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.tag.TagShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/tag"
 
 tag.NewTagShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TagShowOutputList
 ```
@@ -1974,7 +1974,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.tag.TagShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/tag"
 
 tag.NewTagShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TagShowOutputOutputReference
 ```
@@ -2340,7 +2340,7 @@ func InternalValue() TagShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.tag.TagTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/tag"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/tag"
 
 tag.NewTagTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagTimeoutsOutputReference
 ```
