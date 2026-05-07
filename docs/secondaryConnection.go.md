@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.secondaryConnection.SecondaryConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secondaryconnection"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secondaryconnection"
 
 secondaryconnection.NewSecondaryConnection(scope Construct, id *string, config SecondaryConnectionConfig) SecondaryConnection
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.secondaryConnection.SecondaryConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secondaryconnection"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secondaryconnection"
 
 secondaryconnection.SecondaryConnection_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.secondaryConnection.SecondaryConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secondaryconnection"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secondaryconnection"
 
 secondaryconnection.SecondaryConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ secondaryconnection.SecondaryConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.secondaryConnection.SecondaryConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secondaryconnection"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secondaryconnection"
 
 secondaryconnection.SecondaryConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ secondaryconnection.SecondaryConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.secondaryConnection.SecondaryConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secondaryconnection"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secondaryconnection"
 
 secondaryconnection.SecondaryConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.secondaryConnection.SecondaryConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secondaryconnection"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secondaryconnection"
 
 &secondaryconnection.SecondaryConnectionConfig {
 	Connection: interface{},
@@ -880,7 +880,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secondaryc
 	Name: *string,
 	Comment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.secondaryConnection.SecondaryConnectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.secondaryConnection.SecondaryConnectionTimeouts,
 }
 ```
 
@@ -1049,7 +1049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.secondaryConnection.SecondaryConnectionShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secondaryconnection"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secondaryconnection"
 
 &secondaryconnection.SecondaryConnectionShowOutput {
 
@@ -1062,7 +1062,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secondaryc
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.secondaryConnection.SecondaryConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secondaryconnection"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secondaryconnection"
 
 &secondaryconnection.SecondaryConnectionTimeouts {
 	Create: *string,
@@ -1138,7 +1138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.secondaryConnection.SecondaryConnectionShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secondaryconnection"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secondaryconnection"
 
 secondaryconnection.NewSecondaryConnectionShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecondaryConnectionShowOutputList
 ```
@@ -1287,7 +1287,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.secondaryConnection.SecondaryConnectionShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secondaryconnection"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secondaryconnection"
 
 secondaryconnection.NewSecondaryConnectionShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecondaryConnectionShowOutputOutputReference
 ```
@@ -1686,7 +1686,7 @@ func InternalValue() SecondaryConnectionShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.secondaryConnection.SecondaryConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secondaryconnection"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secondaryconnection"
 
 secondaryconnection.NewSecondaryConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecondaryConnectionTimeoutsOutputReference
 ```

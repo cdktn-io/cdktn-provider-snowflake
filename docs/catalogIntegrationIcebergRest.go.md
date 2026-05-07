@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.NewCatalogIntegrationIcebergRest(scope Construct, id *string, config CatalogIntegrationIcebergRestConfig) CatalogIntegrationIcebergRest
 ```
@@ -521,7 +521,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRest.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.CatalogIntegrationIcebergRest_IsConstruct(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.CatalogIntegrationIcebergRest_IsTerraformElement(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ catalogintegrationicebergrest.CatalogIntegrationIcebergRest_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.CatalogIntegrationIcebergRest_IsTerraformResource(x interface{}) *bool
 ```
@@ -581,7 +581,7 @@ catalogintegrationicebergrest.CatalogIntegrationIcebergRest_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.CatalogIntegrationIcebergRest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1085,7 +1085,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestBearerRestAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 &catalogintegrationicebergrest.CatalogIntegrationIcebergRestBearerRestAuthentication {
 	BearerToken: *string,
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 &catalogintegrationicebergrest.CatalogIntegrationIcebergRestConfig {
 	Connection: interface{},
@@ -1133,15 +1133,15 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogint
 	Provisioners: *[]interface{},
 	Enabled: interface{},
 	Name: *string,
-	RestConfig: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestRestConfig,
-	BearerRestAuthentication: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestBearerRestAuthentication,
+	RestConfig: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestRestConfig,
+	BearerRestAuthentication: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestBearerRestAuthentication,
 	CatalogNamespace: *string,
 	Comment: *string,
 	Id: *string,
-	OauthRestAuthentication: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestOauthRestAuthentication,
+	OauthRestAuthentication: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestOauthRestAuthentication,
 	RefreshIntervalSeconds: *f64,
-	Sigv4RestAuthentication: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestSigv4RestAuthentication,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestTimeouts,
+	Sigv4RestAuthentication: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestSigv4RestAuthentication,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestTimeouts,
 }
 ```
 
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 &catalogintegrationicebergrest.CatalogIntegrationIcebergRestDescribeOutput {
 
@@ -1417,7 +1417,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogint
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestDescribeOutputBearerRestAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 &catalogintegrationicebergrest.CatalogIntegrationIcebergRestDescribeOutputBearerRestAuthentication {
 
@@ -1430,7 +1430,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogint
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestDescribeOutputOauthRestAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 &catalogintegrationicebergrest.CatalogIntegrationIcebergRestDescribeOutputOauthRestAuthentication {
 
@@ -1443,7 +1443,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogint
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestDescribeOutputRestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 &catalogintegrationicebergrest.CatalogIntegrationIcebergRestDescribeOutputRestConfig {
 
@@ -1456,7 +1456,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogint
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestDescribeOutputSigv4RestAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 &catalogintegrationicebergrest.CatalogIntegrationIcebergRestDescribeOutputSigv4RestAuthentication {
 
@@ -1469,7 +1469,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogint
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestOauthRestAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 &catalogintegrationicebergrest.CatalogIntegrationIcebergRestOauthRestAuthentication {
 	OauthAllowedScopes: *[]*string,
@@ -1555,7 +1555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestRestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 &catalogintegrationicebergrest.CatalogIntegrationIcebergRestRestConfig {
 	CatalogUri: *string,
@@ -1657,7 +1657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 &catalogintegrationicebergrest.CatalogIntegrationIcebergRestShowOutput {
 
@@ -1670,7 +1670,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogint
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestSigv4RestAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 &catalogintegrationicebergrest.CatalogIntegrationIcebergRestSigv4RestAuthentication {
 	Sigv4IamRole: *string,
@@ -1740,7 +1740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 &catalogintegrationicebergrest.CatalogIntegrationIcebergRestTimeouts {
 	Create: *string,
@@ -1816,7 +1816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestBearerRestAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.NewCatalogIntegrationIcebergRestBearerRestAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CatalogIntegrationIcebergRestBearerRestAuthenticationOutputReference
 ```
@@ -2087,7 +2087,7 @@ func InternalValue() CatalogIntegrationIcebergRestBearerRestAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestDescribeOutputBearerRestAuthenticationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.NewCatalogIntegrationIcebergRestDescribeOutputBearerRestAuthenticationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CatalogIntegrationIcebergRestDescribeOutputBearerRestAuthenticationList
 ```
@@ -2236,7 +2236,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestDescribeOutputBearerRestAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.NewCatalogIntegrationIcebergRestDescribeOutputBearerRestAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CatalogIntegrationIcebergRestDescribeOutputBearerRestAuthenticationOutputReference
 ```
@@ -2503,7 +2503,7 @@ func InternalValue() CatalogIntegrationIcebergRestDescribeOutputBearerRestAuthen
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.NewCatalogIntegrationIcebergRestDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CatalogIntegrationIcebergRestDescribeOutputList
 ```
@@ -2652,7 +2652,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestDescribeOutputOauthRestAuthenticationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.NewCatalogIntegrationIcebergRestDescribeOutputOauthRestAuthenticationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CatalogIntegrationIcebergRestDescribeOutputOauthRestAuthenticationList
 ```
@@ -2801,7 +2801,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestDescribeOutputOauthRestAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.NewCatalogIntegrationIcebergRestDescribeOutputOauthRestAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CatalogIntegrationIcebergRestDescribeOutputOauthRestAuthenticationOutputReference
 ```
@@ -3101,7 +3101,7 @@ func InternalValue() CatalogIntegrationIcebergRestDescribeOutputOauthRestAuthent
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.NewCatalogIntegrationIcebergRestDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CatalogIntegrationIcebergRestDescribeOutputOutputReference
 ```
@@ -3489,7 +3489,7 @@ func InternalValue() CatalogIntegrationIcebergRestDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestDescribeOutputRestConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.NewCatalogIntegrationIcebergRestDescribeOutputRestConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CatalogIntegrationIcebergRestDescribeOutputRestConfigList
 ```
@@ -3638,7 +3638,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestDescribeOutputRestConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.NewCatalogIntegrationIcebergRestDescribeOutputRestConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CatalogIntegrationIcebergRestDescribeOutputRestConfigOutputReference
 ```
@@ -3960,7 +3960,7 @@ func InternalValue() CatalogIntegrationIcebergRestDescribeOutputRestConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestDescribeOutputSigv4RestAuthenticationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.NewCatalogIntegrationIcebergRestDescribeOutputSigv4RestAuthenticationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CatalogIntegrationIcebergRestDescribeOutputSigv4RestAuthenticationList
 ```
@@ -4109,7 +4109,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestDescribeOutputSigv4RestAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.NewCatalogIntegrationIcebergRestDescribeOutputSigv4RestAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CatalogIntegrationIcebergRestDescribeOutputSigv4RestAuthenticationOutputReference
 ```
@@ -4398,7 +4398,7 @@ func InternalValue() CatalogIntegrationIcebergRestDescribeOutputSigv4RestAuthent
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestOauthRestAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.NewCatalogIntegrationIcebergRestOauthRestAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CatalogIntegrationIcebergRestOauthRestAuthenticationOutputReference
 ```
@@ -4742,7 +4742,7 @@ func InternalValue() CatalogIntegrationIcebergRestOauthRestAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestRestConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.NewCatalogIntegrationIcebergRestRestConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CatalogIntegrationIcebergRestRestConfigOutputReference
 ```
@@ -5129,7 +5129,7 @@ func InternalValue() CatalogIntegrationIcebergRestRestConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.NewCatalogIntegrationIcebergRestShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CatalogIntegrationIcebergRestShowOutputList
 ```
@@ -5278,7 +5278,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.NewCatalogIntegrationIcebergRestShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CatalogIntegrationIcebergRestShowOutputOutputReference
 ```
@@ -5611,7 +5611,7 @@ func InternalValue() CatalogIntegrationIcebergRestShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestSigv4RestAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.NewCatalogIntegrationIcebergRestSigv4RestAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CatalogIntegrationIcebergRestSigv4RestAuthenticationOutputReference
 ```
@@ -5940,7 +5940,7 @@ func InternalValue() CatalogIntegrationIcebergRestSigv4RestAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationIcebergRest.CatalogIntegrationIcebergRestTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationicebergrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationicebergrest"
 
 catalogintegrationicebergrest.NewCatalogIntegrationIcebergRestTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CatalogIntegrationIcebergRestTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascript(scope Construct, id *string, config ProcedureJavascriptConfig) ProcedureJavascript
 ```
@@ -503,7 +503,7 @@ func ResetTraceLevel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.ProcedureJavascript_IsConstruct(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.ProcedureJavascript_IsTerraformElement(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ procedurejavascript.ProcedureJavascript_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.ProcedureJavascript_IsTerraformResource(x interface{}) *bool
 ```
@@ -563,7 +563,7 @@ procedurejavascript.ProcedureJavascript_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.ProcedureJavascript_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1188,7 +1188,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptArguments {
 	ArgDataType: *string,
@@ -1258,7 +1258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptConfig {
 	Connection: interface{},
@@ -1282,7 +1282,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurej
 	LogLevel: *string,
 	MetricLevel: *string,
 	NullInputBehavior: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.procedureJavascript.ProcedureJavascriptTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.procedureJavascript.ProcedureJavascriptTimeouts,
 	TraceLevel: *string,
 }
 ```
@@ -1635,7 +1635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptParameters {
 
@@ -1648,7 +1648,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurej
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersEnableConsoleOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptParametersEnableConsoleOutput {
 
@@ -1661,7 +1661,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurej
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptParametersLogLevel {
 
@@ -1674,7 +1674,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurej
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersMetricLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptParametersMetricLevel {
 
@@ -1687,7 +1687,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurej
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersTraceLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptParametersTraceLevel {
 
@@ -1700,7 +1700,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurej
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptShowOutput {
 
@@ -1713,7 +1713,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurej
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptTimeouts {
 	Create: *string,
@@ -1789,7 +1789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavascriptArgumentsList
 ```
@@ -1949,7 +1949,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavascriptArgumentsOutputReference
 ```
@@ -2289,7 +2289,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersEnableConsoleOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersEnableConsoleOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavascriptParametersEnableConsoleOutputList
 ```
@@ -2438,7 +2438,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersEnableConsoleOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersEnableConsoleOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavascriptParametersEnableConsoleOutputOutputReference
 ```
@@ -2760,7 +2760,7 @@ func InternalValue() ProcedureJavascriptParametersEnableConsoleOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavascriptParametersList
 ```
@@ -2909,7 +2909,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersLogLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavascriptParametersLogLevelList
 ```
@@ -3058,7 +3058,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersLogLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavascriptParametersLogLevelOutputReference
 ```
@@ -3380,7 +3380,7 @@ func InternalValue() ProcedureJavascriptParametersLogLevel
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersMetricLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersMetricLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavascriptParametersMetricLevelList
 ```
@@ -3529,7 +3529,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersMetricLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersMetricLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavascriptParametersMetricLevelOutputReference
 ```
@@ -3851,7 +3851,7 @@ func InternalValue() ProcedureJavascriptParametersMetricLevel
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavascriptParametersOutputReference
 ```
@@ -4162,7 +4162,7 @@ func InternalValue() ProcedureJavascriptParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersTraceLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersTraceLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavascriptParametersTraceLevelList
 ```
@@ -4311,7 +4311,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersTraceLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersTraceLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavascriptParametersTraceLevelOutputReference
 ```
@@ -4633,7 +4633,7 @@ func InternalValue() ProcedureJavascriptParametersTraceLevel
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavascriptShowOutputList
 ```
@@ -4782,7 +4782,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavascriptShowOutputOutputReference
 ```
@@ -5225,7 +5225,7 @@ func InternalValue() ProcedureJavascriptShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/procedurejavascript"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProcedureJavascriptTimeoutsOutputReference
 ```

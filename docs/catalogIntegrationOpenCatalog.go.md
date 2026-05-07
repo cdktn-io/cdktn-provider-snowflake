@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 catalogintegrationopencatalog.NewCatalogIntegrationOpenCatalog(scope Construct, id *string, config CatalogIntegrationOpenCatalogConfig) CatalogIntegrationOpenCatalog
 ```
@@ -474,7 +474,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalog.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 catalogintegrationopencatalog.CatalogIntegrationOpenCatalog_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 catalogintegrationopencatalog.CatalogIntegrationOpenCatalog_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ catalogintegrationopencatalog.CatalogIntegrationOpenCatalog_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalog.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 catalogintegrationopencatalog.CatalogIntegrationOpenCatalog_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ catalogintegrationopencatalog.CatalogIntegrationOpenCatalog_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 catalogintegrationopencatalog.CatalogIntegrationOpenCatalog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -994,7 +994,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 &catalogintegrationopencatalog.CatalogIntegrationOpenCatalogConfig {
 	Connection: interface{},
@@ -1006,13 +1006,13 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogint
 	Provisioners: *[]interface{},
 	Enabled: interface{},
 	Name: *string,
-	RestAuthentication: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogRestAuthentication,
-	RestConfig: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogRestConfig,
+	RestAuthentication: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogRestAuthentication,
+	RestConfig: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogRestConfig,
 	CatalogNamespace: *string,
 	Comment: *string,
 	Id: *string,
 	RefreshIntervalSeconds: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogTimeouts,
 }
 ```
 
@@ -1245,7 +1245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 &catalogintegrationopencatalog.CatalogIntegrationOpenCatalogDescribeOutput {
 
@@ -1258,7 +1258,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogint
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogDescribeOutputRestAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 &catalogintegrationopencatalog.CatalogIntegrationOpenCatalogDescribeOutputRestAuthentication {
 
@@ -1271,7 +1271,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogint
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogDescribeOutputRestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 &catalogintegrationopencatalog.CatalogIntegrationOpenCatalogDescribeOutputRestConfig {
 
@@ -1284,7 +1284,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogint
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogRestAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 &catalogintegrationopencatalog.CatalogIntegrationOpenCatalogRestAuthentication {
 	OauthAllowedScopes: *[]*string,
@@ -1370,7 +1370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogRestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 &catalogintegrationopencatalog.CatalogIntegrationOpenCatalogRestConfig {
 	CatalogName: *string,
@@ -1456,7 +1456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 &catalogintegrationopencatalog.CatalogIntegrationOpenCatalogShowOutput {
 
@@ -1469,7 +1469,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogint
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 &catalogintegrationopencatalog.CatalogIntegrationOpenCatalogTimeouts {
 	Create: *string,
@@ -1545,7 +1545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 catalogintegrationopencatalog.NewCatalogIntegrationOpenCatalogDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CatalogIntegrationOpenCatalogDescribeOutputList
 ```
@@ -1694,7 +1694,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 catalogintegrationopencatalog.NewCatalogIntegrationOpenCatalogDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CatalogIntegrationOpenCatalogDescribeOutputOutputReference
 ```
@@ -2060,7 +2060,7 @@ func InternalValue() CatalogIntegrationOpenCatalogDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogDescribeOutputRestAuthenticationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 catalogintegrationopencatalog.NewCatalogIntegrationOpenCatalogDescribeOutputRestAuthenticationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CatalogIntegrationOpenCatalogDescribeOutputRestAuthenticationList
 ```
@@ -2209,7 +2209,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogDescribeOutputRestAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 catalogintegrationopencatalog.NewCatalogIntegrationOpenCatalogDescribeOutputRestAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CatalogIntegrationOpenCatalogDescribeOutputRestAuthenticationOutputReference
 ```
@@ -2509,7 +2509,7 @@ func InternalValue() CatalogIntegrationOpenCatalogDescribeOutputRestAuthenticati
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogDescribeOutputRestConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 catalogintegrationopencatalog.NewCatalogIntegrationOpenCatalogDescribeOutputRestConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CatalogIntegrationOpenCatalogDescribeOutputRestConfigList
 ```
@@ -2658,7 +2658,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogDescribeOutputRestConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 catalogintegrationopencatalog.NewCatalogIntegrationOpenCatalogDescribeOutputRestConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CatalogIntegrationOpenCatalogDescribeOutputRestConfigOutputReference
 ```
@@ -2969,7 +2969,7 @@ func InternalValue() CatalogIntegrationOpenCatalogDescribeOutputRestConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogRestAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 catalogintegrationopencatalog.NewCatalogIntegrationOpenCatalogRestAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CatalogIntegrationOpenCatalogRestAuthenticationOutputReference
 ```
@@ -3313,7 +3313,7 @@ func InternalValue() CatalogIntegrationOpenCatalogRestAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogRestConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 catalogintegrationopencatalog.NewCatalogIntegrationOpenCatalogRestConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CatalogIntegrationOpenCatalogRestConfigOutputReference
 ```
@@ -3664,7 +3664,7 @@ func InternalValue() CatalogIntegrationOpenCatalogRestConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 catalogintegrationopencatalog.NewCatalogIntegrationOpenCatalogShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CatalogIntegrationOpenCatalogShowOutputList
 ```
@@ -3813,7 +3813,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 catalogintegrationopencatalog.NewCatalogIntegrationOpenCatalogShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CatalogIntegrationOpenCatalogShowOutputOutputReference
 ```
@@ -4146,7 +4146,7 @@ func InternalValue() CatalogIntegrationOpenCatalogShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.catalogIntegrationOpenCatalog.CatalogIntegrationOpenCatalogTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/catalogintegrationopencatalog"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/catalogintegrationopencatalog"
 
 catalogintegrationopencatalog.NewCatalogIntegrationOpenCatalogTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CatalogIntegrationOpenCatalogTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.networkRule.NetworkRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkrule"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/networkrule"
 
 networkrule.NewNetworkRule(scope Construct, id *string, config NetworkRuleConfig) NetworkRule
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.networkRule.NetworkRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkrule"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/networkrule"
 
 networkrule.NetworkRule_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.networkRule.NetworkRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkrule"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/networkrule"
 
 networkrule.NetworkRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ networkrule.NetworkRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.networkRule.NetworkRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkrule"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/networkrule"
 
 networkrule.NetworkRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ networkrule.NetworkRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.networkRule.NetworkRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkrule"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/networkrule"
 
 networkrule.NetworkRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -954,7 +954,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.networkRule.NetworkRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkrule"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/networkrule"
 
 &networkrule.NetworkRuleConfig {
 	Connection: interface{},
@@ -972,7 +972,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkrul
 	ValueList: *[]*string,
 	Comment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.networkRule.NetworkRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.networkRule.NetworkRuleTimeouts,
 }
 ```
 
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.networkRule.NetworkRuleDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkrule"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/networkrule"
 
 &networkrule.NetworkRuleDescribeOutput {
 
@@ -1220,7 +1220,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.networkRule.NetworkRuleShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkrule"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/networkrule"
 
 &networkrule.NetworkRuleShowOutput {
 
@@ -1233,7 +1233,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkrul
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.networkRule.NetworkRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkrule"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/networkrule"
 
 &networkrule.NetworkRuleTimeouts {
 	Create: *string,
@@ -1309,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.networkRule.NetworkRuleDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkrule"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/networkrule"
 
 networkrule.NewNetworkRuleDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkRuleDescribeOutputList
 ```
@@ -1458,7 +1458,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.networkRule.NetworkRuleDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkrule"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/networkrule"
 
 networkrule.NewNetworkRuleDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkRuleDescribeOutputOutputReference
 ```
@@ -1824,7 +1824,7 @@ func InternalValue() NetworkRuleDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.networkRule.NetworkRuleShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkrule"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/networkrule"
 
 networkrule.NewNetworkRuleShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkRuleShowOutputList
 ```
@@ -1973,7 +1973,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.networkRule.NetworkRuleShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkrule"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/networkrule"
 
 networkrule.NewNetworkRuleShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkRuleShowOutputOutputReference
 ```
@@ -2350,7 +2350,7 @@ func InternalValue() NetworkRuleShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.networkRule.NetworkRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/networkrule"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/networkrule"
 
 networkrule.NewNetworkRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkRuleTimeoutsOutputReference
 ```

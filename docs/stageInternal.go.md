@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternal(scope Construct, id *string, config StageInternalConfig) StageInternal
 ```
@@ -494,7 +494,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.stageInternal.StageInternal.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.StageInternal_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.stageInternal.StageInternal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.StageInternal_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ stageinternal.StageInternal_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.stageInternal.StageInternal.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.StageInternal_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ stageinternal.StageInternal_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.stageInternal.StageInternal.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.StageInternal_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1025,7 +1025,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalConfig {
 	Connection: interface{},
@@ -1039,11 +1039,11 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinter
 	Name: *string,
 	Schema: *string,
 	Comment: *string,
-	Directory: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageInternal.StageInternalDirectory,
-	Encryption: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageInternal.StageInternalEncryption,
-	FileFormat: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageInternal.StageInternalFileFormat,
+	Directory: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageInternal.StageInternalDirectory,
+	Encryption: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageInternal.StageInternalEncryption,
+	FileFormat: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageInternal.StageInternalFileFormat,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageInternal.StageInternalTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageInternal.StageInternalTimeouts,
 }
 ```
 
@@ -1278,7 +1278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalDescribeOutput {
 
@@ -1291,7 +1291,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputDirectoryTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalDescribeOutputDirectoryTable {
 
@@ -1304,7 +1304,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalDescribeOutputFileFormat {
 
@@ -1317,7 +1317,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatAvro.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalDescribeOutputFileFormatAvro {
 
@@ -1330,7 +1330,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatCsv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalDescribeOutputFileFormatCsv {
 
@@ -1343,7 +1343,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalDescribeOutputFileFormatJson {
 
@@ -1356,7 +1356,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatOrc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalDescribeOutputFileFormatOrc {
 
@@ -1369,7 +1369,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatParquet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalDescribeOutputFileFormatParquet {
 
@@ -1382,7 +1382,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatXml.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalDescribeOutputFileFormatXml {
 
@@ -1395,7 +1395,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalDirectory {
 	Enable: interface{},
@@ -1445,11 +1445,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalEncryption {
-	SnowflakeFull: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageInternal.StageInternalEncryptionSnowflakeFull,
-	SnowflakeSse: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageInternal.StageInternalEncryptionSnowflakeSse,
+	SnowflakeFull: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageInternal.StageInternalEncryptionSnowflakeFull,
+	SnowflakeSse: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageInternal.StageInternalEncryptionSnowflakeSse,
 }
 ```
 
@@ -1495,7 +1495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalEncryptionSnowflakeFull.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalEncryptionSnowflakeFull {
 
@@ -1508,7 +1508,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalEncryptionSnowflakeSse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalEncryptionSnowflakeSse {
 
@@ -1521,16 +1521,16 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalFileFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalFileFormat {
-	Avro: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageInternal.StageInternalFileFormatAvro,
-	Csv: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageInternal.StageInternalFileFormatCsv,
+	Avro: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageInternal.StageInternalFileFormatAvro,
+	Csv: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageInternal.StageInternalFileFormatCsv,
 	FormatName: *string,
-	Json: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageInternal.StageInternalFileFormatJson,
-	Orc: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageInternal.StageInternalFileFormatOrc,
-	Parquet: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageInternal.StageInternalFileFormatParquet,
-	Xml: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.stageInternal.StageInternalFileFormatXml,
+	Json: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageInternal.StageInternalFileFormatJson,
+	Orc: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageInternal.StageInternalFileFormatOrc,
+	Parquet: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageInternal.StageInternalFileFormatParquet,
+	Xml: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.stageInternal.StageInternalFileFormatXml,
 }
 ```
 
@@ -1651,7 +1651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalFileFormatAvro.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalFileFormatAvro {
 	Compression: *string,
@@ -1737,7 +1737,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalFileFormatCsv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalFileFormatCsv {
 	BinaryFormat: *string,
@@ -2135,7 +2135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalFileFormatJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalFileFormatJson {
 	AllowDuplicate: *string,
@@ -2429,7 +2429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalFileFormatOrc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalFileFormatOrc {
 	NullIf: *[]*string,
@@ -2499,7 +2499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalFileFormatParquet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalFileFormatParquet {
 	BinaryAsText: *string,
@@ -2639,7 +2639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalFileFormatXml.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalFileFormatXml {
 	Compression: *string,
@@ -2783,7 +2783,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalShowOutput {
 
@@ -2796,7 +2796,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinter
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.stageInternal.StageInternalTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 &stageinternal.StageInternalTimeouts {
 	Create: *string,
@@ -2872,7 +2872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputDirectoryTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDescribeOutputDirectoryTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageInternalDescribeOutputDirectoryTableList
 ```
@@ -3021,7 +3021,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputDirectoryTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDescribeOutputDirectoryTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageInternalDescribeOutputDirectoryTableOutputReference
 ```
@@ -3321,7 +3321,7 @@ func InternalValue() StageInternalDescribeOutputDirectoryTable
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatAvroList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDescribeOutputFileFormatAvroList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageInternalDescribeOutputFileFormatAvroList
 ```
@@ -3470,7 +3470,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatAvroOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDescribeOutputFileFormatAvroOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageInternalDescribeOutputFileFormatAvroOutputReference
 ```
@@ -3792,7 +3792,7 @@ func InternalValue() StageInternalDescribeOutputFileFormatAvro
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatCsvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDescribeOutputFileFormatCsvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageInternalDescribeOutputFileFormatCsvList
 ```
@@ -3941,7 +3941,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatCsvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDescribeOutputFileFormatCsvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageInternalDescribeOutputFileFormatCsvOutputReference
 ```
@@ -4472,7 +4472,7 @@ func InternalValue() StageInternalDescribeOutputFileFormatCsv
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatJsonList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDescribeOutputFileFormatJsonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageInternalDescribeOutputFileFormatJsonList
 ```
@@ -4621,7 +4621,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDescribeOutputFileFormatJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageInternalDescribeOutputFileFormatJsonOutputReference
 ```
@@ -5075,7 +5075,7 @@ func InternalValue() StageInternalDescribeOutputFileFormatJson
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDescribeOutputFileFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageInternalDescribeOutputFileFormatList
 ```
@@ -5224,7 +5224,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatOrcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDescribeOutputFileFormatOrcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageInternalDescribeOutputFileFormatOrcList
 ```
@@ -5373,7 +5373,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatOrcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDescribeOutputFileFormatOrcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageInternalDescribeOutputFileFormatOrcOutputReference
 ```
@@ -5684,7 +5684,7 @@ func InternalValue() StageInternalDescribeOutputFileFormatOrc
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDescribeOutputFileFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageInternalDescribeOutputFileFormatOutputReference
 ```
@@ -6028,7 +6028,7 @@ func InternalValue() StageInternalDescribeOutputFileFormat
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatParquetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDescribeOutputFileFormatParquetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageInternalDescribeOutputFileFormatParquetList
 ```
@@ -6177,7 +6177,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatParquetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDescribeOutputFileFormatParquetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageInternalDescribeOutputFileFormatParquetOutputReference
 ```
@@ -6532,7 +6532,7 @@ func InternalValue() StageInternalDescribeOutputFileFormatParquet
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatXmlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDescribeOutputFileFormatXmlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageInternalDescribeOutputFileFormatXmlList
 ```
@@ -6681,7 +6681,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputFileFormatXmlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDescribeOutputFileFormatXmlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageInternalDescribeOutputFileFormatXmlOutputReference
 ```
@@ -7036,7 +7036,7 @@ func InternalValue() StageInternalDescribeOutputFileFormatXml
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageInternalDescribeOutputList
 ```
@@ -7185,7 +7185,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageInternalDescribeOutputOutputReference
 ```
@@ -7474,7 +7474,7 @@ func InternalValue() StageInternalDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalDirectoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalDirectoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageInternalDirectoryOutputReference
 ```
@@ -7774,7 +7774,7 @@ func InternalValue() StageInternalDirectory
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageInternalEncryptionOutputReference
 ```
@@ -8107,7 +8107,7 @@ func InternalValue() StageInternalEncryption
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalEncryptionSnowflakeFullOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalEncryptionSnowflakeFullOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageInternalEncryptionSnowflakeFullOutputReference
 ```
@@ -8356,7 +8356,7 @@ func InternalValue() StageInternalEncryptionSnowflakeFull
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalEncryptionSnowflakeSseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalEncryptionSnowflakeSseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageInternalEncryptionSnowflakeSseOutputReference
 ```
@@ -8605,7 +8605,7 @@ func InternalValue() StageInternalEncryptionSnowflakeSse
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalFileFormatAvroOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalFileFormatAvroOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageInternalFileFormatAvroOutputReference
 ```
@@ -8970,7 +8970,7 @@ func InternalValue() StageInternalFileFormatAvro
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalFileFormatCsvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalFileFormatCsvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageInternalFileFormatCsvOutputReference
 ```
@@ -9857,7 +9857,7 @@ func InternalValue() StageInternalFileFormatCsv
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalFileFormatJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalFileFormatJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageInternalFileFormatJsonOutputReference
 ```
@@ -10570,7 +10570,7 @@ func InternalValue() StageInternalFileFormatJson
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalFileFormatOrcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalFileFormatOrcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageInternalFileFormatOrcOutputReference
 ```
@@ -10906,7 +10906,7 @@ func InternalValue() StageInternalFileFormatOrc
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalFileFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalFileFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageInternalFileFormatOutputReference
 ```
@@ -11436,7 +11436,7 @@ func InternalValue() StageInternalFileFormat
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalFileFormatParquetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalFileFormatParquetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageInternalFileFormatParquetOutputReference
 ```
@@ -11888,7 +11888,7 @@ func InternalValue() StageInternalFileFormatParquet
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalFileFormatXmlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalFileFormatXmlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageInternalFileFormatXmlOutputReference
 ```
@@ -12340,7 +12340,7 @@ func InternalValue() StageInternalFileFormatXml
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageInternalShowOutputList
 ```
@@ -12489,7 +12489,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageInternalShowOutputOutputReference
 ```
@@ -12932,7 +12932,7 @@ func InternalValue() StageInternalShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageInternal.StageInternalTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/stageinternal"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/stageinternal"
 
 stageinternal.NewStageInternalTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StageInternalTimeoutsOutputReference
 ```

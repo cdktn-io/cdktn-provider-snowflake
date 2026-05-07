@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeExternalFunctions.DataSnowflakeExternalFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakeexternalfunctions"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakeexternalfunctions"
 
 datasnowflakeexternalfunctions.NewDataSnowflakeExternalFunctions(scope Construct, id *string, config DataSnowflakeExternalFunctionsConfig) DataSnowflakeExternalFunctions
 ```
@@ -319,7 +319,7 @@ func ResetSchema()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.dataSnowflakeExternalFunctions.DataSnowflakeExternalFunctions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakeexternalfunctions"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakeexternalfunctions"
 
 datasnowflakeexternalfunctions.DataSnowflakeExternalFunctions_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.dataSnowflakeExternalFunctions.DataSnowflakeExternalFunctions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakeexternalfunctions"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakeexternalfunctions"
 
 datasnowflakeexternalfunctions.DataSnowflakeExternalFunctions_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datasnowflakeexternalfunctions.DataSnowflakeExternalFunctions_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-snowflake.dataSnowflakeExternalFunctions.DataSnowflakeExternalFunctions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakeexternalfunctions"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakeexternalfunctions"
 
 datasnowflakeexternalfunctions.DataSnowflakeExternalFunctions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datasnowflakeexternalfunctions.DataSnowflakeExternalFunctions_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.dataSnowflakeExternalFunctions.DataSnowflakeExternalFunctions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakeexternalfunctions"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakeexternalfunctions"
 
 datasnowflakeexternalfunctions.DataSnowflakeExternalFunctions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeExternalFunctions.DataSnowflakeExternalFunctionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakeexternalfunctions"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakeexternalfunctions"
 
 &datasnowflakeexternalfunctions.DataSnowflakeExternalFunctionsConfig {
 	Connection: interface{},
@@ -814,7 +814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeExternalFunctions.DataSnowflakeExternalFunctionsExternalFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakeexternalfunctions"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakeexternalfunctions"
 
 &datasnowflakeexternalfunctions.DataSnowflakeExternalFunctionsExternalFunctions {
 
@@ -829,7 +829,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowfl
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeExternalFunctions.DataSnowflakeExternalFunctionsExternalFunctionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakeexternalfunctions"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakeexternalfunctions"
 
 datasnowflakeexternalfunctions.NewDataSnowflakeExternalFunctionsExternalFunctionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeExternalFunctionsExternalFunctionsList
 ```
@@ -978,7 +978,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeExternalFunctions.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakeexternalfunctions"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakeexternalfunctions"
 
 datasnowflakeexternalfunctions.NewDataSnowflakeExternalFunctionsExternalFunctionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeExternalFunctionsExternalFunctionsOutputReference
 ```

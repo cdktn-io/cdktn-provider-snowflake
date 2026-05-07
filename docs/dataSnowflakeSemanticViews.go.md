@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeSemanticViews.DataSnowflakeSemanticViews.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakesemanticviews"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakesemanticviews"
 
 datasnowflakesemanticviews.NewDataSnowflakeSemanticViews(scope Construct, id *string, config DataSnowflakeSemanticViewsConfig) DataSnowflakeSemanticViews
 ```
@@ -359,7 +359,7 @@ func ResetStartsWith()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.dataSnowflakeSemanticViews.DataSnowflakeSemanticViews.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakesemanticviews"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakesemanticviews"
 
 datasnowflakesemanticviews.DataSnowflakeSemanticViews_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.dataSnowflakeSemanticViews.DataSnowflakeSemanticViews.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakesemanticviews"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakesemanticviews"
 
 datasnowflakesemanticviews.DataSnowflakeSemanticViews_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ datasnowflakesemanticviews.DataSnowflakeSemanticViews_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-snowflake.dataSnowflakeSemanticViews.DataSnowflakeSemanticViews.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakesemanticviews"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakesemanticviews"
 
 datasnowflakesemanticviews.DataSnowflakeSemanticViews_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ datasnowflakesemanticviews.DataSnowflakeSemanticViews_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.dataSnowflakeSemanticViews.DataSnowflakeSemanticViews.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakesemanticviews"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakesemanticviews"
 
 datasnowflakesemanticviews.DataSnowflakeSemanticViews_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeSemanticViews.DataSnowflakeSemanticViewsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakesemanticviews"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakesemanticviews"
 
 &datasnowflakesemanticviews.DataSnowflakeSemanticViewsConfig {
 	Connection: interface{},
@@ -758,9 +758,9 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowfl
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	In: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.dataSnowflakeSemanticViews.DataSnowflakeSemanticViewsIn,
+	In: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.dataSnowflakeSemanticViews.DataSnowflakeSemanticViewsIn,
 	Like: *string,
-	Limit: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.dataSnowflakeSemanticViews.DataSnowflakeSemanticViewsLimit,
+	Limit: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.dataSnowflakeSemanticViews.DataSnowflakeSemanticViewsLimit,
 	StartsWith: *string,
 }
 ```
@@ -930,7 +930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeSemanticViews.DataSnowflakeSemanticViewsIn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakesemanticviews"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakesemanticviews"
 
 &datasnowflakesemanticviews.DataSnowflakeSemanticViewsIn {
 	Account: interface{},
@@ -996,7 +996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeSemanticViews.DataSnowflakeSemanticViewsLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakesemanticviews"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakesemanticviews"
 
 &datasnowflakesemanticviews.DataSnowflakeSemanticViewsLimit {
 	Rows: *f64,
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeSemanticViews.DataSnowflakeSemanticViewsSemanticViews.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakesemanticviews"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakesemanticviews"
 
 &datasnowflakesemanticviews.DataSnowflakeSemanticViewsSemanticViews {
 
@@ -1061,7 +1061,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeSemanticViews.DataSnowflakeSemanticViewsSemanticViewsShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakesemanticviews"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakesemanticviews"
 
 &datasnowflakesemanticviews.DataSnowflakeSemanticViewsSemanticViewsShowOutput {
 
@@ -1076,7 +1076,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowfl
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeSemanticViews.DataSnowflakeSemanticViewsInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakesemanticviews"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakesemanticviews"
 
 datasnowflakesemanticviews.NewDataSnowflakeSemanticViewsInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeSemanticViewsInOutputReference
 ```
@@ -1412,7 +1412,7 @@ func InternalValue() DataSnowflakeSemanticViewsIn
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeSemanticViews.DataSnowflakeSemanticViewsLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakesemanticviews"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakesemanticviews"
 
 datasnowflakesemanticviews.NewDataSnowflakeSemanticViewsLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeSemanticViewsLimitOutputReference
 ```
@@ -1712,7 +1712,7 @@ func InternalValue() DataSnowflakeSemanticViewsLimit
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeSemanticViews.DataSnowflakeSemanticViewsSemanticViewsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakesemanticviews"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakesemanticviews"
 
 datasnowflakesemanticviews.NewDataSnowflakeSemanticViewsSemanticViewsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSemanticViewsSemanticViewsList
 ```
@@ -1861,7 +1861,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeSemanticViews.DataSnowflakeSemanticViewsSemanticViewsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakesemanticviews"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakesemanticviews"
 
 datasnowflakesemanticviews.NewDataSnowflakeSemanticViewsSemanticViewsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSemanticViewsSemanticViewsOutputReference
 ```
@@ -2139,7 +2139,7 @@ func InternalValue() DataSnowflakeSemanticViewsSemanticViews
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeSemanticViews.DataSnowflakeSemanticViewsSemanticViewsShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakesemanticviews"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakesemanticviews"
 
 datasnowflakesemanticviews.NewDataSnowflakeSemanticViewsSemanticViewsShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSemanticViewsSemanticViewsShowOutputList
 ```
@@ -2288,7 +2288,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeSemanticViews.DataSnowflakeSemanticViewsSemanticViewsShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakesemanticviews"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakesemanticviews"
 
 datasnowflakesemanticviews.NewDataSnowflakeSemanticViewsSemanticViewsShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSemanticViewsSemanticViewsShowOutputOutputReference
 ```

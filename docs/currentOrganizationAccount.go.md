@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/currentorganizationaccount"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/currentorganizationaccount"
 
 currentorganizationaccount.NewCurrentOrganizationAccount(scope Construct, id *string, config CurrentOrganizationAccountConfig) CurrentOrganizationAccount
 ```
@@ -1267,7 +1267,7 @@ func ResetWeekStart()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/currentorganizationaccount"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/currentorganizationaccount"
 
 currentorganizationaccount.CurrentOrganizationAccount_IsConstruct(x interface{}) *bool
 ```
@@ -1299,7 +1299,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/currentorganizationaccount"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/currentorganizationaccount"
 
 currentorganizationaccount.CurrentOrganizationAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -1313,7 +1313,7 @@ currentorganizationaccount.CurrentOrganizationAccount_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/currentorganizationaccount"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/currentorganizationaccount"
 
 currentorganizationaccount.CurrentOrganizationAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -1327,7 +1327,7 @@ currentorganizationaccount.CurrentOrganizationAccount_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/currentorganizationaccount"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/currentorganizationaccount"
 
 currentorganizationaccount.CurrentOrganizationAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -4273,7 +4273,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/currentorganizationaccount"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/currentorganizationaccount"
 
 &currentorganizationaccount.CurrentOrganizationAccountConfig {
 	Connection: interface{},
@@ -4386,7 +4386,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/currentorg
 	TaskAutoRetryAttempts: *f64,
 	TimeInputFormat: *string,
 	TimeOutputFormat: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.currentOrganizationAccount.CurrentOrganizationAccountTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.currentOrganizationAccount.CurrentOrganizationAccountTimeouts,
 	TimestampDayIsAlways24H: interface{},
 	TimestampInputFormat: *string,
 	TimestampLtzOutputFormat: *string,
@@ -6484,7 +6484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccountShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/currentorganizationaccount"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/currentorganizationaccount"
 
 &currentorganizationaccount.CurrentOrganizationAccountShowOutput {
 
@@ -6497,7 +6497,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/currentorg
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/currentorganizationaccount"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/currentorganizationaccount"
 
 &currentorganizationaccount.CurrentOrganizationAccountTimeouts {
 	Create: *string,
@@ -6573,7 +6573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccountShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/currentorganizationaccount"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/currentorganizationaccount"
 
 currentorganizationaccount.NewCurrentOrganizationAccountShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CurrentOrganizationAccountShowOutputList
 ```
@@ -6722,7 +6722,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccountShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/currentorganizationaccount"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/currentorganizationaccount"
 
 currentorganizationaccount.NewCurrentOrganizationAccountShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CurrentOrganizationAccountShowOutputOutputReference
 ```
@@ -7231,7 +7231,7 @@ func InternalValue() CurrentOrganizationAccountShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.currentOrganizationAccount.CurrentOrganizationAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/currentorganizationaccount"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/currentorganizationaccount"
 
 currentorganizationaccount.NewCurrentOrganizationAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CurrentOrganizationAccountTimeoutsOutputReference
 ```

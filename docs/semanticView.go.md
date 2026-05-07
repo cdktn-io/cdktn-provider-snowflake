@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticView.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticView(scope Construct, id *string, config SemanticViewConfig) SemanticView
 ```
@@ -527,7 +527,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.semanticView.SemanticView.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.SemanticView_IsConstruct(x interface{}) *bool
 ```
@@ -559,7 +559,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.semanticView.SemanticView.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.SemanticView_IsTerraformElement(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ semanticview.SemanticView_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.semanticView.SemanticView.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.SemanticView_IsTerraformResource(x interface{}) *bool
 ```
@@ -587,7 +587,7 @@ semanticview.SemanticView_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.semanticView.SemanticView.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.SemanticView_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1080,7 +1080,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.semanticView.SemanticViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 &semanticview.SemanticViewConfig {
 	Connection: interface{},
@@ -1100,7 +1100,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticvi
 	Id: *string,
 	Metrics: interface{},
 	Relationships: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.semanticView.SemanticViewTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.semanticView.SemanticViewTimeouts,
 }
 ```
 
@@ -1365,7 +1365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.semanticView.SemanticViewDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 &semanticview.SemanticViewDimensions {
 	QualifiedExpressionName: *string,
@@ -1447,7 +1447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.semanticView.SemanticViewFacts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 &semanticview.SemanticViewFacts {
 	QualifiedExpressionName: *string,
@@ -1545,12 +1545,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.semanticView.SemanticViewMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 &semanticview.SemanticViewMetrics {
 	IsPrivate: *string,
-	SemanticExpression: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.semanticView.SemanticViewMetricsSemanticExpression,
-	WindowFunction: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.semanticView.SemanticViewMetricsWindowFunction,
+	SemanticExpression: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.semanticView.SemanticViewMetricsSemanticExpression,
+	WindowFunction: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.semanticView.SemanticViewMetricsWindowFunction,
 }
 ```
 
@@ -1611,7 +1611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.semanticView.SemanticViewMetricsSemanticExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 &semanticview.SemanticViewMetricsSemanticExpression {
 	QualifiedExpressionName: *string,
@@ -1693,10 +1693,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.semanticView.SemanticViewMetricsWindowFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 &semanticview.SemanticViewMetricsWindowFunction {
-	OverClause: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.semanticView.SemanticViewMetricsWindowFunctionOverClause,
+	OverClause: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.semanticView.SemanticViewMetricsWindowFunctionOverClause,
 	QualifiedExpressionName: *string,
 	SqlExpression: *string,
 }
@@ -1759,7 +1759,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.semanticView.SemanticViewMetricsWindowFunctionOverClause.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 &semanticview.SemanticViewMetricsWindowFunctionOverClause {
 	OrderBy: *string,
@@ -1827,12 +1827,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.semanticView.SemanticViewRelationships.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 &semanticview.SemanticViewRelationships {
-	ReferencedTableNameOrAlias: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.semanticView.SemanticViewRelationshipsReferencedTableNameOrAlias,
+	ReferencedTableNameOrAlias: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.semanticView.SemanticViewRelationshipsReferencedTableNameOrAlias,
 	RelationshipColumns: *[]*string,
-	TableNameOrAlias: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.semanticView.SemanticViewRelationshipsTableNameOrAlias,
+	TableNameOrAlias: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.semanticView.SemanticViewRelationshipsTableNameOrAlias,
 	ReferencedRelationshipColumns: *[]*string,
 	RelationshipIdentifier: *string,
 }
@@ -1931,7 +1931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.semanticView.SemanticViewRelationshipsReferencedTableNameOrAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 &semanticview.SemanticViewRelationshipsReferencedTableNameOrAlias {
 	TableAlias: *string,
@@ -1985,7 +1985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.semanticView.SemanticViewRelationshipsTableNameOrAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 &semanticview.SemanticViewRelationshipsTableNameOrAlias {
 	TableAlias: *string,
@@ -2039,7 +2039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.semanticView.SemanticViewShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 &semanticview.SemanticViewShowOutput {
 
@@ -2052,7 +2052,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticvi
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.semanticView.SemanticViewTables.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 &semanticview.SemanticViewTables {
 	TableAlias: *string,
@@ -2172,7 +2172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.semanticView.SemanticViewTablesUnique.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 &semanticview.SemanticViewTablesUnique {
 	Values: *[]*string,
@@ -2206,7 +2206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.semanticView.SemanticViewTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 &semanticview.SemanticViewTimeouts {
 	Create: *string,
@@ -2282,7 +2282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewDimensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewDimensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SemanticViewDimensionsList
 ```
@@ -2442,7 +2442,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SemanticViewDimensionsOutputReference
 ```
@@ -2811,7 +2811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewFactsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewFactsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SemanticViewFactsList
 ```
@@ -2971,7 +2971,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewFactsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewFactsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SemanticViewFactsOutputReference
 ```
@@ -3369,7 +3369,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SemanticViewMetricsList
 ```
@@ -3529,7 +3529,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SemanticViewMetricsOutputReference
 ```
@@ -3909,7 +3909,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewMetricsSemanticExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewMetricsSemanticExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SemanticViewMetricsSemanticExpressionOutputReference
 ```
@@ -4260,7 +4260,7 @@ func InternalValue() SemanticViewMetricsSemanticExpression
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewMetricsWindowFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewMetricsWindowFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SemanticViewMetricsWindowFunctionOutputReference
 ```
@@ -4588,7 +4588,7 @@ func InternalValue() SemanticViewMetricsWindowFunction
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewMetricsWindowFunctionOverClauseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewMetricsWindowFunctionOverClauseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SemanticViewMetricsWindowFunctionOverClauseOutputReference
 ```
@@ -4924,7 +4924,7 @@ func InternalValue() SemanticViewMetricsWindowFunctionOverClause
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewRelationshipsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewRelationshipsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SemanticViewRelationshipsList
 ```
@@ -5084,7 +5084,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewRelationshipsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewRelationshipsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SemanticViewRelationshipsOutputReference
 ```
@@ -5501,7 +5501,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewRelationshipsReferencedTableNameOrAliasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewRelationshipsReferencedTableNameOrAliasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SemanticViewRelationshipsReferencedTableNameOrAliasOutputReference
 ```
@@ -5808,7 +5808,7 @@ func InternalValue() SemanticViewRelationshipsReferencedTableNameOrAlias
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewRelationshipsTableNameOrAliasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewRelationshipsTableNameOrAliasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SemanticViewRelationshipsTableNameOrAliasOutputReference
 ```
@@ -6115,7 +6115,7 @@ func InternalValue() SemanticViewRelationshipsTableNameOrAlias
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SemanticViewShowOutputList
 ```
@@ -6264,7 +6264,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SemanticViewShowOutputOutputReference
 ```
@@ -6619,7 +6619,7 @@ func InternalValue() SemanticViewShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewTablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewTablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SemanticViewTablesList
 ```
@@ -6779,7 +6779,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewTablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewTablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SemanticViewTablesOutputReference
 ```
@@ -7219,7 +7219,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewTablesUniqueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewTablesUniqueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SemanticViewTablesUniqueList
 ```
@@ -7379,7 +7379,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewTablesUniqueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewTablesUniqueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SemanticViewTablesUniqueOutputReference
 ```
@@ -7668,7 +7668,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.semanticView.SemanticViewTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/semanticview"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/semanticview"
 
 semanticview.NewSemanticViewTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SemanticViewTimeoutsOutputReference
 ```

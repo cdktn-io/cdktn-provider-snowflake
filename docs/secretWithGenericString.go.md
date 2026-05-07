@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secretwithgenericstring"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secretwithgenericstring"
 
 secretwithgenericstring.NewSecretWithGenericString(scope Construct, id *string, config SecretWithGenericStringConfig) SecretWithGenericString
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericString.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secretwithgenericstring"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secretwithgenericstring"
 
 secretwithgenericstring.SecretWithGenericString_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericString.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secretwithgenericstring"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secretwithgenericstring"
 
 secretwithgenericstring.SecretWithGenericString_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ secretwithgenericstring.SecretWithGenericString_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericString.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secretwithgenericstring"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secretwithgenericstring"
 
 secretwithgenericstring.SecretWithGenericString_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ secretwithgenericstring.SecretWithGenericString_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericString.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secretwithgenericstring"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secretwithgenericstring"
 
 secretwithgenericstring.SecretWithGenericString_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -921,7 +921,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericStringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secretwithgenericstring"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secretwithgenericstring"
 
 &secretwithgenericstring.SecretWithGenericStringConfig {
 	Connection: interface{},
@@ -937,7 +937,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secretwith
 	SecretString: *string,
 	Comment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.secretWithGenericString.SecretWithGenericStringTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.secretWithGenericString.SecretWithGenericStringTimeouts,
 }
 ```
 
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericStringDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secretwithgenericstring"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secretwithgenericstring"
 
 &secretwithgenericstring.SecretWithGenericStringDescribeOutput {
 
@@ -1153,7 +1153,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secretwith
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericStringShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secretwithgenericstring"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secretwithgenericstring"
 
 &secretwithgenericstring.SecretWithGenericStringShowOutput {
 
@@ -1166,7 +1166,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secretwith
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericStringTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secretwithgenericstring"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secretwithgenericstring"
 
 &secretwithgenericstring.SecretWithGenericStringTimeouts {
 	Create: *string,
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericStringDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secretwithgenericstring"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secretwithgenericstring"
 
 secretwithgenericstring.NewSecretWithGenericStringDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecretWithGenericStringDescribeOutputList
 ```
@@ -1391,7 +1391,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericStringDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secretwithgenericstring"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secretwithgenericstring"
 
 secretwithgenericstring.NewSecretWithGenericStringDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecretWithGenericStringDescribeOutputOutputReference
 ```
@@ -1790,7 +1790,7 @@ func InternalValue() SecretWithGenericStringDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericStringShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secretwithgenericstring"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secretwithgenericstring"
 
 secretwithgenericstring.NewSecretWithGenericStringShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecretWithGenericStringShowOutputList
 ```
@@ -1939,7 +1939,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericStringShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secretwithgenericstring"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secretwithgenericstring"
 
 secretwithgenericstring.NewSecretWithGenericStringShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecretWithGenericStringShowOutputOutputReference
 ```
@@ -2305,7 +2305,7 @@ func InternalValue() SecretWithGenericStringShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.secretWithGenericString.SecretWithGenericStringTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/secretwithgenericstring"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secretwithgenericstring"
 
 secretwithgenericstring.NewSecretWithGenericStringTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretWithGenericStringTimeoutsOutputReference
 ```

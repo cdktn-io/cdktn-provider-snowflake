@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.NewExternalVolume(scope Construct, id *string, config ExternalVolumeConfig) ExternalVolume
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.externalVolume.ExternalVolume.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.ExternalVolume_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.externalVolume.ExternalVolume.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.ExternalVolume_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ externalvolume.ExternalVolume_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.externalVolume.ExternalVolume.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.ExternalVolume_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ externalvolume.ExternalVolume_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.externalVolume.ExternalVolume.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.ExternalVolume_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -908,7 +908,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 &externalvolume.ExternalVolumeConfig {
 	Connection: interface{},
@@ -923,7 +923,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvo
 	AllowWrites: *string,
 	Comment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.externalVolume.ExternalVolumeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.externalVolume.ExternalVolumeTimeouts,
 }
 ```
 
@@ -1111,7 +1111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 &externalvolume.ExternalVolumeDescribeOutput {
 
@@ -1124,7 +1124,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvo
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 &externalvolume.ExternalVolumeDescribeOutputStorageLocations {
 
@@ -1137,7 +1137,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvo
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 &externalvolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation {
 
@@ -1150,7 +1150,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvo
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 &externalvolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation {
 
@@ -1163,7 +1163,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvo
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 &externalvolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation {
 
@@ -1176,7 +1176,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvo
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 &externalvolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation {
 
@@ -1189,7 +1189,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvo
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 &externalvolume.ExternalVolumeShowOutput {
 
@@ -1202,7 +1202,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvo
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 &externalvolume.ExternalVolumeStorageLocation {
 	StorageBaseUrl: *string,
@@ -1436,7 +1436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 &externalvolume.ExternalVolumeTimeouts {
 	Create: *string,
@@ -1512,7 +1512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.NewExternalVolumeDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalVolumeDescribeOutputList
 ```
@@ -1661,7 +1661,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.NewExternalVolumeDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalVolumeDescribeOutputOutputReference
 ```
@@ -1972,7 +1972,7 @@ func InternalValue() ExternalVolumeDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.NewExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationList
 ```
@@ -2121,7 +2121,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.NewExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocationOutputReference
 ```
@@ -2421,7 +2421,7 @@ func InternalValue() ExternalVolumeDescribeOutputStorageLocationsAzureStorageLoc
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.NewExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationList
 ```
@@ -2570,7 +2570,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.NewExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocationOutputReference
 ```
@@ -2859,7 +2859,7 @@ func InternalValue() ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocat
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.NewExternalVolumeDescribeOutputStorageLocationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalVolumeDescribeOutputStorageLocationsList
 ```
@@ -3008,7 +3008,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.NewExternalVolumeDescribeOutputStorageLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalVolumeDescribeOutputStorageLocationsOutputReference
 ```
@@ -3374,7 +3374,7 @@ func InternalValue() ExternalVolumeDescribeOutputStorageLocations
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.NewExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationList
 ```
@@ -3523,7 +3523,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.NewExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationOutputReference
 ```
@@ -3823,7 +3823,7 @@ func InternalValue() ExternalVolumeDescribeOutputStorageLocationsS3CompatStorage
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.NewExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationList
 ```
@@ -3972,7 +3972,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.NewExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalVolumeDescribeOutputStorageLocationsS3StorageLocationOutputReference
 ```
@@ -4305,7 +4305,7 @@ func InternalValue() ExternalVolumeDescribeOutputStorageLocationsS3StorageLocati
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.NewExternalVolumeShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalVolumeShowOutputList
 ```
@@ -4454,7 +4454,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.NewExternalVolumeShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalVolumeShowOutputOutputReference
 ```
@@ -4754,7 +4754,7 @@ func InternalValue() ExternalVolumeShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.NewExternalVolumeStorageLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalVolumeStorageLocationList
 ```
@@ -4914,7 +4914,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeStorageLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.NewExternalVolumeStorageLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalVolumeStorageLocationOutputReference
 ```
@@ -5537,7 +5537,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalVolume.ExternalVolumeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/externalvolume"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/externalvolume"
 
 externalvolume.NewExternalVolumeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalVolumeTimeoutsOutputReference
 ```

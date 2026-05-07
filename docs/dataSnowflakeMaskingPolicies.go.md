@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.NewDataSnowflakeMaskingPolicies(scope Construct, id *string, config DataSnowflakeMaskingPoliciesConfig) DataSnowflakeMaskingPolicies
 ```
@@ -359,7 +359,7 @@ func ResetWithDescribe()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.DataSnowflakeMaskingPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.DataSnowflakeMaskingPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ datasnowflakemaskingpolicies.DataSnowflakeMaskingPolicies_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.DataSnowflakeMaskingPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ datasnowflakemaskingpolicies.DataSnowflakeMaskingPolicies_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.DataSnowflakeMaskingPolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 &datasnowflakemaskingpolicies.DataSnowflakeMaskingPoliciesConfig {
 	Connection: interface{},
@@ -758,9 +758,9 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowfl
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	In: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesIn,
+	In: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesIn,
 	Like: *string,
-	Limit: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesLimit,
+	Limit: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesLimit,
 	WithDescribe: interface{},
 }
 ```
@@ -932,7 +932,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesIn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 &datasnowflakemaskingpolicies.DataSnowflakeMaskingPoliciesIn {
 	Account: interface{},
@@ -1030,7 +1030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 &datasnowflakemaskingpolicies.DataSnowflakeMaskingPoliciesLimit {
 	Rows: *f64,
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesMaskingPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 &datasnowflakemaskingpolicies.DataSnowflakeMaskingPoliciesMaskingPolicies {
 
@@ -1095,7 +1095,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 &datasnowflakemaskingpolicies.DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutput {
 
@@ -1108,7 +1108,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignature.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 &datasnowflakemaskingpolicies.DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignature {
 
@@ -1121,7 +1121,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesMaskingPoliciesShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 &datasnowflakemaskingpolicies.DataSnowflakeMaskingPoliciesMaskingPoliciesShowOutput {
 
@@ -1136,7 +1136,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowfl
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.NewDataSnowflakeMaskingPoliciesInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeMaskingPoliciesInOutputReference
 ```
@@ -1530,7 +1530,7 @@ func InternalValue() DataSnowflakeMaskingPoliciesIn
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.NewDataSnowflakeMaskingPoliciesLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeMaskingPoliciesLimitOutputReference
 ```
@@ -1830,7 +1830,7 @@ func InternalValue() DataSnowflakeMaskingPoliciesLimit
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.NewDataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputList
 ```
@@ -1979,7 +1979,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.NewDataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputOutputReference
 ```
@@ -2290,7 +2290,7 @@ func InternalValue() DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignatureList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.NewDataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignatureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignatureList
 ```
@@ -2439,7 +2439,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignatureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.NewDataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignatureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignatureOutputReference
 ```
@@ -2728,7 +2728,7 @@ func InternalValue() DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSi
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesMaskingPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.NewDataSnowflakeMaskingPoliciesMaskingPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeMaskingPoliciesMaskingPoliciesList
 ```
@@ -2877,7 +2877,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.NewDataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference
 ```
@@ -3166,7 +3166,7 @@ func InternalValue() DataSnowflakeMaskingPoliciesMaskingPolicies
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesMaskingPoliciesShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.NewDataSnowflakeMaskingPoliciesMaskingPoliciesShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeMaskingPoliciesMaskingPoliciesShowOutputList
 ```
@@ -3315,7 +3315,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesMaskingPoliciesShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/datasnowflakemaskingpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.NewDataSnowflakeMaskingPoliciesMaskingPoliciesShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeMaskingPoliciesMaskingPoliciesShowOutputOutputReference
 ```

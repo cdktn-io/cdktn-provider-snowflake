@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJava.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJava(scope Construct, id *string, config FunctionJavaConfig) FunctionJava
 ```
@@ -591,7 +591,7 @@ func ResetTraceLevel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.functionJava.FunctionJava.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.FunctionJava_IsConstruct(x interface{}) *bool
 ```
@@ -623,7 +623,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.functionJava.FunctionJava.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.FunctionJava_IsTerraformElement(x interface{}) *bool
 ```
@@ -637,7 +637,7 @@ functionjava.FunctionJava_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.functionJava.FunctionJava.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.FunctionJava_IsTerraformResource(x interface{}) *bool
 ```
@@ -651,7 +651,7 @@ functionjava.FunctionJava_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.functionJava.FunctionJava.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.FunctionJava_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1430,7 +1430,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.functionJava.FunctionJavaArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 &functionjava.FunctionJavaArguments {
 	ArgDataType: *string,
@@ -1500,7 +1500,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.functionJava.FunctionJavaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 &functionjava.FunctionJavaConfig {
 	Connection: interface{},
@@ -1530,8 +1530,8 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionja
 	ReturnResultsBehavior: *string,
 	RuntimeVersion: *string,
 	Secrets: interface{},
-	TargetPath: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.functionJava.FunctionJavaTargetPath,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.functionJava.FunctionJavaTimeouts,
+	TargetPath: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.functionJava.FunctionJavaTargetPath,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.functionJava.FunctionJavaTimeouts,
 	TraceLevel: *string,
 }
 ```
@@ -1993,7 +1993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.functionJava.FunctionJavaImports.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 &functionjava.FunctionJavaImports {
 	PathOnStage: *string,
@@ -2045,7 +2045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.functionJava.FunctionJavaParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 &functionjava.FunctionJavaParameters {
 
@@ -2058,7 +2058,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionja
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.functionJava.FunctionJavaParametersEnableConsoleOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 &functionjava.FunctionJavaParametersEnableConsoleOutput {
 
@@ -2071,7 +2071,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionja
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.functionJava.FunctionJavaParametersLogLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 &functionjava.FunctionJavaParametersLogLevel {
 
@@ -2084,7 +2084,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionja
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.functionJava.FunctionJavaParametersMetricLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 &functionjava.FunctionJavaParametersMetricLevel {
 
@@ -2097,7 +2097,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionja
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.functionJava.FunctionJavaParametersTraceLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 &functionjava.FunctionJavaParametersTraceLevel {
 
@@ -2110,7 +2110,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionja
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.functionJava.FunctionJavaSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 &functionjava.FunctionJavaSecrets {
 	SecretId: *string,
@@ -2160,7 +2160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.functionJava.FunctionJavaShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 &functionjava.FunctionJavaShowOutput {
 
@@ -2173,7 +2173,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionja
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.functionJava.FunctionJavaTargetPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 &functionjava.FunctionJavaTargetPath {
 	PathOnStage: *string,
@@ -2225,7 +2225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.functionJava.FunctionJavaTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 &functionjava.FunctionJavaTimeouts {
 	Create: *string,
@@ -2301,7 +2301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionJavaArgumentsList
 ```
@@ -2461,7 +2461,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionJavaArgumentsOutputReference
 ```
@@ -2801,7 +2801,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaImportsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaImportsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionJavaImportsList
 ```
@@ -2961,7 +2961,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaImportsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaImportsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionJavaImportsOutputReference
 ```
@@ -3272,7 +3272,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaParametersEnableConsoleOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaParametersEnableConsoleOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionJavaParametersEnableConsoleOutputList
 ```
@@ -3421,7 +3421,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaParametersEnableConsoleOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaParametersEnableConsoleOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionJavaParametersEnableConsoleOutputOutputReference
 ```
@@ -3743,7 +3743,7 @@ func InternalValue() FunctionJavaParametersEnableConsoleOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionJavaParametersList
 ```
@@ -3892,7 +3892,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaParametersLogLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaParametersLogLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionJavaParametersLogLevelList
 ```
@@ -4041,7 +4041,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaParametersLogLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaParametersLogLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionJavaParametersLogLevelOutputReference
 ```
@@ -4363,7 +4363,7 @@ func InternalValue() FunctionJavaParametersLogLevel
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaParametersMetricLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaParametersMetricLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionJavaParametersMetricLevelList
 ```
@@ -4512,7 +4512,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaParametersMetricLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaParametersMetricLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionJavaParametersMetricLevelOutputReference
 ```
@@ -4834,7 +4834,7 @@ func InternalValue() FunctionJavaParametersMetricLevel
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionJavaParametersOutputReference
 ```
@@ -5145,7 +5145,7 @@ func InternalValue() FunctionJavaParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaParametersTraceLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaParametersTraceLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionJavaParametersTraceLevelList
 ```
@@ -5294,7 +5294,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaParametersTraceLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaParametersTraceLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionJavaParametersTraceLevelOutputReference
 ```
@@ -5616,7 +5616,7 @@ func InternalValue() FunctionJavaParametersTraceLevel
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionJavaSecretsList
 ```
@@ -5776,7 +5776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionJavaSecretsOutputReference
 ```
@@ -6087,7 +6087,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionJavaShowOutputList
 ```
@@ -6236,7 +6236,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionJavaShowOutputOutputReference
 ```
@@ -6723,7 +6723,7 @@ func InternalValue() FunctionJavaShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaTargetPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaTargetPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionJavaTargetPathOutputReference
 ```
@@ -7016,7 +7016,7 @@ func InternalValue() FunctionJavaTargetPath
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJava.FunctionJavaTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/functionjava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/functionjava"
 
 functionjava.NewFunctionJavaTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionJavaTimeoutsOutputReference
 ```

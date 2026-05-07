@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/grantdatabaserole"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/grantdatabaserole"
 
 grantdatabaserole.NewGrantDatabaseRole(scope Construct, id *string, config GrantDatabaseRoleConfig) GrantDatabaseRole
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/grantdatabaserole"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/grantdatabaserole"
 
 grantdatabaserole.GrantDatabaseRole_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/grantdatabaserole"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/grantdatabaserole"
 
 grantdatabaserole.GrantDatabaseRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ grantdatabaserole.GrantDatabaseRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/grantdatabaserole"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/grantdatabaserole"
 
 grantdatabaserole.GrantDatabaseRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ grantdatabaserole.GrantDatabaseRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/grantdatabaserole"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/grantdatabaserole"
 
 grantdatabaserole.GrantDatabaseRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -869,7 +869,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/grantdatabaserole"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/grantdatabaserole"
 
 &grantdatabaserole.GrantDatabaseRoleConfig {
 	Connection: interface{},
@@ -884,7 +884,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/grantdatab
 	ParentDatabaseRoleName: *string,
 	ParentRoleName: *string,
 	ShareName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.grantDatabaseRole.GrantDatabaseRoleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.grantDatabaseRole.GrantDatabaseRoleTimeouts,
 }
 ```
 
@@ -1076,7 +1076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/grantdatabaserole"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/grantdatabaserole"
 
 &grantdatabaserole.GrantDatabaseRoleTimeouts {
 	Create: *string,
@@ -1152,7 +1152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/grantdatabaserole"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/grantdatabaserole"
 
 grantdatabaserole.NewGrantDatabaseRoleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GrantDatabaseRoleTimeoutsOutputReference
 ```

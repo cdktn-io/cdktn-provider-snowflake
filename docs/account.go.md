@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.account.Account.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/account"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/account"
 
 account.NewAccount(scope Construct, id *string, config AccountConfig) Account
 ```
@@ -504,7 +504,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.account.Account.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/account"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/account"
 
 account.Account_IsConstruct(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.account.Account.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/account"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/account"
 
 account.Account_IsTerraformElement(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ account.Account_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.account.Account.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/account"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/account"
 
 account.Account_IsTerraformResource(x interface{}) *bool
 ```
@@ -564,7 +564,7 @@ account.Account_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.account.Account.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/account"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/account"
 
 account.Account_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1211,7 +1211,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.account.AccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/account"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/account"
 
 &account.AccountConfig {
 	Connection: interface{},
@@ -1238,7 +1238,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/account"
 	MustChangePassword: *string,
 	Region: *string,
 	RegionGroup: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16.account.AccountTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.account.AccountTimeouts,
 }
 ```
 
@@ -1626,7 +1626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.account.AccountShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/account"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/account"
 
 &account.AccountShowOutput {
 
@@ -1639,7 +1639,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/account"
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.account.AccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/account"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/account"
 
 &account.AccountTimeouts {
 	Create: *string,
@@ -1715,7 +1715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.account.AccountShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/account"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/account"
 
 account.NewAccountShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountShowOutputList
 ```
@@ -1864,7 +1864,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.account.AccountShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/account"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/account"
 
 account.NewAccountShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountShowOutputOutputReference
 ```
@@ -2450,7 +2450,7 @@ func InternalValue() AccountShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.account.AccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v16/account"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/account"
 
 account.NewAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountTimeoutsOutputReference
 ```
