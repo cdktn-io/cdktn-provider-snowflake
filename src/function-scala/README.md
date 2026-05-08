@@ -1,3 +1,3 @@
 # `snowflake_function_scala`
 
-Refer to the Terraform Registry for docs: [`snowflake_function_scala`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.15.0/docs/resources/function_scala).
+Refer to the Terraform Registry for docs: [`snowflake_function_scala`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/function_scala).
