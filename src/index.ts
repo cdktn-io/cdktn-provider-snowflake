@@ -9,6 +9,7 @@ export * as accountAuthenticationPolicyAttachment from './account-authentication
 export * as accountParameter from './account-parameter';
 export * as accountPasswordPolicyAttachment from './account-password-policy-attachment';
 export * as accountRole from './account-role';
+export * as accountSessionPolicyAttachment from './account-session-policy-attachment';
 export * as alert from './alert';
 export * as apiAuthenticationIntegrationWithAuthorizationCodeGrant from './api-authentication-integration-with-authorization-code-grant';
 export * as apiAuthenticationIntegrationWithClientCredentials from './api-authentication-integration-with-client-credentials';
@@ -85,6 +86,7 @@ export * as semanticView from './semantic-view';
 export * as sequence from './sequence';
 export * as service from './service';
 export * as serviceUser from './service-user';
+export * as sessionPolicy from './session-policy';
 export * as share from './share';
 export * as sharedDatabase from './shared-database';
 export * as stage from './stage';
@@ -113,6 +115,7 @@ export * as userAuthenticationPolicyAttachment from './user-authentication-polic
 export * as userPasswordPolicyAttachment from './user-password-policy-attachment';
 export * as userProgrammaticAccessToken from './user-programmatic-access-token';
 export * as userPublicKeys from './user-public-keys';
+export * as userSessionPolicyAttachment from './user-session-policy-attachment';
 export * as view from './view';
 export * as warehouse from './warehouse';
 export * as warehouseAdaptive from './warehouse-adaptive';
@@ -147,6 +150,7 @@ export * as dataSnowflakeNetworkPolicies from './data-snowflake-network-policies
 export * as dataSnowflakeNetworkRules from './data-snowflake-network-rules';
 export * as dataSnowflakeNotebooks from './data-snowflake-notebooks';
 export * as dataSnowflakeParameters from './data-snowflake-parameters';
+export * as dataSnowflakePasswordPolicies from './data-snowflake-password-policies';
 export * as dataSnowflakePipes from './data-snowflake-pipes';
 export * as dataSnowflakeProcedures from './data-snowflake-procedures';
 export * as dataSnowflakeResourceMonitors from './data-snowflake-resource-monitors';
@@ -157,6 +161,7 @@ export * as dataSnowflakeSecurityIntegrations from './data-snowflake-security-in
 export * as dataSnowflakeSemanticViews from './data-snowflake-semantic-views';
 export * as dataSnowflakeSequences from './data-snowflake-sequences';
 export * as dataSnowflakeServices from './data-snowflake-services';
+export * as dataSnowflakeSessionPolicies from './data-snowflake-session-policies';
 export * as dataSnowflakeShares from './data-snowflake-shares';
 export * as dataSnowflakeStages from './data-snowflake-stages';
 export * as dataSnowflakeStorageIntegrations from './data-snowflake-storage-integrations';

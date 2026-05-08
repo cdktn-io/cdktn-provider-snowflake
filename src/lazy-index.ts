@@ -9,6 +9,7 @@ Object.defineProperty(exports, 'accountAuthenticationPolicyAttachment', { get: f
 Object.defineProperty(exports, 'accountParameter', { get: function () { return require('./account-parameter'); } });
 Object.defineProperty(exports, 'accountPasswordPolicyAttachment', { get: function () { return require('./account-password-policy-attachment'); } });
 Object.defineProperty(exports, 'accountRole', { get: function () { return require('./account-role'); } });
+Object.defineProperty(exports, 'accountSessionPolicyAttachment', { get: function () { return require('./account-session-policy-attachment'); } });
 Object.defineProperty(exports, 'alert', { get: function () { return require('./alert'); } });
 Object.defineProperty(exports, 'apiAuthenticationIntegrationWithAuthorizationCodeGrant', { get: function () { return require('./api-authentication-integration-with-authorization-code-grant'); } });
 Object.defineProperty(exports, 'apiAuthenticationIntegrationWithClientCredentials', { get: function () { return require('./api-authentication-integration-with-client-credentials'); } });
@@ -85,6 +86,7 @@ Object.defineProperty(exports, 'semanticView', { get: function () { return requi
 Object.defineProperty(exports, 'sequence', { get: function () { return require('./sequence'); } });
 Object.defineProperty(exports, 'service', { get: function () { return require('./service'); } });
 Object.defineProperty(exports, 'serviceUser', { get: function () { return require('./service-user'); } });
+Object.defineProperty(exports, 'sessionPolicy', { get: function () { return require('./session-policy'); } });
 Object.defineProperty(exports, 'share', { get: function () { return require('./share'); } });
 Object.defineProperty(exports, 'sharedDatabase', { get: function () { return require('./shared-database'); } });
 Object.defineProperty(exports, 'stage', { get: function () { return require('./stage'); } });
@@ -113,6 +115,7 @@ Object.defineProperty(exports, 'userAuthenticationPolicyAttachment', { get: func
 Object.defineProperty(exports, 'userPasswordPolicyAttachment', { get: function () { return require('./user-password-policy-attachment'); } });
 Object.defineProperty(exports, 'userProgrammaticAccessToken', { get: function () { return require('./user-programmatic-access-token'); } });
 Object.defineProperty(exports, 'userPublicKeys', { get: function () { return require('./user-public-keys'); } });
+Object.defineProperty(exports, 'userSessionPolicyAttachment', { get: function () { return require('./user-session-policy-attachment'); } });
 Object.defineProperty(exports, 'view', { get: function () { return require('./view'); } });
 Object.defineProperty(exports, 'warehouse', { get: function () { return require('./warehouse'); } });
 Object.defineProperty(exports, 'warehouseAdaptive', { get: function () { return require('./warehouse-adaptive'); } });
@@ -147,6 +150,7 @@ Object.defineProperty(exports, 'dataSnowflakeNetworkPolicies', { get: function (
 Object.defineProperty(exports, 'dataSnowflakeNetworkRules', { get: function () { return require('./data-snowflake-network-rules'); } });
 Object.defineProperty(exports, 'dataSnowflakeNotebooks', { get: function () { return require('./data-snowflake-notebooks'); } });
 Object.defineProperty(exports, 'dataSnowflakeParameters', { get: function () { return require('./data-snowflake-parameters'); } });
+Object.defineProperty(exports, 'dataSnowflakePasswordPolicies', { get: function () { return require('./data-snowflake-password-policies'); } });
 Object.defineProperty(exports, 'dataSnowflakePipes', { get: function () { return require('./data-snowflake-pipes'); } });
 Object.defineProperty(exports, 'dataSnowflakeProcedures', { get: function () { return require('./data-snowflake-procedures'); } });
 Object.defineProperty(exports, 'dataSnowflakeResourceMonitors', { get: function () { return require('./data-snowflake-resource-monitors'); } });
@@ -157,6 +161,7 @@ Object.defineProperty(exports, 'dataSnowflakeSecurityIntegrations', { get: funct
 Object.defineProperty(exports, 'dataSnowflakeSemanticViews', { get: function () { return require('./data-snowflake-semantic-views'); } });
 Object.defineProperty(exports, 'dataSnowflakeSequences', { get: function () { return require('./data-snowflake-sequences'); } });
 Object.defineProperty(exports, 'dataSnowflakeServices', { get: function () { return require('./data-snowflake-services'); } });
+Object.defineProperty(exports, 'dataSnowflakeSessionPolicies', { get: function () { return require('./data-snowflake-session-policies'); } });
 Object.defineProperty(exports, 'dataSnowflakeShares', { get: function () { return require('./data-snowflake-shares'); } });
 Object.defineProperty(exports, 'dataSnowflakeStages', { get: function () { return require('./data-snowflake-stages'); } });
 Object.defineProperty(exports, 'dataSnowflakeStorageIntegrations', { get: function () { return require('./data-snowflake-storage-integrations'); } });
