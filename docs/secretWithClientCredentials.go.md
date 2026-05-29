@@ -4,7 +4,7 @@
 
 ### SecretWithClientCredentials <a name="SecretWithClientCredentials" id="@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentials"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials snowflake_secret_with_client_credentials}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials snowflake_secret_with_client_credentials}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentials.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentials.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentials.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentials.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentials.resetOauthScopes">ResetOauthScopes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentials.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -414,6 +415,12 @@ func ResetComment()
 func ResetId()
 ```
 
+##### `ResetOauthScopes` <a name="ResetOauthScopes" id="@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentials.resetOauthScopes"></a>
+
+```go
+func ResetOauthScopes()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentials.resetTimeouts"></a>
 
 ```go
@@ -523,7 +530,7 @@ The construct id used in the generated config for the SecretWithClientCredential
 
 The id of the existing SecretWithClientCredentials that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -956,10 +963,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secretwith
 	ApiAuthentication: *string,
 	Database: *string,
 	Name: *string,
-	OauthScopes: *[]*string,
 	Schema: *string,
 	Comment: *string,
 	Id: *string,
+	OauthScopes: *[]*string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.secretWithClientCredentials.SecretWithClientCredentialsTimeouts,
 }
 ```
@@ -978,10 +985,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secretwith
 | <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsConfig.property.apiAuthentication">ApiAuthentication</a></code> | <code>*string</code> | Specifies the name value of the Snowflake security integration that connects Snowflake to an external service. |
 | <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsConfig.property.database">Database</a></code> | <code>*string</code> | The database in which to create the secret Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `\|`, `.`, `"`. |
 | <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsConfig.property.name">Name</a></code> | <code>*string</code> | String that specifies the identifier (i.e. name) for the secret, must be unique in your schema. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `\|`, `.`, `"`. |
-| <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsConfig.property.oauthScopes">OauthScopes</a></code> | <code>*[]*string</code> | Specifies a list of scopes to use when making a request from the OAuth server by a role with USAGE on the integration during the OAuth client credentials flow. |
 | <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema in which to create the secret. |
 | <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the secret. |
-| <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials#id SecretWithClientCredentials#id}. |
+| <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials#id SecretWithClientCredentials#id}. |
+| <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsConfig.property.oauthScopes">OauthScopes</a></code> | <code>*[]*string</code> | Specifies a list of scopes to use when making a request from the OAuth server by a role with USAGE on the integration during the OAuth client credentials flow. |
 | <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsTimeouts">SecretWithClientCredentialsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1068,7 +1075,7 @@ Specifies the name value of the Snowflake security integration that connects Sno
 
 For more information about this resource, see [docs](./api_authentication_integration_with_client_credentials).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials#api_authentication SecretWithClientCredentials#api_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials#api_authentication SecretWithClientCredentials#api_authentication}
 
 ---
 
@@ -1082,7 +1089,7 @@ Database *string
 
 The database in which to create the secret Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials#database SecretWithClientCredentials#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials#database SecretWithClientCredentials#database}
 
 ---
 
@@ -1096,21 +1103,7 @@ Name *string
 
 String that specifies the identifier (i.e. name) for the secret, must be unique in your schema. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials#name SecretWithClientCredentials#name}
-
----
-
-##### `OauthScopes`<sup>Required</sup> <a name="OauthScopes" id="@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsConfig.property.oauthScopes"></a>
-
-```go
-OauthScopes *[]*string
-```
-
-- *Type:* *[]*string
-
-Specifies a list of scopes to use when making a request from the OAuth server by a role with USAGE on the integration during the OAuth client credentials flow.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials#oauth_scopes SecretWithClientCredentials#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials#name SecretWithClientCredentials#name}
 
 ---
 
@@ -1126,7 +1119,7 @@ The schema in which to create the secret.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials#schema SecretWithClientCredentials#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials#schema SecretWithClientCredentials#schema}
 
 ---
 
@@ -1140,7 +1133,7 @@ Comment *string
 
 Specifies a comment for the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials#comment SecretWithClientCredentials#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials#comment SecretWithClientCredentials#comment}
 
 ---
 
@@ -1152,10 +1145,26 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials#id SecretWithClientCredentials#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials#id SecretWithClientCredentials#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `OauthScopes`<sup>Optional</sup> <a name="OauthScopes" id="@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsConfig.property.oauthScopes"></a>
+
+```go
+OauthScopes *[]*string
+```
+
+- *Type:* *[]*string
+
+Specifies a list of scopes to use when making a request from the OAuth server by a role with USAGE on the integration during the OAuth client credentials flow.
+
+If not specified, no scopes are set on the secret; the effective scopes during the OAuth flow are inherited from the security integration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials#oauth_scopes SecretWithClientCredentials#oauth_scopes}
 
 ---
 
@@ -1169,7 +1178,7 @@ Timeouts SecretWithClientCredentialsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials#timeouts SecretWithClientCredentials#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials#timeouts SecretWithClientCredentials#timeouts}
 
 ---
 
@@ -1218,10 +1227,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/secretwith
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials#create SecretWithClientCredentials#create}. |
-| <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials#delete SecretWithClientCredentials#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials#read SecretWithClientCredentials#read}. |
-| <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials#update SecretWithClientCredentials#update}. |
+| <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials#create SecretWithClientCredentials#create}. |
+| <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials#delete SecretWithClientCredentials#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials#read SecretWithClientCredentials#read}. |
+| <code><a href="#@cdktn/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials#update SecretWithClientCredentials#update}. |
 
 ---
 
@@ -1233,7 +1242,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials#create SecretWithClientCredentials#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials#create SecretWithClientCredentials#create}.
 
 ---
 
@@ -1245,7 +1254,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials#delete SecretWithClientCredentials#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials#delete SecretWithClientCredentials#delete}.
 
 ---
 
@@ -1257,7 +1266,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials#read SecretWithClientCredentials#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials#read SecretWithClientCredentials#read}.
 
 ---
 
@@ -1269,7 +1278,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/secret_with_client_credentials#update SecretWithClientCredentials#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/secret_with_client_credentials#update SecretWithClientCredentials#update}.
 
 ---
 

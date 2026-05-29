@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_object_storage
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_object_storage
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface CatalogIntegrationObjectStorageConfig extends cdktn.TerraformMe
   /**
   * (Default: ``) Specifies a comment for the catalog integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_object_storage#comment CatalogIntegrationObjectStorage#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_object_storage#comment CatalogIntegrationObjectStorage#comment}
   */
   readonly comment?: string;
   /**
   * Specifies whether the catalog integration is available for use for Iceberg tables. `true` allows users to create new Iceberg tables that reference this integration. Existing Iceberg tables that reference this integration function normally. `false` prevents users from creating new Iceberg tables that reference this integration. Existing Iceberg tables that reference this integration cannot access the catalog in the table definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_object_storage#enabled CatalogIntegrationObjectStorage#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_object_storage#enabled CatalogIntegrationObjectStorage#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_object_storage#id CatalogIntegrationObjectStorage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_object_storage#id CatalogIntegrationObjectStorage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,25 +34,25 @@ export interface CatalogIntegrationObjectStorageConfig extends cdktn.TerraformMe
   /**
   * Specifies the identifier (i.e. name) of the catalog integration; must be unique in your account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_object_storage#name CatalogIntegrationObjectStorage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_object_storage#name CatalogIntegrationObjectStorage#name}
   */
   readonly name: string;
   /**
   * Specifies the number of seconds to wait between attempts to poll the external Iceberg catalog for metadata updates for automated refresh. For Delta-based tables, specifies the number of seconds to wait between attempts to poll your external cloud storage for new metadata.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_object_storage#refresh_interval_seconds CatalogIntegrationObjectStorage#refresh_interval_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_object_storage#refresh_interval_seconds CatalogIntegrationObjectStorage#refresh_interval_seconds}
   */
   readonly refreshIntervalSeconds?: number;
   /**
   * Specifies the table format. Valid values are (case-insensitive): `ICEBERG` | `DELTA`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_object_storage#table_format CatalogIntegrationObjectStorage#table_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_object_storage#table_format CatalogIntegrationObjectStorage#table_format}
   */
   readonly tableFormat: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_object_storage#timeouts CatalogIntegrationObjectStorage#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_object_storage#timeouts CatalogIntegrationObjectStorage#timeouts}
   */
   readonly timeouts?: CatalogIntegrationObjectStorageTimeouts;
 }
@@ -258,19 +258,19 @@ export class CatalogIntegrationObjectStorageShowOutputList extends cdktn.Complex
 }
 export interface CatalogIntegrationObjectStorageTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_object_storage#create CatalogIntegrationObjectStorage#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_object_storage#create CatalogIntegrationObjectStorage#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_object_storage#delete CatalogIntegrationObjectStorage#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_object_storage#delete CatalogIntegrationObjectStorage#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_object_storage#read CatalogIntegrationObjectStorage#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_object_storage#read CatalogIntegrationObjectStorage#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_object_storage#update CatalogIntegrationObjectStorage#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_object_storage#update CatalogIntegrationObjectStorage#update}
   */
   readonly update?: string;
 }
@@ -451,7 +451,7 @@ export class CatalogIntegrationObjectStorageTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_object_storage snowflake_catalog_integration_object_storage}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_object_storage snowflake_catalog_integration_object_storage}
 */
 export class CatalogIntegrationObjectStorage extends cdktn.TerraformResource {
 
@@ -467,7 +467,7 @@ export class CatalogIntegrationObjectStorage extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CatalogIntegrationObjectStorage resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CatalogIntegrationObjectStorage to import
-  * @param importFromId The id of the existing CatalogIntegrationObjectStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_object_storage#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CatalogIntegrationObjectStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_object_storage#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CatalogIntegrationObjectStorage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -479,7 +479,7 @@ export class CatalogIntegrationObjectStorage extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/catalog_integration_object_storage snowflake_catalog_integration_object_storage} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_object_storage snowflake_catalog_integration_object_storage} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -490,7 +490,7 @@ export class CatalogIntegrationObjectStorage extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_catalog_integration_object_storage',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.16.0',
+        providerVersion: '2.17.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

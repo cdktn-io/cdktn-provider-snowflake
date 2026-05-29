@@ -4,7 +4,7 @@
 
 ### DataSnowflakeDynamicTables <a name="DataSnowflakeDynamicTables" id="@cdktn/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTables"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/dynamic_tables snowflake_dynamic_tables}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/dynamic_tables snowflake_dynamic_tables}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTables.Initializer"></a>
 
@@ -461,7 +461,7 @@ The construct id used in the generated config for the DataSnowflakeDynamicTables
 
 The id of the existing DataSnowflakeDynamicTables that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/dynamic_tables#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/dynamic_tables#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -789,7 +789,7 @@ new DataSnowflakeDynamicTablesConfig {
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/dynamic_tables#id DataSnowflakeDynamicTables#id}. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/dynamic_tables#id DataSnowflakeDynamicTables#id}. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesConfig.property.in">In</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesIn">DataSnowflakeDynamicTablesIn</a></code> | in block. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesConfig.property.like">Like</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesLike">DataSnowflakeDynamicTablesLike</a></code> | like block. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesConfig.property.limit">Limit</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesLimit">DataSnowflakeDynamicTablesLimit</a></code> | limit block. |
@@ -875,7 +875,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/dynamic_tables#id DataSnowflakeDynamicTables#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/dynamic_tables#id DataSnowflakeDynamicTables#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -892,7 +892,7 @@ public DataSnowflakeDynamicTablesIn In { get; set; }
 
 in block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/dynamic_tables#in DataSnowflakeDynamicTables#in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/dynamic_tables#in DataSnowflakeDynamicTables#in}
 
 ---
 
@@ -906,7 +906,7 @@ public DataSnowflakeDynamicTablesLike Like { get; set; }
 
 like block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/dynamic_tables#like DataSnowflakeDynamicTables#like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/dynamic_tables#like DataSnowflakeDynamicTables#like}
 
 ---
 
@@ -920,7 +920,7 @@ public DataSnowflakeDynamicTablesLimit Limit { get; set; }
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/dynamic_tables#limit DataSnowflakeDynamicTables#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/dynamic_tables#limit DataSnowflakeDynamicTables#limit}
 
 ---
 
@@ -936,7 +936,7 @@ Optionally filters the command output based on the characters that appear at the
 
 The string is case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/dynamic_tables#starts_with DataSnowflakeDynamicTables#starts_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/dynamic_tables#starts_with DataSnowflakeDynamicTables#starts_with}
 
 ---
 
@@ -974,7 +974,7 @@ public bool|IResolvable Account { get; set; }
 
 Returns records for the entire account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/dynamic_tables#account DataSnowflakeDynamicTables#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/dynamic_tables#account DataSnowflakeDynamicTables#account}
 
 ---
 
@@ -988,7 +988,7 @@ public string Database { get; set; }
 
 Returns records for the current database in use or for a specified database (db_name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/dynamic_tables#database DataSnowflakeDynamicTables#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/dynamic_tables#database DataSnowflakeDynamicTables#database}
 
 ---
 
@@ -1002,7 +1002,7 @@ public string Schema { get; set; }
 
 Returns records for the current schema in use or a specified schema (schema_name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/dynamic_tables#schema DataSnowflakeDynamicTables#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/dynamic_tables#schema DataSnowflakeDynamicTables#schema}
 
 ---
 
@@ -1038,7 +1038,7 @@ Filters the command output by object name.
 
 The filter uses case-insensitive pattern matching with support for SQL wildcard characters (% and _).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/dynamic_tables#pattern DataSnowflakeDynamicTables#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/dynamic_tables#pattern DataSnowflakeDynamicTables#pattern}
 
 ---
 
@@ -1076,7 +1076,7 @@ The optional FROM 'name_string' subclause effectively serves as a “cursor” f
 
 This enables fetching the specified number of rows following the first row whose object name matches the specified string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/dynamic_tables#from DataSnowflakeDynamicTables#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/dynamic_tables#from DataSnowflakeDynamicTables#from}
 
 ---
 
@@ -1090,7 +1090,7 @@ public double Rows { get; set; }
 
 Specifies the maximum number of rows to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/dynamic_tables#rows DataSnowflakeDynamicTables#rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/dynamic_tables#rows DataSnowflakeDynamicTables#rows}
 
 ---
 

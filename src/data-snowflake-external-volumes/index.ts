@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/external_volumes
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/external_volumes
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataSnowflakeExternalVolumesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/external_volumes#id DataSnowflakeExternalVolumes#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/external_volumes#id DataSnowflakeExternalVolumes#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataSnowflakeExternalVolumesConfig extends cdktn.TerraformMetaA
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/external_volumes#like DataSnowflakeExternalVolumes#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/external_volumes#like DataSnowflakeExternalVolumes#like}
   */
   readonly like?: string;
   /**
   * (Default: `true`) Runs DESC EXTERNAL VOLUME for each external volume returned by SHOW EXTERNAL VOLUMES. The output of describe is saved to the describe_output field. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/external_volumes#with_describe DataSnowflakeExternalVolumes#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/external_volumes#with_describe DataSnowflakeExternalVolumes#with_describe}
   */
   readonly withDescribe?: boolean | cdktn.IResolvable;
 }
@@ -96,6 +96,11 @@ export class DataSnowflakeExternalVolumesExternalVolumesDescribeOutputStorageLoc
   // azure_tenant_id - computed: true, optional: false, required: false
   public get azureTenantId() {
     return this.getStringAttribute('azure_tenant_id');
+  }
+
+  // use_privatelink_endpoint - computed: true, optional: false, required: false
+  public get usePrivatelinkEndpoint() {
+    return this.getStringAttribute('use_privatelink_endpoint');
   }
 }
 
@@ -761,7 +766,7 @@ export class DataSnowflakeExternalVolumesExternalVolumesList extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/external_volumes snowflake_external_volumes}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/external_volumes snowflake_external_volumes}
 */
 export class DataSnowflakeExternalVolumes extends cdktn.TerraformDataSource {
 
@@ -777,7 +782,7 @@ export class DataSnowflakeExternalVolumes extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataSnowflakeExternalVolumes resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeExternalVolumes to import
-  * @param importFromId The id of the existing DataSnowflakeExternalVolumes that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/external_volumes#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeExternalVolumes that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/external_volumes#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeExternalVolumes to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -789,7 +794,7 @@ export class DataSnowflakeExternalVolumes extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/external_volumes snowflake_external_volumes} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/external_volumes snowflake_external_volumes} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -800,7 +805,7 @@ export class DataSnowflakeExternalVolumes extends cdktn.TerraformDataSource {
       terraformResourceType: 'snowflake_external_volumes',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.16.0',
+        providerVersion: '2.17.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

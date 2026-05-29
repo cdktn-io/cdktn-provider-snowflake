@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataSnowflakePasswordPoliciesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies#id DataSnowflakePasswordPolicies#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies#id DataSnowflakePasswordPolicies#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,37 +22,37 @@ export interface DataSnowflakePasswordPoliciesConfig extends cdktn.TerraformMeta
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies#like DataSnowflakePasswordPolicies#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies#like DataSnowflakePasswordPolicies#like}
   */
   readonly like?: string;
   /**
   * Filters the output with **case-sensitive** characters indicating the beginning of the object name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies#starts_with DataSnowflakePasswordPolicies#starts_with}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies#starts_with DataSnowflakePasswordPolicies#starts_with}
   */
   readonly startsWith?: string;
   /**
   * (Default: `true`) Runs DESC PASSWORD POLICY for each password policy returned by SHOW PASSWORD POLICIES. The output of describe is saved to the describe_output field. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies#with_describe DataSnowflakePasswordPolicies#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies#with_describe DataSnowflakePasswordPolicies#with_describe}
   */
   readonly withDescribe?: boolean | cdktn.IResolvable;
   /**
   * in block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies#in DataSnowflakePasswordPolicies#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies#in DataSnowflakePasswordPolicies#in}
   */
   readonly in?: DataSnowflakePasswordPoliciesIn;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies#limit DataSnowflakePasswordPolicies#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies#limit DataSnowflakePasswordPolicies#limit}
   */
   readonly limit?: DataSnowflakePasswordPoliciesLimit;
   /**
   * on block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies#on DataSnowflakePasswordPolicies#on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies#on DataSnowflakePasswordPolicies#on}
   */
   readonly on?: DataSnowflakePasswordPoliciesOn;
 }
@@ -397,31 +397,31 @@ export interface DataSnowflakePasswordPoliciesIn {
   /**
   * Returns records for the entire account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies#account DataSnowflakePasswordPolicies#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies#account DataSnowflakePasswordPolicies#account}
   */
   readonly account?: boolean | cdktn.IResolvable;
   /**
   * Returns records for the specified application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies#application DataSnowflakePasswordPolicies#application}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies#application DataSnowflakePasswordPolicies#application}
   */
   readonly application?: string;
   /**
   * Returns records for the specified application package.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies#application_package DataSnowflakePasswordPolicies#application_package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies#application_package DataSnowflakePasswordPolicies#application_package}
   */
   readonly applicationPackage?: string;
   /**
   * Returns records for the current database in use or for a specified database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies#database DataSnowflakePasswordPolicies#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies#database DataSnowflakePasswordPolicies#database}
   */
   readonly database?: string;
   /**
   * Returns records for the current schema in use or a specified schema. Use fully qualified name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies#schema DataSnowflakePasswordPolicies#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies#schema DataSnowflakePasswordPolicies#schema}
   */
   readonly schema?: string;
 }
@@ -623,13 +623,13 @@ export interface DataSnowflakePasswordPoliciesLimit {
   /**
   * Specifies a **case-sensitive** pattern that is used to match object name. After the first match, the limit on the number of rows will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies#from DataSnowflakePasswordPolicies#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies#from DataSnowflakePasswordPolicies#from}
   */
   readonly from?: string;
   /**
   * The maximum number of rows to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies#rows DataSnowflakePasswordPolicies#rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies#rows DataSnowflakePasswordPolicies#rows}
   */
   readonly rows: number;
 }
@@ -741,13 +741,13 @@ export interface DataSnowflakePasswordPoliciesOn {
   /**
   * Returns records for the entire account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies#account DataSnowflakePasswordPolicies#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies#account DataSnowflakePasswordPolicies#account}
   */
   readonly account?: boolean | cdktn.IResolvable;
   /**
   * Returns records for the specified user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies#user DataSnowflakePasswordPolicies#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies#user DataSnowflakePasswordPolicies#user}
   */
   readonly user?: string;
 }
@@ -860,7 +860,7 @@ export class DataSnowflakePasswordPoliciesOnOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies snowflake_password_policies}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies snowflake_password_policies}
 */
 export class DataSnowflakePasswordPolicies extends cdktn.TerraformDataSource {
 
@@ -876,7 +876,7 @@ export class DataSnowflakePasswordPolicies extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataSnowflakePasswordPolicies resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakePasswordPolicies to import
-  * @param importFromId The id of the existing DataSnowflakePasswordPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakePasswordPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakePasswordPolicies to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -888,7 +888,7 @@ export class DataSnowflakePasswordPolicies extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/password_policies snowflake_password_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/password_policies snowflake_password_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -899,7 +899,7 @@ export class DataSnowflakePasswordPolicies extends cdktn.TerraformDataSource {
       terraformResourceType: 'snowflake_password_policies',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.16.0',
+        providerVersion: '2.17.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

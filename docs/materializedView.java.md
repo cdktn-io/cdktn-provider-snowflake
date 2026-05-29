@@ -4,7 +4,7 @@
 
 ### MaterializedView <a name="MaterializedView" id="@cdktn/provider-snowflake.materializedView.MaterializedView"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view snowflake_materialized_view}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view snowflake_materialized_view}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.materializedView.MaterializedView.Initializer"></a>
 
@@ -50,7 +50,7 @@ MaterializedView.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedView.Initializer.parameter.statement">statement</a></code> | <code>java.lang.String</code> | Specifies the query used to create the view. |
 | <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedView.Initializer.parameter.warehouse">warehouse</a></code> | <code>java.lang.String</code> | The warehouse name. |
 | <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedView.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the view. |
-| <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedView.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#id MaterializedView#id}. |
+| <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedView.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#id MaterializedView#id}. |
 | <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedView.Initializer.parameter.isSecure">isSecure</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | (Default: `false`) Specifies that the view is secure. |
 | <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedView.Initializer.parameter.orReplace">orReplace</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | (Default: `false`) Specifies whether to use CREATE OR REPLACE when creating the materialized view. |
 | <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedView.Initializer.parameter.tag">tag</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-snowflake.materializedView.MaterializedViewTag">MaterializedViewTag</a>></code> | tag block. |
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The database in which to create the view. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#database MaterializedView#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#database MaterializedView#database}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the identifier for the view; must be unique for the schema in which the view is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#name MaterializedView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#name MaterializedView#name}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The schema in which to create the view. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#schema MaterializedView#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#schema MaterializedView#schema}
 
 ---
 
@@ -156,7 +156,7 @@ Specifies the query used to create the view.
 
 Changing this value will trigger a drop and recreate of the materialized view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#statement MaterializedView#statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#statement MaterializedView#statement}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The warehouse name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#warehouse MaterializedView#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#warehouse MaterializedView#warehouse}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#comment MaterializedView#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#comment MaterializedView#comment}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#id MaterializedView#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#id MaterializedView#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -197,7 +197,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 (Default: `false`) Specifies that the view is secure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#is_secure MaterializedView#is_secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#is_secure MaterializedView#is_secure}
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Note: this does not enable in-place updates when other fields forcing object recreation change; such fields always trigger delete and create operations in Terraform plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#or_replace MaterializedView#or_replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#or_replace MaterializedView#or_replace}
 
 ---
 
@@ -219,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#tag MaterializedView#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#tag MaterializedView#tag}
 
 ---
 
@@ -229,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#timeouts MaterializedView#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#timeouts MaterializedView#timeouts}
 
 ---
 
@@ -746,7 +746,7 @@ The construct id used in the generated config for the MaterializedView to import
 
 The id of the existing MaterializedView that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1240,7 +1240,7 @@ MaterializedViewConfig.builder()
 | <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedViewConfig.property.statement">statement</a></code> | <code>java.lang.String</code> | Specifies the query used to create the view. |
 | <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedViewConfig.property.warehouse">warehouse</a></code> | <code>java.lang.String</code> | The warehouse name. |
 | <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedViewConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the view. |
-| <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedViewConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#id MaterializedView#id}. |
+| <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedViewConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#id MaterializedView#id}. |
 | <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedViewConfig.property.isSecure">isSecure</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | (Default: `false`) Specifies that the view is secure. |
 | <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedViewConfig.property.orReplace">orReplace</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | (Default: `false`) Specifies whether to use CREATE OR REPLACE when creating the materialized view. |
 | <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedViewConfig.property.tag">tag</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-snowflake.materializedView.MaterializedViewTag">MaterializedViewTag</a>></code> | tag block. |
@@ -1328,7 +1328,7 @@ public java.lang.String getDatabase();
 
 The database in which to create the view. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#database MaterializedView#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#database MaterializedView#database}
 
 ---
 
@@ -1342,7 +1342,7 @@ public java.lang.String getName();
 
 Specifies the identifier for the view; must be unique for the schema in which the view is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#name MaterializedView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#name MaterializedView#name}
 
 ---
 
@@ -1356,7 +1356,7 @@ public java.lang.String getSchema();
 
 The schema in which to create the view. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#schema MaterializedView#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#schema MaterializedView#schema}
 
 ---
 
@@ -1372,7 +1372,7 @@ Specifies the query used to create the view.
 
 Changing this value will trigger a drop and recreate of the materialized view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#statement MaterializedView#statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#statement MaterializedView#statement}
 
 ---
 
@@ -1386,7 +1386,7 @@ public java.lang.String getWarehouse();
 
 The warehouse name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#warehouse MaterializedView#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#warehouse MaterializedView#warehouse}
 
 ---
 
@@ -1400,7 +1400,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#comment MaterializedView#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#comment MaterializedView#comment}
 
 ---
 
@@ -1412,7 +1412,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#id MaterializedView#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#id MaterializedView#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1429,7 +1429,7 @@ public java.lang.Boolean|IResolvable getIsSecure();
 
 (Default: `false`) Specifies that the view is secure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#is_secure MaterializedView#is_secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#is_secure MaterializedView#is_secure}
 
 ---
 
@@ -1445,7 +1445,7 @@ public java.lang.Boolean|IResolvable getOrReplace();
 
 Note: this does not enable in-place updates when other fields forcing object recreation change; such fields always trigger delete and create operations in Terraform plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#or_replace MaterializedView#or_replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#or_replace MaterializedView#or_replace}
 
 ---
 
@@ -1459,7 +1459,7 @@ public IResolvable|java.util.List<MaterializedViewTag> getTag();
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#tag MaterializedView#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#tag MaterializedView#tag}
 
 ---
 
@@ -1473,7 +1473,7 @@ public MaterializedViewTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#timeouts MaterializedView#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#timeouts MaterializedView#timeouts}
 
 ---
 
@@ -1513,7 +1513,7 @@ public java.lang.String getName();
 
 Tag name, e.g. department.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#name MaterializedView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#name MaterializedView#name}
 
 ---
 
@@ -1527,7 +1527,7 @@ public java.lang.String getValue();
 
 Tag value, e.g. marketing_info.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#value MaterializedView#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#value MaterializedView#value}
 
 ---
 
@@ -1541,7 +1541,7 @@ public java.lang.String getDatabase();
 
 Name of the database that the tag was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#database MaterializedView#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#database MaterializedView#database}
 
 ---
 
@@ -1555,7 +1555,7 @@ public java.lang.String getSchema();
 
 Name of the schema that the tag was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#schema MaterializedView#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#schema MaterializedView#schema}
 
 ---
 
@@ -1578,10 +1578,10 @@ MaterializedViewTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedViewTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#create MaterializedView#create}. |
-| <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedViewTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#delete MaterializedView#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedViewTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#read MaterializedView#read}. |
-| <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedViewTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#update MaterializedView#update}. |
+| <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedViewTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#create MaterializedView#create}. |
+| <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedViewTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#delete MaterializedView#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedViewTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#read MaterializedView#read}. |
+| <code><a href="#@cdktn/provider-snowflake.materializedView.MaterializedViewTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#update MaterializedView#update}. |
 
 ---
 
@@ -1593,7 +1593,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#create MaterializedView#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#create MaterializedView#create}.
 
 ---
 
@@ -1605,7 +1605,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#delete MaterializedView#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#delete MaterializedView#delete}.
 
 ---
 
@@ -1617,7 +1617,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#read MaterializedView#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#read MaterializedView#read}.
 
 ---
 
@@ -1629,7 +1629,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/materialized_view#update MaterializedView#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/materialized_view#update MaterializedView#update}.
 
 ---
 

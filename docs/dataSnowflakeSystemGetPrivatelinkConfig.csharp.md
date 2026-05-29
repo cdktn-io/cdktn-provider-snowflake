@@ -4,7 +4,7 @@
 
 ### DataSnowflakeSystemGetPrivatelinkConfig <a name="DataSnowflakeSystemGetPrivatelinkConfig" id="@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/system_get_privatelink_config snowflake_system_get_privatelink_config}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/system_get_privatelink_config snowflake_system_get_privatelink_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataSnowflakeSystemGetPriv
 
 The id of the existing DataSnowflakeSystemGetPrivatelinkConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/system_get_privatelink_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/system_get_privatelink_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -424,11 +424,20 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.accountName">AccountName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.accountUrl">AccountUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.appServicePrivatelinkUrl">AppServicePrivatelinkUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.awsVpceId">AwsVpceId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.azurePlsId">AzurePlsId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.internalStage">InternalStage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.ocspUrl">OcspUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.privatelinkAccountPrincipal">PrivatelinkAccountPrincipal</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.privatelinkConnectionOcspUrls">PrivatelinkConnectionOcspUrls</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.privatelinkConnectionUrls">PrivatelinkConnectionUrls</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.privatelinkDashedUrlsForDuo">PrivatelinkDashedUrlsForDuo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.privatelinkGcpServiceAttachment">PrivatelinkGcpServiceAttachment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.privatelinkSnowflakeManagedStorageVolumeFs">PrivatelinkSnowflakeManagedStorageVolumeFs</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.privatelinkSnowflakeManagedStorageVolumeNfs">PrivatelinkSnowflakeManagedStorageVolumeNfs</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.regionlessAccountUrl">RegionlessAccountUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.regionlessPrivatelinkOcspUrl">RegionlessPrivatelinkOcspUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.regionlessSnowsightUrl">RegionlessSnowsightUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.snowsightUrl">SnowsightUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -578,6 +587,16 @@ public string AccountUrl { get; }
 
 ---
 
+##### `AppServicePrivatelinkUrl`<sup>Required</sup> <a name="AppServicePrivatelinkUrl" id="@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.appServicePrivatelinkUrl"></a>
+
+```csharp
+public string AppServicePrivatelinkUrl { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `AwsVpceId`<sup>Required</sup> <a name="AwsVpceId" id="@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.awsVpceId"></a>
 
 ```csharp
@@ -618,10 +637,90 @@ public string OcspUrl { get; }
 
 ---
 
+##### `PrivatelinkAccountPrincipal`<sup>Required</sup> <a name="PrivatelinkAccountPrincipal" id="@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.privatelinkAccountPrincipal"></a>
+
+```csharp
+public string PrivatelinkAccountPrincipal { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PrivatelinkConnectionOcspUrls`<sup>Required</sup> <a name="PrivatelinkConnectionOcspUrls" id="@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.privatelinkConnectionOcspUrls"></a>
+
+```csharp
+public string PrivatelinkConnectionOcspUrls { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PrivatelinkConnectionUrls`<sup>Required</sup> <a name="PrivatelinkConnectionUrls" id="@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.privatelinkConnectionUrls"></a>
+
+```csharp
+public string PrivatelinkConnectionUrls { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PrivatelinkDashedUrlsForDuo`<sup>Required</sup> <a name="PrivatelinkDashedUrlsForDuo" id="@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.privatelinkDashedUrlsForDuo"></a>
+
+```csharp
+public string PrivatelinkDashedUrlsForDuo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PrivatelinkGcpServiceAttachment`<sup>Required</sup> <a name="PrivatelinkGcpServiceAttachment" id="@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.privatelinkGcpServiceAttachment"></a>
+
+```csharp
+public string PrivatelinkGcpServiceAttachment { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PrivatelinkSnowflakeManagedStorageVolumeFs`<sup>Required</sup> <a name="PrivatelinkSnowflakeManagedStorageVolumeFs" id="@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.privatelinkSnowflakeManagedStorageVolumeFs"></a>
+
+```csharp
+public string PrivatelinkSnowflakeManagedStorageVolumeFs { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PrivatelinkSnowflakeManagedStorageVolumeNfs`<sup>Required</sup> <a name="PrivatelinkSnowflakeManagedStorageVolumeNfs" id="@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.privatelinkSnowflakeManagedStorageVolumeNfs"></a>
+
+```csharp
+public string PrivatelinkSnowflakeManagedStorageVolumeNfs { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `RegionlessAccountUrl`<sup>Required</sup> <a name="RegionlessAccountUrl" id="@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.regionlessAccountUrl"></a>
 
 ```csharp
 public string RegionlessAccountUrl { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RegionlessPrivatelinkOcspUrl`<sup>Required</sup> <a name="RegionlessPrivatelinkOcspUrl" id="@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.regionlessPrivatelinkOcspUrl"></a>
+
+```csharp
+public string RegionlessPrivatelinkOcspUrl { get; }
 ```
 
 - *Type:* string
@@ -718,7 +817,7 @@ new DataSnowflakeSystemGetPrivatelinkConfigConfig {
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/system_get_privatelink_config#id DataSnowflakeSystemGetPrivatelinkConfig#id}. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/system_get_privatelink_config#id DataSnowflakeSystemGetPrivatelinkConfig#id}. |
 
 ---
 
@@ -800,7 +899,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/system_get_privatelink_config#id DataSnowflakeSystemGetPrivatelinkConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/system_get_privatelink_config#id DataSnowflakeSystemGetPrivatelinkConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

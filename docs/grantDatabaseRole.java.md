@@ -4,7 +4,7 @@
 
 ### GrantDatabaseRole <a name="GrantDatabaseRole" id="@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role snowflake_grant_database_role}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role snowflake_grant_database_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRole.Initializer"></a>
 
@@ -40,7 +40,7 @@ GrantDatabaseRole.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRole.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRole.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRole.Initializer.parameter.databaseRoleName">databaseRoleName</a></code> | <code>java.lang.String</code> | The fully qualified name of the database role which will be granted to share or parent role. |
-| <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#id GrantDatabaseRole#id}. |
+| <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#id GrantDatabaseRole#id}. |
 | <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRole.Initializer.parameter.parentDatabaseRoleName">parentDatabaseRoleName</a></code> | <code>java.lang.String</code> | The fully qualified name of the parent database role which will create a parent-child relationship between the roles. |
 | <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRole.Initializer.parameter.parentRoleName">parentRoleName</a></code> | <code>java.lang.String</code> | The fully qualified name of the parent account role which will create a parent-child relationship between the roles. |
 | <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRole.Initializer.parameter.shareName">shareName</a></code> | <code>java.lang.String</code> | The fully qualified name of the share on which privileges will be granted. |
@@ -116,7 +116,7 @@ The fully qualified name of the database role which will be granted to share or 
 
 For more information about this resource, see [docs](./database_role).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#database_role_name GrantDatabaseRole#database_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#database_role_name GrantDatabaseRole#database_role_name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#id GrantDatabaseRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#id GrantDatabaseRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ The fully qualified name of the parent database role which will create a parent-
 
 For more information about this resource, see [docs](./database_role).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#parent_database_role_name GrantDatabaseRole#parent_database_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#parent_database_role_name GrantDatabaseRole#parent_database_role_name}
 
 ---
 
@@ -151,7 +151,7 @@ The fully qualified name of the parent account role which will create a parent-c
 
 For more information about this resource, see [docs](./account_role).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#parent_role_name GrantDatabaseRole#parent_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#parent_role_name GrantDatabaseRole#parent_role_name}
 
 ---
 
@@ -163,7 +163,7 @@ The fully qualified name of the share on which privileges will be granted.
 
 For more information about this resource, see [docs](./share).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#share_name GrantDatabaseRole#share_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#share_name GrantDatabaseRole#share_name}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#timeouts GrantDatabaseRole#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#timeouts GrantDatabaseRole#timeouts}
 
 ---
 
@@ -670,7 +670,7 @@ The construct id used in the generated config for the GrantDatabaseRole to impor
 
 The id of the existing GrantDatabaseRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1033,7 +1033,7 @@ GrantDatabaseRoleConfig.builder()
 | <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleConfig.property.databaseRoleName">databaseRoleName</a></code> | <code>java.lang.String</code> | The fully qualified name of the database role which will be granted to share or parent role. |
-| <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#id GrantDatabaseRole#id}. |
+| <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#id GrantDatabaseRole#id}. |
 | <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleConfig.property.parentDatabaseRoleName">parentDatabaseRoleName</a></code> | <code>java.lang.String</code> | The fully qualified name of the parent database role which will create a parent-child relationship between the roles. |
 | <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleConfig.property.parentRoleName">parentRoleName</a></code> | <code>java.lang.String</code> | The fully qualified name of the parent account role which will create a parent-child relationship between the roles. |
 | <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleConfig.property.shareName">shareName</a></code> | <code>java.lang.String</code> | The fully qualified name of the share on which privileges will be granted. |
@@ -1123,7 +1123,7 @@ The fully qualified name of the database role which will be granted to share or 
 
 For more information about this resource, see [docs](./database_role).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#database_role_name GrantDatabaseRole#database_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#database_role_name GrantDatabaseRole#database_role_name}
 
 ---
 
@@ -1135,7 +1135,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#id GrantDatabaseRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#id GrantDatabaseRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1154,7 +1154,7 @@ The fully qualified name of the parent database role which will create a parent-
 
 For more information about this resource, see [docs](./database_role).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#parent_database_role_name GrantDatabaseRole#parent_database_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#parent_database_role_name GrantDatabaseRole#parent_database_role_name}
 
 ---
 
@@ -1170,7 +1170,7 @@ The fully qualified name of the parent account role which will create a parent-c
 
 For more information about this resource, see [docs](./account_role).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#parent_role_name GrantDatabaseRole#parent_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#parent_role_name GrantDatabaseRole#parent_role_name}
 
 ---
 
@@ -1186,7 +1186,7 @@ The fully qualified name of the share on which privileges will be granted.
 
 For more information about this resource, see [docs](./share).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#share_name GrantDatabaseRole#share_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#share_name GrantDatabaseRole#share_name}
 
 ---
 
@@ -1200,7 +1200,7 @@ public GrantDatabaseRoleTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#timeouts GrantDatabaseRole#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#timeouts GrantDatabaseRole#timeouts}
 
 ---
 
@@ -1223,10 +1223,10 @@ GrantDatabaseRoleTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#create GrantDatabaseRole#create}. |
-| <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#delete GrantDatabaseRole#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#read GrantDatabaseRole#read}. |
-| <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#update GrantDatabaseRole#update}. |
+| <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#create GrantDatabaseRole#create}. |
+| <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#delete GrantDatabaseRole#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#read GrantDatabaseRole#read}. |
+| <code><a href="#@cdktn/provider-snowflake.grantDatabaseRole.GrantDatabaseRoleTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#update GrantDatabaseRole#update}. |
 
 ---
 
@@ -1238,7 +1238,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#create GrantDatabaseRole#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#create GrantDatabaseRole#create}.
 
 ---
 
@@ -1250,7 +1250,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#delete GrantDatabaseRole#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#delete GrantDatabaseRole#delete}.
 
 ---
 
@@ -1262,7 +1262,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#read GrantDatabaseRole#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#read GrantDatabaseRole#read}.
 
 ---
 
@@ -1274,7 +1274,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/grant_database_role#update GrantDatabaseRole#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/grant_database_role#update GrantDatabaseRole#update}.
 
 ---
 

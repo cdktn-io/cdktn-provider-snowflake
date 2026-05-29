@@ -4,7 +4,7 @@
 
 ### DataSnowflakeDatabaseRole <a name="DataSnowflakeDatabaseRole" id="@cdktn/provider-snowflake.dataSnowflakeDatabaseRole.DataSnowflakeDatabaseRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/database_role snowflake_database_role}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/database_role snowflake_database_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeDatabaseRole.DataSnowflakeDatabaseRole.Initializer"></a>
 
@@ -38,7 +38,7 @@ DataSnowflakeDatabaseRole.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDatabaseRole.DataSnowflakeDatabaseRole.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDatabaseRole.DataSnowflakeDatabaseRole.Initializer.parameter.database">database</a></code> | <code>java.lang.String</code> | The database from which to return the database role from. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDatabaseRole.DataSnowflakeDatabaseRole.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Database role name. |
-| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDatabaseRole.DataSnowflakeDatabaseRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/database_role#id DataSnowflakeDatabaseRole#id}. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDatabaseRole.DataSnowflakeDatabaseRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/database_role#id DataSnowflakeDatabaseRole#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The database from which to return the database role from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/database_role#database DataSnowflakeDatabaseRole#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/database_role#database DataSnowflakeDatabaseRole#database}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Database role name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/database_role#name DataSnowflakeDatabaseRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/database_role#name DataSnowflakeDatabaseRole#name}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/database_role#id DataSnowflakeDatabaseRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/database_role#id DataSnowflakeDatabaseRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -481,7 +481,7 @@ The construct id used in the generated config for the DataSnowflakeDatabaseRole 
 
 The id of the existing DataSnowflakeDatabaseRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/database_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/database_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -776,7 +776,7 @@ DataSnowflakeDatabaseRoleConfig.builder()
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDatabaseRole.DataSnowflakeDatabaseRoleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDatabaseRole.DataSnowflakeDatabaseRoleConfig.property.database">database</a></code> | <code>java.lang.String</code> | The database from which to return the database role from. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDatabaseRole.DataSnowflakeDatabaseRoleConfig.property.name">name</a></code> | <code>java.lang.String</code> | Database role name. |
-| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDatabaseRole.DataSnowflakeDatabaseRoleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/database_role#id DataSnowflakeDatabaseRole#id}. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeDatabaseRole.DataSnowflakeDatabaseRoleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/database_role#id DataSnowflakeDatabaseRole#id}. |
 
 ---
 
@@ -860,7 +860,7 @@ public java.lang.String getDatabase();
 
 The database from which to return the database role from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/database_role#database DataSnowflakeDatabaseRole#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/database_role#database DataSnowflakeDatabaseRole#database}
 
 ---
 
@@ -874,7 +874,7 @@ public java.lang.String getName();
 
 Database role name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/database_role#name DataSnowflakeDatabaseRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/database_role#name DataSnowflakeDatabaseRole#name}
 
 ---
 
@@ -886,7 +886,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/data-sources/database_role#id DataSnowflakeDatabaseRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/database_role#id DataSnowflakeDatabaseRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

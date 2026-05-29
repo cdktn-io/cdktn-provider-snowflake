@@ -4,7 +4,7 @@
 
 ### StorageIntegrationAws <a name="StorageIntegrationAws" id="@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAws"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws snowflake_storage_integration_aws}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws snowflake_storage_integration_aws}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAws.Initializer"></a>
 
@@ -51,7 +51,7 @@ StorageIntegrationAws.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAws.Initializer.parameter.storageAwsRoleArn">storageAwsRoleArn</a></code> | <code>java.lang.String</code> | Specifies the Amazon Resource Name (ARN) of the AWS identity and access management (IAM) role that grants privileges on the S3 bucket containing your data files. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAws.Initializer.parameter.storageProvider">storageProvider</a></code> | <code>java.lang.String</code> | Specifies the storage provider for the integration. Valid options are: `S3` \| `S3GOV` \| `S3CHINA` \| `GCS` \| `AZURE`. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAws.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the storage integration. |
-| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAws.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#id StorageIntegrationAws#id}. |
+| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAws.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#id StorageIntegrationAws#id}. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAws.Initializer.parameter.storageAwsExternalId">storageAwsExternalId</a></code> | <code>java.lang.String</code> | Optionally specifies an external ID that Snowflake uses to establish a trust relationship with AWS. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAws.Initializer.parameter.storageAwsObjectAcl">storageAwsObjectAcl</a></code> | <code>java.lang.String</code> | Enables support for AWS access control lists (ACLs) to grant the bucket owner full control. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAws.Initializer.parameter.storageBlockedLocations">storageBlockedLocations</a></code> | <code>java.util.List<java.lang.String></code> | Explicitly prohibits external stages that use the integration from referencing one or more storage locations. |
@@ -128,7 +128,7 @@ Specifies whether this storage integration is available for usage in stages.
 
 `TRUE` allows users to create new stages that reference this integration. Existing stages that reference this integration function normally. `FALSE` prevents users from creating new stages that reference this integration. Existing stages that reference this integration cannot access the storage location in the stage definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#enabled StorageIntegrationAws#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#enabled StorageIntegrationAws#enabled}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 String that specifies the identifier (i.e. name) for the integration; must be unique in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#name StorageIntegrationAws#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#name StorageIntegrationAws#name}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Explicitly limits external stages that use the integration to reference one or more storage locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#storage_allowed_locations StorageIntegrationAws#storage_allowed_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#storage_allowed_locations StorageIntegrationAws#storage_allowed_locations}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the Amazon Resource Name (ARN) of the AWS identity and access management (IAM) role that grants privileges on the S3 bucket containing your data files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#storage_aws_role_arn StorageIntegrationAws#storage_aws_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#storage_aws_role_arn StorageIntegrationAws#storage_aws_role_arn}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the storage provider for the integration. Valid options are: `S3` | `S3GOV` | `S3CHINA` | `GCS` | `AZURE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#storage_provider StorageIntegrationAws#storage_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#storage_provider StorageIntegrationAws#storage_provider}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the storage integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#comment StorageIntegrationAws#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#comment StorageIntegrationAws#comment}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#id StorageIntegrationAws#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#id StorageIntegrationAws#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -199,7 +199,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Optionally specifies an external ID that Snowflake uses to establish a trust relationship with AWS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#storage_aws_external_id StorageIntegrationAws#storage_aws_external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#storage_aws_external_id StorageIntegrationAws#storage_aws_external_id}
 
 ---
 
@@ -211,7 +211,7 @@ Enables support for AWS access control lists (ACLs) to grant the bucket owner fu
 
 `bucket-owner-full-control` is the only currently supported value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#storage_aws_object_acl StorageIntegrationAws#storage_aws_object_acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#storage_aws_object_acl StorageIntegrationAws#storage_aws_object_acl}
 
 ---
 
@@ -221,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Explicitly prohibits external stages that use the integration from referencing one or more storage locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#storage_blocked_locations StorageIntegrationAws#storage_blocked_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#storage_blocked_locations StorageIntegrationAws#storage_blocked_locations}
 
 ---
 
@@ -231,7 +231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#timeouts StorageIntegrationAws#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#timeouts StorageIntegrationAws#timeouts}
 
 ---
 
@@ -243,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#use_privatelink_endpoint StorageIntegrationAws#use_privatelink_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#use_privatelink_endpoint StorageIntegrationAws#use_privatelink_endpoint}
 
 ---
 
@@ -754,7 +754,7 @@ The construct id used in the generated config for the StorageIntegrationAws to i
 
 The id of the existing StorageIntegrationAws that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1293,7 +1293,7 @@ StorageIntegrationAwsConfig.builder()
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAwsConfig.property.storageAwsRoleArn">storageAwsRoleArn</a></code> | <code>java.lang.String</code> | Specifies the Amazon Resource Name (ARN) of the AWS identity and access management (IAM) role that grants privileges on the S3 bucket containing your data files. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAwsConfig.property.storageProvider">storageProvider</a></code> | <code>java.lang.String</code> | Specifies the storage provider for the integration. Valid options are: `S3` \| `S3GOV` \| `S3CHINA` \| `GCS` \| `AZURE`. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAwsConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the storage integration. |
-| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAwsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#id StorageIntegrationAws#id}. |
+| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAwsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#id StorageIntegrationAws#id}. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAwsConfig.property.storageAwsExternalId">storageAwsExternalId</a></code> | <code>java.lang.String</code> | Optionally specifies an external ID that Snowflake uses to establish a trust relationship with AWS. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAwsConfig.property.storageAwsObjectAcl">storageAwsObjectAcl</a></code> | <code>java.lang.String</code> | Enables support for AWS access control lists (ACLs) to grant the bucket owner full control. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAwsConfig.property.storageBlockedLocations">storageBlockedLocations</a></code> | <code>java.util.List<java.lang.String></code> | Explicitly prohibits external stages that use the integration from referencing one or more storage locations. |
@@ -1384,7 +1384,7 @@ Specifies whether this storage integration is available for usage in stages.
 
 `TRUE` allows users to create new stages that reference this integration. Existing stages that reference this integration function normally. `FALSE` prevents users from creating new stages that reference this integration. Existing stages that reference this integration cannot access the storage location in the stage definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#enabled StorageIntegrationAws#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#enabled StorageIntegrationAws#enabled}
 
 ---
 
@@ -1398,7 +1398,7 @@ public java.lang.String getName();
 
 String that specifies the identifier (i.e. name) for the integration; must be unique in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#name StorageIntegrationAws#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#name StorageIntegrationAws#name}
 
 ---
 
@@ -1412,7 +1412,7 @@ public java.util.List<java.lang.String> getStorageAllowedLocations();
 
 Explicitly limits external stages that use the integration to reference one or more storage locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#storage_allowed_locations StorageIntegrationAws#storage_allowed_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#storage_allowed_locations StorageIntegrationAws#storage_allowed_locations}
 
 ---
 
@@ -1426,7 +1426,7 @@ public java.lang.String getStorageAwsRoleArn();
 
 Specifies the Amazon Resource Name (ARN) of the AWS identity and access management (IAM) role that grants privileges on the S3 bucket containing your data files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#storage_aws_role_arn StorageIntegrationAws#storage_aws_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#storage_aws_role_arn StorageIntegrationAws#storage_aws_role_arn}
 
 ---
 
@@ -1440,7 +1440,7 @@ public java.lang.String getStorageProvider();
 
 Specifies the storage provider for the integration. Valid options are: `S3` | `S3GOV` | `S3CHINA` | `GCS` | `AZURE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#storage_provider StorageIntegrationAws#storage_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#storage_provider StorageIntegrationAws#storage_provider}
 
 ---
 
@@ -1454,7 +1454,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the storage integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#comment StorageIntegrationAws#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#comment StorageIntegrationAws#comment}
 
 ---
 
@@ -1466,7 +1466,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#id StorageIntegrationAws#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#id StorageIntegrationAws#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1483,7 +1483,7 @@ public java.lang.String getStorageAwsExternalId();
 
 Optionally specifies an external ID that Snowflake uses to establish a trust relationship with AWS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#storage_aws_external_id StorageIntegrationAws#storage_aws_external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#storage_aws_external_id StorageIntegrationAws#storage_aws_external_id}
 
 ---
 
@@ -1499,7 +1499,7 @@ Enables support for AWS access control lists (ACLs) to grant the bucket owner fu
 
 `bucket-owner-full-control` is the only currently supported value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#storage_aws_object_acl StorageIntegrationAws#storage_aws_object_acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#storage_aws_object_acl StorageIntegrationAws#storage_aws_object_acl}
 
 ---
 
@@ -1513,7 +1513,7 @@ public java.util.List<java.lang.String> getStorageBlockedLocations();
 
 Explicitly prohibits external stages that use the integration from referencing one or more storage locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#storage_blocked_locations StorageIntegrationAws#storage_blocked_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#storage_blocked_locations StorageIntegrationAws#storage_blocked_locations}
 
 ---
 
@@ -1527,7 +1527,7 @@ public StorageIntegrationAwsTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#timeouts StorageIntegrationAws#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#timeouts StorageIntegrationAws#timeouts}
 
 ---
 
@@ -1543,7 +1543,7 @@ public java.lang.String getUsePrivatelinkEndpoint();
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#use_privatelink_endpoint StorageIntegrationAws#use_privatelink_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#use_privatelink_endpoint StorageIntegrationAws#use_privatelink_endpoint}
 
 ---
 
@@ -1590,10 +1590,10 @@ StorageIntegrationAwsTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAwsTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#create StorageIntegrationAws#create}. |
-| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAwsTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#delete StorageIntegrationAws#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAwsTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#read StorageIntegrationAws#read}. |
-| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAwsTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#update StorageIntegrationAws#update}. |
+| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAwsTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#create StorageIntegrationAws#create}. |
+| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAwsTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#delete StorageIntegrationAws#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAwsTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#read StorageIntegrationAws#read}. |
+| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAws.StorageIntegrationAwsTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#update StorageIntegrationAws#update}. |
 
 ---
 
@@ -1605,7 +1605,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#create StorageIntegrationAws#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#create StorageIntegrationAws#create}.
 
 ---
 
@@ -1617,7 +1617,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#delete StorageIntegrationAws#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#delete StorageIntegrationAws#delete}.
 
 ---
 
@@ -1629,7 +1629,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#read StorageIntegrationAws#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#read StorageIntegrationAws#read}.
 
 ---
 
@@ -1641,7 +1641,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_aws#update StorageIntegrationAws#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_aws#update StorageIntegrationAws#update}.
 
 ---
 

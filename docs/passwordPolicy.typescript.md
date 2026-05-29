@@ -4,7 +4,7 @@
 
 ### PasswordPolicy <a name="PasswordPolicy" id="@cdktn/provider-snowflake.passwordPolicy.PasswordPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy snowflake_password_policy}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy snowflake_password_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.passwordPolicy.PasswordPolicy.Initializer"></a>
 
@@ -614,7 +614,7 @@ The construct id used in the generated config for the PasswordPolicy to import.
 
 The id of the existing PasswordPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1286,7 +1286,7 @@ const passwordPolicyConfig: passwordPolicy.PasswordPolicyConfig = { ... }
 | <code><a href="#@cdktn/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.schema">schema</a></code> | <code>string</code> | The schema this password policy belongs to. |
 | <code><a href="#@cdktn/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.comment">comment</a></code> | <code>string</code> | Adds a comment or overwrites an existing comment for the password policy. |
 | <code><a href="#@cdktn/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.history">history</a></code> | <code>number</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of the most recent passwords that Snowflake stores. |
-| <code><a href="#@cdktn/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#id PasswordPolicy#id}. |
+| <code><a href="#@cdktn/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#id PasswordPolicy#id}. |
 | <code><a href="#@cdktn/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.ifNotExists">ifNotExists</a></code> | <code>boolean \| cdktn.IResolvable</code> | (Default: `false`) Prevent overwriting a previous password policy with the same name. |
 | <code><a href="#@cdktn/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.lockoutTimeMins">lockoutTimeMins</a></code> | <code>number</code> | Specifies the number of minutes the user account will be locked after exhausting the designated number of password retries (i.e. PASSWORD_MAX_RETRIES). |
 | <code><a href="#@cdktn/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.maxAgeDays">maxAgeDays</a></code> | <code>number</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the maximum number of days before the password must be changed. |
@@ -1385,7 +1385,7 @@ The database this password policy belongs to.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#database PasswordPolicy#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#database PasswordPolicy#database}
 
 ---
 
@@ -1401,7 +1401,7 @@ Identifier for the password policy;
 
 must be unique for your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#name PasswordPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#name PasswordPolicy#name}
 
 ---
 
@@ -1417,7 +1417,7 @@ The schema this password policy belongs to.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#schema PasswordPolicy#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#schema PasswordPolicy#schema}
 
 ---
 
@@ -1431,7 +1431,7 @@ public readonly comment: string;
 
 Adds a comment or overwrites an existing comment for the password policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#comment PasswordPolicy#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#comment PasswordPolicy#comment}
 
 ---
 
@@ -1447,7 +1447,7 @@ public readonly history: number;
 
 These stored passwords cannot be repeated when a user updates their password value. The current password value does not count towards the history. When you increase the history value, Snowflake saves the previous values. When you decrease the value, Snowflake saves the stored values up to that value that is set. For example, if the history value is 8 and you change the history value to 3, Snowflake stores the most recent 3 passwords and deletes the 5 older password values from the history.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#history PasswordPolicy#history}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#history PasswordPolicy#history}
 
 ---
 
@@ -1459,7 +1459,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#id PasswordPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#id PasswordPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1476,7 +1476,7 @@ public readonly ifNotExists: boolean | IResolvable;
 
 (Default: `false`) Prevent overwriting a previous password policy with the same name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#if_not_exists PasswordPolicy#if_not_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#if_not_exists PasswordPolicy#if_not_exists}
 
 ---
 
@@ -1490,7 +1490,7 @@ public readonly lockoutTimeMins: number;
 
 Specifies the number of minutes the user account will be locked after exhausting the designated number of password retries (i.e. PASSWORD_MAX_RETRIES).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#lockout_time_mins PasswordPolicy#lockout_time_mins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#lockout_time_mins PasswordPolicy#lockout_time_mins}
 
 ---
 
@@ -1506,7 +1506,7 @@ public readonly maxAgeDays: number;
 
 A value of zero (i.e. 0) indicates that the password does not need to be changed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#max_age_days PasswordPolicy#max_age_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#max_age_days PasswordPolicy#max_age_days}
 
 ---
 
@@ -1522,7 +1522,7 @@ Specifies the maximum number of characters the password must contain.
 
 This number must be greater than or equal to the sum of PASSWORD_MIN_LENGTH, PASSWORD_MIN_UPPER_CASE_CHARS, and PASSWORD_MIN_LOWER_CASE_CHARS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#max_length PasswordPolicy#max_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#max_length PasswordPolicy#max_length}
 
 ---
 
@@ -1536,7 +1536,7 @@ public readonly maxRetries: number;
 
 Specifies the maximum number of attempts to enter a password before being locked out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#max_retries PasswordPolicy#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#max_retries PasswordPolicy#max_retries}
 
 ---
 
@@ -1550,7 +1550,7 @@ public readonly minAgeDays: number;
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of days the user must wait before a recently changed password can be changed again.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#min_age_days PasswordPolicy#min_age_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#min_age_days PasswordPolicy#min_age_days}
 
 ---
 
@@ -1564,7 +1564,7 @@ public readonly minLength: number;
 
 Specifies the minimum number of characters the password must contain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#min_length PasswordPolicy#min_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#min_length PasswordPolicy#min_length}
 
 ---
 
@@ -1578,7 +1578,7 @@ public readonly minLowerCaseChars: number;
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the minimum number of lowercase characters the password must contain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#min_lower_case_chars PasswordPolicy#min_lower_case_chars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#min_lower_case_chars PasswordPolicy#min_lower_case_chars}
 
 ---
 
@@ -1592,7 +1592,7 @@ public readonly minNumericChars: number;
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the minimum number of numeric characters the password must contain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#min_numeric_chars PasswordPolicy#min_numeric_chars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#min_numeric_chars PasswordPolicy#min_numeric_chars}
 
 ---
 
@@ -1606,7 +1606,7 @@ public readonly minSpecialChars: number;
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the minimum number of special characters the password must contain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#min_special_chars PasswordPolicy#min_special_chars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#min_special_chars PasswordPolicy#min_special_chars}
 
 ---
 
@@ -1620,7 +1620,7 @@ public readonly minUpperCaseChars: number;
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the minimum number of uppercase characters the password must contain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#min_upper_case_chars PasswordPolicy#min_upper_case_chars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#min_upper_case_chars PasswordPolicy#min_upper_case_chars}
 
 ---
 
@@ -1634,7 +1634,7 @@ public readonly orReplace: boolean | IResolvable;
 
 (Default: `false`) Whether to override a previous password policy with the same name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#or_replace PasswordPolicy#or_replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#or_replace PasswordPolicy#or_replace}
 
 ---
 
@@ -1648,7 +1648,7 @@ public readonly timeouts: PasswordPolicyTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#timeouts PasswordPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#timeouts PasswordPolicy#timeouts}
 
 ---
 
@@ -1688,10 +1688,10 @@ const passwordPolicyTimeouts: passwordPolicy.PasswordPolicyTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.passwordPolicy.PasswordPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#create PasswordPolicy#create}. |
-| <code><a href="#@cdktn/provider-snowflake.passwordPolicy.PasswordPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#delete PasswordPolicy#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.passwordPolicy.PasswordPolicyTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#read PasswordPolicy#read}. |
-| <code><a href="#@cdktn/provider-snowflake.passwordPolicy.PasswordPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#update PasswordPolicy#update}. |
+| <code><a href="#@cdktn/provider-snowflake.passwordPolicy.PasswordPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#create PasswordPolicy#create}. |
+| <code><a href="#@cdktn/provider-snowflake.passwordPolicy.PasswordPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#delete PasswordPolicy#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.passwordPolicy.PasswordPolicyTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#read PasswordPolicy#read}. |
+| <code><a href="#@cdktn/provider-snowflake.passwordPolicy.PasswordPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#update PasswordPolicy#update}. |
 
 ---
 
@@ -1703,7 +1703,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#create PasswordPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#create PasswordPolicy#create}.
 
 ---
 
@@ -1715,7 +1715,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#delete PasswordPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#delete PasswordPolicy#delete}.
 
 ---
 
@@ -1727,7 +1727,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#read PasswordPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#read PasswordPolicy#read}.
 
 ---
 
@@ -1739,7 +1739,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/password_policy#update PasswordPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/password_policy#update PasswordPolicy#update}.
 
 ---
 
