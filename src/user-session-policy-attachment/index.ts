@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/user_session_policy_attachment
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/user_session_policy_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface UserSessionPolicyAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/user_session_policy_attachment#id UserSessionPolicyAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/user_session_policy_attachment#id UserSessionPolicyAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,37 +22,37 @@ export interface UserSessionPolicyAttachmentConfig extends cdktn.TerraformMetaAr
   /**
   * Fully qualified name of the session policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/user_session_policy_attachment#session_policy_name UserSessionPolicyAttachment#session_policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/user_session_policy_attachment#session_policy_name UserSessionPolicyAttachment#session_policy_name}
   */
   readonly sessionPolicyName: string;
   /**
   * User name of the user you want to attach the session policy to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/user_session_policy_attachment#user_name UserSessionPolicyAttachment#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/user_session_policy_attachment#user_name UserSessionPolicyAttachment#user_name}
   */
   readonly userName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/user_session_policy_attachment#timeouts UserSessionPolicyAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/user_session_policy_attachment#timeouts UserSessionPolicyAttachment#timeouts}
   */
   readonly timeouts?: UserSessionPolicyAttachmentTimeouts;
 }
 export interface UserSessionPolicyAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/user_session_policy_attachment#create UserSessionPolicyAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/user_session_policy_attachment#create UserSessionPolicyAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/user_session_policy_attachment#delete UserSessionPolicyAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/user_session_policy_attachment#delete UserSessionPolicyAttachment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/user_session_policy_attachment#read UserSessionPolicyAttachment#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/user_session_policy_attachment#read UserSessionPolicyAttachment#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/user_session_policy_attachment#update UserSessionPolicyAttachment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/user_session_policy_attachment#update UserSessionPolicyAttachment#update}
   */
   readonly update?: string;
 }
@@ -233,7 +233,7 @@ export class UserSessionPolicyAttachmentTimeoutsOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/user_session_policy_attachment snowflake_user_session_policy_attachment}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/user_session_policy_attachment snowflake_user_session_policy_attachment}
 */
 export class UserSessionPolicyAttachment extends cdktn.TerraformResource {
 
@@ -249,7 +249,7 @@ export class UserSessionPolicyAttachment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a UserSessionPolicyAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserSessionPolicyAttachment to import
-  * @param importFromId The id of the existing UserSessionPolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/user_session_policy_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserSessionPolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/user_session_policy_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserSessionPolicyAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -261,7 +261,7 @@ export class UserSessionPolicyAttachment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/user_session_policy_attachment snowflake_user_session_policy_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/user_session_policy_attachment snowflake_user_session_policy_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -272,7 +272,7 @@ export class UserSessionPolicyAttachment extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_user_session_policy_attachment',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.16.0',
+        providerVersion: '2.17.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

@@ -21,6 +21,7 @@ Object.defineProperty(exports, 'catalogIntegrationIcebergRest', { get: function 
 Object.defineProperty(exports, 'catalogIntegrationObjectStorage', { get: function () { return require('./catalog-integration-object-storage'); } });
 Object.defineProperty(exports, 'catalogIntegrationOpenCatalog', { get: function () { return require('./catalog-integration-open-catalog'); } });
 Object.defineProperty(exports, 'computePool', { get: function () { return require('./compute-pool'); } });
+Object.defineProperty(exports, 'cortexAgent', { get: function () { return require('./cortex-agent'); } });
 Object.defineProperty(exports, 'cortexSearchService', { get: function () { return require('./cortex-search-service'); } });
 Object.defineProperty(exports, 'currentAccount', { get: function () { return require('./current-account'); } });
 Object.defineProperty(exports, 'currentOrganizationAccount', { get: function () { return require('./current-organization-account'); } });
@@ -126,6 +127,7 @@ Object.defineProperty(exports, 'dataSnowflakeAuthenticationPolicies', { get: fun
 Object.defineProperty(exports, 'dataSnowflakeCatalogIntegrations', { get: function () { return require('./data-snowflake-catalog-integrations'); } });
 Object.defineProperty(exports, 'dataSnowflakeComputePools', { get: function () { return require('./data-snowflake-compute-pools'); } });
 Object.defineProperty(exports, 'dataSnowflakeConnections', { get: function () { return require('./data-snowflake-connections'); } });
+Object.defineProperty(exports, 'dataSnowflakeCortexAgents', { get: function () { return require('./data-snowflake-cortex-agents'); } });
 Object.defineProperty(exports, 'dataSnowflakeCortexSearchServices', { get: function () { return require('./data-snowflake-cortex-search-services'); } });
 Object.defineProperty(exports, 'dataSnowflakeCurrentAccount', { get: function () { return require('./data-snowflake-current-account'); } });
 Object.defineProperty(exports, 'dataSnowflakeCurrentRole', { get: function () { return require('./data-snowflake-current-role'); } });

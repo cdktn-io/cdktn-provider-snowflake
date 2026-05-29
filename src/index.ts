@@ -21,6 +21,7 @@ export * as catalogIntegrationIcebergRest from './catalog-integration-iceberg-re
 export * as catalogIntegrationObjectStorage from './catalog-integration-object-storage/index';
 export * as catalogIntegrationOpenCatalog from './catalog-integration-open-catalog/index';
 export * as computePool from './compute-pool/index';
+export * as cortexAgent from './cortex-agent/index';
 export * as cortexSearchService from './cortex-search-service/index';
 export * as currentAccount from './current-account/index';
 export * as currentOrganizationAccount from './current-organization-account/index';
@@ -126,6 +127,7 @@ export * as dataSnowflakeAuthenticationPolicies from './data-snowflake-authentic
 export * as dataSnowflakeCatalogIntegrations from './data-snowflake-catalog-integrations/index';
 export * as dataSnowflakeComputePools from './data-snowflake-compute-pools/index';
 export * as dataSnowflakeConnections from './data-snowflake-connections/index';
+export * as dataSnowflakeCortexAgents from './data-snowflake-cortex-agents/index';
 export * as dataSnowflakeCortexSearchServices from './data-snowflake-cortex-search-services/index';
 export * as dataSnowflakeCurrentAccount from './data-snowflake-current-account/index';
 export * as dataSnowflakeCurrentRole from './data-snowflake-current-role/index';

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/warehouse_adaptive
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface WarehouseAdaptiveConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies a comment for the adaptive warehouse.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/warehouse_adaptive#comment WarehouseAdaptive#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive#comment WarehouseAdaptive#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/warehouse_adaptive#id WarehouseAdaptive#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive#id WarehouseAdaptive#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +28,37 @@ export interface WarehouseAdaptiveConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies the maximum query performance level for the adaptive warehouse. Determines the initial compute capacity. Valid values are (case-insensitive): `XSMALL` | `SMALL` | `MEDIUM` | `LARGE` | `XLARGE` | `XXLARGE` | `XXXLARGE` | `X4LARGE`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/warehouse_adaptive#max_query_performance_level WarehouseAdaptive#max_query_performance_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive#max_query_performance_level WarehouseAdaptive#max_query_performance_level}
   */
   readonly maxQueryPerformanceLevel?: string;
   /**
   * Identifier for the adaptive warehouse; must be unique for your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/warehouse_adaptive#name WarehouseAdaptive#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive#name WarehouseAdaptive#name}
   */
   readonly name: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the query throughput multiplier for the adaptive warehouse.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/warehouse_adaptive#query_throughput_multiplier WarehouseAdaptive#query_throughput_multiplier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive#query_throughput_multiplier WarehouseAdaptive#query_throughput_multiplier}
   */
   readonly queryThroughputMultiplier?: number;
   /**
   * Object parameter that specifies the time, in seconds, a SQL statement (query, DDL, DML, etc.) can be queued on a warehouse before it is canceled by the system.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/warehouse_adaptive#statement_queued_timeout_in_seconds WarehouseAdaptive#statement_queued_timeout_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive#statement_queued_timeout_in_seconds WarehouseAdaptive#statement_queued_timeout_in_seconds}
   */
   readonly statementQueuedTimeoutInSeconds?: number;
   /**
   * Specifies the time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/warehouse_adaptive#statement_timeout_in_seconds WarehouseAdaptive#statement_timeout_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive#statement_timeout_in_seconds WarehouseAdaptive#statement_timeout_in_seconds}
   */
   readonly statementTimeoutInSeconds?: number;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/warehouse_adaptive#timeouts WarehouseAdaptive#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive#timeouts WarehouseAdaptive#timeouts}
   */
   readonly timeouts?: WarehouseAdaptiveTimeouts;
 }
@@ -511,19 +511,19 @@ export class WarehouseAdaptiveShowOutputList extends cdktn.ComplexList {
 }
 export interface WarehouseAdaptiveTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/warehouse_adaptive#create WarehouseAdaptive#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive#create WarehouseAdaptive#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/warehouse_adaptive#delete WarehouseAdaptive#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive#delete WarehouseAdaptive#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/warehouse_adaptive#read WarehouseAdaptive#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive#read WarehouseAdaptive#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/warehouse_adaptive#update WarehouseAdaptive#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive#update WarehouseAdaptive#update}
   */
   readonly update?: string;
 }
@@ -704,7 +704,7 @@ export class WarehouseAdaptiveTimeoutsOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/warehouse_adaptive snowflake_warehouse_adaptive}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive snowflake_warehouse_adaptive}
 */
 export class WarehouseAdaptive extends cdktn.TerraformResource {
 
@@ -720,7 +720,7 @@ export class WarehouseAdaptive extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a WarehouseAdaptive resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WarehouseAdaptive to import
-  * @param importFromId The id of the existing WarehouseAdaptive that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/warehouse_adaptive#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WarehouseAdaptive that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WarehouseAdaptive to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -732,7 +732,7 @@ export class WarehouseAdaptive extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/warehouse_adaptive snowflake_warehouse_adaptive} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/warehouse_adaptive snowflake_warehouse_adaptive} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -743,7 +743,7 @@ export class WarehouseAdaptive extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_warehouse_adaptive',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.16.0',
+        providerVersion: '2.17.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
