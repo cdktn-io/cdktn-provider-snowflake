@@ -4,7 +4,7 @@
 
 ### StorageIntegrationAzure <a name="StorageIntegrationAzure" id="@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzure"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure snowflake_storage_integration_azure}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure snowflake_storage_integration_azure}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzure.Initializer"></a>
 
@@ -47,7 +47,7 @@ StorageIntegrationAzure.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzure.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | String that specifies the identifier (i.e. name) for the integration; must be unique in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `\|`, `.`, `"`. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzure.Initializer.parameter.storageAllowedLocations">storageAllowedLocations</a></code> | <code>java.util.List<java.lang.String></code> | Explicitly limits external stages that use the integration to reference one or more storage locations. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzure.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the storage integration. |
-| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzure.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#id StorageIntegrationAzure#id}. |
+| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzure.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#id StorageIntegrationAzure#id}. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzure.Initializer.parameter.storageBlockedLocations">storageBlockedLocations</a></code> | <code>java.util.List<java.lang.String></code> | Explicitly prohibits external stages that use the integration from referencing one or more storage locations. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzure.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureTimeouts">StorageIntegrationAzureTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzure.Initializer.parameter.usePrivatelinkEndpoint">usePrivatelinkEndpoint</a></code> | <code>java.lang.String</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to use outbound private connectivity to harden the security posture. |
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Specifies the ID for your Office 365 tenant that the allowed and blocked storage accounts belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#azure_tenant_id StorageIntegrationAzure#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#azure_tenant_id StorageIntegrationAzure#azure_tenant_id}
 
 ---
 
@@ -132,7 +132,7 @@ Specifies whether this storage integration is available for usage in stages.
 
 `TRUE` allows users to create new stages that reference this integration. Existing stages that reference this integration function normally. `FALSE` prevents users from creating new stages that reference this integration. Existing stages that reference this integration cannot access the storage location in the stage definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#enabled StorageIntegrationAzure#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#enabled StorageIntegrationAzure#enabled}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 String that specifies the identifier (i.e. name) for the integration; must be unique in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#name StorageIntegrationAzure#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#name StorageIntegrationAzure#name}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Explicitly limits external stages that use the integration to reference one or more storage locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#storage_allowed_locations StorageIntegrationAzure#storage_allowed_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#storage_allowed_locations StorageIntegrationAzure#storage_allowed_locations}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the storage integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#comment StorageIntegrationAzure#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#comment StorageIntegrationAzure#comment}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#id StorageIntegrationAzure#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#id StorageIntegrationAzure#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -183,7 +183,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Explicitly prohibits external stages that use the integration from referencing one or more storage locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#storage_blocked_locations StorageIntegrationAzure#storage_blocked_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#storage_blocked_locations StorageIntegrationAzure#storage_blocked_locations}
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#timeouts StorageIntegrationAzure#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#timeouts StorageIntegrationAzure#timeouts}
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#use_privatelink_endpoint StorageIntegrationAzure#use_privatelink_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#use_privatelink_endpoint StorageIntegrationAzure#use_privatelink_endpoint}
 
 ---
 
@@ -702,7 +702,7 @@ The construct id used in the generated config for the StorageIntegrationAzure to
 
 The id of the existing StorageIntegrationAzure that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1171,7 +1171,7 @@ StorageIntegrationAzureConfig.builder()
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureConfig.property.name">name</a></code> | <code>java.lang.String</code> | String that specifies the identifier (i.e. name) for the integration; must be unique in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `\|`, `.`, `"`. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureConfig.property.storageAllowedLocations">storageAllowedLocations</a></code> | <code>java.util.List<java.lang.String></code> | Explicitly limits external stages that use the integration to reference one or more storage locations. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the storage integration. |
-| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#id StorageIntegrationAzure#id}. |
+| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#id StorageIntegrationAzure#id}. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureConfig.property.storageBlockedLocations">storageBlockedLocations</a></code> | <code>java.util.List<java.lang.String></code> | Explicitly prohibits external stages that use the integration from referencing one or more storage locations. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureTimeouts">StorageIntegrationAzureTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureConfig.property.usePrivatelinkEndpoint">usePrivatelinkEndpoint</a></code> | <code>java.lang.String</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to use outbound private connectivity to harden the security posture. |
@@ -1258,7 +1258,7 @@ public java.lang.String getAzureTenantId();
 
 Specifies the ID for your Office 365 tenant that the allowed and blocked storage accounts belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#azure_tenant_id StorageIntegrationAzure#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#azure_tenant_id StorageIntegrationAzure#azure_tenant_id}
 
 ---
 
@@ -1274,7 +1274,7 @@ Specifies whether this storage integration is available for usage in stages.
 
 `TRUE` allows users to create new stages that reference this integration. Existing stages that reference this integration function normally. `FALSE` prevents users from creating new stages that reference this integration. Existing stages that reference this integration cannot access the storage location in the stage definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#enabled StorageIntegrationAzure#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#enabled StorageIntegrationAzure#enabled}
 
 ---
 
@@ -1288,7 +1288,7 @@ public java.lang.String getName();
 
 String that specifies the identifier (i.e. name) for the integration; must be unique in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#name StorageIntegrationAzure#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#name StorageIntegrationAzure#name}
 
 ---
 
@@ -1302,7 +1302,7 @@ public java.util.List<java.lang.String> getStorageAllowedLocations();
 
 Explicitly limits external stages that use the integration to reference one or more storage locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#storage_allowed_locations StorageIntegrationAzure#storage_allowed_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#storage_allowed_locations StorageIntegrationAzure#storage_allowed_locations}
 
 ---
 
@@ -1316,7 +1316,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the storage integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#comment StorageIntegrationAzure#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#comment StorageIntegrationAzure#comment}
 
 ---
 
@@ -1328,7 +1328,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#id StorageIntegrationAzure#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#id StorageIntegrationAzure#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1345,7 +1345,7 @@ public java.util.List<java.lang.String> getStorageBlockedLocations();
 
 Explicitly prohibits external stages that use the integration from referencing one or more storage locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#storage_blocked_locations StorageIntegrationAzure#storage_blocked_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#storage_blocked_locations StorageIntegrationAzure#storage_blocked_locations}
 
 ---
 
@@ -1359,7 +1359,7 @@ public StorageIntegrationAzureTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#timeouts StorageIntegrationAzure#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#timeouts StorageIntegrationAzure#timeouts}
 
 ---
 
@@ -1375,7 +1375,7 @@ public java.lang.String getUsePrivatelinkEndpoint();
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#use_privatelink_endpoint StorageIntegrationAzure#use_privatelink_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#use_privatelink_endpoint StorageIntegrationAzure#use_privatelink_endpoint}
 
 ---
 
@@ -1422,10 +1422,10 @@ StorageIntegrationAzureTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#create StorageIntegrationAzure#create}. |
-| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#delete StorageIntegrationAzure#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#read StorageIntegrationAzure#read}. |
-| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#update StorageIntegrationAzure#update}. |
+| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#create StorageIntegrationAzure#create}. |
+| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#delete StorageIntegrationAzure#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#read StorageIntegrationAzure#read}. |
+| <code><a href="#@cdktn/provider-snowflake.storageIntegrationAzure.StorageIntegrationAzureTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#update StorageIntegrationAzure#update}. |
 
 ---
 
@@ -1437,7 +1437,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#create StorageIntegrationAzure#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#create StorageIntegrationAzure#create}.
 
 ---
 
@@ -1449,7 +1449,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#delete StorageIntegrationAzure#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#delete StorageIntegrationAzure#delete}.
 
 ---
 
@@ -1461,7 +1461,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#read StorageIntegrationAzure#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#read StorageIntegrationAzure#read}.
 
 ---
 
@@ -1473,7 +1473,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.16.0/docs/resources/storage_integration_azure#update StorageIntegrationAzure#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/storage_integration_azure#update StorageIntegrationAzure#update}.
 
 ---
 
