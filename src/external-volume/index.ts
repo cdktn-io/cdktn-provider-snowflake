@@ -56,7 +56,7 @@ export interface ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocatio
 export function externalVolumeDescribeOutputStorageLocationsAzureStorageLocationToTerraform(struct?: ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -66,7 +66,7 @@ export function externalVolumeDescribeOutputStorageLocationsAzureStorageLocation
 export function externalVolumeDescribeOutputStorageLocationsAzureStorageLocationToHclTerraform(struct?: ExternalVolumeDescribeOutputStorageLocationsAzureStorageLocation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -146,7 +146,7 @@ export interface ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation 
 export function externalVolumeDescribeOutputStorageLocationsGcsStorageLocationToTerraform(struct?: ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -156,7 +156,7 @@ export function externalVolumeDescribeOutputStorageLocationsGcsStorageLocationTo
 export function externalVolumeDescribeOutputStorageLocationsGcsStorageLocationToHclTerraform(struct?: ExternalVolumeDescribeOutputStorageLocationsGcsStorageLocation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -226,7 +226,7 @@ export interface ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLoca
 export function externalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationToTerraform(struct?: ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -236,7 +236,7 @@ export function externalVolumeDescribeOutputStorageLocationsS3CompatStorageLocat
 export function externalVolumeDescribeOutputStorageLocationsS3CompatStorageLocationToHclTerraform(struct?: ExternalVolumeDescribeOutputStorageLocationsS3CompatStorageLocation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -311,7 +311,7 @@ export interface ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation {
 export function externalVolumeDescribeOutputStorageLocationsS3StorageLocationToTerraform(struct?: ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -321,7 +321,7 @@ export function externalVolumeDescribeOutputStorageLocationsS3StorageLocationToT
 export function externalVolumeDescribeOutputStorageLocationsS3StorageLocationToHclTerraform(struct?: ExternalVolumeDescribeOutputStorageLocationsS3StorageLocation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -411,7 +411,7 @@ export interface ExternalVolumeDescribeOutputStorageLocations {
 export function externalVolumeDescribeOutputStorageLocationsToTerraform(struct?: ExternalVolumeDescribeOutputStorageLocations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -421,7 +421,7 @@ export function externalVolumeDescribeOutputStorageLocationsToTerraform(struct?:
 export function externalVolumeDescribeOutputStorageLocationsToHclTerraform(struct?: ExternalVolumeDescribeOutputStorageLocations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -530,7 +530,7 @@ export interface ExternalVolumeDescribeOutput {
 export function externalVolumeDescribeOutputToTerraform(struct?: ExternalVolumeDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -540,7 +540,7 @@ export function externalVolumeDescribeOutputToTerraform(struct?: ExternalVolumeD
 export function externalVolumeDescribeOutputToHclTerraform(struct?: ExternalVolumeDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -621,7 +621,7 @@ export interface ExternalVolumeShowOutput {
 export function externalVolumeShowOutputToTerraform(struct?: ExternalVolumeShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -631,7 +631,7 @@ export function externalVolumeShowOutputToTerraform(struct?: ExternalVolumeShowO
 export function externalVolumeShowOutputToHclTerraform(struct?: ExternalVolumeShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -784,7 +784,7 @@ export interface ExternalVolumeStorageLocation {
 export function externalVolumeStorageLocationToTerraform(struct?: ExternalVolumeStorageLocation | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     azure_tenant_id: cdktn.stringToTerraform(struct!.azureTenantId),
@@ -807,7 +807,7 @@ export function externalVolumeStorageLocationToTerraform(struct?: ExternalVolume
 export function externalVolumeStorageLocationToHclTerraform(struct?: ExternalVolumeStorageLocation | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     azure_tenant_id: {
@@ -1251,7 +1251,7 @@ export interface ExternalVolumeTimeouts {
 export function externalVolumeTimeoutsToTerraform(struct?: ExternalVolumeTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1265,7 +1265,7 @@ export function externalVolumeTimeoutsToTerraform(struct?: ExternalVolumeTimeout
 export function externalVolumeTimeoutsToHclTerraform(struct?: ExternalVolumeTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

@@ -86,7 +86,7 @@ export interface CatalogIntegrationIcebergRestDescribeOutputBearerRestAuthentica
 export function catalogIntegrationIcebergRestDescribeOutputBearerRestAuthenticationToTerraform(struct?: CatalogIntegrationIcebergRestDescribeOutputBearerRestAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -96,7 +96,7 @@ export function catalogIntegrationIcebergRestDescribeOutputBearerRestAuthenticat
 export function catalogIntegrationIcebergRestDescribeOutputBearerRestAuthenticationToHclTerraform(struct?: CatalogIntegrationIcebergRestDescribeOutputBearerRestAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -156,7 +156,7 @@ export interface CatalogIntegrationIcebergRestDescribeOutputOauthRestAuthenticat
 export function catalogIntegrationIcebergRestDescribeOutputOauthRestAuthenticationToTerraform(struct?: CatalogIntegrationIcebergRestDescribeOutputOauthRestAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -166,7 +166,7 @@ export function catalogIntegrationIcebergRestDescribeOutputOauthRestAuthenticati
 export function catalogIntegrationIcebergRestDescribeOutputOauthRestAuthenticationToHclTerraform(struct?: CatalogIntegrationIcebergRestDescribeOutputOauthRestAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -241,7 +241,7 @@ export interface CatalogIntegrationIcebergRestDescribeOutputRestConfig {
 export function catalogIntegrationIcebergRestDescribeOutputRestConfigToTerraform(struct?: CatalogIntegrationIcebergRestDescribeOutputRestConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -251,7 +251,7 @@ export function catalogIntegrationIcebergRestDescribeOutputRestConfigToTerraform
 export function catalogIntegrationIcebergRestDescribeOutputRestConfigToHclTerraform(struct?: CatalogIntegrationIcebergRestDescribeOutputRestConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -336,7 +336,7 @@ export interface CatalogIntegrationIcebergRestDescribeOutputSigv4RestAuthenticat
 export function catalogIntegrationIcebergRestDescribeOutputSigv4RestAuthenticationToTerraform(struct?: CatalogIntegrationIcebergRestDescribeOutputSigv4RestAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -346,7 +346,7 @@ export function catalogIntegrationIcebergRestDescribeOutputSigv4RestAuthenticati
 export function catalogIntegrationIcebergRestDescribeOutputSigv4RestAuthenticationToHclTerraform(struct?: CatalogIntegrationIcebergRestDescribeOutputSigv4RestAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -416,7 +416,7 @@ export interface CatalogIntegrationIcebergRestDescribeOutput {
 export function catalogIntegrationIcebergRestDescribeOutputToTerraform(struct?: CatalogIntegrationIcebergRestDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -426,7 +426,7 @@ export function catalogIntegrationIcebergRestDescribeOutputToTerraform(struct?: 
 export function catalogIntegrationIcebergRestDescribeOutputToHclTerraform(struct?: CatalogIntegrationIcebergRestDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -545,7 +545,7 @@ export interface CatalogIntegrationIcebergRestShowOutput {
 export function catalogIntegrationIcebergRestShowOutputToTerraform(struct?: CatalogIntegrationIcebergRestShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -555,7 +555,7 @@ export function catalogIntegrationIcebergRestShowOutputToTerraform(struct?: Cata
 export function catalogIntegrationIcebergRestShowOutputToHclTerraform(struct?: CatalogIntegrationIcebergRestShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -651,7 +651,7 @@ export interface CatalogIntegrationIcebergRestBearerRestAuthentication {
 export function catalogIntegrationIcebergRestBearerRestAuthenticationToTerraform(struct?: CatalogIntegrationIcebergRestBearerRestAuthenticationOutputReference | CatalogIntegrationIcebergRestBearerRestAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     bearer_token: cdktn.stringToTerraform(struct!.bearerToken),
@@ -662,7 +662,7 @@ export function catalogIntegrationIcebergRestBearerRestAuthenticationToTerraform
 export function catalogIntegrationIcebergRestBearerRestAuthenticationToHclTerraform(struct?: CatalogIntegrationIcebergRestBearerRestAuthenticationOutputReference | CatalogIntegrationIcebergRestBearerRestAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     bearer_token: {
@@ -752,7 +752,7 @@ export interface CatalogIntegrationIcebergRestOauthRestAuthentication {
 export function catalogIntegrationIcebergRestOauthRestAuthenticationToTerraform(struct?: CatalogIntegrationIcebergRestOauthRestAuthenticationOutputReference | CatalogIntegrationIcebergRestOauthRestAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     oauth_allowed_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.oauthAllowedScopes),
@@ -766,7 +766,7 @@ export function catalogIntegrationIcebergRestOauthRestAuthenticationToTerraform(
 export function catalogIntegrationIcebergRestOauthRestAuthenticationToHclTerraform(struct?: CatalogIntegrationIcebergRestOauthRestAuthenticationOutputReference | CatalogIntegrationIcebergRestOauthRestAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     oauth_allowed_scopes: {
@@ -940,7 +940,7 @@ export interface CatalogIntegrationIcebergRestRestConfig {
 export function catalogIntegrationIcebergRestRestConfigToTerraform(struct?: CatalogIntegrationIcebergRestRestConfigOutputReference | CatalogIntegrationIcebergRestRestConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     access_delegation_mode: cdktn.stringToTerraform(struct!.accessDelegationMode),
@@ -955,7 +955,7 @@ export function catalogIntegrationIcebergRestRestConfigToTerraform(struct?: Cata
 export function catalogIntegrationIcebergRestRestConfigToHclTerraform(struct?: CatalogIntegrationIcebergRestRestConfigOutputReference | CatalogIntegrationIcebergRestRestConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     access_delegation_mode: {
@@ -1151,7 +1151,7 @@ export interface CatalogIntegrationIcebergRestSigv4RestAuthentication {
 export function catalogIntegrationIcebergRestSigv4RestAuthenticationToTerraform(struct?: CatalogIntegrationIcebergRestSigv4RestAuthenticationOutputReference | CatalogIntegrationIcebergRestSigv4RestAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     sigv4_external_id: cdktn.stringToTerraform(struct!.sigv4ExternalId),
@@ -1164,7 +1164,7 @@ export function catalogIntegrationIcebergRestSigv4RestAuthenticationToTerraform(
 export function catalogIntegrationIcebergRestSigv4RestAuthenticationToHclTerraform(struct?: CatalogIntegrationIcebergRestSigv4RestAuthenticationOutputReference | CatalogIntegrationIcebergRestSigv4RestAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     sigv4_external_id: {
@@ -1302,7 +1302,7 @@ export interface CatalogIntegrationIcebergRestTimeouts {
 export function catalogIntegrationIcebergRestTimeoutsToTerraform(struct?: CatalogIntegrationIcebergRestTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1316,7 +1316,7 @@ export function catalogIntegrationIcebergRestTimeoutsToTerraform(struct?: Catalo
 export function catalogIntegrationIcebergRestTimeoutsToHclTerraform(struct?: CatalogIntegrationIcebergRestTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

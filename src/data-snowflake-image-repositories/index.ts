@@ -38,7 +38,7 @@ export interface DataSnowflakeImageRepositoriesImageRepositoriesShowOutput {
 export function dataSnowflakeImageRepositoriesImageRepositoriesShowOutputToTerraform(struct?: DataSnowflakeImageRepositoriesImageRepositoriesShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -48,7 +48,7 @@ export function dataSnowflakeImageRepositoriesImageRepositoriesShowOutputToTerra
 export function dataSnowflakeImageRepositoriesImageRepositoriesShowOutputToHclTerraform(struct?: DataSnowflakeImageRepositoriesImageRepositoriesShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -158,7 +158,7 @@ export interface DataSnowflakeImageRepositoriesImageRepositories {
 export function dataSnowflakeImageRepositoriesImageRepositoriesToTerraform(struct?: DataSnowflakeImageRepositoriesImageRepositories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -168,7 +168,7 @@ export function dataSnowflakeImageRepositoriesImageRepositoriesToTerraform(struc
 export function dataSnowflakeImageRepositoriesImageRepositoriesToHclTerraform(struct?: DataSnowflakeImageRepositoriesImageRepositories): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -252,7 +252,7 @@ export interface DataSnowflakeImageRepositoriesIn {
 export function dataSnowflakeImageRepositoriesInToTerraform(struct?: DataSnowflakeImageRepositoriesInOutputReference | DataSnowflakeImageRepositoriesIn): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account: cdktn.booleanToTerraform(struct!.account),
@@ -265,7 +265,7 @@ export function dataSnowflakeImageRepositoriesInToTerraform(struct?: DataSnowfla
 export function dataSnowflakeImageRepositoriesInToHclTerraform(struct?: DataSnowflakeImageRepositoriesInOutputReference | DataSnowflakeImageRepositoriesIn): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account: {

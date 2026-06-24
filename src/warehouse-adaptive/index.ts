@@ -68,7 +68,7 @@ export interface WarehouseAdaptiveParametersStatementQueuedTimeoutInSeconds {
 export function warehouseAdaptiveParametersStatementQueuedTimeoutInSecondsToTerraform(struct?: WarehouseAdaptiveParametersStatementQueuedTimeoutInSeconds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -78,7 +78,7 @@ export function warehouseAdaptiveParametersStatementQueuedTimeoutInSecondsToTerr
 export function warehouseAdaptiveParametersStatementQueuedTimeoutInSecondsToHclTerraform(struct?: WarehouseAdaptiveParametersStatementQueuedTimeoutInSeconds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -163,7 +163,7 @@ export interface WarehouseAdaptiveParametersStatementTimeoutInSeconds {
 export function warehouseAdaptiveParametersStatementTimeoutInSecondsToTerraform(struct?: WarehouseAdaptiveParametersStatementTimeoutInSeconds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -173,7 +173,7 @@ export function warehouseAdaptiveParametersStatementTimeoutInSecondsToTerraform(
 export function warehouseAdaptiveParametersStatementTimeoutInSecondsToHclTerraform(struct?: WarehouseAdaptiveParametersStatementTimeoutInSeconds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -258,7 +258,7 @@ export interface WarehouseAdaptiveParameters {
 export function warehouseAdaptiveParametersToTerraform(struct?: WarehouseAdaptiveParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -268,7 +268,7 @@ export function warehouseAdaptiveParametersToTerraform(struct?: WarehouseAdaptiv
 export function warehouseAdaptiveParametersToHclTerraform(struct?: WarehouseAdaptiveParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -340,7 +340,7 @@ export interface WarehouseAdaptiveShowOutput {
 export function warehouseAdaptiveShowOutputToTerraform(struct?: WarehouseAdaptiveShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -350,7 +350,7 @@ export function warehouseAdaptiveShowOutputToTerraform(struct?: WarehouseAdaptiv
 export function warehouseAdaptiveShowOutputToHclTerraform(struct?: WarehouseAdaptiveShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -531,7 +531,7 @@ export interface WarehouseAdaptiveTimeouts {
 export function warehouseAdaptiveTimeoutsToTerraform(struct?: WarehouseAdaptiveTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -545,7 +545,7 @@ export function warehouseAdaptiveTimeoutsToTerraform(struct?: WarehouseAdaptiveT
 export function warehouseAdaptiveTimeoutsToHclTerraform(struct?: WarehouseAdaptiveTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

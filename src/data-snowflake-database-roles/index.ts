@@ -44,7 +44,7 @@ export interface DataSnowflakeDatabaseRolesDatabaseRolesShowOutput {
 export function dataSnowflakeDatabaseRolesDatabaseRolesShowOutputToTerraform(struct?: DataSnowflakeDatabaseRolesDatabaseRolesShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -54,7 +54,7 @@ export function dataSnowflakeDatabaseRolesDatabaseRolesShowOutputToTerraform(str
 export function dataSnowflakeDatabaseRolesDatabaseRolesShowOutputToHclTerraform(struct?: DataSnowflakeDatabaseRolesDatabaseRolesShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -174,7 +174,7 @@ export interface DataSnowflakeDatabaseRolesDatabaseRoles {
 export function dataSnowflakeDatabaseRolesDatabaseRolesToTerraform(struct?: DataSnowflakeDatabaseRolesDatabaseRoles): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -184,7 +184,7 @@ export function dataSnowflakeDatabaseRolesDatabaseRolesToTerraform(struct?: Data
 export function dataSnowflakeDatabaseRolesDatabaseRolesToHclTerraform(struct?: DataSnowflakeDatabaseRolesDatabaseRoles): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -262,7 +262,7 @@ export interface DataSnowflakeDatabaseRolesLimit {
 export function dataSnowflakeDatabaseRolesLimitToTerraform(struct?: DataSnowflakeDatabaseRolesLimitOutputReference | DataSnowflakeDatabaseRolesLimit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     from: cdktn.stringToTerraform(struct!.from),
@@ -274,7 +274,7 @@ export function dataSnowflakeDatabaseRolesLimitToTerraform(struct?: DataSnowflak
 export function dataSnowflakeDatabaseRolesLimitToHclTerraform(struct?: DataSnowflakeDatabaseRolesLimitOutputReference | DataSnowflakeDatabaseRolesLimit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     from: {

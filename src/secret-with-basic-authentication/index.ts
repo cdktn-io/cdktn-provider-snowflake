@@ -68,7 +68,7 @@ export interface SecretWithBasicAuthenticationDescribeOutput {
 export function secretWithBasicAuthenticationDescribeOutputToTerraform(struct?: SecretWithBasicAuthenticationDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -78,7 +78,7 @@ export function secretWithBasicAuthenticationDescribeOutputToTerraform(struct?: 
 export function secretWithBasicAuthenticationDescribeOutputToHclTerraform(struct?: SecretWithBasicAuthenticationDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -198,7 +198,7 @@ export interface SecretWithBasicAuthenticationShowOutput {
 export function secretWithBasicAuthenticationShowOutputToTerraform(struct?: SecretWithBasicAuthenticationShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -208,7 +208,7 @@ export function secretWithBasicAuthenticationShowOutputToTerraform(struct?: Secr
 export function secretWithBasicAuthenticationShowOutputToHclTerraform(struct?: SecretWithBasicAuthenticationShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -329,7 +329,7 @@ export interface SecretWithBasicAuthenticationTimeouts {
 export function secretWithBasicAuthenticationTimeoutsToTerraform(struct?: SecretWithBasicAuthenticationTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -343,7 +343,7 @@ export function secretWithBasicAuthenticationTimeoutsToTerraform(struct?: Secret
 export function secretWithBasicAuthenticationTimeoutsToHclTerraform(struct?: SecretWithBasicAuthenticationTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

@@ -38,7 +38,7 @@ export interface DataSnowflakeNetworkPoliciesNetworkPoliciesDescribeOutput {
 export function dataSnowflakeNetworkPoliciesNetworkPoliciesDescribeOutputToTerraform(struct?: DataSnowflakeNetworkPoliciesNetworkPoliciesDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -48,7 +48,7 @@ export function dataSnowflakeNetworkPoliciesNetworkPoliciesDescribeOutputToTerra
 export function dataSnowflakeNetworkPoliciesNetworkPoliciesDescribeOutputToHclTerraform(struct?: DataSnowflakeNetworkPoliciesNetworkPoliciesDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -128,7 +128,7 @@ export interface DataSnowflakeNetworkPoliciesNetworkPoliciesShowOutput {
 export function dataSnowflakeNetworkPoliciesNetworkPoliciesShowOutputToTerraform(struct?: DataSnowflakeNetworkPoliciesNetworkPoliciesShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -138,7 +138,7 @@ export function dataSnowflakeNetworkPoliciesNetworkPoliciesShowOutputToTerraform
 export function dataSnowflakeNetworkPoliciesNetworkPoliciesShowOutputToHclTerraform(struct?: DataSnowflakeNetworkPoliciesNetworkPoliciesShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -233,7 +233,7 @@ export interface DataSnowflakeNetworkPoliciesNetworkPolicies {
 export function dataSnowflakeNetworkPoliciesNetworkPoliciesToTerraform(struct?: DataSnowflakeNetworkPoliciesNetworkPolicies): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -243,7 +243,7 @@ export function dataSnowflakeNetworkPoliciesNetworkPoliciesToTerraform(struct?: 
 export function dataSnowflakeNetworkPoliciesNetworkPoliciesToHclTerraform(struct?: DataSnowflakeNetworkPoliciesNetworkPolicies): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };

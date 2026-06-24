@@ -86,7 +86,7 @@ export interface SemanticViewShowOutput {
 export function semanticViewShowOutputToTerraform(struct?: SemanticViewShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -96,7 +96,7 @@ export function semanticViewShowOutputToTerraform(struct?: SemanticViewShowOutpu
 export function semanticViewShowOutputToHclTerraform(struct?: SemanticViewShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -220,7 +220,7 @@ export interface SemanticViewDimensions {
 export function semanticViewDimensionsToTerraform(struct?: SemanticViewDimensions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comment: cdktn.stringToTerraform(struct!.comment),
@@ -234,7 +234,7 @@ export function semanticViewDimensionsToTerraform(struct?: SemanticViewDimension
 export function semanticViewDimensionsToHclTerraform(struct?: SemanticViewDimensions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comment: {
@@ -443,7 +443,7 @@ export interface SemanticViewFacts {
 export function semanticViewFactsToTerraform(struct?: SemanticViewFacts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comment: cdktn.stringToTerraform(struct!.comment),
@@ -458,7 +458,7 @@ export function semanticViewFactsToTerraform(struct?: SemanticViewFacts | cdktn.
 export function semanticViewFactsToHclTerraform(struct?: SemanticViewFacts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comment: {
@@ -689,7 +689,7 @@ export interface SemanticViewMetricsSemanticExpression {
 export function semanticViewMetricsSemanticExpressionToTerraform(struct?: SemanticViewMetricsSemanticExpressionOutputReference | SemanticViewMetricsSemanticExpression): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comment: cdktn.stringToTerraform(struct!.comment),
@@ -703,7 +703,7 @@ export function semanticViewMetricsSemanticExpressionToTerraform(struct?: Semant
 export function semanticViewMetricsSemanticExpressionToHclTerraform(struct?: SemanticViewMetricsSemanticExpressionOutputReference | SemanticViewMetricsSemanticExpression): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comment: {
@@ -868,7 +868,7 @@ export interface SemanticViewMetricsWindowFunctionOverClause {
 export function semanticViewMetricsWindowFunctionOverClauseToTerraform(struct?: SemanticViewMetricsWindowFunctionOverClauseOutputReference | SemanticViewMetricsWindowFunctionOverClause): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     order_by: cdktn.stringToTerraform(struct!.orderBy),
@@ -881,7 +881,7 @@ export function semanticViewMetricsWindowFunctionOverClauseToTerraform(struct?: 
 export function semanticViewMetricsWindowFunctionOverClauseToHclTerraform(struct?: SemanticViewMetricsWindowFunctionOverClauseOutputReference | SemanticViewMetricsWindowFunctionOverClause): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     order_by: {
@@ -1024,7 +1024,7 @@ export interface SemanticViewMetricsWindowFunction {
 export function semanticViewMetricsWindowFunctionToTerraform(struct?: SemanticViewMetricsWindowFunctionOutputReference | SemanticViewMetricsWindowFunction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     qualified_expression_name: cdktn.stringToTerraform(struct!.qualifiedExpressionName),
@@ -1037,7 +1037,7 @@ export function semanticViewMetricsWindowFunctionToTerraform(struct?: SemanticVi
 export function semanticViewMetricsWindowFunctionToHclTerraform(struct?: SemanticViewMetricsWindowFunctionOutputReference | SemanticViewMetricsWindowFunction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     qualified_expression_name: {
@@ -1171,7 +1171,7 @@ export interface SemanticViewMetrics {
 export function semanticViewMetricsToTerraform(struct?: SemanticViewMetrics | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_private: cdktn.stringToTerraform(struct!.isPrivate),
@@ -1184,7 +1184,7 @@ export function semanticViewMetricsToTerraform(struct?: SemanticViewMetrics | cd
 export function semanticViewMetricsToHclTerraform(struct?: SemanticViewMetrics | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_private: {
@@ -1353,7 +1353,7 @@ export interface SemanticViewRelationshipsReferencedTableNameOrAlias {
 export function semanticViewRelationshipsReferencedTableNameOrAliasToTerraform(struct?: SemanticViewRelationshipsReferencedTableNameOrAliasOutputReference | SemanticViewRelationshipsReferencedTableNameOrAlias): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     table_alias: cdktn.stringToTerraform(struct!.tableAlias),
@@ -1365,7 +1365,7 @@ export function semanticViewRelationshipsReferencedTableNameOrAliasToTerraform(s
 export function semanticViewRelationshipsReferencedTableNameOrAliasToHclTerraform(struct?: SemanticViewRelationshipsReferencedTableNameOrAliasOutputReference | SemanticViewRelationshipsReferencedTableNameOrAlias): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     table_alias: {
@@ -1474,7 +1474,7 @@ export interface SemanticViewRelationshipsTableNameOrAlias {
 export function semanticViewRelationshipsTableNameOrAliasToTerraform(struct?: SemanticViewRelationshipsTableNameOrAliasOutputReference | SemanticViewRelationshipsTableNameOrAlias): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     table_alias: cdktn.stringToTerraform(struct!.tableAlias),
@@ -1486,7 +1486,7 @@ export function semanticViewRelationshipsTableNameOrAliasToTerraform(struct?: Se
 export function semanticViewRelationshipsTableNameOrAliasToHclTerraform(struct?: SemanticViewRelationshipsTableNameOrAliasOutputReference | SemanticViewRelationshipsTableNameOrAlias): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     table_alias: {
@@ -1613,7 +1613,7 @@ export interface SemanticViewRelationships {
 export function semanticViewRelationshipsToTerraform(struct?: SemanticViewRelationships | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     referenced_relationship_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.referencedRelationshipColumns),
@@ -1628,7 +1628,7 @@ export function semanticViewRelationshipsToTerraform(struct?: SemanticViewRelati
 export function semanticViewRelationshipsToHclTerraform(struct?: SemanticViewRelationships | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     referenced_relationship_columns: {
@@ -1838,7 +1838,7 @@ export interface SemanticViewTablesUnique {
 export function semanticViewTablesUniqueToTerraform(struct?: SemanticViewTablesUnique | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
@@ -1849,7 +1849,7 @@ export function semanticViewTablesUniqueToTerraform(struct?: SemanticViewTablesU
 export function semanticViewTablesUniqueToHclTerraform(struct?: SemanticViewTablesUnique | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     values: {
@@ -1983,7 +1983,7 @@ export interface SemanticViewTables {
 export function semanticViewTablesToTerraform(struct?: SemanticViewTables | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comment: cdktn.stringToTerraform(struct!.comment),
@@ -1999,7 +1999,7 @@ export function semanticViewTablesToTerraform(struct?: SemanticViewTables | cdkt
 export function semanticViewTablesToHclTerraform(struct?: SemanticViewTables | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comment: {
@@ -2250,7 +2250,7 @@ export interface SemanticViewTimeouts {
 export function semanticViewTimeoutsToTerraform(struct?: SemanticViewTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2264,7 +2264,7 @@ export function semanticViewTimeoutsToTerraform(struct?: SemanticViewTimeouts | 
 export function semanticViewTimeoutsToHclTerraform(struct?: SemanticViewTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

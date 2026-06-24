@@ -110,7 +110,7 @@ export interface GrantPrivilegesToAccountRoleOnAccountObject {
 export function grantPrivilegesToAccountRoleOnAccountObjectToTerraform(struct?: GrantPrivilegesToAccountRoleOnAccountObjectOutputReference | GrantPrivilegesToAccountRoleOnAccountObject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     object_name: cdktn.stringToTerraform(struct!.objectName),
@@ -122,7 +122,7 @@ export function grantPrivilegesToAccountRoleOnAccountObjectToTerraform(struct?: 
 export function grantPrivilegesToAccountRoleOnAccountObjectToHclTerraform(struct?: GrantPrivilegesToAccountRoleOnAccountObjectOutputReference | GrantPrivilegesToAccountRoleOnAccountObject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     object_name: {
@@ -231,7 +231,7 @@ export interface GrantPrivilegesToAccountRoleOnSchema {
 export function grantPrivilegesToAccountRoleOnSchemaToTerraform(struct?: GrantPrivilegesToAccountRoleOnSchemaOutputReference | GrantPrivilegesToAccountRoleOnSchema): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all_schemas_in_database: cdktn.stringToTerraform(struct!.allSchemasInDatabase),
@@ -244,7 +244,7 @@ export function grantPrivilegesToAccountRoleOnSchemaToTerraform(struct?: GrantPr
 export function grantPrivilegesToAccountRoleOnSchemaToHclTerraform(struct?: GrantPrivilegesToAccountRoleOnSchemaOutputReference | GrantPrivilegesToAccountRoleOnSchema): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all_schemas_in_database: {
@@ -383,7 +383,7 @@ export interface GrantPrivilegesToAccountRoleOnSchemaObjectAll {
 export function grantPrivilegesToAccountRoleOnSchemaObjectAllToTerraform(struct?: GrantPrivilegesToAccountRoleOnSchemaObjectAllOutputReference | GrantPrivilegesToAccountRoleOnSchemaObjectAll): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     in_database: cdktn.stringToTerraform(struct!.inDatabase),
@@ -396,7 +396,7 @@ export function grantPrivilegesToAccountRoleOnSchemaObjectAllToTerraform(struct?
 export function grantPrivilegesToAccountRoleOnSchemaObjectAllToHclTerraform(struct?: GrantPrivilegesToAccountRoleOnSchemaObjectAllOutputReference | GrantPrivilegesToAccountRoleOnSchemaObjectAll): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     in_database: {
@@ -532,7 +532,7 @@ export interface GrantPrivilegesToAccountRoleOnSchemaObjectFuture {
 export function grantPrivilegesToAccountRoleOnSchemaObjectFutureToTerraform(struct?: GrantPrivilegesToAccountRoleOnSchemaObjectFutureOutputReference | GrantPrivilegesToAccountRoleOnSchemaObjectFuture): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     in_database: cdktn.stringToTerraform(struct!.inDatabase),
@@ -545,7 +545,7 @@ export function grantPrivilegesToAccountRoleOnSchemaObjectFutureToTerraform(stru
 export function grantPrivilegesToAccountRoleOnSchemaObjectFutureToHclTerraform(struct?: GrantPrivilegesToAccountRoleOnSchemaObjectFutureOutputReference | GrantPrivilegesToAccountRoleOnSchemaObjectFuture): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     in_database: {
@@ -691,7 +691,7 @@ export interface GrantPrivilegesToAccountRoleOnSchemaObject {
 export function grantPrivilegesToAccountRoleOnSchemaObjectToTerraform(struct?: GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference | GrantPrivilegesToAccountRoleOnSchemaObject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     object_name: cdktn.stringToTerraform(struct!.objectName),
@@ -705,7 +705,7 @@ export function grantPrivilegesToAccountRoleOnSchemaObjectToTerraform(struct?: G
 export function grantPrivilegesToAccountRoleOnSchemaObjectToHclTerraform(struct?: GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference | GrantPrivilegesToAccountRoleOnSchemaObject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     object_name: {
@@ -874,7 +874,7 @@ export interface GrantPrivilegesToAccountRoleTimeouts {
 export function grantPrivilegesToAccountRoleTimeoutsToTerraform(struct?: GrantPrivilegesToAccountRoleTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -888,7 +888,7 @@ export function grantPrivilegesToAccountRoleTimeoutsToTerraform(struct?: GrantPr
 export function grantPrivilegesToAccountRoleTimeoutsToHclTerraform(struct?: GrantPrivilegesToAccountRoleTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

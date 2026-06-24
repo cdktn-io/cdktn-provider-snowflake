@@ -98,7 +98,7 @@ export interface AlertAlertScheduleCron {
 export function alertAlertScheduleCronToTerraform(struct?: AlertAlertScheduleCronOutputReference | AlertAlertScheduleCron): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     expression: cdktn.stringToTerraform(struct!.expression),
@@ -110,7 +110,7 @@ export function alertAlertScheduleCronToTerraform(struct?: AlertAlertScheduleCro
 export function alertAlertScheduleCronToHclTerraform(struct?: AlertAlertScheduleCronOutputReference | AlertAlertScheduleCron): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     expression: {
@@ -213,7 +213,7 @@ export interface AlertAlertSchedule {
 export function alertAlertScheduleToTerraform(struct?: AlertAlertScheduleOutputReference | AlertAlertSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     interval: cdktn.numberToTerraform(struct!.interval),
@@ -225,7 +225,7 @@ export function alertAlertScheduleToTerraform(struct?: AlertAlertScheduleOutputR
 export function alertAlertScheduleToHclTerraform(struct?: AlertAlertScheduleOutputReference | AlertAlertSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     interval: {
@@ -338,7 +338,7 @@ export interface AlertTimeouts {
 export function alertTimeoutsToTerraform(struct?: AlertTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -352,7 +352,7 @@ export function alertTimeoutsToTerraform(struct?: AlertTimeouts | cdktn.IResolva
 export function alertTimeoutsToHclTerraform(struct?: AlertTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

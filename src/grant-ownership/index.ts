@@ -74,7 +74,7 @@ export interface GrantOwnershipOnAll {
 export function grantOwnershipOnAllToTerraform(struct?: GrantOwnershipOnAllOutputReference | GrantOwnershipOnAll): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     in_database: cdktn.stringToTerraform(struct!.inDatabase),
@@ -87,7 +87,7 @@ export function grantOwnershipOnAllToTerraform(struct?: GrantOwnershipOnAllOutpu
 export function grantOwnershipOnAllToHclTerraform(struct?: GrantOwnershipOnAllOutputReference | GrantOwnershipOnAll): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     in_database: {
@@ -227,7 +227,7 @@ export interface GrantOwnershipOnFuture {
 export function grantOwnershipOnFutureToTerraform(struct?: GrantOwnershipOnFutureOutputReference | GrantOwnershipOnFuture): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     in_database: cdktn.stringToTerraform(struct!.inDatabase),
@@ -240,7 +240,7 @@ export function grantOwnershipOnFutureToTerraform(struct?: GrantOwnershipOnFutur
 export function grantOwnershipOnFutureToHclTerraform(struct?: GrantOwnershipOnFutureOutputReference | GrantOwnershipOnFuture): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     in_database: {
@@ -386,7 +386,7 @@ export interface GrantOwnershipOn {
 export function grantOwnershipOnToTerraform(struct?: GrantOwnershipOnOutputReference | GrantOwnershipOn): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     object_name: cdktn.stringToTerraform(struct!.objectName),
@@ -400,7 +400,7 @@ export function grantOwnershipOnToTerraform(struct?: GrantOwnershipOnOutputRefer
 export function grantOwnershipOnToHclTerraform(struct?: GrantOwnershipOnOutputReference | GrantOwnershipOn): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     object_name: {
@@ -569,7 +569,7 @@ export interface GrantOwnershipTimeouts {
 export function grantOwnershipTimeoutsToTerraform(struct?: GrantOwnershipTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -583,7 +583,7 @@ export function grantOwnershipTimeoutsToTerraform(struct?: GrantOwnershipTimeout
 export function grantOwnershipTimeoutsToHclTerraform(struct?: GrantOwnershipTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

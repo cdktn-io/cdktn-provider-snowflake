@@ -62,7 +62,7 @@ export interface CatalogIntegrationObjectStorageDescribeOutput {
 export function catalogIntegrationObjectStorageDescribeOutputToTerraform(struct?: CatalogIntegrationObjectStorageDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -72,7 +72,7 @@ export function catalogIntegrationObjectStorageDescribeOutputToTerraform(struct?
 export function catalogIntegrationObjectStorageDescribeOutputToHclTerraform(struct?: CatalogIntegrationObjectStorageDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -162,7 +162,7 @@ export interface CatalogIntegrationObjectStorageShowOutput {
 export function catalogIntegrationObjectStorageShowOutputToTerraform(struct?: CatalogIntegrationObjectStorageShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -172,7 +172,7 @@ export function catalogIntegrationObjectStorageShowOutputToTerraform(struct?: Ca
 export function catalogIntegrationObjectStorageShowOutputToHclTerraform(struct?: CatalogIntegrationObjectStorageShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -278,7 +278,7 @@ export interface CatalogIntegrationObjectStorageTimeouts {
 export function catalogIntegrationObjectStorageTimeoutsToTerraform(struct?: CatalogIntegrationObjectStorageTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -292,7 +292,7 @@ export function catalogIntegrationObjectStorageTimeoutsToTerraform(struct?: Cata
 export function catalogIntegrationObjectStorageTimeoutsToHclTerraform(struct?: CatalogIntegrationObjectStorageTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
