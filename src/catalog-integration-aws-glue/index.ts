@@ -80,7 +80,7 @@ export interface CatalogIntegrationAwsGlueDescribeOutput {
 export function catalogIntegrationAwsGlueDescribeOutputToTerraform(struct?: CatalogIntegrationAwsGlueDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -90,7 +90,7 @@ export function catalogIntegrationAwsGlueDescribeOutputToTerraform(struct?: Cata
 export function catalogIntegrationAwsGlueDescribeOutputToHclTerraform(struct?: CatalogIntegrationAwsGlueDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -210,7 +210,7 @@ export interface CatalogIntegrationAwsGlueShowOutput {
 export function catalogIntegrationAwsGlueShowOutputToTerraform(struct?: CatalogIntegrationAwsGlueShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -220,7 +220,7 @@ export function catalogIntegrationAwsGlueShowOutputToTerraform(struct?: CatalogI
 export function catalogIntegrationAwsGlueShowOutputToHclTerraform(struct?: CatalogIntegrationAwsGlueShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -326,7 +326,7 @@ export interface CatalogIntegrationAwsGlueTimeouts {
 export function catalogIntegrationAwsGlueTimeoutsToTerraform(struct?: CatalogIntegrationAwsGlueTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -340,7 +340,7 @@ export function catalogIntegrationAwsGlueTimeoutsToTerraform(struct?: CatalogInt
 export function catalogIntegrationAwsGlueTimeoutsToHclTerraform(struct?: CatalogIntegrationAwsGlueTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

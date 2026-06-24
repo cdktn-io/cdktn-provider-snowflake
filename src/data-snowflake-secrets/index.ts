@@ -44,7 +44,7 @@ export interface DataSnowflakeSecretsSecretsDescribeOutput {
 export function dataSnowflakeSecretsSecretsDescribeOutputToTerraform(struct?: DataSnowflakeSecretsSecretsDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -54,7 +54,7 @@ export function dataSnowflakeSecretsSecretsDescribeOutputToTerraform(struct?: Da
 export function dataSnowflakeSecretsSecretsDescribeOutputToHclTerraform(struct?: DataSnowflakeSecretsSecretsDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -174,7 +174,7 @@ export interface DataSnowflakeSecretsSecretsShowOutput {
 export function dataSnowflakeSecretsSecretsShowOutputToTerraform(struct?: DataSnowflakeSecretsSecretsShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -184,7 +184,7 @@ export function dataSnowflakeSecretsSecretsShowOutputToTerraform(struct?: DataSn
 export function dataSnowflakeSecretsSecretsShowOutputToHclTerraform(struct?: DataSnowflakeSecretsSecretsShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -289,7 +289,7 @@ export interface DataSnowflakeSecretsSecrets {
 export function dataSnowflakeSecretsSecretsToTerraform(struct?: DataSnowflakeSecretsSecrets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -299,7 +299,7 @@ export function dataSnowflakeSecretsSecretsToTerraform(struct?: DataSnowflakeSec
 export function dataSnowflakeSecretsSecretsToHclTerraform(struct?: DataSnowflakeSecretsSecrets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -401,7 +401,7 @@ export interface DataSnowflakeSecretsIn {
 export function dataSnowflakeSecretsInToTerraform(struct?: DataSnowflakeSecretsInOutputReference | DataSnowflakeSecretsIn): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account: cdktn.booleanToTerraform(struct!.account),
@@ -416,7 +416,7 @@ export function dataSnowflakeSecretsInToTerraform(struct?: DataSnowflakeSecretsI
 export function dataSnowflakeSecretsInToHclTerraform(struct?: DataSnowflakeSecretsInOutputReference | DataSnowflakeSecretsIn): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account: {

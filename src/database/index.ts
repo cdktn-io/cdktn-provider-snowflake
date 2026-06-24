@@ -170,7 +170,7 @@ export interface DatabaseReplicationEnableToAccount {
 export function databaseReplicationEnableToAccountToTerraform(struct?: DatabaseReplicationEnableToAccount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account_identifier: cdktn.stringToTerraform(struct!.accountIdentifier),
@@ -182,7 +182,7 @@ export function databaseReplicationEnableToAccountToTerraform(struct?: DatabaseR
 export function databaseReplicationEnableToAccountToHclTerraform(struct?: DatabaseReplicationEnableToAccount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account_identifier: {
@@ -320,7 +320,7 @@ export interface DatabaseReplication {
 export function databaseReplicationToTerraform(struct?: DatabaseReplicationOutputReference | DatabaseReplication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ignore_edition_check: cdktn.booleanToTerraform(struct!.ignoreEditionCheck),
@@ -332,7 +332,7 @@ export function databaseReplicationToTerraform(struct?: DatabaseReplicationOutpu
 export function databaseReplicationToHclTerraform(struct?: DatabaseReplicationOutputReference | DatabaseReplication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ignore_edition_check: {
@@ -442,7 +442,7 @@ export interface DatabaseTimeouts {
 export function databaseTimeoutsToTerraform(struct?: DatabaseTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -456,7 +456,7 @@ export function databaseTimeoutsToTerraform(struct?: DatabaseTimeouts | cdktn.IR
 export function databaseTimeoutsToHclTerraform(struct?: DatabaseTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

@@ -104,7 +104,7 @@ export interface FailoverGroupFromReplica {
 export function failoverGroupFromReplicaToTerraform(struct?: FailoverGroupFromReplicaOutputReference | FailoverGroupFromReplica): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -117,7 +117,7 @@ export function failoverGroupFromReplicaToTerraform(struct?: FailoverGroupFromRe
 export function failoverGroupFromReplicaToHclTerraform(struct?: FailoverGroupFromReplicaOutputReference | FailoverGroupFromReplica): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -245,7 +245,7 @@ export interface FailoverGroupReplicationScheduleCron {
 export function failoverGroupReplicationScheduleCronToTerraform(struct?: FailoverGroupReplicationScheduleCronOutputReference | FailoverGroupReplicationScheduleCron): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     expression: cdktn.stringToTerraform(struct!.expression),
@@ -257,7 +257,7 @@ export function failoverGroupReplicationScheduleCronToTerraform(struct?: Failove
 export function failoverGroupReplicationScheduleCronToHclTerraform(struct?: FailoverGroupReplicationScheduleCronOutputReference | FailoverGroupReplicationScheduleCron): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     expression: {
@@ -360,7 +360,7 @@ export interface FailoverGroupReplicationSchedule {
 export function failoverGroupReplicationScheduleToTerraform(struct?: FailoverGroupReplicationScheduleOutputReference | FailoverGroupReplicationSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     interval: cdktn.numberToTerraform(struct!.interval),
@@ -372,7 +372,7 @@ export function failoverGroupReplicationScheduleToTerraform(struct?: FailoverGro
 export function failoverGroupReplicationScheduleToHclTerraform(struct?: FailoverGroupReplicationScheduleOutputReference | FailoverGroupReplicationSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     interval: {
@@ -485,7 +485,7 @@ export interface FailoverGroupTimeouts {
 export function failoverGroupTimeoutsToTerraform(struct?: FailoverGroupTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -499,7 +499,7 @@ export function failoverGroupTimeoutsToTerraform(struct?: FailoverGroupTimeouts 
 export function failoverGroupTimeoutsToHclTerraform(struct?: FailoverGroupTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

@@ -104,7 +104,7 @@ export interface DynamicTableTargetLag {
 export function dynamicTableTargetLagToTerraform(struct?: DynamicTableTargetLagOutputReference | DynamicTableTargetLag): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     downstream: cdktn.booleanToTerraform(struct!.downstream),
@@ -116,7 +116,7 @@ export function dynamicTableTargetLagToTerraform(struct?: DynamicTableTargetLagO
 export function dynamicTableTargetLagToHclTerraform(struct?: DynamicTableTargetLagOutputReference | DynamicTableTargetLag): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     downstream: {
@@ -229,7 +229,7 @@ export interface DynamicTableTimeouts {
 export function dynamicTableTimeoutsToTerraform(struct?: DynamicTableTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -243,7 +243,7 @@ export function dynamicTableTimeoutsToTerraform(struct?: DynamicTableTimeouts | 
 export function dynamicTableTimeoutsToHclTerraform(struct?: DynamicTableTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

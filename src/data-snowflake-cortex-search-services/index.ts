@@ -50,7 +50,7 @@ export interface DataSnowflakeCortexSearchServicesCortexSearchServices {
 export function dataSnowflakeCortexSearchServicesCortexSearchServicesToTerraform(struct?: DataSnowflakeCortexSearchServicesCortexSearchServices): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -60,7 +60,7 @@ export function dataSnowflakeCortexSearchServicesCortexSearchServicesToTerraform
 export function dataSnowflakeCortexSearchServicesCortexSearchServicesToHclTerraform(struct?: DataSnowflakeCortexSearchServicesCortexSearchServices): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -163,7 +163,7 @@ export interface DataSnowflakeCortexSearchServicesIn {
 export function dataSnowflakeCortexSearchServicesInToTerraform(struct?: DataSnowflakeCortexSearchServicesInOutputReference | DataSnowflakeCortexSearchServicesIn): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account: cdktn.booleanToTerraform(struct!.account),
@@ -176,7 +176,7 @@ export function dataSnowflakeCortexSearchServicesInToTerraform(struct?: DataSnow
 export function dataSnowflakeCortexSearchServicesInToHclTerraform(struct?: DataSnowflakeCortexSearchServicesInOutputReference | DataSnowflakeCortexSearchServicesIn): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account: {
@@ -313,7 +313,7 @@ export interface DataSnowflakeCortexSearchServicesLimit {
 export function dataSnowflakeCortexSearchServicesLimitToTerraform(struct?: DataSnowflakeCortexSearchServicesLimitOutputReference | DataSnowflakeCortexSearchServicesLimit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     from: cdktn.stringToTerraform(struct!.from),
@@ -325,7 +325,7 @@ export function dataSnowflakeCortexSearchServicesLimitToTerraform(struct?: DataS
 export function dataSnowflakeCortexSearchServicesLimitToHclTerraform(struct?: DataSnowflakeCortexSearchServicesLimitOutputReference | DataSnowflakeCortexSearchServicesLimit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     from: {

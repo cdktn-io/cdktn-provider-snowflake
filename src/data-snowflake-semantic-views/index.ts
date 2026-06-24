@@ -50,7 +50,7 @@ export interface DataSnowflakeSemanticViewsSemanticViewsShowOutput {
 export function dataSnowflakeSemanticViewsSemanticViewsShowOutputToTerraform(struct?: DataSnowflakeSemanticViewsSemanticViewsShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -60,7 +60,7 @@ export function dataSnowflakeSemanticViewsSemanticViewsShowOutputToTerraform(str
 export function dataSnowflakeSemanticViewsSemanticViewsShowOutputToHclTerraform(struct?: DataSnowflakeSemanticViewsSemanticViewsShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -160,7 +160,7 @@ export interface DataSnowflakeSemanticViewsSemanticViews {
 export function dataSnowflakeSemanticViewsSemanticViewsToTerraform(struct?: DataSnowflakeSemanticViewsSemanticViews): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -170,7 +170,7 @@ export function dataSnowflakeSemanticViewsSemanticViewsToTerraform(struct?: Data
 export function dataSnowflakeSemanticViewsSemanticViewsToHclTerraform(struct?: DataSnowflakeSemanticViewsSemanticViews): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -254,7 +254,7 @@ export interface DataSnowflakeSemanticViewsIn {
 export function dataSnowflakeSemanticViewsInToTerraform(struct?: DataSnowflakeSemanticViewsInOutputReference | DataSnowflakeSemanticViewsIn): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account: cdktn.booleanToTerraform(struct!.account),
@@ -267,7 +267,7 @@ export function dataSnowflakeSemanticViewsInToTerraform(struct?: DataSnowflakeSe
 export function dataSnowflakeSemanticViewsInToHclTerraform(struct?: DataSnowflakeSemanticViewsInOutputReference | DataSnowflakeSemanticViewsIn): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account: {
@@ -404,7 +404,7 @@ export interface DataSnowflakeSemanticViewsLimit {
 export function dataSnowflakeSemanticViewsLimitToTerraform(struct?: DataSnowflakeSemanticViewsLimitOutputReference | DataSnowflakeSemanticViewsLimit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     from: cdktn.stringToTerraform(struct!.from),
@@ -416,7 +416,7 @@ export function dataSnowflakeSemanticViewsLimitToTerraform(struct?: DataSnowflak
 export function dataSnowflakeSemanticViewsLimitToHclTerraform(struct?: DataSnowflakeSemanticViewsLimitOutputReference | DataSnowflakeSemanticViewsLimit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     from: {

@@ -116,7 +116,7 @@ export interface TableConstraintForeignKeyPropertiesReferences {
 export function tableConstraintForeignKeyPropertiesReferencesToTerraform(struct?: TableConstraintForeignKeyPropertiesReferencesOutputReference | TableConstraintForeignKeyPropertiesReferences): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.columns),
@@ -128,7 +128,7 @@ export function tableConstraintForeignKeyPropertiesReferencesToTerraform(struct?
 export function tableConstraintForeignKeyPropertiesReferencesToHclTerraform(struct?: TableConstraintForeignKeyPropertiesReferencesOutputReference | TableConstraintForeignKeyPropertiesReferences): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     columns: {
@@ -243,7 +243,7 @@ export interface TableConstraintForeignKeyProperties {
 export function tableConstraintForeignKeyPropertiesToTerraform(struct?: TableConstraintForeignKeyPropertiesOutputReference | TableConstraintForeignKeyProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     match: cdktn.stringToTerraform(struct!.match),
@@ -257,7 +257,7 @@ export function tableConstraintForeignKeyPropertiesToTerraform(struct?: TableCon
 export function tableConstraintForeignKeyPropertiesToHclTerraform(struct?: TableConstraintForeignKeyPropertiesOutputReference | TableConstraintForeignKeyProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     match: {
@@ -423,7 +423,7 @@ export interface TableConstraintTimeouts {
 export function tableConstraintTimeoutsToTerraform(struct?: TableConstraintTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -437,7 +437,7 @@ export function tableConstraintTimeoutsToTerraform(struct?: TableConstraintTimeo
 export function tableConstraintTimeoutsToHclTerraform(struct?: TableConstraintTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

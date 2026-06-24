@@ -74,7 +74,7 @@ export interface SecretWithAuthorizationCodeGrantDescribeOutput {
 export function secretWithAuthorizationCodeGrantDescribeOutputToTerraform(struct?: SecretWithAuthorizationCodeGrantDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -84,7 +84,7 @@ export function secretWithAuthorizationCodeGrantDescribeOutputToTerraform(struct
 export function secretWithAuthorizationCodeGrantDescribeOutputToHclTerraform(struct?: SecretWithAuthorizationCodeGrantDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -204,7 +204,7 @@ export interface SecretWithAuthorizationCodeGrantShowOutput {
 export function secretWithAuthorizationCodeGrantShowOutputToTerraform(struct?: SecretWithAuthorizationCodeGrantShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -214,7 +214,7 @@ export function secretWithAuthorizationCodeGrantShowOutputToTerraform(struct?: S
 export function secretWithAuthorizationCodeGrantShowOutputToHclTerraform(struct?: SecretWithAuthorizationCodeGrantShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -335,7 +335,7 @@ export interface SecretWithAuthorizationCodeGrantTimeouts {
 export function secretWithAuthorizationCodeGrantTimeoutsToTerraform(struct?: SecretWithAuthorizationCodeGrantTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -349,7 +349,7 @@ export function secretWithAuthorizationCodeGrantTimeoutsToTerraform(struct?: Sec
 export function secretWithAuthorizationCodeGrantTimeoutsToHclTerraform(struct?: SecretWithAuthorizationCodeGrantTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

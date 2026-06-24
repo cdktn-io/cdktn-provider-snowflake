@@ -92,7 +92,7 @@ export interface ApiAuthenticationIntegrationWithClientCredentialsDescribeOutput
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputAuthTypeToTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputAuthType): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -102,7 +102,7 @@ export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputA
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputAuthTypeToHclTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputAuthType): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -182,7 +182,7 @@ export interface ApiAuthenticationIntegrationWithClientCredentialsDescribeOutput
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputCommentToTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputComment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -192,7 +192,7 @@ export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputC
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputCommentToHclTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputComment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -272,7 +272,7 @@ export interface ApiAuthenticationIntegrationWithClientCredentialsDescribeOutput
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputEnabledToTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputEnabled): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -282,7 +282,7 @@ export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputE
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputEnabledToHclTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputEnabled): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -362,7 +362,7 @@ export interface ApiAuthenticationIntegrationWithClientCredentialsDescribeOutput
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAccessTokenValidityToTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAccessTokenValidity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -372,7 +372,7 @@ export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputO
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAccessTokenValidityToHclTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAccessTokenValidity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -452,7 +452,7 @@ export interface ApiAuthenticationIntegrationWithClientCredentialsDescribeOutput
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAllowedScopesToTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAllowedScopes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -462,7 +462,7 @@ export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputO
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAllowedScopesToHclTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAllowedScopes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -542,7 +542,7 @@ export interface ApiAuthenticationIntegrationWithClientCredentialsDescribeOutput
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAuthorizationEndpointToTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAuthorizationEndpoint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -552,7 +552,7 @@ export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputO
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAuthorizationEndpointToHclTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAuthorizationEndpoint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -632,7 +632,7 @@ export interface ApiAuthenticationIntegrationWithClientCredentialsDescribeOutput
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientAuthMethodToTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientAuthMethod): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -642,7 +642,7 @@ export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputO
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientAuthMethodToHclTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientAuthMethod): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -722,7 +722,7 @@ export interface ApiAuthenticationIntegrationWithClientCredentialsDescribeOutput
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthGrantToTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthGrant): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -732,7 +732,7 @@ export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputO
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthGrantToHclTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthGrant): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -812,7 +812,7 @@ export interface ApiAuthenticationIntegrationWithClientCredentialsDescribeOutput
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthRefreshTokenValidityToTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthRefreshTokenValidity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -822,7 +822,7 @@ export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputO
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthRefreshTokenValidityToHclTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthRefreshTokenValidity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -902,7 +902,7 @@ export interface ApiAuthenticationIntegrationWithClientCredentialsDescribeOutput
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthTokenEndpointToTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthTokenEndpoint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -912,7 +912,7 @@ export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputO
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthTokenEndpointToHclTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthTokenEndpoint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -992,7 +992,7 @@ export interface ApiAuthenticationIntegrationWithClientCredentialsDescribeOutput
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputParentIntegrationToTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputParentIntegration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1002,7 +1002,7 @@ export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputP
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputParentIntegrationToHclTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputParentIntegration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1082,7 +1082,7 @@ export interface ApiAuthenticationIntegrationWithClientCredentialsDescribeOutput
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputToTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1092,7 +1092,7 @@ export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputT
 export function apiAuthenticationIntegrationWithClientCredentialsDescribeOutputToHclTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsDescribeOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1218,7 +1218,7 @@ export interface ApiAuthenticationIntegrationWithClientCredentialsShowOutput {
 export function apiAuthenticationIntegrationWithClientCredentialsShowOutputToTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1228,7 +1228,7 @@ export function apiAuthenticationIntegrationWithClientCredentialsShowOutputToTer
 export function apiAuthenticationIntegrationWithClientCredentialsShowOutputToHclTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1334,7 +1334,7 @@ export interface ApiAuthenticationIntegrationWithClientCredentialsTimeouts {
 export function apiAuthenticationIntegrationWithClientCredentialsTimeoutsToTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1348,7 +1348,7 @@ export function apiAuthenticationIntegrationWithClientCredentialsTimeoutsToTerra
 export function apiAuthenticationIntegrationWithClientCredentialsTimeoutsToHclTerraform(struct?: ApiAuthenticationIntegrationWithClientCredentialsTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {

@@ -457,7 +457,7 @@ export interface SnowflakeProviderTokenAccessor {
 export function snowflakeProviderTokenAccessorToTerraform(struct?: SnowflakeProviderTokenAccessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -472,7 +472,7 @@ export function snowflakeProviderTokenAccessorToTerraform(struct?: SnowflakeProv
 export function snowflakeProviderTokenAccessorToHclTerraform(struct?: SnowflakeProviderTokenAccessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
