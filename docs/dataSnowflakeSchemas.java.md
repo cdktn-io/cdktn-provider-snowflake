@@ -4,7 +4,7 @@
 
 ### DataSnowflakeSchemas <a name="DataSnowflakeSchemas" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemas"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas snowflake_schemas}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas snowflake_schemas}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemas.Initializer"></a>
 
@@ -40,7 +40,7 @@ DataSnowflakeSchemas.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemas.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemas.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemas.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemas.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#id DataSnowflakeSchemas#id}. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemas.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#id DataSnowflakeSchemas#id}. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemas.Initializer.parameter.in">in</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasIn">DataSnowflakeSchemasIn</a></code> | in block. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemas.Initializer.parameter.like">like</a></code> | <code>java.lang.String</code> | Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`). |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemas.Initializer.parameter.limit">limit</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasLimit">DataSnowflakeSchemasLimit</a></code> | limit block. |
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#id DataSnowflakeSchemas#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#id DataSnowflakeSchemas#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -127,7 +127,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 in block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#in DataSnowflakeSchemas#in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#in DataSnowflakeSchemas#in}
 
 ---
 
@@ -137,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#like DataSnowflakeSchemas#like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#like DataSnowflakeSchemas#like}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#limit DataSnowflakeSchemas#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#limit DataSnowflakeSchemas#limit}
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Filters the output with **case-sensitive** characters indicating the beginning of the object name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#starts_with DataSnowflakeSchemas#starts_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#starts_with DataSnowflakeSchemas#starts_with}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The output of describe is saved to the description field. By default this value is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#with_describe DataSnowflakeSchemas#with_describe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#with_describe DataSnowflakeSchemas#with_describe}
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The output of describe is saved to the parameters field as a map. By default this value is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#with_parameters DataSnowflakeSchemas#with_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#with_parameters DataSnowflakeSchemas#with_parameters}
 
 ---
 
@@ -601,7 +601,7 @@ The construct id used in the generated config for the DataSnowflakeSchemas to im
 
 The id of the existing DataSnowflakeSchemas that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -975,7 +975,7 @@ DataSnowflakeSchemasConfig.builder()
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#id DataSnowflakeSchemas#id}. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#id DataSnowflakeSchemas#id}. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasConfig.property.in">in</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasIn">DataSnowflakeSchemasIn</a></code> | in block. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasConfig.property.like">like</a></code> | <code>java.lang.String</code> | Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`). |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasConfig.property.limit">limit</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasLimit">DataSnowflakeSchemasLimit</a></code> | limit block. |
@@ -1063,7 +1063,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#id DataSnowflakeSchemas#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#id DataSnowflakeSchemas#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1080,7 +1080,7 @@ public DataSnowflakeSchemasIn getIn();
 
 in block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#in DataSnowflakeSchemas#in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#in DataSnowflakeSchemas#in}
 
 ---
 
@@ -1094,7 +1094,7 @@ public java.lang.String getLike();
 
 Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#like DataSnowflakeSchemas#like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#like DataSnowflakeSchemas#like}
 
 ---
 
@@ -1108,7 +1108,7 @@ public DataSnowflakeSchemasLimit getLimit();
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#limit DataSnowflakeSchemas#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#limit DataSnowflakeSchemas#limit}
 
 ---
 
@@ -1122,7 +1122,7 @@ public java.lang.String getStartsWith();
 
 Filters the output with **case-sensitive** characters indicating the beginning of the object name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#starts_with DataSnowflakeSchemas#starts_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#starts_with DataSnowflakeSchemas#starts_with}
 
 ---
 
@@ -1138,7 +1138,7 @@ public java.lang.Boolean|IResolvable getWithDescribe();
 
 The output of describe is saved to the description field. By default this value is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#with_describe DataSnowflakeSchemas#with_describe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#with_describe DataSnowflakeSchemas#with_describe}
 
 ---
 
@@ -1154,7 +1154,7 @@ public java.lang.Boolean|IResolvable getWithParameters();
 
 The output of describe is saved to the parameters field as a map. By default this value is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#with_parameters DataSnowflakeSchemas#with_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#with_parameters DataSnowflakeSchemas#with_parameters}
 
 ---
 
@@ -1194,7 +1194,7 @@ public java.lang.Boolean|IResolvable getAccount();
 
 Returns records for the entire account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#account DataSnowflakeSchemas#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#account DataSnowflakeSchemas#account}
 
 ---
 
@@ -1208,7 +1208,7 @@ public java.lang.String getApplication();
 
 Returns records for the specified application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#application DataSnowflakeSchemas#application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#application DataSnowflakeSchemas#application}
 
 ---
 
@@ -1222,7 +1222,7 @@ public java.lang.String getApplicationPackage();
 
 Returns records for the specified application package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#application_package DataSnowflakeSchemas#application_package}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#application_package DataSnowflakeSchemas#application_package}
 
 ---
 
@@ -1236,7 +1236,7 @@ public java.lang.String getDatabase();
 
 Returns records for the current database in use or for a specified database (db_name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#database DataSnowflakeSchemas#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#database DataSnowflakeSchemas#database}
 
 ---
 
@@ -1272,7 +1272,7 @@ public java.lang.Number getRows();
 
 The maximum number of rows to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#rows DataSnowflakeSchemas#rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#rows DataSnowflakeSchemas#rows}
 
 ---
 
@@ -1288,7 +1288,7 @@ Specifies a **case-sensitive** pattern that is used to match object name.
 
 After the first match, the limit on the number of rows will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/data-sources/schemas#from DataSnowflakeSchemas#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/schemas#from DataSnowflakeSchemas#from}
 
 ---
 
@@ -1384,6 +1384,18 @@ DataSnowflakeSchemasSchemasParametersEnableConsoleOutput.builder()
 import io.cdktn.providers.snowflake.data_snowflake_schemas.DataSnowflakeSchemasSchemasParametersExternalVolume;
 
 DataSnowflakeSchemasSchemasParametersExternalVolume.builder()
+    .build();
+```
+
+
+### DataSnowflakeSchemasSchemasParametersLogEventLevel <a name="DataSnowflakeSchemasSchemasParametersLogEventLevel" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevel"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevel.Initializer"></a>
+
+```java
+import io.cdktn.providers.snowflake.data_snowflake_schemas.DataSnowflakeSchemasSchemasParametersLogEventLevel;
+
+DataSnowflakeSchemasSchemasParametersLogEventLevel.builder()
     .build();
 ```
 
@@ -5613,6 +5625,477 @@ public java.lang.String getFqn();
 ---
 
 
+### DataSnowflakeSchemasSchemasParametersLogEventLevelList <a name="DataSnowflakeSchemasSchemasParametersLogEventLevelList" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.Initializer"></a>
+
+```java
+import io.cdktn.providers.snowflake.data_snowflake_schemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList;
+
+new DataSnowflakeSchemasSchemasParametersLogEventLevelList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.get"></a>
+
+```java
+public DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+
+### DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference <a name="DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.snowflake.data_snowflake_schemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference;
+
+new DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.property.default">default</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.property.level">level</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevel">DataSnowflakeSchemasSchemasParametersLogEventLevel</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `default`<sup>Required</sup> <a name="default" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.property.default"></a>
+
+```java
+public java.lang.String getDefault();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.property.description"></a>
+
+```java
+public java.lang.String getDescription();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.property.key"></a>
+
+```java
+public java.lang.String getKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `level`<sup>Required</sup> <a name="level" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.property.level"></a>
+
+```java
+public java.lang.String getLevel();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.property.value"></a>
+
+```java
+public java.lang.String getValue();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelOutputReference.property.internalValue"></a>
+
+```java
+public DataSnowflakeSchemasSchemasParametersLogEventLevel getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevel">DataSnowflakeSchemasSchemasParametersLogEventLevel</a>
+
+---
+
+
 ### DataSnowflakeSchemasSchemasParametersLogLevelList <a name="DataSnowflakeSchemasSchemasParametersLogLevelList" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogLevelList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogLevelList.Initializer"></a>
@@ -6788,6 +7271,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersOutputReference.property.defaultDdlCollation">defaultDdlCollation</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersDefaultDdlCollationList">DataSnowflakeSchemasSchemasParametersDefaultDdlCollationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersOutputReference.property.enableConsoleOutput">enableConsoleOutput</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersEnableConsoleOutputList">DataSnowflakeSchemasSchemasParametersEnableConsoleOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersOutputReference.property.externalVolume">externalVolume</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersExternalVolumeList">DataSnowflakeSchemasSchemasParametersExternalVolumeList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersOutputReference.property.logEventLevel">logEventLevel</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList">DataSnowflakeSchemasSchemasParametersLogEventLevelList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersOutputReference.property.logLevel">logLevel</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogLevelList">DataSnowflakeSchemasSchemasParametersLogLevelList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersOutputReference.property.maxDataExtensionTimeInDays">maxDataExtensionTimeInDays</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersMaxDataExtensionTimeInDaysList">DataSnowflakeSchemasSchemasParametersMaxDataExtensionTimeInDaysList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersOutputReference.property.pipeExecutionPaused">pipeExecutionPaused</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersPipeExecutionPausedList">DataSnowflakeSchemasSchemasParametersPipeExecutionPausedList</a></code> | *No description.* |
@@ -6875,6 +7359,16 @@ public DataSnowflakeSchemasSchemasParametersExternalVolumeList getExternalVolume
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersExternalVolumeList">DataSnowflakeSchemasSchemasParametersExternalVolumeList</a>
+
+---
+
+##### `logEventLevel`<sup>Required</sup> <a name="logEventLevel" id="@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersOutputReference.property.logEventLevel"></a>
+
+```java
+public DataSnowflakeSchemasSchemasParametersLogEventLevelList getLogEventLevel();
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeSchemas.DataSnowflakeSchemasSchemasParametersLogEventLevelList">DataSnowflakeSchemasSchemasParametersLogEventLevelList</a>
 
 ---
 

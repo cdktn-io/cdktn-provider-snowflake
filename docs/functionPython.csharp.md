@@ -4,7 +4,7 @@
 
 ### FunctionPython <a name="FunctionPython" id="@cdktn/provider-snowflake.functionPython.FunctionPython"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python snowflake_function_python}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python snowflake_function_python}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionPython.FunctionPython.Initializer"></a>
 
@@ -87,6 +87,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.resetImports">ResetImports</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.resetIsAggregate">ResetIsAggregate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.resetIsSecure">ResetIsSecure</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.resetLogEventLevel">ResetLogEventLevel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.resetLogLevel">ResetLogLevel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.resetMetricLevel">ResetMetricLevel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.resetNullInputBehavior">ResetNullInputBehavior</a></code> | *No description.* |
@@ -509,6 +510,12 @@ private void ResetIsAggregate()
 private void ResetIsSecure()
 ```
 
+##### `ResetLogEventLevel` <a name="ResetLogEventLevel" id="@cdktn/provider-snowflake.functionPython.FunctionPython.resetLogEventLevel"></a>
+
+```csharp
+private void ResetLogEventLevel()
+```
+
 ##### `ResetLogLevel` <a name="ResetLogLevel" id="@cdktn/provider-snowflake.functionPython.FunctionPython.resetLogLevel"></a>
 
 ```csharp
@@ -660,7 +667,7 @@ The construct id used in the generated config for the FunctionPython to import.
 
 The id of the existing FunctionPython that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -709,6 +716,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.property.importsInput">ImportsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonImports">FunctionPythonImports</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.property.isAggregateInput">IsAggregateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.property.isSecureInput">IsSecureInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.property.logEventLevelInput">LogEventLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.property.logLevelInput">LogLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.property.metricLevelInput">MetricLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
@@ -730,6 +738,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.property.isAggregate">IsAggregate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.property.isSecure">IsSecure</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.property.logEventLevel">LogEventLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.property.logLevel">LogLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.property.metricLevel">MetricLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPython.property.name">Name</a></code> | <code>string</code> | *No description.* |
@@ -1075,6 +1084,16 @@ public string IsSecureInput { get; }
 
 ---
 
+##### `LogEventLevelInput`<sup>Optional</sup> <a name="LogEventLevelInput" id="@cdktn/provider-snowflake.functionPython.FunctionPython.property.logEventLevelInput"></a>
+
+```csharp
+public string LogEventLevelInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `LogLevelInput`<sup>Optional</sup> <a name="LogLevelInput" id="@cdktn/provider-snowflake.functionPython.FunctionPython.property.logLevelInput"></a>
 
 ```csharp
@@ -1285,6 +1304,16 @@ public string IsSecure { get; }
 
 ---
 
+##### `LogEventLevel`<sup>Required</sup> <a name="LogEventLevel" id="@cdktn/provider-snowflake.functionPython.FunctionPython.property.logEventLevel"></a>
+
+```csharp
+public string LogEventLevel { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `LogLevel`<sup>Required</sup> <a name="LogLevel" id="@cdktn/provider-snowflake.functionPython.FunctionPython.property.logLevel"></a>
 
 ```csharp
@@ -1439,7 +1468,7 @@ public string ArgDataType { get; set; }
 
 The argument type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#arg_data_type FunctionPython#arg_data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#arg_data_type FunctionPython#arg_data_type}
 
 ---
 
@@ -1455,7 +1484,7 @@ The argument name.
 
 The provider wraps it in double quotes by default, so be aware of that while referencing the argument in the function definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#arg_name FunctionPython#arg_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#arg_name FunctionPython#arg_name}
 
 ---
 
@@ -1471,7 +1500,7 @@ Optional default value for the argument.
 
 For text values use single quotes. Numeric values can be unquoted. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#arg_default_value FunctionPython#arg_default_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#arg_default_value FunctionPython#arg_default_value}
 
 ---
 
@@ -1505,6 +1534,7 @@ new FunctionPythonConfig {
     IResolvable|FunctionPythonImports[] Imports = null,
     string IsAggregate = null,
     string IsSecure = null,
+    string LogEventLevel = null,
     string LogLevel = null,
     string MetricLevel = null,
     string NullInputBehavior = null,
@@ -1538,10 +1568,11 @@ new FunctionPythonConfig {
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonConfig.property.enableConsoleOutput">EnableConsoleOutput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Enable stdout/stderr fast path logging for anonymous stored procs. |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonConfig.property.externalAccessIntegrations">ExternalAccessIntegrations</a></code> | <code>string[]</code> | The names of [external access integrations](https://docs.snowflake.com/en/sql-reference/sql/create-external-access-integration) needed in order for this function’s handler code to access external networks. An external access integration specifies [network rules](https://docs.snowflake.com/en/sql-reference/sql/create-network-rule) and [secrets](https://docs.snowflake.com/en/sql-reference/sql/create-secret) that specify external locations and credentials (if any) allowed for use by handler code when making requests of an external network, such as an external REST API. |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonConfig.property.functionDefinition">FunctionDefinition</a></code> | <code>string</code> | Defines the handler code executed when the UDF is called. |
-| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#id FunctionPython#id}. |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#id FunctionPython#id}. |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonConfig.property.imports">Imports</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonImports">FunctionPythonImports</a>[]</code> | imports block. |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonConfig.property.isAggregate">IsAggregate</a></code> | <code>string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the function is an aggregate function. |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonConfig.property.isSecure">IsSecure</a></code> | <code>string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the function is secure. |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonConfig.property.logEventLevel">LogEventLevel</a></code> | <code>string</code> | Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table. |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonConfig.property.logLevel">LogLevel</a></code> | <code>string</code> | LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level). |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonConfig.property.metricLevel">MetricLevel</a></code> | <code>string</code> | METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level). |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonConfig.property.nullInputBehavior">NullInputBehavior</a></code> | <code>string</code> | Specifies the behavior of the function when called with null inputs. |
@@ -1635,7 +1666,7 @@ The database in which to create the function.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#database FunctionPython#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#database FunctionPython#database}
 
 ---
 
@@ -1651,7 +1682,7 @@ The name of the handler function or class.
 
 If the handler is for a scalar UDF, returning a non-tabular value, the HANDLER value should be a function name. If the handler code is in-line with the CREATE FUNCTION statement, you can use the function name alone. When the handler code is referenced at a stage, this value should be qualified with the module name, as in the following form: `my_module.my_function`. If the handler is for a tabular UDF, the HANDLER value should be the name of a handler class.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#handler FunctionPython#handler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#handler FunctionPython#handler}
 
 ---
 
@@ -1667,7 +1698,7 @@ The name of the function;
 
 the identifier does not need to be unique for the schema in which the function is created because UDFs are identified and resolved by the combination of the name and argument types. Check the [docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#all-languages). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#name FunctionPython#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#name FunctionPython#name}
 
 ---
 
@@ -1683,7 +1714,7 @@ Specifies the results returned by the UDF, which determines the UDF type.
 
 Use `<result_data_type>` to create a scalar UDF that returns a single value with the specified data type. Use `TABLE (col_name col_data_type, ...)` to creates a table UDF that returns tabular results with the specified table column(s) and column type(s). For the details, consult the [docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#all-languages).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#return_type FunctionPython#return_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#return_type FunctionPython#return_type}
 
 ---
 
@@ -1697,7 +1728,7 @@ public string RuntimeVersion { get; set; }
 
 Specifies the Python version to use. The supported versions of Python are: 3.9, 3.10, and 3.11.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#runtime_version FunctionPython#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#runtime_version FunctionPython#runtime_version}
 
 ---
 
@@ -1713,7 +1744,7 @@ The schema in which to create the function.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#schema FunctionPython#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#schema FunctionPython#schema}
 
 ---
 
@@ -1727,7 +1758,7 @@ public IResolvable|FunctionPythonArguments[] Arguments { get; set; }
 
 arguments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#arguments FunctionPython#arguments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#arguments FunctionPython#arguments}
 
 ---
 
@@ -1741,7 +1772,7 @@ public string Comment { get; set; }
 
 (Default: `user-defined function`) Specifies a comment for the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#comment FunctionPython#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#comment FunctionPython#comment}
 
 ---
 
@@ -1757,7 +1788,7 @@ Enable stdout/stderr fast path logging for anonymous stored procs.
 
 This is a public parameter (similar to LOG_LEVEL). For more information, check [ENABLE_CONSOLE_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-console-output).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#enable_console_output FunctionPython#enable_console_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#enable_console_output FunctionPython#enable_console_output}
 
 ---
 
@@ -1771,7 +1802,7 @@ public string[] ExternalAccessIntegrations { get; set; }
 
 The names of [external access integrations](https://docs.snowflake.com/en/sql-reference/sql/create-external-access-integration) needed in order for this function’s handler code to access external networks. An external access integration specifies [network rules](https://docs.snowflake.com/en/sql-reference/sql/create-network-rule) and [secrets](https://docs.snowflake.com/en/sql-reference/sql/create-secret) that specify external locations and credentials (if any) allowed for use by handler code when making requests of an external network, such as an external REST API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#external_access_integrations FunctionPython#external_access_integrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#external_access_integrations FunctionPython#external_access_integrations}
 
 ---
 
@@ -1787,7 +1818,7 @@ Defines the handler code executed when the UDF is called.
 
 Wrapping `$$` signs are added by the provider automatically; do not include them. The `function_definition` value must be Python source code. For more information, see [Introduction to Python UDFs](https://docs.snowflake.com/en/developer-guide/udf/python/udf-python-introduction). To mitigate permadiff on this field, the provider replaces blank characters with a space. This can lead to false positives in cases where a change in case or run of whitespace is semantically significant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#function_definition FunctionPython#function_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#function_definition FunctionPython#function_definition}
 
 ---
 
@@ -1799,7 +1830,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#id FunctionPython#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#id FunctionPython#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1816,7 +1847,7 @@ public IResolvable|FunctionPythonImports[] Imports { get; set; }
 
 imports block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#imports FunctionPython#imports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#imports FunctionPython#imports}
 
 ---
 
@@ -1832,7 +1863,7 @@ public string IsAggregate { get; set; }
 
 For more information about user-defined aggregate functions, see [Python user-defined aggregate functions](https://docs.snowflake.com/en/developer-guide/udf/python/udf-python-aggregate-functions). Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#is_aggregate FunctionPython#is_aggregate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#is_aggregate FunctionPython#is_aggregate}
 
 ---
 
@@ -1848,7 +1879,23 @@ public string IsSecure { get; set; }
 
 By design, the Snowflake's `SHOW FUNCTIONS` command does not provide information about secure functions (consult [function docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#id1) and [Protecting Sensitive Information with Secure UDFs and Stored Procedures](https://docs.snowflake.com/en/developer-guide/secure-udf-procedure)) which is essential to manage/import function with Terraform. Use the role owning the function while managing secure functions. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#is_secure FunctionPython#is_secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#is_secure FunctionPython#is_secure}
+
+---
+
+##### `LogEventLevel`<sup>Optional</sup> <a name="LogEventLevel" id="@cdktn/provider-snowflake.functionPython.FunctionPythonConfig.property.logEventLevel"></a>
+
+```csharp
+public string LogEventLevel { get; set; }
+```
+
+- *Type:* string
+
+Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table.
+
+Log events at the specified level (and at more severe levels) are ingested. For more information, see [LOG_EVENT_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#log_event_level). Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`. For more information, check [LOG_EVENT_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-event-level).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#log_event_level FunctionPython#log_event_level}
 
 ---
 
@@ -1862,7 +1909,7 @@ public string LogLevel { get; set; }
 
 LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#log_level FunctionPython#log_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#log_level FunctionPython#log_level}
 
 ---
 
@@ -1876,7 +1923,7 @@ public string MetricLevel { get; set; }
 
 METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#metric_level FunctionPython#metric_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#metric_level FunctionPython#metric_level}
 
 ---
 
@@ -1892,7 +1939,7 @@ Specifies the behavior of the function when called with null inputs.
 
 Valid values are (case-insensitive): `CALLED ON NULL INPUT` | `RETURNS NULL ON NULL INPUT`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#null_input_behavior FunctionPython#null_input_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#null_input_behavior FunctionPython#null_input_behavior}
 
 ---
 
@@ -1906,7 +1953,7 @@ public string[] Packages { get; set; }
 
 The name and version number of packages required as dependencies. The value should be of the form `package_name==version_number`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#packages FunctionPython#packages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#packages FunctionPython#packages}
 
 ---
 
@@ -1920,7 +1967,7 @@ public string ReturnResultsBehavior { get; set; }
 
 Specifies the behavior of the function when returning results. Valid values are (case-insensitive): `VOLATILE` | `IMMUTABLE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#return_results_behavior FunctionPython#return_results_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#return_results_behavior FunctionPython#return_results_behavior}
 
 ---
 
@@ -1934,7 +1981,7 @@ public IResolvable|FunctionPythonSecrets[] Secrets { get; set; }
 
 secrets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#secrets FunctionPython#secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#secrets FunctionPython#secrets}
 
 ---
 
@@ -1948,7 +1995,7 @@ public FunctionPythonTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#timeouts FunctionPython#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#timeouts FunctionPython#timeouts}
 
 ---
 
@@ -1962,7 +2009,7 @@ public string TraceLevel { get; set; }
 
 Trace level value to use when generating/filtering trace events For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#trace_level FunctionPython#trace_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#trace_level FunctionPython#trace_level}
 
 ---
 
@@ -1998,7 +2045,7 @@ public string PathOnStage { get; set; }
 
 Path for import on stage, without the leading `/`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#path_on_stage FunctionPython#path_on_stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#path_on_stage FunctionPython#path_on_stage}
 
 ---
 
@@ -2014,7 +2061,7 @@ Stage location without leading `@`.
 
 To use your user's stage set this to `~`, otherwise pass fully qualified name of the stage (with every part contained in double quotes or use `snowflake_stage.<your stage's resource name>.fully_qualified_name` if you manage this stage through terraform).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#stage_location FunctionPython#stage_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#stage_location FunctionPython#stage_location}
 
 ---
 
@@ -2039,6 +2086,19 @@ new FunctionPythonParameters {
 using Io.Cdktn.Providers.Snowflake;
 
 new FunctionPythonParametersEnableConsoleOutput {
+
+};
+```
+
+
+### FunctionPythonParametersLogEventLevel <a name="FunctionPythonParametersLogEventLevel" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevel"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevel.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new FunctionPythonParametersLogEventLevel {
 
 };
 ```
@@ -2115,7 +2175,7 @@ public string SecretId { get; set; }
 
 Fully qualified name of the allowed [secret](https://docs.snowflake.com/en/sql-reference/sql/create-secret). You will receive an error if you specify a SECRETS value whose secret isn’t also included in an integration specified by the EXTERNAL_ACCESS_INTEGRATIONS parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#secret_id FunctionPython#secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#secret_id FunctionPython#secret_id}
 
 ---
 
@@ -2129,7 +2189,7 @@ public string SecretVariableName { get; set; }
 
 The variable that will be used in handler code when retrieving information from the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#secret_variable_name FunctionPython#secret_variable_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#secret_variable_name FunctionPython#secret_variable_name}
 
 ---
 
@@ -2165,10 +2225,10 @@ new FunctionPythonTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#create FunctionPython#create}. |
-| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#delete FunctionPython#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#read FunctionPython#read}. |
-| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#update FunctionPython#update}. |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#create FunctionPython#create}. |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#delete FunctionPython#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#read FunctionPython#read}. |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#update FunctionPython#update}. |
 
 ---
 
@@ -2180,7 +2240,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#create FunctionPython#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#create FunctionPython#create}.
 
 ---
 
@@ -2192,7 +2252,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#delete FunctionPython#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#delete FunctionPython#delete}.
 
 ---
 
@@ -2204,7 +2264,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#read FunctionPython#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#read FunctionPython#read}.
 
 ---
 
@@ -2216,7 +2276,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_python#update FunctionPython#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_python#update FunctionPython#update}.
 
 ---
 
@@ -3813,6 +3873,477 @@ public string Fqn { get; }
 ---
 
 
+### FunctionPythonParametersLogEventLevelList <a name="FunctionPythonParametersLogEventLevelList" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new FunctionPythonParametersLogEventLevelList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.get"></a>
+
+```csharp
+private FunctionPythonParametersLogEventLevelOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### FunctionPythonParametersLogEventLevelOutputReference <a name="FunctionPythonParametersLogEventLevelOutputReference" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new FunctionPythonParametersLogEventLevelOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.property.default">Default</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.property.level">Level</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevel">FunctionPythonParametersLogEventLevel</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Default`<sup>Required</sup> <a name="Default" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.property.default"></a>
+
+```csharp
+public string Default { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.property.description"></a>
+
+```csharp
+public string Description { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.property.key"></a>
+
+```csharp
+public string Key { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Level`<sup>Required</sup> <a name="Level" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.property.level"></a>
+
+```csharp
+public string Level { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.property.value"></a>
+
+```csharp
+public string Value { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelOutputReference.property.internalValue"></a>
+
+```csharp
+public FunctionPythonParametersLogEventLevel InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevel">FunctionPythonParametersLogEventLevel</a>
+
+---
+
+
 ### FunctionPythonParametersLogLevelList <a name="FunctionPythonParametersLogLevelList" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogLevelList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogLevelList.Initializer"></a>
@@ -4984,6 +5515,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersOutputReference.property.enableConsoleOutput">EnableConsoleOutput</a></code> | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersEnableConsoleOutputList">FunctionPythonParametersEnableConsoleOutputList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersOutputReference.property.logEventLevel">LogEventLevel</a></code> | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList">FunctionPythonParametersLogEventLevelList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersOutputReference.property.logLevel">LogLevel</a></code> | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogLevelList">FunctionPythonParametersLogLevelList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersOutputReference.property.metricLevel">MetricLevel</a></code> | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersMetricLevelList">FunctionPythonParametersMetricLevelList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersOutputReference.property.traceLevel">TraceLevel</a></code> | <code><a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersTraceLevelList">FunctionPythonParametersTraceLevelList</a></code> | *No description.* |
@@ -5022,6 +5554,16 @@ public FunctionPythonParametersEnableConsoleOutputList EnableConsoleOutput { get
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersEnableConsoleOutputList">FunctionPythonParametersEnableConsoleOutputList</a>
+
+---
+
+##### `LogEventLevel`<sup>Required</sup> <a name="LogEventLevel" id="@cdktn/provider-snowflake.functionPython.FunctionPythonParametersOutputReference.property.logEventLevel"></a>
+
+```csharp
+public FunctionPythonParametersLogEventLevelList LogEventLevel { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.functionPython.FunctionPythonParametersLogEventLevelList">FunctionPythonParametersLogEventLevelList</a>
 
 ---
 

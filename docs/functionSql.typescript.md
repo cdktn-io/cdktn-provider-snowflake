@@ -4,7 +4,7 @@
 
 ### FunctionSql <a name="FunctionSql" id="@cdktn/provider-snowflake.functionSql.FunctionSql"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql snowflake_function_sql}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql snowflake_function_sql}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionSql.FunctionSql.Initializer"></a>
 
@@ -81,6 +81,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.resetEnableConsoleOutput">resetEnableConsoleOutput</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.resetIsSecure">resetIsSecure</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.resetLogEventLevel">resetLogEventLevel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.resetLogLevel">resetLogLevel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.resetMetricLevel">resetMetricLevel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.resetReturnResultsBehavior">resetReturnResultsBehavior</a></code> | *No description.* |
@@ -452,6 +453,12 @@ public resetId(): void
 public resetIsSecure(): void
 ```
 
+##### `resetLogEventLevel` <a name="resetLogEventLevel" id="@cdktn/provider-snowflake.functionSql.FunctionSql.resetLogEventLevel"></a>
+
+```typescript
+public resetLogEventLevel(): void
+```
+
 ##### `resetLogLevel` <a name="resetLogLevel" id="@cdktn/provider-snowflake.functionSql.FunctionSql.resetLogLevel"></a>
 
 ```typescript
@@ -585,7 +592,7 @@ The construct id used in the generated config for the FunctionSql to import.
 
 The id of the existing FunctionSql that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -628,6 +635,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.property.functionDefinitionInput">functionDefinitionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.property.isSecureInput">isSecureInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.property.logEventLevelInput">logEventLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.property.logLevelInput">logLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.property.metricLevelInput">metricLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
@@ -642,6 +650,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.property.functionDefinition">functionDefinition</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.property.isSecure">isSecure</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.property.logEventLevel">logEventLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.property.logLevel">logLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.property.metricLevel">metricLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSql.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -924,6 +933,16 @@ public readonly isSecureInput: string;
 
 ---
 
+##### `logEventLevelInput`<sup>Optional</sup> <a name="logEventLevelInput" id="@cdktn/provider-snowflake.functionSql.FunctionSql.property.logEventLevelInput"></a>
+
+```typescript
+public readonly logEventLevelInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `logLevelInput`<sup>Optional</sup> <a name="logLevelInput" id="@cdktn/provider-snowflake.functionSql.FunctionSql.property.logLevelInput"></a>
 
 ```typescript
@@ -1064,6 +1083,16 @@ public readonly isSecure: string;
 
 ---
 
+##### `logEventLevel`<sup>Required</sup> <a name="logEventLevel" id="@cdktn/provider-snowflake.functionSql.FunctionSql.property.logEventLevel"></a>
+
+```typescript
+public readonly logEventLevel: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `logLevel`<sup>Required</sup> <a name="logLevel" id="@cdktn/provider-snowflake.functionSql.FunctionSql.property.logLevel"></a>
 
 ```typescript
@@ -1184,7 +1213,7 @@ public readonly argDataType: string;
 
 The argument type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#arg_data_type FunctionSql#arg_data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#arg_data_type FunctionSql#arg_data_type}
 
 ---
 
@@ -1200,7 +1229,7 @@ The argument name.
 
 The provider wraps it in double quotes by default, so be aware of that while referencing the argument in the function definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#arg_name FunctionSql#arg_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#arg_name FunctionSql#arg_name}
 
 ---
 
@@ -1216,7 +1245,7 @@ Optional default value for the argument.
 
 For text values use single quotes. Numeric values can be unquoted. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#arg_default_value FunctionSql#arg_default_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#arg_default_value FunctionSql#arg_default_value}
 
 ---
 
@@ -1249,8 +1278,9 @@ const functionSqlConfig: functionSql.FunctionSqlConfig = { ... }
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlConfig.property.arguments">arguments</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlArguments">FunctionSqlArguments</a>[]</code> | arguments block. |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlConfig.property.comment">comment</a></code> | <code>string</code> | (Default: `user-defined function`) Specifies a comment for the function. |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlConfig.property.enableConsoleOutput">enableConsoleOutput</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enable stdout/stderr fast path logging for anonymous stored procs. |
-| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#id FunctionSql#id}. |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#id FunctionSql#id}. |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlConfig.property.isSecure">isSecure</a></code> | <code>string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the function is secure. |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlConfig.property.logEventLevel">logEventLevel</a></code> | <code>string</code> | Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table. |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlConfig.property.logLevel">logLevel</a></code> | <code>string</code> | LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level). |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlConfig.property.metricLevel">metricLevel</a></code> | <code>string</code> | METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level). |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlConfig.property.returnResultsBehavior">returnResultsBehavior</a></code> | <code>string</code> | Specifies the behavior of the function when returning results. Valid values are (case-insensitive): `VOLATILE` \| `IMMUTABLE`. |
@@ -1341,7 +1371,7 @@ The database in which to create the function.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#database FunctionSql#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#database FunctionSql#database}
 
 ---
 
@@ -1357,7 +1387,7 @@ Defines the handler code executed when the UDF is called.
 
 Wrapping `$$` signs are added by the provider automatically; do not include them. The `function_definition` value must be SQL source code. For more information, see [Introduction to SQL UDFs](https://docs.snowflake.com/en/developer-guide/udf/sql/udf-sql-introduction). To mitigate permadiff on this field, the provider replaces blank characters with a space. This can lead to false positives in cases where a change in case or run of whitespace is semantically significant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#function_definition FunctionSql#function_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#function_definition FunctionSql#function_definition}
 
 ---
 
@@ -1373,7 +1403,7 @@ The name of the function;
 
 the identifier does not need to be unique for the schema in which the function is created because UDFs are identified and resolved by the combination of the name and argument types. Check the [docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#all-languages). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#name FunctionSql#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#name FunctionSql#name}
 
 ---
 
@@ -1389,7 +1419,7 @@ Specifies the results returned by the UDF, which determines the UDF type.
 
 Use `<result_data_type>` to create a scalar UDF that returns a single value with the specified data type. Use `TABLE (col_name col_data_type, ...)` to creates a table UDF that returns tabular results with the specified table column(s) and column type(s). For the details, consult the [docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#all-languages).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#return_type FunctionSql#return_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#return_type FunctionSql#return_type}
 
 ---
 
@@ -1405,7 +1435,7 @@ The schema in which to create the function.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#schema FunctionSql#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#schema FunctionSql#schema}
 
 ---
 
@@ -1419,7 +1449,7 @@ public readonly arguments: IResolvable | FunctionSqlArguments[];
 
 arguments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#arguments FunctionSql#arguments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#arguments FunctionSql#arguments}
 
 ---
 
@@ -1433,7 +1463,7 @@ public readonly comment: string;
 
 (Default: `user-defined function`) Specifies a comment for the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#comment FunctionSql#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#comment FunctionSql#comment}
 
 ---
 
@@ -1449,7 +1479,7 @@ Enable stdout/stderr fast path logging for anonymous stored procs.
 
 This is a public parameter (similar to LOG_LEVEL). For more information, check [ENABLE_CONSOLE_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-console-output).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#enable_console_output FunctionSql#enable_console_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#enable_console_output FunctionSql#enable_console_output}
 
 ---
 
@@ -1461,7 +1491,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#id FunctionSql#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#id FunctionSql#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1480,7 +1510,23 @@ public readonly isSecure: string;
 
 By design, the Snowflake's `SHOW FUNCTIONS` command does not provide information about secure functions (consult [function docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#id1) and [Protecting Sensitive Information with Secure UDFs and Stored Procedures](https://docs.snowflake.com/en/developer-guide/secure-udf-procedure)) which is essential to manage/import function with Terraform. Use the role owning the function while managing secure functions. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#is_secure FunctionSql#is_secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#is_secure FunctionSql#is_secure}
+
+---
+
+##### `logEventLevel`<sup>Optional</sup> <a name="logEventLevel" id="@cdktn/provider-snowflake.functionSql.FunctionSqlConfig.property.logEventLevel"></a>
+
+```typescript
+public readonly logEventLevel: string;
+```
+
+- *Type:* string
+
+Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table.
+
+Log events at the specified level (and at more severe levels) are ingested. For more information, see [LOG_EVENT_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#log_event_level). Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`. For more information, check [LOG_EVENT_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-event-level).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#log_event_level FunctionSql#log_event_level}
 
 ---
 
@@ -1494,7 +1540,7 @@ public readonly logLevel: string;
 
 LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#log_level FunctionSql#log_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#log_level FunctionSql#log_level}
 
 ---
 
@@ -1508,7 +1554,7 @@ public readonly metricLevel: string;
 
 METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#metric_level FunctionSql#metric_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#metric_level FunctionSql#metric_level}
 
 ---
 
@@ -1522,7 +1568,7 @@ public readonly returnResultsBehavior: string;
 
 Specifies the behavior of the function when returning results. Valid values are (case-insensitive): `VOLATILE` | `IMMUTABLE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#return_results_behavior FunctionSql#return_results_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#return_results_behavior FunctionSql#return_results_behavior}
 
 ---
 
@@ -1536,7 +1582,7 @@ public readonly timeouts: FunctionSqlTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#timeouts FunctionSql#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#timeouts FunctionSql#timeouts}
 
 ---
 
@@ -1550,7 +1596,7 @@ public readonly traceLevel: string;
 
 Trace level value to use when generating/filtering trace events For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#trace_level FunctionSql#trace_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#trace_level FunctionSql#trace_level}
 
 ---
 
@@ -1573,6 +1619,17 @@ const functionSqlParameters: functionSql.FunctionSqlParameters = { ... }
 import { functionSql } from '@cdktn/provider-snowflake'
 
 const functionSqlParametersEnableConsoleOutput: functionSql.FunctionSqlParametersEnableConsoleOutput = { ... }
+```
+
+
+### FunctionSqlParametersLogEventLevel <a name="FunctionSqlParametersLogEventLevel" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevel"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevel.Initializer"></a>
+
+```typescript
+import { functionSql } from '@cdktn/provider-snowflake'
+
+const functionSqlParametersLogEventLevel: functionSql.FunctionSqlParametersLogEventLevel = { ... }
 ```
 
 
@@ -1634,10 +1691,10 @@ const functionSqlTimeouts: functionSql.FunctionSqlTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#create FunctionSql#create}. |
-| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#delete FunctionSql#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#read FunctionSql#read}. |
-| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#update FunctionSql#update}. |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#create FunctionSql#create}. |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#delete FunctionSql#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#read FunctionSql#read}. |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#update FunctionSql#update}. |
 
 ---
 
@@ -1649,7 +1706,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#create FunctionSql#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#create FunctionSql#create}.
 
 ---
 
@@ -1661,7 +1718,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#delete FunctionSql#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#delete FunctionSql#delete}.
 
 ---
 
@@ -1673,7 +1730,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#read FunctionSql#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#read FunctionSql#read}.
 
 ---
 
@@ -1685,7 +1742,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#update FunctionSql#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#update FunctionSql#update}.
 
 ---
 
@@ -2807,6 +2864,477 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
+
+---
+
+
+### FunctionSqlParametersLogEventLevelList <a name="FunctionSqlParametersLogEventLevelList" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.Initializer"></a>
+
+```typescript
+import { functionSql } from '@cdktn/provider-snowflake'
+
+new functionSql.FunctionSqlParametersLogEventLevelList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.get"></a>
+
+```typescript
+public get(index: number): FunctionSqlParametersLogEventLevelOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### FunctionSqlParametersLogEventLevelOutputReference <a name="FunctionSqlParametersLogEventLevelOutputReference" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.Initializer"></a>
+
+```typescript
+import { functionSql } from '@cdktn/provider-snowflake'
+
+new functionSql.FunctionSqlParametersLogEventLevelOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.property.default">default</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.property.level">level</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevel">FunctionSqlParametersLogEventLevel</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `default`<sup>Required</sup> <a name="default" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.property.default"></a>
+
+```typescript
+public readonly default: string;
+```
+
+- *Type:* string
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.property.key"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* string
+
+---
+
+##### `level`<sup>Required</sup> <a name="level" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.property.level"></a>
+
+```typescript
+public readonly level: string;
+```
+
+- *Type:* string
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: FunctionSqlParametersLogEventLevel;
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevel">FunctionSqlParametersLogEventLevel</a>
 
 ---
 
@@ -3982,6 +4510,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersOutputReference.property.enableConsoleOutput">enableConsoleOutput</a></code> | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersEnableConsoleOutputList">FunctionSqlParametersEnableConsoleOutputList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersOutputReference.property.logEventLevel">logEventLevel</a></code> | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList">FunctionSqlParametersLogEventLevelList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersOutputReference.property.logLevel">logLevel</a></code> | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogLevelList">FunctionSqlParametersLogLevelList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersOutputReference.property.metricLevel">metricLevel</a></code> | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersMetricLevelList">FunctionSqlParametersMetricLevelList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersOutputReference.property.traceLevel">traceLevel</a></code> | <code><a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersTraceLevelList">FunctionSqlParametersTraceLevelList</a></code> | *No description.* |
@@ -4020,6 +4549,16 @@ public readonly enableConsoleOutput: FunctionSqlParametersEnableConsoleOutputLis
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersEnableConsoleOutputList">FunctionSqlParametersEnableConsoleOutputList</a>
+
+---
+
+##### `logEventLevel`<sup>Required</sup> <a name="logEventLevel" id="@cdktn/provider-snowflake.functionSql.FunctionSqlParametersOutputReference.property.logEventLevel"></a>
+
+```typescript
+public readonly logEventLevel: FunctionSqlParametersLogEventLevelList;
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.functionSql.FunctionSqlParametersLogEventLevelList">FunctionSqlParametersLogEventLevelList</a>
 
 ---
 

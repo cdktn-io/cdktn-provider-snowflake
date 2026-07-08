@@ -4,7 +4,7 @@
 
 ### FunctionJavascript <a name="FunctionJavascript" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascript"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript snowflake_function_javascript}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript snowflake_function_javascript}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.Initializer"></a>
 
@@ -31,6 +31,7 @@ functionJavascript.FunctionJavascript(
   enable_console_output: bool | IResolvable = None,
   id: str = None,
   is_secure: str = None,
+  log_event_level: str = None,
   log_level: str = None,
   metric_level: str = None,
   null_input_behavior: str = None,
@@ -59,8 +60,9 @@ functionJavascript.FunctionJavascript(
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.Initializer.parameter.arguments">arguments</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptArguments">FunctionJavascriptArguments</a>]</code> | arguments block. |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.Initializer.parameter.comment">comment</a></code> | <code>str</code> | (Default: `user-defined function`) Specifies a comment for the function. |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.Initializer.parameter.enableConsoleOutput">enable_console_output</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable stdout/stderr fast path logging for anonymous stored procs. |
-| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#id FunctionJavascript#id}. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#id FunctionJavascript#id}. |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.Initializer.parameter.isSecure">is_secure</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the function is secure. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.Initializer.parameter.logEventLevel">log_event_level</a></code> | <code>str</code> | Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table. |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.Initializer.parameter.logLevel">log_level</a></code> | <code>str</code> | LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level). |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.Initializer.parameter.metricLevel">metric_level</a></code> | <code>str</code> | METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level). |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.Initializer.parameter.nullInputBehavior">null_input_behavior</a></code> | <code>str</code> | Specifies the behavior of the function when called with null inputs. |
@@ -138,7 +140,7 @@ The database in which to create the function.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#database FunctionJavascript#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#database FunctionJavascript#database}
 
 ---
 
@@ -150,7 +152,7 @@ Defines the handler code executed when the UDF is called.
 
 Wrapping `$$` signs are added by the provider automatically; do not include them. The `function_definition` value must be JavaScript source code. For more information, see [Introduction to JavaScript UDFs](https://docs.snowflake.com/en/developer-guide/udf/javascript/udf-javascript-introduction). To mitigate permadiff on this field, the provider replaces blank characters with a space. This can lead to false positives in cases where a change in case or run of whitespace is semantically significant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#function_definition FunctionJavascript#function_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#function_definition FunctionJavascript#function_definition}
 
 ---
 
@@ -162,7 +164,7 @@ The name of the function;
 
 the identifier does not need to be unique for the schema in which the function is created because UDFs are identified and resolved by the combination of the name and argument types. Check the [docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#all-languages). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#name FunctionJavascript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#name FunctionJavascript#name}
 
 ---
 
@@ -174,7 +176,7 @@ Specifies the results returned by the UDF, which determines the UDF type.
 
 Use `<result_data_type>` to create a scalar UDF that returns a single value with the specified data type. Use `TABLE (col_name col_data_type, ...)` to creates a table UDF that returns tabular results with the specified table column(s) and column type(s). For the details, consult the [docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#all-languages).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#return_type FunctionJavascript#return_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#return_type FunctionJavascript#return_type}
 
 ---
 
@@ -186,7 +188,7 @@ The schema in which to create the function.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#schema FunctionJavascript#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#schema FunctionJavascript#schema}
 
 ---
 
@@ -196,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 arguments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#arguments FunctionJavascript#arguments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#arguments FunctionJavascript#arguments}
 
 ---
 
@@ -206,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 (Default: `user-defined function`) Specifies a comment for the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#comment FunctionJavascript#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#comment FunctionJavascript#comment}
 
 ---
 
@@ -218,7 +220,7 @@ Enable stdout/stderr fast path logging for anonymous stored procs.
 
 This is a public parameter (similar to LOG_LEVEL). For more information, check [ENABLE_CONSOLE_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-console-output).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#enable_console_output FunctionJavascript#enable_console_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#enable_console_output FunctionJavascript#enable_console_output}
 
 ---
 
@@ -226,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#id FunctionJavascript#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#id FunctionJavascript#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -241,7 +243,19 @@ If you experience problems setting this value it might not be settable. Please t
 
 By design, the Snowflake's `SHOW FUNCTIONS` command does not provide information about secure functions (consult [function docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#id1) and [Protecting Sensitive Information with Secure UDFs and Stored Procedures](https://docs.snowflake.com/en/developer-guide/secure-udf-procedure)) which is essential to manage/import function with Terraform. Use the role owning the function while managing secure functions. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#is_secure FunctionJavascript#is_secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#is_secure FunctionJavascript#is_secure}
+
+---
+
+##### `log_event_level`<sup>Optional</sup> <a name="log_event_level" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.Initializer.parameter.logEventLevel"></a>
+
+- *Type:* str
+
+Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table.
+
+Log events at the specified level (and at more severe levels) are ingested. For more information, see [LOG_EVENT_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#log_event_level). Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`. For more information, check [LOG_EVENT_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-event-level).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#log_event_level FunctionJavascript#log_event_level}
 
 ---
 
@@ -251,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#log_level FunctionJavascript#log_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#log_level FunctionJavascript#log_level}
 
 ---
 
@@ -261,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#metric_level FunctionJavascript#metric_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#metric_level FunctionJavascript#metric_level}
 
 ---
 
@@ -273,7 +287,7 @@ Specifies the behavior of the function when called with null inputs.
 
 Valid values are (case-insensitive): `CALLED ON NULL INPUT` | `RETURNS NULL ON NULL INPUT`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#null_input_behavior FunctionJavascript#null_input_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#null_input_behavior FunctionJavascript#null_input_behavior}
 
 ---
 
@@ -283,7 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the behavior of the function when returning results. Valid values are (case-insensitive): `VOLATILE` | `IMMUTABLE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#return_results_behavior FunctionJavascript#return_results_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#return_results_behavior FunctionJavascript#return_results_behavior}
 
 ---
 
@@ -293,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#timeouts FunctionJavascript#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#timeouts FunctionJavascript#timeouts}
 
 ---
 
@@ -303,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Trace level value to use when generating/filtering trace events For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#trace_level FunctionJavascript#trace_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#trace_level FunctionJavascript#trace_level}
 
 ---
 
@@ -342,6 +356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.resetEnableConsoleOutput">reset_enable_console_output</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.resetIsSecure">reset_is_secure</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.resetLogEventLevel">reset_log_event_level</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.resetLogLevel">reset_log_level</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.resetMetricLevel">reset_metric_level</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.resetNullInputBehavior">reset_null_input_behavior</a></code> | *No description.* |
@@ -728,7 +743,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#create FunctionJavascript#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#create FunctionJavascript#create}.
 
 ---
 
@@ -736,7 +751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#delete FunctionJavascript#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#delete FunctionJavascript#delete}.
 
 ---
 
@@ -744,7 +759,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#read FunctionJavascript#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#read FunctionJavascript#read}.
 
 ---
 
@@ -752,7 +767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#update FunctionJavascript#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#update FunctionJavascript#update}.
 
 ---
 
@@ -784,6 +799,12 @@ def reset_id() -> None
 
 ```python
 def reset_is_secure() -> None
+```
+
+##### `reset_log_event_level` <a name="reset_log_event_level" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.resetLogEventLevel"></a>
+
+```python
+def reset_log_event_level() -> None
 ```
 
 ##### `reset_log_level` <a name="reset_log_level" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.resetLogLevel"></a>
@@ -936,7 +957,7 @@ The construct id used in the generated config for the FunctionJavascript to impo
 
 The id of the existing FunctionJavascript that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -979,6 +1000,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.property.functionDefinitionInput">function_definition_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.property.isSecureInput">is_secure_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.property.logEventLevelInput">log_event_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.property.logLevelInput">log_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.property.metricLevelInput">metric_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
@@ -994,6 +1016,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.property.functionDefinition">function_definition</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.property.isSecure">is_secure</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.property.logEventLevel">log_event_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.property.logLevel">log_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.property.metricLevel">metric_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -1277,6 +1300,16 @@ is_secure_input: str
 
 ---
 
+##### `log_event_level_input`<sup>Optional</sup> <a name="log_event_level_input" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.property.logEventLevelInput"></a>
+
+```python
+log_event_level_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `log_level_input`<sup>Optional</sup> <a name="log_level_input" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.property.logLevelInput"></a>
 
 ```python
@@ -1427,6 +1460,16 @@ is_secure: str
 
 ---
 
+##### `log_event_level`<sup>Required</sup> <a name="log_event_level" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.property.logEventLevel"></a>
+
+```python
+log_event_level: str
+```
+
+- *Type:* str
+
+---
+
 ##### `log_level`<sup>Required</sup> <a name="log_level" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascript.property.logLevel"></a>
 
 ```python
@@ -1561,7 +1604,7 @@ arg_data_type: str
 
 The argument type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#arg_data_type FunctionJavascript#arg_data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#arg_data_type FunctionJavascript#arg_data_type}
 
 ---
 
@@ -1577,7 +1620,7 @@ The argument name.
 
 The provider wraps it in double quotes by default, so be aware of that while referencing the argument in the function definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#arg_name FunctionJavascript#arg_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#arg_name FunctionJavascript#arg_name}
 
 ---
 
@@ -1593,7 +1636,7 @@ Optional default value for the argument.
 
 For text values use single quotes. Numeric values can be unquoted. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#arg_default_value FunctionJavascript#arg_default_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#arg_default_value FunctionJavascript#arg_default_value}
 
 ---
 
@@ -1622,6 +1665,7 @@ functionJavascript.FunctionJavascriptConfig(
   enable_console_output: bool | IResolvable = None,
   id: str = None,
   is_secure: str = None,
+  log_event_level: str = None,
   log_level: str = None,
   metric_level: str = None,
   null_input_behavior: str = None,
@@ -1650,8 +1694,9 @@ functionJavascript.FunctionJavascriptConfig(
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptConfig.property.arguments">arguments</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptArguments">FunctionJavascriptArguments</a>]</code> | arguments block. |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptConfig.property.comment">comment</a></code> | <code>str</code> | (Default: `user-defined function`) Specifies a comment for the function. |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptConfig.property.enableConsoleOutput">enable_console_output</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable stdout/stderr fast path logging for anonymous stored procs. |
-| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#id FunctionJavascript#id}. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#id FunctionJavascript#id}. |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptConfig.property.isSecure">is_secure</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the function is secure. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptConfig.property.logEventLevel">log_event_level</a></code> | <code>str</code> | Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table. |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptConfig.property.logLevel">log_level</a></code> | <code>str</code> | LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level). |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptConfig.property.metricLevel">metric_level</a></code> | <code>str</code> | METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level). |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptConfig.property.nullInputBehavior">null_input_behavior</a></code> | <code>str</code> | Specifies the behavior of the function when called with null inputs. |
@@ -1743,7 +1788,7 @@ The database in which to create the function.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#database FunctionJavascript#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#database FunctionJavascript#database}
 
 ---
 
@@ -1759,7 +1804,7 @@ Defines the handler code executed when the UDF is called.
 
 Wrapping `$$` signs are added by the provider automatically; do not include them. The `function_definition` value must be JavaScript source code. For more information, see [Introduction to JavaScript UDFs](https://docs.snowflake.com/en/developer-guide/udf/javascript/udf-javascript-introduction). To mitigate permadiff on this field, the provider replaces blank characters with a space. This can lead to false positives in cases where a change in case or run of whitespace is semantically significant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#function_definition FunctionJavascript#function_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#function_definition FunctionJavascript#function_definition}
 
 ---
 
@@ -1775,7 +1820,7 @@ The name of the function;
 
 the identifier does not need to be unique for the schema in which the function is created because UDFs are identified and resolved by the combination of the name and argument types. Check the [docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#all-languages). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#name FunctionJavascript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#name FunctionJavascript#name}
 
 ---
 
@@ -1791,7 +1836,7 @@ Specifies the results returned by the UDF, which determines the UDF type.
 
 Use `<result_data_type>` to create a scalar UDF that returns a single value with the specified data type. Use `TABLE (col_name col_data_type, ...)` to creates a table UDF that returns tabular results with the specified table column(s) and column type(s). For the details, consult the [docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#all-languages).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#return_type FunctionJavascript#return_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#return_type FunctionJavascript#return_type}
 
 ---
 
@@ -1807,7 +1852,7 @@ The schema in which to create the function.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#schema FunctionJavascript#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#schema FunctionJavascript#schema}
 
 ---
 
@@ -1821,7 +1866,7 @@ arguments: IResolvable | typing.List[FunctionJavascriptArguments]
 
 arguments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#arguments FunctionJavascript#arguments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#arguments FunctionJavascript#arguments}
 
 ---
 
@@ -1835,7 +1880,7 @@ comment: str
 
 (Default: `user-defined function`) Specifies a comment for the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#comment FunctionJavascript#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#comment FunctionJavascript#comment}
 
 ---
 
@@ -1851,7 +1896,7 @@ Enable stdout/stderr fast path logging for anonymous stored procs.
 
 This is a public parameter (similar to LOG_LEVEL). For more information, check [ENABLE_CONSOLE_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-console-output).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#enable_console_output FunctionJavascript#enable_console_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#enable_console_output FunctionJavascript#enable_console_output}
 
 ---
 
@@ -1863,7 +1908,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#id FunctionJavascript#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#id FunctionJavascript#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1882,7 +1927,23 @@ is_secure: str
 
 By design, the Snowflake's `SHOW FUNCTIONS` command does not provide information about secure functions (consult [function docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#id1) and [Protecting Sensitive Information with Secure UDFs and Stored Procedures](https://docs.snowflake.com/en/developer-guide/secure-udf-procedure)) which is essential to manage/import function with Terraform. Use the role owning the function while managing secure functions. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#is_secure FunctionJavascript#is_secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#is_secure FunctionJavascript#is_secure}
+
+---
+
+##### `log_event_level`<sup>Optional</sup> <a name="log_event_level" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptConfig.property.logEventLevel"></a>
+
+```python
+log_event_level: str
+```
+
+- *Type:* str
+
+Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table.
+
+Log events at the specified level (and at more severe levels) are ingested. For more information, see [LOG_EVENT_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#log_event_level). Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`. For more information, check [LOG_EVENT_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-event-level).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#log_event_level FunctionJavascript#log_event_level}
 
 ---
 
@@ -1896,7 +1957,7 @@ log_level: str
 
 LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#log_level FunctionJavascript#log_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#log_level FunctionJavascript#log_level}
 
 ---
 
@@ -1910,7 +1971,7 @@ metric_level: str
 
 METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#metric_level FunctionJavascript#metric_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#metric_level FunctionJavascript#metric_level}
 
 ---
 
@@ -1926,7 +1987,7 @@ Specifies the behavior of the function when called with null inputs.
 
 Valid values are (case-insensitive): `CALLED ON NULL INPUT` | `RETURNS NULL ON NULL INPUT`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#null_input_behavior FunctionJavascript#null_input_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#null_input_behavior FunctionJavascript#null_input_behavior}
 
 ---
 
@@ -1940,7 +2001,7 @@ return_results_behavior: str
 
 Specifies the behavior of the function when returning results. Valid values are (case-insensitive): `VOLATILE` | `IMMUTABLE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#return_results_behavior FunctionJavascript#return_results_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#return_results_behavior FunctionJavascript#return_results_behavior}
 
 ---
 
@@ -1954,7 +2015,7 @@ timeouts: FunctionJavascriptTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#timeouts FunctionJavascript#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#timeouts FunctionJavascript#timeouts}
 
 ---
 
@@ -1968,7 +2029,7 @@ trace_level: str
 
 Trace level value to use when generating/filtering trace events For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#trace_level FunctionJavascript#trace_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#trace_level FunctionJavascript#trace_level}
 
 ---
 
@@ -1991,6 +2052,17 @@ functionJavascript.FunctionJavascriptParameters()
 from cdktn_provider_snowflake import function_javascript
 
 functionJavascript.FunctionJavascriptParametersEnableConsoleOutput()
+```
+
+
+### FunctionJavascriptParametersLogEventLevel <a name="FunctionJavascriptParametersLogEventLevel" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevel"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevel.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import function_javascript
+
+functionJavascript.FunctionJavascriptParametersLogEventLevel()
 ```
 
 
@@ -2057,10 +2129,10 @@ functionJavascript.FunctionJavascriptTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#create FunctionJavascript#create}. |
-| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#delete FunctionJavascript#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#read FunctionJavascript#read}. |
-| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#update FunctionJavascript#update}. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#create FunctionJavascript#create}. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#delete FunctionJavascript#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#read FunctionJavascript#read}. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#update FunctionJavascript#update}. |
 
 ---
 
@@ -2072,7 +2144,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#create FunctionJavascript#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#create FunctionJavascript#create}.
 
 ---
 
@@ -2084,7 +2156,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#delete FunctionJavascript#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#delete FunctionJavascript#delete}.
 
 ---
 
@@ -2096,7 +2168,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#read FunctionJavascript#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#read FunctionJavascript#read}.
 
 ---
 
@@ -2108,7 +2180,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_javascript#update FunctionJavascript#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_javascript#update FunctionJavascript#update}.
 
 ---
 
@@ -3314,6 +3386,514 @@ fqn: str
 ```
 
 - *Type:* str
+
+---
+
+
+### FunctionJavascriptParametersLogEventLevelList <a name="FunctionJavascriptParametersLogEventLevelList" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import function_javascript
+
+functionJavascript.FunctionJavascriptParametersLogEventLevelList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> FunctionJavascriptParametersLogEventLevelOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### FunctionJavascriptParametersLogEventLevelOutputReference <a name="FunctionJavascriptParametersLogEventLevelOutputReference" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import function_javascript
+
+functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.property.level">level</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevel">FunctionJavascriptParametersLogEventLevel</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `default`<sup>Required</sup> <a name="default" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.property.default"></a>
+
+```python
+default: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `level`<sup>Required</sup> <a name="level" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.property.level"></a>
+
+```python
+level: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelOutputReference.property.internalValue"></a>
+
+```python
+internal_value: FunctionJavascriptParametersLogEventLevel
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevel">FunctionJavascriptParametersLogEventLevel</a>
 
 ---
 
@@ -4590,6 +5170,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersOutputReference.property.enableConsoleOutput">enable_console_output</a></code> | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersEnableConsoleOutputList">FunctionJavascriptParametersEnableConsoleOutputList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersOutputReference.property.logEventLevel">log_event_level</a></code> | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList">FunctionJavascriptParametersLogEventLevelList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersOutputReference.property.logLevel">log_level</a></code> | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogLevelList">FunctionJavascriptParametersLogLevelList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersOutputReference.property.metricLevel">metric_level</a></code> | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersMetricLevelList">FunctionJavascriptParametersMetricLevelList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersOutputReference.property.traceLevel">trace_level</a></code> | <code><a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersTraceLevelList">FunctionJavascriptParametersTraceLevelList</a></code> | *No description.* |
@@ -4628,6 +5209,16 @@ enable_console_output: FunctionJavascriptParametersEnableConsoleOutputList
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersEnableConsoleOutputList">FunctionJavascriptParametersEnableConsoleOutputList</a>
+
+---
+
+##### `log_event_level`<sup>Required</sup> <a name="log_event_level" id="@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersOutputReference.property.logEventLevel"></a>
+
+```python
+log_event_level: FunctionJavascriptParametersLogEventLevelList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogEventLevelList">FunctionJavascriptParametersLogEventLevelList</a>
 
 ---
 

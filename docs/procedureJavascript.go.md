@@ -4,7 +4,7 @@
 
 ### ProcedureJavascript <a name="ProcedureJavascript" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript snowflake_procedure_javascript}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript snowflake_procedure_javascript}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.Initializer"></a>
 
@@ -82,6 +82,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.resetExecuteAs">ResetExecuteAs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.resetIsSecure">ResetIsSecure</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.resetLogEventLevel">ResetLogEventLevel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.resetLogLevel">ResetLogLevel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.resetMetricLevel">ResetMetricLevel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.resetNullInputBehavior">ResetNullInputBehavior</a></code> | *No description.* |
@@ -459,6 +460,12 @@ func ResetId()
 func ResetIsSecure()
 ```
 
+##### `ResetLogEventLevel` <a name="ResetLogEventLevel" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.resetLogEventLevel"></a>
+
+```go
+func ResetLogEventLevel()
+```
+
 ##### `ResetLogLevel` <a name="ResetLogLevel" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.resetLogLevel"></a>
 
 ```go
@@ -592,7 +599,7 @@ The construct id used in the generated config for the ProcedureJavascript to imp
 
 The id of the existing ProcedureJavascript that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -635,6 +642,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.property.executeAsInput">ExecuteAsInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.property.isSecureInput">IsSecureInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.property.logEventLevelInput">LogEventLevelInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.property.logLevelInput">LogLevelInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.property.metricLevelInput">MetricLevelInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
@@ -650,6 +658,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.property.executeAs">ExecuteAs</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.property.isSecure">IsSecure</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.property.logEventLevel">LogEventLevel</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.property.logLevel">LogLevel</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.property.metricLevel">MetricLevel</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.property.name">Name</a></code> | <code>*string</code> | *No description.* |
@@ -933,6 +942,16 @@ func IsSecureInput() *string
 
 ---
 
+##### `LogEventLevelInput`<sup>Optional</sup> <a name="LogEventLevelInput" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.property.logEventLevelInput"></a>
+
+```go
+func LogEventLevelInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `LogLevelInput`<sup>Optional</sup> <a name="LogLevelInput" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.property.logLevelInput"></a>
 
 ```go
@@ -1083,6 +1102,16 @@ func IsSecure() *string
 
 ---
 
+##### `LogEventLevel`<sup>Required</sup> <a name="LogEventLevel" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.property.logEventLevel"></a>
+
+```go
+func LogEventLevel() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `LogLevel`<sup>Required</sup> <a name="LogLevel" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascript.property.logLevel"></a>
 
 ```go
@@ -1217,7 +1246,7 @@ ArgDataType *string
 
 The argument type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#arg_data_type ProcedureJavascript#arg_data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#arg_data_type ProcedureJavascript#arg_data_type}
 
 ---
 
@@ -1233,7 +1262,7 @@ The argument name.
 
 The provider wraps it in double quotes by default, so be aware of that while referencing the argument in the procedure definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#arg_name ProcedureJavascript#arg_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#arg_name ProcedureJavascript#arg_name}
 
 ---
 
@@ -1249,7 +1278,7 @@ Optional default value for the argument.
 
 For text values use single quotes. Numeric values can be unquoted. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#arg_default_value ProcedureJavascript#arg_default_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#arg_default_value ProcedureJavascript#arg_default_value}
 
 ---
 
@@ -1279,6 +1308,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurej
 	ExecuteAs: *string,
 	Id: *string,
 	IsSecure: *string,
+	LogEventLevel: *string,
 	LogLevel: *string,
 	MetricLevel: *string,
 	NullInputBehavior: *string,
@@ -1307,8 +1337,9 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurej
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.comment">Comment</a></code> | <code>*string</code> | (Default: `user-defined procedure`) Specifies a comment for the procedure. |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.enableConsoleOutput">EnableConsoleOutput</a></code> | <code>interface{}</code> | Enable stdout/stderr fast path logging for anonyous stored procs. |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.executeAs">ExecuteAs</a></code> | <code>*string</code> | Specifies whether the stored procedure executes with the privileges of the owner (an “owner’s rights” stored procedure) or with the privileges of the caller (a “caller’s rights” stored procedure). |
-| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#id ProcedureJavascript#id}. |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#id ProcedureJavascript#id}. |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.isSecure">IsSecure</a></code> | <code>*string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the procedure is secure. |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.logEventLevel">LogEventLevel</a></code> | <code>*string</code> | Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table. |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.logLevel">LogLevel</a></code> | <code>*string</code> | LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level). |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.metricLevel">MetricLevel</a></code> | <code>*string</code> | METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level). |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.nullInputBehavior">NullInputBehavior</a></code> | <code>*string</code> | Specifies the behavior of the procedure when called with null inputs. |
@@ -1399,7 +1430,7 @@ The database in which to create the procedure.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#database ProcedureJavascript#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#database ProcedureJavascript#database}
 
 ---
 
@@ -1415,7 +1446,7 @@ The name of the procedure;
 
 the identifier does not need to be unique for the schema in which the procedure is created because stored procedures are [identified and resolved by the combination of the name and argument types](https://docs.snowflake.com/en/developer-guide/udf-stored-procedure-naming-conventions.html#label-procedure-function-name-overloading). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#name ProcedureJavascript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#name ProcedureJavascript#name}
 
 ---
 
@@ -1431,7 +1462,7 @@ Defines the code executed by the stored procedure.
 
 The definition can consist of any valid code. Wrapping `$$` signs are added by the provider automatically; do not include them. The `procedure_definition` value must be JavaScript source code. For more information, see [JavaScript](https://docs.snowflake.com/en/developer-guide/stored-procedure/stored-procedures-javascript). To mitigate permadiff on this field, the provider replaces blank characters with a space. This can lead to false positives in cases where a change in case or run of whitespace is semantically significant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#procedure_definition ProcedureJavascript#procedure_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#procedure_definition ProcedureJavascript#procedure_definition}
 
 ---
 
@@ -1447,7 +1478,7 @@ Specifies the type of the result returned by the stored procedure.
 
 For `<result_data_type>`, use the Snowflake data type that corresponds to the type of the language that you are using (see [SQL and JavaScript data type mapping](https://docs.snowflake.com/en/developer-guide/stored-procedure/stored-procedures-javascript.html#label-stored-procedure-data-type-mapping)). For `RETURNS TABLE ( [ col_name col_data_type [ , ... ] ] )`, if you know the Snowflake data types of the columns in the returned table, specify the column names and types. Otherwise (e.g. if you are determining the column types during run time), you can omit the column names and types (i.e. `TABLE ()`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#return_type ProcedureJavascript#return_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#return_type ProcedureJavascript#return_type}
 
 ---
 
@@ -1463,7 +1494,7 @@ The schema in which to create the procedure.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#schema ProcedureJavascript#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#schema ProcedureJavascript#schema}
 
 ---
 
@@ -1477,7 +1508,7 @@ Arguments interface{}
 
 arguments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#arguments ProcedureJavascript#arguments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#arguments ProcedureJavascript#arguments}
 
 ---
 
@@ -1491,7 +1522,7 @@ Comment *string
 
 (Default: `user-defined procedure`) Specifies a comment for the procedure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#comment ProcedureJavascript#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#comment ProcedureJavascript#comment}
 
 ---
 
@@ -1507,7 +1538,7 @@ Enable stdout/stderr fast path logging for anonyous stored procs.
 
 This is a public parameter (similar to LOG_LEVEL). For more information, check [ENABLE_CONSOLE_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-console-output).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#enable_console_output ProcedureJavascript#enable_console_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#enable_console_output ProcedureJavascript#enable_console_output}
 
 ---
 
@@ -1523,7 +1554,7 @@ Specifies whether the stored procedure executes with the privileges of the owner
 
 If you execute the statement CREATE PROCEDURE … EXECUTE AS CALLER, then in the future the procedure will execute as a caller’s rights procedure. If you execute CREATE PROCEDURE … EXECUTE AS OWNER, then the procedure will execute as an owner’s rights procedure. For more information, see [Understanding caller’s rights and owner’s rights stored procedures](https://docs.snowflake.com/en/developer-guide/stored-procedure/stored-procedures-rights). Valid values are (case-insensitive): `CALLER` | `OWNER`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#execute_as ProcedureJavascript#execute_as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#execute_as ProcedureJavascript#execute_as}
 
 ---
 
@@ -1535,7 +1566,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#id ProcedureJavascript#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#id ProcedureJavascript#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1554,7 +1585,23 @@ IsSecure *string
 
 For more information about secure procedures, see [Protecting Sensitive Information with Secure UDFs and Stored Procedures](https://docs.snowflake.com/en/developer-guide/secure-udf-procedure). Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#is_secure ProcedureJavascript#is_secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#is_secure ProcedureJavascript#is_secure}
+
+---
+
+##### `LogEventLevel`<sup>Optional</sup> <a name="LogEventLevel" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.logEventLevel"></a>
+
+```go
+LogEventLevel *string
+```
+
+- *Type:* *string
+
+Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table.
+
+Log events at the specified level (and at more severe levels) are ingested. For more information, see [LOG_EVENT_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#log_event_level). Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`. For more information, check [LOG_EVENT_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-event-level).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#log_event_level ProcedureJavascript#log_event_level}
 
 ---
 
@@ -1568,7 +1615,7 @@ LogLevel *string
 
 LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#log_level ProcedureJavascript#log_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#log_level ProcedureJavascript#log_level}
 
 ---
 
@@ -1582,7 +1629,7 @@ MetricLevel *string
 
 METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#metric_level ProcedureJavascript#metric_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#metric_level ProcedureJavascript#metric_level}
 
 ---
 
@@ -1598,7 +1645,7 @@ Specifies the behavior of the procedure when called with null inputs.
 
 Valid values are (case-insensitive): `CALLED ON NULL INPUT` | `RETURNS NULL ON NULL INPUT`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#null_input_behavior ProcedureJavascript#null_input_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#null_input_behavior ProcedureJavascript#null_input_behavior}
 
 ---
 
@@ -1612,7 +1659,7 @@ Timeouts ProcedureJavascriptTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#timeouts ProcedureJavascript#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#timeouts ProcedureJavascript#timeouts}
 
 ---
 
@@ -1626,7 +1673,7 @@ TraceLevel *string
 
 Trace level value to use when generating/filtering trace events For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#trace_level ProcedureJavascript#trace_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#trace_level ProcedureJavascript#trace_level}
 
 ---
 
@@ -1651,6 +1698,19 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurej
 import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptParametersEnableConsoleOutput {
+
+}
+```
+
+
+### ProcedureJavascriptParametersLogEventLevel <a name="ProcedureJavascriptParametersLogEventLevel" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevel"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevel.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
+
+&procedurejavascript.ProcedureJavascriptParametersLogEventLevel {
 
 }
 ```
@@ -1727,10 +1787,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurej
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#create ProcedureJavascript#create}. |
-| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#delete ProcedureJavascript#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#read ProcedureJavascript#read}. |
-| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#update ProcedureJavascript#update}. |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#create ProcedureJavascript#create}. |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#delete ProcedureJavascript#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#read ProcedureJavascript#read}. |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#update ProcedureJavascript#update}. |
 
 ---
 
@@ -1742,7 +1802,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#create ProcedureJavascript#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#create ProcedureJavascript#create}.
 
 ---
 
@@ -1754,7 +1814,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#delete ProcedureJavascript#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#delete ProcedureJavascript#delete}.
 
 ---
 
@@ -1766,7 +1826,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#read ProcedureJavascript#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#read ProcedureJavascript#read}.
 
 ---
 
@@ -1778,7 +1838,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/procedure_javascript#update ProcedureJavascript#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/procedure_javascript#update ProcedureJavascript#update}.
 
 ---
 
@@ -2900,6 +2960,477 @@ func Fqn() *string
 ```
 
 - *Type:* *string
+
+---
+
+
+### ProcedureJavascriptParametersLogEventLevelList <a name="ProcedureJavascriptParametersLogEventLevelList" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
+
+procedurejavascript.NewProcedureJavascriptParametersLogEventLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavascriptParametersLogEventLevelList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.get"></a>
+
+```go
+func Get(index *f64) ProcedureJavascriptParametersLogEventLevelOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### ProcedureJavascriptParametersLogEventLevelOutputReference <a name="ProcedureJavascriptParametersLogEventLevelOutputReference" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejavascript"
+
+procedurejavascript.NewProcedureJavascriptParametersLogEventLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavascriptParametersLogEventLevelOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.property.default">Default</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.property.description">Description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.property.key">Key</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.property.level">Level</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevel">ProcedureJavascriptParametersLogEventLevel</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Default`<sup>Required</sup> <a name="Default" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.property.default"></a>
+
+```go
+func Default() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.property.description"></a>
+
+```go
+func Description() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.property.key"></a>
+
+```go
+func Key() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Level`<sup>Required</sup> <a name="Level" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.property.level"></a>
+
+```go
+func Level() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.property.value"></a>
+
+```go
+func Value() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ProcedureJavascriptParametersLogEventLevel
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevel">ProcedureJavascriptParametersLogEventLevel</a>
 
 ---
 
@@ -4075,6 +4606,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersOutputReference.property.enableConsoleOutput">EnableConsoleOutput</a></code> | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersEnableConsoleOutputList">ProcedureJavascriptParametersEnableConsoleOutputList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersOutputReference.property.logEventLevel">LogEventLevel</a></code> | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList">ProcedureJavascriptParametersLogEventLevelList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersOutputReference.property.logLevel">LogLevel</a></code> | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogLevelList">ProcedureJavascriptParametersLogLevelList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersOutputReference.property.metricLevel">MetricLevel</a></code> | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersMetricLevelList">ProcedureJavascriptParametersMetricLevelList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersOutputReference.property.traceLevel">TraceLevel</a></code> | <code><a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersTraceLevelList">ProcedureJavascriptParametersTraceLevelList</a></code> | *No description.* |
@@ -4113,6 +4645,16 @@ func EnableConsoleOutput() ProcedureJavascriptParametersEnableConsoleOutputList
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersEnableConsoleOutputList">ProcedureJavascriptParametersEnableConsoleOutputList</a>
+
+---
+
+##### `LogEventLevel`<sup>Required</sup> <a name="LogEventLevel" id="@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersOutputReference.property.logEventLevel"></a>
+
+```go
+func LogEventLevel() ProcedureJavascriptParametersLogEventLevelList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogEventLevelList">ProcedureJavascriptParametersLogEventLevelList</a>
 
 ---
 
