@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +15,41 @@ export interface FunctionJavaConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Default: `user-defined function`) Specifies a comment for the function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#comment FunctionJava#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#comment FunctionJava#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the function. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#database FunctionJava#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#database FunctionJava#database}
   */
   readonly database: string;
   /**
   * Enable stdout/stderr fast path logging for anonymous stored procs. This is a public parameter (similar to LOG_LEVEL). For more information, check [ENABLE_CONSOLE_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-console-output).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#enable_console_output FunctionJava#enable_console_output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#enable_console_output FunctionJava#enable_console_output}
   */
   readonly enableConsoleOutput?: boolean | cdktn.IResolvable;
   /**
   * The names of [external access integrations](https://docs.snowflake.com/en/sql-reference/sql/create-external-access-integration) needed in order for this function’s handler code to access external networks. An external access integration specifies [network rules](https://docs.snowflake.com/en/sql-reference/sql/create-network-rule) and [secrets](https://docs.snowflake.com/en/sql-reference/sql/create-secret) that specify external locations and credentials (if any) allowed for use by handler code when making requests of an external network, such as an external REST API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#external_access_integrations FunctionJava#external_access_integrations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#external_access_integrations FunctionJava#external_access_integrations}
   */
   readonly externalAccessIntegrations?: string[];
   /**
   * Defines the handler code executed when the UDF is called. Wrapping `$$` signs are added by the provider automatically; do not include them. The `function_definition` value must be Java source code. For more information, see [Introduction to Java UDFs](https://docs.snowflake.com/en/developer-guide/udf/java/udf-java-introduction). To mitigate permadiff on this field, the provider replaces blank characters with a space. This can lead to false positives in cases where a change in case or run of whitespace is semantically significant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#function_definition FunctionJava#function_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#function_definition FunctionJava#function_definition}
   */
   readonly functionDefinition?: string;
   /**
   * The name of the handler method or class. If the handler is for a scalar UDF, returning a non-tabular value, the HANDLER value should be a method name, as in the following form: `MyClass.myMethod`. If the handler is for a tabular UDF, the HANDLER value should be the name of a handler class.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#handler FunctionJava#handler}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#handler FunctionJava#handler}
   */
   readonly handler: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#id FunctionJava#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#id FunctionJava#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,97 +58,103 @@ export interface FunctionJavaConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the function is secure. By design, the Snowflake's `SHOW FUNCTIONS` command does not provide information about secure functions (consult [function docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#id1) and [Protecting Sensitive Information with Secure UDFs and Stored Procedures](https://docs.snowflake.com/en/developer-guide/secure-udf-procedure)) which is essential to manage/import function with Terraform. Use the role owning the function while managing secure functions. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#is_secure FunctionJava#is_secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#is_secure FunctionJava#is_secure}
   */
   readonly isSecure?: string;
   /**
+  * Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table. Log events at the specified level (and at more severe levels) are ingested. For more information, see [LOG_EVENT_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#log_event_level). Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`. For more information, check [LOG_EVENT_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-event-level).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#log_event_level FunctionJava#log_event_level}
+  */
+  readonly logEventLevel?: string;
+  /**
   * LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#log_level FunctionJava#log_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#log_level FunctionJava#log_level}
   */
   readonly logLevel?: string;
   /**
   * METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#metric_level FunctionJava#metric_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#metric_level FunctionJava#metric_level}
   */
   readonly metricLevel?: string;
   /**
   * The name of the function; the identifier does not need to be unique for the schema in which the function is created because UDFs are identified and resolved by the combination of the name and argument types. Check the [docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#all-languages). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#name FunctionJava#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#name FunctionJava#name}
   */
   readonly name: string;
   /**
   * Specifies the behavior of the function when called with null inputs. Valid values are (case-insensitive): `CALLED ON NULL INPUT` | `RETURNS NULL ON NULL INPUT`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#null_input_behavior FunctionJava#null_input_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#null_input_behavior FunctionJava#null_input_behavior}
   */
   readonly nullInputBehavior?: string;
   /**
   * The name and version number of Snowflake system packages required as dependencies. The value should be of the form `package_name:version_number`, where `package_name` is `snowflake_domain:package`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#packages FunctionJava#packages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#packages FunctionJava#packages}
   */
   readonly packages?: string[];
   /**
   * Specifies the behavior of the function when returning results. Valid values are (case-insensitive): `VOLATILE` | `IMMUTABLE`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#return_results_behavior FunctionJava#return_results_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#return_results_behavior FunctionJava#return_results_behavior}
   */
   readonly returnResultsBehavior?: string;
   /**
   * Specifies the results returned by the UDF, which determines the UDF type. Use `<result_data_type>` to create a scalar UDF that returns a single value with the specified data type. Use `TABLE (col_name col_data_type, ...)` to creates a table UDF that returns tabular results with the specified table column(s) and column type(s). For the details, consult the [docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#all-languages).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#return_type FunctionJava#return_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#return_type FunctionJava#return_type}
   */
   readonly returnType: string;
   /**
   * Specifies the Java JDK runtime version to use. The supported versions of Java are 11.x and 17.x. If RUNTIME_VERSION is not set, Java JDK 11 is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#runtime_version FunctionJava#runtime_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#runtime_version FunctionJava#runtime_version}
   */
   readonly runtimeVersion?: string;
   /**
   * The schema in which to create the function. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#schema FunctionJava#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#schema FunctionJava#schema}
   */
   readonly schema: string;
   /**
   * Trace level value to use when generating/filtering trace events For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#trace_level FunctionJava#trace_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#trace_level FunctionJava#trace_level}
   */
   readonly traceLevel?: string;
   /**
   * arguments block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#arguments FunctionJava#arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#arguments FunctionJava#arguments}
   */
   readonly arguments?: FunctionJavaArguments[] | cdktn.IResolvable;
   /**
   * imports block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#imports FunctionJava#imports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#imports FunctionJava#imports}
   */
   readonly imports?: FunctionJavaImports[] | cdktn.IResolvable;
   /**
   * secrets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#secrets FunctionJava#secrets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#secrets FunctionJava#secrets}
   */
   readonly secrets?: FunctionJavaSecrets[] | cdktn.IResolvable;
   /**
   * target_path block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#target_path FunctionJava#target_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#target_path FunctionJava#target_path}
   */
   readonly targetPath?: FunctionJavaTargetPath;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#timeouts FunctionJava#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#timeouts FunctionJava#timeouts}
   */
   readonly timeouts?: FunctionJavaTimeouts;
 }
@@ -245,6 +251,101 @@ export class FunctionJavaParametersEnableConsoleOutputList extends cdktn.Complex
   */
   public get(index: number): FunctionJavaParametersEnableConsoleOutputOutputReference {
     return new FunctionJavaParametersEnableConsoleOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface FunctionJavaParametersLogEventLevel {
+}
+
+export function functionJavaParametersLogEventLevelToTerraform(struct?: FunctionJavaParametersLogEventLevel): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function functionJavaParametersLogEventLevelToHclTerraform(struct?: FunctionJavaParametersLogEventLevel): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class FunctionJavaParametersLogEventLevelOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): FunctionJavaParametersLogEventLevel | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FunctionJavaParametersLogEventLevel | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class FunctionJavaParametersLogEventLevelList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): FunctionJavaParametersLogEventLevelOutputReference {
+    return new FunctionJavaParametersLogEventLevelOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface FunctionJavaParametersLogLevel {
@@ -589,6 +690,12 @@ export class FunctionJavaParametersOutputReference extends cdktn.ComplexObject {
     return this._enableConsoleOutput;
   }
 
+  // log_event_level - computed: true, optional: false, required: false
+  private _logEventLevel = new FunctionJavaParametersLogEventLevelList(this, "log_event_level", false);
+  public get logEventLevel() {
+    return this._logEventLevel;
+  }
+
   // log_level - computed: true, optional: false, required: false
   private _logLevel = new FunctionJavaParametersLogLevelList(this, "log_level", false);
   public get logLevel() {
@@ -800,19 +907,19 @@ export interface FunctionJavaArguments {
   /**
   * The argument type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#arg_data_type FunctionJava#arg_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#arg_data_type FunctionJava#arg_data_type}
   */
   readonly argDataType: string;
   /**
   * Optional default value for the argument. For text values use single quotes. Numeric values can be unquoted. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#arg_default_value FunctionJava#arg_default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#arg_default_value FunctionJava#arg_default_value}
   */
   readonly argDefaultValue?: string;
   /**
   * The argument name. The provider wraps it in double quotes by default, so be aware of that while referencing the argument in the function definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#arg_name FunctionJava#arg_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#arg_name FunctionJava#arg_name}
   */
   readonly argName: string;
 }
@@ -982,13 +1089,13 @@ export interface FunctionJavaImports {
   /**
   * Path for import on stage, without the leading `/`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#path_on_stage FunctionJava#path_on_stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#path_on_stage FunctionJava#path_on_stage}
   */
   readonly pathOnStage: string;
   /**
   * Stage location without leading `@`. To use your user's stage set this to `~`, otherwise pass fully qualified name of the stage (with every part contained in double quotes or use `snowflake_stage.<your stage's resource name>.fully_qualified_name` if you manage this stage through terraform).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#stage_location FunctionJava#stage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#stage_location FunctionJava#stage_location}
   */
   readonly stageLocation: string;
 }
@@ -1129,13 +1236,13 @@ export interface FunctionJavaSecrets {
   /**
   * Fully qualified name of the allowed [secret](https://docs.snowflake.com/en/sql-reference/sql/create-secret). You will receive an error if you specify a SECRETS value whose secret isn’t also included in an integration specified by the EXTERNAL_ACCESS_INTEGRATIONS parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#secret_id FunctionJava#secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#secret_id FunctionJava#secret_id}
   */
   readonly secretId: string;
   /**
   * The variable that will be used in handler code when retrieving information from the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#secret_variable_name FunctionJava#secret_variable_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#secret_variable_name FunctionJava#secret_variable_name}
   */
   readonly secretVariableName: string;
 }
@@ -1276,13 +1383,13 @@ export interface FunctionJavaTargetPath {
   /**
   * Path for import on stage, without the leading `/`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#path_on_stage FunctionJava#path_on_stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#path_on_stage FunctionJava#path_on_stage}
   */
   readonly pathOnStage: string;
   /**
   * Stage location without leading `@`. To use your user's stage set this to `~`, otherwise pass fully qualified name of the stage (with every part contained in double quotes or use `snowflake_stage.<your stage's resource name>.fully_qualified_name` if you manage this stage through terraform).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#stage_location FunctionJava#stage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#stage_location FunctionJava#stage_location}
   */
   readonly stageLocation: string;
 }
@@ -1389,19 +1496,19 @@ export class FunctionJavaTargetPathOutputReference extends cdktn.ComplexObject {
 }
 export interface FunctionJavaTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#create FunctionJava#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#create FunctionJava#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#delete FunctionJava#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#delete FunctionJava#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#read FunctionJava#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#read FunctionJava#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#update FunctionJava#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#update FunctionJava#update}
   */
   readonly update?: string;
 }
@@ -1582,7 +1689,7 @@ export class FunctionJavaTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java snowflake_function_java}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java snowflake_function_java}
 */
 export class FunctionJava extends cdktn.TerraformResource {
 
@@ -1598,7 +1705,7 @@ export class FunctionJava extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FunctionJava resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FunctionJava to import
-  * @param importFromId The id of the existing FunctionJava that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FunctionJava that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FunctionJava to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1610,7 +1717,7 @@ export class FunctionJava extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_java snowflake_function_java} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_java snowflake_function_java} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1621,7 +1728,7 @@ export class FunctionJava extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_function_java',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.17.0',
+        providerVersion: '2.18.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -1640,6 +1747,7 @@ export class FunctionJava extends cdktn.TerraformResource {
     this._handler = config.handler;
     this._id = config.id;
     this._isSecure = config.isSecure;
+    this._logEventLevel = config.logEventLevel;
     this._logLevel = config.logLevel;
     this._metricLevel = config.metricLevel;
     this._name = config.name;
@@ -1791,6 +1899,22 @@ export class FunctionJava extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get isSecureInput() {
     return this._isSecure;
+  }
+
+  // log_event_level - computed: true, optional: true, required: false
+  private _logEventLevel?: string; 
+  public get logEventLevel() {
+    return this.getStringAttribute('log_event_level');
+  }
+  public set logEventLevel(value: string) {
+    this._logEventLevel = value;
+  }
+  public resetLogEventLevel() {
+    this._logEventLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logEventLevelInput() {
+    return this._logEventLevel;
   }
 
   // log_level - computed: true, optional: true, required: false
@@ -2050,6 +2174,7 @@ export class FunctionJava extends cdktn.TerraformResource {
       handler: cdktn.stringToTerraform(this._handler),
       id: cdktn.stringToTerraform(this._id),
       is_secure: cdktn.stringToTerraform(this._isSecure),
+      log_event_level: cdktn.stringToTerraform(this._logEventLevel),
       log_level: cdktn.stringToTerraform(this._logLevel),
       metric_level: cdktn.stringToTerraform(this._metricLevel),
       name: cdktn.stringToTerraform(this._name),
@@ -2114,6 +2239,12 @@ export class FunctionJava extends cdktn.TerraformResource {
       },
       is_secure: {
         value: cdktn.stringToHclTerraform(this._isSecure),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      log_event_level: {
+        value: cdktn.stringToHclTerraform(this._logEventLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
