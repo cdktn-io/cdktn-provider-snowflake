@@ -1,3 +1,3 @@
 # `snowflake_catalog_integration_aws_glue`
 
-Refer to the Terraform Registry for docs: [`snowflake_catalog_integration_aws_glue`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/catalog_integration_aws_glue).
+Refer to the Terraform Registry for docs: [`snowflake_catalog_integration_aws_glue`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/catalog_integration_aws_glue).

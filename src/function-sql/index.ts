@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface FunctionSqlConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Default: `user-defined function`) Specifies a comment for the function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#comment FunctionSql#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#comment FunctionSql#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the function. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#database FunctionSql#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#database FunctionSql#database}
   */
   readonly database: string;
   /**
   * Enable stdout/stderr fast path logging for anonymous stored procs. This is a public parameter (similar to LOG_LEVEL). For more information, check [ENABLE_CONSOLE_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-console-output).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#enable_console_output FunctionSql#enable_console_output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#enable_console_output FunctionSql#enable_console_output}
   */
   readonly enableConsoleOutput?: boolean | cdktn.IResolvable;
   /**
   * Defines the handler code executed when the UDF is called. Wrapping `$$` signs are added by the provider automatically; do not include them. The `function_definition` value must be SQL source code. For more information, see [Introduction to SQL UDFs](https://docs.snowflake.com/en/developer-guide/udf/sql/udf-sql-introduction). To mitigate permadiff on this field, the provider replaces blank characters with a space. This can lead to false positives in cases where a change in case or run of whitespace is semantically significant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#function_definition FunctionSql#function_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#function_definition FunctionSql#function_definition}
   */
   readonly functionDefinition: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#id FunctionSql#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#id FunctionSql#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,61 +46,67 @@ export interface FunctionSqlConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the function is secure. By design, the Snowflake's `SHOW FUNCTIONS` command does not provide information about secure functions (consult [function docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#id1) and [Protecting Sensitive Information with Secure UDFs and Stored Procedures](https://docs.snowflake.com/en/developer-guide/secure-udf-procedure)) which is essential to manage/import function with Terraform. Use the role owning the function while managing secure functions. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#is_secure FunctionSql#is_secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#is_secure FunctionSql#is_secure}
   */
   readonly isSecure?: string;
   /**
+  * Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table. Log events at the specified level (and at more severe levels) are ingested. For more information, see [LOG_EVENT_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#log_event_level). Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`. For more information, check [LOG_EVENT_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-event-level).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#log_event_level FunctionSql#log_event_level}
+  */
+  readonly logEventLevel?: string;
+  /**
   * LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#log_level FunctionSql#log_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#log_level FunctionSql#log_level}
   */
   readonly logLevel?: string;
   /**
   * METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#metric_level FunctionSql#metric_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#metric_level FunctionSql#metric_level}
   */
   readonly metricLevel?: string;
   /**
   * The name of the function; the identifier does not need to be unique for the schema in which the function is created because UDFs are identified and resolved by the combination of the name and argument types. Check the [docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#all-languages). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#name FunctionSql#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#name FunctionSql#name}
   */
   readonly name: string;
   /**
   * Specifies the behavior of the function when returning results. Valid values are (case-insensitive): `VOLATILE` | `IMMUTABLE`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#return_results_behavior FunctionSql#return_results_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#return_results_behavior FunctionSql#return_results_behavior}
   */
   readonly returnResultsBehavior?: string;
   /**
   * Specifies the results returned by the UDF, which determines the UDF type. Use `<result_data_type>` to create a scalar UDF that returns a single value with the specified data type. Use `TABLE (col_name col_data_type, ...)` to creates a table UDF that returns tabular results with the specified table column(s) and column type(s). For the details, consult the [docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#all-languages).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#return_type FunctionSql#return_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#return_type FunctionSql#return_type}
   */
   readonly returnType: string;
   /**
   * The schema in which to create the function. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#schema FunctionSql#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#schema FunctionSql#schema}
   */
   readonly schema: string;
   /**
   * Trace level value to use when generating/filtering trace events For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#trace_level FunctionSql#trace_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#trace_level FunctionSql#trace_level}
   */
   readonly traceLevel?: string;
   /**
   * arguments block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#arguments FunctionSql#arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#arguments FunctionSql#arguments}
   */
   readonly arguments?: FunctionSqlArguments[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#timeouts FunctionSql#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#timeouts FunctionSql#timeouts}
   */
   readonly timeouts?: FunctionSqlTimeouts;
 }
@@ -197,6 +203,101 @@ export class FunctionSqlParametersEnableConsoleOutputList extends cdktn.ComplexL
   */
   public get(index: number): FunctionSqlParametersEnableConsoleOutputOutputReference {
     return new FunctionSqlParametersEnableConsoleOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface FunctionSqlParametersLogEventLevel {
+}
+
+export function functionSqlParametersLogEventLevelToTerraform(struct?: FunctionSqlParametersLogEventLevel): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function functionSqlParametersLogEventLevelToHclTerraform(struct?: FunctionSqlParametersLogEventLevel): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class FunctionSqlParametersLogEventLevelOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): FunctionSqlParametersLogEventLevel | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FunctionSqlParametersLogEventLevel | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class FunctionSqlParametersLogEventLevelList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): FunctionSqlParametersLogEventLevelOutputReference {
+    return new FunctionSqlParametersLogEventLevelOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface FunctionSqlParametersLogLevel {
@@ -541,6 +642,12 @@ export class FunctionSqlParametersOutputReference extends cdktn.ComplexObject {
     return this._enableConsoleOutput;
   }
 
+  // log_event_level - computed: true, optional: false, required: false
+  private _logEventLevel = new FunctionSqlParametersLogEventLevelList(this, "log_event_level", false);
+  public get logEventLevel() {
+    return this._logEventLevel;
+  }
+
   // log_level - computed: true, optional: false, required: false
   private _logLevel = new FunctionSqlParametersLogLevelList(this, "log_level", false);
   public get logLevel() {
@@ -752,19 +859,19 @@ export interface FunctionSqlArguments {
   /**
   * The argument type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#arg_data_type FunctionSql#arg_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#arg_data_type FunctionSql#arg_data_type}
   */
   readonly argDataType: string;
   /**
   * Optional default value for the argument. For text values use single quotes. Numeric values can be unquoted. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#arg_default_value FunctionSql#arg_default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#arg_default_value FunctionSql#arg_default_value}
   */
   readonly argDefaultValue?: string;
   /**
   * The argument name. The provider wraps it in double quotes by default, so be aware of that while referencing the argument in the function definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#arg_name FunctionSql#arg_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#arg_name FunctionSql#arg_name}
   */
   readonly argName: string;
 }
@@ -932,19 +1039,19 @@ export class FunctionSqlArgumentsList extends cdktn.ComplexList {
 }
 export interface FunctionSqlTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#create FunctionSql#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#create FunctionSql#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#delete FunctionSql#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#delete FunctionSql#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#read FunctionSql#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#read FunctionSql#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#update FunctionSql#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#update FunctionSql#update}
   */
   readonly update?: string;
 }
@@ -1125,7 +1232,7 @@ export class FunctionSqlTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql snowflake_function_sql}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql snowflake_function_sql}
 */
 export class FunctionSql extends cdktn.TerraformResource {
 
@@ -1141,7 +1248,7 @@ export class FunctionSql extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FunctionSql resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FunctionSql to import
-  * @param importFromId The id of the existing FunctionSql that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FunctionSql that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FunctionSql to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1153,7 +1260,7 @@ export class FunctionSql extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.17.0/docs/resources/function_sql snowflake_function_sql} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/function_sql snowflake_function_sql} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1164,7 +1271,7 @@ export class FunctionSql extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_function_sql',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.17.0',
+        providerVersion: '2.18.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -1181,6 +1288,7 @@ export class FunctionSql extends cdktn.TerraformResource {
     this._functionDefinition = config.functionDefinition;
     this._id = config.id;
     this._isSecure = config.isSecure;
+    this._logEventLevel = config.logEventLevel;
     this._logLevel = config.logLevel;
     this._metricLevel = config.metricLevel;
     this._name = config.name;
@@ -1294,6 +1402,22 @@ export class FunctionSql extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get isSecureInput() {
     return this._isSecure;
+  }
+
+  // log_event_level - computed: true, optional: true, required: false
+  private _logEventLevel?: string; 
+  public get logEventLevel() {
+    return this.getStringAttribute('log_event_level');
+  }
+  public set logEventLevel(value: string) {
+    this._logEventLevel = value;
+  }
+  public resetLogEventLevel() {
+    this._logEventLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logEventLevelInput() {
+    return this._logEventLevel;
   }
 
   // log_level - computed: true, optional: true, required: false
@@ -1455,6 +1579,7 @@ export class FunctionSql extends cdktn.TerraformResource {
       function_definition: cdktn.stringToTerraform(this._functionDefinition),
       id: cdktn.stringToTerraform(this._id),
       is_secure: cdktn.stringToTerraform(this._isSecure),
+      log_event_level: cdktn.stringToTerraform(this._logEventLevel),
       log_level: cdktn.stringToTerraform(this._logLevel),
       metric_level: cdktn.stringToTerraform(this._metricLevel),
       name: cdktn.stringToTerraform(this._name),
@@ -1501,6 +1626,12 @@ export class FunctionSql extends cdktn.TerraformResource {
       },
       is_secure: {
         value: cdktn.stringToHclTerraform(this._isSecure),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      log_event_level: {
+        value: cdktn.stringToHclTerraform(this._logEventLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -15,6 +15,15 @@ Object.defineProperty(exports, 'apiAuthenticationIntegrationWithAuthorizationCod
 Object.defineProperty(exports, 'apiAuthenticationIntegrationWithClientCredentials', { get: function () { return require('./api-authentication-integration-with-client-credentials'); } });
 Object.defineProperty(exports, 'apiAuthenticationIntegrationWithJwtBearer', { get: function () { return require('./api-authentication-integration-with-jwt-bearer'); } });
 Object.defineProperty(exports, 'apiIntegration', { get: function () { return require('./api-integration'); } });
+Object.defineProperty(exports, 'apiIntegrationAmazonApiGateway', { get: function () { return require('./api-integration-amazon-api-gateway'); } });
+Object.defineProperty(exports, 'apiIntegrationAzureApiManagement', { get: function () { return require('./api-integration-azure-api-management'); } });
+Object.defineProperty(exports, 'apiIntegrationExternalMcpDynamicClient', { get: function () { return require('./api-integration-external-mcp-dynamic-client'); } });
+Object.defineProperty(exports, 'apiIntegrationExternalMcpOauth2', { get: function () { return require('./api-integration-external-mcp-oauth2'); } });
+Object.defineProperty(exports, 'apiIntegrationGitRepositoryGithubApp', { get: function () { return require('./api-integration-git-repository-github-app'); } });
+Object.defineProperty(exports, 'apiIntegrationGitRepositoryOauth2', { get: function () { return require('./api-integration-git-repository-oauth2'); } });
+Object.defineProperty(exports, 'apiIntegrationGitRepositoryPrivateLink', { get: function () { return require('./api-integration-git-repository-private-link'); } });
+Object.defineProperty(exports, 'apiIntegrationGitRepositoryToken', { get: function () { return require('./api-integration-git-repository-token'); } });
+Object.defineProperty(exports, 'apiIntegrationGoogleCloudApiGateway', { get: function () { return require('./api-integration-google-cloud-api-gateway'); } });
 Object.defineProperty(exports, 'authenticationPolicy', { get: function () { return require('./authentication-policy'); } });
 Object.defineProperty(exports, 'catalogIntegrationAwsGlue', { get: function () { return require('./catalog-integration-aws-glue'); } });
 Object.defineProperty(exports, 'catalogIntegrationIcebergRest', { get: function () { return require('./catalog-integration-iceberg-rest'); } });
@@ -49,6 +58,8 @@ Object.defineProperty(exports, 'grantOwnership', { get: function () { return req
 Object.defineProperty(exports, 'grantPrivilegesToAccountRole', { get: function () { return require('./grant-privileges-to-account-role'); } });
 Object.defineProperty(exports, 'grantPrivilegesToDatabaseRole', { get: function () { return require('./grant-privileges-to-database-role'); } });
 Object.defineProperty(exports, 'grantPrivilegesToShare', { get: function () { return require('./grant-privileges-to-share'); } });
+Object.defineProperty(exports, 'icebergTableFromDeltaFiles', { get: function () { return require('./iceberg-table-from-delta-files'); } });
+Object.defineProperty(exports, 'icebergTableFromFiles', { get: function () { return require('./iceberg-table-from-files'); } });
 Object.defineProperty(exports, 'imageRepository', { get: function () { return require('./image-repository'); } });
 Object.defineProperty(exports, 'jobService', { get: function () { return require('./job-service'); } });
 Object.defineProperty(exports, 'legacyServiceUser', { get: function () { return require('./legacy-service-user'); } });
@@ -66,6 +77,7 @@ Object.defineProperty(exports, 'oauthIntegrationForPartnerApplications', { get: 
 Object.defineProperty(exports, 'objectParameter', { get: function () { return require('./object-parameter'); } });
 Object.defineProperty(exports, 'passwordPolicy', { get: function () { return require('./password-policy'); } });
 Object.defineProperty(exports, 'pipe', { get: function () { return require('./pipe'); } });
+Object.defineProperty(exports, 'postgresInstance', { get: function () { return require('./postgres-instance'); } });
 Object.defineProperty(exports, 'primaryConnection', { get: function () { return require('./primary-connection'); } });
 Object.defineProperty(exports, 'procedureJava', { get: function () { return require('./procedure-java'); } });
 Object.defineProperty(exports, 'procedureJavascript', { get: function () { return require('./procedure-javascript'); } });
@@ -100,6 +112,7 @@ Object.defineProperty(exports, 'storageIntegration', { get: function () { return
 Object.defineProperty(exports, 'storageIntegrationAws', { get: function () { return require('./storage-integration-aws'); } });
 Object.defineProperty(exports, 'storageIntegrationAzure', { get: function () { return require('./storage-integration-azure'); } });
 Object.defineProperty(exports, 'storageIntegrationGcs', { get: function () { return require('./storage-integration-gcs'); } });
+Object.defineProperty(exports, 'storageLifecyclePolicy', { get: function () { return require('./storage-lifecycle-policy'); } });
 Object.defineProperty(exports, 'streamOnDirectoryTable', { get: function () { return require('./stream-on-directory-table'); } });
 Object.defineProperty(exports, 'streamOnExternalTable', { get: function () { return require('./stream-on-external-table'); } });
 Object.defineProperty(exports, 'streamOnTable', { get: function () { return require('./stream-on-table'); } });
@@ -108,6 +121,7 @@ Object.defineProperty(exports, 'streamlit', { get: function () { return require(
 Object.defineProperty(exports, 'table', { get: function () { return require('./table'); } });
 Object.defineProperty(exports, 'tableColumnMaskingPolicyApplication', { get: function () { return require('./table-column-masking-policy-application'); } });
 Object.defineProperty(exports, 'tableConstraint', { get: function () { return require('./table-constraint'); } });
+Object.defineProperty(exports, 'tableStorageLifecyclePolicyAttachment', { get: function () { return require('./table-storage-lifecycle-policy-attachment'); } });
 Object.defineProperty(exports, 'tag', { get: function () { return require('./tag'); } });
 Object.defineProperty(exports, 'tagAssociation', { get: function () { return require('./tag-association'); } });
 Object.defineProperty(exports, 'task', { get: function () { return require('./task'); } });
@@ -123,6 +137,7 @@ Object.defineProperty(exports, 'warehouseAdaptive', { get: function () { return 
 Object.defineProperty(exports, 'dataSnowflakeAccountRoles', { get: function () { return require('./data-snowflake-account-roles'); } });
 Object.defineProperty(exports, 'dataSnowflakeAccounts', { get: function () { return require('./data-snowflake-accounts'); } });
 Object.defineProperty(exports, 'dataSnowflakeAlerts', { get: function () { return require('./data-snowflake-alerts'); } });
+Object.defineProperty(exports, 'dataSnowflakeApiIntegrations', { get: function () { return require('./data-snowflake-api-integrations'); } });
 Object.defineProperty(exports, 'dataSnowflakeAuthenticationPolicies', { get: function () { return require('./data-snowflake-authentication-policies'); } });
 Object.defineProperty(exports, 'dataSnowflakeCatalogIntegrations', { get: function () { return require('./data-snowflake-catalog-integrations'); } });
 Object.defineProperty(exports, 'dataSnowflakeComputePools', { get: function () { return require('./data-snowflake-compute-pools'); } });
@@ -167,6 +182,7 @@ Object.defineProperty(exports, 'dataSnowflakeSessionPolicies', { get: function (
 Object.defineProperty(exports, 'dataSnowflakeShares', { get: function () { return require('./data-snowflake-shares'); } });
 Object.defineProperty(exports, 'dataSnowflakeStages', { get: function () { return require('./data-snowflake-stages'); } });
 Object.defineProperty(exports, 'dataSnowflakeStorageIntegrations', { get: function () { return require('./data-snowflake-storage-integrations'); } });
+Object.defineProperty(exports, 'dataSnowflakeStorageLifecyclePolicies', { get: function () { return require('./data-snowflake-storage-lifecycle-policies'); } });
 Object.defineProperty(exports, 'dataSnowflakeStreamlits', { get: function () { return require('./data-snowflake-streamlits'); } });
 Object.defineProperty(exports, 'dataSnowflakeStreams', { get: function () { return require('./data-snowflake-streams'); } });
 Object.defineProperty(exports, 'dataSnowflakeSystemGenerateScimAccessToken', { get: function () { return require('./data-snowflake-system-generate-scim-access-token'); } });
