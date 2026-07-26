@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.postgresInstance.PostgresInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/postgresinstance"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/postgresinstance"
 
 postgresinstance.NewPostgresInstance(scope Construct, id *string, config PostgresInstanceConfig) PostgresInstance
 ```
@@ -469,7 +469,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.postgresInstance.PostgresInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/postgresinstance"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/postgresinstance"
 
 postgresinstance.PostgresInstance_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.postgresInstance.PostgresInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/postgresinstance"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/postgresinstance"
 
 postgresinstance.PostgresInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ postgresinstance.PostgresInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.postgresInstance.PostgresInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/postgresinstance"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/postgresinstance"
 
 postgresinstance.PostgresInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ postgresinstance.PostgresInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.postgresInstance.PostgresInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/postgresinstance"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/postgresinstance"
 
 postgresinstance.PostgresInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1077,7 +1077,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.postgresInstance.PostgresInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/postgresinstance"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/postgresinstance"
 
 &postgresinstance.PostgresInstanceConfig {
 	Connection: interface{},
@@ -1099,7 +1099,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/postgresin
 	NetworkPolicy: *string,
 	PostgresSettings: *string,
 	StorageIntegration: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.postgresInstance.PostgresInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.postgresInstance.PostgresInstanceTimeouts,
 }
 ```
 
@@ -1396,7 +1396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.postgresInstance.PostgresInstanceDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/postgresinstance"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/postgresinstance"
 
 &postgresinstance.PostgresInstanceDescribeOutput {
 
@@ -1409,7 +1409,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/postgresin
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.postgresInstance.PostgresInstanceShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/postgresinstance"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/postgresinstance"
 
 &postgresinstance.PostgresInstanceShowOutput {
 
@@ -1422,7 +1422,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/postgresin
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.postgresInstance.PostgresInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/postgresinstance"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/postgresinstance"
 
 &postgresinstance.PostgresInstanceTimeouts {
 	Create: *string,
@@ -1498,7 +1498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.postgresInstance.PostgresInstanceDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/postgresinstance"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/postgresinstance"
 
 postgresinstance.NewPostgresInstanceDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PostgresInstanceDescribeOutputList
 ```
@@ -1647,7 +1647,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.postgresInstance.PostgresInstanceDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/postgresinstance"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/postgresinstance"
 
 postgresinstance.NewPostgresInstanceDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PostgresInstanceDescribeOutputOutputReference
 ```
@@ -2145,7 +2145,7 @@ func InternalValue() PostgresInstanceDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.postgresInstance.PostgresInstanceShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/postgresinstance"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/postgresinstance"
 
 postgresinstance.NewPostgresInstanceShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PostgresInstanceShowOutputList
 ```
@@ -2294,7 +2294,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.postgresInstance.PostgresInstanceShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/postgresinstance"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/postgresinstance"
 
 postgresinstance.NewPostgresInstanceShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PostgresInstanceShowOutputOutputReference
 ```
@@ -2759,7 +2759,7 @@ func InternalValue() PostgresInstanceShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.postgresInstance.PostgresInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/postgresinstance"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/postgresinstance"
 
 postgresinstance.NewPostgresInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresInstanceTimeoutsOutputReference
 ```
