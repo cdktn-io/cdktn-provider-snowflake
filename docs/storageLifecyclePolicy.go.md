@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 storagelifecyclepolicy.NewStorageLifecyclePolicy(scope Construct, id *string, config StorageLifecyclePolicyConfig) StorageLifecyclePolicy
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 storagelifecyclepolicy.StorageLifecyclePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 storagelifecyclepolicy.StorageLifecyclePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ storagelifecyclepolicy.StorageLifecyclePolicy_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 storagelifecyclepolicy.StorageLifecyclePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ storagelifecyclepolicy.StorageLifecyclePolicy_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 storagelifecyclepolicy.StorageLifecyclePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1003,7 +1003,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 &storagelifecyclepolicy.StorageLifecyclePolicyArgument {
 	Name: *string,
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 &storagelifecyclepolicy.StorageLifecyclePolicyConfig {
 	Connection: interface{},
@@ -1072,7 +1072,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelif
 	ArchiveTier: *string,
 	Comment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.storageLifecyclePolicy.StorageLifecyclePolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.storageLifecyclePolicy.StorageLifecyclePolicyTimeouts,
 }
 ```
 
@@ -1328,7 +1328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 &storagelifecyclepolicy.StorageLifecyclePolicyDescribeOutput {
 
@@ -1341,7 +1341,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelif
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyDescribeOutputSignature.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 &storagelifecyclepolicy.StorageLifecyclePolicyDescribeOutputSignature {
 
@@ -1354,7 +1354,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelif
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 &storagelifecyclepolicy.StorageLifecyclePolicyShowOutput {
 
@@ -1367,7 +1367,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelif
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 &storagelifecyclepolicy.StorageLifecyclePolicyTimeouts {
 	Create: *string,
@@ -1443,7 +1443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyArgumentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 storagelifecyclepolicy.NewStorageLifecyclePolicyArgumentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageLifecyclePolicyArgumentList
 ```
@@ -1603,7 +1603,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyArgumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 storagelifecyclepolicy.NewStorageLifecyclePolicyArgumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageLifecyclePolicyArgumentOutputReference
 ```
@@ -1914,7 +1914,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 storagelifecyclepolicy.NewStorageLifecyclePolicyDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageLifecyclePolicyDescribeOutputList
 ```
@@ -2063,7 +2063,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 storagelifecyclepolicy.NewStorageLifecyclePolicyDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageLifecyclePolicyDescribeOutputOutputReference
 ```
@@ -2396,7 +2396,7 @@ func InternalValue() StorageLifecyclePolicyDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyDescribeOutputSignatureList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 storagelifecyclepolicy.NewStorageLifecyclePolicyDescribeOutputSignatureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageLifecyclePolicyDescribeOutputSignatureList
 ```
@@ -2545,7 +2545,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyDescribeOutputSignatureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 storagelifecyclepolicy.NewStorageLifecyclePolicyDescribeOutputSignatureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageLifecyclePolicyDescribeOutputSignatureOutputReference
 ```
@@ -2834,7 +2834,7 @@ func InternalValue() StorageLifecyclePolicyDescribeOutputSignature
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 storagelifecyclepolicy.NewStorageLifecyclePolicyShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageLifecyclePolicyShowOutputList
 ```
@@ -2983,7 +2983,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 storagelifecyclepolicy.NewStorageLifecyclePolicyShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageLifecyclePolicyShowOutputOutputReference
 ```
@@ -3349,7 +3349,7 @@ func InternalValue() StorageLifecyclePolicyShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/storagelifecyclepolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/storagelifecyclepolicy"
 
 storagelifecyclepolicy.NewStorageLifecyclePolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageLifecyclePolicyTimeoutsOutputReference
 ```

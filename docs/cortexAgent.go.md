@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.cortexAgent.CortexAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 cortexagent.NewCortexAgent(scope Construct, id *string, config CortexAgentConfig) CortexAgent
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.cortexAgent.CortexAgent.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 cortexagent.CortexAgent_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.cortexAgent.CortexAgent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 cortexagent.CortexAgent_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ cortexagent.CortexAgent_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.cortexAgent.CortexAgent.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 cortexagent.CortexAgent_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ cortexagent.CortexAgent_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.cortexAgent.CortexAgent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 cortexagent.CortexAgent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -952,7 +952,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.cortexAgent.CortexAgentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 &cortexagent.CortexAgentConfig {
 	Connection: interface{},
@@ -968,8 +968,8 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagen
 	Specification: *string,
 	Comment: *string,
 	Id: *string,
-	Profile: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.cortexAgent.CortexAgentProfile,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.cortexAgent.CortexAgentTimeouts,
+	Profile: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.cortexAgent.CortexAgentProfile,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.cortexAgent.CortexAgentTimeouts,
 }
 ```
 
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.cortexAgent.CortexAgentDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 &cortexagent.CortexAgentDescribeOutput {
 
@@ -1204,7 +1204,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagen
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.cortexAgent.CortexAgentDescribeOutputProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 &cortexagent.CortexAgentDescribeOutputProfile {
 
@@ -1217,7 +1217,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagen
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.cortexAgent.CortexAgentProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 &cortexagent.CortexAgentProfile {
 	Avatar: *string,
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.cortexAgent.CortexAgentShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 &cortexagent.CortexAgentShowOutput {
 
@@ -1296,7 +1296,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagen
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.cortexAgent.CortexAgentShowOutputProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 &cortexagent.CortexAgentShowOutputProfile {
 
@@ -1309,7 +1309,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagen
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.cortexAgent.CortexAgentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 &cortexagent.CortexAgentTimeouts {
 	Create: *string,
@@ -1385,7 +1385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.cortexAgent.CortexAgentDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 cortexagent.NewCortexAgentDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CortexAgentDescribeOutputList
 ```
@@ -1534,7 +1534,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.cortexAgent.CortexAgentDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 cortexagent.NewCortexAgentDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CortexAgentDescribeOutputOutputReference
 ```
@@ -1922,7 +1922,7 @@ func InternalValue() CortexAgentDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.cortexAgent.CortexAgentDescribeOutputProfileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 cortexagent.NewCortexAgentDescribeOutputProfileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CortexAgentDescribeOutputProfileList
 ```
@@ -2071,7 +2071,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.cortexAgent.CortexAgentDescribeOutputProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 cortexagent.NewCortexAgentDescribeOutputProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CortexAgentDescribeOutputProfileOutputReference
 ```
@@ -2371,7 +2371,7 @@ func InternalValue() CortexAgentDescribeOutputProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.cortexAgent.CortexAgentProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 cortexagent.NewCortexAgentProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CortexAgentProfileOutputReference
 ```
@@ -2707,7 +2707,7 @@ func InternalValue() CortexAgentProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.cortexAgent.CortexAgentShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 cortexagent.NewCortexAgentShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CortexAgentShowOutputList
 ```
@@ -2856,7 +2856,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.cortexAgent.CortexAgentShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 cortexagent.NewCortexAgentShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CortexAgentShowOutputOutputReference
 ```
@@ -3200,7 +3200,7 @@ func InternalValue() CortexAgentShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.cortexAgent.CortexAgentShowOutputProfileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 cortexagent.NewCortexAgentShowOutputProfileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CortexAgentShowOutputProfileList
 ```
@@ -3349,7 +3349,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.cortexAgent.CortexAgentShowOutputProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 cortexagent.NewCortexAgentShowOutputProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CortexAgentShowOutputProfileOutputReference
 ```
@@ -3649,7 +3649,7 @@ func InternalValue() CortexAgentShowOutputProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.cortexAgent.CortexAgentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexagent"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/cortexagent"
 
 cortexagent.NewCortexAgentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CortexAgentTimeoutsOutputReference
 ```

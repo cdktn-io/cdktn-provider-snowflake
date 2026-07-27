@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationAmazonApiGateway.ApiIntegrationAmazonApiGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationamazonapigateway"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationamazonapigateway"
 
 apiintegrationamazonapigateway.NewApiIntegrationAmazonApiGateway(scope Construct, id *string, config ApiIntegrationAmazonApiGatewayConfig) ApiIntegrationAmazonApiGateway
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.apiIntegrationAmazonApiGateway.ApiIntegrationAmazonApiGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationamazonapigateway"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationamazonapigateway"
 
 apiintegrationamazonapigateway.ApiIntegrationAmazonApiGateway_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.apiIntegrationAmazonApiGateway.ApiIntegrationAmazonApiGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationamazonapigateway"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationamazonapigateway"
 
 apiintegrationamazonapigateway.ApiIntegrationAmazonApiGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ apiintegrationamazonapigateway.ApiIntegrationAmazonApiGateway_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.apiIntegrationAmazonApiGateway.ApiIntegrationAmazonApiGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationamazonapigateway"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationamazonapigateway"
 
 apiintegrationamazonapigateway.ApiIntegrationAmazonApiGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ apiintegrationamazonapigateway.ApiIntegrationAmazonApiGateway_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.apiIntegrationAmazonApiGateway.ApiIntegrationAmazonApiGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationamazonapigateway"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationamazonapigateway"
 
 apiintegrationamazonapigateway.ApiIntegrationAmazonApiGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -990,7 +990,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationAmazonApiGateway.ApiIntegrationAmazonApiGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationamazonapigateway"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationamazonapigateway"
 
 &apiintegrationamazonapigateway.ApiIntegrationAmazonApiGatewayConfig {
 	Connection: interface{},
@@ -1009,7 +1009,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegra
 	ApiKey: *string,
 	Comment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.apiIntegrationAmazonApiGateway.ApiIntegrationAmazonApiGatewayTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.apiIntegrationAmazonApiGateway.ApiIntegrationAmazonApiGatewayTimeouts,
 }
 ```
 
@@ -1255,7 +1255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationAmazonApiGateway.ApiIntegrationAmazonApiGatewayDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationamazonapigateway"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationamazonapigateway"
 
 &apiintegrationamazonapigateway.ApiIntegrationAmazonApiGatewayDescribeOutput {
 
@@ -1268,7 +1268,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegra
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationAmazonApiGateway.ApiIntegrationAmazonApiGatewayShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationamazonapigateway"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationamazonapigateway"
 
 &apiintegrationamazonapigateway.ApiIntegrationAmazonApiGatewayShowOutput {
 
@@ -1281,7 +1281,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegra
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationAmazonApiGateway.ApiIntegrationAmazonApiGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationamazonapigateway"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationamazonapigateway"
 
 &apiintegrationamazonapigateway.ApiIntegrationAmazonApiGatewayTimeouts {
 	Create: *string,
@@ -1357,7 +1357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationAmazonApiGateway.ApiIntegrationAmazonApiGatewayDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationamazonapigateway"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationamazonapigateway"
 
 apiintegrationamazonapigateway.NewApiIntegrationAmazonApiGatewayDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiIntegrationAmazonApiGatewayDescribeOutputList
 ```
@@ -1506,7 +1506,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationAmazonApiGateway.ApiIntegrationAmazonApiGatewayDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationamazonapigateway"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationamazonapigateway"
 
 apiintegrationamazonapigateway.NewApiIntegrationAmazonApiGatewayDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiIntegrationAmazonApiGatewayDescribeOutputOutputReference
 ```
@@ -1872,7 +1872,7 @@ func InternalValue() ApiIntegrationAmazonApiGatewayDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationAmazonApiGateway.ApiIntegrationAmazonApiGatewayShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationamazonapigateway"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationamazonapigateway"
 
 apiintegrationamazonapigateway.NewApiIntegrationAmazonApiGatewayShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiIntegrationAmazonApiGatewayShowOutputList
 ```
@@ -2021,7 +2021,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationAmazonApiGateway.ApiIntegrationAmazonApiGatewayShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationamazonapigateway"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationamazonapigateway"
 
 apiintegrationamazonapigateway.NewApiIntegrationAmazonApiGatewayShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiIntegrationAmazonApiGatewayShowOutputOutputReference
 ```
@@ -2354,7 +2354,7 @@ func InternalValue() ApiIntegrationAmazonApiGatewayShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationAmazonApiGateway.ApiIntegrationAmazonApiGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationamazonapigateway"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationamazonapigateway"
 
 apiintegrationamazonapigateway.NewApiIntegrationAmazonApiGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiIntegrationAmazonApiGatewayTimeoutsOutputReference
 ```
