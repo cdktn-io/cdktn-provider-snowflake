@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpOauth2.ApiIntegrationExternalMcpOauth2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpoauth2"
 
 apiintegrationexternalmcpoauth2.NewApiIntegrationExternalMcpOauth2(scope Construct, id *string, config ApiIntegrationExternalMcpOauth2Config) ApiIntegrationExternalMcpOauth2
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpOauth2.ApiIntegrationExternalMcpOauth2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpoauth2"
 
 apiintegrationexternalmcpoauth2.ApiIntegrationExternalMcpOauth2_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpOauth2.ApiIntegrationExternalMcpOauth2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpoauth2"
 
 apiintegrationexternalmcpoauth2.ApiIntegrationExternalMcpOauth2_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ apiintegrationexternalmcpoauth2.ApiIntegrationExternalMcpOauth2_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpOauth2.ApiIntegrationExternalMcpOauth2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpoauth2"
 
 apiintegrationexternalmcpoauth2.ApiIntegrationExternalMcpOauth2_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ apiintegrationexternalmcpoauth2.ApiIntegrationExternalMcpOauth2_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpOauth2.ApiIntegrationExternalMcpOauth2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpoauth2"
 
 apiintegrationexternalmcpoauth2.ApiIntegrationExternalMcpOauth2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1063,7 +1063,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpOauth2.ApiIntegrationExternalMcpOauth2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpoauth2"
 
 &apiintegrationexternalmcpoauth2.ApiIntegrationExternalMcpOauth2Config {
 	Connection: interface{},
@@ -1085,7 +1085,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegra
 	Id: *string,
 	OauthClientAuthMethod: *string,
 	OauthRefreshTokenValidity: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.apiIntegrationExternalMcpOauth2.ApiIntegrationExternalMcpOauth2Timeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.apiIntegrationExternalMcpOauth2.ApiIntegrationExternalMcpOauth2Timeouts,
 }
 ```
 
@@ -1374,7 +1374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpOauth2.ApiIntegrationExternalMcpOauth2DescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpoauth2"
 
 &apiintegrationexternalmcpoauth2.ApiIntegrationExternalMcpOauth2DescribeOutput {
 
@@ -1387,7 +1387,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegra
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpOauth2.ApiIntegrationExternalMcpOauth2ShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpoauth2"
 
 &apiintegrationexternalmcpoauth2.ApiIntegrationExternalMcpOauth2ShowOutput {
 
@@ -1400,7 +1400,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegra
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpOauth2.ApiIntegrationExternalMcpOauth2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpoauth2"
 
 &apiintegrationexternalmcpoauth2.ApiIntegrationExternalMcpOauth2Timeouts {
 	Create: *string,
@@ -1476,7 +1476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpOauth2.ApiIntegrationExternalMcpOauth2DescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpoauth2"
 
 apiintegrationexternalmcpoauth2.NewApiIntegrationExternalMcpOauth2DescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiIntegrationExternalMcpOauth2DescribeOutputList
 ```
@@ -1625,7 +1625,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpOauth2.ApiIntegrationExternalMcpOauth2DescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpoauth2"
 
 apiintegrationexternalmcpoauth2.NewApiIntegrationExternalMcpOauth2DescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiIntegrationExternalMcpOauth2DescribeOutputOutputReference
 ```
@@ -2068,7 +2068,7 @@ func InternalValue() ApiIntegrationExternalMcpOauth2DescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpOauth2.ApiIntegrationExternalMcpOauth2ShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpoauth2"
 
 apiintegrationexternalmcpoauth2.NewApiIntegrationExternalMcpOauth2ShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiIntegrationExternalMcpOauth2ShowOutputList
 ```
@@ -2217,7 +2217,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpOauth2.ApiIntegrationExternalMcpOauth2ShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpoauth2"
 
 apiintegrationexternalmcpoauth2.NewApiIntegrationExternalMcpOauth2ShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiIntegrationExternalMcpOauth2ShowOutputOutputReference
 ```
@@ -2550,7 +2550,7 @@ func InternalValue() ApiIntegrationExternalMcpOauth2ShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpOauth2.ApiIntegrationExternalMcpOauth2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpoauth2"
 
 apiintegrationexternalmcpoauth2.NewApiIntegrationExternalMcpOauth2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiIntegrationExternalMcpOauth2TimeoutsOutputReference
 ```

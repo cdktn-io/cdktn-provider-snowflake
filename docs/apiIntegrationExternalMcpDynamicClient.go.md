@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpdynamicclient"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpdynamicclient"
 
 apiintegrationexternalmcpdynamicclient.NewApiIntegrationExternalMcpDynamicClient(scope Construct, id *string, config ApiIntegrationExternalMcpDynamicClientConfig) ApiIntegrationExternalMcpDynamicClient
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClient.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpdynamicclient"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpdynamicclient"
 
 apiintegrationexternalmcpdynamicclient.ApiIntegrationExternalMcpDynamicClient_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClient.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpdynamicclient"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpdynamicclient"
 
 apiintegrationexternalmcpdynamicclient.ApiIntegrationExternalMcpDynamicClient_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ apiintegrationexternalmcpdynamicclient.ApiIntegrationExternalMcpDynamicClient_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClient.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpdynamicclient"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpdynamicclient"
 
 apiintegrationexternalmcpdynamicclient.ApiIntegrationExternalMcpDynamicClient_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ apiintegrationexternalmcpdynamicclient.ApiIntegrationExternalMcpDynamicClient_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClient.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpdynamicclient"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpdynamicclient"
 
 apiintegrationexternalmcpdynamicclient.ApiIntegrationExternalMcpDynamicClient_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -939,7 +939,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpdynamicclient"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpdynamicclient"
 
 &apiintegrationexternalmcpdynamicclient.ApiIntegrationExternalMcpDynamicClientConfig {
 	Connection: interface{},
@@ -956,7 +956,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegra
 	ApiBlockedPrefixes: *[]*string,
 	Comment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientTimeouts,
 }
 ```
 
@@ -1172,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpdynamicclient"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpdynamicclient"
 
 &apiintegrationexternalmcpdynamicclient.ApiIntegrationExternalMcpDynamicClientDescribeOutput {
 
@@ -1185,7 +1185,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegra
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpdynamicclient"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpdynamicclient"
 
 &apiintegrationexternalmcpdynamicclient.ApiIntegrationExternalMcpDynamicClientShowOutput {
 
@@ -1198,7 +1198,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegra
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpdynamicclient"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpdynamicclient"
 
 &apiintegrationexternalmcpdynamicclient.ApiIntegrationExternalMcpDynamicClientTimeouts {
 	Create: *string,
@@ -1274,7 +1274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpdynamicclient"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpdynamicclient"
 
 apiintegrationexternalmcpdynamicclient.NewApiIntegrationExternalMcpDynamicClientDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiIntegrationExternalMcpDynamicClientDescribeOutputList
 ```
@@ -1423,7 +1423,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpdynamicclient"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpdynamicclient"
 
 apiintegrationexternalmcpdynamicclient.NewApiIntegrationExternalMcpDynamicClientDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiIntegrationExternalMcpDynamicClientDescribeOutputOutputReference
 ```
@@ -1767,7 +1767,7 @@ func InternalValue() ApiIntegrationExternalMcpDynamicClientDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpdynamicclient"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpdynamicclient"
 
 apiintegrationexternalmcpdynamicclient.NewApiIntegrationExternalMcpDynamicClientShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiIntegrationExternalMcpDynamicClientShowOutputList
 ```
@@ -1916,7 +1916,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpdynamicclient"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpdynamicclient"
 
 apiintegrationexternalmcpdynamicclient.NewApiIntegrationExternalMcpDynamicClientShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiIntegrationExternalMcpDynamicClientShowOutputOutputReference
 ```
@@ -2249,7 +2249,7 @@ func InternalValue() ApiIntegrationExternalMcpDynamicClientShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationexternalmcpdynamicclient"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationexternalmcpdynamicclient"
 
 apiintegrationexternalmcpdynamicclient.NewApiIntegrationExternalMcpDynamicClientTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiIntegrationExternalMcpDynamicClientTimeoutsOutputReference
 ```

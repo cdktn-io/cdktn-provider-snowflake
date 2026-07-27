@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 datasnowflakepasswordpolicies.NewDataSnowflakePasswordPolicies(scope Construct, id *string, config DataSnowflakePasswordPoliciesConfig) DataSnowflakePasswordPolicies
 ```
@@ -386,7 +386,7 @@ func ResetWithDescribe()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 datasnowflakepasswordpolicies.DataSnowflakePasswordPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -418,7 +418,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 datasnowflakepasswordpolicies.DataSnowflakePasswordPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ datasnowflakepasswordpolicies.DataSnowflakePasswordPolicies_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 datasnowflakepasswordpolicies.DataSnowflakePasswordPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ datasnowflakepasswordpolicies.DataSnowflakePasswordPolicies_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 datasnowflakepasswordpolicies.DataSnowflakePasswordPolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -818,7 +818,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 &datasnowflakepasswordpolicies.DataSnowflakePasswordPoliciesConfig {
 	Connection: interface{},
@@ -829,10 +829,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	In: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesIn,
+	In: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesIn,
 	Like: *string,
-	Limit: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesLimit,
-	On: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesOn,
+	Limit: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesLimit,
+	On: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesOn,
 	StartsWith: *string,
 	WithDescribe: interface{},
 }
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesIn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 &datasnowflakepasswordpolicies.DataSnowflakePasswordPoliciesIn {
 	Account: interface{},
@@ -1133,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 &datasnowflakepasswordpolicies.DataSnowflakePasswordPoliciesLimit {
 	Rows: *f64,
@@ -1185,7 +1185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesOn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 &datasnowflakepasswordpolicies.DataSnowflakePasswordPoliciesOn {
 	Account: interface{},
@@ -1235,7 +1235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesPasswordPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 &datasnowflakepasswordpolicies.DataSnowflakePasswordPoliciesPasswordPolicies {
 
@@ -1248,7 +1248,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesPasswordPoliciesDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 &datasnowflakepasswordpolicies.DataSnowflakePasswordPoliciesPasswordPoliciesDescribeOutput {
 
@@ -1261,7 +1261,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesPasswordPoliciesShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 &datasnowflakepasswordpolicies.DataSnowflakePasswordPoliciesPasswordPoliciesShowOutput {
 
@@ -1276,7 +1276,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 datasnowflakepasswordpolicies.NewDataSnowflakePasswordPoliciesInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakePasswordPoliciesInOutputReference
 ```
@@ -1670,7 +1670,7 @@ func InternalValue() DataSnowflakePasswordPoliciesIn
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 datasnowflakepasswordpolicies.NewDataSnowflakePasswordPoliciesLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakePasswordPoliciesLimitOutputReference
 ```
@@ -1970,7 +1970,7 @@ func InternalValue() DataSnowflakePasswordPoliciesLimit
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesOnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 datasnowflakepasswordpolicies.NewDataSnowflakePasswordPoliciesOnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakePasswordPoliciesOnOutputReference
 ```
@@ -2277,7 +2277,7 @@ func InternalValue() DataSnowflakePasswordPoliciesOn
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesPasswordPoliciesDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 datasnowflakepasswordpolicies.NewDataSnowflakePasswordPoliciesPasswordPoliciesDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakePasswordPoliciesPasswordPoliciesDescribeOutputList
 ```
@@ -2426,7 +2426,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesPasswordPoliciesDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 datasnowflakepasswordpolicies.NewDataSnowflakePasswordPoliciesPasswordPoliciesDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakePasswordPoliciesPasswordPoliciesDescribeOutputOutputReference
 ```
@@ -2847,7 +2847,7 @@ func InternalValue() DataSnowflakePasswordPoliciesPasswordPoliciesDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesPasswordPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 datasnowflakepasswordpolicies.NewDataSnowflakePasswordPoliciesPasswordPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakePasswordPoliciesPasswordPoliciesList
 ```
@@ -2996,7 +2996,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesPasswordPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 datasnowflakepasswordpolicies.NewDataSnowflakePasswordPoliciesPasswordPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakePasswordPoliciesPasswordPoliciesOutputReference
 ```
@@ -3285,7 +3285,7 @@ func InternalValue() DataSnowflakePasswordPoliciesPasswordPolicies
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesPasswordPoliciesShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 datasnowflakepasswordpolicies.NewDataSnowflakePasswordPoliciesPasswordPoliciesShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakePasswordPoliciesPasswordPoliciesShowOutputList
 ```
@@ -3434,7 +3434,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakePasswordPolicies.DataSnowflakePasswordPoliciesPasswordPoliciesShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakepasswordpolicies"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakepasswordpolicies"
 
 datasnowflakepasswordpolicies.NewDataSnowflakePasswordPoliciesPasswordPoliciesShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakePasswordPoliciesPasswordPoliciesShowOutputOutputReference
 ```

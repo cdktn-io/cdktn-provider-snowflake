@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationazureapimanagement"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationazureapimanagement"
 
 apiintegrationazureapimanagement.NewApiIntegrationAzureApiManagement(scope Construct, id *string, config ApiIntegrationAzureApiManagementConfig) ApiIntegrationAzureApiManagement
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagement.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationazureapimanagement"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationazureapimanagement"
 
 apiintegrationazureapimanagement.ApiIntegrationAzureApiManagement_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagement.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationazureapimanagement"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationazureapimanagement"
 
 apiintegrationazureapimanagement.ApiIntegrationAzureApiManagement_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ apiintegrationazureapimanagement.ApiIntegrationAzureApiManagement_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagement.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationazureapimanagement"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationazureapimanagement"
 
 apiintegrationazureapimanagement.ApiIntegrationAzureApiManagement_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ apiintegrationazureapimanagement.ApiIntegrationAzureApiManagement_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagement.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationazureapimanagement"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationazureapimanagement"
 
 apiintegrationazureapimanagement.ApiIntegrationAzureApiManagement_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -990,7 +990,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationazureapimanagement"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationazureapimanagement"
 
 &apiintegrationazureapimanagement.ApiIntegrationAzureApiManagementConfig {
 	Connection: interface{},
@@ -1009,7 +1009,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegra
 	ApiKey: *string,
 	Comment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementTimeouts,
 }
 ```
 
@@ -1255,7 +1255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationazureapimanagement"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationazureapimanagement"
 
 &apiintegrationazureapimanagement.ApiIntegrationAzureApiManagementDescribeOutput {
 
@@ -1268,7 +1268,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegra
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationazureapimanagement"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationazureapimanagement"
 
 &apiintegrationazureapimanagement.ApiIntegrationAzureApiManagementShowOutput {
 
@@ -1281,7 +1281,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegra
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationazureapimanagement"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationazureapimanagement"
 
 &apiintegrationazureapimanagement.ApiIntegrationAzureApiManagementTimeouts {
 	Create: *string,
@@ -1357,7 +1357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationazureapimanagement"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationazureapimanagement"
 
 apiintegrationazureapimanagement.NewApiIntegrationAzureApiManagementDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiIntegrationAzureApiManagementDescribeOutputList
 ```
@@ -1506,7 +1506,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationazureapimanagement"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationazureapimanagement"
 
 apiintegrationazureapimanagement.NewApiIntegrationAzureApiManagementDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiIntegrationAzureApiManagementDescribeOutputOutputReference
 ```
@@ -1883,7 +1883,7 @@ func InternalValue() ApiIntegrationAzureApiManagementDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationazureapimanagement"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationazureapimanagement"
 
 apiintegrationazureapimanagement.NewApiIntegrationAzureApiManagementShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiIntegrationAzureApiManagementShowOutputList
 ```
@@ -2032,7 +2032,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationazureapimanagement"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationazureapimanagement"
 
 apiintegrationazureapimanagement.NewApiIntegrationAzureApiManagementShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiIntegrationAzureApiManagementShowOutputOutputReference
 ```
@@ -2365,7 +2365,7 @@ func InternalValue() ApiIntegrationAzureApiManagementShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationazureapimanagement"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationazureapimanagement"
 
 apiintegrationazureapimanagement.NewApiIntegrationAzureApiManagementTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiIntegrationAzureApiManagementTimeoutsOutputReference
 ```
