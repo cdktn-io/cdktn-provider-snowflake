@@ -4,7 +4,7 @@
 
 ### SecondaryDatabase <a name="SecondaryDatabase" id="@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database snowflake_secondary_database}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database snowflake_secondary_database}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.Initializer"></a>
 
@@ -25,6 +25,8 @@ SecondaryDatabase.Builder.create(Construct scope, java.lang.String id)
 //  .comment(java.lang.String)
 //  .dataRetentionTimeInDays(java.lang.Number)
 //  .defaultDdlCollation(java.lang.String)
+//  .defaultNotebookComputePoolCpu(java.lang.String)
+//  .defaultNotebookComputePoolGpu(java.lang.String)
 //  .enableConsoleOutput(java.lang.Boolean|IResolvable)
 //  .externalVolume(java.lang.String)
 //  .id(java.lang.String)
@@ -62,9 +64,11 @@ SecondaryDatabase.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the database. |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.Initializer.parameter.dataRetentionTimeInDays">dataRetentionTimeInDays</a></code> | <code>java.lang.Number</code> | Specifies the number of days for which Time Travel actions (CLONE and UNDROP) can be performed on the database, as well as specifying the default Time Travel retention time for all schemas created in the database. |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.Initializer.parameter.defaultDdlCollation">defaultDdlCollation</a></code> | <code>java.lang.String</code> | Specifies a default collation specification for all schemas and tables added to the database. |
+| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.Initializer.parameter.defaultNotebookComputePoolCpu">defaultNotebookComputePoolCpu</a></code> | <code>java.lang.String</code> | Sets the preferred CPU compute pool used for Notebooks on CPU Container Runtime. |
+| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.Initializer.parameter.defaultNotebookComputePoolGpu">defaultNotebookComputePoolGpu</a></code> | <code>java.lang.String</code> | Sets the preferred GPU compute pool used for Notebooks on GPU Container Runtime. |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.Initializer.parameter.enableConsoleOutput">enableConsoleOutput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, enables stdout/stderr fast path logging for anonymous stored procedures. |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.Initializer.parameter.externalVolume">externalVolume</a></code> | <code>java.lang.String</code> | The database parameter that specifies the default external volume to use for Iceberg tables. For more information, see [EXTERNAL_VOLUME](https://docs.snowflake.com/en/sql-reference/parameters#external-volume). |
-| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#id SecondaryDatabase#id}. |
+| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#id SecondaryDatabase#id}. |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.Initializer.parameter.isTransient">isTransient</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Specifies the database as transient. |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.Initializer.parameter.logEventLevel">logEventLevel</a></code> | <code>java.lang.String</code> | Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table. |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.Initializer.parameter.logLevel">logLevel</a></code> | <code>java.lang.String</code> | Specifies the severity level of messages that should be ingested and made available in the active event table. |
@@ -150,7 +154,7 @@ A fully qualified path to a database to create a replica from.
 
 A fully qualified path follows the format of `"<organization_name>"."<account_name>"."<database_name>"`. For more information about this resource, see [docs](./database).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#as_replica_of SecondaryDatabase#as_replica_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#as_replica_of SecondaryDatabase#as_replica_of}
 
 ---
 
@@ -162,7 +166,7 @@ Specifies the identifier for the database;
 
 must be unique for your account. As a best practice for [Database Replication and Failover](https://docs.snowflake.com/en/user-guide/db-replication-intro), it is recommended to give each secondary database the same name as its primary database. This practice supports referencing fully-qualified objects (i.e. '<db>.<schema>.<object>') by other objects in the same database, such as querying a fully-qualified table name in a view. If a secondary database has a different name from the primary database, then these object references would break in the secondary database. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#name SecondaryDatabase#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#name SecondaryDatabase#name}
 
 ---
 
@@ -172,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The database parameter that specifies the default catalog to use for Iceberg tables. For more information, see [CATALOG](https://docs.snowflake.com/en/sql-reference/parameters#catalog).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#catalog SecondaryDatabase#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#catalog SecondaryDatabase#catalog}
 
 ---
 
@@ -182,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#comment SecondaryDatabase#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#comment SecondaryDatabase#comment}
 
 ---
 
@@ -194,7 +198,7 @@ Specifies the number of days for which Time Travel actions (CLONE and UNDROP) ca
 
 For more details, see [Understanding & Using Time Travel](https://docs.snowflake.com/en/user-guide/data-time-travel).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#data_retention_time_in_days SecondaryDatabase#data_retention_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#data_retention_time_in_days SecondaryDatabase#data_retention_time_in_days}
 
 ---
 
@@ -206,7 +210,27 @@ Specifies a default collation specification for all schemas and tables added to 
 
 It can be overridden on schema or table level. For more information, see [collation specification](https://docs.snowflake.com/en/sql-reference/collation#label-collation-specification).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#default_ddl_collation SecondaryDatabase#default_ddl_collation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#default_ddl_collation SecondaryDatabase#default_ddl_collation}
+
+---
+
+##### `defaultNotebookComputePoolCpu`<sup>Optional</sup> <a name="defaultNotebookComputePoolCpu" id="@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.Initializer.parameter.defaultNotebookComputePoolCpu"></a>
+
+- *Type:* java.lang.String
+
+Sets the preferred CPU compute pool used for Notebooks on CPU Container Runtime.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#default_notebook_compute_pool_cpu SecondaryDatabase#default_notebook_compute_pool_cpu}
+
+---
+
+##### `defaultNotebookComputePoolGpu`<sup>Optional</sup> <a name="defaultNotebookComputePoolGpu" id="@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.Initializer.parameter.defaultNotebookComputePoolGpu"></a>
+
+- *Type:* java.lang.String
+
+Sets the preferred GPU compute pool used for Notebooks on GPU Container Runtime.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#default_notebook_compute_pool_gpu SecondaryDatabase#default_notebook_compute_pool_gpu}
 
 ---
 
@@ -216,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 If true, enables stdout/stderr fast path logging for anonymous stored procedures.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#enable_console_output SecondaryDatabase#enable_console_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#enable_console_output SecondaryDatabase#enable_console_output}
 
 ---
 
@@ -226,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The database parameter that specifies the default external volume to use for Iceberg tables. For more information, see [EXTERNAL_VOLUME](https://docs.snowflake.com/en/sql-reference/parameters#external-volume).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#external_volume SecondaryDatabase#external_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#external_volume SecondaryDatabase#external_volume}
 
 ---
 
@@ -234,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#id SecondaryDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#id SecondaryDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -249,7 +273,7 @@ Specifies the database as transient.
 
 Transient databases do not have a Fail-safe period so they do not incur additional storage costs once they leave Time Travel; however, this means they are also not protected by Fail-safe in the event of a data loss.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#is_transient SecondaryDatabase#is_transient}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#is_transient SecondaryDatabase#is_transient}
 
 ---
 
@@ -261,7 +285,7 @@ Specifies the severity level of log events (rows with record type EVENT) that sh
 
 Log events at the specified level (and at more severe levels) are ingested. For more information, see [LOG_EVENT_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#log_event_level). Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#log_event_level SecondaryDatabase#log_event_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#log_event_level SecondaryDatabase#log_event_level}
 
 ---
 
@@ -273,7 +297,7 @@ Specifies the severity level of messages that should be ingested and made availa
 
 Valid options are: [TRACE DEBUG INFO WARN ERROR FATAL OFF]. Messages at the specified level (and at more severe levels) are ingested. For more information, see [LOG_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters.html#label-log-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#log_level SecondaryDatabase#log_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#log_level SecondaryDatabase#log_level}
 
 ---
 
@@ -285,7 +309,7 @@ Object parameter that specifies the maximum number of days for which Snowflake c
 
 For a detailed description of this parameter, see [MAX_DATA_EXTENSION_TIME_IN_DAYS](https://docs.snowflake.com/en/sql-reference/parameters.html#label-max-data-extension-time-in-days).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#max_data_extension_time_in_days SecondaryDatabase#max_data_extension_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#max_data_extension_time_in_days SecondaryDatabase#max_data_extension_time_in_days}
 
 ---
 
@@ -295,7 +319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 If true, the case of quoted identifiers is ignored. For more information, see [QUOTED_IDENTIFIERS_IGNORE_CASE](https://docs.snowflake.com/en/sql-reference/parameters#quoted-identifiers-ignore-case).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#quoted_identifiers_ignore_case SecondaryDatabase#quoted_identifiers_ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#quoted_identifiers_ignore_case SecondaryDatabase#quoted_identifiers_ignore_case}
 
 ---
 
@@ -307,7 +331,7 @@ Specifies whether to replace invalid UTF-8 characters with the Unicode replaceme
 
 You can only set this parameter for tables that use an external Iceberg catalog. For more information, see [REPLACE_INVALID_CHARACTERS](https://docs.snowflake.com/en/sql-reference/parameters#replace-invalid-characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#replace_invalid_characters SecondaryDatabase#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#replace_invalid_characters SecondaryDatabase#replace_invalid_characters}
 
 ---
 
@@ -319,7 +343,7 @@ The storage serialization policy for Iceberg tables that use Snowflake as the ca
 
 Valid options are: [COMPATIBLE OPTIMIZED]. COMPATIBLE: Snowflake performs encoding and compression of data files that ensures interoperability with third-party compute engines. OPTIMIZED: Snowflake performs encoding and compression of data files that ensures the best table performance within Snowflake. For more information, see [STORAGE_SERIALIZATION_POLICY](https://docs.snowflake.com/en/sql-reference/parameters#storage-serialization-policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#storage_serialization_policy SecondaryDatabase#storage_serialization_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#storage_serialization_policy SecondaryDatabase#storage_serialization_policy}
 
 ---
 
@@ -331,7 +355,7 @@ How many times a task must fail in a row before it is automatically suspended.
 
 0 disables auto-suspending. For more information, see [SUSPEND_TASK_AFTER_NUM_FAILURES](https://docs.snowflake.com/en/sql-reference/parameters#suspend-task-after-num-failures).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#suspend_task_after_num_failures SecondaryDatabase#suspend_task_after_num_failures}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#suspend_task_after_num_failures SecondaryDatabase#suspend_task_after_num_failures}
 
 ---
 
@@ -341,7 +365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Maximum automatic retries allowed for a user task. For more information, see [TASK_AUTO_RETRY_ATTEMPTS](https://docs.snowflake.com/en/sql-reference/parameters#task-auto-retry-attempts).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#task_auto_retry_attempts SecondaryDatabase#task_auto_retry_attempts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#task_auto_retry_attempts SecondaryDatabase#task_auto_retry_attempts}
 
 ---
 
@@ -351,7 +375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#timeouts SecondaryDatabase#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#timeouts SecondaryDatabase#timeouts}
 
 ---
 
@@ -363,7 +387,7 @@ Controls how trace events are ingested into the event table.
 
 Valid options are: `ALWAYS` | `ON_EVENT` | `PROPAGATE` | `OFF`. For information about levels, see [TRACE_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters.html#label-trace-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#trace_level SecondaryDatabase#trace_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#trace_level SecondaryDatabase#trace_level}
 
 ---
 
@@ -375,7 +399,7 @@ The initial size of warehouse to use for managed warehouses in the absence of hi
 
 For more information, see [USER_TASK_MANAGED_INITIAL_WAREHOUSE_SIZE](https://docs.snowflake.com/en/sql-reference/parameters#user-task-managed-initial-warehouse-size).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#user_task_managed_initial_warehouse_size SecondaryDatabase#user_task_managed_initial_warehouse_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#user_task_managed_initial_warehouse_size SecondaryDatabase#user_task_managed_initial_warehouse_size}
 
 ---
 
@@ -385,7 +409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Minimum amount of time between Triggered Task executions in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#user_task_minimum_trigger_interval_in_seconds SecondaryDatabase#user_task_minimum_trigger_interval_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#user_task_minimum_trigger_interval_in_seconds SecondaryDatabase#user_task_minimum_trigger_interval_in_seconds}
 
 ---
 
@@ -395,7 +419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 User task execution timeout in milliseconds. For more information, see [USER_TASK_TIMEOUT_MS](https://docs.snowflake.com/en/sql-reference/parameters#user-task-timeout-ms).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#user_task_timeout_ms SecondaryDatabase#user_task_timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#user_task_timeout_ms SecondaryDatabase#user_task_timeout_ms}
 
 ---
 
@@ -432,6 +456,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.resetComment">resetComment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.resetDataRetentionTimeInDays">resetDataRetentionTimeInDays</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.resetDefaultDdlCollation">resetDefaultDdlCollation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.resetDefaultNotebookComputePoolCpu">resetDefaultNotebookComputePoolCpu</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.resetDefaultNotebookComputePoolGpu">resetDefaultNotebookComputePoolGpu</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.resetEnableConsoleOutput">resetEnableConsoleOutput</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.resetExternalVolume">resetExternalVolume</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.resetId">resetId</a></code> | *No description.* |
@@ -799,6 +825,18 @@ public void resetDataRetentionTimeInDays()
 public void resetDefaultDdlCollation()
 ```
 
+##### `resetDefaultNotebookComputePoolCpu` <a name="resetDefaultNotebookComputePoolCpu" id="@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.resetDefaultNotebookComputePoolCpu"></a>
+
+```java
+public void resetDefaultNotebookComputePoolCpu()
+```
+
+##### `resetDefaultNotebookComputePoolGpu` <a name="resetDefaultNotebookComputePoolGpu" id="@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.resetDefaultNotebookComputePoolGpu"></a>
+
+```java
+public void resetDefaultNotebookComputePoolGpu()
+```
+
 ##### `resetEnableConsoleOutput` <a name="resetEnableConsoleOutput" id="@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.resetEnableConsoleOutput"></a>
 
 ```java
@@ -1004,7 +1042,7 @@ The construct id used in the generated config for the SecondaryDatabase to impor
 
 The id of the existing SecondaryDatabase that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1041,6 +1079,8 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.commentInput">commentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.dataRetentionTimeInDaysInput">dataRetentionTimeInDaysInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.defaultDdlCollationInput">defaultDdlCollationInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.defaultNotebookComputePoolCpuInput">defaultNotebookComputePoolCpuInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.defaultNotebookComputePoolGpuInput">defaultNotebookComputePoolGpuInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.enableConsoleOutputInput">enableConsoleOutputInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.externalVolumeInput">externalVolumeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1064,6 +1104,8 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.comment">comment</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.dataRetentionTimeInDays">dataRetentionTimeInDays</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.defaultDdlCollation">defaultDdlCollation</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.defaultNotebookComputePoolCpu">defaultNotebookComputePoolCpu</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.defaultNotebookComputePoolGpu">defaultNotebookComputePoolGpu</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.enableConsoleOutput">enableConsoleOutput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.externalVolume">externalVolume</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1290,6 +1332,26 @@ public java.lang.Number getDataRetentionTimeInDaysInput();
 
 ```java
 public java.lang.String getDefaultDdlCollationInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `defaultNotebookComputePoolCpuInput`<sup>Optional</sup> <a name="defaultNotebookComputePoolCpuInput" id="@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.defaultNotebookComputePoolCpuInput"></a>
+
+```java
+public java.lang.String getDefaultNotebookComputePoolCpuInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `defaultNotebookComputePoolGpuInput`<sup>Optional</sup> <a name="defaultNotebookComputePoolGpuInput" id="@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.defaultNotebookComputePoolGpuInput"></a>
+
+```java
+public java.lang.String getDefaultNotebookComputePoolGpuInput();
 ```
 
 - *Type:* java.lang.String
@@ -1526,6 +1588,26 @@ public java.lang.String getDefaultDdlCollation();
 
 ---
 
+##### `defaultNotebookComputePoolCpu`<sup>Required</sup> <a name="defaultNotebookComputePoolCpu" id="@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.defaultNotebookComputePoolCpu"></a>
+
+```java
+public java.lang.String getDefaultNotebookComputePoolCpu();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `defaultNotebookComputePoolGpu`<sup>Required</sup> <a name="defaultNotebookComputePoolGpu" id="@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.defaultNotebookComputePoolGpu"></a>
+
+```java
+public java.lang.String getDefaultNotebookComputePoolGpu();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `enableConsoleOutput`<sup>Required</sup> <a name="enableConsoleOutput" id="@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabase.property.enableConsoleOutput"></a>
 
 ```java
@@ -1737,6 +1819,8 @@ SecondaryDatabaseConfig.builder()
 //  .comment(java.lang.String)
 //  .dataRetentionTimeInDays(java.lang.Number)
 //  .defaultDdlCollation(java.lang.String)
+//  .defaultNotebookComputePoolCpu(java.lang.String)
+//  .defaultNotebookComputePoolGpu(java.lang.String)
 //  .enableConsoleOutput(java.lang.Boolean|IResolvable)
 //  .externalVolume(java.lang.String)
 //  .id(java.lang.String)
@@ -1774,9 +1858,11 @@ SecondaryDatabaseConfig.builder()
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the database. |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseConfig.property.dataRetentionTimeInDays">dataRetentionTimeInDays</a></code> | <code>java.lang.Number</code> | Specifies the number of days for which Time Travel actions (CLONE and UNDROP) can be performed on the database, as well as specifying the default Time Travel retention time for all schemas created in the database. |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseConfig.property.defaultDdlCollation">defaultDdlCollation</a></code> | <code>java.lang.String</code> | Specifies a default collation specification for all schemas and tables added to the database. |
+| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseConfig.property.defaultNotebookComputePoolCpu">defaultNotebookComputePoolCpu</a></code> | <code>java.lang.String</code> | Sets the preferred CPU compute pool used for Notebooks on CPU Container Runtime. |
+| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseConfig.property.defaultNotebookComputePoolGpu">defaultNotebookComputePoolGpu</a></code> | <code>java.lang.String</code> | Sets the preferred GPU compute pool used for Notebooks on GPU Container Runtime. |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseConfig.property.enableConsoleOutput">enableConsoleOutput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, enables stdout/stderr fast path logging for anonymous stored procedures. |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseConfig.property.externalVolume">externalVolume</a></code> | <code>java.lang.String</code> | The database parameter that specifies the default external volume to use for Iceberg tables. For more information, see [EXTERNAL_VOLUME](https://docs.snowflake.com/en/sql-reference/parameters#external-volume). |
-| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#id SecondaryDatabase#id}. |
+| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#id SecondaryDatabase#id}. |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseConfig.property.isTransient">isTransient</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Specifies the database as transient. |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseConfig.property.logEventLevel">logEventLevel</a></code> | <code>java.lang.String</code> | Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table. |
 | <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseConfig.property.logLevel">logLevel</a></code> | <code>java.lang.String</code> | Specifies the severity level of messages that should be ingested and made available in the active event table. |
@@ -1876,7 +1962,7 @@ A fully qualified path to a database to create a replica from.
 
 A fully qualified path follows the format of `"<organization_name>"."<account_name>"."<database_name>"`. For more information about this resource, see [docs](./database).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#as_replica_of SecondaryDatabase#as_replica_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#as_replica_of SecondaryDatabase#as_replica_of}
 
 ---
 
@@ -1892,7 +1978,7 @@ Specifies the identifier for the database;
 
 must be unique for your account. As a best practice for [Database Replication and Failover](https://docs.snowflake.com/en/user-guide/db-replication-intro), it is recommended to give each secondary database the same name as its primary database. This practice supports referencing fully-qualified objects (i.e. '<db>.<schema>.<object>') by other objects in the same database, such as querying a fully-qualified table name in a view. If a secondary database has a different name from the primary database, then these object references would break in the secondary database. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#name SecondaryDatabase#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#name SecondaryDatabase#name}
 
 ---
 
@@ -1906,7 +1992,7 @@ public java.lang.String getCatalog();
 
 The database parameter that specifies the default catalog to use for Iceberg tables. For more information, see [CATALOG](https://docs.snowflake.com/en/sql-reference/parameters#catalog).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#catalog SecondaryDatabase#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#catalog SecondaryDatabase#catalog}
 
 ---
 
@@ -1920,7 +2006,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#comment SecondaryDatabase#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#comment SecondaryDatabase#comment}
 
 ---
 
@@ -1936,7 +2022,7 @@ Specifies the number of days for which Time Travel actions (CLONE and UNDROP) ca
 
 For more details, see [Understanding & Using Time Travel](https://docs.snowflake.com/en/user-guide/data-time-travel).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#data_retention_time_in_days SecondaryDatabase#data_retention_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#data_retention_time_in_days SecondaryDatabase#data_retention_time_in_days}
 
 ---
 
@@ -1952,7 +2038,35 @@ Specifies a default collation specification for all schemas and tables added to 
 
 It can be overridden on schema or table level. For more information, see [collation specification](https://docs.snowflake.com/en/sql-reference/collation#label-collation-specification).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#default_ddl_collation SecondaryDatabase#default_ddl_collation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#default_ddl_collation SecondaryDatabase#default_ddl_collation}
+
+---
+
+##### `defaultNotebookComputePoolCpu`<sup>Optional</sup> <a name="defaultNotebookComputePoolCpu" id="@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseConfig.property.defaultNotebookComputePoolCpu"></a>
+
+```java
+public java.lang.String getDefaultNotebookComputePoolCpu();
+```
+
+- *Type:* java.lang.String
+
+Sets the preferred CPU compute pool used for Notebooks on CPU Container Runtime.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#default_notebook_compute_pool_cpu SecondaryDatabase#default_notebook_compute_pool_cpu}
+
+---
+
+##### `defaultNotebookComputePoolGpu`<sup>Optional</sup> <a name="defaultNotebookComputePoolGpu" id="@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseConfig.property.defaultNotebookComputePoolGpu"></a>
+
+```java
+public java.lang.String getDefaultNotebookComputePoolGpu();
+```
+
+- *Type:* java.lang.String
+
+Sets the preferred GPU compute pool used for Notebooks on GPU Container Runtime.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#default_notebook_compute_pool_gpu SecondaryDatabase#default_notebook_compute_pool_gpu}
 
 ---
 
@@ -1966,7 +2080,7 @@ public java.lang.Boolean|IResolvable getEnableConsoleOutput();
 
 If true, enables stdout/stderr fast path logging for anonymous stored procedures.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#enable_console_output SecondaryDatabase#enable_console_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#enable_console_output SecondaryDatabase#enable_console_output}
 
 ---
 
@@ -1980,7 +2094,7 @@ public java.lang.String getExternalVolume();
 
 The database parameter that specifies the default external volume to use for Iceberg tables. For more information, see [EXTERNAL_VOLUME](https://docs.snowflake.com/en/sql-reference/parameters#external-volume).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#external_volume SecondaryDatabase#external_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#external_volume SecondaryDatabase#external_volume}
 
 ---
 
@@ -1992,7 +2106,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#id SecondaryDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#id SecondaryDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2011,7 +2125,7 @@ Specifies the database as transient.
 
 Transient databases do not have a Fail-safe period so they do not incur additional storage costs once they leave Time Travel; however, this means they are also not protected by Fail-safe in the event of a data loss.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#is_transient SecondaryDatabase#is_transient}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#is_transient SecondaryDatabase#is_transient}
 
 ---
 
@@ -2027,7 +2141,7 @@ Specifies the severity level of log events (rows with record type EVENT) that sh
 
 Log events at the specified level (and at more severe levels) are ingested. For more information, see [LOG_EVENT_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#log_event_level). Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#log_event_level SecondaryDatabase#log_event_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#log_event_level SecondaryDatabase#log_event_level}
 
 ---
 
@@ -2043,7 +2157,7 @@ Specifies the severity level of messages that should be ingested and made availa
 
 Valid options are: [TRACE DEBUG INFO WARN ERROR FATAL OFF]. Messages at the specified level (and at more severe levels) are ingested. For more information, see [LOG_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters.html#label-log-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#log_level SecondaryDatabase#log_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#log_level SecondaryDatabase#log_level}
 
 ---
 
@@ -2059,7 +2173,7 @@ Object parameter that specifies the maximum number of days for which Snowflake c
 
 For a detailed description of this parameter, see [MAX_DATA_EXTENSION_TIME_IN_DAYS](https://docs.snowflake.com/en/sql-reference/parameters.html#label-max-data-extension-time-in-days).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#max_data_extension_time_in_days SecondaryDatabase#max_data_extension_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#max_data_extension_time_in_days SecondaryDatabase#max_data_extension_time_in_days}
 
 ---
 
@@ -2073,7 +2187,7 @@ public java.lang.Boolean|IResolvable getQuotedIdentifiersIgnoreCase();
 
 If true, the case of quoted identifiers is ignored. For more information, see [QUOTED_IDENTIFIERS_IGNORE_CASE](https://docs.snowflake.com/en/sql-reference/parameters#quoted-identifiers-ignore-case).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#quoted_identifiers_ignore_case SecondaryDatabase#quoted_identifiers_ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#quoted_identifiers_ignore_case SecondaryDatabase#quoted_identifiers_ignore_case}
 
 ---
 
@@ -2089,7 +2203,7 @@ Specifies whether to replace invalid UTF-8 characters with the Unicode replaceme
 
 You can only set this parameter for tables that use an external Iceberg catalog. For more information, see [REPLACE_INVALID_CHARACTERS](https://docs.snowflake.com/en/sql-reference/parameters#replace-invalid-characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#replace_invalid_characters SecondaryDatabase#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#replace_invalid_characters SecondaryDatabase#replace_invalid_characters}
 
 ---
 
@@ -2105,7 +2219,7 @@ The storage serialization policy for Iceberg tables that use Snowflake as the ca
 
 Valid options are: [COMPATIBLE OPTIMIZED]. COMPATIBLE: Snowflake performs encoding and compression of data files that ensures interoperability with third-party compute engines. OPTIMIZED: Snowflake performs encoding and compression of data files that ensures the best table performance within Snowflake. For more information, see [STORAGE_SERIALIZATION_POLICY](https://docs.snowflake.com/en/sql-reference/parameters#storage-serialization-policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#storage_serialization_policy SecondaryDatabase#storage_serialization_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#storage_serialization_policy SecondaryDatabase#storage_serialization_policy}
 
 ---
 
@@ -2121,7 +2235,7 @@ How many times a task must fail in a row before it is automatically suspended.
 
 0 disables auto-suspending. For more information, see [SUSPEND_TASK_AFTER_NUM_FAILURES](https://docs.snowflake.com/en/sql-reference/parameters#suspend-task-after-num-failures).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#suspend_task_after_num_failures SecondaryDatabase#suspend_task_after_num_failures}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#suspend_task_after_num_failures SecondaryDatabase#suspend_task_after_num_failures}
 
 ---
 
@@ -2135,7 +2249,7 @@ public java.lang.Number getTaskAutoRetryAttempts();
 
 Maximum automatic retries allowed for a user task. For more information, see [TASK_AUTO_RETRY_ATTEMPTS](https://docs.snowflake.com/en/sql-reference/parameters#task-auto-retry-attempts).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#task_auto_retry_attempts SecondaryDatabase#task_auto_retry_attempts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#task_auto_retry_attempts SecondaryDatabase#task_auto_retry_attempts}
 
 ---
 
@@ -2149,7 +2263,7 @@ public SecondaryDatabaseTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#timeouts SecondaryDatabase#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#timeouts SecondaryDatabase#timeouts}
 
 ---
 
@@ -2165,7 +2279,7 @@ Controls how trace events are ingested into the event table.
 
 Valid options are: `ALWAYS` | `ON_EVENT` | `PROPAGATE` | `OFF`. For information about levels, see [TRACE_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters.html#label-trace-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#trace_level SecondaryDatabase#trace_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#trace_level SecondaryDatabase#trace_level}
 
 ---
 
@@ -2181,7 +2295,7 @@ The initial size of warehouse to use for managed warehouses in the absence of hi
 
 For more information, see [USER_TASK_MANAGED_INITIAL_WAREHOUSE_SIZE](https://docs.snowflake.com/en/sql-reference/parameters#user-task-managed-initial-warehouse-size).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#user_task_managed_initial_warehouse_size SecondaryDatabase#user_task_managed_initial_warehouse_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#user_task_managed_initial_warehouse_size SecondaryDatabase#user_task_managed_initial_warehouse_size}
 
 ---
 
@@ -2195,7 +2309,7 @@ public java.lang.Number getUserTaskMinimumTriggerIntervalInSeconds();
 
 Minimum amount of time between Triggered Task executions in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#user_task_minimum_trigger_interval_in_seconds SecondaryDatabase#user_task_minimum_trigger_interval_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#user_task_minimum_trigger_interval_in_seconds SecondaryDatabase#user_task_minimum_trigger_interval_in_seconds}
 
 ---
 
@@ -2209,7 +2323,7 @@ public java.lang.Number getUserTaskTimeoutMs();
 
 User task execution timeout in milliseconds. For more information, see [USER_TASK_TIMEOUT_MS](https://docs.snowflake.com/en/sql-reference/parameters#user-task-timeout-ms).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#user_task_timeout_ms SecondaryDatabase#user_task_timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#user_task_timeout_ms SecondaryDatabase#user_task_timeout_ms}
 
 ---
 
@@ -2232,10 +2346,10 @@ SecondaryDatabaseTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#create SecondaryDatabase#create}. |
-| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#delete SecondaryDatabase#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#read SecondaryDatabase#read}. |
-| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#update SecondaryDatabase#update}. |
+| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#create SecondaryDatabase#create}. |
+| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#delete SecondaryDatabase#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#read SecondaryDatabase#read}. |
+| <code><a href="#@cdktn/provider-snowflake.secondaryDatabase.SecondaryDatabaseTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#update SecondaryDatabase#update}. |
 
 ---
 
@@ -2247,7 +2361,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#create SecondaryDatabase#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#create SecondaryDatabase#create}.
 
 ---
 
@@ -2259,7 +2373,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#delete SecondaryDatabase#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#delete SecondaryDatabase#delete}.
 
 ---
 
@@ -2271,7 +2385,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#read SecondaryDatabase#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#read SecondaryDatabase#read}.
 
 ---
 
@@ -2283,7 +2397,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/secondary_database#update SecondaryDatabase#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/secondary_database#update SecondaryDatabase#update}.
 
 ---
 

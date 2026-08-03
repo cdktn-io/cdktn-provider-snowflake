@@ -4,7 +4,7 @@
 
 ### DataSnowflakeWarehouses <a name="DataSnowflakeWarehouses" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehouses"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/warehouses snowflake_warehouses}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/warehouses snowflake_warehouses}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehouses.Initializer"></a>
 
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataSnowflakeWarehouses to
 
 The id of the existing DataSnowflakeWarehouses that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/warehouses#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/warehouses#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -720,7 +720,7 @@ new DataSnowflakeWarehousesConfig {
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/warehouses#id DataSnowflakeWarehouses#id}. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/warehouses#id DataSnowflakeWarehouses#id}. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesConfig.property.like">Like</a></code> | <code>string</code> | Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`). |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesConfig.property.withDescribe">WithDescribe</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | (Default: `true`) Runs DESC WAREHOUSE for each warehouse returned by SHOW WAREHOUSES. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesConfig.property.withParameters">WithParameters</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | (Default: `true`) Runs SHOW PARAMETERS FOR WAREHOUSE for each warehouse returned by SHOW WAREHOUSES. |
@@ -805,7 +805,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/warehouses#id DataSnowflakeWarehouses#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/warehouses#id DataSnowflakeWarehouses#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -822,7 +822,7 @@ public string Like { get; set; }
 
 Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/warehouses#like DataSnowflakeWarehouses#like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/warehouses#like DataSnowflakeWarehouses#like}
 
 ---
 
@@ -838,7 +838,7 @@ public bool|IResolvable WithDescribe { get; set; }
 
 The output of describe is saved to the description field. By default this value is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/warehouses#with_describe DataSnowflakeWarehouses#with_describe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/warehouses#with_describe DataSnowflakeWarehouses#with_describe}
 
 ---
 
@@ -854,7 +854,7 @@ public bool|IResolvable WithParameters { get; set; }
 
 The output of describe is saved to the parameters field as a map. By default this value is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/warehouses#with_parameters DataSnowflakeWarehouses#with_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/warehouses#with_parameters DataSnowflakeWarehouses#with_parameters}
 
 ---
 
@@ -892,6 +892,19 @@ new DataSnowflakeWarehousesWarehousesDescribeOutput {
 using Io.Cdktn.Providers.Snowflake;
 
 new DataSnowflakeWarehousesWarehousesParameters {
+
+};
+```
+
+
+### DataSnowflakeWarehousesWarehousesParametersFallbackWarehouse <a name="DataSnowflakeWarehousesWarehousesParametersFallbackWarehouse" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouse"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouse.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeWarehousesWarehousesParametersFallbackWarehouse {
 
 };
 ```
@@ -1849,6 +1862,477 @@ public DataSnowflakeWarehousesWarehouses InternalValue { get; }
 ---
 
 
+### DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList <a name="DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.get"></a>
+
+```csharp
+private DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference <a name="DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.property.default">Default</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.property.level">Level</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouse">DataSnowflakeWarehousesWarehousesParametersFallbackWarehouse</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Default`<sup>Required</sup> <a name="Default" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.property.default"></a>
+
+```csharp
+public string Default { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.property.description"></a>
+
+```csharp
+public string Description { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.property.key"></a>
+
+```csharp
+public string Key { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Level`<sup>Required</sup> <a name="Level" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.property.level"></a>
+
+```csharp
+public string Level { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.property.value"></a>
+
+```csharp
+public string Value { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseOutputReference.property.internalValue"></a>
+
+```csharp
+public DataSnowflakeWarehousesWarehousesParametersFallbackWarehouse InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouse">DataSnowflakeWarehousesWarehousesParametersFallbackWarehouse</a>
+
+---
+
+
 ### DataSnowflakeWarehousesWarehousesParametersList <a name="DataSnowflakeWarehousesWarehousesParametersList" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersList.Initializer"></a>
@@ -2697,6 +3181,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersOutputReference.property.fallbackWarehouse">FallbackWarehouse</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList">DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersOutputReference.property.maxConcurrencyLevel">MaxConcurrencyLevel</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersMaxConcurrencyLevelList">DataSnowflakeWarehousesWarehousesParametersMaxConcurrencyLevelList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersOutputReference.property.statementQueuedTimeoutInSeconds">StatementQueuedTimeoutInSeconds</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersStatementQueuedTimeoutInSecondsList">DataSnowflakeWarehousesWarehousesParametersStatementQueuedTimeoutInSecondsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersOutputReference.property.statementTimeoutInSeconds">StatementTimeoutInSeconds</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSecondsList">DataSnowflakeWarehousesWarehousesParametersStatementTimeoutInSecondsList</a></code> | *No description.* |
@@ -2725,6 +3210,16 @@ public string Fqn { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `FallbackWarehouse`<sup>Required</sup> <a name="FallbackWarehouse" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersOutputReference.property.fallbackWarehouse"></a>
+
+```csharp
+public DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList FallbackWarehouse { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList">DataSnowflakeWarehousesWarehousesParametersFallbackWarehouseList</a>
 
 ---
 
@@ -4117,6 +4612,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesShowOutputOutputReference.property.size">Size</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesShowOutputOutputReference.property.startedClusters">StartedClusters</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesShowOutputOutputReference.property.state">State</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesShowOutputOutputReference.property.tables">Tables</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesShowOutputOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesShowOutputOutputReference.property.updatedOn">UpdatedOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesShowOutputOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesShowOutput">DataSnowflakeWarehousesWarehousesShowOutput</a></code> | *No description.* |
@@ -4434,6 +4930,16 @@ public string State { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Tables`<sup>Required</sup> <a name="Tables" id="@cdktn/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesShowOutputOutputReference.property.tables"></a>
+
+```csharp
+public string[] Tables { get; }
+```
+
+- *Type:* string[]
 
 ---
 

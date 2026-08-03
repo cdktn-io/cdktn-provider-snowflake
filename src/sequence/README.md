@@ -1,3 +1,3 @@
 # `snowflake_sequence`
 
-Refer to the Terraform Registry for docs: [`snowflake_sequence`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/sequence).
+Refer to the Terraform Registry for docs: [`snowflake_sequence`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/sequence).

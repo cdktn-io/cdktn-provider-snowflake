@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/security_integrations
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/security_integrations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataSnowflakeSecurityIntegrationsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/security_integrations#id DataSnowflakeSecurityIntegrations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/security_integrations#id DataSnowflakeSecurityIntegrations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataSnowflakeSecurityIntegrationsConfig extends cdktn.Terraform
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/security_integrations#like DataSnowflakeSecurityIntegrations#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/security_integrations#like DataSnowflakeSecurityIntegrations#like}
   */
   readonly like?: string;
   /**
   * (Default: `true`) Runs DESC SECURITY INTEGRATION for each security integration returned by SHOW SECURITY INTEGRATIONS. The output of describe is saved to the description field. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/security_integrations#with_describe DataSnowflakeSecurityIntegrations#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/security_integrations#with_describe DataSnowflakeSecurityIntegrations#with_describe}
   */
   readonly withDescribe?: boolean | cdktn.IResolvable;
 }
@@ -120,6 +120,96 @@ export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutput
   */
   public get(index: number): DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedEmailPatternsOutputReference {
     return new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedEmailPatternsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedRolesListStruct {
+}
+
+export function dataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedRolesListStructToTerraform(struct?: DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedRolesListStruct): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedRolesListStructToHclTerraform(struct?: DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedRolesListStruct): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedRolesListStructOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedRolesListStruct | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedRolesListStruct | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedRolesListStructList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedRolesListStructOutputReference {
+    return new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedRolesListStructOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedUserDomains {
@@ -4769,6 +4859,12 @@ export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutput
     return this._allowedEmailPatterns;
   }
 
+  // allowed_roles_list - computed: true, optional: false, required: false
+  private _allowedRolesList = new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedRolesListStructList(this, "allowed_roles_list", false);
+  public get allowedRolesList() {
+    return this._allowedRolesList;
+  }
+
   // allowed_user_domains - computed: true, optional: false, required: false
   private _allowedUserDomains = new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedUserDomainsList(this, "allowed_user_domains", false);
   public get allowedUserDomains() {
@@ -5278,7 +5374,7 @@ export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsList extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/security_integrations snowflake_security_integrations}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/security_integrations snowflake_security_integrations}
 */
 export class DataSnowflakeSecurityIntegrations extends cdktn.TerraformDataSource {
 
@@ -5294,7 +5390,7 @@ export class DataSnowflakeSecurityIntegrations extends cdktn.TerraformDataSource
   * Generates CDKTN code for importing a DataSnowflakeSecurityIntegrations resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeSecurityIntegrations to import
-  * @param importFromId The id of the existing DataSnowflakeSecurityIntegrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/security_integrations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeSecurityIntegrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/security_integrations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeSecurityIntegrations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -5306,7 +5402,7 @@ export class DataSnowflakeSecurityIntegrations extends cdktn.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/security_integrations snowflake_security_integrations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/security_integrations snowflake_security_integrations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5317,7 +5413,7 @@ export class DataSnowflakeSecurityIntegrations extends cdktn.TerraformDataSource
       terraformResourceType: 'snowflake_security_integrations',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.18.0',
+        providerVersion: '2.19.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

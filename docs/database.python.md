@@ -4,7 +4,7 @@
 
 ### Database <a name="Database" id="@cdktn/provider-snowflake.database.Database"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database snowflake_database}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database snowflake_database}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.database.Database.Initializer"></a>
 
@@ -26,6 +26,8 @@ database.Database(
   comment: str = None,
   data_retention_time_in_days: typing.Union[int, float] = None,
   default_ddl_collation: str = None,
+  default_notebook_compute_pool_cpu: str = None,
+  default_notebook_compute_pool_gpu: str = None,
   drop_public_schema_on_creation: bool | IResolvable = None,
   enable_console_output: bool | IResolvable = None,
   external_volume: str = None,
@@ -64,10 +66,12 @@ database.Database(
 | <code><a href="#@cdktn/provider-snowflake.database.Database.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the database. |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.Initializer.parameter.dataRetentionTimeInDays">data_retention_time_in_days</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of days for which Time Travel actions (CLONE and UNDROP) can be performed on the database, as well as specifying the default Time Travel retention time for all schemas created in the database. |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.Initializer.parameter.defaultDdlCollation">default_ddl_collation</a></code> | <code>str</code> | Specifies a default collation specification for all schemas and tables added to the database. |
+| <code><a href="#@cdktn/provider-snowflake.database.Database.Initializer.parameter.defaultNotebookComputePoolCpu">default_notebook_compute_pool_cpu</a></code> | <code>str</code> | Sets the preferred CPU compute pool used for Notebooks on CPU Container Runtime. |
+| <code><a href="#@cdktn/provider-snowflake.database.Database.Initializer.parameter.defaultNotebookComputePoolGpu">default_notebook_compute_pool_gpu</a></code> | <code>str</code> | Sets the preferred GPU compute pool used for Notebooks on GPU Container Runtime. |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.Initializer.parameter.dropPublicSchemaOnCreation">drop_public_schema_on_creation</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether to drop public schema on creation or not. |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.Initializer.parameter.enableConsoleOutput">enable_console_output</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, enables stdout/stderr fast path logging for anonymous stored procedures. |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.Initializer.parameter.externalVolume">external_volume</a></code> | <code>str</code> | The database parameter that specifies the default external volume to use for Iceberg tables. For more information, see [EXTERNAL_VOLUME](https://docs.snowflake.com/en/sql-reference/parameters#external-volume). |
-| <code><a href="#@cdktn/provider-snowflake.database.Database.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#id Database#id}. |
+| <code><a href="#@cdktn/provider-snowflake.database.Database.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#id Database#id}. |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.Initializer.parameter.isTransient">is_transient</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies the database as transient. |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.Initializer.parameter.logEventLevel">log_event_level</a></code> | <code>str</code> | Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table. |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.Initializer.parameter.logLevel">log_level</a></code> | <code>str</code> | Specifies the severity level of messages that should be ingested and made available in the active event table. |
@@ -154,7 +158,7 @@ Specifies the identifier for the database;
 
 must be unique for your account. As a best practice for [Database Replication and Failover](https://docs.snowflake.com/en/user-guide/db-replication-intro), it is recommended to give each secondary database the same name as its primary database. This practice supports referencing fully-qualified objects (i.e. '<db>.<schema>.<object>') by other objects in the same database, such as querying a fully-qualified table name in a view. If a secondary database has a different name from the primary database, then these object references would break in the secondary database. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#name Database#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#name Database#name}
 
 ---
 
@@ -164,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The database parameter that specifies the default catalog to use for Iceberg tables. For more information, see [CATALOG](https://docs.snowflake.com/en/sql-reference/parameters#catalog).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#catalog Database#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#catalog Database#catalog}
 
 ---
 
@@ -174,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#comment Database#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#comment Database#comment}
 
 ---
 
@@ -186,7 +190,7 @@ Specifies the number of days for which Time Travel actions (CLONE and UNDROP) ca
 
 For more details, see [Understanding & Using Time Travel](https://docs.snowflake.com/en/user-guide/data-time-travel).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#data_retention_time_in_days Database#data_retention_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#data_retention_time_in_days Database#data_retention_time_in_days}
 
 ---
 
@@ -198,7 +202,27 @@ Specifies a default collation specification for all schemas and tables added to 
 
 It can be overridden on schema or table level. For more information, see [collation specification](https://docs.snowflake.com/en/sql-reference/collation#label-collation-specification).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#default_ddl_collation Database#default_ddl_collation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#default_ddl_collation Database#default_ddl_collation}
+
+---
+
+##### `default_notebook_compute_pool_cpu`<sup>Optional</sup> <a name="default_notebook_compute_pool_cpu" id="@cdktn/provider-snowflake.database.Database.Initializer.parameter.defaultNotebookComputePoolCpu"></a>
+
+- *Type:* str
+
+Sets the preferred CPU compute pool used for Notebooks on CPU Container Runtime.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#default_notebook_compute_pool_cpu Database#default_notebook_compute_pool_cpu}
+
+---
+
+##### `default_notebook_compute_pool_gpu`<sup>Optional</sup> <a name="default_notebook_compute_pool_gpu" id="@cdktn/provider-snowflake.database.Database.Initializer.parameter.defaultNotebookComputePoolGpu"></a>
+
+- *Type:* str
+
+Sets the preferred GPU compute pool used for Notebooks on GPU Container Runtime.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#default_notebook_compute_pool_gpu Database#default_notebook_compute_pool_gpu}
 
 ---
 
@@ -210,7 +234,7 @@ Specifies whether to drop public schema on creation or not.
 
 Modifying the parameter after database is already created won't have any effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#drop_public_schema_on_creation Database#drop_public_schema_on_creation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#drop_public_schema_on_creation Database#drop_public_schema_on_creation}
 
 ---
 
@@ -220,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 If true, enables stdout/stderr fast path logging for anonymous stored procedures.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#enable_console_output Database#enable_console_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#enable_console_output Database#enable_console_output}
 
 ---
 
@@ -230,7 +254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The database parameter that specifies the default external volume to use for Iceberg tables. For more information, see [EXTERNAL_VOLUME](https://docs.snowflake.com/en/sql-reference/parameters#external-volume).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#external_volume Database#external_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#external_volume Database#external_volume}
 
 ---
 
@@ -238,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#id Database#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#id Database#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -253,7 +277,7 @@ Specifies the database as transient.
 
 Transient databases do not have a Fail-safe period so they do not incur additional storage costs once they leave Time Travel; however, this means they are also not protected by Fail-safe in the event of a data loss.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#is_transient Database#is_transient}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#is_transient Database#is_transient}
 
 ---
 
@@ -265,7 +289,7 @@ Specifies the severity level of log events (rows with record type EVENT) that sh
 
 Log events at the specified level (and at more severe levels) are ingested. For more information, see [LOG_EVENT_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#log_event_level). Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#log_event_level Database#log_event_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#log_event_level Database#log_event_level}
 
 ---
 
@@ -277,7 +301,7 @@ Specifies the severity level of messages that should be ingested and made availa
 
 Valid options are: [TRACE DEBUG INFO WARN ERROR FATAL OFF]. Messages at the specified level (and at more severe levels) are ingested. For more information, see [LOG_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters.html#label-log-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#log_level Database#log_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#log_level Database#log_level}
 
 ---
 
@@ -289,7 +313,7 @@ Object parameter that specifies the maximum number of days for which Snowflake c
 
 For a detailed description of this parameter, see [MAX_DATA_EXTENSION_TIME_IN_DAYS](https://docs.snowflake.com/en/sql-reference/parameters.html#label-max-data-extension-time-in-days).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#max_data_extension_time_in_days Database#max_data_extension_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#max_data_extension_time_in_days Database#max_data_extension_time_in_days}
 
 ---
 
@@ -299,7 +323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 If true, the case of quoted identifiers is ignored. For more information, see [QUOTED_IDENTIFIERS_IGNORE_CASE](https://docs.snowflake.com/en/sql-reference/parameters#quoted-identifiers-ignore-case).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#quoted_identifiers_ignore_case Database#quoted_identifiers_ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#quoted_identifiers_ignore_case Database#quoted_identifiers_ignore_case}
 
 ---
 
@@ -311,7 +335,7 @@ Specifies whether to replace invalid UTF-8 characters with the Unicode replaceme
 
 You can only set this parameter for tables that use an external Iceberg catalog. For more information, see [REPLACE_INVALID_CHARACTERS](https://docs.snowflake.com/en/sql-reference/parameters#replace-invalid-characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#replace_invalid_characters Database#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#replace_invalid_characters Database#replace_invalid_characters}
 
 ---
 
@@ -321,7 +345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 replication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#replication Database#replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#replication Database#replication}
 
 ---
 
@@ -333,7 +357,7 @@ The storage serialization policy for Iceberg tables that use Snowflake as the ca
 
 Valid options are: [COMPATIBLE OPTIMIZED]. COMPATIBLE: Snowflake performs encoding and compression of data files that ensures interoperability with third-party compute engines. OPTIMIZED: Snowflake performs encoding and compression of data files that ensures the best table performance within Snowflake. For more information, see [STORAGE_SERIALIZATION_POLICY](https://docs.snowflake.com/en/sql-reference/parameters#storage-serialization-policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#storage_serialization_policy Database#storage_serialization_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#storage_serialization_policy Database#storage_serialization_policy}
 
 ---
 
@@ -345,7 +369,7 @@ How many times a task must fail in a row before it is automatically suspended.
 
 0 disables auto-suspending. For more information, see [SUSPEND_TASK_AFTER_NUM_FAILURES](https://docs.snowflake.com/en/sql-reference/parameters#suspend-task-after-num-failures).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#suspend_task_after_num_failures Database#suspend_task_after_num_failures}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#suspend_task_after_num_failures Database#suspend_task_after_num_failures}
 
 ---
 
@@ -355,7 +379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Maximum automatic retries allowed for a user task. For more information, see [TASK_AUTO_RETRY_ATTEMPTS](https://docs.snowflake.com/en/sql-reference/parameters#task-auto-retry-attempts).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#task_auto_retry_attempts Database#task_auto_retry_attempts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#task_auto_retry_attempts Database#task_auto_retry_attempts}
 
 ---
 
@@ -365,7 +389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#timeouts Database#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#timeouts Database#timeouts}
 
 ---
 
@@ -377,7 +401,7 @@ Controls how trace events are ingested into the event table.
 
 Valid options are: `ALWAYS` | `ON_EVENT` | `PROPAGATE` | `OFF`. For information about levels, see [TRACE_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters.html#label-trace-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#trace_level Database#trace_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#trace_level Database#trace_level}
 
 ---
 
@@ -389,7 +413,7 @@ The initial size of warehouse to use for managed warehouses in the absence of hi
 
 For more information, see [USER_TASK_MANAGED_INITIAL_WAREHOUSE_SIZE](https://docs.snowflake.com/en/sql-reference/parameters#user-task-managed-initial-warehouse-size).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#user_task_managed_initial_warehouse_size Database#user_task_managed_initial_warehouse_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#user_task_managed_initial_warehouse_size Database#user_task_managed_initial_warehouse_size}
 
 ---
 
@@ -399,7 +423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Minimum amount of time between Triggered Task executions in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#user_task_minimum_trigger_interval_in_seconds Database#user_task_minimum_trigger_interval_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#user_task_minimum_trigger_interval_in_seconds Database#user_task_minimum_trigger_interval_in_seconds}
 
 ---
 
@@ -409,7 +433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 User task execution timeout in milliseconds. For more information, see [USER_TASK_TIMEOUT_MS](https://docs.snowflake.com/en/sql-reference/parameters#user-task-timeout-ms).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#user_task_timeout_ms Database#user_task_timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#user_task_timeout_ms Database#user_task_timeout_ms}
 
 ---
 
@@ -447,6 +471,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktn/provider-snowflake.database.Database.resetComment">reset_comment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.resetDataRetentionTimeInDays">reset_data_retention_time_in_days</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.resetDefaultDdlCollation">reset_default_ddl_collation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.database.Database.resetDefaultNotebookComputePoolCpu">reset_default_notebook_compute_pool_cpu</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.database.Database.resetDefaultNotebookComputePoolGpu">reset_default_notebook_compute_pool_gpu</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.resetDropPublicSchemaOnCreation">reset_drop_public_schema_on_creation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.resetEnableConsoleOutput">reset_enable_console_output</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.resetExternalVolume">reset_external_volume</a></code> | *No description.* |
@@ -832,7 +858,7 @@ def put_replication(
 
 enable_to_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#enable_to_account Database#enable_to_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#enable_to_account Database#enable_to_account}
 
 ---
 
@@ -844,7 +870,7 @@ Allows replicating data to accounts on lower editions in either of the following
 
 The primary database is in a Business Critical (or higher) account but one or more of the accounts approved for replication are on lower editions. Business Critical Edition is intended for Snowflake accounts with extremely sensitive data. 2. The primary database is in a Business Critical (or higher) account and a signed business associate agreement is in place to store PHI data in the account per HIPAA and HITRUST regulations, but no such agreement is in place for one or more of the accounts approved for replication, regardless if they are Business Critical (or higher) accounts. Both scenarios are prohibited by default in an effort to help prevent account administrators for Business Critical (or higher) accounts from inadvertently replicating sensitive data to accounts on lower editions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#ignore_edition_check Database#ignore_edition_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#ignore_edition_check Database#ignore_edition_check}
 
 ---
 
@@ -863,7 +889,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#create Database#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#create Database#create}.
 
 ---
 
@@ -871,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#delete Database#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#delete Database#delete}.
 
 ---
 
@@ -879,7 +905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#read Database#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#read Database#read}.
 
 ---
 
@@ -887,7 +913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#update Database#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#update Database#update}.
 
 ---
 
@@ -913,6 +939,18 @@ def reset_data_retention_time_in_days() -> None
 
 ```python
 def reset_default_ddl_collation() -> None
+```
+
+##### `reset_default_notebook_compute_pool_cpu` <a name="reset_default_notebook_compute_pool_cpu" id="@cdktn/provider-snowflake.database.Database.resetDefaultNotebookComputePoolCpu"></a>
+
+```python
+def reset_default_notebook_compute_pool_cpu() -> None
+```
+
+##### `reset_default_notebook_compute_pool_gpu` <a name="reset_default_notebook_compute_pool_gpu" id="@cdktn/provider-snowflake.database.Database.resetDefaultNotebookComputePoolGpu"></a>
+
+```python
+def reset_default_notebook_compute_pool_gpu() -> None
 ```
 
 ##### `reset_drop_public_schema_on_creation` <a name="reset_drop_public_schema_on_creation" id="@cdktn/provider-snowflake.database.Database.resetDropPublicSchemaOnCreation"></a>
@@ -1143,7 +1181,7 @@ The construct id used in the generated config for the Database to import.
 
 The id of the existing Database that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1180,6 +1218,8 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.database.Database.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.property.dataRetentionTimeInDaysInput">data_retention_time_in_days_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.property.defaultDdlCollationInput">default_ddl_collation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.database.Database.property.defaultNotebookComputePoolCpuInput">default_notebook_compute_pool_cpu_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.database.Database.property.defaultNotebookComputePoolGpuInput">default_notebook_compute_pool_gpu_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.property.dropPublicSchemaOnCreationInput">drop_public_schema_on_creation_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.property.enableConsoleOutputInput">enable_console_output_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.property.externalVolumeInput">external_volume_input</a></code> | <code>str</code> | *No description.* |
@@ -1204,6 +1244,8 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.database.Database.property.comment">comment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.property.dataRetentionTimeInDays">data_retention_time_in_days</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.property.defaultDdlCollation">default_ddl_collation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.database.Database.property.defaultNotebookComputePoolCpu">default_notebook_compute_pool_cpu</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.database.Database.property.defaultNotebookComputePoolGpu">default_notebook_compute_pool_gpu</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.property.dropPublicSchemaOnCreation">drop_public_schema_on_creation</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.property.enableConsoleOutput">enable_console_output</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.database.Database.property.externalVolume">external_volume</a></code> | <code>str</code> | *No description.* |
@@ -1431,6 +1473,26 @@ data_retention_time_in_days_input: typing.Union[int, float]
 
 ```python
 default_ddl_collation_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `default_notebook_compute_pool_cpu_input`<sup>Optional</sup> <a name="default_notebook_compute_pool_cpu_input" id="@cdktn/provider-snowflake.database.Database.property.defaultNotebookComputePoolCpuInput"></a>
+
+```python
+default_notebook_compute_pool_cpu_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `default_notebook_compute_pool_gpu_input`<sup>Optional</sup> <a name="default_notebook_compute_pool_gpu_input" id="@cdktn/provider-snowflake.database.Database.property.defaultNotebookComputePoolGpuInput"></a>
+
+```python
+default_notebook_compute_pool_gpu_input: str
 ```
 
 - *Type:* str
@@ -1677,6 +1739,26 @@ default_ddl_collation: str
 
 ---
 
+##### `default_notebook_compute_pool_cpu`<sup>Required</sup> <a name="default_notebook_compute_pool_cpu" id="@cdktn/provider-snowflake.database.Database.property.defaultNotebookComputePoolCpu"></a>
+
+```python
+default_notebook_compute_pool_cpu: str
+```
+
+- *Type:* str
+
+---
+
+##### `default_notebook_compute_pool_gpu`<sup>Required</sup> <a name="default_notebook_compute_pool_gpu" id="@cdktn/provider-snowflake.database.Database.property.defaultNotebookComputePoolGpu"></a>
+
+```python
+default_notebook_compute_pool_gpu: str
+```
+
+- *Type:* str
+
+---
+
 ##### `drop_public_schema_on_creation`<sup>Required</sup> <a name="drop_public_schema_on_creation" id="@cdktn/provider-snowflake.database.Database.property.dropPublicSchemaOnCreation"></a>
 
 ```python
@@ -1897,6 +1979,8 @@ database.DatabaseConfig(
   comment: str = None,
   data_retention_time_in_days: typing.Union[int, float] = None,
   default_ddl_collation: str = None,
+  default_notebook_compute_pool_cpu: str = None,
+  default_notebook_compute_pool_gpu: str = None,
   drop_public_schema_on_creation: bool | IResolvable = None,
   enable_console_output: bool | IResolvable = None,
   external_volume: str = None,
@@ -1935,10 +2019,12 @@ database.DatabaseConfig(
 | <code><a href="#@cdktn/provider-snowflake.database.DatabaseConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the database. |
 | <code><a href="#@cdktn/provider-snowflake.database.DatabaseConfig.property.dataRetentionTimeInDays">data_retention_time_in_days</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of days for which Time Travel actions (CLONE and UNDROP) can be performed on the database, as well as specifying the default Time Travel retention time for all schemas created in the database. |
 | <code><a href="#@cdktn/provider-snowflake.database.DatabaseConfig.property.defaultDdlCollation">default_ddl_collation</a></code> | <code>str</code> | Specifies a default collation specification for all schemas and tables added to the database. |
+| <code><a href="#@cdktn/provider-snowflake.database.DatabaseConfig.property.defaultNotebookComputePoolCpu">default_notebook_compute_pool_cpu</a></code> | <code>str</code> | Sets the preferred CPU compute pool used for Notebooks on CPU Container Runtime. |
+| <code><a href="#@cdktn/provider-snowflake.database.DatabaseConfig.property.defaultNotebookComputePoolGpu">default_notebook_compute_pool_gpu</a></code> | <code>str</code> | Sets the preferred GPU compute pool used for Notebooks on GPU Container Runtime. |
 | <code><a href="#@cdktn/provider-snowflake.database.DatabaseConfig.property.dropPublicSchemaOnCreation">drop_public_schema_on_creation</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether to drop public schema on creation or not. |
 | <code><a href="#@cdktn/provider-snowflake.database.DatabaseConfig.property.enableConsoleOutput">enable_console_output</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, enables stdout/stderr fast path logging for anonymous stored procedures. |
 | <code><a href="#@cdktn/provider-snowflake.database.DatabaseConfig.property.externalVolume">external_volume</a></code> | <code>str</code> | The database parameter that specifies the default external volume to use for Iceberg tables. For more information, see [EXTERNAL_VOLUME](https://docs.snowflake.com/en/sql-reference/parameters#external-volume). |
-| <code><a href="#@cdktn/provider-snowflake.database.DatabaseConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#id Database#id}. |
+| <code><a href="#@cdktn/provider-snowflake.database.DatabaseConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#id Database#id}. |
 | <code><a href="#@cdktn/provider-snowflake.database.DatabaseConfig.property.isTransient">is_transient</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies the database as transient. |
 | <code><a href="#@cdktn/provider-snowflake.database.DatabaseConfig.property.logEventLevel">log_event_level</a></code> | <code>str</code> | Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table. |
 | <code><a href="#@cdktn/provider-snowflake.database.DatabaseConfig.property.logLevel">log_level</a></code> | <code>str</code> | Specifies the severity level of messages that should be ingested and made available in the active event table. |
@@ -2039,7 +2125,7 @@ Specifies the identifier for the database;
 
 must be unique for your account. As a best practice for [Database Replication and Failover](https://docs.snowflake.com/en/user-guide/db-replication-intro), it is recommended to give each secondary database the same name as its primary database. This practice supports referencing fully-qualified objects (i.e. '<db>.<schema>.<object>') by other objects in the same database, such as querying a fully-qualified table name in a view. If a secondary database has a different name from the primary database, then these object references would break in the secondary database. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#name Database#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#name Database#name}
 
 ---
 
@@ -2053,7 +2139,7 @@ catalog: str
 
 The database parameter that specifies the default catalog to use for Iceberg tables. For more information, see [CATALOG](https://docs.snowflake.com/en/sql-reference/parameters#catalog).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#catalog Database#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#catalog Database#catalog}
 
 ---
 
@@ -2067,7 +2153,7 @@ comment: str
 
 Specifies a comment for the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#comment Database#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#comment Database#comment}
 
 ---
 
@@ -2083,7 +2169,7 @@ Specifies the number of days for which Time Travel actions (CLONE and UNDROP) ca
 
 For more details, see [Understanding & Using Time Travel](https://docs.snowflake.com/en/user-guide/data-time-travel).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#data_retention_time_in_days Database#data_retention_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#data_retention_time_in_days Database#data_retention_time_in_days}
 
 ---
 
@@ -2099,7 +2185,35 @@ Specifies a default collation specification for all schemas and tables added to 
 
 It can be overridden on schema or table level. For more information, see [collation specification](https://docs.snowflake.com/en/sql-reference/collation#label-collation-specification).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#default_ddl_collation Database#default_ddl_collation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#default_ddl_collation Database#default_ddl_collation}
+
+---
+
+##### `default_notebook_compute_pool_cpu`<sup>Optional</sup> <a name="default_notebook_compute_pool_cpu" id="@cdktn/provider-snowflake.database.DatabaseConfig.property.defaultNotebookComputePoolCpu"></a>
+
+```python
+default_notebook_compute_pool_cpu: str
+```
+
+- *Type:* str
+
+Sets the preferred CPU compute pool used for Notebooks on CPU Container Runtime.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#default_notebook_compute_pool_cpu Database#default_notebook_compute_pool_cpu}
+
+---
+
+##### `default_notebook_compute_pool_gpu`<sup>Optional</sup> <a name="default_notebook_compute_pool_gpu" id="@cdktn/provider-snowflake.database.DatabaseConfig.property.defaultNotebookComputePoolGpu"></a>
+
+```python
+default_notebook_compute_pool_gpu: str
+```
+
+- *Type:* str
+
+Sets the preferred GPU compute pool used for Notebooks on GPU Container Runtime.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#default_notebook_compute_pool_gpu Database#default_notebook_compute_pool_gpu}
 
 ---
 
@@ -2115,7 +2229,7 @@ Specifies whether to drop public schema on creation or not.
 
 Modifying the parameter after database is already created won't have any effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#drop_public_schema_on_creation Database#drop_public_schema_on_creation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#drop_public_schema_on_creation Database#drop_public_schema_on_creation}
 
 ---
 
@@ -2129,7 +2243,7 @@ enable_console_output: bool | IResolvable
 
 If true, enables stdout/stderr fast path logging for anonymous stored procedures.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#enable_console_output Database#enable_console_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#enable_console_output Database#enable_console_output}
 
 ---
 
@@ -2143,7 +2257,7 @@ external_volume: str
 
 The database parameter that specifies the default external volume to use for Iceberg tables. For more information, see [EXTERNAL_VOLUME](https://docs.snowflake.com/en/sql-reference/parameters#external-volume).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#external_volume Database#external_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#external_volume Database#external_volume}
 
 ---
 
@@ -2155,7 +2269,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#id Database#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#id Database#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2174,7 +2288,7 @@ Specifies the database as transient.
 
 Transient databases do not have a Fail-safe period so they do not incur additional storage costs once they leave Time Travel; however, this means they are also not protected by Fail-safe in the event of a data loss.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#is_transient Database#is_transient}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#is_transient Database#is_transient}
 
 ---
 
@@ -2190,7 +2304,7 @@ Specifies the severity level of log events (rows with record type EVENT) that sh
 
 Log events at the specified level (and at more severe levels) are ingested. For more information, see [LOG_EVENT_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#log_event_level). Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#log_event_level Database#log_event_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#log_event_level Database#log_event_level}
 
 ---
 
@@ -2206,7 +2320,7 @@ Specifies the severity level of messages that should be ingested and made availa
 
 Valid options are: [TRACE DEBUG INFO WARN ERROR FATAL OFF]. Messages at the specified level (and at more severe levels) are ingested. For more information, see [LOG_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters.html#label-log-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#log_level Database#log_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#log_level Database#log_level}
 
 ---
 
@@ -2222,7 +2336,7 @@ Object parameter that specifies the maximum number of days for which Snowflake c
 
 For a detailed description of this parameter, see [MAX_DATA_EXTENSION_TIME_IN_DAYS](https://docs.snowflake.com/en/sql-reference/parameters.html#label-max-data-extension-time-in-days).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#max_data_extension_time_in_days Database#max_data_extension_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#max_data_extension_time_in_days Database#max_data_extension_time_in_days}
 
 ---
 
@@ -2236,7 +2350,7 @@ quoted_identifiers_ignore_case: bool | IResolvable
 
 If true, the case of quoted identifiers is ignored. For more information, see [QUOTED_IDENTIFIERS_IGNORE_CASE](https://docs.snowflake.com/en/sql-reference/parameters#quoted-identifiers-ignore-case).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#quoted_identifiers_ignore_case Database#quoted_identifiers_ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#quoted_identifiers_ignore_case Database#quoted_identifiers_ignore_case}
 
 ---
 
@@ -2252,7 +2366,7 @@ Specifies whether to replace invalid UTF-8 characters with the Unicode replaceme
 
 You can only set this parameter for tables that use an external Iceberg catalog. For more information, see [REPLACE_INVALID_CHARACTERS](https://docs.snowflake.com/en/sql-reference/parameters#replace-invalid-characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#replace_invalid_characters Database#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#replace_invalid_characters Database#replace_invalid_characters}
 
 ---
 
@@ -2266,7 +2380,7 @@ replication: DatabaseReplication
 
 replication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#replication Database#replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#replication Database#replication}
 
 ---
 
@@ -2282,7 +2396,7 @@ The storage serialization policy for Iceberg tables that use Snowflake as the ca
 
 Valid options are: [COMPATIBLE OPTIMIZED]. COMPATIBLE: Snowflake performs encoding and compression of data files that ensures interoperability with third-party compute engines. OPTIMIZED: Snowflake performs encoding and compression of data files that ensures the best table performance within Snowflake. For more information, see [STORAGE_SERIALIZATION_POLICY](https://docs.snowflake.com/en/sql-reference/parameters#storage-serialization-policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#storage_serialization_policy Database#storage_serialization_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#storage_serialization_policy Database#storage_serialization_policy}
 
 ---
 
@@ -2298,7 +2412,7 @@ How many times a task must fail in a row before it is automatically suspended.
 
 0 disables auto-suspending. For more information, see [SUSPEND_TASK_AFTER_NUM_FAILURES](https://docs.snowflake.com/en/sql-reference/parameters#suspend-task-after-num-failures).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#suspend_task_after_num_failures Database#suspend_task_after_num_failures}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#suspend_task_after_num_failures Database#suspend_task_after_num_failures}
 
 ---
 
@@ -2312,7 +2426,7 @@ task_auto_retry_attempts: typing.Union[int, float]
 
 Maximum automatic retries allowed for a user task. For more information, see [TASK_AUTO_RETRY_ATTEMPTS](https://docs.snowflake.com/en/sql-reference/parameters#task-auto-retry-attempts).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#task_auto_retry_attempts Database#task_auto_retry_attempts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#task_auto_retry_attempts Database#task_auto_retry_attempts}
 
 ---
 
@@ -2326,7 +2440,7 @@ timeouts: DatabaseTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#timeouts Database#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#timeouts Database#timeouts}
 
 ---
 
@@ -2342,7 +2456,7 @@ Controls how trace events are ingested into the event table.
 
 Valid options are: `ALWAYS` | `ON_EVENT` | `PROPAGATE` | `OFF`. For information about levels, see [TRACE_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters.html#label-trace-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#trace_level Database#trace_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#trace_level Database#trace_level}
 
 ---
 
@@ -2358,7 +2472,7 @@ The initial size of warehouse to use for managed warehouses in the absence of hi
 
 For more information, see [USER_TASK_MANAGED_INITIAL_WAREHOUSE_SIZE](https://docs.snowflake.com/en/sql-reference/parameters#user-task-managed-initial-warehouse-size).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#user_task_managed_initial_warehouse_size Database#user_task_managed_initial_warehouse_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#user_task_managed_initial_warehouse_size Database#user_task_managed_initial_warehouse_size}
 
 ---
 
@@ -2372,7 +2486,7 @@ user_task_minimum_trigger_interval_in_seconds: typing.Union[int, float]
 
 Minimum amount of time between Triggered Task executions in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#user_task_minimum_trigger_interval_in_seconds Database#user_task_minimum_trigger_interval_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#user_task_minimum_trigger_interval_in_seconds Database#user_task_minimum_trigger_interval_in_seconds}
 
 ---
 
@@ -2386,7 +2500,7 @@ user_task_timeout_ms: typing.Union[int, float]
 
 User task execution timeout in milliseconds. For more information, see [USER_TASK_TIMEOUT_MS](https://docs.snowflake.com/en/sql-reference/parameters#user-task-timeout-ms).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#user_task_timeout_ms Database#user_task_timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#user_task_timeout_ms Database#user_task_timeout_ms}
 
 ---
 
@@ -2422,7 +2536,7 @@ enable_to_account: IResolvable | typing.List[DatabaseReplicationEnableToAccount]
 
 enable_to_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#enable_to_account Database#enable_to_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#enable_to_account Database#enable_to_account}
 
 ---
 
@@ -2438,7 +2552,7 @@ Allows replicating data to accounts on lower editions in either of the following
 
 The primary database is in a Business Critical (or higher) account but one or more of the accounts approved for replication are on lower editions. Business Critical Edition is intended for Snowflake accounts with extremely sensitive data. 2. The primary database is in a Business Critical (or higher) account and a signed business associate agreement is in place to store PHI data in the account per HIPAA and HITRUST regulations, but no such agreement is in place for one or more of the accounts approved for replication, regardless if they are Business Critical (or higher) accounts. Both scenarios are prohibited by default in an effort to help prevent account administrators for Business Critical (or higher) accounts from inadvertently replicating sensitive data to accounts on lower editions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#ignore_edition_check Database#ignore_edition_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#ignore_edition_check Database#ignore_edition_check}
 
 ---
 
@@ -2476,7 +2590,7 @@ Specifies account identifier for which replication should be enabled.
 
 The account identifiers should be in the form of `"<organization_name>"."<account_name>"`. For more information about this resource, see [docs](./account).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#account_identifier Database#account_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#account_identifier Database#account_identifier}
 
 ---
 
@@ -2490,7 +2604,7 @@ with_failover: bool | IResolvable
 
 Specifies if failover should be enabled for the specified account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#with_failover Database#with_failover}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#with_failover Database#with_failover}
 
 ---
 
@@ -2513,10 +2627,10 @@ database.DatabaseTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.database.DatabaseTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#create Database#create}. |
-| <code><a href="#@cdktn/provider-snowflake.database.DatabaseTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#delete Database#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.database.DatabaseTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#read Database#read}. |
-| <code><a href="#@cdktn/provider-snowflake.database.DatabaseTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#update Database#update}. |
+| <code><a href="#@cdktn/provider-snowflake.database.DatabaseTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#create Database#create}. |
+| <code><a href="#@cdktn/provider-snowflake.database.DatabaseTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#delete Database#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.database.DatabaseTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#read Database#read}. |
+| <code><a href="#@cdktn/provider-snowflake.database.DatabaseTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#update Database#update}. |
 
 ---
 
@@ -2528,7 +2642,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#create Database#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#create Database#create}.
 
 ---
 
@@ -2540,7 +2654,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#delete Database#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#delete Database#delete}.
 
 ---
 
@@ -2552,7 +2666,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#read Database#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#read Database#read}.
 
 ---
 
@@ -2564,7 +2678,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/database#update Database#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/database#update Database#update}.
 
 ---
 

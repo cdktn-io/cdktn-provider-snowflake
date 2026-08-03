@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataSnowflakeGrantsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#id DataSnowflakeGrants#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#id DataSnowflakeGrants#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,33 +22,39 @@ export interface DataSnowflakeGrantsConfig extends cdktn.TerraformMetaArguments 
   /**
   * future_grants_in block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#future_grants_in DataSnowflakeGrants#future_grants_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#future_grants_in DataSnowflakeGrants#future_grants_in}
   */
   readonly futureGrantsIn?: DataSnowflakeGrantsFutureGrantsIn;
   /**
   * future_grants_to block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#future_grants_to DataSnowflakeGrants#future_grants_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#future_grants_to DataSnowflakeGrants#future_grants_to}
   */
   readonly futureGrantsTo?: DataSnowflakeGrantsFutureGrantsTo;
   /**
   * grants_of block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#grants_of DataSnowflakeGrants#grants_of}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#grants_of DataSnowflakeGrants#grants_of}
   */
   readonly grantsOf?: DataSnowflakeGrantsGrantsOf;
   /**
   * grants_on block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#grants_on DataSnowflakeGrants#grants_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#grants_on DataSnowflakeGrants#grants_on}
   */
   readonly grantsOn?: DataSnowflakeGrantsGrantsOn;
   /**
   * grants_to block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#grants_to DataSnowflakeGrants#grants_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#grants_to DataSnowflakeGrants#grants_to}
   */
   readonly grantsTo?: DataSnowflakeGrantsGrantsTo;
+  /**
+  * inherited_grants_in block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#inherited_grants_in DataSnowflakeGrants#inherited_grants_in}
+  */
+  readonly inheritedGrantsIn?: DataSnowflakeGrantsInheritedGrantsIn;
 }
 export interface DataSnowflakeGrantsGrants {
 }
@@ -131,6 +137,26 @@ export class DataSnowflakeGrantsGrantsOutputReference extends cdktn.ComplexObjec
     return this.getStringAttribute('grantee_name');
   }
 
+  // inherited_from - computed: true, optional: false, required: false
+  public get inheritedFrom() {
+    return this.getStringAttribute('inherited_from');
+  }
+
+  // inherited_from_database - computed: true, optional: false, required: false
+  public get inheritedFromDatabase() {
+    return this.getStringAttribute('inherited_from_database');
+  }
+
+  // inherited_from_schema - computed: true, optional: false, required: false
+  public get inheritedFromSchema() {
+    return this.getStringAttribute('inherited_from_schema');
+  }
+
+  // is_inherited - computed: true, optional: false, required: false
+  public get isInherited() {
+    return this.getBooleanAttribute('is_inherited');
+  }
+
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
@@ -164,13 +190,13 @@ export interface DataSnowflakeGrantsFutureGrantsIn {
   /**
   * Lists all privileges on new (i.e. future) objects of a specified type in the database granted to a role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#database DataSnowflakeGrants#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#database DataSnowflakeGrants#database}
   */
   readonly database?: string;
   /**
   * Lists all privileges on new (i.e. future) objects of a specified type in the schema granted to a role. Schema must be a fully qualified name ("&lt;db_name&gt;"."&lt;schema_name&gt;").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#schema DataSnowflakeGrants#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#schema DataSnowflakeGrants#schema}
   */
   readonly schema?: string;
 }
@@ -285,13 +311,13 @@ export interface DataSnowflakeGrantsFutureGrantsTo {
   /**
   * Lists all privileges on new (i.e. future) objects of a specified type in a database or schema granted to the account role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
   */
   readonly accountRole?: string;
   /**
   * Lists all privileges on new (i.e. future) objects granted to the database role. Must be a fully qualified name ("&lt;db_name&gt;"."&lt;database_role_name&gt;").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
   */
   readonly databaseRole?: string;
 }
@@ -406,25 +432,25 @@ export interface DataSnowflakeGrantsGrantsOf {
   /**
   * Lists all users and roles to which the account role has been granted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
   */
   readonly accountRole?: string;
   /**
   * Lists all the users and roles to which the application role has been granted. Must be a fully qualified name ("&lt;db_name&gt;"."&lt;database_role_name&gt;").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#application_role DataSnowflakeGrants#application_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#application_role DataSnowflakeGrants#application_role}
   */
   readonly applicationRole?: string;
   /**
   * Lists all users and roles to which the database role has been granted. Must be a fully qualified name ("&lt;db_name&gt;"."&lt;database_role_name&gt;").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
   */
   readonly databaseRole?: string;
   /**
   * Lists all the accounts for the share and indicates the accounts that are using the share.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#share DataSnowflakeGrants#share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#share DataSnowflakeGrants#share}
   */
   readonly share?: string;
 }
@@ -597,19 +623,19 @@ export interface DataSnowflakeGrantsGrantsOn {
   /**
   * Object hierarchy to list privileges on. The only valid value is: ACCOUNT. Setting this attribute lists all the account-level (i.e. global) privileges that have been granted to roles.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#account DataSnowflakeGrants#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#account DataSnowflakeGrants#account}
   */
   readonly account?: boolean | cdktn.IResolvable;
   /**
   * Name of object to list privileges on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#object_name DataSnowflakeGrants#object_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#object_name DataSnowflakeGrants#object_name}
   */
   readonly objectName?: string;
   /**
   * Type of object to list privileges on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#object_type DataSnowflakeGrants#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#object_type DataSnowflakeGrants#object_type}
   */
   readonly objectType?: string;
 }
@@ -753,7 +779,7 @@ export interface DataSnowflakeGrantsGrantsToShare {
   /**
   * Lists all of the privileges and roles granted to the specified share.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#share_name DataSnowflakeGrants#share_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#share_name DataSnowflakeGrants#share_name}
   */
   readonly shareName: string;
 }
@@ -836,37 +862,37 @@ export interface DataSnowflakeGrantsGrantsTo {
   /**
   * Lists all privileges and roles granted to the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
   */
   readonly accountRole?: string;
   /**
   * Lists all the privileges and roles granted to the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#application DataSnowflakeGrants#application}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#application DataSnowflakeGrants#application}
   */
   readonly application?: string;
   /**
   * Lists all the privileges and roles granted to the application role. Must be a fully qualified name ("&lt;app_name&gt;"."&lt;app_role_name&gt;").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#application_role DataSnowflakeGrants#application_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#application_role DataSnowflakeGrants#application_role}
   */
   readonly applicationRole?: string;
   /**
   * Lists all privileges and roles granted to the database role. Must be a fully qualified name ("&lt;db_name&gt;"."&lt;database_role_name&gt;").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
   */
   readonly databaseRole?: string;
   /**
   * Lists all the roles granted to the user. Note that the PUBLIC role, which is automatically available to every user, is not listed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#user DataSnowflakeGrants#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#user DataSnowflakeGrants#user}
   */
   readonly user?: string;
   /**
   * share block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#share DataSnowflakeGrants#share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#share DataSnowflakeGrants#share}
   */
   readonly share?: DataSnowflakeGrantsGrantsToShare;
 }
@@ -1093,9 +1119,165 @@ export class DataSnowflakeGrantsGrantsToOutputReference extends cdktn.ComplexObj
     return this._share.internalValue;
   }
 }
+export interface DataSnowflakeGrantsInheritedGrantsIn {
+  /**
+  * Lists all inherited grants defined in the account.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#account DataSnowflakeGrants#account}
+  */
+  readonly account?: boolean | cdktn.IResolvable;
+  /**
+  * Lists all inherited grants defined in the specified database.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#database DataSnowflakeGrants#database}
+  */
+  readonly database?: string;
+  /**
+  * Lists all inherited grants defined in the specified schema. Schema must be a fully qualified name ("&lt;db_name&gt;"."&lt;schema_name&gt;").
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#schema DataSnowflakeGrants#schema}
+  */
+  readonly schema?: string;
+}
+
+export function dataSnowflakeGrantsInheritedGrantsInToTerraform(struct?: DataSnowflakeGrantsInheritedGrantsInOutputReference | DataSnowflakeGrantsInheritedGrantsIn): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    account: cdktn.booleanToTerraform(struct!.account),
+    database: cdktn.stringToTerraform(struct!.database),
+    schema: cdktn.stringToTerraform(struct!.schema),
+  }
+}
+
+
+export function dataSnowflakeGrantsInheritedGrantsInToHclTerraform(struct?: DataSnowflakeGrantsInheritedGrantsInOutputReference | DataSnowflakeGrantsInheritedGrantsIn): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    account: {
+      value: cdktn.booleanToHclTerraform(struct!.account),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    database: {
+      value: cdktn.stringToHclTerraform(struct!.database),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema: {
+      value: cdktn.stringToHclTerraform(struct!.schema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataSnowflakeGrantsInheritedGrantsInOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataSnowflakeGrantsInheritedGrantsIn | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._account !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.account = this._account;
+    }
+    if (this._database !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.database = this._database;
+    }
+    if (this._schema !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schema = this._schema;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeGrantsInheritedGrantsIn | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._account = undefined;
+      this._database = undefined;
+      this._schema = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._account = value.account;
+      this._database = value.database;
+      this._schema = value.schema;
+    }
+  }
+
+  // account - computed: false, optional: true, required: false
+  private _account?: boolean | cdktn.IResolvable; 
+  public get account() {
+    return this.getBooleanAttribute('account');
+  }
+  public set account(value: boolean | cdktn.IResolvable) {
+    this._account = value;
+  }
+  public resetAccount() {
+    this._account = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountInput() {
+    return this._account;
+  }
+
+  // database - computed: false, optional: true, required: false
+  private _database?: string; 
+  public get database() {
+    return this.getStringAttribute('database');
+  }
+  public set database(value: string) {
+    this._database = value;
+  }
+  public resetDatabase() {
+    this._database = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseInput() {
+    return this._database;
+  }
+
+  // schema - computed: false, optional: true, required: false
+  private _schema?: string; 
+  public get schema() {
+    return this.getStringAttribute('schema');
+  }
+  public set schema(value: string) {
+    this._schema = value;
+  }
+  public resetSchema() {
+    this._schema = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaInput() {
+    return this._schema;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants snowflake_grants}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants snowflake_grants}
 */
 export class DataSnowflakeGrants extends cdktn.TerraformDataSource {
 
@@ -1111,7 +1293,7 @@ export class DataSnowflakeGrants extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataSnowflakeGrants resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeGrants to import
-  * @param importFromId The id of the existing DataSnowflakeGrants that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeGrants that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeGrants to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1123,7 +1305,7 @@ export class DataSnowflakeGrants extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants snowflake_grants} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants snowflake_grants} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1134,7 +1316,7 @@ export class DataSnowflakeGrants extends cdktn.TerraformDataSource {
       terraformResourceType: 'snowflake_grants',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.18.0',
+        providerVersion: '2.19.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -1151,6 +1333,7 @@ export class DataSnowflakeGrants extends cdktn.TerraformDataSource {
     this._grantsOf.internalValue = config.grantsOf;
     this._grantsOn.internalValue = config.grantsOn;
     this._grantsTo.internalValue = config.grantsTo;
+    this._inheritedGrantsIn.internalValue = config.inheritedGrantsIn;
   }
 
   // ==========
@@ -1259,6 +1442,22 @@ export class DataSnowflakeGrants extends cdktn.TerraformDataSource {
     return this._grantsTo.internalValue;
   }
 
+  // inherited_grants_in - computed: false, optional: true, required: false
+  private _inheritedGrantsIn = new DataSnowflakeGrantsInheritedGrantsInOutputReference(this, "inherited_grants_in");
+  public get inheritedGrantsIn() {
+    return this._inheritedGrantsIn;
+  }
+  public putInheritedGrantsIn(value: DataSnowflakeGrantsInheritedGrantsIn) {
+    this._inheritedGrantsIn.internalValue = value;
+  }
+  public resetInheritedGrantsIn() {
+    this._inheritedGrantsIn.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inheritedGrantsInInput() {
+    return this._inheritedGrantsIn.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1271,6 +1470,7 @@ export class DataSnowflakeGrants extends cdktn.TerraformDataSource {
       grants_of: dataSnowflakeGrantsGrantsOfToTerraform(this._grantsOf.internalValue),
       grants_on: dataSnowflakeGrantsGrantsOnToTerraform(this._grantsOn.internalValue),
       grants_to: dataSnowflakeGrantsGrantsToToTerraform(this._grantsTo.internalValue),
+      inherited_grants_in: dataSnowflakeGrantsInheritedGrantsInToTerraform(this._inheritedGrantsIn.internalValue),
     };
   }
 
@@ -1311,6 +1511,12 @@ export class DataSnowflakeGrants extends cdktn.TerraformDataSource {
         isBlock: true,
         type: "list",
         storageClassType: "DataSnowflakeGrantsGrantsToList",
+      },
+      inherited_grants_in: {
+        value: dataSnowflakeGrantsInheritedGrantsInToHclTerraform(this._inheritedGrantsIn.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataSnowflakeGrantsInheritedGrantsInList",
       },
     };
 

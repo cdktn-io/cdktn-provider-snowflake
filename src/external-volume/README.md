@@ -1,3 +1,3 @@
 # `snowflake_external_volume`
 
-Refer to the Terraform Registry for docs: [`snowflake_external_volume`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/external_volume).
+Refer to the Terraform Registry for docs: [`snowflake_external_volume`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/external_volume).

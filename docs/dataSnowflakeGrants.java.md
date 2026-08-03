@@ -4,7 +4,7 @@
 
 ### DataSnowflakeGrants <a name="DataSnowflakeGrants" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants snowflake_grants}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants snowflake_grants}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.Initializer"></a>
 
@@ -25,6 +25,7 @@ DataSnowflakeGrants.Builder.create(Construct scope, java.lang.String id)
 //  .grantsOn(DataSnowflakeGrantsGrantsOn)
 //  .grantsTo(DataSnowflakeGrantsGrantsTo)
 //  .id(java.lang.String)
+//  .inheritedGrantsIn(DataSnowflakeGrantsInheritedGrantsIn)
     .build();
 ```
 
@@ -44,7 +45,8 @@ DataSnowflakeGrants.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.Initializer.parameter.grantsOf">grantsOf</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOf">DataSnowflakeGrantsGrantsOf</a></code> | grants_of block. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.Initializer.parameter.grantsOn">grantsOn</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOn">DataSnowflakeGrantsGrantsOn</a></code> | grants_on block. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.Initializer.parameter.grantsTo">grantsTo</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsTo">DataSnowflakeGrantsGrantsTo</a></code> | grants_to block. |
-| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#id DataSnowflakeGrants#id}. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#id DataSnowflakeGrants#id}. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.Initializer.parameter.inheritedGrantsIn">inheritedGrantsIn</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn">DataSnowflakeGrantsInheritedGrantsIn</a></code> | inherited_grants_in block. |
 
 ---
 
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 future_grants_in block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#future_grants_in DataSnowflakeGrants#future_grants_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#future_grants_in DataSnowflakeGrants#future_grants_in}
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 future_grants_to block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#future_grants_to DataSnowflakeGrants#future_grants_to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#future_grants_to DataSnowflakeGrants#future_grants_to}
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 grants_of block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#grants_of DataSnowflakeGrants#grants_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#grants_of DataSnowflakeGrants#grants_of}
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 grants_on block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#grants_on DataSnowflakeGrants#grants_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#grants_on DataSnowflakeGrants#grants_on}
 
 ---
 
@@ -154,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 grants_to block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#grants_to DataSnowflakeGrants#grants_to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#grants_to DataSnowflakeGrants#grants_to}
 
 ---
 
@@ -162,10 +164,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#id DataSnowflakeGrants#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#id DataSnowflakeGrants#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `inheritedGrantsIn`<sup>Optional</sup> <a name="inheritedGrantsIn" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.Initializer.parameter.inheritedGrantsIn"></a>
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn">DataSnowflakeGrantsInheritedGrantsIn</a>
+
+inherited_grants_in block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#inherited_grants_in DataSnowflakeGrants#inherited_grants_in}
 
 ---
 
@@ -196,12 +208,14 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.putGrantsOf">putGrantsOf</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.putGrantsOn">putGrantsOn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.putGrantsTo">putGrantsTo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.putInheritedGrantsIn">putInheritedGrantsIn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.resetFutureGrantsIn">resetFutureGrantsIn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.resetFutureGrantsTo">resetFutureGrantsTo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.resetGrantsOf">resetGrantsOf</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.resetGrantsOn">resetGrantsOn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.resetGrantsTo">resetGrantsTo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.resetInheritedGrantsIn">resetInheritedGrantsIn</a></code> | *No description.* |
 
 ---
 
@@ -478,6 +492,18 @@ public void putGrantsTo(DataSnowflakeGrantsGrantsTo value)
 
 ---
 
+##### `putInheritedGrantsIn` <a name="putInheritedGrantsIn" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.putInheritedGrantsIn"></a>
+
+```java
+public void putInheritedGrantsIn(DataSnowflakeGrantsInheritedGrantsIn value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.putInheritedGrantsIn.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn">DataSnowflakeGrantsInheritedGrantsIn</a>
+
+---
+
 ##### `resetFutureGrantsIn` <a name="resetFutureGrantsIn" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.resetFutureGrantsIn"></a>
 
 ```java
@@ -512,6 +538,12 @@ public void resetGrantsTo()
 
 ```java
 public void resetId()
+```
+
+##### `resetInheritedGrantsIn` <a name="resetInheritedGrantsIn" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.resetInheritedGrantsIn"></a>
+
+```java
+public void resetInheritedGrantsIn()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -617,7 +649,7 @@ The construct id used in the generated config for the DataSnowflakeGrants to imp
 
 The id of the existing DataSnowflakeGrants that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -651,12 +683,14 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.property.grantsOf">grantsOf</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOfOutputReference">DataSnowflakeGrantsGrantsOfOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.property.grantsOn">grantsOn</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOnOutputReference">DataSnowflakeGrantsGrantsOnOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.property.grantsTo">grantsTo</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsToOutputReference">DataSnowflakeGrantsGrantsToOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.property.inheritedGrantsIn">inheritedGrantsIn</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference">DataSnowflakeGrantsInheritedGrantsInOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.property.futureGrantsInInput">futureGrantsInInput</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsIn">DataSnowflakeGrantsFutureGrantsIn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.property.futureGrantsToInput">futureGrantsToInput</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsTo">DataSnowflakeGrantsFutureGrantsTo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.property.grantsOfInput">grantsOfInput</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOf">DataSnowflakeGrantsGrantsOf</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.property.grantsOnInput">grantsOnInput</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOn">DataSnowflakeGrantsGrantsOn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.property.grantsToInput">grantsToInput</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsTo">DataSnowflakeGrantsGrantsTo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.property.inheritedGrantsInInput">inheritedGrantsInInput</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn">DataSnowflakeGrantsInheritedGrantsIn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -843,6 +877,16 @@ public DataSnowflakeGrantsGrantsToOutputReference getGrantsTo();
 
 ---
 
+##### `inheritedGrantsIn`<sup>Required</sup> <a name="inheritedGrantsIn" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.property.inheritedGrantsIn"></a>
+
+```java
+public DataSnowflakeGrantsInheritedGrantsInOutputReference getInheritedGrantsIn();
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference">DataSnowflakeGrantsInheritedGrantsInOutputReference</a>
+
+---
+
 ##### `futureGrantsInInput`<sup>Optional</sup> <a name="futureGrantsInInput" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.property.futureGrantsInInput"></a>
 
 ```java
@@ -903,6 +947,16 @@ public java.lang.String getIdInput();
 
 ---
 
+##### `inheritedGrantsInInput`<sup>Optional</sup> <a name="inheritedGrantsInInput" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.property.inheritedGrantsInInput"></a>
+
+```java
+public DataSnowflakeGrantsInheritedGrantsIn getInheritedGrantsInInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn">DataSnowflakeGrantsInheritedGrantsIn</a>
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.property.id"></a>
 
 ```java
@@ -954,6 +1008,7 @@ DataSnowflakeGrantsConfig.builder()
 //  .grantsOn(DataSnowflakeGrantsGrantsOn)
 //  .grantsTo(DataSnowflakeGrantsGrantsTo)
 //  .id(java.lang.String)
+//  .inheritedGrantsIn(DataSnowflakeGrantsInheritedGrantsIn)
     .build();
 ```
 
@@ -973,7 +1028,8 @@ DataSnowflakeGrantsConfig.builder()
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsConfig.property.grantsOf">grantsOf</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOf">DataSnowflakeGrantsGrantsOf</a></code> | grants_of block. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsConfig.property.grantsOn">grantsOn</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOn">DataSnowflakeGrantsGrantsOn</a></code> | grants_on block. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsConfig.property.grantsTo">grantsTo</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsTo">DataSnowflakeGrantsGrantsTo</a></code> | grants_to block. |
-| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#id DataSnowflakeGrants#id}. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#id DataSnowflakeGrants#id}. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsConfig.property.inheritedGrantsIn">inheritedGrantsIn</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn">DataSnowflakeGrantsInheritedGrantsIn</a></code> | inherited_grants_in block. |
 
 ---
 
@@ -1057,7 +1113,7 @@ public DataSnowflakeGrantsFutureGrantsIn getFutureGrantsIn();
 
 future_grants_in block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#future_grants_in DataSnowflakeGrants#future_grants_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#future_grants_in DataSnowflakeGrants#future_grants_in}
 
 ---
 
@@ -1071,7 +1127,7 @@ public DataSnowflakeGrantsFutureGrantsTo getFutureGrantsTo();
 
 future_grants_to block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#future_grants_to DataSnowflakeGrants#future_grants_to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#future_grants_to DataSnowflakeGrants#future_grants_to}
 
 ---
 
@@ -1085,7 +1141,7 @@ public DataSnowflakeGrantsGrantsOf getGrantsOf();
 
 grants_of block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#grants_of DataSnowflakeGrants#grants_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#grants_of DataSnowflakeGrants#grants_of}
 
 ---
 
@@ -1099,7 +1155,7 @@ public DataSnowflakeGrantsGrantsOn getGrantsOn();
 
 grants_on block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#grants_on DataSnowflakeGrants#grants_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#grants_on DataSnowflakeGrants#grants_on}
 
 ---
 
@@ -1113,7 +1169,7 @@ public DataSnowflakeGrantsGrantsTo getGrantsTo();
 
 grants_to block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#grants_to DataSnowflakeGrants#grants_to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#grants_to DataSnowflakeGrants#grants_to}
 
 ---
 
@@ -1125,10 +1181,24 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#id DataSnowflakeGrants#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#id DataSnowflakeGrants#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `inheritedGrantsIn`<sup>Optional</sup> <a name="inheritedGrantsIn" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsConfig.property.inheritedGrantsIn"></a>
+
+```java
+public DataSnowflakeGrantsInheritedGrantsIn getInheritedGrantsIn();
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn">DataSnowflakeGrantsInheritedGrantsIn</a>
+
+inherited_grants_in block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#inherited_grants_in DataSnowflakeGrants#inherited_grants_in}
 
 ---
 
@@ -1164,7 +1234,7 @@ public java.lang.String getDatabase();
 
 Lists all privileges on new (i.e. future) objects of a specified type in the database granted to a role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#database DataSnowflakeGrants#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#database DataSnowflakeGrants#database}
 
 ---
 
@@ -1178,7 +1248,7 @@ public java.lang.String getSchema();
 
 Lists all privileges on new (i.e. future) objects of a specified type in the schema granted to a role. Schema must be a fully qualified name ("&lt;db_name&gt;"."&lt;schema_name&gt;").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#schema DataSnowflakeGrants#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#schema DataSnowflakeGrants#schema}
 
 ---
 
@@ -1214,7 +1284,7 @@ public java.lang.String getAccountRole();
 
 Lists all privileges on new (i.e. future) objects of a specified type in a database or schema granted to the account role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
 
 ---
 
@@ -1228,7 +1298,7 @@ public java.lang.String getDatabaseRole();
 
 Lists all privileges on new (i.e. future) objects granted to the database role. Must be a fully qualified name ("&lt;db_name&gt;"."&lt;database_role_name&gt;").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
 
 ---
 
@@ -1280,7 +1350,7 @@ public java.lang.String getAccountRole();
 
 Lists all users and roles to which the account role has been granted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
 
 ---
 
@@ -1296,7 +1366,7 @@ Lists all the users and roles to which the application role has been granted.
 
 Must be a fully qualified name ("<db_name>"."<database_role_name>").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#application_role DataSnowflakeGrants#application_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#application_role DataSnowflakeGrants#application_role}
 
 ---
 
@@ -1312,7 +1382,7 @@ Lists all users and roles to which the database role has been granted.
 
 Must be a fully qualified name ("<db_name>"."<database_role_name>").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
 
 ---
 
@@ -1326,7 +1396,7 @@ public java.lang.String getShare();
 
 Lists all the accounts for the share and indicates the accounts that are using the share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#share DataSnowflakeGrants#share}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#share DataSnowflakeGrants#share}
 
 ---
 
@@ -1366,7 +1436,7 @@ Object hierarchy to list privileges on.
 
 The only valid value is: ACCOUNT. Setting this attribute lists all the account-level (i.e. global) privileges that have been granted to roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#account DataSnowflakeGrants#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#account DataSnowflakeGrants#account}
 
 ---
 
@@ -1380,7 +1450,7 @@ public java.lang.String getObjectName();
 
 Name of object to list privileges on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#object_name DataSnowflakeGrants#object_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#object_name DataSnowflakeGrants#object_name}
 
 ---
 
@@ -1394,7 +1464,7 @@ public java.lang.String getObjectType();
 
 Type of object to list privileges on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#object_type DataSnowflakeGrants#object_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#object_type DataSnowflakeGrants#object_type}
 
 ---
 
@@ -1438,7 +1508,7 @@ public java.lang.String getAccountRole();
 
 Lists all privileges and roles granted to the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
 
 ---
 
@@ -1452,7 +1522,7 @@ public java.lang.String getApplication();
 
 Lists all the privileges and roles granted to the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#application DataSnowflakeGrants#application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#application DataSnowflakeGrants#application}
 
 ---
 
@@ -1466,7 +1536,7 @@ public java.lang.String getApplicationRole();
 
 Lists all the privileges and roles granted to the application role. Must be a fully qualified name ("&lt;app_name&gt;"."&lt;app_role_name&gt;").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#application_role DataSnowflakeGrants#application_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#application_role DataSnowflakeGrants#application_role}
 
 ---
 
@@ -1480,7 +1550,7 @@ public java.lang.String getDatabaseRole();
 
 Lists all privileges and roles granted to the database role. Must be a fully qualified name ("&lt;db_name&gt;"."&lt;database_role_name&gt;").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
 
 ---
 
@@ -1494,7 +1564,7 @@ public DataSnowflakeGrantsGrantsToShare getShare();
 
 share block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#share DataSnowflakeGrants#share}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#share DataSnowflakeGrants#share}
 
 ---
 
@@ -1510,7 +1580,7 @@ Lists all the roles granted to the user.
 
 Note that the PUBLIC role, which is automatically available to every user, is not listed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#user DataSnowflakeGrants#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#user DataSnowflakeGrants#user}
 
 ---
 
@@ -1544,7 +1614,73 @@ public java.lang.String getShareName();
 
 Lists all of the privileges and roles granted to the specified share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/data-sources/grants#share_name DataSnowflakeGrants#share_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#share_name DataSnowflakeGrants#share_name}
+
+---
+
+### DataSnowflakeGrantsInheritedGrantsIn <a name="DataSnowflakeGrantsInheritedGrantsIn" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn.Initializer"></a>
+
+```java
+import io.cdktn.providers.snowflake.data_snowflake_grants.DataSnowflakeGrantsInheritedGrantsIn;
+
+DataSnowflakeGrantsInheritedGrantsIn.builder()
+//  .account(java.lang.Boolean|IResolvable)
+//  .database(java.lang.String)
+//  .schema(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn.property.account">account</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Lists all inherited grants defined in the account. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn.property.database">database</a></code> | <code>java.lang.String</code> | Lists all inherited grants defined in the specified database. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn.property.schema">schema</a></code> | <code>java.lang.String</code> | Lists all inherited grants defined in the specified schema. Schema must be a fully qualified name ("&lt;db_name&gt;"."&lt;schema_name&gt;"). |
+
+---
+
+##### `account`<sup>Optional</sup> <a name="account" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn.property.account"></a>
+
+```java
+public java.lang.Boolean|IResolvable getAccount();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Lists all inherited grants defined in the account.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#account DataSnowflakeGrants#account}
+
+---
+
+##### `database`<sup>Optional</sup> <a name="database" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn.property.database"></a>
+
+```java
+public java.lang.String getDatabase();
+```
+
+- *Type:* java.lang.String
+
+Lists all inherited grants defined in the specified database.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#database DataSnowflakeGrants#database}
+
+---
+
+##### `schema`<sup>Optional</sup> <a name="schema" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn.property.schema"></a>
+
+```java
+public java.lang.String getSchema();
+```
+
+- *Type:* java.lang.String
+
+Lists all inherited grants defined in the specified schema. Schema must be a fully qualified name ("&lt;db_name&gt;"."&lt;schema_name&gt;").
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/grants#schema DataSnowflakeGrants#schema}
 
 ---
 
@@ -3248,6 +3384,10 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOutputReference.property.grantedTo">grantedTo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOutputReference.property.granteeName">granteeName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOutputReference.property.grantOption">grantOption</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOutputReference.property.inheritedFrom">inheritedFrom</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOutputReference.property.inheritedFromDatabase">inheritedFromDatabase</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOutputReference.property.inheritedFromSchema">inheritedFromSchema</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOutputReference.property.isInherited">isInherited</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOutputReference.property.privilege">privilege</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrants">DataSnowflakeGrantsGrants</a></code> | *No description.* |
@@ -3332,6 +3472,46 @@ public java.lang.String getGranteeName();
 
 ```java
 public IResolvable getGrantOption();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable
+
+---
+
+##### `inheritedFrom`<sup>Required</sup> <a name="inheritedFrom" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOutputReference.property.inheritedFrom"></a>
+
+```java
+public java.lang.String getInheritedFrom();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `inheritedFromDatabase`<sup>Required</sup> <a name="inheritedFromDatabase" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOutputReference.property.inheritedFromDatabase"></a>
+
+```java
+public java.lang.String getInheritedFromDatabase();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `inheritedFromSchema`<sup>Required</sup> <a name="inheritedFromSchema" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOutputReference.property.inheritedFromSchema"></a>
+
+```java
+public java.lang.String getInheritedFromSchema();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `isInherited`<sup>Required</sup> <a name="isInherited" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOutputReference.property.isInherited"></a>
+
+```java
+public IResolvable getIsInherited();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable
@@ -4072,6 +4252,342 @@ public DataSnowflakeGrantsGrantsToShare getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsToShare">DataSnowflakeGrantsGrantsToShare</a>
+
+---
+
+
+### DataSnowflakeGrantsInheritedGrantsInOutputReference <a name="DataSnowflakeGrantsInheritedGrantsInOutputReference" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.snowflake.data_snowflake_grants.DataSnowflakeGrantsInheritedGrantsInOutputReference;
+
+new DataSnowflakeGrantsInheritedGrantsInOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.resetAccount">resetAccount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.resetDatabase">resetDatabase</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.resetSchema">resetSchema</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAccount` <a name="resetAccount" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.resetAccount"></a>
+
+```java
+public void resetAccount()
+```
+
+##### `resetDatabase` <a name="resetDatabase" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.resetDatabase"></a>
+
+```java
+public void resetDatabase()
+```
+
+##### `resetSchema` <a name="resetSchema" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.resetSchema"></a>
+
+```java
+public void resetSchema()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.property.accountInput">accountInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.property.databaseInput">databaseInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.property.schemaInput">schemaInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.property.account">account</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.property.database">database</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.property.schema">schema</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn">DataSnowflakeGrantsInheritedGrantsIn</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `accountInput`<sup>Optional</sup> <a name="accountInput" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.property.accountInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getAccountInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.property.databaseInput"></a>
+
+```java
+public java.lang.String getDatabaseInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `schemaInput`<sup>Optional</sup> <a name="schemaInput" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.property.schemaInput"></a>
+
+```java
+public java.lang.String getSchemaInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `account`<sup>Required</sup> <a name="account" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.property.account"></a>
+
+```java
+public java.lang.Boolean|IResolvable getAccount();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `database`<sup>Required</sup> <a name="database" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.property.database"></a>
+
+```java
+public java.lang.String getDatabase();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.property.schema"></a>
+
+```java
+public java.lang.String getSchema();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.property.internalValue"></a>
+
+```java
+public DataSnowflakeGrantsInheritedGrantsIn getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn">DataSnowflakeGrantsInheritedGrantsIn</a>
 
 ---
 
