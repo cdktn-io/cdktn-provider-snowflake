@@ -1,3 +1,3 @@
 # `snowflake_catalog_integration_open_catalog`
 
-Refer to the Terraform Registry for docs: [`snowflake_catalog_integration_open_catalog`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/catalog_integration_open_catalog).
+Refer to the Terraform Registry for docs: [`snowflake_catalog_integration_open_catalog`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/catalog_integration_open_catalog).

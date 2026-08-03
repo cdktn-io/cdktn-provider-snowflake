@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface GrantPrivilegesToDatabaseRoleConfig extends cdktn.TerraformMeta
   /**
   * (Default: `false`) Grant all privileges on the database role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#all_privileges GrantPrivilegesToDatabaseRole#all_privileges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#all_privileges GrantPrivilegesToDatabaseRole#all_privileges}
   */
   readonly allPrivileges?: boolean | cdktn.IResolvable;
   /**
   * (Default: `false`) If true, the resource will always produce a “plan” and on “apply” it will re-grant defined privileges. It is supposed to be used only in “grant privileges on all X’s in database / schema Y” or “grant all privileges to X” scenarios to make sure that every new object in a given database / schema is granted by the account role and every new privilege is granted to the database role. Important note: this flag is not compliant with the Terraform assumptions of the config being eventually convergent (producing an empty plan).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#always_apply GrantPrivilegesToDatabaseRole#always_apply}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#always_apply GrantPrivilegesToDatabaseRole#always_apply}
   */
   readonly alwaysApply?: boolean | cdktn.IResolvable;
   /**
   * (Default: ``) This is a helper field and should not be set. Its main purpose is to help to achieve the functionality described by the always_apply field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#always_apply_trigger GrantPrivilegesToDatabaseRole#always_apply_trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#always_apply_trigger GrantPrivilegesToDatabaseRole#always_apply_trigger}
   */
   readonly alwaysApplyTrigger?: string;
   /**
   * The fully qualified name of the database role to which privileges will be granted. For more information about this resource, see [docs](./database_role).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#database_role_name GrantPrivilegesToDatabaseRole#database_role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#database_role_name GrantPrivilegesToDatabaseRole#database_role_name}
   */
   readonly databaseRoleName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#id GrantPrivilegesToDatabaseRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#id GrantPrivilegesToDatabaseRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,37 +46,37 @@ export interface GrantPrivilegesToDatabaseRoleConfig extends cdktn.TerraformMeta
   /**
   * The fully qualified name of the database on which privileges will be granted. For more information about this resource, see [docs](./database).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#on_database GrantPrivilegesToDatabaseRole#on_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#on_database GrantPrivilegesToDatabaseRole#on_database}
   */
   readonly onDatabase?: string;
   /**
   * The privileges to grant on the database role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#privileges GrantPrivilegesToDatabaseRole#privileges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#privileges GrantPrivilegesToDatabaseRole#privileges}
   */
   readonly privileges?: string[];
   /**
   * (Default: `false`) If specified, allows the recipient role to grant the privileges to other roles.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#with_grant_option GrantPrivilegesToDatabaseRole#with_grant_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#with_grant_option GrantPrivilegesToDatabaseRole#with_grant_option}
   */
   readonly withGrantOption?: boolean | cdktn.IResolvable;
   /**
   * on_schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#on_schema GrantPrivilegesToDatabaseRole#on_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#on_schema GrantPrivilegesToDatabaseRole#on_schema}
   */
   readonly onSchema?: GrantPrivilegesToDatabaseRoleOnSchema;
   /**
   * on_schema_object block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#on_schema_object GrantPrivilegesToDatabaseRole#on_schema_object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#on_schema_object GrantPrivilegesToDatabaseRole#on_schema_object}
   */
   readonly onSchemaObject?: GrantPrivilegesToDatabaseRoleOnSchemaObject;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#timeouts GrantPrivilegesToDatabaseRole#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#timeouts GrantPrivilegesToDatabaseRole#timeouts}
   */
   readonly timeouts?: GrantPrivilegesToDatabaseRoleTimeouts;
 }
@@ -84,19 +84,25 @@ export interface GrantPrivilegesToDatabaseRoleOnSchema {
   /**
   * The fully qualified name of the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#all_schemas_in_database GrantPrivilegesToDatabaseRole#all_schemas_in_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#all_schemas_in_database GrantPrivilegesToDatabaseRole#all_schemas_in_database}
   */
   readonly allSchemasInDatabase?: string;
   /**
   * The fully qualified name of the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#future_schemas_in_database GrantPrivilegesToDatabaseRole#future_schemas_in_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#future_schemas_in_database GrantPrivilegesToDatabaseRole#future_schemas_in_database}
   */
   readonly futureSchemasInDatabase?: string;
   /**
+  * Configures an inherited privilege to be granted on all current and future schemas in a database. See [Inherited grants](https://docs.snowflake.com/en/user-guide/inherited-grants-using) for more details. This field can be only used when `INHERITED_GRANTS` option is specified in provider block in the [`experimental_features_enabled`](../#experimental_features_enabled-1) field.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#inherited GrantPrivilegesToDatabaseRole#inherited}
+  */
+  readonly inherited?: string;
+  /**
   * The fully qualified name of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#schema_name GrantPrivilegesToDatabaseRole#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#schema_name GrantPrivilegesToDatabaseRole#schema_name}
   */
   readonly schemaName?: string;
 }
@@ -109,6 +115,7 @@ export function grantPrivilegesToDatabaseRoleOnSchemaToTerraform(struct?: GrantP
   return {
     all_schemas_in_database: cdktn.stringToTerraform(struct!.allSchemasInDatabase),
     future_schemas_in_database: cdktn.stringToTerraform(struct!.futureSchemasInDatabase),
+    inherited: cdktn.stringToTerraform(struct!.inherited),
     schema_name: cdktn.stringToTerraform(struct!.schemaName),
   }
 }
@@ -128,6 +135,12 @@ export function grantPrivilegesToDatabaseRoleOnSchemaToHclTerraform(struct?: Gra
     },
     future_schemas_in_database: {
       value: cdktn.stringToHclTerraform(struct!.futureSchemasInDatabase),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    inherited: {
+      value: cdktn.stringToHclTerraform(struct!.inherited),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -166,6 +179,10 @@ export class GrantPrivilegesToDatabaseRoleOnSchemaOutputReference extends cdktn.
       hasAnyValues = true;
       internalValueResult.futureSchemasInDatabase = this._futureSchemasInDatabase;
     }
+    if (this._inherited !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inherited = this._inherited;
+    }
     if (this._schemaName !== undefined) {
       hasAnyValues = true;
       internalValueResult.schemaName = this._schemaName;
@@ -178,12 +195,14 @@ export class GrantPrivilegesToDatabaseRoleOnSchemaOutputReference extends cdktn.
       this.isEmptyObject = false;
       this._allSchemasInDatabase = undefined;
       this._futureSchemasInDatabase = undefined;
+      this._inherited = undefined;
       this._schemaName = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._allSchemasInDatabase = value.allSchemasInDatabase;
       this._futureSchemasInDatabase = value.futureSchemasInDatabase;
+      this._inherited = value.inherited;
       this._schemaName = value.schemaName;
     }
   }
@@ -220,6 +239,22 @@ export class GrantPrivilegesToDatabaseRoleOnSchemaOutputReference extends cdktn.
     return this._futureSchemasInDatabase;
   }
 
+  // inherited - computed: false, optional: true, required: false
+  private _inherited?: string; 
+  public get inherited() {
+    return this.getStringAttribute('inherited');
+  }
+  public set inherited(value: string) {
+    this._inherited = value;
+  }
+  public resetInherited() {
+    this._inherited = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inheritedInput() {
+    return this._inherited;
+  }
+
   // schema_name - computed: false, optional: true, required: false
   private _schemaName?: string; 
   public get schemaName() {
@@ -240,19 +275,19 @@ export interface GrantPrivilegesToDatabaseRoleOnSchemaObjectAll {
   /**
   * The fully qualified name of the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#in_database GrantPrivilegesToDatabaseRole#in_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#in_database GrantPrivilegesToDatabaseRole#in_database}
   */
   readonly inDatabase?: string;
   /**
   * The fully qualified name of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#in_schema GrantPrivilegesToDatabaseRole#in_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#in_schema GrantPrivilegesToDatabaseRole#in_schema}
   */
   readonly inSchema?: string;
   /**
-  * The plural object type of the schema object on which privileges will be granted. Valid values are: AGENTS | AGGREGATION POLICIES | ALERTS | AUTHENTICATION POLICIES | CORTEX SEARCH SERVICES | DATA METRIC FUNCTIONS | DATASETS | DBT PROJECTS | DYNAMIC TABLES | EVENT TABLES | EXTERNAL TABLES | FILE FORMATS | FUNCTIONS | GIT REPOSITORIES | HYBRID TABLES | IMAGE REPOSITORIES | ICEBERG TABLES | MASKING POLICIES | MATERIALIZED VIEWS | MCP SERVERS | MODELS | MODEL MONITORS | NETWORK RULES | NOTEBOOKS | ONLINE FEATURE TABLES | PACKAGES POLICIES | PASSWORD POLICIES | PIPES | PRIVACY POLICIES | PROCEDURES | PROJECTION POLICIES | ROW ACCESS POLICIES | SECRETS | SEMANTIC VIEWS | SERVICES | SESSION POLICIES | SEQUENCES | SNAPSHOTS | SNAPSHOT POLICIES | SNAPSHOT SETS | STAGES | STREAMS | STREAMLITS | TABLES | TAGS | TASKS | VIEWS.
+  * The plural object type of the schema object on which privileges will be granted. Valid values are: AGENTS | AGGREGATION POLICIES | ALERTS | AUTHENTICATION POLICIES | CORTEX SEARCH SERVICES | DATA METRIC FUNCTIONS | DATASETS | DBT PROJECTS | DYNAMIC TABLES | EVENT TABLES | EXTERNAL TABLES | FILE FORMATS | FUNCTIONS | GIT REPOSITORIES | HYBRID TABLES | IMAGE REPOSITORIES | ICEBERG TABLES | INTERACTIVE TABLES | MASKING POLICIES | MATERIALIZED VIEWS | MCP SERVERS | MODELS | MODEL MONITORS | NETWORK RULES | NOTEBOOKS | ONLINE FEATURE TABLES | PACKAGES POLICIES | PASSWORD POLICIES | PIPES | PRIVACY POLICIES | PROCEDURES | PROJECTION POLICIES | ROW ACCESS POLICIES | SECRETS | SEMANTIC VIEWS | SERVICES | SESSION POLICIES | SEQUENCES | SNAPSHOTS | SNAPSHOT POLICIES | SNAPSHOT SETS | STAGES | STREAMS | STREAMLITS | TABLES | TAGS | TASKS | VIEWS | WORKSPACES.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#object_type_plural GrantPrivilegesToDatabaseRole#object_type_plural}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#object_type_plural GrantPrivilegesToDatabaseRole#object_type_plural}
   */
   readonly objectTypePlural: string;
 }
@@ -393,19 +428,19 @@ export interface GrantPrivilegesToDatabaseRoleOnSchemaObjectFuture {
   /**
   * The fully qualified name of the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#in_database GrantPrivilegesToDatabaseRole#in_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#in_database GrantPrivilegesToDatabaseRole#in_database}
   */
   readonly inDatabase?: string;
   /**
   * The fully qualified name of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#in_schema GrantPrivilegesToDatabaseRole#in_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#in_schema GrantPrivilegesToDatabaseRole#in_schema}
   */
   readonly inSchema?: string;
   /**
-  * The plural object type of the schema object on which privileges will be granted. Valid values are: AGENTS | ALERTS | AUTHENTICATION POLICIES | CORTEX SEARCH SERVICES | DATA METRIC FUNCTIONS | DATASETS | DBT PROJECTS | DYNAMIC TABLES | EVENT TABLES | EXTERNAL TABLES | FILE FORMATS | FUNCTIONS | GIT REPOSITORIES | HYBRID TABLES | IMAGE REPOSITORIES | ICEBERG TABLES | MATERIALIZED VIEWS | MCP SERVERS | MODELS | MODEL MONITORS | NETWORK RULES | NOTEBOOKS | ONLINE FEATURE TABLES | PASSWORD POLICIES | PIPES | PRIVACY POLICIES | PROCEDURES | SECRETS | SEMANTIC VIEWS | SERVICES | SEQUENCES | SNAPSHOT POLICIES | SNAPSHOT SETS | STAGES | STREAMS | STREAMLITS | TABLES | TASKS | VIEWS.
+  * The plural object type of the schema object on which privileges will be granted. Valid values are: AGENTS | ALERTS | AUTHENTICATION POLICIES | CORTEX SEARCH SERVICES | DATA METRIC FUNCTIONS | DATASETS | DBT PROJECTS | DYNAMIC TABLES | EVENT TABLES | EXTERNAL TABLES | FILE FORMATS | FUNCTIONS | GIT REPOSITORIES | HYBRID TABLES | IMAGE REPOSITORIES | ICEBERG TABLES | INTERACTIVE TABLES | MATERIALIZED VIEWS | MCP SERVERS | MODELS | MODEL MONITORS | NETWORK RULES | NOTEBOOKS | ONLINE FEATURE TABLES | PASSWORD POLICIES | PIPES | PRIVACY POLICIES | PROCEDURES | SECRETS | SEMANTIC VIEWS | SERVICES | SEQUENCES | SNAPSHOT POLICIES | SNAPSHOT SETS | STAGES | STREAMS | STREAMLITS | TABLES | TASKS | VIEWS | WORKSPACES.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#object_type_plural GrantPrivilegesToDatabaseRole#object_type_plural}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#object_type_plural GrantPrivilegesToDatabaseRole#object_type_plural}
   */
   readonly objectTypePlural: string;
 }
@@ -542,31 +577,190 @@ export class GrantPrivilegesToDatabaseRoleOnSchemaObjectFutureOutputReference ex
     return this._objectTypePlural;
   }
 }
+export interface GrantPrivilegesToDatabaseRoleOnSchemaObjectInherited {
+  /**
+  * The fully qualified name of the database.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#in_database GrantPrivilegesToDatabaseRole#in_database}
+  */
+  readonly inDatabase?: string;
+  /**
+  * The fully qualified name of the schema.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#in_schema GrantPrivilegesToDatabaseRole#in_schema}
+  */
+  readonly inSchema?: string;
+  /**
+  * The plural object type of the schema object on which privileges will be granted. Valid values are: AGENTS | AGGREGATION POLICIES | ALERTS | AUTHENTICATION POLICIES | CORTEX SEARCH SERVICES | DATA METRIC FUNCTIONS | DATASETS | DBT PROJECTS | DYNAMIC TABLES | EVENT TABLES | EXTERNAL TABLES | FILE FORMATS | FUNCTIONS | GIT REPOSITORIES | HYBRID TABLES | IMAGE REPOSITORIES | ICEBERG TABLES | INTERACTIVE TABLES | MASKING POLICIES | MATERIALIZED VIEWS | MCP SERVERS | MODELS | MODEL MONITORS | NETWORK RULES | NOTEBOOKS | ONLINE FEATURE TABLES | PACKAGES POLICIES | PASSWORD POLICIES | PIPES | PRIVACY POLICIES | PROCEDURES | PROJECTION POLICIES | ROW ACCESS POLICIES | SECRETS | SEMANTIC VIEWS | SERVICES | SESSION POLICIES | SEQUENCES | SNAPSHOTS | SNAPSHOT POLICIES | SNAPSHOT SETS | STAGES | STREAMS | STREAMLITS | TABLES | TAGS | TASKS | VIEWS | WORKSPACES.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#object_type_plural GrantPrivilegesToDatabaseRole#object_type_plural}
+  */
+  readonly objectTypePlural: string;
+}
+
+export function grantPrivilegesToDatabaseRoleOnSchemaObjectInheritedToTerraform(struct?: GrantPrivilegesToDatabaseRoleOnSchemaObjectInheritedOutputReference | GrantPrivilegesToDatabaseRoleOnSchemaObjectInherited): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    in_database: cdktn.stringToTerraform(struct!.inDatabase),
+    in_schema: cdktn.stringToTerraform(struct!.inSchema),
+    object_type_plural: cdktn.stringToTerraform(struct!.objectTypePlural),
+  }
+}
+
+
+export function grantPrivilegesToDatabaseRoleOnSchemaObjectInheritedToHclTerraform(struct?: GrantPrivilegesToDatabaseRoleOnSchemaObjectInheritedOutputReference | GrantPrivilegesToDatabaseRoleOnSchemaObjectInherited): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    in_database: {
+      value: cdktn.stringToHclTerraform(struct!.inDatabase),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    in_schema: {
+      value: cdktn.stringToHclTerraform(struct!.inSchema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    object_type_plural: {
+      value: cdktn.stringToHclTerraform(struct!.objectTypePlural),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GrantPrivilegesToDatabaseRoleOnSchemaObjectInheritedOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GrantPrivilegesToDatabaseRoleOnSchemaObjectInherited | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._inDatabase !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inDatabase = this._inDatabase;
+    }
+    if (this._inSchema !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inSchema = this._inSchema;
+    }
+    if (this._objectTypePlural !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.objectTypePlural = this._objectTypePlural;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GrantPrivilegesToDatabaseRoleOnSchemaObjectInherited | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._inDatabase = undefined;
+      this._inSchema = undefined;
+      this._objectTypePlural = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._inDatabase = value.inDatabase;
+      this._inSchema = value.inSchema;
+      this._objectTypePlural = value.objectTypePlural;
+    }
+  }
+
+  // in_database - computed: false, optional: true, required: false
+  private _inDatabase?: string; 
+  public get inDatabase() {
+    return this.getStringAttribute('in_database');
+  }
+  public set inDatabase(value: string) {
+    this._inDatabase = value;
+  }
+  public resetInDatabase() {
+    this._inDatabase = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inDatabaseInput() {
+    return this._inDatabase;
+  }
+
+  // in_schema - computed: false, optional: true, required: false
+  private _inSchema?: string; 
+  public get inSchema() {
+    return this.getStringAttribute('in_schema');
+  }
+  public set inSchema(value: string) {
+    this._inSchema = value;
+  }
+  public resetInSchema() {
+    this._inSchema = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inSchemaInput() {
+    return this._inSchema;
+  }
+
+  // object_type_plural - computed: false, optional: false, required: true
+  private _objectTypePlural?: string; 
+  public get objectTypePlural() {
+    return this.getStringAttribute('object_type_plural');
+  }
+  public set objectTypePlural(value: string) {
+    this._objectTypePlural = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get objectTypePluralInput() {
+    return this._objectTypePlural;
+  }
+}
 export interface GrantPrivilegesToDatabaseRoleOnSchemaObject {
   /**
   * The fully qualified name of the object on which privileges will be granted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#object_name GrantPrivilegesToDatabaseRole#object_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#object_name GrantPrivilegesToDatabaseRole#object_name}
   */
   readonly objectName?: string;
   /**
-  * The object type of the schema object on which privileges will be granted. Valid values are: AGENT | AGGREGATION POLICY | ALERT | AUTHENTICATION POLICY | CORTEX SEARCH SERVICE | DATA METRIC FUNCTION | DATASET | DBT PROJECT | DYNAMIC TABLE | EVENT TABLE | EXPERIMENT | EXTERNAL TABLE | FILE FORMAT | FUNCTION | GATEWAY | GIT REPOSITORY | HYBRID TABLE | IMAGE REPOSITORY | ICEBERG TABLE | JOIN POLICY | MASKING POLICY | MATERIALIZED VIEW | MCP SERVER | MODEL | MODEL MONITOR | NETWORK RULE | NOTEBOOK | NOTEBOOK PROJECT | ONLINE FEATURE TABLE | PACKAGES POLICY | PASSWORD POLICY | PIPE | PRIVACY POLICY | PROCEDURE | PROJECTION POLICY | ROW ACCESS POLICY | SECRET | SEMANTIC VIEW | SERVICE | SESSION POLICY | SEQUENCE | SNAPSHOT | SNAPSHOT POLICY | SNAPSHOT SET | STAGE | STORAGE LIFECYCLE POLICY | STREAM | STREAMLIT | TABLE | TAG | TASK | VIEW | WORKSPACE
+  * The object type of the schema object on which privileges will be granted. Valid values are: AGENT | AGGREGATION POLICY | ALERT | AUTHENTICATION POLICY | CORTEX SEARCH SERVICE | DATA METRIC FUNCTION | DATASET | DBT PROJECT | DYNAMIC TABLE | EVENT TABLE | EXPERIMENT | EXTERNAL TABLE | FILE FORMAT | FUNCTION | GATEWAY | GIT REPOSITORY | HYBRID TABLE | IMAGE REPOSITORY | ICEBERG TABLE | INTERACTIVE TABLE | JOIN POLICY | MASKING POLICY | MATERIALIZED VIEW | MCP SERVER | MODEL | MODEL MONITOR | NETWORK RULE | NOTEBOOK | NOTEBOOK PROJECT | ONLINE FEATURE TABLE | PACKAGES POLICY | PASSWORD POLICY | PIPE | PRIVACY POLICY | PROCEDURE | PROJECTION POLICY | ROW ACCESS POLICY | SECRET | SEMANTIC VIEW | SERVICE | SESSION POLICY | SEQUENCE | SNAPSHOT | SNAPSHOT POLICY | SNAPSHOT SET | STAGE | STORAGE LIFECYCLE POLICY | STREAM | STREAMLIT | TABLE | TAG | TASK | VIEW | WORKSPACE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#object_type GrantPrivilegesToDatabaseRole#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#object_type GrantPrivilegesToDatabaseRole#object_type}
   */
   readonly objectType?: string;
   /**
   * all block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#all GrantPrivilegesToDatabaseRole#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#all GrantPrivilegesToDatabaseRole#all}
   */
   readonly all?: GrantPrivilegesToDatabaseRoleOnSchemaObjectAll;
   /**
   * future block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#future GrantPrivilegesToDatabaseRole#future}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#future GrantPrivilegesToDatabaseRole#future}
   */
   readonly future?: GrantPrivilegesToDatabaseRoleOnSchemaObjectFuture;
+  /**
+  * inherited block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#inherited GrantPrivilegesToDatabaseRole#inherited}
+  */
+  readonly inherited?: GrantPrivilegesToDatabaseRoleOnSchemaObjectInherited;
 }
 
 export function grantPrivilegesToDatabaseRoleOnSchemaObjectToTerraform(struct?: GrantPrivilegesToDatabaseRoleOnSchemaObjectOutputReference | GrantPrivilegesToDatabaseRoleOnSchemaObject): any {
@@ -579,6 +773,7 @@ export function grantPrivilegesToDatabaseRoleOnSchemaObjectToTerraform(struct?: 
     object_type: cdktn.stringToTerraform(struct!.objectType),
     all: grantPrivilegesToDatabaseRoleOnSchemaObjectAllToTerraform(struct!.all),
     future: grantPrivilegesToDatabaseRoleOnSchemaObjectFutureToTerraform(struct!.future),
+    inherited: grantPrivilegesToDatabaseRoleOnSchemaObjectInheritedToTerraform(struct!.inherited),
   }
 }
 
@@ -612,6 +807,12 @@ export function grantPrivilegesToDatabaseRoleOnSchemaObjectToHclTerraform(struct
       isBlock: true,
       type: "list",
       storageClassType: "GrantPrivilegesToDatabaseRoleOnSchemaObjectFutureList",
+    },
+    inherited: {
+      value: grantPrivilegesToDatabaseRoleOnSchemaObjectInheritedToHclTerraform(struct!.inherited),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GrantPrivilegesToDatabaseRoleOnSchemaObjectInheritedList",
     },
   };
 
@@ -649,6 +850,10 @@ export class GrantPrivilegesToDatabaseRoleOnSchemaObjectOutputReference extends 
       hasAnyValues = true;
       internalValueResult.future = this._future?.internalValue;
     }
+    if (this._inherited?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inherited = this._inherited?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -659,6 +864,7 @@ export class GrantPrivilegesToDatabaseRoleOnSchemaObjectOutputReference extends 
       this._objectType = undefined;
       this._all.internalValue = undefined;
       this._future.internalValue = undefined;
+      this._inherited.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -666,6 +872,7 @@ export class GrantPrivilegesToDatabaseRoleOnSchemaObjectOutputReference extends 
       this._objectType = value.objectType;
       this._all.internalValue = value.all;
       this._future.internalValue = value.future;
+      this._inherited.internalValue = value.inherited;
     }
   }
 
@@ -732,22 +939,38 @@ export class GrantPrivilegesToDatabaseRoleOnSchemaObjectOutputReference extends 
   public get futureInput() {
     return this._future.internalValue;
   }
+
+  // inherited - computed: false, optional: true, required: false
+  private _inherited = new GrantPrivilegesToDatabaseRoleOnSchemaObjectInheritedOutputReference(this, "inherited");
+  public get inherited() {
+    return this._inherited;
+  }
+  public putInherited(value: GrantPrivilegesToDatabaseRoleOnSchemaObjectInherited) {
+    this._inherited.internalValue = value;
+  }
+  public resetInherited() {
+    this._inherited.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inheritedInput() {
+    return this._inherited.internalValue;
+  }
 }
 export interface GrantPrivilegesToDatabaseRoleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#create GrantPrivilegesToDatabaseRole#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#create GrantPrivilegesToDatabaseRole#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#delete GrantPrivilegesToDatabaseRole#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#delete GrantPrivilegesToDatabaseRole#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#read GrantPrivilegesToDatabaseRole#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#read GrantPrivilegesToDatabaseRole#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#update GrantPrivilegesToDatabaseRole#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#update GrantPrivilegesToDatabaseRole#update}
   */
   readonly update?: string;
 }
@@ -928,7 +1151,7 @@ export class GrantPrivilegesToDatabaseRoleTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role snowflake_grant_privileges_to_database_role}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role snowflake_grant_privileges_to_database_role}
 */
 export class GrantPrivilegesToDatabaseRole extends cdktn.TerraformResource {
 
@@ -944,7 +1167,7 @@ export class GrantPrivilegesToDatabaseRole extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a GrantPrivilegesToDatabaseRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GrantPrivilegesToDatabaseRole to import
-  * @param importFromId The id of the existing GrantPrivilegesToDatabaseRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GrantPrivilegesToDatabaseRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GrantPrivilegesToDatabaseRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -956,7 +1179,7 @@ export class GrantPrivilegesToDatabaseRole extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/grant_privileges_to_database_role snowflake_grant_privileges_to_database_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/grant_privileges_to_database_role snowflake_grant_privileges_to_database_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -967,7 +1190,7 @@ export class GrantPrivilegesToDatabaseRole extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_grant_privileges_to_database_role',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.18.0',
+        providerVersion: '2.19.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

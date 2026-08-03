@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface PostgresInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies the authentication authority for the Postgres instance. Valid values are (case-insensitive): `POSTGRES` | `POSTGRES_OR_SNOWFLAKE`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance#authentication_authority PostgresInstance#authentication_authority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance#authentication_authority PostgresInstance#authentication_authority}
   */
   readonly authenticationAuthority: string;
   /**
   * Specifies a comment for the Postgres instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance#comment PostgresInstance#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance#comment PostgresInstance#comment}
   */
   readonly comment?: string;
   /**
   * Specifies the compute family for the Postgres instance. Valid values are (case-insensitive): `STANDARD_M` | `STANDARD_L` | `STANDARD_XL` | `STANDARD_2XL` | `STANDARD_4XL` | `STANDARD_8XL` | `STANDARD_12XL` | `STANDARD_24XL` | `HIGHMEM_L` | `HIGHMEM_XL` | `HIGHMEM_2XL` | `HIGHMEM_4XL` | `HIGHMEM_8XL` | `HIGHMEM_12XL` | `HIGHMEM_16XL` | `HIGHMEM_24XL` | `HIGHMEM_32XL` | `HIGHMEM_48XL` | `BURST_XS` | `BURST_S` | `BURST_M`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance#compute_family PostgresInstance#compute_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance#compute_family PostgresInstance#compute_family}
   */
   readonly computeFamily: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether the Postgres instance should be configured for high availability. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance#high_availability PostgresInstance#high_availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance#high_availability PostgresInstance#high_availability}
   */
   readonly highAvailability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance#id PostgresInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance#id PostgresInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,49 +46,49 @@ export interface PostgresInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the hour (0-23 UTC) at which the maintenance window starts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance#maintenance_window_start PostgresInstance#maintenance_window_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance#maintenance_window_start PostgresInstance#maintenance_window_start}
   */
   readonly maintenanceWindowStart?: number;
   /**
   * Specifies the identifier for the Postgres instance; must be unique for your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance#name PostgresInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance#name PostgresInstance#name}
   */
   readonly name: string;
   /**
   * Specifies the network policy to associate with the Postgres instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance#network_policy PostgresInstance#network_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance#network_policy PostgresInstance#network_policy}
   */
   readonly networkPolicy?: string;
   /**
   * Specifies custom Postgres settings as a JSON string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance#postgres_settings PostgresInstance#postgres_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance#postgres_settings PostgresInstance#postgres_settings}
   */
   readonly postgresSettings?: string;
   /**
   * Specifies the Postgres version for the instance. Note that Snowflake does not allow downgrading; the version can only be upgraded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance#postgres_version PostgresInstance#postgres_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance#postgres_version PostgresInstance#postgres_version}
   */
   readonly postgresVersion: number;
   /**
   * Specifies the storage integration for the Postgres instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance#storage_integration PostgresInstance#storage_integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance#storage_integration PostgresInstance#storage_integration}
   */
   readonly storageIntegration?: string;
   /**
   * Specifies the storage size in GB for the Postgres instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance#storage_size_gb PostgresInstance#storage_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance#storage_size_gb PostgresInstance#storage_size_gb}
   */
   readonly storageSizeGb: number;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance#timeouts PostgresInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance#timeouts PostgresInstance#timeouts}
   */
   readonly timeouts?: PostgresInstanceTimeouts;
 }
@@ -429,19 +429,19 @@ export class PostgresInstanceShowOutputList extends cdktn.ComplexList {
 }
 export interface PostgresInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance#create PostgresInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance#create PostgresInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance#delete PostgresInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance#delete PostgresInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance#read PostgresInstance#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance#read PostgresInstance#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance#update PostgresInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance#update PostgresInstance#update}
   */
   readonly update?: string;
 }
@@ -622,7 +622,7 @@ export class PostgresInstanceTimeoutsOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance snowflake_postgres_instance}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance snowflake_postgres_instance}
 */
 export class PostgresInstance extends cdktn.TerraformResource {
 
@@ -638,7 +638,7 @@ export class PostgresInstance extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PostgresInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PostgresInstance to import
-  * @param importFromId The id of the existing PostgresInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PostgresInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PostgresInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -650,7 +650,7 @@ export class PostgresInstance extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/postgres_instance snowflake_postgres_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/postgres_instance snowflake_postgres_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -661,7 +661,7 @@ export class PostgresInstance extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_postgres_instance',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.18.0',
+        providerVersion: '2.19.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

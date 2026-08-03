@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface StorageLifecyclePolicyConfig extends cdktn.TerraformMetaArgumen
   /**
   * Specifies the number of days to keep rows that match the policy expression in archive storage. If set, Snowflake moves the data into archive storage according to the value you select for archive_tier. If unset, Snowflake expires the rows from the table without archiving the data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy#archive_for_days StorageLifecyclePolicy#archive_for_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#archive_for_days StorageLifecyclePolicy#archive_for_days}
   */
   readonly archiveForDays?: number;
   /**
   * Specifies the type of storage tier to use for archiving rows. After you set the ARCHIVE_TIER for a policy, you can’t modify it. If you don’t specify this parameter, the policy is an expiration policy that deletes rows without archiving them. Valid values are (case-insensitive): `COOL` | `COLD`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy#archive_tier StorageLifecyclePolicy#archive_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#archive_tier StorageLifecyclePolicy#archive_tier}
   */
   readonly archiveTier?: string;
   /**
   * Specifies the SQL expression. The expression can be any boolean-valued SQL expression. To mitigate permadiff on this field, the provider replaces blank characters with a space. This can lead to false positives in cases where a change in case or run of whitespace is semantically significant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy#body StorageLifecyclePolicy#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#body StorageLifecyclePolicy#body}
   */
   readonly body: string;
   /**
   * Specifies a comment for the storage lifecycle policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy#comment StorageLifecyclePolicy#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#comment StorageLifecyclePolicy#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the storage lifecycle policy. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy#database StorageLifecyclePolicy#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#database StorageLifecyclePolicy#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy#id StorageLifecyclePolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#id StorageLifecyclePolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,25 +52,25 @@ export interface StorageLifecyclePolicyConfig extends cdktn.TerraformMetaArgumen
   /**
   * Specifies the identifier for the storage lifecycle policy; must be unique for the database and schema in which the storage lifecycle policy is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy#name StorageLifecyclePolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#name StorageLifecyclePolicy#name}
   */
   readonly name: string;
   /**
   * The schema in which to create the storage lifecycle policy. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy#schema StorageLifecyclePolicy#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#schema StorageLifecyclePolicy#schema}
   */
   readonly schema: string;
   /**
   * argument block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy#argument StorageLifecyclePolicy#argument}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#argument StorageLifecyclePolicy#argument}
   */
   readonly argument: StorageLifecyclePolicyArgument[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy#timeouts StorageLifecyclePolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#timeouts StorageLifecyclePolicy#timeouts}
   */
   readonly timeouts?: StorageLifecyclePolicyTimeouts;
 }
@@ -220,6 +220,11 @@ export class StorageLifecyclePolicyDescribeOutputOutputReference extends cdktn.C
     return this.getStringAttribute('body');
   }
 
+  // database_name - computed: true, optional: false, required: false
+  public get databaseName() {
+    return this.getStringAttribute('database_name');
+  }
+
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
@@ -228,6 +233,11 @@ export class StorageLifecyclePolicyDescribeOutputOutputReference extends cdktn.C
   // return_type - computed: true, optional: false, required: false
   public get returnType() {
     return this.getStringAttribute('return_type');
+  }
+
+  // schema_name - computed: true, optional: false, required: false
+  public get schemaName() {
+    return this.getStringAttribute('schema_name');
   }
 
   // signature - computed: true, optional: false, required: false
@@ -374,13 +384,13 @@ export interface StorageLifecyclePolicyArgument {
   /**
   * The argument name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy#name StorageLifecyclePolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#name StorageLifecyclePolicy#name}
   */
   readonly name: string;
   /**
   * The argument type. For more information about data types, check [Snowflake docs](https://docs.snowflake.com/en/sql-reference/intro-summary-data-types).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy#type StorageLifecyclePolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#type StorageLifecyclePolicy#type}
   */
   readonly type: string;
 }
@@ -519,19 +529,19 @@ export class StorageLifecyclePolicyArgumentList extends cdktn.ComplexList {
 }
 export interface StorageLifecyclePolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy#create StorageLifecyclePolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#create StorageLifecyclePolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy#delete StorageLifecyclePolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#delete StorageLifecyclePolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy#read StorageLifecyclePolicy#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#read StorageLifecyclePolicy#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy#update StorageLifecyclePolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#update StorageLifecyclePolicy#update}
   */
   readonly update?: string;
 }
@@ -712,7 +722,7 @@ export class StorageLifecyclePolicyTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy snowflake_storage_lifecycle_policy}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy snowflake_storage_lifecycle_policy}
 */
 export class StorageLifecyclePolicy extends cdktn.TerraformResource {
 
@@ -728,7 +738,7 @@ export class StorageLifecyclePolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StorageLifecyclePolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageLifecyclePolicy to import
-  * @param importFromId The id of the existing StorageLifecyclePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageLifecyclePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageLifecyclePolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -740,7 +750,7 @@ export class StorageLifecyclePolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/storage_lifecycle_policy snowflake_storage_lifecycle_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy snowflake_storage_lifecycle_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -751,7 +761,7 @@ export class StorageLifecyclePolicy extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_storage_lifecycle_policy',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.18.0',
+        providerVersion: '2.19.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
