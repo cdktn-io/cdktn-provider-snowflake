@@ -4,7 +4,7 @@
 
 ### ApiIntegrationAzureApiManagement <a name="ApiIntegrationAzureApiManagement" id="@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management snowflake_api_integration_azure_api_management}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management snowflake_api_integration_azure_api_management}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagement.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the ApiIntegrationAzureApiMana
 
 The id of the existing ApiIntegrationAzureApiManagement that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1014,7 +1014,7 @@ const apiIntegrationAzureApiManagementConfig: apiIntegrationAzureApiManagement.A
 | <code><a href="#@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementConfig.property.apiBlockedPrefixes">apiBlockedPrefixes</a></code> | <code>string[]</code> | Lists the endpoints and resources in the HTTPS proxy service that are not allowed to be called from Snowflake. |
 | <code><a href="#@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementConfig.property.apiKey">apiKey</a></code> | <code>string</code> | Specifies the API key (secret) that Snowflake uses to authenticate when making calls to the proxy service. |
 | <code><a href="#@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the integration. |
-| <code><a href="#@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#id ApiIntegrationAzureApiManagement#id}. |
+| <code><a href="#@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#id ApiIntegrationAzureApiManagement#id}. |
 | <code><a href="#@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementTimeouts">ApiIntegrationAzureApiManagementTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1099,7 +1099,7 @@ public readonly apiAllowedPrefixes: string[];
 
 Explicitly limits external functions that use the integration to reference one or more HTTPS proxy service and remote service endpoints and resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#api_allowed_prefixes ApiIntegrationAzureApiManagement#api_allowed_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#api_allowed_prefixes ApiIntegrationAzureApiManagement#api_allowed_prefixes}
 
 ---
 
@@ -1113,7 +1113,7 @@ public readonly azureAdApplicationId: string;
 
 The 'Application (client) ID' of the Azure AD app for your Azure API Management instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#azure_ad_application_id ApiIntegrationAzureApiManagement#azure_ad_application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#azure_ad_application_id ApiIntegrationAzureApiManagement#azure_ad_application_id}
 
 ---
 
@@ -1127,7 +1127,7 @@ public readonly azureTenantId: string;
 
 Specifies the ID for your Office 365 tenant that all Azure API Management instances belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#azure_tenant_id ApiIntegrationAzureApiManagement#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#azure_tenant_id ApiIntegrationAzureApiManagement#azure_tenant_id}
 
 ---
 
@@ -1141,7 +1141,7 @@ public readonly enabled: boolean | IResolvable;
 
 Specifies whether this API integration is enabled or disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#enabled ApiIntegrationAzureApiManagement#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#enabled ApiIntegrationAzureApiManagement#enabled}
 
 ---
 
@@ -1155,7 +1155,7 @@ public readonly name: string;
 
 Specifies the identifier (i.e. name) for the integration. This value must be unique in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#name ApiIntegrationAzureApiManagement#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#name ApiIntegrationAzureApiManagement#name}
 
 ---
 
@@ -1169,7 +1169,7 @@ public readonly apiBlockedPrefixes: string[];
 
 Lists the endpoints and resources in the HTTPS proxy service that are not allowed to be called from Snowflake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#api_blocked_prefixes ApiIntegrationAzureApiManagement#api_blocked_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#api_blocked_prefixes ApiIntegrationAzureApiManagement#api_blocked_prefixes}
 
 ---
 
@@ -1185,7 +1185,7 @@ Specifies the API key (secret) that Snowflake uses to authenticate when making c
 
 Snowflake returns a masked value for this field in DESCRIBE output, so external changes to it cannot be detected. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#api_key ApiIntegrationAzureApiManagement#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#api_key ApiIntegrationAzureApiManagement#api_key}
 
 ---
 
@@ -1199,7 +1199,7 @@ public readonly comment: string;
 
 Specifies a comment for the integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#comment ApiIntegrationAzureApiManagement#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#comment ApiIntegrationAzureApiManagement#comment}
 
 ---
 
@@ -1211,7 +1211,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#id ApiIntegrationAzureApiManagement#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#id ApiIntegrationAzureApiManagement#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1228,7 +1228,7 @@ public readonly timeouts: ApiIntegrationAzureApiManagementTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#timeouts ApiIntegrationAzureApiManagement#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#timeouts ApiIntegrationAzureApiManagement#timeouts}
 
 ---
 
@@ -1268,10 +1268,10 @@ const apiIntegrationAzureApiManagementTimeouts: apiIntegrationAzureApiManagement
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#create ApiIntegrationAzureApiManagement#create}. |
-| <code><a href="#@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#delete ApiIntegrationAzureApiManagement#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#read ApiIntegrationAzureApiManagement#read}. |
-| <code><a href="#@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#update ApiIntegrationAzureApiManagement#update}. |
+| <code><a href="#@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#create ApiIntegrationAzureApiManagement#create}. |
+| <code><a href="#@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#delete ApiIntegrationAzureApiManagement#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#read ApiIntegrationAzureApiManagement#read}. |
+| <code><a href="#@cdktn/provider-snowflake.apiIntegrationAzureApiManagement.ApiIntegrationAzureApiManagementTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#update ApiIntegrationAzureApiManagement#update}. |
 
 ---
 
@@ -1283,7 +1283,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#create ApiIntegrationAzureApiManagement#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#create ApiIntegrationAzureApiManagement#create}.
 
 ---
 
@@ -1295,7 +1295,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#delete ApiIntegrationAzureApiManagement#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#delete ApiIntegrationAzureApiManagement#delete}.
 
 ---
 
@@ -1307,7 +1307,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#read ApiIntegrationAzureApiManagement#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#read ApiIntegrationAzureApiManagement#read}.
 
 ---
 
@@ -1319,7 +1319,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.18.0/docs/resources/api_integration_azure_api_management#update ApiIntegrationAzureApiManagement#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_azure_api_management#update ApiIntegrationAzureApiManagement#update}.
 
 ---
 
