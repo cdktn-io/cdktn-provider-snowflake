@@ -22,7 +22,7 @@ importers:
         version: 3.0.1
       '@cdktn/provider-project':
         specifier: ^0.9.0
-        version: 0.9.5(constructs@10.7.2)(projen@0.101.22(constructs@10.7.2))
+        version: 0.9.6(constructs@10.7.2)(projen@0.101.23(constructs@10.7.2))
       '@types/node':
         specifier: ^22
         version: 22.20.1
@@ -57,8 +57,8 @@ importers:
         specifier: ~5.9.0
         version: 5.9.58
       projen:
-        specifier: ^0.101.20
-        version: 0.101.22(constructs@10.7.2)
+        specifier: ^0.101.23
+        version: 0.101.23(constructs@10.7.2)
       semver:
         specifier: ^7.5.3
         version: 7.8.5
@@ -137,8 +137,8 @@ packages:
   '@cdktn/provider-generator@0.23.4':
     resolution: {integrity: sha512-33jhlq2hIxM/eoKj/J/+B7NEzsFfuu6KqYuFrmHAIh8rfQkWS+h1KgGHGsG3/SoH9YgWFfo1ogqxth83cYq47g==}
 
-  '@cdktn/provider-project@0.9.5':
-    resolution: {integrity: sha512-6TpAPok1Z47qlMXvCvNOUCdQ14PN5jUEE9Ncu8vbEnHZxoBmQwjh5s8v0ZrJT++Mkmmrt3juBn7ixpI+wYdurA==}
+  '@cdktn/provider-project@0.9.6':
+    resolution: {integrity: sha512-A7USQeAIvOK8Uk/+d1yWeXPh1dWR83CwBcyu7Iq6li+DyE5bv+5elbteHRTSUNzMsSv/nMb3pUTdm+0nuAmJrA==}
     engines: {node: '>= 22.11.0'}
     peerDependencies:
       constructs: ^10.5.0
@@ -1254,8 +1254,8 @@ packages:
   process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
 
-  projen@0.101.22:
-    resolution: {integrity: sha512-vkwwotCmEBUdkAj6hwnBD5qZ6mEZZaaUXS2pIu6TCvgASHkEte9gkWAk8/Pd8lVJUvfCgyjsP31f4PSuu280Vg==}
+  projen@0.101.23:
+    resolution: {integrity: sha512-gI1vvX7NdhtnRVT2GqMwymq9Z25YNGw7xtp89gXPtomn+GfmBEnLo80GDyEM8qTYxqTZXG5axMb137PCT2uzwQ==}
     engines: {node: '>= 16.0.0'}
     hasBin: true
     peerDependencies:
@@ -1784,10 +1784,10 @@ snapshots:
       - jsii-rosetta
       - supports-color
 
-  '@cdktn/provider-project@0.9.5(constructs@10.7.2)(projen@0.101.22(constructs@10.7.2))':
+  '@cdktn/provider-project@0.9.6(constructs@10.7.2)(projen@0.101.23(constructs@10.7.2))':
     dependencies:
       constructs: 10.7.2
-      projen: 0.101.22(constructs@10.7.2)
+      projen: 0.101.23(constructs@10.7.2)
 
   '@cdktn/provider-schema@0.23.4(constructs@10.6.0)':
     dependencies:
@@ -2985,7 +2985,7 @@ snapshots:
 
   process-nextick-args@2.0.1: {}
 
-  projen@0.101.22(constructs@10.7.2):
+  projen@0.101.23(constructs@10.7.2):
     dependencies:
       constructs: 10.7.2
 
