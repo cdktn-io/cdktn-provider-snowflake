@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptive.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 warehouseadaptive.NewWarehouseAdaptive(scope Construct, id *string, config WarehouseAdaptiveConfig) WarehouseAdaptive
 ```
@@ -469,7 +469,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptive.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 warehouseadaptive.WarehouseAdaptive_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptive.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 warehouseadaptive.WarehouseAdaptive_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ warehouseadaptive.WarehouseAdaptive_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptive.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 warehouseadaptive.WarehouseAdaptive_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ warehouseadaptive.WarehouseAdaptive_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptive.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 warehouseadaptive.WarehouseAdaptive_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1000,7 +1000,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 &warehouseadaptive.WarehouseAdaptiveConfig {
 	Connection: interface{},
@@ -1018,7 +1018,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehousea
 	ResourceMonitor: *string,
 	StatementQueuedTimeoutInSeconds: *f64,
 	StatementTimeoutInSeconds: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.warehouseAdaptive.WarehouseAdaptiveTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.warehouseAdaptive.WarehouseAdaptiveTimeouts,
 }
 ```
 
@@ -1253,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptiveParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 &warehouseadaptive.WarehouseAdaptiveParameters {
 
@@ -1266,7 +1266,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehousea
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptiveParametersStatementQueuedTimeoutInSeconds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 &warehouseadaptive.WarehouseAdaptiveParametersStatementQueuedTimeoutInSeconds {
 
@@ -1279,7 +1279,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehousea
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptiveParametersStatementTimeoutInSeconds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 &warehouseadaptive.WarehouseAdaptiveParametersStatementTimeoutInSeconds {
 
@@ -1292,7 +1292,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehousea
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptiveShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 &warehouseadaptive.WarehouseAdaptiveShowOutput {
 
@@ -1305,7 +1305,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehousea
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptiveTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 &warehouseadaptive.WarehouseAdaptiveTimeouts {
 	Create: *string,
@@ -1381,7 +1381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptiveParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 warehouseadaptive.NewWarehouseAdaptiveParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WarehouseAdaptiveParametersList
 ```
@@ -1530,7 +1530,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptiveParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 warehouseadaptive.NewWarehouseAdaptiveParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WarehouseAdaptiveParametersOutputReference
 ```
@@ -1819,7 +1819,7 @@ func InternalValue() WarehouseAdaptiveParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptiveParametersStatementQueuedTimeoutInSecondsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 warehouseadaptive.NewWarehouseAdaptiveParametersStatementQueuedTimeoutInSecondsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WarehouseAdaptiveParametersStatementQueuedTimeoutInSecondsList
 ```
@@ -1968,7 +1968,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptiveParametersStatementQueuedTimeoutInSecondsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 warehouseadaptive.NewWarehouseAdaptiveParametersStatementQueuedTimeoutInSecondsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WarehouseAdaptiveParametersStatementQueuedTimeoutInSecondsOutputReference
 ```
@@ -2290,7 +2290,7 @@ func InternalValue() WarehouseAdaptiveParametersStatementQueuedTimeoutInSeconds
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptiveParametersStatementTimeoutInSecondsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 warehouseadaptive.NewWarehouseAdaptiveParametersStatementTimeoutInSecondsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WarehouseAdaptiveParametersStatementTimeoutInSecondsList
 ```
@@ -2439,7 +2439,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptiveParametersStatementTimeoutInSecondsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 warehouseadaptive.NewWarehouseAdaptiveParametersStatementTimeoutInSecondsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WarehouseAdaptiveParametersStatementTimeoutInSecondsOutputReference
 ```
@@ -2761,7 +2761,7 @@ func InternalValue() WarehouseAdaptiveParametersStatementTimeoutInSeconds
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptiveShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 warehouseadaptive.NewWarehouseAdaptiveShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WarehouseAdaptiveShowOutputList
 ```
@@ -2910,7 +2910,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptiveShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 warehouseadaptive.NewWarehouseAdaptiveShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WarehouseAdaptiveShowOutputOutputReference
 ```
@@ -3408,7 +3408,7 @@ func InternalValue() WarehouseAdaptiveShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.warehouseAdaptive.WarehouseAdaptiveTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/warehouseadaptive"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/warehouseadaptive"
 
 warehouseadaptive.NewWarehouseAdaptiveTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WarehouseAdaptiveTimeoutsOutputReference
 ```

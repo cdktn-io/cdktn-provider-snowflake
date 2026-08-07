@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.mcpServer.McpServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/mcpserver"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/mcpserver"
 
 mcpserver.NewMcpServer(scope Construct, id *string, config McpServerConfig) McpServer
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.mcpServer.McpServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/mcpserver"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/mcpserver"
 
 mcpserver.McpServer_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.mcpServer.McpServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/mcpserver"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/mcpserver"
 
 mcpserver.McpServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ mcpserver.McpServer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.mcpServer.McpServer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/mcpserver"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/mcpserver"
 
 mcpserver.McpServer_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ mcpserver.McpServer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.mcpServer.McpServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/mcpserver"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/mcpserver"
 
 mcpserver.McpServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -910,7 +910,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.mcpServer.McpServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/mcpserver"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/mcpserver"
 
 &mcpserver.McpServerConfig {
 	Connection: interface{},
@@ -926,7 +926,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/mcpserver"
 	Specification: *string,
 	Comment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.mcpServer.McpServerTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.mcpServer.McpServerTimeouts,
 }
 ```
 
@@ -1133,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.mcpServer.McpServerDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/mcpserver"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/mcpserver"
 
 &mcpserver.McpServerDescribeOutput {
 
@@ -1146,7 +1146,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/mcpserver"
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.mcpServer.McpServerShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/mcpserver"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/mcpserver"
 
 &mcpserver.McpServerShowOutput {
 
@@ -1159,7 +1159,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/mcpserver"
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.mcpServer.McpServerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/mcpserver"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/mcpserver"
 
 &mcpserver.McpServerTimeouts {
 	Create: *string,
@@ -1235,7 +1235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.mcpServer.McpServerDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/mcpserver"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/mcpserver"
 
 mcpserver.NewMcpServerDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) McpServerDescribeOutputList
 ```
@@ -1384,7 +1384,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.mcpServer.McpServerDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/mcpserver"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/mcpserver"
 
 mcpserver.NewMcpServerDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) McpServerDescribeOutputOutputReference
 ```
@@ -1728,7 +1728,7 @@ func InternalValue() McpServerDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.mcpServer.McpServerShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/mcpserver"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/mcpserver"
 
 mcpserver.NewMcpServerShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) McpServerShowOutputList
 ```
@@ -1877,7 +1877,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.mcpServer.McpServerShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/mcpserver"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/mcpserver"
 
 mcpserver.NewMcpServerShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) McpServerShowOutputOutputReference
 ```
@@ -2210,7 +2210,7 @@ func InternalValue() McpServerShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.mcpServer.McpServerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/mcpserver"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/mcpserver"
 
 mcpserver.NewMcpServerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) McpServerTimeoutsOutputReference
 ```

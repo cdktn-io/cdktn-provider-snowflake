@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJava.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJava(scope Construct, id *string, config ProcedureJavaConfig) ProcedureJava
 ```
@@ -591,7 +591,7 @@ func ResetTraceLevel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.procedureJava.ProcedureJava.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.ProcedureJava_IsConstruct(x interface{}) *bool
 ```
@@ -623,7 +623,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.procedureJava.ProcedureJava.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.ProcedureJava_IsTerraformElement(x interface{}) *bool
 ```
@@ -637,7 +637,7 @@ procedurejava.ProcedureJava_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.procedureJava.ProcedureJava.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.ProcedureJava_IsTerraformResource(x interface{}) *bool
 ```
@@ -651,7 +651,7 @@ procedurejava.ProcedureJava_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.procedureJava.ProcedureJava.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.ProcedureJava_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1474,7 +1474,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 &procedurejava.ProcedureJavaArguments {
 	ArgDataType: *string,
@@ -1544,7 +1544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 &procedurejava.ProcedureJavaConfig {
 	Connection: interface{},
@@ -1576,8 +1576,8 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurej
 	Packages: *[]*string,
 	ProcedureDefinition: *string,
 	Secrets: interface{},
-	TargetPath: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.procedureJava.ProcedureJavaTargetPath,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.procedureJava.ProcedureJavaTimeouts,
+	TargetPath: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.procedureJava.ProcedureJavaTargetPath,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.procedureJava.ProcedureJavaTimeouts,
 	TraceLevel: *string,
 }
 ```
@@ -2073,7 +2073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaImports.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 &procedurejava.ProcedureJavaImports {
 	PathOnStage: *string,
@@ -2125,7 +2125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 &procedurejava.ProcedureJavaParameters {
 
@@ -2138,7 +2138,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurej
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaParametersEnableConsoleOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 &procedurejava.ProcedureJavaParametersEnableConsoleOutput {
 
@@ -2151,7 +2151,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurej
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaParametersLogEventLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 &procedurejava.ProcedureJavaParametersLogEventLevel {
 
@@ -2164,7 +2164,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurej
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaParametersLogLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 &procedurejava.ProcedureJavaParametersLogLevel {
 
@@ -2177,7 +2177,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurej
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaParametersMetricLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 &procedurejava.ProcedureJavaParametersMetricLevel {
 
@@ -2190,7 +2190,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurej
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaParametersTraceLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 &procedurejava.ProcedureJavaParametersTraceLevel {
 
@@ -2203,7 +2203,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurej
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 &procedurejava.ProcedureJavaSecrets {
 	SecretId: *string,
@@ -2253,7 +2253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 &procedurejava.ProcedureJavaShowOutput {
 
@@ -2266,7 +2266,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurej
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaTargetPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 &procedurejava.ProcedureJavaTargetPath {
 	PathOnStage: *string,
@@ -2318,7 +2318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 &procedurejava.ProcedureJavaTimeouts {
 	Create: *string,
@@ -2394,7 +2394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavaArgumentsList
 ```
@@ -2554,7 +2554,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavaArgumentsOutputReference
 ```
@@ -2894,7 +2894,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaImportsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaImportsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavaImportsList
 ```
@@ -3054,7 +3054,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaImportsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaImportsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavaImportsOutputReference
 ```
@@ -3365,7 +3365,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaParametersEnableConsoleOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaParametersEnableConsoleOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavaParametersEnableConsoleOutputList
 ```
@@ -3514,7 +3514,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaParametersEnableConsoleOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaParametersEnableConsoleOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavaParametersEnableConsoleOutputOutputReference
 ```
@@ -3836,7 +3836,7 @@ func InternalValue() ProcedureJavaParametersEnableConsoleOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavaParametersList
 ```
@@ -3985,7 +3985,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaParametersLogEventLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaParametersLogEventLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavaParametersLogEventLevelList
 ```
@@ -4134,7 +4134,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaParametersLogEventLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaParametersLogEventLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavaParametersLogEventLevelOutputReference
 ```
@@ -4456,7 +4456,7 @@ func InternalValue() ProcedureJavaParametersLogEventLevel
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaParametersLogLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaParametersLogLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavaParametersLogLevelList
 ```
@@ -4605,7 +4605,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaParametersLogLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaParametersLogLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavaParametersLogLevelOutputReference
 ```
@@ -4927,7 +4927,7 @@ func InternalValue() ProcedureJavaParametersLogLevel
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaParametersMetricLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaParametersMetricLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavaParametersMetricLevelList
 ```
@@ -5076,7 +5076,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaParametersMetricLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaParametersMetricLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavaParametersMetricLevelOutputReference
 ```
@@ -5398,7 +5398,7 @@ func InternalValue() ProcedureJavaParametersMetricLevel
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavaParametersOutputReference
 ```
@@ -5720,7 +5720,7 @@ func InternalValue() ProcedureJavaParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaParametersTraceLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaParametersTraceLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavaParametersTraceLevelList
 ```
@@ -5869,7 +5869,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaParametersTraceLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaParametersTraceLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavaParametersTraceLevelOutputReference
 ```
@@ -6191,7 +6191,7 @@ func InternalValue() ProcedureJavaParametersTraceLevel
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavaSecretsList
 ```
@@ -6351,7 +6351,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavaSecretsOutputReference
 ```
@@ -6662,7 +6662,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavaShowOutputList
 ```
@@ -6811,7 +6811,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavaShowOutputOutputReference
 ```
@@ -7254,7 +7254,7 @@ func InternalValue() ProcedureJavaShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaTargetPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaTargetPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProcedureJavaTargetPathOutputReference
 ```
@@ -7547,7 +7547,7 @@ func InternalValue() ProcedureJavaTargetPath
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedureJava.ProcedureJavaTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurejava"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurejava"
 
 procedurejava.NewProcedureJavaTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProcedureJavaTimeoutsOutputReference
 ```

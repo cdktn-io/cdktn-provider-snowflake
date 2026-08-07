@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.sessionPolicy.SessionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/sessionpolicy"
 
 sessionpolicy.NewSessionPolicy(scope Construct, id *string, config SessionPolicyConfig) SessionPolicy
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.sessionPolicy.SessionPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/sessionpolicy"
 
 sessionpolicy.SessionPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.sessionPolicy.SessionPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/sessionpolicy"
 
 sessionpolicy.SessionPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ sessionpolicy.SessionPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.sessionPolicy.SessionPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/sessionpolicy"
 
 sessionpolicy.SessionPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ sessionpolicy.SessionPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.sessionPolicy.SessionPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/sessionpolicy"
 
 sessionpolicy.SessionPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1030,7 +1030,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.sessionPolicy.SessionPolicyAllowedSecondaryRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/sessionpolicy"
 
 &sessionpolicy.SessionPolicyAllowedSecondaryRoles {
 	All: interface{},
@@ -1096,7 +1096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.sessionPolicy.SessionPolicyBlockedSecondaryRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/sessionpolicy"
 
 &sessionpolicy.SessionPolicyBlockedSecondaryRoles {
 	All: interface{},
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.sessionPolicy.SessionPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/sessionpolicy"
 
 &sessionpolicy.SessionPolicyConfig {
 	Connection: interface{},
@@ -1175,13 +1175,13 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpol
 	Database: *string,
 	Name: *string,
 	Schema: *string,
-	AllowedSecondaryRoles: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.sessionPolicy.SessionPolicyAllowedSecondaryRoles,
-	BlockedSecondaryRoles: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.sessionPolicy.SessionPolicyBlockedSecondaryRoles,
+	AllowedSecondaryRoles: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.sessionPolicy.SessionPolicyAllowedSecondaryRoles,
+	BlockedSecondaryRoles: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.sessionPolicy.SessionPolicyBlockedSecondaryRoles,
 	Comment: *string,
 	Id: *string,
 	SessionIdleTimeoutMins: *f64,
 	SessionUiIdleTimeoutMins: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.sessionPolicy.SessionPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.sessionPolicy.SessionPolicyTimeouts,
 }
 ```
 
@@ -1431,7 +1431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.sessionPolicy.SessionPolicyDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/sessionpolicy"
 
 &sessionpolicy.SessionPolicyDescribeOutput {
 
@@ -1444,7 +1444,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpol
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.sessionPolicy.SessionPolicyShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/sessionpolicy"
 
 &sessionpolicy.SessionPolicyShowOutput {
 
@@ -1457,7 +1457,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpol
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.sessionPolicy.SessionPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/sessionpolicy"
 
 &sessionpolicy.SessionPolicyTimeouts {
 	Create: *string,
@@ -1533,7 +1533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.sessionPolicy.SessionPolicyAllowedSecondaryRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/sessionpolicy"
 
 sessionpolicy.NewSessionPolicyAllowedSecondaryRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SessionPolicyAllowedSecondaryRolesOutputReference
 ```
@@ -1869,7 +1869,7 @@ func InternalValue() SessionPolicyAllowedSecondaryRoles
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.sessionPolicy.SessionPolicyBlockedSecondaryRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/sessionpolicy"
 
 sessionpolicy.NewSessionPolicyBlockedSecondaryRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SessionPolicyBlockedSecondaryRolesOutputReference
 ```
@@ -2205,7 +2205,7 @@ func InternalValue() SessionPolicyBlockedSecondaryRoles
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.sessionPolicy.SessionPolicyDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/sessionpolicy"
 
 sessionpolicy.NewSessionPolicyDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SessionPolicyDescribeOutputList
 ```
@@ -2354,7 +2354,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.sessionPolicy.SessionPolicyDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/sessionpolicy"
 
 sessionpolicy.NewSessionPolicyDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SessionPolicyDescribeOutputOutputReference
 ```
@@ -2709,7 +2709,7 @@ func InternalValue() SessionPolicyDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.sessionPolicy.SessionPolicyShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/sessionpolicy"
 
 sessionpolicy.NewSessionPolicyShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SessionPolicyShowOutputList
 ```
@@ -2858,7 +2858,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.sessionPolicy.SessionPolicyShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/sessionpolicy"
 
 sessionpolicy.NewSessionPolicyShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SessionPolicyShowOutputOutputReference
 ```
@@ -3224,7 +3224,7 @@ func InternalValue() SessionPolicyShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.sessionPolicy.SessionPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/sessionpolicy"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/sessionpolicy"
 
 sessionpolicy.NewSessionPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SessionPolicyTimeoutsOutputReference
 ```

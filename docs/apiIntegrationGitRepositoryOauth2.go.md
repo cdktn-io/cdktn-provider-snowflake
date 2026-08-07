@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryOauth2.ApiIntegrationGitRepositoryOauth2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryoauth2"
 
 apiintegrationgitrepositoryoauth2.NewApiIntegrationGitRepositoryOauth2(scope Construct, id *string, config ApiIntegrationGitRepositoryOauth2Config) ApiIntegrationGitRepositoryOauth2
 ```
@@ -469,7 +469,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryOauth2.ApiIntegrationGitRepositoryOauth2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryoauth2"
 
 apiintegrationgitrepositoryoauth2.ApiIntegrationGitRepositoryOauth2_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryOauth2.ApiIntegrationGitRepositoryOauth2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryoauth2"
 
 apiintegrationgitrepositoryoauth2.ApiIntegrationGitRepositoryOauth2_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ apiintegrationgitrepositoryoauth2.ApiIntegrationGitRepositoryOauth2_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryOauth2.ApiIntegrationGitRepositoryOauth2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryoauth2"
 
 apiintegrationgitrepositoryoauth2.ApiIntegrationGitRepositoryOauth2_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ apiintegrationgitrepositoryoauth2.ApiIntegrationGitRepositoryOauth2_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryOauth2.ApiIntegrationGitRepositoryOauth2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryoauth2"
 
 apiintegrationgitrepositoryoauth2.ApiIntegrationGitRepositoryOauth2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1121,7 +1121,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryOauth2.ApiIntegrationGitRepositoryOauth2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryoauth2"
 
 &apiintegrationgitrepositoryoauth2.ApiIntegrationGitRepositoryOauth2Config {
 	Connection: interface{},
@@ -1145,7 +1145,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegra
 	OauthAllowedScopes: *[]*string,
 	OauthRefreshTokenValidity: *f64,
 	OauthUsername: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.apiIntegrationGitRepositoryOauth2.ApiIntegrationGitRepositoryOauth2Timeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.apiIntegrationGitRepositoryOauth2.ApiIntegrationGitRepositoryOauth2Timeouts,
 }
 ```
 
@@ -1466,7 +1466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryOauth2.ApiIntegrationGitRepositoryOauth2DescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryoauth2"
 
 &apiintegrationgitrepositoryoauth2.ApiIntegrationGitRepositoryOauth2DescribeOutput {
 
@@ -1479,7 +1479,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegra
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryOauth2.ApiIntegrationGitRepositoryOauth2ShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryoauth2"
 
 &apiintegrationgitrepositoryoauth2.ApiIntegrationGitRepositoryOauth2ShowOutput {
 
@@ -1492,7 +1492,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegra
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryOauth2.ApiIntegrationGitRepositoryOauth2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryoauth2"
 
 &apiintegrationgitrepositoryoauth2.ApiIntegrationGitRepositoryOauth2Timeouts {
 	Create: *string,
@@ -1568,7 +1568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryOauth2.ApiIntegrationGitRepositoryOauth2DescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryoauth2"
 
 apiintegrationgitrepositoryoauth2.NewApiIntegrationGitRepositoryOauth2DescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiIntegrationGitRepositoryOauth2DescribeOutputList
 ```
@@ -1717,7 +1717,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryOauth2.ApiIntegrationGitRepositoryOauth2DescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryoauth2"
 
 apiintegrationgitrepositoryoauth2.NewApiIntegrationGitRepositoryOauth2DescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiIntegrationGitRepositoryOauth2DescribeOutputOutputReference
 ```
@@ -2116,7 +2116,7 @@ func InternalValue() ApiIntegrationGitRepositoryOauth2DescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryOauth2.ApiIntegrationGitRepositoryOauth2ShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryoauth2"
 
 apiintegrationgitrepositoryoauth2.NewApiIntegrationGitRepositoryOauth2ShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiIntegrationGitRepositoryOauth2ShowOutputList
 ```
@@ -2265,7 +2265,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryOauth2.ApiIntegrationGitRepositoryOauth2ShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryoauth2"
 
 apiintegrationgitrepositoryoauth2.NewApiIntegrationGitRepositoryOauth2ShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiIntegrationGitRepositoryOauth2ShowOutputOutputReference
 ```
@@ -2598,7 +2598,7 @@ func InternalValue() ApiIntegrationGitRepositoryOauth2ShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryOauth2.ApiIntegrationGitRepositoryOauth2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryoauth2"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryoauth2"
 
 apiintegrationgitrepositoryoauth2.NewApiIntegrationGitRepositoryOauth2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiIntegrationGitRepositoryOauth2TimeoutsOutputReference
 ```

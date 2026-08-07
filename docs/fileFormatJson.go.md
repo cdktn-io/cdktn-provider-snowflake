@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatJson.FileFormatJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatjson"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatjson"
 
 fileformatjson.NewFileFormatJson(scope Construct, id *string, config FileFormatJsonConfig) FileFormatJson
 ```
@@ -546,7 +546,7 @@ func ResetTrimSpace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.fileFormatJson.FileFormatJson.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatjson"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatjson"
 
 fileformatjson.FileFormatJson_IsConstruct(x interface{}) *bool
 ```
@@ -578,7 +578,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.fileFormatJson.FileFormatJson.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatjson"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatjson"
 
 fileformatjson.FileFormatJson_IsTerraformElement(x interface{}) *bool
 ```
@@ -592,7 +592,7 @@ fileformatjson.FileFormatJson_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.fileFormatJson.FileFormatJson.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatjson"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatjson"
 
 fileformatjson.FileFormatJson_IsTerraformResource(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ fileformatjson.FileFormatJson_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.fileFormatJson.FileFormatJson.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatjson"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatjson"
 
 fileformatjson.FileFormatJson_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1363,7 +1363,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatJson.FileFormatJsonConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatjson"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatjson"
 
 &fileformatjson.FileFormatJsonConfig {
 	Connection: interface{},
@@ -1392,7 +1392,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformat
 	StripNullValues: *string,
 	StripOuterArray: *string,
 	TimeFormat: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.fileFormatJson.FileFormatJsonTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.fileFormatJson.FileFormatJsonTimeouts,
 	TimestampFormat: *string,
 	TrimSpace: *string,
 }
@@ -1844,7 +1844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatJson.FileFormatJsonDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatjson"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatjson"
 
 &fileformatjson.FileFormatJsonDescribeOutput {
 
@@ -1857,7 +1857,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformat
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatJson.FileFormatJsonShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatjson"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatjson"
 
 &fileformatjson.FileFormatJsonShowOutput {
 
@@ -1870,7 +1870,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformat
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatJson.FileFormatJsonTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatjson"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatjson"
 
 &fileformatjson.FileFormatJsonTimeouts {
 	Create: *string,
@@ -1946,7 +1946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatJson.FileFormatJsonDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatjson"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatjson"
 
 fileformatjson.NewFileFormatJsonDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FileFormatJsonDescribeOutputList
 ```
@@ -2095,7 +2095,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatJson.FileFormatJsonDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatjson"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatjson"
 
 fileformatjson.NewFileFormatJsonDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FileFormatJsonDescribeOutputOutputReference
 ```
@@ -2560,7 +2560,7 @@ func InternalValue() FileFormatJsonDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatJson.FileFormatJsonShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatjson"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatjson"
 
 fileformatjson.NewFileFormatJsonShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FileFormatJsonShowOutputList
 ```
@@ -2709,7 +2709,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatJson.FileFormatJsonShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatjson"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatjson"
 
 fileformatjson.NewFileFormatJsonShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FileFormatJsonShowOutputOutputReference
 ```
@@ -3075,7 +3075,7 @@ func InternalValue() FileFormatJsonShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatJson.FileFormatJsonTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatjson"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatjson"
 
 fileformatjson.NewFileFormatJsonTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FileFormatJsonTimeoutsOutputReference
 ```

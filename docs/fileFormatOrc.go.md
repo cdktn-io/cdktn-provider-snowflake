@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatorc"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatorc"
 
 fileformatorc.NewFileFormatOrc(scope Construct, id *string, config FileFormatOrcConfig) FileFormatOrc
 ```
@@ -455,7 +455,7 @@ func ResetTrimSpace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrc.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatorc"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatorc"
 
 fileformatorc.FileFormatOrc_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrc.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatorc"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatorc"
 
 fileformatorc.FileFormatOrc_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ fileformatorc.FileFormatOrc_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrc.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatorc"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatorc"
 
 fileformatorc.FileFormatOrc_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ fileformatorc.FileFormatOrc_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrc.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatorc"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatorc"
 
 fileformatorc.FileFormatOrc_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -986,7 +986,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatorc"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatorc"
 
 &fileformatorc.FileFormatOrcConfig {
 	Connection: interface{},
@@ -1003,7 +1003,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformat
 	Id: *string,
 	NullIf: *[]*string,
 	ReplaceInvalidCharacters: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.fileFormatOrc.FileFormatOrcTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.fileFormatOrc.FileFormatOrcTimeouts,
 	TrimSpace: *string,
 }
 ```
@@ -1243,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatorc"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatorc"
 
 &fileformatorc.FileFormatOrcDescribeOutput {
 
@@ -1256,7 +1256,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformat
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatorc"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatorc"
 
 &fileformatorc.FileFormatOrcShowOutput {
 
@@ -1269,7 +1269,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformat
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatorc"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatorc"
 
 &fileformatorc.FileFormatOrcTimeouts {
 	Create: *string,
@@ -1345,7 +1345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatorc"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatorc"
 
 fileformatorc.NewFileFormatOrcDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FileFormatOrcDescribeOutputList
 ```
@@ -1494,7 +1494,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatorc"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatorc"
 
 fileformatorc.NewFileFormatOrcDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FileFormatOrcDescribeOutputOutputReference
 ```
@@ -1816,7 +1816,7 @@ func InternalValue() FileFormatOrcDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatorc"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatorc"
 
 fileformatorc.NewFileFormatOrcShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FileFormatOrcShowOutputList
 ```
@@ -1965,7 +1965,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatorc"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatorc"
 
 fileformatorc.NewFileFormatOrcShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FileFormatOrcShowOutputOutputReference
 ```
@@ -2331,7 +2331,7 @@ func InternalValue() FileFormatOrcShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatorc"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatorc"
 
 fileformatorc.NewFileFormatOrcTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FileFormatOrcTimeoutsOutputReference
 ```

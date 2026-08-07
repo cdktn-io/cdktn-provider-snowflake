@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMcpServers.DataSnowflakeMcpServers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemcpservers"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakemcpservers"
 
 datasnowflakemcpservers.NewDataSnowflakeMcpServers(scope Construct, id *string, config DataSnowflakeMcpServersConfig) DataSnowflakeMcpServers
 ```
@@ -339,7 +339,7 @@ func ResetWithDescribe()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.dataSnowflakeMcpServers.DataSnowflakeMcpServers.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemcpservers"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakemcpservers"
 
 datasnowflakemcpservers.DataSnowflakeMcpServers_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.dataSnowflakeMcpServers.DataSnowflakeMcpServers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemcpservers"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakemcpservers"
 
 datasnowflakemcpservers.DataSnowflakeMcpServers_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datasnowflakemcpservers.DataSnowflakeMcpServers_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-snowflake.dataSnowflakeMcpServers.DataSnowflakeMcpServers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemcpservers"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakemcpservers"
 
 datasnowflakemcpservers.DataSnowflakeMcpServers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ datasnowflakemcpservers.DataSnowflakeMcpServers_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.dataSnowflakeMcpServers.DataSnowflakeMcpServers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemcpservers"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakemcpservers"
 
 datasnowflakemcpservers.DataSnowflakeMcpServers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -705,7 +705,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeMcpServers.DataSnowflakeMcpServersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemcpservers"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakemcpservers"
 
 &datasnowflakemcpservers.DataSnowflakeMcpServersConfig {
 	Connection: interface{},
@@ -716,7 +716,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowfl
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	In: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.dataSnowflakeMcpServers.DataSnowflakeMcpServersIn,
+	In: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.dataSnowflakeMcpServers.DataSnowflakeMcpServersIn,
 	Like: *string,
 	WithDescribe: interface{},
 }
@@ -874,7 +874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeMcpServers.DataSnowflakeMcpServersIn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemcpservers"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakemcpservers"
 
 &datasnowflakemcpservers.DataSnowflakeMcpServersIn {
 	Account: interface{},
@@ -940,7 +940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeMcpServers.DataSnowflakeMcpServersMcpServers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemcpservers"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakemcpservers"
 
 &datasnowflakemcpservers.DataSnowflakeMcpServersMcpServers {
 
@@ -953,7 +953,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeMcpServers.DataSnowflakeMcpServersMcpServersDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemcpservers"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakemcpservers"
 
 &datasnowflakemcpservers.DataSnowflakeMcpServersMcpServersDescribeOutput {
 
@@ -966,7 +966,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeMcpServers.DataSnowflakeMcpServersMcpServersShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemcpservers"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakemcpservers"
 
 &datasnowflakemcpservers.DataSnowflakeMcpServersMcpServersShowOutput {
 
@@ -981,7 +981,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowfl
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMcpServers.DataSnowflakeMcpServersInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemcpservers"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakemcpservers"
 
 datasnowflakemcpservers.NewDataSnowflakeMcpServersInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeMcpServersInOutputReference
 ```
@@ -1317,7 +1317,7 @@ func InternalValue() DataSnowflakeMcpServersIn
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMcpServers.DataSnowflakeMcpServersMcpServersDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemcpservers"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakemcpservers"
 
 datasnowflakemcpservers.NewDataSnowflakeMcpServersMcpServersDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeMcpServersMcpServersDescribeOutputList
 ```
@@ -1466,7 +1466,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMcpServers.DataSnowflakeMcpServersMcpServersDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemcpservers"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakemcpservers"
 
 datasnowflakemcpservers.NewDataSnowflakeMcpServersMcpServersDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeMcpServersMcpServersDescribeOutputOutputReference
 ```
@@ -1810,7 +1810,7 @@ func InternalValue() DataSnowflakeMcpServersMcpServersDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMcpServers.DataSnowflakeMcpServersMcpServersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemcpservers"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakemcpservers"
 
 datasnowflakemcpservers.NewDataSnowflakeMcpServersMcpServersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeMcpServersMcpServersList
 ```
@@ -1959,7 +1959,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMcpServers.DataSnowflakeMcpServersMcpServersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemcpservers"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakemcpservers"
 
 datasnowflakemcpservers.NewDataSnowflakeMcpServersMcpServersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeMcpServersMcpServersOutputReference
 ```
@@ -2248,7 +2248,7 @@ func InternalValue() DataSnowflakeMcpServersMcpServers
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMcpServers.DataSnowflakeMcpServersMcpServersShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemcpservers"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakemcpservers"
 
 datasnowflakemcpservers.NewDataSnowflakeMcpServersMcpServersShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeMcpServersMcpServersShowOutputList
 ```
@@ -2397,7 +2397,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeMcpServers.DataSnowflakeMcpServersMcpServersShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakemcpservers"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakemcpservers"
 
 datasnowflakemcpservers.NewDataSnowflakeMcpServersMcpServersShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeMcpServersMcpServersShowOutputOutputReference
 ```
