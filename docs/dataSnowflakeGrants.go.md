@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrants(scope Construct, id *string, config DataSnowflakeGrantsConfig) DataSnowflakeGrants
 ```
@@ -425,7 +425,7 @@ func ResetInheritedGrantsIn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 datasnowflakegrants.DataSnowflakeGrants_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 datasnowflakegrants.DataSnowflakeGrants_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ datasnowflakegrants.DataSnowflakeGrants_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 datasnowflakegrants.DataSnowflakeGrants_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ datasnowflakegrants.DataSnowflakeGrants_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 datasnowflakegrants.DataSnowflakeGrants_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -857,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 &datasnowflakegrants.DataSnowflakeGrantsConfig {
 	Connection: interface{},
@@ -867,13 +867,13 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowfl
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	FutureGrantsIn: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsIn,
-	FutureGrantsTo: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsTo,
-	GrantsOf: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOf,
-	GrantsOn: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOn,
-	GrantsTo: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.dataSnowflakeGrants.DataSnowflakeGrantsGrantsTo,
+	FutureGrantsIn: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsIn,
+	FutureGrantsTo: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsTo,
+	GrantsOf: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOf,
+	GrantsOn: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOn,
+	GrantsTo: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.dataSnowflakeGrants.DataSnowflakeGrantsGrantsTo,
 	Id: *string,
-	InheritedGrantsIn: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn,
+	InheritedGrantsIn: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn,
 }
 ```
 
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsIn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 &datasnowflakegrants.DataSnowflakeGrantsFutureGrantsIn {
 	Database: *string,
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsTo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 &datasnowflakegrants.DataSnowflakeGrantsFutureGrantsTo {
 	AccountRole: *string,
@@ -1172,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrants.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 &datasnowflakegrants.DataSnowflakeGrantsGrants {
 
@@ -1185,7 +1185,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOf.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 &datasnowflakegrants.DataSnowflakeGrantsGrantsOf {
 	AccountRole: *string,
@@ -1271,7 +1271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 &datasnowflakegrants.DataSnowflakeGrantsGrantsOn {
 	Account: interface{},
@@ -1339,14 +1339,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsTo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 &datasnowflakegrants.DataSnowflakeGrantsGrantsTo {
 	AccountRole: *string,
 	Application: *string,
 	ApplicationRole: *string,
 	DatabaseRole: *string,
-	Share: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.dataSnowflakeGrants.DataSnowflakeGrantsGrantsToShare,
+	Share: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.dataSnowflakeGrants.DataSnowflakeGrantsGrantsToShare,
 	User: *string,
 }
 ```
@@ -1455,7 +1455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsToShare.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 &datasnowflakegrants.DataSnowflakeGrantsGrantsToShare {
 	ShareName: *string,
@@ -1489,7 +1489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsIn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 &datasnowflakegrants.DataSnowflakeGrantsInheritedGrantsIn {
 	Account: interface{},
@@ -1557,7 +1557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrantsFutureGrantsInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeGrantsFutureGrantsInOutputReference
 ```
@@ -1864,7 +1864,7 @@ func InternalValue() DataSnowflakeGrantsFutureGrantsIn
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsToOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrantsFutureGrantsToOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeGrantsFutureGrantsToOutputReference
 ```
@@ -2171,7 +2171,7 @@ func InternalValue() DataSnowflakeGrantsFutureGrantsTo
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrantsGrantsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeGrantsGrantsList
 ```
@@ -2320,7 +2320,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrantsGrantsOfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeGrantsGrantsOfOutputReference
 ```
@@ -2685,7 +2685,7 @@ func InternalValue() DataSnowflakeGrantsGrantsOf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrantsGrantsOnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeGrantsGrantsOnOutputReference
 ```
@@ -3021,7 +3021,7 @@ func InternalValue() DataSnowflakeGrantsGrantsOn
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrantsGrantsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeGrantsGrantsOutputReference
 ```
@@ -3420,7 +3420,7 @@ func InternalValue() DataSnowflakeGrantsGrants
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsToOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrantsGrantsToOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeGrantsGrantsToOutputReference
 ```
@@ -3856,7 +3856,7 @@ func InternalValue() DataSnowflakeGrantsGrantsTo
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsToShareOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrantsGrantsToShareOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeGrantsGrantsToShareOutputReference
 ```
@@ -4127,7 +4127,7 @@ func InternalValue() DataSnowflakeGrantsGrantsToShare
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsInheritedGrantsInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/datasnowflakegrants"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrantsInheritedGrantsInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeGrantsInheritedGrantsInOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatAvro.FileFormatAvro.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatavro"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatavro"
 
 fileformatavro.NewFileFormatAvro(scope Construct, id *string, config FileFormatAvroConfig) FileFormatAvro
 ```
@@ -462,7 +462,7 @@ func ResetTrimSpace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.fileFormatAvro.FileFormatAvro.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatavro"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatavro"
 
 fileformatavro.FileFormatAvro_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.fileFormatAvro.FileFormatAvro.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatavro"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatavro"
 
 fileformatavro.FileFormatAvro_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ fileformatavro.FileFormatAvro_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.fileFormatAvro.FileFormatAvro.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatavro"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatavro"
 
 fileformatavro.FileFormatAvro_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ fileformatavro.FileFormatAvro_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.fileFormatAvro.FileFormatAvro.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatavro"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatavro"
 
 fileformatavro.FileFormatAvro_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1015,7 +1015,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatAvro.FileFormatAvroConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatavro"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatavro"
 
 &fileformatavro.FileFormatAvroConfig {
 	Connection: interface{},
@@ -1033,7 +1033,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformat
 	Id: *string,
 	NullIf: *[]*string,
 	ReplaceInvalidCharacters: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.fileFormatAvro.FileFormatAvroTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.fileFormatAvro.FileFormatAvroTimeouts,
 	TrimSpace: *string,
 }
 ```
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatAvro.FileFormatAvroDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatavro"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatavro"
 
 &fileformatavro.FileFormatAvroDescribeOutput {
 
@@ -1301,7 +1301,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformat
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatAvro.FileFormatAvroShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatavro"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatavro"
 
 &fileformatavro.FileFormatAvroShowOutput {
 
@@ -1314,7 +1314,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformat
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatAvro.FileFormatAvroTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatavro"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatavro"
 
 &fileformatavro.FileFormatAvroTimeouts {
 	Create: *string,
@@ -1390,7 +1390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatAvro.FileFormatAvroDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatavro"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatavro"
 
 fileformatavro.NewFileFormatAvroDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FileFormatAvroDescribeOutputList
 ```
@@ -1539,7 +1539,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatAvro.FileFormatAvroDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatavro"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatavro"
 
 fileformatavro.NewFileFormatAvroDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FileFormatAvroDescribeOutputOutputReference
 ```
@@ -1872,7 +1872,7 @@ func InternalValue() FileFormatAvroDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatAvro.FileFormatAvroShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatavro"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatavro"
 
 fileformatavro.NewFileFormatAvroShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FileFormatAvroShowOutputList
 ```
@@ -2021,7 +2021,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatAvro.FileFormatAvroShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatavro"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatavro"
 
 fileformatavro.NewFileFormatAvroShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FileFormatAvroShowOutputOutputReference
 ```
@@ -2387,7 +2387,7 @@ func InternalValue() FileFormatAvroShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatAvro.FileFormatAvroTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatavro"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatavro"
 
 fileformatavro.NewFileFormatAvroTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FileFormatAvroTimeoutsOutputReference
 ```

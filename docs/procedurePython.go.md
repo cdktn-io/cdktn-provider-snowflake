@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePython.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePython(scope Construct, id *string, config ProcedurePythonConfig) ProcedurePython
 ```
@@ -571,7 +571,7 @@ func ResetTraceLevel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.procedurePython.ProcedurePython.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.ProcedurePython_IsConstruct(x interface{}) *bool
 ```
@@ -603,7 +603,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.procedurePython.ProcedurePython.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.ProcedurePython_IsTerraformElement(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ procedurepython.ProcedurePython_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.procedurePython.ProcedurePython.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.ProcedurePython_IsTerraformResource(x interface{}) *bool
 ```
@@ -631,7 +631,7 @@ procedurepython.ProcedurePython_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.procedurePython.ProcedurePython.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.ProcedurePython_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1432,7 +1432,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 &procedurepython.ProcedurePythonArguments {
 	ArgDataType: *string,
@@ -1502,7 +1502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 &procedurepython.ProcedurePythonConfig {
 	Connection: interface{},
@@ -1534,7 +1534,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurep
 	Packages: *[]*string,
 	ProcedureDefinition: *string,
 	Secrets: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.procedurePython.ProcedurePythonTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.procedurePython.ProcedurePythonTimeouts,
 	TraceLevel: *string,
 }
 ```
@@ -2015,7 +2015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonImports.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 &procedurepython.ProcedurePythonImports {
 	PathOnStage: *string,
@@ -2067,7 +2067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 &procedurepython.ProcedurePythonParameters {
 
@@ -2080,7 +2080,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurep
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersEnableConsoleOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 &procedurepython.ProcedurePythonParametersEnableConsoleOutput {
 
@@ -2093,7 +2093,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurep
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersLogEventLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 &procedurepython.ProcedurePythonParametersLogEventLevel {
 
@@ -2106,7 +2106,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurep
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersLogLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 &procedurepython.ProcedurePythonParametersLogLevel {
 
@@ -2119,7 +2119,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurep
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersMetricLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 &procedurepython.ProcedurePythonParametersMetricLevel {
 
@@ -2132,7 +2132,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurep
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersTraceLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 &procedurepython.ProcedurePythonParametersTraceLevel {
 
@@ -2145,7 +2145,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurep
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 &procedurepython.ProcedurePythonSecrets {
 	SecretId: *string,
@@ -2195,7 +2195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 &procedurepython.ProcedurePythonShowOutput {
 
@@ -2208,7 +2208,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurep
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 &procedurepython.ProcedurePythonTimeouts {
 	Create: *string,
@@ -2284,7 +2284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedurePythonArgumentsList
 ```
@@ -2444,7 +2444,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedurePythonArgumentsOutputReference
 ```
@@ -2784,7 +2784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonImportsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonImportsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedurePythonImportsList
 ```
@@ -2944,7 +2944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonImportsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonImportsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedurePythonImportsOutputReference
 ```
@@ -3255,7 +3255,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersEnableConsoleOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonParametersEnableConsoleOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedurePythonParametersEnableConsoleOutputList
 ```
@@ -3404,7 +3404,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersEnableConsoleOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonParametersEnableConsoleOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedurePythonParametersEnableConsoleOutputOutputReference
 ```
@@ -3726,7 +3726,7 @@ func InternalValue() ProcedurePythonParametersEnableConsoleOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedurePythonParametersList
 ```
@@ -3875,7 +3875,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersLogEventLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonParametersLogEventLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedurePythonParametersLogEventLevelList
 ```
@@ -4024,7 +4024,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersLogEventLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonParametersLogEventLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedurePythonParametersLogEventLevelOutputReference
 ```
@@ -4346,7 +4346,7 @@ func InternalValue() ProcedurePythonParametersLogEventLevel
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersLogLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonParametersLogLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedurePythonParametersLogLevelList
 ```
@@ -4495,7 +4495,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersLogLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonParametersLogLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedurePythonParametersLogLevelOutputReference
 ```
@@ -4817,7 +4817,7 @@ func InternalValue() ProcedurePythonParametersLogLevel
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersMetricLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonParametersMetricLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedurePythonParametersMetricLevelList
 ```
@@ -4966,7 +4966,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersMetricLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonParametersMetricLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedurePythonParametersMetricLevelOutputReference
 ```
@@ -5288,7 +5288,7 @@ func InternalValue() ProcedurePythonParametersMetricLevel
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedurePythonParametersOutputReference
 ```
@@ -5610,7 +5610,7 @@ func InternalValue() ProcedurePythonParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersTraceLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonParametersTraceLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedurePythonParametersTraceLevelList
 ```
@@ -5759,7 +5759,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonParametersTraceLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonParametersTraceLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedurePythonParametersTraceLevelOutputReference
 ```
@@ -6081,7 +6081,7 @@ func InternalValue() ProcedurePythonParametersTraceLevel
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedurePythonSecretsList
 ```
@@ -6241,7 +6241,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedurePythonSecretsOutputReference
 ```
@@ -6552,7 +6552,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedurePythonShowOutputList
 ```
@@ -6701,7 +6701,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedurePythonShowOutputOutputReference
 ```
@@ -7144,7 +7144,7 @@ func InternalValue() ProcedurePythonShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.procedurePython.ProcedurePythonTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/procedurepython"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/procedurepython"
 
 procedurepython.NewProcedurePythonTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProcedurePythonTimeoutsOutputReference
 ```

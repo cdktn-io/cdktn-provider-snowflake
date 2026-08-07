@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatCsv.FileFormatCsv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatcsv"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatcsv"
 
 fileformatcsv.NewFileFormatCsv(scope Construct, id *string, config FileFormatCsvConfig) FileFormatCsv
 ```
@@ -588,7 +588,7 @@ func ResetTrimSpace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.fileFormatCsv.FileFormatCsv.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatcsv"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatcsv"
 
 fileformatcsv.FileFormatCsv_IsConstruct(x interface{}) *bool
 ```
@@ -620,7 +620,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.fileFormatCsv.FileFormatCsv.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatcsv"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatcsv"
 
 fileformatcsv.FileFormatCsv_IsTerraformElement(x interface{}) *bool
 ```
@@ -634,7 +634,7 @@ fileformatcsv.FileFormatCsv_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.fileFormatCsv.FileFormatCsv.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatcsv"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatcsv"
 
 fileformatcsv.FileFormatCsv_IsTerraformResource(x interface{}) *bool
 ```
@@ -648,7 +648,7 @@ fileformatcsv.FileFormatCsv_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.fileFormatCsv.FileFormatCsv.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatcsv"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatcsv"
 
 fileformatcsv.FileFormatCsv_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1537,7 +1537,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatCsv.FileFormatCsvConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatcsv"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatcsv"
 
 &fileformatcsv.FileFormatCsvConfig {
 	Connection: interface{},
@@ -1572,7 +1572,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformat
 	SkipByteOrderMark: *string,
 	SkipHeader: *f64,
 	TimeFormat: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.fileFormatCsv.FileFormatCsvTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.fileFormatCsv.FileFormatCsvTimeouts,
 	TimestampFormat: *string,
 	TrimSpace: *string,
 }
@@ -2122,7 +2122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatCsv.FileFormatCsvDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatcsv"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatcsv"
 
 &fileformatcsv.FileFormatCsvDescribeOutput {
 
@@ -2135,7 +2135,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformat
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatCsv.FileFormatCsvShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatcsv"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatcsv"
 
 &fileformatcsv.FileFormatCsvShowOutput {
 
@@ -2148,7 +2148,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformat
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatCsv.FileFormatCsvTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatcsv"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatcsv"
 
 &fileformatcsv.FileFormatCsvTimeouts {
 	Create: *string,
@@ -2224,7 +2224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatCsv.FileFormatCsvDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatcsv"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatcsv"
 
 fileformatcsv.NewFileFormatCsvDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FileFormatCsvDescribeOutputList
 ```
@@ -2373,7 +2373,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatCsv.FileFormatCsvDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatcsv"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatcsv"
 
 fileformatcsv.NewFileFormatCsvDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FileFormatCsvDescribeOutputOutputReference
 ```
@@ -2915,7 +2915,7 @@ func InternalValue() FileFormatCsvDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatCsv.FileFormatCsvShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatcsv"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatcsv"
 
 fileformatcsv.NewFileFormatCsvShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FileFormatCsvShowOutputList
 ```
@@ -3064,7 +3064,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatCsv.FileFormatCsvShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatcsv"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatcsv"
 
 fileformatcsv.NewFileFormatCsvShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FileFormatCsvShowOutputOutputReference
 ```
@@ -3430,7 +3430,7 @@ func InternalValue() FileFormatCsvShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatCsv.FileFormatCsvTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatcsv"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatcsv"
 
 fileformatcsv.NewFileFormatCsvTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FileFormatCsvTimeoutsOutputReference
 ```

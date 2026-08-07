@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRest(scope Construct, id *string, config IcebergTableFromRestConfig) IcebergTableFromRest
 ```
@@ -504,7 +504,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRest.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.IcebergTableFromRest_IsConstruct(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.IcebergTableFromRest_IsTerraformElement(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ icebergtablefromrest.IcebergTableFromRest_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.IcebergTableFromRest_IsTerraformResource(x interface{}) *bool
 ```
@@ -564,7 +564,7 @@ icebergtablefromrest.IcebergTableFromRest_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.IcebergTableFromRest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1211,7 +1211,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 &icebergtablefromrest.IcebergTableFromRestConfig {
 	Connection: interface{},
@@ -1237,7 +1237,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtab
 	ReplaceInvalidCharacters: interface{},
 	StorageSerializationPolicy: *string,
 	TargetFileSize: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.icebergTableFromRest.IcebergTableFromRestTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.icebergTableFromRest.IcebergTableFromRestTimeouts,
 }
 ```
 
@@ -1610,7 +1610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 &icebergtablefromrest.IcebergTableFromRestDescribeOutput {
 
@@ -1623,7 +1623,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 &icebergtablefromrest.IcebergTableFromRestParameters {
 
@@ -1636,7 +1636,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 &icebergtablefromrest.IcebergTableFromRestParametersCatalog {
 
@@ -1649,7 +1649,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersEnableIcebergMergeOnRead.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 &icebergtablefromrest.IcebergTableFromRestParametersEnableIcebergMergeOnRead {
 
@@ -1662,7 +1662,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersExternalVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 &icebergtablefromrest.IcebergTableFromRestParametersExternalVolume {
 
@@ -1675,7 +1675,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersIcebergMergeOnReadBehavior.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 &icebergtablefromrest.IcebergTableFromRestParametersIcebergMergeOnReadBehavior {
 
@@ -1688,7 +1688,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersReplaceInvalidCharacters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 &icebergtablefromrest.IcebergTableFromRestParametersReplaceInvalidCharacters {
 
@@ -1701,7 +1701,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersStorageSerializationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 &icebergtablefromrest.IcebergTableFromRestParametersStorageSerializationPolicy {
 
@@ -1714,7 +1714,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersTargetFileSize.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 &icebergtablefromrest.IcebergTableFromRestParametersTargetFileSize {
 
@@ -1727,7 +1727,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 &icebergtablefromrest.IcebergTableFromRestShowOutput {
 
@@ -1740,7 +1740,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestShowOutputAutoRefreshStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 &icebergtablefromrest.IcebergTableFromRestShowOutputAutoRefreshStatus {
 
@@ -1753,7 +1753,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestShowOutputPartitionSpecs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 &icebergtablefromrest.IcebergTableFromRestShowOutputPartitionSpecs {
 
@@ -1766,7 +1766,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestShowOutputPartitionSpecsFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 &icebergtablefromrest.IcebergTableFromRestShowOutputPartitionSpecsFields {
 
@@ -1779,7 +1779,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 &icebergtablefromrest.IcebergTableFromRestTimeouts {
 	Create: *string,
@@ -1855,7 +1855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromRestDescribeOutputList
 ```
@@ -2004,7 +2004,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromRestDescribeOutputOutputReference
 ```
@@ -2436,7 +2436,7 @@ func InternalValue() IcebergTableFromRestDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersCatalogList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestParametersCatalogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromRestParametersCatalogList
 ```
@@ -2585,7 +2585,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersCatalogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestParametersCatalogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromRestParametersCatalogOutputReference
 ```
@@ -2907,7 +2907,7 @@ func InternalValue() IcebergTableFromRestParametersCatalog
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersEnableIcebergMergeOnReadList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestParametersEnableIcebergMergeOnReadList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromRestParametersEnableIcebergMergeOnReadList
 ```
@@ -3056,7 +3056,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersEnableIcebergMergeOnReadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestParametersEnableIcebergMergeOnReadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromRestParametersEnableIcebergMergeOnReadOutputReference
 ```
@@ -3378,7 +3378,7 @@ func InternalValue() IcebergTableFromRestParametersEnableIcebergMergeOnRead
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersExternalVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestParametersExternalVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromRestParametersExternalVolumeList
 ```
@@ -3527,7 +3527,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersExternalVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestParametersExternalVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromRestParametersExternalVolumeOutputReference
 ```
@@ -3849,7 +3849,7 @@ func InternalValue() IcebergTableFromRestParametersExternalVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersIcebergMergeOnReadBehaviorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestParametersIcebergMergeOnReadBehaviorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromRestParametersIcebergMergeOnReadBehaviorList
 ```
@@ -3998,7 +3998,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersIcebergMergeOnReadBehaviorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestParametersIcebergMergeOnReadBehaviorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromRestParametersIcebergMergeOnReadBehaviorOutputReference
 ```
@@ -4320,7 +4320,7 @@ func InternalValue() IcebergTableFromRestParametersIcebergMergeOnReadBehavior
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromRestParametersList
 ```
@@ -4469,7 +4469,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromRestParametersOutputReference
 ```
@@ -4813,7 +4813,7 @@ func InternalValue() IcebergTableFromRestParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersReplaceInvalidCharactersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestParametersReplaceInvalidCharactersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromRestParametersReplaceInvalidCharactersList
 ```
@@ -4962,7 +4962,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersReplaceInvalidCharactersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestParametersReplaceInvalidCharactersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromRestParametersReplaceInvalidCharactersOutputReference
 ```
@@ -5284,7 +5284,7 @@ func InternalValue() IcebergTableFromRestParametersReplaceInvalidCharacters
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersStorageSerializationPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestParametersStorageSerializationPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromRestParametersStorageSerializationPolicyList
 ```
@@ -5433,7 +5433,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersStorageSerializationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestParametersStorageSerializationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromRestParametersStorageSerializationPolicyOutputReference
 ```
@@ -5755,7 +5755,7 @@ func InternalValue() IcebergTableFromRestParametersStorageSerializationPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersTargetFileSizeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestParametersTargetFileSizeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromRestParametersTargetFileSizeList
 ```
@@ -5904,7 +5904,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestParametersTargetFileSizeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestParametersTargetFileSizeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromRestParametersTargetFileSizeOutputReference
 ```
@@ -6226,7 +6226,7 @@ func InternalValue() IcebergTableFromRestParametersTargetFileSize
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestShowOutputAutoRefreshStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestShowOutputAutoRefreshStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromRestShowOutputAutoRefreshStatusList
 ```
@@ -6375,7 +6375,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestShowOutputAutoRefreshStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestShowOutputAutoRefreshStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromRestShowOutputAutoRefreshStatusOutputReference
 ```
@@ -6697,7 +6697,7 @@ func InternalValue() IcebergTableFromRestShowOutputAutoRefreshStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromRestShowOutputList
 ```
@@ -6846,7 +6846,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromRestShowOutputOutputReference
 ```
@@ -7333,7 +7333,7 @@ func InternalValue() IcebergTableFromRestShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestShowOutputPartitionSpecsFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestShowOutputPartitionSpecsFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromRestShowOutputPartitionSpecsFieldsList
 ```
@@ -7482,7 +7482,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestShowOutputPartitionSpecsFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestShowOutputPartitionSpecsFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromRestShowOutputPartitionSpecsFieldsOutputReference
 ```
@@ -7793,7 +7793,7 @@ func InternalValue() IcebergTableFromRestShowOutputPartitionSpecsFields
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestShowOutputPartitionSpecsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestShowOutputPartitionSpecsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromRestShowOutputPartitionSpecsList
 ```
@@ -7942,7 +7942,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestShowOutputPartitionSpecsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestShowOutputPartitionSpecsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromRestShowOutputPartitionSpecsOutputReference
 ```
@@ -8231,7 +8231,7 @@ func InternalValue() IcebergTableFromRestShowOutputPartitionSpecs
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromRest.IcebergTableFromRestTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/icebergtablefromrest"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromrest"
 
 icebergtablefromrest.NewIcebergTableFromRestTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IcebergTableFromRestTimeoutsOutputReference
 ```

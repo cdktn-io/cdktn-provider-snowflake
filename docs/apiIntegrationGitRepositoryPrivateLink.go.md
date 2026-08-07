@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryPrivateLink.ApiIntegrationGitRepositoryPrivateLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryprivatelink"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryprivatelink"
 
 apiintegrationgitrepositoryprivatelink.NewApiIntegrationGitRepositoryPrivateLink(scope Construct, id *string, config ApiIntegrationGitRepositoryPrivateLinkConfig) ApiIntegrationGitRepositoryPrivateLink
 ```
@@ -469,7 +469,7 @@ func ResetTlsTrustedCertificates()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryPrivateLink.ApiIntegrationGitRepositoryPrivateLink.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryprivatelink"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryprivatelink"
 
 apiintegrationgitrepositoryprivatelink.ApiIntegrationGitRepositoryPrivateLink_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryPrivateLink.ApiIntegrationGitRepositoryPrivateLink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryprivatelink"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryprivatelink"
 
 apiintegrationgitrepositoryprivatelink.ApiIntegrationGitRepositoryPrivateLink_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ apiintegrationgitrepositoryprivatelink.ApiIntegrationGitRepositoryPrivateLink_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryPrivateLink.ApiIntegrationGitRepositoryPrivateLink.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryprivatelink"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryprivatelink"
 
 apiintegrationgitrepositoryprivatelink.ApiIntegrationGitRepositoryPrivateLink_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ apiintegrationgitrepositoryprivatelink.ApiIntegrationGitRepositoryPrivateLink_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryPrivateLink.ApiIntegrationGitRepositoryPrivateLink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryprivatelink"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryprivatelink"
 
 apiintegrationgitrepositoryprivatelink.ApiIntegrationGitRepositoryPrivateLink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1055,7 +1055,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryPrivateLink.ApiIntegrationGitRepositoryPrivateLinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryprivatelink"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryprivatelink"
 
 &apiintegrationgitrepositoryprivatelink.ApiIntegrationGitRepositoryPrivateLinkConfig {
 	Connection: interface{},
@@ -1075,7 +1075,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegra
 	Comment: *string,
 	Id: *string,
 	NoAllowedAuthenticationSecrets: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.apiIntegrationGitRepositoryPrivateLink.ApiIntegrationGitRepositoryPrivateLinkTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.apiIntegrationGitRepositoryPrivateLink.ApiIntegrationGitRepositoryPrivateLinkTimeouts,
 	TlsTrustedCertificates: *[]*string,
 }
 ```
@@ -1358,7 +1358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryPrivateLink.ApiIntegrationGitRepositoryPrivateLinkDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryprivatelink"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryprivatelink"
 
 &apiintegrationgitrepositoryprivatelink.ApiIntegrationGitRepositoryPrivateLinkDescribeOutput {
 
@@ -1371,7 +1371,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegra
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryPrivateLink.ApiIntegrationGitRepositoryPrivateLinkShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryprivatelink"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryprivatelink"
 
 &apiintegrationgitrepositoryprivatelink.ApiIntegrationGitRepositoryPrivateLinkShowOutput {
 
@@ -1384,7 +1384,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegra
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryPrivateLink.ApiIntegrationGitRepositoryPrivateLinkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryprivatelink"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryprivatelink"
 
 &apiintegrationgitrepositoryprivatelink.ApiIntegrationGitRepositoryPrivateLinkTimeouts {
 	Create: *string,
@@ -1460,7 +1460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryPrivateLink.ApiIntegrationGitRepositoryPrivateLinkDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryprivatelink"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryprivatelink"
 
 apiintegrationgitrepositoryprivatelink.NewApiIntegrationGitRepositoryPrivateLinkDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiIntegrationGitRepositoryPrivateLinkDescribeOutputList
 ```
@@ -1609,7 +1609,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryPrivateLink.ApiIntegrationGitRepositoryPrivateLinkDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryprivatelink"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryprivatelink"
 
 apiintegrationgitrepositoryprivatelink.NewApiIntegrationGitRepositoryPrivateLinkDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiIntegrationGitRepositoryPrivateLinkDescribeOutputOutputReference
 ```
@@ -1964,7 +1964,7 @@ func InternalValue() ApiIntegrationGitRepositoryPrivateLinkDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryPrivateLink.ApiIntegrationGitRepositoryPrivateLinkShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryprivatelink"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryprivatelink"
 
 apiintegrationgitrepositoryprivatelink.NewApiIntegrationGitRepositoryPrivateLinkShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiIntegrationGitRepositoryPrivateLinkShowOutputList
 ```
@@ -2113,7 +2113,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryPrivateLink.ApiIntegrationGitRepositoryPrivateLinkShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryprivatelink"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryprivatelink"
 
 apiintegrationgitrepositoryprivatelink.NewApiIntegrationGitRepositoryPrivateLinkShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiIntegrationGitRepositoryPrivateLinkShowOutputOutputReference
 ```
@@ -2446,7 +2446,7 @@ func InternalValue() ApiIntegrationGitRepositoryPrivateLinkShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationGitRepositoryPrivateLink.ApiIntegrationGitRepositoryPrivateLinkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/apiintegrationgitrepositoryprivatelink"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/apiintegrationgitrepositoryprivatelink"
 
 apiintegrationgitrepositoryprivatelink.NewApiIntegrationGitRepositoryPrivateLinkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiIntegrationGitRepositoryPrivateLinkTimeoutsOutputReference
 ```

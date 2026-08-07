@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatParquet.FileFormatParquet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatparquet"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatparquet"
 
 fileformatparquet.NewFileFormatParquet(scope Construct, id *string, config FileFormatParquetConfig) FileFormatParquet
 ```
@@ -483,7 +483,7 @@ func ResetUseVectorizedScanner()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.fileFormatParquet.FileFormatParquet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatparquet"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatparquet"
 
 fileformatparquet.FileFormatParquet_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.fileFormatParquet.FileFormatParquet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatparquet"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatparquet"
 
 fileformatparquet.FileFormatParquet_IsTerraformElement(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ fileformatparquet.FileFormatParquet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.fileFormatParquet.FileFormatParquet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatparquet"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatparquet"
 
 fileformatparquet.FileFormatParquet_IsTerraformResource(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ fileformatparquet.FileFormatParquet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.fileFormatParquet.FileFormatParquet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatparquet"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatparquet"
 
 fileformatparquet.FileFormatParquet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1102,7 +1102,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatParquet.FileFormatParquetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatparquet"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatparquet"
 
 &fileformatparquet.FileFormatParquetConfig {
 	Connection: interface{},
@@ -1121,7 +1121,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformat
 	Id: *string,
 	NullIf: *[]*string,
 	ReplaceInvalidCharacters: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17.fileFormatParquet.FileFormatParquetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.fileFormatParquet.FileFormatParquetTimeouts,
 	TrimSpace: *string,
 	UseLogicalType: *string,
 	UseVectorizedScanner: *string,
@@ -1429,7 +1429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatParquet.FileFormatParquetDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatparquet"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatparquet"
 
 &fileformatparquet.FileFormatParquetDescribeOutput {
 
@@ -1442,7 +1442,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformat
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatParquet.FileFormatParquetShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatparquet"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatparquet"
 
 &fileformatparquet.FileFormatParquetShowOutput {
 
@@ -1455,7 +1455,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformat
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.fileFormatParquet.FileFormatParquetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatparquet"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatparquet"
 
 &fileformatparquet.FileFormatParquetTimeouts {
 	Create: *string,
@@ -1531,7 +1531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatParquet.FileFormatParquetDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatparquet"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatparquet"
 
 fileformatparquet.NewFileFormatParquetDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FileFormatParquetDescribeOutputList
 ```
@@ -1680,7 +1680,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatParquet.FileFormatParquetDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatparquet"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatparquet"
 
 fileformatparquet.NewFileFormatParquetDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FileFormatParquetDescribeOutputOutputReference
 ```
@@ -2046,7 +2046,7 @@ func InternalValue() FileFormatParquetDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatParquet.FileFormatParquetShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatparquet"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatparquet"
 
 fileformatparquet.NewFileFormatParquetShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FileFormatParquetShowOutputList
 ```
@@ -2195,7 +2195,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatParquet.FileFormatParquetShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatparquet"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatparquet"
 
 fileformatparquet.NewFileFormatParquetShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FileFormatParquetShowOutputOutputReference
 ```
@@ -2561,7 +2561,7 @@ func InternalValue() FileFormatParquetShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatParquet.FileFormatParquetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v17/fileformatparquet"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/fileformatparquet"
 
 fileformatparquet.NewFileFormatParquetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FileFormatParquetTimeoutsOutputReference
 ```
