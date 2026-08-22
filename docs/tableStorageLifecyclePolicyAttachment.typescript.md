@@ -4,7 +4,7 @@
 
 ### TableStorageLifecyclePolicyAttachment <a name="TableStorageLifecyclePolicyAttachment" id="@cdktn/provider-snowflake.tableStorageLifecyclePolicyAttachment.TableStorageLifecyclePolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment snowflake_table_storage_lifecycle_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment snowflake_table_storage_lifecycle_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.tableStorageLifecyclePolicyAttachment.TableStorageLifecyclePolicyAttachment.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the TableStorageLifecyclePolic
 
 The id of the existing TableStorageLifecyclePolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -868,7 +868,7 @@ const tableStorageLifecyclePolicyAttachmentConfig: tableStorageLifecyclePolicyAt
 | <code><a href="#@cdktn/provider-snowflake.tableStorageLifecyclePolicyAttachment.TableStorageLifecyclePolicyAttachmentConfig.property.storageLifecyclePolicyName">storageLifecyclePolicyName</a></code> | <code>string</code> | Fully qualified name of the storage lifecycle policy to attach to the table. |
 | <code><a href="#@cdktn/provider-snowflake.tableStorageLifecyclePolicyAttachment.TableStorageLifecyclePolicyAttachmentConfig.property.tableName">tableName</a></code> | <code>string</code> | Fully qualified name of the table (or dynamic table) the storage lifecycle policy is attached to. |
 | <code><a href="#@cdktn/provider-snowflake.tableStorageLifecyclePolicyAttachment.TableStorageLifecyclePolicyAttachmentConfig.property.tableType">tableType</a></code> | <code>string</code> | Specifies the type of the table referenced in `table_name`. Valid values are (case-insensitive): `TABLE` \| `DYNAMIC_TABLE`. |
-| <code><a href="#@cdktn/provider-snowflake.tableStorageLifecyclePolicyAttachment.TableStorageLifecyclePolicyAttachmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment#id TableStorageLifecyclePolicyAttachment#id}. |
+| <code><a href="#@cdktn/provider-snowflake.tableStorageLifecyclePolicyAttachment.TableStorageLifecyclePolicyAttachmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment#id TableStorageLifecyclePolicyAttachment#id}. |
 | <code><a href="#@cdktn/provider-snowflake.tableStorageLifecyclePolicyAttachment.TableStorageLifecyclePolicyAttachmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.tableStorageLifecyclePolicyAttachment.TableStorageLifecyclePolicyAttachmentTimeouts">TableStorageLifecyclePolicyAttachmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -953,7 +953,7 @@ public readonly on: string[];
 
 List of the columns the storage lifecycle policy applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment#on TableStorageLifecyclePolicyAttachment#on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment#on TableStorageLifecyclePolicyAttachment#on}
 
 ---
 
@@ -969,7 +969,7 @@ Fully qualified name of the storage lifecycle policy to attach to the table.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using pipes (`|`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment#storage_lifecycle_policy_name TableStorageLifecyclePolicyAttachment#storage_lifecycle_policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment#storage_lifecycle_policy_name TableStorageLifecyclePolicyAttachment#storage_lifecycle_policy_name}
 
 ---
 
@@ -985,7 +985,7 @@ Fully qualified name of the table (or dynamic table) the storage lifecycle polic
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using pipes (`|`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment#table_name TableStorageLifecyclePolicyAttachment#table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment#table_name TableStorageLifecyclePolicyAttachment#table_name}
 
 ---
 
@@ -999,7 +999,7 @@ public readonly tableType: string;
 
 Specifies the type of the table referenced in `table_name`. Valid values are (case-insensitive): `TABLE` | `DYNAMIC_TABLE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment#table_type TableStorageLifecyclePolicyAttachment#table_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment#table_type TableStorageLifecyclePolicyAttachment#table_type}
 
 ---
 
@@ -1011,7 +1011,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment#id TableStorageLifecyclePolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment#id TableStorageLifecyclePolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1028,7 +1028,7 @@ public readonly timeouts: TableStorageLifecyclePolicyAttachmentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment#timeouts TableStorageLifecyclePolicyAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment#timeouts TableStorageLifecyclePolicyAttachment#timeouts}
 
 ---
 
@@ -1046,10 +1046,10 @@ const tableStorageLifecyclePolicyAttachmentTimeouts: tableStorageLifecyclePolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.tableStorageLifecyclePolicyAttachment.TableStorageLifecyclePolicyAttachmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment#create TableStorageLifecyclePolicyAttachment#create}. |
-| <code><a href="#@cdktn/provider-snowflake.tableStorageLifecyclePolicyAttachment.TableStorageLifecyclePolicyAttachmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment#delete TableStorageLifecyclePolicyAttachment#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.tableStorageLifecyclePolicyAttachment.TableStorageLifecyclePolicyAttachmentTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment#read TableStorageLifecyclePolicyAttachment#read}. |
-| <code><a href="#@cdktn/provider-snowflake.tableStorageLifecyclePolicyAttachment.TableStorageLifecyclePolicyAttachmentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment#update TableStorageLifecyclePolicyAttachment#update}. |
+| <code><a href="#@cdktn/provider-snowflake.tableStorageLifecyclePolicyAttachment.TableStorageLifecyclePolicyAttachmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment#create TableStorageLifecyclePolicyAttachment#create}. |
+| <code><a href="#@cdktn/provider-snowflake.tableStorageLifecyclePolicyAttachment.TableStorageLifecyclePolicyAttachmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment#delete TableStorageLifecyclePolicyAttachment#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.tableStorageLifecyclePolicyAttachment.TableStorageLifecyclePolicyAttachmentTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment#read TableStorageLifecyclePolicyAttachment#read}. |
+| <code><a href="#@cdktn/provider-snowflake.tableStorageLifecyclePolicyAttachment.TableStorageLifecyclePolicyAttachmentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment#update TableStorageLifecyclePolicyAttachment#update}. |
 
 ---
 
@@ -1061,7 +1061,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment#create TableStorageLifecyclePolicyAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment#create TableStorageLifecyclePolicyAttachment#create}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment#delete TableStorageLifecyclePolicyAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment#delete TableStorageLifecyclePolicyAttachment#delete}.
 
 ---
 
@@ -1085,7 +1085,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment#read TableStorageLifecyclePolicyAttachment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment#read TableStorageLifecyclePolicyAttachment#read}.
 
 ---
 
@@ -1097,7 +1097,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/table_storage_lifecycle_policy_attachment#update TableStorageLifecyclePolicyAttachment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/table_storage_lifecycle_policy_attachment#update TableStorageLifecyclePolicyAttachment#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### McpServer <a name="McpServer" id="@cdktn/provider-snowflake.mcpServer.McpServer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server snowflake_mcp_server}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server snowflake_mcp_server}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.mcpServer.McpServer.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the McpServer to import.
 
 The id of the existing McpServer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -946,7 +946,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/mcpserver"
 | <code><a href="#@cdktn/provider-snowflake.mcpServer.McpServerConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema in which to create the MCP server. |
 | <code><a href="#@cdktn/provider-snowflake.mcpServer.McpServerConfig.property.specification">Specification</a></code> | <code>*string</code> | Specifies a YAML object containing the MCP server tool definitions. |
 | <code><a href="#@cdktn/provider-snowflake.mcpServer.McpServerConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the MCP server. |
-| <code><a href="#@cdktn/provider-snowflake.mcpServer.McpServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server#id McpServer#id}. |
+| <code><a href="#@cdktn/provider-snowflake.mcpServer.McpServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server#id McpServer#id}. |
 | <code><a href="#@cdktn/provider-snowflake.mcpServer.McpServerConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.mcpServer.McpServerTimeouts">McpServerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1033,7 +1033,7 @@ The database in which to create the MCP server.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server#database McpServer#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server#database McpServer#database}
 
 ---
 
@@ -1049,7 +1049,7 @@ Specifies the identifier for the MCP server.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server#name McpServer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server#name McpServer#name}
 
 ---
 
@@ -1065,7 +1065,7 @@ The schema in which to create the MCP server.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server#schema McpServer#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server#schema McpServer#schema}
 
 ---
 
@@ -1081,7 +1081,7 @@ Specifies a YAML object containing the MCP server tool definitions.
 
 The provider wraps it in `$$` by default, so be aware of that while referencing the argument in the spec definition. Using `$$` in this field is disallowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server#specification McpServer#specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server#specification McpServer#specification}
 
 ---
 
@@ -1095,7 +1095,7 @@ Comment *string
 
 Specifies a comment for the MCP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server#comment McpServer#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server#comment McpServer#comment}
 
 ---
 
@@ -1107,7 +1107,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server#id McpServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server#id McpServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1124,7 +1124,7 @@ Timeouts McpServerTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server#timeouts McpServer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server#timeouts McpServer#timeouts}
 
 ---
 
@@ -1173,10 +1173,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/mcpserver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.mcpServer.McpServerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server#create McpServer#create}. |
-| <code><a href="#@cdktn/provider-snowflake.mcpServer.McpServerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server#delete McpServer#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.mcpServer.McpServerTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server#read McpServer#read}. |
-| <code><a href="#@cdktn/provider-snowflake.mcpServer.McpServerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server#update McpServer#update}. |
+| <code><a href="#@cdktn/provider-snowflake.mcpServer.McpServerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server#create McpServer#create}. |
+| <code><a href="#@cdktn/provider-snowflake.mcpServer.McpServerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server#delete McpServer#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.mcpServer.McpServerTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server#read McpServer#read}. |
+| <code><a href="#@cdktn/provider-snowflake.mcpServer.McpServerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server#update McpServer#update}. |
 
 ---
 
@@ -1188,7 +1188,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server#create McpServer#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server#create McpServer#create}.
 
 ---
 
@@ -1200,7 +1200,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server#delete McpServer#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server#delete McpServer#delete}.
 
 ---
 
@@ -1212,7 +1212,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server#read McpServer#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server#read McpServer#read}.
 
 ---
 
@@ -1224,7 +1224,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/mcp_server#update McpServer#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/mcp_server#update McpServer#update}.
 
 ---
 
