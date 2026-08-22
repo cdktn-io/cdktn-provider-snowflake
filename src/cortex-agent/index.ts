@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface CortexAgentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies a comment for the Cortex agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#comment CortexAgent#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent#comment CortexAgent#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the Cortex agent. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#database CortexAgent#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent#database CortexAgent#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#id CortexAgent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent#id CortexAgent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,31 +34,31 @@ export interface CortexAgentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies the identifier for the Cortex agent. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#name CortexAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent#name CortexAgent#name}
   */
   readonly name: string;
   /**
   * The schema in which to create the Cortex agent. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#schema CortexAgent#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent#schema CortexAgent#schema}
   */
   readonly schema: string;
   /**
   * Specifies a YAML object containing the settings for the Cortex agent. The provider wraps it in `$$` by default, so be aware of that while referencing the argument in the spec definition. Using `$$` in this field is disallowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#specification CortexAgent#specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent#specification CortexAgent#specification}
   */
   readonly specification: string;
   /**
   * profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#profile CortexAgent#profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent#profile CortexAgent#profile}
   */
   readonly profile?: CortexAgentProfile;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#timeouts CortexAgent#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent#timeouts CortexAgent#timeouts}
   */
   readonly timeouts?: CortexAgentTimeouts;
 }
@@ -468,19 +468,19 @@ export interface CortexAgentProfile {
   /**
   * Specifies an avatar image file name or identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#avatar CortexAgent#avatar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent#avatar CortexAgent#avatar}
   */
   readonly avatar?: string;
   /**
   * Specifies a color theme for the Cortex agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#color CortexAgent#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent#color CortexAgent#color}
   */
   readonly color?: string;
   /**
   * Specifies a display name for the Cortex agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#display_name CortexAgent#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent#display_name CortexAgent#display_name}
   */
   readonly displayName?: string;
 }
@@ -622,19 +622,19 @@ export class CortexAgentProfileOutputReference extends cdktn.ComplexObject {
 }
 export interface CortexAgentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#create CortexAgent#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent#create CortexAgent#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#delete CortexAgent#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent#delete CortexAgent#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#read CortexAgent#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent#read CortexAgent#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#update CortexAgent#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent#update CortexAgent#update}
   */
   readonly update?: string;
 }
@@ -815,7 +815,7 @@ export class CortexAgentTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent snowflake_cortex_agent}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent snowflake_cortex_agent}
 */
 export class CortexAgent extends cdktn.TerraformResource {
 
@@ -831,7 +831,7 @@ export class CortexAgent extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CortexAgent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CortexAgent to import
-  * @param importFromId The id of the existing CortexAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CortexAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CortexAgent to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -843,7 +843,7 @@ export class CortexAgent extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/cortex_agent snowflake_cortex_agent} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/cortex_agent snowflake_cortex_agent} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -854,7 +854,7 @@ export class CortexAgent extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_cortex_agent',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.19.0',
+        providerVersion: '2.20.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

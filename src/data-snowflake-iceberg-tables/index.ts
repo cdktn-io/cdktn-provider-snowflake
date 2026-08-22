@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataSnowflakeIcebergTablesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables#id DataSnowflakeIcebergTables#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables#id DataSnowflakeIcebergTables#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,37 +22,37 @@ export interface DataSnowflakeIcebergTablesConfig extends cdktn.TerraformMetaArg
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables#like DataSnowflakeIcebergTables#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables#like DataSnowflakeIcebergTables#like}
   */
   readonly like?: string;
   /**
   * Filters the output with **case-sensitive** characters indicating the beginning of the object name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables#starts_with DataSnowflakeIcebergTables#starts_with}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables#starts_with DataSnowflakeIcebergTables#starts_with}
   */
   readonly startsWith?: string;
   /**
   * (Default: `true`) Runs DESC ICEBERG TABLE for each iceberg table returned by SHOW ICEBERG TABLES. The output of describe is saved to the describe_output field. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables#with_describe DataSnowflakeIcebergTables#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables#with_describe DataSnowflakeIcebergTables#with_describe}
   */
   readonly withDescribe?: boolean | cdktn.IResolvable;
   /**
   * (Default: `true`) Runs SHOW PARAMETERS FOR ICEBERG TABLE for each iceberg table returned by SHOW ICEBERG TABLES. The output is saved to the parameters field. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables#with_parameters DataSnowflakeIcebergTables#with_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables#with_parameters DataSnowflakeIcebergTables#with_parameters}
   */
   readonly withParameters?: boolean | cdktn.IResolvable;
   /**
   * in block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables#in DataSnowflakeIcebergTables#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables#in DataSnowflakeIcebergTables#in}
   */
   readonly in?: DataSnowflakeIcebergTablesIn;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables#limit DataSnowflakeIcebergTables#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables#limit DataSnowflakeIcebergTables#limit}
   */
   readonly limit?: DataSnowflakeIcebergTablesLimit;
 }
@@ -1912,19 +1912,19 @@ export interface DataSnowflakeIcebergTablesIn {
   /**
   * Returns records for the entire account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables#account DataSnowflakeIcebergTables#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables#account DataSnowflakeIcebergTables#account}
   */
   readonly account?: boolean | cdktn.IResolvable;
   /**
   * Returns records for the current database in use or for a specified database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables#database DataSnowflakeIcebergTables#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables#database DataSnowflakeIcebergTables#database}
   */
   readonly database?: string;
   /**
   * Returns records for the current schema in use or a specified schema. Use fully qualified name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables#schema DataSnowflakeIcebergTables#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables#schema DataSnowflakeIcebergTables#schema}
   */
   readonly schema?: string;
 }
@@ -2068,13 +2068,13 @@ export interface DataSnowflakeIcebergTablesLimit {
   /**
   * Specifies a **case-sensitive** pattern that is used to match object name. After the first match, the limit on the number of rows will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables#from DataSnowflakeIcebergTables#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables#from DataSnowflakeIcebergTables#from}
   */
   readonly from?: string;
   /**
   * The maximum number of rows to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables#rows DataSnowflakeIcebergTables#rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables#rows DataSnowflakeIcebergTables#rows}
   */
   readonly rows: number;
 }
@@ -2184,7 +2184,7 @@ export class DataSnowflakeIcebergTablesLimitOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables snowflake_iceberg_tables}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables snowflake_iceberg_tables}
 */
 export class DataSnowflakeIcebergTables extends cdktn.TerraformDataSource {
 
@@ -2200,7 +2200,7 @@ export class DataSnowflakeIcebergTables extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataSnowflakeIcebergTables resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeIcebergTables to import
-  * @param importFromId The id of the existing DataSnowflakeIcebergTables that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeIcebergTables that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeIcebergTables to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2212,7 +2212,7 @@ export class DataSnowflakeIcebergTables extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/iceberg_tables snowflake_iceberg_tables} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/iceberg_tables snowflake_iceberg_tables} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2223,7 +2223,7 @@ export class DataSnowflakeIcebergTables extends cdktn.TerraformDataSource {
       terraformResourceType: 'snowflake_iceberg_tables',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.19.0',
+        providerVersion: '2.20.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_authentication_policy_attachment
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_authentication_policy_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface AccountAuthenticationPolicyAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Fully qualified name of the authentication policy to apply to the current account.
+  * Fully qualified name of the authentication policy to apply to the current account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using pipes (`|`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_authentication_policy_attachment#authentication_policy AccountAuthenticationPolicyAttachment#authentication_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_authentication_policy_attachment#authentication_policy AccountAuthenticationPolicyAttachment#authentication_policy}
   */
   readonly authenticationPolicy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_authentication_policy_attachment#id AccountAuthenticationPolicyAttachment#id}
+  * If true, attaches the authentication policy to all person users in the current account. Conflicts with `for_all_service_users`. When neither field is set, the policy is attached account-wide.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_authentication_policy_attachment#for_all_person_users AccountAuthenticationPolicyAttachment#for_all_person_users}
+  */
+  readonly forAllPersonUsers?: boolean | cdktn.IResolvable;
+  /**
+  * If true, attaches the authentication policy to all service users in the current account. Conflicts with `for_all_person_users`. When neither field is set, the policy is attached account-wide.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_authentication_policy_attachment#for_all_service_users AccountAuthenticationPolicyAttachment#for_all_service_users}
+  */
+  readonly forAllServiceUsers?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_authentication_policy_attachment#id AccountAuthenticationPolicyAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +40,25 @@ export interface AccountAuthenticationPolicyAttachmentConfig extends cdktn.Terra
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_authentication_policy_attachment#timeouts AccountAuthenticationPolicyAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_authentication_policy_attachment#timeouts AccountAuthenticationPolicyAttachment#timeouts}
   */
   readonly timeouts?: AccountAuthenticationPolicyAttachmentTimeouts;
 }
 export interface AccountAuthenticationPolicyAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_authentication_policy_attachment#create AccountAuthenticationPolicyAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_authentication_policy_attachment#create AccountAuthenticationPolicyAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_authentication_policy_attachment#delete AccountAuthenticationPolicyAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_authentication_policy_attachment#delete AccountAuthenticationPolicyAttachment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_authentication_policy_attachment#read AccountAuthenticationPolicyAttachment#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_authentication_policy_attachment#read AccountAuthenticationPolicyAttachment#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_authentication_policy_attachment#update AccountAuthenticationPolicyAttachment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_authentication_policy_attachment#update AccountAuthenticationPolicyAttachment#update}
   */
   readonly update?: string;
 }
@@ -227,7 +239,7 @@ export class AccountAuthenticationPolicyAttachmentTimeoutsOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_authentication_policy_attachment snowflake_account_authentication_policy_attachment}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_authentication_policy_attachment snowflake_account_authentication_policy_attachment}
 */
 export class AccountAuthenticationPolicyAttachment extends cdktn.TerraformResource {
 
@@ -243,7 +255,7 @@ export class AccountAuthenticationPolicyAttachment extends cdktn.TerraformResour
   * Generates CDKTN code for importing a AccountAuthenticationPolicyAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountAuthenticationPolicyAttachment to import
-  * @param importFromId The id of the existing AccountAuthenticationPolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_authentication_policy_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccountAuthenticationPolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_authentication_policy_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountAuthenticationPolicyAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -255,7 +267,7 @@ export class AccountAuthenticationPolicyAttachment extends cdktn.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_authentication_policy_attachment snowflake_account_authentication_policy_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_authentication_policy_attachment snowflake_account_authentication_policy_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -266,7 +278,7 @@ export class AccountAuthenticationPolicyAttachment extends cdktn.TerraformResour
       terraformResourceType: 'snowflake_account_authentication_policy_attachment',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.19.0',
+        providerVersion: '2.20.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -278,6 +290,8 @@ export class AccountAuthenticationPolicyAttachment extends cdktn.TerraformResour
       forEach: config.forEach
     });
     this._authenticationPolicy = config.authenticationPolicy;
+    this._forAllPersonUsers = config.forAllPersonUsers;
+    this._forAllServiceUsers = config.forAllServiceUsers;
     this._id = config.id;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -297,6 +311,38 @@ export class AccountAuthenticationPolicyAttachment extends cdktn.TerraformResour
   // Temporarily expose input value. Use with caution.
   public get authenticationPolicyInput() {
     return this._authenticationPolicy;
+  }
+
+  // for_all_person_users - computed: false, optional: true, required: false
+  private _forAllPersonUsers?: boolean | cdktn.IResolvable; 
+  public get forAllPersonUsers() {
+    return this.getBooleanAttribute('for_all_person_users');
+  }
+  public set forAllPersonUsers(value: boolean | cdktn.IResolvable) {
+    this._forAllPersonUsers = value;
+  }
+  public resetForAllPersonUsers() {
+    this._forAllPersonUsers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forAllPersonUsersInput() {
+    return this._forAllPersonUsers;
+  }
+
+  // for_all_service_users - computed: false, optional: true, required: false
+  private _forAllServiceUsers?: boolean | cdktn.IResolvable; 
+  public get forAllServiceUsers() {
+    return this.getBooleanAttribute('for_all_service_users');
+  }
+  public set forAllServiceUsers(value: boolean | cdktn.IResolvable) {
+    this._forAllServiceUsers = value;
+  }
+  public resetForAllServiceUsers() {
+    this._forAllServiceUsers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forAllServiceUsersInput() {
+    return this._forAllServiceUsers;
   }
 
   // id - computed: true, optional: true, required: false
@@ -338,6 +384,8 @@ export class AccountAuthenticationPolicyAttachment extends cdktn.TerraformResour
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       authentication_policy: cdktn.stringToTerraform(this._authenticationPolicy),
+      for_all_person_users: cdktn.booleanToTerraform(this._forAllPersonUsers),
+      for_all_service_users: cdktn.booleanToTerraform(this._forAllServiceUsers),
       id: cdktn.stringToTerraform(this._id),
       timeouts: accountAuthenticationPolicyAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -350,6 +398,18 @@ export class AccountAuthenticationPolicyAttachment extends cdktn.TerraformResour
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      for_all_person_users: {
+        value: cdktn.booleanToHclTerraform(this._forAllPersonUsers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      for_all_service_users: {
+        value: cdktn.booleanToHclTerraform(this._forAllServiceUsers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       id: {
         value: cdktn.stringToHclTerraform(this._id),

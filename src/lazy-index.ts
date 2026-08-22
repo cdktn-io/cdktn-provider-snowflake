@@ -39,6 +39,7 @@ Object.defineProperty(exports, 'databaseRole', { get: function () { return requi
 Object.defineProperty(exports, 'dynamicTable', { get: function () { return require('./dynamic-table'); } });
 Object.defineProperty(exports, 'emailNotificationIntegration', { get: function () { return require('./email-notification-integration'); } });
 Object.defineProperty(exports, 'execute', { get: function () { return require('./execute'); } });
+Object.defineProperty(exports, 'externalAccessIntegration', { get: function () { return require('./external-access-integration'); } });
 Object.defineProperty(exports, 'externalFunction', { get: function () { return require('./external-function'); } });
 Object.defineProperty(exports, 'externalOauthIntegration', { get: function () { return require('./external-oauth-integration'); } });
 Object.defineProperty(exports, 'externalTable', { get: function () { return require('./external-table'); } });
@@ -64,6 +65,7 @@ Object.defineProperty(exports, 'grantOwnership', { get: function () { return req
 Object.defineProperty(exports, 'grantPrivilegesToAccountRole', { get: function () { return require('./grant-privileges-to-account-role'); } });
 Object.defineProperty(exports, 'grantPrivilegesToDatabaseRole', { get: function () { return require('./grant-privileges-to-database-role'); } });
 Object.defineProperty(exports, 'grantPrivilegesToShare', { get: function () { return require('./grant-privileges-to-share'); } });
+Object.defineProperty(exports, 'hybridTable', { get: function () { return require('./hybrid-table'); } });
 Object.defineProperty(exports, 'icebergTable', { get: function () { return require('./iceberg-table'); } });
 Object.defineProperty(exports, 'icebergTableFromAwsGlue', { get: function () { return require('./iceberg-table-from-aws-glue'); } });
 Object.defineProperty(exports, 'icebergTableFromDeltaFiles', { get: function () { return require('./iceberg-table-from-delta-files'); } });
@@ -162,6 +164,7 @@ Object.defineProperty(exports, 'dataSnowflakeDatabaseRole', { get: function () {
 Object.defineProperty(exports, 'dataSnowflakeDatabaseRoles', { get: function () { return require('./data-snowflake-database-roles'); } });
 Object.defineProperty(exports, 'dataSnowflakeDatabases', { get: function () { return require('./data-snowflake-databases'); } });
 Object.defineProperty(exports, 'dataSnowflakeDynamicTables', { get: function () { return require('./data-snowflake-dynamic-tables'); } });
+Object.defineProperty(exports, 'dataSnowflakeExternalAccessIntegrations', { get: function () { return require('./data-snowflake-external-access-integrations'); } });
 Object.defineProperty(exports, 'dataSnowflakeExternalFunctions', { get: function () { return require('./data-snowflake-external-functions'); } });
 Object.defineProperty(exports, 'dataSnowflakeExternalTables', { get: function () { return require('./data-snowflake-external-tables'); } });
 Object.defineProperty(exports, 'dataSnowflakeExternalVolumes', { get: function () { return require('./data-snowflake-external-volumes'); } });
