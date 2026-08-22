@@ -4,7 +4,7 @@
 
 ### AccountSessionPolicyAttachment <a name="AccountSessionPolicyAttachment" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment snowflake_account_session_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment snowflake_account_session_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.Initializer"></a>
 
@@ -75,6 +75,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.resetForAllPersonUsers">resetForAllPersonUsers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.resetForAllServiceUsers">resetForAllServiceUsers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
@@ -401,6 +403,18 @@ public putTimeouts(value: AccountSessionPolicyAttachmentTimeouts): void
 
 ---
 
+##### `resetForAllPersonUsers` <a name="resetForAllPersonUsers" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.resetForAllPersonUsers"></a>
+
+```typescript
+public resetForAllPersonUsers(): void
+```
+
+##### `resetForAllServiceUsers` <a name="resetForAllServiceUsers" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.resetForAllServiceUsers"></a>
+
+```typescript
+public resetForAllServiceUsers(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.resetId"></a>
 
 ```typescript
@@ -516,7 +530,7 @@ The construct id used in the generated config for the AccountSessionPolicyAttach
 
 The id of the existing AccountSessionPolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -547,9 +561,13 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeoutsOutputReference">AccountSessionPolicyAttachmentTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.forAllPersonUsersInput">forAllPersonUsersInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.forAllServiceUsersInput">forAllServiceUsersInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.sessionPolicyNameInput">sessionPolicyNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts">AccountSessionPolicyAttachmentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.forAllPersonUsers">forAllPersonUsers</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.forAllServiceUsers">forAllServiceUsers</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.sessionPolicyName">sessionPolicyName</a></code> | <code>string</code> | *No description.* |
 
@@ -707,6 +725,26 @@ public readonly timeouts: AccountSessionPolicyAttachmentTimeoutsOutputReference;
 
 ---
 
+##### `forAllPersonUsersInput`<sup>Optional</sup> <a name="forAllPersonUsersInput" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.forAllPersonUsersInput"></a>
+
+```typescript
+public readonly forAllPersonUsersInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `forAllServiceUsersInput`<sup>Optional</sup> <a name="forAllServiceUsersInput" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.forAllServiceUsersInput"></a>
+
+```typescript
+public readonly forAllServiceUsersInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.idInput"></a>
 
 ```typescript
@@ -734,6 +772,26 @@ public readonly timeoutsInput: IResolvable | AccountSessionPolicyAttachmentTimeo
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts">AccountSessionPolicyAttachmentTimeouts</a>
+
+---
+
+##### `forAllPersonUsers`<sup>Required</sup> <a name="forAllPersonUsers" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.forAllPersonUsers"></a>
+
+```typescript
+public readonly forAllPersonUsers: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `forAllServiceUsers`<sup>Required</sup> <a name="forAllServiceUsers" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.forAllServiceUsers"></a>
+
+```typescript
+public readonly forAllServiceUsers: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -799,7 +857,9 @@ const accountSessionPolicyAttachmentConfig: accountSessionPolicyAttachment.Accou
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.sessionPolicyName">sessionPolicyName</a></code> | <code>string</code> | Fully qualified name of the session policy to apply to the current account. |
-| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#id AccountSessionPolicyAttachment#id}. |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.forAllPersonUsers">forAllPersonUsers</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, attaches the session policy to all person users in the current account. |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.forAllServiceUsers">forAllServiceUsers</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, attaches the session policy to all service users in the current account. |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#id AccountSessionPolicyAttachment#id}. |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts">AccountSessionPolicyAttachmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -884,7 +944,41 @@ public readonly sessionPolicyName: string;
 
 Fully qualified name of the session policy to apply to the current account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#session_policy_name AccountSessionPolicyAttachment#session_policy_name}
+Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using pipes (`|`).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#session_policy_name AccountSessionPolicyAttachment#session_policy_name}
+
+---
+
+##### `forAllPersonUsers`<sup>Optional</sup> <a name="forAllPersonUsers" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.forAllPersonUsers"></a>
+
+```typescript
+public readonly forAllPersonUsers: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+If true, attaches the session policy to all person users in the current account.
+
+Conflicts with `for_all_service_users`. When neither field is set, the policy is attached account-wide.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#for_all_person_users AccountSessionPolicyAttachment#for_all_person_users}
+
+---
+
+##### `forAllServiceUsers`<sup>Optional</sup> <a name="forAllServiceUsers" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.forAllServiceUsers"></a>
+
+```typescript
+public readonly forAllServiceUsers: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+If true, attaches the session policy to all service users in the current account.
+
+Conflicts with `for_all_person_users`. When neither field is set, the policy is attached account-wide.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#for_all_service_users AccountSessionPolicyAttachment#for_all_service_users}
 
 ---
 
@@ -896,7 +990,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#id AccountSessionPolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#id AccountSessionPolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -913,7 +1007,7 @@ public readonly timeouts: AccountSessionPolicyAttachmentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#timeouts AccountSessionPolicyAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#timeouts AccountSessionPolicyAttachment#timeouts}
 
 ---
 
@@ -931,10 +1025,10 @@ const accountSessionPolicyAttachmentTimeouts: accountSessionPolicyAttachment.Acc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#create AccountSessionPolicyAttachment#create}. |
-| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#delete AccountSessionPolicyAttachment#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#read AccountSessionPolicyAttachment#read}. |
-| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#update AccountSessionPolicyAttachment#update}. |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#create AccountSessionPolicyAttachment#create}. |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#delete AccountSessionPolicyAttachment#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#read AccountSessionPolicyAttachment#read}. |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#update AccountSessionPolicyAttachment#update}. |
 
 ---
 
@@ -946,7 +1040,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#create AccountSessionPolicyAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#create AccountSessionPolicyAttachment#create}.
 
 ---
 
@@ -958,7 +1052,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#delete AccountSessionPolicyAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#delete AccountSessionPolicyAttachment#delete}.
 
 ---
 
@@ -970,7 +1064,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#read AccountSessionPolicyAttachment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#read AccountSessionPolicyAttachment#read}.
 
 ---
 
@@ -982,7 +1076,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#update AccountSessionPolicyAttachment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#update AccountSessionPolicyAttachment#update}.
 
 ---
 

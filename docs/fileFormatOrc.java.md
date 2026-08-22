@@ -4,7 +4,7 @@
 
 ### FileFormatOrc <a name="FileFormatOrc" id="@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrc"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc snowflake_file_format_orc}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc snowflake_file_format_orc}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrc.Initializer"></a>
 
@@ -46,7 +46,7 @@ FileFormatOrc.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrc.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Specifies the identifier for the file format; |
 | <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrc.Initializer.parameter.schema">schema</a></code> | <code>java.lang.String</code> | The schema in which to create the file format. |
 | <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrc.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the file format. |
-| <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrc.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#id FileFormatOrc#id}. |
+| <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrc.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#id FileFormatOrc#id}. |
 | <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrc.Initializer.parameter.nullIf">nullIf</a></code> | <code>java.util.List<java.lang.String></code> | String used to convert to and from SQL NULL. |
 | <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrc.Initializer.parameter.replaceInvalidCharacters">replaceInvalidCharacters</a></code> | <code>java.lang.String</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Boolean that specifies whether to replace invalid UTF-8 characters with the Unicode replacement character. |
 | <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrc.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcTimeouts">FileFormatOrcTimeouts</a></code> | timeouts block. |
@@ -122,7 +122,7 @@ The database in which to create the file format.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#database FileFormatOrc#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#database FileFormatOrc#database}
 
 ---
 
@@ -134,7 +134,7 @@ Specifies the identifier for the file format;
 
 must be unique for the database and schema in which the file format is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#name FileFormatOrc#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#name FileFormatOrc#name}
 
 ---
 
@@ -146,7 +146,7 @@ The schema in which to create the file format.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#schema FileFormatOrc#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#schema FileFormatOrc#schema}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the file format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#comment FileFormatOrc#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#comment FileFormatOrc#comment}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#id FileFormatOrc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#id FileFormatOrc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -177,7 +177,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 String used to convert to and from SQL NULL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#null_if FileFormatOrc#null_if}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#null_if FileFormatOrc#null_if}
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#replace_invalid_characters FileFormatOrc#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#replace_invalid_characters FileFormatOrc#replace_invalid_characters}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#timeouts FileFormatOrc#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#timeouts FileFormatOrc#timeouts}
 
 ---
 
@@ -211,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#trim_space FileFormatOrc#trim_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#trim_space FileFormatOrc#trim_space}
 
 ---
 
@@ -715,7 +715,7 @@ The construct id used in the generated config for the FileFormatOrc to import.
 
 The id of the existing FileFormatOrc that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1194,7 +1194,7 @@ FileFormatOrcConfig.builder()
 | <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcConfig.property.name">name</a></code> | <code>java.lang.String</code> | Specifies the identifier for the file format; |
 | <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcConfig.property.schema">schema</a></code> | <code>java.lang.String</code> | The schema in which to create the file format. |
 | <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the file format. |
-| <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#id FileFormatOrc#id}. |
+| <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#id FileFormatOrc#id}. |
 | <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcConfig.property.nullIf">nullIf</a></code> | <code>java.util.List<java.lang.String></code> | String used to convert to and from SQL NULL. |
 | <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcConfig.property.replaceInvalidCharacters">replaceInvalidCharacters</a></code> | <code>java.lang.String</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Boolean that specifies whether to replace invalid UTF-8 characters with the Unicode replacement character. |
 | <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcTimeouts">FileFormatOrcTimeouts</a></code> | timeouts block. |
@@ -1284,7 +1284,7 @@ The database in which to create the file format.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#database FileFormatOrc#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#database FileFormatOrc#database}
 
 ---
 
@@ -1300,7 +1300,7 @@ Specifies the identifier for the file format;
 
 must be unique for the database and schema in which the file format is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#name FileFormatOrc#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#name FileFormatOrc#name}
 
 ---
 
@@ -1316,7 +1316,7 @@ The schema in which to create the file format.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#schema FileFormatOrc#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#schema FileFormatOrc#schema}
 
 ---
 
@@ -1330,7 +1330,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the file format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#comment FileFormatOrc#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#comment FileFormatOrc#comment}
 
 ---
 
@@ -1342,7 +1342,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#id FileFormatOrc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#id FileFormatOrc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1359,7 +1359,7 @@ public java.util.List<java.lang.String> getNullIf();
 
 String used to convert to and from SQL NULL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#null_if FileFormatOrc#null_if}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#null_if FileFormatOrc#null_if}
 
 ---
 
@@ -1375,7 +1375,7 @@ public java.lang.String getReplaceInvalidCharacters();
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#replace_invalid_characters FileFormatOrc#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#replace_invalid_characters FileFormatOrc#replace_invalid_characters}
 
 ---
 
@@ -1389,7 +1389,7 @@ public FileFormatOrcTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#timeouts FileFormatOrc#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#timeouts FileFormatOrc#timeouts}
 
 ---
 
@@ -1405,7 +1405,7 @@ public java.lang.String getTrimSpace();
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#trim_space FileFormatOrc#trim_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#trim_space FileFormatOrc#trim_space}
 
 ---
 
@@ -1452,10 +1452,10 @@ FileFormatOrcTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#create FileFormatOrc#create}. |
-| <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#delete FileFormatOrc#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#read FileFormatOrc#read}. |
-| <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#update FileFormatOrc#update}. |
+| <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#create FileFormatOrc#create}. |
+| <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#delete FileFormatOrc#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#read FileFormatOrc#read}. |
+| <code><a href="#@cdktn/provider-snowflake.fileFormatOrc.FileFormatOrcTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#update FileFormatOrc#update}. |
 
 ---
 
@@ -1467,7 +1467,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#create FileFormatOrc#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#create FileFormatOrc#create}.
 
 ---
 
@@ -1479,7 +1479,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#delete FileFormatOrc#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#delete FileFormatOrc#delete}.
 
 ---
 
@@ -1491,7 +1491,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#read FileFormatOrc#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#read FileFormatOrc#read}.
 
 ---
 
@@ -1503,7 +1503,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/file_format_orc#update FileFormatOrc#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/file_format_orc#update FileFormatOrc#update}.
 
 ---
 

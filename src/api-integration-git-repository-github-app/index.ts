@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_github_app
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_github_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface ApiIntegrationGitRepositoryGithubAppConfig extends cdktn.Terraf
   /**
   * Explicitly limits external functions that use the integration to reference one or more HTTPS proxy service and remote service endpoints and resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_github_app#api_allowed_prefixes ApiIntegrationGitRepositoryGithubApp#api_allowed_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_github_app#api_allowed_prefixes ApiIntegrationGitRepositoryGithubApp#api_allowed_prefixes}
   */
   readonly apiAllowedPrefixes: string[];
   /**
   * Lists the endpoints and resources in the HTTPS proxy service that are not allowed to be called from Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_github_app#api_blocked_prefixes ApiIntegrationGitRepositoryGithubApp#api_blocked_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_github_app#api_blocked_prefixes ApiIntegrationGitRepositoryGithubApp#api_blocked_prefixes}
   */
   readonly apiBlockedPrefixes?: string[];
   /**
   * Specifies a comment for the integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_github_app#comment ApiIntegrationGitRepositoryGithubApp#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_github_app#comment ApiIntegrationGitRepositoryGithubApp#comment}
   */
   readonly comment?: string;
   /**
   * Specifies whether this API integration is enabled or disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_github_app#enabled ApiIntegrationGitRepositoryGithubApp#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_github_app#enabled ApiIntegrationGitRepositoryGithubApp#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_github_app#id ApiIntegrationGitRepositoryGithubApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_github_app#id ApiIntegrationGitRepositoryGithubApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,13 +46,13 @@ export interface ApiIntegrationGitRepositoryGithubAppConfig extends cdktn.Terraf
   /**
   * Specifies the identifier (i.e. name) for the integration. This value must be unique in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_github_app#name ApiIntegrationGitRepositoryGithubApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_github_app#name ApiIntegrationGitRepositoryGithubApp#name}
   */
   readonly name: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_github_app#timeouts ApiIntegrationGitRepositoryGithubApp#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_github_app#timeouts ApiIntegrationGitRepositoryGithubApp#timeouts}
   */
   readonly timeouts?: ApiIntegrationGitRepositoryGithubAppTimeouts;
 }
@@ -258,19 +258,19 @@ export class ApiIntegrationGitRepositoryGithubAppShowOutputList extends cdktn.Co
 }
 export interface ApiIntegrationGitRepositoryGithubAppTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_github_app#create ApiIntegrationGitRepositoryGithubApp#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_github_app#create ApiIntegrationGitRepositoryGithubApp#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_github_app#delete ApiIntegrationGitRepositoryGithubApp#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_github_app#delete ApiIntegrationGitRepositoryGithubApp#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_github_app#read ApiIntegrationGitRepositoryGithubApp#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_github_app#read ApiIntegrationGitRepositoryGithubApp#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_github_app#update ApiIntegrationGitRepositoryGithubApp#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_github_app#update ApiIntegrationGitRepositoryGithubApp#update}
   */
   readonly update?: string;
 }
@@ -451,7 +451,7 @@ export class ApiIntegrationGitRepositoryGithubAppTimeoutsOutputReference extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_github_app snowflake_api_integration_git_repository_github_app}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_github_app snowflake_api_integration_git_repository_github_app}
 */
 export class ApiIntegrationGitRepositoryGithubApp extends cdktn.TerraformResource {
 
@@ -467,7 +467,7 @@ export class ApiIntegrationGitRepositoryGithubApp extends cdktn.TerraformResourc
   * Generates CDKTN code for importing a ApiIntegrationGitRepositoryGithubApp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiIntegrationGitRepositoryGithubApp to import
-  * @param importFromId The id of the existing ApiIntegrationGitRepositoryGithubApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_github_app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiIntegrationGitRepositoryGithubApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_github_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiIntegrationGitRepositoryGithubApp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -479,7 +479,7 @@ export class ApiIntegrationGitRepositoryGithubApp extends cdktn.TerraformResourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_git_repository_github_app snowflake_api_integration_git_repository_github_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_git_repository_github_app snowflake_api_integration_git_repository_github_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -490,7 +490,7 @@ export class ApiIntegrationGitRepositoryGithubApp extends cdktn.TerraformResourc
       terraformResourceType: 'snowflake_api_integration_git_repository_github_app',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.19.0',
+        providerVersion: '2.20.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

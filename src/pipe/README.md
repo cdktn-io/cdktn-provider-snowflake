@@ -1,3 +1,3 @@
 # `snowflake_pipe`
 
-Refer to the Terraform Registry for docs: [`snowflake_pipe`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/pipe).
+Refer to the Terraform Registry for docs: [`snowflake_pipe`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/pipe).

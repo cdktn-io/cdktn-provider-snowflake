@@ -4,7 +4,7 @@
 
 ### ComputePool <a name="ComputePool" id="@cdktn/provider-snowflake.computePool.ComputePool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool snowflake_compute_pool}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool snowflake_compute_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.computePool.ComputePool.Initializer"></a>
 
@@ -27,6 +27,7 @@ computePool.ComputePool(
   name: str,
   auto_resume: str = None,
   auto_suspend_secs: typing.Union[int, float] = None,
+  backup_instance_families: typing.List[str] = None,
   comment: str = None,
   for_application: str = None,
   id: str = None,
@@ -52,9 +53,10 @@ computePool.ComputePool(
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.Initializer.parameter.name">name</a></code> | <code>str</code> | Specifies the identifier for the compute pool; |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.Initializer.parameter.autoResume">auto_resume</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically resume a compute pool when a service or job is submitted to it. |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.Initializer.parameter.autoSuspendSecs">auto_suspend_secs</a></code> | <code>typing.Union[int, float]</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Number of seconds of inactivity after which you want Snowflake to automatically suspend the compute pool. |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.Initializer.parameter.backupInstanceFamilies">backup_instance_families</a></code> | <code>typing.List[str]</code> | Specifies an ordered list of instance families to fall back on when the primary `instance_family` is unavailable. |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the compute pool. |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.Initializer.parameter.forApplication">for_application</a></code> | <code>str</code> | Specifies the Snowflake Native App name. |
-| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#id ComputePool#id}. |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#id ComputePool#id}. |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.Initializer.parameter.initiallySuspended">initially_suspended</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether the compute pool is created initially in the suspended state. |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts">ComputePoolTimeouts</a></code> | timeouts block. |
 
@@ -128,7 +130,7 @@ Identifies the type of machine you want to provision for the nodes in the comput
 
 Valid values are (case-insensitive): `CPU_X64_XS` | `CPU_X64_S` | `CPU_X64_M` | `CPU_X64_SL` | `CPU_X64_L` | `HIGHMEM_X64_S` | `HIGHMEM_X64_M` | `HIGHMEM_X64_L` | `HIGHMEM_X64_SL` | `GPU_NV_S` | `GPU_NV_M` | `GPU_NV_L` | `GPU_NV_XS` | `GPU_NV_SM` | `GPU_NV_2M` | `GPU_NV_3M` | `GPU_NV_SL` | `GPU_GCP_NV_L4_1_24G` | `GPU_GCP_NV_L4_4_24G` | `GPU_GCP_NV_A100_8_40G` | `GEN_ARM_G1_2` | `GEN_ARM_G1_4` | `GEN_ARM_G1_8` | `GEN_ARM_G1_16` | `GEN_ARM_G1_32` | `GEN_X64_G2_2` | `GEN_X64_G2_4` | `GEN_X64_G2_8` | `GEN_X64_G2_16` | `GEN_X64_G2_32` | `MEM_X64_G2_8` | `MEM_X64_G2_32` | `MEM_X64_G2_64` | `MEM_X64_G2_96` | `MEM_X64_G2_192` | `GPU_L40S_G1_8` | `GPU_L40S_G1_16` | `GPU_L40S_G1_48` | `GPU_L40S_G1_192` | `GPU_R6K_G1_8` | `GPU_R6K_G1_16` | `GPU_R6K_G1_32` | `GPU_R6K_G1_48` | `GPU_R6K_G1_96` | `GPU_R6K_G1_192` | `GPU_A100_G1_12` | `GPU_A100_G1_48`. Not all instance families are supported in all regions. Run `SHOW COMPUTE POOL INSTANCE FAMILIES` to see the list of supported instance families in your region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#instance_family ComputePool#instance_family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#instance_family ComputePool#instance_family}
 
 ---
 
@@ -138,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the maximum number of nodes for the compute pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#max_nodes ComputePool#max_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#max_nodes ComputePool#max_nodes}
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the minimum number of nodes for the compute pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#min_nodes ComputePool#min_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#min_nodes ComputePool#min_nodes}
 
 ---
 
@@ -160,7 +162,7 @@ Specifies the identifier for the compute pool;
 
 must be unique for the account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#name ComputePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#name ComputePool#name}
 
 ---
 
@@ -172,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#auto_resume ComputePool#auto_resume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#auto_resume ComputePool#auto_resume}
 
 ---
 
@@ -182,7 +184,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Number of seconds of inactivity after which you want Snowflake to automatically suspend the compute pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#auto_suspend_secs ComputePool#auto_suspend_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#auto_suspend_secs ComputePool#auto_suspend_secs}
+
+---
+
+##### `backup_instance_families`<sup>Optional</sup> <a name="backup_instance_families" id="@cdktn/provider-snowflake.computePool.ComputePool.Initializer.parameter.backupInstanceFamilies"></a>
+
+- *Type:* typing.List[str]
+
+Specifies an ordered list of instance families to fall back on when the primary `instance_family` is unavailable.
+
+The order determines the fallback priority. Valid values are (case-insensitive): `CPU_X64_XS` | `CPU_X64_S` | `CPU_X64_M` | `CPU_X64_SL` | `CPU_X64_L` | `HIGHMEM_X64_S` | `HIGHMEM_X64_M` | `HIGHMEM_X64_L` | `HIGHMEM_X64_SL` | `GPU_NV_S` | `GPU_NV_M` | `GPU_NV_L` | `GPU_NV_XS` | `GPU_NV_SM` | `GPU_NV_2M` | `GPU_NV_3M` | `GPU_NV_SL` | `GPU_GCP_NV_L4_1_24G` | `GPU_GCP_NV_L4_4_24G` | `GPU_GCP_NV_A100_8_40G` | `GEN_ARM_G1_2` | `GEN_ARM_G1_4` | `GEN_ARM_G1_8` | `GEN_ARM_G1_16` | `GEN_ARM_G1_32` | `GEN_X64_G2_2` | `GEN_X64_G2_4` | `GEN_X64_G2_8` | `GEN_X64_G2_16` | `GEN_X64_G2_32` | `MEM_X64_G2_8` | `MEM_X64_G2_32` | `MEM_X64_G2_64` | `MEM_X64_G2_96` | `MEM_X64_G2_192` | `GPU_L40S_G1_8` | `GPU_L40S_G1_16` | `GPU_L40S_G1_48` | `GPU_L40S_G1_192` | `GPU_R6K_G1_8` | `GPU_R6K_G1_16` | `GPU_R6K_G1_32` | `GPU_R6K_G1_48` | `GPU_R6K_G1_96` | `GPU_R6K_G1_192` | `GPU_A100_G1_12` | `GPU_A100_G1_48`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#backup_instance_families ComputePool#backup_instance_families}
 
 ---
 
@@ -192,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the compute pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#comment ComputePool#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#comment ComputePool#comment}
 
 ---
 
@@ -202,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the Snowflake Native App name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#for_application ComputePool#for_application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#for_application ComputePool#for_application}
 
 ---
 
@@ -210,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#id ComputePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#id ComputePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -225,7 +239,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 This field is used only when creating a compute pool. Changes on this field are ignored after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#initially_suspended ComputePool#initially_suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#initially_suspended ComputePool#initially_suspended}
 
 ---
 
@@ -235,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#timeouts ComputePool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#timeouts ComputePool#timeouts}
 
 ---
 
@@ -270,6 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.resetAutoResume">reset_auto_resume</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.resetAutoSuspendSecs">reset_auto_suspend_secs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.resetBackupInstanceFamilies">reset_backup_instance_families</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.resetComment">reset_comment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.resetForApplication">reset_for_application</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.resetId">reset_id</a></code> | *No description.* |
@@ -641,7 +656,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#create ComputePool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#create ComputePool#create}.
 
 ---
 
@@ -649,7 +664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#delete ComputePool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#delete ComputePool#delete}.
 
 ---
 
@@ -657,7 +672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#read ComputePool#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#read ComputePool#read}.
 
 ---
 
@@ -665,7 +680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#update ComputePool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#update ComputePool#update}.
 
 ---
 
@@ -679,6 +694,12 @@ def reset_auto_resume() -> None
 
 ```python
 def reset_auto_suspend_secs() -> None
+```
+
+##### `reset_backup_instance_families` <a name="reset_backup_instance_families" id="@cdktn/provider-snowflake.computePool.ComputePool.resetBackupInstanceFamilies"></a>
+
+```python
+def reset_backup_instance_families() -> None
 ```
 
 ##### `reset_comment` <a name="reset_comment" id="@cdktn/provider-snowflake.computePool.ComputePool.resetComment"></a>
@@ -825,7 +846,7 @@ The construct id used in the generated config for the ComputePool to import.
 
 The id of the existing ComputePool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -861,6 +882,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeoutsOutputReference">ComputePoolTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.autoResumeInput">auto_resume_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.autoSuspendSecsInput">auto_suspend_secs_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.backupInstanceFamiliesInput">backup_instance_families_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.forApplicationInput">for_application_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -872,6 +894,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts">ComputePoolTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.autoResume">auto_resume</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.autoSuspendSecs">auto_suspend_secs</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.backupInstanceFamilies">backup_instance_families</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.comment">comment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.forApplication">for_application</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1085,6 +1108,16 @@ auto_suspend_secs_input: typing.Union[int, float]
 
 ---
 
+##### `backup_instance_families_input`<sup>Optional</sup> <a name="backup_instance_families_input" id="@cdktn/provider-snowflake.computePool.ComputePool.property.backupInstanceFamiliesInput"></a>
+
+```python
+backup_instance_families_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `comment_input`<sup>Optional</sup> <a name="comment_input" id="@cdktn/provider-snowflake.computePool.ComputePool.property.commentInput"></a>
 
 ```python
@@ -1192,6 +1225,16 @@ auto_suspend_secs: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `backup_instance_families`<sup>Required</sup> <a name="backup_instance_families" id="@cdktn/provider-snowflake.computePool.ComputePool.property.backupInstanceFamilies"></a>
+
+```python
+backup_instance_families: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -1316,6 +1359,7 @@ computePool.ComputePoolConfig(
   name: str,
   auto_resume: str = None,
   auto_suspend_secs: typing.Union[int, float] = None,
+  backup_instance_families: typing.List[str] = None,
   comment: str = None,
   for_application: str = None,
   id: str = None,
@@ -1341,9 +1385,10 @@ computePool.ComputePoolConfig(
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.name">name</a></code> | <code>str</code> | Specifies the identifier for the compute pool; |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.autoResume">auto_resume</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically resume a compute pool when a service or job is submitted to it. |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.autoSuspendSecs">auto_suspend_secs</a></code> | <code>typing.Union[int, float]</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Number of seconds of inactivity after which you want Snowflake to automatically suspend the compute pool. |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.backupInstanceFamilies">backup_instance_families</a></code> | <code>typing.List[str]</code> | Specifies an ordered list of instance families to fall back on when the primary `instance_family` is unavailable. |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the compute pool. |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.forApplication">for_application</a></code> | <code>str</code> | Specifies the Snowflake Native App name. |
-| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#id ComputePool#id}. |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#id ComputePool#id}. |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.initiallySuspended">initially_suspended</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether the compute pool is created initially in the suspended state. |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts">ComputePoolTimeouts</a></code> | timeouts block. |
 
@@ -1431,7 +1476,7 @@ Identifies the type of machine you want to provision for the nodes in the comput
 
 Valid values are (case-insensitive): `CPU_X64_XS` | `CPU_X64_S` | `CPU_X64_M` | `CPU_X64_SL` | `CPU_X64_L` | `HIGHMEM_X64_S` | `HIGHMEM_X64_M` | `HIGHMEM_X64_L` | `HIGHMEM_X64_SL` | `GPU_NV_S` | `GPU_NV_M` | `GPU_NV_L` | `GPU_NV_XS` | `GPU_NV_SM` | `GPU_NV_2M` | `GPU_NV_3M` | `GPU_NV_SL` | `GPU_GCP_NV_L4_1_24G` | `GPU_GCP_NV_L4_4_24G` | `GPU_GCP_NV_A100_8_40G` | `GEN_ARM_G1_2` | `GEN_ARM_G1_4` | `GEN_ARM_G1_8` | `GEN_ARM_G1_16` | `GEN_ARM_G1_32` | `GEN_X64_G2_2` | `GEN_X64_G2_4` | `GEN_X64_G2_8` | `GEN_X64_G2_16` | `GEN_X64_G2_32` | `MEM_X64_G2_8` | `MEM_X64_G2_32` | `MEM_X64_G2_64` | `MEM_X64_G2_96` | `MEM_X64_G2_192` | `GPU_L40S_G1_8` | `GPU_L40S_G1_16` | `GPU_L40S_G1_48` | `GPU_L40S_G1_192` | `GPU_R6K_G1_8` | `GPU_R6K_G1_16` | `GPU_R6K_G1_32` | `GPU_R6K_G1_48` | `GPU_R6K_G1_96` | `GPU_R6K_G1_192` | `GPU_A100_G1_12` | `GPU_A100_G1_48`. Not all instance families are supported in all regions. Run `SHOW COMPUTE POOL INSTANCE FAMILIES` to see the list of supported instance families in your region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#instance_family ComputePool#instance_family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#instance_family ComputePool#instance_family}
 
 ---
 
@@ -1445,7 +1490,7 @@ max_nodes: typing.Union[int, float]
 
 Specifies the maximum number of nodes for the compute pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#max_nodes ComputePool#max_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#max_nodes ComputePool#max_nodes}
 
 ---
 
@@ -1459,7 +1504,7 @@ min_nodes: typing.Union[int, float]
 
 Specifies the minimum number of nodes for the compute pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#min_nodes ComputePool#min_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#min_nodes ComputePool#min_nodes}
 
 ---
 
@@ -1475,7 +1520,7 @@ Specifies the identifier for the compute pool;
 
 must be unique for the account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#name ComputePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#name ComputePool#name}
 
 ---
 
@@ -1491,7 +1536,7 @@ auto_resume: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#auto_resume ComputePool#auto_resume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#auto_resume ComputePool#auto_resume}
 
 ---
 
@@ -1505,7 +1550,23 @@ auto_suspend_secs: typing.Union[int, float]
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Number of seconds of inactivity after which you want Snowflake to automatically suspend the compute pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#auto_suspend_secs ComputePool#auto_suspend_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#auto_suspend_secs ComputePool#auto_suspend_secs}
+
+---
+
+##### `backup_instance_families`<sup>Optional</sup> <a name="backup_instance_families" id="@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.backupInstanceFamilies"></a>
+
+```python
+backup_instance_families: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Specifies an ordered list of instance families to fall back on when the primary `instance_family` is unavailable.
+
+The order determines the fallback priority. Valid values are (case-insensitive): `CPU_X64_XS` | `CPU_X64_S` | `CPU_X64_M` | `CPU_X64_SL` | `CPU_X64_L` | `HIGHMEM_X64_S` | `HIGHMEM_X64_M` | `HIGHMEM_X64_L` | `HIGHMEM_X64_SL` | `GPU_NV_S` | `GPU_NV_M` | `GPU_NV_L` | `GPU_NV_XS` | `GPU_NV_SM` | `GPU_NV_2M` | `GPU_NV_3M` | `GPU_NV_SL` | `GPU_GCP_NV_L4_1_24G` | `GPU_GCP_NV_L4_4_24G` | `GPU_GCP_NV_A100_8_40G` | `GEN_ARM_G1_2` | `GEN_ARM_G1_4` | `GEN_ARM_G1_8` | `GEN_ARM_G1_16` | `GEN_ARM_G1_32` | `GEN_X64_G2_2` | `GEN_X64_G2_4` | `GEN_X64_G2_8` | `GEN_X64_G2_16` | `GEN_X64_G2_32` | `MEM_X64_G2_8` | `MEM_X64_G2_32` | `MEM_X64_G2_64` | `MEM_X64_G2_96` | `MEM_X64_G2_192` | `GPU_L40S_G1_8` | `GPU_L40S_G1_16` | `GPU_L40S_G1_48` | `GPU_L40S_G1_192` | `GPU_R6K_G1_8` | `GPU_R6K_G1_16` | `GPU_R6K_G1_32` | `GPU_R6K_G1_48` | `GPU_R6K_G1_96` | `GPU_R6K_G1_192` | `GPU_A100_G1_12` | `GPU_A100_G1_48`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#backup_instance_families ComputePool#backup_instance_families}
 
 ---
 
@@ -1519,7 +1580,7 @@ comment: str
 
 Specifies a comment for the compute pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#comment ComputePool#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#comment ComputePool#comment}
 
 ---
 
@@ -1533,7 +1594,7 @@ for_application: str
 
 Specifies the Snowflake Native App name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#for_application ComputePool#for_application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#for_application ComputePool#for_application}
 
 ---
 
@@ -1545,7 +1606,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#id ComputePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#id ComputePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1564,7 +1625,7 @@ initially_suspended: str
 
 This field is used only when creating a compute pool. Changes on this field are ignored after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#initially_suspended ComputePool#initially_suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#initially_suspended ComputePool#initially_suspended}
 
 ---
 
@@ -1578,7 +1639,7 @@ timeouts: ComputePoolTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#timeouts ComputePool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#timeouts ComputePool#timeouts}
 
 ---
 
@@ -1623,10 +1684,10 @@ computePool.ComputePoolTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#create ComputePool#create}. |
-| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#delete ComputePool#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#read ComputePool#read}. |
-| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#update ComputePool#update}. |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#create ComputePool#create}. |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#delete ComputePool#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#read ComputePool#read}. |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#update ComputePool#update}. |
 
 ---
 
@@ -1638,7 +1699,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#create ComputePool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#create ComputePool#create}.
 
 ---
 
@@ -1650,7 +1711,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#delete ComputePool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#delete ComputePool#delete}.
 
 ---
 
@@ -1662,7 +1723,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#read ComputePool#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#read ComputePool#read}.
 
 ---
 
@@ -1674,7 +1735,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#update ComputePool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#update ComputePool#update}.
 
 ---
 
@@ -2098,6 +2159,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference.property.application">application</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference.property.autoResume">auto_resume</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference.property.autoSuspendSecs">auto_suspend_secs</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference.property.backupInstanceFamilies">backup_instance_families</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference.property.comment">comment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference.property.errorCode">error_code</a></code> | <code>str</code> | *No description.* |
@@ -2180,6 +2242,16 @@ auto_suspend_secs: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `backup_instance_families`<sup>Required</sup> <a name="backup_instance_families" id="@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference.property.backupInstanceFamilies"></a>
+
+```python
+backup_instance_families: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -2782,6 +2854,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolShowOutputOutputReference.property.application">application</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolShowOutputOutputReference.property.autoResume">auto_resume</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolShowOutputOutputReference.property.autoSuspendSecs">auto_suspend_secs</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolShowOutputOutputReference.property.backupInstanceFamilies">backup_instance_families</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolShowOutputOutputReference.property.comment">comment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolShowOutputOutputReference.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolShowOutputOutputReference.property.idleNodes">idle_nodes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2862,6 +2935,16 @@ auto_suspend_secs: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `backup_instance_families`<sup>Required</sup> <a name="backup_instance_families" id="@cdktn/provider-snowflake.computePool.ComputePoolShowOutputOutputReference.property.backupInstanceFamilies"></a>
+
+```python
+backup_instance_families: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 

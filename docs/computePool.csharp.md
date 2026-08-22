@@ -4,7 +4,7 @@
 
 ### ComputePool <a name="ComputePool" id="@cdktn/provider-snowflake.computePool.ComputePool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool snowflake_compute_pool}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool snowflake_compute_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.computePool.ComputePool.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.resetAutoResume">ResetAutoResume</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.resetAutoSuspendSecs">ResetAutoSuspendSecs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.resetBackupInstanceFamilies">ResetBackupInstanceFamilies</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.resetForApplication">ResetForApplication</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.resetId">ResetId</a></code> | *No description.* |
@@ -418,6 +419,12 @@ private void ResetAutoResume()
 private void ResetAutoSuspendSecs()
 ```
 
+##### `ResetBackupInstanceFamilies` <a name="ResetBackupInstanceFamilies" id="@cdktn/provider-snowflake.computePool.ComputePool.resetBackupInstanceFamilies"></a>
+
+```csharp
+private void ResetBackupInstanceFamilies()
+```
+
 ##### `ResetComment` <a name="ResetComment" id="@cdktn/provider-snowflake.computePool.ComputePool.resetComment"></a>
 
 ```csharp
@@ -551,7 +558,7 @@ The construct id used in the generated config for the ComputePool to import.
 
 The id of the existing ComputePool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,6 +594,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeoutsOutputReference">ComputePoolTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.autoResumeInput">AutoResumeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.autoSuspendSecsInput">AutoSuspendSecsInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.backupInstanceFamiliesInput">BackupInstanceFamiliesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.forApplicationInput">ForApplicationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -598,6 +606,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts">ComputePoolTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.autoResume">AutoResume</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.autoSuspendSecs">AutoSuspendSecs</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.backupInstanceFamilies">BackupInstanceFamilies</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.forApplication">ForApplication</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePool.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -811,6 +820,16 @@ public double AutoSuspendSecsInput { get; }
 
 ---
 
+##### `BackupInstanceFamiliesInput`<sup>Optional</sup> <a name="BackupInstanceFamiliesInput" id="@cdktn/provider-snowflake.computePool.ComputePool.property.backupInstanceFamiliesInput"></a>
+
+```csharp
+public string[] BackupInstanceFamiliesInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `CommentInput`<sup>Optional</sup> <a name="CommentInput" id="@cdktn/provider-snowflake.computePool.ComputePool.property.commentInput"></a>
 
 ```csharp
@@ -918,6 +937,16 @@ public double AutoSuspendSecs { get; }
 ```
 
 - *Type:* double
+
+---
+
+##### `BackupInstanceFamilies`<sup>Required</sup> <a name="BackupInstanceFamilies" id="@cdktn/provider-snowflake.computePool.ComputePool.property.backupInstanceFamilies"></a>
+
+```csharp
+public string[] BackupInstanceFamilies { get; }
+```
+
+- *Type:* string[]
 
 ---
 
@@ -1042,6 +1071,7 @@ new ComputePoolConfig {
     string Name,
     string AutoResume = null,
     double AutoSuspendSecs = null,
+    string[] BackupInstanceFamilies = null,
     string Comment = null,
     string ForApplication = null,
     string Id = null,
@@ -1067,9 +1097,10 @@ new ComputePoolConfig {
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.name">Name</a></code> | <code>string</code> | Specifies the identifier for the compute pool; |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.autoResume">AutoResume</a></code> | <code>string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically resume a compute pool when a service or job is submitted to it. |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.autoSuspendSecs">AutoSuspendSecs</a></code> | <code>double</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Number of seconds of inactivity after which you want Snowflake to automatically suspend the compute pool. |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.backupInstanceFamilies">BackupInstanceFamilies</a></code> | <code>string[]</code> | Specifies an ordered list of instance families to fall back on when the primary `instance_family` is unavailable. |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.comment">Comment</a></code> | <code>string</code> | Specifies a comment for the compute pool. |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.forApplication">ForApplication</a></code> | <code>string</code> | Specifies the Snowflake Native App name. |
-| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#id ComputePool#id}. |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#id ComputePool#id}. |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.initiallySuspended">InitiallySuspended</a></code> | <code>string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether the compute pool is created initially in the suspended state. |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts">ComputePoolTimeouts</a></code> | timeouts block. |
 
@@ -1157,7 +1188,7 @@ Identifies the type of machine you want to provision for the nodes in the comput
 
 Valid values are (case-insensitive): `CPU_X64_XS` | `CPU_X64_S` | `CPU_X64_M` | `CPU_X64_SL` | `CPU_X64_L` | `HIGHMEM_X64_S` | `HIGHMEM_X64_M` | `HIGHMEM_X64_L` | `HIGHMEM_X64_SL` | `GPU_NV_S` | `GPU_NV_M` | `GPU_NV_L` | `GPU_NV_XS` | `GPU_NV_SM` | `GPU_NV_2M` | `GPU_NV_3M` | `GPU_NV_SL` | `GPU_GCP_NV_L4_1_24G` | `GPU_GCP_NV_L4_4_24G` | `GPU_GCP_NV_A100_8_40G` | `GEN_ARM_G1_2` | `GEN_ARM_G1_4` | `GEN_ARM_G1_8` | `GEN_ARM_G1_16` | `GEN_ARM_G1_32` | `GEN_X64_G2_2` | `GEN_X64_G2_4` | `GEN_X64_G2_8` | `GEN_X64_G2_16` | `GEN_X64_G2_32` | `MEM_X64_G2_8` | `MEM_X64_G2_32` | `MEM_X64_G2_64` | `MEM_X64_G2_96` | `MEM_X64_G2_192` | `GPU_L40S_G1_8` | `GPU_L40S_G1_16` | `GPU_L40S_G1_48` | `GPU_L40S_G1_192` | `GPU_R6K_G1_8` | `GPU_R6K_G1_16` | `GPU_R6K_G1_32` | `GPU_R6K_G1_48` | `GPU_R6K_G1_96` | `GPU_R6K_G1_192` | `GPU_A100_G1_12` | `GPU_A100_G1_48`. Not all instance families are supported in all regions. Run `SHOW COMPUTE POOL INSTANCE FAMILIES` to see the list of supported instance families in your region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#instance_family ComputePool#instance_family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#instance_family ComputePool#instance_family}
 
 ---
 
@@ -1171,7 +1202,7 @@ public double MaxNodes { get; set; }
 
 Specifies the maximum number of nodes for the compute pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#max_nodes ComputePool#max_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#max_nodes ComputePool#max_nodes}
 
 ---
 
@@ -1185,7 +1216,7 @@ public double MinNodes { get; set; }
 
 Specifies the minimum number of nodes for the compute pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#min_nodes ComputePool#min_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#min_nodes ComputePool#min_nodes}
 
 ---
 
@@ -1201,7 +1232,7 @@ Specifies the identifier for the compute pool;
 
 must be unique for the account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#name ComputePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#name ComputePool#name}
 
 ---
 
@@ -1217,7 +1248,7 @@ public string AutoResume { get; set; }
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#auto_resume ComputePool#auto_resume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#auto_resume ComputePool#auto_resume}
 
 ---
 
@@ -1231,7 +1262,23 @@ public double AutoSuspendSecs { get; set; }
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Number of seconds of inactivity after which you want Snowflake to automatically suspend the compute pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#auto_suspend_secs ComputePool#auto_suspend_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#auto_suspend_secs ComputePool#auto_suspend_secs}
+
+---
+
+##### `BackupInstanceFamilies`<sup>Optional</sup> <a name="BackupInstanceFamilies" id="@cdktn/provider-snowflake.computePool.ComputePoolConfig.property.backupInstanceFamilies"></a>
+
+```csharp
+public string[] BackupInstanceFamilies { get; set; }
+```
+
+- *Type:* string[]
+
+Specifies an ordered list of instance families to fall back on when the primary `instance_family` is unavailable.
+
+The order determines the fallback priority. Valid values are (case-insensitive): `CPU_X64_XS` | `CPU_X64_S` | `CPU_X64_M` | `CPU_X64_SL` | `CPU_X64_L` | `HIGHMEM_X64_S` | `HIGHMEM_X64_M` | `HIGHMEM_X64_L` | `HIGHMEM_X64_SL` | `GPU_NV_S` | `GPU_NV_M` | `GPU_NV_L` | `GPU_NV_XS` | `GPU_NV_SM` | `GPU_NV_2M` | `GPU_NV_3M` | `GPU_NV_SL` | `GPU_GCP_NV_L4_1_24G` | `GPU_GCP_NV_L4_4_24G` | `GPU_GCP_NV_A100_8_40G` | `GEN_ARM_G1_2` | `GEN_ARM_G1_4` | `GEN_ARM_G1_8` | `GEN_ARM_G1_16` | `GEN_ARM_G1_32` | `GEN_X64_G2_2` | `GEN_X64_G2_4` | `GEN_X64_G2_8` | `GEN_X64_G2_16` | `GEN_X64_G2_32` | `MEM_X64_G2_8` | `MEM_X64_G2_32` | `MEM_X64_G2_64` | `MEM_X64_G2_96` | `MEM_X64_G2_192` | `GPU_L40S_G1_8` | `GPU_L40S_G1_16` | `GPU_L40S_G1_48` | `GPU_L40S_G1_192` | `GPU_R6K_G1_8` | `GPU_R6K_G1_16` | `GPU_R6K_G1_32` | `GPU_R6K_G1_48` | `GPU_R6K_G1_96` | `GPU_R6K_G1_192` | `GPU_A100_G1_12` | `GPU_A100_G1_48`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#backup_instance_families ComputePool#backup_instance_families}
 
 ---
 
@@ -1245,7 +1292,7 @@ public string Comment { get; set; }
 
 Specifies a comment for the compute pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#comment ComputePool#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#comment ComputePool#comment}
 
 ---
 
@@ -1259,7 +1306,7 @@ public string ForApplication { get; set; }
 
 Specifies the Snowflake Native App name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#for_application ComputePool#for_application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#for_application ComputePool#for_application}
 
 ---
 
@@ -1271,7 +1318,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#id ComputePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#id ComputePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1290,7 +1337,7 @@ public string InitiallySuspended { get; set; }
 
 This field is used only when creating a compute pool. Changes on this field are ignored after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#initially_suspended ComputePool#initially_suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#initially_suspended ComputePool#initially_suspended}
 
 ---
 
@@ -1304,7 +1351,7 @@ public ComputePoolTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#timeouts ComputePool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#timeouts ComputePool#timeouts}
 
 ---
 
@@ -1353,10 +1400,10 @@ new ComputePoolTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#create ComputePool#create}. |
-| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#delete ComputePool#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#read ComputePool#read}. |
-| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#update ComputePool#update}. |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#create ComputePool#create}. |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#delete ComputePool#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#read ComputePool#read}. |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#update ComputePool#update}. |
 
 ---
 
@@ -1368,7 +1415,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#create ComputePool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#create ComputePool#create}.
 
 ---
 
@@ -1380,7 +1427,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#delete ComputePool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#delete ComputePool#delete}.
 
 ---
 
@@ -1392,7 +1439,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#read ComputePool#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#read ComputePool#read}.
 
 ---
 
@@ -1404,7 +1451,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/compute_pool#update ComputePool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/compute_pool#update ComputePool#update}.
 
 ---
 
@@ -1791,6 +1838,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference.property.application">Application</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference.property.autoResume">AutoResume</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference.property.autoSuspendSecs">AutoSuspendSecs</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference.property.backupInstanceFamilies">BackupInstanceFamilies</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference.property.createdOn">CreatedOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference.property.errorCode">ErrorCode</a></code> | <code>string</code> | *No description.* |
@@ -1873,6 +1921,16 @@ public double AutoSuspendSecs { get; }
 ```
 
 - *Type:* double
+
+---
+
+##### `BackupInstanceFamilies`<sup>Required</sup> <a name="BackupInstanceFamilies" id="@cdktn/provider-snowflake.computePool.ComputePoolDescribeOutputOutputReference.property.backupInstanceFamilies"></a>
+
+```csharp
+public string[] BackupInstanceFamilies { get; }
+```
+
+- *Type:* string[]
 
 ---
 
@@ -2438,6 +2496,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolShowOutputOutputReference.property.application">Application</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolShowOutputOutputReference.property.autoResume">AutoResume</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolShowOutputOutputReference.property.autoSuspendSecs">AutoSuspendSecs</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolShowOutputOutputReference.property.backupInstanceFamilies">BackupInstanceFamilies</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolShowOutputOutputReference.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolShowOutputOutputReference.property.createdOn">CreatedOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.computePool.ComputePoolShowOutputOutputReference.property.idleNodes">IdleNodes</a></code> | <code>double</code> | *No description.* |
@@ -2518,6 +2577,16 @@ public double AutoSuspendSecs { get; }
 ```
 
 - *Type:* double
+
+---
+
+##### `BackupInstanceFamilies`<sup>Required</sup> <a name="BackupInstanceFamilies" id="@cdktn/provider-snowflake.computePool.ComputePoolShowOutputOutputReference.property.backupInstanceFamilies"></a>
+
+```csharp
+public string[] BackupInstanceFamilies { get; }
+```
+
+- *Type:* string[]
 
 ---
 

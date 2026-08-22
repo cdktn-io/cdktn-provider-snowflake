@@ -4,7 +4,7 @@
 
 ### ApiIntegrationExternalMcpDynamicClient <a name="ApiIntegrationExternalMcpDynamicClient" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClient"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client snowflake_api_integration_external_mcp_dynamic_client}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client snowflake_api_integration_external_mcp_dynamic_client}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClient.Initializer"></a>
 
@@ -47,7 +47,7 @@ ApiIntegrationExternalMcpDynamicClient.Builder.create(Construct scope, java.lang
 | <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClient.Initializer.parameter.oauthResourceUrl">oauthResourceUrl</a></code> | <code>java.lang.String</code> | The URL of the OAuth2 protected resource server. |
 | <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClient.Initializer.parameter.apiBlockedPrefixes">apiBlockedPrefixes</a></code> | <code>java.util.List<java.lang.String></code> | Lists the endpoints and resources in the HTTPS proxy service that are not allowed to be called from Snowflake. |
 | <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClient.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the integration. |
-| <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClient.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#id ApiIntegrationExternalMcpDynamicClient#id}. |
+| <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClient.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#id ApiIntegrationExternalMcpDynamicClient#id}. |
 | <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClient.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientTimeouts">ApiIntegrationExternalMcpDynamicClientTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Explicitly limits external functions that use the integration to reference one or more HTTPS proxy service and remote service endpoints and resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#api_allowed_prefixes ApiIntegrationExternalMcpDynamicClient#api_allowed_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#api_allowed_prefixes ApiIntegrationExternalMcpDynamicClient#api_allowed_prefixes}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies whether this API integration is enabled or disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#enabled ApiIntegrationExternalMcpDynamicClient#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#enabled ApiIntegrationExternalMcpDynamicClient#enabled}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the identifier (i.e. name) for the integration. This value must be unique in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#name ApiIntegrationExternalMcpDynamicClient#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#name ApiIntegrationExternalMcpDynamicClient#name}
 
 ---
 
@@ -150,7 +150,7 @@ The URL of the OAuth2 protected resource server.
 
 This URL is used by Snowflake to discover OAuth2 provider endpoints via RFC 8414 server metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#oauth_resource_url ApiIntegrationExternalMcpDynamicClient#oauth_resource_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#oauth_resource_url ApiIntegrationExternalMcpDynamicClient#oauth_resource_url}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Lists the endpoints and resources in the HTTPS proxy service that are not allowed to be called from Snowflake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#api_blocked_prefixes ApiIntegrationExternalMcpDynamicClient#api_blocked_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#api_blocked_prefixes ApiIntegrationExternalMcpDynamicClient#api_blocked_prefixes}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#comment ApiIntegrationExternalMcpDynamicClient#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#comment ApiIntegrationExternalMcpDynamicClient#comment}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#id ApiIntegrationExternalMcpDynamicClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#id ApiIntegrationExternalMcpDynamicClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -191,7 +191,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#timeouts ApiIntegrationExternalMcpDynamicClient#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#timeouts ApiIntegrationExternalMcpDynamicClient#timeouts}
 
 ---
 
@@ -681,7 +681,7 @@ The construct id used in the generated config for the ApiIntegrationExternalMcpD
 
 The id of the existing ApiIntegrationExternalMcpDynamicClient that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1128,7 +1128,7 @@ ApiIntegrationExternalMcpDynamicClientConfig.builder()
 | <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientConfig.property.oauthResourceUrl">oauthResourceUrl</a></code> | <code>java.lang.String</code> | The URL of the OAuth2 protected resource server. |
 | <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientConfig.property.apiBlockedPrefixes">apiBlockedPrefixes</a></code> | <code>java.util.List<java.lang.String></code> | Lists the endpoints and resources in the HTTPS proxy service that are not allowed to be called from Snowflake. |
 | <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the integration. |
-| <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#id ApiIntegrationExternalMcpDynamicClient#id}. |
+| <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#id ApiIntegrationExternalMcpDynamicClient#id}. |
 | <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientTimeouts">ApiIntegrationExternalMcpDynamicClientTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1213,7 +1213,7 @@ public java.util.List<java.lang.String> getApiAllowedPrefixes();
 
 Explicitly limits external functions that use the integration to reference one or more HTTPS proxy service and remote service endpoints and resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#api_allowed_prefixes ApiIntegrationExternalMcpDynamicClient#api_allowed_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#api_allowed_prefixes ApiIntegrationExternalMcpDynamicClient#api_allowed_prefixes}
 
 ---
 
@@ -1227,7 +1227,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Specifies whether this API integration is enabled or disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#enabled ApiIntegrationExternalMcpDynamicClient#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#enabled ApiIntegrationExternalMcpDynamicClient#enabled}
 
 ---
 
@@ -1241,7 +1241,7 @@ public java.lang.String getName();
 
 Specifies the identifier (i.e. name) for the integration. This value must be unique in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#name ApiIntegrationExternalMcpDynamicClient#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#name ApiIntegrationExternalMcpDynamicClient#name}
 
 ---
 
@@ -1257,7 +1257,7 @@ The URL of the OAuth2 protected resource server.
 
 This URL is used by Snowflake to discover OAuth2 provider endpoints via RFC 8414 server metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#oauth_resource_url ApiIntegrationExternalMcpDynamicClient#oauth_resource_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#oauth_resource_url ApiIntegrationExternalMcpDynamicClient#oauth_resource_url}
 
 ---
 
@@ -1271,7 +1271,7 @@ public java.util.List<java.lang.String> getApiBlockedPrefixes();
 
 Lists the endpoints and resources in the HTTPS proxy service that are not allowed to be called from Snowflake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#api_blocked_prefixes ApiIntegrationExternalMcpDynamicClient#api_blocked_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#api_blocked_prefixes ApiIntegrationExternalMcpDynamicClient#api_blocked_prefixes}
 
 ---
 
@@ -1285,7 +1285,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#comment ApiIntegrationExternalMcpDynamicClient#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#comment ApiIntegrationExternalMcpDynamicClient#comment}
 
 ---
 
@@ -1297,7 +1297,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#id ApiIntegrationExternalMcpDynamicClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#id ApiIntegrationExternalMcpDynamicClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1314,7 +1314,7 @@ public ApiIntegrationExternalMcpDynamicClientTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#timeouts ApiIntegrationExternalMcpDynamicClient#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#timeouts ApiIntegrationExternalMcpDynamicClient#timeouts}
 
 ---
 
@@ -1361,10 +1361,10 @@ ApiIntegrationExternalMcpDynamicClientTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#create ApiIntegrationExternalMcpDynamicClient#create}. |
-| <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#delete ApiIntegrationExternalMcpDynamicClient#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#read ApiIntegrationExternalMcpDynamicClient#read}. |
-| <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#update ApiIntegrationExternalMcpDynamicClient#update}. |
+| <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#create ApiIntegrationExternalMcpDynamicClient#create}. |
+| <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#delete ApiIntegrationExternalMcpDynamicClient#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#read ApiIntegrationExternalMcpDynamicClient#read}. |
+| <code><a href="#@cdktn/provider-snowflake.apiIntegrationExternalMcpDynamicClient.ApiIntegrationExternalMcpDynamicClientTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#update ApiIntegrationExternalMcpDynamicClient#update}. |
 
 ---
 
@@ -1376,7 +1376,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#create ApiIntegrationExternalMcpDynamicClient#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#create ApiIntegrationExternalMcpDynamicClient#create}.
 
 ---
 
@@ -1388,7 +1388,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#delete ApiIntegrationExternalMcpDynamicClient#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#delete ApiIntegrationExternalMcpDynamicClient#delete}.
 
 ---
 
@@ -1400,7 +1400,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#read ApiIntegrationExternalMcpDynamicClient#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#read ApiIntegrationExternalMcpDynamicClient#read}.
 
 ---
 
@@ -1412,7 +1412,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/api_integration_external_mcp_dynamic_client#update ApiIntegrationExternalMcpDynamicClient#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/api_integration_external_mcp_dynamic_client#update ApiIntegrationExternalMcpDynamicClient#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### StageExternalS3 <a name="StageExternalS3" id="@cdktn/provider-snowflake.stageExternalS3.StageExternalS3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3 snowflake_stage_external_s3}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3 snowflake_stage_external_s3}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.stageExternalS3.StageExternalS3.Initializer"></a>
 
@@ -59,7 +59,7 @@ stageExternalS3.StageExternalS3(
 | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3.Initializer.parameter.directory">directory</a></code> | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Directory">StageExternalS3Directory</a></code> | directory block. |
 | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3.Initializer.parameter.encryption">encryption</a></code> | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Encryption">StageExternalS3Encryption</a></code> | encryption block. |
 | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3.Initializer.parameter.fileFormat">file_format</a></code> | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3FileFormat">StageExternalS3FileFormat</a></code> | file_format block. |
-| <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#id StageExternalS3#id}. |
+| <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#id StageExternalS3#id}. |
 | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3.Initializer.parameter.storageIntegration">storage_integration</a></code> | <code>str</code> | Specifies the name of the storage integration used to delegate authentication responsibility to a Snowflake identity. |
 | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Timeouts">StageExternalS3Timeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3.Initializer.parameter.usePrivatelinkEndpoint">use_privatelink_endpoint</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to use a private link endpoint for S3 storage. |
@@ -134,7 +134,7 @@ The database in which to create the stage.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#database StageExternalS3#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#database StageExternalS3#database}
 
 ---
 
@@ -146,7 +146,7 @@ Specifies the identifier for the stage;
 
 must be unique for the database and schema in which the stage is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#name StageExternalS3#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#name StageExternalS3#name}
 
 ---
 
@@ -158,7 +158,7 @@ The schema in which to create the stage.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#schema StageExternalS3#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#schema StageExternalS3#schema}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the URL for the S3 bucket (e.g., 's3://bucket-name/path/').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#url StageExternalS3#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#url StageExternalS3#url}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the ARN for an AWS S3 Access Point to use for data transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#aws_access_point_arn StageExternalS3#aws_access_point_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#aws_access_point_arn StageExternalS3#aws_access_point_arn}
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#comment StageExternalS3#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#comment StageExternalS3#comment}
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#credentials StageExternalS3#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#credentials StageExternalS3#credentials}
 
 ---
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#directory StageExternalS3#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#directory StageExternalS3#directory}
 
 ---
 
@@ -218,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#encryption StageExternalS3#encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#encryption StageExternalS3#encryption}
 
 ---
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 file_format block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#file_format StageExternalS3#file_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#file_format StageExternalS3#file_format}
 
 ---
 
@@ -236,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#id StageExternalS3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#id StageExternalS3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -251,7 +251,7 @@ Specifies the name of the storage integration used to delegate authentication re
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#storage_integration StageExternalS3#storage_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#storage_integration StageExternalS3#storage_integration}
 
 ---
 
@@ -261,7 +261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#timeouts StageExternalS3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#timeouts StageExternalS3#timeouts}
 
 ---
 
@@ -271,7 +271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to use a private link endpoint for S3 storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#use_privatelink_endpoint StageExternalS3#use_privatelink_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#use_privatelink_endpoint StageExternalS3#use_privatelink_endpoint}
 
 ---
 
@@ -686,7 +686,7 @@ def put_credentials(
 
 Specifies the AWS access key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#aws_key_id StageExternalS3#aws_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#aws_key_id StageExternalS3#aws_key_id}
 
 ---
 
@@ -696,7 +696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the AWS IAM role ARN to use for accessing the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#aws_role StageExternalS3#aws_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#aws_role StageExternalS3#aws_role}
 
 ---
 
@@ -706,7 +706,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the AWS secret access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#aws_secret_key StageExternalS3#aws_secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#aws_secret_key StageExternalS3#aws_secret_key}
 
 ---
 
@@ -716,7 +716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the AWS session token for temporary credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#aws_token StageExternalS3#aws_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#aws_token StageExternalS3#aws_token}
 
 ---
 
@@ -737,7 +737,7 @@ def put_directory(
 
 Specifies whether to enable a directory table on the external stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#enable StageExternalS3#enable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#enable StageExternalS3#enable}
 
 ---
 
@@ -747,7 +747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether Snowflake should enable triggering automatic refreshes of the directory table metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#auto_refresh StageExternalS3#auto_refresh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#auto_refresh StageExternalS3#auto_refresh}
 
 ---
 
@@ -759,7 +759,7 @@ Specifies the AWS SNS topic ARN used for directory table auto-refresh notificati
 
 Changing this field causes resource recreation (ForceNew). External change detection for this field is not yet supported and will be addressed in a future update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#aws_sns_topic StageExternalS3#aws_sns_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#aws_sns_topic StageExternalS3#aws_sns_topic}
 
 ---
 
@@ -769,7 +769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically refresh the directory table metadata once, immediately after the stage is created.This field is used only when creating the object. Changes on this field are ignored after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#refresh_on_create StageExternalS3#refresh_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#refresh_on_create StageExternalS3#refresh_on_create}
 
 ---
 
@@ -790,7 +790,7 @@ def put_encryption(
 
 aws_cse block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#aws_cse StageExternalS3#aws_cse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#aws_cse StageExternalS3#aws_cse}
 
 ---
 
@@ -800,7 +800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 aws_sse_kms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#aws_sse_kms StageExternalS3#aws_sse_kms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#aws_sse_kms StageExternalS3#aws_sse_kms}
 
 ---
 
@@ -810,7 +810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 aws_sse_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#aws_sse_s3 StageExternalS3#aws_sse_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#aws_sse_s3 StageExternalS3#aws_sse_s3}
 
 ---
 
@@ -820,7 +820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 none block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#none StageExternalS3#none}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#none StageExternalS3#none}
 
 ---
 
@@ -844,7 +844,7 @@ def put_file_format(
 
 avro block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#avro StageExternalS3#avro}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#avro StageExternalS3#avro}
 
 ---
 
@@ -854,7 +854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 csv block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#csv StageExternalS3#csv}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#csv StageExternalS3#csv}
 
 ---
 
@@ -864,7 +864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Fully qualified name of the file format (e.g., 'database.schema.format_name').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#format_name StageExternalS3#format_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#format_name StageExternalS3#format_name}
 
 ---
 
@@ -874,7 +874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 json block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#json StageExternalS3#json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#json StageExternalS3#json}
 
 ---
 
@@ -884,7 +884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 orc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#orc StageExternalS3#orc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#orc StageExternalS3#orc}
 
 ---
 
@@ -894,7 +894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 parquet block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#parquet StageExternalS3#parquet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#parquet StageExternalS3#parquet}
 
 ---
 
@@ -904,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 xml block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#xml StageExternalS3#xml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#xml StageExternalS3#xml}
 
 ---
 
@@ -923,7 +923,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#create StageExternalS3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#create StageExternalS3#create}.
 
 ---
 
@@ -931,7 +931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#delete StageExternalS3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#delete StageExternalS3#delete}.
 
 ---
 
@@ -939,7 +939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#read StageExternalS3#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#read StageExternalS3#read}.
 
 ---
 
@@ -947,7 +947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#update StageExternalS3#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#update StageExternalS3#update}.
 
 ---
 
@@ -1125,7 +1125,7 @@ The construct id used in the generated config for the StageExternalS3 to import.
 
 The id of the existing StageExternalS3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1736,7 +1736,7 @@ stageExternalS3.StageExternalS3Config(
 | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Config.property.directory">directory</a></code> | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Directory">StageExternalS3Directory</a></code> | directory block. |
 | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Config.property.encryption">encryption</a></code> | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Encryption">StageExternalS3Encryption</a></code> | encryption block. |
 | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Config.property.fileFormat">file_format</a></code> | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3FileFormat">StageExternalS3FileFormat</a></code> | file_format block. |
-| <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#id StageExternalS3#id}. |
+| <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#id StageExternalS3#id}. |
 | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Config.property.storageIntegration">storage_integration</a></code> | <code>str</code> | Specifies the name of the storage integration used to delegate authentication responsibility to a Snowflake identity. |
 | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Timeouts">StageExternalS3Timeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Config.property.usePrivatelinkEndpoint">use_privatelink_endpoint</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to use a private link endpoint for S3 storage. |
@@ -1825,7 +1825,7 @@ The database in which to create the stage.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#database StageExternalS3#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#database StageExternalS3#database}
 
 ---
 
@@ -1841,7 +1841,7 @@ Specifies the identifier for the stage;
 
 must be unique for the database and schema in which the stage is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#name StageExternalS3#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#name StageExternalS3#name}
 
 ---
 
@@ -1857,7 +1857,7 @@ The schema in which to create the stage.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#schema StageExternalS3#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#schema StageExternalS3#schema}
 
 ---
 
@@ -1871,7 +1871,7 @@ url: str
 
 Specifies the URL for the S3 bucket (e.g., 's3://bucket-name/path/').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#url StageExternalS3#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#url StageExternalS3#url}
 
 ---
 
@@ -1885,7 +1885,7 @@ aws_access_point_arn: str
 
 Specifies the ARN for an AWS S3 Access Point to use for data transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#aws_access_point_arn StageExternalS3#aws_access_point_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#aws_access_point_arn StageExternalS3#aws_access_point_arn}
 
 ---
 
@@ -1899,7 +1899,7 @@ comment: str
 
 Specifies a comment for the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#comment StageExternalS3#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#comment StageExternalS3#comment}
 
 ---
 
@@ -1913,7 +1913,7 @@ credentials: StageExternalS3Credentials
 
 credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#credentials StageExternalS3#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#credentials StageExternalS3#credentials}
 
 ---
 
@@ -1927,7 +1927,7 @@ directory: StageExternalS3Directory
 
 directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#directory StageExternalS3#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#directory StageExternalS3#directory}
 
 ---
 
@@ -1941,7 +1941,7 @@ encryption: StageExternalS3Encryption
 
 encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#encryption StageExternalS3#encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#encryption StageExternalS3#encryption}
 
 ---
 
@@ -1955,7 +1955,7 @@ file_format: StageExternalS3FileFormat
 
 file_format block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#file_format StageExternalS3#file_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#file_format StageExternalS3#file_format}
 
 ---
 
@@ -1967,7 +1967,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#id StageExternalS3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#id StageExternalS3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1986,7 +1986,7 @@ Specifies the name of the storage integration used to delegate authentication re
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#storage_integration StageExternalS3#storage_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#storage_integration StageExternalS3#storage_integration}
 
 ---
 
@@ -2000,7 +2000,7 @@ timeouts: StageExternalS3Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#timeouts StageExternalS3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#timeouts StageExternalS3#timeouts}
 
 ---
 
@@ -2014,7 +2014,7 @@ use_privatelink_endpoint: str
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to use a private link endpoint for S3 storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#use_privatelink_endpoint StageExternalS3#use_privatelink_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#use_privatelink_endpoint StageExternalS3#use_privatelink_endpoint}
 
 ---
 
@@ -2054,7 +2054,7 @@ aws_key_id: str
 
 Specifies the AWS access key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#aws_key_id StageExternalS3#aws_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#aws_key_id StageExternalS3#aws_key_id}
 
 ---
 
@@ -2068,7 +2068,7 @@ aws_role: str
 
 Specifies the AWS IAM role ARN to use for accessing the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#aws_role StageExternalS3#aws_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#aws_role StageExternalS3#aws_role}
 
 ---
 
@@ -2082,7 +2082,7 @@ aws_secret_key: str
 
 Specifies the AWS secret access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#aws_secret_key StageExternalS3#aws_secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#aws_secret_key StageExternalS3#aws_secret_key}
 
 ---
 
@@ -2096,7 +2096,7 @@ aws_token: str
 
 Specifies the AWS session token for temporary credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#aws_token StageExternalS3#aws_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#aws_token StageExternalS3#aws_token}
 
 ---
 
@@ -2257,7 +2257,7 @@ enable: bool | IResolvable
 
 Specifies whether to enable a directory table on the external stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#enable StageExternalS3#enable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#enable StageExternalS3#enable}
 
 ---
 
@@ -2271,7 +2271,7 @@ auto_refresh: str
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether Snowflake should enable triggering automatic refreshes of the directory table metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#auto_refresh StageExternalS3#auto_refresh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#auto_refresh StageExternalS3#auto_refresh}
 
 ---
 
@@ -2287,7 +2287,7 @@ Specifies the AWS SNS topic ARN used for directory table auto-refresh notificati
 
 Changing this field causes resource recreation (ForceNew). External change detection for this field is not yet supported and will be addressed in a future update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#aws_sns_topic StageExternalS3#aws_sns_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#aws_sns_topic StageExternalS3#aws_sns_topic}
 
 ---
 
@@ -2301,7 +2301,7 @@ refresh_on_create: str
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically refresh the directory table metadata once, immediately after the stage is created.This field is used only when creating the object. Changes on this field are ignored after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#refresh_on_create StageExternalS3#refresh_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#refresh_on_create StageExternalS3#refresh_on_create}
 
 ---
 
@@ -2341,7 +2341,7 @@ aws_cse: StageExternalS3EncryptionAwsCse
 
 aws_cse block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#aws_cse StageExternalS3#aws_cse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#aws_cse StageExternalS3#aws_cse}
 
 ---
 
@@ -2355,7 +2355,7 @@ aws_sse_kms: StageExternalS3EncryptionAwsSseKms
 
 aws_sse_kms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#aws_sse_kms StageExternalS3#aws_sse_kms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#aws_sse_kms StageExternalS3#aws_sse_kms}
 
 ---
 
@@ -2369,7 +2369,7 @@ aws_sse_s3: StageExternalS3EncryptionAwsSseS3
 
 aws_sse_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#aws_sse_s3 StageExternalS3#aws_sse_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#aws_sse_s3 StageExternalS3#aws_sse_s3}
 
 ---
 
@@ -2383,7 +2383,7 @@ none: StageExternalS3EncryptionNone
 
 none block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#none StageExternalS3#none}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#none StageExternalS3#none}
 
 ---
 
@@ -2417,7 +2417,7 @@ master_key: str
 
 Specifies the 128-bit or 256-bit client-side master key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#master_key StageExternalS3#master_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#master_key StageExternalS3#master_key}
 
 ---
 
@@ -2451,7 +2451,7 @@ kms_key_id: str
 
 Specifies the KMS-managed key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#kms_key_id StageExternalS3#kms_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#kms_key_id StageExternalS3#kms_key_id}
 
 ---
 
@@ -2519,7 +2519,7 @@ avro: StageExternalS3FileFormatAvro
 
 avro block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#avro StageExternalS3#avro}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#avro StageExternalS3#avro}
 
 ---
 
@@ -2533,7 +2533,7 @@ csv: StageExternalS3FileFormatCsv
 
 csv block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#csv StageExternalS3#csv}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#csv StageExternalS3#csv}
 
 ---
 
@@ -2547,7 +2547,7 @@ format_name: str
 
 Fully qualified name of the file format (e.g., 'database.schema.format_name').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#format_name StageExternalS3#format_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#format_name StageExternalS3#format_name}
 
 ---
 
@@ -2561,7 +2561,7 @@ json: StageExternalS3FileFormatJson
 
 json block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#json StageExternalS3#json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#json StageExternalS3#json}
 
 ---
 
@@ -2575,7 +2575,7 @@ orc: StageExternalS3FileFormatOrc
 
 orc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#orc StageExternalS3#orc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#orc StageExternalS3#orc}
 
 ---
 
@@ -2589,7 +2589,7 @@ parquet: StageExternalS3FileFormatParquet
 
 parquet block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#parquet StageExternalS3#parquet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#parquet StageExternalS3#parquet}
 
 ---
 
@@ -2603,7 +2603,7 @@ xml: StageExternalS3FileFormatXml
 
 xml block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#xml StageExternalS3#xml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#xml StageExternalS3#xml}
 
 ---
 
@@ -2643,7 +2643,7 @@ compression: str
 
 Specifies the compression format. Valid values: `AUTO` | `GZIP` | `BROTLI` | `ZSTD` | `DEFLATE` | `RAW_DEFLATE` | `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
 
 ---
 
@@ -2657,7 +2657,7 @@ null_if: typing.List[str]
 
 String used to convert to and from SQL NULL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
 
 ---
 
@@ -2673,7 +2673,7 @@ replace_invalid_characters: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
 
 ---
 
@@ -2689,7 +2689,7 @@ trim_space: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
 
 ---
 
@@ -2765,7 +2765,7 @@ binary_format: str
 
 Defines the encoding format for binary input or output. Valid values: `HEX` | `BASE64` | `UTF8`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#binary_format StageExternalS3#binary_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#binary_format StageExternalS3#binary_format}
 
 ---
 
@@ -2781,7 +2781,7 @@ Specifies the compression format.
 
 Valid values: `AUTO` | `GZIP` | `BZ2` | `BROTLI` | `ZSTD` | `DEFLATE` | `RAW_DEFLATE` | `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
 
 ---
 
@@ -2795,7 +2795,7 @@ date_format: str
 
 Defines the format of date values in the data files. Use `AUTO` to have Snowflake auto-detect the format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#date_format StageExternalS3#date_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#date_format StageExternalS3#date_format}
 
 ---
 
@@ -2811,7 +2811,7 @@ empty_field_as_null: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#empty_field_as_null StageExternalS3#empty_field_as_null}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#empty_field_as_null StageExternalS3#empty_field_as_null}
 
 ---
 
@@ -2827,7 +2827,7 @@ Specifies the character set of the source data when loading data into a table.
 
 Valid values: `BIG5` | `EUCJP` | `EUCKR` | `GB18030` | `IBM420` | `IBM424` | `ISO2022CN` | `ISO2022JP` | `ISO2022KR` | `ISO88591` | `ISO88592` | `ISO88595` | `ISO88596` | `ISO88597` | `ISO88598` | `ISO88599` | `ISO885915` | `KOI8R` | `SHIFTJIS` | `UTF8` | `UTF16` | `UTF16BE` | `UTF16LE` | `UTF32` | `UTF32BE` | `UTF32LE` | `WINDOWS1250` | `WINDOWS1251` | `WINDOWS1252` | `WINDOWS1253` | `WINDOWS1254` | `WINDOWS1255` | `WINDOWS1256`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#encoding StageExternalS3#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#encoding StageExternalS3#encoding}
 
 ---
 
@@ -2843,7 +2843,7 @@ error_on_column_count_mismatch: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#error_on_column_count_mismatch StageExternalS3#error_on_column_count_mismatch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#error_on_column_count_mismatch StageExternalS3#error_on_column_count_mismatch}
 
 ---
 
@@ -2859,7 +2859,7 @@ Single character string used as the escape character for field values.
 
 Use `NONE` to specify no escape character. NOTE: This value may be not imported properly from Snowflake. Snowflake returns escaped values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#escape StageExternalS3#escape}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#escape StageExternalS3#escape}
 
 ---
 
@@ -2875,7 +2875,7 @@ Single character string used as the escape character for unenclosed field values
 
 Use `NONE` to specify no escape character. NOTE: This value may be not imported properly from Snowflake. Snowflake returns escaped values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#escape_unenclosed_field StageExternalS3#escape_unenclosed_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#escape_unenclosed_field StageExternalS3#escape_unenclosed_field}
 
 ---
 
@@ -2891,7 +2891,7 @@ One or more singlebyte or multibyte characters that separate fields in an input 
 
 Use `NONE` to specify no delimiter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#field_delimiter StageExternalS3#field_delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#field_delimiter StageExternalS3#field_delimiter}
 
 ---
 
@@ -2905,7 +2905,7 @@ field_optionally_enclosed_by: str
 
 Character used to enclose strings. Use `NONE` to specify no enclosure character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#field_optionally_enclosed_by StageExternalS3#field_optionally_enclosed_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#field_optionally_enclosed_by StageExternalS3#field_optionally_enclosed_by}
 
 ---
 
@@ -2919,7 +2919,7 @@ file_extension: str
 
 Specifies the extension for files unloaded to a stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#file_extension StageExternalS3#file_extension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#file_extension StageExternalS3#file_extension}
 
 ---
 
@@ -2935,7 +2935,7 @@ multi_line: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#multi_line StageExternalS3#multi_line}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#multi_line StageExternalS3#multi_line}
 
 ---
 
@@ -2949,7 +2949,7 @@ null_if: typing.List[str]
 
 String used to convert to and from SQL NULL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
 
 ---
 
@@ -2965,7 +2965,7 @@ parse_header: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#parse_header StageExternalS3#parse_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#parse_header StageExternalS3#parse_header}
 
 ---
 
@@ -2981,7 +2981,7 @@ One or more singlebyte or multibyte characters that separate records in an input
 
 Use `NONE` to specify no delimiter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#record_delimiter StageExternalS3#record_delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#record_delimiter StageExternalS3#record_delimiter}
 
 ---
 
@@ -2997,7 +2997,7 @@ replace_invalid_characters: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
 
 ---
 
@@ -3013,7 +3013,7 @@ skip_blank_lines: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#skip_blank_lines StageExternalS3#skip_blank_lines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#skip_blank_lines StageExternalS3#skip_blank_lines}
 
 ---
 
@@ -3029,7 +3029,7 @@ skip_byte_order_mark: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#skip_byte_order_mark StageExternalS3#skip_byte_order_mark}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#skip_byte_order_mark StageExternalS3#skip_byte_order_mark}
 
 ---
 
@@ -3043,7 +3043,7 @@ skip_header: typing.Union[int, float]
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Number of lines at the start of the file to skip.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#skip_header StageExternalS3#skip_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#skip_header StageExternalS3#skip_header}
 
 ---
 
@@ -3057,7 +3057,7 @@ time_format: str
 
 Defines the format of time values in the data files. Use `AUTO` to have Snowflake auto-detect the format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#time_format StageExternalS3#time_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#time_format StageExternalS3#time_format}
 
 ---
 
@@ -3071,7 +3071,7 @@ timestamp_format: str
 
 Defines the format of timestamp values in the data files. Use `AUTO` to have Snowflake auto-detect the format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#timestamp_format StageExternalS3#timestamp_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#timestamp_format StageExternalS3#timestamp_format}
 
 ---
 
@@ -3087,7 +3087,7 @@ trim_space: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
 
 ---
 
@@ -3153,7 +3153,7 @@ allow_duplicate: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#allow_duplicate StageExternalS3#allow_duplicate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#allow_duplicate StageExternalS3#allow_duplicate}
 
 ---
 
@@ -3167,7 +3167,7 @@ binary_format: str
 
 Defines the encoding format for binary input or output. Valid values: `HEX` | `BASE64` | `UTF8`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#binary_format StageExternalS3#binary_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#binary_format StageExternalS3#binary_format}
 
 ---
 
@@ -3183,7 +3183,7 @@ Specifies the compression format.
 
 Valid values: `AUTO` | `GZIP` | `BZ2` | `BROTLI` | `ZSTD` | `DEFLATE` | `RAW_DEFLATE` | `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
 
 ---
 
@@ -3197,7 +3197,7 @@ date_format: str
 
 Defines the format of date values in the data files. Use `AUTO` to have Snowflake auto-detect the format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#date_format StageExternalS3#date_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#date_format StageExternalS3#date_format}
 
 ---
 
@@ -3213,7 +3213,7 @@ enable_octal: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#enable_octal StageExternalS3#enable_octal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#enable_octal StageExternalS3#enable_octal}
 
 ---
 
@@ -3227,7 +3227,7 @@ file_extension: str
 
 Specifies the extension for files unloaded to a stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#file_extension StageExternalS3#file_extension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#file_extension StageExternalS3#file_extension}
 
 ---
 
@@ -3243,7 +3243,7 @@ ignore_utf8_errors: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#ignore_utf8_errors StageExternalS3#ignore_utf8_errors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#ignore_utf8_errors StageExternalS3#ignore_utf8_errors}
 
 ---
 
@@ -3259,7 +3259,7 @@ multi_line: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#multi_line StageExternalS3#multi_line}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#multi_line StageExternalS3#multi_line}
 
 ---
 
@@ -3273,7 +3273,7 @@ null_if: typing.List[str]
 
 String used to convert to and from SQL NULL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
 
 ---
 
@@ -3289,7 +3289,7 @@ replace_invalid_characters: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
 
 ---
 
@@ -3305,7 +3305,7 @@ skip_byte_order_mark: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#skip_byte_order_mark StageExternalS3#skip_byte_order_mark}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#skip_byte_order_mark StageExternalS3#skip_byte_order_mark}
 
 ---
 
@@ -3321,7 +3321,7 @@ strip_null_values: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#strip_null_values StageExternalS3#strip_null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#strip_null_values StageExternalS3#strip_null_values}
 
 ---
 
@@ -3337,7 +3337,7 @@ strip_outer_array: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#strip_outer_array StageExternalS3#strip_outer_array}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#strip_outer_array StageExternalS3#strip_outer_array}
 
 ---
 
@@ -3351,7 +3351,7 @@ time_format: str
 
 Defines the format of time values in the data files. Use `AUTO` to have Snowflake auto-detect the format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#time_format StageExternalS3#time_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#time_format StageExternalS3#time_format}
 
 ---
 
@@ -3365,7 +3365,7 @@ timestamp_format: str
 
 Defines the format of timestamp values in the data files. Use `AUTO` to have Snowflake auto-detect the format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#timestamp_format StageExternalS3#timestamp_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#timestamp_format StageExternalS3#timestamp_format}
 
 ---
 
@@ -3381,7 +3381,7 @@ trim_space: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
 
 ---
 
@@ -3419,7 +3419,7 @@ null_if: typing.List[str]
 
 String used to convert to and from SQL NULL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
 
 ---
 
@@ -3435,7 +3435,7 @@ replace_invalid_characters: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
 
 ---
 
@@ -3451,7 +3451,7 @@ trim_space: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
 
 ---
 
@@ -3499,7 +3499,7 @@ binary_as_text: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#binary_as_text StageExternalS3#binary_as_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#binary_as_text StageExternalS3#binary_as_text}
 
 ---
 
@@ -3513,7 +3513,7 @@ compression: str
 
 Specifies the compression format. Valid values: `AUTO` | `LZO` | `SNAPPY` | `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
 
 ---
 
@@ -3527,7 +3527,7 @@ null_if: typing.List[str]
 
 String used to convert to and from SQL NULL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
 
 ---
 
@@ -3543,7 +3543,7 @@ replace_invalid_characters: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
 
 ---
 
@@ -3559,7 +3559,7 @@ trim_space: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
 
 ---
 
@@ -3575,7 +3575,7 @@ use_logical_type: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#use_logical_type StageExternalS3#use_logical_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#use_logical_type StageExternalS3#use_logical_type}
 
 ---
 
@@ -3591,7 +3591,7 @@ use_vectorized_scanner: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#use_vectorized_scanner StageExternalS3#use_vectorized_scanner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#use_vectorized_scanner StageExternalS3#use_vectorized_scanner}
 
 ---
 
@@ -3639,7 +3639,7 @@ Specifies the compression format.
 
 Valid values: `AUTO` | `GZIP` | `BZ2` | `BROTLI` | `ZSTD` | `DEFLATE` | `RAW_DEFLATE` | `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
 
 ---
 
@@ -3655,7 +3655,7 @@ disable_auto_convert: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#disable_auto_convert StageExternalS3#disable_auto_convert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#disable_auto_convert StageExternalS3#disable_auto_convert}
 
 ---
 
@@ -3671,7 +3671,7 @@ ignore_utf8_errors: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#ignore_utf8_errors StageExternalS3#ignore_utf8_errors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#ignore_utf8_errors StageExternalS3#ignore_utf8_errors}
 
 ---
 
@@ -3687,7 +3687,7 @@ preserve_space: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#preserve_space StageExternalS3#preserve_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#preserve_space StageExternalS3#preserve_space}
 
 ---
 
@@ -3703,7 +3703,7 @@ replace_invalid_characters: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
 
 ---
 
@@ -3719,7 +3719,7 @@ skip_byte_order_mark: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#skip_byte_order_mark StageExternalS3#skip_byte_order_mark}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#skip_byte_order_mark StageExternalS3#skip_byte_order_mark}
 
 ---
 
@@ -3735,7 +3735,7 @@ strip_outer_element: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#strip_outer_element StageExternalS3#strip_outer_element}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#strip_outer_element StageExternalS3#strip_outer_element}
 
 ---
 
@@ -3769,10 +3769,10 @@ stageExternalS3.StageExternalS3Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#create StageExternalS3#create}. |
-| <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#delete StageExternalS3#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Timeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#read StageExternalS3#read}. |
-| <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#update StageExternalS3#update}. |
+| <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#create StageExternalS3#create}. |
+| <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#delete StageExternalS3#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Timeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#read StageExternalS3#read}. |
+| <code><a href="#@cdktn/provider-snowflake.stageExternalS3.StageExternalS3Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#update StageExternalS3#update}. |
 
 ---
 
@@ -3784,7 +3784,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#create StageExternalS3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#create StageExternalS3#create}.
 
 ---
 
@@ -3796,7 +3796,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#delete StageExternalS3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#delete StageExternalS3#delete}.
 
 ---
 
@@ -3808,7 +3808,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#read StageExternalS3#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#read StageExternalS3#read}.
 
 ---
 
@@ -3820,7 +3820,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#update StageExternalS3#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#update StageExternalS3#update}.
 
 ---
 
@@ -11892,7 +11892,7 @@ def put_aws_cse(
 
 Specifies the 128-bit or 256-bit client-side master key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#master_key StageExternalS3#master_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#master_key StageExternalS3#master_key}
 
 ---
 
@@ -11910,7 +11910,7 @@ def put_aws_sse_kms(
 
 Specifies the KMS-managed key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#kms_key_id StageExternalS3#kms_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#kms_key_id StageExternalS3#kms_key_id}
 
 ---
 
@@ -14743,7 +14743,7 @@ def put_avro(
 
 Specifies the compression format. Valid values: `AUTO` | `GZIP` | `BROTLI` | `ZSTD` | `DEFLATE` | `RAW_DEFLATE` | `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
 
 ---
 
@@ -14753,7 +14753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 String used to convert to and from SQL NULL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
 
 ---
 
@@ -14765,7 +14765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
 
 ---
 
@@ -14777,7 +14777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
 
 ---
 
@@ -14816,7 +14816,7 @@ def put_csv(
 
 Defines the encoding format for binary input or output. Valid values: `HEX` | `BASE64` | `UTF8`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#binary_format StageExternalS3#binary_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#binary_format StageExternalS3#binary_format}
 
 ---
 
@@ -14828,7 +14828,7 @@ Specifies the compression format.
 
 Valid values: `AUTO` | `GZIP` | `BZ2` | `BROTLI` | `ZSTD` | `DEFLATE` | `RAW_DEFLATE` | `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
 
 ---
 
@@ -14838,7 +14838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Defines the format of date values in the data files. Use `AUTO` to have Snowflake auto-detect the format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#date_format StageExternalS3#date_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#date_format StageExternalS3#date_format}
 
 ---
 
@@ -14850,7 +14850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#empty_field_as_null StageExternalS3#empty_field_as_null}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#empty_field_as_null StageExternalS3#empty_field_as_null}
 
 ---
 
@@ -14862,7 +14862,7 @@ Specifies the character set of the source data when loading data into a table.
 
 Valid values: `BIG5` | `EUCJP` | `EUCKR` | `GB18030` | `IBM420` | `IBM424` | `ISO2022CN` | `ISO2022JP` | `ISO2022KR` | `ISO88591` | `ISO88592` | `ISO88595` | `ISO88596` | `ISO88597` | `ISO88598` | `ISO88599` | `ISO885915` | `KOI8R` | `SHIFTJIS` | `UTF8` | `UTF16` | `UTF16BE` | `UTF16LE` | `UTF32` | `UTF32BE` | `UTF32LE` | `WINDOWS1250` | `WINDOWS1251` | `WINDOWS1252` | `WINDOWS1253` | `WINDOWS1254` | `WINDOWS1255` | `WINDOWS1256`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#encoding StageExternalS3#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#encoding StageExternalS3#encoding}
 
 ---
 
@@ -14874,7 +14874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#error_on_column_count_mismatch StageExternalS3#error_on_column_count_mismatch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#error_on_column_count_mismatch StageExternalS3#error_on_column_count_mismatch}
 
 ---
 
@@ -14886,7 +14886,7 @@ Single character string used as the escape character for field values.
 
 Use `NONE` to specify no escape character. NOTE: This value may be not imported properly from Snowflake. Snowflake returns escaped values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#escape StageExternalS3#escape}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#escape StageExternalS3#escape}
 
 ---
 
@@ -14898,7 +14898,7 @@ Single character string used as the escape character for unenclosed field values
 
 Use `NONE` to specify no escape character. NOTE: This value may be not imported properly from Snowflake. Snowflake returns escaped values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#escape_unenclosed_field StageExternalS3#escape_unenclosed_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#escape_unenclosed_field StageExternalS3#escape_unenclosed_field}
 
 ---
 
@@ -14910,7 +14910,7 @@ One or more singlebyte or multibyte characters that separate fields in an input 
 
 Use `NONE` to specify no delimiter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#field_delimiter StageExternalS3#field_delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#field_delimiter StageExternalS3#field_delimiter}
 
 ---
 
@@ -14920,7 +14920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Character used to enclose strings. Use `NONE` to specify no enclosure character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#field_optionally_enclosed_by StageExternalS3#field_optionally_enclosed_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#field_optionally_enclosed_by StageExternalS3#field_optionally_enclosed_by}
 
 ---
 
@@ -14930,7 +14930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the extension for files unloaded to a stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#file_extension StageExternalS3#file_extension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#file_extension StageExternalS3#file_extension}
 
 ---
 
@@ -14942,7 +14942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#multi_line StageExternalS3#multi_line}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#multi_line StageExternalS3#multi_line}
 
 ---
 
@@ -14952,7 +14952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 String used to convert to and from SQL NULL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
 
 ---
 
@@ -14964,7 +14964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#parse_header StageExternalS3#parse_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#parse_header StageExternalS3#parse_header}
 
 ---
 
@@ -14976,7 +14976,7 @@ One or more singlebyte or multibyte characters that separate records in an input
 
 Use `NONE` to specify no delimiter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#record_delimiter StageExternalS3#record_delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#record_delimiter StageExternalS3#record_delimiter}
 
 ---
 
@@ -14988,7 +14988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
 
 ---
 
@@ -15000,7 +15000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#skip_blank_lines StageExternalS3#skip_blank_lines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#skip_blank_lines StageExternalS3#skip_blank_lines}
 
 ---
 
@@ -15012,7 +15012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#skip_byte_order_mark StageExternalS3#skip_byte_order_mark}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#skip_byte_order_mark StageExternalS3#skip_byte_order_mark}
 
 ---
 
@@ -15022,7 +15022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Number of lines at the start of the file to skip.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#skip_header StageExternalS3#skip_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#skip_header StageExternalS3#skip_header}
 
 ---
 
@@ -15032,7 +15032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Defines the format of time values in the data files. Use `AUTO` to have Snowflake auto-detect the format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#time_format StageExternalS3#time_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#time_format StageExternalS3#time_format}
 
 ---
 
@@ -15042,7 +15042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Defines the format of timestamp values in the data files. Use `AUTO` to have Snowflake auto-detect the format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#timestamp_format StageExternalS3#timestamp_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#timestamp_format StageExternalS3#timestamp_format}
 
 ---
 
@@ -15054,7 +15054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
 
 ---
 
@@ -15089,7 +15089,7 @@ def put_json(
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#allow_duplicate StageExternalS3#allow_duplicate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#allow_duplicate StageExternalS3#allow_duplicate}
 
 ---
 
@@ -15099,7 +15099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Defines the encoding format for binary input or output. Valid values: `HEX` | `BASE64` | `UTF8`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#binary_format StageExternalS3#binary_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#binary_format StageExternalS3#binary_format}
 
 ---
 
@@ -15111,7 +15111,7 @@ Specifies the compression format.
 
 Valid values: `AUTO` | `GZIP` | `BZ2` | `BROTLI` | `ZSTD` | `DEFLATE` | `RAW_DEFLATE` | `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
 
 ---
 
@@ -15121,7 +15121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Defines the format of date values in the data files. Use `AUTO` to have Snowflake auto-detect the format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#date_format StageExternalS3#date_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#date_format StageExternalS3#date_format}
 
 ---
 
@@ -15133,7 +15133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#enable_octal StageExternalS3#enable_octal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#enable_octal StageExternalS3#enable_octal}
 
 ---
 
@@ -15143,7 +15143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the extension for files unloaded to a stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#file_extension StageExternalS3#file_extension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#file_extension StageExternalS3#file_extension}
 
 ---
 
@@ -15155,7 +15155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#ignore_utf8_errors StageExternalS3#ignore_utf8_errors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#ignore_utf8_errors StageExternalS3#ignore_utf8_errors}
 
 ---
 
@@ -15167,7 +15167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#multi_line StageExternalS3#multi_line}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#multi_line StageExternalS3#multi_line}
 
 ---
 
@@ -15177,7 +15177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 String used to convert to and from SQL NULL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
 
 ---
 
@@ -15189,7 +15189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
 
 ---
 
@@ -15201,7 +15201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#skip_byte_order_mark StageExternalS3#skip_byte_order_mark}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#skip_byte_order_mark StageExternalS3#skip_byte_order_mark}
 
 ---
 
@@ -15213,7 +15213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#strip_null_values StageExternalS3#strip_null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#strip_null_values StageExternalS3#strip_null_values}
 
 ---
 
@@ -15225,7 +15225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#strip_outer_array StageExternalS3#strip_outer_array}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#strip_outer_array StageExternalS3#strip_outer_array}
 
 ---
 
@@ -15235,7 +15235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Defines the format of time values in the data files. Use `AUTO` to have Snowflake auto-detect the format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#time_format StageExternalS3#time_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#time_format StageExternalS3#time_format}
 
 ---
 
@@ -15245,7 +15245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Defines the format of timestamp values in the data files. Use `AUTO` to have Snowflake auto-detect the format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#timestamp_format StageExternalS3#timestamp_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#timestamp_format StageExternalS3#timestamp_format}
 
 ---
 
@@ -15257,7 +15257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
 
 ---
 
@@ -15277,7 +15277,7 @@ def put_orc(
 
 String used to convert to and from SQL NULL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
 
 ---
 
@@ -15289,7 +15289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
 
 ---
 
@@ -15301,7 +15301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
 
 ---
 
@@ -15327,7 +15327,7 @@ def put_parquet(
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#binary_as_text StageExternalS3#binary_as_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#binary_as_text StageExternalS3#binary_as_text}
 
 ---
 
@@ -15337,7 +15337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the compression format. Valid values: `AUTO` | `LZO` | `SNAPPY` | `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
 
 ---
 
@@ -15347,7 +15347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 String used to convert to and from SQL NULL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#null_if StageExternalS3#null_if}
 
 ---
 
@@ -15359,7 +15359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
 
 ---
 
@@ -15371,7 +15371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#trim_space StageExternalS3#trim_space}
 
 ---
 
@@ -15383,7 +15383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#use_logical_type StageExternalS3#use_logical_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#use_logical_type StageExternalS3#use_logical_type}
 
 ---
 
@@ -15395,7 +15395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#use_vectorized_scanner StageExternalS3#use_vectorized_scanner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#use_vectorized_scanner StageExternalS3#use_vectorized_scanner}
 
 ---
 
@@ -15421,7 +15421,7 @@ Specifies the compression format.
 
 Valid values: `AUTO` | `GZIP` | `BZ2` | `BROTLI` | `ZSTD` | `DEFLATE` | `RAW_DEFLATE` | `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#compression StageExternalS3#compression}
 
 ---
 
@@ -15433,7 +15433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#disable_auto_convert StageExternalS3#disable_auto_convert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#disable_auto_convert StageExternalS3#disable_auto_convert}
 
 ---
 
@@ -15445,7 +15445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#ignore_utf8_errors StageExternalS3#ignore_utf8_errors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#ignore_utf8_errors StageExternalS3#ignore_utf8_errors}
 
 ---
 
@@ -15457,7 +15457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#preserve_space StageExternalS3#preserve_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#preserve_space StageExternalS3#preserve_space}
 
 ---
 
@@ -15469,7 +15469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#replace_invalid_characters StageExternalS3#replace_invalid_characters}
 
 ---
 
@@ -15481,7 +15481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#skip_byte_order_mark StageExternalS3#skip_byte_order_mark}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#skip_byte_order_mark StageExternalS3#skip_byte_order_mark}
 
 ---
 
@@ -15493,7 +15493,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/stage_external_s3#strip_outer_element StageExternalS3#strip_outer_element}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/stage_external_s3#strip_outer_element StageExternalS3#strip_outer_element}
 
 ---
 

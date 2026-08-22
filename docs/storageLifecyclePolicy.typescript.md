@@ -4,7 +4,7 @@
 
 ### StorageLifecyclePolicy <a name="StorageLifecyclePolicy" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy snowflake_storage_lifecycle_policy}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy snowflake_storage_lifecycle_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicy.Initializer"></a>
 
@@ -550,7 +550,7 @@ The construct id used in the generated config for the StorageLifecyclePolicy to 
 
 The id of the existing StorageLifecyclePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1027,7 +1027,7 @@ public readonly name: string;
 
 The argument name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#name StorageLifecyclePolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#name StorageLifecyclePolicy#name}
 
 ---
 
@@ -1041,7 +1041,7 @@ public readonly type: string;
 
 The argument type. For more information about data types, check [Snowflake docs](https://docs.snowflake.com/en/sql-reference/intro-summary-data-types).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#type StorageLifecyclePolicy#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#type StorageLifecyclePolicy#type}
 
 ---
 
@@ -1074,7 +1074,7 @@ const storageLifecyclePolicyConfig: storageLifecyclePolicy.StorageLifecyclePolic
 | <code><a href="#@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyConfig.property.archiveForDays">archiveForDays</a></code> | <code>number</code> | Specifies the number of days to keep rows that match the policy expression in archive storage. |
 | <code><a href="#@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyConfig.property.archiveTier">archiveTier</a></code> | <code>string</code> | Specifies the type of storage tier to use for archiving rows. |
 | <code><a href="#@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the storage lifecycle policy. |
-| <code><a href="#@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#id StorageLifecyclePolicy#id}. |
+| <code><a href="#@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#id StorageLifecyclePolicy#id}. |
 | <code><a href="#@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyTimeouts">StorageLifecyclePolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1159,7 +1159,7 @@ public readonly argument: IResolvable | StorageLifecyclePolicyArgument[];
 
 argument block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#argument StorageLifecyclePolicy#argument}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#argument StorageLifecyclePolicy#argument}
 
 ---
 
@@ -1175,7 +1175,7 @@ Specifies the SQL expression.
 
 The expression can be any boolean-valued SQL expression. To mitigate permadiff on this field, the provider replaces blank characters with a space. This can lead to false positives in cases where a change in case or run of whitespace is semantically significant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#body StorageLifecyclePolicy#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#body StorageLifecyclePolicy#body}
 
 ---
 
@@ -1191,7 +1191,7 @@ The database in which to create the storage lifecycle policy.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#database StorageLifecyclePolicy#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#database StorageLifecyclePolicy#database}
 
 ---
 
@@ -1207,7 +1207,7 @@ Specifies the identifier for the storage lifecycle policy;
 
 must be unique for the database and schema in which the storage lifecycle policy is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#name StorageLifecyclePolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#name StorageLifecyclePolicy#name}
 
 ---
 
@@ -1223,7 +1223,7 @@ The schema in which to create the storage lifecycle policy.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#schema StorageLifecyclePolicy#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#schema StorageLifecyclePolicy#schema}
 
 ---
 
@@ -1239,7 +1239,7 @@ Specifies the number of days to keep rows that match the policy expression in ar
 
 If set, Snowflake moves the data into archive storage according to the value you select for archive_tier. If unset, Snowflake expires the rows from the table without archiving the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#archive_for_days StorageLifecyclePolicy#archive_for_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#archive_for_days StorageLifecyclePolicy#archive_for_days}
 
 ---
 
@@ -1255,7 +1255,7 @@ Specifies the type of storage tier to use for archiving rows.
 
 After you set the ARCHIVE_TIER for a policy, you can’t modify it. If you don’t specify this parameter, the policy is an expiration policy that deletes rows without archiving them. Valid values are (case-insensitive): `COOL` | `COLD`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#archive_tier StorageLifecyclePolicy#archive_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#archive_tier StorageLifecyclePolicy#archive_tier}
 
 ---
 
@@ -1269,7 +1269,7 @@ public readonly comment: string;
 
 Specifies a comment for the storage lifecycle policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#comment StorageLifecyclePolicy#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#comment StorageLifecyclePolicy#comment}
 
 ---
 
@@ -1281,7 +1281,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#id StorageLifecyclePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#id StorageLifecyclePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1298,7 +1298,7 @@ public readonly timeouts: StorageLifecyclePolicyTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#timeouts StorageLifecyclePolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#timeouts StorageLifecyclePolicy#timeouts}
 
 ---
 
@@ -1349,10 +1349,10 @@ const storageLifecyclePolicyTimeouts: storageLifecyclePolicy.StorageLifecyclePol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#create StorageLifecyclePolicy#create}. |
-| <code><a href="#@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#delete StorageLifecyclePolicy#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#read StorageLifecyclePolicy#read}. |
-| <code><a href="#@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#update StorageLifecyclePolicy#update}. |
+| <code><a href="#@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#create StorageLifecyclePolicy#create}. |
+| <code><a href="#@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#delete StorageLifecyclePolicy#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#read StorageLifecyclePolicy#read}. |
+| <code><a href="#@cdktn/provider-snowflake.storageLifecyclePolicy.StorageLifecyclePolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#update StorageLifecyclePolicy#update}. |
 
 ---
 
@@ -1364,7 +1364,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#create StorageLifecyclePolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#create StorageLifecyclePolicy#create}.
 
 ---
 
@@ -1376,7 +1376,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#delete StorageLifecyclePolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#delete StorageLifecyclePolicy#delete}.
 
 ---
 
@@ -1388,7 +1388,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#read StorageLifecyclePolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#read StorageLifecyclePolicy#read}.
 
 ---
 
@@ -1400,7 +1400,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/storage_lifecycle_policy#update StorageLifecyclePolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/storage_lifecycle_policy#update StorageLifecyclePolicy#update}.
 
 ---
 

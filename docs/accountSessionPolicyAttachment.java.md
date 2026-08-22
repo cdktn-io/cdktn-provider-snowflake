@@ -4,7 +4,7 @@
 
 ### AccountSessionPolicyAttachment <a name="AccountSessionPolicyAttachment" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment snowflake_account_session_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment snowflake_account_session_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.Initializer"></a>
 
@@ -20,6 +20,8 @@ AccountSessionPolicyAttachment.Builder.create(Construct scope, java.lang.String 
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .sessionPolicyName(java.lang.String)
+//  .forAllPersonUsers(java.lang.Boolean|IResolvable)
+//  .forAllServiceUsers(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .timeouts(AccountSessionPolicyAttachmentTimeouts)
     .build();
@@ -37,7 +39,9 @@ AccountSessionPolicyAttachment.Builder.create(Construct scope, java.lang.String 
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.Initializer.parameter.sessionPolicyName">sessionPolicyName</a></code> | <code>java.lang.String</code> | Fully qualified name of the session policy to apply to the current account. |
-| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#id AccountSessionPolicyAttachment#id}. |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.Initializer.parameter.forAllPersonUsers">forAllPersonUsers</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, attaches the session policy to all person users in the current account. |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.Initializer.parameter.forAllServiceUsers">forAllServiceUsers</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, attaches the session policy to all service users in the current account. |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#id AccountSessionPolicyAttachment#id}. |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts">AccountSessionPolicyAttachmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -108,7 +112,33 @@ Must be unique amongst siblings in the same scope
 
 Fully qualified name of the session policy to apply to the current account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#session_policy_name AccountSessionPolicyAttachment#session_policy_name}
+Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using pipes (`|`).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#session_policy_name AccountSessionPolicyAttachment#session_policy_name}
+
+---
+
+##### `forAllPersonUsers`<sup>Optional</sup> <a name="forAllPersonUsers" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.Initializer.parameter.forAllPersonUsers"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+If true, attaches the session policy to all person users in the current account.
+
+Conflicts with `for_all_service_users`. When neither field is set, the policy is attached account-wide.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#for_all_person_users AccountSessionPolicyAttachment#for_all_person_users}
+
+---
+
+##### `forAllServiceUsers`<sup>Optional</sup> <a name="forAllServiceUsers" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.Initializer.parameter.forAllServiceUsers"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+If true, attaches the session policy to all service users in the current account.
+
+Conflicts with `for_all_person_users`. When neither field is set, the policy is attached account-wide.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#for_all_service_users AccountSessionPolicyAttachment#for_all_service_users}
 
 ---
 
@@ -116,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#id AccountSessionPolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#id AccountSessionPolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -129,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#timeouts AccountSessionPolicyAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#timeouts AccountSessionPolicyAttachment#timeouts}
 
 ---
 
@@ -162,6 +192,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.resetForAllPersonUsers">resetForAllPersonUsers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.resetForAllServiceUsers">resetForAllServiceUsers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
@@ -490,6 +522,18 @@ public void putTimeouts(AccountSessionPolicyAttachmentTimeouts value)
 
 ---
 
+##### `resetForAllPersonUsers` <a name="resetForAllPersonUsers" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.resetForAllPersonUsers"></a>
+
+```java
+public void resetForAllPersonUsers()
+```
+
+##### `resetForAllServiceUsers` <a name="resetForAllServiceUsers" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.resetForAllServiceUsers"></a>
+
+```java
+public void resetForAllServiceUsers()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.resetId"></a>
 
 ```java
@@ -605,7 +649,7 @@ The construct id used in the generated config for the AccountSessionPolicyAttach
 
 The id of the existing AccountSessionPolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -636,9 +680,13 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeoutsOutputReference">AccountSessionPolicyAttachmentTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.forAllPersonUsersInput">forAllPersonUsersInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.forAllServiceUsersInput">forAllServiceUsersInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.sessionPolicyNameInput">sessionPolicyNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts">AccountSessionPolicyAttachmentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.forAllPersonUsers">forAllPersonUsers</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.forAllServiceUsers">forAllServiceUsers</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.sessionPolicyName">sessionPolicyName</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -796,6 +844,26 @@ public AccountSessionPolicyAttachmentTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `forAllPersonUsersInput`<sup>Optional</sup> <a name="forAllPersonUsersInput" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.forAllPersonUsersInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getForAllPersonUsersInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `forAllServiceUsersInput`<sup>Optional</sup> <a name="forAllServiceUsersInput" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.forAllServiceUsersInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getForAllServiceUsersInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.idInput"></a>
 
 ```java
@@ -823,6 +891,26 @@ public IResolvable|AccountSessionPolicyAttachmentTimeouts getTimeoutsInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts">AccountSessionPolicyAttachmentTimeouts</a>
+
+---
+
+##### `forAllPersonUsers`<sup>Required</sup> <a name="forAllPersonUsers" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.forAllPersonUsers"></a>
+
+```java
+public java.lang.Boolean|IResolvable getForAllPersonUsers();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `forAllServiceUsers`<sup>Required</sup> <a name="forAllServiceUsers" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachment.property.forAllServiceUsers"></a>
+
+```java
+public java.lang.Boolean|IResolvable getForAllServiceUsers();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -882,6 +970,8 @@ AccountSessionPolicyAttachmentConfig.builder()
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .sessionPolicyName(java.lang.String)
+//  .forAllPersonUsers(java.lang.Boolean|IResolvable)
+//  .forAllServiceUsers(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .timeouts(AccountSessionPolicyAttachmentTimeouts)
     .build();
@@ -899,7 +989,9 @@ AccountSessionPolicyAttachmentConfig.builder()
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.sessionPolicyName">sessionPolicyName</a></code> | <code>java.lang.String</code> | Fully qualified name of the session policy to apply to the current account. |
-| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#id AccountSessionPolicyAttachment#id}. |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.forAllPersonUsers">forAllPersonUsers</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, attaches the session policy to all person users in the current account. |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.forAllServiceUsers">forAllServiceUsers</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, attaches the session policy to all service users in the current account. |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#id AccountSessionPolicyAttachment#id}. |
 | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts">AccountSessionPolicyAttachmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -984,7 +1076,41 @@ public java.lang.String getSessionPolicyName();
 
 Fully qualified name of the session policy to apply to the current account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#session_policy_name AccountSessionPolicyAttachment#session_policy_name}
+Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using pipes (`|`).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#session_policy_name AccountSessionPolicyAttachment#session_policy_name}
+
+---
+
+##### `forAllPersonUsers`<sup>Optional</sup> <a name="forAllPersonUsers" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.forAllPersonUsers"></a>
+
+```java
+public java.lang.Boolean|IResolvable getForAllPersonUsers();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+If true, attaches the session policy to all person users in the current account.
+
+Conflicts with `for_all_service_users`. When neither field is set, the policy is attached account-wide.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#for_all_person_users AccountSessionPolicyAttachment#for_all_person_users}
+
+---
+
+##### `forAllServiceUsers`<sup>Optional</sup> <a name="forAllServiceUsers" id="@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentConfig.property.forAllServiceUsers"></a>
+
+```java
+public java.lang.Boolean|IResolvable getForAllServiceUsers();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+If true, attaches the session policy to all service users in the current account.
+
+Conflicts with `for_all_person_users`. When neither field is set, the policy is attached account-wide.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#for_all_service_users AccountSessionPolicyAttachment#for_all_service_users}
 
 ---
 
@@ -996,7 +1122,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#id AccountSessionPolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#id AccountSessionPolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1013,7 +1139,7 @@ public AccountSessionPolicyAttachmentTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#timeouts AccountSessionPolicyAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#timeouts AccountSessionPolicyAttachment#timeouts}
 
 ---
 
@@ -1036,10 +1162,10 @@ AccountSessionPolicyAttachmentTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#create AccountSessionPolicyAttachment#create}. |
-| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#delete AccountSessionPolicyAttachment#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#read AccountSessionPolicyAttachment#read}. |
-| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#update AccountSessionPolicyAttachment#update}. |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#create AccountSessionPolicyAttachment#create}. |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#delete AccountSessionPolicyAttachment#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#read AccountSessionPolicyAttachment#read}. |
+| <code><a href="#@cdktn/provider-snowflake.accountSessionPolicyAttachment.AccountSessionPolicyAttachmentTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#update AccountSessionPolicyAttachment#update}. |
 
 ---
 
@@ -1051,7 +1177,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#create AccountSessionPolicyAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#create AccountSessionPolicyAttachment#create}.
 
 ---
 
@@ -1063,7 +1189,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#delete AccountSessionPolicyAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#delete AccountSessionPolicyAttachment#delete}.
 
 ---
 
@@ -1075,7 +1201,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#read AccountSessionPolicyAttachment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#read AccountSessionPolicyAttachment#read}.
 
 ---
 
@@ -1087,7 +1213,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/resources/account_session_policy_attachment#update AccountSessionPolicyAttachment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/account_session_policy_attachment#update AccountSessionPolicyAttachment#update}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/storage_lifecycle_policies
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/storage_lifecycle_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataSnowflakeStorageLifecyclePoliciesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/storage_lifecycle_policies#id DataSnowflakeStorageLifecyclePolicies#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/storage_lifecycle_policies#id DataSnowflakeStorageLifecyclePolicies#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface DataSnowflakeStorageLifecyclePoliciesConfig extends cdktn.Terra
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/storage_lifecycle_policies#like DataSnowflakeStorageLifecyclePolicies#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/storage_lifecycle_policies#like DataSnowflakeStorageLifecyclePolicies#like}
   */
   readonly like?: string;
   /**
   * (Default: `true`) Runs DESC STORAGE LIFECYCLE POLICY for each storage lifecycle policy returned by SHOW STORAGE LIFECYCLE POLICIES. The output of describe is saved to the describe_output field. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/storage_lifecycle_policies#with_describe DataSnowflakeStorageLifecyclePolicies#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/storage_lifecycle_policies#with_describe DataSnowflakeStorageLifecyclePolicies#with_describe}
   */
   readonly withDescribe?: boolean | cdktn.IResolvable;
   /**
   * in block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/storage_lifecycle_policies#in DataSnowflakeStorageLifecyclePolicies#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/storage_lifecycle_policies#in DataSnowflakeStorageLifecyclePolicies#in}
   */
   readonly in?: DataSnowflakeStorageLifecyclePoliciesIn;
 }
@@ -430,19 +430,19 @@ export interface DataSnowflakeStorageLifecyclePoliciesIn {
   /**
   * Returns records for the entire account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/storage_lifecycle_policies#account DataSnowflakeStorageLifecyclePolicies#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/storage_lifecycle_policies#account DataSnowflakeStorageLifecyclePolicies#account}
   */
   readonly account?: boolean | cdktn.IResolvable;
   /**
   * Returns records for the current database in use or for a specified database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/storage_lifecycle_policies#database DataSnowflakeStorageLifecyclePolicies#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/storage_lifecycle_policies#database DataSnowflakeStorageLifecyclePolicies#database}
   */
   readonly database?: string;
   /**
   * Returns records for the current schema in use or a specified schema. Use fully qualified name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/storage_lifecycle_policies#schema DataSnowflakeStorageLifecyclePolicies#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/storage_lifecycle_policies#schema DataSnowflakeStorageLifecyclePolicies#schema}
   */
   readonly schema?: string;
 }
@@ -584,7 +584,7 @@ export class DataSnowflakeStorageLifecyclePoliciesInOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/storage_lifecycle_policies snowflake_storage_lifecycle_policies}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/storage_lifecycle_policies snowflake_storage_lifecycle_policies}
 */
 export class DataSnowflakeStorageLifecyclePolicies extends cdktn.TerraformDataSource {
 
@@ -600,7 +600,7 @@ export class DataSnowflakeStorageLifecyclePolicies extends cdktn.TerraformDataSo
   * Generates CDKTN code for importing a DataSnowflakeStorageLifecyclePolicies resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeStorageLifecyclePolicies to import
-  * @param importFromId The id of the existing DataSnowflakeStorageLifecyclePolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/storage_lifecycle_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeStorageLifecyclePolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/storage_lifecycle_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeStorageLifecyclePolicies to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -612,7 +612,7 @@ export class DataSnowflakeStorageLifecyclePolicies extends cdktn.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.19.0/docs/data-sources/storage_lifecycle_policies snowflake_storage_lifecycle_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/data-sources/storage_lifecycle_policies snowflake_storage_lifecycle_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -623,7 +623,7 @@ export class DataSnowflakeStorageLifecyclePolicies extends cdktn.TerraformDataSo
       terraformResourceType: 'snowflake_storage_lifecycle_policies',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.19.0',
+        providerVersion: '2.20.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
