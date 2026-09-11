@@ -4,7 +4,7 @@
 
 ### IcebergTable <a name="IcebergTable" id="@cdktn/provider-snowflake.icebergTable.IcebergTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table snowflake_iceberg_table}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table snowflake_iceberg_table}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTable.IcebergTable.Initializer"></a>
 
@@ -83,7 +83,7 @@ icebergTable.IcebergTable(
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTable.Initializer.parameter.externalVolume">external_volume</a></code> | <code>str</code> | Specifies the identifier for the external volume where the Iceberg table stores its metadata files and data in Parquet format. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTable.Initializer.parameter.foreignKeyConstraint">foreign_key_constraint</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraint">IcebergTableForeignKeyConstraint</a>]</code> | foreign_key_constraint block. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTable.Initializer.parameter.icebergVersion">iceberg_version</a></code> | <code>typing.Union[int, float]</code> | Specifies the Iceberg table format version. |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTable.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#id IcebergTable#id}. |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTable.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#id IcebergTable#id}. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTable.Initializer.parameter.maxDataExtensionTimeInDays">max_data_extension_time_in_days</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum number of days for which Snowflake can extend the data retention period for the Iceberg table to prevent streams on the table from becoming stale. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTable.Initializer.parameter.partitionBy">partition_by</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePartitionBy">IcebergTablePartitionBy</a>]</code> | partition_by block. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTable.Initializer.parameter.pathLayout">path_layout</a></code> | <code>str</code> | Specifies the storage layout for the Iceberg table's Parquet files. |
@@ -162,7 +162,7 @@ Must be unique amongst siblings in the same scope
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#column IcebergTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#column IcebergTable#column}
 
 ---
 
@@ -174,7 +174,7 @@ The database in which to create the Iceberg table.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#database IcebergTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#database IcebergTable#database}
 
 ---
 
@@ -186,7 +186,7 @@ Specifies the identifier for the Iceberg table;
 
 must be unique for the schema in which the Iceberg table is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#name IcebergTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#name IcebergTable#name}
 
 ---
 
@@ -198,7 +198,7 @@ The schema in which to create the Iceberg table.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#schema IcebergTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#schema IcebergTable#schema}
 
 ---
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 aggregation_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#aggregation_policy IcebergTable#aggregation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#aggregation_policy IcebergTable#aggregation_policy}
 
 ---
 
@@ -220,7 +220,7 @@ The path to a directory where Snowflake can write data and metadata files for th
 
 Specify a relative path from the table's `EXTERNAL_VOLUME` location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#base_location IcebergTable#base_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#base_location IcebergTable#base_location}
 
 ---
 
@@ -232,7 +232,7 @@ Specifies the identifier for the catalog integration to use for the Iceberg tabl
 
 If not specified, the account-level default is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#catalog IcebergTable#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#catalog IcebergTable#catalog}
 
 ---
 
@@ -244,7 +244,7 @@ Specifies the name of the catalog integration that Snowflake uses to automatical
 
 For more information, check [CATALOG_SYNC docs](https://docs.snowflake.com/en/sql-reference/parameters#catalog-sync).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#catalog_sync IcebergTable#catalog_sync}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#catalog_sync IcebergTable#catalog_sync}
 
 ---
 
@@ -256,7 +256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Cannot be changed after creation. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#change_tracking IcebergTable#change_tracking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#change_tracking IcebergTable#change_tracking}
 
 ---
 
@@ -266,7 +266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 check_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#check_constraint IcebergTable#check_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#check_constraint IcebergTable#check_constraint}
 
 ---
 
@@ -278,7 +278,7 @@ A list of one or more table columns/expressions to be used as clustering key(s) 
 
 External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#cluster_by IcebergTable#cluster_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#cluster_by IcebergTable#cluster_by}
 
 ---
 
@@ -288,7 +288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the Iceberg table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#comment IcebergTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#comment IcebergTable#comment}
 
 ---
 
@@ -300,7 +300,7 @@ Specifies the retention period for the Iceberg table so that Time Travel actions
 
 For more information, check [DATA_RETENTION_TIME_IN_DAYS docs](https://docs.snowflake.com/en/sql-reference/parameters#data-retention-time-in-days).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#data_retention_time_in_days IcebergTable#data_retention_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#data_retention_time_in_days IcebergTable#data_retention_time_in_days}
 
 ---
 
@@ -310,7 +310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies whether automatic background data compaction is enabled for the Iceberg table. For more information, check [ENABLE_DATA_COMPACTION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-data-compaction).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#enable_data_compaction IcebergTable#enable_data_compaction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#enable_data_compaction IcebergTable#enable_data_compaction}
 
 ---
 
@@ -320,7 +320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies whether merge-on-read is enabled for the Iceberg table. For more information, check [ENABLE_ICEBERG_MERGE_ON_READ docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-iceberg-merge-on-read).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#enable_iceberg_merge_on_read IcebergTable#enable_iceberg_merge_on_read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#enable_iceberg_merge_on_read IcebergTable#enable_iceberg_merge_on_read}
 
 ---
 
@@ -332,7 +332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#error_logging IcebergTable#error_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#error_logging IcebergTable#error_logging}
 
 ---
 
@@ -344,7 +344,7 @@ Specifies the identifier for the external volume where the Iceberg table stores 
 
 If not specified, the account-level default is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#external_volume IcebergTable#external_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#external_volume IcebergTable#external_volume}
 
 ---
 
@@ -354,7 +354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 foreign_key_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#foreign_key_constraint IcebergTable#foreign_key_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#foreign_key_constraint IcebergTable#foreign_key_constraint}
 
 ---
 
@@ -364,7 +364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the Iceberg table format version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#iceberg_version IcebergTable#iceberg_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#iceberg_version IcebergTable#iceberg_version}
 
 ---
 
@@ -372,7 +372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#id IcebergTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#id IcebergTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -387,7 +387,7 @@ Specifies the maximum number of days for which Snowflake can extend the data ret
 
 For more information, check [MAX_DATA_EXTENSION_TIME_IN_DAYS docs](https://docs.snowflake.com/en/sql-reference/parameters#max-data-extension-time-in-days).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#max_data_extension_time_in_days IcebergTable#max_data_extension_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#max_data_extension_time_in_days IcebergTable#max_data_extension_time_in_days}
 
 ---
 
@@ -397,7 +397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 partition_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#partition_by IcebergTable#partition_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#partition_by IcebergTable#partition_by}
 
 ---
 
@@ -409,7 +409,7 @@ Specifies the storage layout for the Iceberg table's Parquet files.
 
 Valid values are: [FLAT HIERARCHICAL]. Cannot be changed after creation. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#path_layout IcebergTable#path_layout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#path_layout IcebergTable#path_layout}
 
 ---
 
@@ -419,7 +419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 primary_key_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#primary_key_constraint IcebergTable#primary_key_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#primary_key_constraint IcebergTable#primary_key_constraint}
 
 ---
 
@@ -429,7 +429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 row_access_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#row_access_policy IcebergTable#row_access_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#row_access_policy IcebergTable#row_access_policy}
 
 ---
 
@@ -441,7 +441,7 @@ Specifies the storage serialization policy for the Iceberg table.
 
 Valid values are: [COMPATIBLE OPTIMIZED]. Cannot be changed after creation. For more information, check [STORAGE_SERIALIZATION_POLICY docs](https://docs.snowflake.com/en/sql-reference/parameters#storage-serialization-policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#storage_serialization_policy IcebergTable#storage_serialization_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#storage_serialization_policy IcebergTable#storage_serialization_policy}
 
 ---
 
@@ -453,7 +453,7 @@ Specifies the target file size (in bytes) used when writing the Iceberg table's 
 
 Valid values are: [AUTO 16MB 32MB 64MB 128MB]. For more information, check [TARGET_FILE_SIZE docs](https://docs.snowflake.com/en/sql-reference/parameters#target-file-size).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#target_file_size IcebergTable#target_file_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#target_file_size IcebergTable#target_file_size}
 
 ---
 
@@ -463,7 +463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#timeouts IcebergTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#timeouts IcebergTable#timeouts}
 
 ---
 
@@ -473,7 +473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 unique_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#unique_constraint IcebergTable#unique_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#unique_constraint IcebergTable#unique_constraint}
 
 ---
 
@@ -905,7 +905,7 @@ def put_aggregation_policy(
 
 Aggregation policy name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#policy_name IcebergTable#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#policy_name IcebergTable#policy_name}
 
 ---
 
@@ -915,7 +915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Defines which columns uniquely identify an entity within the Iceberg table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#entity_key IcebergTable#entity_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#entity_key IcebergTable#entity_key}
 
 ---
 
@@ -979,7 +979,7 @@ def put_partition_by(
 
 ```python
 def put_primary_key_constraint(
-  column: typing.List[str],
+  columns: typing.List[str],
   comment: str = None,
   deferrable: str = None,
   enable: str = None,
@@ -991,13 +991,13 @@ def put_primary_key_constraint(
 ) -> None
 ```
 
-###### `column`<sup>Required</sup> <a name="column" id="@cdktn/provider-snowflake.icebergTable.IcebergTable.putPrimaryKeyConstraint.parameter.column"></a>
+###### `columns`<sup>Required</sup> <a name="columns" id="@cdktn/provider-snowflake.icebergTable.IcebergTable.putPrimaryKeyConstraint.parameter.columns"></a>
 
 - *Type:* typing.List[str]
 
 The column(s) the constraint applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#column IcebergTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#columns IcebergTable#columns}
 
 ---
 
@@ -1007,7 +1007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Constraint comment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#comment IcebergTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#comment IcebergTable#comment}
 
 ---
 
@@ -1019,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#deferrable IcebergTable#deferrable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#deferrable IcebergTable#deferrable}
 
 ---
 
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#enable IcebergTable#enable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#enable IcebergTable#enable}
 
 ---
 
@@ -1043,7 +1043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#enforced IcebergTable#enforced}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#enforced IcebergTable#enforced}
 
 ---
 
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#initially_deferred IcebergTable#initially_deferred}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#initially_deferred IcebergTable#initially_deferred}
 
 ---
 
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Name of the constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#name IcebergTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#name IcebergTable#name}
 
 ---
 
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#rely IcebergTable#rely}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#rely IcebergTable#rely}
 
 ---
 
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#validate IcebergTable#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#validate IcebergTable#validate}
 
 ---
 
@@ -1108,7 +1108,7 @@ def put_row_access_policy(
 
 Defines which columns are affected by the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#on IcebergTable#on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#on IcebergTable#on}
 
 ---
 
@@ -1118,7 +1118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Row access policy name. For more information about this resource, see [docs](./row_access_policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#policy_name IcebergTable#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#policy_name IcebergTable#policy_name}
 
 ---
 
@@ -1137,7 +1137,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#create IcebergTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#create IcebergTable#create}.
 
 ---
 
@@ -1145,7 +1145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#delete IcebergTable#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#delete IcebergTable#delete}.
 
 ---
 
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#read IcebergTable#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#read IcebergTable#read}.
 
 ---
 
@@ -1161,7 +1161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#update IcebergTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#update IcebergTable#update}.
 
 ---
 
@@ -1443,7 +1443,7 @@ The construct id used in the generated config for the IcebergTable to import.
 
 The id of the existing IcebergTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2352,7 +2352,7 @@ policy_name: str
 
 Aggregation policy name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#policy_name IcebergTable#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#policy_name IcebergTable#policy_name}
 
 ---
 
@@ -2366,7 +2366,7 @@ entity_key: typing.List[str]
 
 Defines which columns uniquely identify an entity within the Iceberg table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#entity_key IcebergTable#entity_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#entity_key IcebergTable#entity_key}
 
 ---
 
@@ -2404,7 +2404,7 @@ expression: str
 
 The CHECK constraint expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#expression IcebergTable#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#expression IcebergTable#expression}
 
 ---
 
@@ -2418,7 +2418,7 @@ name: str
 
 Name of the constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#name IcebergTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#name IcebergTable#name}
 
 ---
 
@@ -2434,7 +2434,7 @@ validate: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#validate IcebergTable#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#validate IcebergTable#validate}
 
 ---
 
@@ -2480,7 +2480,7 @@ name: str
 
 Column name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#name IcebergTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#name IcebergTable#name}
 
 ---
 
@@ -2494,7 +2494,7 @@ type: str
 
 Column type, e.g. VARIANT. For a full list of column types, see [Summary of Data Types](https://docs.snowflake.com/en/sql-reference/intro-summary-data-types).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#type IcebergTable#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#type IcebergTable#type}
 
 ---
 
@@ -2508,7 +2508,7 @@ comment: str
 
 Column comment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#comment IcebergTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#comment IcebergTable#comment}
 
 ---
 
@@ -2522,7 +2522,7 @@ default: IcebergTableColumnDefault
 
 default block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#default IcebergTable#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#default IcebergTable#default}
 
 ---
 
@@ -2536,7 +2536,7 @@ masking_policy: IcebergTableColumnMaskingPolicy
 
 masking_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#masking_policy IcebergTable#masking_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#masking_policy IcebergTable#masking_policy}
 
 ---
 
@@ -2550,7 +2550,7 @@ not_null: str
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Whether to restrict the column to NOT NULL values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#not_null IcebergTable#not_null}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#not_null IcebergTable#not_null}
 
 ---
 
@@ -2564,7 +2564,7 @@ projection_policy: IcebergTableColumnProjectionPolicy
 
 projection_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#projection_policy IcebergTable#projection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#projection_policy IcebergTable#projection_policy}
 
 ---
 
@@ -2598,7 +2598,7 @@ expression: str
 
 The default expression value for the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#expression IcebergTable#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#expression IcebergTable#expression}
 
 ---
 
@@ -2634,7 +2634,7 @@ policy_name: str
 
 Masking policy name. For more information about this resource, see [docs](./masking_policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#policy_name IcebergTable#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#policy_name IcebergTable#policy_name}
 
 ---
 
@@ -2650,7 +2650,7 @@ Specifies the arguments to pass into the conditional masking policy SQL expressi
 
 The first column in the list specifies the column for the policy conditions to mask or tokenize the data and must match the column to which the masking policy is set. The additional columns specify the columns to evaluate to determine whether to mask or tokenize the data in each row of the query result when a query is made on the first column. If the USING clause is omitted, Snowflake treats the conditional masking policy as a normal masking policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#using IcebergTable#using}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#using IcebergTable#using}
 
 ---
 
@@ -2684,7 +2684,7 @@ policy_name: str
 
 Projection policy name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#policy_name IcebergTable#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#policy_name IcebergTable#policy_name}
 
 ---
 
@@ -2765,7 +2765,7 @@ icebergTable.IcebergTableConfig(
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableConfig.property.externalVolume">external_volume</a></code> | <code>str</code> | Specifies the identifier for the external volume where the Iceberg table stores its metadata files and data in Parquet format. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableConfig.property.foreignKeyConstraint">foreign_key_constraint</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraint">IcebergTableForeignKeyConstraint</a>]</code> | foreign_key_constraint block. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableConfig.property.icebergVersion">iceberg_version</a></code> | <code>typing.Union[int, float]</code> | Specifies the Iceberg table format version. |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#id IcebergTable#id}. |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#id IcebergTable#id}. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableConfig.property.maxDataExtensionTimeInDays">max_data_extension_time_in_days</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum number of days for which Snowflake can extend the data retention period for the Iceberg table to prevent streams on the table from becoming stale. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableConfig.property.partitionBy">partition_by</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePartitionBy">IcebergTablePartitionBy</a>]</code> | partition_by block. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableConfig.property.pathLayout">path_layout</a></code> | <code>str</code> | Specifies the storage layout for the Iceberg table's Parquet files. |
@@ -2858,7 +2858,7 @@ column: IResolvable | typing.List[IcebergTableColumn]
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#column IcebergTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#column IcebergTable#column}
 
 ---
 
@@ -2874,7 +2874,7 @@ The database in which to create the Iceberg table.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#database IcebergTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#database IcebergTable#database}
 
 ---
 
@@ -2890,7 +2890,7 @@ Specifies the identifier for the Iceberg table;
 
 must be unique for the schema in which the Iceberg table is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#name IcebergTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#name IcebergTable#name}
 
 ---
 
@@ -2906,7 +2906,7 @@ The schema in which to create the Iceberg table.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#schema IcebergTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#schema IcebergTable#schema}
 
 ---
 
@@ -2920,7 +2920,7 @@ aggregation_policy: IcebergTableAggregationPolicy
 
 aggregation_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#aggregation_policy IcebergTable#aggregation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#aggregation_policy IcebergTable#aggregation_policy}
 
 ---
 
@@ -2936,7 +2936,7 @@ The path to a directory where Snowflake can write data and metadata files for th
 
 Specify a relative path from the table's `EXTERNAL_VOLUME` location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#base_location IcebergTable#base_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#base_location IcebergTable#base_location}
 
 ---
 
@@ -2952,7 +2952,7 @@ Specifies the identifier for the catalog integration to use for the Iceberg tabl
 
 If not specified, the account-level default is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#catalog IcebergTable#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#catalog IcebergTable#catalog}
 
 ---
 
@@ -2968,7 +2968,7 @@ Specifies the name of the catalog integration that Snowflake uses to automatical
 
 For more information, check [CATALOG_SYNC docs](https://docs.snowflake.com/en/sql-reference/parameters#catalog-sync).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#catalog_sync IcebergTable#catalog_sync}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#catalog_sync IcebergTable#catalog_sync}
 
 ---
 
@@ -2984,7 +2984,7 @@ change_tracking: str
 
 Cannot be changed after creation. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#change_tracking IcebergTable#change_tracking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#change_tracking IcebergTable#change_tracking}
 
 ---
 
@@ -2998,7 +2998,7 @@ check_constraint: IResolvable | typing.List[IcebergTableCheckConstraint]
 
 check_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#check_constraint IcebergTable#check_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#check_constraint IcebergTable#check_constraint}
 
 ---
 
@@ -3014,7 +3014,7 @@ A list of one or more table columns/expressions to be used as clustering key(s) 
 
 External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#cluster_by IcebergTable#cluster_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#cluster_by IcebergTable#cluster_by}
 
 ---
 
@@ -3028,7 +3028,7 @@ comment: str
 
 Specifies a comment for the Iceberg table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#comment IcebergTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#comment IcebergTable#comment}
 
 ---
 
@@ -3044,7 +3044,7 @@ Specifies the retention period for the Iceberg table so that Time Travel actions
 
 For more information, check [DATA_RETENTION_TIME_IN_DAYS docs](https://docs.snowflake.com/en/sql-reference/parameters#data-retention-time-in-days).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#data_retention_time_in_days IcebergTable#data_retention_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#data_retention_time_in_days IcebergTable#data_retention_time_in_days}
 
 ---
 
@@ -3058,7 +3058,7 @@ enable_data_compaction: bool | IResolvable
 
 Specifies whether automatic background data compaction is enabled for the Iceberg table. For more information, check [ENABLE_DATA_COMPACTION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-data-compaction).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#enable_data_compaction IcebergTable#enable_data_compaction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#enable_data_compaction IcebergTable#enable_data_compaction}
 
 ---
 
@@ -3072,7 +3072,7 @@ enable_iceberg_merge_on_read: bool | IResolvable
 
 Specifies whether merge-on-read is enabled for the Iceberg table. For more information, check [ENABLE_ICEBERG_MERGE_ON_READ docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-iceberg-merge-on-read).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#enable_iceberg_merge_on_read IcebergTable#enable_iceberg_merge_on_read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#enable_iceberg_merge_on_read IcebergTable#enable_iceberg_merge_on_read}
 
 ---
 
@@ -3088,7 +3088,7 @@ error_logging: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#error_logging IcebergTable#error_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#error_logging IcebergTable#error_logging}
 
 ---
 
@@ -3104,7 +3104,7 @@ Specifies the identifier for the external volume where the Iceberg table stores 
 
 If not specified, the account-level default is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#external_volume IcebergTable#external_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#external_volume IcebergTable#external_volume}
 
 ---
 
@@ -3118,7 +3118,7 @@ foreign_key_constraint: IResolvable | typing.List[IcebergTableForeignKeyConstrai
 
 foreign_key_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#foreign_key_constraint IcebergTable#foreign_key_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#foreign_key_constraint IcebergTable#foreign_key_constraint}
 
 ---
 
@@ -3132,7 +3132,7 @@ iceberg_version: typing.Union[int, float]
 
 Specifies the Iceberg table format version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#iceberg_version IcebergTable#iceberg_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#iceberg_version IcebergTable#iceberg_version}
 
 ---
 
@@ -3144,7 +3144,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#id IcebergTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#id IcebergTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3163,7 +3163,7 @@ Specifies the maximum number of days for which Snowflake can extend the data ret
 
 For more information, check [MAX_DATA_EXTENSION_TIME_IN_DAYS docs](https://docs.snowflake.com/en/sql-reference/parameters#max-data-extension-time-in-days).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#max_data_extension_time_in_days IcebergTable#max_data_extension_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#max_data_extension_time_in_days IcebergTable#max_data_extension_time_in_days}
 
 ---
 
@@ -3177,7 +3177,7 @@ partition_by: IResolvable | typing.List[IcebergTablePartitionBy]
 
 partition_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#partition_by IcebergTable#partition_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#partition_by IcebergTable#partition_by}
 
 ---
 
@@ -3193,7 +3193,7 @@ Specifies the storage layout for the Iceberg table's Parquet files.
 
 Valid values are: [FLAT HIERARCHICAL]. Cannot be changed after creation. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#path_layout IcebergTable#path_layout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#path_layout IcebergTable#path_layout}
 
 ---
 
@@ -3207,7 +3207,7 @@ primary_key_constraint: IcebergTablePrimaryKeyConstraint
 
 primary_key_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#primary_key_constraint IcebergTable#primary_key_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#primary_key_constraint IcebergTable#primary_key_constraint}
 
 ---
 
@@ -3221,7 +3221,7 @@ row_access_policy: IcebergTableRowAccessPolicy
 
 row_access_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#row_access_policy IcebergTable#row_access_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#row_access_policy IcebergTable#row_access_policy}
 
 ---
 
@@ -3237,7 +3237,7 @@ Specifies the storage serialization policy for the Iceberg table.
 
 Valid values are: [COMPATIBLE OPTIMIZED]. Cannot be changed after creation. For more information, check [STORAGE_SERIALIZATION_POLICY docs](https://docs.snowflake.com/en/sql-reference/parameters#storage-serialization-policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#storage_serialization_policy IcebergTable#storage_serialization_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#storage_serialization_policy IcebergTable#storage_serialization_policy}
 
 ---
 
@@ -3253,7 +3253,7 @@ Specifies the target file size (in bytes) used when writing the Iceberg table's 
 
 Valid values are: [AUTO 16MB 32MB 64MB 128MB]. For more information, check [TARGET_FILE_SIZE docs](https://docs.snowflake.com/en/sql-reference/parameters#target-file-size).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#target_file_size IcebergTable#target_file_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#target_file_size IcebergTable#target_file_size}
 
 ---
 
@@ -3267,7 +3267,7 @@ timeouts: IcebergTableTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#timeouts IcebergTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#timeouts IcebergTable#timeouts}
 
 ---
 
@@ -3281,7 +3281,7 @@ unique_constraint: IResolvable | typing.List[IcebergTableUniqueConstraint]
 
 unique_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#unique_constraint IcebergTable#unique_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#unique_constraint IcebergTable#unique_constraint}
 
 ---
 
@@ -3304,7 +3304,7 @@ icebergTable.IcebergTableDescribeOutput()
 from cdktn_provider_snowflake import iceberg_table
 
 icebergTable.IcebergTableForeignKeyConstraint(
-  column: typing.List[str],
+  columns: typing.List[str],
   table_name: str,
   comment: str = None,
   deferrable: str = None,
@@ -3315,7 +3315,7 @@ icebergTable.IcebergTableForeignKeyConstraint(
   name: str = None,
   on_delete: str = None,
   on_update: str = None,
-  ref_column: typing.List[str] = None,
+  ref_columns: typing.List[str] = None,
   rely: str = None,
   validate: str = None
 )
@@ -3325,7 +3325,7 @@ icebergTable.IcebergTableForeignKeyConstraint(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraint.property.column">column</a></code> | <code>typing.List[str]</code> | The local column(s) the foreign key is defined on. |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraint.property.columns">columns</a></code> | <code>typing.List[str]</code> | The local column(s) the foreign key is defined on. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraint.property.tableName">table_name</a></code> | <code>str</code> | The table that the foreign key references. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraint.property.comment">comment</a></code> | <code>str</code> | Constraint comment. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraint.property.deferrable">deferrable</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Whether the constraint is deferrable (`true`) or not deferrable (`false`). |
@@ -3336,23 +3336,23 @@ icebergTable.IcebergTableForeignKeyConstraint(
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraint.property.name">name</a></code> | <code>str</code> | Name of the constraint. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraint.property.onDelete">on_delete</a></code> | <code>str</code> | Specifies the action to perform when the referenced primary/unique key is deleted. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraint.property.onUpdate">on_update</a></code> | <code>str</code> | Specifies the action to perform when the referenced primary/unique key is updated. |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraint.property.refColumn">ref_column</a></code> | <code>typing.List[str]</code> | The column(s) in the referenced table that the foreign key references. |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraint.property.refColumns">ref_columns</a></code> | <code>typing.List[str]</code> | The column(s) in the referenced table that the foreign key references. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraint.property.rely">rely</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Whether a constraint in NOVALIDATE mode is taken into account (`true`) or not (`false`) during query rewrite. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraint.property.validate">validate</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Whether to validate existing data on the table when the constraint is created (`true`) or skip validation (`false`). |
 
 ---
 
-##### `column`<sup>Required</sup> <a name="column" id="@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraint.property.column"></a>
+##### `columns`<sup>Required</sup> <a name="columns" id="@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraint.property.columns"></a>
 
 ```python
-column: typing.List[str]
+columns: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
 
 The local column(s) the foreign key is defined on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#column IcebergTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#columns IcebergTable#columns}
 
 ---
 
@@ -3366,7 +3366,7 @@ table_name: str
 
 The table that the foreign key references.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#table_name IcebergTable#table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#table_name IcebergTable#table_name}
 
 ---
 
@@ -3380,7 +3380,7 @@ comment: str
 
 Constraint comment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#comment IcebergTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#comment IcebergTable#comment}
 
 ---
 
@@ -3396,7 +3396,7 @@ deferrable: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#deferrable IcebergTable#deferrable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#deferrable IcebergTable#deferrable}
 
 ---
 
@@ -3412,7 +3412,7 @@ enable: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#enable IcebergTable#enable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#enable IcebergTable#enable}
 
 ---
 
@@ -3428,7 +3428,7 @@ enforced: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#enforced IcebergTable#enforced}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#enforced IcebergTable#enforced}
 
 ---
 
@@ -3444,7 +3444,7 @@ initially_deferred: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#initially_deferred IcebergTable#initially_deferred}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#initially_deferred IcebergTable#initially_deferred}
 
 ---
 
@@ -3458,7 +3458,7 @@ match: str
 
 The match type for the foreign key. Valid values are: [FULL SIMPLE PARTIAL].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#match IcebergTable#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#match IcebergTable#match}
 
 ---
 
@@ -3472,7 +3472,7 @@ name: str
 
 Name of the constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#name IcebergTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#name IcebergTable#name}
 
 ---
 
@@ -3488,7 +3488,7 @@ Specifies the action to perform when the referenced primary/unique key is delete
 
 Valid values are: [CASCADE SET NULL SET DEFAULT RESTRICT NO ACTION].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#on_delete IcebergTable#on_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#on_delete IcebergTable#on_delete}
 
 ---
 
@@ -3504,21 +3504,21 @@ Specifies the action to perform when the referenced primary/unique key is update
 
 Valid values are: [CASCADE SET NULL SET DEFAULT RESTRICT NO ACTION].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#on_update IcebergTable#on_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#on_update IcebergTable#on_update}
 
 ---
 
-##### `ref_column`<sup>Optional</sup> <a name="ref_column" id="@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraint.property.refColumn"></a>
+##### `ref_columns`<sup>Optional</sup> <a name="ref_columns" id="@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraint.property.refColumns"></a>
 
 ```python
-ref_column: typing.List[str]
+ref_columns: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
 
 The column(s) in the referenced table that the foreign key references.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#ref_column IcebergTable#ref_column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#ref_columns IcebergTable#ref_columns}
 
 ---
 
@@ -3534,7 +3534,7 @@ rely: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#rely IcebergTable#rely}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#rely IcebergTable#rely}
 
 ---
 
@@ -3550,7 +3550,7 @@ validate: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#validate IcebergTable#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#validate IcebergTable#validate}
 
 ---
 
@@ -3706,7 +3706,7 @@ bucket: IcebergTablePartitionByBucket
 
 bucket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#bucket IcebergTable#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#bucket IcebergTable#bucket}
 
 ---
 
@@ -3720,7 +3720,7 @@ day: str
 
 Partitions the table by the day component of the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#day IcebergTable#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#day IcebergTable#day}
 
 ---
 
@@ -3734,7 +3734,7 @@ hour: str
 
 Partitions the table by the hour component of the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#hour IcebergTable#hour}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#hour IcebergTable#hour}
 
 ---
 
@@ -3748,7 +3748,7 @@ identity: str
 
 Name of the column to use as-is for partitioning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#identity IcebergTable#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#identity IcebergTable#identity}
 
 ---
 
@@ -3762,7 +3762,7 @@ month: str
 
 Partitions the table by the month component of the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#month IcebergTable#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#month IcebergTable#month}
 
 ---
 
@@ -3776,7 +3776,7 @@ truncate: IcebergTablePartitionByTruncate
 
 truncate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#truncate IcebergTable#truncate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#truncate IcebergTable#truncate}
 
 ---
 
@@ -3790,7 +3790,7 @@ year: str
 
 Partitions the table by the year component of the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#year IcebergTable#year}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#year IcebergTable#year}
 
 ---
 
@@ -3826,7 +3826,7 @@ column: str
 
 Name of the column to bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#column IcebergTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#column IcebergTable#column}
 
 ---
 
@@ -3840,7 +3840,7 @@ num_buckets: typing.Union[int, float]
 
 Number of buckets to hash the column values into.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#num_buckets IcebergTable#num_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#num_buckets IcebergTable#num_buckets}
 
 ---
 
@@ -3876,7 +3876,7 @@ column: str
 
 Name of the column to truncate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#column IcebergTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#column IcebergTable#column}
 
 ---
 
@@ -3890,7 +3890,7 @@ width: typing.Union[int, float]
 
 Width to truncate the column value to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#width IcebergTable#width}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#width IcebergTable#width}
 
 ---
 
@@ -3902,7 +3902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 from cdktn_provider_snowflake import iceberg_table
 
 icebergTable.IcebergTablePrimaryKeyConstraint(
-  column: typing.List[str],
+  columns: typing.List[str],
   comment: str = None,
   deferrable: str = None,
   enable: str = None,
@@ -3918,7 +3918,7 @@ icebergTable.IcebergTablePrimaryKeyConstraint(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraint.property.column">column</a></code> | <code>typing.List[str]</code> | The column(s) the constraint applies to. |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraint.property.columns">columns</a></code> | <code>typing.List[str]</code> | The column(s) the constraint applies to. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraint.property.comment">comment</a></code> | <code>str</code> | Constraint comment. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraint.property.deferrable">deferrable</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Whether the constraint is deferrable (`true`) or not deferrable (`false`). |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraint.property.enable">enable</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Whether the constraint is enabled (`true`) or disabled (`false`). |
@@ -3930,17 +3930,17 @@ icebergTable.IcebergTablePrimaryKeyConstraint(
 
 ---
 
-##### `column`<sup>Required</sup> <a name="column" id="@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraint.property.column"></a>
+##### `columns`<sup>Required</sup> <a name="columns" id="@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraint.property.columns"></a>
 
 ```python
-column: typing.List[str]
+columns: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
 
 The column(s) the constraint applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#column IcebergTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#columns IcebergTable#columns}
 
 ---
 
@@ -3954,7 +3954,7 @@ comment: str
 
 Constraint comment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#comment IcebergTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#comment IcebergTable#comment}
 
 ---
 
@@ -3970,7 +3970,7 @@ deferrable: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#deferrable IcebergTable#deferrable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#deferrable IcebergTable#deferrable}
 
 ---
 
@@ -3986,7 +3986,7 @@ enable: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#enable IcebergTable#enable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#enable IcebergTable#enable}
 
 ---
 
@@ -4002,7 +4002,7 @@ enforced: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#enforced IcebergTable#enforced}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#enforced IcebergTable#enforced}
 
 ---
 
@@ -4018,7 +4018,7 @@ initially_deferred: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#initially_deferred IcebergTable#initially_deferred}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#initially_deferred IcebergTable#initially_deferred}
 
 ---
 
@@ -4032,7 +4032,7 @@ name: str
 
 Name of the constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#name IcebergTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#name IcebergTable#name}
 
 ---
 
@@ -4048,7 +4048,7 @@ rely: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#rely IcebergTable#rely}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#rely IcebergTable#rely}
 
 ---
 
@@ -4064,7 +4064,7 @@ validate: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#validate IcebergTable#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#validate IcebergTable#validate}
 
 ---
 
@@ -4100,7 +4100,7 @@ on: typing.List[str]
 
 Defines which columns are affected by the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#on IcebergTable#on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#on IcebergTable#on}
 
 ---
 
@@ -4114,7 +4114,7 @@ policy_name: str
 
 Row access policy name. For more information about this resource, see [docs](./row_access_policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#policy_name IcebergTable#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#policy_name IcebergTable#policy_name}
 
 ---
 
@@ -4181,10 +4181,10 @@ icebergTable.IcebergTableTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#create IcebergTable#create}. |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#delete IcebergTable#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#read IcebergTable#read}. |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#update IcebergTable#update}. |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#create IcebergTable#create}. |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#delete IcebergTable#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#read IcebergTable#read}. |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#update IcebergTable#update}. |
 
 ---
 
@@ -4196,7 +4196,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#create IcebergTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#create IcebergTable#create}.
 
 ---
 
@@ -4208,7 +4208,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#delete IcebergTable#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#delete IcebergTable#delete}.
 
 ---
 
@@ -4220,7 +4220,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#read IcebergTable#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#read IcebergTable#read}.
 
 ---
 
@@ -4232,7 +4232,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#update IcebergTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#update IcebergTable#update}.
 
 ---
 
@@ -4244,7 +4244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 from cdktn_provider_snowflake import iceberg_table
 
 icebergTable.IcebergTableUniqueConstraint(
-  column: typing.List[str],
+  columns: typing.List[str],
   comment: str = None,
   deferrable: str = None,
   enable: str = None,
@@ -4260,7 +4260,7 @@ icebergTable.IcebergTableUniqueConstraint(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraint.property.column">column</a></code> | <code>typing.List[str]</code> | The column(s) the constraint applies to. |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraint.property.columns">columns</a></code> | <code>typing.List[str]</code> | The column(s) the constraint applies to. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraint.property.comment">comment</a></code> | <code>str</code> | Constraint comment. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraint.property.deferrable">deferrable</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Whether the constraint is deferrable (`true`) or not deferrable (`false`). |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraint.property.enable">enable</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Whether the constraint is enabled (`true`) or disabled (`false`). |
@@ -4272,17 +4272,17 @@ icebergTable.IcebergTableUniqueConstraint(
 
 ---
 
-##### `column`<sup>Required</sup> <a name="column" id="@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraint.property.column"></a>
+##### `columns`<sup>Required</sup> <a name="columns" id="@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraint.property.columns"></a>
 
 ```python
-column: typing.List[str]
+columns: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
 
 The column(s) the constraint applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#column IcebergTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#columns IcebergTable#columns}
 
 ---
 
@@ -4296,7 +4296,7 @@ comment: str
 
 Constraint comment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#comment IcebergTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#comment IcebergTable#comment}
 
 ---
 
@@ -4312,7 +4312,7 @@ deferrable: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#deferrable IcebergTable#deferrable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#deferrable IcebergTable#deferrable}
 
 ---
 
@@ -4328,7 +4328,7 @@ enable: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#enable IcebergTable#enable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#enable IcebergTable#enable}
 
 ---
 
@@ -4344,7 +4344,7 @@ enforced: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#enforced IcebergTable#enforced}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#enforced IcebergTable#enforced}
 
 ---
 
@@ -4360,7 +4360,7 @@ initially_deferred: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#initially_deferred IcebergTable#initially_deferred}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#initially_deferred IcebergTable#initially_deferred}
 
 ---
 
@@ -4374,7 +4374,7 @@ name: str
 
 Name of the constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#name IcebergTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#name IcebergTable#name}
 
 ---
 
@@ -4390,7 +4390,7 @@ rely: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#rely IcebergTable#rely}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#rely IcebergTable#rely}
 
 ---
 
@@ -4406,7 +4406,7 @@ validate: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#validate IcebergTable#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#validate IcebergTable#validate}
 
 ---
 
@@ -6342,7 +6342,7 @@ def put_default(
 
 The default expression value for the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#expression IcebergTable#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#expression IcebergTable#expression}
 
 ---
 
@@ -6361,7 +6361,7 @@ def put_masking_policy(
 
 Masking policy name. For more information about this resource, see [docs](./masking_policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#policy_name IcebergTable#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#policy_name IcebergTable#policy_name}
 
 ---
 
@@ -6373,7 +6373,7 @@ Specifies the arguments to pass into the conditional masking policy SQL expressi
 
 The first column in the list specifies the column for the policy conditions to mask or tokenize the data and must match the column to which the masking policy is set. The additional columns specify the columns to evaluate to determine whether to mask or tokenize the data in each row of the query result when a query is made on the first column. If the USING clause is omitted, Snowflake treats the conditional masking policy as a normal masking policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#using IcebergTable#using}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#using IcebergTable#using}
 
 ---
 
@@ -6391,7 +6391,7 @@ def put_projection_policy(
 
 Projection policy name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#policy_name IcebergTable#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#policy_name IcebergTable#policy_name}
 
 ---
 
@@ -7791,7 +7791,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.resetName">reset_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.resetOnDelete">reset_on_delete</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.resetOnUpdate">reset_on_update</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.resetRefColumn">reset_ref_column</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.resetRefColumns">reset_ref_columns</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.resetRely">reset_rely</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.resetValidate">reset_validate</a></code> | *No description.* |
 
@@ -8023,10 +8023,10 @@ def reset_on_delete() -> None
 def reset_on_update() -> None
 ```
 
-##### `reset_ref_column` <a name="reset_ref_column" id="@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.resetRefColumn"></a>
+##### `reset_ref_columns` <a name="reset_ref_columns" id="@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.resetRefColumns"></a>
 
 ```python
-def reset_ref_column() -> None
+def reset_ref_columns() -> None
 ```
 
 ##### `reset_rely` <a name="reset_rely" id="@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.resetRely"></a>
@@ -8048,7 +8048,7 @@ def reset_validate() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.columnInput">column_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.columnsInput">columns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.deferrableInput">deferrable_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.enableInput">enable_input</a></code> | <code>str</code> | *No description.* |
@@ -8058,11 +8058,11 @@ def reset_validate() -> None
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.onDeleteInput">on_delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.onUpdateInput">on_update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.refColumnInput">ref_column_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.refColumnsInput">ref_columns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.relyInput">rely_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.tableNameInput">table_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.validateInput">validate_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.column">column</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.columns">columns</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.comment">comment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.deferrable">deferrable</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.enable">enable</a></code> | <code>str</code> | *No description.* |
@@ -8072,7 +8072,7 @@ def reset_validate() -> None
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.onDelete">on_delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.onUpdate">on_update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.refColumn">ref_column</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.refColumns">ref_columns</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.rely">rely</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.tableName">table_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.validate">validate</a></code> | <code>str</code> | *No description.* |
@@ -8104,10 +8104,10 @@ fqn: str
 
 ---
 
-##### `column_input`<sup>Optional</sup> <a name="column_input" id="@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.columnInput"></a>
+##### `columns_input`<sup>Optional</sup> <a name="columns_input" id="@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.columnsInput"></a>
 
 ```python
-column_input: typing.List[str]
+columns_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
@@ -8204,10 +8204,10 @@ on_update_input: str
 
 ---
 
-##### `ref_column_input`<sup>Optional</sup> <a name="ref_column_input" id="@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.refColumnInput"></a>
+##### `ref_columns_input`<sup>Optional</sup> <a name="ref_columns_input" id="@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.refColumnsInput"></a>
 
 ```python
-ref_column_input: typing.List[str]
+ref_columns_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
@@ -8244,10 +8244,10 @@ validate_input: str
 
 ---
 
-##### `column`<sup>Required</sup> <a name="column" id="@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.column"></a>
+##### `columns`<sup>Required</sup> <a name="columns" id="@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.columns"></a>
 
 ```python
-column: typing.List[str]
+columns: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
@@ -8344,10 +8344,10 @@ on_update: str
 
 ---
 
-##### `ref_column`<sup>Required</sup> <a name="ref_column" id="@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.refColumn"></a>
+##### `ref_columns`<sup>Required</sup> <a name="ref_columns" id="@cdktn/provider-snowflake.icebergTable.IcebergTableForeignKeyConstraintOutputReference.property.refColumns"></a>
 
 ```python
-ref_column: typing.List[str]
+ref_columns: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
@@ -14279,7 +14279,7 @@ def put_bucket(
 
 Name of the column to bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#column IcebergTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#column IcebergTable#column}
 
 ---
 
@@ -14289,7 +14289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Number of buckets to hash the column values into.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#num_buckets IcebergTable#num_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#num_buckets IcebergTable#num_buckets}
 
 ---
 
@@ -14308,7 +14308,7 @@ def put_truncate(
 
 Name of the column to truncate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#column IcebergTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#column IcebergTable#column}
 
 ---
 
@@ -14318,7 +14318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Width to truncate the column value to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/iceberg_table#width IcebergTable#width}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/iceberg_table#width IcebergTable#width}
 
 ---
 
@@ -15173,7 +15173,7 @@ def reset_validate() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.columnInput">column_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.columnsInput">columns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.deferrableInput">deferrable_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.enableInput">enable_input</a></code> | <code>str</code> | *No description.* |
@@ -15182,7 +15182,7 @@ def reset_validate() -> None
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.relyInput">rely_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.validateInput">validate_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.column">column</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.columns">columns</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.comment">comment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.deferrable">deferrable</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.enable">enable</a></code> | <code>str</code> | *No description.* |
@@ -15219,10 +15219,10 @@ fqn: str
 
 ---
 
-##### `column_input`<sup>Optional</sup> <a name="column_input" id="@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.columnInput"></a>
+##### `columns_input`<sup>Optional</sup> <a name="columns_input" id="@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.columnsInput"></a>
 
 ```python
-column_input: typing.List[str]
+columns_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
@@ -15309,10 +15309,10 @@ validate_input: str
 
 ---
 
-##### `column`<sup>Required</sup> <a name="column" id="@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.column"></a>
+##### `columns`<sup>Required</sup> <a name="columns" id="@cdktn/provider-snowflake.icebergTable.IcebergTablePrimaryKeyConstraintOutputReference.property.columns"></a>
 
 ```python
-column: typing.List[str]
+columns: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
@@ -18752,7 +18752,7 @@ def reset_validate() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.columnInput">column_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.columnsInput">columns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.deferrableInput">deferrable_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.enableInput">enable_input</a></code> | <code>str</code> | *No description.* |
@@ -18761,7 +18761,7 @@ def reset_validate() -> None
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.relyInput">rely_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.validateInput">validate_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.column">column</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.columns">columns</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.comment">comment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.deferrable">deferrable</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.enable">enable</a></code> | <code>str</code> | *No description.* |
@@ -18798,10 +18798,10 @@ fqn: str
 
 ---
 
-##### `column_input`<sup>Optional</sup> <a name="column_input" id="@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.columnInput"></a>
+##### `columns_input`<sup>Optional</sup> <a name="columns_input" id="@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.columnsInput"></a>
 
 ```python
-column_input: typing.List[str]
+columns_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
@@ -18888,10 +18888,10 @@ validate_input: str
 
 ---
 
-##### `column`<sup>Required</sup> <a name="column" id="@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.column"></a>
+##### `columns`<sup>Required</sup> <a name="columns" id="@cdktn/provider-snowflake.icebergTable.IcebergTableUniqueConstraintOutputReference.property.columns"></a>
 
 ```python
-column: typing.List[str]
+columns: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
