@@ -1,0 +1,3 @@
+# `data_snowflake_openflow_runtimes`
+
+Refer to the Terraform Registry for docs: [`data_snowflake_openflow_runtimes`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/data-sources/openflow_runtimes).

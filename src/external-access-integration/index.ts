@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface ExternalAccessIntegrationConfig extends cdktn.TerraformMetaArgu
   /**
   * Specifies the network rules for external locations reachable through this integration. At least one is required. Only egress network rules may be specified. For more information about this resource, see [docs](./network_rule).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration#allowed_network_rules ExternalAccessIntegration#allowed_network_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration#allowed_network_rules ExternalAccessIntegration#allowed_network_rules}
   */
   readonly allowedNetworkRules: string[];
   /**
   * Specifies a comment for the external access integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration#comment ExternalAccessIntegration#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration#comment ExternalAccessIntegration#comment}
   */
   readonly comment?: string;
   /**
   * Specifies whether the integration is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration#enabled ExternalAccessIntegration#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration#enabled ExternalAccessIntegration#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration#id ExternalAccessIntegration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration#id ExternalAccessIntegration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,25 +40,25 @@ export interface ExternalAccessIntegrationConfig extends cdktn.TerraformMetaArgu
   /**
   * Specifies the identifier for the external access integration. Changing this value recreates the integration. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration#name ExternalAccessIntegration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration#name ExternalAccessIntegration#name}
   */
   readonly name: string;
   /**
   * allowed_api_authentication_integrations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration#allowed_api_authentication_integrations ExternalAccessIntegration#allowed_api_authentication_integrations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration#allowed_api_authentication_integrations ExternalAccessIntegration#allowed_api_authentication_integrations}
   */
   readonly allowedApiAuthenticationIntegrations?: ExternalAccessIntegrationAllowedApiAuthenticationIntegrations;
   /**
   * allowed_authentication_secrets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration#allowed_authentication_secrets ExternalAccessIntegration#allowed_authentication_secrets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration#allowed_authentication_secrets ExternalAccessIntegration#allowed_authentication_secrets}
   */
   readonly allowedAuthenticationSecrets?: ExternalAccessIntegrationAllowedAuthenticationSecrets;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration#timeouts ExternalAccessIntegration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration#timeouts ExternalAccessIntegration#timeouts}
   */
   readonly timeouts?: ExternalAccessIntegrationTimeouts;
 }
@@ -266,13 +266,13 @@ export interface ExternalAccessIntegrationAllowedApiAuthenticationIntegrations {
   /**
   * Specifies the API authentication integrations allowed for authenticating to external locations. Conflicts with `none`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration#integrations ExternalAccessIntegration#integrations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration#integrations ExternalAccessIntegration#integrations}
   */
   readonly integrations?: string[];
   /**
   * When true, no API authentication integrations are allowed. Conflicts with `integrations`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration#none ExternalAccessIntegration#none}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration#none ExternalAccessIntegration#none}
   */
   readonly none?: boolean | cdktn.IResolvable;
 }
@@ -387,19 +387,19 @@ export interface ExternalAccessIntegrationAllowedAuthenticationSecrets {
   /**
   * When true, all secrets in the account are allowed for authentication. Conflicts with `none` and `secrets`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration#all ExternalAccessIntegration#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration#all ExternalAccessIntegration#all}
   */
   readonly all?: boolean | cdktn.IResolvable;
   /**
   * When true, no secrets are allowed for authentication. Conflicts with `all` and `secrets`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration#none ExternalAccessIntegration#none}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration#none ExternalAccessIntegration#none}
   */
   readonly none?: boolean | cdktn.IResolvable;
   /**
   * Specifies the fully qualified identifiers of secrets allowed for authentication. Conflicts with `none` and `all`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration#secrets ExternalAccessIntegration#secrets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration#secrets ExternalAccessIntegration#secrets}
   */
   readonly secrets?: string[];
 }
@@ -541,19 +541,19 @@ export class ExternalAccessIntegrationAllowedAuthenticationSecretsOutputReferenc
 }
 export interface ExternalAccessIntegrationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration#create ExternalAccessIntegration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration#create ExternalAccessIntegration#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration#delete ExternalAccessIntegration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration#delete ExternalAccessIntegration#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration#read ExternalAccessIntegration#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration#read ExternalAccessIntegration#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration#update ExternalAccessIntegration#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration#update ExternalAccessIntegration#update}
   */
   readonly update?: string;
 }
@@ -734,7 +734,7 @@ export class ExternalAccessIntegrationTimeoutsOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration snowflake_external_access_integration}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration snowflake_external_access_integration}
 */
 export class ExternalAccessIntegration extends cdktn.TerraformResource {
 
@@ -750,7 +750,7 @@ export class ExternalAccessIntegration extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ExternalAccessIntegration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ExternalAccessIntegration to import
-  * @param importFromId The id of the existing ExternalAccessIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ExternalAccessIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ExternalAccessIntegration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -762,7 +762,7 @@ export class ExternalAccessIntegration extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.20.0/docs/resources/external_access_integration snowflake_external_access_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/external_access_integration snowflake_external_access_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -773,7 +773,7 @@ export class ExternalAccessIntegration extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_external_access_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.20.0',
+        providerVersion: '2.21.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
