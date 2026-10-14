@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface FailoverGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies the target account or list of target accounts to which replication and failover of specified objects from the source account is enabled. Secondary failover groups in the target accounts in this list can be promoted to serve as the primary failover group in case of failover. Expected in the form `<org_name>.<target_account_name>`. This value is case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#allowed_accounts FailoverGroup#allowed_accounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#allowed_accounts FailoverGroup#allowed_accounts}
   */
   readonly allowedAccounts?: string[];
   /**
   * Specifies the database or list of databases for which you are enabling replication and failover from the source account to the target account. The OBJECT_TYPES list must include DATABASES to set this parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#allowed_databases FailoverGroup#allowed_databases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#allowed_databases FailoverGroup#allowed_databases}
   */
   readonly allowedDatabases?: string[];
   /**
   * Type(s) of integrations for which you are enabling replication and failover from the source account to the target account. This property requires that the OBJECT_TYPES list include INTEGRATIONS to set this parameter. The following integration types are supported: "SECURITY INTEGRATIONS", "API INTEGRATIONS", "STORAGE INTEGRATIONS", "EXTERNAL ACCESS INTEGRATIONS", "NOTIFICATION INTEGRATIONS"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#allowed_integration_types FailoverGroup#allowed_integration_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#allowed_integration_types FailoverGroup#allowed_integration_types}
   */
   readonly allowedIntegrationTypes?: string[];
   /**
   * Specifies the share or list of shares for which you are enabling replication and failover from the source account to the target account. The OBJECT_TYPES list must include SHARES to set this parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#allowed_shares FailoverGroup#allowed_shares}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#allowed_shares FailoverGroup#allowed_shares}
   */
   readonly allowedShares?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#id FailoverGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#id FailoverGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,37 +46,49 @@ export interface FailoverGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Default: `false`) Allows replicating objects to accounts on lower editions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#ignore_edition_check FailoverGroup#ignore_edition_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#ignore_edition_check FailoverGroup#ignore_edition_check}
   */
   readonly ignoreEditionCheck?: boolean | cdktn.IResolvable;
   /**
   * Specifies the identifier for the failover group. The identifier must start with an alphabetic character and cannot contain spaces or special characters unless the identifier string is enclosed in double quotes (e.g. "My object"). Identifiers enclosed in double quotes are also case-sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#name FailoverGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#name FailoverGroup#name}
   */
   readonly name: string;
   /**
   * Type(s) of objects for which you are enabling replication and failover from the source account to the target account. The following object types are supported: "ACCOUNT PARAMETERS", "DATABASES", "INTEGRATIONS", "NETWORK POLICIES", "RESOURCE MONITORS", "ROLES", "SHARES", "USERS", "WAREHOUSES"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#object_types FailoverGroup#object_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#object_types FailoverGroup#object_types}
   */
   readonly objectTypes?: string[];
   /**
+  * (Default: `false`) Specifies whether the failover group uses Optimized Refresh. Can be set on the primary failover group only. When true, a replication_schedule with an interval of 6 hours or less is required (Snowflake recommends 10 MINUTE or less). Do not set when rpo_assurance is true. Default: false.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#optimized_refresh FailoverGroup#optimized_refresh}
+  */
+  readonly optimizedRefresh?: boolean | cdktn.IResolvable;
+  /**
+  * (Default: `false`) Specifies whether the failover group uses RPO Assurance. Can be set on the primary failover group only. Cannot be set with replication_schedule (unset the schedule first). Enables Optimized Refresh automatically; do not also set optimized_refresh. Default: false.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#rpo_assurance FailoverGroup#rpo_assurance}
+  */
+  readonly rpoAssurance?: boolean | cdktn.IResolvable;
+  /**
   * from_replica block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#from_replica FailoverGroup#from_replica}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#from_replica FailoverGroup#from_replica}
   */
   readonly fromReplica?: FailoverGroupFromReplica;
   /**
   * replication_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#replication_schedule FailoverGroup#replication_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#replication_schedule FailoverGroup#replication_schedule}
   */
   readonly replicationSchedule?: FailoverGroupReplicationSchedule;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#timeouts FailoverGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#timeouts FailoverGroup#timeouts}
   */
   readonly timeouts?: FailoverGroupTimeouts;
 }
@@ -84,19 +96,19 @@ export interface FailoverGroupFromReplica {
   /**
   * Identifier for the primary failover group in the source account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#name FailoverGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#name FailoverGroup#name}
   */
   readonly name: string;
   /**
   * Name of your Snowflake organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#organization_name FailoverGroup#organization_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#organization_name FailoverGroup#organization_name}
   */
   readonly organizationName: string;
   /**
   * Source account from which you are enabling replication and failover of the specified objects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#source_account_name FailoverGroup#source_account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#source_account_name FailoverGroup#source_account_name}
   */
   readonly sourceAccountName: string;
 }
@@ -231,13 +243,13 @@ export interface FailoverGroupReplicationScheduleCron {
   /**
   * Specifies the cron expression for the replication schedule. The cron expression must be in the following format: "minute hour day-of-month month day-of-week". The following values are supported: minute: 0-59 hour: 0-23 day-of-month: 1-31 month: 1-12 day-of-week: 0-6 (0 is Sunday)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#expression FailoverGroup#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#expression FailoverGroup#expression}
   */
   readonly expression: string;
   /**
   * Specifies the time zone for secondary group refresh.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#time_zone FailoverGroup#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#time_zone FailoverGroup#time_zone}
   */
   readonly timeZone: string;
 }
@@ -346,13 +358,13 @@ export interface FailoverGroupReplicationSchedule {
   /**
   * Specifies the interval in minutes for the replication schedule. The interval must be greater than 0 and less than 1440 (24 hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#interval FailoverGroup#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#interval FailoverGroup#interval}
   */
   readonly interval?: number;
   /**
   * cron block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#cron FailoverGroup#cron}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#cron FailoverGroup#cron}
   */
   readonly cron?: FailoverGroupReplicationScheduleCron;
 }
@@ -465,19 +477,19 @@ export class FailoverGroupReplicationScheduleOutputReference extends cdktn.Compl
 }
 export interface FailoverGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#create FailoverGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#create FailoverGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#delete FailoverGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#delete FailoverGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#read FailoverGroup#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#read FailoverGroup#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#update FailoverGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#update FailoverGroup#update}
   */
   readonly update?: string;
 }
@@ -658,7 +670,7 @@ export class FailoverGroupTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group snowflake_failover_group}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group snowflake_failover_group}
 */
 export class FailoverGroup extends cdktn.TerraformResource {
 
@@ -674,7 +686,7 @@ export class FailoverGroup extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FailoverGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FailoverGroup to import
-  * @param importFromId The id of the existing FailoverGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FailoverGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FailoverGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -686,7 +698,7 @@ export class FailoverGroup extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/failover_group snowflake_failover_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group snowflake_failover_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -697,7 +709,7 @@ export class FailoverGroup extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_failover_group',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.21.0',
+        providerVersion: '2.22.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -716,6 +728,8 @@ export class FailoverGroup extends cdktn.TerraformResource {
     this._ignoreEditionCheck = config.ignoreEditionCheck;
     this._name = config.name;
     this._objectTypes = config.objectTypes;
+    this._optimizedRefresh = config.optimizedRefresh;
+    this._rpoAssurance = config.rpoAssurance;
     this._fromReplica.internalValue = config.fromReplica;
     this._replicationSchedule.internalValue = config.replicationSchedule;
     this._timeouts.internalValue = config.timeouts;
@@ -855,6 +869,38 @@ export class FailoverGroup extends cdktn.TerraformResource {
     return this._objectTypes;
   }
 
+  // optimized_refresh - computed: false, optional: true, required: false
+  private _optimizedRefresh?: boolean | cdktn.IResolvable; 
+  public get optimizedRefresh() {
+    return this.getBooleanAttribute('optimized_refresh');
+  }
+  public set optimizedRefresh(value: boolean | cdktn.IResolvable) {
+    this._optimizedRefresh = value;
+  }
+  public resetOptimizedRefresh() {
+    this._optimizedRefresh = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get optimizedRefreshInput() {
+    return this._optimizedRefresh;
+  }
+
+  // rpo_assurance - computed: false, optional: true, required: false
+  private _rpoAssurance?: boolean | cdktn.IResolvable; 
+  public get rpoAssurance() {
+    return this.getBooleanAttribute('rpo_assurance');
+  }
+  public set rpoAssurance(value: boolean | cdktn.IResolvable) {
+    this._rpoAssurance = value;
+  }
+  public resetRpoAssurance() {
+    this._rpoAssurance = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rpoAssuranceInput() {
+    return this._rpoAssurance;
+  }
+
   // from_replica - computed: false, optional: true, required: false
   private _fromReplica = new FailoverGroupFromReplicaOutputReference(this, "from_replica");
   public get fromReplica() {
@@ -917,6 +963,8 @@ export class FailoverGroup extends cdktn.TerraformResource {
       ignore_edition_check: cdktn.booleanToTerraform(this._ignoreEditionCheck),
       name: cdktn.stringToTerraform(this._name),
       object_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._objectTypes),
+      optimized_refresh: cdktn.booleanToTerraform(this._optimizedRefresh),
+      rpo_assurance: cdktn.booleanToTerraform(this._rpoAssurance),
       from_replica: failoverGroupFromReplicaToTerraform(this._fromReplica.internalValue),
       replication_schedule: failoverGroupReplicationScheduleToTerraform(this._replicationSchedule.internalValue),
       timeouts: failoverGroupTimeoutsToTerraform(this._timeouts.internalValue),
@@ -972,6 +1020,18 @@ export class FailoverGroup extends cdktn.TerraformResource {
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
+      },
+      optimized_refresh: {
+        value: cdktn.booleanToHclTerraform(this._optimizedRefresh),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      rpo_assurance: {
+        value: cdktn.booleanToHclTerraform(this._rpoAssurance),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       from_replica: {
         value: failoverGroupFromReplicaToHclTerraform(this._fromReplica.internalValue),
