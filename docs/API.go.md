@@ -142,6 +142,7 @@ The following submodules are available:
 - [icebergTableFromFiles](./icebergTableFromFiles.go.md)
 - [icebergTableFromRest](./icebergTableFromRest.go.md)
 - [imageRepository](./imageRepository.go.md)
+- [intelligenceCortexAgentAttachment](./intelligenceCortexAgentAttachment.go.md)
 - [jobService](./jobService.go.md)
 - [legacyServiceUser](./legacyServiceUser.go.md)
 - [listing](./listing.go.md)

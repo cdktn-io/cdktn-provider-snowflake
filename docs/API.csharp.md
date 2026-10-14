@@ -142,6 +142,7 @@ The following submodules are available:
 - [icebergTableFromFiles](./icebergTableFromFiles.csharp.md)
 - [icebergTableFromRest](./icebergTableFromRest.csharp.md)
 - [imageRepository](./imageRepository.csharp.md)
+- [intelligenceCortexAgentAttachment](./intelligenceCortexAgentAttachment.csharp.md)
 - [jobService](./jobService.csharp.md)
 - [legacyServiceUser](./legacyServiceUser.csharp.md)
 - [listing](./listing.csharp.md)

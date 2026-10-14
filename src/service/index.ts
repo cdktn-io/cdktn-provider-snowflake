@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +15,41 @@ export interface ServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically resume a service. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#auto_resume Service#auto_resume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#auto_resume Service#auto_resume}
   */
   readonly autoResume?: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of seconds of inactivity (service is idle) after which Snowflake automatically suspends the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#auto_suspend_secs Service#auto_suspend_secs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#auto_suspend_secs Service#auto_suspend_secs}
   */
   readonly autoSuspendSecs?: number;
   /**
   * Specifies a comment for the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#comment Service#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#comment Service#comment}
   */
   readonly comment?: string;
   /**
   * Specifies the name of the compute pool in your account on which to run the service. Identifiers with special or lower-case characters are not supported. This limitation in the provider follows the limitation in Snowflake (see [docs](https://docs.snowflake.com/en/sql-reference/sql/create-compute-pool)). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#compute_pool Service#compute_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#compute_pool Service#compute_pool}
   */
   readonly computePool: string;
   /**
   * The database in which to create the service. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#database Service#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#database Service#database}
   */
   readonly database: string;
   /**
   * Specifies the names of the external access integrations that allow your service to access external sites.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#external_access_integrations Service#external_access_integrations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#external_access_integrations Service#external_access_integrations}
   */
   readonly externalAccessIntegrations?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#id Service#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#id Service#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,55 +58,61 @@ export interface ServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies the maximum number of service instances to run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#max_instances Service#max_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#max_instances Service#max_instances}
   */
   readonly maxInstances?: number;
   /**
   * Specifies the minimum number of service instances to run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#min_instances Service#min_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#min_instances Service#min_instances}
   */
   readonly minInstances?: number;
   /**
   * Indicates the minimum service instances that must be ready for Snowflake to consider the service is ready to process requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#min_ready_instances Service#min_ready_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#min_ready_instances Service#min_ready_instances}
   */
   readonly minReadyInstances?: number;
   /**
   * Specifies the identifier for the service; must be unique for the schema in which the service is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#name Service#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#name Service#name}
   */
   readonly name: string;
   /**
   * Warehouse to use if a service container connects to Snowflake to execute a query but does not explicitly specify a warehouse to use. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#query_warehouse Service#query_warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#query_warehouse Service#query_warehouse}
   */
   readonly queryWarehouse?: string;
   /**
   * The schema in which to create the service. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#schema Service#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#schema Service#schema}
   */
   readonly schema: string;
   /**
+  * Controls how long a caller's rights login token is valid for Snowpark Container Services. For more information, check [SERVICE_CALLER_TOKEN_VALIDITY_SECS docs](https://docs.snowflake.com/en/sql-reference/parameters#service-caller-token-validity-secs).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#service_caller_token_validity_secs Service#service_caller_token_validity_secs}
+  */
+  readonly serviceCallerTokenValiditySecs?: number;
+  /**
   * from_specification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#from_specification Service#from_specification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#from_specification Service#from_specification}
   */
   readonly fromSpecification?: ServiceFromSpecification;
   /**
   * from_specification_template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#from_specification_template Service#from_specification_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#from_specification_template Service#from_specification_template}
   */
   readonly fromSpecificationTemplate?: ServiceFromSpecificationTemplate;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#timeouts Service#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#timeouts Service#timeouts}
   */
   readonly timeouts?: ServiceTimeouts;
 }
@@ -325,6 +331,177 @@ export class ServiceDescribeOutputList extends cdktn.ComplexList {
     return new ServiceDescribeOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface ServiceParametersServiceCallerTokenValiditySecs {
+}
+
+export function serviceParametersServiceCallerTokenValiditySecsToTerraform(struct?: ServiceParametersServiceCallerTokenValiditySecs): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function serviceParametersServiceCallerTokenValiditySecsToHclTerraform(struct?: ServiceParametersServiceCallerTokenValiditySecs): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ServiceParametersServiceCallerTokenValiditySecsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceParametersServiceCallerTokenValiditySecs | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceParametersServiceCallerTokenValiditySecs | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class ServiceParametersServiceCallerTokenValiditySecsList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceParametersServiceCallerTokenValiditySecsOutputReference {
+    return new ServiceParametersServiceCallerTokenValiditySecsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ServiceParameters {
+}
+
+export function serviceParametersToTerraform(struct?: ServiceParameters): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function serviceParametersToHclTerraform(struct?: ServiceParameters): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ServiceParametersOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceParameters | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceParameters | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // service_caller_token_validity_secs - computed: true, optional: false, required: false
+  private _serviceCallerTokenValiditySecs = new ServiceParametersServiceCallerTokenValiditySecsList(this, "service_caller_token_validity_secs", false);
+  public get serviceCallerTokenValiditySecs() {
+    return this._serviceCallerTokenValiditySecs;
+  }
+}
+
+export class ServiceParametersList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceParametersOutputReference {
+    return new ServiceParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceShowOutput {
 }
 
@@ -539,25 +716,25 @@ export interface ServiceFromSpecification {
   /**
   * The file name of the service specification. Example: `spec.yaml`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#file Service#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#file Service#file}
   */
   readonly file?: string;
   /**
   * The path to the service specification file on the given stage. When the path is specified, the `/` character is automatically added as a path prefix. Example: `path/to/spec`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#path Service#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#path Service#path}
   */
   readonly path?: string;
   /**
   * The fully qualified name of the stage containing the service specification file. At symbol (`@`) is added automatically. Example: `"\"<db_name>\".\"<schema_name>\".\"<stage_name>\""`. For more information about this resource, see [docs](./stage).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#stage Service#stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#stage Service#stage}
   */
   readonly stage?: string;
   /**
   * The embedded text of the service specification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#text Service#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#text Service#text}
   */
   readonly text?: string;
 }
@@ -730,13 +907,13 @@ export interface ServiceFromSpecificationTemplateUsing {
   /**
   * The name of the template variable. The provider wraps it in double quotes by default, so be aware of that while referencing the argument in the spec definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#key Service#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#key Service#key}
   */
   readonly key: string;
   /**
   * The value to assign to the variable in the template. The value must either be alphanumeric or valid JSON. The provider wraps it in `$$` by default, so be aware of that while referencing the argument in the spec definition. Using `$$` in this field is disallowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#value Service#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#value Service#value}
   */
   readonly value: string;
 }
@@ -877,31 +1054,31 @@ export interface ServiceFromSpecificationTemplate {
   /**
   * The file name of the service specification template. Example: `spec.yaml`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#file Service#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#file Service#file}
   */
   readonly file?: string;
   /**
   * The path to the service specification template file on the given stage. When the path is specified, the `/` character is automatically added as a path prefix. Example: `path/to/spec`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#path Service#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#path Service#path}
   */
   readonly path?: string;
   /**
   * The fully qualified name of the stage containing the service specification template file. At symbol (`@`) is added automatically. Example: `"\"<db_name>\".\"<schema_name>\".\"<stage_name>\""`. For more information about this resource, see [docs](./stage).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#stage Service#stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#stage Service#stage}
   */
   readonly stage?: string;
   /**
   * The embedded text of the service specification template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#text Service#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#text Service#text}
   */
   readonly text?: string;
   /**
   * using block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#using Service#using}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#using Service#using}
   */
   readonly using: ServiceFromSpecificationTemplateUsing[] | cdktn.IResolvable;
 }
@@ -1098,19 +1275,19 @@ export class ServiceFromSpecificationTemplateOutputReference extends cdktn.Compl
 }
 export interface ServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#create Service#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#create Service#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#delete Service#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#delete Service#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#read Service#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#read Service#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#update Service#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#update Service#update}
   */
   readonly update?: string;
 }
@@ -1291,7 +1468,7 @@ export class ServiceTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service snowflake_service}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service snowflake_service}
 */
 export class Service extends cdktn.TerraformResource {
 
@@ -1307,7 +1484,7 @@ export class Service extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Service resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Service to import
-  * @param importFromId The id of the existing Service that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Service that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Service to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1319,7 +1496,7 @@ export class Service extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/service snowflake_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service snowflake_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1330,7 +1507,7 @@ export class Service extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_service',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.21.0',
+        providerVersion: '2.22.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -1354,6 +1531,7 @@ export class Service extends cdktn.TerraformResource {
     this._name = config.name;
     this._queryWarehouse = config.queryWarehouse;
     this._schema = config.schema;
+    this._serviceCallerTokenValiditySecs = config.serviceCallerTokenValiditySecs;
     this._fromSpecification.internalValue = config.fromSpecification;
     this._fromSpecificationTemplate.internalValue = config.fromSpecificationTemplate;
     this._timeouts.internalValue = config.timeouts;
@@ -1541,6 +1719,12 @@ export class Service extends cdktn.TerraformResource {
     return this._name;
   }
 
+  // parameters - computed: true, optional: false, required: false
+  private _parameters = new ServiceParametersList(this, "parameters", false);
+  public get parameters() {
+    return this._parameters;
+  }
+
   // query_warehouse - computed: false, optional: true, required: false
   private _queryWarehouse?: string; 
   public get queryWarehouse() {
@@ -1568,6 +1752,22 @@ export class Service extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get schemaInput() {
     return this._schema;
+  }
+
+  // service_caller_token_validity_secs - computed: true, optional: true, required: false
+  private _serviceCallerTokenValiditySecs?: number; 
+  public get serviceCallerTokenValiditySecs() {
+    return this.getNumberAttribute('service_caller_token_validity_secs');
+  }
+  public set serviceCallerTokenValiditySecs(value: number) {
+    this._serviceCallerTokenValiditySecs = value;
+  }
+  public resetServiceCallerTokenValiditySecs() {
+    this._serviceCallerTokenValiditySecs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceCallerTokenValiditySecsInput() {
+    return this._serviceCallerTokenValiditySecs;
   }
 
   // service_type - computed: true, optional: false, required: false
@@ -1648,6 +1848,7 @@ export class Service extends cdktn.TerraformResource {
       name: cdktn.stringToTerraform(this._name),
       query_warehouse: cdktn.stringToTerraform(this._queryWarehouse),
       schema: cdktn.stringToTerraform(this._schema),
+      service_caller_token_validity_secs: cdktn.numberToTerraform(this._serviceCallerTokenValiditySecs),
       from_specification: serviceFromSpecificationToTerraform(this._fromSpecification.internalValue),
       from_specification_template: serviceFromSpecificationTemplateToTerraform(this._fromSpecificationTemplate.internalValue),
       timeouts: serviceTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1733,6 +1934,12 @@ export class Service extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      service_caller_token_validity_secs: {
+        value: cdktn.numberToHclTerraform(this._serviceCallerTokenValiditySecs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       from_specification: {
         value: serviceFromSpecificationToHclTerraform(this._fromSpecification.internalValue),

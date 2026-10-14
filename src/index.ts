@@ -72,6 +72,7 @@ export * as icebergTableFromDeltaFiles from './iceberg-table-from-delta-files/in
 export * as icebergTableFromFiles from './iceberg-table-from-files/index';
 export * as icebergTableFromRest from './iceberg-table-from-rest/index';
 export * as imageRepository from './image-repository/index';
+export * as intelligenceCortexAgentAttachment from './intelligence-cortex-agent-attachment/index';
 export * as jobService from './job-service/index';
 export * as legacyServiceUser from './legacy-service-user/index';
 export * as listing from './listing/index';

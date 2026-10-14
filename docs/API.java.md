@@ -142,6 +142,7 @@ The following submodules are available:
 - [icebergTableFromFiles](./icebergTableFromFiles.java.md)
 - [icebergTableFromRest](./icebergTableFromRest.java.md)
 - [imageRepository](./imageRepository.java.md)
+- [intelligenceCortexAgentAttachment](./intelligenceCortexAgentAttachment.java.md)
 - [jobService](./jobService.java.md)
 - [legacyServiceUser](./legacyServiceUser.java.md)
 - [listing](./listing.java.md)

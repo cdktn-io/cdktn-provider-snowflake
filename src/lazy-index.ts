@@ -72,6 +72,7 @@ Object.defineProperty(exports, 'icebergTableFromDeltaFiles', { get: function () 
 Object.defineProperty(exports, 'icebergTableFromFiles', { get: function () { return require('./iceberg-table-from-files'); } });
 Object.defineProperty(exports, 'icebergTableFromRest', { get: function () { return require('./iceberg-table-from-rest'); } });
 Object.defineProperty(exports, 'imageRepository', { get: function () { return require('./image-repository'); } });
+Object.defineProperty(exports, 'intelligenceCortexAgentAttachment', { get: function () { return require('./intelligence-cortex-agent-attachment'); } });
 Object.defineProperty(exports, 'jobService', { get: function () { return require('./job-service'); } });
 Object.defineProperty(exports, 'legacyServiceUser', { get: function () { return require('./legacy-service-user'); } });
 Object.defineProperty(exports, 'listing', { get: function () { return require('./listing'); } });
