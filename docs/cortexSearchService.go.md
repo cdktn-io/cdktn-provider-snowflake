@@ -4,7 +4,7 @@
 
 ### CortexSearchService <a name="CortexSearchService" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service snowflake_cortex_search_service}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service snowflake_cortex_search_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.Initializer"></a>
 
@@ -76,9 +76,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetAttributes">ResetAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetAutoSuspend">ResetAutoSuspend</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetEmbeddingModel">ResetEmbeddingModel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetPrimaryKey">ResetPrimaryKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -410,6 +412,12 @@ func PutTimeouts(value CortexSearchServiceTimeouts)
 func ResetAttributes()
 ```
 
+##### `ResetAutoSuspend` <a name="ResetAutoSuspend" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetAutoSuspend"></a>
+
+```go
+func ResetAutoSuspend()
+```
+
 ##### `ResetComment` <a name="ResetComment" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetComment"></a>
 
 ```go
@@ -426,6 +434,12 @@ func ResetEmbeddingModel()
 
 ```go
 func ResetId()
+```
+
+##### `ResetPrimaryKey` <a name="ResetPrimaryKey" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetPrimaryKey"></a>
+
+```go
+func ResetPrimaryKey()
 ```
 
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.resetTimeouts"></a>
@@ -537,7 +551,7 @@ The construct id used in the generated config for the CortexSearchService to imp
 
 The id of the existing CortexSearchService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -572,24 +586,28 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.fullyQualifiedName">FullyQualifiedName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeoutsOutputReference">CortexSearchServiceTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.attributesInput">AttributesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.autoSuspendInput">AutoSuspendInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.commentInput">CommentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.databaseInput">DatabaseInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.embeddingModelInput">EmbeddingModelInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.onInput">OnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.primaryKeyInput">PrimaryKeyInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.queryInput">QueryInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.schemaInput">SchemaInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.targetLagInput">TargetLagInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.warehouseInput">WarehouseInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.attributes">Attributes</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.autoSuspend">AutoSuspend</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.database">Database</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.embeddingModel">EmbeddingModel</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.on">On</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.primaryKey">PrimaryKey</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.query">Query</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.schema">Schema</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.targetLag">TargetLag</a></code> | <code>*string</code> | *No description.* |
@@ -789,6 +807,16 @@ func AttributesInput() *[]*string
 
 ---
 
+##### `AutoSuspendInput`<sup>Optional</sup> <a name="AutoSuspendInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.autoSuspendInput"></a>
+
+```go
+func AutoSuspendInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `CommentInput`<sup>Optional</sup> <a name="CommentInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.commentInput"></a>
 
 ```go
@@ -846,6 +874,16 @@ func OnInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `PrimaryKeyInput`<sup>Optional</sup> <a name="PrimaryKeyInput" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.primaryKeyInput"></a>
+
+```go
+func PrimaryKeyInput() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -909,6 +947,16 @@ func Attributes() *[]*string
 
 ---
 
+##### `AutoSuspend`<sup>Required</sup> <a name="AutoSuspend" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.autoSuspend"></a>
+
+```go
+func AutoSuspend() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `Comment`<sup>Required</sup> <a name="Comment" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.comment"></a>
 
 ```go
@@ -966,6 +1014,16 @@ func On() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `PrimaryKey`<sup>Required</sup> <a name="PrimaryKey" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchService.property.primaryKey"></a>
+
+```go
+func PrimaryKey() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -1052,9 +1110,11 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexsear
 	TargetLag: *string,
 	Warehouse: *string,
 	Attributes: *[]*string,
+	AutoSuspend: *f64,
 	Comment: *string,
 	EmbeddingModel: *string,
 	Id: *string,
+	PrimaryKey: *[]*string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.cortexSearchService.CortexSearchServiceTimeouts,
 }
 ```
@@ -1078,9 +1138,11 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexsear
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.targetLag">TargetLag</a></code> | <code>*string</code> | Specifies the maximum target lag time for the Cortex search service. |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.warehouse">Warehouse</a></code> | <code>*string</code> | The warehouse in which to create the Cortex search service. |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.attributes">Attributes</a></code> | <code>*[]*string</code> | Specifies the list of columns in the base table to enable filtering on when issuing queries to the service. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.autoSuspend">AutoSuspend</a></code> | <code>*f64</code> | Specifies the number of seconds of inactivity after which the Cortex search service automatically suspends its serving compute, releasing the resources. |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the Cortex search service. |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.embeddingModel">EmbeddingModel</a></code> | <code>*string</code> | Specifies the embedding model to use for the Cortex search service. |
-| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#id CortexSearchService#id}. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#id CortexSearchService#id}. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.primaryKey">PrimaryKey</a></code> | <code>*[]*string</code> | Specifies the column(s) in the base table that uniquely identify each row, used to enable optimized (incremental) refreshes when the underlying data changes. |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts">CortexSearchServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1165,7 +1227,7 @@ Database *string
 
 The database in which to create the Cortex search service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#database CortexSearchService#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#database CortexSearchService#database}
 
 ---
 
@@ -1181,7 +1243,7 @@ Specifies the name of the Cortex search service.
 
 The name must be unique for the schema in which the service is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#name CortexSearchService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#name CortexSearchService#name}
 
 ---
 
@@ -1195,7 +1257,7 @@ On *string
 
 Specifies the column to use as the search column for the Cortex search service; must be a text value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#on CortexSearchService#on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#on CortexSearchService#on}
 
 ---
 
@@ -1209,7 +1271,7 @@ Query *string
 
 Specifies the query to use to populate the Cortex search service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#query CortexSearchService#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#query CortexSearchService#query}
 
 ---
 
@@ -1223,7 +1285,7 @@ Schema *string
 
 The schema in which to create the Cortex search service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#schema CortexSearchService#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#schema CortexSearchService#schema}
 
 ---
 
@@ -1237,7 +1299,7 @@ TargetLag *string
 
 Specifies the maximum target lag time for the Cortex search service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#target_lag CortexSearchService#target_lag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#target_lag CortexSearchService#target_lag}
 
 ---
 
@@ -1251,7 +1313,7 @@ Warehouse *string
 
 The warehouse in which to create the Cortex search service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#warehouse CortexSearchService#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#warehouse CortexSearchService#warehouse}
 
 ---
 
@@ -1265,7 +1327,23 @@ Attributes *[]*string
 
 Specifies the list of columns in the base table to enable filtering on when issuing queries to the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#attributes CortexSearchService#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#attributes CortexSearchService#attributes}
+
+---
+
+##### `AutoSuspend`<sup>Optional</sup> <a name="AutoSuspend" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.autoSuspend"></a>
+
+```go
+AutoSuspend *f64
+```
+
+- *Type:* *f64
+
+Specifies the number of seconds of inactivity after which the Cortex search service automatically suspends its serving compute, releasing the resources.
+
+Snowflake requires a minimum of 1800 (30 minutes). If unset, Snowflake defaults to no automatic suspension. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#auto_suspend CortexSearchService#auto_suspend}
 
 ---
 
@@ -1279,7 +1357,7 @@ Comment *string
 
 Specifies a comment for the Cortex search service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#comment CortexSearchService#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#comment CortexSearchService#comment}
 
 ---
 
@@ -1293,7 +1371,7 @@ EmbeddingModel *string
 
 Specifies the embedding model to use for the Cortex search service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#embedding_model CortexSearchService#embedding_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#embedding_model CortexSearchService#embedding_model}
 
 ---
 
@@ -1305,10 +1383,26 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#id CortexSearchService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#id CortexSearchService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `PrimaryKey`<sup>Optional</sup> <a name="PrimaryKey" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceConfig.property.primaryKey"></a>
+
+```go
+PrimaryKey *[]*string
+```
+
+- *Type:* *[]*string
+
+Specifies the column(s) in the base table that uniquely identify each row, used to enable optimized (incremental) refreshes when the underlying data changes.
+
+All primary key columns must use the TEXT data type.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#primary_key CortexSearchService#primary_key}
 
 ---
 
@@ -1322,7 +1416,7 @@ Timeouts CortexSearchServiceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#timeouts CortexSearchService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#timeouts CortexSearchService#timeouts}
 
 ---
 
@@ -1358,10 +1452,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/cortexsear
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#create CortexSearchService#create}. |
-| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#delete CortexSearchService#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#read CortexSearchService#read}. |
-| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#update CortexSearchService#update}. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#create CortexSearchService#create}. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#delete CortexSearchService#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#read CortexSearchService#read}. |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#update CortexSearchService#update}. |
 
 ---
 
@@ -1373,7 +1467,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#create CortexSearchService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#create CortexSearchService#create}.
 
 ---
 
@@ -1385,7 +1479,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#delete CortexSearchService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#delete CortexSearchService#delete}.
 
 ---
 
@@ -1397,7 +1491,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#read CortexSearchService#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#read CortexSearchService#read}.
 
 ---
 
@@ -1409,7 +1503,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.21.0/docs/resources/cortex_search_service#update CortexSearchService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/cortex_search_service#update CortexSearchService#update}.
 
 ---
 
@@ -1800,12 +1894,16 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.dataTimestamp">DataTimestamp</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.definition">Definition</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.embeddingModel">EmbeddingModel</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.fullIndexBuildIntervalDays">FullIndexBuildIntervalDays</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.indexingError">IndexingError</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.indexingState">IndexingState</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.primaryKeyColumns">PrimaryKeyColumns</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.schemaName">SchemaName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.scoringProfileCount">ScoringProfileCount</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.searchColumn">SearchColumn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.serviceQueryUrl">ServiceQueryUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.servingState">ServingState</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.sourceDataNumRows">SourceDataNumRows</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.targetLag">TargetLag</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.warehouse">Warehouse</a></code> | <code>*string</code> | *No description.* |
@@ -1917,6 +2015,16 @@ func EmbeddingModel() *string
 
 ---
 
+##### `FullIndexBuildIntervalDays`<sup>Required</sup> <a name="FullIndexBuildIntervalDays" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.fullIndexBuildIntervalDays"></a>
+
+```go
+func FullIndexBuildIntervalDays() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `IndexingError`<sup>Required</sup> <a name="IndexingError" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.indexingError"></a>
 
 ```go
@@ -1947,6 +2055,16 @@ func Name() *string
 
 ---
 
+##### `PrimaryKeyColumns`<sup>Required</sup> <a name="PrimaryKeyColumns" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.primaryKeyColumns"></a>
+
+```go
+func PrimaryKeyColumns() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `SchemaName`<sup>Required</sup> <a name="SchemaName" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.schemaName"></a>
 
 ```go
@@ -1954,6 +2072,16 @@ func SchemaName() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ScoringProfileCount`<sup>Required</sup> <a name="ScoringProfileCount" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.scoringProfileCount"></a>
+
+```go
+func ScoringProfileCount() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -1971,6 +2099,16 @@ func SearchColumn() *string
 
 ```go
 func ServiceQueryUrl() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ServingState`<sup>Required</sup> <a name="ServingState" id="@cdktn/provider-snowflake.cortexSearchService.CortexSearchServiceDescribeOutputOutputReference.property.servingState"></a>
+
+```go
+func ServingState() *string
 ```
 
 - *Type:* *string

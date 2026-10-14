@@ -142,6 +142,7 @@ The following submodules are available:
 - [icebergTableFromFiles](./icebergTableFromFiles.typescript.md)
 - [icebergTableFromRest](./icebergTableFromRest.typescript.md)
 - [imageRepository](./imageRepository.typescript.md)
+- [intelligenceCortexAgentAttachment](./intelligenceCortexAgentAttachment.typescript.md)
 - [jobService](./jobService.typescript.md)
 - [legacyServiceUser](./legacyServiceUser.typescript.md)
 - [listing](./listing.typescript.md)

@@ -142,6 +142,7 @@ The following submodules are available:
 - [icebergTableFromFiles](./icebergTableFromFiles.python.md)
 - [icebergTableFromRest](./icebergTableFromRest.python.md)
 - [imageRepository](./imageRepository.python.md)
+- [intelligenceCortexAgentAttachment](./intelligenceCortexAgentAttachment.python.md)
 - [jobService](./jobService.python.md)
 - [legacyServiceUser](./legacyServiceUser.python.md)
 - [listing](./listing.python.md)
