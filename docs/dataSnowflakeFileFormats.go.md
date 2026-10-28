@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeFileFormats.DataSnowflakeFileFormats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakefileformats"
 
 datasnowflakefileformats.NewDataSnowflakeFileFormats(scope Construct, id *string, config DataSnowflakeFileFormatsConfig) DataSnowflakeFileFormats
 ```
@@ -339,7 +339,7 @@ func ResetWithDescribe()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.dataSnowflakeFileFormats.DataSnowflakeFileFormats.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakefileformats"
 
 datasnowflakefileformats.DataSnowflakeFileFormats_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.dataSnowflakeFileFormats.DataSnowflakeFileFormats.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakefileformats"
 
 datasnowflakefileformats.DataSnowflakeFileFormats_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datasnowflakefileformats.DataSnowflakeFileFormats_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-snowflake.dataSnowflakeFileFormats.DataSnowflakeFileFormats.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakefileformats"
 
 datasnowflakefileformats.DataSnowflakeFileFormats_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ datasnowflakefileformats.DataSnowflakeFileFormats_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.dataSnowflakeFileFormats.DataSnowflakeFileFormats.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakefileformats"
 
 datasnowflakefileformats.DataSnowflakeFileFormats_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -705,7 +705,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeFileFormats.DataSnowflakeFileFormatsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakefileformats"
 
 &datasnowflakefileformats.DataSnowflakeFileFormatsConfig {
 	Connection: interface{},
@@ -716,7 +716,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	In: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.dataSnowflakeFileFormats.DataSnowflakeFileFormatsIn,
+	In: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19.dataSnowflakeFileFormats.DataSnowflakeFileFormatsIn,
 	Like: *string,
 	WithDescribe: interface{},
 }
@@ -874,7 +874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeFileFormats.DataSnowflakeFileFormatsFileFormats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakefileformats"
 
 &datasnowflakefileformats.DataSnowflakeFileFormatsFileFormats {
 
@@ -887,7 +887,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeFileFormats.DataSnowflakeFileFormatsFileFormatsDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakefileformats"
 
 &datasnowflakefileformats.DataSnowflakeFileFormatsFileFormatsDescribeOutput {
 
@@ -900,7 +900,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeFileFormats.DataSnowflakeFileFormatsFileFormatsShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakefileformats"
 
 &datasnowflakefileformats.DataSnowflakeFileFormatsFileFormatsShowOutput {
 
@@ -913,7 +913,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeFileFormats.DataSnowflakeFileFormatsIn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakefileformats"
 
 &datasnowflakefileformats.DataSnowflakeFileFormatsIn {
 	Account: interface{},
@@ -981,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeFileFormats.DataSnowflakeFileFormatsFileFormatsDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakefileformats"
 
 datasnowflakefileformats.NewDataSnowflakeFileFormatsFileFormatsDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeFileFormatsFileFormatsDescribeOutputList
 ```
@@ -1130,7 +1130,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeFileFormats.DataSnowflakeFileFormatsFileFormatsDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakefileformats"
 
 datasnowflakefileformats.NewDataSnowflakeFileFormatsFileFormatsDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeFileFormatsFileFormatsDescribeOutputOutputReference
 ```
@@ -1804,7 +1804,7 @@ func InternalValue() DataSnowflakeFileFormatsFileFormatsDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeFileFormats.DataSnowflakeFileFormatsFileFormatsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakefileformats"
 
 datasnowflakefileformats.NewDataSnowflakeFileFormatsFileFormatsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeFileFormatsFileFormatsList
 ```
@@ -1953,7 +1953,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeFileFormats.DataSnowflakeFileFormatsFileFormatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakefileformats"
 
 datasnowflakefileformats.NewDataSnowflakeFileFormatsFileFormatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeFileFormatsFileFormatsOutputReference
 ```
@@ -2242,7 +2242,7 @@ func InternalValue() DataSnowflakeFileFormatsFileFormats
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeFileFormats.DataSnowflakeFileFormatsFileFormatsShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakefileformats"
 
 datasnowflakefileformats.NewDataSnowflakeFileFormatsFileFormatsShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeFileFormatsFileFormatsShowOutputList
 ```
@@ -2391,7 +2391,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeFileFormats.DataSnowflakeFileFormatsFileFormatsShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakefileformats"
 
 datasnowflakefileformats.NewDataSnowflakeFileFormatsFileFormatsShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeFileFormatsFileFormatsShowOutputOutputReference
 ```
@@ -2757,7 +2757,7 @@ func InternalValue() DataSnowflakeFileFormatsFileFormatsShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeFileFormats.DataSnowflakeFileFormatsInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakefileformats"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakefileformats"
 
 datasnowflakefileformats.NewDataSnowflakeFileFormatsInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeFileFormatsInOutputReference
 ```

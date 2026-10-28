@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStages(scope Construct, id *string, config DataSnowflakeStagesConfig) DataSnowflakeStages
 ```
@@ -339,7 +339,7 @@ func ResetWithDescribe()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.DataSnowflakeStages_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.DataSnowflakeStages_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datasnowflakestages.DataSnowflakeStages_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.DataSnowflakeStages_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ datasnowflakestages.DataSnowflakeStages_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.DataSnowflakeStages_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -705,7 +705,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 &datasnowflakestages.DataSnowflakeStagesConfig {
 	Connection: interface{},
@@ -716,7 +716,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	In: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.dataSnowflakeStages.DataSnowflakeStagesIn,
+	In: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19.dataSnowflakeStages.DataSnowflakeStagesIn,
 	Like: *string,
 	WithDescribe: interface{},
 }
@@ -874,7 +874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesIn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 &datasnowflakestages.DataSnowflakeStagesIn {
 	Account: interface{},
@@ -972,7 +972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 &datasnowflakestages.DataSnowflakeStagesStages {
 
@@ -985,7 +985,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 &datasnowflakestages.DataSnowflakeStagesStagesDescribeOutput {
 
@@ -998,7 +998,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputDirectoryTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 &datasnowflakestages.DataSnowflakeStagesStagesDescribeOutputDirectoryTable {
 
@@ -1011,7 +1011,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 &datasnowflakestages.DataSnowflakeStagesStagesDescribeOutputFileFormat {
 
@@ -1024,7 +1024,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatAvro.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 &datasnowflakestages.DataSnowflakeStagesStagesDescribeOutputFileFormatAvro {
 
@@ -1037,7 +1037,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatCsv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 &datasnowflakestages.DataSnowflakeStagesStagesDescribeOutputFileFormatCsv {
 
@@ -1050,7 +1050,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 &datasnowflakestages.DataSnowflakeStagesStagesDescribeOutputFileFormatJson {
 
@@ -1063,7 +1063,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatOrc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 &datasnowflakestages.DataSnowflakeStagesStagesDescribeOutputFileFormatOrc {
 
@@ -1076,7 +1076,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatParquet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 &datasnowflakestages.DataSnowflakeStagesStagesDescribeOutputFileFormatParquet {
 
@@ -1089,7 +1089,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatXml.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 &datasnowflakestages.DataSnowflakeStagesStagesDescribeOutputFileFormatXml {
 
@@ -1102,7 +1102,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 &datasnowflakestages.DataSnowflakeStagesStagesDescribeOutputLocation {
 
@@ -1115,7 +1115,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputPrivatelink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 &datasnowflakestages.DataSnowflakeStagesStagesDescribeOutputPrivatelink {
 
@@ -1128,7 +1128,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 &datasnowflakestages.DataSnowflakeStagesStagesShowOutput {
 
@@ -1143,7 +1143,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeStagesInOutputReference
 ```
@@ -1537,7 +1537,7 @@ func InternalValue() DataSnowflakeStagesIn
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputDirectoryTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputDirectoryTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStagesStagesDescribeOutputDirectoryTableList
 ```
@@ -1686,7 +1686,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputDirectoryTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputDirectoryTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStagesStagesDescribeOutputDirectoryTableOutputReference
 ```
@@ -2008,7 +2008,7 @@ func InternalValue() DataSnowflakeStagesStagesDescribeOutputDirectoryTable
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatAvroList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputFileFormatAvroList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStagesStagesDescribeOutputFileFormatAvroList
 ```
@@ -2157,7 +2157,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatAvroOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputFileFormatAvroOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStagesStagesDescribeOutputFileFormatAvroOutputReference
 ```
@@ -2479,7 +2479,7 @@ func InternalValue() DataSnowflakeStagesStagesDescribeOutputFileFormatAvro
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatCsvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputFileFormatCsvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStagesStagesDescribeOutputFileFormatCsvList
 ```
@@ -2628,7 +2628,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatCsvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputFileFormatCsvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStagesStagesDescribeOutputFileFormatCsvOutputReference
 ```
@@ -3159,7 +3159,7 @@ func InternalValue() DataSnowflakeStagesStagesDescribeOutputFileFormatCsv
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatJsonList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputFileFormatJsonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStagesStagesDescribeOutputFileFormatJsonList
 ```
@@ -3308,7 +3308,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputFileFormatJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStagesStagesDescribeOutputFileFormatJsonOutputReference
 ```
@@ -3762,7 +3762,7 @@ func InternalValue() DataSnowflakeStagesStagesDescribeOutputFileFormatJson
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputFileFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStagesStagesDescribeOutputFileFormatList
 ```
@@ -3911,7 +3911,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatOrcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputFileFormatOrcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStagesStagesDescribeOutputFileFormatOrcList
 ```
@@ -4060,7 +4060,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatOrcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputFileFormatOrcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStagesStagesDescribeOutputFileFormatOrcOutputReference
 ```
@@ -4371,7 +4371,7 @@ func InternalValue() DataSnowflakeStagesStagesDescribeOutputFileFormatOrc
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputFileFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStagesStagesDescribeOutputFileFormatOutputReference
 ```
@@ -4715,7 +4715,7 @@ func InternalValue() DataSnowflakeStagesStagesDescribeOutputFileFormat
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatParquetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputFileFormatParquetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStagesStagesDescribeOutputFileFormatParquetList
 ```
@@ -4864,7 +4864,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatParquetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputFileFormatParquetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStagesStagesDescribeOutputFileFormatParquetOutputReference
 ```
@@ -5219,7 +5219,7 @@ func InternalValue() DataSnowflakeStagesStagesDescribeOutputFileFormatParquet
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatXmlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputFileFormatXmlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStagesStagesDescribeOutputFileFormatXmlList
 ```
@@ -5368,7 +5368,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputFileFormatXmlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputFileFormatXmlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStagesStagesDescribeOutputFileFormatXmlOutputReference
 ```
@@ -5723,7 +5723,7 @@ func InternalValue() DataSnowflakeStagesStagesDescribeOutputFileFormatXml
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStagesStagesDescribeOutputList
 ```
@@ -5872,7 +5872,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStagesStagesDescribeOutputLocationList
 ```
@@ -6021,7 +6021,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStagesStagesDescribeOutputLocationOutputReference
 ```
@@ -6310,7 +6310,7 @@ func InternalValue() DataSnowflakeStagesStagesDescribeOutputLocation
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStagesStagesDescribeOutputOutputReference
 ```
@@ -6621,7 +6621,7 @@ func InternalValue() DataSnowflakeStagesStagesDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputPrivatelinkList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputPrivatelinkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStagesStagesDescribeOutputPrivatelinkList
 ```
@@ -6770,7 +6770,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesDescribeOutputPrivatelinkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesDescribeOutputPrivatelinkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStagesStagesDescribeOutputPrivatelinkOutputReference
 ```
@@ -7048,7 +7048,7 @@ func InternalValue() DataSnowflakeStagesStagesDescribeOutputPrivatelink
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStagesStagesList
 ```
@@ -7197,7 +7197,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStagesStagesOutputReference
 ```
@@ -7486,7 +7486,7 @@ func InternalValue() DataSnowflakeStagesStages
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStagesStagesShowOutputList
 ```
@@ -7635,7 +7635,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakestages"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStagesStagesShowOutputOutputReference
 ```
