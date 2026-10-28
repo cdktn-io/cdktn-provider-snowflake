@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeployments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 datasnowflakeopenflowdeployments.NewDataSnowflakeOpenflowDeployments(scope Construct, id *string, config DataSnowflakeOpenflowDeploymentsConfig) DataSnowflakeOpenflowDeployments
 ```
@@ -353,7 +353,7 @@ func ResetWithParameters()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeployments.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 datasnowflakeopenflowdeployments.DataSnowflakeOpenflowDeployments_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeployments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 datasnowflakeopenflowdeployments.DataSnowflakeOpenflowDeployments_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ datasnowflakeopenflowdeployments.DataSnowflakeOpenflowDeployments_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeployments.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 datasnowflakeopenflowdeployments.DataSnowflakeOpenflowDeployments_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ datasnowflakeopenflowdeployments.DataSnowflakeOpenflowDeployments_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeployments.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 datasnowflakeopenflowdeployments.DataSnowflakeOpenflowDeployments_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -763,7 +763,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 &datasnowflakeopenflowdeployments.DataSnowflakeOpenflowDeploymentsConfig {
 	Connection: interface{},
@@ -775,7 +775,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 	Provisioners: *[]interface{},
 	Id: *string,
 	Like: *string,
-	Limit: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsLimit,
+	Limit: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsLimit,
 	StartsWith: *string,
 	WithDescribe: interface{},
 	WithParameters: interface{},
@@ -966,7 +966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 &datasnowflakeopenflowdeployments.DataSnowflakeOpenflowDeploymentsLimit {
 	Rows: *f64,
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeployments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 &datasnowflakeopenflowdeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeployments {
 
@@ -1031,7 +1031,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 &datasnowflakeopenflowdeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsDescribeOutput {
 
@@ -1044,7 +1044,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 &datasnowflakeopenflowdeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsParameters {
 
@@ -1057,7 +1057,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsParametersEventTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 &datasnowflakeopenflowdeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsParametersEventTable {
 
@@ -1070,7 +1070,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 &datasnowflakeopenflowdeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsShowOutput {
 
@@ -1085,7 +1085,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowfl
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 datasnowflakeopenflowdeployments.NewDataSnowflakeOpenflowDeploymentsLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeOpenflowDeploymentsLimitOutputReference
 ```
@@ -1385,7 +1385,7 @@ func InternalValue() DataSnowflakeOpenflowDeploymentsLimit
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 datasnowflakeopenflowdeployments.NewDataSnowflakeOpenflowDeploymentsOpenflowDeploymentsDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsDescribeOutputList
 ```
@@ -1534,7 +1534,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 datasnowflakeopenflowdeployments.NewDataSnowflakeOpenflowDeploymentsOpenflowDeploymentsDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsDescribeOutputOutputReference
 ```
@@ -1922,7 +1922,7 @@ func InternalValue() DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsDescribe
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 datasnowflakeopenflowdeployments.NewDataSnowflakeOpenflowDeploymentsOpenflowDeploymentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsList
 ```
@@ -2071,7 +2071,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 datasnowflakeopenflowdeployments.NewDataSnowflakeOpenflowDeploymentsOpenflowDeploymentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsOutputReference
 ```
@@ -2371,7 +2371,7 @@ func InternalValue() DataSnowflakeOpenflowDeploymentsOpenflowDeployments
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsParametersEventTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 datasnowflakeopenflowdeployments.NewDataSnowflakeOpenflowDeploymentsOpenflowDeploymentsParametersEventTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsParametersEventTableList
 ```
@@ -2520,7 +2520,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsParametersEventTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 datasnowflakeopenflowdeployments.NewDataSnowflakeOpenflowDeploymentsOpenflowDeploymentsParametersEventTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsParametersEventTableOutputReference
 ```
@@ -2842,7 +2842,7 @@ func InternalValue() DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsParamete
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 datasnowflakeopenflowdeployments.NewDataSnowflakeOpenflowDeploymentsOpenflowDeploymentsParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsParametersList
 ```
@@ -2991,7 +2991,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 datasnowflakeopenflowdeployments.NewDataSnowflakeOpenflowDeploymentsOpenflowDeploymentsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsParametersOutputReference
 ```
@@ -3269,7 +3269,7 @@ func InternalValue() DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsParamete
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 datasnowflakeopenflowdeployments.NewDataSnowflakeOpenflowDeploymentsOpenflowDeploymentsShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsShowOutputList
 ```
@@ -3418,7 +3418,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeOpenflowDeployments.DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/datasnowflakeopenflowdeployments"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/datasnowflakeopenflowdeployments"
 
 datasnowflakeopenflowdeployments.NewDataSnowflakeOpenflowDeploymentsOpenflowDeploymentsShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeOpenflowDeploymentsOpenflowDeploymentsShowOutputOutputReference
 ```

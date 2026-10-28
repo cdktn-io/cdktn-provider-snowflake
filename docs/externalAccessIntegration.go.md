@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalAccessIntegration.ExternalAccessIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalaccessintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/externalaccessintegration"
 
 externalaccessintegration.NewExternalAccessIntegration(scope Construct, id *string, config ExternalAccessIntegrationConfig) ExternalAccessIntegration
 ```
@@ -474,7 +474,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.externalAccessIntegration.ExternalAccessIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalaccessintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/externalaccessintegration"
 
 externalaccessintegration.ExternalAccessIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.externalAccessIntegration.ExternalAccessIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalaccessintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/externalaccessintegration"
 
 externalaccessintegration.ExternalAccessIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ externalaccessintegration.ExternalAccessIntegration_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.externalAccessIntegration.ExternalAccessIntegration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalaccessintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/externalaccessintegration"
 
 externalaccessintegration.ExternalAccessIntegration_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ externalaccessintegration.ExternalAccessIntegration_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.externalAccessIntegration.ExternalAccessIntegration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalaccessintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/externalaccessintegration"
 
 externalaccessintegration.ExternalAccessIntegration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -972,7 +972,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalAccessIntegration.ExternalAccessIntegrationAllowedApiAuthenticationIntegrations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalaccessintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/externalaccessintegration"
 
 &externalaccessintegration.ExternalAccessIntegrationAllowedApiAuthenticationIntegrations {
 	Integrations: *[]*string,
@@ -1022,7 +1022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalAccessIntegration.ExternalAccessIntegrationAllowedAuthenticationSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalaccessintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/externalaccessintegration"
 
 &externalaccessintegration.ExternalAccessIntegrationAllowedAuthenticationSecrets {
 	All: interface{},
@@ -1088,7 +1088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalAccessIntegration.ExternalAccessIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalaccessintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/externalaccessintegration"
 
 &externalaccessintegration.ExternalAccessIntegrationConfig {
 	Connection: interface{},
@@ -1101,11 +1101,11 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalac
 	AllowedNetworkRules: *[]*string,
 	Enabled: interface{},
 	Name: *string,
-	AllowedApiAuthenticationIntegrations: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.externalAccessIntegration.ExternalAccessIntegrationAllowedApiAuthenticationIntegrations,
-	AllowedAuthenticationSecrets: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.externalAccessIntegration.ExternalAccessIntegrationAllowedAuthenticationSecrets,
+	AllowedApiAuthenticationIntegrations: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19.externalAccessIntegration.ExternalAccessIntegrationAllowedApiAuthenticationIntegrations,
+	AllowedAuthenticationSecrets: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19.externalAccessIntegration.ExternalAccessIntegrationAllowedAuthenticationSecrets,
 	Comment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.externalAccessIntegration.ExternalAccessIntegrationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19.externalAccessIntegration.ExternalAccessIntegrationTimeouts,
 }
 ```
 
@@ -1323,7 +1323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalAccessIntegration.ExternalAccessIntegrationDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalaccessintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/externalaccessintegration"
 
 &externalaccessintegration.ExternalAccessIntegrationDescribeOutput {
 
@@ -1336,7 +1336,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalac
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalAccessIntegration.ExternalAccessIntegrationShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalaccessintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/externalaccessintegration"
 
 &externalaccessintegration.ExternalAccessIntegrationShowOutput {
 
@@ -1349,7 +1349,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalac
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.externalAccessIntegration.ExternalAccessIntegrationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalaccessintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/externalaccessintegration"
 
 &externalaccessintegration.ExternalAccessIntegrationTimeouts {
 	Create: *string,
@@ -1425,7 +1425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalAccessIntegration.ExternalAccessIntegrationAllowedApiAuthenticationIntegrationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalaccessintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/externalaccessintegration"
 
 externalaccessintegration.NewExternalAccessIntegrationAllowedApiAuthenticationIntegrationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalAccessIntegrationAllowedApiAuthenticationIntegrationsOutputReference
 ```
@@ -1732,7 +1732,7 @@ func InternalValue() ExternalAccessIntegrationAllowedApiAuthenticationIntegratio
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalAccessIntegration.ExternalAccessIntegrationAllowedAuthenticationSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalaccessintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/externalaccessintegration"
 
 externalaccessintegration.NewExternalAccessIntegrationAllowedAuthenticationSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalAccessIntegrationAllowedAuthenticationSecretsOutputReference
 ```
@@ -2068,7 +2068,7 @@ func InternalValue() ExternalAccessIntegrationAllowedAuthenticationSecrets
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalAccessIntegration.ExternalAccessIntegrationDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalaccessintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/externalaccessintegration"
 
 externalaccessintegration.NewExternalAccessIntegrationDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalAccessIntegrationDescribeOutputList
 ```
@@ -2217,7 +2217,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalAccessIntegration.ExternalAccessIntegrationDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalaccessintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/externalaccessintegration"
 
 externalaccessintegration.NewExternalAccessIntegrationDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalAccessIntegrationDescribeOutputOutputReference
 ```
@@ -2550,7 +2550,7 @@ func InternalValue() ExternalAccessIntegrationDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalAccessIntegration.ExternalAccessIntegrationShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalaccessintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/externalaccessintegration"
 
 externalaccessintegration.NewExternalAccessIntegrationShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalAccessIntegrationShowOutputList
 ```
@@ -2699,7 +2699,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalAccessIntegration.ExternalAccessIntegrationShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalaccessintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/externalaccessintegration"
 
 externalaccessintegration.NewExternalAccessIntegrationShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalAccessIntegrationShowOutputOutputReference
 ```
@@ -3032,7 +3032,7 @@ func InternalValue() ExternalAccessIntegrationShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.externalAccessIntegration.ExternalAccessIntegrationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/externalaccessintegration"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/externalaccessintegration"
 
 externalaccessintegration.NewExternalAccessIntegrationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalAccessIntegrationTimeoutsOutputReference
 ```

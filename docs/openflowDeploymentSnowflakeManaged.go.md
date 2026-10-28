@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManaged.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 openflowdeploymentsnowflakemanaged.NewOpenflowDeploymentSnowflakeManaged(scope Construct, id *string, config OpenflowDeploymentSnowflakeManagedConfig) OpenflowDeploymentSnowflakeManaged
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManaged.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 openflowdeploymentsnowflakemanaged.OpenflowDeploymentSnowflakeManaged_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManaged.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 openflowdeploymentsnowflakemanaged.OpenflowDeploymentSnowflakeManaged_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ openflowdeploymentsnowflakemanaged.OpenflowDeploymentSnowflakeManaged_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManaged.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 openflowdeploymentsnowflakemanaged.OpenflowDeploymentSnowflakeManaged_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ openflowdeploymentsnowflakemanaged.OpenflowDeploymentSnowflakeManaged_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManaged.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 openflowdeploymentsnowflakemanaged.OpenflowDeploymentSnowflakeManaged_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -924,7 +924,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManagedConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 &openflowdeploymentsnowflakemanaged.OpenflowDeploymentSnowflakeManagedConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowde
 	DisplayName: *string,
 	EventTable: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManagedTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManagedTimeouts,
 }
 ```
 
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManagedDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 &openflowdeploymentsnowflakemanaged.OpenflowDeploymentSnowflakeManagedDescribeOutput {
 
@@ -1140,7 +1140,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowde
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManagedParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 &openflowdeploymentsnowflakemanaged.OpenflowDeploymentSnowflakeManagedParameters {
 
@@ -1153,7 +1153,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowde
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManagedParametersEventTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 &openflowdeploymentsnowflakemanaged.OpenflowDeploymentSnowflakeManagedParametersEventTable {
 
@@ -1166,7 +1166,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowde
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManagedShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 &openflowdeploymentsnowflakemanaged.OpenflowDeploymentSnowflakeManagedShowOutput {
 
@@ -1179,7 +1179,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowde
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManagedTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 &openflowdeploymentsnowflakemanaged.OpenflowDeploymentSnowflakeManagedTimeouts {
 	Create: *string,
@@ -1255,7 +1255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManagedDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 openflowdeploymentsnowflakemanaged.NewOpenflowDeploymentSnowflakeManagedDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpenflowDeploymentSnowflakeManagedDescribeOutputList
 ```
@@ -1404,7 +1404,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManagedDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 openflowdeploymentsnowflakemanaged.NewOpenflowDeploymentSnowflakeManagedDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpenflowDeploymentSnowflakeManagedDescribeOutputOutputReference
 ```
@@ -1792,7 +1792,7 @@ func InternalValue() OpenflowDeploymentSnowflakeManagedDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManagedParametersEventTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 openflowdeploymentsnowflakemanaged.NewOpenflowDeploymentSnowflakeManagedParametersEventTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpenflowDeploymentSnowflakeManagedParametersEventTableList
 ```
@@ -1941,7 +1941,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManagedParametersEventTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 openflowdeploymentsnowflakemanaged.NewOpenflowDeploymentSnowflakeManagedParametersEventTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpenflowDeploymentSnowflakeManagedParametersEventTableOutputReference
 ```
@@ -2263,7 +2263,7 @@ func InternalValue() OpenflowDeploymentSnowflakeManagedParametersEventTable
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManagedParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 openflowdeploymentsnowflakemanaged.NewOpenflowDeploymentSnowflakeManagedParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpenflowDeploymentSnowflakeManagedParametersList
 ```
@@ -2412,7 +2412,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManagedParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 openflowdeploymentsnowflakemanaged.NewOpenflowDeploymentSnowflakeManagedParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpenflowDeploymentSnowflakeManagedParametersOutputReference
 ```
@@ -2690,7 +2690,7 @@ func InternalValue() OpenflowDeploymentSnowflakeManagedParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManagedShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 openflowdeploymentsnowflakemanaged.NewOpenflowDeploymentSnowflakeManagedShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpenflowDeploymentSnowflakeManagedShowOutputList
 ```
@@ -2839,7 +2839,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManagedShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 openflowdeploymentsnowflakemanaged.NewOpenflowDeploymentSnowflakeManagedShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpenflowDeploymentSnowflakeManagedShowOutputOutputReference
 ```
@@ -3249,7 +3249,7 @@ func InternalValue() OpenflowDeploymentSnowflakeManagedShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.openflowDeploymentSnowflakeManaged.OpenflowDeploymentSnowflakeManagedTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowdeploymentsnowflakemanaged"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowdeploymentsnowflakemanaged"
 
 openflowdeploymentsnowflakemanaged.NewOpenflowDeploymentSnowflakeManagedTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpenflowDeploymentSnowflakeManagedTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.openflowConnector.OpenflowConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowconnector"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowconnector"
 
 openflowconnector.NewOpenflowConnector(scope Construct, id *string, config OpenflowConnectorConfig) OpenflowConnector
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.openflowConnector.OpenflowConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowconnector"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowconnector"
 
 openflowconnector.OpenflowConnector_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.openflowConnector.OpenflowConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowconnector"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowconnector"
 
 openflowconnector.OpenflowConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ openflowconnector.OpenflowConnector_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.openflowConnector.OpenflowConnector.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowconnector"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowconnector"
 
 openflowconnector.OpenflowConnector_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ openflowconnector.OpenflowConnector_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.openflowConnector.OpenflowConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowconnector"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowconnector"
 
 openflowconnector.OpenflowConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -974,7 +974,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.openflowConnector.OpenflowConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowconnector"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowconnector"
 
 &openflowconnector.OpenflowConnectorConfig {
 	Connection: interface{},
@@ -985,14 +985,14 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowco
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Database: *string,
-	From: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.openflowConnector.OpenflowConnectorFrom,
+	From: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19.openflowConnector.OpenflowConnectorFrom,
 	Name: *string,
 	Runtime: *string,
 	Schema: *string,
 	Comment: *string,
 	DisplayName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.openflowConnector.OpenflowConnectorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19.openflowConnector.OpenflowConnectorTimeouts,
 }
 ```
 
@@ -1229,7 +1229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.openflowConnector.OpenflowConnectorDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowconnector"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowconnector"
 
 &openflowconnector.OpenflowConnectorDescribeOutput {
 
@@ -1242,7 +1242,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowco
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.openflowConnector.OpenflowConnectorFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowconnector"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowconnector"
 
 &openflowconnector.OpenflowConnectorFrom {
 	Definition: *string,
@@ -1312,7 +1312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.openflowConnector.OpenflowConnectorShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowconnector"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowconnector"
 
 &openflowconnector.OpenflowConnectorShowOutput {
 
@@ -1325,7 +1325,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowco
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.openflowConnector.OpenflowConnectorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowconnector"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowconnector"
 
 &openflowconnector.OpenflowConnectorTimeouts {
 	Create: *string,
@@ -1401,7 +1401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.openflowConnector.OpenflowConnectorDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowconnector"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowconnector"
 
 openflowconnector.NewOpenflowConnectorDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpenflowConnectorDescribeOutputList
 ```
@@ -1550,7 +1550,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.openflowConnector.OpenflowConnectorDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowconnector"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowconnector"
 
 openflowconnector.NewOpenflowConnectorDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpenflowConnectorDescribeOutputOutputReference
 ```
@@ -2037,7 +2037,7 @@ func InternalValue() OpenflowConnectorDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.openflowConnector.OpenflowConnectorFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowconnector"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowconnector"
 
 openflowconnector.NewOpenflowConnectorFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpenflowConnectorFromOutputReference
 ```
@@ -2373,7 +2373,7 @@ func InternalValue() OpenflowConnectorFrom
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.openflowConnector.OpenflowConnectorShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowconnector"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowconnector"
 
 openflowconnector.NewOpenflowConnectorShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpenflowConnectorShowOutputList
 ```
@@ -2522,7 +2522,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.openflowConnector.OpenflowConnectorShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowconnector"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowconnector"
 
 openflowconnector.NewOpenflowConnectorShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpenflowConnectorShowOutputOutputReference
 ```
@@ -2987,7 +2987,7 @@ func InternalValue() OpenflowConnectorShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.openflowConnector.OpenflowConnectorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/openflowconnector"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/openflowconnector"
 
 openflowconnector.NewOpenflowConnectorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpenflowConnectorTimeoutsOutputReference
 ```

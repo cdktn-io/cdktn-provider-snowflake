@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlue(scope Construct, id *string, config IcebergTableFromAwsGlueConfig) IcebergTableFromAwsGlue
 ```
@@ -469,7 +469,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlue.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.IcebergTableFromAwsGlue_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.IcebergTableFromAwsGlue_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ icebergtablefromawsglue.IcebergTableFromAwsGlue_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.IcebergTableFromAwsGlue_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ icebergtablefromawsglue.IcebergTableFromAwsGlue_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.IcebergTableFromAwsGlue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1066,7 +1066,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 &icebergtablefromawsglue.IcebergTableFromAwsGlueConfig {
 	Connection: interface{},
@@ -1087,7 +1087,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtab
 	ExternalVolume: *string,
 	Id: *string,
 	ReplaceInvalidCharacters: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.icebergTableFromAwsGlue.IcebergTableFromAwsGlueTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19.icebergTableFromAwsGlue.IcebergTableFromAwsGlueTimeouts,
 }
 ```
 
@@ -1373,7 +1373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 &icebergtablefromawsglue.IcebergTableFromAwsGlueDescribeOutput {
 
@@ -1386,7 +1386,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 &icebergtablefromawsglue.IcebergTableFromAwsGlueParameters {
 
@@ -1399,7 +1399,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueParametersCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 &icebergtablefromawsglue.IcebergTableFromAwsGlueParametersCatalog {
 
@@ -1412,7 +1412,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueParametersExternalVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 &icebergtablefromawsglue.IcebergTableFromAwsGlueParametersExternalVolume {
 
@@ -1425,7 +1425,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueParametersReplaceInvalidCharacters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 &icebergtablefromawsglue.IcebergTableFromAwsGlueParametersReplaceInvalidCharacters {
 
@@ -1438,7 +1438,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 &icebergtablefromawsglue.IcebergTableFromAwsGlueShowOutput {
 
@@ -1451,7 +1451,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueShowOutputAutoRefreshStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 &icebergtablefromawsglue.IcebergTableFromAwsGlueShowOutputAutoRefreshStatus {
 
@@ -1464,7 +1464,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueShowOutputPartitionSpecs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 &icebergtablefromawsglue.IcebergTableFromAwsGlueShowOutputPartitionSpecs {
 
@@ -1477,7 +1477,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueShowOutputPartitionSpecsFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 &icebergtablefromawsglue.IcebergTableFromAwsGlueShowOutputPartitionSpecsFields {
 
@@ -1490,7 +1490,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtab
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 &icebergtablefromawsglue.IcebergTableFromAwsGlueTimeouts {
 	Create: *string,
@@ -1566,7 +1566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromAwsGlueDescribeOutputList
 ```
@@ -1715,7 +1715,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromAwsGlueDescribeOutputOutputReference
 ```
@@ -2147,7 +2147,7 @@ func InternalValue() IcebergTableFromAwsGlueDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueParametersCatalogList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueParametersCatalogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromAwsGlueParametersCatalogList
 ```
@@ -2296,7 +2296,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueParametersCatalogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueParametersCatalogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromAwsGlueParametersCatalogOutputReference
 ```
@@ -2618,7 +2618,7 @@ func InternalValue() IcebergTableFromAwsGlueParametersCatalog
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueParametersExternalVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueParametersExternalVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromAwsGlueParametersExternalVolumeList
 ```
@@ -2767,7 +2767,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueParametersExternalVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueParametersExternalVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromAwsGlueParametersExternalVolumeOutputReference
 ```
@@ -3089,7 +3089,7 @@ func InternalValue() IcebergTableFromAwsGlueParametersExternalVolume
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromAwsGlueParametersList
 ```
@@ -3238,7 +3238,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromAwsGlueParametersOutputReference
 ```
@@ -3538,7 +3538,7 @@ func InternalValue() IcebergTableFromAwsGlueParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueParametersReplaceInvalidCharactersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueParametersReplaceInvalidCharactersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromAwsGlueParametersReplaceInvalidCharactersList
 ```
@@ -3687,7 +3687,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueParametersReplaceInvalidCharactersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueParametersReplaceInvalidCharactersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromAwsGlueParametersReplaceInvalidCharactersOutputReference
 ```
@@ -4009,7 +4009,7 @@ func InternalValue() IcebergTableFromAwsGlueParametersReplaceInvalidCharacters
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueShowOutputAutoRefreshStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueShowOutputAutoRefreshStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromAwsGlueShowOutputAutoRefreshStatusList
 ```
@@ -4158,7 +4158,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueShowOutputAutoRefreshStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueShowOutputAutoRefreshStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromAwsGlueShowOutputAutoRefreshStatusOutputReference
 ```
@@ -4480,7 +4480,7 @@ func InternalValue() IcebergTableFromAwsGlueShowOutputAutoRefreshStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromAwsGlueShowOutputList
 ```
@@ -4629,7 +4629,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromAwsGlueShowOutputOutputReference
 ```
@@ -5116,7 +5116,7 @@ func InternalValue() IcebergTableFromAwsGlueShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueShowOutputPartitionSpecsFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueShowOutputPartitionSpecsFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromAwsGlueShowOutputPartitionSpecsFieldsList
 ```
@@ -5265,7 +5265,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueShowOutputPartitionSpecsFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueShowOutputPartitionSpecsFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromAwsGlueShowOutputPartitionSpecsFieldsOutputReference
 ```
@@ -5576,7 +5576,7 @@ func InternalValue() IcebergTableFromAwsGlueShowOutputPartitionSpecsFields
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueShowOutputPartitionSpecsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueShowOutputPartitionSpecsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IcebergTableFromAwsGlueShowOutputPartitionSpecsList
 ```
@@ -5725,7 +5725,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueShowOutputPartitionSpecsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueShowOutputPartitionSpecsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IcebergTableFromAwsGlueShowOutputPartitionSpecsOutputReference
 ```
@@ -6014,7 +6014,7 @@ func InternalValue() IcebergTableFromAwsGlueShowOutputPartitionSpecs
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.icebergTableFromAwsGlue.IcebergTableFromAwsGlueTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/icebergtablefromawsglue"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/icebergtablefromawsglue"
 
 icebergtablefromawsglue.NewIcebergTableFromAwsGlueTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IcebergTableFromAwsGlueTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.hybridTable.HybridTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.NewHybridTable(scope Construct, id *string, config HybridTableConfig) HybridTable
 ```
@@ -534,7 +534,7 @@ func ResetUniqueConstraint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-snowflake.hybridTable.HybridTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.HybridTable_IsConstruct(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-snowflake.hybridTable.HybridTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.HybridTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -580,7 +580,7 @@ hybridtable.HybridTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-snowflake.hybridTable.HybridTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.HybridTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -594,7 +594,7 @@ hybridtable.HybridTable_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-snowflake.hybridTable.HybridTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.HybridTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1153,14 +1153,14 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.hybridTable.HybridTableColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 &hybridtable.HybridTableColumn {
 	Name: *string,
 	Type: *string,
 	Collate: *string,
 	Comment: *string,
-	Default: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.hybridTable.HybridTableColumnDefault,
+	Default: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19.hybridTable.HybridTableColumnDefault,
 	NotNull: interface{},
 }
 ```
@@ -1269,7 +1269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.hybridTable.HybridTableColumnDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 &hybridtable.HybridTableColumnDefault {
 	Constant: *string,
@@ -1335,7 +1335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.hybridTable.HybridTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 &hybridtable.HybridTableConfig {
 	Connection: interface{},
@@ -1348,7 +1348,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtabl
 	Column: interface{},
 	Database: *string,
 	Name: *string,
-	PrimaryKeyConstraint: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.hybridTable.HybridTablePrimaryKeyConstraint,
+	PrimaryKeyConstraint: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19.hybridTable.HybridTablePrimaryKeyConstraint,
 	Schema: *string,
 	Comment: *string,
 	DataRetentionTimeInDays: *f64,
@@ -1356,7 +1356,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtabl
 	Id: *string,
 	Index: interface{},
 	MaxDataExtensionTimeInDays: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18.hybridTable.HybridTableTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19.hybridTable.HybridTableTimeouts,
 	UniqueConstraint: interface{},
 }
 ```
@@ -1656,7 +1656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.hybridTable.HybridTableDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 &hybridtable.HybridTableDescribeOutput {
 
@@ -1669,7 +1669,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtabl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.hybridTable.HybridTableForeignKeyConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 &hybridtable.HybridTableForeignKeyConstraint {
 	Columns: *[]*string,
@@ -1751,7 +1751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.hybridTable.HybridTableIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 &hybridtable.HybridTableIndex {
 	Columns: *[]*string,
@@ -1817,7 +1817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.hybridTable.HybridTablePrimaryKeyConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 &hybridtable.HybridTablePrimaryKeyConstraint {
 	Columns: *[]*string,
@@ -1867,7 +1867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.hybridTable.HybridTableShowKeysOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 &hybridtable.HybridTableShowKeysOutput {
 
@@ -1880,7 +1880,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtabl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.hybridTable.HybridTableShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 &hybridtable.HybridTableShowOutput {
 
@@ -1893,7 +1893,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtabl
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.hybridTable.HybridTableTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 &hybridtable.HybridTableTimeouts {
 	Create: *string,
@@ -1967,7 +1967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.hybridTable.HybridTableUniqueConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 &hybridtable.HybridTableUniqueConstraint {
 	Columns: *[]*string,
@@ -2019,7 +2019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.hybridTable.HybridTableColumnDefaultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.NewHybridTableColumnDefaultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HybridTableColumnDefaultOutputReference
 ```
@@ -2355,7 +2355,7 @@ func InternalValue() HybridTableColumnDefault
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.hybridTable.HybridTableColumnList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.NewHybridTableColumnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HybridTableColumnList
 ```
@@ -2515,7 +2515,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.hybridTable.HybridTableColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.NewHybridTableColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) HybridTableColumnOutputReference
 ```
@@ -2955,7 +2955,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.hybridTable.HybridTableDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.NewHybridTableDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HybridTableDescribeOutputList
 ```
@@ -3104,7 +3104,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.hybridTable.HybridTableDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.NewHybridTableDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) HybridTableDescribeOutputOutputReference
 ```
@@ -3525,7 +3525,7 @@ func InternalValue() HybridTableDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.hybridTable.HybridTableForeignKeyConstraintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.NewHybridTableForeignKeyConstraintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HybridTableForeignKeyConstraintList
 ```
@@ -3685,7 +3685,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.hybridTable.HybridTableForeignKeyConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.NewHybridTableForeignKeyConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) HybridTableForeignKeyConstraintOutputReference
 ```
@@ -4047,7 +4047,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.hybridTable.HybridTableIndexList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.NewHybridTableIndexList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HybridTableIndexList
 ```
@@ -4207,7 +4207,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.hybridTable.HybridTableIndexOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.NewHybridTableIndexOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) HybridTableIndexOutputReference
 ```
@@ -4547,7 +4547,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.hybridTable.HybridTablePrimaryKeyConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.NewHybridTablePrimaryKeyConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HybridTablePrimaryKeyConstraintOutputReference
 ```
@@ -4847,7 +4847,7 @@ func InternalValue() HybridTablePrimaryKeyConstraint
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.hybridTable.HybridTableShowKeysOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.NewHybridTableShowKeysOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HybridTableShowKeysOutputList
 ```
@@ -4996,7 +4996,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.hybridTable.HybridTableShowKeysOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.NewHybridTableShowKeysOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) HybridTableShowKeysOutputOutputReference
 ```
@@ -5340,7 +5340,7 @@ func InternalValue() HybridTableShowKeysOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.hybridTable.HybridTableShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.NewHybridTableShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HybridTableShowOutputList
 ```
@@ -5489,7 +5489,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.hybridTable.HybridTableShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.NewHybridTableShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) HybridTableShowOutputOutputReference
 ```
@@ -5855,7 +5855,7 @@ func InternalValue() HybridTableShowOutput
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.hybridTable.HybridTableTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.NewHybridTableTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HybridTableTimeoutsOutputReference
 ```
@@ -6220,7 +6220,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.hybridTable.HybridTableUniqueConstraintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.NewHybridTableUniqueConstraintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HybridTableUniqueConstraintList
 ```
@@ -6380,7 +6380,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.hybridTable.HybridTableUniqueConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18/hybridtable"
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/hybridtable"
 
 hybridtable.NewHybridTableUniqueConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) HybridTableUniqueConstraintOutputReference
 ```
