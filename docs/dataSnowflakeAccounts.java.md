@@ -4,7 +4,7 @@
 
 ### DataSnowflakeAccounts <a name="DataSnowflakeAccounts" id="@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/accounts snowflake_accounts}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/accounts snowflake_accounts}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts.Initializer"></a>
 
@@ -37,7 +37,7 @@ DataSnowflakeAccounts.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/accounts#id DataSnowflakeAccounts#id}. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/accounts#id DataSnowflakeAccounts#id}. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts.Initializer.parameter.like">like</a></code> | <code>java.lang.String</code> | Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`). |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts.Initializer.parameter.withHistory">withHistory</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Includes dropped accounts that have not yet been deleted. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts.Initializer.parameter.withParameters">withParameters</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | (Default: `true`) Runs SHOW PARAMETERS IN ACCOUNT once, for the connected account, and saves the output on that account's row only. |
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/accounts#id DataSnowflakeAccounts#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/accounts#id DataSnowflakeAccounts#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -121,7 +121,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/accounts#like DataSnowflakeAccounts#like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/accounts#like DataSnowflakeAccounts#like}
 
 ---
 
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Includes dropped accounts that have not yet been deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/accounts#with_history DataSnowflakeAccounts#with_history}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/accounts#with_history DataSnowflakeAccounts#with_history}
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Other listed accounts stay empty because Snowflake cannot show parameters for another organization account; the call is not repeated or skipped per row. By default this value is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/accounts#with_parameters DataSnowflakeAccounts#with_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/accounts#with_parameters DataSnowflakeAccounts#with_parameters}
 
 ---
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the DataSnowflakeAccounts to i
 
 The id of the existing DataSnowflakeAccounts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/accounts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/accounts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2585,7 +2585,7 @@ DataSnowflakeAccountsConfig.builder()
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/accounts#id DataSnowflakeAccounts#id}. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/accounts#id DataSnowflakeAccounts#id}. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsConfig.property.like">like</a></code> | <code>java.lang.String</code> | Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`). |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsConfig.property.withHistory">withHistory</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Includes dropped accounts that have not yet been deleted. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsConfig.property.withParameters">withParameters</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | (Default: `true`) Runs SHOW PARAMETERS IN ACCOUNT once, for the connected account, and saves the output on that account's row only. |
@@ -2670,7 +2670,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/accounts#id DataSnowflakeAccounts#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/accounts#id DataSnowflakeAccounts#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2687,7 +2687,7 @@ public java.lang.String getLike();
 
 Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/accounts#like DataSnowflakeAccounts#like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/accounts#like DataSnowflakeAccounts#like}
 
 ---
 
@@ -2701,7 +2701,7 @@ public java.lang.Boolean|IResolvable getWithHistory();
 
 Includes dropped accounts that have not yet been deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/accounts#with_history DataSnowflakeAccounts#with_history}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/accounts#with_history DataSnowflakeAccounts#with_history}
 
 ---
 
@@ -2717,7 +2717,7 @@ public java.lang.Boolean|IResolvable getWithParameters();
 
 Other listed accounts stay empty because Snowflake cannot show parameters for another organization account; the call is not repeated or skipped per row. By default this value is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/data-sources/accounts#with_parameters DataSnowflakeAccounts#with_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/accounts#with_parameters DataSnowflakeAccounts#with_parameters}
 
 ---
 

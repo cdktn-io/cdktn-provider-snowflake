@@ -4,7 +4,7 @@
 
 ### FailoverGroup <a name="FailoverGroup" id="@cdktn/provider-snowflake.failoverGroup.FailoverGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group snowflake_failover_group}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group snowflake_failover_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.failoverGroup.FailoverGroup.Initializer"></a>
 
@@ -612,7 +612,7 @@ The construct id used in the generated config for the FailoverGroup to import.
 
 The id of the existing FailoverGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1152,7 +1152,7 @@ new FailoverGroupConfig {
 | <code><a href="#@cdktn/provider-snowflake.failoverGroup.FailoverGroupConfig.property.allowedIntegrationTypes">AllowedIntegrationTypes</a></code> | <code>string[]</code> | Type(s) of integrations for which you are enabling replication and failover from the source account to the target account. |
 | <code><a href="#@cdktn/provider-snowflake.failoverGroup.FailoverGroupConfig.property.allowedShares">AllowedShares</a></code> | <code>string[]</code> | Specifies the share or list of shares for which you are enabling replication and failover from the source account to the target account. |
 | <code><a href="#@cdktn/provider-snowflake.failoverGroup.FailoverGroupConfig.property.fromReplica">FromReplica</a></code> | <code><a href="#@cdktn/provider-snowflake.failoverGroup.FailoverGroupFromReplica">FailoverGroupFromReplica</a></code> | from_replica block. |
-| <code><a href="#@cdktn/provider-snowflake.failoverGroup.FailoverGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#id FailoverGroup#id}. |
+| <code><a href="#@cdktn/provider-snowflake.failoverGroup.FailoverGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#id FailoverGroup#id}. |
 | <code><a href="#@cdktn/provider-snowflake.failoverGroup.FailoverGroupConfig.property.ignoreEditionCheck">IgnoreEditionCheck</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | (Default: `false`) Allows replicating objects to accounts on lower editions. |
 | <code><a href="#@cdktn/provider-snowflake.failoverGroup.FailoverGroupConfig.property.objectTypes">ObjectTypes</a></code> | <code>string[]</code> | Type(s) of objects for which you are enabling replication and failover from the source account to the target account. |
 | <code><a href="#@cdktn/provider-snowflake.failoverGroup.FailoverGroupConfig.property.optimizedRefresh">OptimizedRefresh</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | (Default: `false`) Specifies whether the failover group uses Optimized Refresh. |
@@ -1244,7 +1244,7 @@ Specifies the identifier for the failover group.
 
 The identifier must start with an alphabetic character and cannot contain spaces or special characters unless the identifier string is enclosed in double quotes (e.g. "My object"). Identifiers enclosed in double quotes are also case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#name FailoverGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#name FailoverGroup#name}
 
 ---
 
@@ -1260,7 +1260,7 @@ Specifies the target account or list of target accounts to which replication and
 
 Secondary failover groups in the target accounts in this list can be promoted to serve as the primary failover group in case of failover. Expected in the form `<org_name>.<target_account_name>`. This value is case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#allowed_accounts FailoverGroup#allowed_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#allowed_accounts FailoverGroup#allowed_accounts}
 
 ---
 
@@ -1276,7 +1276,7 @@ Specifies the database or list of databases for which you are enabling replicati
 
 The OBJECT_TYPES list must include DATABASES to set this parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#allowed_databases FailoverGroup#allowed_databases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#allowed_databases FailoverGroup#allowed_databases}
 
 ---
 
@@ -1292,7 +1292,7 @@ Type(s) of integrations for which you are enabling replication and failover from
 
 This property requires that the OBJECT_TYPES list include INTEGRATIONS to set this parameter. The following integration types are supported: "SECURITY INTEGRATIONS", "API INTEGRATIONS", "STORAGE INTEGRATIONS", "EXTERNAL ACCESS INTEGRATIONS", "NOTIFICATION INTEGRATIONS"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#allowed_integration_types FailoverGroup#allowed_integration_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#allowed_integration_types FailoverGroup#allowed_integration_types}
 
 ---
 
@@ -1308,7 +1308,7 @@ Specifies the share or list of shares for which you are enabling replication and
 
 The OBJECT_TYPES list must include SHARES to set this parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#allowed_shares FailoverGroup#allowed_shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#allowed_shares FailoverGroup#allowed_shares}
 
 ---
 
@@ -1322,7 +1322,7 @@ public FailoverGroupFromReplica FromReplica { get; set; }
 
 from_replica block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#from_replica FailoverGroup#from_replica}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#from_replica FailoverGroup#from_replica}
 
 ---
 
@@ -1334,7 +1334,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#id FailoverGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#id FailoverGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1351,7 +1351,7 @@ public bool|IResolvable IgnoreEditionCheck { get; set; }
 
 (Default: `false`) Allows replicating objects to accounts on lower editions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#ignore_edition_check FailoverGroup#ignore_edition_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#ignore_edition_check FailoverGroup#ignore_edition_check}
 
 ---
 
@@ -1367,7 +1367,7 @@ Type(s) of objects for which you are enabling replication and failover from the 
 
 The following object types are supported: "ACCOUNT PARAMETERS", "DATABASES", "INTEGRATIONS", "NETWORK POLICIES", "RESOURCE MONITORS", "ROLES", "SHARES", "USERS", "WAREHOUSES"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#object_types FailoverGroup#object_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#object_types FailoverGroup#object_types}
 
 ---
 
@@ -1383,7 +1383,7 @@ public bool|IResolvable OptimizedRefresh { get; set; }
 
 Can be set on the primary failover group only. When true, a replication_schedule with an interval of 6 hours or less is required (Snowflake recommends 10 MINUTE or less). Do not set when rpo_assurance is true. Default: false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#optimized_refresh FailoverGroup#optimized_refresh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#optimized_refresh FailoverGroup#optimized_refresh}
 
 ---
 
@@ -1397,7 +1397,7 @@ public FailoverGroupReplicationSchedule ReplicationSchedule { get; set; }
 
 replication_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#replication_schedule FailoverGroup#replication_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#replication_schedule FailoverGroup#replication_schedule}
 
 ---
 
@@ -1413,7 +1413,7 @@ public bool|IResolvable RpoAssurance { get; set; }
 
 Can be set on the primary failover group only. Cannot be set with replication_schedule (unset the schedule first). Enables Optimized Refresh automatically; do not also set optimized_refresh. Default: false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#rpo_assurance FailoverGroup#rpo_assurance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#rpo_assurance FailoverGroup#rpo_assurance}
 
 ---
 
@@ -1427,7 +1427,7 @@ public FailoverGroupTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#timeouts FailoverGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#timeouts FailoverGroup#timeouts}
 
 ---
 
@@ -1465,7 +1465,7 @@ public string Name { get; set; }
 
 Identifier for the primary failover group in the source account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#name FailoverGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#name FailoverGroup#name}
 
 ---
 
@@ -1479,7 +1479,7 @@ public string OrganizationName { get; set; }
 
 Name of your Snowflake organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#organization_name FailoverGroup#organization_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#organization_name FailoverGroup#organization_name}
 
 ---
 
@@ -1493,7 +1493,7 @@ public string SourceAccountName { get; set; }
 
 Source account from which you are enabling replication and failover of the specified objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#source_account_name FailoverGroup#source_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#source_account_name FailoverGroup#source_account_name}
 
 ---
 
@@ -1529,7 +1529,7 @@ public FailoverGroupReplicationScheduleCron Cron { get; set; }
 
 cron block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#cron FailoverGroup#cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#cron FailoverGroup#cron}
 
 ---
 
@@ -1545,7 +1545,7 @@ Specifies the interval in minutes for the replication schedule.
 
 The interval must be greater than 0 and less than 1440 (24 hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#interval FailoverGroup#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#interval FailoverGroup#interval}
 
 ---
 
@@ -1583,7 +1583,7 @@ Specifies the cron expression for the replication schedule.
 
 The cron expression must be in the following format: "minute hour day-of-month month day-of-week". The following values are supported: minute: 0-59 hour: 0-23 day-of-month: 1-31 month: 1-12 day-of-week: 0-6 (0 is Sunday)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#expression FailoverGroup#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#expression FailoverGroup#expression}
 
 ---
 
@@ -1597,7 +1597,7 @@ public string TimeZone { get; set; }
 
 Specifies the time zone for secondary group refresh.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#time_zone FailoverGroup#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#time_zone FailoverGroup#time_zone}
 
 ---
 
@@ -1620,10 +1620,10 @@ new FailoverGroupTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.failoverGroup.FailoverGroupTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#create FailoverGroup#create}. |
-| <code><a href="#@cdktn/provider-snowflake.failoverGroup.FailoverGroupTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#delete FailoverGroup#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.failoverGroup.FailoverGroupTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#read FailoverGroup#read}. |
-| <code><a href="#@cdktn/provider-snowflake.failoverGroup.FailoverGroupTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#update FailoverGroup#update}. |
+| <code><a href="#@cdktn/provider-snowflake.failoverGroup.FailoverGroupTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#create FailoverGroup#create}. |
+| <code><a href="#@cdktn/provider-snowflake.failoverGroup.FailoverGroupTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#delete FailoverGroup#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.failoverGroup.FailoverGroupTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#read FailoverGroup#read}. |
+| <code><a href="#@cdktn/provider-snowflake.failoverGroup.FailoverGroupTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#update FailoverGroup#update}. |
 
 ---
 
@@ -1635,7 +1635,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#create FailoverGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#create FailoverGroup#create}.
 
 ---
 
@@ -1647,7 +1647,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#delete FailoverGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#delete FailoverGroup#delete}.
 
 ---
 
@@ -1659,7 +1659,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#read FailoverGroup#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#read FailoverGroup#read}.
 
 ---
 
@@ -1671,7 +1671,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/failover_group#update FailoverGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/failover_group#update FailoverGroup#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### Service <a name="Service" id="@cdktn/provider-snowflake.service.Service"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service snowflake_service}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service snowflake_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.service.Service.Initializer"></a>
 
@@ -62,7 +62,7 @@ service.Service(
 | <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.externalAccessIntegrations">external_access_integrations</a></code> | <code>typing.List[str]</code> | Specifies the names of the external access integrations that allow your service to access external sites. |
 | <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.fromSpecification">from_specification</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecification">ServiceFromSpecification</a></code> | from_specification block. |
 | <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.fromSpecificationTemplate">from_specification_template</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate">ServiceFromSpecificationTemplate</a></code> | from_specification_template block. |
-| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#id Service#id}. |
+| <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#id Service#id}. |
 | <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.maxInstances">max_instances</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum number of service instances to run. |
 | <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.minInstances">min_instances</a></code> | <code>typing.Union[int, float]</code> | Specifies the minimum number of service instances to run. |
 | <code><a href="#@cdktn/provider-snowflake.service.Service.Initializer.parameter.minReadyInstances">min_ready_instances</a></code> | <code>typing.Union[int, float]</code> | Indicates the minimum service instances that must be ready for Snowflake to consider the service is ready to process requests. |
@@ -140,7 +140,7 @@ Specifies the name of the compute pool in your account on which to run the servi
 
 Identifiers with special or lower-case characters are not supported. This limitation in the provider follows the limitation in Snowflake (see [docs](https://docs.snowflake.com/en/sql-reference/sql/create-compute-pool)). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#compute_pool Service#compute_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#compute_pool Service#compute_pool}
 
 ---
 
@@ -152,7 +152,7 @@ The database in which to create the service.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#database Service#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#database Service#database}
 
 ---
 
@@ -164,7 +164,7 @@ Specifies the identifier for the service;
 
 must be unique for the schema in which the service is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#name Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#name Service#name}
 
 ---
 
@@ -176,7 +176,7 @@ The schema in which to create the service.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#schema Service#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#schema Service#schema}
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#auto_resume Service#auto_resume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#auto_resume Service#auto_resume}
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of seconds of inactivity (service is idle) after which Snowflake automatically suspends the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#auto_suspend_secs Service#auto_suspend_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#auto_suspend_secs Service#auto_suspend_secs}
 
 ---
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#comment Service#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#comment Service#comment}
 
 ---
 
@@ -218,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the names of the external access integrations that allow your service to access external sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#external_access_integrations Service#external_access_integrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#external_access_integrations Service#external_access_integrations}
 
 ---
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 from_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#from_specification Service#from_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#from_specification Service#from_specification}
 
 ---
 
@@ -238,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 from_specification_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#from_specification_template Service#from_specification_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#from_specification_template Service#from_specification_template}
 
 ---
 
@@ -246,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#id Service#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#id Service#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -259,7 +259,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies the maximum number of service instances to run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#max_instances Service#max_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#max_instances Service#max_instances}
 
 ---
 
@@ -269,7 +269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the minimum number of service instances to run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#min_instances Service#min_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#min_instances Service#min_instances}
 
 ---
 
@@ -279,7 +279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Indicates the minimum service instances that must be ready for Snowflake to consider the service is ready to process requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#min_ready_instances Service#min_ready_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#min_ready_instances Service#min_ready_instances}
 
 ---
 
@@ -291,7 +291,7 @@ Warehouse to use if a service container connects to Snowflake to execute a query
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#query_warehouse Service#query_warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#query_warehouse Service#query_warehouse}
 
 ---
 
@@ -303,7 +303,7 @@ Controls how long a caller's rights login token is valid for Snowpark Container 
 
 For more information, check [SERVICE_CALLER_TOKEN_VALIDITY_SECS docs](https://docs.snowflake.com/en/sql-reference/parameters#service-caller-token-validity-secs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#service_caller_token_validity_secs Service#service_caller_token_validity_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#service_caller_token_validity_secs Service#service_caller_token_validity_secs}
 
 ---
 
@@ -313,7 +313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#timeouts Service#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#timeouts Service#timeouts}
 
 ---
 
@@ -729,7 +729,7 @@ def put_from_specification(
 
 The file name of the service specification. Example: `spec.yaml`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#file Service#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#file Service#file}
 
 ---
 
@@ -741,7 +741,7 @@ The path to the service specification file on the given stage.
 
 When the path is specified, the `/` character is automatically added as a path prefix. Example: `path/to/spec`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#path Service#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#path Service#path}
 
 ---
 
@@ -753,7 +753,7 @@ The fully qualified name of the stage containing the service specification file.
 
 At symbol (`@`) is added automatically. Example: `"\"<db_name>\".\"<schema_name>\".\"<stage_name>\""`. For more information about this resource, see [docs](./stage).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#stage Service#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#stage Service#stage}
 
 ---
 
@@ -763,7 +763,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The embedded text of the service specification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#text Service#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#text Service#text}
 
 ---
 
@@ -785,7 +785,7 @@ def put_from_specification_template(
 
 using block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#using Service#using}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#using Service#using}
 
 ---
 
@@ -795,7 +795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The file name of the service specification template. Example: `spec.yaml`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#file Service#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#file Service#file}
 
 ---
 
@@ -807,7 +807,7 @@ The path to the service specification template file on the given stage.
 
 When the path is specified, the `/` character is automatically added as a path prefix. Example: `path/to/spec`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#path Service#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#path Service#path}
 
 ---
 
@@ -819,7 +819,7 @@ The fully qualified name of the stage containing the service specification templ
 
 At symbol (`@`) is added automatically. Example: `"\"<db_name>\".\"<schema_name>\".\"<stage_name>\""`. For more information about this resource, see [docs](./stage).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#stage Service#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#stage Service#stage}
 
 ---
 
@@ -829,7 +829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The embedded text of the service specification template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#text Service#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#text Service#text}
 
 ---
 
@@ -848,7 +848,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#create Service#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#create Service#create}.
 
 ---
 
@@ -856,7 +856,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#delete Service#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#delete Service#delete}.
 
 ---
 
@@ -864,7 +864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#read Service#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#read Service#read}.
 
 ---
 
@@ -872,7 +872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#update Service#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#update Service#update}.
 
 ---
 
@@ -1068,7 +1068,7 @@ The construct id used in the generated config for the Service to import.
 
 The id of the existing Service that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1748,7 +1748,7 @@ service.ServiceConfig(
 | <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.externalAccessIntegrations">external_access_integrations</a></code> | <code>typing.List[str]</code> | Specifies the names of the external access integrations that allow your service to access external sites. |
 | <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.fromSpecification">from_specification</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecification">ServiceFromSpecification</a></code> | from_specification block. |
 | <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.fromSpecificationTemplate">from_specification_template</a></code> | <code><a href="#@cdktn/provider-snowflake.service.ServiceFromSpecificationTemplate">ServiceFromSpecificationTemplate</a></code> | from_specification_template block. |
-| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#id Service#id}. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#id Service#id}. |
 | <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.maxInstances">max_instances</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum number of service instances to run. |
 | <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.minInstances">min_instances</a></code> | <code>typing.Union[int, float]</code> | Specifies the minimum number of service instances to run. |
 | <code><a href="#@cdktn/provider-snowflake.service.ServiceConfig.property.minReadyInstances">min_ready_instances</a></code> | <code>typing.Union[int, float]</code> | Indicates the minimum service instances that must be ready for Snowflake to consider the service is ready to process requests. |
@@ -1840,7 +1840,7 @@ Specifies the name of the compute pool in your account on which to run the servi
 
 Identifiers with special or lower-case characters are not supported. This limitation in the provider follows the limitation in Snowflake (see [docs](https://docs.snowflake.com/en/sql-reference/sql/create-compute-pool)). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#compute_pool Service#compute_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#compute_pool Service#compute_pool}
 
 ---
 
@@ -1856,7 +1856,7 @@ The database in which to create the service.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#database Service#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#database Service#database}
 
 ---
 
@@ -1872,7 +1872,7 @@ Specifies the identifier for the service;
 
 must be unique for the schema in which the service is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#name Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#name Service#name}
 
 ---
 
@@ -1888,7 +1888,7 @@ The schema in which to create the service.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#schema Service#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#schema Service#schema}
 
 ---
 
@@ -1904,7 +1904,7 @@ auto_resume: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#auto_resume Service#auto_resume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#auto_resume Service#auto_resume}
 
 ---
 
@@ -1918,7 +1918,7 @@ auto_suspend_secs: typing.Union[int, float]
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of seconds of inactivity (service is idle) after which Snowflake automatically suspends the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#auto_suspend_secs Service#auto_suspend_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#auto_suspend_secs Service#auto_suspend_secs}
 
 ---
 
@@ -1932,7 +1932,7 @@ comment: str
 
 Specifies a comment for the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#comment Service#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#comment Service#comment}
 
 ---
 
@@ -1946,7 +1946,7 @@ external_access_integrations: typing.List[str]
 
 Specifies the names of the external access integrations that allow your service to access external sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#external_access_integrations Service#external_access_integrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#external_access_integrations Service#external_access_integrations}
 
 ---
 
@@ -1960,7 +1960,7 @@ from_specification: ServiceFromSpecification
 
 from_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#from_specification Service#from_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#from_specification Service#from_specification}
 
 ---
 
@@ -1974,7 +1974,7 @@ from_specification_template: ServiceFromSpecificationTemplate
 
 from_specification_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#from_specification_template Service#from_specification_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#from_specification_template Service#from_specification_template}
 
 ---
 
@@ -1986,7 +1986,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#id Service#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#id Service#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2003,7 +2003,7 @@ max_instances: typing.Union[int, float]
 
 Specifies the maximum number of service instances to run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#max_instances Service#max_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#max_instances Service#max_instances}
 
 ---
 
@@ -2017,7 +2017,7 @@ min_instances: typing.Union[int, float]
 
 Specifies the minimum number of service instances to run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#min_instances Service#min_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#min_instances Service#min_instances}
 
 ---
 
@@ -2031,7 +2031,7 @@ min_ready_instances: typing.Union[int, float]
 
 Indicates the minimum service instances that must be ready for Snowflake to consider the service is ready to process requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#min_ready_instances Service#min_ready_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#min_ready_instances Service#min_ready_instances}
 
 ---
 
@@ -2047,7 +2047,7 @@ Warehouse to use if a service container connects to Snowflake to execute a query
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#query_warehouse Service#query_warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#query_warehouse Service#query_warehouse}
 
 ---
 
@@ -2063,7 +2063,7 @@ Controls how long a caller's rights login token is valid for Snowpark Container 
 
 For more information, check [SERVICE_CALLER_TOKEN_VALIDITY_SECS docs](https://docs.snowflake.com/en/sql-reference/parameters#service-caller-token-validity-secs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#service_caller_token_validity_secs Service#service_caller_token_validity_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#service_caller_token_validity_secs Service#service_caller_token_validity_secs}
 
 ---
 
@@ -2077,7 +2077,7 @@ timeouts: ServiceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#timeouts Service#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#timeouts Service#timeouts}
 
 ---
 
@@ -2128,7 +2128,7 @@ file: str
 
 The file name of the service specification. Example: `spec.yaml`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#file Service#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#file Service#file}
 
 ---
 
@@ -2144,7 +2144,7 @@ The path to the service specification file on the given stage.
 
 When the path is specified, the `/` character is automatically added as a path prefix. Example: `path/to/spec`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#path Service#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#path Service#path}
 
 ---
 
@@ -2160,7 +2160,7 @@ The fully qualified name of the stage containing the service specification file.
 
 At symbol (`@`) is added automatically. Example: `"\"<db_name>\".\"<schema_name>\".\"<stage_name>\""`. For more information about this resource, see [docs](./stage).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#stage Service#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#stage Service#stage}
 
 ---
 
@@ -2174,7 +2174,7 @@ text: str
 
 The embedded text of the service specification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#text Service#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#text Service#text}
 
 ---
 
@@ -2216,7 +2216,7 @@ using: IResolvable | typing.List[ServiceFromSpecificationTemplateUsing]
 
 using block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#using Service#using}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#using Service#using}
 
 ---
 
@@ -2230,7 +2230,7 @@ file: str
 
 The file name of the service specification template. Example: `spec.yaml`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#file Service#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#file Service#file}
 
 ---
 
@@ -2246,7 +2246,7 @@ The path to the service specification template file on the given stage.
 
 When the path is specified, the `/` character is automatically added as a path prefix. Example: `path/to/spec`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#path Service#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#path Service#path}
 
 ---
 
@@ -2262,7 +2262,7 @@ The fully qualified name of the stage containing the service specification templ
 
 At symbol (`@`) is added automatically. Example: `"\"<db_name>\".\"<schema_name>\".\"<stage_name>\""`. For more information about this resource, see [docs](./stage).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#stage Service#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#stage Service#stage}
 
 ---
 
@@ -2276,7 +2276,7 @@ text: str
 
 The embedded text of the service specification template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#text Service#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#text Service#text}
 
 ---
 
@@ -2314,7 +2314,7 @@ The name of the template variable.
 
 The provider wraps it in double quotes by default, so be aware of that while referencing the argument in the spec definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#key Service#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#key Service#key}
 
 ---
 
@@ -2330,7 +2330,7 @@ The value to assign to the variable in the template.
 
 The value must either be alphanumeric or valid JSON. The provider wraps it in `$$` by default, so be aware of that while referencing the argument in the spec definition. Using `$$` in this field is disallowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#value Service#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#value Service#value}
 
 ---
 
@@ -2386,10 +2386,10 @@ service.ServiceTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#create Service#create}. |
-| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#delete Service#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#read Service#read}. |
-| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#update Service#update}. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#create Service#create}. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#delete Service#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#read Service#read}. |
+| <code><a href="#@cdktn/provider-snowflake.service.ServiceTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#update Service#update}. |
 
 ---
 
@@ -2401,7 +2401,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#create Service#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#create Service#create}.
 
 ---
 
@@ -2413,7 +2413,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#delete Service#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#delete Service#delete}.
 
 ---
 
@@ -2425,7 +2425,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#read Service#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#read Service#read}.
 
 ---
 
@@ -2437,7 +2437,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/service#update Service#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service#update Service#update}.
 
 ---
 
