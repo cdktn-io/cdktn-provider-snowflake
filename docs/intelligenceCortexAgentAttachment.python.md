@@ -4,7 +4,7 @@
 
 ### IntelligenceCortexAgentAttachment <a name="IntelligenceCortexAgentAttachment" id="@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment snowflake_intelligence_cortex_agent_attachment}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment snowflake_intelligence_cortex_agent_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachment.Initializer"></a>
 
@@ -41,7 +41,7 @@ intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachment(
 | <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachment.Initializer.parameter.cortexAgentName">cortex_agent_name</a></code> | <code>str</code> | Fully qualified name of the Cortex agent to attach. |
 | <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachment.Initializer.parameter.snowflakeIntelligenceName">snowflake_intelligence_name</a></code> | <code>str</code> | Fully qualified name of the Snowflake Intelligence object to attach the agent to. |
-| <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#id IntelligenceCortexAgentAttachment#id}. |
+| <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#id IntelligenceCortexAgentAttachment#id}. |
 | <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachmentTimeouts">IntelligenceCortexAgentAttachmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +114,7 @@ Fully qualified name of the Cortex agent to attach.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using pipes (`|`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#cortex_agent_name IntelligenceCortexAgentAttachment#cortex_agent_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#cortex_agent_name IntelligenceCortexAgentAttachment#cortex_agent_name}
 
 ---
 
@@ -126,7 +126,7 @@ Fully qualified name of the Snowflake Intelligence object to attach the agent to
 
 The account default object is SNOWFLAKE_INTELLIGENCE_OBJECT_DEFAULT. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using pipes (`|`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#snowflake_intelligence_name IntelligenceCortexAgentAttachment#snowflake_intelligence_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#snowflake_intelligence_name IntelligenceCortexAgentAttachment#snowflake_intelligence_name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#id IntelligenceCortexAgentAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#id IntelligenceCortexAgentAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#timeouts IntelligenceCortexAgentAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#timeouts IntelligenceCortexAgentAttachment#timeouts}
 
 ---
 
@@ -548,7 +548,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#create IntelligenceCortexAgentAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#create IntelligenceCortexAgentAttachment#create}.
 
 ---
 
@@ -556,7 +556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#delete IntelligenceCortexAgentAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#delete IntelligenceCortexAgentAttachment#delete}.
 
 ---
 
@@ -564,7 +564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#read IntelligenceCortexAgentAttachment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#read IntelligenceCortexAgentAttachment#read}.
 
 ---
 
@@ -572,7 +572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#update IntelligenceCortexAgentAttachment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#update IntelligenceCortexAgentAttachment#update}.
 
 ---
 
@@ -702,7 +702,7 @@ The construct id used in the generated config for the IntelligenceCortexAgentAtt
 
 The id of the existing IntelligenceCortexAgentAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1020,7 +1020,7 @@ intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachmentConfig(
 | <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachmentConfig.property.cortexAgentName">cortex_agent_name</a></code> | <code>str</code> | Fully qualified name of the Cortex agent to attach. |
 | <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachmentConfig.property.snowflakeIntelligenceName">snowflake_intelligence_name</a></code> | <code>str</code> | Fully qualified name of the Snowflake Intelligence object to attach the agent to. |
-| <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#id IntelligenceCortexAgentAttachment#id}. |
+| <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#id IntelligenceCortexAgentAttachment#id}. |
 | <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachmentTimeouts">IntelligenceCortexAgentAttachmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1107,7 +1107,7 @@ Fully qualified name of the Cortex agent to attach.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using pipes (`|`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#cortex_agent_name IntelligenceCortexAgentAttachment#cortex_agent_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#cortex_agent_name IntelligenceCortexAgentAttachment#cortex_agent_name}
 
 ---
 
@@ -1123,7 +1123,7 @@ Fully qualified name of the Snowflake Intelligence object to attach the agent to
 
 The account default object is SNOWFLAKE_INTELLIGENCE_OBJECT_DEFAULT. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using pipes (`|`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#snowflake_intelligence_name IntelligenceCortexAgentAttachment#snowflake_intelligence_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#snowflake_intelligence_name IntelligenceCortexAgentAttachment#snowflake_intelligence_name}
 
 ---
 
@@ -1135,7 +1135,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#id IntelligenceCortexAgentAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#id IntelligenceCortexAgentAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1152,7 +1152,7 @@ timeouts: IntelligenceCortexAgentAttachmentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#timeouts IntelligenceCortexAgentAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#timeouts IntelligenceCortexAgentAttachment#timeouts}
 
 ---
 
@@ -1175,10 +1175,10 @@ intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachmentTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachmentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#create IntelligenceCortexAgentAttachment#create}. |
-| <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachmentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#delete IntelligenceCortexAgentAttachment#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachmentTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#read IntelligenceCortexAgentAttachment#read}. |
-| <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachmentTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#update IntelligenceCortexAgentAttachment#update}. |
+| <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachmentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#create IntelligenceCortexAgentAttachment#create}. |
+| <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachmentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#delete IntelligenceCortexAgentAttachment#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachmentTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#read IntelligenceCortexAgentAttachment#read}. |
+| <code><a href="#@cdktn/provider-snowflake.intelligenceCortexAgentAttachment.IntelligenceCortexAgentAttachmentTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#update IntelligenceCortexAgentAttachment#update}. |
 
 ---
 
@@ -1190,7 +1190,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#create IntelligenceCortexAgentAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#create IntelligenceCortexAgentAttachment#create}.
 
 ---
 
@@ -1202,7 +1202,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#delete IntelligenceCortexAgentAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#delete IntelligenceCortexAgentAttachment#delete}.
 
 ---
 
@@ -1214,7 +1214,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#read IntelligenceCortexAgentAttachment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#read IntelligenceCortexAgentAttachment#read}.
 
 ---
 
@@ -1226,7 +1226,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#update IntelligenceCortexAgentAttachment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#update IntelligenceCortexAgentAttachment#update}.
 
 ---
 

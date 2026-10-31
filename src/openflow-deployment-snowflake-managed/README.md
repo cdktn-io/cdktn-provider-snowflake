@@ -1,3 +1,3 @@
 # `snowflake_openflow_deployment_snowflake_managed`
 
-Refer to the Terraform Registry for docs: [`snowflake_openflow_deployment_snowflake_managed`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_snowflake_managed).
+Refer to the Terraform Registry for docs: [`snowflake_openflow_deployment_snowflake_managed`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_snowflake_managed).

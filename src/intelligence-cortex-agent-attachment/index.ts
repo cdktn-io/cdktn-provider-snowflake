@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface IntelligenceCortexAgentAttachmentConfig extends cdktn.Terraform
   /**
   * Fully qualified name of the Cortex agent to attach. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using pipes (`|`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#cortex_agent_name IntelligenceCortexAgentAttachment#cortex_agent_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#cortex_agent_name IntelligenceCortexAgentAttachment#cortex_agent_name}
   */
   readonly cortexAgentName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#id IntelligenceCortexAgentAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#id IntelligenceCortexAgentAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +28,31 @@ export interface IntelligenceCortexAgentAttachmentConfig extends cdktn.Terraform
   /**
   * Fully qualified name of the Snowflake Intelligence object to attach the agent to. The account default object is SNOWFLAKE_INTELLIGENCE_OBJECT_DEFAULT. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using pipes (`|`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#snowflake_intelligence_name IntelligenceCortexAgentAttachment#snowflake_intelligence_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#snowflake_intelligence_name IntelligenceCortexAgentAttachment#snowflake_intelligence_name}
   */
   readonly snowflakeIntelligenceName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#timeouts IntelligenceCortexAgentAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#timeouts IntelligenceCortexAgentAttachment#timeouts}
   */
   readonly timeouts?: IntelligenceCortexAgentAttachmentTimeouts;
 }
 export interface IntelligenceCortexAgentAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#create IntelligenceCortexAgentAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#create IntelligenceCortexAgentAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#delete IntelligenceCortexAgentAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#delete IntelligenceCortexAgentAttachment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#read IntelligenceCortexAgentAttachment#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#read IntelligenceCortexAgentAttachment#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#update IntelligenceCortexAgentAttachment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#update IntelligenceCortexAgentAttachment#update}
   */
   readonly update?: string;
 }
@@ -233,7 +233,7 @@ export class IntelligenceCortexAgentAttachmentTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment snowflake_intelligence_cortex_agent_attachment}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment snowflake_intelligence_cortex_agent_attachment}
 */
 export class IntelligenceCortexAgentAttachment extends cdktn.TerraformResource {
 
@@ -249,7 +249,7 @@ export class IntelligenceCortexAgentAttachment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IntelligenceCortexAgentAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntelligenceCortexAgentAttachment to import
-  * @param importFromId The id of the existing IntelligenceCortexAgentAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntelligenceCortexAgentAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntelligenceCortexAgentAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -261,7 +261,7 @@ export class IntelligenceCortexAgentAttachment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/intelligence_cortex_agent_attachment snowflake_intelligence_cortex_agent_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/intelligence_cortex_agent_attachment snowflake_intelligence_cortex_agent_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -272,7 +272,7 @@ export class IntelligenceCortexAgentAttachment extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_intelligence_cortex_agent_attachment',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.22.0',
+        providerVersion: '2.22.1',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

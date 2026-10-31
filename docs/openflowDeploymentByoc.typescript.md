@@ -4,7 +4,7 @@
 
 ### OpenflowDeploymentByoc <a name="OpenflowDeploymentByoc" id="@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByoc"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc snowflake_openflow_deployment_byoc}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc snowflake_openflow_deployment_byoc}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByoc.Initializer"></a>
 
@@ -558,7 +558,7 @@ The construct id used in the generated config for the OpenflowDeploymentByoc to 
 
 The id of the existing OpenflowDeploymentByoc that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1055,7 +1055,7 @@ const openflowDeploymentByocConfig: openflowDeploymentByoc.OpenflowDeploymentByo
 | <code><a href="#@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByocConfig.property.customIngressHostname">customIngressHostname</a></code> | <code>string</code> | Specifies a custom hostname for ingress into the deployment. |
 | <code><a href="#@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByocConfig.property.displayName">displayName</a></code> | <code>string</code> | A free-text alias for the deployment. Shown in the Openflow UI in place of the deployment's identifier when set. |
 | <code><a href="#@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByocConfig.property.eventTable">eventTable</a></code> | <code>string</code> | Specifies the name of the event table for logging messages from stored procedures and UDFs contained by the object with which the event table is associated. |
-| <code><a href="#@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByocConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#id OpenflowDeploymentByoc#id}. |
+| <code><a href="#@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByocConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#id OpenflowDeploymentByoc#id}. |
 | <code><a href="#@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByocConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByocTimeouts">OpenflowDeploymentByocTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByocConfig.property.usePrivateLink">usePrivateLink</a></code> | <code>string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether the deployment is reached over private link. |
 | <code><a href="#@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByocConfig.property.useUserAuthOverPrivatelink">useUserAuthOverPrivatelink</a></code> | <code>string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether user authentication is performed over private link. |
@@ -1144,7 +1144,7 @@ Specifies the identifier for the Openflow deployment;
 
 must be unique for the account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#name OpenflowDeploymentByoc#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#name OpenflowDeploymentByoc#name}
 
 ---
 
@@ -1160,7 +1160,7 @@ Specifies whether the deployment's VPC is created by Snowflake or supplied by yo
 
 Valid values are (case-insensitive): `MANAGED` | `PROVIDED`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#vpc_type OpenflowDeploymentByoc#vpc_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#vpc_type OpenflowDeploymentByoc#vpc_type}
 
 ---
 
@@ -1174,7 +1174,7 @@ public readonly comment: string;
 
 Specifies a comment for the Openflow deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#comment OpenflowDeploymentByoc#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#comment OpenflowDeploymentByoc#comment}
 
 ---
 
@@ -1188,7 +1188,7 @@ public readonly customIngressHostname: string;
 
 Specifies a custom hostname for ingress into the deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#custom_ingress_hostname OpenflowDeploymentByoc#custom_ingress_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#custom_ingress_hostname OpenflowDeploymentByoc#custom_ingress_hostname}
 
 ---
 
@@ -1202,7 +1202,7 @@ public readonly displayName: string;
 
 A free-text alias for the deployment. Shown in the Openflow UI in place of the deployment's identifier when set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#display_name OpenflowDeploymentByoc#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#display_name OpenflowDeploymentByoc#display_name}
 
 ---
 
@@ -1218,7 +1218,7 @@ Specifies the name of the event table for logging messages from stored procedure
 
 Associating an event table with a database is available in [Enterprise Edition or higher](https://docs.snowflake.com/en/user-guide/intro-editions). For more information, check [EVENT_TABLE docs](https://docs.snowflake.com/en/sql-reference/parameters#event-table).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#event_table OpenflowDeploymentByoc#event_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#event_table OpenflowDeploymentByoc#event_table}
 
 ---
 
@@ -1230,7 +1230,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#id OpenflowDeploymentByoc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#id OpenflowDeploymentByoc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1247,7 +1247,7 @@ public readonly timeouts: OpenflowDeploymentByocTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#timeouts OpenflowDeploymentByoc#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#timeouts OpenflowDeploymentByoc#timeouts}
 
 ---
 
@@ -1263,7 +1263,7 @@ public readonly usePrivateLink: string;
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#use_private_link OpenflowDeploymentByoc#use_private_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#use_private_link OpenflowDeploymentByoc#use_private_link}
 
 ---
 
@@ -1279,7 +1279,7 @@ public readonly useUserAuthOverPrivatelink: string;
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#use_user_auth_over_privatelink OpenflowDeploymentByoc#use_user_auth_over_privatelink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#use_user_auth_over_privatelink OpenflowDeploymentByoc#use_user_auth_over_privatelink}
 
 ---
 
@@ -1341,10 +1341,10 @@ const openflowDeploymentByocTimeouts: openflowDeploymentByoc.OpenflowDeploymentB
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByocTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#create OpenflowDeploymentByoc#create}. |
-| <code><a href="#@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByocTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#delete OpenflowDeploymentByoc#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByocTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#read OpenflowDeploymentByoc#read}. |
-| <code><a href="#@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByocTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#update OpenflowDeploymentByoc#update}. |
+| <code><a href="#@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByocTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#create OpenflowDeploymentByoc#create}. |
+| <code><a href="#@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByocTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#delete OpenflowDeploymentByoc#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByocTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#read OpenflowDeploymentByoc#read}. |
+| <code><a href="#@cdktn/provider-snowflake.openflowDeploymentByoc.OpenflowDeploymentByocTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#update OpenflowDeploymentByoc#update}. |
 
 ---
 
@@ -1356,7 +1356,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#create OpenflowDeploymentByoc#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#create OpenflowDeploymentByoc#create}.
 
 ---
 
@@ -1368,7 +1368,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#delete OpenflowDeploymentByoc#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#delete OpenflowDeploymentByoc#delete}.
 
 ---
 
@@ -1380,7 +1380,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#read OpenflowDeploymentByoc#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#read OpenflowDeploymentByoc#read}.
 
 ---
 
@@ -1392,7 +1392,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.0/docs/resources/openflow_deployment_byoc#update OpenflowDeploymentByoc#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_deployment_byoc#update OpenflowDeploymentByoc#update}.
 
 ---
 
