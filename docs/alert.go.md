@@ -4,7 +4,7 @@
 
 ### Alert <a name="Alert" id="@cdktn/provider-snowflake.alert.Alert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert snowflake_alert}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert snowflake_alert}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.alert.Alert.Initializer"></a>
 
@@ -81,6 +81,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.resetEnabled">ResetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.Alert.resetWarehouse">ResetWarehouse</a></code> | *No description.* |
 
 ---
 
@@ -447,6 +448,12 @@ func ResetId()
 func ResetTimeouts()
 ```
 
+##### `ResetWarehouse` <a name="ResetWarehouse" id="@cdktn/provider-snowflake.alert.Alert.resetWarehouse"></a>
+
+```go
+func ResetWarehouse()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -550,7 +557,7 @@ The construct id used in the generated config for the Alert to import.
 
 The id of the existing Alert that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -581,7 +588,9 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.property.alertSchedule">AlertSchedule</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertAlertScheduleOutputReference">AlertAlertScheduleOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.Alert.property.describeOutput">DescribeOutput</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList">AlertDescribeOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.property.fullyQualifiedName">FullyQualifiedName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.Alert.property.showOutput">ShowOutput</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList">AlertShowOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeoutsOutputReference">AlertTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.property.actionInput">ActionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.property.alertScheduleInput">AlertScheduleInput</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertAlertSchedule">AlertAlertSchedule</a></code> | *No description.* |
@@ -758,6 +767,16 @@ func AlertSchedule() AlertAlertScheduleOutputReference
 
 ---
 
+##### `DescribeOutput`<sup>Required</sup> <a name="DescribeOutput" id="@cdktn/provider-snowflake.alert.Alert.property.describeOutput"></a>
+
+```go
+func DescribeOutput() AlertDescribeOutputList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList">AlertDescribeOutputList</a>
+
+---
+
 ##### `FullyQualifiedName`<sup>Required</sup> <a name="FullyQualifiedName" id="@cdktn/provider-snowflake.alert.Alert.property.fullyQualifiedName"></a>
 
 ```go
@@ -765,6 +784,16 @@ func FullyQualifiedName() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ShowOutput`<sup>Required</sup> <a name="ShowOutput" id="@cdktn/provider-snowflake.alert.Alert.property.showOutput"></a>
+
+```go
+func ShowOutput() AlertShowOutputList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList">AlertShowOutputList</a>
 
 ---
 
@@ -1030,7 +1059,7 @@ Cron AlertAlertScheduleCron
 
 cron block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#cron Alert#cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#cron Alert#cron}
 
 ---
 
@@ -1046,7 +1075,7 @@ Specifies the interval in minutes for the alert schedule.
 
 The interval must be greater than 0 and less than 1440 (24 hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#interval Alert#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#interval Alert#interval}
 
 ---
 
@@ -1084,7 +1113,7 @@ Specifies the cron expression for the alert.
 
 The cron expression must be in the following format: "minute hour day-of-month month day-of-week". The following values are supported: minute: 0-59 hour: 0-23 day-of-month: 1-31 month: 1-12 day-of-week: 0-6 (0 is Sunday)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#expression Alert#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#expression Alert#expression}
 
 ---
 
@@ -1098,7 +1127,7 @@ TimeZone *string
 
 Specifies the time zone for alert refresh.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#time_zone Alert#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#time_zone Alert#time_zone}
 
 ---
 
@@ -1122,12 +1151,12 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/alert"
 	Database: *string,
 	Name: *string,
 	Schema: *string,
-	Warehouse: *string,
 	AlertSchedule: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19.alert.AlertAlertSchedule,
 	Comment: *string,
 	Enabled: interface{},
 	Id: *string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19.alert.AlertTimeouts,
+	Warehouse: *string,
 }
 ```
 
@@ -1147,12 +1176,12 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/alert"
 | <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.database">Database</a></code> | <code>*string</code> | The database in which to create the alert. |
 | <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the identifier for the alert; |
 | <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema in which to create the alert. |
-| <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.warehouse">Warehouse</a></code> | <code>*string</code> | The warehouse the alert will use. |
 | <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.alertSchedule">AlertSchedule</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertAlertSchedule">AlertAlertSchedule</a></code> | alert_schedule block. |
 | <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the alert. |
-| <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | (Default: `false`) Specifies if an alert should be 'started' (enabled) after creation or should remain 'suspended' (default). |
-| <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#id Alert#id}. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Specifies if an alert should be 'started' (enabled) after creation or should remain 'suspended' (default). |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#id Alert#id}. |
 | <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts">AlertTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.warehouse">Warehouse</a></code> | <code>*string</code> | The warehouse the alert will use. |
 
 ---
 
@@ -1236,7 +1265,7 @@ Action *string
 
 The SQL statement that should be executed if the condition returns one or more rows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#action Alert#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#action Alert#action}
 
 ---
 
@@ -1250,7 +1279,7 @@ Condition *string
 
 The SQL statement that represents the condition for the alert. (SELECT, SHOW, CALL).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#condition Alert#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#condition Alert#condition}
 
 ---
 
@@ -1264,7 +1293,9 @@ Database *string
 
 The database in which to create the alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#database Alert#database}
+Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#database Alert#database}
 
 ---
 
@@ -1278,9 +1309,9 @@ Name *string
 
 Specifies the identifier for the alert;
 
-must be unique for the database and schema in which the alert is created.
+must be unique for the schema in which the alert is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#name Alert#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#name Alert#name}
 
 ---
 
@@ -1294,21 +1325,9 @@ Schema *string
 
 The schema in which to create the alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#schema Alert#schema}
+Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
----
-
-##### `Warehouse`<sup>Required</sup> <a name="Warehouse" id="@cdktn/provider-snowflake.alert.AlertConfig.property.warehouse"></a>
-
-```go
-Warehouse *string
-```
-
-- *Type:* *string
-
-The warehouse the alert will use.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#warehouse Alert#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#schema Alert#schema}
 
 ---
 
@@ -1322,7 +1341,7 @@ AlertSchedule AlertAlertSchedule
 
 alert_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#alert_schedule Alert#alert_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#alert_schedule Alert#alert_schedule}
 
 ---
 
@@ -1336,7 +1355,7 @@ Comment *string
 
 Specifies a comment for the alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#comment Alert#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#comment Alert#comment}
 
 ---
 
@@ -1348,9 +1367,9 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-(Default: `false`) Specifies if an alert should be 'started' (enabled) after creation or should remain 'suspended' (default).
+Specifies if an alert should be 'started' (enabled) after creation or should remain 'suspended' (default).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#enabled Alert#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#enabled Alert#enabled}
 
 ---
 
@@ -1362,7 +1381,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#id Alert#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#id Alert#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1379,9 +1398,51 @@ Timeouts AlertTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#timeouts Alert#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#timeouts Alert#timeouts}
 
 ---
+
+##### `Warehouse`<sup>Optional</sup> <a name="Warehouse" id="@cdktn/provider-snowflake.alert.AlertConfig.property.warehouse"></a>
+
+```go
+Warehouse *string
+```
+
+- *Type:* *string
+
+The warehouse the alert will use.
+
+When not set, the alert uses serverless compute resources. Creating, resuming, or switching to a serverless alert requires the EXECUTE MANAGED ALERT privilege; using a named warehouse requires its USAGE privilege.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#warehouse Alert#warehouse}
+
+---
+
+### AlertDescribeOutput <a name="AlertDescribeOutput" id="@cdktn/provider-snowflake.alert.AlertDescribeOutput"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.alert.AlertDescribeOutput.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/alert"
+
+&alert.AlertDescribeOutput {
+
+}
+```
+
+
+### AlertShowOutput <a name="AlertShowOutput" id="@cdktn/provider-snowflake.alert.AlertShowOutput"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.alert.AlertShowOutput.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/alert"
+
+&alert.AlertShowOutput {
+
+}
+```
+
 
 ### AlertTimeouts <a name="AlertTimeouts" id="@cdktn/provider-snowflake.alert.AlertTimeouts"></a>
 
@@ -1402,10 +1463,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/alert"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#create Alert#create}. |
-| <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#delete Alert#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#read Alert#read}. |
-| <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#update Alert#update}. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#create Alert#create}. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#delete Alert#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#read Alert#read}. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#update Alert#update}. |
 
 ---
 
@@ -1417,7 +1478,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#create Alert#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#create Alert#create}.
 
 ---
 
@@ -1429,7 +1490,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#delete Alert#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#delete Alert#delete}.
 
 ---
 
@@ -1441,7 +1502,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#read Alert#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#read Alert#read}.
 
 ---
 
@@ -1453,7 +1514,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#update Alert#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#update Alert#update}.
 
 ---
 
@@ -2068,6 +2129,1091 @@ func InternalValue() AlertAlertSchedule
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.alert.AlertAlertSchedule">AlertAlertSchedule</a>
+
+---
+
+
+### AlertDescribeOutputList <a name="AlertDescribeOutputList" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/alert"
+
+alert.NewAlertDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlertDescribeOutputList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.get"></a>
+
+```go
+func Get(index *f64) AlertDescribeOutputOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### AlertDescribeOutputOutputReference <a name="AlertDescribeOutputOutputReference" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/alert"
+
+alert.NewAlertDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlertDescribeOutputOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.action">Action</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.condition">Condition</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.databaseName">DatabaseName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.owner">Owner</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.schedule">Schedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.schemaName">SchemaName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.state">State</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.warehouse">Warehouse</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutput">AlertDescribeOutput</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Action`<sup>Required</sup> <a name="Action" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.action"></a>
+
+```go
+func Action() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Comment`<sup>Required</sup> <a name="Comment" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.comment"></a>
+
+```go
+func Comment() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Condition`<sup>Required</sup> <a name="Condition" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.condition"></a>
+
+```go
+func Condition() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CreatedOn`<sup>Required</sup> <a name="CreatedOn" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.createdOn"></a>
+
+```go
+func CreatedOn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DatabaseName`<sup>Required</sup> <a name="DatabaseName" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.databaseName"></a>
+
+```go
+func DatabaseName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.name"></a>
+
+```go
+func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Owner`<sup>Required</sup> <a name="Owner" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.owner"></a>
+
+```go
+func Owner() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Schedule`<sup>Required</sup> <a name="Schedule" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.schedule"></a>
+
+```go
+func Schedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SchemaName`<sup>Required</sup> <a name="SchemaName" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.schemaName"></a>
+
+```go
+func SchemaName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `State`<sup>Required</sup> <a name="State" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.state"></a>
+
+```go
+func State() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Warehouse`<sup>Required</sup> <a name="Warehouse" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.warehouse"></a>
+
+```go
+func Warehouse() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() AlertDescribeOutput
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutput">AlertDescribeOutput</a>
+
+---
+
+
+### AlertShowOutputList <a name="AlertShowOutputList" id="@cdktn/provider-snowflake.alert.AlertShowOutputList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/alert"
+
+alert.NewAlertShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlertShowOutputList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.get"></a>
+
+```go
+func Get(index *f64) AlertShowOutputOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### AlertShowOutputOutputReference <a name="AlertShowOutputOutputReference" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/alert"
+
+alert.NewAlertShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlertShowOutputOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.action">Action</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.condition">Condition</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.databaseName">DatabaseName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.owner">Owner</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.ownerRoleType">OwnerRoleType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.schedule">Schedule</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.schemaName">SchemaName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.state">State</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.warehouse">Warehouse</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutput">AlertShowOutput</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Action`<sup>Required</sup> <a name="Action" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.action"></a>
+
+```go
+func Action() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Comment`<sup>Required</sup> <a name="Comment" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.comment"></a>
+
+```go
+func Comment() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Condition`<sup>Required</sup> <a name="Condition" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.condition"></a>
+
+```go
+func Condition() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CreatedOn`<sup>Required</sup> <a name="CreatedOn" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.createdOn"></a>
+
+```go
+func CreatedOn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DatabaseName`<sup>Required</sup> <a name="DatabaseName" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.databaseName"></a>
+
+```go
+func DatabaseName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.name"></a>
+
+```go
+func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Owner`<sup>Required</sup> <a name="Owner" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.owner"></a>
+
+```go
+func Owner() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OwnerRoleType`<sup>Required</sup> <a name="OwnerRoleType" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.ownerRoleType"></a>
+
+```go
+func OwnerRoleType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Schedule`<sup>Required</sup> <a name="Schedule" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.schedule"></a>
+
+```go
+func Schedule() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SchemaName`<sup>Required</sup> <a name="SchemaName" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.schemaName"></a>
+
+```go
+func SchemaName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `State`<sup>Required</sup> <a name="State" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.state"></a>
+
+```go
+func State() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Warehouse`<sup>Required</sup> <a name="Warehouse" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.warehouse"></a>
+
+```go
+func Warehouse() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() AlertShowOutput
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.alert.AlertShowOutput">AlertShowOutput</a>
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ServiceUser <a name="ServiceUser" id="@cdktn/provider-snowflake.serviceUser.ServiceUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user snowflake_service_user}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user snowflake_service_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer"></a>
 
@@ -23,11 +23,14 @@ serviceUser.ServiceUser(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   abort_detached_query: bool | IResolvable = None,
+  active_python_profiler: str = None,
   autocommit: bool | IResolvable = None,
   binary_input_format: str = None,
   binary_output_format: str = None,
+  client_enable_log_info_statement_parameters: bool | IResolvable = None,
   client_memory_limit: typing.Union[int, float] = None,
   client_metadata_request_use_connection_ctx: bool | IResolvable = None,
+  client_metadata_use_session_database: bool | IResolvable = None,
   client_prefetch_threads: typing.Union[int, float] = None,
   client_result_chunk_size: typing.Union[int, float] = None,
   client_result_column_case_insensitive: bool | IResolvable = None,
@@ -35,6 +38,7 @@ serviceUser.ServiceUser(
   client_session_keep_alive_heartbeat_frequency: typing.Union[int, float] = None,
   client_timestamp_type_mapping: str = None,
   comment: str = None,
+  csv_timestamp_format: str = None,
   date_input_format: str = None,
   date_output_format: str = None,
   days_to_expiry: typing.Union[int, float] = None,
@@ -46,17 +50,20 @@ serviceUser.ServiceUser(
   disabled: str = None,
   display_name: str = None,
   email: str = None,
+  enable_get_ddl_use_data_type_alias: bool | IResolvable = None,
   enable_unload_physical_type_optimization: bool | IResolvable = None,
   enable_unredacted_query_syntax_error: bool | IResolvable = None,
   error_on_nondeterministic_merge: bool | IResolvable = None,
   error_on_nondeterministic_update: bool | IResolvable = None,
   geography_output_format: str = None,
   geometry_output_format: str = None,
+  hybrid_table_lock_timeout: typing.Union[int, float] = None,
   id: str = None,
   jdbc_treat_decimal_as_int: bool | IResolvable = None,
   jdbc_treat_timestamp_ntz_as_utc: bool | IResolvable = None,
   jdbc_use_session_timezone: bool | IResolvable = None,
   json_indent: typing.Union[int, float] = None,
+  js_treat_integer_as_bigint: bool | IResolvable = None,
   lock_timeout: typing.Union[int, float] = None,
   log_event_level: str = None,
   login_name: str = None,
@@ -67,11 +74,17 @@ serviceUser.ServiceUser(
   noorder_sequence_as_default: bool | IResolvable = None,
   odbc_treat_decimal_as_int: bool | IResolvable = None,
   prevent_unload_to_internal_stages: bool | IResolvable = None,
+  python_profiler_modules: str = None,
+  python_profiler_target_stage: str = None,
   query_tag: str = None,
   quoted_identifiers_ignore_case: bool | IResolvable = None,
   rows_per_resultset: typing.Union[int, float] = None,
   rsa_public_key: str = None,
   rsa_public_key2: str = None,
+  rsa_public_key2_wo: str = None,
+  rsa_public_key2_wo_version: typing.Union[int, float] = None,
+  rsa_public_key_wo: str = None,
+  rsa_public_key_wo_version: typing.Union[int, float] = None,
   s3_stage_vpce_dns_name: str = None,
   search_path: str = None,
   simulated_data_sharing_consumer: str = None,
@@ -112,11 +125,14 @@ serviceUser.ServiceUser(
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the user. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.abortDetachedQuery">abort_detached_query</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query). |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.activePythonProfiler">active_python_profiler</a></code> | <code>str</code> | Sets the profiler to use for the session when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). Valid values are (case-insensitive): `LINE` \| `MEMORY`. For more information, check [ACTIVE_PYTHON_PROFILER docs](https://docs.snowflake.com/en/sql-reference/parameters#active-python-profiler). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.autocommit">autocommit</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether autocommit is enabled for the session. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.binaryInputFormat">binary_input_format</a></code> | <code>str</code> | The format of VARCHAR values passed as input to VARCHAR-to-BINARY conversion functions. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.binaryOutputFormat">binary_output_format</a></code> | <code>str</code> | The format for VARCHAR values returned as output by BINARY-to-VARCHAR conversion functions. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.clientEnableLogInfoStatementParameters">client_enable_log_info_statement_parameters</a></code> | <code>bool \| cdktn.IResolvable</code> | Enables users to log the data values bound to [PreparedStatements](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-api.html#label-jdbc-api-preparedstatement). For more information, check [CLIENT_ENABLE_LOG_INFO_STATEMENT_PARAMETERS docs](https://docs.snowflake.com/en/sql-reference/parameters#client-enable-log-info-statement-parameters). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.clientMemoryLimit">client_memory_limit</a></code> | <code>typing.Union[int, float]</code> | Parameter that specifies the maximum amount of memory the JDBC driver or ODBC driver should use for the result set from queries (in MB). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.clientMetadataRequestUseConnectionCtx">client_metadata_request_use_connection_ctx</a></code> | <code>bool \| cdktn.IResolvable</code> | For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.clientMetadataUseSessionDatabase">client_metadata_use_session_database</a></code> | <code>bool \| cdktn.IResolvable</code> | For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases to the current database. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.clientPrefetchThreads">client_prefetch_threads</a></code> | <code>typing.Union[int, float]</code> | Parameter that specifies the number of threads used by the client to pre-fetch large result sets. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.clientResultChunkSize">client_result_chunk_size</a></code> | <code>typing.Union[int, float]</code> | Parameter that specifies the maximum size of each set (or chunk) of query results to download (in MB). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.clientResultColumnCaseInsensitive">client_result_column_case_insensitive</a></code> | <code>bool \| cdktn.IResolvable</code> | Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive). |
@@ -124,6 +140,7 @@ serviceUser.ServiceUser(
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.clientSessionKeepAliveHeartbeatFrequency">client_session_keep_alive_heartbeat_frequency</a></code> | <code>typing.Union[int, float]</code> | Number of seconds in-between client attempts to update the token for the session. For more information, check [CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive-heartbeat-frequency). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.clientTimestampTypeMapping">client_timestamp_type_mapping</a></code> | <code>str</code> | Specifies the [TIMESTAMP_* variation](https://docs.snowflake.com/en/sql-reference/data-types-datetime.html#label-datatypes-timestamp-variations) to use when binding timestamp variables for JDBC or ODBC applications that use the bind API to load data. Valid values are (case-insensitive): `TIMESTAMP_LTZ` \| `TIMESTAMP_NTZ`. For more information, check [CLIENT_TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#client-timestamp-type-mapping). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the user. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.csvTimestampFormat">csv_timestamp_format</a></code> | <code>str</code> | Specifies the format for TIMESTAMP values in CSV files downloaded from Snowsight. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.dateInputFormat">date_input_format</a></code> | <code>str</code> | Specifies the input format for the DATE data type. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.dateOutputFormat">date_output_format</a></code> | <code>str</code> | Specifies the display format for the DATE data type. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.daysToExpiry">days_to_expiry</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of days after which the user status is set to `Expired` and the user is no longer allowed to log in. |
@@ -135,17 +152,20 @@ serviceUser.ServiceUser(
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.disabled">disabled</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether the user is disabled, which prevents logging in and aborts all the currently-running queries for the user. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Name displayed for the user in the Snowflake web interface. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.email">email</a></code> | <code>str</code> | Email address for the user. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.enableGetDdlUseDataTypeAlias">enable_get_ddl_use_data_type_alias</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether the output returned by the GET_DDL function contains data type synonyms specified in the original DDL statement. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.enableUnloadPhysicalTypeOptimization">enable_unload_physical_type_optimization</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.enableUnredactedQuerySyntaxError">enable_unredacted_query_syntax_error</a></code> | <code>bool \| cdktn.IResolvable</code> | Controls whether query text is redacted if a SQL query fails due to a syntax or parsing error. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.errorOnNondeterministicMerge">error_on_nondeterministic_merge</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.errorOnNondeterministicUpdate">error_on_nondeterministic_update</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.geographyOutputFormat">geography_output_format</a></code> | <code>str</code> | Display format for [GEOGRAPHY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geography). Valid values are (case-insensitive): `GeoJSON` \| `WKT` \| `WKB` \| `EWKT` \| `EWKB`. For more information, check [GEOGRAPHY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geography-output-format). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.geometryOutputFormat">geometry_output_format</a></code> | <code>str</code> | Display format for [GEOMETRY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geometry). Valid values are (case-insensitive): `GeoJSON` \| `WKT` \| `WKB` \| `EWKT` \| `EWKB`. For more information, check [GEOMETRY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geometry-output-format). |
-| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#id ServiceUser#id}. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.hybridTableLockTimeout">hybrid_table_lock_timeout</a></code> | <code>typing.Union[int, float]</code> | Number of seconds to wait while trying to acquire row-level locks on a hybrid table, before timing out and aborting the statement. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#id ServiceUser#id}. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.jdbcTreatDecimalAsInt">jdbc_treat_decimal_as_int</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies how JDBC processes columns that have a scale of zero (0). For more information, check [JDBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-decimal-as-int). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.jdbcTreatTimestampNtzAsUtc">jdbc_treat_timestamp_ntz_as_utc</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies how JDBC processes TIMESTAMP_NTZ values ([more details](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc)). For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.jdbcUseSessionTimezone">jdbc_use_session_timezone</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.jsonIndent">json_indent</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of blank spaces to indent each new element in JSON output in the session. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.jsTreatIntegerAsBigint">js_treat_integer_as_bigint</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies how the Snowflake Node.js Driver processes numeric columns that have a scale of zero (0), for example INTEGER or NUMBER(p, 0). For more information, check [JS_TREAT_INTEGER_AS_BIGINT docs](https://docs.snowflake.com/en/sql-reference/parameters#js-treat-integer-as-bigint). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.lockTimeout">lock_timeout</a></code> | <code>typing.Union[int, float]</code> | Number of seconds to wait while trying to lock a resource, before timing out and aborting the statement. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.logEventLevel">log_event_level</a></code> | <code>str</code> | Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.loginName">login_name</a></code> | <code>str</code> | The name users use to log in. |
@@ -156,11 +176,17 @@ serviceUser.ServiceUser(
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.noorderSequenceAsDefault">noorder_sequence_as_default</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.odbcTreatDecimalAsInt">odbc_treat_decimal_as_int</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.preventUnloadToInternalStages">prevent_unload_to_internal_stages</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether to prevent data unload operations to internal (Snowflake) stages using [COPY INTO location](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location) statements. For more information, check [PREVENT_UNLOAD_TO_INTERNAL_STAGES docs](https://docs.snowflake.com/en/sql-reference/parameters#prevent-unload-to-internal-stages). |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.pythonProfilerModules">python_profiler_modules</a></code> | <code>str</code> | Specifies the list of Python modules to include in a report when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). For more information, check [PYTHON_PROFILER_MODULES docs](https://docs.snowflake.com/en/sql-reference/parameters#python-profiler-modules). |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.pythonProfilerTargetStage">python_profiler_target_stage</a></code> | <code>str</code> | Specifies the fully-qualified name of the stage in which to save a report when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). For more information, check [PYTHON_PROFILER_TARGET_STAGE docs](https://docs.snowflake.com/en/sql-reference/parameters#python-profiler-target-stage). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.queryTag">query_tag</a></code> | <code>str</code> | Optional string that can be used to tag queries and other SQL statements executed within a session. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.quotedIdentifiersIgnoreCase">quoted_identifiers_ignore_case</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, the case of quoted identifiers is ignored. For more information, check [QUOTED_IDENTIFIERS_IGNORE_CASE docs](https://docs.snowflake.com/en/sql-reference/parameters#quoted-identifiers-ignore-case). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.rowsPerResultset">rows_per_resultset</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum number of rows returned in a result set. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.rsaPublicKey">rsa_public_key</a></code> | <code>str</code> | Specifies the user’s RSA public key; used for key-pair authentication. Must be on 1 line without header and trailer. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.rsaPublicKey2">rsa_public_key2</a></code> | <code>str</code> | Specifies the user’s second RSA public key; |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.rsaPublicKey2Wo">rsa_public_key2_wo</a></code> | <code>str</code> | Specifies the user’s second RSA public key; |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.rsaPublicKey2WoVersion">rsa_public_key2_wo_version</a></code> | <code>typing.Union[int, float]</code> | Version counter for `rsa_public_key_2_wo`. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.rsaPublicKeyWo">rsa_public_key_wo</a></code> | <code>str</code> | Specifies the user’s RSA public key; |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.rsaPublicKeyWoVersion">rsa_public_key_wo_version</a></code> | <code>typing.Union[int, float]</code> | Version counter for `rsa_public_key_wo`. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.s3StageVpceDnsName">s3_stage_vpce_dns_name</a></code> | <code>str</code> | Specifies the DNS name of an Amazon S3 interface endpoint. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.searchPath">search_path</a></code> | <code>str</code> | Specifies the path to search to resolve unqualified object names in queries. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.simulatedDataSharingConsumer">simulated_data_sharing_consumer</a></code> | <code>str</code> | Specifies the name of a consumer account to simulate for testing/validating shared data, particularly shared secure views. |
@@ -256,7 +282,7 @@ Name of the user.
 
 Note that if you do not supply login_name this will be used as login_name. Check the [docs](https://docs.snowflake.net/manuals/sql-reference/sql/create-user.html#required-parameters). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#name ServiceUser#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#name ServiceUser#name}
 
 ---
 
@@ -266,7 +292,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#abort_detached_query ServiceUser#abort_detached_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#abort_detached_query ServiceUser#abort_detached_query}
+
+---
+
+##### `active_python_profiler`<sup>Optional</sup> <a name="active_python_profiler" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.activePythonProfiler"></a>
+
+- *Type:* str
+
+Sets the profiler to use for the session when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). Valid values are (case-insensitive): `LINE` | `MEMORY`. For more information, check [ACTIVE_PYTHON_PROFILER docs](https://docs.snowflake.com/en/sql-reference/parameters#active-python-profiler).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#active_python_profiler ServiceUser#active_python_profiler}
 
 ---
 
@@ -278,7 +314,7 @@ Specifies whether autocommit is enabled for the session.
 
 Autocommit determines whether a DML statement, when executed without an active transaction, is automatically committed after the statement successfully completes. For more information, see [Transactions](https://docs.snowflake.com/en/sql-reference/transactions). For more information, check [AUTOCOMMIT docs](https://docs.snowflake.com/en/sql-reference/parameters#autocommit).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#autocommit ServiceUser#autocommit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#autocommit ServiceUser#autocommit}
 
 ---
 
@@ -290,7 +326,7 @@ The format of VARCHAR values passed as input to VARCHAR-to-BINARY conversion fun
 
 For more information, see [Binary input and output](https://docs.snowflake.com/en/sql-reference/binary-input-output). Valid values are (case-insensitive): `HEX` | `BASE64` | `UTF8`. For more information, check [BINARY_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#binary-input-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#binary_input_format ServiceUser#binary_input_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#binary_input_format ServiceUser#binary_input_format}
 
 ---
 
@@ -302,7 +338,17 @@ The format for VARCHAR values returned as output by BINARY-to-VARCHAR conversion
 
 For more information, see [Binary input and output](https://docs.snowflake.com/en/sql-reference/binary-input-output). Valid values are (case-insensitive): `HEX` | `BASE64`. For more information, check [BINARY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#binary-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#binary_output_format ServiceUser#binary_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#binary_output_format ServiceUser#binary_output_format}
+
+---
+
+##### `client_enable_log_info_statement_parameters`<sup>Optional</sup> <a name="client_enable_log_info_statement_parameters" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.clientEnableLogInfoStatementParameters"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Enables users to log the data values bound to [PreparedStatements](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-api.html#label-jdbc-api-preparedstatement). For more information, check [CLIENT_ENABLE_LOG_INFO_STATEMENT_PARAMETERS docs](https://docs.snowflake.com/en/sql-reference/parameters#client-enable-log-info-statement-parameters).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_enable_log_info_statement_parameters ServiceUser#client_enable_log_info_statement_parameters}
 
 ---
 
@@ -314,7 +360,7 @@ Parameter that specifies the maximum amount of memory the JDBC driver or ODBC dr
 
 For more information, check [CLIENT_MEMORY_LIMIT docs](https://docs.snowflake.com/en/sql-reference/parameters#client-memory-limit).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_memory_limit ServiceUser#client_memory_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_memory_limit ServiceUser#client_memory_limit}
 
 ---
 
@@ -326,7 +372,19 @@ For specific ODBC functions and JDBC methods, this parameter can change the defa
 
 The narrower search typically returns fewer rows and executes more quickly. For more information, check [CLIENT_METADATA_REQUEST_USE_CONNECTION_CTX docs](https://docs.snowflake.com/en/sql-reference/parameters#client-metadata-request-use-connection-ctx).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_metadata_request_use_connection_ctx ServiceUser#client_metadata_request_use_connection_ctx}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_metadata_request_use_connection_ctx ServiceUser#client_metadata_request_use_connection_ctx}
+
+---
+
+##### `client_metadata_use_session_database`<sup>Optional</sup> <a name="client_metadata_use_session_database" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.clientMetadataUseSessionDatabase"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases to the current database.
+
+The narrower search typically returns fewer rows and executes more quickly ([more details on the usage](https://docs.snowflake.com/en/sql-reference/parameters#client-metadata-use-session-database)). For more information, check [CLIENT_METADATA_USE_SESSION_DATABASE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-metadata-use-session-database).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_metadata_use_session_database ServiceUser#client_metadata_use_session_database}
 
 ---
 
@@ -338,7 +396,7 @@ Parameter that specifies the number of threads used by the client to pre-fetch l
 
 The driver will attempt to honor the parameter value, but defines the minimum and maximum values (depending on your system’s resources) to improve performance. For more information, check [CLIENT_PREFETCH_THREADS docs](https://docs.snowflake.com/en/sql-reference/parameters#client-prefetch-threads).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_prefetch_threads ServiceUser#client_prefetch_threads}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_prefetch_threads ServiceUser#client_prefetch_threads}
 
 ---
 
@@ -350,7 +408,7 @@ Parameter that specifies the maximum size of each set (or chunk) of query result
 
 The JDBC driver downloads query results in chunks. For more information, check [CLIENT_RESULT_CHUNK_SIZE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-chunk-size).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_result_chunk_size ServiceUser#client_result_chunk_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_result_chunk_size ServiceUser#client_result_chunk_size}
 
 ---
 
@@ -360,7 +418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_result_column_case_insensitive ServiceUser#client_result_column_case_insensitive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_result_column_case_insensitive ServiceUser#client_result_column_case_insensitive}
 
 ---
 
@@ -372,7 +430,7 @@ Parameter that indicates whether to force a user to log in again after a period 
 
 For more information, check [CLIENT_SESSION_KEEP_ALIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_session_keep_alive ServiceUser#client_session_keep_alive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_session_keep_alive ServiceUser#client_session_keep_alive}
 
 ---
 
@@ -382,7 +440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Number of seconds in-between client attempts to update the token for the session. For more information, check [CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive-heartbeat-frequency).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_session_keep_alive_heartbeat_frequency ServiceUser#client_session_keep_alive_heartbeat_frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_session_keep_alive_heartbeat_frequency ServiceUser#client_session_keep_alive_heartbeat_frequency}
 
 ---
 
@@ -392,7 +450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the [TIMESTAMP_* variation](https://docs.snowflake.com/en/sql-reference/data-types-datetime.html#label-datatypes-timestamp-variations) to use when binding timestamp variables for JDBC or ODBC applications that use the bind API to load data. Valid values are (case-insensitive): `TIMESTAMP_LTZ` | `TIMESTAMP_NTZ`. For more information, check [CLIENT_TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#client-timestamp-type-mapping).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_timestamp_type_mapping ServiceUser#client_timestamp_type_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_timestamp_type_mapping ServiceUser#client_timestamp_type_mapping}
 
 ---
 
@@ -402,7 +460,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#comment ServiceUser#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#comment ServiceUser#comment}
+
+---
+
+##### `csv_timestamp_format`<sup>Optional</sup> <a name="csv_timestamp_format" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.csvTimestampFormat"></a>
+
+- *Type:* str
+
+Specifies the format for TIMESTAMP values in CSV files downloaded from Snowsight.
+
+If this parameter is not set, [TIMESTAMP_LTZ_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-ltz-output-format) will be used for TIMESTAMP_LTZ values, [TIMESTAMP_TZ_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-tz-output-format) will be used for TIMESTAMP_TZ and [TIMESTAMP_NTZ_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-ntz-output-format) for TIMESTAMP_NTZ values. For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output) or [Download your query results](https://docs.snowflake.com/en/user-guide/ui-snowsight-query.html#label-snowsight-download-query-results). For more information, check [CSV_TIMESTAMP_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#csv-timestamp-format).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#csv_timestamp_format ServiceUser#csv_timestamp_format}
 
 ---
 
@@ -414,7 +484,7 @@ Specifies the input format for the DATE data type.
 
 For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [DATE_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#date-input-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#date_input_format ServiceUser#date_input_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#date_input_format ServiceUser#date_input_format}
 
 ---
 
@@ -426,7 +496,7 @@ Specifies the display format for the DATE data type.
 
 For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [DATE_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#date-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#date_output_format ServiceUser#date_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#date_output_format ServiceUser#date_output_format}
 
 ---
 
@@ -438,7 +508,7 @@ Specifies the number of days after which the user status is set to `Expired` and
 
 This is useful for defining temporary users (i.e. users who should only have access to Snowflake for a limited time period). In general, you should not set this property for [account administrators](https://docs.snowflake.com/en/user-guide/security-access-control-considerations.html#label-accountadmin-users) (i.e. users with the `ACCOUNTADMIN` role) because Snowflake locks them out when they become `Expired`. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#days_to_expiry ServiceUser#days_to_expiry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#days_to_expiry ServiceUser#days_to_expiry}
 
 ---
 
@@ -450,7 +520,7 @@ Specifies the namespace (database only or database and schema) that is active by
 
 Note that the CREATE USER operation does not verify that the namespace exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#default_namespace ServiceUser#default_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#default_namespace ServiceUser#default_namespace}
 
 ---
 
@@ -462,7 +532,7 @@ Specifies the role that is active by default for the user’s session upon login
 
 Note that specifying a default role for a user does **not** grant the role to the user. The role must be granted explicitly to the user using the [GRANT ROLE](https://docs.snowflake.com/en/sql-reference/sql/grant-role) command. In addition, the CREATE USER operation does not verify that the role exists. For more information about this resource, see [docs](./account_role).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#default_role ServiceUser#default_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#default_role ServiceUser#default_role}
 
 ---
 
@@ -474,7 +544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Valid values are (case-insensitive): `DEFAULT` | `NONE` | `ALL`. More information can be found in [doc](https://docs.snowflake.com/en/sql-reference/sql/create-user#optional-object-properties-objectproperties).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#default_secondary_roles_option ServiceUser#default_secondary_roles_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#default_secondary_roles_option ServiceUser#default_secondary_roles_option}
 
 ---
 
@@ -486,7 +556,7 @@ Specifies the virtual warehouse that is active by default for the user’s sessi
 
 Note that the CREATE USER operation does not verify that the warehouse exists. For more information about this resource, see [docs](./warehouse).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#default_warehouse ServiceUser#default_warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#default_warehouse ServiceUser#default_warehouse}
 
 ---
 
@@ -496,7 +566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 default_workload_identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#default_workload_identity ServiceUser#default_workload_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#default_workload_identity ServiceUser#default_workload_identity}
 
 ---
 
@@ -508,7 +578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#disabled ServiceUser#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#disabled ServiceUser#disabled}
 
 ---
 
@@ -518,7 +588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Name displayed for the user in the Snowflake web interface.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#display_name ServiceUser#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#display_name ServiceUser#display_name}
 
 ---
 
@@ -528,7 +598,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Email address for the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#email ServiceUser#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#email ServiceUser#email}
+
+---
+
+##### `enable_get_ddl_use_data_type_alias`<sup>Optional</sup> <a name="enable_get_ddl_use_data_type_alias" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.enableGetDdlUseDataTypeAlias"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Specifies whether the output returned by the GET_DDL function contains data type synonyms specified in the original DDL statement.
+
+Data type synonyms are also called data type aliases. For more information, check [ENABLE_GET_DDL_USE_DATA_TYPE_ALIAS docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-get-ddl-use-data-type-alias).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#enable_get_ddl_use_data_type_alias ServiceUser#enable_get_ddl_use_data_type_alias}
 
 ---
 
@@ -538,7 +620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#enable_unload_physical_type_optimization ServiceUser#enable_unload_physical_type_optimization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#enable_unload_physical_type_optimization ServiceUser#enable_unload_physical_type_optimization}
 
 ---
 
@@ -550,7 +632,7 @@ Controls whether query text is redacted if a SQL query fails due to a syntax or 
 
 If FALSE, the content of a failed query is redacted in the views, pages, and functions that provide a query history. Only users with a role that is granted or inherits the AUDIT privilege can set the ENABLE_UNREDACTED_QUERY_SYNTAX_ERROR parameter. When using the ALTER USER command to set the parameter to TRUE for a particular user, modify the user that you want to see the query text, not the user who executed the query (if those are different users). For more information, check [ENABLE_UNREDACTED_QUERY_SYNTAX_ERROR docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unredacted-query-syntax-error).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#enable_unredacted_query_syntax_error ServiceUser#enable_unredacted_query_syntax_error}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#enable_unredacted_query_syntax_error ServiceUser#enable_unredacted_query_syntax_error}
 
 ---
 
@@ -560,7 +642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#error_on_nondeterministic_merge ServiceUser#error_on_nondeterministic_merge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#error_on_nondeterministic_merge ServiceUser#error_on_nondeterministic_merge}
 
 ---
 
@@ -570,7 +652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#error_on_nondeterministic_update ServiceUser#error_on_nondeterministic_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#error_on_nondeterministic_update ServiceUser#error_on_nondeterministic_update}
 
 ---
 
@@ -580,7 +662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Display format for [GEOGRAPHY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geography). Valid values are (case-insensitive): `GeoJSON` | `WKT` | `WKB` | `EWKT` | `EWKB`. For more information, check [GEOGRAPHY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geography-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#geography_output_format ServiceUser#geography_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#geography_output_format ServiceUser#geography_output_format}
 
 ---
 
@@ -590,7 +672,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Display format for [GEOMETRY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geometry). Valid values are (case-insensitive): `GeoJSON` | `WKT` | `WKB` | `EWKT` | `EWKB`. For more information, check [GEOMETRY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geometry-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#geometry_output_format ServiceUser#geometry_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#geometry_output_format ServiceUser#geometry_output_format}
+
+---
+
+##### `hybrid_table_lock_timeout`<sup>Optional</sup> <a name="hybrid_table_lock_timeout" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.hybridTableLockTimeout"></a>
+
+- *Type:* typing.Union[int, float]
+
+Number of seconds to wait while trying to acquire row-level locks on a hybrid table, before timing out and aborting the statement.
+
+For more information, check [HYBRID_TABLE_LOCK_TIMEOUT docs](https://docs.snowflake.com/en/sql-reference/parameters#hybrid-table-lock-timeout).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#hybrid_table_lock_timeout ServiceUser#hybrid_table_lock_timeout}
 
 ---
 
@@ -598,7 +692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#id ServiceUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#id ServiceUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -611,7 +705,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies how JDBC processes columns that have a scale of zero (0). For more information, check [JDBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-decimal-as-int).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#jdbc_treat_decimal_as_int ServiceUser#jdbc_treat_decimal_as_int}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#jdbc_treat_decimal_as_int ServiceUser#jdbc_treat_decimal_as_int}
 
 ---
 
@@ -621,7 +715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies how JDBC processes TIMESTAMP_NTZ values ([more details](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc)). For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#jdbc_treat_timestamp_ntz_as_utc ServiceUser#jdbc_treat_timestamp_ntz_as_utc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#jdbc_treat_timestamp_ntz_as_utc ServiceUser#jdbc_treat_timestamp_ntz_as_utc}
 
 ---
 
@@ -631,7 +725,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#jdbc_use_session_timezone ServiceUser#jdbc_use_session_timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#jdbc_use_session_timezone ServiceUser#jdbc_use_session_timezone}
 
 ---
 
@@ -643,7 +737,17 @@ Specifies the number of blank spaces to indent each new element in JSON output i
 
 Also specifies whether to insert newline characters after each element. For more information, check [JSON_INDENT docs](https://docs.snowflake.com/en/sql-reference/parameters#json-indent).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#json_indent ServiceUser#json_indent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#json_indent ServiceUser#json_indent}
+
+---
+
+##### `js_treat_integer_as_bigint`<sup>Optional</sup> <a name="js_treat_integer_as_bigint" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.jsTreatIntegerAsBigint"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Specifies how the Snowflake Node.js Driver processes numeric columns that have a scale of zero (0), for example INTEGER or NUMBER(p, 0). For more information, check [JS_TREAT_INTEGER_AS_BIGINT docs](https://docs.snowflake.com/en/sql-reference/parameters#js-treat-integer-as-bigint).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#js_treat_integer_as_bigint ServiceUser#js_treat_integer_as_bigint}
 
 ---
 
@@ -655,7 +759,7 @@ Number of seconds to wait while trying to lock a resource, before timing out and
 
 For more information, check [LOCK_TIMEOUT docs](https://docs.snowflake.com/en/sql-reference/parameters#lock-timeout).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#lock_timeout ServiceUser#lock_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#lock_timeout ServiceUser#lock_timeout}
 
 ---
 
@@ -667,7 +771,7 @@ Specifies the severity level of log events (rows with record type EVENT) that sh
 
 Log events at the specified level (and at more severe levels) are ingested. Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`. For more information, check [LOG_EVENT_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-event-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#log_event_level ServiceUser#log_event_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#log_event_level ServiceUser#log_event_level}
 
 ---
 
@@ -679,7 +783,7 @@ The name users use to log in.
 
 If not supplied, snowflake will use name instead. Login names are always case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#login_name ServiceUser#login_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#login_name ServiceUser#login_name}
 
 ---
 
@@ -691,7 +795,7 @@ Specifies the severity level of messages that should be ingested and made availa
 
 Messages at the specified level (and at more severe levels) are ingested. Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`. For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#log_level ServiceUser#log_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#log_level ServiceUser#log_level}
 
 ---
 
@@ -703,7 +807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 To protect against unauthorized user login, Snowflake places a temporary lock on a user after five consecutive unsuccessful login attempts. When creating a user, this property can be set to prevent them from logging in until the specified amount of time passes. To remove a lock immediately for a user, specify a value of 0 for this parameter. **Note** because this value changes continuously after setting it, the provider is currently NOT handling the external changes to it. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#mins_to_unlock ServiceUser#mins_to_unlock}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#mins_to_unlock ServiceUser#mins_to_unlock}
 
 ---
 
@@ -713,7 +817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Number of statements to execute when using the multi-statement capability. For more information, check [MULTI_STATEMENT_COUNT docs](https://docs.snowflake.com/en/sql-reference/parameters#multi-statement-count).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#multi_statement_count ServiceUser#multi_statement_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#multi_statement_count ServiceUser#multi_statement_count}
 
 ---
 
@@ -725,7 +829,7 @@ Specifies the network policy to enforce for your account.
 
 Network policies enable restricting access to your account based on users’ IP address. For more details, see [Controlling network traffic with network policies](https://docs.snowflake.com/en/user-guide/network-policies). For more information, check [NETWORK_POLICY docs](https://docs.snowflake.com/en/sql-reference/parameters#network-policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#network_policy ServiceUser#network_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#network_policy ServiceUser#network_policy}
 
 ---
 
@@ -737,7 +841,7 @@ Specifies whether the ORDER or NOORDER property is set by default when you creat
 
 The ORDER and NOORDER properties determine whether or not the values are generated for the sequence or auto-incremented column in [increasing or decreasing order](https://docs.snowflake.com/en/user-guide/querying-sequences.html#label-querying-sequences-increasing-values). For more information, check [NOORDER_SEQUENCE_AS_DEFAULT docs](https://docs.snowflake.com/en/sql-reference/parameters#noorder-sequence-as-default).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#noorder_sequence_as_default ServiceUser#noorder_sequence_as_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#noorder_sequence_as_default ServiceUser#noorder_sequence_as_default}
 
 ---
 
@@ -747,7 +851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#odbc_treat_decimal_as_int ServiceUser#odbc_treat_decimal_as_int}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#odbc_treat_decimal_as_int ServiceUser#odbc_treat_decimal_as_int}
 
 ---
 
@@ -757,7 +861,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies whether to prevent data unload operations to internal (Snowflake) stages using [COPY INTO location](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location) statements. For more information, check [PREVENT_UNLOAD_TO_INTERNAL_STAGES docs](https://docs.snowflake.com/en/sql-reference/parameters#prevent-unload-to-internal-stages).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#prevent_unload_to_internal_stages ServiceUser#prevent_unload_to_internal_stages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#prevent_unload_to_internal_stages ServiceUser#prevent_unload_to_internal_stages}
+
+---
+
+##### `python_profiler_modules`<sup>Optional</sup> <a name="python_profiler_modules" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.pythonProfilerModules"></a>
+
+- *Type:* str
+
+Specifies the list of Python modules to include in a report when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). For more information, check [PYTHON_PROFILER_MODULES docs](https://docs.snowflake.com/en/sql-reference/parameters#python-profiler-modules).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#python_profiler_modules ServiceUser#python_profiler_modules}
+
+---
+
+##### `python_profiler_target_stage`<sup>Optional</sup> <a name="python_profiler_target_stage" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.pythonProfilerTargetStage"></a>
+
+- *Type:* str
+
+Specifies the fully-qualified name of the stage in which to save a report when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). For more information, check [PYTHON_PROFILER_TARGET_STAGE docs](https://docs.snowflake.com/en/sql-reference/parameters#python-profiler-target-stage).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#python_profiler_target_stage ServiceUser#python_profiler_target_stage}
 
 ---
 
@@ -769,7 +893,7 @@ Optional string that can be used to tag queries and other SQL statements execute
 
 The tags are displayed in the output of the [QUERY_HISTORY, QUERY_HISTORY_BY_*](https://docs.snowflake.com/en/sql-reference/functions/query_history) functions. For more information, check [QUERY_TAG docs](https://docs.snowflake.com/en/sql-reference/parameters#query-tag).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#query_tag ServiceUser#query_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#query_tag ServiceUser#query_tag}
 
 ---
 
@@ -779,7 +903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 If true, the case of quoted identifiers is ignored. For more information, check [QUOTED_IDENTIFIERS_IGNORE_CASE docs](https://docs.snowflake.com/en/sql-reference/parameters#quoted-identifiers-ignore-case).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#quoted_identifiers_ignore_case ServiceUser#quoted_identifiers_ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#quoted_identifiers_ignore_case ServiceUser#quoted_identifiers_ignore_case}
 
 ---
 
@@ -791,7 +915,7 @@ Specifies the maximum number of rows returned in a result set.
 
 A value of 0 specifies no maximum. For more information, check [ROWS_PER_RESULTSET docs](https://docs.snowflake.com/en/sql-reference/parameters#rows-per-resultset).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#rows_per_resultset ServiceUser#rows_per_resultset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rows_per_resultset ServiceUser#rows_per_resultset}
 
 ---
 
@@ -801,7 +925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the user’s RSA public key; used for key-pair authentication. Must be on 1 line without header and trailer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#rsa_public_key ServiceUser#rsa_public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rsa_public_key ServiceUser#rsa_public_key}
 
 ---
 
@@ -813,7 +937,55 @@ Specifies the user’s second RSA public key;
 
 used to rotate the public and private keys for key-pair authentication based on an expiration schedule set by your organization. Must be on 1 line without header and trailer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#rsa_public_key_2 ServiceUser#rsa_public_key_2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rsa_public_key_2 ServiceUser#rsa_public_key_2}
+
+---
+
+##### `rsa_public_key2_wo`<sup>Optional</sup> <a name="rsa_public_key2_wo" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.rsaPublicKey2Wo"></a>
+
+- *Type:* str
+
+Specifies the user’s second RSA public key;
+
+used to rotate the public and private keys for key-pair authentication based on an expiration schedule set by your organization. Must be on 1 line without header and trailer. The value of this field is never saved in the Terraform plan or state, so it can be set from an ephemeral resource. Requires Terraform 1.11 or later. Because Terraform can not detect changes to a write-only value, changes to this field are applied only when `rsa_public_key_2_wo_version` changes. External changes for this field won't be detected; to push the value from your configuration to Snowflake again, increment `rsa_public_key_2_wo_version`. Conflicts with the non-write-only variant of this field. This field can be only used when `WRITE_ONLY_ATTRIBUTES` option is specified in provider block in the [`experimental_features_enabled`](../#experimental_features_enabled-1) field.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rsa_public_key_2_wo ServiceUser#rsa_public_key_2_wo}
+
+---
+
+##### `rsa_public_key2_wo_version`<sup>Optional</sup> <a name="rsa_public_key2_wo_version" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.rsaPublicKey2WoVersion"></a>
+
+- *Type:* typing.Union[int, float]
+
+Version counter for `rsa_public_key_2_wo`.
+
+Because Terraform can not detect changes to a write-only value, increment this field to push the current value of `rsa_public_key_2_wo` to Snowflake. Removing both fields unsets the value. This field can be only used when `WRITE_ONLY_ATTRIBUTES` option is specified in provider block in the [`experimental_features_enabled`](../#experimental_features_enabled-1) field.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rsa_public_key_2_wo_version ServiceUser#rsa_public_key_2_wo_version}
+
+---
+
+##### `rsa_public_key_wo`<sup>Optional</sup> <a name="rsa_public_key_wo" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.rsaPublicKeyWo"></a>
+
+- *Type:* str
+
+Specifies the user’s RSA public key;
+
+used for key-pair authentication. Must be on 1 line without header and trailer. The value of this field is never saved in the Terraform plan or state, so it can be set from an ephemeral resource. Requires Terraform 1.11 or later. Because Terraform can not detect changes to a write-only value, changes to this field are applied only when `rsa_public_key_wo_version` changes. External changes for this field won't be detected; to push the value from your configuration to Snowflake again, increment `rsa_public_key_wo_version`. Conflicts with the non-write-only variant of this field. This field can be only used when `WRITE_ONLY_ATTRIBUTES` option is specified in provider block in the [`experimental_features_enabled`](../#experimental_features_enabled-1) field.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rsa_public_key_wo ServiceUser#rsa_public_key_wo}
+
+---
+
+##### `rsa_public_key_wo_version`<sup>Optional</sup> <a name="rsa_public_key_wo_version" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.Initializer.parameter.rsaPublicKeyWoVersion"></a>
+
+- *Type:* typing.Union[int, float]
+
+Version counter for `rsa_public_key_wo`.
+
+Because Terraform can not detect changes to a write-only value, increment this field to push the current value of `rsa_public_key_wo` to Snowflake. Removing both fields unsets the value. This field can be only used when `WRITE_ONLY_ATTRIBUTES` option is specified in provider block in the [`experimental_features_enabled`](../#experimental_features_enabled-1) field.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rsa_public_key_wo_version ServiceUser#rsa_public_key_wo_version}
 
 ---
 
@@ -825,7 +997,7 @@ Specifies the DNS name of an Amazon S3 interface endpoint.
 
 Requests sent to the internal stage of an account via [AWS PrivateLink for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html) use this endpoint to connect. For more information, see [Accessing Internal stages with dedicated interface endpoints](https://docs.snowflake.com/en/user-guide/private-internal-stages-aws.html#label-aws-privatelink-internal-stage-network-isolation). For more information, check [S3_STAGE_VPCE_DNS_NAME docs](https://docs.snowflake.com/en/sql-reference/parameters#s3-stage-vpce-dns-name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#s3_stage_vpce_dns_name ServiceUser#s3_stage_vpce_dns_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#s3_stage_vpce_dns_name ServiceUser#s3_stage_vpce_dns_name}
 
 ---
 
@@ -837,7 +1009,7 @@ Specifies the path to search to resolve unqualified object names in queries.
 
 For more information, see [Name resolution in queries](https://docs.snowflake.com/en/sql-reference/name-resolution.html#label-object-name-resolution-search-path). Comma-separated list of identifiers. An identifier can be a fully or partially qualified schema name. For more information, check [SEARCH_PATH docs](https://docs.snowflake.com/en/sql-reference/parameters#search-path).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#search_path ServiceUser#search_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#search_path ServiceUser#search_path}
 
 ---
 
@@ -849,7 +1021,7 @@ Specifies the name of a consumer account to simulate for testing/validating shar
 
 When this parameter is set in a session, shared views return rows as if executed in the specified consumer account rather than the provider account. For more information, check [SIMULATED_DATA_SHARING_CONSUMER docs](https://docs.snowflake.com/en/sql-reference/parameters#simulated-data-sharing-consumer).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#simulated_data_sharing_consumer ServiceUser#simulated_data_sharing_consumer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#simulated_data_sharing_consumer ServiceUser#simulated_data_sharing_consumer}
 
 ---
 
@@ -859,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Amount of time, in seconds, a SQL statement (query, DDL, DML, etc.) remains queued for a warehouse before it is canceled by the system. This parameter can be used in conjunction with the [MAX_CONCURRENCY_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#label-max-concurrency-level) parameter to ensure a warehouse is never backlogged. For more information, check [STATEMENT_QUEUED_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-queued-timeout-in-seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#statement_queued_timeout_in_seconds ServiceUser#statement_queued_timeout_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#statement_queued_timeout_in_seconds ServiceUser#statement_queued_timeout_in_seconds}
 
 ---
 
@@ -869,7 +1041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Amount of time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system. For more information, check [STATEMENT_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-timeout-in-seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#statement_timeout_in_seconds ServiceUser#statement_timeout_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#statement_timeout_in_seconds ServiceUser#statement_timeout_in_seconds}
 
 ---
 
@@ -879,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#strict_json_output ServiceUser#strict_json_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#strict_json_output ServiceUser#strict_json_output}
 
 ---
 
@@ -891,7 +1063,7 @@ Specifies the input format for the TIME data type.
 
 For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). Any valid, supported time format or AUTO (AUTO specifies that Snowflake attempts to automatically detect the format of times stored in the system during the session). For more information, check [TIME_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#time-input-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#time_input_format ServiceUser#time_input_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#time_input_format ServiceUser#time_input_format}
 
 ---
 
@@ -903,7 +1075,7 @@ Specifies the display format for the TIME data type.
 
 For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIME_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#time-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#time_output_format ServiceUser#time_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#time_output_format ServiceUser#time_output_format}
 
 ---
 
@@ -913,7 +1085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_day_is_always_24h ServiceUser#timestamp_day_is_always_24h}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_day_is_always_24h ServiceUser#timestamp_day_is_always_24h}
 
 ---
 
@@ -925,7 +1097,7 @@ Specifies the input format for the TIMESTAMP data type alias.
 
 For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). Any valid, supported timestamp format or AUTO (AUTO specifies that Snowflake attempts to automatically detect the format of timestamps stored in the system during the session). For more information, check [TIMESTAMP_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-input-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_input_format ServiceUser#timestamp_input_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_input_format ServiceUser#timestamp_input_format}
 
 ---
 
@@ -937,7 +1109,7 @@ Specifies the display format for the TIMESTAMP_LTZ data type.
 
 If no format is specified, defaults to [TIMESTAMP_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-output-format). For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIMESTAMP_LTZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-ltz-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_ltz_output_format ServiceUser#timestamp_ltz_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_ltz_output_format ServiceUser#timestamp_ltz_output_format}
 
 ---
 
@@ -947,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the display format for the TIMESTAMP_NTZ data type. For more information, check [TIMESTAMP_NTZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-ntz-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_ntz_output_format ServiceUser#timestamp_ntz_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_ntz_output_format ServiceUser#timestamp_ntz_output_format}
 
 ---
 
@@ -959,7 +1131,7 @@ Specifies the display format for the TIMESTAMP data type alias.
 
 For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIMESTAMP_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_output_format ServiceUser#timestamp_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_output_format ServiceUser#timestamp_output_format}
 
 ---
 
@@ -971,7 +1143,7 @@ Specifies the TIMESTAMP_* variation that the TIMESTAMP data type alias maps to.
 
 Valid values are (case-insensitive): `TIMESTAMP_LTZ` | `TIMESTAMP_NTZ` | `TIMESTAMP_TZ`. For more information, check [TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-type-mapping).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_type_mapping ServiceUser#timestamp_type_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_type_mapping ServiceUser#timestamp_type_mapping}
 
 ---
 
@@ -983,7 +1155,7 @@ Specifies the display format for the TIMESTAMP_TZ data type.
 
 If no format is specified, defaults to [TIMESTAMP_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-output-format). For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIMESTAMP_TZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-tz-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_tz_output_format ServiceUser#timestamp_tz_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_tz_output_format ServiceUser#timestamp_tz_output_format}
 
 ---
 
@@ -995,7 +1167,7 @@ Specifies the time zone for the session.
 
 You can specify a [time zone name](https://data.iana.org/time-zones/tzdb-2021a/zone1970.tab) or a [link name](https://data.iana.org/time-zones/tzdb-2021a/backward) from release 2021a of the [IANA Time Zone Database](https://www.iana.org/time-zones) (e.g. America/Los_Angeles, Europe/London, UTC, Etc/GMT, etc.). For more information, check [TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#timezone).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timezone ServiceUser#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timezone ServiceUser#timezone}
 
 ---
 
@@ -1007,7 +1179,7 @@ Controls how trace events are ingested into the event table.
 
 Valid values are (case-insensitive): `ALWAYS` | `ON_EVENT` | `PROPAGATE` | `OFF`. For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#trace_level ServiceUser#trace_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#trace_level ServiceUser#trace_level}
 
 ---
 
@@ -1019,7 +1191,7 @@ Specifies the action to perform when a statement issued within a non-autocommit 
 
 For more information, check [TRANSACTION_ABORT_ON_ERROR docs](https://docs.snowflake.com/en/sql-reference/parameters#transaction-abort-on-error).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#transaction_abort_on_error ServiceUser#transaction_abort_on_error}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#transaction_abort_on_error ServiceUser#transaction_abort_on_error}
 
 ---
 
@@ -1031,7 +1203,7 @@ Specifies the isolation level for transactions in the user session.
 
 Valid values are (case-insensitive): `READ COMMITTED`. For more information, check [TRANSACTION_DEFAULT_ISOLATION_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#transaction-default-isolation-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#transaction_default_isolation_level ServiceUser#transaction_default_isolation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#transaction_default_isolation_level ServiceUser#transaction_default_isolation_level}
 
 ---
 
@@ -1041,7 +1213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the “century start” year for 2-digit years (i.e. the earliest year such dates can represent). This parameter prevents ambiguous dates when importing or converting data with the `YY` date format component (i.e. years represented as 2 digits). For more information, check [TWO_DIGIT_CENTURY_START docs](https://docs.snowflake.com/en/sql-reference/parameters#two-digit-century-start).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#two_digit_century_start ServiceUser#two_digit_century_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#two_digit_century_start ServiceUser#two_digit_century_start}
 
 ---
 
@@ -1051,7 +1223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Determines if an unsupported (i.e. non-default) value specified for a constraint property returns an error. Valid values are (case-insensitive): `IGNORE` | `FAIL`. For more information, check [UNSUPPORTED_DDL_ACTION docs](https://docs.snowflake.com/en/sql-reference/parameters#unsupported-ddl-action).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#unsupported_ddl_action ServiceUser#unsupported_ddl_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#unsupported_ddl_action ServiceUser#unsupported_ddl_action}
 
 ---
 
@@ -1063,7 +1235,7 @@ Specifies whether to reuse persisted query results, if available, when a matchin
 
 For more information, check [USE_CACHED_RESULT docs](https://docs.snowflake.com/en/sql-reference/parameters#use-cached-result).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#use_cached_result ServiceUser#use_cached_result}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#use_cached_result ServiceUser#use_cached_result}
 
 ---
 
@@ -1075,7 +1247,7 @@ Specifies how the weeks in a given year are computed.
 
 `0`: The semantics used are equivalent to the ISO semantics, in which a week belongs to a given year if at least 4 days of that week are in that year. `1`: January 1 is included in the first week of the year and December 31 is included in the last week of the year. For more information, check [WEEK_OF_YEAR_POLICY docs](https://docs.snowflake.com/en/sql-reference/parameters#week-of-year-policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#week_of_year_policy ServiceUser#week_of_year_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#week_of_year_policy ServiceUser#week_of_year_policy}
 
 ---
 
@@ -1087,7 +1259,7 @@ Specifies the first day of the week (used by week-related date functions).
 
 `0`: Legacy Snowflake behavior is used (i.e. ISO-like semantics). `1` (Monday) to `7` (Sunday): All the week-related functions use weeks that start on the specified day of the week. For more information, check [WEEK_START docs](https://docs.snowflake.com/en/sql-reference/parameters#week-start).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#week_start ServiceUser#week_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#week_start ServiceUser#week_start}
 
 ---
 
@@ -1121,11 +1293,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.putDefaultWorkloadIdentity">put_default_workload_identity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetAbortDetachedQuery">reset_abort_detached_query</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetActivePythonProfiler">reset_active_python_profiler</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetAutocommit">reset_autocommit</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetBinaryInputFormat">reset_binary_input_format</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetBinaryOutputFormat">reset_binary_output_format</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetClientEnableLogInfoStatementParameters">reset_client_enable_log_info_statement_parameters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetClientMemoryLimit">reset_client_memory_limit</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetClientMetadataRequestUseConnectionCtx">reset_client_metadata_request_use_connection_ctx</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetClientMetadataUseSessionDatabase">reset_client_metadata_use_session_database</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetClientPrefetchThreads">reset_client_prefetch_threads</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetClientResultChunkSize">reset_client_result_chunk_size</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetClientResultColumnCaseInsensitive">reset_client_result_column_case_insensitive</a></code> | *No description.* |
@@ -1133,6 +1308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetClientSessionKeepAliveHeartbeatFrequency">reset_client_session_keep_alive_heartbeat_frequency</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetClientTimestampTypeMapping">reset_client_timestamp_type_mapping</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetComment">reset_comment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetCsvTimestampFormat">reset_csv_timestamp_format</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetDateInputFormat">reset_date_input_format</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetDateOutputFormat">reset_date_output_format</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetDaysToExpiry">reset_days_to_expiry</a></code> | *No description.* |
@@ -1144,17 +1320,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetDisabled">reset_disabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetDisplayName">reset_display_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetEmail">reset_email</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetEnableGetDdlUseDataTypeAlias">reset_enable_get_ddl_use_data_type_alias</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetEnableUnloadPhysicalTypeOptimization">reset_enable_unload_physical_type_optimization</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetEnableUnredactedQuerySyntaxError">reset_enable_unredacted_query_syntax_error</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetErrorOnNondeterministicMerge">reset_error_on_nondeterministic_merge</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetErrorOnNondeterministicUpdate">reset_error_on_nondeterministic_update</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetGeographyOutputFormat">reset_geography_output_format</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetGeometryOutputFormat">reset_geometry_output_format</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetHybridTableLockTimeout">reset_hybrid_table_lock_timeout</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetJdbcTreatDecimalAsInt">reset_jdbc_treat_decimal_as_int</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetJdbcTreatTimestampNtzAsUtc">reset_jdbc_treat_timestamp_ntz_as_utc</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetJdbcUseSessionTimezone">reset_jdbc_use_session_timezone</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetJsonIndent">reset_json_indent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetJsTreatIntegerAsBigint">reset_js_treat_integer_as_bigint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetLockTimeout">reset_lock_timeout</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetLogEventLevel">reset_log_event_level</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetLoginName">reset_login_name</a></code> | *No description.* |
@@ -1165,11 +1344,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetNoorderSequenceAsDefault">reset_noorder_sequence_as_default</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetOdbcTreatDecimalAsInt">reset_odbc_treat_decimal_as_int</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetPreventUnloadToInternalStages">reset_prevent_unload_to_internal_stages</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetPythonProfilerModules">reset_python_profiler_modules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetPythonProfilerTargetStage">reset_python_profiler_target_stage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetQueryTag">reset_query_tag</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetQuotedIdentifiersIgnoreCase">reset_quoted_identifiers_ignore_case</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetRowsPerResultset">reset_rows_per_resultset</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetRsaPublicKey">reset_rsa_public_key</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetRsaPublicKey2">reset_rsa_public_key2</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetRsaPublicKey2Wo">reset_rsa_public_key2_wo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetRsaPublicKey2WoVersion">reset_rsa_public_key2_wo_version</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetRsaPublicKeyWo">reset_rsa_public_key_wo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetRsaPublicKeyWoVersion">reset_rsa_public_key_wo_version</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetS3StageVpceDnsName">reset_s3_stage_vpce_dns_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetSearchPath">reset_search_path</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.resetSimulatedDataSharingConsumer">reset_simulated_data_sharing_consumer</a></code> | *No description.* |
@@ -1562,7 +1747,7 @@ def put_default_workload_identity(
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#aws ServiceUser#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#aws ServiceUser#aws}
 
 ---
 
@@ -1572,7 +1757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#azure ServiceUser#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#azure ServiceUser#azure}
 
 ---
 
@@ -1582,7 +1767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 gcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#gcp ServiceUser#gcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#gcp ServiceUser#gcp}
 
 ---
 
@@ -1592,7 +1777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 oidc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#oidc ServiceUser#oidc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#oidc ServiceUser#oidc}
 
 ---
 
@@ -1600,6 +1785,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ```python
 def reset_abort_detached_query() -> None
+```
+
+##### `reset_active_python_profiler` <a name="reset_active_python_profiler" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetActivePythonProfiler"></a>
+
+```python
+def reset_active_python_profiler() -> None
 ```
 
 ##### `reset_autocommit` <a name="reset_autocommit" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetAutocommit"></a>
@@ -1620,6 +1811,12 @@ def reset_binary_input_format() -> None
 def reset_binary_output_format() -> None
 ```
 
+##### `reset_client_enable_log_info_statement_parameters` <a name="reset_client_enable_log_info_statement_parameters" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetClientEnableLogInfoStatementParameters"></a>
+
+```python
+def reset_client_enable_log_info_statement_parameters() -> None
+```
+
 ##### `reset_client_memory_limit` <a name="reset_client_memory_limit" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetClientMemoryLimit"></a>
 
 ```python
@@ -1630,6 +1827,12 @@ def reset_client_memory_limit() -> None
 
 ```python
 def reset_client_metadata_request_use_connection_ctx() -> None
+```
+
+##### `reset_client_metadata_use_session_database` <a name="reset_client_metadata_use_session_database" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetClientMetadataUseSessionDatabase"></a>
+
+```python
+def reset_client_metadata_use_session_database() -> None
 ```
 
 ##### `reset_client_prefetch_threads` <a name="reset_client_prefetch_threads" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetClientPrefetchThreads"></a>
@@ -1672,6 +1875,12 @@ def reset_client_timestamp_type_mapping() -> None
 
 ```python
 def reset_comment() -> None
+```
+
+##### `reset_csv_timestamp_format` <a name="reset_csv_timestamp_format" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetCsvTimestampFormat"></a>
+
+```python
+def reset_csv_timestamp_format() -> None
 ```
 
 ##### `reset_date_input_format` <a name="reset_date_input_format" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetDateInputFormat"></a>
@@ -1740,6 +1949,12 @@ def reset_display_name() -> None
 def reset_email() -> None
 ```
 
+##### `reset_enable_get_ddl_use_data_type_alias` <a name="reset_enable_get_ddl_use_data_type_alias" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetEnableGetDdlUseDataTypeAlias"></a>
+
+```python
+def reset_enable_get_ddl_use_data_type_alias() -> None
+```
+
 ##### `reset_enable_unload_physical_type_optimization` <a name="reset_enable_unload_physical_type_optimization" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetEnableUnloadPhysicalTypeOptimization"></a>
 
 ```python
@@ -1776,6 +1991,12 @@ def reset_geography_output_format() -> None
 def reset_geometry_output_format() -> None
 ```
 
+##### `reset_hybrid_table_lock_timeout` <a name="reset_hybrid_table_lock_timeout" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetHybridTableLockTimeout"></a>
+
+```python
+def reset_hybrid_table_lock_timeout() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetId"></a>
 
 ```python
@@ -1804,6 +2025,12 @@ def reset_jdbc_use_session_timezone() -> None
 
 ```python
 def reset_json_indent() -> None
+```
+
+##### `reset_js_treat_integer_as_bigint` <a name="reset_js_treat_integer_as_bigint" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetJsTreatIntegerAsBigint"></a>
+
+```python
+def reset_js_treat_integer_as_bigint() -> None
 ```
 
 ##### `reset_lock_timeout` <a name="reset_lock_timeout" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetLockTimeout"></a>
@@ -1866,6 +2093,18 @@ def reset_odbc_treat_decimal_as_int() -> None
 def reset_prevent_unload_to_internal_stages() -> None
 ```
 
+##### `reset_python_profiler_modules` <a name="reset_python_profiler_modules" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetPythonProfilerModules"></a>
+
+```python
+def reset_python_profiler_modules() -> None
+```
+
+##### `reset_python_profiler_target_stage` <a name="reset_python_profiler_target_stage" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetPythonProfilerTargetStage"></a>
+
+```python
+def reset_python_profiler_target_stage() -> None
+```
+
 ##### `reset_query_tag` <a name="reset_query_tag" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetQueryTag"></a>
 
 ```python
@@ -1894,6 +2133,30 @@ def reset_rsa_public_key() -> None
 
 ```python
 def reset_rsa_public_key2() -> None
+```
+
+##### `reset_rsa_public_key2_wo` <a name="reset_rsa_public_key2_wo" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetRsaPublicKey2Wo"></a>
+
+```python
+def reset_rsa_public_key2_wo() -> None
+```
+
+##### `reset_rsa_public_key2_wo_version` <a name="reset_rsa_public_key2_wo_version" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetRsaPublicKey2WoVersion"></a>
+
+```python
+def reset_rsa_public_key2_wo_version() -> None
+```
+
+##### `reset_rsa_public_key_wo` <a name="reset_rsa_public_key_wo" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetRsaPublicKeyWo"></a>
+
+```python
+def reset_rsa_public_key_wo() -> None
+```
+
+##### `reset_rsa_public_key_wo_version` <a name="reset_rsa_public_key_wo_version" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetRsaPublicKeyWoVersion"></a>
+
+```python
+def reset_rsa_public_key_wo_version() -> None
 ```
 
 ##### `reset_s3_stage_vpce_dns_name` <a name="reset_s3_stage_vpce_dns_name" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.resetS3StageVpceDnsName"></a>
@@ -2154,7 +2417,7 @@ The construct id used in the generated config for the ServiceUser to import.
 
 The id of the existing ServiceUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2190,11 +2453,14 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.showOutput">show_output</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserShowOutputList">ServiceUserShowOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.userType">user_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.abortDetachedQueryInput">abort_detached_query_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.activePythonProfilerInput">active_python_profiler_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.autocommitInput">autocommit_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.binaryInputFormatInput">binary_input_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.binaryOutputFormatInput">binary_output_format_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientEnableLogInfoStatementParametersInput">client_enable_log_info_statement_parameters_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientMemoryLimitInput">client_memory_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientMetadataRequestUseConnectionCtxInput">client_metadata_request_use_connection_ctx_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientMetadataUseSessionDatabaseInput">client_metadata_use_session_database_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientPrefetchThreadsInput">client_prefetch_threads_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientResultChunkSizeInput">client_result_chunk_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientResultColumnCaseInsensitiveInput">client_result_column_case_insensitive_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -2202,6 +2468,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientSessionKeepAliveInput">client_session_keep_alive_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientTimestampTypeMappingInput">client_timestamp_type_mapping_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.csvTimestampFormatInput">csv_timestamp_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.dateInputFormatInput">date_input_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.dateOutputFormatInput">date_output_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.daysToExpiryInput">days_to_expiry_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2213,17 +2480,20 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.disabledInput">disabled_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.emailInput">email_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.enableGetDdlUseDataTypeAliasInput">enable_get_ddl_use_data_type_alias_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.enableUnloadPhysicalTypeOptimizationInput">enable_unload_physical_type_optimization_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.enableUnredactedQuerySyntaxErrorInput">enable_unredacted_query_syntax_error_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.errorOnNondeterministicMergeInput">error_on_nondeterministic_merge_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.errorOnNondeterministicUpdateInput">error_on_nondeterministic_update_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.geographyOutputFormatInput">geography_output_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.geometryOutputFormatInput">geometry_output_format_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.hybridTableLockTimeoutInput">hybrid_table_lock_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.jdbcTreatDecimalAsIntInput">jdbc_treat_decimal_as_int_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.jdbcTreatTimestampNtzAsUtcInput">jdbc_treat_timestamp_ntz_as_utc_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.jdbcUseSessionTimezoneInput">jdbc_use_session_timezone_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.jsonIndentInput">json_indent_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.jsTreatIntegerAsBigintInput">js_treat_integer_as_bigint_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.lockTimeoutInput">lock_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.logEventLevelInput">log_event_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.loginNameInput">login_name_input</a></code> | <code>str</code> | *No description.* |
@@ -2235,11 +2505,17 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.noorderSequenceAsDefaultInput">noorder_sequence_as_default_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.odbcTreatDecimalAsIntInput">odbc_treat_decimal_as_int_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.preventUnloadToInternalStagesInput">prevent_unload_to_internal_stages_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.pythonProfilerModulesInput">python_profiler_modules_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.pythonProfilerTargetStageInput">python_profiler_target_stage_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.queryTagInput">query_tag_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.quotedIdentifiersIgnoreCaseInput">quoted_identifiers_ignore_case_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rowsPerResultsetInput">rows_per_resultset_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKey2Input">rsa_public_key2_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKey2WoInput">rsa_public_key2_wo_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKey2WoVersionInput">rsa_public_key2_wo_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKeyInput">rsa_public_key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKeyWoInput">rsa_public_key_wo_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKeyWoVersionInput">rsa_public_key_wo_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.s3StageVpceDnsNameInput">s3_stage_vpce_dns_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.searchPathInput">search_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.simulatedDataSharingConsumerInput">simulated_data_sharing_consumer_input</a></code> | <code>str</code> | *No description.* |
@@ -2265,11 +2541,14 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.weekOfYearPolicyInput">week_of_year_policy_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.weekStartInput">week_start_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.abortDetachedQuery">abort_detached_query</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.activePythonProfiler">active_python_profiler</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.autocommit">autocommit</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.binaryInputFormat">binary_input_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.binaryOutputFormat">binary_output_format</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientEnableLogInfoStatementParameters">client_enable_log_info_statement_parameters</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientMemoryLimit">client_memory_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientMetadataRequestUseConnectionCtx">client_metadata_request_use_connection_ctx</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientMetadataUseSessionDatabase">client_metadata_use_session_database</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientPrefetchThreads">client_prefetch_threads</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientResultChunkSize">client_result_chunk_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientResultColumnCaseInsensitive">client_result_column_case_insensitive</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -2277,6 +2556,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientSessionKeepAliveHeartbeatFrequency">client_session_keep_alive_heartbeat_frequency</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientTimestampTypeMapping">client_timestamp_type_mapping</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.comment">comment</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.csvTimestampFormat">csv_timestamp_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.dateInputFormat">date_input_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.dateOutputFormat">date_output_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.daysToExpiry">days_to_expiry</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2287,17 +2567,20 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.disabled">disabled</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.email">email</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.enableGetDdlUseDataTypeAlias">enable_get_ddl_use_data_type_alias</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.enableUnloadPhysicalTypeOptimization">enable_unload_physical_type_optimization</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.enableUnredactedQuerySyntaxError">enable_unredacted_query_syntax_error</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.errorOnNondeterministicMerge">error_on_nondeterministic_merge</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.errorOnNondeterministicUpdate">error_on_nondeterministic_update</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.geographyOutputFormat">geography_output_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.geometryOutputFormat">geometry_output_format</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.hybridTableLockTimeout">hybrid_table_lock_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.jdbcTreatDecimalAsInt">jdbc_treat_decimal_as_int</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.jdbcTreatTimestampNtzAsUtc">jdbc_treat_timestamp_ntz_as_utc</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.jdbcUseSessionTimezone">jdbc_use_session_timezone</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.jsonIndent">json_indent</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.jsTreatIntegerAsBigint">js_treat_integer_as_bigint</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.lockTimeout">lock_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.logEventLevel">log_event_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.loginName">login_name</a></code> | <code>str</code> | *No description.* |
@@ -2309,11 +2592,17 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.noorderSequenceAsDefault">noorder_sequence_as_default</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.odbcTreatDecimalAsInt">odbc_treat_decimal_as_int</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.preventUnloadToInternalStages">prevent_unload_to_internal_stages</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.pythonProfilerModules">python_profiler_modules</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.pythonProfilerTargetStage">python_profiler_target_stage</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.queryTag">query_tag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.quotedIdentifiersIgnoreCase">quoted_identifiers_ignore_case</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rowsPerResultset">rows_per_resultset</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKey">rsa_public_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKey2">rsa_public_key2</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKey2Wo">rsa_public_key2_wo</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKey2WoVersion">rsa_public_key2_wo_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKeyWo">rsa_public_key_wo</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKeyWoVersion">rsa_public_key_wo_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.s3StageVpceDnsName">s3_stage_vpce_dns_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.searchPath">search_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUser.property.simulatedDataSharingConsumer">simulated_data_sharing_consumer</a></code> | <code>str</code> | *No description.* |
@@ -2543,6 +2832,16 @@ abort_detached_query_input: bool | IResolvable
 
 ---
 
+##### `active_python_profiler_input`<sup>Optional</sup> <a name="active_python_profiler_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.activePythonProfilerInput"></a>
+
+```python
+active_python_profiler_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `autocommit_input`<sup>Optional</sup> <a name="autocommit_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.autocommitInput"></a>
 
 ```python
@@ -2573,6 +2872,16 @@ binary_output_format_input: str
 
 ---
 
+##### `client_enable_log_info_statement_parameters_input`<sup>Optional</sup> <a name="client_enable_log_info_statement_parameters_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientEnableLogInfoStatementParametersInput"></a>
+
+```python
+client_enable_log_info_statement_parameters_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `client_memory_limit_input`<sup>Optional</sup> <a name="client_memory_limit_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientMemoryLimitInput"></a>
 
 ```python
@@ -2587,6 +2896,16 @@ client_memory_limit_input: typing.Union[int, float]
 
 ```python
 client_metadata_request_use_connection_ctx_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `client_metadata_use_session_database_input`<sup>Optional</sup> <a name="client_metadata_use_session_database_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientMetadataUseSessionDatabaseInput"></a>
+
+```python
+client_metadata_use_session_database_input: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
@@ -2657,6 +2976,16 @@ client_timestamp_type_mapping_input: str
 
 ```python
 comment_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `csv_timestamp_format_input`<sup>Optional</sup> <a name="csv_timestamp_format_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.csvTimestampFormatInput"></a>
+
+```python
+csv_timestamp_format_input: str
 ```
 
 - *Type:* str
@@ -2773,6 +3102,16 @@ email_input: str
 
 ---
 
+##### `enable_get_ddl_use_data_type_alias_input`<sup>Optional</sup> <a name="enable_get_ddl_use_data_type_alias_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.enableGetDdlUseDataTypeAliasInput"></a>
+
+```python
+enable_get_ddl_use_data_type_alias_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `enable_unload_physical_type_optimization_input`<sup>Optional</sup> <a name="enable_unload_physical_type_optimization_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.enableUnloadPhysicalTypeOptimizationInput"></a>
 
 ```python
@@ -2833,6 +3172,16 @@ geometry_output_format_input: str
 
 ---
 
+##### `hybrid_table_lock_timeout_input`<sup>Optional</sup> <a name="hybrid_table_lock_timeout_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.hybridTableLockTimeoutInput"></a>
+
+```python
+hybrid_table_lock_timeout_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.idInput"></a>
 
 ```python
@@ -2880,6 +3229,16 @@ json_indent_input: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `js_treat_integer_as_bigint_input`<sup>Optional</sup> <a name="js_treat_integer_as_bigint_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.jsTreatIntegerAsBigintInput"></a>
+
+```python
+js_treat_integer_as_bigint_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2993,6 +3352,26 @@ prevent_unload_to_internal_stages_input: bool | IResolvable
 
 ---
 
+##### `python_profiler_modules_input`<sup>Optional</sup> <a name="python_profiler_modules_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.pythonProfilerModulesInput"></a>
+
+```python
+python_profiler_modules_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `python_profiler_target_stage_input`<sup>Optional</sup> <a name="python_profiler_target_stage_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.pythonProfilerTargetStageInput"></a>
+
+```python
+python_profiler_target_stage_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `query_tag_input`<sup>Optional</sup> <a name="query_tag_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.queryTagInput"></a>
 
 ```python
@@ -3033,6 +3412,26 @@ rsa_public_key2_input: str
 
 ---
 
+##### `rsa_public_key2_wo_input`<sup>Optional</sup> <a name="rsa_public_key2_wo_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKey2WoInput"></a>
+
+```python
+rsa_public_key2_wo_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `rsa_public_key2_wo_version_input`<sup>Optional</sup> <a name="rsa_public_key2_wo_version_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKey2WoVersionInput"></a>
+
+```python
+rsa_public_key2_wo_version_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `rsa_public_key_input`<sup>Optional</sup> <a name="rsa_public_key_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKeyInput"></a>
 
 ```python
@@ -3040,6 +3439,26 @@ rsa_public_key_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `rsa_public_key_wo_input`<sup>Optional</sup> <a name="rsa_public_key_wo_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKeyWoInput"></a>
+
+```python
+rsa_public_key_wo_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `rsa_public_key_wo_version_input`<sup>Optional</sup> <a name="rsa_public_key_wo_version_input" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKeyWoVersionInput"></a>
+
+```python
+rsa_public_key_wo_version_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -3293,6 +3712,16 @@ abort_detached_query: bool | IResolvable
 
 ---
 
+##### `active_python_profiler`<sup>Required</sup> <a name="active_python_profiler" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.activePythonProfiler"></a>
+
+```python
+active_python_profiler: str
+```
+
+- *Type:* str
+
+---
+
 ##### `autocommit`<sup>Required</sup> <a name="autocommit" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.autocommit"></a>
 
 ```python
@@ -3323,6 +3752,16 @@ binary_output_format: str
 
 ---
 
+##### `client_enable_log_info_statement_parameters`<sup>Required</sup> <a name="client_enable_log_info_statement_parameters" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientEnableLogInfoStatementParameters"></a>
+
+```python
+client_enable_log_info_statement_parameters: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `client_memory_limit`<sup>Required</sup> <a name="client_memory_limit" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientMemoryLimit"></a>
 
 ```python
@@ -3337,6 +3776,16 @@ client_memory_limit: typing.Union[int, float]
 
 ```python
 client_metadata_request_use_connection_ctx: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `client_metadata_use_session_database`<sup>Required</sup> <a name="client_metadata_use_session_database" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.clientMetadataUseSessionDatabase"></a>
+
+```python
+client_metadata_use_session_database: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
@@ -3407,6 +3856,16 @@ client_timestamp_type_mapping: str
 
 ```python
 comment: str
+```
+
+- *Type:* str
+
+---
+
+##### `csv_timestamp_format`<sup>Required</sup> <a name="csv_timestamp_format" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.csvTimestampFormat"></a>
+
+```python
+csv_timestamp_format: str
 ```
 
 - *Type:* str
@@ -3513,6 +3972,16 @@ email: str
 
 ---
 
+##### `enable_get_ddl_use_data_type_alias`<sup>Required</sup> <a name="enable_get_ddl_use_data_type_alias" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.enableGetDdlUseDataTypeAlias"></a>
+
+```python
+enable_get_ddl_use_data_type_alias: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `enable_unload_physical_type_optimization`<sup>Required</sup> <a name="enable_unload_physical_type_optimization" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.enableUnloadPhysicalTypeOptimization"></a>
 
 ```python
@@ -3573,6 +4042,16 @@ geometry_output_format: str
 
 ---
 
+##### `hybrid_table_lock_timeout`<sup>Required</sup> <a name="hybrid_table_lock_timeout" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.hybridTableLockTimeout"></a>
+
+```python
+hybrid_table_lock_timeout: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.id"></a>
 
 ```python
@@ -3620,6 +4099,16 @@ json_indent: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `js_treat_integer_as_bigint`<sup>Required</sup> <a name="js_treat_integer_as_bigint" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.jsTreatIntegerAsBigint"></a>
+
+```python
+js_treat_integer_as_bigint: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3733,6 +4222,26 @@ prevent_unload_to_internal_stages: bool | IResolvable
 
 ---
 
+##### `python_profiler_modules`<sup>Required</sup> <a name="python_profiler_modules" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.pythonProfilerModules"></a>
+
+```python
+python_profiler_modules: str
+```
+
+- *Type:* str
+
+---
+
+##### `python_profiler_target_stage`<sup>Required</sup> <a name="python_profiler_target_stage" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.pythonProfilerTargetStage"></a>
+
+```python
+python_profiler_target_stage: str
+```
+
+- *Type:* str
+
+---
+
 ##### `query_tag`<sup>Required</sup> <a name="query_tag" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.queryTag"></a>
 
 ```python
@@ -3780,6 +4289,50 @@ rsa_public_key2: str
 ```
 
 - *Type:* str
+
+---
+
+##### ~~`rsa_public_key2_wo`~~<sup>Required</sup> <a name="rsa_public_key2_wo" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKey2Wo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```python
+rsa_public_key2_wo: str
+```
+
+- *Type:* str
+
+---
+
+##### `rsa_public_key2_wo_version`<sup>Required</sup> <a name="rsa_public_key2_wo_version" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKey2WoVersion"></a>
+
+```python
+rsa_public_key2_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### ~~`rsa_public_key_wo`~~<sup>Required</sup> <a name="rsa_public_key_wo" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKeyWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```python
+rsa_public_key_wo: str
+```
+
+- *Type:* str
+
+---
+
+##### `rsa_public_key_wo_version`<sup>Required</sup> <a name="rsa_public_key_wo_version" id="@cdktn/provider-snowflake.serviceUser.ServiceUser.property.rsaPublicKeyWoVersion"></a>
+
+```python
+rsa_public_key_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -4060,11 +4613,14 @@ serviceUser.ServiceUserConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   abort_detached_query: bool | IResolvable = None,
+  active_python_profiler: str = None,
   autocommit: bool | IResolvable = None,
   binary_input_format: str = None,
   binary_output_format: str = None,
+  client_enable_log_info_statement_parameters: bool | IResolvable = None,
   client_memory_limit: typing.Union[int, float] = None,
   client_metadata_request_use_connection_ctx: bool | IResolvable = None,
+  client_metadata_use_session_database: bool | IResolvable = None,
   client_prefetch_threads: typing.Union[int, float] = None,
   client_result_chunk_size: typing.Union[int, float] = None,
   client_result_column_case_insensitive: bool | IResolvable = None,
@@ -4072,6 +4628,7 @@ serviceUser.ServiceUserConfig(
   client_session_keep_alive_heartbeat_frequency: typing.Union[int, float] = None,
   client_timestamp_type_mapping: str = None,
   comment: str = None,
+  csv_timestamp_format: str = None,
   date_input_format: str = None,
   date_output_format: str = None,
   days_to_expiry: typing.Union[int, float] = None,
@@ -4083,17 +4640,20 @@ serviceUser.ServiceUserConfig(
   disabled: str = None,
   display_name: str = None,
   email: str = None,
+  enable_get_ddl_use_data_type_alias: bool | IResolvable = None,
   enable_unload_physical_type_optimization: bool | IResolvable = None,
   enable_unredacted_query_syntax_error: bool | IResolvable = None,
   error_on_nondeterministic_merge: bool | IResolvable = None,
   error_on_nondeterministic_update: bool | IResolvable = None,
   geography_output_format: str = None,
   geometry_output_format: str = None,
+  hybrid_table_lock_timeout: typing.Union[int, float] = None,
   id: str = None,
   jdbc_treat_decimal_as_int: bool | IResolvable = None,
   jdbc_treat_timestamp_ntz_as_utc: bool | IResolvable = None,
   jdbc_use_session_timezone: bool | IResolvable = None,
   json_indent: typing.Union[int, float] = None,
+  js_treat_integer_as_bigint: bool | IResolvable = None,
   lock_timeout: typing.Union[int, float] = None,
   log_event_level: str = None,
   login_name: str = None,
@@ -4104,11 +4664,17 @@ serviceUser.ServiceUserConfig(
   noorder_sequence_as_default: bool | IResolvable = None,
   odbc_treat_decimal_as_int: bool | IResolvable = None,
   prevent_unload_to_internal_stages: bool | IResolvable = None,
+  python_profiler_modules: str = None,
+  python_profiler_target_stage: str = None,
   query_tag: str = None,
   quoted_identifiers_ignore_case: bool | IResolvable = None,
   rows_per_resultset: typing.Union[int, float] = None,
   rsa_public_key: str = None,
   rsa_public_key2: str = None,
+  rsa_public_key2_wo: str = None,
+  rsa_public_key2_wo_version: typing.Union[int, float] = None,
+  rsa_public_key_wo: str = None,
+  rsa_public_key_wo_version: typing.Union[int, float] = None,
   s3_stage_vpce_dns_name: str = None,
   search_path: str = None,
   simulated_data_sharing_consumer: str = None,
@@ -4149,11 +4715,14 @@ serviceUser.ServiceUserConfig(
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.name">name</a></code> | <code>str</code> | Name of the user. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.abortDetachedQuery">abort_detached_query</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query). |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.activePythonProfiler">active_python_profiler</a></code> | <code>str</code> | Sets the profiler to use for the session when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). Valid values are (case-insensitive): `LINE` \| `MEMORY`. For more information, check [ACTIVE_PYTHON_PROFILER docs](https://docs.snowflake.com/en/sql-reference/parameters#active-python-profiler). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.autocommit">autocommit</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether autocommit is enabled for the session. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.binaryInputFormat">binary_input_format</a></code> | <code>str</code> | The format of VARCHAR values passed as input to VARCHAR-to-BINARY conversion functions. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.binaryOutputFormat">binary_output_format</a></code> | <code>str</code> | The format for VARCHAR values returned as output by BINARY-to-VARCHAR conversion functions. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.clientEnableLogInfoStatementParameters">client_enable_log_info_statement_parameters</a></code> | <code>bool \| cdktn.IResolvable</code> | Enables users to log the data values bound to [PreparedStatements](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-api.html#label-jdbc-api-preparedstatement). For more information, check [CLIENT_ENABLE_LOG_INFO_STATEMENT_PARAMETERS docs](https://docs.snowflake.com/en/sql-reference/parameters#client-enable-log-info-statement-parameters). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.clientMemoryLimit">client_memory_limit</a></code> | <code>typing.Union[int, float]</code> | Parameter that specifies the maximum amount of memory the JDBC driver or ODBC driver should use for the result set from queries (in MB). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.clientMetadataRequestUseConnectionCtx">client_metadata_request_use_connection_ctx</a></code> | <code>bool \| cdktn.IResolvable</code> | For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.clientMetadataUseSessionDatabase">client_metadata_use_session_database</a></code> | <code>bool \| cdktn.IResolvable</code> | For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases to the current database. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.clientPrefetchThreads">client_prefetch_threads</a></code> | <code>typing.Union[int, float]</code> | Parameter that specifies the number of threads used by the client to pre-fetch large result sets. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.clientResultChunkSize">client_result_chunk_size</a></code> | <code>typing.Union[int, float]</code> | Parameter that specifies the maximum size of each set (or chunk) of query results to download (in MB). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.clientResultColumnCaseInsensitive">client_result_column_case_insensitive</a></code> | <code>bool \| cdktn.IResolvable</code> | Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive). |
@@ -4161,6 +4730,7 @@ serviceUser.ServiceUserConfig(
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.clientSessionKeepAliveHeartbeatFrequency">client_session_keep_alive_heartbeat_frequency</a></code> | <code>typing.Union[int, float]</code> | Number of seconds in-between client attempts to update the token for the session. For more information, check [CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive-heartbeat-frequency). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.clientTimestampTypeMapping">client_timestamp_type_mapping</a></code> | <code>str</code> | Specifies the [TIMESTAMP_* variation](https://docs.snowflake.com/en/sql-reference/data-types-datetime.html#label-datatypes-timestamp-variations) to use when binding timestamp variables for JDBC or ODBC applications that use the bind API to load data. Valid values are (case-insensitive): `TIMESTAMP_LTZ` \| `TIMESTAMP_NTZ`. For more information, check [CLIENT_TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#client-timestamp-type-mapping). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the user. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.csvTimestampFormat">csv_timestamp_format</a></code> | <code>str</code> | Specifies the format for TIMESTAMP values in CSV files downloaded from Snowsight. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.dateInputFormat">date_input_format</a></code> | <code>str</code> | Specifies the input format for the DATE data type. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.dateOutputFormat">date_output_format</a></code> | <code>str</code> | Specifies the display format for the DATE data type. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.daysToExpiry">days_to_expiry</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of days after which the user status is set to `Expired` and the user is no longer allowed to log in. |
@@ -4172,17 +4742,20 @@ serviceUser.ServiceUserConfig(
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.disabled">disabled</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether the user is disabled, which prevents logging in and aborts all the currently-running queries for the user. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.displayName">display_name</a></code> | <code>str</code> | Name displayed for the user in the Snowflake web interface. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.email">email</a></code> | <code>str</code> | Email address for the user. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.enableGetDdlUseDataTypeAlias">enable_get_ddl_use_data_type_alias</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether the output returned by the GET_DDL function contains data type synonyms specified in the original DDL statement. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.enableUnloadPhysicalTypeOptimization">enable_unload_physical_type_optimization</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.enableUnredactedQuerySyntaxError">enable_unredacted_query_syntax_error</a></code> | <code>bool \| cdktn.IResolvable</code> | Controls whether query text is redacted if a SQL query fails due to a syntax or parsing error. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.errorOnNondeterministicMerge">error_on_nondeterministic_merge</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.errorOnNondeterministicUpdate">error_on_nondeterministic_update</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.geographyOutputFormat">geography_output_format</a></code> | <code>str</code> | Display format for [GEOGRAPHY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geography). Valid values are (case-insensitive): `GeoJSON` \| `WKT` \| `WKB` \| `EWKT` \| `EWKB`. For more information, check [GEOGRAPHY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geography-output-format). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.geometryOutputFormat">geometry_output_format</a></code> | <code>str</code> | Display format for [GEOMETRY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geometry). Valid values are (case-insensitive): `GeoJSON` \| `WKT` \| `WKB` \| `EWKT` \| `EWKB`. For more information, check [GEOMETRY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geometry-output-format). |
-| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#id ServiceUser#id}. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.hybridTableLockTimeout">hybrid_table_lock_timeout</a></code> | <code>typing.Union[int, float]</code> | Number of seconds to wait while trying to acquire row-level locks on a hybrid table, before timing out and aborting the statement. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#id ServiceUser#id}. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.jdbcTreatDecimalAsInt">jdbc_treat_decimal_as_int</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies how JDBC processes columns that have a scale of zero (0). For more information, check [JDBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-decimal-as-int). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.jdbcTreatTimestampNtzAsUtc">jdbc_treat_timestamp_ntz_as_utc</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies how JDBC processes TIMESTAMP_NTZ values ([more details](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc)). For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.jdbcUseSessionTimezone">jdbc_use_session_timezone</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.jsonIndent">json_indent</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of blank spaces to indent each new element in JSON output in the session. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.jsTreatIntegerAsBigint">js_treat_integer_as_bigint</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies how the Snowflake Node.js Driver processes numeric columns that have a scale of zero (0), for example INTEGER or NUMBER(p, 0). For more information, check [JS_TREAT_INTEGER_AS_BIGINT docs](https://docs.snowflake.com/en/sql-reference/parameters#js-treat-integer-as-bigint). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.lockTimeout">lock_timeout</a></code> | <code>typing.Union[int, float]</code> | Number of seconds to wait while trying to lock a resource, before timing out and aborting the statement. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.logEventLevel">log_event_level</a></code> | <code>str</code> | Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.loginName">login_name</a></code> | <code>str</code> | The name users use to log in. |
@@ -4193,11 +4766,17 @@ serviceUser.ServiceUserConfig(
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.noorderSequenceAsDefault">noorder_sequence_as_default</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.odbcTreatDecimalAsInt">odbc_treat_decimal_as_int</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.preventUnloadToInternalStages">prevent_unload_to_internal_stages</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether to prevent data unload operations to internal (Snowflake) stages using [COPY INTO location](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location) statements. For more information, check [PREVENT_UNLOAD_TO_INTERNAL_STAGES docs](https://docs.snowflake.com/en/sql-reference/parameters#prevent-unload-to-internal-stages). |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.pythonProfilerModules">python_profiler_modules</a></code> | <code>str</code> | Specifies the list of Python modules to include in a report when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). For more information, check [PYTHON_PROFILER_MODULES docs](https://docs.snowflake.com/en/sql-reference/parameters#python-profiler-modules). |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.pythonProfilerTargetStage">python_profiler_target_stage</a></code> | <code>str</code> | Specifies the fully-qualified name of the stage in which to save a report when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). For more information, check [PYTHON_PROFILER_TARGET_STAGE docs](https://docs.snowflake.com/en/sql-reference/parameters#python-profiler-target-stage). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.queryTag">query_tag</a></code> | <code>str</code> | Optional string that can be used to tag queries and other SQL statements executed within a session. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.quotedIdentifiersIgnoreCase">quoted_identifiers_ignore_case</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, the case of quoted identifiers is ignored. For more information, check [QUOTED_IDENTIFIERS_IGNORE_CASE docs](https://docs.snowflake.com/en/sql-reference/parameters#quoted-identifiers-ignore-case). |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.rowsPerResultset">rows_per_resultset</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum number of rows returned in a result set. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.rsaPublicKey">rsa_public_key</a></code> | <code>str</code> | Specifies the user’s RSA public key; used for key-pair authentication. Must be on 1 line without header and trailer. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.rsaPublicKey2">rsa_public_key2</a></code> | <code>str</code> | Specifies the user’s second RSA public key; |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.rsaPublicKey2Wo">rsa_public_key2_wo</a></code> | <code>str</code> | Specifies the user’s second RSA public key; |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.rsaPublicKey2WoVersion">rsa_public_key2_wo_version</a></code> | <code>typing.Union[int, float]</code> | Version counter for `rsa_public_key_2_wo`. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.rsaPublicKeyWo">rsa_public_key_wo</a></code> | <code>str</code> | Specifies the user’s RSA public key; |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.rsaPublicKeyWoVersion">rsa_public_key_wo_version</a></code> | <code>typing.Union[int, float]</code> | Version counter for `rsa_public_key_wo`. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.s3StageVpceDnsName">s3_stage_vpce_dns_name</a></code> | <code>str</code> | Specifies the DNS name of an Amazon S3 interface endpoint. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.searchPath">search_path</a></code> | <code>str</code> | Specifies the path to search to resolve unqualified object names in queries. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.simulatedDataSharingConsumer">simulated_data_sharing_consumer</a></code> | <code>str</code> | Specifies the name of a consumer account to simulate for testing/validating shared data, particularly shared secure views. |
@@ -4307,7 +4886,7 @@ Name of the user.
 
 Note that if you do not supply login_name this will be used as login_name. Check the [docs](https://docs.snowflake.net/manuals/sql-reference/sql/create-user.html#required-parameters). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#name ServiceUser#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#name ServiceUser#name}
 
 ---
 
@@ -4321,7 +4900,21 @@ abort_detached_query: bool | IResolvable
 
 Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#abort_detached_query ServiceUser#abort_detached_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#abort_detached_query ServiceUser#abort_detached_query}
+
+---
+
+##### `active_python_profiler`<sup>Optional</sup> <a name="active_python_profiler" id="@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.activePythonProfiler"></a>
+
+```python
+active_python_profiler: str
+```
+
+- *Type:* str
+
+Sets the profiler to use for the session when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). Valid values are (case-insensitive): `LINE` | `MEMORY`. For more information, check [ACTIVE_PYTHON_PROFILER docs](https://docs.snowflake.com/en/sql-reference/parameters#active-python-profiler).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#active_python_profiler ServiceUser#active_python_profiler}
 
 ---
 
@@ -4337,7 +4930,7 @@ Specifies whether autocommit is enabled for the session.
 
 Autocommit determines whether a DML statement, when executed without an active transaction, is automatically committed after the statement successfully completes. For more information, see [Transactions](https://docs.snowflake.com/en/sql-reference/transactions). For more information, check [AUTOCOMMIT docs](https://docs.snowflake.com/en/sql-reference/parameters#autocommit).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#autocommit ServiceUser#autocommit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#autocommit ServiceUser#autocommit}
 
 ---
 
@@ -4353,7 +4946,7 @@ The format of VARCHAR values passed as input to VARCHAR-to-BINARY conversion fun
 
 For more information, see [Binary input and output](https://docs.snowflake.com/en/sql-reference/binary-input-output). Valid values are (case-insensitive): `HEX` | `BASE64` | `UTF8`. For more information, check [BINARY_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#binary-input-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#binary_input_format ServiceUser#binary_input_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#binary_input_format ServiceUser#binary_input_format}
 
 ---
 
@@ -4369,7 +4962,21 @@ The format for VARCHAR values returned as output by BINARY-to-VARCHAR conversion
 
 For more information, see [Binary input and output](https://docs.snowflake.com/en/sql-reference/binary-input-output). Valid values are (case-insensitive): `HEX` | `BASE64`. For more information, check [BINARY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#binary-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#binary_output_format ServiceUser#binary_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#binary_output_format ServiceUser#binary_output_format}
+
+---
+
+##### `client_enable_log_info_statement_parameters`<sup>Optional</sup> <a name="client_enable_log_info_statement_parameters" id="@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.clientEnableLogInfoStatementParameters"></a>
+
+```python
+client_enable_log_info_statement_parameters: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Enables users to log the data values bound to [PreparedStatements](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-api.html#label-jdbc-api-preparedstatement). For more information, check [CLIENT_ENABLE_LOG_INFO_STATEMENT_PARAMETERS docs](https://docs.snowflake.com/en/sql-reference/parameters#client-enable-log-info-statement-parameters).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_enable_log_info_statement_parameters ServiceUser#client_enable_log_info_statement_parameters}
 
 ---
 
@@ -4385,7 +4992,7 @@ Parameter that specifies the maximum amount of memory the JDBC driver or ODBC dr
 
 For more information, check [CLIENT_MEMORY_LIMIT docs](https://docs.snowflake.com/en/sql-reference/parameters#client-memory-limit).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_memory_limit ServiceUser#client_memory_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_memory_limit ServiceUser#client_memory_limit}
 
 ---
 
@@ -4401,7 +5008,23 @@ For specific ODBC functions and JDBC methods, this parameter can change the defa
 
 The narrower search typically returns fewer rows and executes more quickly. For more information, check [CLIENT_METADATA_REQUEST_USE_CONNECTION_CTX docs](https://docs.snowflake.com/en/sql-reference/parameters#client-metadata-request-use-connection-ctx).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_metadata_request_use_connection_ctx ServiceUser#client_metadata_request_use_connection_ctx}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_metadata_request_use_connection_ctx ServiceUser#client_metadata_request_use_connection_ctx}
+
+---
+
+##### `client_metadata_use_session_database`<sup>Optional</sup> <a name="client_metadata_use_session_database" id="@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.clientMetadataUseSessionDatabase"></a>
+
+```python
+client_metadata_use_session_database: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases to the current database.
+
+The narrower search typically returns fewer rows and executes more quickly ([more details on the usage](https://docs.snowflake.com/en/sql-reference/parameters#client-metadata-use-session-database)). For more information, check [CLIENT_METADATA_USE_SESSION_DATABASE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-metadata-use-session-database).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_metadata_use_session_database ServiceUser#client_metadata_use_session_database}
 
 ---
 
@@ -4417,7 +5040,7 @@ Parameter that specifies the number of threads used by the client to pre-fetch l
 
 The driver will attempt to honor the parameter value, but defines the minimum and maximum values (depending on your system’s resources) to improve performance. For more information, check [CLIENT_PREFETCH_THREADS docs](https://docs.snowflake.com/en/sql-reference/parameters#client-prefetch-threads).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_prefetch_threads ServiceUser#client_prefetch_threads}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_prefetch_threads ServiceUser#client_prefetch_threads}
 
 ---
 
@@ -4433,7 +5056,7 @@ Parameter that specifies the maximum size of each set (or chunk) of query result
 
 The JDBC driver downloads query results in chunks. For more information, check [CLIENT_RESULT_CHUNK_SIZE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-chunk-size).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_result_chunk_size ServiceUser#client_result_chunk_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_result_chunk_size ServiceUser#client_result_chunk_size}
 
 ---
 
@@ -4447,7 +5070,7 @@ client_result_column_case_insensitive: bool | IResolvable
 
 Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_result_column_case_insensitive ServiceUser#client_result_column_case_insensitive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_result_column_case_insensitive ServiceUser#client_result_column_case_insensitive}
 
 ---
 
@@ -4463,7 +5086,7 @@ Parameter that indicates whether to force a user to log in again after a period 
 
 For more information, check [CLIENT_SESSION_KEEP_ALIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_session_keep_alive ServiceUser#client_session_keep_alive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_session_keep_alive ServiceUser#client_session_keep_alive}
 
 ---
 
@@ -4477,7 +5100,7 @@ client_session_keep_alive_heartbeat_frequency: typing.Union[int, float]
 
 Number of seconds in-between client attempts to update the token for the session. For more information, check [CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive-heartbeat-frequency).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_session_keep_alive_heartbeat_frequency ServiceUser#client_session_keep_alive_heartbeat_frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_session_keep_alive_heartbeat_frequency ServiceUser#client_session_keep_alive_heartbeat_frequency}
 
 ---
 
@@ -4491,7 +5114,7 @@ client_timestamp_type_mapping: str
 
 Specifies the [TIMESTAMP_* variation](https://docs.snowflake.com/en/sql-reference/data-types-datetime.html#label-datatypes-timestamp-variations) to use when binding timestamp variables for JDBC or ODBC applications that use the bind API to load data. Valid values are (case-insensitive): `TIMESTAMP_LTZ` | `TIMESTAMP_NTZ`. For more information, check [CLIENT_TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#client-timestamp-type-mapping).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_timestamp_type_mapping ServiceUser#client_timestamp_type_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_timestamp_type_mapping ServiceUser#client_timestamp_type_mapping}
 
 ---
 
@@ -4505,7 +5128,23 @@ comment: str
 
 Specifies a comment for the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#comment ServiceUser#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#comment ServiceUser#comment}
+
+---
+
+##### `csv_timestamp_format`<sup>Optional</sup> <a name="csv_timestamp_format" id="@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.csvTimestampFormat"></a>
+
+```python
+csv_timestamp_format: str
+```
+
+- *Type:* str
+
+Specifies the format for TIMESTAMP values in CSV files downloaded from Snowsight.
+
+If this parameter is not set, [TIMESTAMP_LTZ_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-ltz-output-format) will be used for TIMESTAMP_LTZ values, [TIMESTAMP_TZ_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-tz-output-format) will be used for TIMESTAMP_TZ and [TIMESTAMP_NTZ_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-ntz-output-format) for TIMESTAMP_NTZ values. For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output) or [Download your query results](https://docs.snowflake.com/en/user-guide/ui-snowsight-query.html#label-snowsight-download-query-results). For more information, check [CSV_TIMESTAMP_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#csv-timestamp-format).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#csv_timestamp_format ServiceUser#csv_timestamp_format}
 
 ---
 
@@ -4521,7 +5160,7 @@ Specifies the input format for the DATE data type.
 
 For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [DATE_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#date-input-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#date_input_format ServiceUser#date_input_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#date_input_format ServiceUser#date_input_format}
 
 ---
 
@@ -4537,7 +5176,7 @@ Specifies the display format for the DATE data type.
 
 For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [DATE_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#date-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#date_output_format ServiceUser#date_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#date_output_format ServiceUser#date_output_format}
 
 ---
 
@@ -4553,7 +5192,7 @@ Specifies the number of days after which the user status is set to `Expired` and
 
 This is useful for defining temporary users (i.e. users who should only have access to Snowflake for a limited time period). In general, you should not set this property for [account administrators](https://docs.snowflake.com/en/user-guide/security-access-control-considerations.html#label-accountadmin-users) (i.e. users with the `ACCOUNTADMIN` role) because Snowflake locks them out when they become `Expired`. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#days_to_expiry ServiceUser#days_to_expiry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#days_to_expiry ServiceUser#days_to_expiry}
 
 ---
 
@@ -4569,7 +5208,7 @@ Specifies the namespace (database only or database and schema) that is active by
 
 Note that the CREATE USER operation does not verify that the namespace exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#default_namespace ServiceUser#default_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#default_namespace ServiceUser#default_namespace}
 
 ---
 
@@ -4585,7 +5224,7 @@ Specifies the role that is active by default for the user’s session upon login
 
 Note that specifying a default role for a user does **not** grant the role to the user. The role must be granted explicitly to the user using the [GRANT ROLE](https://docs.snowflake.com/en/sql-reference/sql/grant-role) command. In addition, the CREATE USER operation does not verify that the role exists. For more information about this resource, see [docs](./account_role).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#default_role ServiceUser#default_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#default_role ServiceUser#default_role}
 
 ---
 
@@ -4601,7 +5240,7 @@ default_secondary_roles_option: str
 
 Valid values are (case-insensitive): `DEFAULT` | `NONE` | `ALL`. More information can be found in [doc](https://docs.snowflake.com/en/sql-reference/sql/create-user#optional-object-properties-objectproperties).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#default_secondary_roles_option ServiceUser#default_secondary_roles_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#default_secondary_roles_option ServiceUser#default_secondary_roles_option}
 
 ---
 
@@ -4617,7 +5256,7 @@ Specifies the virtual warehouse that is active by default for the user’s sessi
 
 Note that the CREATE USER operation does not verify that the warehouse exists. For more information about this resource, see [docs](./warehouse).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#default_warehouse ServiceUser#default_warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#default_warehouse ServiceUser#default_warehouse}
 
 ---
 
@@ -4631,7 +5270,7 @@ default_workload_identity: ServiceUserDefaultWorkloadIdentity
 
 default_workload_identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#default_workload_identity ServiceUser#default_workload_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#default_workload_identity ServiceUser#default_workload_identity}
 
 ---
 
@@ -4647,7 +5286,7 @@ disabled: str
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#disabled ServiceUser#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#disabled ServiceUser#disabled}
 
 ---
 
@@ -4661,7 +5300,7 @@ display_name: str
 
 Name displayed for the user in the Snowflake web interface.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#display_name ServiceUser#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#display_name ServiceUser#display_name}
 
 ---
 
@@ -4675,7 +5314,23 @@ email: str
 
 Email address for the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#email ServiceUser#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#email ServiceUser#email}
+
+---
+
+##### `enable_get_ddl_use_data_type_alias`<sup>Optional</sup> <a name="enable_get_ddl_use_data_type_alias" id="@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.enableGetDdlUseDataTypeAlias"></a>
+
+```python
+enable_get_ddl_use_data_type_alias: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Specifies whether the output returned by the GET_DDL function contains data type synonyms specified in the original DDL statement.
+
+Data type synonyms are also called data type aliases. For more information, check [ENABLE_GET_DDL_USE_DATA_TYPE_ALIAS docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-get-ddl-use-data-type-alias).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#enable_get_ddl_use_data_type_alias ServiceUser#enable_get_ddl_use_data_type_alias}
 
 ---
 
@@ -4689,7 +5344,7 @@ enable_unload_physical_type_optimization: bool | IResolvable
 
 Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#enable_unload_physical_type_optimization ServiceUser#enable_unload_physical_type_optimization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#enable_unload_physical_type_optimization ServiceUser#enable_unload_physical_type_optimization}
 
 ---
 
@@ -4705,7 +5360,7 @@ Controls whether query text is redacted if a SQL query fails due to a syntax or 
 
 If FALSE, the content of a failed query is redacted in the views, pages, and functions that provide a query history. Only users with a role that is granted or inherits the AUDIT privilege can set the ENABLE_UNREDACTED_QUERY_SYNTAX_ERROR parameter. When using the ALTER USER command to set the parameter to TRUE for a particular user, modify the user that you want to see the query text, not the user who executed the query (if those are different users). For more information, check [ENABLE_UNREDACTED_QUERY_SYNTAX_ERROR docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unredacted-query-syntax-error).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#enable_unredacted_query_syntax_error ServiceUser#enable_unredacted_query_syntax_error}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#enable_unredacted_query_syntax_error ServiceUser#enable_unredacted_query_syntax_error}
 
 ---
 
@@ -4719,7 +5374,7 @@ error_on_nondeterministic_merge: bool | IResolvable
 
 Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#error_on_nondeterministic_merge ServiceUser#error_on_nondeterministic_merge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#error_on_nondeterministic_merge ServiceUser#error_on_nondeterministic_merge}
 
 ---
 
@@ -4733,7 +5388,7 @@ error_on_nondeterministic_update: bool | IResolvable
 
 Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#error_on_nondeterministic_update ServiceUser#error_on_nondeterministic_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#error_on_nondeterministic_update ServiceUser#error_on_nondeterministic_update}
 
 ---
 
@@ -4747,7 +5402,7 @@ geography_output_format: str
 
 Display format for [GEOGRAPHY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geography). Valid values are (case-insensitive): `GeoJSON` | `WKT` | `WKB` | `EWKT` | `EWKB`. For more information, check [GEOGRAPHY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geography-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#geography_output_format ServiceUser#geography_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#geography_output_format ServiceUser#geography_output_format}
 
 ---
 
@@ -4761,7 +5416,23 @@ geometry_output_format: str
 
 Display format for [GEOMETRY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geometry). Valid values are (case-insensitive): `GeoJSON` | `WKT` | `WKB` | `EWKT` | `EWKB`. For more information, check [GEOMETRY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geometry-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#geometry_output_format ServiceUser#geometry_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#geometry_output_format ServiceUser#geometry_output_format}
+
+---
+
+##### `hybrid_table_lock_timeout`<sup>Optional</sup> <a name="hybrid_table_lock_timeout" id="@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.hybridTableLockTimeout"></a>
+
+```python
+hybrid_table_lock_timeout: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Number of seconds to wait while trying to acquire row-level locks on a hybrid table, before timing out and aborting the statement.
+
+For more information, check [HYBRID_TABLE_LOCK_TIMEOUT docs](https://docs.snowflake.com/en/sql-reference/parameters#hybrid-table-lock-timeout).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#hybrid_table_lock_timeout ServiceUser#hybrid_table_lock_timeout}
 
 ---
 
@@ -4773,7 +5444,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#id ServiceUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#id ServiceUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4790,7 +5461,7 @@ jdbc_treat_decimal_as_int: bool | IResolvable
 
 Specifies how JDBC processes columns that have a scale of zero (0). For more information, check [JDBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-decimal-as-int).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#jdbc_treat_decimal_as_int ServiceUser#jdbc_treat_decimal_as_int}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#jdbc_treat_decimal_as_int ServiceUser#jdbc_treat_decimal_as_int}
 
 ---
 
@@ -4804,7 +5475,7 @@ jdbc_treat_timestamp_ntz_as_utc: bool | IResolvable
 
 Specifies how JDBC processes TIMESTAMP_NTZ values ([more details](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc)). For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#jdbc_treat_timestamp_ntz_as_utc ServiceUser#jdbc_treat_timestamp_ntz_as_utc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#jdbc_treat_timestamp_ntz_as_utc ServiceUser#jdbc_treat_timestamp_ntz_as_utc}
 
 ---
 
@@ -4818,7 +5489,7 @@ jdbc_use_session_timezone: bool | IResolvable
 
 Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#jdbc_use_session_timezone ServiceUser#jdbc_use_session_timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#jdbc_use_session_timezone ServiceUser#jdbc_use_session_timezone}
 
 ---
 
@@ -4834,7 +5505,21 @@ Specifies the number of blank spaces to indent each new element in JSON output i
 
 Also specifies whether to insert newline characters after each element. For more information, check [JSON_INDENT docs](https://docs.snowflake.com/en/sql-reference/parameters#json-indent).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#json_indent ServiceUser#json_indent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#json_indent ServiceUser#json_indent}
+
+---
+
+##### `js_treat_integer_as_bigint`<sup>Optional</sup> <a name="js_treat_integer_as_bigint" id="@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.jsTreatIntegerAsBigint"></a>
+
+```python
+js_treat_integer_as_bigint: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Specifies how the Snowflake Node.js Driver processes numeric columns that have a scale of zero (0), for example INTEGER or NUMBER(p, 0). For more information, check [JS_TREAT_INTEGER_AS_BIGINT docs](https://docs.snowflake.com/en/sql-reference/parameters#js-treat-integer-as-bigint).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#js_treat_integer_as_bigint ServiceUser#js_treat_integer_as_bigint}
 
 ---
 
@@ -4850,7 +5535,7 @@ Number of seconds to wait while trying to lock a resource, before timing out and
 
 For more information, check [LOCK_TIMEOUT docs](https://docs.snowflake.com/en/sql-reference/parameters#lock-timeout).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#lock_timeout ServiceUser#lock_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#lock_timeout ServiceUser#lock_timeout}
 
 ---
 
@@ -4866,7 +5551,7 @@ Specifies the severity level of log events (rows with record type EVENT) that sh
 
 Log events at the specified level (and at more severe levels) are ingested. Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`. For more information, check [LOG_EVENT_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-event-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#log_event_level ServiceUser#log_event_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#log_event_level ServiceUser#log_event_level}
 
 ---
 
@@ -4882,7 +5567,7 @@ The name users use to log in.
 
 If not supplied, snowflake will use name instead. Login names are always case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#login_name ServiceUser#login_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#login_name ServiceUser#login_name}
 
 ---
 
@@ -4898,7 +5583,7 @@ Specifies the severity level of messages that should be ingested and made availa
 
 Messages at the specified level (and at more severe levels) are ingested. Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`. For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#log_level ServiceUser#log_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#log_level ServiceUser#log_level}
 
 ---
 
@@ -4914,7 +5599,7 @@ mins_to_unlock: typing.Union[int, float]
 
 To protect against unauthorized user login, Snowflake places a temporary lock on a user after five consecutive unsuccessful login attempts. When creating a user, this property can be set to prevent them from logging in until the specified amount of time passes. To remove a lock immediately for a user, specify a value of 0 for this parameter. **Note** because this value changes continuously after setting it, the provider is currently NOT handling the external changes to it. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#mins_to_unlock ServiceUser#mins_to_unlock}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#mins_to_unlock ServiceUser#mins_to_unlock}
 
 ---
 
@@ -4928,7 +5613,7 @@ multi_statement_count: typing.Union[int, float]
 
 Number of statements to execute when using the multi-statement capability. For more information, check [MULTI_STATEMENT_COUNT docs](https://docs.snowflake.com/en/sql-reference/parameters#multi-statement-count).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#multi_statement_count ServiceUser#multi_statement_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#multi_statement_count ServiceUser#multi_statement_count}
 
 ---
 
@@ -4944,7 +5629,7 @@ Specifies the network policy to enforce for your account.
 
 Network policies enable restricting access to your account based on users’ IP address. For more details, see [Controlling network traffic with network policies](https://docs.snowflake.com/en/user-guide/network-policies). For more information, check [NETWORK_POLICY docs](https://docs.snowflake.com/en/sql-reference/parameters#network-policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#network_policy ServiceUser#network_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#network_policy ServiceUser#network_policy}
 
 ---
 
@@ -4960,7 +5645,7 @@ Specifies whether the ORDER or NOORDER property is set by default when you creat
 
 The ORDER and NOORDER properties determine whether or not the values are generated for the sequence or auto-incremented column in [increasing or decreasing order](https://docs.snowflake.com/en/user-guide/querying-sequences.html#label-querying-sequences-increasing-values). For more information, check [NOORDER_SEQUENCE_AS_DEFAULT docs](https://docs.snowflake.com/en/sql-reference/parameters#noorder-sequence-as-default).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#noorder_sequence_as_default ServiceUser#noorder_sequence_as_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#noorder_sequence_as_default ServiceUser#noorder_sequence_as_default}
 
 ---
 
@@ -4974,7 +5659,7 @@ odbc_treat_decimal_as_int: bool | IResolvable
 
 Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#odbc_treat_decimal_as_int ServiceUser#odbc_treat_decimal_as_int}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#odbc_treat_decimal_as_int ServiceUser#odbc_treat_decimal_as_int}
 
 ---
 
@@ -4988,7 +5673,35 @@ prevent_unload_to_internal_stages: bool | IResolvable
 
 Specifies whether to prevent data unload operations to internal (Snowflake) stages using [COPY INTO location](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location) statements. For more information, check [PREVENT_UNLOAD_TO_INTERNAL_STAGES docs](https://docs.snowflake.com/en/sql-reference/parameters#prevent-unload-to-internal-stages).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#prevent_unload_to_internal_stages ServiceUser#prevent_unload_to_internal_stages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#prevent_unload_to_internal_stages ServiceUser#prevent_unload_to_internal_stages}
+
+---
+
+##### `python_profiler_modules`<sup>Optional</sup> <a name="python_profiler_modules" id="@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.pythonProfilerModules"></a>
+
+```python
+python_profiler_modules: str
+```
+
+- *Type:* str
+
+Specifies the list of Python modules to include in a report when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). For more information, check [PYTHON_PROFILER_MODULES docs](https://docs.snowflake.com/en/sql-reference/parameters#python-profiler-modules).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#python_profiler_modules ServiceUser#python_profiler_modules}
+
+---
+
+##### `python_profiler_target_stage`<sup>Optional</sup> <a name="python_profiler_target_stage" id="@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.pythonProfilerTargetStage"></a>
+
+```python
+python_profiler_target_stage: str
+```
+
+- *Type:* str
+
+Specifies the fully-qualified name of the stage in which to save a report when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). For more information, check [PYTHON_PROFILER_TARGET_STAGE docs](https://docs.snowflake.com/en/sql-reference/parameters#python-profiler-target-stage).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#python_profiler_target_stage ServiceUser#python_profiler_target_stage}
 
 ---
 
@@ -5004,7 +5717,7 @@ Optional string that can be used to tag queries and other SQL statements execute
 
 The tags are displayed in the output of the [QUERY_HISTORY, QUERY_HISTORY_BY_*](https://docs.snowflake.com/en/sql-reference/functions/query_history) functions. For more information, check [QUERY_TAG docs](https://docs.snowflake.com/en/sql-reference/parameters#query-tag).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#query_tag ServiceUser#query_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#query_tag ServiceUser#query_tag}
 
 ---
 
@@ -5018,7 +5731,7 @@ quoted_identifiers_ignore_case: bool | IResolvable
 
 If true, the case of quoted identifiers is ignored. For more information, check [QUOTED_IDENTIFIERS_IGNORE_CASE docs](https://docs.snowflake.com/en/sql-reference/parameters#quoted-identifiers-ignore-case).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#quoted_identifiers_ignore_case ServiceUser#quoted_identifiers_ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#quoted_identifiers_ignore_case ServiceUser#quoted_identifiers_ignore_case}
 
 ---
 
@@ -5034,7 +5747,7 @@ Specifies the maximum number of rows returned in a result set.
 
 A value of 0 specifies no maximum. For more information, check [ROWS_PER_RESULTSET docs](https://docs.snowflake.com/en/sql-reference/parameters#rows-per-resultset).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#rows_per_resultset ServiceUser#rows_per_resultset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rows_per_resultset ServiceUser#rows_per_resultset}
 
 ---
 
@@ -5048,7 +5761,7 @@ rsa_public_key: str
 
 Specifies the user’s RSA public key; used for key-pair authentication. Must be on 1 line without header and trailer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#rsa_public_key ServiceUser#rsa_public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rsa_public_key ServiceUser#rsa_public_key}
 
 ---
 
@@ -5064,7 +5777,71 @@ Specifies the user’s second RSA public key;
 
 used to rotate the public and private keys for key-pair authentication based on an expiration schedule set by your organization. Must be on 1 line without header and trailer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#rsa_public_key_2 ServiceUser#rsa_public_key_2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rsa_public_key_2 ServiceUser#rsa_public_key_2}
+
+---
+
+##### `rsa_public_key2_wo`<sup>Optional</sup> <a name="rsa_public_key2_wo" id="@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.rsaPublicKey2Wo"></a>
+
+```python
+rsa_public_key2_wo: str
+```
+
+- *Type:* str
+
+Specifies the user’s second RSA public key;
+
+used to rotate the public and private keys for key-pair authentication based on an expiration schedule set by your organization. Must be on 1 line without header and trailer. The value of this field is never saved in the Terraform plan or state, so it can be set from an ephemeral resource. Requires Terraform 1.11 or later. Because Terraform can not detect changes to a write-only value, changes to this field are applied only when `rsa_public_key_2_wo_version` changes. External changes for this field won't be detected; to push the value from your configuration to Snowflake again, increment `rsa_public_key_2_wo_version`. Conflicts with the non-write-only variant of this field. This field can be only used when `WRITE_ONLY_ATTRIBUTES` option is specified in provider block in the [`experimental_features_enabled`](../#experimental_features_enabled-1) field.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rsa_public_key_2_wo ServiceUser#rsa_public_key_2_wo}
+
+---
+
+##### `rsa_public_key2_wo_version`<sup>Optional</sup> <a name="rsa_public_key2_wo_version" id="@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.rsaPublicKey2WoVersion"></a>
+
+```python
+rsa_public_key2_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Version counter for `rsa_public_key_2_wo`.
+
+Because Terraform can not detect changes to a write-only value, increment this field to push the current value of `rsa_public_key_2_wo` to Snowflake. Removing both fields unsets the value. This field can be only used when `WRITE_ONLY_ATTRIBUTES` option is specified in provider block in the [`experimental_features_enabled`](../#experimental_features_enabled-1) field.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rsa_public_key_2_wo_version ServiceUser#rsa_public_key_2_wo_version}
+
+---
+
+##### `rsa_public_key_wo`<sup>Optional</sup> <a name="rsa_public_key_wo" id="@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.rsaPublicKeyWo"></a>
+
+```python
+rsa_public_key_wo: str
+```
+
+- *Type:* str
+
+Specifies the user’s RSA public key;
+
+used for key-pair authentication. Must be on 1 line without header and trailer. The value of this field is never saved in the Terraform plan or state, so it can be set from an ephemeral resource. Requires Terraform 1.11 or later. Because Terraform can not detect changes to a write-only value, changes to this field are applied only when `rsa_public_key_wo_version` changes. External changes for this field won't be detected; to push the value from your configuration to Snowflake again, increment `rsa_public_key_wo_version`. Conflicts with the non-write-only variant of this field. This field can be only used when `WRITE_ONLY_ATTRIBUTES` option is specified in provider block in the [`experimental_features_enabled`](../#experimental_features_enabled-1) field.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rsa_public_key_wo ServiceUser#rsa_public_key_wo}
+
+---
+
+##### `rsa_public_key_wo_version`<sup>Optional</sup> <a name="rsa_public_key_wo_version" id="@cdktn/provider-snowflake.serviceUser.ServiceUserConfig.property.rsaPublicKeyWoVersion"></a>
+
+```python
+rsa_public_key_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Version counter for `rsa_public_key_wo`.
+
+Because Terraform can not detect changes to a write-only value, increment this field to push the current value of `rsa_public_key_wo` to Snowflake. Removing both fields unsets the value. This field can be only used when `WRITE_ONLY_ATTRIBUTES` option is specified in provider block in the [`experimental_features_enabled`](../#experimental_features_enabled-1) field.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rsa_public_key_wo_version ServiceUser#rsa_public_key_wo_version}
 
 ---
 
@@ -5080,7 +5857,7 @@ Specifies the DNS name of an Amazon S3 interface endpoint.
 
 Requests sent to the internal stage of an account via [AWS PrivateLink for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html) use this endpoint to connect. For more information, see [Accessing Internal stages with dedicated interface endpoints](https://docs.snowflake.com/en/user-guide/private-internal-stages-aws.html#label-aws-privatelink-internal-stage-network-isolation). For more information, check [S3_STAGE_VPCE_DNS_NAME docs](https://docs.snowflake.com/en/sql-reference/parameters#s3-stage-vpce-dns-name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#s3_stage_vpce_dns_name ServiceUser#s3_stage_vpce_dns_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#s3_stage_vpce_dns_name ServiceUser#s3_stage_vpce_dns_name}
 
 ---
 
@@ -5096,7 +5873,7 @@ Specifies the path to search to resolve unqualified object names in queries.
 
 For more information, see [Name resolution in queries](https://docs.snowflake.com/en/sql-reference/name-resolution.html#label-object-name-resolution-search-path). Comma-separated list of identifiers. An identifier can be a fully or partially qualified schema name. For more information, check [SEARCH_PATH docs](https://docs.snowflake.com/en/sql-reference/parameters#search-path).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#search_path ServiceUser#search_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#search_path ServiceUser#search_path}
 
 ---
 
@@ -5112,7 +5889,7 @@ Specifies the name of a consumer account to simulate for testing/validating shar
 
 When this parameter is set in a session, shared views return rows as if executed in the specified consumer account rather than the provider account. For more information, check [SIMULATED_DATA_SHARING_CONSUMER docs](https://docs.snowflake.com/en/sql-reference/parameters#simulated-data-sharing-consumer).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#simulated_data_sharing_consumer ServiceUser#simulated_data_sharing_consumer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#simulated_data_sharing_consumer ServiceUser#simulated_data_sharing_consumer}
 
 ---
 
@@ -5126,7 +5903,7 @@ statement_queued_timeout_in_seconds: typing.Union[int, float]
 
 Amount of time, in seconds, a SQL statement (query, DDL, DML, etc.) remains queued for a warehouse before it is canceled by the system. This parameter can be used in conjunction with the [MAX_CONCURRENCY_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#label-max-concurrency-level) parameter to ensure a warehouse is never backlogged. For more information, check [STATEMENT_QUEUED_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-queued-timeout-in-seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#statement_queued_timeout_in_seconds ServiceUser#statement_queued_timeout_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#statement_queued_timeout_in_seconds ServiceUser#statement_queued_timeout_in_seconds}
 
 ---
 
@@ -5140,7 +5917,7 @@ statement_timeout_in_seconds: typing.Union[int, float]
 
 Amount of time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system. For more information, check [STATEMENT_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-timeout-in-seconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#statement_timeout_in_seconds ServiceUser#statement_timeout_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#statement_timeout_in_seconds ServiceUser#statement_timeout_in_seconds}
 
 ---
 
@@ -5154,7 +5931,7 @@ strict_json_output: bool | IResolvable
 
 This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#strict_json_output ServiceUser#strict_json_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#strict_json_output ServiceUser#strict_json_output}
 
 ---
 
@@ -5170,7 +5947,7 @@ Specifies the input format for the TIME data type.
 
 For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). Any valid, supported time format or AUTO (AUTO specifies that Snowflake attempts to automatically detect the format of times stored in the system during the session). For more information, check [TIME_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#time-input-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#time_input_format ServiceUser#time_input_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#time_input_format ServiceUser#time_input_format}
 
 ---
 
@@ -5186,7 +5963,7 @@ Specifies the display format for the TIME data type.
 
 For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIME_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#time-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#time_output_format ServiceUser#time_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#time_output_format ServiceUser#time_output_format}
 
 ---
 
@@ -5200,7 +5977,7 @@ timestamp_day_is_always24_h: bool | IResolvable
 
 Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_day_is_always_24h ServiceUser#timestamp_day_is_always_24h}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_day_is_always_24h ServiceUser#timestamp_day_is_always_24h}
 
 ---
 
@@ -5216,7 +5993,7 @@ Specifies the input format for the TIMESTAMP data type alias.
 
 For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). Any valid, supported timestamp format or AUTO (AUTO specifies that Snowflake attempts to automatically detect the format of timestamps stored in the system during the session). For more information, check [TIMESTAMP_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-input-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_input_format ServiceUser#timestamp_input_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_input_format ServiceUser#timestamp_input_format}
 
 ---
 
@@ -5232,7 +6009,7 @@ Specifies the display format for the TIMESTAMP_LTZ data type.
 
 If no format is specified, defaults to [TIMESTAMP_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-output-format). For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIMESTAMP_LTZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-ltz-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_ltz_output_format ServiceUser#timestamp_ltz_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_ltz_output_format ServiceUser#timestamp_ltz_output_format}
 
 ---
 
@@ -5246,7 +6023,7 @@ timestamp_ntz_output_format: str
 
 Specifies the display format for the TIMESTAMP_NTZ data type. For more information, check [TIMESTAMP_NTZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-ntz-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_ntz_output_format ServiceUser#timestamp_ntz_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_ntz_output_format ServiceUser#timestamp_ntz_output_format}
 
 ---
 
@@ -5262,7 +6039,7 @@ Specifies the display format for the TIMESTAMP data type alias.
 
 For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIMESTAMP_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_output_format ServiceUser#timestamp_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_output_format ServiceUser#timestamp_output_format}
 
 ---
 
@@ -5278,7 +6055,7 @@ Specifies the TIMESTAMP_* variation that the TIMESTAMP data type alias maps to.
 
 Valid values are (case-insensitive): `TIMESTAMP_LTZ` | `TIMESTAMP_NTZ` | `TIMESTAMP_TZ`. For more information, check [TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-type-mapping).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_type_mapping ServiceUser#timestamp_type_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_type_mapping ServiceUser#timestamp_type_mapping}
 
 ---
 
@@ -5294,7 +6071,7 @@ Specifies the display format for the TIMESTAMP_TZ data type.
 
 If no format is specified, defaults to [TIMESTAMP_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-output-format). For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIMESTAMP_TZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-tz-output-format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_tz_output_format ServiceUser#timestamp_tz_output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_tz_output_format ServiceUser#timestamp_tz_output_format}
 
 ---
 
@@ -5310,7 +6087,7 @@ Specifies the time zone for the session.
 
 You can specify a [time zone name](https://data.iana.org/time-zones/tzdb-2021a/zone1970.tab) or a [link name](https://data.iana.org/time-zones/tzdb-2021a/backward) from release 2021a of the [IANA Time Zone Database](https://www.iana.org/time-zones) (e.g. America/Los_Angeles, Europe/London, UTC, Etc/GMT, etc.). For more information, check [TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#timezone).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timezone ServiceUser#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timezone ServiceUser#timezone}
 
 ---
 
@@ -5326,7 +6103,7 @@ Controls how trace events are ingested into the event table.
 
 Valid values are (case-insensitive): `ALWAYS` | `ON_EVENT` | `PROPAGATE` | `OFF`. For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#trace_level ServiceUser#trace_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#trace_level ServiceUser#trace_level}
 
 ---
 
@@ -5342,7 +6119,7 @@ Specifies the action to perform when a statement issued within a non-autocommit 
 
 For more information, check [TRANSACTION_ABORT_ON_ERROR docs](https://docs.snowflake.com/en/sql-reference/parameters#transaction-abort-on-error).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#transaction_abort_on_error ServiceUser#transaction_abort_on_error}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#transaction_abort_on_error ServiceUser#transaction_abort_on_error}
 
 ---
 
@@ -5358,7 +6135,7 @@ Specifies the isolation level for transactions in the user session.
 
 Valid values are (case-insensitive): `READ COMMITTED`. For more information, check [TRANSACTION_DEFAULT_ISOLATION_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#transaction-default-isolation-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#transaction_default_isolation_level ServiceUser#transaction_default_isolation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#transaction_default_isolation_level ServiceUser#transaction_default_isolation_level}
 
 ---
 
@@ -5372,7 +6149,7 @@ two_digit_century_start: typing.Union[int, float]
 
 Specifies the “century start” year for 2-digit years (i.e. the earliest year such dates can represent). This parameter prevents ambiguous dates when importing or converting data with the `YY` date format component (i.e. years represented as 2 digits). For more information, check [TWO_DIGIT_CENTURY_START docs](https://docs.snowflake.com/en/sql-reference/parameters#two-digit-century-start).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#two_digit_century_start ServiceUser#two_digit_century_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#two_digit_century_start ServiceUser#two_digit_century_start}
 
 ---
 
@@ -5386,7 +6163,7 @@ unsupported_ddl_action: str
 
 Determines if an unsupported (i.e. non-default) value specified for a constraint property returns an error. Valid values are (case-insensitive): `IGNORE` | `FAIL`. For more information, check [UNSUPPORTED_DDL_ACTION docs](https://docs.snowflake.com/en/sql-reference/parameters#unsupported-ddl-action).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#unsupported_ddl_action ServiceUser#unsupported_ddl_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#unsupported_ddl_action ServiceUser#unsupported_ddl_action}
 
 ---
 
@@ -5402,7 +6179,7 @@ Specifies whether to reuse persisted query results, if available, when a matchin
 
 For more information, check [USE_CACHED_RESULT docs](https://docs.snowflake.com/en/sql-reference/parameters#use-cached-result).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#use_cached_result ServiceUser#use_cached_result}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#use_cached_result ServiceUser#use_cached_result}
 
 ---
 
@@ -5418,7 +6195,7 @@ Specifies how the weeks in a given year are computed.
 
 `0`: The semantics used are equivalent to the ISO semantics, in which a week belongs to a given year if at least 4 days of that week are in that year. `1`: January 1 is included in the first week of the year and December 31 is included in the last week of the year. For more information, check [WEEK_OF_YEAR_POLICY docs](https://docs.snowflake.com/en/sql-reference/parameters#week-of-year-policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#week_of_year_policy ServiceUser#week_of_year_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#week_of_year_policy ServiceUser#week_of_year_policy}
 
 ---
 
@@ -5434,7 +6211,7 @@ Specifies the first day of the week (used by week-related date functions).
 
 `0`: Legacy Snowflake behavior is used (i.e. ISO-like semantics). `1` (Monday) to `7` (Sunday): All the week-related functions use weeks that start on the specified day of the week. For more information, check [WEEK_START docs](https://docs.snowflake.com/en/sql-reference/parameters#week-start).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#week_start ServiceUser#week_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#week_start ServiceUser#week_start}
 
 ---
 
@@ -5474,7 +6251,7 @@ aws: ServiceUserDefaultWorkloadIdentityAws
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#aws ServiceUser#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#aws ServiceUser#aws}
 
 ---
 
@@ -5488,7 +6265,7 @@ azure: ServiceUserDefaultWorkloadIdentityAzure
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#azure ServiceUser#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#azure ServiceUser#azure}
 
 ---
 
@@ -5502,7 +6279,7 @@ gcp: ServiceUserDefaultWorkloadIdentityGcp
 
 gcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#gcp ServiceUser#gcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#gcp ServiceUser#gcp}
 
 ---
 
@@ -5516,7 +6293,7 @@ oidc: ServiceUserDefaultWorkloadIdentityOidc
 
 oidc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#oidc ServiceUser#oidc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#oidc ServiceUser#oidc}
 
 ---
 
@@ -5552,7 +6329,7 @@ arn: str
 
 The ARN of the AWS IAM role to use for workload identity federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#arn ServiceUser#arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#arn ServiceUser#arn}
 
 ---
 
@@ -5566,7 +6343,7 @@ issuer: str
 
 The AWS issuer URL. Required for JWT-based (GetWebIdentityToken) workload identity federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#issuer ServiceUser#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#issuer ServiceUser#issuer}
 
 ---
 
@@ -5602,7 +6379,7 @@ issuer: str
 
 The Azure issuer URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#issuer ServiceUser#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#issuer ServiceUser#issuer}
 
 ---
 
@@ -5616,7 +6393,7 @@ subject: str
 
 The Azure subject identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#subject ServiceUser#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#subject ServiceUser#subject}
 
 ---
 
@@ -5650,7 +6427,7 @@ subject: str
 
 The GCP service account subject identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#subject ServiceUser#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#subject ServiceUser#subject}
 
 ---
 
@@ -5688,7 +6465,7 @@ issuer: str
 
 The OIDC issuer URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#issuer ServiceUser#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#issuer ServiceUser#issuer}
 
 ---
 
@@ -5702,7 +6479,7 @@ subject: str
 
 The OIDC subject identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#subject ServiceUser#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#subject ServiceUser#subject}
 
 ---
 
@@ -5716,7 +6493,7 @@ oidc_audience_list: typing.List[str]
 
 List of allowed OIDC audiences.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#oidc_audience_list ServiceUser#oidc_audience_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#oidc_audience_list ServiceUser#oidc_audience_list}
 
 ---
 
@@ -5739,6 +6516,17 @@ serviceUser.ServiceUserParameters()
 from cdktn_provider_snowflake import service_user
 
 serviceUser.ServiceUserParametersAbortDetachedQuery()
+```
+
+
+### ServiceUserParametersActivePythonProfiler <a name="ServiceUserParametersActivePythonProfiler" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfiler"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfiler.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersActivePythonProfiler()
 ```
 
 
@@ -5775,6 +6563,17 @@ serviceUser.ServiceUserParametersBinaryOutputFormat()
 ```
 
 
+### ServiceUserParametersClientEnableLogInfoStatementParameters <a name="ServiceUserParametersClientEnableLogInfoStatementParameters" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParameters.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersClientEnableLogInfoStatementParameters()
+```
+
+
 ### ServiceUserParametersClientMemoryLimit <a name="ServiceUserParametersClientMemoryLimit" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMemoryLimit"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMemoryLimit.Initializer"></a>
@@ -5794,6 +6593,17 @@ serviceUser.ServiceUserParametersClientMemoryLimit()
 from cdktn_provider_snowflake import service_user
 
 serviceUser.ServiceUserParametersClientMetadataRequestUseConnectionCtx()
+```
+
+
+### ServiceUserParametersClientMetadataUseSessionDatabase <a name="ServiceUserParametersClientMetadataUseSessionDatabase" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabase"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabase.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersClientMetadataUseSessionDatabase()
 ```
 
 
@@ -5863,6 +6673,17 @@ serviceUser.ServiceUserParametersClientTimestampTypeMapping()
 ```
 
 
+### ServiceUserParametersCsvTimestampFormat <a name="ServiceUserParametersCsvTimestampFormat" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormat"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormat.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersCsvTimestampFormat()
+```
+
+
 ### ServiceUserParametersDateInputFormat <a name="ServiceUserParametersDateInputFormat" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersDateInputFormat"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersDateInputFormat.Initializer"></a>
@@ -5882,6 +6703,17 @@ serviceUser.ServiceUserParametersDateInputFormat()
 from cdktn_provider_snowflake import service_user
 
 serviceUser.ServiceUserParametersDateOutputFormat()
+```
+
+
+### ServiceUserParametersEnableGetDdlUseDataTypeAlias <a name="ServiceUserParametersEnableGetDdlUseDataTypeAlias" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAlias"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAlias.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAlias()
 ```
 
 
@@ -5951,6 +6783,17 @@ serviceUser.ServiceUserParametersGeometryOutputFormat()
 ```
 
 
+### ServiceUserParametersHybridTableLockTimeout <a name="ServiceUserParametersHybridTableLockTimeout" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeout"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeout.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersHybridTableLockTimeout()
+```
+
+
 ### ServiceUserParametersJdbcTreatDecimalAsInt <a name="ServiceUserParametersJdbcTreatDecimalAsInt" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJdbcTreatDecimalAsInt"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJdbcTreatDecimalAsInt.Initializer"></a>
@@ -5992,6 +6835,17 @@ serviceUser.ServiceUserParametersJdbcUseSessionTimezone()
 from cdktn_provider_snowflake import service_user
 
 serviceUser.ServiceUserParametersJsonIndent()
+```
+
+
+### ServiceUserParametersJsTreatIntegerAsBigint <a name="ServiceUserParametersJsTreatIntegerAsBigint" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigint"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigint.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersJsTreatIntegerAsBigint()
 ```
 
 
@@ -6080,6 +6934,28 @@ serviceUser.ServiceUserParametersOdbcTreatDecimalAsInt()
 from cdktn_provider_snowflake import service_user
 
 serviceUser.ServiceUserParametersPreventUnloadToInternalStages()
+```
+
+
+### ServiceUserParametersPythonProfilerModules <a name="ServiceUserParametersPythonProfilerModules" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModules"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModules.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersPythonProfilerModules()
+```
+
+
+### ServiceUserParametersPythonProfilerTargetStage <a name="ServiceUserParametersPythonProfilerTargetStage" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStage"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStage.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersPythonProfilerTargetStage()
 ```
 
 
@@ -7930,7 +8806,7 @@ def put_aws(
 
 The ARN of the AWS IAM role to use for workload identity federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#arn ServiceUser#arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#arn ServiceUser#arn}
 
 ---
 
@@ -7940,7 +8816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The AWS issuer URL. Required for JWT-based (GetWebIdentityToken) workload identity federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#issuer ServiceUser#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#issuer ServiceUser#issuer}
 
 ---
 
@@ -7959,7 +8835,7 @@ def put_azure(
 
 The Azure issuer URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#issuer ServiceUser#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#issuer ServiceUser#issuer}
 
 ---
 
@@ -7969,7 +8845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The Azure subject identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#subject ServiceUser#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#subject ServiceUser#subject}
 
 ---
 
@@ -7987,7 +8863,7 @@ def put_gcp(
 
 The GCP service account subject identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#subject ServiceUser#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#subject ServiceUser#subject}
 
 ---
 
@@ -8007,7 +8883,7 @@ def put_oidc(
 
 The OIDC issuer URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#issuer ServiceUser#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#issuer ServiceUser#issuer}
 
 ---
 
@@ -8017,7 +8893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The OIDC subject identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#subject ServiceUser#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#subject ServiceUser#subject}
 
 ---
 
@@ -8027,7 +8903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 List of allowed OIDC audiences.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#oidc_audience_list ServiceUser#oidc_audience_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#oidc_audience_list ServiceUser#oidc_audience_list}
 
 ---
 
@@ -8693,6 +9569,514 @@ internal_value: ServiceUserParametersAbortDetachedQuery
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersAbortDetachedQuery">ServiceUserParametersAbortDetachedQuery</a>
+
+---
+
+
+### ServiceUserParametersActivePythonProfilerList <a name="ServiceUserParametersActivePythonProfilerList" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersActivePythonProfilerList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> ServiceUserParametersActivePythonProfilerOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### ServiceUserParametersActivePythonProfilerOutputReference <a name="ServiceUserParametersActivePythonProfilerOutputReference" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersActivePythonProfilerOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.property.level">level</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfiler">ServiceUserParametersActivePythonProfiler</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `default`<sup>Required</sup> <a name="default" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.property.default"></a>
+
+```python
+default: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `level`<sup>Required</sup> <a name="level" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.property.level"></a>
+
+```python
+level: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ServiceUserParametersActivePythonProfiler
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfiler">ServiceUserParametersActivePythonProfiler</a>
 
 ---
 
@@ -10221,6 +11605,514 @@ internal_value: ServiceUserParametersBinaryOutputFormat
 ---
 
 
+### ServiceUserParametersClientEnableLogInfoStatementParametersList <a name="ServiceUserParametersClientEnableLogInfoStatementParametersList" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference <a name="ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.property.level">level</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParameters">ServiceUserParametersClientEnableLogInfoStatementParameters</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `default`<sup>Required</sup> <a name="default" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.property.default"></a>
+
+```python
+default: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `level`<sup>Required</sup> <a name="level" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.property.level"></a>
+
+```python
+level: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ServiceUserParametersClientEnableLogInfoStatementParameters
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParameters">ServiceUserParametersClientEnableLogInfoStatementParameters</a>
+
+---
+
+
 ### ServiceUserParametersClientMemoryLimitList <a name="ServiceUserParametersClientMemoryLimitList" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMemoryLimitList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMemoryLimitList.Initializer"></a>
@@ -11233,6 +13125,514 @@ internal_value: ServiceUserParametersClientMetadataRequestUseConnectionCtx
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataRequestUseConnectionCtx">ServiceUserParametersClientMetadataRequestUseConnectionCtx</a>
+
+---
+
+
+### ServiceUserParametersClientMetadataUseSessionDatabaseList <a name="ServiceUserParametersClientMetadataUseSessionDatabaseList" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference <a name="ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.property.level">level</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabase">ServiceUserParametersClientMetadataUseSessionDatabase</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `default`<sup>Required</sup> <a name="default" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.property.default"></a>
+
+```python
+default: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `level`<sup>Required</sup> <a name="level" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.property.level"></a>
+
+```python
+level: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ServiceUserParametersClientMetadataUseSessionDatabase
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabase">ServiceUserParametersClientMetadataUseSessionDatabase</a>
 
 ---
 
@@ -14285,6 +16685,514 @@ internal_value: ServiceUserParametersClientTimestampTypeMapping
 ---
 
 
+### ServiceUserParametersCsvTimestampFormatList <a name="ServiceUserParametersCsvTimestampFormatList" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersCsvTimestampFormatList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> ServiceUserParametersCsvTimestampFormatOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### ServiceUserParametersCsvTimestampFormatOutputReference <a name="ServiceUserParametersCsvTimestampFormatOutputReference" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.property.level">level</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormat">ServiceUserParametersCsvTimestampFormat</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `default`<sup>Required</sup> <a name="default" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.property.default"></a>
+
+```python
+default: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `level`<sup>Required</sup> <a name="level" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.property.level"></a>
+
+```python
+level: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ServiceUserParametersCsvTimestampFormat
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormat">ServiceUserParametersCsvTimestampFormat</a>
+
+---
+
+
 ### ServiceUserParametersDateInputFormatList <a name="ServiceUserParametersDateInputFormatList" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersDateInputFormatList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersDateInputFormatList.Initializer"></a>
@@ -15297,6 +18205,514 @@ internal_value: ServiceUserParametersDateOutputFormat
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersDateOutputFormat">ServiceUserParametersDateOutputFormat</a>
+
+---
+
+
+### ServiceUserParametersEnableGetDdlUseDataTypeAliasList <a name="ServiceUserParametersEnableGetDdlUseDataTypeAliasList" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference <a name="ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.property.level">level</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAlias">ServiceUserParametersEnableGetDdlUseDataTypeAlias</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `default`<sup>Required</sup> <a name="default" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.property.default"></a>
+
+```python
+default: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `level`<sup>Required</sup> <a name="level" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.property.level"></a>
+
+```python
+level: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ServiceUserParametersEnableGetDdlUseDataTypeAlias
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAlias">ServiceUserParametersEnableGetDdlUseDataTypeAlias</a>
 
 ---
 
@@ -18349,6 +21765,514 @@ internal_value: ServiceUserParametersGeometryOutputFormat
 ---
 
 
+### ServiceUserParametersHybridTableLockTimeoutList <a name="ServiceUserParametersHybridTableLockTimeoutList" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersHybridTableLockTimeoutList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> ServiceUserParametersHybridTableLockTimeoutOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### ServiceUserParametersHybridTableLockTimeoutOutputReference <a name="ServiceUserParametersHybridTableLockTimeoutOutputReference" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.property.level">level</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeout">ServiceUserParametersHybridTableLockTimeout</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `default`<sup>Required</sup> <a name="default" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.property.default"></a>
+
+```python
+default: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `level`<sup>Required</sup> <a name="level" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.property.level"></a>
+
+```python
+level: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ServiceUserParametersHybridTableLockTimeout
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeout">ServiceUserParametersHybridTableLockTimeout</a>
+
+---
+
+
 ### ServiceUserParametersJdbcTreatDecimalAsIntList <a name="ServiceUserParametersJdbcTreatDecimalAsIntList" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJdbcTreatDecimalAsIntList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJdbcTreatDecimalAsIntList.Initializer"></a>
@@ -20377,6 +24301,514 @@ internal_value: ServiceUserParametersJsonIndent
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsonIndent">ServiceUserParametersJsonIndent</a>
+
+---
+
+
+### ServiceUserParametersJsTreatIntegerAsBigintList <a name="ServiceUserParametersJsTreatIntegerAsBigintList" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> ServiceUserParametersJsTreatIntegerAsBigintOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### ServiceUserParametersJsTreatIntegerAsBigintOutputReference <a name="ServiceUserParametersJsTreatIntegerAsBigintOutputReference" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.property.level">level</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigint">ServiceUserParametersJsTreatIntegerAsBigint</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `default`<sup>Required</sup> <a name="default" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.property.default"></a>
+
+```python
+default: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `level`<sup>Required</sup> <a name="level" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.property.level"></a>
+
+```python
+level: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ServiceUserParametersJsTreatIntegerAsBigint
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigint">ServiceUserParametersJsTreatIntegerAsBigint</a>
 
 ---
 
@@ -24352,29 +28784,36 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.abortDetachedQuery">abort_detached_query</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersAbortDetachedQueryList">ServiceUserParametersAbortDetachedQueryList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.activePythonProfiler">active_python_profiler</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList">ServiceUserParametersActivePythonProfilerList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.autocommit">autocommit</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersAutocommitList">ServiceUserParametersAutocommitList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.binaryInputFormat">binary_input_format</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersBinaryInputFormatList">ServiceUserParametersBinaryInputFormatList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.binaryOutputFormat">binary_output_format</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersBinaryOutputFormatList">ServiceUserParametersBinaryOutputFormatList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.clientEnableLogInfoStatementParameters">client_enable_log_info_statement_parameters</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList">ServiceUserParametersClientEnableLogInfoStatementParametersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.clientMemoryLimit">client_memory_limit</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMemoryLimitList">ServiceUserParametersClientMemoryLimitList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.clientMetadataRequestUseConnectionCtx">client_metadata_request_use_connection_ctx</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataRequestUseConnectionCtxList">ServiceUserParametersClientMetadataRequestUseConnectionCtxList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.clientMetadataUseSessionDatabase">client_metadata_use_session_database</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList">ServiceUserParametersClientMetadataUseSessionDatabaseList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.clientPrefetchThreads">client_prefetch_threads</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientPrefetchThreadsList">ServiceUserParametersClientPrefetchThreadsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.clientResultChunkSize">client_result_chunk_size</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientResultChunkSizeList">ServiceUserParametersClientResultChunkSizeList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.clientResultColumnCaseInsensitive">client_result_column_case_insensitive</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientResultColumnCaseInsensitiveList">ServiceUserParametersClientResultColumnCaseInsensitiveList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.clientSessionKeepAlive">client_session_keep_alive</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientSessionKeepAliveList">ServiceUserParametersClientSessionKeepAliveList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.clientSessionKeepAliveHeartbeatFrequency">client_session_keep_alive_heartbeat_frequency</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientSessionKeepAliveHeartbeatFrequencyList">ServiceUserParametersClientSessionKeepAliveHeartbeatFrequencyList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.clientTimestampTypeMapping">client_timestamp_type_mapping</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientTimestampTypeMappingList">ServiceUserParametersClientTimestampTypeMappingList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.csvTimestampFormat">csv_timestamp_format</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList">ServiceUserParametersCsvTimestampFormatList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.dateInputFormat">date_input_format</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersDateInputFormatList">ServiceUserParametersDateInputFormatList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.dateOutputFormat">date_output_format</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersDateOutputFormatList">ServiceUserParametersDateOutputFormatList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.enableGetDdlUseDataTypeAlias">enable_get_ddl_use_data_type_alias</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList">ServiceUserParametersEnableGetDdlUseDataTypeAliasList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.enableUnloadPhysicalTypeOptimization">enable_unload_physical_type_optimization</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableUnloadPhysicalTypeOptimizationList">ServiceUserParametersEnableUnloadPhysicalTypeOptimizationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.enableUnredactedQuerySyntaxError">enable_unredacted_query_syntax_error</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableUnredactedQuerySyntaxErrorList">ServiceUserParametersEnableUnredactedQuerySyntaxErrorList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.errorOnNondeterministicMerge">error_on_nondeterministic_merge</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersErrorOnNondeterministicMergeList">ServiceUserParametersErrorOnNondeterministicMergeList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.errorOnNondeterministicUpdate">error_on_nondeterministic_update</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersErrorOnNondeterministicUpdateList">ServiceUserParametersErrorOnNondeterministicUpdateList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.geographyOutputFormat">geography_output_format</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersGeographyOutputFormatList">ServiceUserParametersGeographyOutputFormatList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.geometryOutputFormat">geometry_output_format</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersGeometryOutputFormatList">ServiceUserParametersGeometryOutputFormatList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.hybridTableLockTimeout">hybrid_table_lock_timeout</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList">ServiceUserParametersHybridTableLockTimeoutList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.jdbcTreatDecimalAsInt">jdbc_treat_decimal_as_int</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJdbcTreatDecimalAsIntList">ServiceUserParametersJdbcTreatDecimalAsIntList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.jdbcTreatTimestampNtzAsUtc">jdbc_treat_timestamp_ntz_as_utc</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJdbcTreatTimestampNtzAsUtcList">ServiceUserParametersJdbcTreatTimestampNtzAsUtcList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.jdbcUseSessionTimezone">jdbc_use_session_timezone</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJdbcUseSessionTimezoneList">ServiceUserParametersJdbcUseSessionTimezoneList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.jsonIndent">json_indent</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsonIndentList">ServiceUserParametersJsonIndentList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.jsTreatIntegerAsBigint">js_treat_integer_as_bigint</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList">ServiceUserParametersJsTreatIntegerAsBigintList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.lockTimeout">lock_timeout</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersLockTimeoutList">ServiceUserParametersLockTimeoutList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.logEventLevel">log_event_level</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersLogEventLevelList">ServiceUserParametersLogEventLevelList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.logLevel">log_level</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersLogLevelList">ServiceUserParametersLogLevelList</a></code> | *No description.* |
@@ -24383,6 +28822,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.noorderSequenceAsDefault">noorder_sequence_as_default</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersNoorderSequenceAsDefaultList">ServiceUserParametersNoorderSequenceAsDefaultList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.odbcTreatDecimalAsInt">odbc_treat_decimal_as_int</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOdbcTreatDecimalAsIntList">ServiceUserParametersOdbcTreatDecimalAsIntList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.preventUnloadToInternalStages">prevent_unload_to_internal_stages</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPreventUnloadToInternalStagesList">ServiceUserParametersPreventUnloadToInternalStagesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.pythonProfilerModules">python_profiler_modules</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList">ServiceUserParametersPythonProfilerModulesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.pythonProfilerTargetStage">python_profiler_target_stage</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList">ServiceUserParametersPythonProfilerTargetStageList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.queryTag">query_tag</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersQueryTagList">ServiceUserParametersQueryTagList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.quotedIdentifiersIgnoreCase">quoted_identifiers_ignore_case</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersQuotedIdentifiersIgnoreCaseList">ServiceUserParametersQuotedIdentifiersIgnoreCaseList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.rowsPerResultset">rows_per_resultset</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersRowsPerResultsetList">ServiceUserParametersRowsPerResultsetList</a></code> | *No description.* |
@@ -24448,6 +28889,16 @@ abort_detached_query: ServiceUserParametersAbortDetachedQueryList
 
 ---
 
+##### `active_python_profiler`<sup>Required</sup> <a name="active_python_profiler" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.activePythonProfiler"></a>
+
+```python
+active_python_profiler: ServiceUserParametersActivePythonProfilerList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersActivePythonProfilerList">ServiceUserParametersActivePythonProfilerList</a>
+
+---
+
 ##### `autocommit`<sup>Required</sup> <a name="autocommit" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.autocommit"></a>
 
 ```python
@@ -24478,6 +28929,16 @@ binary_output_format: ServiceUserParametersBinaryOutputFormatList
 
 ---
 
+##### `client_enable_log_info_statement_parameters`<sup>Required</sup> <a name="client_enable_log_info_statement_parameters" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.clientEnableLogInfoStatementParameters"></a>
+
+```python
+client_enable_log_info_statement_parameters: ServiceUserParametersClientEnableLogInfoStatementParametersList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientEnableLogInfoStatementParametersList">ServiceUserParametersClientEnableLogInfoStatementParametersList</a>
+
+---
+
 ##### `client_memory_limit`<sup>Required</sup> <a name="client_memory_limit" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.clientMemoryLimit"></a>
 
 ```python
@@ -24495,6 +28956,16 @@ client_metadata_request_use_connection_ctx: ServiceUserParametersClientMetadataR
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataRequestUseConnectionCtxList">ServiceUserParametersClientMetadataRequestUseConnectionCtxList</a>
+
+---
+
+##### `client_metadata_use_session_database`<sup>Required</sup> <a name="client_metadata_use_session_database" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.clientMetadataUseSessionDatabase"></a>
+
+```python
+client_metadata_use_session_database: ServiceUserParametersClientMetadataUseSessionDatabaseList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersClientMetadataUseSessionDatabaseList">ServiceUserParametersClientMetadataUseSessionDatabaseList</a>
 
 ---
 
@@ -24558,6 +29029,16 @@ client_timestamp_type_mapping: ServiceUserParametersClientTimestampTypeMappingLi
 
 ---
 
+##### `csv_timestamp_format`<sup>Required</sup> <a name="csv_timestamp_format" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.csvTimestampFormat"></a>
+
+```python
+csv_timestamp_format: ServiceUserParametersCsvTimestampFormatList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersCsvTimestampFormatList">ServiceUserParametersCsvTimestampFormatList</a>
+
+---
+
 ##### `date_input_format`<sup>Required</sup> <a name="date_input_format" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.dateInputFormat"></a>
 
 ```python
@@ -24575,6 +29056,16 @@ date_output_format: ServiceUserParametersDateOutputFormatList
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersDateOutputFormatList">ServiceUserParametersDateOutputFormatList</a>
+
+---
+
+##### `enable_get_ddl_use_data_type_alias`<sup>Required</sup> <a name="enable_get_ddl_use_data_type_alias" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.enableGetDdlUseDataTypeAlias"></a>
+
+```python
+enable_get_ddl_use_data_type_alias: ServiceUserParametersEnableGetDdlUseDataTypeAliasList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersEnableGetDdlUseDataTypeAliasList">ServiceUserParametersEnableGetDdlUseDataTypeAliasList</a>
 
 ---
 
@@ -24638,6 +29129,16 @@ geometry_output_format: ServiceUserParametersGeometryOutputFormatList
 
 ---
 
+##### `hybrid_table_lock_timeout`<sup>Required</sup> <a name="hybrid_table_lock_timeout" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.hybridTableLockTimeout"></a>
+
+```python
+hybrid_table_lock_timeout: ServiceUserParametersHybridTableLockTimeoutList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersHybridTableLockTimeoutList">ServiceUserParametersHybridTableLockTimeoutList</a>
+
+---
+
 ##### `jdbc_treat_decimal_as_int`<sup>Required</sup> <a name="jdbc_treat_decimal_as_int" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.jdbcTreatDecimalAsInt"></a>
 
 ```python
@@ -24675,6 +29176,16 @@ json_indent: ServiceUserParametersJsonIndentList
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsonIndentList">ServiceUserParametersJsonIndentList</a>
+
+---
+
+##### `js_treat_integer_as_bigint`<sup>Required</sup> <a name="js_treat_integer_as_bigint" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.jsTreatIntegerAsBigint"></a>
+
+```python
+js_treat_integer_as_bigint: ServiceUserParametersJsTreatIntegerAsBigintList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersJsTreatIntegerAsBigintList">ServiceUserParametersJsTreatIntegerAsBigintList</a>
 
 ---
 
@@ -24755,6 +29266,26 @@ prevent_unload_to_internal_stages: ServiceUserParametersPreventUnloadToInternalS
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPreventUnloadToInternalStagesList">ServiceUserParametersPreventUnloadToInternalStagesList</a>
+
+---
+
+##### `python_profiler_modules`<sup>Required</sup> <a name="python_profiler_modules" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.pythonProfilerModules"></a>
+
+```python
+python_profiler_modules: ServiceUserParametersPythonProfilerModulesList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList">ServiceUserParametersPythonProfilerModulesList</a>
+
+---
+
+##### `python_profiler_target_stage`<sup>Required</sup> <a name="python_profiler_target_stage" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersOutputReference.property.pythonProfilerTargetStage"></a>
+
+```python
+python_profiler_target_stage: ServiceUserParametersPythonProfilerTargetStageList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList">ServiceUserParametersPythonProfilerTargetStageList</a>
 
 ---
 
@@ -25543,6 +30074,1022 @@ internal_value: ServiceUserParametersPreventUnloadToInternalStages
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPreventUnloadToInternalStages">ServiceUserParametersPreventUnloadToInternalStages</a>
+
+---
+
+
+### ServiceUserParametersPythonProfilerModulesList <a name="ServiceUserParametersPythonProfilerModulesList" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersPythonProfilerModulesList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> ServiceUserParametersPythonProfilerModulesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### ServiceUserParametersPythonProfilerModulesOutputReference <a name="ServiceUserParametersPythonProfilerModulesOutputReference" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.property.level">level</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModules">ServiceUserParametersPythonProfilerModules</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `default`<sup>Required</sup> <a name="default" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.property.default"></a>
+
+```python
+default: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `level`<sup>Required</sup> <a name="level" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.property.level"></a>
+
+```python
+level: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModulesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ServiceUserParametersPythonProfilerModules
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerModules">ServiceUserParametersPythonProfilerModules</a>
+
+---
+
+
+### ServiceUserParametersPythonProfilerTargetStageList <a name="ServiceUserParametersPythonProfilerTargetStageList" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersPythonProfilerTargetStageList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> ServiceUserParametersPythonProfilerTargetStageOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### ServiceUserParametersPythonProfilerTargetStageOutputReference <a name="ServiceUserParametersPythonProfilerTargetStageOutputReference" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_snowflake import service_user
+
+serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.property.level">level</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStage">ServiceUserParametersPythonProfilerTargetStage</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `default`<sup>Required</sup> <a name="default" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.property.default"></a>
+
+```python
+default: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.property.key"></a>
+
+```python
+key: str
+```
+
+- *Type:* str
+
+---
+
+##### `level`<sup>Required</sup> <a name="level" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.property.level"></a>
+
+```python
+level: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStageOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ServiceUserParametersPythonProfilerTargetStage
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.serviceUser.ServiceUserParametersPythonProfilerTargetStage">ServiceUserParametersPythonProfilerTargetStage</a>
 
 ---
 

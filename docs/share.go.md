@@ -4,7 +4,7 @@
 
 ### Share <a name="Share" id="@cdktn/provider-snowflake.share.Share"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/share snowflake_share}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/share snowflake_share}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.share.Share.Initializer"></a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-snowflake.share.Share.resetAccounts">ResetAccounts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.share.Share.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.share.Share.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.Share.resetSecureObjectsOnly">ResetSecureObjectsOnly</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.share.Share.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -421,6 +422,12 @@ func ResetComment()
 func ResetId()
 ```
 
+##### `ResetSecureObjectsOnly` <a name="ResetSecureObjectsOnly" id="@cdktn/provider-snowflake.share.Share.resetSecureObjectsOnly"></a>
+
+```go
+func ResetSecureObjectsOnly()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-snowflake.share.Share.resetTimeouts"></a>
 
 ```go
@@ -530,7 +537,7 @@ The construct id used in the generated config for the Share to import.
 
 The id of the existing Share that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/share#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/share#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -560,17 +567,21 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.share.Share.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.share.Share.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.share.Share.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.Share.property.describeOutput">DescribeOutput</a></code> | <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputList">ShareDescribeOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.share.Share.property.fullyQualifiedName">FullyQualifiedName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.Share.property.showOutput">ShowOutput</a></code> | <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputList">ShareShowOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.share.Share.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.share.ShareTimeoutsOutputReference">ShareTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.share.Share.property.accountsInput">AccountsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.share.Share.property.commentInput">CommentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.share.Share.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.share.Share.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.Share.property.secureObjectsOnlyInput">SecureObjectsOnlyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.share.Share.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.share.Share.property.accounts">Accounts</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.share.Share.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.share.Share.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.share.Share.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.Share.property.secureObjectsOnly">SecureObjectsOnly</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -716,6 +727,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `DescribeOutput`<sup>Required</sup> <a name="DescribeOutput" id="@cdktn/provider-snowflake.share.Share.property.describeOutput"></a>
+
+```go
+func DescribeOutput() ShareDescribeOutputList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputList">ShareDescribeOutputList</a>
+
+---
+
 ##### `FullyQualifiedName`<sup>Required</sup> <a name="FullyQualifiedName" id="@cdktn/provider-snowflake.share.Share.property.fullyQualifiedName"></a>
 
 ```go
@@ -723,6 +744,16 @@ func FullyQualifiedName() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ShowOutput`<sup>Required</sup> <a name="ShowOutput" id="@cdktn/provider-snowflake.share.Share.property.showOutput"></a>
+
+```go
+func ShowOutput() ShareShowOutputList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.share.ShareShowOutputList">ShareShowOutputList</a>
 
 ---
 
@@ -770,6 +801,16 @@ func IdInput() *string
 
 ```go
 func NameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SecureObjectsOnlyInput`<sup>Optional</sup> <a name="SecureObjectsOnlyInput" id="@cdktn/provider-snowflake.share.Share.property.secureObjectsOnlyInput"></a>
+
+```go
+func SecureObjectsOnlyInput() *string
 ```
 
 - *Type:* *string
@@ -826,6 +867,16 @@ func Name() *string
 
 ---
 
+##### `SecureObjectsOnly`<sup>Required</sup> <a name="SecureObjectsOnly" id="@cdktn/provider-snowflake.share.Share.property.secureObjectsOnly"></a>
+
+```go
+func SecureObjectsOnly() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -865,6 +916,7 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/share"
 	Accounts: *[]*string,
 	Comment: *string,
 	Id: *string,
+	SecureObjectsOnly: *string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19.share.ShareTimeouts,
 }
 ```
@@ -880,10 +932,11 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/share"
 | <code><a href="#@cdktn/provider-snowflake.share.ShareConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.share.ShareConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.share.ShareConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.share.ShareConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the identifier for the share; must be unique for the account in which the share is created. |
-| <code><a href="#@cdktn/provider-snowflake.share.ShareConfig.property.accounts">Accounts</a></code> | <code>*[]*string</code> | A list of accounts to be added to the share. |
-| <code><a href="#@cdktn/provider-snowflake.share.ShareConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the managed account. |
-| <code><a href="#@cdktn/provider-snowflake.share.ShareConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/share#id Share#id}. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the identifier for the share; |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareConfig.property.accounts">Accounts</a></code> | <code>*[]*string</code> | A set of accounts the share is available to, in the form `organization_name.account_name` (not the account locator). The provider reads the recipients from Snowflake, so accounts added outside of Terraform are removed on the next apply. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the share. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/share#id Share#id}. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareConfig.property.secureObjectsOnly">SecureObjectsOnly</a></code> | <code>*string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether only secure objects can be added to the share. |
 | <code><a href="#@cdktn/provider-snowflake.share.ShareConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.share.ShareTimeouts">ShareTimeouts</a></code> | timeouts block. |
 
 ---
@@ -966,9 +1019,11 @@ Name *string
 
 - *Type:* *string
 
-Specifies the identifier for the share; must be unique for the account in which the share is created.
+Specifies the identifier for the share;
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/share#name Share#name}
+must be unique for the account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/share#name Share#name}
 
 ---
 
@@ -980,11 +1035,9 @@ Accounts *[]*string
 
 - *Type:* *[]*string
 
-A list of accounts to be added to the share.
+A set of accounts the share is available to, in the form `organization_name.account_name` (not the account locator). The provider reads the recipients from Snowflake, so accounts added outside of Terraform are removed on the next apply.
 
-Values should not be the account locator, but in the form of 'organization_name.account_name
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/share#accounts Share#accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/share#accounts Share#accounts}
 
 ---
 
@@ -996,9 +1049,9 @@ Comment *string
 
 - *Type:* *string
 
-Specifies a comment for the managed account.
+Specifies a comment for the share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/share#comment Share#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/share#comment Share#comment}
 
 ---
 
@@ -1010,10 +1063,26 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/share#id Share#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/share#id Share#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `SecureObjectsOnly`<sup>Optional</sup> <a name="SecureObjectsOnly" id="@cdktn/provider-snowflake.share.ShareConfig.property.secureObjectsOnly"></a>
+
+```go
+SecureObjectsOnly *string
+```
+
+- *Type:* *string
+
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether only secure objects can be added to the share.
+
+Once set to false, it cannot be set back to true. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/share#secure_objects_only Share#secure_objects_only}
 
 ---
 
@@ -1027,9 +1096,35 @@ Timeouts ShareTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/share#timeouts Share#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/share#timeouts Share#timeouts}
 
 ---
+
+### ShareDescribeOutput <a name="ShareDescribeOutput" id="@cdktn/provider-snowflake.share.ShareDescribeOutput"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.share.ShareDescribeOutput.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/share"
+
+&share.ShareDescribeOutput {
+
+}
+```
+
+
+### ShareShowOutput <a name="ShareShowOutput" id="@cdktn/provider-snowflake.share.ShareShowOutput"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.share.ShareShowOutput.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/share"
+
+&share.ShareShowOutput {
+
+}
+```
+
 
 ### ShareTimeouts <a name="ShareTimeouts" id="@cdktn/provider-snowflake.share.ShareTimeouts"></a>
 
@@ -1050,10 +1145,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/share"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.share.ShareTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/share#create Share#create}. |
-| <code><a href="#@cdktn/provider-snowflake.share.ShareTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/share#delete Share#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.share.ShareTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/share#read Share#read}. |
-| <code><a href="#@cdktn/provider-snowflake.share.ShareTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/share#update Share#update}. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/share#create Share#create}. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/share#delete Share#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/share#read Share#read}. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/share#update Share#update}. |
 
 ---
 
@@ -1065,7 +1160,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/share#create Share#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/share#create Share#create}.
 
 ---
 
@@ -1077,7 +1172,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/share#delete Share#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/share#delete Share#delete}.
 
 ---
 
@@ -1089,7 +1184,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/share#read Share#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/share#read Share#read}.
 
 ---
 
@@ -1101,11 +1196,997 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/share#update Share#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/share#update Share#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ShareDescribeOutputList <a name="ShareDescribeOutputList" id="@cdktn/provider-snowflake.share.ShareDescribeOutputList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.share.ShareDescribeOutputList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/share"
+
+share.NewShareDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ShareDescribeOutputList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.share.ShareDescribeOutputList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.share.ShareDescribeOutputList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.share.ShareDescribeOutputList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.share.ShareDescribeOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.share.ShareDescribeOutputList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.share.ShareDescribeOutputList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.share.ShareDescribeOutputList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.share.ShareDescribeOutputList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.share.ShareDescribeOutputList.get"></a>
+
+```go
+func Get(index *f64) ShareDescribeOutputOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.share.ShareDescribeOutputList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.share.ShareDescribeOutputList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.share.ShareDescribeOutputList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### ShareDescribeOutputOutputReference <a name="ShareDescribeOutputOutputReference" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/share"
+
+share.NewShareDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ShareDescribeOutputOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.property.kind">Kind</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.property.sharedOn">SharedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.share.ShareDescribeOutput">ShareDescribeOutput</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Kind`<sup>Required</sup> <a name="Kind" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.property.kind"></a>
+
+```go
+func Kind() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.property.name"></a>
+
+```go
+func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SharedOn`<sup>Required</sup> <a name="SharedOn" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.property.sharedOn"></a>
+
+```go
+func SharedOn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.share.ShareDescribeOutputOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ShareDescribeOutput
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.share.ShareDescribeOutput">ShareDescribeOutput</a>
+
+---
+
+
+### ShareShowOutputList <a name="ShareShowOutputList" id="@cdktn/provider-snowflake.share.ShareShowOutputList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.share.ShareShowOutputList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/share"
+
+share.NewShareShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ShareShowOutputList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.share.ShareShowOutputList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.share.ShareShowOutputList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.share.ShareShowOutputList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.share.ShareShowOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.share.ShareShowOutputList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.share.ShareShowOutputList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.share.ShareShowOutputList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.share.ShareShowOutputList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.share.ShareShowOutputList.get"></a>
+
+```go
+func Get(index *f64) ShareShowOutputOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.share.ShareShowOutputList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.share.ShareShowOutputList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.share.ShareShowOutputList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### ShareShowOutputOutputReference <a name="ShareShowOutputOutputReference" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/share"
+
+share.NewShareShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ShareShowOutputOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.databaseName">DatabaseName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.kind">Kind</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.listingGlobalName">ListingGlobalName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.owner">Owner</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.ownerAccount">OwnerAccount</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.secureObjectsOnly">SecureObjectsOnly</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.to">To</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.toTotal">ToTotal</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.share.ShareShowOutput">ShareShowOutput</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Comment`<sup>Required</sup> <a name="Comment" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.comment"></a>
+
+```go
+func Comment() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CreatedOn`<sup>Required</sup> <a name="CreatedOn" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.createdOn"></a>
+
+```go
+func CreatedOn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DatabaseName`<sup>Required</sup> <a name="DatabaseName" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.databaseName"></a>
+
+```go
+func DatabaseName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Kind`<sup>Required</sup> <a name="Kind" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.kind"></a>
+
+```go
+func Kind() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ListingGlobalName`<sup>Required</sup> <a name="ListingGlobalName" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.listingGlobalName"></a>
+
+```go
+func ListingGlobalName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.name"></a>
+
+```go
+func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Owner`<sup>Required</sup> <a name="Owner" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.owner"></a>
+
+```go
+func Owner() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OwnerAccount`<sup>Required</sup> <a name="OwnerAccount" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.ownerAccount"></a>
+
+```go
+func OwnerAccount() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SecureObjectsOnly`<sup>Required</sup> <a name="SecureObjectsOnly" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.secureObjectsOnly"></a>
+
+```go
+func SecureObjectsOnly() IResolvable
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
+
+---
+
+##### `To`<sup>Required</sup> <a name="To" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.to"></a>
+
+```go
+func To() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `ToTotal`<sup>Required</sup> <a name="ToTotal" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.toTotal"></a>
+
+```go
+func ToTotal() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.share.ShareShowOutputOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ShareShowOutput
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.share.ShareShowOutput">ShareShowOutput</a>
+
+---
+
 
 ### ShareTimeoutsOutputReference <a name="ShareTimeoutsOutputReference" id="@cdktn/provider-snowflake.share.ShareTimeoutsOutputReference"></a>
 

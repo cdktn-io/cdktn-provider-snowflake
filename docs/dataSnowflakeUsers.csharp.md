@@ -4,7 +4,7 @@
 
 ### DataSnowflakeUsers <a name="DataSnowflakeUsers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users snowflake_users}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users snowflake_users}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsers.Initializer"></a>
 
@@ -442,7 +442,7 @@ The construct id used in the generated config for the DataSnowflakeUsers to impo
 
 The id of the existing DataSnowflakeUsers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -793,7 +793,7 @@ new DataSnowflakeUsersConfig {
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#id DataSnowflakeUsers#id}. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#id DataSnowflakeUsers#id}. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersConfig.property.like">Like</a></code> | <code>string</code> | Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`). |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersConfig.property.limit">Limit</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersLimit">DataSnowflakeUsersLimit</a></code> | limit block. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersConfig.property.startsWith">StartsWith</a></code> | <code>string</code> | Filters the output with **case-sensitive** characters indicating the beginning of the object name. |
@@ -880,7 +880,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#id DataSnowflakeUsers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#id DataSnowflakeUsers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -897,7 +897,7 @@ public string Like { get; set; }
 
 Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#like DataSnowflakeUsers#like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#like DataSnowflakeUsers#like}
 
 ---
 
@@ -911,7 +911,7 @@ public DataSnowflakeUsersLimit Limit { get; set; }
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#limit DataSnowflakeUsers#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#limit DataSnowflakeUsers#limit}
 
 ---
 
@@ -925,7 +925,7 @@ public string StartsWith { get; set; }
 
 Filters the output with **case-sensitive** characters indicating the beginning of the object name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#starts_with DataSnowflakeUsers#starts_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#starts_with DataSnowflakeUsers#starts_with}
 
 ---
 
@@ -941,7 +941,7 @@ public bool|IResolvable WithDescribe { get; set; }
 
 The output of describe is saved to the description field. By default this value is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#with_describe DataSnowflakeUsers#with_describe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#with_describe DataSnowflakeUsers#with_describe}
 
 ---
 
@@ -957,7 +957,7 @@ public bool|IResolvable WithParameters { get; set; }
 
 The output of describe is saved to the parameters field as a map. By default this value is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#with_parameters DataSnowflakeUsers#with_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#with_parameters DataSnowflakeUsers#with_parameters}
 
 ---
 
@@ -993,7 +993,7 @@ public double Rows { get; set; }
 
 The maximum number of rows to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#rows DataSnowflakeUsers#rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#rows DataSnowflakeUsers#rows}
 
 ---
 
@@ -1009,7 +1009,7 @@ Specifies a **case-sensitive** pattern that is used to match object name.
 
 After the first match, the limit on the number of rows will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#from DataSnowflakeUsers#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#from DataSnowflakeUsers#from}
 
 ---
 
@@ -1065,6 +1065,19 @@ new DataSnowflakeUsersUsersParametersAbortDetachedQuery {
 ```
 
 
+### DataSnowflakeUsersUsersParametersActivePythonProfiler <a name="DataSnowflakeUsersUsersParametersActivePythonProfiler" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfiler"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfiler.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersActivePythonProfiler {
+
+};
+```
+
+
 ### DataSnowflakeUsersUsersParametersAutocommit <a name="DataSnowflakeUsersUsersParametersAutocommit" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersAutocommit"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersAutocommit.Initializer"></a>
@@ -1104,6 +1117,19 @@ new DataSnowflakeUsersUsersParametersBinaryOutputFormat {
 ```
 
 
+### DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParameters <a name="DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParameters" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParameters.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParameters {
+
+};
+```
+
+
 ### DataSnowflakeUsersUsersParametersClientMemoryLimit <a name="DataSnowflakeUsersUsersParametersClientMemoryLimit" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMemoryLimit"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMemoryLimit.Initializer"></a>
@@ -1125,6 +1151,19 @@ new DataSnowflakeUsersUsersParametersClientMemoryLimit {
 using Io.Cdktn.Providers.Snowflake;
 
 new DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtx {
+
+};
+```
+
+
+### DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabase <a name="DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabase" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabase"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabase.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabase {
 
 };
 ```
@@ -1208,6 +1247,19 @@ new DataSnowflakeUsersUsersParametersClientTimestampTypeMapping {
 ```
 
 
+### DataSnowflakeUsersUsersParametersCsvTimestampFormat <a name="DataSnowflakeUsersUsersParametersCsvTimestampFormat" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormat"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormat.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersCsvTimestampFormat {
+
+};
+```
+
+
 ### DataSnowflakeUsersUsersParametersDateInputFormat <a name="DataSnowflakeUsersUsersParametersDateInputFormat" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersDateInputFormat"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersDateInputFormat.Initializer"></a>
@@ -1229,6 +1281,19 @@ new DataSnowflakeUsersUsersParametersDateInputFormat {
 using Io.Cdktn.Providers.Snowflake;
 
 new DataSnowflakeUsersUsersParametersDateOutputFormat {
+
+};
+```
+
+
+### DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAlias <a name="DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAlias" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAlias"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAlias.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAlias {
 
 };
 ```
@@ -1312,6 +1377,19 @@ new DataSnowflakeUsersUsersParametersGeometryOutputFormat {
 ```
 
 
+### DataSnowflakeUsersUsersParametersHybridTableLockTimeout <a name="DataSnowflakeUsersUsersParametersHybridTableLockTimeout" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeout"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeout.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersHybridTableLockTimeout {
+
+};
+```
+
+
 ### DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsInt <a name="DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsInt" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsInt"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsInt.Initializer"></a>
@@ -1359,6 +1437,19 @@ new DataSnowflakeUsersUsersParametersJdbcUseSessionTimezone {
 using Io.Cdktn.Providers.Snowflake;
 
 new DataSnowflakeUsersUsersParametersJsonIndent {
+
+};
+```
+
+
+### DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigint <a name="DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigint" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigint"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigint.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigint {
 
 };
 ```
@@ -1463,6 +1554,32 @@ new DataSnowflakeUsersUsersParametersOdbcTreatDecimalAsInt {
 using Io.Cdktn.Providers.Snowflake;
 
 new DataSnowflakeUsersUsersParametersPreventUnloadToInternalStages {
+
+};
+```
+
+
+### DataSnowflakeUsersUsersParametersPythonProfilerModules <a name="DataSnowflakeUsersUsersParametersPythonProfilerModules" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModules"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModules.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersPythonProfilerModules {
+
+};
+```
+
+
+### DataSnowflakeUsersUsersParametersPythonProfilerTargetStage <a name="DataSnowflakeUsersUsersParametersPythonProfilerTargetStage" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStage"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStage.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersPythonProfilerTargetStage {
 
 };
 ```
@@ -3844,6 +3961,477 @@ public DataSnowflakeUsersUsersParametersAbortDetachedQuery InternalValue { get; 
 ---
 
 
+### DataSnowflakeUsersUsersParametersActivePythonProfilerList <a name="DataSnowflakeUsersUsersParametersActivePythonProfilerList" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersActivePythonProfilerList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.get"></a>
+
+```csharp
+private DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference <a name="DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.property.default">Default</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.property.level">Level</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfiler">DataSnowflakeUsersUsersParametersActivePythonProfiler</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Default`<sup>Required</sup> <a name="Default" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.property.default"></a>
+
+```csharp
+public string Default { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.property.description"></a>
+
+```csharp
+public string Description { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.property.key"></a>
+
+```csharp
+public string Key { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Level`<sup>Required</sup> <a name="Level" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.property.level"></a>
+
+```csharp
+public string Level { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.property.value"></a>
+
+```csharp
+public string Value { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference.property.internalValue"></a>
+
+```csharp
+public DataSnowflakeUsersUsersParametersActivePythonProfiler InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfiler">DataSnowflakeUsersUsersParametersActivePythonProfiler</a>
+
+---
+
+
 ### DataSnowflakeUsersUsersParametersAutocommitList <a name="DataSnowflakeUsersUsersParametersAutocommitList" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersAutocommitList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersAutocommitList.Initializer"></a>
@@ -5257,6 +5845,477 @@ public DataSnowflakeUsersUsersParametersBinaryOutputFormat InternalValue { get; 
 ---
 
 
+### DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList <a name="DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.get"></a>
+
+```csharp
+private DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference <a name="DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.property.default">Default</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.property.level">Level</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParameters">DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParameters</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Default`<sup>Required</sup> <a name="Default" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.property.default"></a>
+
+```csharp
+public string Default { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.property.description"></a>
+
+```csharp
+public string Description { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.property.key"></a>
+
+```csharp
+public string Key { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Level`<sup>Required</sup> <a name="Level" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.property.level"></a>
+
+```csharp
+public string Level { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.property.value"></a>
+
+```csharp
+public string Value { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference.property.internalValue"></a>
+
+```csharp
+public DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParameters InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParameters">DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParameters</a>
+
+---
+
+
 ### DataSnowflakeUsersUsersParametersClientMemoryLimitList <a name="DataSnowflakeUsersUsersParametersClientMemoryLimitList" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMemoryLimitList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMemoryLimitList.Initializer"></a>
@@ -6195,6 +7254,477 @@ public DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtx In
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtx">DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtx</a>
+
+---
+
+
+### DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList <a name="DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.get"></a>
+
+```csharp
+private DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference <a name="DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.property.default">Default</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.property.level">Level</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabase">DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabase</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Default`<sup>Required</sup> <a name="Default" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.property.default"></a>
+
+```csharp
+public string Default { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.property.description"></a>
+
+```csharp
+public string Description { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.property.key"></a>
+
+```csharp
+public string Key { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Level`<sup>Required</sup> <a name="Level" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.property.level"></a>
+
+```csharp
+public string Level { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.property.value"></a>
+
+```csharp
+public string Value { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference.property.internalValue"></a>
+
+```csharp
+public DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabase InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabase">DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabase</a>
 
 ---
 
@@ -9025,6 +10555,477 @@ public DataSnowflakeUsersUsersParametersClientTimestampTypeMapping InternalValue
 ---
 
 
+### DataSnowflakeUsersUsersParametersCsvTimestampFormatList <a name="DataSnowflakeUsersUsersParametersCsvTimestampFormatList" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersCsvTimestampFormatList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.get"></a>
+
+```csharp
+private DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference <a name="DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.property.default">Default</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.property.level">Level</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormat">DataSnowflakeUsersUsersParametersCsvTimestampFormat</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Default`<sup>Required</sup> <a name="Default" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.property.default"></a>
+
+```csharp
+public string Default { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.property.description"></a>
+
+```csharp
+public string Description { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.property.key"></a>
+
+```csharp
+public string Key { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Level`<sup>Required</sup> <a name="Level" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.property.level"></a>
+
+```csharp
+public string Level { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.property.value"></a>
+
+```csharp
+public string Value { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference.property.internalValue"></a>
+
+```csharp
+public DataSnowflakeUsersUsersParametersCsvTimestampFormat InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormat">DataSnowflakeUsersUsersParametersCsvTimestampFormat</a>
+
+---
+
+
 ### DataSnowflakeUsersUsersParametersDateInputFormatList <a name="DataSnowflakeUsersUsersParametersDateInputFormatList" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersDateInputFormatList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersDateInputFormatList.Initializer"></a>
@@ -9963,6 +11964,477 @@ public DataSnowflakeUsersUsersParametersDateOutputFormat InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersDateOutputFormat">DataSnowflakeUsersUsersParametersDateOutputFormat</a>
+
+---
+
+
+### DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList <a name="DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.get"></a>
+
+```csharp
+private DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference <a name="DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.property.default">Default</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.property.level">Level</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAlias">DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAlias</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Default`<sup>Required</sup> <a name="Default" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.property.default"></a>
+
+```csharp
+public string Default { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.property.description"></a>
+
+```csharp
+public string Description { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.property.key"></a>
+
+```csharp
+public string Key { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Level`<sup>Required</sup> <a name="Level" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.property.level"></a>
+
+```csharp
+public string Level { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.property.value"></a>
+
+```csharp
+public string Value { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference.property.internalValue"></a>
+
+```csharp
+public DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAlias InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAlias">DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAlias</a>
 
 ---
 
@@ -12793,6 +15265,477 @@ public DataSnowflakeUsersUsersParametersGeometryOutputFormat InternalValue { get
 ---
 
 
+### DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList <a name="DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.get"></a>
+
+```csharp
+private DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference <a name="DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.property.default">Default</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.property.level">Level</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeout">DataSnowflakeUsersUsersParametersHybridTableLockTimeout</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Default`<sup>Required</sup> <a name="Default" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.property.default"></a>
+
+```csharp
+public string Default { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.property.description"></a>
+
+```csharp
+public string Description { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.property.key"></a>
+
+```csharp
+public string Key { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Level`<sup>Required</sup> <a name="Level" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.property.level"></a>
+
+```csharp
+public string Level { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.property.value"></a>
+
+```csharp
+public string Value { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference.property.internalValue"></a>
+
+```csharp
+public DataSnowflakeUsersUsersParametersHybridTableLockTimeout InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeout">DataSnowflakeUsersUsersParametersHybridTableLockTimeout</a>
+
+---
+
+
 ### DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsIntList <a name="DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsIntList" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsIntList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsIntList.Initializer"></a>
@@ -14673,6 +17616,477 @@ public DataSnowflakeUsersUsersParametersJsonIndent InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsonIndent">DataSnowflakeUsersUsersParametersJsonIndent</a>
+
+---
+
+
+### DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList <a name="DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.get"></a>
+
+```csharp
+private DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference <a name="DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.property.default">Default</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.property.level">Level</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigint">DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigint</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Default`<sup>Required</sup> <a name="Default" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.property.default"></a>
+
+```csharp
+public string Default { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.property.description"></a>
+
+```csharp
+public string Description { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.property.key"></a>
+
+```csharp
+public string Key { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Level`<sup>Required</sup> <a name="Level" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.property.level"></a>
+
+```csharp
+public string Level { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.property.value"></a>
+
+```csharp
+public string Value { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference.property.internalValue"></a>
+
+```csharp
+public DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigint InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigint">DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigint</a>
 
 ---
 
@@ -18352,29 +21766,36 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.abortDetachedQuery">AbortDetachedQuery</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersAbortDetachedQueryList">DataSnowflakeUsersUsersParametersAbortDetachedQueryList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.activePythonProfiler">ActivePythonProfiler</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList">DataSnowflakeUsersUsersParametersActivePythonProfilerList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.autocommit">Autocommit</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersAutocommitList">DataSnowflakeUsersUsersParametersAutocommitList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.binaryInputFormat">BinaryInputFormat</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersBinaryInputFormatList">DataSnowflakeUsersUsersParametersBinaryInputFormatList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.binaryOutputFormat">BinaryOutputFormat</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersBinaryOutputFormatList">DataSnowflakeUsersUsersParametersBinaryOutputFormatList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.clientEnableLogInfoStatementParameters">ClientEnableLogInfoStatementParameters</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList">DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.clientMemoryLimit">ClientMemoryLimit</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMemoryLimitList">DataSnowflakeUsersUsersParametersClientMemoryLimitList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.clientMetadataRequestUseConnectionCtx">ClientMetadataRequestUseConnectionCtx</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtxList">DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtxList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.clientMetadataUseSessionDatabase">ClientMetadataUseSessionDatabase</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList">DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.clientPrefetchThreads">ClientPrefetchThreads</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientPrefetchThreadsList">DataSnowflakeUsersUsersParametersClientPrefetchThreadsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.clientResultChunkSize">ClientResultChunkSize</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientResultChunkSizeList">DataSnowflakeUsersUsersParametersClientResultChunkSizeList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.clientResultColumnCaseInsensitive">ClientResultColumnCaseInsensitive</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientResultColumnCaseInsensitiveList">DataSnowflakeUsersUsersParametersClientResultColumnCaseInsensitiveList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.clientSessionKeepAlive">ClientSessionKeepAlive</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientSessionKeepAliveList">DataSnowflakeUsersUsersParametersClientSessionKeepAliveList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.clientSessionKeepAliveHeartbeatFrequency">ClientSessionKeepAliveHeartbeatFrequency</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientSessionKeepAliveHeartbeatFrequencyList">DataSnowflakeUsersUsersParametersClientSessionKeepAliveHeartbeatFrequencyList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.clientTimestampTypeMapping">ClientTimestampTypeMapping</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientTimestampTypeMappingList">DataSnowflakeUsersUsersParametersClientTimestampTypeMappingList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.csvTimestampFormat">CsvTimestampFormat</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList">DataSnowflakeUsersUsersParametersCsvTimestampFormatList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.dateInputFormat">DateInputFormat</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersDateInputFormatList">DataSnowflakeUsersUsersParametersDateInputFormatList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.dateOutputFormat">DateOutputFormat</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersDateOutputFormatList">DataSnowflakeUsersUsersParametersDateOutputFormatList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.enableGetDdlUseDataTypeAlias">EnableGetDdlUseDataTypeAlias</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList">DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.enableUnloadPhysicalTypeOptimization">EnableUnloadPhysicalTypeOptimization</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableUnloadPhysicalTypeOptimizationList">DataSnowflakeUsersUsersParametersEnableUnloadPhysicalTypeOptimizationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.enableUnredactedQuerySyntaxError">EnableUnredactedQuerySyntaxError</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableUnredactedQuerySyntaxErrorList">DataSnowflakeUsersUsersParametersEnableUnredactedQuerySyntaxErrorList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.errorOnNondeterministicMerge">ErrorOnNondeterministicMerge</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersErrorOnNondeterministicMergeList">DataSnowflakeUsersUsersParametersErrorOnNondeterministicMergeList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.errorOnNondeterministicUpdate">ErrorOnNondeterministicUpdate</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersErrorOnNondeterministicUpdateList">DataSnowflakeUsersUsersParametersErrorOnNondeterministicUpdateList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.geographyOutputFormat">GeographyOutputFormat</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersGeographyOutputFormatList">DataSnowflakeUsersUsersParametersGeographyOutputFormatList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.geometryOutputFormat">GeometryOutputFormat</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersGeometryOutputFormatList">DataSnowflakeUsersUsersParametersGeometryOutputFormatList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.hybridTableLockTimeout">HybridTableLockTimeout</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList">DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.jdbcTreatDecimalAsInt">JdbcTreatDecimalAsInt</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsIntList">DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsIntList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.jdbcTreatTimestampNtzAsUtc">JdbcTreatTimestampNtzAsUtc</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcList">DataSnowflakeUsersUsersParametersJdbcTreatTimestampNtzAsUtcList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.jdbcUseSessionTimezone">JdbcUseSessionTimezone</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJdbcUseSessionTimezoneList">DataSnowflakeUsersUsersParametersJdbcUseSessionTimezoneList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.jsonIndent">JsonIndent</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsonIndentList">DataSnowflakeUsersUsersParametersJsonIndentList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.jsTreatIntegerAsBigint">JsTreatIntegerAsBigint</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList">DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.lockTimeout">LockTimeout</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersLockTimeoutList">DataSnowflakeUsersUsersParametersLockTimeoutList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.logEventLevel">LogEventLevel</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersLogEventLevelList">DataSnowflakeUsersUsersParametersLogEventLevelList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.logLevel">LogLevel</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersLogLevelList">DataSnowflakeUsersUsersParametersLogLevelList</a></code> | *No description.* |
@@ -18383,6 +21804,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.noorderSequenceAsDefault">NoorderSequenceAsDefault</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersNoorderSequenceAsDefaultList">DataSnowflakeUsersUsersParametersNoorderSequenceAsDefaultList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.odbcTreatDecimalAsInt">OdbcTreatDecimalAsInt</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOdbcTreatDecimalAsIntList">DataSnowflakeUsersUsersParametersOdbcTreatDecimalAsIntList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.preventUnloadToInternalStages">PreventUnloadToInternalStages</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesList">DataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.pythonProfilerModules">PythonProfilerModules</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList">DataSnowflakeUsersUsersParametersPythonProfilerModulesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.pythonProfilerTargetStage">PythonProfilerTargetStage</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList">DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.queryTag">QueryTag</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersQueryTagList">DataSnowflakeUsersUsersParametersQueryTagList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.quotedIdentifiersIgnoreCase">QuotedIdentifiersIgnoreCase</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersQuotedIdentifiersIgnoreCaseList">DataSnowflakeUsersUsersParametersQuotedIdentifiersIgnoreCaseList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.rowsPerResultset">RowsPerResultset</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersRowsPerResultsetList">DataSnowflakeUsersUsersParametersRowsPerResultsetList</a></code> | *No description.* |
@@ -18448,6 +21871,16 @@ public DataSnowflakeUsersUsersParametersAbortDetachedQueryList AbortDetachedQuer
 
 ---
 
+##### `ActivePythonProfiler`<sup>Required</sup> <a name="ActivePythonProfiler" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.activePythonProfiler"></a>
+
+```csharp
+public DataSnowflakeUsersUsersParametersActivePythonProfilerList ActivePythonProfiler { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersActivePythonProfilerList">DataSnowflakeUsersUsersParametersActivePythonProfilerList</a>
+
+---
+
 ##### `Autocommit`<sup>Required</sup> <a name="Autocommit" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.autocommit"></a>
 
 ```csharp
@@ -18478,6 +21911,16 @@ public DataSnowflakeUsersUsersParametersBinaryOutputFormatList BinaryOutputForma
 
 ---
 
+##### `ClientEnableLogInfoStatementParameters`<sup>Required</sup> <a name="ClientEnableLogInfoStatementParameters" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.clientEnableLogInfoStatementParameters"></a>
+
+```csharp
+public DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList ClientEnableLogInfoStatementParameters { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList">DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList</a>
+
+---
+
 ##### `ClientMemoryLimit`<sup>Required</sup> <a name="ClientMemoryLimit" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.clientMemoryLimit"></a>
 
 ```csharp
@@ -18495,6 +21938,16 @@ public DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtxLis
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtxList">DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtxList</a>
+
+---
+
+##### `ClientMetadataUseSessionDatabase`<sup>Required</sup> <a name="ClientMetadataUseSessionDatabase" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.clientMetadataUseSessionDatabase"></a>
+
+```csharp
+public DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList ClientMetadataUseSessionDatabase { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList">DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList</a>
 
 ---
 
@@ -18558,6 +22011,16 @@ public DataSnowflakeUsersUsersParametersClientTimestampTypeMappingList ClientTim
 
 ---
 
+##### `CsvTimestampFormat`<sup>Required</sup> <a name="CsvTimestampFormat" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.csvTimestampFormat"></a>
+
+```csharp
+public DataSnowflakeUsersUsersParametersCsvTimestampFormatList CsvTimestampFormat { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersCsvTimestampFormatList">DataSnowflakeUsersUsersParametersCsvTimestampFormatList</a>
+
+---
+
 ##### `DateInputFormat`<sup>Required</sup> <a name="DateInputFormat" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.dateInputFormat"></a>
 
 ```csharp
@@ -18575,6 +22038,16 @@ public DataSnowflakeUsersUsersParametersDateOutputFormatList DateOutputFormat { 
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersDateOutputFormatList">DataSnowflakeUsersUsersParametersDateOutputFormatList</a>
+
+---
+
+##### `EnableGetDdlUseDataTypeAlias`<sup>Required</sup> <a name="EnableGetDdlUseDataTypeAlias" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.enableGetDdlUseDataTypeAlias"></a>
+
+```csharp
+public DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList EnableGetDdlUseDataTypeAlias { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList">DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList</a>
 
 ---
 
@@ -18638,6 +22111,16 @@ public DataSnowflakeUsersUsersParametersGeometryOutputFormatList GeometryOutputF
 
 ---
 
+##### `HybridTableLockTimeout`<sup>Required</sup> <a name="HybridTableLockTimeout" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.hybridTableLockTimeout"></a>
+
+```csharp
+public DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList HybridTableLockTimeout { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList">DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList</a>
+
+---
+
 ##### `JdbcTreatDecimalAsInt`<sup>Required</sup> <a name="JdbcTreatDecimalAsInt" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.jdbcTreatDecimalAsInt"></a>
 
 ```csharp
@@ -18675,6 +22158,16 @@ public DataSnowflakeUsersUsersParametersJsonIndentList JsonIndent { get; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsonIndentList">DataSnowflakeUsersUsersParametersJsonIndentList</a>
+
+---
+
+##### `JsTreatIntegerAsBigint`<sup>Required</sup> <a name="JsTreatIntegerAsBigint" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.jsTreatIntegerAsBigint"></a>
+
+```csharp
+public DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList JsTreatIntegerAsBigint { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList">DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList</a>
 
 ---
 
@@ -18755,6 +22248,26 @@ public DataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesList Preven
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesList">DataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesList</a>
+
+---
+
+##### `PythonProfilerModules`<sup>Required</sup> <a name="PythonProfilerModules" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.pythonProfilerModules"></a>
+
+```csharp
+public DataSnowflakeUsersUsersParametersPythonProfilerModulesList PythonProfilerModules { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList">DataSnowflakeUsersUsersParametersPythonProfilerModulesList</a>
+
+---
+
+##### `PythonProfilerTargetStage`<sup>Required</sup> <a name="PythonProfilerTargetStage" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersOutputReference.property.pythonProfilerTargetStage"></a>
+
+```csharp
+public DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList PythonProfilerTargetStage { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList">DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList</a>
 
 ---
 
@@ -19506,6 +23019,948 @@ public DataSnowflakeUsersUsersParametersPreventUnloadToInternalStages InternalVa
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPreventUnloadToInternalStages">DataSnowflakeUsersUsersParametersPreventUnloadToInternalStages</a>
+
+---
+
+
+### DataSnowflakeUsersUsersParametersPythonProfilerModulesList <a name="DataSnowflakeUsersUsersParametersPythonProfilerModulesList" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersPythonProfilerModulesList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.get"></a>
+
+```csharp
+private DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference <a name="DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.property.default">Default</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.property.level">Level</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModules">DataSnowflakeUsersUsersParametersPythonProfilerModules</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Default`<sup>Required</sup> <a name="Default" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.property.default"></a>
+
+```csharp
+public string Default { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.property.description"></a>
+
+```csharp
+public string Description { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.property.key"></a>
+
+```csharp
+public string Key { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Level`<sup>Required</sup> <a name="Level" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.property.level"></a>
+
+```csharp
+public string Level { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.property.value"></a>
+
+```csharp
+public string Value { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference.property.internalValue"></a>
+
+```csharp
+public DataSnowflakeUsersUsersParametersPythonProfilerModules InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerModules">DataSnowflakeUsersUsersParametersPythonProfilerModules</a>
+
+---
+
+
+### DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList <a name="DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.get"></a>
+
+```csharp
+private DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference <a name="DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Snowflake;
+
+new DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.property.default">Default</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.property.level">Level</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStage">DataSnowflakeUsersUsersParametersPythonProfilerTargetStage</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Default`<sup>Required</sup> <a name="Default" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.property.default"></a>
+
+```csharp
+public string Default { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.property.description"></a>
+
+```csharp
+public string Description { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.property.key"></a>
+
+```csharp
+public string Key { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Level`<sup>Required</sup> <a name="Level" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.property.level"></a>
+
+```csharp
+public string Level { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.property.value"></a>
+
+```csharp
+public string Value { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference.property.internalValue"></a>
+
+```csharp
+public DataSnowflakeUsersUsersParametersPythonProfilerTargetStage InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersParametersPythonProfilerTargetStage">DataSnowflakeUsersUsersParametersPythonProfilerTargetStage</a>
 
 ---
 

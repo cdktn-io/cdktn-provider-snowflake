@@ -4,7 +4,7 @@
 
 ### Pipe <a name="Pipe" id="@cdktn/provider-snowflake.pipe.Pipe"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe snowflake_pipe}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe snowflake_pipe}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.pipe.Pipe.Initializer"></a>
 
@@ -81,6 +81,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.resetErrorIntegration">ResetErrorIntegration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.resetIntegration">ResetIntegration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.resetLogEventLevel">ResetLogEventLevel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.resetPipeExecutionPaused">ResetPipeExecutionPaused</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -442,6 +444,18 @@ func ResetId()
 func ResetIntegration()
 ```
 
+##### `ResetLogEventLevel` <a name="ResetLogEventLevel" id="@cdktn/provider-snowflake.pipe.Pipe.resetLogEventLevel"></a>
+
+```go
+func ResetLogEventLevel()
+```
+
+##### `ResetPipeExecutionPaused` <a name="ResetPipeExecutionPaused" id="@cdktn/provider-snowflake.pipe.Pipe.resetPipeExecutionPaused"></a>
+
+```go
+func ResetPipeExecutionPaused()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-snowflake.pipe.Pipe.resetTimeouts"></a>
 
 ```go
@@ -551,7 +565,7 @@ The construct id used in the generated config for the Pipe to import.
 
 The id of the existing Pipe that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -581,9 +595,12 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.describeOutput">DescribeOutput</a></code> | <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputList">PipeDescribeOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.fullyQualifiedName">FullyQualifiedName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.notificationChannel">NotificationChannel</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.owner">Owner</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.parameters">Parameters</a></code> | <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersList">PipeParametersList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.showOutput">ShowOutput</a></code> | <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputList">PipeShowOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.pipe.PipeTimeoutsOutputReference">PipeTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.autoIngestInput">AutoIngestInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.awsSnsTopicArnInput">AwsSnsTopicArnInput</a></code> | <code>*string</code> | *No description.* |
@@ -593,7 +610,9 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.errorIntegrationInput">ErrorIntegrationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.integrationInput">IntegrationInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.logEventLevelInput">LogEventLevelInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.pipeExecutionPausedInput">PipeExecutionPausedInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.schemaInput">SchemaInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.autoIngest">AutoIngest</a></code> | <code>interface{}</code> | *No description.* |
@@ -604,7 +623,9 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.errorIntegration">ErrorIntegration</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.integration">Integration</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.logEventLevel">LogEventLevel</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.pipeExecutionPaused">PipeExecutionPaused</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.pipe.Pipe.property.schema">Schema</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -751,6 +772,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `DescribeOutput`<sup>Required</sup> <a name="DescribeOutput" id="@cdktn/provider-snowflake.pipe.Pipe.property.describeOutput"></a>
+
+```go
+func DescribeOutput() PipeDescribeOutputList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputList">PipeDescribeOutputList</a>
+
+---
+
 ##### `FullyQualifiedName`<sup>Required</sup> <a name="FullyQualifiedName" id="@cdktn/provider-snowflake.pipe.Pipe.property.fullyQualifiedName"></a>
 
 ```go
@@ -778,6 +809,26 @@ func Owner() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Parameters`<sup>Required</sup> <a name="Parameters" id="@cdktn/provider-snowflake.pipe.Pipe.property.parameters"></a>
+
+```go
+func Parameters() PipeParametersList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.pipe.PipeParametersList">PipeParametersList</a>
+
+---
+
+##### `ShowOutput`<sup>Required</sup> <a name="ShowOutput" id="@cdktn/provider-snowflake.pipe.Pipe.property.showOutput"></a>
+
+```go
+func ShowOutput() PipeShowOutputList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputList">PipeShowOutputList</a>
 
 ---
 
@@ -871,6 +922,16 @@ func IntegrationInput() *string
 
 ---
 
+##### `LogEventLevelInput`<sup>Optional</sup> <a name="LogEventLevelInput" id="@cdktn/provider-snowflake.pipe.Pipe.property.logEventLevelInput"></a>
+
+```go
+func LogEventLevelInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-snowflake.pipe.Pipe.property.nameInput"></a>
 
 ```go
@@ -878,6 +939,16 @@ func NameInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `PipeExecutionPausedInput`<sup>Optional</sup> <a name="PipeExecutionPausedInput" id="@cdktn/provider-snowflake.pipe.Pipe.property.pipeExecutionPausedInput"></a>
+
+```go
+func PipeExecutionPausedInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -981,6 +1052,16 @@ func Integration() *string
 
 ---
 
+##### `LogEventLevel`<sup>Required</sup> <a name="LogEventLevel" id="@cdktn/provider-snowflake.pipe.Pipe.property.logEventLevel"></a>
+
+```go
+func LogEventLevel() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-snowflake.pipe.Pipe.property.name"></a>
 
 ```go
@@ -988,6 +1069,16 @@ func Name() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `PipeExecutionPaused`<sup>Required</sup> <a name="PipeExecutionPaused" id="@cdktn/provider-snowflake.pipe.Pipe.property.pipeExecutionPaused"></a>
+
+```go
+func PipeExecutionPaused() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1046,6 +1137,8 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/pipe"
 	ErrorIntegration: *string,
 	Id: *string,
 	Integration: *string,
+	LogEventLevel: *string,
+	PipeExecutionPaused: interface{},
 	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19.pipe.PipeTimeouts,
 }
 ```
@@ -1069,8 +1162,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/pipe"
 | <code><a href="#@cdktn/provider-snowflake.pipe.PipeConfig.property.awsSnsTopicArn">AwsSnsTopicArn</a></code> | <code>*string</code> | Specifies the Amazon Resource Name (ARN) for the SNS topic for your S3 bucket. |
 | <code><a href="#@cdktn/provider-snowflake.pipe.PipeConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the pipe. |
 | <code><a href="#@cdktn/provider-snowflake.pipe.PipeConfig.property.errorIntegration">ErrorIntegration</a></code> | <code>*string</code> | Specifies the name of the notification integration used for error notifications. |
-| <code><a href="#@cdktn/provider-snowflake.pipe.PipeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#id Pipe#id}. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#id Pipe#id}. |
 | <code><a href="#@cdktn/provider-snowflake.pipe.PipeConfig.property.integration">Integration</a></code> | <code>*string</code> | Specifies an integration for the pipe. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeConfig.property.logEventLevel">LogEventLevel</a></code> | <code>*string</code> | Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeConfig.property.pipeExecutionPaused">PipeExecutionPaused</a></code> | <code>interface{}</code> | Specifies whether to pause a running pipe, primarily in preparation for transferring ownership of the pipe to a different role. |
 | <code><a href="#@cdktn/provider-snowflake.pipe.PipeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.pipe.PipeTimeouts">PipeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1155,7 +1250,7 @@ CopyStatement *string
 
 Specifies the copy statement for the pipe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#copy_statement Pipe#copy_statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#copy_statement Pipe#copy_statement}
 
 ---
 
@@ -1169,7 +1264,9 @@ Database *string
 
 The database in which to create the pipe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#database Pipe#database}
+Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#database Pipe#database}
 
 ---
 
@@ -1183,9 +1280,9 @@ Name *string
 
 Specifies the identifier for the pipe;
 
-must be unique for the database and schema in which the pipe is created.
+must be unique for the schema in which the pipe is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#name Pipe#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#name Pipe#name}
 
 ---
 
@@ -1199,7 +1296,9 @@ Schema *string
 
 The schema in which to create the pipe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#schema Pipe#schema}
+Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#schema Pipe#schema}
 
 ---
 
@@ -1213,7 +1312,7 @@ AutoIngest interface{}
 
 (Default: `false`) Specifies a auto_ingest param for the pipe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#auto_ingest Pipe#auto_ingest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#auto_ingest Pipe#auto_ingest}
 
 ---
 
@@ -1227,7 +1326,7 @@ AwsSnsTopicArn *string
 
 Specifies the Amazon Resource Name (ARN) for the SNS topic for your S3 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#aws_sns_topic_arn Pipe#aws_sns_topic_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#aws_sns_topic_arn Pipe#aws_sns_topic_arn}
 
 ---
 
@@ -1241,7 +1340,7 @@ Comment *string
 
 Specifies a comment for the pipe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#comment Pipe#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#comment Pipe#comment}
 
 ---
 
@@ -1255,7 +1354,7 @@ ErrorIntegration *string
 
 Specifies the name of the notification integration used for error notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#error_integration Pipe#error_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#error_integration Pipe#error_integration}
 
 ---
 
@@ -1267,7 +1366,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#id Pipe#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#id Pipe#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1284,7 +1383,39 @@ Integration *string
 
 Specifies an integration for the pipe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#integration Pipe#integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#integration Pipe#integration}
+
+---
+
+##### `LogEventLevel`<sup>Optional</sup> <a name="LogEventLevel" id="@cdktn/provider-snowflake.pipe.PipeConfig.property.logEventLevel"></a>
+
+```go
+LogEventLevel *string
+```
+
+- *Type:* *string
+
+Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table.
+
+Log events at the specified level (and at more severe levels) are ingested. Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`. For more information, check [LOG_EVENT_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-event-level).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#log_event_level Pipe#log_event_level}
+
+---
+
+##### `PipeExecutionPaused`<sup>Optional</sup> <a name="PipeExecutionPaused" id="@cdktn/provider-snowflake.pipe.PipeConfig.property.pipeExecutionPaused"></a>
+
+```go
+PipeExecutionPaused interface{}
+```
+
+- *Type:* interface{}
+
+Specifies whether to pause a running pipe, primarily in preparation for transferring ownership of the pipe to a different role.
+
+For more information, check [PIPE_EXECUTION_PAUSED docs](https://docs.snowflake.com/en/sql-reference/parameters#pipe-execution-paused).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#pipe_execution_paused Pipe#pipe_execution_paused}
 
 ---
 
@@ -1298,9 +1429,74 @@ Timeouts PipeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#timeouts Pipe#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#timeouts Pipe#timeouts}
 
 ---
+
+### PipeDescribeOutput <a name="PipeDescribeOutput" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutput"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutput.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/pipe"
+
+&pipe.PipeDescribeOutput {
+
+}
+```
+
+
+### PipeParameters <a name="PipeParameters" id="@cdktn/provider-snowflake.pipe.PipeParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.pipe.PipeParameters.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/pipe"
+
+&pipe.PipeParameters {
+
+}
+```
+
+
+### PipeParametersLogEventLevel <a name="PipeParametersLogEventLevel" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevel"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevel.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/pipe"
+
+&pipe.PipeParametersLogEventLevel {
+
+}
+```
+
+
+### PipeParametersPipeExecutionPaused <a name="PipeParametersPipeExecutionPaused" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPaused"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPaused.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/pipe"
+
+&pipe.PipeParametersPipeExecutionPaused {
+
+}
+```
+
+
+### PipeShowOutput <a name="PipeShowOutput" id="@cdktn/provider-snowflake.pipe.PipeShowOutput"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.pipe.PipeShowOutput.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/pipe"
+
+&pipe.PipeShowOutput {
+
+}
+```
+
 
 ### PipeTimeouts <a name="PipeTimeouts" id="@cdktn/provider-snowflake.pipe.PipeTimeouts"></a>
 
@@ -1321,10 +1517,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/pipe"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.pipe.PipeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#create Pipe#create}. |
-| <code><a href="#@cdktn/provider-snowflake.pipe.PipeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#delete Pipe#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.pipe.PipeTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#read Pipe#read}. |
-| <code><a href="#@cdktn/provider-snowflake.pipe.PipeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#update Pipe#update}. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#create Pipe#create}. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#delete Pipe#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#read Pipe#read}. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#update Pipe#update}. |
 
 ---
 
@@ -1336,7 +1532,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#create Pipe#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#create Pipe#create}.
 
 ---
 
@@ -1348,7 +1544,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#delete Pipe#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#delete Pipe#delete}.
 
 ---
 
@@ -1360,7 +1556,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#read Pipe#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#read Pipe#read}.
 
 ---
 
@@ -1372,11 +1568,2531 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/pipe#update Pipe#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/pipe#update Pipe#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### PipeDescribeOutputList <a name="PipeDescribeOutputList" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/pipe"
+
+pipe.NewPipeDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipeDescribeOutputList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.get"></a>
+
+```go
+func Get(index *f64) PipeDescribeOutputOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### PipeDescribeOutputOutputReference <a name="PipeDescribeOutputOutputReference" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/pipe"
+
+pipe.NewPipeDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipeDescribeOutputOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.databaseName">DatabaseName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.definition">Definition</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.errorIntegration">ErrorIntegration</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.integration">Integration</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.invalidReason">InvalidReason</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.kind">Kind</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.notificationChannel">NotificationChannel</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.owner">Owner</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.ownerRoleType">OwnerRoleType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.pattern">Pattern</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.schemaName">SchemaName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutput">PipeDescribeOutput</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Comment`<sup>Required</sup> <a name="Comment" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.comment"></a>
+
+```go
+func Comment() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CreatedOn`<sup>Required</sup> <a name="CreatedOn" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.createdOn"></a>
+
+```go
+func CreatedOn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DatabaseName`<sup>Required</sup> <a name="DatabaseName" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.databaseName"></a>
+
+```go
+func DatabaseName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Definition`<sup>Required</sup> <a name="Definition" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.definition"></a>
+
+```go
+func Definition() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ErrorIntegration`<sup>Required</sup> <a name="ErrorIntegration" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.errorIntegration"></a>
+
+```go
+func ErrorIntegration() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Integration`<sup>Required</sup> <a name="Integration" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.integration"></a>
+
+```go
+func Integration() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InvalidReason`<sup>Required</sup> <a name="InvalidReason" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.invalidReason"></a>
+
+```go
+func InvalidReason() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Kind`<sup>Required</sup> <a name="Kind" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.kind"></a>
+
+```go
+func Kind() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.name"></a>
+
+```go
+func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `NotificationChannel`<sup>Required</sup> <a name="NotificationChannel" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.notificationChannel"></a>
+
+```go
+func NotificationChannel() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Owner`<sup>Required</sup> <a name="Owner" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.owner"></a>
+
+```go
+func Owner() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OwnerRoleType`<sup>Required</sup> <a name="OwnerRoleType" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.ownerRoleType"></a>
+
+```go
+func OwnerRoleType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Pattern`<sup>Required</sup> <a name="Pattern" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.pattern"></a>
+
+```go
+func Pattern() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SchemaName`<sup>Required</sup> <a name="SchemaName" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.schemaName"></a>
+
+```go
+func SchemaName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.pipe.PipeDescribeOutputOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() PipeDescribeOutput
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.pipe.PipeDescribeOutput">PipeDescribeOutput</a>
+
+---
+
+
+### PipeParametersList <a name="PipeParametersList" id="@cdktn/provider-snowflake.pipe.PipeParametersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.pipe.PipeParametersList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/pipe"
+
+pipe.NewPipeParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipeParametersList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.pipe.PipeParametersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.pipe.PipeParametersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.pipe.PipeParametersList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.pipe.PipeParametersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.pipe.PipeParametersList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.pipe.PipeParametersList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.pipe.PipeParametersList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.pipe.PipeParametersList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.pipe.PipeParametersList.get"></a>
+
+```go
+func Get(index *f64) PipeParametersOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.pipe.PipeParametersList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.pipe.PipeParametersList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.pipe.PipeParametersList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### PipeParametersLogEventLevelList <a name="PipeParametersLogEventLevelList" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/pipe"
+
+pipe.NewPipeParametersLogEventLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipeParametersLogEventLevelList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.get"></a>
+
+```go
+func Get(index *f64) PipeParametersLogEventLevelOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### PipeParametersLogEventLevelOutputReference <a name="PipeParametersLogEventLevelOutputReference" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/pipe"
+
+pipe.NewPipeParametersLogEventLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipeParametersLogEventLevelOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.property.default">Default</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.property.description">Description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.property.key">Key</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.property.level">Level</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevel">PipeParametersLogEventLevel</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Default`<sup>Required</sup> <a name="Default" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.property.default"></a>
+
+```go
+func Default() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.property.description"></a>
+
+```go
+func Description() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.property.key"></a>
+
+```go
+func Key() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Level`<sup>Required</sup> <a name="Level" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.property.level"></a>
+
+```go
+func Level() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.property.value"></a>
+
+```go
+func Value() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() PipeParametersLogEventLevel
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevel">PipeParametersLogEventLevel</a>
+
+---
+
+
+### PipeParametersOutputReference <a name="PipeParametersOutputReference" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/pipe"
+
+pipe.NewPipeParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipeParametersOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.property.logEventLevel">LogEventLevel</a></code> | <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList">PipeParametersLogEventLevelList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.property.pipeExecutionPaused">PipeExecutionPaused</a></code> | <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList">PipeParametersPipeExecutionPausedList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.pipe.PipeParameters">PipeParameters</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `LogEventLevel`<sup>Required</sup> <a name="LogEventLevel" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.property.logEventLevel"></a>
+
+```go
+func LogEventLevel() PipeParametersLogEventLevelList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.pipe.PipeParametersLogEventLevelList">PipeParametersLogEventLevelList</a>
+
+---
+
+##### `PipeExecutionPaused`<sup>Required</sup> <a name="PipeExecutionPaused" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.property.pipeExecutionPaused"></a>
+
+```go
+func PipeExecutionPaused() PipeParametersPipeExecutionPausedList
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList">PipeParametersPipeExecutionPausedList</a>
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.pipe.PipeParametersOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() PipeParameters
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.pipe.PipeParameters">PipeParameters</a>
+
+---
+
+
+### PipeParametersPipeExecutionPausedList <a name="PipeParametersPipeExecutionPausedList" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/pipe"
+
+pipe.NewPipeParametersPipeExecutionPausedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipeParametersPipeExecutionPausedList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.get"></a>
+
+```go
+func Get(index *f64) PipeParametersPipeExecutionPausedOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### PipeParametersPipeExecutionPausedOutputReference <a name="PipeParametersPipeExecutionPausedOutputReference" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/pipe"
+
+pipe.NewPipeParametersPipeExecutionPausedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipeParametersPipeExecutionPausedOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.property.default">Default</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.property.description">Description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.property.key">Key</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.property.level">Level</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPaused">PipeParametersPipeExecutionPaused</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Default`<sup>Required</sup> <a name="Default" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.property.default"></a>
+
+```go
+func Default() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.property.description"></a>
+
+```go
+func Description() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.property.key"></a>
+
+```go
+func Key() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Level`<sup>Required</sup> <a name="Level" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.property.level"></a>
+
+```go
+func Level() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.property.value"></a>
+
+```go
+func Value() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPausedOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() PipeParametersPipeExecutionPaused
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.pipe.PipeParametersPipeExecutionPaused">PipeParametersPipeExecutionPaused</a>
+
+---
+
+
+### PipeShowOutputList <a name="PipeShowOutputList" id="@cdktn/provider-snowflake.pipe.PipeShowOutputList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.pipe.PipeShowOutputList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/pipe"
+
+pipe.NewPipeShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipeShowOutputList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.pipe.PipeShowOutputList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.pipe.PipeShowOutputList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-snowflake.pipe.PipeShowOutputList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.pipe.PipeShowOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.pipe.PipeShowOutputList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.pipe.PipeShowOutputList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.pipe.PipeShowOutputList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.pipe.PipeShowOutputList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-snowflake.pipe.PipeShowOutputList.get"></a>
+
+```go
+func Get(index *f64) PipeShowOutputOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.pipe.PipeShowOutputList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.pipe.PipeShowOutputList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.pipe.PipeShowOutputList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### PipeShowOutputOutputReference <a name="PipeShowOutputOutputReference" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/pipe"
+
+pipe.NewPipeShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipeShowOutputOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.databaseName">DatabaseName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.definition">Definition</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.errorIntegration">ErrorIntegration</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.integration">Integration</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.invalidReason">InvalidReason</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.kind">Kind</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.notificationChannel">NotificationChannel</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.owner">Owner</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.ownerRoleType">OwnerRoleType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.pattern">Pattern</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.schemaName">SchemaName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.pipe.PipeShowOutput">PipeShowOutput</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Comment`<sup>Required</sup> <a name="Comment" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.comment"></a>
+
+```go
+func Comment() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CreatedOn`<sup>Required</sup> <a name="CreatedOn" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.createdOn"></a>
+
+```go
+func CreatedOn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DatabaseName`<sup>Required</sup> <a name="DatabaseName" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.databaseName"></a>
+
+```go
+func DatabaseName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Definition`<sup>Required</sup> <a name="Definition" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.definition"></a>
+
+```go
+func Definition() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ErrorIntegration`<sup>Required</sup> <a name="ErrorIntegration" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.errorIntegration"></a>
+
+```go
+func ErrorIntegration() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Integration`<sup>Required</sup> <a name="Integration" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.integration"></a>
+
+```go
+func Integration() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InvalidReason`<sup>Required</sup> <a name="InvalidReason" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.invalidReason"></a>
+
+```go
+func InvalidReason() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Kind`<sup>Required</sup> <a name="Kind" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.kind"></a>
+
+```go
+func Kind() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.name"></a>
+
+```go
+func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `NotificationChannel`<sup>Required</sup> <a name="NotificationChannel" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.notificationChannel"></a>
+
+```go
+func NotificationChannel() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Owner`<sup>Required</sup> <a name="Owner" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.owner"></a>
+
+```go
+func Owner() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OwnerRoleType`<sup>Required</sup> <a name="OwnerRoleType" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.ownerRoleType"></a>
+
+```go
+func OwnerRoleType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Pattern`<sup>Required</sup> <a name="Pattern" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.pattern"></a>
+
+```go
+func Pattern() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SchemaName`<sup>Required</sup> <a name="SchemaName" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.schemaName"></a>
+
+```go
+func SchemaName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-snowflake.pipe.PipeShowOutputOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() PipeShowOutput
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.pipe.PipeShowOutput">PipeShowOutput</a>
+
+---
+
 
 ### PipeTimeoutsOutputReference <a name="PipeTimeoutsOutputReference" id="@cdktn/provider-snowflake.pipe.PipeTimeoutsOutputReference"></a>
 
