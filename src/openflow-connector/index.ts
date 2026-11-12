@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface OpenflowConnectorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies a comment for the Openflow connector.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector#comment OpenflowConnector#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector#comment OpenflowConnector#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the Openflow connector. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector#database OpenflowConnector#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector#database OpenflowConnector#database}
   */
   readonly database: string;
   /**
   * A free-text alias for the connector. Shown in the Openflow UI in place of the connector's identifier when set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector#display_name OpenflowConnector#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector#display_name OpenflowConnector#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector#id OpenflowConnector#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector#id OpenflowConnector#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,31 +40,37 @@ export interface OpenflowConnectorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies the identifier for the Openflow connector; must be unique for the schema in which the connector is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector#name OpenflowConnector#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector#name OpenflowConnector#name}
   */
   readonly name: string;
   /**
   * Specifies the fully qualified name of the Openflow runtime the connector runs in. The connector is created in the runtime's schema, so `database` and `schema` must match it. Snowflake has no ALTER for it, so changing it recreates the connector.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector#runtime OpenflowConnector#runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector#runtime OpenflowConnector#runtime}
   */
   readonly runtime: string;
   /**
   * The schema in which to create the Openflow connector. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector#schema OpenflowConnector#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector#schema OpenflowConnector#schema}
   */
   readonly schema: string;
   /**
+  * An arbitrary value, such as a hash of the bundle's files, that, if and only if changed from a non-empty to a different non-empty value (or known after apply), loads the bundle at `from` again as a new configuration version of the same connector, rather than recreating it. When you add this field to the configuration, or remove it, nothing is loaded, so add it before the bundle changes. A running connector is stopped for the load and started again afterwards; a stopped one stays stopped. When a version is loaded, `show_output` and `describe_output` are marked as computed. Only for a connector created from a stage.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector#version_trigger OpenflowConnector#version_trigger}
+  */
+  readonly versionTrigger?: string;
+  /**
   * from block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector#from OpenflowConnector#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector#from OpenflowConnector#from}
   */
   readonly from: OpenflowConnectorFrom;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector#timeouts OpenflowConnector#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector#timeouts OpenflowConnector#timeouts}
   */
   readonly timeouts?: OpenflowConnectorTimeouts;
 }
@@ -402,19 +408,19 @@ export interface OpenflowConnectorFrom {
   /**
   * Catalog definition ID for the connector type, for example `OPENFLOW_POSTGRES_CDC`. List the available IDs with the `snowflake_openflow_connector_definitions` data source. A connector created this way is a draft: it settles on STOPPED and stays there until a configuration version is committed, which this resource does not do.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector#definition OpenflowConnector#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector#definition OpenflowConnector#definition}
   */
   readonly definition?: string;
   /**
   * Path to the bundle within the stage. The bundle's root is used when omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector#path OpenflowConnector#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector#path OpenflowConnector#path}
   */
   readonly path?: string;
   /**
   * Identifier of a stage holding a complete configuration bundle, which is how a connector arrives already configured and able to start without a commit. A git repository stage works here too.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector#stage OpenflowConnector#stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector#stage OpenflowConnector#stage}
   */
   readonly stage?: string;
 }
@@ -556,19 +562,19 @@ export class OpenflowConnectorFromOutputReference extends cdktn.ComplexObject {
 }
 export interface OpenflowConnectorTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector#create OpenflowConnector#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector#create OpenflowConnector#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector#delete OpenflowConnector#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector#delete OpenflowConnector#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector#read OpenflowConnector#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector#read OpenflowConnector#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector#update OpenflowConnector#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector#update OpenflowConnector#update}
   */
   readonly update?: string;
 }
@@ -749,7 +755,7 @@ export class OpenflowConnectorTimeoutsOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector snowflake_openflow_connector}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector snowflake_openflow_connector}
 */
 export class OpenflowConnector extends cdktn.TerraformResource {
 
@@ -765,7 +771,7 @@ export class OpenflowConnector extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a OpenflowConnector resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpenflowConnector to import
-  * @param importFromId The id of the existing OpenflowConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OpenflowConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpenflowConnector to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -777,7 +783,7 @@ export class OpenflowConnector extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/openflow_connector snowflake_openflow_connector} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/openflow_connector snowflake_openflow_connector} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -788,7 +794,7 @@ export class OpenflowConnector extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_openflow_connector',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.22.1',
+        providerVersion: '2.23.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -806,6 +812,7 @@ export class OpenflowConnector extends cdktn.TerraformResource {
     this._name = config.name;
     this._runtime = config.runtime;
     this._schema = config.schema;
+    this._versionTrigger = config.versionTrigger;
     this._from.internalValue = config.from;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -931,6 +938,22 @@ export class OpenflowConnector extends cdktn.TerraformResource {
     return this._showOutput;
   }
 
+  // version_trigger - computed: false, optional: true, required: false
+  private _versionTrigger?: string; 
+  public get versionTrigger() {
+    return this.getStringAttribute('version_trigger');
+  }
+  public set versionTrigger(value: string) {
+    this._versionTrigger = value;
+  }
+  public resetVersionTrigger() {
+    this._versionTrigger = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionTriggerInput() {
+    return this._versionTrigger;
+  }
+
   // from - computed: false, optional: false, required: true
   private _from = new OpenflowConnectorFromOutputReference(this, "from");
   public get from() {
@@ -973,6 +996,7 @@ export class OpenflowConnector extends cdktn.TerraformResource {
       name: cdktn.stringToTerraform(this._name),
       runtime: cdktn.stringToTerraform(this._runtime),
       schema: cdktn.stringToTerraform(this._schema),
+      version_trigger: cdktn.stringToTerraform(this._versionTrigger),
       from: openflowConnectorFromToTerraform(this._from.internalValue),
       timeouts: openflowConnectorTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1018,6 +1042,12 @@ export class OpenflowConnector extends cdktn.TerraformResource {
       },
       schema: {
         value: cdktn.stringToHclTerraform(this._schema),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      version_trigger: {
+        value: cdktn.stringToHclTerraform(this._versionTrigger),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

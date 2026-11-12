@@ -4,7 +4,7 @@
 
 ### Alert <a name="Alert" id="@cdktn/provider-snowflake.alert.Alert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert snowflake_alert}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert snowflake_alert}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.alert.Alert.Initializer"></a>
 
@@ -24,12 +24,12 @@ Alert.Builder.create(Construct scope, java.lang.String id)
     .database(java.lang.String)
     .name(java.lang.String)
     .schema(java.lang.String)
-    .warehouse(java.lang.String)
 //  .alertSchedule(AlertAlertSchedule)
 //  .comment(java.lang.String)
 //  .enabled(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .timeouts(AlertTimeouts)
+//  .warehouse(java.lang.String)
     .build();
 ```
 
@@ -49,12 +49,12 @@ Alert.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.Initializer.parameter.database">database</a></code> | <code>java.lang.String</code> | The database in which to create the alert. |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Specifies the identifier for the alert; |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.Initializer.parameter.schema">schema</a></code> | <code>java.lang.String</code> | The schema in which to create the alert. |
-| <code><a href="#@cdktn/provider-snowflake.alert.Alert.Initializer.parameter.warehouse">warehouse</a></code> | <code>java.lang.String</code> | The warehouse the alert will use. |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.Initializer.parameter.alertSchedule">alertSchedule</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertAlertSchedule">AlertAlertSchedule</a></code> | alert_schedule block. |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the alert. |
-| <code><a href="#@cdktn/provider-snowflake.alert.Alert.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | (Default: `false`) Specifies if an alert should be 'started' (enabled) after creation or should remain 'suspended' (default). |
-| <code><a href="#@cdktn/provider-snowflake.alert.Alert.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#id Alert#id}. |
+| <code><a href="#@cdktn/provider-snowflake.alert.Alert.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Specifies if an alert should be 'started' (enabled) after creation or should remain 'suspended' (default). |
+| <code><a href="#@cdktn/provider-snowflake.alert.Alert.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#id Alert#id}. |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts">AlertTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-snowflake.alert.Alert.Initializer.parameter.warehouse">warehouse</a></code> | <code>java.lang.String</code> | The warehouse the alert will use. |
 
 ---
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The SQL statement that should be executed if the condition returns one or more rows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#action Alert#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#action Alert#action}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The SQL statement that represents the condition for the alert. (SELECT, SHOW, CALL).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#condition Alert#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#condition Alert#condition}
 
 ---
 
@@ -144,7 +144,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The database in which to create the alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#database Alert#database}
+Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#database Alert#database}
 
 ---
 
@@ -154,9 +156,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the identifier for the alert;
 
-must be unique for the database and schema in which the alert is created.
+must be unique for the schema in which the alert is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#name Alert#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#name Alert#name}
 
 ---
 
@@ -166,17 +168,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The schema in which to create the alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#schema Alert#schema}
+Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
----
-
-##### `warehouse`<sup>Required</sup> <a name="warehouse" id="@cdktn/provider-snowflake.alert.Alert.Initializer.parameter.warehouse"></a>
-
-- *Type:* java.lang.String
-
-The warehouse the alert will use.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#warehouse Alert#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#schema Alert#schema}
 
 ---
 
@@ -186,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 alert_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#alert_schedule Alert#alert_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#alert_schedule Alert#alert_schedule}
 
 ---
 
@@ -196,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#comment Alert#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#comment Alert#comment}
 
 ---
 
@@ -204,9 +198,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-(Default: `false`) Specifies if an alert should be 'started' (enabled) after creation or should remain 'suspended' (default).
+Specifies if an alert should be 'started' (enabled) after creation or should remain 'suspended' (default).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#enabled Alert#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#enabled Alert#enabled}
 
 ---
 
@@ -214,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#id Alert#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#id Alert#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -227,7 +221,19 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#timeouts Alert#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#timeouts Alert#timeouts}
+
+---
+
+##### `warehouse`<sup>Optional</sup> <a name="warehouse" id="@cdktn/provider-snowflake.alert.Alert.Initializer.parameter.warehouse"></a>
+
+- *Type:* java.lang.String
+
+The warehouse the alert will use.
+
+When not set, the alert uses serverless compute resources. Creating, resuming, or switching to a serverless alert requires the EXECUTE MANAGED ALERT privilege; using a named warehouse requires its USAGE privilege.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#warehouse Alert#warehouse}
 
 ---
 
@@ -266,6 +272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.resetEnabled">resetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.Alert.resetWarehouse">resetWarehouse</a></code> | *No description.* |
 
 ---
 
@@ -634,6 +641,12 @@ public void resetId()
 public void resetTimeouts()
 ```
 
+##### `resetWarehouse` <a name="resetWarehouse" id="@cdktn/provider-snowflake.alert.Alert.resetWarehouse"></a>
+
+```java
+public void resetWarehouse()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -737,7 +750,7 @@ The construct id used in the generated config for the Alert to import.
 
 The id of the existing Alert that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -768,7 +781,9 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.property.alertSchedule">alertSchedule</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertAlertScheduleOutputReference">AlertAlertScheduleOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.Alert.property.describeOutput">describeOutput</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList">AlertDescribeOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.property.fullyQualifiedName">fullyQualifiedName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.Alert.property.showOutput">showOutput</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList">AlertShowOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeoutsOutputReference">AlertTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.property.actionInput">actionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.alert.Alert.property.alertScheduleInput">alertScheduleInput</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertAlertSchedule">AlertAlertSchedule</a></code> | *No description.* |
@@ -945,6 +960,16 @@ public AlertAlertScheduleOutputReference getAlertSchedule();
 
 ---
 
+##### `describeOutput`<sup>Required</sup> <a name="describeOutput" id="@cdktn/provider-snowflake.alert.Alert.property.describeOutput"></a>
+
+```java
+public AlertDescribeOutputList getDescribeOutput();
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList">AlertDescribeOutputList</a>
+
+---
+
 ##### `fullyQualifiedName`<sup>Required</sup> <a name="fullyQualifiedName" id="@cdktn/provider-snowflake.alert.Alert.property.fullyQualifiedName"></a>
 
 ```java
@@ -952,6 +977,16 @@ public java.lang.String getFullyQualifiedName();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `showOutput`<sup>Required</sup> <a name="showOutput" id="@cdktn/provider-snowflake.alert.Alert.property.showOutput"></a>
+
+```java
+public AlertShowOutputList getShowOutput();
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList">AlertShowOutputList</a>
 
 ---
 
@@ -1217,7 +1252,7 @@ public AlertAlertScheduleCron getCron();
 
 cron block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#cron Alert#cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#cron Alert#cron}
 
 ---
 
@@ -1233,7 +1268,7 @@ Specifies the interval in minutes for the alert schedule.
 
 The interval must be greater than 0 and less than 1440 (24 hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#interval Alert#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#interval Alert#interval}
 
 ---
 
@@ -1271,7 +1306,7 @@ Specifies the cron expression for the alert.
 
 The cron expression must be in the following format: "minute hour day-of-month month day-of-week". The following values are supported: minute: 0-59 hour: 0-23 day-of-month: 1-31 month: 1-12 day-of-week: 0-6 (0 is Sunday)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#expression Alert#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#expression Alert#expression}
 
 ---
 
@@ -1285,7 +1320,7 @@ public java.lang.String getTimeZone();
 
 Specifies the time zone for alert refresh.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#time_zone Alert#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#time_zone Alert#time_zone}
 
 ---
 
@@ -1309,12 +1344,12 @@ AlertConfig.builder()
     .database(java.lang.String)
     .name(java.lang.String)
     .schema(java.lang.String)
-    .warehouse(java.lang.String)
 //  .alertSchedule(AlertAlertSchedule)
 //  .comment(java.lang.String)
 //  .enabled(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .timeouts(AlertTimeouts)
+//  .warehouse(java.lang.String)
     .build();
 ```
 
@@ -1334,12 +1369,12 @@ AlertConfig.builder()
 | <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.database">database</a></code> | <code>java.lang.String</code> | The database in which to create the alert. |
 | <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.name">name</a></code> | <code>java.lang.String</code> | Specifies the identifier for the alert; |
 | <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.schema">schema</a></code> | <code>java.lang.String</code> | The schema in which to create the alert. |
-| <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.warehouse">warehouse</a></code> | <code>java.lang.String</code> | The warehouse the alert will use. |
 | <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.alertSchedule">alertSchedule</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertAlertSchedule">AlertAlertSchedule</a></code> | alert_schedule block. |
 | <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the alert. |
-| <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | (Default: `false`) Specifies if an alert should be 'started' (enabled) after creation or should remain 'suspended' (default). |
-| <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#id Alert#id}. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Specifies if an alert should be 'started' (enabled) after creation or should remain 'suspended' (default). |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#id Alert#id}. |
 | <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts">AlertTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertConfig.property.warehouse">warehouse</a></code> | <code>java.lang.String</code> | The warehouse the alert will use. |
 
 ---
 
@@ -1423,7 +1458,7 @@ public java.lang.String getAction();
 
 The SQL statement that should be executed if the condition returns one or more rows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#action Alert#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#action Alert#action}
 
 ---
 
@@ -1437,7 +1472,7 @@ public java.lang.String getCondition();
 
 The SQL statement that represents the condition for the alert. (SELECT, SHOW, CALL).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#condition Alert#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#condition Alert#condition}
 
 ---
 
@@ -1451,7 +1486,9 @@ public java.lang.String getDatabase();
 
 The database in which to create the alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#database Alert#database}
+Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#database Alert#database}
 
 ---
 
@@ -1465,9 +1502,9 @@ public java.lang.String getName();
 
 Specifies the identifier for the alert;
 
-must be unique for the database and schema in which the alert is created.
+must be unique for the schema in which the alert is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#name Alert#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#name Alert#name}
 
 ---
 
@@ -1481,21 +1518,9 @@ public java.lang.String getSchema();
 
 The schema in which to create the alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#schema Alert#schema}
+Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
----
-
-##### `warehouse`<sup>Required</sup> <a name="warehouse" id="@cdktn/provider-snowflake.alert.AlertConfig.property.warehouse"></a>
-
-```java
-public java.lang.String getWarehouse();
-```
-
-- *Type:* java.lang.String
-
-The warehouse the alert will use.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#warehouse Alert#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#schema Alert#schema}
 
 ---
 
@@ -1509,7 +1534,7 @@ public AlertAlertSchedule getAlertSchedule();
 
 alert_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#alert_schedule Alert#alert_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#alert_schedule Alert#alert_schedule}
 
 ---
 
@@ -1523,7 +1548,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#comment Alert#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#comment Alert#comment}
 
 ---
 
@@ -1535,9 +1560,9 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-(Default: `false`) Specifies if an alert should be 'started' (enabled) after creation or should remain 'suspended' (default).
+Specifies if an alert should be 'started' (enabled) after creation or should remain 'suspended' (default).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#enabled Alert#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#enabled Alert#enabled}
 
 ---
 
@@ -1549,7 +1574,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#id Alert#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#id Alert#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1566,9 +1591,49 @@ public AlertTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#timeouts Alert#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#timeouts Alert#timeouts}
 
 ---
+
+##### `warehouse`<sup>Optional</sup> <a name="warehouse" id="@cdktn/provider-snowflake.alert.AlertConfig.property.warehouse"></a>
+
+```java
+public java.lang.String getWarehouse();
+```
+
+- *Type:* java.lang.String
+
+The warehouse the alert will use.
+
+When not set, the alert uses serverless compute resources. Creating, resuming, or switching to a serverless alert requires the EXECUTE MANAGED ALERT privilege; using a named warehouse requires its USAGE privilege.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#warehouse Alert#warehouse}
+
+---
+
+### AlertDescribeOutput <a name="AlertDescribeOutput" id="@cdktn/provider-snowflake.alert.AlertDescribeOutput"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.alert.AlertDescribeOutput.Initializer"></a>
+
+```java
+import io.cdktn.providers.snowflake.alert.AlertDescribeOutput;
+
+AlertDescribeOutput.builder()
+    .build();
+```
+
+
+### AlertShowOutput <a name="AlertShowOutput" id="@cdktn/provider-snowflake.alert.AlertShowOutput"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-snowflake.alert.AlertShowOutput.Initializer"></a>
+
+```java
+import io.cdktn.providers.snowflake.alert.AlertShowOutput;
+
+AlertShowOutput.builder()
+    .build();
+```
+
 
 ### AlertTimeouts <a name="AlertTimeouts" id="@cdktn/provider-snowflake.alert.AlertTimeouts"></a>
 
@@ -1589,10 +1654,10 @@ AlertTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#create Alert#create}. |
-| <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#delete Alert#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#read Alert#read}. |
-| <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#update Alert#update}. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#create Alert#create}. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#delete Alert#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#read Alert#read}. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#update Alert#update}. |
 
 ---
 
@@ -1604,7 +1669,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#create Alert#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#create Alert#create}.
 
 ---
 
@@ -1616,7 +1681,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#delete Alert#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#delete Alert#delete}.
 
 ---
 
@@ -1628,7 +1693,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#read Alert#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#read Alert#read}.
 
 ---
 
@@ -1640,7 +1705,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#update Alert#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#update Alert#update}.
 
 ---
 
@@ -2255,6 +2320,1091 @@ public AlertAlertSchedule getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-snowflake.alert.AlertAlertSchedule">AlertAlertSchedule</a>
+
+---
+
+
+### AlertDescribeOutputList <a name="AlertDescribeOutputList" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.Initializer"></a>
+
+```java
+import io.cdktn.providers.snowflake.alert.AlertDescribeOutputList;
+
+new AlertDescribeOutputList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.get"></a>
+
+```java
+public AlertDescribeOutputOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+
+### AlertDescribeOutputOutputReference <a name="AlertDescribeOutputOutputReference" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.snowflake.alert.AlertDescribeOutputOutputReference;
+
+new AlertDescribeOutputOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.action">action</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.comment">comment</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.condition">condition</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.createdOn">createdOn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.databaseName">databaseName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.owner">owner</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.schedule">schedule</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.schemaName">schemaName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.state">state</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.warehouse">warehouse</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutput">AlertDescribeOutput</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `action`<sup>Required</sup> <a name="action" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.action"></a>
+
+```java
+public java.lang.String getAction();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.comment"></a>
+
+```java
+public java.lang.String getComment();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `condition`<sup>Required</sup> <a name="condition" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.condition"></a>
+
+```java
+public java.lang.String getCondition();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.createdOn"></a>
+
+```java
+public java.lang.String getCreatedOn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `databaseName`<sup>Required</sup> <a name="databaseName" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.databaseName"></a>
+
+```java
+public java.lang.String getDatabaseName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `owner`<sup>Required</sup> <a name="owner" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.owner"></a>
+
+```java
+public java.lang.String getOwner();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `schedule`<sup>Required</sup> <a name="schedule" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.schedule"></a>
+
+```java
+public java.lang.String getSchedule();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `schemaName`<sup>Required</sup> <a name="schemaName" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.schemaName"></a>
+
+```java
+public java.lang.String getSchemaName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `state`<sup>Required</sup> <a name="state" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.state"></a>
+
+```java
+public java.lang.String getState();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `warehouse`<sup>Required</sup> <a name="warehouse" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.warehouse"></a>
+
+```java
+public java.lang.String getWarehouse();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-snowflake.alert.AlertDescribeOutputOutputReference.property.internalValue"></a>
+
+```java
+public AlertDescribeOutput getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.alert.AlertDescribeOutput">AlertDescribeOutput</a>
+
+---
+
+
+### AlertShowOutputList <a name="AlertShowOutputList" id="@cdktn/provider-snowflake.alert.AlertShowOutputList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.Initializer"></a>
+
+```java
+import io.cdktn.providers.snowflake.alert.AlertShowOutputList;
+
+new AlertShowOutputList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.get"></a>
+
+```java
+public AlertShowOutputOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.alert.AlertShowOutputList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+
+### AlertShowOutputOutputReference <a name="AlertShowOutputOutputReference" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.snowflake.alert.AlertShowOutputOutputReference;
+
+new AlertShowOutputOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.action">action</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.comment">comment</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.condition">condition</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.createdOn">createdOn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.databaseName">databaseName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.owner">owner</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.ownerRoleType">ownerRoleType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.schedule">schedule</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.schemaName">schemaName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.state">state</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.warehouse">warehouse</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-snowflake.alert.AlertShowOutput">AlertShowOutput</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `action`<sup>Required</sup> <a name="action" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.action"></a>
+
+```java
+public java.lang.String getAction();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.comment"></a>
+
+```java
+public java.lang.String getComment();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `condition`<sup>Required</sup> <a name="condition" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.condition"></a>
+
+```java
+public java.lang.String getCondition();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.createdOn"></a>
+
+```java
+public java.lang.String getCreatedOn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `databaseName`<sup>Required</sup> <a name="databaseName" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.databaseName"></a>
+
+```java
+public java.lang.String getDatabaseName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `owner`<sup>Required</sup> <a name="owner" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.owner"></a>
+
+```java
+public java.lang.String getOwner();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `ownerRoleType`<sup>Required</sup> <a name="ownerRoleType" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.ownerRoleType"></a>
+
+```java
+public java.lang.String getOwnerRoleType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `schedule`<sup>Required</sup> <a name="schedule" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.schedule"></a>
+
+```java
+public java.lang.String getSchedule();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `schemaName`<sup>Required</sup> <a name="schemaName" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.schemaName"></a>
+
+```java
+public java.lang.String getSchemaName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `state`<sup>Required</sup> <a name="state" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.state"></a>
+
+```java
+public java.lang.String getState();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `warehouse`<sup>Required</sup> <a name="warehouse" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.warehouse"></a>
+
+```java
+public java.lang.String getWarehouse();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-snowflake.alert.AlertShowOutputOutputReference.property.internalValue"></a>
+
+```java
+public AlertShowOutput getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-snowflake.alert.AlertShowOutput">AlertShowOutput</a>
 
 ---
 

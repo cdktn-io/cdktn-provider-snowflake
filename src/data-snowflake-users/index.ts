@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataSnowflakeUsersConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#id DataSnowflakeUsers#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#id DataSnowflakeUsers#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +22,31 @@ export interface DataSnowflakeUsersConfig extends cdktn.TerraformMetaArguments {
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#like DataSnowflakeUsers#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#like DataSnowflakeUsers#like}
   */
   readonly like?: string;
   /**
   * Filters the output with **case-sensitive** characters indicating the beginning of the object name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#starts_with DataSnowflakeUsers#starts_with}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#starts_with DataSnowflakeUsers#starts_with}
   */
   readonly startsWith?: string;
   /**
   * (Default: `true`) Runs DESC USER for each user returned by SHOW USERS. The output of describe is saved to the description field. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#with_describe DataSnowflakeUsers#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#with_describe DataSnowflakeUsers#with_describe}
   */
   readonly withDescribe?: boolean | cdktn.IResolvable;
   /**
   * (Default: `true`) Runs SHOW PARAMETERS FOR USER for each user returned by SHOW USERS. The output of describe is saved to the parameters field as a map. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#with_parameters DataSnowflakeUsers#with_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#with_parameters DataSnowflakeUsers#with_parameters}
   */
   readonly withParameters?: boolean | cdktn.IResolvable;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#limit DataSnowflakeUsers#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#limit DataSnowflakeUsers#limit}
   */
   readonly limit?: DataSnowflakeUsersLimit;
 }
@@ -385,6 +385,101 @@ export class DataSnowflakeUsersUsersParametersAbortDetachedQueryList extends cdk
     return new DataSnowflakeUsersUsersParametersAbortDetachedQueryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataSnowflakeUsersUsersParametersActivePythonProfiler {
+}
+
+export function dataSnowflakeUsersUsersParametersActivePythonProfilerToTerraform(struct?: DataSnowflakeUsersUsersParametersActivePythonProfiler): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeUsersUsersParametersActivePythonProfilerToHclTerraform(struct?: DataSnowflakeUsersUsersParametersActivePythonProfiler): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeUsersUsersParametersActivePythonProfiler | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeUsersUsersParametersActivePythonProfiler | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeUsersUsersParametersActivePythonProfilerList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference {
+    return new DataSnowflakeUsersUsersParametersActivePythonProfilerOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataSnowflakeUsersUsersParametersAutocommit {
 }
 
@@ -670,6 +765,101 @@ export class DataSnowflakeUsersUsersParametersBinaryOutputFormatList extends cdk
     return new DataSnowflakeUsersUsersParametersBinaryOutputFormatOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParameters {
+}
+
+export function dataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersToTerraform(struct?: DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParameters): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersToHclTerraform(struct?: DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParameters): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParameters | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParameters | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference {
+    return new DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataSnowflakeUsersUsersParametersClientMemoryLimit {
 }
 
@@ -858,6 +1048,101 @@ export class DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnection
   */
   public get(index: number): DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtxOutputReference {
     return new DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtxOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabase {
+}
+
+export function dataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseToTerraform(struct?: DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabase): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseToHclTerraform(struct?: DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabase): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabase | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabase | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference {
+    return new DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataSnowflakeUsersUsersParametersClientPrefetchThreads {
@@ -1430,6 +1715,101 @@ export class DataSnowflakeUsersUsersParametersClientTimestampTypeMappingList ext
     return new DataSnowflakeUsersUsersParametersClientTimestampTypeMappingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataSnowflakeUsersUsersParametersCsvTimestampFormat {
+}
+
+export function dataSnowflakeUsersUsersParametersCsvTimestampFormatToTerraform(struct?: DataSnowflakeUsersUsersParametersCsvTimestampFormat): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeUsersUsersParametersCsvTimestampFormatToHclTerraform(struct?: DataSnowflakeUsersUsersParametersCsvTimestampFormat): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeUsersUsersParametersCsvTimestampFormat | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeUsersUsersParametersCsvTimestampFormat | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeUsersUsersParametersCsvTimestampFormatList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference {
+    return new DataSnowflakeUsersUsersParametersCsvTimestampFormatOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataSnowflakeUsersUsersParametersDateInputFormat {
 }
 
@@ -1618,6 +1998,101 @@ export class DataSnowflakeUsersUsersParametersDateOutputFormatList extends cdktn
   */
   public get(index: number): DataSnowflakeUsersUsersParametersDateOutputFormatOutputReference {
     return new DataSnowflakeUsersUsersParametersDateOutputFormatOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAlias {
+}
+
+export function dataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasToTerraform(struct?: DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAlias): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasToHclTerraform(struct?: DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAlias): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAlias | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAlias | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference {
+    return new DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataSnowflakeUsersUsersParametersEnableUnloadPhysicalTypeOptimization {
@@ -2190,6 +2665,101 @@ export class DataSnowflakeUsersUsersParametersGeometryOutputFormatList extends c
     return new DataSnowflakeUsersUsersParametersGeometryOutputFormatOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataSnowflakeUsersUsersParametersHybridTableLockTimeout {
+}
+
+export function dataSnowflakeUsersUsersParametersHybridTableLockTimeoutToTerraform(struct?: DataSnowflakeUsersUsersParametersHybridTableLockTimeout): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeUsersUsersParametersHybridTableLockTimeoutToHclTerraform(struct?: DataSnowflakeUsersUsersParametersHybridTableLockTimeout): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeUsersUsersParametersHybridTableLockTimeout | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeUsersUsersParametersHybridTableLockTimeout | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference {
+    return new DataSnowflakeUsersUsersParametersHybridTableLockTimeoutOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsInt {
 }
 
@@ -2473,6 +3043,101 @@ export class DataSnowflakeUsersUsersParametersJdbcUseSessionTimezoneList extends
   */
   public get(index: number): DataSnowflakeUsersUsersParametersJdbcUseSessionTimezoneOutputReference {
     return new DataSnowflakeUsersUsersParametersJdbcUseSessionTimezoneOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigint {
+}
+
+export function dataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintToTerraform(struct?: DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigint): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintToHclTerraform(struct?: DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigint): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigint | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigint | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference {
+    return new DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataSnowflakeUsersUsersParametersJsonIndent {
@@ -3328,6 +3993,196 @@ export class DataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesList 
   */
   public get(index: number): DataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesOutputReference {
     return new DataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeUsersUsersParametersPythonProfilerModules {
+}
+
+export function dataSnowflakeUsersUsersParametersPythonProfilerModulesToTerraform(struct?: DataSnowflakeUsersUsersParametersPythonProfilerModules): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeUsersUsersParametersPythonProfilerModulesToHclTerraform(struct?: DataSnowflakeUsersUsersParametersPythonProfilerModules): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeUsersUsersParametersPythonProfilerModules | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeUsersUsersParametersPythonProfilerModules | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeUsersUsersParametersPythonProfilerModulesList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference {
+    return new DataSnowflakeUsersUsersParametersPythonProfilerModulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeUsersUsersParametersPythonProfilerTargetStage {
+}
+
+export function dataSnowflakeUsersUsersParametersPythonProfilerTargetStageToTerraform(struct?: DataSnowflakeUsersUsersParametersPythonProfilerTargetStage): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeUsersUsersParametersPythonProfilerTargetStageToHclTerraform(struct?: DataSnowflakeUsersUsersParametersPythonProfilerTargetStage): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeUsersUsersParametersPythonProfilerTargetStage | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeUsersUsersParametersPythonProfilerTargetStage | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference {
+    return new DataSnowflakeUsersUsersParametersPythonProfilerTargetStageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataSnowflakeUsersUsersParametersQueryTag {
@@ -5952,6 +6807,12 @@ export class DataSnowflakeUsersUsersParametersOutputReference extends cdktn.Comp
     return this._abortDetachedQuery;
   }
 
+  // active_python_profiler - computed: true, optional: false, required: false
+  private _activePythonProfiler = new DataSnowflakeUsersUsersParametersActivePythonProfilerList(this, "active_python_profiler", false);
+  public get activePythonProfiler() {
+    return this._activePythonProfiler;
+  }
+
   // autocommit - computed: true, optional: false, required: false
   private _autocommit = new DataSnowflakeUsersUsersParametersAutocommitList(this, "autocommit", false);
   public get autocommit() {
@@ -5970,6 +6831,12 @@ export class DataSnowflakeUsersUsersParametersOutputReference extends cdktn.Comp
     return this._binaryOutputFormat;
   }
 
+  // client_enable_log_info_statement_parameters - computed: true, optional: false, required: false
+  private _clientEnableLogInfoStatementParameters = new DataSnowflakeUsersUsersParametersClientEnableLogInfoStatementParametersList(this, "client_enable_log_info_statement_parameters", false);
+  public get clientEnableLogInfoStatementParameters() {
+    return this._clientEnableLogInfoStatementParameters;
+  }
+
   // client_memory_limit - computed: true, optional: false, required: false
   private _clientMemoryLimit = new DataSnowflakeUsersUsersParametersClientMemoryLimitList(this, "client_memory_limit", false);
   public get clientMemoryLimit() {
@@ -5980,6 +6847,12 @@ export class DataSnowflakeUsersUsersParametersOutputReference extends cdktn.Comp
   private _clientMetadataRequestUseConnectionCtx = new DataSnowflakeUsersUsersParametersClientMetadataRequestUseConnectionCtxList(this, "client_metadata_request_use_connection_ctx", false);
   public get clientMetadataRequestUseConnectionCtx() {
     return this._clientMetadataRequestUseConnectionCtx;
+  }
+
+  // client_metadata_use_session_database - computed: true, optional: false, required: false
+  private _clientMetadataUseSessionDatabase = new DataSnowflakeUsersUsersParametersClientMetadataUseSessionDatabaseList(this, "client_metadata_use_session_database", false);
+  public get clientMetadataUseSessionDatabase() {
+    return this._clientMetadataUseSessionDatabase;
   }
 
   // client_prefetch_threads - computed: true, optional: false, required: false
@@ -6018,6 +6891,12 @@ export class DataSnowflakeUsersUsersParametersOutputReference extends cdktn.Comp
     return this._clientTimestampTypeMapping;
   }
 
+  // csv_timestamp_format - computed: true, optional: false, required: false
+  private _csvTimestampFormat = new DataSnowflakeUsersUsersParametersCsvTimestampFormatList(this, "csv_timestamp_format", false);
+  public get csvTimestampFormat() {
+    return this._csvTimestampFormat;
+  }
+
   // date_input_format - computed: true, optional: false, required: false
   private _dateInputFormat = new DataSnowflakeUsersUsersParametersDateInputFormatList(this, "date_input_format", false);
   public get dateInputFormat() {
@@ -6028,6 +6907,12 @@ export class DataSnowflakeUsersUsersParametersOutputReference extends cdktn.Comp
   private _dateOutputFormat = new DataSnowflakeUsersUsersParametersDateOutputFormatList(this, "date_output_format", false);
   public get dateOutputFormat() {
     return this._dateOutputFormat;
+  }
+
+  // enable_get_ddl_use_data_type_alias - computed: true, optional: false, required: false
+  private _enableGetDdlUseDataTypeAlias = new DataSnowflakeUsersUsersParametersEnableGetDdlUseDataTypeAliasList(this, "enable_get_ddl_use_data_type_alias", false);
+  public get enableGetDdlUseDataTypeAlias() {
+    return this._enableGetDdlUseDataTypeAlias;
   }
 
   // enable_unload_physical_type_optimization - computed: true, optional: false, required: false
@@ -6066,6 +6951,12 @@ export class DataSnowflakeUsersUsersParametersOutputReference extends cdktn.Comp
     return this._geometryOutputFormat;
   }
 
+  // hybrid_table_lock_timeout - computed: true, optional: false, required: false
+  private _hybridTableLockTimeout = new DataSnowflakeUsersUsersParametersHybridTableLockTimeoutList(this, "hybrid_table_lock_timeout", false);
+  public get hybridTableLockTimeout() {
+    return this._hybridTableLockTimeout;
+  }
+
   // jdbc_treat_decimal_as_int - computed: true, optional: false, required: false
   private _jdbcTreatDecimalAsInt = new DataSnowflakeUsersUsersParametersJdbcTreatDecimalAsIntList(this, "jdbc_treat_decimal_as_int", false);
   public get jdbcTreatDecimalAsInt() {
@@ -6082,6 +6973,12 @@ export class DataSnowflakeUsersUsersParametersOutputReference extends cdktn.Comp
   private _jdbcUseSessionTimezone = new DataSnowflakeUsersUsersParametersJdbcUseSessionTimezoneList(this, "jdbc_use_session_timezone", false);
   public get jdbcUseSessionTimezone() {
     return this._jdbcUseSessionTimezone;
+  }
+
+  // js_treat_integer_as_bigint - computed: true, optional: false, required: false
+  private _jsTreatIntegerAsBigint = new DataSnowflakeUsersUsersParametersJsTreatIntegerAsBigintList(this, "js_treat_integer_as_bigint", false);
+  public get jsTreatIntegerAsBigint() {
+    return this._jsTreatIntegerAsBigint;
   }
 
   // json_indent - computed: true, optional: false, required: false
@@ -6136,6 +7033,18 @@ export class DataSnowflakeUsersUsersParametersOutputReference extends cdktn.Comp
   private _preventUnloadToInternalStages = new DataSnowflakeUsersUsersParametersPreventUnloadToInternalStagesList(this, "prevent_unload_to_internal_stages", false);
   public get preventUnloadToInternalStages() {
     return this._preventUnloadToInternalStages;
+  }
+
+  // python_profiler_modules - computed: true, optional: false, required: false
+  private _pythonProfilerModules = new DataSnowflakeUsersUsersParametersPythonProfilerModulesList(this, "python_profiler_modules", false);
+  public get pythonProfilerModules() {
+    return this._pythonProfilerModules;
+  }
+
+  // python_profiler_target_stage - computed: true, optional: false, required: false
+  private _pythonProfilerTargetStage = new DataSnowflakeUsersUsersParametersPythonProfilerTargetStageList(this, "python_profiler_target_stage", false);
+  public get pythonProfilerTargetStage() {
+    return this._pythonProfilerTargetStage;
   }
 
   // query_tag - computed: true, optional: false, required: false
@@ -6626,13 +7535,13 @@ export interface DataSnowflakeUsersLimit {
   /**
   * Specifies a **case-sensitive** pattern that is used to match object name. After the first match, the limit on the number of rows will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#from DataSnowflakeUsers#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#from DataSnowflakeUsers#from}
   */
   readonly from?: string;
   /**
   * The maximum number of rows to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#rows DataSnowflakeUsers#rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#rows DataSnowflakeUsers#rows}
   */
   readonly rows: number;
 }
@@ -6742,7 +7651,7 @@ export class DataSnowflakeUsersLimitOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users snowflake_users}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users snowflake_users}
 */
 export class DataSnowflakeUsers extends cdktn.TerraformDataSource {
 
@@ -6758,7 +7667,7 @@ export class DataSnowflakeUsers extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataSnowflakeUsers resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeUsers to import
-  * @param importFromId The id of the existing DataSnowflakeUsers that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeUsers that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeUsers to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -6770,7 +7679,7 @@ export class DataSnowflakeUsers extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/data-sources/users snowflake_users} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/users snowflake_users} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -6781,7 +7690,7 @@ export class DataSnowflakeUsers extends cdktn.TerraformDataSource {
       terraformResourceType: 'snowflake_users',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.22.1',
+        providerVersion: '2.23.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

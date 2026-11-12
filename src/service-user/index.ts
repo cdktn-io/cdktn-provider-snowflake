@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,179 +15,215 @@ export interface ServiceUserConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#abort_detached_query ServiceUser#abort_detached_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#abort_detached_query ServiceUser#abort_detached_query}
   */
   readonly abortDetachedQuery?: boolean | cdktn.IResolvable;
   /**
+  * Sets the profiler to use for the session when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). Valid values are (case-insensitive): `LINE` | `MEMORY`. For more information, check [ACTIVE_PYTHON_PROFILER docs](https://docs.snowflake.com/en/sql-reference/parameters#active-python-profiler).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#active_python_profiler ServiceUser#active_python_profiler}
+  */
+  readonly activePythonProfiler?: string;
+  /**
   * Specifies whether autocommit is enabled for the session. Autocommit determines whether a DML statement, when executed without an active transaction, is automatically committed after the statement successfully completes. For more information, see [Transactions](https://docs.snowflake.com/en/sql-reference/transactions). For more information, check [AUTOCOMMIT docs](https://docs.snowflake.com/en/sql-reference/parameters#autocommit).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#autocommit ServiceUser#autocommit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#autocommit ServiceUser#autocommit}
   */
   readonly autocommit?: boolean | cdktn.IResolvable;
   /**
   * The format of VARCHAR values passed as input to VARCHAR-to-BINARY conversion functions. For more information, see [Binary input and output](https://docs.snowflake.com/en/sql-reference/binary-input-output). Valid values are (case-insensitive): `HEX` | `BASE64` | `UTF8`. For more information, check [BINARY_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#binary-input-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#binary_input_format ServiceUser#binary_input_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#binary_input_format ServiceUser#binary_input_format}
   */
   readonly binaryInputFormat?: string;
   /**
   * The format for VARCHAR values returned as output by BINARY-to-VARCHAR conversion functions. For more information, see [Binary input and output](https://docs.snowflake.com/en/sql-reference/binary-input-output). Valid values are (case-insensitive): `HEX` | `BASE64`. For more information, check [BINARY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#binary-output-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#binary_output_format ServiceUser#binary_output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#binary_output_format ServiceUser#binary_output_format}
   */
   readonly binaryOutputFormat?: string;
   /**
+  * Enables users to log the data values bound to [PreparedStatements](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-api.html#label-jdbc-api-preparedstatement). For more information, check [CLIENT_ENABLE_LOG_INFO_STATEMENT_PARAMETERS docs](https://docs.snowflake.com/en/sql-reference/parameters#client-enable-log-info-statement-parameters).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_enable_log_info_statement_parameters ServiceUser#client_enable_log_info_statement_parameters}
+  */
+  readonly clientEnableLogInfoStatementParameters?: boolean | cdktn.IResolvable;
+  /**
   * Parameter that specifies the maximum amount of memory the JDBC driver or ODBC driver should use for the result set from queries (in MB). For more information, check [CLIENT_MEMORY_LIMIT docs](https://docs.snowflake.com/en/sql-reference/parameters#client-memory-limit).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_memory_limit ServiceUser#client_memory_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_memory_limit ServiceUser#client_memory_limit}
   */
   readonly clientMemoryLimit?: number;
   /**
   * For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema. The narrower search typically returns fewer rows and executes more quickly. For more information, check [CLIENT_METADATA_REQUEST_USE_CONNECTION_CTX docs](https://docs.snowflake.com/en/sql-reference/parameters#client-metadata-request-use-connection-ctx).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_metadata_request_use_connection_ctx ServiceUser#client_metadata_request_use_connection_ctx}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_metadata_request_use_connection_ctx ServiceUser#client_metadata_request_use_connection_ctx}
   */
   readonly clientMetadataRequestUseConnectionCtx?: boolean | cdktn.IResolvable;
   /**
+  * For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases to the current database. The narrower search typically returns fewer rows and executes more quickly ([more details on the usage](https://docs.snowflake.com/en/sql-reference/parameters#client-metadata-use-session-database)). For more information, check [CLIENT_METADATA_USE_SESSION_DATABASE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-metadata-use-session-database).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_metadata_use_session_database ServiceUser#client_metadata_use_session_database}
+  */
+  readonly clientMetadataUseSessionDatabase?: boolean | cdktn.IResolvable;
+  /**
   * Parameter that specifies the number of threads used by the client to pre-fetch large result sets. The driver will attempt to honor the parameter value, but defines the minimum and maximum values (depending on your system’s resources) to improve performance. For more information, check [CLIENT_PREFETCH_THREADS docs](https://docs.snowflake.com/en/sql-reference/parameters#client-prefetch-threads).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_prefetch_threads ServiceUser#client_prefetch_threads}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_prefetch_threads ServiceUser#client_prefetch_threads}
   */
   readonly clientPrefetchThreads?: number;
   /**
   * Parameter that specifies the maximum size of each set (or chunk) of query results to download (in MB). The JDBC driver downloads query results in chunks. For more information, check [CLIENT_RESULT_CHUNK_SIZE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-chunk-size).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_result_chunk_size ServiceUser#client_result_chunk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_result_chunk_size ServiceUser#client_result_chunk_size}
   */
   readonly clientResultChunkSize?: number;
   /**
   * Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_result_column_case_insensitive ServiceUser#client_result_column_case_insensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_result_column_case_insensitive ServiceUser#client_result_column_case_insensitive}
   */
   readonly clientResultColumnCaseInsensitive?: boolean | cdktn.IResolvable;
   /**
   * Parameter that indicates whether to force a user to log in again after a period of inactivity in the session. For more information, check [CLIENT_SESSION_KEEP_ALIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_session_keep_alive ServiceUser#client_session_keep_alive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_session_keep_alive ServiceUser#client_session_keep_alive}
   */
   readonly clientSessionKeepAlive?: boolean | cdktn.IResolvable;
   /**
   * Number of seconds in-between client attempts to update the token for the session. For more information, check [CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive-heartbeat-frequency).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_session_keep_alive_heartbeat_frequency ServiceUser#client_session_keep_alive_heartbeat_frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_session_keep_alive_heartbeat_frequency ServiceUser#client_session_keep_alive_heartbeat_frequency}
   */
   readonly clientSessionKeepAliveHeartbeatFrequency?: number;
   /**
   * Specifies the [TIMESTAMP_* variation](https://docs.snowflake.com/en/sql-reference/data-types-datetime.html#label-datatypes-timestamp-variations) to use when binding timestamp variables for JDBC or ODBC applications that use the bind API to load data. Valid values are (case-insensitive): `TIMESTAMP_LTZ` | `TIMESTAMP_NTZ`. For more information, check [CLIENT_TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#client-timestamp-type-mapping).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#client_timestamp_type_mapping ServiceUser#client_timestamp_type_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#client_timestamp_type_mapping ServiceUser#client_timestamp_type_mapping}
   */
   readonly clientTimestampTypeMapping?: string;
   /**
   * Specifies a comment for the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#comment ServiceUser#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#comment ServiceUser#comment}
   */
   readonly comment?: string;
   /**
+  * Specifies the format for TIMESTAMP values in CSV files downloaded from Snowsight. If this parameter is not set, [TIMESTAMP_LTZ_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-ltz-output-format) will be used for TIMESTAMP_LTZ values, [TIMESTAMP_TZ_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-tz-output-format) will be used for TIMESTAMP_TZ and [TIMESTAMP_NTZ_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-ntz-output-format) for TIMESTAMP_NTZ values. For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output) or [Download your query results](https://docs.snowflake.com/en/user-guide/ui-snowsight-query.html#label-snowsight-download-query-results). For more information, check [CSV_TIMESTAMP_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#csv-timestamp-format).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#csv_timestamp_format ServiceUser#csv_timestamp_format}
+  */
+  readonly csvTimestampFormat?: string;
+  /**
   * Specifies the input format for the DATE data type. For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [DATE_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#date-input-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#date_input_format ServiceUser#date_input_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#date_input_format ServiceUser#date_input_format}
   */
   readonly dateInputFormat?: string;
   /**
   * Specifies the display format for the DATE data type. For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [DATE_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#date-output-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#date_output_format ServiceUser#date_output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#date_output_format ServiceUser#date_output_format}
   */
   readonly dateOutputFormat?: string;
   /**
   * Specifies the number of days after which the user status is set to `Expired` and the user is no longer allowed to log in. This is useful for defining temporary users (i.e. users who should only have access to Snowflake for a limited time period). In general, you should not set this property for [account administrators](https://docs.snowflake.com/en/user-guide/security-access-control-considerations.html#label-accountadmin-users) (i.e. users with the `ACCOUNTADMIN` role) because Snowflake locks them out when they become `Expired`. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#days_to_expiry ServiceUser#days_to_expiry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#days_to_expiry ServiceUser#days_to_expiry}
   */
   readonly daysToExpiry?: number;
   /**
   * Specifies the namespace (database only or database and schema) that is active by default for the user’s session upon login. Note that the CREATE USER operation does not verify that the namespace exists.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#default_namespace ServiceUser#default_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#default_namespace ServiceUser#default_namespace}
   */
   readonly defaultNamespace?: string;
   /**
   * Specifies the role that is active by default for the user’s session upon login. Note that specifying a default role for a user does **not** grant the role to the user. The role must be granted explicitly to the user using the [GRANT ROLE](https://docs.snowflake.com/en/sql-reference/sql/grant-role) command. In addition, the CREATE USER operation does not verify that the role exists. For more information about this resource, see [docs](./account_role).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#default_role ServiceUser#default_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#default_role ServiceUser#default_role}
   */
   readonly defaultRole?: string;
   /**
   * (Default: `DEFAULT`) Specifies the secondary roles that are active for the user’s session upon login. Valid values are (case-insensitive): `DEFAULT` | `NONE` | `ALL`. More information can be found in [doc](https://docs.snowflake.com/en/sql-reference/sql/create-user#optional-object-properties-objectproperties).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#default_secondary_roles_option ServiceUser#default_secondary_roles_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#default_secondary_roles_option ServiceUser#default_secondary_roles_option}
   */
   readonly defaultSecondaryRolesOption?: string;
   /**
   * Specifies the virtual warehouse that is active by default for the user’s session upon login. Note that the CREATE USER operation does not verify that the warehouse exists. For more information about this resource, see [docs](./warehouse).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#default_warehouse ServiceUser#default_warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#default_warehouse ServiceUser#default_warehouse}
   */
   readonly defaultWarehouse?: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether the user is disabled, which prevents logging in and aborts all the currently-running queries for the user. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#disabled ServiceUser#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#disabled ServiceUser#disabled}
   */
   readonly disabled?: string;
   /**
   * Name displayed for the user in the Snowflake web interface.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#display_name ServiceUser#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#display_name ServiceUser#display_name}
   */
   readonly displayName?: string;
   /**
   * Email address for the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#email ServiceUser#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#email ServiceUser#email}
   */
   readonly email?: string;
   /**
+  * Specifies whether the output returned by the GET_DDL function contains data type synonyms specified in the original DDL statement. Data type synonyms are also called data type aliases. For more information, check [ENABLE_GET_DDL_USE_DATA_TYPE_ALIAS docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-get-ddl-use-data-type-alias).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#enable_get_ddl_use_data_type_alias ServiceUser#enable_get_ddl_use_data_type_alias}
+  */
+  readonly enableGetDdlUseDataTypeAlias?: boolean | cdktn.IResolvable;
+  /**
   * Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#enable_unload_physical_type_optimization ServiceUser#enable_unload_physical_type_optimization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#enable_unload_physical_type_optimization ServiceUser#enable_unload_physical_type_optimization}
   */
   readonly enableUnloadPhysicalTypeOptimization?: boolean | cdktn.IResolvable;
   /**
   * Controls whether query text is redacted if a SQL query fails due to a syntax or parsing error. If FALSE, the content of a failed query is redacted in the views, pages, and functions that provide a query history. Only users with a role that is granted or inherits the AUDIT privilege can set the ENABLE_UNREDACTED_QUERY_SYNTAX_ERROR parameter. When using the ALTER USER command to set the parameter to TRUE for a particular user, modify the user that you want to see the query text, not the user who executed the query (if those are different users). For more information, check [ENABLE_UNREDACTED_QUERY_SYNTAX_ERROR docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unredacted-query-syntax-error).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#enable_unredacted_query_syntax_error ServiceUser#enable_unredacted_query_syntax_error}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#enable_unredacted_query_syntax_error ServiceUser#enable_unredacted_query_syntax_error}
   */
   readonly enableUnredactedQuerySyntaxError?: boolean | cdktn.IResolvable;
   /**
   * Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#error_on_nondeterministic_merge ServiceUser#error_on_nondeterministic_merge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#error_on_nondeterministic_merge ServiceUser#error_on_nondeterministic_merge}
   */
   readonly errorOnNondeterministicMerge?: boolean | cdktn.IResolvable;
   /**
   * Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#error_on_nondeterministic_update ServiceUser#error_on_nondeterministic_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#error_on_nondeterministic_update ServiceUser#error_on_nondeterministic_update}
   */
   readonly errorOnNondeterministicUpdate?: boolean | cdktn.IResolvable;
   /**
   * Display format for [GEOGRAPHY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geography). Valid values are (case-insensitive): `GeoJSON` | `WKT` | `WKB` | `EWKT` | `EWKB`. For more information, check [GEOGRAPHY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geography-output-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#geography_output_format ServiceUser#geography_output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#geography_output_format ServiceUser#geography_output_format}
   */
   readonly geographyOutputFormat?: string;
   /**
   * Display format for [GEOMETRY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geometry). Valid values are (case-insensitive): `GeoJSON` | `WKT` | `WKB` | `EWKT` | `EWKB`. For more information, check [GEOMETRY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geometry-output-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#geometry_output_format ServiceUser#geometry_output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#geometry_output_format ServiceUser#geometry_output_format}
   */
   readonly geometryOutputFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#id ServiceUser#id}
+  * Number of seconds to wait while trying to acquire row-level locks on a hybrid table, before timing out and aborting the statement. For more information, check [HYBRID_TABLE_LOCK_TIMEOUT docs](https://docs.snowflake.com/en/sql-reference/parameters#hybrid-table-lock-timeout).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#hybrid_table_lock_timeout ServiceUser#hybrid_table_lock_timeout}
+  */
+  readonly hybridTableLockTimeout?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#id ServiceUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -196,271 +232,313 @@ export interface ServiceUserConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies how JDBC processes columns that have a scale of zero (0). For more information, check [JDBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-decimal-as-int).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#jdbc_treat_decimal_as_int ServiceUser#jdbc_treat_decimal_as_int}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#jdbc_treat_decimal_as_int ServiceUser#jdbc_treat_decimal_as_int}
   */
   readonly jdbcTreatDecimalAsInt?: boolean | cdktn.IResolvable;
   /**
   * Specifies how JDBC processes TIMESTAMP_NTZ values ([more details](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc)). For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#jdbc_treat_timestamp_ntz_as_utc ServiceUser#jdbc_treat_timestamp_ntz_as_utc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#jdbc_treat_timestamp_ntz_as_utc ServiceUser#jdbc_treat_timestamp_ntz_as_utc}
   */
   readonly jdbcTreatTimestampNtzAsUtc?: boolean | cdktn.IResolvable;
   /**
   * Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#jdbc_use_session_timezone ServiceUser#jdbc_use_session_timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#jdbc_use_session_timezone ServiceUser#jdbc_use_session_timezone}
   */
   readonly jdbcUseSessionTimezone?: boolean | cdktn.IResolvable;
   /**
+  * Specifies how the Snowflake Node.js Driver processes numeric columns that have a scale of zero (0), for example INTEGER or NUMBER(p, 0). For more information, check [JS_TREAT_INTEGER_AS_BIGINT docs](https://docs.snowflake.com/en/sql-reference/parameters#js-treat-integer-as-bigint).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#js_treat_integer_as_bigint ServiceUser#js_treat_integer_as_bigint}
+  */
+  readonly jsTreatIntegerAsBigint?: boolean | cdktn.IResolvable;
+  /**
   * Specifies the number of blank spaces to indent each new element in JSON output in the session. Also specifies whether to insert newline characters after each element. For more information, check [JSON_INDENT docs](https://docs.snowflake.com/en/sql-reference/parameters#json-indent).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#json_indent ServiceUser#json_indent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#json_indent ServiceUser#json_indent}
   */
   readonly jsonIndent?: number;
   /**
   * Number of seconds to wait while trying to lock a resource, before timing out and aborting the statement. For more information, check [LOCK_TIMEOUT docs](https://docs.snowflake.com/en/sql-reference/parameters#lock-timeout).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#lock_timeout ServiceUser#lock_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#lock_timeout ServiceUser#lock_timeout}
   */
   readonly lockTimeout?: number;
   /**
   * Specifies the severity level of log events (rows with record type EVENT) that should be ingested and made available in the active event table. Log events at the specified level (and at more severe levels) are ingested. Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`. For more information, check [LOG_EVENT_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-event-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#log_event_level ServiceUser#log_event_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#log_event_level ServiceUser#log_event_level}
   */
   readonly logEventLevel?: string;
   /**
   * Specifies the severity level of messages that should be ingested and made available in the active event table. Messages at the specified level (and at more severe levels) are ingested. Valid values are (case-insensitive): `TRACE` | `DEBUG` | `INFO` | `WARN` | `ERROR` | `FATAL` | `OFF`. For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#log_level ServiceUser#log_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#log_level ServiceUser#log_level}
   */
   readonly logLevel?: string;
   /**
   * The name users use to log in. If not supplied, snowflake will use name instead. Login names are always case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#login_name ServiceUser#login_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#login_name ServiceUser#login_name}
   */
   readonly loginName?: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of minutes until the temporary lock on the user login is cleared. To protect against unauthorized user login, Snowflake places a temporary lock on a user after five consecutive unsuccessful login attempts. When creating a user, this property can be set to prevent them from logging in until the specified amount of time passes. To remove a lock immediately for a user, specify a value of 0 for this parameter. **Note** because this value changes continuously after setting it, the provider is currently NOT handling the external changes to it. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#mins_to_unlock ServiceUser#mins_to_unlock}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#mins_to_unlock ServiceUser#mins_to_unlock}
   */
   readonly minsToUnlock?: number;
   /**
   * Number of statements to execute when using the multi-statement capability. For more information, check [MULTI_STATEMENT_COUNT docs](https://docs.snowflake.com/en/sql-reference/parameters#multi-statement-count).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#multi_statement_count ServiceUser#multi_statement_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#multi_statement_count ServiceUser#multi_statement_count}
   */
   readonly multiStatementCount?: number;
   /**
   * Name of the user. Note that if you do not supply login_name this will be used as login_name. Check the [docs](https://docs.snowflake.net/manuals/sql-reference/sql/create-user.html#required-parameters). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#name ServiceUser#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#name ServiceUser#name}
   */
   readonly name: string;
   /**
   * Specifies the network policy to enforce for your account. Network policies enable restricting access to your account based on users’ IP address. For more details, see [Controlling network traffic with network policies](https://docs.snowflake.com/en/user-guide/network-policies). For more information, check [NETWORK_POLICY docs](https://docs.snowflake.com/en/sql-reference/parameters#network-policy).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#network_policy ServiceUser#network_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#network_policy ServiceUser#network_policy}
   */
   readonly networkPolicy?: string;
   /**
   * Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column. The ORDER and NOORDER properties determine whether or not the values are generated for the sequence or auto-incremented column in [increasing or decreasing order](https://docs.snowflake.com/en/user-guide/querying-sequences.html#label-querying-sequences-increasing-values). For more information, check [NOORDER_SEQUENCE_AS_DEFAULT docs](https://docs.snowflake.com/en/sql-reference/parameters#noorder-sequence-as-default).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#noorder_sequence_as_default ServiceUser#noorder_sequence_as_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#noorder_sequence_as_default ServiceUser#noorder_sequence_as_default}
   */
   readonly noorderSequenceAsDefault?: boolean | cdktn.IResolvable;
   /**
   * Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#odbc_treat_decimal_as_int ServiceUser#odbc_treat_decimal_as_int}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#odbc_treat_decimal_as_int ServiceUser#odbc_treat_decimal_as_int}
   */
   readonly odbcTreatDecimalAsInt?: boolean | cdktn.IResolvable;
   /**
   * Specifies whether to prevent data unload operations to internal (Snowflake) stages using [COPY INTO location](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location) statements. For more information, check [PREVENT_UNLOAD_TO_INTERNAL_STAGES docs](https://docs.snowflake.com/en/sql-reference/parameters#prevent-unload-to-internal-stages).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#prevent_unload_to_internal_stages ServiceUser#prevent_unload_to_internal_stages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#prevent_unload_to_internal_stages ServiceUser#prevent_unload_to_internal_stages}
   */
   readonly preventUnloadToInternalStages?: boolean | cdktn.IResolvable;
   /**
+  * Specifies the list of Python modules to include in a report when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). For more information, check [PYTHON_PROFILER_MODULES docs](https://docs.snowflake.com/en/sql-reference/parameters#python-profiler-modules).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#python_profiler_modules ServiceUser#python_profiler_modules}
+  */
+  readonly pythonProfilerModules?: string;
+  /**
+  * Specifies the fully-qualified name of the stage in which to save a report when [profiling Python handler code](https://docs.snowflake.com/en/developer-guide/stored-procedure/python/procedure-python-profiler). For more information, check [PYTHON_PROFILER_TARGET_STAGE docs](https://docs.snowflake.com/en/sql-reference/parameters#python-profiler-target-stage).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#python_profiler_target_stage ServiceUser#python_profiler_target_stage}
+  */
+  readonly pythonProfilerTargetStage?: string;
+  /**
   * Optional string that can be used to tag queries and other SQL statements executed within a session. The tags are displayed in the output of the [QUERY_HISTORY, QUERY_HISTORY_BY_*](https://docs.snowflake.com/en/sql-reference/functions/query_history) functions. For more information, check [QUERY_TAG docs](https://docs.snowflake.com/en/sql-reference/parameters#query-tag).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#query_tag ServiceUser#query_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#query_tag ServiceUser#query_tag}
   */
   readonly queryTag?: string;
   /**
   * If true, the case of quoted identifiers is ignored. For more information, check [QUOTED_IDENTIFIERS_IGNORE_CASE docs](https://docs.snowflake.com/en/sql-reference/parameters#quoted-identifiers-ignore-case).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#quoted_identifiers_ignore_case ServiceUser#quoted_identifiers_ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#quoted_identifiers_ignore_case ServiceUser#quoted_identifiers_ignore_case}
   */
   readonly quotedIdentifiersIgnoreCase?: boolean | cdktn.IResolvable;
   /**
   * Specifies the maximum number of rows returned in a result set. A value of 0 specifies no maximum. For more information, check [ROWS_PER_RESULTSET docs](https://docs.snowflake.com/en/sql-reference/parameters#rows-per-resultset).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#rows_per_resultset ServiceUser#rows_per_resultset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rows_per_resultset ServiceUser#rows_per_resultset}
   */
   readonly rowsPerResultset?: number;
   /**
   * Specifies the user’s RSA public key; used for key-pair authentication. Must be on 1 line without header and trailer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#rsa_public_key ServiceUser#rsa_public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rsa_public_key ServiceUser#rsa_public_key}
   */
   readonly rsaPublicKey?: string;
   /**
   * Specifies the user’s second RSA public key; used to rotate the public and private keys for key-pair authentication based on an expiration schedule set by your organization. Must be on 1 line without header and trailer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#rsa_public_key_2 ServiceUser#rsa_public_key_2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rsa_public_key_2 ServiceUser#rsa_public_key_2}
   */
   readonly rsaPublicKey2?: string;
   /**
+  * Specifies the user’s second RSA public key; used to rotate the public and private keys for key-pair authentication based on an expiration schedule set by your organization. Must be on 1 line without header and trailer. The value of this field is never saved in the Terraform plan or state, so it can be set from an ephemeral resource. Requires Terraform 1.11 or later. Because Terraform can not detect changes to a write-only value, changes to this field are applied only when `rsa_public_key_2_wo_version` changes. External changes for this field won't be detected; to push the value from your configuration to Snowflake again, increment `rsa_public_key_2_wo_version`. Conflicts with the non-write-only variant of this field. This field can be only used when `WRITE_ONLY_ATTRIBUTES` option is specified in provider block in the [`experimental_features_enabled`](../#experimental_features_enabled-1) field.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rsa_public_key_2_wo ServiceUser#rsa_public_key_2_wo}
+  */
+  readonly rsaPublicKey2Wo?: string;
+  /**
+  * Version counter for `rsa_public_key_2_wo`. Because Terraform can not detect changes to a write-only value, increment this field to push the current value of `rsa_public_key_2_wo` to Snowflake. Removing both fields unsets the value. This field can be only used when `WRITE_ONLY_ATTRIBUTES` option is specified in provider block in the [`experimental_features_enabled`](../#experimental_features_enabled-1) field.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rsa_public_key_2_wo_version ServiceUser#rsa_public_key_2_wo_version}
+  */
+  readonly rsaPublicKey2WoVersion?: number;
+  /**
+  * Specifies the user’s RSA public key; used for key-pair authentication. Must be on 1 line without header and trailer. The value of this field is never saved in the Terraform plan or state, so it can be set from an ephemeral resource. Requires Terraform 1.11 or later. Because Terraform can not detect changes to a write-only value, changes to this field are applied only when `rsa_public_key_wo_version` changes. External changes for this field won't be detected; to push the value from your configuration to Snowflake again, increment `rsa_public_key_wo_version`. Conflicts with the non-write-only variant of this field. This field can be only used when `WRITE_ONLY_ATTRIBUTES` option is specified in provider block in the [`experimental_features_enabled`](../#experimental_features_enabled-1) field.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rsa_public_key_wo ServiceUser#rsa_public_key_wo}
+  */
+  readonly rsaPublicKeyWo?: string;
+  /**
+  * Version counter for `rsa_public_key_wo`. Because Terraform can not detect changes to a write-only value, increment this field to push the current value of `rsa_public_key_wo` to Snowflake. Removing both fields unsets the value. This field can be only used when `WRITE_ONLY_ATTRIBUTES` option is specified in provider block in the [`experimental_features_enabled`](../#experimental_features_enabled-1) field.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#rsa_public_key_wo_version ServiceUser#rsa_public_key_wo_version}
+  */
+  readonly rsaPublicKeyWoVersion?: number;
+  /**
   * Specifies the DNS name of an Amazon S3 interface endpoint. Requests sent to the internal stage of an account via [AWS PrivateLink for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html) use this endpoint to connect. For more information, see [Accessing Internal stages with dedicated interface endpoints](https://docs.snowflake.com/en/user-guide/private-internal-stages-aws.html#label-aws-privatelink-internal-stage-network-isolation). For more information, check [S3_STAGE_VPCE_DNS_NAME docs](https://docs.snowflake.com/en/sql-reference/parameters#s3-stage-vpce-dns-name).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#s3_stage_vpce_dns_name ServiceUser#s3_stage_vpce_dns_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#s3_stage_vpce_dns_name ServiceUser#s3_stage_vpce_dns_name}
   */
   readonly s3StageVpceDnsName?: string;
   /**
   * Specifies the path to search to resolve unqualified object names in queries. For more information, see [Name resolution in queries](https://docs.snowflake.com/en/sql-reference/name-resolution.html#label-object-name-resolution-search-path). Comma-separated list of identifiers. An identifier can be a fully or partially qualified schema name. For more information, check [SEARCH_PATH docs](https://docs.snowflake.com/en/sql-reference/parameters#search-path).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#search_path ServiceUser#search_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#search_path ServiceUser#search_path}
   */
   readonly searchPath?: string;
   /**
   * Specifies the name of a consumer account to simulate for testing/validating shared data, particularly shared secure views. When this parameter is set in a session, shared views return rows as if executed in the specified consumer account rather than the provider account. For more information, check [SIMULATED_DATA_SHARING_CONSUMER docs](https://docs.snowflake.com/en/sql-reference/parameters#simulated-data-sharing-consumer).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#simulated_data_sharing_consumer ServiceUser#simulated_data_sharing_consumer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#simulated_data_sharing_consumer ServiceUser#simulated_data_sharing_consumer}
   */
   readonly simulatedDataSharingConsumer?: string;
   /**
   * Amount of time, in seconds, a SQL statement (query, DDL, DML, etc.) remains queued for a warehouse before it is canceled by the system. This parameter can be used in conjunction with the [MAX_CONCURRENCY_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#label-max-concurrency-level) parameter to ensure a warehouse is never backlogged. For more information, check [STATEMENT_QUEUED_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-queued-timeout-in-seconds).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#statement_queued_timeout_in_seconds ServiceUser#statement_queued_timeout_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#statement_queued_timeout_in_seconds ServiceUser#statement_queued_timeout_in_seconds}
   */
   readonly statementQueuedTimeoutInSeconds?: number;
   /**
   * Amount of time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system. For more information, check [STATEMENT_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-timeout-in-seconds).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#statement_timeout_in_seconds ServiceUser#statement_timeout_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#statement_timeout_in_seconds ServiceUser#statement_timeout_in_seconds}
   */
   readonly statementTimeoutInSeconds?: number;
   /**
   * This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#strict_json_output ServiceUser#strict_json_output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#strict_json_output ServiceUser#strict_json_output}
   */
   readonly strictJsonOutput?: boolean | cdktn.IResolvable;
   /**
   * Specifies the input format for the TIME data type. For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). Any valid, supported time format or AUTO (AUTO specifies that Snowflake attempts to automatically detect the format of times stored in the system during the session). For more information, check [TIME_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#time-input-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#time_input_format ServiceUser#time_input_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#time_input_format ServiceUser#time_input_format}
   */
   readonly timeInputFormat?: string;
   /**
   * Specifies the display format for the TIME data type. For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIME_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#time-output-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#time_output_format ServiceUser#time_output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#time_output_format ServiceUser#time_output_format}
   */
   readonly timeOutputFormat?: string;
   /**
   * Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_day_is_always_24h ServiceUser#timestamp_day_is_always_24h}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_day_is_always_24h ServiceUser#timestamp_day_is_always_24h}
   */
   readonly timestampDayIsAlways24H?: boolean | cdktn.IResolvable;
   /**
   * Specifies the input format for the TIMESTAMP data type alias. For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). Any valid, supported timestamp format or AUTO (AUTO specifies that Snowflake attempts to automatically detect the format of timestamps stored in the system during the session). For more information, check [TIMESTAMP_INPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-input-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_input_format ServiceUser#timestamp_input_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_input_format ServiceUser#timestamp_input_format}
   */
   readonly timestampInputFormat?: string;
   /**
   * Specifies the display format for the TIMESTAMP_LTZ data type. If no format is specified, defaults to [TIMESTAMP_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-output-format). For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIMESTAMP_LTZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-ltz-output-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_ltz_output_format ServiceUser#timestamp_ltz_output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_ltz_output_format ServiceUser#timestamp_ltz_output_format}
   */
   readonly timestampLtzOutputFormat?: string;
   /**
   * Specifies the display format for the TIMESTAMP_NTZ data type. For more information, check [TIMESTAMP_NTZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-ntz-output-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_ntz_output_format ServiceUser#timestamp_ntz_output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_ntz_output_format ServiceUser#timestamp_ntz_output_format}
   */
   readonly timestampNtzOutputFormat?: string;
   /**
   * Specifies the display format for the TIMESTAMP data type alias. For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIMESTAMP_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-output-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_output_format ServiceUser#timestamp_output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_output_format ServiceUser#timestamp_output_format}
   */
   readonly timestampOutputFormat?: string;
   /**
   * Specifies the TIMESTAMP_* variation that the TIMESTAMP data type alias maps to. Valid values are (case-insensitive): `TIMESTAMP_LTZ` | `TIMESTAMP_NTZ` | `TIMESTAMP_TZ`. For more information, check [TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-type-mapping).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_type_mapping ServiceUser#timestamp_type_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_type_mapping ServiceUser#timestamp_type_mapping}
   */
   readonly timestampTypeMapping?: string;
   /**
   * Specifies the display format for the TIMESTAMP_TZ data type. If no format is specified, defaults to [TIMESTAMP_OUTPUT_FORMAT](https://docs.snowflake.com/en/sql-reference/parameters#label-timestamp-output-format). For more information, see [Date and time input and output formats](https://docs.snowflake.com/en/sql-reference/date-time-input-output). For more information, check [TIMESTAMP_TZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-tz-output-format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timestamp_tz_output_format ServiceUser#timestamp_tz_output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timestamp_tz_output_format ServiceUser#timestamp_tz_output_format}
   */
   readonly timestampTzOutputFormat?: string;
   /**
   * Specifies the time zone for the session. You can specify a [time zone name](https://data.iana.org/time-zones/tzdb-2021a/zone1970.tab) or a [link name](https://data.iana.org/time-zones/tzdb-2021a/backward) from release 2021a of the [IANA Time Zone Database](https://www.iana.org/time-zones) (e.g. America/Los_Angeles, Europe/London, UTC, Etc/GMT, etc.). For more information, check [TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#timezone).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#timezone ServiceUser#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#timezone ServiceUser#timezone}
   */
   readonly timezone?: string;
   /**
   * Controls how trace events are ingested into the event table. Valid values are (case-insensitive): `ALWAYS` | `ON_EVENT` | `PROPAGATE` | `OFF`. For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#trace_level ServiceUser#trace_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#trace_level ServiceUser#trace_level}
   */
   readonly traceLevel?: string;
   /**
   * Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error. For more information, check [TRANSACTION_ABORT_ON_ERROR docs](https://docs.snowflake.com/en/sql-reference/parameters#transaction-abort-on-error).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#transaction_abort_on_error ServiceUser#transaction_abort_on_error}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#transaction_abort_on_error ServiceUser#transaction_abort_on_error}
   */
   readonly transactionAbortOnError?: boolean | cdktn.IResolvable;
   /**
   * Specifies the isolation level for transactions in the user session. Valid values are (case-insensitive): `READ COMMITTED`. For more information, check [TRANSACTION_DEFAULT_ISOLATION_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#transaction-default-isolation-level).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#transaction_default_isolation_level ServiceUser#transaction_default_isolation_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#transaction_default_isolation_level ServiceUser#transaction_default_isolation_level}
   */
   readonly transactionDefaultIsolationLevel?: string;
   /**
   * Specifies the “century start” year for 2-digit years (i.e. the earliest year such dates can represent). This parameter prevents ambiguous dates when importing or converting data with the `YY` date format component (i.e. years represented as 2 digits). For more information, check [TWO_DIGIT_CENTURY_START docs](https://docs.snowflake.com/en/sql-reference/parameters#two-digit-century-start).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#two_digit_century_start ServiceUser#two_digit_century_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#two_digit_century_start ServiceUser#two_digit_century_start}
   */
   readonly twoDigitCenturyStart?: number;
   /**
   * Determines if an unsupported (i.e. non-default) value specified for a constraint property returns an error. Valid values are (case-insensitive): `IGNORE` | `FAIL`. For more information, check [UNSUPPORTED_DDL_ACTION docs](https://docs.snowflake.com/en/sql-reference/parameters#unsupported-ddl-action).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#unsupported_ddl_action ServiceUser#unsupported_ddl_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#unsupported_ddl_action ServiceUser#unsupported_ddl_action}
   */
   readonly unsupportedDdlAction?: string;
   /**
   * Specifies whether to reuse persisted query results, if available, when a matching query is submitted. For more information, check [USE_CACHED_RESULT docs](https://docs.snowflake.com/en/sql-reference/parameters#use-cached-result).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#use_cached_result ServiceUser#use_cached_result}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#use_cached_result ServiceUser#use_cached_result}
   */
   readonly useCachedResult?: boolean | cdktn.IResolvable;
   /**
   * Specifies how the weeks in a given year are computed. `0`: The semantics used are equivalent to the ISO semantics, in which a week belongs to a given year if at least 4 days of that week are in that year. `1`: January 1 is included in the first week of the year and December 31 is included in the last week of the year. For more information, check [WEEK_OF_YEAR_POLICY docs](https://docs.snowflake.com/en/sql-reference/parameters#week-of-year-policy).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#week_of_year_policy ServiceUser#week_of_year_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#week_of_year_policy ServiceUser#week_of_year_policy}
   */
   readonly weekOfYearPolicy?: number;
   /**
   * Specifies the first day of the week (used by week-related date functions). `0`: Legacy Snowflake behavior is used (i.e. ISO-like semantics). `1` (Monday) to `7` (Sunday): All the week-related functions use weeks that start on the specified day of the week. For more information, check [WEEK_START docs](https://docs.snowflake.com/en/sql-reference/parameters#week-start).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#week_start ServiceUser#week_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#week_start ServiceUser#week_start}
   */
   readonly weekStart?: number;
   /**
   * default_workload_identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#default_workload_identity ServiceUser#default_workload_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#default_workload_identity ServiceUser#default_workload_identity}
   */
   readonly defaultWorkloadIdentity?: ServiceUserDefaultWorkloadIdentity;
 }
@@ -557,6 +635,101 @@ export class ServiceUserParametersAbortDetachedQueryList extends cdktn.ComplexLi
   */
   public get(index: number): ServiceUserParametersAbortDetachedQueryOutputReference {
     return new ServiceUserParametersAbortDetachedQueryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ServiceUserParametersActivePythonProfiler {
+}
+
+export function serviceUserParametersActivePythonProfilerToTerraform(struct?: ServiceUserParametersActivePythonProfiler): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function serviceUserParametersActivePythonProfilerToHclTerraform(struct?: ServiceUserParametersActivePythonProfiler): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ServiceUserParametersActivePythonProfilerOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceUserParametersActivePythonProfiler | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceUserParametersActivePythonProfiler | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class ServiceUserParametersActivePythonProfilerList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceUserParametersActivePythonProfilerOutputReference {
+    return new ServiceUserParametersActivePythonProfilerOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface ServiceUserParametersAutocommit {
@@ -844,6 +1017,101 @@ export class ServiceUserParametersBinaryOutputFormatList extends cdktn.ComplexLi
     return new ServiceUserParametersBinaryOutputFormatOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface ServiceUserParametersClientEnableLogInfoStatementParameters {
+}
+
+export function serviceUserParametersClientEnableLogInfoStatementParametersToTerraform(struct?: ServiceUserParametersClientEnableLogInfoStatementParameters): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function serviceUserParametersClientEnableLogInfoStatementParametersToHclTerraform(struct?: ServiceUserParametersClientEnableLogInfoStatementParameters): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceUserParametersClientEnableLogInfoStatementParameters | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceUserParametersClientEnableLogInfoStatementParameters | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class ServiceUserParametersClientEnableLogInfoStatementParametersList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference {
+    return new ServiceUserParametersClientEnableLogInfoStatementParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceUserParametersClientMemoryLimit {
 }
 
@@ -1032,6 +1300,101 @@ export class ServiceUserParametersClientMetadataRequestUseConnectionCtxList exte
   */
   public get(index: number): ServiceUserParametersClientMetadataRequestUseConnectionCtxOutputReference {
     return new ServiceUserParametersClientMetadataRequestUseConnectionCtxOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ServiceUserParametersClientMetadataUseSessionDatabase {
+}
+
+export function serviceUserParametersClientMetadataUseSessionDatabaseToTerraform(struct?: ServiceUserParametersClientMetadataUseSessionDatabase): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function serviceUserParametersClientMetadataUseSessionDatabaseToHclTerraform(struct?: ServiceUserParametersClientMetadataUseSessionDatabase): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceUserParametersClientMetadataUseSessionDatabase | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceUserParametersClientMetadataUseSessionDatabase | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class ServiceUserParametersClientMetadataUseSessionDatabaseList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference {
+    return new ServiceUserParametersClientMetadataUseSessionDatabaseOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface ServiceUserParametersClientPrefetchThreads {
@@ -1604,6 +1967,101 @@ export class ServiceUserParametersClientTimestampTypeMappingList extends cdktn.C
     return new ServiceUserParametersClientTimestampTypeMappingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface ServiceUserParametersCsvTimestampFormat {
+}
+
+export function serviceUserParametersCsvTimestampFormatToTerraform(struct?: ServiceUserParametersCsvTimestampFormat): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function serviceUserParametersCsvTimestampFormatToHclTerraform(struct?: ServiceUserParametersCsvTimestampFormat): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ServiceUserParametersCsvTimestampFormatOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceUserParametersCsvTimestampFormat | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceUserParametersCsvTimestampFormat | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class ServiceUserParametersCsvTimestampFormatList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceUserParametersCsvTimestampFormatOutputReference {
+    return new ServiceUserParametersCsvTimestampFormatOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceUserParametersDateInputFormat {
 }
 
@@ -1792,6 +2250,101 @@ export class ServiceUserParametersDateOutputFormatList extends cdktn.ComplexList
   */
   public get(index: number): ServiceUserParametersDateOutputFormatOutputReference {
     return new ServiceUserParametersDateOutputFormatOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ServiceUserParametersEnableGetDdlUseDataTypeAlias {
+}
+
+export function serviceUserParametersEnableGetDdlUseDataTypeAliasToTerraform(struct?: ServiceUserParametersEnableGetDdlUseDataTypeAlias): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function serviceUserParametersEnableGetDdlUseDataTypeAliasToHclTerraform(struct?: ServiceUserParametersEnableGetDdlUseDataTypeAlias): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceUserParametersEnableGetDdlUseDataTypeAlias | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceUserParametersEnableGetDdlUseDataTypeAlias | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class ServiceUserParametersEnableGetDdlUseDataTypeAliasList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference {
+    return new ServiceUserParametersEnableGetDdlUseDataTypeAliasOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface ServiceUserParametersEnableUnloadPhysicalTypeOptimization {
@@ -2364,6 +2917,101 @@ export class ServiceUserParametersGeometryOutputFormatList extends cdktn.Complex
     return new ServiceUserParametersGeometryOutputFormatOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface ServiceUserParametersHybridTableLockTimeout {
+}
+
+export function serviceUserParametersHybridTableLockTimeoutToTerraform(struct?: ServiceUserParametersHybridTableLockTimeout): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function serviceUserParametersHybridTableLockTimeoutToHclTerraform(struct?: ServiceUserParametersHybridTableLockTimeout): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ServiceUserParametersHybridTableLockTimeoutOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceUserParametersHybridTableLockTimeout | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceUserParametersHybridTableLockTimeout | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class ServiceUserParametersHybridTableLockTimeoutList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceUserParametersHybridTableLockTimeoutOutputReference {
+    return new ServiceUserParametersHybridTableLockTimeoutOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServiceUserParametersJdbcTreatDecimalAsInt {
 }
 
@@ -2647,6 +3295,101 @@ export class ServiceUserParametersJdbcUseSessionTimezoneList extends cdktn.Compl
   */
   public get(index: number): ServiceUserParametersJdbcUseSessionTimezoneOutputReference {
     return new ServiceUserParametersJdbcUseSessionTimezoneOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ServiceUserParametersJsTreatIntegerAsBigint {
+}
+
+export function serviceUserParametersJsTreatIntegerAsBigintToTerraform(struct?: ServiceUserParametersJsTreatIntegerAsBigint): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function serviceUserParametersJsTreatIntegerAsBigintToHclTerraform(struct?: ServiceUserParametersJsTreatIntegerAsBigint): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ServiceUserParametersJsTreatIntegerAsBigintOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceUserParametersJsTreatIntegerAsBigint | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceUserParametersJsTreatIntegerAsBigint | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class ServiceUserParametersJsTreatIntegerAsBigintList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceUserParametersJsTreatIntegerAsBigintOutputReference {
+    return new ServiceUserParametersJsTreatIntegerAsBigintOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface ServiceUserParametersJsonIndent {
@@ -3502,6 +4245,196 @@ export class ServiceUserParametersPreventUnloadToInternalStagesList extends cdkt
   */
   public get(index: number): ServiceUserParametersPreventUnloadToInternalStagesOutputReference {
     return new ServiceUserParametersPreventUnloadToInternalStagesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ServiceUserParametersPythonProfilerModules {
+}
+
+export function serviceUserParametersPythonProfilerModulesToTerraform(struct?: ServiceUserParametersPythonProfilerModules): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function serviceUserParametersPythonProfilerModulesToHclTerraform(struct?: ServiceUserParametersPythonProfilerModules): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ServiceUserParametersPythonProfilerModulesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceUserParametersPythonProfilerModules | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceUserParametersPythonProfilerModules | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class ServiceUserParametersPythonProfilerModulesList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceUserParametersPythonProfilerModulesOutputReference {
+    return new ServiceUserParametersPythonProfilerModulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ServiceUserParametersPythonProfilerTargetStage {
+}
+
+export function serviceUserParametersPythonProfilerTargetStageToTerraform(struct?: ServiceUserParametersPythonProfilerTargetStage): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function serviceUserParametersPythonProfilerTargetStageToHclTerraform(struct?: ServiceUserParametersPythonProfilerTargetStage): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ServiceUserParametersPythonProfilerTargetStageOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServiceUserParametersPythonProfilerTargetStage | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServiceUserParametersPythonProfilerTargetStage | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class ServiceUserParametersPythonProfilerTargetStageList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServiceUserParametersPythonProfilerTargetStageOutputReference {
+    return new ServiceUserParametersPythonProfilerTargetStageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface ServiceUserParametersQueryTag {
@@ -6126,6 +7059,12 @@ export class ServiceUserParametersOutputReference extends cdktn.ComplexObject {
     return this._abortDetachedQuery;
   }
 
+  // active_python_profiler - computed: true, optional: false, required: false
+  private _activePythonProfiler = new ServiceUserParametersActivePythonProfilerList(this, "active_python_profiler", false);
+  public get activePythonProfiler() {
+    return this._activePythonProfiler;
+  }
+
   // autocommit - computed: true, optional: false, required: false
   private _autocommit = new ServiceUserParametersAutocommitList(this, "autocommit", false);
   public get autocommit() {
@@ -6144,6 +7083,12 @@ export class ServiceUserParametersOutputReference extends cdktn.ComplexObject {
     return this._binaryOutputFormat;
   }
 
+  // client_enable_log_info_statement_parameters - computed: true, optional: false, required: false
+  private _clientEnableLogInfoStatementParameters = new ServiceUserParametersClientEnableLogInfoStatementParametersList(this, "client_enable_log_info_statement_parameters", false);
+  public get clientEnableLogInfoStatementParameters() {
+    return this._clientEnableLogInfoStatementParameters;
+  }
+
   // client_memory_limit - computed: true, optional: false, required: false
   private _clientMemoryLimit = new ServiceUserParametersClientMemoryLimitList(this, "client_memory_limit", false);
   public get clientMemoryLimit() {
@@ -6154,6 +7099,12 @@ export class ServiceUserParametersOutputReference extends cdktn.ComplexObject {
   private _clientMetadataRequestUseConnectionCtx = new ServiceUserParametersClientMetadataRequestUseConnectionCtxList(this, "client_metadata_request_use_connection_ctx", false);
   public get clientMetadataRequestUseConnectionCtx() {
     return this._clientMetadataRequestUseConnectionCtx;
+  }
+
+  // client_metadata_use_session_database - computed: true, optional: false, required: false
+  private _clientMetadataUseSessionDatabase = new ServiceUserParametersClientMetadataUseSessionDatabaseList(this, "client_metadata_use_session_database", false);
+  public get clientMetadataUseSessionDatabase() {
+    return this._clientMetadataUseSessionDatabase;
   }
 
   // client_prefetch_threads - computed: true, optional: false, required: false
@@ -6192,6 +7143,12 @@ export class ServiceUserParametersOutputReference extends cdktn.ComplexObject {
     return this._clientTimestampTypeMapping;
   }
 
+  // csv_timestamp_format - computed: true, optional: false, required: false
+  private _csvTimestampFormat = new ServiceUserParametersCsvTimestampFormatList(this, "csv_timestamp_format", false);
+  public get csvTimestampFormat() {
+    return this._csvTimestampFormat;
+  }
+
   // date_input_format - computed: true, optional: false, required: false
   private _dateInputFormat = new ServiceUserParametersDateInputFormatList(this, "date_input_format", false);
   public get dateInputFormat() {
@@ -6202,6 +7159,12 @@ export class ServiceUserParametersOutputReference extends cdktn.ComplexObject {
   private _dateOutputFormat = new ServiceUserParametersDateOutputFormatList(this, "date_output_format", false);
   public get dateOutputFormat() {
     return this._dateOutputFormat;
+  }
+
+  // enable_get_ddl_use_data_type_alias - computed: true, optional: false, required: false
+  private _enableGetDdlUseDataTypeAlias = new ServiceUserParametersEnableGetDdlUseDataTypeAliasList(this, "enable_get_ddl_use_data_type_alias", false);
+  public get enableGetDdlUseDataTypeAlias() {
+    return this._enableGetDdlUseDataTypeAlias;
   }
 
   // enable_unload_physical_type_optimization - computed: true, optional: false, required: false
@@ -6240,6 +7203,12 @@ export class ServiceUserParametersOutputReference extends cdktn.ComplexObject {
     return this._geometryOutputFormat;
   }
 
+  // hybrid_table_lock_timeout - computed: true, optional: false, required: false
+  private _hybridTableLockTimeout = new ServiceUserParametersHybridTableLockTimeoutList(this, "hybrid_table_lock_timeout", false);
+  public get hybridTableLockTimeout() {
+    return this._hybridTableLockTimeout;
+  }
+
   // jdbc_treat_decimal_as_int - computed: true, optional: false, required: false
   private _jdbcTreatDecimalAsInt = new ServiceUserParametersJdbcTreatDecimalAsIntList(this, "jdbc_treat_decimal_as_int", false);
   public get jdbcTreatDecimalAsInt() {
@@ -6256,6 +7225,12 @@ export class ServiceUserParametersOutputReference extends cdktn.ComplexObject {
   private _jdbcUseSessionTimezone = new ServiceUserParametersJdbcUseSessionTimezoneList(this, "jdbc_use_session_timezone", false);
   public get jdbcUseSessionTimezone() {
     return this._jdbcUseSessionTimezone;
+  }
+
+  // js_treat_integer_as_bigint - computed: true, optional: false, required: false
+  private _jsTreatIntegerAsBigint = new ServiceUserParametersJsTreatIntegerAsBigintList(this, "js_treat_integer_as_bigint", false);
+  public get jsTreatIntegerAsBigint() {
+    return this._jsTreatIntegerAsBigint;
   }
 
   // json_indent - computed: true, optional: false, required: false
@@ -6310,6 +7285,18 @@ export class ServiceUserParametersOutputReference extends cdktn.ComplexObject {
   private _preventUnloadToInternalStages = new ServiceUserParametersPreventUnloadToInternalStagesList(this, "prevent_unload_to_internal_stages", false);
   public get preventUnloadToInternalStages() {
     return this._preventUnloadToInternalStages;
+  }
+
+  // python_profiler_modules - computed: true, optional: false, required: false
+  private _pythonProfilerModules = new ServiceUserParametersPythonProfilerModulesList(this, "python_profiler_modules", false);
+  public get pythonProfilerModules() {
+    return this._pythonProfilerModules;
+  }
+
+  // python_profiler_target_stage - computed: true, optional: false, required: false
+  private _pythonProfilerTargetStage = new ServiceUserParametersPythonProfilerTargetStageList(this, "python_profiler_target_stage", false);
+  public get pythonProfilerTargetStage() {
+    return this._pythonProfilerTargetStage;
   }
 
   // query_tag - computed: true, optional: false, required: false
@@ -6712,13 +7699,13 @@ export interface ServiceUserDefaultWorkloadIdentityAws {
   /**
   * The ARN of the AWS IAM role to use for workload identity federation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#arn ServiceUser#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#arn ServiceUser#arn}
   */
   readonly arn: string;
   /**
   * The AWS issuer URL. Required for JWT-based (GetWebIdentityToken) workload identity federation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#issuer ServiceUser#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#issuer ServiceUser#issuer}
   */
   readonly issuer?: string;
 }
@@ -6830,13 +7817,13 @@ export interface ServiceUserDefaultWorkloadIdentityAzure {
   /**
   * The Azure issuer URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#issuer ServiceUser#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#issuer ServiceUser#issuer}
   */
   readonly issuer: string;
   /**
   * The Azure subject identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#subject ServiceUser#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#subject ServiceUser#subject}
   */
   readonly subject: string;
 }
@@ -6945,7 +7932,7 @@ export interface ServiceUserDefaultWorkloadIdentityGcp {
   /**
   * The GCP service account subject identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#subject ServiceUser#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#subject ServiceUser#subject}
   */
   readonly subject: string;
 }
@@ -7028,19 +8015,19 @@ export interface ServiceUserDefaultWorkloadIdentityOidc {
   /**
   * The OIDC issuer URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#issuer ServiceUser#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#issuer ServiceUser#issuer}
   */
   readonly issuer: string;
   /**
   * List of allowed OIDC audiences.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#oidc_audience_list ServiceUser#oidc_audience_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#oidc_audience_list ServiceUser#oidc_audience_list}
   */
   readonly oidcAudienceList?: string[];
   /**
   * The OIDC subject identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#subject ServiceUser#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#subject ServiceUser#subject}
   */
   readonly subject: string;
 }
@@ -7178,25 +8165,25 @@ export interface ServiceUserDefaultWorkloadIdentity {
   /**
   * aws block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#aws ServiceUser#aws}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#aws ServiceUser#aws}
   */
   readonly aws?: ServiceUserDefaultWorkloadIdentityAws;
   /**
   * azure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#azure ServiceUser#azure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#azure ServiceUser#azure}
   */
   readonly azure?: ServiceUserDefaultWorkloadIdentityAzure;
   /**
   * gcp block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#gcp ServiceUser#gcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#gcp ServiceUser#gcp}
   */
   readonly gcp?: ServiceUserDefaultWorkloadIdentityGcp;
   /**
   * oidc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#oidc ServiceUser#oidc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#oidc ServiceUser#oidc}
   */
   readonly oidc?: ServiceUserDefaultWorkloadIdentityOidc;
 }
@@ -7367,7 +8354,7 @@ export class ServiceUserDefaultWorkloadIdentityOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user snowflake_service_user}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user snowflake_service_user}
 */
 export class ServiceUser extends cdktn.TerraformResource {
 
@@ -7383,7 +8370,7 @@ export class ServiceUser extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ServiceUser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceUser to import
-  * @param importFromId The id of the existing ServiceUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServiceUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -7395,7 +8382,7 @@ export class ServiceUser extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/service_user snowflake_service_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/service_user snowflake_service_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -7406,7 +8393,7 @@ export class ServiceUser extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_service_user',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.22.1',
+        providerVersion: '2.23.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -7418,11 +8405,14 @@ export class ServiceUser extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._abortDetachedQuery = config.abortDetachedQuery;
+    this._activePythonProfiler = config.activePythonProfiler;
     this._autocommit = config.autocommit;
     this._binaryInputFormat = config.binaryInputFormat;
     this._binaryOutputFormat = config.binaryOutputFormat;
+    this._clientEnableLogInfoStatementParameters = config.clientEnableLogInfoStatementParameters;
     this._clientMemoryLimit = config.clientMemoryLimit;
     this._clientMetadataRequestUseConnectionCtx = config.clientMetadataRequestUseConnectionCtx;
+    this._clientMetadataUseSessionDatabase = config.clientMetadataUseSessionDatabase;
     this._clientPrefetchThreads = config.clientPrefetchThreads;
     this._clientResultChunkSize = config.clientResultChunkSize;
     this._clientResultColumnCaseInsensitive = config.clientResultColumnCaseInsensitive;
@@ -7430,6 +8420,7 @@ export class ServiceUser extends cdktn.TerraformResource {
     this._clientSessionKeepAliveHeartbeatFrequency = config.clientSessionKeepAliveHeartbeatFrequency;
     this._clientTimestampTypeMapping = config.clientTimestampTypeMapping;
     this._comment = config.comment;
+    this._csvTimestampFormat = config.csvTimestampFormat;
     this._dateInputFormat = config.dateInputFormat;
     this._dateOutputFormat = config.dateOutputFormat;
     this._daysToExpiry = config.daysToExpiry;
@@ -7440,16 +8431,19 @@ export class ServiceUser extends cdktn.TerraformResource {
     this._disabled = config.disabled;
     this._displayName = config.displayName;
     this._email = config.email;
+    this._enableGetDdlUseDataTypeAlias = config.enableGetDdlUseDataTypeAlias;
     this._enableUnloadPhysicalTypeOptimization = config.enableUnloadPhysicalTypeOptimization;
     this._enableUnredactedQuerySyntaxError = config.enableUnredactedQuerySyntaxError;
     this._errorOnNondeterministicMerge = config.errorOnNondeterministicMerge;
     this._errorOnNondeterministicUpdate = config.errorOnNondeterministicUpdate;
     this._geographyOutputFormat = config.geographyOutputFormat;
     this._geometryOutputFormat = config.geometryOutputFormat;
+    this._hybridTableLockTimeout = config.hybridTableLockTimeout;
     this._id = config.id;
     this._jdbcTreatDecimalAsInt = config.jdbcTreatDecimalAsInt;
     this._jdbcTreatTimestampNtzAsUtc = config.jdbcTreatTimestampNtzAsUtc;
     this._jdbcUseSessionTimezone = config.jdbcUseSessionTimezone;
+    this._jsTreatIntegerAsBigint = config.jsTreatIntegerAsBigint;
     this._jsonIndent = config.jsonIndent;
     this._lockTimeout = config.lockTimeout;
     this._logEventLevel = config.logEventLevel;
@@ -7462,11 +8456,17 @@ export class ServiceUser extends cdktn.TerraformResource {
     this._noorderSequenceAsDefault = config.noorderSequenceAsDefault;
     this._odbcTreatDecimalAsInt = config.odbcTreatDecimalAsInt;
     this._preventUnloadToInternalStages = config.preventUnloadToInternalStages;
+    this._pythonProfilerModules = config.pythonProfilerModules;
+    this._pythonProfilerTargetStage = config.pythonProfilerTargetStage;
     this._queryTag = config.queryTag;
     this._quotedIdentifiersIgnoreCase = config.quotedIdentifiersIgnoreCase;
     this._rowsPerResultset = config.rowsPerResultset;
     this._rsaPublicKey = config.rsaPublicKey;
     this._rsaPublicKey2 = config.rsaPublicKey2;
+    this._rsaPublicKey2Wo = config.rsaPublicKey2Wo;
+    this._rsaPublicKey2WoVersion = config.rsaPublicKey2WoVersion;
+    this._rsaPublicKeyWo = config.rsaPublicKeyWo;
+    this._rsaPublicKeyWoVersion = config.rsaPublicKeyWoVersion;
     this._s3StageVpceDnsName = config.s3StageVpceDnsName;
     this._searchPath = config.searchPath;
     this._simulatedDataSharingConsumer = config.simulatedDataSharingConsumer;
@@ -7512,6 +8512,22 @@ export class ServiceUser extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get abortDetachedQueryInput() {
     return this._abortDetachedQuery;
+  }
+
+  // active_python_profiler - computed: true, optional: true, required: false
+  private _activePythonProfiler?: string; 
+  public get activePythonProfiler() {
+    return this.getStringAttribute('active_python_profiler');
+  }
+  public set activePythonProfiler(value: string) {
+    this._activePythonProfiler = value;
+  }
+  public resetActivePythonProfiler() {
+    this._activePythonProfiler = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get activePythonProfilerInput() {
+    return this._activePythonProfiler;
   }
 
   // autocommit - computed: true, optional: true, required: false
@@ -7562,6 +8578,22 @@ export class ServiceUser extends cdktn.TerraformResource {
     return this._binaryOutputFormat;
   }
 
+  // client_enable_log_info_statement_parameters - computed: true, optional: true, required: false
+  private _clientEnableLogInfoStatementParameters?: boolean | cdktn.IResolvable; 
+  public get clientEnableLogInfoStatementParameters() {
+    return this.getBooleanAttribute('client_enable_log_info_statement_parameters');
+  }
+  public set clientEnableLogInfoStatementParameters(value: boolean | cdktn.IResolvable) {
+    this._clientEnableLogInfoStatementParameters = value;
+  }
+  public resetClientEnableLogInfoStatementParameters() {
+    this._clientEnableLogInfoStatementParameters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientEnableLogInfoStatementParametersInput() {
+    return this._clientEnableLogInfoStatementParameters;
+  }
+
   // client_memory_limit - computed: true, optional: true, required: false
   private _clientMemoryLimit?: number; 
   public get clientMemoryLimit() {
@@ -7592,6 +8624,22 @@ export class ServiceUser extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get clientMetadataRequestUseConnectionCtxInput() {
     return this._clientMetadataRequestUseConnectionCtx;
+  }
+
+  // client_metadata_use_session_database - computed: true, optional: true, required: false
+  private _clientMetadataUseSessionDatabase?: boolean | cdktn.IResolvable; 
+  public get clientMetadataUseSessionDatabase() {
+    return this.getBooleanAttribute('client_metadata_use_session_database');
+  }
+  public set clientMetadataUseSessionDatabase(value: boolean | cdktn.IResolvable) {
+    this._clientMetadataUseSessionDatabase = value;
+  }
+  public resetClientMetadataUseSessionDatabase() {
+    this._clientMetadataUseSessionDatabase = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientMetadataUseSessionDatabaseInput() {
+    return this._clientMetadataUseSessionDatabase;
   }
 
   // client_prefetch_threads - computed: true, optional: true, required: false
@@ -7704,6 +8752,22 @@ export class ServiceUser extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get commentInput() {
     return this._comment;
+  }
+
+  // csv_timestamp_format - computed: true, optional: true, required: false
+  private _csvTimestampFormat?: string; 
+  public get csvTimestampFormat() {
+    return this.getStringAttribute('csv_timestamp_format');
+  }
+  public set csvTimestampFormat(value: string) {
+    this._csvTimestampFormat = value;
+  }
+  public resetCsvTimestampFormat() {
+    this._csvTimestampFormat = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get csvTimestampFormatInput() {
+    return this._csvTimestampFormat;
   }
 
   // date_input_format - computed: true, optional: true, required: false
@@ -7866,6 +8930,22 @@ export class ServiceUser extends cdktn.TerraformResource {
     return this._email;
   }
 
+  // enable_get_ddl_use_data_type_alias - computed: true, optional: true, required: false
+  private _enableGetDdlUseDataTypeAlias?: boolean | cdktn.IResolvable; 
+  public get enableGetDdlUseDataTypeAlias() {
+    return this.getBooleanAttribute('enable_get_ddl_use_data_type_alias');
+  }
+  public set enableGetDdlUseDataTypeAlias(value: boolean | cdktn.IResolvable) {
+    this._enableGetDdlUseDataTypeAlias = value;
+  }
+  public resetEnableGetDdlUseDataTypeAlias() {
+    this._enableGetDdlUseDataTypeAlias = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableGetDdlUseDataTypeAliasInput() {
+    return this._enableGetDdlUseDataTypeAlias;
+  }
+
   // enable_unload_physical_type_optimization - computed: true, optional: true, required: false
   private _enableUnloadPhysicalTypeOptimization?: boolean | cdktn.IResolvable; 
   public get enableUnloadPhysicalTypeOptimization() {
@@ -7967,6 +9047,22 @@ export class ServiceUser extends cdktn.TerraformResource {
     return this._geometryOutputFormat;
   }
 
+  // hybrid_table_lock_timeout - computed: true, optional: true, required: false
+  private _hybridTableLockTimeout?: number; 
+  public get hybridTableLockTimeout() {
+    return this.getNumberAttribute('hybrid_table_lock_timeout');
+  }
+  public set hybridTableLockTimeout(value: number) {
+    this._hybridTableLockTimeout = value;
+  }
+  public resetHybridTableLockTimeout() {
+    this._hybridTableLockTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hybridTableLockTimeoutInput() {
+    return this._hybridTableLockTimeout;
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -8029,6 +9125,22 @@ export class ServiceUser extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get jdbcUseSessionTimezoneInput() {
     return this._jdbcUseSessionTimezone;
+  }
+
+  // js_treat_integer_as_bigint - computed: true, optional: true, required: false
+  private _jsTreatIntegerAsBigint?: boolean | cdktn.IResolvable; 
+  public get jsTreatIntegerAsBigint() {
+    return this.getBooleanAttribute('js_treat_integer_as_bigint');
+  }
+  public set jsTreatIntegerAsBigint(value: boolean | cdktn.IResolvable) {
+    this._jsTreatIntegerAsBigint = value;
+  }
+  public resetJsTreatIntegerAsBigint() {
+    this._jsTreatIntegerAsBigint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jsTreatIntegerAsBigintInput() {
+    return this._jsTreatIntegerAsBigint;
   }
 
   // json_indent - computed: true, optional: true, required: false
@@ -8226,6 +9338,38 @@ export class ServiceUser extends cdktn.TerraformResource {
     return this._preventUnloadToInternalStages;
   }
 
+  // python_profiler_modules - computed: true, optional: true, required: false
+  private _pythonProfilerModules?: string; 
+  public get pythonProfilerModules() {
+    return this.getStringAttribute('python_profiler_modules');
+  }
+  public set pythonProfilerModules(value: string) {
+    this._pythonProfilerModules = value;
+  }
+  public resetPythonProfilerModules() {
+    this._pythonProfilerModules = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pythonProfilerModulesInput() {
+    return this._pythonProfilerModules;
+  }
+
+  // python_profiler_target_stage - computed: true, optional: true, required: false
+  private _pythonProfilerTargetStage?: string; 
+  public get pythonProfilerTargetStage() {
+    return this.getStringAttribute('python_profiler_target_stage');
+  }
+  public set pythonProfilerTargetStage(value: string) {
+    this._pythonProfilerTargetStage = value;
+  }
+  public resetPythonProfilerTargetStage() {
+    this._pythonProfilerTargetStage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pythonProfilerTargetStageInput() {
+    return this._pythonProfilerTargetStage;
+  }
+
   // query_tag - computed: true, optional: true, required: false
   private _queryTag?: string; 
   public get queryTag() {
@@ -8304,6 +9448,76 @@ export class ServiceUser extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get rsaPublicKey2Input() {
     return this._rsaPublicKey2;
+  }
+
+  // rsa_public_key_2_wo - computed: false, optional: true, required: false
+  private _rsaPublicKey2Wo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
+  public get rsaPublicKey2Wo() {
+    return this.getStringAttribute('rsa_public_key_2_wo');
+  }
+  public set rsaPublicKey2Wo(value: string) {
+    this._rsaPublicKey2Wo = value;
+  }
+  public resetRsaPublicKey2Wo() {
+    this._rsaPublicKey2Wo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rsaPublicKey2WoInput() {
+    return this._rsaPublicKey2Wo;
+  }
+
+  // rsa_public_key_2_wo_version - computed: false, optional: true, required: false
+  private _rsaPublicKey2WoVersion?: number; 
+  public get rsaPublicKey2WoVersion() {
+    return this.getNumberAttribute('rsa_public_key_2_wo_version');
+  }
+  public set rsaPublicKey2WoVersion(value: number) {
+    this._rsaPublicKey2WoVersion = value;
+  }
+  public resetRsaPublicKey2WoVersion() {
+    this._rsaPublicKey2WoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rsaPublicKey2WoVersionInput() {
+    return this._rsaPublicKey2WoVersion;
+  }
+
+  // rsa_public_key_wo - computed: false, optional: true, required: false
+  private _rsaPublicKeyWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
+  public get rsaPublicKeyWo() {
+    return this.getStringAttribute('rsa_public_key_wo');
+  }
+  public set rsaPublicKeyWo(value: string) {
+    this._rsaPublicKeyWo = value;
+  }
+  public resetRsaPublicKeyWo() {
+    this._rsaPublicKeyWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rsaPublicKeyWoInput() {
+    return this._rsaPublicKeyWo;
+  }
+
+  // rsa_public_key_wo_version - computed: false, optional: true, required: false
+  private _rsaPublicKeyWoVersion?: number; 
+  public get rsaPublicKeyWoVersion() {
+    return this.getNumberAttribute('rsa_public_key_wo_version');
+  }
+  public set rsaPublicKeyWoVersion(value: number) {
+    this._rsaPublicKeyWoVersion = value;
+  }
+  public resetRsaPublicKeyWoVersion() {
+    this._rsaPublicKeyWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rsaPublicKeyWoVersionInput() {
+    return this._rsaPublicKeyWoVersion;
   }
 
   // s3_stage_vpce_dns_name - computed: true, optional: true, required: false
@@ -8724,11 +9938,14 @@ export class ServiceUser extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       abort_detached_query: cdktn.booleanToTerraform(this._abortDetachedQuery),
+      active_python_profiler: cdktn.stringToTerraform(this._activePythonProfiler),
       autocommit: cdktn.booleanToTerraform(this._autocommit),
       binary_input_format: cdktn.stringToTerraform(this._binaryInputFormat),
       binary_output_format: cdktn.stringToTerraform(this._binaryOutputFormat),
+      client_enable_log_info_statement_parameters: cdktn.booleanToTerraform(this._clientEnableLogInfoStatementParameters),
       client_memory_limit: cdktn.numberToTerraform(this._clientMemoryLimit),
       client_metadata_request_use_connection_ctx: cdktn.booleanToTerraform(this._clientMetadataRequestUseConnectionCtx),
+      client_metadata_use_session_database: cdktn.booleanToTerraform(this._clientMetadataUseSessionDatabase),
       client_prefetch_threads: cdktn.numberToTerraform(this._clientPrefetchThreads),
       client_result_chunk_size: cdktn.numberToTerraform(this._clientResultChunkSize),
       client_result_column_case_insensitive: cdktn.booleanToTerraform(this._clientResultColumnCaseInsensitive),
@@ -8736,6 +9953,7 @@ export class ServiceUser extends cdktn.TerraformResource {
       client_session_keep_alive_heartbeat_frequency: cdktn.numberToTerraform(this._clientSessionKeepAliveHeartbeatFrequency),
       client_timestamp_type_mapping: cdktn.stringToTerraform(this._clientTimestampTypeMapping),
       comment: cdktn.stringToTerraform(this._comment),
+      csv_timestamp_format: cdktn.stringToTerraform(this._csvTimestampFormat),
       date_input_format: cdktn.stringToTerraform(this._dateInputFormat),
       date_output_format: cdktn.stringToTerraform(this._dateOutputFormat),
       days_to_expiry: cdktn.numberToTerraform(this._daysToExpiry),
@@ -8746,16 +9964,19 @@ export class ServiceUser extends cdktn.TerraformResource {
       disabled: cdktn.stringToTerraform(this._disabled),
       display_name: cdktn.stringToTerraform(this._displayName),
       email: cdktn.stringToTerraform(this._email),
+      enable_get_ddl_use_data_type_alias: cdktn.booleanToTerraform(this._enableGetDdlUseDataTypeAlias),
       enable_unload_physical_type_optimization: cdktn.booleanToTerraform(this._enableUnloadPhysicalTypeOptimization),
       enable_unredacted_query_syntax_error: cdktn.booleanToTerraform(this._enableUnredactedQuerySyntaxError),
       error_on_nondeterministic_merge: cdktn.booleanToTerraform(this._errorOnNondeterministicMerge),
       error_on_nondeterministic_update: cdktn.booleanToTerraform(this._errorOnNondeterministicUpdate),
       geography_output_format: cdktn.stringToTerraform(this._geographyOutputFormat),
       geometry_output_format: cdktn.stringToTerraform(this._geometryOutputFormat),
+      hybrid_table_lock_timeout: cdktn.numberToTerraform(this._hybridTableLockTimeout),
       id: cdktn.stringToTerraform(this._id),
       jdbc_treat_decimal_as_int: cdktn.booleanToTerraform(this._jdbcTreatDecimalAsInt),
       jdbc_treat_timestamp_ntz_as_utc: cdktn.booleanToTerraform(this._jdbcTreatTimestampNtzAsUtc),
       jdbc_use_session_timezone: cdktn.booleanToTerraform(this._jdbcUseSessionTimezone),
+      js_treat_integer_as_bigint: cdktn.booleanToTerraform(this._jsTreatIntegerAsBigint),
       json_indent: cdktn.numberToTerraform(this._jsonIndent),
       lock_timeout: cdktn.numberToTerraform(this._lockTimeout),
       log_event_level: cdktn.stringToTerraform(this._logEventLevel),
@@ -8768,11 +9989,17 @@ export class ServiceUser extends cdktn.TerraformResource {
       noorder_sequence_as_default: cdktn.booleanToTerraform(this._noorderSequenceAsDefault),
       odbc_treat_decimal_as_int: cdktn.booleanToTerraform(this._odbcTreatDecimalAsInt),
       prevent_unload_to_internal_stages: cdktn.booleanToTerraform(this._preventUnloadToInternalStages),
+      python_profiler_modules: cdktn.stringToTerraform(this._pythonProfilerModules),
+      python_profiler_target_stage: cdktn.stringToTerraform(this._pythonProfilerTargetStage),
       query_tag: cdktn.stringToTerraform(this._queryTag),
       quoted_identifiers_ignore_case: cdktn.booleanToTerraform(this._quotedIdentifiersIgnoreCase),
       rows_per_resultset: cdktn.numberToTerraform(this._rowsPerResultset),
       rsa_public_key: cdktn.stringToTerraform(this._rsaPublicKey),
       rsa_public_key_2: cdktn.stringToTerraform(this._rsaPublicKey2),
+      rsa_public_key_2_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._rsaPublicKey2Wo)),
+      rsa_public_key_2_wo_version: cdktn.numberToTerraform(this._rsaPublicKey2WoVersion),
+      rsa_public_key_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._rsaPublicKeyWo)),
+      rsa_public_key_wo_version: cdktn.numberToTerraform(this._rsaPublicKeyWoVersion),
       s3_stage_vpce_dns_name: cdktn.stringToTerraform(this._s3StageVpceDnsName),
       search_path: cdktn.stringToTerraform(this._searchPath),
       simulated_data_sharing_consumer: cdktn.stringToTerraform(this._simulatedDataSharingConsumer),
@@ -8809,6 +10036,12 @@ export class ServiceUser extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
+      active_python_profiler: {
+        value: cdktn.stringToHclTerraform(this._activePythonProfiler),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       autocommit: {
         value: cdktn.booleanToHclTerraform(this._autocommit),
         isBlock: false,
@@ -8827,6 +10060,12 @@ export class ServiceUser extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      client_enable_log_info_statement_parameters: {
+        value: cdktn.booleanToHclTerraform(this._clientEnableLogInfoStatementParameters),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       client_memory_limit: {
         value: cdktn.numberToHclTerraform(this._clientMemoryLimit),
         isBlock: false,
@@ -8835,6 +10074,12 @@ export class ServiceUser extends cdktn.TerraformResource {
       },
       client_metadata_request_use_connection_ctx: {
         value: cdktn.booleanToHclTerraform(this._clientMetadataRequestUseConnectionCtx),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      client_metadata_use_session_database: {
+        value: cdktn.booleanToHclTerraform(this._clientMetadataUseSessionDatabase),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -8877,6 +10122,12 @@ export class ServiceUser extends cdktn.TerraformResource {
       },
       comment: {
         value: cdktn.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      csv_timestamp_format: {
+        value: cdktn.stringToHclTerraform(this._csvTimestampFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -8941,6 +10192,12 @@ export class ServiceUser extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      enable_get_ddl_use_data_type_alias: {
+        value: cdktn.booleanToHclTerraform(this._enableGetDdlUseDataTypeAlias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       enable_unload_physical_type_optimization: {
         value: cdktn.booleanToHclTerraform(this._enableUnloadPhysicalTypeOptimization),
         isBlock: false,
@@ -8977,6 +10234,12 @@ export class ServiceUser extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      hybrid_table_lock_timeout: {
+        value: cdktn.numberToHclTerraform(this._hybridTableLockTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       id: {
         value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
@@ -8997,6 +10260,12 @@ export class ServiceUser extends cdktn.TerraformResource {
       },
       jdbc_use_session_timezone: {
         value: cdktn.booleanToHclTerraform(this._jdbcUseSessionTimezone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      js_treat_integer_as_bigint: {
+        value: cdktn.booleanToHclTerraform(this._jsTreatIntegerAsBigint),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -9073,6 +10342,18 @@ export class ServiceUser extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
+      python_profiler_modules: {
+        value: cdktn.stringToHclTerraform(this._pythonProfilerModules),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      python_profiler_target_stage: {
+        value: cdktn.stringToHclTerraform(this._pythonProfilerTargetStage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       query_tag: {
         value: cdktn.stringToHclTerraform(this._queryTag),
         isBlock: false,
@@ -9102,6 +10383,30 @@ export class ServiceUser extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      rsa_public_key_2_wo: {
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._rsaPublicKey2Wo)),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rsa_public_key_2_wo_version: {
+        value: cdktn.numberToHclTerraform(this._rsaPublicKey2WoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      rsa_public_key_wo: {
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._rsaPublicKeyWo)),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rsa_public_key_wo_version: {
+        value: cdktn.numberToHclTerraform(this._rsaPublicKeyWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       s3_stage_vpce_dns_name: {
         value: cdktn.stringToHclTerraform(this._s3StageVpceDnsName),

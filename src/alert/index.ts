@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,82 +15,337 @@ export interface AlertConfig extends cdktn.TerraformMetaArguments {
   /**
   * The SQL statement that should be executed if the condition returns one or more rows.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#action Alert#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#action Alert#action}
   */
   readonly action: string;
   /**
   * Specifies a comment for the alert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#comment Alert#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#comment Alert#comment}
   */
   readonly comment?: string;
   /**
   * The SQL statement that represents the condition for the alert. (SELECT, SHOW, CALL)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#condition Alert#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#condition Alert#condition}
   */
   readonly condition: string;
   /**
-  * The database in which to create the alert.
+  * The database in which to create the alert. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#database Alert#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#database Alert#database}
   */
   readonly database: string;
   /**
-  * (Default: `false`) Specifies if an alert should be 'started' (enabled) after creation or should remain 'suspended' (default).
+  * Specifies if an alert should be 'started' (enabled) after creation or should remain 'suspended' (default).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#enabled Alert#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#enabled Alert#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#id Alert#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#id Alert#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Specifies the identifier for the alert; must be unique for the database and schema in which the alert is created.
+  * Specifies the identifier for the alert; must be unique for the schema in which the alert is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#name Alert#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#name Alert#name}
   */
   readonly name: string;
   /**
-  * The schema in which to create the alert.
+  * The schema in which to create the alert. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#schema Alert#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#schema Alert#schema}
   */
   readonly schema: string;
   /**
-  * The warehouse the alert will use.
+  * The warehouse the alert will use. When not set, the alert uses serverless compute resources. Creating, resuming, or switching to a serverless alert requires the EXECUTE MANAGED ALERT privilege; using a named warehouse requires its USAGE privilege.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#warehouse Alert#warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#warehouse Alert#warehouse}
   */
-  readonly warehouse: string;
+  readonly warehouse?: string;
   /**
   * alert_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#alert_schedule Alert#alert_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#alert_schedule Alert#alert_schedule}
   */
   readonly alertSchedule?: AlertAlertSchedule;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#timeouts Alert#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#timeouts Alert#timeouts}
   */
   readonly timeouts?: AlertTimeouts;
+}
+export interface AlertDescribeOutput {
+}
+
+export function alertDescribeOutputToTerraform(struct?: AlertDescribeOutput): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function alertDescribeOutputToHclTerraform(struct?: AlertDescribeOutput): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class AlertDescribeOutputOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AlertDescribeOutput | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AlertDescribeOutput | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // action - computed: true, optional: false, required: false
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+
+  // comment - computed: true, optional: false, required: false
+  public get comment() {
+    return this.getStringAttribute('comment');
+  }
+
+  // condition - computed: true, optional: false, required: false
+  public get condition() {
+    return this.getStringAttribute('condition');
+  }
+
+  // created_on - computed: true, optional: false, required: false
+  public get createdOn() {
+    return this.getStringAttribute('created_on');
+  }
+
+  // database_name - computed: true, optional: false, required: false
+  public get databaseName() {
+    return this.getStringAttribute('database_name');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // owner - computed: true, optional: false, required: false
+  public get owner() {
+    return this.getStringAttribute('owner');
+  }
+
+  // schedule - computed: true, optional: false, required: false
+  public get schedule() {
+    return this.getStringAttribute('schedule');
+  }
+
+  // schema_name - computed: true, optional: false, required: false
+  public get schemaName() {
+    return this.getStringAttribute('schema_name');
+  }
+
+  // state - computed: true, optional: false, required: false
+  public get state() {
+    return this.getStringAttribute('state');
+  }
+
+  // warehouse - computed: true, optional: false, required: false
+  public get warehouse() {
+    return this.getStringAttribute('warehouse');
+  }
+}
+
+export class AlertDescribeOutputList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AlertDescribeOutputOutputReference {
+    return new AlertDescribeOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AlertShowOutput {
+}
+
+export function alertShowOutputToTerraform(struct?: AlertShowOutput): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function alertShowOutputToHclTerraform(struct?: AlertShowOutput): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class AlertShowOutputOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AlertShowOutput | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AlertShowOutput | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // action - computed: true, optional: false, required: false
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+
+  // comment - computed: true, optional: false, required: false
+  public get comment() {
+    return this.getStringAttribute('comment');
+  }
+
+  // condition - computed: true, optional: false, required: false
+  public get condition() {
+    return this.getStringAttribute('condition');
+  }
+
+  // created_on - computed: true, optional: false, required: false
+  public get createdOn() {
+    return this.getStringAttribute('created_on');
+  }
+
+  // database_name - computed: true, optional: false, required: false
+  public get databaseName() {
+    return this.getStringAttribute('database_name');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // owner - computed: true, optional: false, required: false
+  public get owner() {
+    return this.getStringAttribute('owner');
+  }
+
+  // owner_role_type - computed: true, optional: false, required: false
+  public get ownerRoleType() {
+    return this.getStringAttribute('owner_role_type');
+  }
+
+  // schedule - computed: true, optional: false, required: false
+  public get schedule() {
+    return this.getStringAttribute('schedule');
+  }
+
+  // schema_name - computed: true, optional: false, required: false
+  public get schemaName() {
+    return this.getStringAttribute('schema_name');
+  }
+
+  // state - computed: true, optional: false, required: false
+  public get state() {
+    return this.getStringAttribute('state');
+  }
+
+  // warehouse - computed: true, optional: false, required: false
+  public get warehouse() {
+    return this.getStringAttribute('warehouse');
+  }
+}
+
+export class AlertShowOutputList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AlertShowOutputOutputReference {
+    return new AlertShowOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface AlertAlertScheduleCron {
   /**
   * Specifies the cron expression for the alert. The cron expression must be in the following format: "minute hour day-of-month month day-of-week". The following values are supported: minute: 0-59 hour: 0-23 day-of-month: 1-31 month: 1-12 day-of-week: 0-6 (0 is Sunday)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#expression Alert#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#expression Alert#expression}
   */
   readonly expression: string;
   /**
   * Specifies the time zone for alert refresh.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#time_zone Alert#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#time_zone Alert#time_zone}
   */
   readonly timeZone: string;
 }
@@ -199,13 +454,13 @@ export interface AlertAlertSchedule {
   /**
   * Specifies the interval in minutes for the alert schedule. The interval must be greater than 0 and less than 1440 (24 hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#interval Alert#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#interval Alert#interval}
   */
   readonly interval?: number;
   /**
   * cron block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#cron Alert#cron}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#cron Alert#cron}
   */
   readonly cron?: AlertAlertScheduleCron;
 }
@@ -318,19 +573,19 @@ export class AlertAlertScheduleOutputReference extends cdktn.ComplexObject {
 }
 export interface AlertTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#create Alert#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#create Alert#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#delete Alert#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#delete Alert#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#read Alert#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#read Alert#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#update Alert#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#update Alert#update}
   */
   readonly update?: string;
 }
@@ -511,7 +766,7 @@ export class AlertTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert snowflake_alert}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert snowflake_alert}
 */
 export class Alert extends cdktn.TerraformResource {
 
@@ -527,7 +782,7 @@ export class Alert extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Alert resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Alert to import
-  * @param importFromId The id of the existing Alert that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Alert that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Alert to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -539,7 +794,7 @@ export class Alert extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.22.1/docs/resources/alert snowflake_alert} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/alert snowflake_alert} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -550,7 +805,7 @@ export class Alert extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_alert',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.22.1',
+        providerVersion: '2.23.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -633,6 +888,12 @@ export class Alert extends cdktn.TerraformResource {
     return this._database;
   }
 
+  // describe_output - computed: true, optional: false, required: false
+  private _describeOutput = new AlertDescribeOutputList(this, "describe_output", false);
+  public get describeOutput() {
+    return this._describeOutput;
+  }
+
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
@@ -696,13 +957,22 @@ export class Alert extends cdktn.TerraformResource {
     return this._schema;
   }
 
-  // warehouse - computed: false, optional: false, required: true
+  // show_output - computed: true, optional: false, required: false
+  private _showOutput = new AlertShowOutputList(this, "show_output", false);
+  public get showOutput() {
+    return this._showOutput;
+  }
+
+  // warehouse - computed: false, optional: true, required: false
   private _warehouse?: string; 
   public get warehouse() {
     return this.getStringAttribute('warehouse');
   }
   public set warehouse(value: string) {
     this._warehouse = value;
+  }
+  public resetWarehouse() {
+    this._warehouse = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get warehouseInput() {
