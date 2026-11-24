@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/replication_groups
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/replication_groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataSnowflakeReplicationGroupsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/replication_groups#id DataSnowflakeReplicationGroups#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/replication_groups#id DataSnowflakeReplicationGroups#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataSnowflakeReplicationGroupsConfig extends cdktn.TerraformMet
   /**
   * Limits results to replication groups in this account, as organization and account name. Matches [SHOW REPLICATION GROUPS](https://docs.snowflake.com/en/sql-reference/sql/show-replication-groups) `IN ACCOUNT`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/replication_groups#in_account DataSnowflakeReplicationGroups#in_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/replication_groups#in_account DataSnowflakeReplicationGroups#in_account}
   */
   readonly inAccount?: string;
 }
@@ -102,6 +102,11 @@ export class DataSnowflakeReplicationGroupsReplicationGroupsShowOutputOutputRefe
     return this.getStringAttribute('created_on');
   }
 
+  // error_integration - computed: true, optional: false, required: false
+  public get errorIntegration() {
+    return this.getStringAttribute('error_integration');
+  }
+
   // is_listing_auto_fulfillment_group - computed: true, optional: false, required: false
   public get isListingAutoFulfillmentGroup() {
     return this.getBooleanAttribute('is_listing_auto_fulfillment_group');
@@ -110,6 +115,11 @@ export class DataSnowflakeReplicationGroupsReplicationGroupsShowOutputOutputRefe
   // is_primary - computed: true, optional: false, required: false
   public get isPrimary() {
     return this.getBooleanAttribute('is_primary');
+  }
+
+  // is_primary_read_only - computed: true, optional: false, required: false
+  public get isPrimaryReadOnly() {
+    return this.getBooleanAttribute('is_primary_read_only');
   }
 
   // name - computed: true, optional: false, required: false
@@ -135,11 +145,6 @@ export class DataSnowflakeReplicationGroupsReplicationGroupsShowOutputOutputRefe
   // primary - computed: true, optional: false, required: false
   public get primary() {
     return this.getStringAttribute('primary');
-  }
-
-  // read_only - computed: true, optional: false, required: false
-  public get readOnly() {
-    return this.getBooleanAttribute('read_only');
   }
 
   // region_group - computed: true, optional: false, required: false
@@ -264,7 +269,7 @@ export class DataSnowflakeReplicationGroupsReplicationGroupsList extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/replication_groups snowflake_replication_groups}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/replication_groups snowflake_replication_groups}
 */
 export class DataSnowflakeReplicationGroups extends cdktn.TerraformDataSource {
 
@@ -280,7 +285,7 @@ export class DataSnowflakeReplicationGroups extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataSnowflakeReplicationGroups resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeReplicationGroups to import
-  * @param importFromId The id of the existing DataSnowflakeReplicationGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/replication_groups#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeReplicationGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/replication_groups#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeReplicationGroups to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -292,7 +297,7 @@ export class DataSnowflakeReplicationGroups extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/replication_groups snowflake_replication_groups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/replication_groups snowflake_replication_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -303,7 +308,7 @@ export class DataSnowflakeReplicationGroups extends cdktn.TerraformDataSource {
       terraformResourceType: 'snowflake_replication_groups',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.23.0',
+        providerVersion: '2.24.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

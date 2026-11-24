@@ -1,3 +1,3 @@
 # `snowflake_streamlit`
 
-Refer to the Terraform Registry for docs: [`snowflake_streamlit`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/streamlit).
+Refer to the Terraform Registry for docs: [`snowflake_streamlit`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/streamlit).
