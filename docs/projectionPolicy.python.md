@@ -4,7 +4,7 @@
 
 ### ProjectionPolicy <a name="ProjectionPolicy" id="@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy snowflake_projection_policy}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy snowflake_projection_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicy.Initializer"></a>
 
@@ -47,7 +47,7 @@ projectionPolicy.ProjectionPolicy(
 | <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Specifies the identifier for the projection policy; |
 | <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicy.Initializer.parameter.schema">schema</a></code> | <code>str</code> | The schema in which to create the projection policy. |
 | <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicy.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the projection policy. |
-| <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#id ProjectionPolicy#id}. |
+| <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#id ProjectionPolicy#id}. |
 | <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicy.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicyTimeouts">ProjectionPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 SQL expression that determines whether to project a column. The expression must call PROJECTION_CONSTRAINT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#body ProjectionPolicy#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#body ProjectionPolicy#body}
 
 ---
 
@@ -130,7 +130,7 @@ The database in which to create the projection policy.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#database ProjectionPolicy#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#database ProjectionPolicy#database}
 
 ---
 
@@ -142,7 +142,7 @@ Specifies the identifier for the projection policy;
 
 must be unique for the schema in which the projection policy is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#name ProjectionPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#name ProjectionPolicy#name}
 
 ---
 
@@ -154,7 +154,7 @@ The schema in which to create the projection policy.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#schema ProjectionPolicy#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#schema ProjectionPolicy#schema}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the projection policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#comment ProjectionPolicy#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#comment ProjectionPolicy#comment}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#id ProjectionPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#id ProjectionPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -185,7 +185,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#timeouts ProjectionPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#timeouts ProjectionPolicy#timeouts}
 
 ---
 
@@ -587,7 +587,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#create ProjectionPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#create ProjectionPolicy#create}.
 
 ---
 
@@ -595,7 +595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#delete ProjectionPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#delete ProjectionPolicy#delete}.
 
 ---
 
@@ -603,7 +603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#read ProjectionPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#read ProjectionPolicy#read}.
 
 ---
 
@@ -611,7 +611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#update ProjectionPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#update ProjectionPolicy#update}.
 
 ---
 
@@ -747,7 +747,7 @@ The construct id used in the generated config for the ProjectionPolicy to import
 
 The id of the existing ProjectionPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1170,7 +1170,7 @@ projectionPolicy.ProjectionPolicyConfig(
 | <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicyConfig.property.name">name</a></code> | <code>str</code> | Specifies the identifier for the projection policy; |
 | <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicyConfig.property.schema">schema</a></code> | <code>str</code> | The schema in which to create the projection policy. |
 | <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicyConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the projection policy. |
-| <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#id ProjectionPolicy#id}. |
+| <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#id ProjectionPolicy#id}. |
 | <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicyTimeouts">ProjectionPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1255,7 +1255,7 @@ body: str
 
 SQL expression that determines whether to project a column. The expression must call PROJECTION_CONSTRAINT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#body ProjectionPolicy#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#body ProjectionPolicy#body}
 
 ---
 
@@ -1271,7 +1271,7 @@ The database in which to create the projection policy.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#database ProjectionPolicy#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#database ProjectionPolicy#database}
 
 ---
 
@@ -1287,7 +1287,7 @@ Specifies the identifier for the projection policy;
 
 must be unique for the schema in which the projection policy is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#name ProjectionPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#name ProjectionPolicy#name}
 
 ---
 
@@ -1303,7 +1303,7 @@ The schema in which to create the projection policy.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#schema ProjectionPolicy#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#schema ProjectionPolicy#schema}
 
 ---
 
@@ -1317,7 +1317,7 @@ comment: str
 
 Specifies a comment for the projection policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#comment ProjectionPolicy#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#comment ProjectionPolicy#comment}
 
 ---
 
@@ -1329,7 +1329,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#id ProjectionPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#id ProjectionPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1346,7 +1346,7 @@ timeouts: ProjectionPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#timeouts ProjectionPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#timeouts ProjectionPolicy#timeouts}
 
 ---
 
@@ -1391,10 +1391,10 @@ projectionPolicy.ProjectionPolicyTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#create ProjectionPolicy#create}. |
-| <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#delete ProjectionPolicy#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicyTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#read ProjectionPolicy#read}. |
-| <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#update ProjectionPolicy#update}. |
+| <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#create ProjectionPolicy#create}. |
+| <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#delete ProjectionPolicy#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicyTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#read ProjectionPolicy#read}. |
+| <code><a href="#@cdktn/provider-snowflake.projectionPolicy.ProjectionPolicyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#update ProjectionPolicy#update}. |
 
 ---
 
@@ -1406,7 +1406,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#create ProjectionPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#create ProjectionPolicy#create}.
 
 ---
 
@@ -1418,7 +1418,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#delete ProjectionPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#delete ProjectionPolicy#delete}.
 
 ---
 
@@ -1430,7 +1430,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#read ProjectionPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#read ProjectionPolicy#read}.
 
 ---
 
@@ -1442,7 +1442,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/projection_policy#update ProjectionPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/projection_policy#update ProjectionPolicy#update}.
 
 ---
 

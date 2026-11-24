@@ -4,7 +4,7 @@
 
 ### ReplicationGroupSecondary <a name="ReplicationGroupSecondary" id="@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondary"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary snowflake_replication_group_secondary}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary snowflake_replication_group_secondary}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondary.Initializer"></a>
 
@@ -76,7 +76,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondary.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondary.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondary.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondary.resetPrimary">ResetPrimary</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondary.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -408,12 +407,6 @@ func PutTimeouts(value ReplicationGroupSecondaryTimeouts)
 func ResetId()
 ```
 
-##### `ResetPrimary` <a name="ResetPrimary" id="@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondary.resetPrimary"></a>
-
-```go
-func ResetPrimary()
-```
-
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondary.resetTimeouts"></a>
 
 ```go
@@ -523,7 +516,7 @@ The construct id used in the generated config for the ReplicationGroupSecondary 
 
 The id of the existing ReplicationGroupSecondary that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -855,8 +848,8 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/replicatio
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Id: *string,
 	Primary: *string,
+	Id: *string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19.replicationGroupSecondary.ReplicationGroupSecondaryTimeouts,
 }
 ```
@@ -873,8 +866,8 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/replicatio
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the identifier for the replication group secondary; |
-| <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#id ReplicationGroupSecondary#id}. |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryConfig.property.primary">Primary</a></code> | <code>*string</code> | Primary replication group to replicate, as org.account.name. This is the AS REPLICA OF identifier. |
+| <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#id ReplicationGroupSecondary#id}. |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryTimeouts">ReplicationGroupSecondaryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -961,7 +954,21 @@ Specifies the identifier for the replication group secondary;
 
 must be unique for the account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#name ReplicationGroupSecondary#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#name ReplicationGroupSecondary#name}
+
+---
+
+##### `Primary`<sup>Required</sup> <a name="Primary" id="@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryConfig.property.primary"></a>
+
+```go
+Primary *string
+```
+
+- *Type:* *string
+
+Primary replication group to replicate, as org.account.name. This is the AS REPLICA OF identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#primary ReplicationGroupSecondary#primary}
 
 ---
 
@@ -973,24 +980,10 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#id ReplicationGroupSecondary#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#id ReplicationGroupSecondary#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `Primary`<sup>Optional</sup> <a name="Primary" id="@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryConfig.property.primary"></a>
-
-```go
-Primary *string
-```
-
-- *Type:* *string
-
-Primary replication group to replicate, as org.account.name. This is the AS REPLICA OF identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#primary ReplicationGroupSecondary#primary}
 
 ---
 
@@ -1004,7 +997,7 @@ Timeouts ReplicationGroupSecondaryTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#timeouts ReplicationGroupSecondary#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#timeouts ReplicationGroupSecondary#timeouts}
 
 ---
 
@@ -1040,10 +1033,10 @@ import "github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v19/replicatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#create ReplicationGroupSecondary#create}. |
-| <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#delete ReplicationGroupSecondary#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#read ReplicationGroupSecondary#read}. |
-| <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#update ReplicationGroupSecondary#update}. |
+| <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#create ReplicationGroupSecondary#create}. |
+| <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#delete ReplicationGroupSecondary#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#read ReplicationGroupSecondary#read}. |
+| <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#update ReplicationGroupSecondary#update}. |
 
 ---
 
@@ -1055,7 +1048,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#create ReplicationGroupSecondary#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#create ReplicationGroupSecondary#create}.
 
 ---
 
@@ -1067,7 +1060,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#delete ReplicationGroupSecondary#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#delete ReplicationGroupSecondary#delete}.
 
 ---
 
@@ -1079,7 +1072,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#read ReplicationGroupSecondary#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#read ReplicationGroupSecondary#read}.
 
 ---
 
@@ -1091,7 +1084,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#update ReplicationGroupSecondary#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#update ReplicationGroupSecondary#update}.
 
 ---
 
@@ -1479,14 +1472,15 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.allowedAccounts">AllowedAccounts</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.errorIntegration">ErrorIntegration</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.isListingAutoFulfillmentGroup">IsListingAutoFulfillmentGroup</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.isPrimary">IsPrimary</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.isPrimaryReadOnly">IsPrimaryReadOnly</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.nextScheduledRefresh">NextScheduledRefresh</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.organizationName">OrganizationName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.owner">Owner</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.primary">Primary</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.readOnly">ReadOnly</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.regionGroup">RegionGroup</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.replicationSchedule">ReplicationSchedule</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.secondaryState">SecondaryState</a></code> | <code>*string</code> | *No description.* |
@@ -1570,6 +1564,16 @@ func CreatedOn() *string
 
 ---
 
+##### `ErrorIntegration`<sup>Required</sup> <a name="ErrorIntegration" id="@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.errorIntegration"></a>
+
+```go
+func ErrorIntegration() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `IsListingAutoFulfillmentGroup`<sup>Required</sup> <a name="IsListingAutoFulfillmentGroup" id="@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.isListingAutoFulfillmentGroup"></a>
 
 ```go
@@ -1584,6 +1588,16 @@ func IsListingAutoFulfillmentGroup() IResolvable
 
 ```go
 func IsPrimary() IResolvable
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
+
+---
+
+##### `IsPrimaryReadOnly`<sup>Required</sup> <a name="IsPrimaryReadOnly" id="@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.isPrimaryReadOnly"></a>
+
+```go
+func IsPrimaryReadOnly() IResolvable
 ```
 
 - *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
@@ -1637,16 +1651,6 @@ func Primary() *string
 ```
 
 - *Type:* *string
-
----
-
-##### `ReadOnly`<sup>Required</sup> <a name="ReadOnly" id="@cdktn/provider-snowflake.replicationGroupSecondary.ReplicationGroupSecondaryShowOutputOutputReference.property.readOnly"></a>
-
-```go
-func ReadOnly() IResolvable
-```
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,483 +13,303 @@ import * as cdktn from 'cdktn';
 
 export interface FailoverGroupConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Specifies the target account or list of target accounts to which replication and failover of specified objects from the source account is enabled. Secondary failover groups in the target accounts in this list can be promoted to serve as the primary failover group in case of failover. Expected in the form `<org_name>.<target_account_name>`. This value is case-sensitive.
+  * Target accounts, in the form `<organization_name>.<account_name>`, to which replication and failover is enabled. Snowflake adds the source account to every failover group, so do not list it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#allowed_accounts FailoverGroup#allowed_accounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#allowed_accounts FailoverGroup#allowed_accounts}
   */
-  readonly allowedAccounts?: string[];
+  readonly allowedAccounts: string[];
   /**
-  * Specifies the database or list of databases for which you are enabling replication and failover from the source account to the target account. The OBJECT_TYPES list must include DATABASES to set this parameter.
+  * Databases enabled for replication and failover. OBJECT_TYPES must include DATABASES.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#allowed_databases FailoverGroup#allowed_databases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#allowed_databases FailoverGroup#allowed_databases}
   */
   readonly allowedDatabases?: string[];
   /**
-  * Type(s) of integrations for which you are enabling replication and failover from the source account to the target account. This property requires that the OBJECT_TYPES list include INTEGRATIONS to set this parameter. The following integration types are supported: "SECURITY INTEGRATIONS", "API INTEGRATIONS", "STORAGE INTEGRATIONS", "EXTERNAL ACCESS INTEGRATIONS", "NOTIFICATION INTEGRATIONS"
+  * External volumes enabled for replication and failover. OBJECT_TYPES must include EXTERNAL VOLUMES. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#allowed_integration_types FailoverGroup#allowed_integration_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#allowed_external_volumes FailoverGroup#allowed_external_volumes}
+  */
+  readonly allowedExternalVolumes?: string[];
+  /**
+  * Integration types enabled for replication and failover. OBJECT_TYPES must include INTEGRATIONS. SECURITY INTEGRATIONS also requires ROLES. Valid values are (case-insensitive): `SECURITY INTEGRATIONS` | `API INTEGRATIONS` | `STORAGE INTEGRATIONS` | `EXTERNAL ACCESS INTEGRATIONS` | `NOTIFICATION INTEGRATIONS`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#allowed_integration_types FailoverGroup#allowed_integration_types}
   */
   readonly allowedIntegrationTypes?: string[];
   /**
-  * Specifies the share or list of shares for which you are enabling replication and failover from the source account to the target account. The OBJECT_TYPES list must include SHARES to set this parameter.
+  * Shares enabled for replication and failover. OBJECT_TYPES must include SHARES.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#allowed_shares FailoverGroup#allowed_shares}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#allowed_shares FailoverGroup#allowed_shares}
   */
   readonly allowedShares?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#id FailoverGroup#id}
+  * Comment for the failover group.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#comment FailoverGroup#comment}
+  */
+  readonly comment?: string;
+  /**
+  * Notification integration that receives refresh error notifications.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#error_integration FailoverGroup#error_integration}
+  */
+  readonly errorIntegration?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#id FailoverGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * (Default: `false`) Allows replicating objects to accounts on lower editions.
+  * Allows replicating objects to accounts on lower editions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#ignore_edition_check FailoverGroup#ignore_edition_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#ignore_edition_check FailoverGroup#ignore_edition_check}
   */
   readonly ignoreEditionCheck?: boolean | cdktn.IResolvable;
   /**
-  * Specifies the identifier for the failover group. The identifier must start with an alphabetic character and cannot contain spaces or special characters unless the identifier string is enclosed in double quotes (e.g. "My object"). Identifiers enclosed in double quotes are also case-sensitive.
+  * Specifies the identifier for the failover group; must be unique for the account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#name FailoverGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#name FailoverGroup#name}
   */
   readonly name: string;
   /**
-  * Type(s) of objects for which you are enabling replication and failover from the source account to the target account. The following object types are supported: "ACCOUNT PARAMETERS", "DATABASES", "INTEGRATIONS", "NETWORK POLICIES", "RESOURCE MONITORS", "ROLES", "SHARES", "USERS", "WAREHOUSES"
+  * Types of objects for which replication and failover from the source account to the target accounts is enabled. Valid values are (case-insensitive): `ACCOUNT PARAMETERS` | `DATABASES` | `EXTERNAL VOLUMES` | `INTEGRATIONS` | `LISTINGS` | `NETWORK POLICIES` | `PROFILES` | `RESOURCE MONITORS` | `ROLES` | `SHARES` | `USERS` | `WAREHOUSES`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#object_types FailoverGroup#object_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#object_types FailoverGroup#object_types}
   */
-  readonly objectTypes?: string[];
+  readonly objectTypes: string[];
   /**
-  * (Default: `false`) Specifies whether the failover group uses Optimized Refresh. Can be set on the primary failover group only. When true, a replication_schedule with an interval of 6 hours or less is required (Snowflake recommends 10 MINUTE or less). Do not set when rpo_assurance is true. Default: false.
+  * Specifies whether the failover group uses Optimized Refresh. Set on the primary failover group only. When true, a `replication_schedule` with an interval of 6 hours or less is required (Snowflake recommends `10 MINUTE` or less). Cannot be set together with `rpo_assurance`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#optimized_refresh FailoverGroup#optimized_refresh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#optimized_refresh FailoverGroup#optimized_refresh}
   */
   readonly optimizedRefresh?: boolean | cdktn.IResolvable;
   /**
-  * (Default: `false`) Specifies whether the failover group uses RPO Assurance. Can be set on the primary failover group only. Cannot be set with replication_schedule (unset the schedule first). Enables Optimized Refresh automatically; do not also set optimized_refresh. Default: false.
+  * Enables the read-only mode of a primary failover group. Snowflake rejects changes to `object_types`, `allowed_databases`, `allowed_external_volumes`, `allowed_shares` and `allowed_integration_types` in this mode, so set it to false (or remove it) before changing them. With the `FAILOVER_GROUP_READ_ONLY_AUTO_SWITCH` experiment listed in [`experimental_features_enabled`](../#experimental_features_enabled-1) in the provider block, the provider leaves the read-only mode and enters it again around these changes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#rpo_assurance FailoverGroup#rpo_assurance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#read_only FailoverGroup#read_only}
+  */
+  readonly readOnly?: boolean | cdktn.IResolvable;
+  /**
+  * Schedule for refreshing secondary failover groups. An interval (`<num> MINUTE`) or `USING CRON <expr> <time_zone>`. Remove the attribute to unset the schedule.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#replication_schedule FailoverGroup#replication_schedule}
+  */
+  readonly replicationSchedule?: string;
+  /**
+  * Specifies whether the failover group uses RPO Assurance. Set on the primary failover group only. Needs no replication schedule, enables Optimized Refresh automatically, and cannot be set together with `optimized_refresh`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#rpo_assurance FailoverGroup#rpo_assurance}
   */
   readonly rpoAssurance?: boolean | cdktn.IResolvable;
   /**
-  * from_replica block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#from_replica FailoverGroup#from_replica}
-  */
-  readonly fromReplica?: FailoverGroupFromReplica;
-  /**
-  * replication_schedule block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#replication_schedule FailoverGroup#replication_schedule}
-  */
-  readonly replicationSchedule?: FailoverGroupReplicationSchedule;
-  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#timeouts FailoverGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#timeouts FailoverGroup#timeouts}
   */
   readonly timeouts?: FailoverGroupTimeouts;
 }
-export interface FailoverGroupFromReplica {
-  /**
-  * Identifier for the primary failover group in the source account.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#name FailoverGroup#name}
-  */
-  readonly name: string;
-  /**
-  * Name of your Snowflake organization.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#organization_name FailoverGroup#organization_name}
-  */
-  readonly organizationName: string;
-  /**
-  * Source account from which you are enabling replication and failover of the specified objects.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#source_account_name FailoverGroup#source_account_name}
-  */
-  readonly sourceAccountName: string;
+export interface FailoverGroupShowOutput {
 }
 
-export function failoverGroupFromReplicaToTerraform(struct?: FailoverGroupFromReplicaOutputReference | FailoverGroupFromReplica): any {
+export function failoverGroupShowOutputToTerraform(struct?: FailoverGroupShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    name: cdktn.stringToTerraform(struct!.name),
-    organization_name: cdktn.stringToTerraform(struct!.organizationName),
-    source_account_name: cdktn.stringToTerraform(struct!.sourceAccountName),
   }
 }
 
 
-export function failoverGroupFromReplicaToHclTerraform(struct?: FailoverGroupFromReplicaOutputReference | FailoverGroupFromReplica): any {
+export function failoverGroupShowOutputToHclTerraform(struct?: FailoverGroupShowOutput): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    name: {
-      value: cdktn.stringToHclTerraform(struct!.name),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    organization_name: {
-      value: cdktn.stringToHclTerraform(struct!.organizationName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    source_account_name: {
-      value: cdktn.stringToHclTerraform(struct!.sourceAccountName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
-export class FailoverGroupFromReplicaOutputReference extends cdktn.ComplexObject {
+export class FailoverGroupShowOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FailoverGroupFromReplica | undefined {
+  public get internalValue(): FailoverGroupShowOutput | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    if (this._organizationName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.organizationName = this._organizationName;
-    }
-    if (this._sourceAccountName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.sourceAccountName = this._sourceAccountName;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FailoverGroupFromReplica | undefined) {
+  public set internalValue(value: FailoverGroupShowOutput | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._name = undefined;
-      this._organizationName = undefined;
-      this._sourceAccountName = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._name = value.name;
-      this._organizationName = value.organizationName;
-      this._sourceAccountName = value.sourceAccountName;
     }
   }
 
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
+  // account_locator - computed: true, optional: false, required: false
+  public get accountLocator() {
+    return this.getStringAttribute('account_locator');
+  }
+
+  // account_name - computed: true, optional: false, required: false
+  public get accountName() {
+    return this.getStringAttribute('account_name');
+  }
+
+  // allowed_accounts - computed: true, optional: false, required: false
+  public get allowedAccounts() {
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_accounts'));
+  }
+
+  // allowed_integration_types - computed: true, optional: false, required: false
+  public get allowedIntegrationTypes() {
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_integration_types'));
+  }
+
+  // comment - computed: true, optional: false, required: false
+  public get comment() {
+    return this.getStringAttribute('comment');
+  }
+
+  // created_on - computed: true, optional: false, required: false
+  public get createdOn() {
+    return this.getStringAttribute('created_on');
+  }
+
+  // error_integration - computed: true, optional: false, required: false
+  public get errorIntegration() {
+    return this.getStringAttribute('error_integration');
+  }
+
+  // is_listing_auto_fulfillment_group - computed: true, optional: false, required: false
+  public get isListingAutoFulfillmentGroup() {
+    return this.getBooleanAttribute('is_listing_auto_fulfillment_group');
+  }
+
+  // is_optimized_refresh_enabled - computed: true, optional: false, required: false
+  public get isOptimizedRefreshEnabled() {
+    return this.getBooleanAttribute('is_optimized_refresh_enabled');
+  }
+
+  // is_primary - computed: true, optional: false, required: false
+  public get isPrimary() {
+    return this.getBooleanAttribute('is_primary');
+  }
+
+  // is_primary_read_only - computed: true, optional: false, required: false
+  public get isPrimaryReadOnly() {
+    return this.getBooleanAttribute('is_primary_read_only');
+  }
+
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string) {
-    this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
+
+  // next_scheduled_refresh - computed: true, optional: false, required: false
+  public get nextScheduledRefresh() {
+    return this.getStringAttribute('next_scheduled_refresh');
   }
 
-  // organization_name - computed: false, optional: false, required: true
-  private _organizationName?: string; 
+  // object_types - computed: true, optional: false, required: false
+  public get objectTypes() {
+    return cdktn.Fn.tolist(this.getListAttribute('object_types'));
+  }
+
+  // organization_name - computed: true, optional: false, required: false
   public get organizationName() {
     return this.getStringAttribute('organization_name');
   }
-  public set organizationName(value: string) {
-    this._organizationName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get organizationNameInput() {
-    return this._organizationName;
+
+  // owner - computed: true, optional: false, required: false
+  public get owner() {
+    return this.getStringAttribute('owner');
   }
 
-  // source_account_name - computed: false, optional: false, required: true
-  private _sourceAccountName?: string; 
-  public get sourceAccountName() {
-    return this.getStringAttribute('source_account_name');
+  // primary - computed: true, optional: false, required: false
+  public get primary() {
+    return this.getStringAttribute('primary');
   }
-  public set sourceAccountName(value: string) {
-    this._sourceAccountName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sourceAccountNameInput() {
-    return this._sourceAccountName;
-  }
-}
-export interface FailoverGroupReplicationScheduleCron {
-  /**
-  * Specifies the cron expression for the replication schedule. The cron expression must be in the following format: "minute hour day-of-month month day-of-week". The following values are supported: minute: 0-59 hour: 0-23 day-of-month: 1-31 month: 1-12 day-of-week: 0-6 (0 is Sunday)
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#expression FailoverGroup#expression}
-  */
-  readonly expression: string;
-  /**
-  * Specifies the time zone for secondary group refresh.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#time_zone FailoverGroup#time_zone}
-  */
-  readonly timeZone: string;
-}
 
-export function failoverGroupReplicationScheduleCronToTerraform(struct?: FailoverGroupReplicationScheduleCronOutputReference | FailoverGroupReplicationScheduleCron): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  // region_group - computed: true, optional: false, required: false
+  public get regionGroup() {
+    return this.getStringAttribute('region_group');
   }
-  return {
-    expression: cdktn.stringToTerraform(struct!.expression),
-    time_zone: cdktn.stringToTerraform(struct!.timeZone),
+
+  // replication_schedule - computed: true, optional: false, required: false
+  public get replicationSchedule() {
+    return this.getStringAttribute('replication_schedule');
+  }
+
+  // rpo_assurance - computed: true, optional: false, required: false
+  public get rpoAssurance() {
+    return this.getBooleanAttribute('rpo_assurance');
+  }
+
+  // secondary_state - computed: true, optional: false, required: false
+  public get secondaryState() {
+    return this.getStringAttribute('secondary_state');
+  }
+
+  // snowflake_region - computed: true, optional: false, required: false
+  public get snowflakeRegion() {
+    return this.getStringAttribute('snowflake_region');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
   }
 }
 
-
-export function failoverGroupReplicationScheduleCronToHclTerraform(struct?: FailoverGroupReplicationScheduleCronOutputReference | FailoverGroupReplicationScheduleCron): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    expression: {
-      value: cdktn.stringToHclTerraform(struct!.expression),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    time_zone: {
-      value: cdktn.stringToHclTerraform(struct!.timeZone),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class FailoverGroupReplicationScheduleCronOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
+export class FailoverGroupShowOutputList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
-
-  public get internalValue(): FailoverGroupReplicationScheduleCron | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._expression !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.expression = this._expression;
-    }
-    if (this._timeZone !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.timeZone = this._timeZone;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: FailoverGroupReplicationScheduleCron | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._expression = undefined;
-      this._timeZone = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._expression = value.expression;
-      this._timeZone = value.timeZone;
-    }
-  }
-
-  // expression - computed: false, optional: false, required: true
-  private _expression?: string; 
-  public get expression() {
-    return this.getStringAttribute('expression');
-  }
-  public set expression(value: string) {
-    this._expression = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get expressionInput() {
-    return this._expression;
-  }
-
-  // time_zone - computed: false, optional: false, required: true
-  private _timeZone?: string; 
-  public get timeZone() {
-    return this.getStringAttribute('time_zone');
-  }
-  public set timeZone(value: string) {
-    this._timeZone = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeZoneInput() {
-    return this._timeZone;
-  }
-}
-export interface FailoverGroupReplicationSchedule {
-  /**
-  * Specifies the interval in minutes for the replication schedule. The interval must be greater than 0 and less than 1440 (24 hours).
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#interval FailoverGroup#interval}
-  */
-  readonly interval?: number;
-  /**
-  * cron block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#cron FailoverGroup#cron}
-  */
-  readonly cron?: FailoverGroupReplicationScheduleCron;
-}
-
-export function failoverGroupReplicationScheduleToTerraform(struct?: FailoverGroupReplicationScheduleOutputReference | FailoverGroupReplicationSchedule): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    interval: cdktn.numberToTerraform(struct!.interval),
-    cron: failoverGroupReplicationScheduleCronToTerraform(struct!.cron),
-  }
-}
-
-
-export function failoverGroupReplicationScheduleToHclTerraform(struct?: FailoverGroupReplicationScheduleOutputReference | FailoverGroupReplicationSchedule): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    interval: {
-      value: cdktn.numberToHclTerraform(struct!.interval),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    cron: {
-      value: failoverGroupReplicationScheduleCronToHclTerraform(struct!.cron),
-      isBlock: true,
-      type: "list",
-      storageClassType: "FailoverGroupReplicationScheduleCronList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class FailoverGroupReplicationScheduleOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
 
   /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param index the index of the item to return
   */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): FailoverGroupReplicationSchedule | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._interval !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.interval = this._interval;
-    }
-    if (this._cron?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.cron = this._cron?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: FailoverGroupReplicationSchedule | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._interval = undefined;
-      this._cron.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._interval = value.interval;
-      this._cron.internalValue = value.cron;
-    }
-  }
-
-  // interval - computed: false, optional: true, required: false
-  private _interval?: number; 
-  public get interval() {
-    return this.getNumberAttribute('interval');
-  }
-  public set interval(value: number) {
-    this._interval = value;
-  }
-  public resetInterval() {
-    this._interval = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get intervalInput() {
-    return this._interval;
-  }
-
-  // cron - computed: false, optional: true, required: false
-  private _cron = new FailoverGroupReplicationScheduleCronOutputReference(this, "cron");
-  public get cron() {
-    return this._cron;
-  }
-  public putCron(value: FailoverGroupReplicationScheduleCron) {
-    this._cron.internalValue = value;
-  }
-  public resetCron() {
-    this._cron.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get cronInput() {
-    return this._cron.internalValue;
+  public get(index: number): FailoverGroupShowOutputOutputReference {
+    return new FailoverGroupShowOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface FailoverGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#create FailoverGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#create FailoverGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#delete FailoverGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#delete FailoverGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#read FailoverGroup#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#read FailoverGroup#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#update FailoverGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#update FailoverGroup#update}
   */
   readonly update?: string;
 }
@@ -670,7 +490,7 @@ export class FailoverGroupTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group snowflake_failover_group}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group snowflake_failover_group}
 */
 export class FailoverGroup extends cdktn.TerraformResource {
 
@@ -686,7 +506,7 @@ export class FailoverGroup extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FailoverGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FailoverGroup to import
-  * @param importFromId The id of the existing FailoverGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FailoverGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FailoverGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -698,7 +518,7 @@ export class FailoverGroup extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/failover_group snowflake_failover_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/failover_group snowflake_failover_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -709,7 +529,7 @@ export class FailoverGroup extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_failover_group',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.23.0',
+        providerVersion: '2.24.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -722,16 +542,19 @@ export class FailoverGroup extends cdktn.TerraformResource {
     });
     this._allowedAccounts = config.allowedAccounts;
     this._allowedDatabases = config.allowedDatabases;
+    this._allowedExternalVolumes = config.allowedExternalVolumes;
     this._allowedIntegrationTypes = config.allowedIntegrationTypes;
     this._allowedShares = config.allowedShares;
+    this._comment = config.comment;
+    this._errorIntegration = config.errorIntegration;
     this._id = config.id;
     this._ignoreEditionCheck = config.ignoreEditionCheck;
     this._name = config.name;
     this._objectTypes = config.objectTypes;
     this._optimizedRefresh = config.optimizedRefresh;
+    this._readOnly = config.readOnly;
+    this._replicationSchedule = config.replicationSchedule;
     this._rpoAssurance = config.rpoAssurance;
-    this._fromReplica.internalValue = config.fromReplica;
-    this._replicationSchedule.internalValue = config.replicationSchedule;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -739,16 +562,13 @@ export class FailoverGroup extends cdktn.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // allowed_accounts - computed: false, optional: true, required: false
+  // allowed_accounts - computed: false, optional: false, required: true
   private _allowedAccounts?: string[]; 
   public get allowedAccounts() {
     return cdktn.Fn.tolist(this.getListAttribute('allowed_accounts'));
   }
   public set allowedAccounts(value: string[]) {
     this._allowedAccounts = value;
-  }
-  public resetAllowedAccounts() {
-    this._allowedAccounts = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get allowedAccountsInput() {
@@ -769,6 +589,22 @@ export class FailoverGroup extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allowedDatabasesInput() {
     return this._allowedDatabases;
+  }
+
+  // allowed_external_volumes - computed: false, optional: true, required: false
+  private _allowedExternalVolumes?: string[]; 
+  public get allowedExternalVolumes() {
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_external_volumes'));
+  }
+  public set allowedExternalVolumes(value: string[]) {
+    this._allowedExternalVolumes = value;
+  }
+  public resetAllowedExternalVolumes() {
+    this._allowedExternalVolumes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedExternalVolumesInput() {
+    return this._allowedExternalVolumes;
   }
 
   // allowed_integration_types - computed: false, optional: true, required: false
@@ -801,6 +637,38 @@ export class FailoverGroup extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allowedSharesInput() {
     return this._allowedShares;
+  }
+
+  // comment - computed: false, optional: true, required: false
+  private _comment?: string; 
+  public get comment() {
+    return this.getStringAttribute('comment');
+  }
+  public set comment(value: string) {
+    this._comment = value;
+  }
+  public resetComment() {
+    this._comment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commentInput() {
+    return this._comment;
+  }
+
+  // error_integration - computed: false, optional: true, required: false
+  private _errorIntegration?: string; 
+  public get errorIntegration() {
+    return this.getStringAttribute('error_integration');
+  }
+  public set errorIntegration(value: string) {
+    this._errorIntegration = value;
+  }
+  public resetErrorIntegration() {
+    this._errorIntegration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get errorIntegrationInput() {
+    return this._errorIntegration;
   }
 
   // fully_qualified_name - computed: true, optional: false, required: false
@@ -840,6 +708,11 @@ export class FailoverGroup extends cdktn.TerraformResource {
     return this._ignoreEditionCheck;
   }
 
+  // is_primary - computed: true, optional: false, required: false
+  public get isPrimary() {
+    return this.getBooleanAttribute('is_primary');
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -853,16 +726,13 @@ export class FailoverGroup extends cdktn.TerraformResource {
     return this._name;
   }
 
-  // object_types - computed: false, optional: true, required: false
+  // object_types - computed: false, optional: false, required: true
   private _objectTypes?: string[]; 
   public get objectTypes() {
     return cdktn.Fn.tolist(this.getListAttribute('object_types'));
   }
   public set objectTypes(value: string[]) {
     this._objectTypes = value;
-  }
-  public resetObjectTypes() {
-    this._objectTypes = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get objectTypesInput() {
@@ -885,6 +755,38 @@ export class FailoverGroup extends cdktn.TerraformResource {
     return this._optimizedRefresh;
   }
 
+  // read_only - computed: false, optional: true, required: false
+  private _readOnly?: boolean | cdktn.IResolvable; 
+  public get readOnly() {
+    return this.getBooleanAttribute('read_only');
+  }
+  public set readOnly(value: boolean | cdktn.IResolvable) {
+    this._readOnly = value;
+  }
+  public resetReadOnly() {
+    this._readOnly = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readOnlyInput() {
+    return this._readOnly;
+  }
+
+  // replication_schedule - computed: false, optional: true, required: false
+  private _replicationSchedule?: string; 
+  public get replicationSchedule() {
+    return this.getStringAttribute('replication_schedule');
+  }
+  public set replicationSchedule(value: string) {
+    this._replicationSchedule = value;
+  }
+  public resetReplicationSchedule() {
+    this._replicationSchedule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replicationScheduleInput() {
+    return this._replicationSchedule;
+  }
+
   // rpo_assurance - computed: false, optional: true, required: false
   private _rpoAssurance?: boolean | cdktn.IResolvable; 
   public get rpoAssurance() {
@@ -901,36 +803,10 @@ export class FailoverGroup extends cdktn.TerraformResource {
     return this._rpoAssurance;
   }
 
-  // from_replica - computed: false, optional: true, required: false
-  private _fromReplica = new FailoverGroupFromReplicaOutputReference(this, "from_replica");
-  public get fromReplica() {
-    return this._fromReplica;
-  }
-  public putFromReplica(value: FailoverGroupFromReplica) {
-    this._fromReplica.internalValue = value;
-  }
-  public resetFromReplica() {
-    this._fromReplica.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get fromReplicaInput() {
-    return this._fromReplica.internalValue;
-  }
-
-  // replication_schedule - computed: false, optional: true, required: false
-  private _replicationSchedule = new FailoverGroupReplicationScheduleOutputReference(this, "replication_schedule");
-  public get replicationSchedule() {
-    return this._replicationSchedule;
-  }
-  public putReplicationSchedule(value: FailoverGroupReplicationSchedule) {
-    this._replicationSchedule.internalValue = value;
-  }
-  public resetReplicationSchedule() {
-    this._replicationSchedule.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get replicationScheduleInput() {
-    return this._replicationSchedule.internalValue;
+  // show_output - computed: true, optional: false, required: false
+  private _showOutput = new FailoverGroupShowOutputList(this, "show_output", false);
+  public get showOutput() {
+    return this._showOutput;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -957,16 +833,19 @@ export class FailoverGroup extends cdktn.TerraformResource {
     return {
       allowed_accounts: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedAccounts),
       allowed_databases: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedDatabases),
+      allowed_external_volumes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedExternalVolumes),
       allowed_integration_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedIntegrationTypes),
       allowed_shares: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedShares),
+      comment: cdktn.stringToTerraform(this._comment),
+      error_integration: cdktn.stringToTerraform(this._errorIntegration),
       id: cdktn.stringToTerraform(this._id),
       ignore_edition_check: cdktn.booleanToTerraform(this._ignoreEditionCheck),
       name: cdktn.stringToTerraform(this._name),
       object_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._objectTypes),
       optimized_refresh: cdktn.booleanToTerraform(this._optimizedRefresh),
+      read_only: cdktn.booleanToTerraform(this._readOnly),
+      replication_schedule: cdktn.stringToTerraform(this._replicationSchedule),
       rpo_assurance: cdktn.booleanToTerraform(this._rpoAssurance),
-      from_replica: failoverGroupFromReplicaToTerraform(this._fromReplica.internalValue),
-      replication_schedule: failoverGroupReplicationScheduleToTerraform(this._replicationSchedule.internalValue),
       timeouts: failoverGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -985,6 +864,12 @@ export class FailoverGroup extends cdktn.TerraformResource {
         type: "set",
         storageClassType: "stringList",
       },
+      allowed_external_volumes: {
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedExternalVolumes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
       allowed_integration_types: {
         value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedIntegrationTypes),
         isBlock: false,
@@ -996,6 +881,18 @@ export class FailoverGroup extends cdktn.TerraformResource {
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
+      },
+      comment: {
+        value: cdktn.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      error_integration: {
+        value: cdktn.stringToHclTerraform(this._errorIntegration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       id: {
         value: cdktn.stringToHclTerraform(this._id),
@@ -1027,23 +924,23 @@ export class FailoverGroup extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
+      read_only: {
+        value: cdktn.booleanToHclTerraform(this._readOnly),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      replication_schedule: {
+        value: cdktn.stringToHclTerraform(this._replicationSchedule),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       rpo_assurance: {
         value: cdktn.booleanToHclTerraform(this._rpoAssurance),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
-      },
-      from_replica: {
-        value: failoverGroupFromReplicaToHclTerraform(this._fromReplica.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "FailoverGroupFromReplicaList",
-      },
-      replication_schedule: {
-        value: failoverGroupReplicationScheduleToHclTerraform(this._replicationSchedule.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "FailoverGroupReplicationScheduleList",
       },
       timeouts: {
         value: failoverGroupTimeoutsToHclTerraform(this._timeouts.internalValue),

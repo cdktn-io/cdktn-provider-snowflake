@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface ReplicationGroupSecondaryConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#id ReplicationGroupSecondary#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#id ReplicationGroupSecondary#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface ReplicationGroupSecondaryConfig extends cdktn.TerraformMetaArgu
   /**
   * Specifies the identifier for the replication group secondary; must be unique for the account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#name ReplicationGroupSecondary#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#name ReplicationGroupSecondary#name}
   */
   readonly name: string;
   /**
   * Primary replication group to replicate, as org.account.name. This is the AS REPLICA OF identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#primary ReplicationGroupSecondary#primary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#primary ReplicationGroupSecondary#primary}
   */
-  readonly primary?: string;
+  readonly primary: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#timeouts ReplicationGroupSecondary#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#timeouts ReplicationGroupSecondary#timeouts}
   */
   readonly timeouts?: ReplicationGroupSecondaryTimeouts;
 }
@@ -114,6 +114,11 @@ export class ReplicationGroupSecondaryShowOutputOutputReference extends cdktn.Co
     return this.getStringAttribute('created_on');
   }
 
+  // error_integration - computed: true, optional: false, required: false
+  public get errorIntegration() {
+    return this.getStringAttribute('error_integration');
+  }
+
   // is_listing_auto_fulfillment_group - computed: true, optional: false, required: false
   public get isListingAutoFulfillmentGroup() {
     return this.getBooleanAttribute('is_listing_auto_fulfillment_group');
@@ -122,6 +127,11 @@ export class ReplicationGroupSecondaryShowOutputOutputReference extends cdktn.Co
   // is_primary - computed: true, optional: false, required: false
   public get isPrimary() {
     return this.getBooleanAttribute('is_primary');
+  }
+
+  // is_primary_read_only - computed: true, optional: false, required: false
+  public get isPrimaryReadOnly() {
+    return this.getBooleanAttribute('is_primary_read_only');
   }
 
   // name - computed: true, optional: false, required: false
@@ -147,11 +157,6 @@ export class ReplicationGroupSecondaryShowOutputOutputReference extends cdktn.Co
   // primary - computed: true, optional: false, required: false
   public get primary() {
     return this.getStringAttribute('primary');
-  }
-
-  // read_only - computed: true, optional: false, required: false
-  public get readOnly() {
-    return this.getBooleanAttribute('read_only');
   }
 
   // region_group - computed: true, optional: false, required: false
@@ -200,19 +205,19 @@ export class ReplicationGroupSecondaryShowOutputList extends cdktn.ComplexList {
 }
 export interface ReplicationGroupSecondaryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#create ReplicationGroupSecondary#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#create ReplicationGroupSecondary#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#delete ReplicationGroupSecondary#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#delete ReplicationGroupSecondary#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#read ReplicationGroupSecondary#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#read ReplicationGroupSecondary#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#update ReplicationGroupSecondary#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#update ReplicationGroupSecondary#update}
   */
   readonly update?: string;
 }
@@ -393,7 +398,7 @@ export class ReplicationGroupSecondaryTimeoutsOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary snowflake_replication_group_secondary}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary snowflake_replication_group_secondary}
 */
 export class ReplicationGroupSecondary extends cdktn.TerraformResource {
 
@@ -409,7 +414,7 @@ export class ReplicationGroupSecondary extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ReplicationGroupSecondary resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ReplicationGroupSecondary to import
-  * @param importFromId The id of the existing ReplicationGroupSecondary that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ReplicationGroupSecondary that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ReplicationGroupSecondary to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -421,7 +426,7 @@ export class ReplicationGroupSecondary extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group_secondary snowflake_replication_group_secondary} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group_secondary snowflake_replication_group_secondary} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -432,7 +437,7 @@ export class ReplicationGroupSecondary extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_replication_group_secondary',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.23.0',
+        providerVersion: '2.24.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -492,16 +497,13 @@ export class ReplicationGroupSecondary extends cdktn.TerraformResource {
     return this._name;
   }
 
-  // primary - computed: false, optional: true, required: false
+  // primary - computed: false, optional: false, required: true
   private _primary?: string; 
   public get primary() {
     return this.getStringAttribute('primary');
   }
   public set primary(value: string) {
     this._primary = value;
-  }
-  public resetPrimary() {
-    this._primary = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get primaryInput() {

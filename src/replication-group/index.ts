@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,47 +15,47 @@ export interface ReplicationGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Target accounts, as organization and account name, to which replication is enabled. Snowflake also includes the source account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group#allowed_accounts ReplicationGroup#allowed_accounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group#allowed_accounts ReplicationGroup#allowed_accounts}
   */
   readonly allowedAccounts: string[];
   /**
   * Databases enabled for replication. OBJECT_TYPES must include DATABASES.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group#allowed_databases ReplicationGroup#allowed_databases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group#allowed_databases ReplicationGroup#allowed_databases}
   */
   readonly allowedDatabases?: string[];
   /**
   * External volumes enabled for replication. Preview feature, open to all accounts. OBJECT_TYPES must include EXTERNAL VOLUMES.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group#allowed_external_volumes ReplicationGroup#allowed_external_volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group#allowed_external_volumes ReplicationGroup#allowed_external_volumes}
   */
   readonly allowedExternalVolumes?: string[];
   /**
   * Integration types enabled for replication. Requires Business Critical Edition or higher. OBJECT_TYPES must include INTEGRATIONS. SECURITY INTEGRATIONS also requires ROLES. Valid values are (case-insensitive): `SECURITY INTEGRATIONS` | `API INTEGRATIONS` | `STORAGE INTEGRATIONS` | `EXTERNAL ACCESS INTEGRATIONS` | `NOTIFICATION INTEGRATIONS`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group#allowed_integration_types ReplicationGroup#allowed_integration_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group#allowed_integration_types ReplicationGroup#allowed_integration_types}
   */
   readonly allowedIntegrationTypes?: string[];
   /**
   * Shares enabled for replication. OBJECT_TYPES must include SHARES.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group#allowed_shares ReplicationGroup#allowed_shares}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group#allowed_shares ReplicationGroup#allowed_shares}
   */
   readonly allowedShares?: string[];
   /**
   * Comment for the replication group. The alter page defaults it to NULL. CREATE has no COMMENT clause.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group#comment ReplicationGroup#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group#comment ReplicationGroup#comment}
   */
   readonly comment?: string;
   /**
   * Notification integration that receives refresh error notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group#error_integration ReplicationGroup#error_integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group#error_integration ReplicationGroup#error_integration}
   */
   readonly errorIntegration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group#id ReplicationGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group#id ReplicationGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -64,31 +64,31 @@ export interface ReplicationGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Allows replication to accounts on lower editions in the cases listed on the create page. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group#ignore_edition_check ReplicationGroup#ignore_edition_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group#ignore_edition_check ReplicationGroup#ignore_edition_check}
   */
   readonly ignoreEditionCheck?: string;
   /**
   * Specifies the identifier for the replication group; must be unique for the account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group#name ReplicationGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group#name ReplicationGroup#name}
   */
   readonly name: string;
   /**
   * Types of objects replicated from the source account to the target accounts. Valid values are (case-insensitive): `ACCOUNT PARAMETERS` | `DATABASES` | `EXTERNAL VOLUMES` | `INTEGRATIONS` | `NETWORK POLICIES` | `RESOURCE MONITORS` | `ROLES` | `SHARES` | `USERS` | `WAREHOUSES`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group#object_types ReplicationGroup#object_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group#object_types ReplicationGroup#object_types}
   */
   readonly objectTypes: string[];
   /**
   * Schedule for refreshing secondary replication groups. An interval (`<num> MINUTE`) or `USING CRON <expr> <time_zone>`. NULL when unset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group#replication_schedule ReplicationGroup#replication_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group#replication_schedule ReplicationGroup#replication_schedule}
   */
   readonly replicationSchedule?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group#timeouts ReplicationGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group#timeouts ReplicationGroup#timeouts}
   */
   readonly timeouts?: ReplicationGroupTimeouts;
 }
@@ -168,6 +168,11 @@ export class ReplicationGroupShowOutputOutputReference extends cdktn.ComplexObje
     return this.getStringAttribute('created_on');
   }
 
+  // error_integration - computed: true, optional: false, required: false
+  public get errorIntegration() {
+    return this.getStringAttribute('error_integration');
+  }
+
   // is_listing_auto_fulfillment_group - computed: true, optional: false, required: false
   public get isListingAutoFulfillmentGroup() {
     return this.getBooleanAttribute('is_listing_auto_fulfillment_group');
@@ -176,6 +181,11 @@ export class ReplicationGroupShowOutputOutputReference extends cdktn.ComplexObje
   // is_primary - computed: true, optional: false, required: false
   public get isPrimary() {
     return this.getBooleanAttribute('is_primary');
+  }
+
+  // is_primary_read_only - computed: true, optional: false, required: false
+  public get isPrimaryReadOnly() {
+    return this.getBooleanAttribute('is_primary_read_only');
   }
 
   // name - computed: true, optional: false, required: false
@@ -201,11 +211,6 @@ export class ReplicationGroupShowOutputOutputReference extends cdktn.ComplexObje
   // primary - computed: true, optional: false, required: false
   public get primary() {
     return this.getStringAttribute('primary');
-  }
-
-  // read_only - computed: true, optional: false, required: false
-  public get readOnly() {
-    return this.getBooleanAttribute('read_only');
   }
 
   // region_group - computed: true, optional: false, required: false
@@ -254,19 +259,19 @@ export class ReplicationGroupShowOutputList extends cdktn.ComplexList {
 }
 export interface ReplicationGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group#create ReplicationGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group#create ReplicationGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group#delete ReplicationGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group#delete ReplicationGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group#read ReplicationGroup#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group#read ReplicationGroup#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group#update ReplicationGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group#update ReplicationGroup#update}
   */
   readonly update?: string;
 }
@@ -447,7 +452,7 @@ export class ReplicationGroupTimeoutsOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group snowflake_replication_group}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group snowflake_replication_group}
 */
 export class ReplicationGroup extends cdktn.TerraformResource {
 
@@ -463,7 +468,7 @@ export class ReplicationGroup extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ReplicationGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ReplicationGroup to import
-  * @param importFromId The id of the existing ReplicationGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ReplicationGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ReplicationGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -475,7 +480,7 @@ export class ReplicationGroup extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/replication_group snowflake_replication_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/replication_group snowflake_replication_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -486,7 +491,7 @@ export class ReplicationGroup extends cdktn.TerraformResource {
       terraformResourceType: 'snowflake_replication_group',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.23.0',
+        providerVersion: '2.24.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

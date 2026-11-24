@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/tables
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,13 @@ import * as cdktn from 'cdktn';
 
 export interface DataSnowflakeTablesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/tables#id DataSnowflakeTables#id}
+  * Includes dropped objects that are still within the Time Travel retention period.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables#history DataSnowflakeTables#history}
+  */
+  readonly history?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables#id DataSnowflakeTables#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +28,43 @@ export interface DataSnowflakeTablesConfig extends cdktn.TerraformMetaArguments 
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/tables#like DataSnowflakeTables#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables#like DataSnowflakeTables#like}
   */
   readonly like?: string;
   /**
   * Filters the output with **case-sensitive** characters indicating the beginning of the object name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/tables#starts_with DataSnowflakeTables#starts_with}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables#starts_with DataSnowflakeTables#starts_with}
   */
   readonly startsWith?: string;
   /**
-  * (Default: `true`) Runs DESC TABLE for each table returned by SHOW TABLES. The output of describe is saved to the description field. By default this value is set to true.
+  * Returns only a subset of the output columns.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/tables#with_describe DataSnowflakeTables#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables#terse DataSnowflakeTables#terse}
+  */
+  readonly terse?: boolean | cdktn.IResolvable;
+  /**
+  * (Default: `true`) Runs DESC TABLE for each table returned by SHOW TABLES. The output of describe is saved to the describe_output field. By default this value is set to true.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables#with_describe DataSnowflakeTables#with_describe}
   */
   readonly withDescribe?: boolean | cdktn.IResolvable;
   /**
+  * (Default: `true`) Runs SHOW PARAMETERS FOR TABLE for each table returned by SHOW TABLES. The output of SHOW PARAMETERS is saved to the parameters field as a map. By default this value is set to true.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables#with_parameters DataSnowflakeTables#with_parameters}
+  */
+  readonly withParameters?: boolean | cdktn.IResolvable;
+  /**
   * in block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/tables#in DataSnowflakeTables#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables#in DataSnowflakeTables#in}
   */
   readonly in?: DataSnowflakeTablesIn;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/tables#limit DataSnowflakeTables#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables#limit DataSnowflakeTables#limit}
   */
   readonly limit?: DataSnowflakeTablesLimit;
 }
@@ -185,6 +203,1187 @@ export class DataSnowflakeTablesTablesDescribeOutputList extends cdktn.ComplexLi
     return new DataSnowflakeTablesTablesDescribeOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataSnowflakeTablesTablesParametersCatalog {
+}
+
+export function dataSnowflakeTablesTablesParametersCatalogToTerraform(struct?: DataSnowflakeTablesTablesParametersCatalog): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeTablesTablesParametersCatalogToHclTerraform(struct?: DataSnowflakeTablesTablesParametersCatalog): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeTablesTablesParametersCatalogOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeTablesTablesParametersCatalog | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeTablesTablesParametersCatalog | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeTablesTablesParametersCatalogList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeTablesTablesParametersCatalogOutputReference {
+    return new DataSnowflakeTablesTablesParametersCatalogOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeTablesTablesParametersDataRetentionTimeInDays {
+}
+
+export function dataSnowflakeTablesTablesParametersDataRetentionTimeInDaysToTerraform(struct?: DataSnowflakeTablesTablesParametersDataRetentionTimeInDays): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeTablesTablesParametersDataRetentionTimeInDaysToHclTerraform(struct?: DataSnowflakeTablesTablesParametersDataRetentionTimeInDays): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeTablesTablesParametersDataRetentionTimeInDaysOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeTablesTablesParametersDataRetentionTimeInDays | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeTablesTablesParametersDataRetentionTimeInDays | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeTablesTablesParametersDataRetentionTimeInDaysList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeTablesTablesParametersDataRetentionTimeInDaysOutputReference {
+    return new DataSnowflakeTablesTablesParametersDataRetentionTimeInDaysOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeTablesTablesParametersDefaultDdlCollation {
+}
+
+export function dataSnowflakeTablesTablesParametersDefaultDdlCollationToTerraform(struct?: DataSnowflakeTablesTablesParametersDefaultDdlCollation): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeTablesTablesParametersDefaultDdlCollationToHclTerraform(struct?: DataSnowflakeTablesTablesParametersDefaultDdlCollation): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeTablesTablesParametersDefaultDdlCollationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeTablesTablesParametersDefaultDdlCollation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeTablesTablesParametersDefaultDdlCollation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeTablesTablesParametersDefaultDdlCollationList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeTablesTablesParametersDefaultDdlCollationOutputReference {
+    return new DataSnowflakeTablesTablesParametersDefaultDdlCollationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeTablesTablesParametersEnableConsoleOutput {
+}
+
+export function dataSnowflakeTablesTablesParametersEnableConsoleOutputToTerraform(struct?: DataSnowflakeTablesTablesParametersEnableConsoleOutput): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeTablesTablesParametersEnableConsoleOutputToHclTerraform(struct?: DataSnowflakeTablesTablesParametersEnableConsoleOutput): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeTablesTablesParametersEnableConsoleOutputOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeTablesTablesParametersEnableConsoleOutput | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeTablesTablesParametersEnableConsoleOutput | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeTablesTablesParametersEnableConsoleOutputList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeTablesTablesParametersEnableConsoleOutputOutputReference {
+    return new DataSnowflakeTablesTablesParametersEnableConsoleOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeTablesTablesParametersExternalVolume {
+}
+
+export function dataSnowflakeTablesTablesParametersExternalVolumeToTerraform(struct?: DataSnowflakeTablesTablesParametersExternalVolume): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeTablesTablesParametersExternalVolumeToHclTerraform(struct?: DataSnowflakeTablesTablesParametersExternalVolume): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeTablesTablesParametersExternalVolumeOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeTablesTablesParametersExternalVolume | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeTablesTablesParametersExternalVolume | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeTablesTablesParametersExternalVolumeList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeTablesTablesParametersExternalVolumeOutputReference {
+    return new DataSnowflakeTablesTablesParametersExternalVolumeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeTablesTablesParametersLogEventLevel {
+}
+
+export function dataSnowflakeTablesTablesParametersLogEventLevelToTerraform(struct?: DataSnowflakeTablesTablesParametersLogEventLevel): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeTablesTablesParametersLogEventLevelToHclTerraform(struct?: DataSnowflakeTablesTablesParametersLogEventLevel): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeTablesTablesParametersLogEventLevelOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeTablesTablesParametersLogEventLevel | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeTablesTablesParametersLogEventLevel | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeTablesTablesParametersLogEventLevelList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeTablesTablesParametersLogEventLevelOutputReference {
+    return new DataSnowflakeTablesTablesParametersLogEventLevelOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeTablesTablesParametersLogLevel {
+}
+
+export function dataSnowflakeTablesTablesParametersLogLevelToTerraform(struct?: DataSnowflakeTablesTablesParametersLogLevel): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeTablesTablesParametersLogLevelToHclTerraform(struct?: DataSnowflakeTablesTablesParametersLogLevel): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeTablesTablesParametersLogLevelOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeTablesTablesParametersLogLevel | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeTablesTablesParametersLogLevel | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeTablesTablesParametersLogLevelList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeTablesTablesParametersLogLevelOutputReference {
+    return new DataSnowflakeTablesTablesParametersLogLevelOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeTablesTablesParametersMaxDataExtensionTimeInDays {
+}
+
+export function dataSnowflakeTablesTablesParametersMaxDataExtensionTimeInDaysToTerraform(struct?: DataSnowflakeTablesTablesParametersMaxDataExtensionTimeInDays): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeTablesTablesParametersMaxDataExtensionTimeInDaysToHclTerraform(struct?: DataSnowflakeTablesTablesParametersMaxDataExtensionTimeInDays): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeTablesTablesParametersMaxDataExtensionTimeInDaysOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeTablesTablesParametersMaxDataExtensionTimeInDays | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeTablesTablesParametersMaxDataExtensionTimeInDays | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeTablesTablesParametersMaxDataExtensionTimeInDaysList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeTablesTablesParametersMaxDataExtensionTimeInDaysOutputReference {
+    return new DataSnowflakeTablesTablesParametersMaxDataExtensionTimeInDaysOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeTablesTablesParametersQuotedIdentifiersIgnoreCase {
+}
+
+export function dataSnowflakeTablesTablesParametersQuotedIdentifiersIgnoreCaseToTerraform(struct?: DataSnowflakeTablesTablesParametersQuotedIdentifiersIgnoreCase): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeTablesTablesParametersQuotedIdentifiersIgnoreCaseToHclTerraform(struct?: DataSnowflakeTablesTablesParametersQuotedIdentifiersIgnoreCase): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeTablesTablesParametersQuotedIdentifiersIgnoreCaseOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeTablesTablesParametersQuotedIdentifiersIgnoreCase | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeTablesTablesParametersQuotedIdentifiersIgnoreCase | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeTablesTablesParametersQuotedIdentifiersIgnoreCaseList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeTablesTablesParametersQuotedIdentifiersIgnoreCaseOutputReference {
+    return new DataSnowflakeTablesTablesParametersQuotedIdentifiersIgnoreCaseOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeTablesTablesParametersReplaceInvalidCharacters {
+}
+
+export function dataSnowflakeTablesTablesParametersReplaceInvalidCharactersToTerraform(struct?: DataSnowflakeTablesTablesParametersReplaceInvalidCharacters): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeTablesTablesParametersReplaceInvalidCharactersToHclTerraform(struct?: DataSnowflakeTablesTablesParametersReplaceInvalidCharacters): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeTablesTablesParametersReplaceInvalidCharactersOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeTablesTablesParametersReplaceInvalidCharacters | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeTablesTablesParametersReplaceInvalidCharacters | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeTablesTablesParametersReplaceInvalidCharactersList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeTablesTablesParametersReplaceInvalidCharactersOutputReference {
+    return new DataSnowflakeTablesTablesParametersReplaceInvalidCharactersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeTablesTablesParametersStorageSerializationPolicy {
+}
+
+export function dataSnowflakeTablesTablesParametersStorageSerializationPolicyToTerraform(struct?: DataSnowflakeTablesTablesParametersStorageSerializationPolicy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeTablesTablesParametersStorageSerializationPolicyToHclTerraform(struct?: DataSnowflakeTablesTablesParametersStorageSerializationPolicy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeTablesTablesParametersStorageSerializationPolicyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeTablesTablesParametersStorageSerializationPolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeTablesTablesParametersStorageSerializationPolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // level - computed: true, optional: false, required: false
+  public get level() {
+    return this.getStringAttribute('level');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataSnowflakeTablesTablesParametersStorageSerializationPolicyList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeTablesTablesParametersStorageSerializationPolicyOutputReference {
+    return new DataSnowflakeTablesTablesParametersStorageSerializationPolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeTablesTablesParameters {
+}
+
+export function dataSnowflakeTablesTablesParametersToTerraform(struct?: DataSnowflakeTablesTablesParameters): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeTablesTablesParametersToHclTerraform(struct?: DataSnowflakeTablesTablesParameters): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeTablesTablesParametersOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeTablesTablesParameters | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeTablesTablesParameters | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // catalog - computed: true, optional: false, required: false
+  private _catalog = new DataSnowflakeTablesTablesParametersCatalogList(this, "catalog", false);
+  public get catalog() {
+    return this._catalog;
+  }
+
+  // data_retention_time_in_days - computed: true, optional: false, required: false
+  private _dataRetentionTimeInDays = new DataSnowflakeTablesTablesParametersDataRetentionTimeInDaysList(this, "data_retention_time_in_days", false);
+  public get dataRetentionTimeInDays() {
+    return this._dataRetentionTimeInDays;
+  }
+
+  // default_ddl_collation - computed: true, optional: false, required: false
+  private _defaultDdlCollation = new DataSnowflakeTablesTablesParametersDefaultDdlCollationList(this, "default_ddl_collation", false);
+  public get defaultDdlCollation() {
+    return this._defaultDdlCollation;
+  }
+
+  // enable_console_output - computed: true, optional: false, required: false
+  private _enableConsoleOutput = new DataSnowflakeTablesTablesParametersEnableConsoleOutputList(this, "enable_console_output", false);
+  public get enableConsoleOutput() {
+    return this._enableConsoleOutput;
+  }
+
+  // external_volume - computed: true, optional: false, required: false
+  private _externalVolume = new DataSnowflakeTablesTablesParametersExternalVolumeList(this, "external_volume", false);
+  public get externalVolume() {
+    return this._externalVolume;
+  }
+
+  // log_event_level - computed: true, optional: false, required: false
+  private _logEventLevel = new DataSnowflakeTablesTablesParametersLogEventLevelList(this, "log_event_level", false);
+  public get logEventLevel() {
+    return this._logEventLevel;
+  }
+
+  // log_level - computed: true, optional: false, required: false
+  private _logLevel = new DataSnowflakeTablesTablesParametersLogLevelList(this, "log_level", false);
+  public get logLevel() {
+    return this._logLevel;
+  }
+
+  // max_data_extension_time_in_days - computed: true, optional: false, required: false
+  private _maxDataExtensionTimeInDays = new DataSnowflakeTablesTablesParametersMaxDataExtensionTimeInDaysList(this, "max_data_extension_time_in_days", false);
+  public get maxDataExtensionTimeInDays() {
+    return this._maxDataExtensionTimeInDays;
+  }
+
+  // quoted_identifiers_ignore_case - computed: true, optional: false, required: false
+  private _quotedIdentifiersIgnoreCase = new DataSnowflakeTablesTablesParametersQuotedIdentifiersIgnoreCaseList(this, "quoted_identifiers_ignore_case", false);
+  public get quotedIdentifiersIgnoreCase() {
+    return this._quotedIdentifiersIgnoreCase;
+  }
+
+  // replace_invalid_characters - computed: true, optional: false, required: false
+  private _replaceInvalidCharacters = new DataSnowflakeTablesTablesParametersReplaceInvalidCharactersList(this, "replace_invalid_characters", false);
+  public get replaceInvalidCharacters() {
+    return this._replaceInvalidCharacters;
+  }
+
+  // storage_serialization_policy - computed: true, optional: false, required: false
+  private _storageSerializationPolicy = new DataSnowflakeTablesTablesParametersStorageSerializationPolicyList(this, "storage_serialization_policy", false);
+  public get storageSerializationPolicy() {
+    return this._storageSerializationPolicy;
+  }
+}
+
+export class DataSnowflakeTablesTablesParametersList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeTablesTablesParametersOutputReference {
+    return new DataSnowflakeTablesTablesParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataSnowflakeTablesTablesShowOutput {
 }
 
@@ -286,6 +1485,11 @@ export class DataSnowflakeTablesTablesShowOutputOutputReference extends cdktn.Co
     return this.getBooleanAttribute('enable_schema_evolution');
   }
 
+  // error_logging - computed: true, optional: false, required: false
+  public get errorLogging() {
+    return this.getBooleanAttribute('error_logging');
+  }
+
   // is_dynamic - computed: true, optional: false, required: false
   public get isDynamic() {
     return this.getBooleanAttribute('is_dynamic');
@@ -299,6 +1503,26 @@ export class DataSnowflakeTablesTablesShowOutputOutputReference extends cdktn.Co
   // is_external - computed: true, optional: false, required: false
   public get isExternal() {
     return this.getBooleanAttribute('is_external');
+  }
+
+  // is_hybrid - computed: true, optional: false, required: false
+  public get isHybrid() {
+    return this.getBooleanAttribute('is_hybrid');
+  }
+
+  // is_iceberg - computed: true, optional: false, required: false
+  public get isIceberg() {
+    return this.getBooleanAttribute('is_iceberg');
+  }
+
+  // is_immutable - computed: true, optional: false, required: false
+  public get isImmutable() {
+    return this.getBooleanAttribute('is_immutable');
+  }
+
+  // is_interactive - computed: true, optional: false, required: false
+  public get isInteractive() {
+    return this.getBooleanAttribute('is_interactive');
   }
 
   // kind - computed: true, optional: false, required: false
@@ -324,6 +1548,11 @@ export class DataSnowflakeTablesTablesShowOutputOutputReference extends cdktn.Co
   // retention_time - computed: true, optional: false, required: false
   public get retentionTime() {
     return this.getNumberAttribute('retention_time');
+  }
+
+  // row_timestamp - computed: true, optional: false, required: false
+  public get rowTimestamp() {
+    return this.getBooleanAttribute('row_timestamp');
   }
 
   // rows - computed: true, optional: false, required: false
@@ -427,6 +1656,12 @@ export class DataSnowflakeTablesTablesOutputReference extends cdktn.ComplexObjec
     return this._describeOutput;
   }
 
+  // parameters - computed: true, optional: false, required: false
+  private _parameters = new DataSnowflakeTablesTablesParametersList(this, "parameters", false);
+  public get parameters() {
+    return this._parameters;
+  }
+
   // show_output - computed: true, optional: false, required: false
   private _showOutput = new DataSnowflakeTablesTablesShowOutputList(this, "show_output", false);
   public get showOutput() {
@@ -456,31 +1691,31 @@ export interface DataSnowflakeTablesIn {
   /**
   * Returns records for the entire account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/tables#account DataSnowflakeTables#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables#account DataSnowflakeTables#account}
   */
   readonly account?: boolean | cdktn.IResolvable;
   /**
   * Returns records for the specified application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/tables#application DataSnowflakeTables#application}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables#application DataSnowflakeTables#application}
   */
   readonly application?: string;
   /**
   * Returns records for the specified application package.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/tables#application_package DataSnowflakeTables#application_package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables#application_package DataSnowflakeTables#application_package}
   */
   readonly applicationPackage?: string;
   /**
   * Returns records for the current database in use or for a specified database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/tables#database DataSnowflakeTables#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables#database DataSnowflakeTables#database}
   */
   readonly database?: string;
   /**
   * Returns records for the current schema in use or a specified schema. Use fully qualified name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/tables#schema DataSnowflakeTables#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables#schema DataSnowflakeTables#schema}
   */
   readonly schema?: string;
 }
@@ -682,13 +1917,13 @@ export interface DataSnowflakeTablesLimit {
   /**
   * Specifies a **case-sensitive** pattern that is used to match object name. After the first match, the limit on the number of rows will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/tables#from DataSnowflakeTables#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables#from DataSnowflakeTables#from}
   */
   readonly from?: string;
   /**
   * The maximum number of rows to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/tables#rows DataSnowflakeTables#rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables#rows DataSnowflakeTables#rows}
   */
   readonly rows: number;
 }
@@ -798,7 +2033,7 @@ export class DataSnowflakeTablesLimitOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/tables snowflake_tables}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables snowflake_tables}
 */
 export class DataSnowflakeTables extends cdktn.TerraformDataSource {
 
@@ -814,7 +2049,7 @@ export class DataSnowflakeTables extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataSnowflakeTables resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeTables to import
-  * @param importFromId The id of the existing DataSnowflakeTables that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/tables#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeTables that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeTables to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -826,7 +2061,7 @@ export class DataSnowflakeTables extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/data-sources/tables snowflake_tables} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/data-sources/tables snowflake_tables} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -837,7 +2072,7 @@ export class DataSnowflakeTables extends cdktn.TerraformDataSource {
       terraformResourceType: 'snowflake_tables',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.23.0',
+        providerVersion: '2.24.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -848,10 +2083,13 @@ export class DataSnowflakeTables extends cdktn.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._history = config.history;
     this._id = config.id;
     this._like = config.like;
     this._startsWith = config.startsWith;
+    this._terse = config.terse;
     this._withDescribe = config.withDescribe;
+    this._withParameters = config.withParameters;
     this._in.internalValue = config.in;
     this._limit.internalValue = config.limit;
   }
@@ -859,6 +2097,22 @@ export class DataSnowflakeTables extends cdktn.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // history - computed: false, optional: true, required: false
+  private _history?: boolean | cdktn.IResolvable; 
+  public get history() {
+    return this.getBooleanAttribute('history');
+  }
+  public set history(value: boolean | cdktn.IResolvable) {
+    this._history = value;
+  }
+  public resetHistory() {
+    this._history = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get historyInput() {
+    return this._history;
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -914,6 +2168,22 @@ export class DataSnowflakeTables extends cdktn.TerraformDataSource {
     return this._tables;
   }
 
+  // terse - computed: false, optional: true, required: false
+  private _terse?: boolean | cdktn.IResolvable; 
+  public get terse() {
+    return this.getBooleanAttribute('terse');
+  }
+  public set terse(value: boolean | cdktn.IResolvable) {
+    this._terse = value;
+  }
+  public resetTerse() {
+    this._terse = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get terseInput() {
+    return this._terse;
+  }
+
   // with_describe - computed: false, optional: true, required: false
   private _withDescribe?: boolean | cdktn.IResolvable; 
   public get withDescribe() {
@@ -928,6 +2198,22 @@ export class DataSnowflakeTables extends cdktn.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get withDescribeInput() {
     return this._withDescribe;
+  }
+
+  // with_parameters - computed: false, optional: true, required: false
+  private _withParameters?: boolean | cdktn.IResolvable; 
+  public get withParameters() {
+    return this.getBooleanAttribute('with_parameters');
+  }
+  public set withParameters(value: boolean | cdktn.IResolvable) {
+    this._withParameters = value;
+  }
+  public resetWithParameters() {
+    this._withParameters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get withParametersInput() {
+    return this._withParameters;
   }
 
   // in - computed: false, optional: true, required: false
@@ -968,10 +2254,13 @@ export class DataSnowflakeTables extends cdktn.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      history: cdktn.booleanToTerraform(this._history),
       id: cdktn.stringToTerraform(this._id),
       like: cdktn.stringToTerraform(this._like),
       starts_with: cdktn.stringToTerraform(this._startsWith),
+      terse: cdktn.booleanToTerraform(this._terse),
       with_describe: cdktn.booleanToTerraform(this._withDescribe),
+      with_parameters: cdktn.booleanToTerraform(this._withParameters),
       in: dataSnowflakeTablesInToTerraform(this._in.internalValue),
       limit: dataSnowflakeTablesLimitToTerraform(this._limit.internalValue),
     };
@@ -979,6 +2268,12 @@ export class DataSnowflakeTables extends cdktn.TerraformDataSource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      history: {
+        value: cdktn.booleanToHclTerraform(this._history),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       id: {
         value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
@@ -997,8 +2292,20 @@ export class DataSnowflakeTables extends cdktn.TerraformDataSource {
         type: "simple",
         storageClassType: "string",
       },
+      terse: {
+        value: cdktn.booleanToHclTerraform(this._terse),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       with_describe: {
         value: cdktn.booleanToHclTerraform(this._withDescribe),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      with_parameters: {
+        value: cdktn.booleanToHclTerraform(this._withParameters),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
