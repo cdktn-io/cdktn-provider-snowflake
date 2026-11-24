@@ -4,7 +4,7 @@
 
 ### BackupPolicy <a name="BackupPolicy" id="@cdktn/provider-snowflake.backupPolicy.BackupPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy snowflake_backup_policy}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy snowflake_backup_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-snowflake.backupPolicy.BackupPolicy.Initializer"></a>
 
@@ -49,7 +49,7 @@ backupPolicy.BackupPolicy(
 | <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicy.Initializer.parameter.schema">schema</a></code> | <code>str</code> | The schema in which to create the backup policy. |
 | <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicy.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the backup policy. |
 | <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicy.Initializer.parameter.expireAfterDays">expire_after_days</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of days until a backup expires. |
-| <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#id BackupPolicy#id}. |
+| <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#id BackupPolicy#id}. |
 | <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicy.Initializer.parameter.schedule">schedule</a></code> | <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicySchedule">BackupPolicySchedule</a></code> | schedule block. |
 | <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicy.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicyTimeouts">BackupPolicyTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicy.Initializer.parameter.withRetentionLock">with_retention_lock</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies a retention lock. |
@@ -124,7 +124,7 @@ The database in which to create the backup policy.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#database BackupPolicy#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#database BackupPolicy#database}
 
 ---
 
@@ -136,7 +136,7 @@ Specifies the identifier for the backup policy;
 
 must be unique for the schema in which the backup policy is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#name BackupPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#name BackupPolicy#name}
 
 ---
 
@@ -148,7 +148,7 @@ The schema in which to create the backup policy.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#schema BackupPolicy#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#schema BackupPolicy#schema}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the backup policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#comment BackupPolicy#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#comment BackupPolicy#comment}
 
 ---
 
@@ -170,7 +170,7 @@ Specifies the number of days until a backup expires.
 
 The minimum is 1. The maximum is 3653 when SCHEDULE is omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#expire_after_days BackupPolicy#expire_after_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#expire_after_days BackupPolicy#expire_after_days}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#id BackupPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#id BackupPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -191,7 +191,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#schedule BackupPolicy#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#schedule BackupPolicy#schedule}
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#timeouts BackupPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#timeouts BackupPolicy#timeouts}
 
 ---
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Backups created under the policy cannot be deleted before they expire, including by a privileged user. The lock cannot be changed on an existing backup policy. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#with_retention_lock BackupPolicy#with_retention_lock}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#with_retention_lock BackupPolicy#with_retention_lock}
 
 ---
 
@@ -620,7 +620,7 @@ def put_schedule(
 
 Specifies an interval (in hours) of wait time inserted between backups. Accepts positive integers. (conflicts with `minutes` and `using_cron`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#hours BackupPolicy#hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#hours BackupPolicy#hours}
 
 ---
 
@@ -632,7 +632,7 @@ Specifies an interval (in minutes) of wait time inserted between backups.
 
 Accepts integers of at least 60. (conflicts with `hours` and `using_cron`)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#minutes BackupPolicy#minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#minutes BackupPolicy#minutes}
 
 ---
 
@@ -644,7 +644,7 @@ Specifies a cron expression and time zone for creating backups.
 
 Supports a subset of standard cron utility syntax. (conflicts with `hours` and `minutes`)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#using_cron BackupPolicy#using_cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#using_cron BackupPolicy#using_cron}
 
 ---
 
@@ -663,7 +663,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#create BackupPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#create BackupPolicy#create}.
 
 ---
 
@@ -671,7 +671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#delete BackupPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#delete BackupPolicy#delete}.
 
 ---
 
@@ -679,7 +679,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#read BackupPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#read BackupPolicy#read}.
 
 ---
 
@@ -687,7 +687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#update BackupPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#update BackupPolicy#update}.
 
 ---
 
@@ -841,7 +841,7 @@ The construct id used in the generated config for the BackupPolicy to import.
 
 The id of the existing BackupPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1310,7 +1310,7 @@ backupPolicy.BackupPolicyConfig(
 | <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicyConfig.property.schema">schema</a></code> | <code>str</code> | The schema in which to create the backup policy. |
 | <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicyConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the backup policy. |
 | <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicyConfig.property.expireAfterDays">expire_after_days</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of days until a backup expires. |
-| <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#id BackupPolicy#id}. |
+| <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#id BackupPolicy#id}. |
 | <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicyConfig.property.schedule">schedule</a></code> | <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicySchedule">BackupPolicySchedule</a></code> | schedule block. |
 | <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicyTimeouts">BackupPolicyTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicyConfig.property.withRetentionLock">with_retention_lock</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies a retention lock. |
@@ -1399,7 +1399,7 @@ The database in which to create the backup policy.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#database BackupPolicy#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#database BackupPolicy#database}
 
 ---
 
@@ -1415,7 +1415,7 @@ Specifies the identifier for the backup policy;
 
 must be unique for the schema in which the backup policy is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#name BackupPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#name BackupPolicy#name}
 
 ---
 
@@ -1431,7 +1431,7 @@ The schema in which to create the backup policy.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#schema BackupPolicy#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#schema BackupPolicy#schema}
 
 ---
 
@@ -1445,7 +1445,7 @@ comment: str
 
 Specifies a comment for the backup policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#comment BackupPolicy#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#comment BackupPolicy#comment}
 
 ---
 
@@ -1461,7 +1461,7 @@ Specifies the number of days until a backup expires.
 
 The minimum is 1. The maximum is 3653 when SCHEDULE is omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#expire_after_days BackupPolicy#expire_after_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#expire_after_days BackupPolicy#expire_after_days}
 
 ---
 
@@ -1473,7 +1473,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#id BackupPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#id BackupPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1490,7 +1490,7 @@ schedule: BackupPolicySchedule
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#schedule BackupPolicy#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#schedule BackupPolicy#schedule}
 
 ---
 
@@ -1504,7 +1504,7 @@ timeouts: BackupPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#timeouts BackupPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#timeouts BackupPolicy#timeouts}
 
 ---
 
@@ -1520,7 +1520,7 @@ with_retention_lock: str
 
 Backups created under the policy cannot be deleted before they expire, including by a privileged user. The lock cannot be changed on an existing backup policy. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#with_retention_lock BackupPolicy#with_retention_lock}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#with_retention_lock BackupPolicy#with_retention_lock}
 
 ---
 
@@ -1569,7 +1569,7 @@ hours: typing.Union[int, float]
 
 Specifies an interval (in hours) of wait time inserted between backups. Accepts positive integers. (conflicts with `minutes` and `using_cron`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#hours BackupPolicy#hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#hours BackupPolicy#hours}
 
 ---
 
@@ -1585,7 +1585,7 @@ Specifies an interval (in minutes) of wait time inserted between backups.
 
 Accepts integers of at least 60. (conflicts with `hours` and `using_cron`)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#minutes BackupPolicy#minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#minutes BackupPolicy#minutes}
 
 ---
 
@@ -1601,7 +1601,7 @@ Specifies a cron expression and time zone for creating backups.
 
 Supports a subset of standard cron utility syntax. (conflicts with `hours` and `minutes`)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#using_cron BackupPolicy#using_cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#using_cron BackupPolicy#using_cron}
 
 ---
 
@@ -1635,10 +1635,10 @@ backupPolicy.BackupPolicyTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#create BackupPolicy#create}. |
-| <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#delete BackupPolicy#delete}. |
-| <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicyTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#read BackupPolicy#read}. |
-| <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#update BackupPolicy#update}. |
+| <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#create BackupPolicy#create}. |
+| <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#delete BackupPolicy#delete}. |
+| <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicyTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#read BackupPolicy#read}. |
+| <code><a href="#@cdktn/provider-snowflake.backupPolicy.BackupPolicyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#update BackupPolicy#update}. |
 
 ---
 
@@ -1650,7 +1650,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#create BackupPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#create BackupPolicy#create}.
 
 ---
 
@@ -1662,7 +1662,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#delete BackupPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#delete BackupPolicy#delete}.
 
 ---
 
@@ -1674,7 +1674,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#read BackupPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#read BackupPolicy#read}.
 
 ---
 
@@ -1686,7 +1686,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.23.0/docs/resources/backup_policy#update BackupPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.24.0/docs/resources/backup_policy#update BackupPolicy#update}.
 
 ---
 
